@@ -1,0 +1,710 @@
+{
+  "cert_id": "iso27001_li",
+  "domain_id": "annex_a_controls",
+  "quiz_num": 5,
+  "domain_name": "Controles Anexo A — ISO 27002",
+  "cert_name": "ISO 27001 Lead Implementer",
+  "lang": "en",
+  "questions": [
+    {
+      "num": 1,
+      "text": "According to ISO 27001:2022, which statement correctly defines the primary purpose of an Information Security Management System (ISMS)?",
+      "tag": "ISMS_Fundamentals",
+      "options": [
+        "C. To ensure compliance with regulatory requirements only",
+        "D. To transfer all security risks to third-party insurance providers",
+        "B. To eliminate all information security threats from the organization's IT infrastructure",
+        "A. To establish, implement, maintain and continually improve an organization's ability to manage information security risks"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 Clause 4.1 defines ISMS as a systematic approach to manage information security through risk identification, assessment, and treatment, enabling continuous improvement aligned with organizational objectives.",
+      "justification_wrong": "Complete threat elimination is unrealistic; ISMS focuses on risk management, not elimination. Compliance is a benefit, not the primary purpose. Risk transfer is one mitigation option among many."
+    },
+    {
+      "num": 2,
+      "text": "In ISO 27002:2022, the 93 controls are organized into four main categories. Which category contains controls related to access management and cryptography?",
+      "tag": "Control_Categories",
+      "options": [
+        "C. Physical controls",
+        "D. Technological controls",
+        "A. Organizational controls",
+        "B. People controls"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27002:2022 designates 34 technological controls addressing technical safeguards including access control (8.2, 8.3), cryptography (8.1), and system security (8.24-8.34).",
+      "justification_wrong": "Organizational controls (37) focus on policies and governance. People controls (8) address awareness and competence. Physical controls (14) manage facilities and equipment protection, not technical access mechanisms."
+    },
+    {
+      "num": 3,
+      "text": "Which of the following best describes the concept of 'risk appetite' as referenced in ISO 27001:2022?",
+      "tag": "Risk_Management",
+      "options": [
+        "C. The total number of information security incidents permitted annually",
+        "A. The organization's willingness to accept risks that align with its strategic objectives and values",
+        "D. The percentage of IT budget allocated to security controls",
+        "B. The maximum financial loss an organization can tolerate before operational failure"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 Clause 6.1 establishes risk appetite as the organization's acceptance of risk types and levels supporting strategic goals, guiding risk treatment decisions and resource allocation.",
+      "justification_wrong": "Risk appetite is not merely financial thresholds, nor incident quotas, nor budget percentages. It represents qualitative organizational tolerance for residual risk across information security domains."
+    },
+    {
+      "num": 4,
+      "text": "Under ISO 27001:2022, what is the primary responsibility of the organization's top management regarding the ISMS?",
+      "tag": "Management_Responsibility",
+      "options": [
+        "D. Annual reporting of security metrics to external auditors only",
+        "A. Delegating all ISMS decisions exclusively to the Information Security Officer",
+        "C. Outsourcing information security operations to external consultants",
+        "B. Demonstrating leadership and commitment by ensuring establishment, implementation, maintenance, and continual improvement of the ISMS"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 Clause 5.1 mandates top management leadership demonstrating commitment through resource allocation, policy establishment, integration with business processes, and accountability for ISMS effectiveness.",
+      "justification_wrong": "Delegation without accountability violates stewardship principles. Outsourcing transfers execution, not responsibility. External reporting alone does not fulfill internal accountability requirements for ISMS governance."
+    },
+    {
+      "num": 5,
+      "text": "Which ISO 27002:2022 organizational control addresses the need to establish guidelines for acceptable use of organizational assets?",
+      "tag": "Organizational_Controls",
+      "options": [
+        "B. Control 5.3 - Segregation of duties",
+        "C. Control 5.16 - Management of information security incidents",
+        "D. Control 5.23 - Information security for supplier relationships",
+        "A. Control 5.1 - Policies for information security"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 Control 5.1 requires organizations to establish, publish, and communicate information security policies including acceptable use of information and assets, forming the foundation for organizational governance.",
+      "justification_wrong": "Control 5.3 addresses role separation, 5.16 focuses on incident response procedures, and 5.23 governs third-party relationships. None directly establish asset usage guidelines as comprehensively as policy framework controls."
+    },
+    {
+      "num": 6,
+      "text": "According to ISO 27001:2022, which of the following best describes the primary purpose of establishing an Information Security Management System (ISMS)?",
+      "tag": "ISMS Fundamentals",
+      "options": [
+        "D. To implement the maximum number of security controls regardless of organizational context",
+        "B. To comply exclusively with legal and regulatory requirements in all jurisdictions",
+        "A. To protect information assets through systematic risk management and ensure confidentiality, integrity, and availability",
+        "C. To eliminate all security risks and threats completely"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 Clause 4.1 establishes ISMS purpose as managing information security through risk-based approach, ensuring CIA principles. It's systematic, proportionate, and context-driven.",
+      "justification_wrong": "Sole legal compliance (B) ignores business objectives; eliminating all risks (C) is impossible; maximum controls (D) contradicts proportionality principle in ISO 27001."
+    },
+    {
+      "num": 7,
+      "text": "In ISO 27001:2022, the control 'Segregation of Duties' is classified under which control domain, and what is its primary objective?",
+      "tag": "Organizational Controls",
+      "options": [
+        "C. Technological Controls; to encrypt data transmission channels",
+        "B. Organizational Controls; to prevent conflicts of interest and reduce fraud risk",
+        "D. People Controls; to ensure employee awareness training completion",
+        "A. Physical Controls; to prevent unauthorized physical access to facilities"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27002:2022 Control 5.16 (Segregation of Duties) is organizational. It prevents individuals from performing incompatible functions simultaneously, reducing fraud and error risk through role separation.",
+      "justification_wrong": "A refers to physical access; C describes cryptography; D relates to awareness. SOD is administrative/organizational principle preventing conflicts of interest."
+    },
+    {
+      "num": 8,
+      "text": "Which of the following statements regarding ISO 27001:2022 Annex A controls and ISO 27002:2022 implementation guidance is most accurate?",
+      "tag": "Control Framework Relationship",
+      "options": [
+        "B. Annex A lists control objectives; ISO 27002 provides detailed guidance, implementation considerations, and additional information",
+        "C. ISO 27002 controls supersede Annex A and must always be implemented in full",
+        "A. Annex A provides detailed implementation steps; ISO 27002 provides only high-level control objectives",
+        "D. Annex A and ISO 27002 cover entirely different control domains with no overlap"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 Annex A lists 93 controls with objectives. ISO 27002:2022 provides comprehensive implementation guidance, considerations, and supplementary information for each control.",
+      "justification_wrong": "A reverses relationship; C ignores risk-based selection principle; D is incorrect—ISO 27002 expands Annex A controls with practical guidance."
+    },
+    {
+      "num": 9,
+      "text": "During ISMS risk assessment per ISO 27001:2022, which element is NOT a core component of the risk analysis process?",
+      "tag": "Risk Management Process",
+      "options": [
+        "C. Establishing marketing strategies for competitive advantage",
+        "B. Determining probability and impact of potential threats and vulnerabilities",
+        "D. Evaluating existing controls and their effectiveness",
+        "A. Identifying assets and their value to the organization"
+      ],
+      "correct": 0,
+      "justification_correct": "Marketing strategy (C) is unrelated to information security risk analysis. ISO 27001:2022 Clause 6.1.2 requires asset identification, threat/vulnerability analysis, and control evaluation.",
+      "justification_wrong": "A, B, D are essential risk analysis components per ISO 27001:2022. Assets (A), probability/impact (B), and control evaluation (D) form risk assessment foundation."
+    },
+    {
+      "num": 10,
+      "text": "According to ISO 27002:2022, which control measure is classified as a 'Technological Control' and directly addresses data protection?",
+      "tag": "Technological Controls - Data Protection",
+      "options": [
+        "D. Information security policy development and approval process",
+        "C. Physical access badges and facility perimeter fencing",
+        "B. Encryption of sensitive data at rest and in transit",
+        "A. Personnel screening and background verification procedures"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27002:2022 Control 8.1 (Cryptography) is technological, protecting data confidentiality/integrity through encryption. Directly addresses CIA principles through technical mechanisms.",
+      "justification_wrong": "A is People Control; C is Physical Control; D is Organizational Control. Only encryption (B) represents technological data protection implementation."
+    },
+    {
+      "num": 11,
+      "text": "According to ISO 27001:2022 and ISO 27002:2022, which control category addresses the need to identify and classify information assets before implementing protection measures?",
+      "tag": "Asset Management & Classification",
+      "options": [
+        "C. Physical control for facility access restrictions",
+        "A. Organizational control for information and asset management (5.9)",
+        "B. Technological control for encryption mechanisms",
+        "D. Personnel control for security awareness training"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 Clause 5.9 establishes organizational context for asset management. ISO 27002:2022 controls 5.9 (information and asset management) require identifying, inventorying, and classifying information assets as foundational to implementing appropriate controls.",
+      "justification_wrong": "Encryption (B), physical access (C), and training (D) are derived controls applied after asset classification. They depend on understanding what assets require protection, not the classification process itself."
+    },
+    {
+      "num": 12,
+      "text": "In an ISO 27001:2022 ISMS, which control from the People domain ensures that security responsibilities are clearly communicated before employees begin work?",
+      "tag": "Personnel Security & Responsibilities",
+      "options": [
+        "C. A.7.2 – Terms and conditions of employment",
+        "A. A.6.2 – Information security roles and responsibilities",
+        "B. A.7.1 – Screening and background verification",
+        "D. A.8.1 – Prior to employment"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 control 6.2 establishes that all personnel must understand their security roles and responsibilities. This aligns with ISO 27002:2022 guidance on clear assignment before employment or access to assets.",
+      "justification_wrong": "Screening (B) verifies background; terms (C) document expectations; and prior-to-employment (D) is a timing control. None directly define role clarity as control A.6.2 does."
+    },
+    {
+      "num": 13,
+      "text": "Which physical security control from ISO 27002:2022 addresses the protection of facilities against unauthorized physical access and environmental threats?",
+      "tag": "Physical & Environmental Security",
+      "options": [
+        "D. Control 6.7 – Threat intelligence and vulnerability management",
+        "C. Control 5.15 – Access control policies and enforcement",
+        "B. Control 8.1 – Cryptographic controls for data protection",
+        "A. Control 7.1 – Physical security perimeters"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 control 7.1 specifies physical security perimeters, barriers, and access points to prevent unauthorized entry and environmental damage. This is the foundational physical security control.",
+      "justification_wrong": "Cryptographic controls (B) are technological; access control policies (C) are organizational; threat intelligence (D) is technological. None address the physical perimeter itself."
+    },
+    {
+      "num": 14,
+      "text": "According to ISO 27001:2022, what is the primary purpose of conducting an information security risk assessment during the organization's context determination phase?",
+      "tag": "Risk Assessment & Management",
+      "options": [
+        "D. To assign responsibility for incident response procedures",
+        "B. To determine the scope and boundaries of the ISMS",
+        "A. To identify, analyze, and evaluate risks to information security objectives",
+        "C. To select and implement all 93 controls from ISO 27002:2022"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 Clause 6.1.2 requires risk assessment to identify, analyze, and evaluate risks. This informs risk treatment decisions and control selection, aligning with Clauses 6.1.3 and 6.2.",
+      "justification_wrong": "Scope determination (B) precedes risk assessment; implementing all controls (C) is not required—only necessary ones; incident response (D) is a treatment outcome, not the primary assessment purpose."
+    },
+    {
+      "num": 15,
+      "text": "In ISO 27001:2022, which clause requires organizations to establish and maintain procedures for monitoring, measuring, analyzing, and evaluating the effectiveness of the ISMS?",
+      "tag": "Monitoring & Continuous Improvement",
+      "options": [
+        "B. Clause 9.1 – Monitoring, measurement, analysis, and evaluation",
+        "A. Clause 8 – Operation and management of the ISMS",
+        "D. Clause 7 – Support, resources, and competence",
+        "C. Clause 10 – Improvement activities and corrective actions"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 Clause 9.1 specifically requires organizations to monitor and measure ISMS effectiveness through performance indicators, audit results, and management review, feeding into continuous improvement.",
+      "justification_wrong": "Clause 8 covers operational procedures; Clause 10 addresses corrective actions based on findings; Clause 7 focuses on resource allocation. Clause 9.1 is the explicit monitoring and evaluation requirement."
+    },
+    {
+      "num": 16,
+      "text": "According to ISO 27001:2022 and ISO 27002:2022, which control objective directly addresses the management of information security risks arising from third-party relationships and supply chain dependencies?",
+      "tag": "Supplier Relationships & Risk Management",
+      "options": [
+        "D. Control 8.34 - Monitoring activities",
+        "C. Control 6.7 - Threat intelligence and information sharing",
+        "B. Control 5.12 - Management of removable media",
+        "A. Control 5.19 - Addressing information security in supplier relationships"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 Control 5.19 explicitly addresses supplier information security management, risk assessment, and contractual arrangements. This organizational control ensures third-party security alignment with organization requirements, mitigating supply chain vulnerabilities.",
+      "justification_wrong": "Control 5.12 concerns removable media handling; 6.7 addresses threat intelligence; 8.34 focuses on monitoring. None directly manage supplier relationship risks as comprehensively as 5.19."
+    },
+    {
+      "num": 17,
+      "text": "In implementing ISO 27001:2022 Clause 6 (Planning), an organization must conduct risk assessments. Which statement accurately reflects the relationship between risk assessment scope and the information security perimeter?",
+      "tag": "Risk Assessment & Scope Definition",
+      "options": [
+        "B. Risk assessment scope must align exactly with the information security perimeter defined in Clause 4.3",
+        "C. Risk assessment scope is independent of the information security perimeter and determined solely by threat landscape",
+        "A. Risk assessment scope must be broader than the information security perimeter to identify external threats",
+        "D. Risk assessment scope should exclude cloud-based assets as they fall outside organizational control"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 Clause 6.1 requires risk assessment within the information security perimeter established in Clause 4.3. The scope must be consistent with organizational context boundaries to ensure complete coverage of relevant assets and vulnerabilities.",
+      "justification_wrong": "Option A conflates scope with external factors; C ignores perimeter alignment; D incorrectly excludes cloud assets. Clause 6.1 mandates perimeter-aligned scope determination."
+    },
+    {
+      "num": 18,
+      "text": "An organization implements ISO 27002:2022 Control 6.1 (Screening) for personnel selection. Which factor is NOT a valid component of background verification according to the control's objectives and guidance?",
+      "tag": "Personnel Security & Screening",
+      "options": [
+        "C. Prediction of future organizational loyalty using predictive analytics without consent",
+        "B. Verification of criminal history proportional to role sensitivity",
+        "D. Reference checks from previous employers or educational institutions",
+        "A. Verification of professional qualifications and credentials"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27002:2022 Control 6.1 requires factual verification (qualifications, criminal records, references). Predictive analytics for loyalty determination lacks objective basis, violates privacy principles, and contradicts screening's evidence-based nature.",
+      "justification_wrong": "Options A, B, D are explicit screening components. Option C introduces unauthorized predictive methods incompatible with control intent and privacy legislation (GDPR alignment)."
+    },
+    {
+      "num": 19,
+      "text": "Regarding ISO 27001:2022 Clause 8.3 (Determination of scope) and ISO 27002:2022 Controls 7.1-7.14 (Physical controls), which statement correctly describes the relationship between scope documentation and physical security implementation?",
+      "tag": "Scope Documentation & Physical Controls",
+      "options": [
+        "A. Physical controls apply only to assets explicitly listed in the scope statement and not to supporting infrastructure",
+        "B. Scope documentation must identify all assets requiring protection; physical controls protect assets and supporting infrastructure within the defined perimeter",
+        "C. Physical controls are independent of scope and apply uniformly to all organizational buildings regardless of scope definition",
+        "D. Physical security requirements are determined post-implementation after control selection, not during scope definition"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 Clause 8.3 defines scope; supporting infrastructure within perimeter requires physical controls per ISO 27002:2022 Section 7. Scope boundaries determine which physical controls (7.1-7.14) apply, ensuring comprehensive asset and infrastructure protection.",
+      "justification_wrong": "A contradicts infrastructure protection necessity; C ignores scope-based risk differentiation; D violates systematic planning sequence. Scope precedes control application per ISO 27001 structure."
+    },
+    {
+      "num": 20,
+      "text": "An organization implements ISO 27001:2022 and must establish the relationship between risk treatment options (accept, mitigate, avoid, share) and the control selection process per Clause 6.2. Which scenario represents incorrect application?",
+      "tag": "Risk Treatment & Control Selection",
+      "options": [
+        "D. Risk sharing chosen; organization transfers risk via insurance while maintaining preventive technical controls",
+        "C. Risk acceptance chosen; organization documents and approves residual risk exceeding risk criteria without control implementation",
+        "B. Risk mitigation chosen; organization selects ISO 27002 controls to reduce risk to acceptable level below risk criteria",
+        "A. Risk avoidance chosen; organization discontinues service line entirely rather than implementing compensating controls"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 Clause 6.2 permits risk acceptance only when residual risk remains within defined criteria. Option C violates this requirement—accepting risk above criteria contradicts Clause 6.1.3 risk criteria establishment, lacking justified rationale.",
+      "justification_wrong": "Options A, B, D represent valid treatment applications. A demonstrates avoidance; B shows mitigation; D demonstrates sharing with dual controls. All comply with Clause 6.2 risk treatment principles."
+    },
+    {
+      "num": 21,
+      "text": "In ISO 27001:2022, when establishing an Information Security Management System (ISMS), which control from the Organizational theme directly addresses the requirement to define roles, responsibilities, and authorities for information security decisions?",
+      "tag": "ISMS Governance Structure",
+      "options": [
+        "A. Control 5.1 - Policies for information security",
+        "C. Control 5.2 - Information security policy review",
+        "D. Control 8.1 - Screening and background checks",
+        "B. Control 6.1 - Information security roles and responsibilities"
+      ],
+      "correct": 3,
+      "justification_correct": "Control 6.1 explicitly requires establishing and communicating roles, responsibilities, and authorities for information security. This is fundamental organizational control enabling decision-making authority and accountability across the ISMS as per ISO 27001:2022 Clause 6.",
+      "justification_wrong": "While 5.1 establishes policy direction and 5.2 reviews effectiveness, neither specifically defines organizational roles and responsibilities. Control 8.1 addresses personnel screening, not governance structure."
+    },
+    {
+      "num": 22,
+      "text": "During an ISMS audit, you identify that cryptographic controls are implemented but lack documented procedures for key management lifecycle (generation, storage, rotation, and destruction). Which ISO 27002:2022 control is not adequately implemented?",
+      "tag": "Cryptographic Key Management",
+      "options": [
+        "B. Control 10.2 - Cryptographic key management",
+        "C. Control 8.4 - Disciplinary process",
+        "A. Control 10.1 - Cryptography",
+        "D. Control 9.2 - User access management"
+      ],
+      "correct": 0,
+      "justification_correct": "Control 10.2 specifically addresses cryptographic key management including generation, storage, access, rotation, and destruction. The absence of documented lifecycle procedures indicates non-conformity with ISO 27002:2022 requirements for managing cryptographic keys throughout their lifecycle.",
+      "justification_wrong": "Control 10.1 covers cryptography implementation but not key management lifecycle. Controls 8.4 and 9.2 address discipline and user access respectively, not cryptographic key management procedures."
+    },
+    {
+      "num": 23,
+      "text": "An organization implements an incident response procedure requiring all security incidents to be reported within 4 hours. However, the procedure lacks clear definition of what constitutes a reportable incident and lacks escalation paths. Which control deficiency requires immediate remediation per ISO 27001:2022?",
+      "tag": "Incident Management Deficiencies",
+      "options": [
+        "B. Control 8.16 - Management of information security incidents",
+        "A. Control 5.23 - Information security incident management and improvements",
+        "C. Control 5.25 - Responses to information security incidents",
+        "D. Control 8.35 - Information security incident response planning"
+      ],
+      "correct": 0,
+      "justification_correct": "Control 8.16 requires defining what constitutes an incident, assessment procedures, response actions, and escalation paths. The missing incident definition and escalation routes directly violate ISO 27002:2022 requirements for incident management implementation.",
+      "justification_wrong": "Control 5.23 covers post-incident improvements. Control 5.25 addresses response coordination. Control 8.35 focuses on planning. None comprehensively address the immediate deficiency in incident definition and escalation structure."
+    },
+    {
+      "num": 24,
+      "text": "When implementing physical security controls per ISO 27002:2022, an organization must balance access control with emergency response capabilities. Which combination of controls best satisfies this dual requirement?",
+      "tag": "Physical Security Integration",
+      "options": [
+        "A. Control 11.1 (Physical boundaries) + Control 11.2 (Physical entry)",
+        "B. Control 11.2 (Physical entry) + Control 11.3 (Securing and returning assets)",
+        "D. Control 11.4 (Monitoring) + Control 11.7 (Clear desk and clear screen)",
+        "C. Control 11.2 (Physical entry) + Control 11.5 (Access to buildings and other facilities)"
+      ],
+      "correct": 0,
+      "justification_correct": "Control 11.1 establishes perimeter security with emergency egress provisions; Control 11.2 implements access control mechanisms allowing emergency override. Together they satisfy both access restriction and emergency response requirements per ISO 27002:2022 Physical controls theme.",
+      "justification_wrong": "11.3 addresses asset handling; 11.5 duplicates 11.2 functionality; 11.4 and 11.7 address monitoring and housekeeping, neither addressing emergency response capability or balancing access control comprehensively."
+    },
+    {
+      "num": 25,
+      "text": "In an ISO 27001:2022 ISMS implementation, the organization establishes a control environment but fails to document the relationship between business objectives, information security requirements, and selected controls. What is the primary risk of this gap?",
+      "tag": "Risk-Based Control Selection",
+      "options": [
+        "A. Controls may not address actual organizational risks and compliance requirements",
+        "D. The organization cannot renew its ISO 27001 certification",
+        "B. The auditor cannot verify control implementation timelines",
+        "C. Personnel cannot complete annual security awareness training"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 Clause 6.1 and 6.2 require risk-based control selection with documented traceability. Without mapping business objectives to information security requirements to controls, the ISMS lacks systematic risk management foundation, risking inadequate protection.",
+      "justification_wrong": "B addresses audit procedures; C concerns personnel training unrelated to objective-control traceability; D oversimplifies certification impact. The core issue is inadequate risk-based control justification per ISO 27001:2022 methodology."
+    },
+    {
+      "num": 26,
+      "text": "During an ISO 27001:2022 implementation, an organization must establish Risk Assessment and Treatment processes. According to Annex A, which control theme addresses the foundational governance requirement for Information Security Risk Management?",
+      "tag": "Risk Management Framework",
+      "options": [
+        "D. Technological controls (Theme 4) implementing cryptographic mechanisms",
+        "A. Organizational controls (Theme 1) that establish governance, strategy, and risk management policies",
+        "B. People controls (Theme 2) focused on security awareness and training programs",
+        "C. Physical controls (Theme 3) for facility access and environmental protection"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 Clause 6.1 and Annex A (5.1-5.7) establish that organizational controls provide governance frameworks, risk assessment methodologies, and treatment planning—foundational to ISMS. Risk management is a governance responsibility.",
+      "justification_wrong": "People, physical, and technological controls support risk management implementation but do not establish the foundational governance framework or risk assessment processes required in Clause 6."
+    },
+    {
+      "num": 27,
+      "text": "An organization implements Access Control mechanisms per ISO 27002:2022. When designing User Access Management (Technological Theme, Control 8.2), which principle BEST ensures alignment with ISO 27001:2022 requirements?",
+      "tag": "Access Control Implementation",
+      "options": [
+        "C. Implementing role-based access without formal user provisioning procedures",
+        "D. Using only administrative passwords managed by IT without encryption requirements",
+        "B. Granting maximum permissions to reduce operational friction and support user productivity",
+        "A. Principle of least privilege with periodic access reviews documented in the Statement of Applicability (SoA)"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 Control 8.2.1 mandates least privilege with periodic formal reviews. ISO 27001:2022 requires documented control justifications in SoA. This ensures technical implementation aligns with governance documentation requirements.",
+      "justification_wrong": "Options B, C, D violate least privilege principles, lack formal procedures, and ignore encryption/administrative controls mandated by ISO 27002:2022 Section 8 (Technological controls)."
+    },
+    {
+      "num": 28,
+      "text": "During an internal audit of ISO 27001:2022 compliance, the auditor discovers that the organization's Cryptographic Controls (ISO 27002:2022, Control 10.1) lack a documented Key Management Policy. What is the MOST appropriate corrective action classification?",
+      "tag": "Cryptographic Controls & Audit",
+      "options": [
+        "C. Minor finding: Implement encryption immediately without formal documentation",
+        "B. Observation: Key management is optional for organizations using cloud providers",
+        "A. Non-conformity: Control 10.1 requires documented encryption key management; absence violates Annex A and Clause 8.1 (Planning) requirements",
+        "D. No action required: Encryption hardware vendor manages keys automatically"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27002:2022 Control 10.1.1 explicitly requires cryptographic key management documented in organizational policies. ISO 27001:2022 Clause 8.1 mandates planning for controls. Absence is a non-conformity requiring corrective action.",
+      "justification_wrong": "Cloud provider responsibility, vendor management, or lack of documentation do not exempt organizations from establishing formal key management policies per ISO 27001/27002 requirements."
+    },
+    {
+      "num": 29,
+      "text": "An organization conducts a Control Modification Risk Assessment when implementing a new Data Loss Prevention (DLP) tool (ISO 27002:2022, Control 8.3—Information Security in Project Management). Per ISO 27001:2022, what must be included in the documented assessment?",
+      "tag": "Change Management & Control Modification",
+      "options": [
+        "B. Only IT department sign-off without documented risk re-assessment",
+        "D. Implementation schedule without evaluating security posture changes",
+        "C. Vendor's risk assessment report as sole evidence of compliance",
+        "A. Impact analysis, residual risk re-evaluation, stakeholder approval, and Statement of Applicability updates with justifications"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 Clause 6.2 requires documented risk treatment decisions. ISO 27002:2022 Control 8.3 mandates control modifications documented with impact analysis, residual risk, and SoA justifications reflecting organizational context and stakeholder governance.",
+      "justification_wrong": "Vendor reports alone, IT-only decisions, or unassessed implementations violate ISO 27001:2022 requirements for documented risk management and organizational governance over control changes."
+    },
+    {
+      "num": 30,
+      "text": "During ISO 27001:2022 certification audit, the lead auditor reviews the organization's response to a Critical Security Incident affecting Incident Management (ISO 27002:2022, Control 8.6—Incident Management). Which evidence demonstrates BEST conformity with ISO 27001:2022 Clause 8.2 (Implementation)?",
+      "tag": "Incident Management & Demonstration of Implementation",
+      "options": [
+        "D. Regulatory report submitted to authorities without internal documentation",
+        "C. IT manager verbal explanation of incident handling during audit interview",
+        "A. Documented incident response procedure, incident log with timeline, forensic evidence, post-incident review report, and control effectiveness improvements implemented",
+        "B. Email notification to users stating incident occurred"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 Clause 8.2 requires documented processes, procedures, and objective evidence of implementation. ISO 27002:2022 Control 8.6 demands incident documentation, analysis, and lessons learned. Comprehensive audit trail demonstrates conformity.",
+      "justification_wrong": "Verbal explanations, external reports alone, or minimal notification do not satisfy ISO 27001:2022 requirements for documented, evidenced control implementation and continual improvement demonstrated through records."
+    },
+    {
+      "num": 31,
+      "text": "During an ISO 27001:2022 implementation, you must establish a risk assessment process. According to ISO/IEC 27005, which sequence correctly represents the risk assessment methodology?",
+      "tag": "Risk Assessment & Treatment",
+      "options": [
+        "B. Risk identification → Context establishment → Risk analysis → Risk evaluation → Risk treatment",
+        "D. Risk treatment → Risk analysis → Risk identification → Context establishment → Risk evaluation",
+        "A. Context establishment → Risk identification → Risk analysis → Risk evaluation → Risk treatment",
+        "C. Risk evaluation → Risk identification → Context establishment → Risk analysis → Risk treatment"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27005:2022 mandates context establishment first to define scope, objectives, and risk criteria. Risk identification follows, then analysis, evaluation, and treatment planning. This sequence ensures comprehensive understanding of organizational context before identifying threats.",
+      "justification_wrong": "Incorrect sequences violate ISO/IEC 27005 principles. Starting with risk identification without context lacks critical criteria definition. Placing evaluation before identification lacks necessary information. Risk treatment as initial step bypasses fundamental assessment requirements."
+    },
+    {
+      "num": 32,
+      "text": "An organization implements control A.5.1 (Policies for information security) under the Organizational theme. What is the primary purpose of information security policies according to ISO 27001:2022?",
+      "tag": "Information Security Policies",
+      "options": [
+        "C. To replace the need for individual control implementation procedures",
+        "B. To establish management direction and support for information security aligned with business objectives",
+        "D. To serve as the only evidence of compliance during audits",
+        "A. To document every technical configuration detail across all systems"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 A.5.1 emphasizes policies providing management direction and demonstrating commitment. Policies establish the framework for implementing controls, communicating objectives, and ensuring alignment with business strategy. They guide implementation rather than replace specific controls.",
+      "justification_wrong": "Policies address strategic direction, not granular technical details (A). They complement, not replace controls (C). Policies provide framework documentation, not sole audit evidence (D). ISO 27001 requires comprehensive implementation beyond policy documentation."
+    },
+    {
+      "num": 33,
+      "text": "When implementing control A.7.2 (Competence) under the People theme, management discovers that security awareness training effectiveness cannot be measured. Which approach best aligns with ISO 27001:2022 requirements?",
+      "tag": "Competence & Awareness",
+      "options": [
+        "A. Eliminate training programs since effectiveness cannot be demonstrated",
+        "D. Focus exclusively on technical staff; general employees do not require security training",
+        "C. Conduct annual generic training without performance evaluation",
+        "B. Establish learning objectives, delivery methods, and assessment mechanisms to measure competence improvement"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 A.7.2 requires organizations to establish competence assessment and ensure personnel understand security roles. Implementing learning objectives, appropriate delivery methods, and evaluation mechanisms enables measurement of effectiveness and demonstrates continuous improvement.",
+      "justification_wrong": "Eliminating training contradicts mandatory control requirements (A). Generic training without assessment fails ISO 27001 competence validation (C). Excluding non-technical staff ignores human factor risks; all personnel require appropriate awareness training (D)."
+    },
+    {
+      "num": 34,
+      "text": "An organization implements physical security controls (A.11.1 - A.11.3) for a new data center. Which combination best addresses ISO 27001:2022 physical security requirements across perimeter, building, and equipment level?",
+      "tag": "Physical & Environmental Security",
+      "options": [
+        "B. Multi-level approach: perimeter protection, access control at building entry, restricted access to equipment rooms",
+        "D. Manual security personnel only; technological controls create false security sense",
+        "C. Electronic locks without physical barriers; modern technology eliminates traditional security needs",
+        "A. Perimeter fencing only; internal building controls are unnecessary if external barriers exist"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 A.11.1-A.11.3 require layered physical security: perimeter protection, building access control, and equipment-level restrictions. This defense-in-depth approach addresses threats at multiple levels, ensuring comprehensive protection of information assets.",
+      "justification_wrong": "Single-layer perimeter defense inadequately addresses building and equipment access (A). Technology alone without physical barriers provides incomplete protection (C). Rejecting technology for manual-only security contradicts modern risk management practices and ISO 27001 principles (D)."
+    },
+    {
+      "num": 35,
+      "text": "During cryptographic controls implementation (A.10.1), you must select encryption algorithms for data at rest. Which principle should guide this selection per ISO 27001:2022 and ISO/IEC 27002:2022?",
+      "tag": "Cryptography & Data Protection",
+      "options": [
+        "A. Use any freely available algorithm regardless of peer review or cryptographic strength",
+        "C. Implement AES exclusively; algorithm diversity creates unnecessary complexity",
+        "B. Select cryptographically strong algorithms approved by recognized standards bodies, matching protection level to asset classification",
+        "D. Encryption strength should not depend on data classification; apply uniform weak encryption"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27002:2022 A.10.1 mandates cryptographically strong algorithms vetted by standards bodies (NIST, BSI). Protection level must align with asset classification and risk assessment results. This evidence-based approach ensures appropriate security proportionate to asset value.",
+      "justification_wrong": "Unreviewed algorithms lack proven security assurance (A). Forcing single algorithm disregards risk-based approach and organizational flexibility (C). Uniform weak encryption contradicts ISO 27001 risk-based controls and fails to protect high-value assets proportionately (D)."
+    },
+    {
+      "num": 36,
+      "text": "During an ISO 27001:2022 implementation audit, you discover that an organization's access control policy (A.7.1) does not explicitly address the principle of least privilege for third-party contractors. The organization argues that this is covered under their general employment contract. Which corrective action is most appropriate?",
+      "tag": "Access Control & Third-Party Management",
+      "options": [
+        "D. Defer this requirement until the next audit cycle as it is a minor non-conformity",
+        "C. Implement only technical controls through Active Directory without updating policy documentation",
+        "A. Require documented access control procedures specifically defining least privilege principles for all user types, including contractors, with role-based justification",
+        "B. Accept the general employment contract as sufficient evidence of compliance with A.7.1 requirements"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 A.7.1 requires organizations to manage user access through formal documented procedures. Least privilege must be explicitly defined in access control policies for all user categories. Third-party access requires specific justification and segregation controls, not reliance on general employment terms.",
+      "justification_wrong": "Employment contracts alone do not constitute formal access control procedures required by A.7.1. Technical controls without policy documentation create compliance gaps. Minor non-conformities must still be addressed; deferral violates audit requirements and PDCA principles."
+    },
+    {
+      "num": 37,
+      "text": "An organization implements cryptographic controls (A.10.1) using AES-256 encryption for data at rest and TLS 1.2 for data in transit. An auditor identifies that the organization has not documented the cryptographic algorithm lifecycle, algorithm deprecation timeline, or migration plan to quantum-resistant algorithms. What is the primary gap?",
+      "tag": "Cryptographic Controls & Algorithm Management",
+      "options": [
+        "A. The encryption strength (AES-256) is insufficient and must immediately upgrade to post-quantum cryptography",
+        "C. TLS 1.2 is obsolete and must be replaced with TLS 1.3 before audit closure",
+        "D. Cryptographic controls are not necessary for organizations with fewer than 500 employees",
+        "B. The organization lacks documented procedures for cryptographic algorithm management, including deprecation timelines and transition plans, as required by A.10.1"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 A.10.1 requires cryptographic controls with documented procedures including algorithm lifecycle management. Organizations must plan for algorithm deprecation and maintain technical currency. While AES-256 and TLS 1.2 are currently acceptable, documented transition strategies for emerging threats are mandatory.",
+      "justification_wrong": "AES-256 remains robust; quantum-resistant algorithms are emerging standards, not yet mandatory requirements. TLS 1.2 is acceptable; 1.3 is preferred but not mandatory. Cryptographic controls apply to all organizations; size does not eliminate this A-level control requirement."
+    },
+    {
+      "num": 38,
+      "text": "During a risk assessment phase of ISO 27001:2022 implementation, an organization identifies that its Information Security Committee includes the CISO, IT Director, and Finance Manager but lacks representation from Human Resources, Operations, and Data Protection. The CISO claims this composition ensures technical efficiency. What should the Lead Implementer advise?",
+      "tag": "Governance & Organizational Structure (A.6)",
+      "options": [
+        "A. Recommend expanding committee membership to include cross-functional representatives ensuring organizational perspectives align with ISO 27001:2022 governance requirements",
+        "C. Reduce committee size further to accelerate decision-making and reduce meeting overhead",
+        "B. Accept the current composition as sufficient because technical expertise is the primary driver of information security",
+        "D. Establish separate technical and governance committees to maintain CISO independence"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 A.6.1 requires information security governance across the organization. The committee must include diverse stakeholders representing business, technical, HR, and compliance perspectives. Cross-functional representation ensures risk assessment accounts for organizational, personnel, physical, and technological dimensions.",
+      "justification_wrong": "Technical expertise alone is insufficient; A.6 mandates organizational-wide governance. Reducing membership compromises stakeholder engagement. Separate committees fragment governance and contradict integrated management system principles required by clause 4-6 of ISO 27001:2022."
+    },
+    {
+      "num": 39,
+      "text": "An organization implements incident response procedures (A.8.1) with a 2-hour detection and classification timeframe. During tabletop exercises, the team identifies that 40% of incidents exceed this timeline due to distributed system architecture and limited monitoring coverage. Which approach aligns with ISO 27001:2022 requirements?",
+      "tag": "Incident Management & Response Planning",
+      "options": [
+        "D. Outsource incident detection to a third-party SIEM provider to avoid measurement failures",
+        "B. Enhance detection capabilities through monitoring controls and define realistic, documented incident classification procedures with supporting justification",
+        "C. Eliminate detection timeframe requirements and implement response-only procedures focused on containment",
+        "A. Accept the 40% variance as normal and adjust documented procedures to reflect actual performance (4-6 hour timeframe)"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 A.8.1 requires documented, effective incident response with defined detection and classification procedures. Organizations must establish realistic objectives based on technical capabilities and implement monitoring controls (A.8.2) to achieve them. Gap analysis and control enhancement are required, not acceptance of non-performance.",
+      "justification_wrong": "Adjusting procedures to match inadequate performance (option A) violates PDCA; non-conformity should trigger control enhancement. Elimination of detection requirements contradicts A.8.1 mandatory procedures. Outsourcing detection without enhanced internal monitoring capability transfers risk without addressing root causes."
+    },
+    {
+      "num": 40,
+      "text": "During implementation of supplier security management (A.6.2), an organization reviews contracts with 150 SaaS providers and identifies that only 35% include explicit data security, confidentiality, and audit right clauses aligned with ISO 27001:2022. Management proposes a 12-month remediation timeline. What is the Lead Implementer's primary recommendation?",
+      "tag": "Supplier & Third-Party Risk Management",
+      "options": [
+        "B. Implement immediate contractual amendments for all suppliers with security, confidentiality, audit, and incident reporting clauses aligned with organizational ISMS requirements",
+        "C. Classify uncontracted providers as 'non-critical' to avoid contract renegotiation burden",
+        "D. Rely on vendor security certifications (SOC2, ISO 27001) alone without explicit contractual security requirements",
+        "A. Accept the 12-month timeline as reasonable; prioritize high-risk suppliers and defer low-risk SaaS applications"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 A.6.2 requires supplier agreements to include information security, confidentiality, and audit obligations. Contractual control is foundational; remediation should prioritize high-risk suppliers immediately with documented risk-based timelines. Certification alone does not substitute for explicit contractual security commitments aligned with organizational ISMS scope.",
+      "justification_wrong": "Extended remediation timelines delay critical control implementation; high-risk suppliers require urgent contractual alignment. Deferral through reclassification violates scope determination. Third-party certifications supplement but do not replace contractual security requirements mandated by A.6.2."
+    },
+    {
+      "num": 41,
+      "text": "When implementing control 5.23 (Information security for supplier relationships), which documentation must be established BEFORE engaging a third party in processing personal data?",
+      "tag": "Organizational - Supplier Management",
+      "options": [
+        "C. Verbal agreement on confidentiality",
+        "A. Data Processing Agreement (DPA) specifying roles, responsibilities, and security obligations aligned with ISO 27002:2022",
+        "D. Annual compliance attestation letter",
+        "B. General terms and conditions without specific security requirements"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27002:2022 control 5.23 mandates contractual agreements defining security requirements, roles, and responsibilities before processing commences. DPA ensures alignment with GDPR and organizational ISMS policies.",
+      "justification_wrong": "Generic T&Cs lack specific security controls. Verbal agreements are unenforceable. Annual attestations occur post-engagement and cannot establish baseline security expectations required by 27001:2022 Clause 8.2."
+    },
+    {
+      "num": 42,
+      "text": "According to ISO 27002:2022 control 6.7 (Preventing and detecting malware), which technical implementation is MOST effective when combined with organizational policies?",
+      "tag": "Technological - Malware Prevention",
+      "options": [
+        "B. Signature-based antivirus updates performed monthly",
+        "C. Firewall rules blocking all external connections",
+        "A. Endpoint Detection and Response (EDR) with heuristic analysis, sandboxing, and behavior-based detection integrated with change management procedures",
+        "D. User awareness training alone without technical controls"
+      ],
+      "correct": 2,
+      "justification_correct": "EDR with heuristic, sandboxing, and behavioral detection addresses polymorphic malware. Integration with change management (ISO 27001 Clause 8.1) creates defense-in-depth aligned with 27002:2022 intent.",
+      "justification_wrong": "Monthly signatures miss zero-days. Firewall blocking breaks business operations. Training without controls violates control 6.7 requirement for multi-layer technical measures complementing human factors per ISO 27002:2022."
+    },
+    {
+      "num": 43,
+      "text": "In control 7.4 (Physical and environmental security monitoring), how should organizations establish alert thresholds for unauthorized access attempts while maintaining ISO 27001 Annex A compliance?",
+      "tag": "Physical - Monitoring & Alerting",
+      "options": [
+        "C. Implement manual daily log review without automated alerts",
+        "B. Set identical thresholds across all facility zones regardless of asset criticality",
+        "A. Define thresholds based on risk assessment outcomes, document in security baselines, integrate with incident response procedures per ISO 27035",
+        "D. Use vendor-recommended default settings without customization"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 requires risk-based controls. Thresholds derived from asset criticality assessments (Clause 6.1), documented in baselines, and linked to incident response (ISO 27035) ensure proportionate, effective monitoring.",
+      "justification_wrong": "Uniform thresholds ignore risk context. Manual review increases detection time. Defaults misalign with organizational context. None align with Clause 6.1 risk assessment mandate or Annex A A.7.14 requirements."
+    },
+    {
+      "num": 44,
+      "text": "Control 8.3 (Separation of duties) in ISO 27002:2022 requires preventing conflicts in critical systems. Which configuration BEST demonstrates compliance in a certificate authority (CA) environment?",
+      "tag": "Technological - Access Control Architecture",
+      "options": [
+        "B. Single administrator performing all CA operations with audit logging",
+        "D. Separation enforced only at the application layer without cryptographic controls",
+        "A. Key generation, signing, and revocation performed by separate individuals with technical role separation in HSM configurations and documented approval workflows",
+        "C. Role-based access shared among IT team members for operational efficiency"
+      ],
+      "correct": 2,
+      "justification_correct": "CA operations demand cryptographic enforcement (HSM role separation) plus organizational controls. Multiple individuals across key lifecycle stages with documented approvals exemplifies ISO 27002:2022 control 8.3 intent and PKI best practices.",
+      "justification_wrong": "Single admin violates segregation principle. Shared roles create accountability gaps. Application-only separation lacks cryptographic integrity assurance required for sensitive operations per ISO 27001 Clause 8.2."
+    },
+    {
+      "num": 45,
+      "text": "When conducting a control 5.1 (Information security policies) audit for a multinational organization, which criterion would indicate NON-COMPLIANCE with ISO 27001:2022 requirements?",
+      "tag": "Organizational - Policy Framework",
+      "options": [
+        "B. Policies address all 93 controls from ISO 27002:2022 with localized implementation guidance per subsidiary requirements",
+        "D. Policies establish roles, responsibilities, and authority hierarchies across the ISMS scope",
+        "A. Policies document organizational context per Clause 4.1 but lack evidence of integration with business objectives and periodic review cycles per Clause 9.2",
+        "C. Information security policy approved by management and communicated to all relevant personnel annually"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 Clause 5.1 requires policies aligned to business context (Clause 4.1) with documented reviews (Clause 9.2). Absence of integration with objectives or review evidence indicates non-compliance with foundational requirements.",
+      "justification_wrong": "Comprehensive ISO 27002 coverage, management approval, communication, and clear role definition all demonstrate compliance with policy control requirements per ISO 27001:2022 Clauses 5.1, 5.2, and 7.2."
+    },
+    {
+      "num": 46,
+      "text": "An organization implements ISO 27001:2022 and must integrate risk treatment across organizational, people, physical, and technological domains. Which approach best ensures coherent control implementation across all four ISO 27002:2022 themes?",
+      "tag": "Risk Treatment Integration",
+      "options": [
+        "C. Prioritize technological controls (34 controls) as primary treatment, supplementing with organizational controls only when gaps emerge",
+        "A. Develop a unified control matrix mapping risk scenarios to corresponding controls in all four domains, ensuring interdependencies are documented and monitored through a single ISMS governance framework",
+        "D. Assign domain-specific teams without cross-functional coordination to expedite implementation timelines",
+        "B. Implement controls separately in each domain with independent risk assessments, then consolidate results in annual reports"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 (Clause 8.2) requires integrated risk treatment considering all contextual factors. A unified matrix ensures consistency across organizational (37), people (8), physical (14), and technological (34) controls while maintaining traceability and governance accountability per Clause 7.",
+      "justification_wrong": "Siloed domain implementation violates the holistic ISMS principle mandated in ISO 27001:2022 Clause 4.4. Risk treatment effectiveness depends on synergy between domains; sequential consolidation creates implementation gaps and compliance vulnerabilities."
+    },
+    {
+      "num": 47,
+      "text": "During an ISO 27001:2022 audit, an auditor identifies that control A.5.1 (Policies for information security) exists but is not operationalized through people controls (Theme 2: 8 controls). What is the primary compliance gap?",
+      "tag": "Control Operationalization",
+      "options": [
+        "A. The policy document lacks mandatory digital signatures, violating ISO 27002:2022 formatting standards",
+        "B. Organizational controls without corresponding people controls (awareness, competence, responsibility) fail to achieve intended control objectives and create implementation ineffectiveness per ISO 27001:2022 Clause 6.1",
+        "D. People-focused controls are optional and serve only as supplementary documentation requirements",
+        "C. The organization should have 45 organizational controls instead of 37, indicating under-design"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 Clause 6.1 requires controls to be 'designed and implemented' effectively. People controls (A.6.1–A.6.8 in ISO 27002:2022) operationalize organizational policies through competence, awareness, and accountability mechanisms. Without them, policies remain theoretical.",
+      "justification_wrong": "Control effectiveness transcends formatting and is not optional. People controls directly enable policy enforcement. Underestimating their role undermines the entire ISMS structure and regulatory compliance obligations per ISO 27001:2022 requirements."
+    },
+    {
+      "num": 48,
+      "text": "An organization implements physical controls (A.11.1–A.11.3 in ISO 27002:2022) to protect sensitive data centers. However, remote workers access critical assets via technological controls without corresponding physical perimeter safeguards. How should the lead implementer address this hybrid risk scenario?",
+      "tag": "Physical-Technological Control Convergence",
+      "options": [
+        "C. Exclude remote workers from accessing sensitive data until identical physical controls are deployed at home offices",
+        "D. Document physical control gaps as low-risk since technological controls now dominate enterprise architecture",
+        "A. Prioritize technological encryption and authentication controls exclusively, as they supersede physical security requirements in remote work scenarios",
+        "B. Apply defense-in-depth strategy: maintain physical controls at primary facilities while implementing compensating technological controls (A.10.1–A.10.13) for remote access, aligned with risk tolerance per ISO 27001:2022 Clause 8.2"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 Clause 8.2 mandates risk-based treatment considering residual risk acceptance. Defense-in-depth across physical (14) and technological (34) domains addresses layered threats. Compensating controls maintain security posture where physical constraints exist, ensuring proportionate protection.",
+      "justification_wrong": "Mono-domain solutions (technology-only or physical-only) violate the integrated ISMS principle. Remote access without compensating controls creates exploitable gaps. Exclusion policies may breach operational continuity requirements without proper risk justification per ISO 27001:2022 governance."
+    },
+    {
+      "num": 49,
+      "text": "An organization's ISMS covers 93 ISO 27002:2022 controls across four domains. The lead implementer must justify control selection during an external audit. Which documentation best demonstrates evidence of informed decision-making per ISO 27001:2022 Clause 6.1?",
+      "tag": "Control Selection Justification",
+      "options": [
+        "C. A spreadsheet listing control titles without contextual analysis or risk linkage",
+        "B. Risk assessment outputs mapping identified risks to selected controls, with explicit justification for inclusions/exclusions, residual risk statements, and documented rationale linking controls to business context per Clause 8.2",
+        "D. ISO 27002:2022 control descriptions copied verbatim into the organizational policy document",
+        "A. A checklist confirming all 93 controls are implemented, signed by management"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 Clause 6.1 requires controls to be 'selected to address identified risks.' Clause 8.2 demands documented risk treatment decisions. Linking control selections to specific risk scenarios with residual risk acceptance evidence demonstrates compliance and informed governance accountability.",
+      "justification_wrong": "Checklist compliance without risk justification fails Clause 6.1 requirements. Generic documentation or copied controls lack organizational context. Auditors assess control appropriateness, not mere enumeration. Missing risk-to-control traceability indicates non-compliance with the Plan-Do-Check-Act cycle."
+    },
+    {
+      "num": 50,
+      "text": "A lead implementer conducts a control effectiveness assessment post-implementation across all ISO 27002:2022 domains. Which metric-driven approach best demonstrates ongoing compliance with ISO 27001:2022 Clause 9.1 (Monitoring and measurement)?",
+      "tag": "Control Effectiveness Measurement",
+      "options": [
+        "D. Auditor certification alone as sufficient evidence of ongoing control effectiveness, eliminating need for continuous monitoring",
+        "C. Monthly control status reports labeled 'compliant' or 'non-compliant' without investigation into root causes or effectiveness trends",
+        "A. Annual qualitative surveys asking staff if controls 'feel secure' without quantifiable benchmarks or domain-specific metrics",
+        "B. Domain-segregated KPIs with baseline metrics per theme (organizational policy adherence rates, people competency scores, physical access incident counts, technological vulnerability remediation timelines), reviewed quarterly and mapped to business impact per Clause 9.1"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 Clause 9.1 mandates 'monitoring and measurement' using defined criteria and KPIs. Domain-specific metrics (organizational policy compliance, people competency, physical incidents, tech vulnerabilities) enable trend analysis, root-cause investigation, and data-driven improvement aligning with Clause 10 (Improvement).",
+      "justification_wrong": "Qualitative surveys lack rigor required by Clause 9.1. Status labels without analysis miss systemic issues. External audits satisfy compliance verification but do not replace continuous internal monitoring obligations. Effective ISMS demands proactive, metric-driven performance management."
+    }
+  ]
+}

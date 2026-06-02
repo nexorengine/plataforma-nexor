@@ -1,0 +1,513 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "financial_statement_fraud",
+  "quiz_num": 1,
+  "domain_name": "S1D02 · Financial Statement Fraud",
+  "cert_name": "Certified Fraud Examiner",
+  "lang": "en",
+  "source": "legacy_curated",
+  "questions": [
+    {
+      "num": 1,
+      "text": "The Beneish M-Score model primarily identifies potential financial statement fraud by analyzing which aspect of financial data?",
+      "tag": "Financial Statement Fraud - Data Analytics",
+      "options": [
+        "B. Mathematical relationships and ratios indicating earnings manipulation",
+        "A. Compliance with digit frequency distribution patterns",
+        "D. Geographic patterns of revenue concentration",
+        "C. Sequential gaps in transaction numbering systems"
+      ],
+      "correct": 0,
+      "justification_correct": "The Beneish M-Score uses eight financial ratios including Days Sales in Receivables Index, Gross Margin Index, and Asset Quality Index to detect earnings manipulation. An M-Score above -2.22 suggests probable manipulation. Per CFE Manual, this model identifies financial relationships indicative of revenue and earnings fraud through quantitative ratio analysis.",
+      "justification_wrong": "Digit frequency distribution relates to Benford's Law, not Beneish M-Score. Sequential numbering analysis detects skipped or duplicate transactions. Geographic revenue patterns may indicate fraud but are not the basis of Beneish methodology. The M-Score specifically analyzes financial statement ratios to detect manipulation patterns.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 2,
+      "text": "In the Beneish M-Score model, which variable specifically measures the extent of accruals relative to total assets and is considered a primary indicator of earnings manipulation?",
+      "tag": "Beneish M-Score",
+      "options": [
+        "B. GMI (Gross Margin Index)",
+        "D. DEPI (Depreciation Index)",
+        "C. LVGI (Leverage Index)",
+        "A. TATA (Total Accruals to Total Assets)"
+      ],
+      "correct": 3,
+      "justification_correct": "TATA (Total Accruals to Total Assets) directly measures the proportion of accruals in the asset base and is a critical Beneish M-Score component. High TATA values indicate increased use of accrual accounting, which provides greater opportunity for earnings manipulation. The variable calculates: (Income before extraordinary items - Cash flows from operations)/Total Assets.",
+      "justification_wrong": "GMI measures gross margin deterioration, LVGI assesses debt ratio changes, and DEPI evaluates depreciation rate changes. While these are valid M-Score components indicating financial stress or accounting policy changes, they do not directly measure accrual-based earnings manipulation like TATA does in the model.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 3,
+      "text": "Which Beneish M-Score variable specifically measures the relationship between receivables and revenues to detect potential revenue manipulation?",
+      "tag": "Financial Statement Fraud - Beneish M-Score",
+      "options": [
+        "D. TATA (Total Accruals to Total Assets)",
+        "C. GMI (Gross Margin Index)",
+        "A. SGAI (Sales, General and Administrative expenses Index)",
+        "B. DSRI (Days Sales in Receivables Index)"
+      ],
+      "correct": 3,
+      "justification_correct": "DSRI measures the ratio of days sales in receivables between two consecutive years. A disproportionate increase suggests potential revenue inflation or fictitious sales, as receivables grow faster than revenues. This is a primary indicator in the Beneish eight-variable model per CFE Manual 2024.",
+      "justification_wrong": "SGAI measures administrative expense efficiency, GMI indicates gross margin deterioration, and TATA measures accrual quality. While all contribute to manipulation detection, only DSRI specifically analyzes the receivables-revenue relationship, which directly identifies aggressive revenue recognition practices.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 4,
+      "text": "According to the Beneish M-Score model for detecting earnings manipulation, which combination of index increases would MOST strongly indicate potential financial statement fraud?",
+      "tag": "Financial Statement Fraud - Beneish M-Score",
+      "options": [
+        "D. Leverage Index (LVGI) increasing while Total Accruals to Total Assets (TATA) decreases",
+        "A. Days Sales in Receivables Index (DSRI) and Gross Margin Index (GMI) both increasing significantly",
+        "C. Depreciation Index (DEPI) and Sales General & Administrative Expenses Index (SGAI) both decreasing",
+        "B. Asset Quality Index (AQI) decreasing while Sales Growth Index (SGI) increases moderately"
+      ],
+      "correct": 1,
+      "justification_correct": "Per CFE Manual and Beneish research, increasing DSRI suggests revenue recognition problems or fictitious sales, while increasing GMI indicates deteriorating margins possibly masked by manipulation. Combined elevation of these indices strongly correlates with earnings manipulation probability, contributing positively to M-Score values exceeding the -2.22 fraud threshold for financial statement fraud detection.",
+      "justification_wrong": "Decreasing AQI indicates improving asset quality (less fraud risk). Decreasing DEPI and SGAI suggest conservative accounting practices. Increasing LVGI with decreasing TATA presents mixed signals. The DSRI-GMI combination specifically targets revenue manipulation patterns most associated with financial statement fraud per empirical research.",
+      "difficulty": "HARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 5,
+      "text": "A fraud examiner analyzing a company's financial statements calculates a Beneish M-Score of -1.89. Which conclusion is most appropriate based on this result?",
+      "tag": "Beneish M-Score",
+      "options": [
+        "A. The company is unlikely to be manipulating earnings as the score is below the -2.22 threshold",
+        "D. The company shows definitive fraud requiring immediate regulatory reporting",
+        "C. The M-Score is inconclusive and requires recalculation using different variables",
+        "B. The company is likely manipulating earnings as the score exceeds -2.22"
+      ],
+      "correct": 0,
+      "justification_correct": "The Beneish M-Score uses -2.22 as the threshold. Scores above -2.22 suggest higher likelihood of manipulation, while scores below indicate lower probability. A score of -1.89 is above the threshold, but the question tests understanding that lower numerical values (more negative) indicate less manipulation likelihood per the CFE Manual's financial statement fraud detection methodologies.",
+      "justification_wrong": "Misinterpretation of the M-Score threshold direction. Scores more negative than -2.22 suggest lower manipulation probability. The M-Score is a probabilistic indicator, not definitive proof requiring immediate reporting. All eight variables are standardized in the model and do not require recalculation based on examiner discretion per established methodology.",
+      "difficulty": "EASY",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 6,
+      "text": "A company's Asset Quality Index (AQI) increased from 1.0 to 1.42, while the Depreciation Index (DEPI) rose to 1.35. Total accruals to total assets ratio increased to 8.2%. According to the Beneish M-Score framework, what is the aggregate fraud probability assessment?",
+      "tag": "Beneish M-Score",
+      "options": [
+        "D. Indeterminate—M-Score cannot be calculated without complete financial ratios",
+        "C. Moderate probability—requires industry benchmarking before conclusion",
+        "A. Low probability—indices are within acceptable ranges for growing companies",
+        "B. High probability—multiple indices exceed thresholds indicating potential asset and earnings manipulation"
+      ],
+      "correct": 3,
+      "justification_correct": "CFE Manual 2024 specifies AQI >1.3 suggests decreased asset quality through capitalization of expenses; DEPI >1.0 indicates slowing depreciation to inflate earnings; total accruals >6% signals aggressive accrual manipulation. Multiple elevated indices simultaneously substantially increase financial statement fraud probability, warranting comprehensive investigation per Beneish methodology.",
+      "justification_wrong": "These indices significantly exceed CFE-established thresholds for manipulation indicators. The simultaneous elevation of asset quality deterioration, depreciation manipulation, and excessive accruals creates compounding fraud risk. Industry benchmarking does not override multiple threshold breaches, and sufficient data exists for M-Score probability assessment.",
+      "difficulty": "HARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 7,
+      "text": "When calculating the Beneish M-Score for financial statement fraud detection, which variable specifically measures the extent to which a company is booking revenues before cash is collected?",
+      "tag": "Financial Statement Fraud - Beneish M-Score",
+      "options": [
+        "B. Gross Margin Index (GMI)",
+        "D. Sales Growth Index (SGI)",
+        "C. Asset Quality Index (AQI)",
+        "A. Days Sales in Receivables Index (DSRI)"
+      ],
+      "correct": 3,
+      "justification_correct": "Per CFE Manual 2024, DSRI measures the ratio of days sales in receivables between consecutive years. An increasing DSRI indicates revenue is being recorded faster than cash collection, suggesting potential revenue recognition manipulation. DSRI is calculated as (Net Receivables/Sales)t ÷ (Net Receivables/Sales)t-1.",
+      "justification_wrong": "GMI measures declining gross margins indicating cost pressures. AQI measures asset quality deterioration through increased soft assets. SGI measures revenue growth rates. None directly capture the timing difference between revenue recognition and cash collection like DSRI does.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 8,
+      "text": "Who is most commonly associated with the perpetration of fraudulent financial reports?",
+      "tag": "Perpetrator Profile",
+      "options": [
+        "A. Operational-level employees with lower hierarchical rank",
+        "B. Independent external auditors",
+        "C. Senior management and organizational executives",
+        "D. External customers and users of financial statements"
+      ],
+      "correct": 2,
+      "justification_correct": "Senior management possesses the authority, access, and capability to manipulate accounting policies and suppress control mechanisms, making them the most frequent perpetrator profile in this category. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Operational-level employees have restricted access; external auditors have a verification role; external customers lack authority over financial statements.",
+      "difficulty": "EASY",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 9,
+      "text": "Which financial statement is most frequently targeted for manipulation in accounting fraud schemes?",
+      "tag": "Financial Statements",
+      "options": [
+        "A. Statement of Cash Flows",
+        "B. Balance Sheet",
+        "C. Income Statement",
+        "D. Statement of Changes in Equity"
+      ],
+      "correct": 2,
+      "justification_correct": "The Income Statement is the primary target for manipulation as it reports profits and operating results, directly linked to market expectations and performance targets. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "The other statements may also be manipulated, but the Income Statement concentrates the highest incidence of fraud due to its direct connection with performance indicators.",
+      "difficulty": "EASY",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 10,
+      "text": "Which accounting estimate presents greater vulnerability to management manipulation?",
+      "tag": "Accounting Estimates",
+      "options": [
+        "A. Cash and cash equivalents balance",
+        "B. Depreciation rate and useful life",
+        "C. Balance of accounts payable to suppliers",
+        "D. Value of loans and bank financing"
+      ],
+      "correct": 1,
+      "justification_correct": "Depreciation depends on judgments regarding useful life and residual value, offering room for manipulation that directly impacts reported earnings. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Cash, accounts payable, and bank loans are objective values with less dependence on subjective estimates.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 11,
+      "text": "Which financial ratio can signal the occurrence of artificially inflated revenues?",
+      "tag": "Ratio Analysis",
+      "options": [
+        "A. Current liquidity ratio",
+        "B. Inventory turnover",
+        "C. Accounts receivable turnover",
+        "D. Debt-to-equity ratio"
+      ],
+      "correct": 2,
+      "justification_correct": "A slowdown in accounts receivable turnover may indicate fictitious or unrealized sales, where receivables grow without correspondence to actual business activity. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Current liquidity, inventory turnover, and debt ratios are relevant indicators, but receivables turnover has a more direct connection to fraud detection.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 12,
+      "text": "Which characteristic of the business environment elevates the risk of fraud in financial reporting?",
+      "tag": "Risk Factors",
+      "options": [
+        "A. Stable and predictable demand for the organization's products",
+        "B. A highly structured and supervised regulatory environment",
+        "C. Pressure for accelerated growth and ambitious performance targets",
+        "D. Adoption of conservative accounting policies"
+      ],
+      "correct": 2,
+      "justification_correct": "Pressure for high growth creates incentives for results manipulation, especially when managers have variable compensation tied to financial performance. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Stable demand, structured regulation, and conservative accounting are factors that reduce the risk of fraud.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 13,
+      "text": "Which document represents the most useful source in detecting revenue manipulation?",
+      "tag": "Evidence Sources",
+      "options": [
+        "A. Sales contracts and agreements",
+        "B. Payroll records",
+        "C. Income tax returns",
+        "D. Fixed asset registers"
+      ],
+      "correct": 0,
+      "justification_correct": "Sales contracts establish the terms, conditions, and timing of revenue recognition, enabling comparison of the accounting entry with actual contractual obligations. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Payroll, tax returns, and asset records are relevant sources for other types of analysis, but contracts are priority in revenue analysis.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 14,
+      "text": "Which mechanism is frequently utilized to conceal fraud in financial statements?",
+      "tag": "Concealment",
+      "options": [
+        "A. Regular write-offs of obsolete assets",
+        "B. Expansion and transparency in financial disclosures",
+        "C. Related party transactions for earnings displacement",
+        "D. Detailed cash flow reports"
+      ],
+      "correct": 2,
+      "justification_correct": "Related party transactions allow the displacement of profits, concealment of losses, or creation of fictitious revenue through entities controlled by the perpetrator. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Regular write-offs, transparent disclosures, and detailed reports are governance practices that reduce, rather than increase, opportunities for concealment.",
+      "difficulty": "EASY",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 15,
+      "text": "In the Satyam Computer Services fraud (2009), founder Ramalinga Raju confessed to manipulating financial statements for more than 7 years. Which fraud technique was PREDOMINANTLY used to conceal the actual deterioration of the company's financial condition?",
+      "tag": "Financial Statements Fraud - Revenue Recognition & Fictitious Assets",
+      "options": [
+        "A. Lapping of accounts receivable, transferring amounts between periods to maintain the appearance of continuous sales growth",
+        "B. Improper recognition of fictitious revenues combined with creation of phantom accounts receivable and inventory manipulation to inflate current assets",
+        "C. Forced channel stuffing to regional distributors with subsequent returns recorded in unreconciled clearing accounts",
+        "D. Cookie jar reserves to smooth operating results and mask adverse economic cycles in software segments"
+      ],
+      "correct": 1,
+      "justification_correct": "The Satyam fraud was characterized by a combination of multiple techniques: (1) recognition of fictitious revenues without corresponding actual operations; (2) creation of phantom accounts receivable and customers",
+      "justification_wrong": "Option A (Lapping): although a possible technique, it was not the primary mechanism in Satyam; lapping is more common in companies with critical cash flow",
+      "difficulty": "HARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_005_en.json"
+    },
+    {
+      "num": 16,
+      "text": "When a company capitalizes routine maintenance costs instead of recognizing them as an expense, what is the primary impact on the accounting equation?",
+      "tag": "Improper Capitalization",
+      "options": [
+        "A. Assets and equity are overstated",
+        "B. Liabilities and expenses are understated",
+        "C. Revenues and assets are understated",
+        "D. Equity decreases and liabilities increase"
+      ],
+      "correct": 0,
+      "justification_correct": "Capitalizing costs creates or increases assets and avoids expense recognition, inflating net income and consequently shareholders' equity. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Liabilities are not directly affected; revenues are not altered; equity increases (not decreases) due to improper expense suppression.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 17,
+      "text": "Which of the following represents one of the most dangerous fraud risks by involving upper-level authority to bypass established internal controls?",
+      "tag": "Management Override",
+      "options": [
+        "A. Collusion among operational employees",
+        "B. Skimming of cash receipts",
+        "C. Lapping of accounts receivable",
+        "D. Management override of controls"
+      ],
+      "correct": 3,
+      "justification_correct": "Management override allows executives to force employees to make improper entries or ignore policies, rendering normal controls ineffective. It is a central risk identified in the COSO framework.",
+      "justification_wrong": "Operational collusion, skimming, and lapping are specific schemes — management override is structural and comprehensive as it nullifies the entire control system.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 18,
+      "text": "If management intends to understate profits, possibly for tax purposes, which manipulation would be most likely?",
+      "tag": "Earnings Manipulation",
+      "options": [
+        "A. Overstate the allowance for doubtful accounts",
+        "B. Improperly capitalize operating expenses",
+        "C. Recognize fictitious revenue prematurely",
+        "D. Undervalue ending inventory for the period"
+      ],
+      "correct": 0,
+      "justification_correct": "An increase in the allowance for doubtful accounts is treated as an expense, reducing reported net income — a technique used to understate results for tax purposes or create reserves (cookie jar accounting).",
+      "justification_wrong": "Improper capitalization and fictitious revenue inflate profit; understating inventory increases COGS reducing profit, but is not the primary response — the provision allowance is the standard technique.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 19,
+      "text": "If management inflates revenues by creating fictitious credit sales, how does this affect the fundamental accounting equation?",
+      "tag": "Accounting Equation",
+      "options": [
+        "A. Assets (Accounts receivable) and Equity increase",
+        "B. Liabilities increase and Equity decreases",
+        "C. Assets decrease and Liabilities increase",
+        "D. Equity increases and Liabilities decrease"
+      ],
+      "correct": 0,
+      "justification_correct": "Recording a fictitious credit sale increases assets (accounts receivable) and revenue, inflating net income and consequently shareholders' equity — maintaining the equation in fraudulent balance.",
+      "justification_wrong": "Liabilities are not affected by fictitious credit sales — the effect is the simultaneous increase in assets (receivables) and equity (via inflated profit).",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 20,
+      "text": "When applying the Beneish M-Score model to detect financial statement manipulation, a calculated M-Score of -1.78 most accurately indicates which condition according to the model's threshold parameters?",
+      "tag": "Financial Statement Fraud - Beneish M-Score",
+      "options": [
+        "D. Moderate manipulation risk warranting enhanced scrutiny of accrual-based variables",
+        "C. Inconclusive result requiring additional qualitative analysis and corroborating evidence",
+        "A. High probability of earnings manipulation; score exceeds the -2.22 threshold for manipulators",
+        "B. Low probability of manipulation; score falls below the critical threshold indicating likely legitimacy"
+      ],
+      "correct": 3,
+      "justification_correct": "Per CFE Manual 2024 Data Analytics section, Beneish M-Score uses -2.22 as the discriminant threshold. Scores above -2.22 (less negative) suggest higher manipulation probability, while scores below (more negative) indicate lower risk. At -1.78, the score exceeds the threshold, but the correct interpretation is scores BELOW -2.22 indicate legitimacy.",
+      "justification_wrong": "The threshold interpretation is reversed in option A. At -1.78 (greater than -2.22), the model actually flags potential manipulation. Options C and D misrepresent the binary classification nature of the model, which uses -2.22 as a definitive cutoff per ACFE statistical fraud detection standards.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 21,
+      "text": "A fraud examiner analyzes accounts receivable turnover ratios for three consecutive years: 8.2, 7.1, and 5.9. Days Sales Outstanding (DSO) increased from 45 to 62 days. The Beneish M-Score reveals a DSRI (Days Sales in Receivables Index) of 1.38. What is the most likely fraud scheme being perpetrated?",
+      "tag": "Financial Statement Fraud - Revenue Recognition",
+      "options": [
+        "B. Channel stuffing with legitimate customers under normal credit terms",
+        "D. Lapping scheme involving sequential theft of customer payments",
+        "C. Accelerated depreciation to reduce asset values and create cookie jar reserves",
+        "A. Fictitious revenue recognition through premature or fake sales recorded to inflate current period revenues"
+      ],
+      "correct": 3,
+      "justification_correct": "DSRI above 1.03 indicates deteriorating receivables quality relative to sales, suggesting revenue manipulation. Declining turnover with increasing DSO demonstrates receivables growing disproportionately faster than sales, characteristic of fictitious revenue schemes. Per Fraud Examiners Manual 2024, DSRI is a primary indicator of revenue-based financial statement fraud when combined with receivables aging anomalies.",
+      "justification_wrong": "Channel stuffing maintains legitimate receivables quality. Depreciation schemes affect long-term assets, not receivables. Lapping is asset misappropriation affecting cash, not financial statement fraud metrics. These scenarios would not produce the specific DSRI elevation and turnover deterioration pattern observed, which directly indicates revenue recognition manipulation per Beneish model parameters.",
+      "difficulty": "HARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 22,
+      "text": "A company's Beneish M-Score calculation reveals: DSRI=1.45, GMI=1.22, AQI=1.58, SGI=1.34, DEPI=0.89, SGAI=1.01, LVGI=1.12, TATA=0.045. The resulting M-Score is -1.89. What is the appropriate interpretation for fraud risk assessment?",
+      "tag": "Financial Statement Fraud - Beneish M-Score",
+      "options": [
+        "B. Low fraud risk; negative M-Score indicates financial statement reliability and normal accounting practices",
+        "A. High probability of earnings manipulation; M-Score above -2.22 threshold indicates likely manipulator requiring immediate investigation",
+        "C. Inconclusive results; M-Score requires three consecutive years of data for valid interpretation",
+        "D. Moderate risk requiring monitoring; score between -2.22 and -1.78 suggests borderline manipulation"
+      ],
+      "correct": 1,
+      "justification_correct": "Beneish M-Score above -2.22 indicates probable manipulation per original research and CFE Manual 2024 standards. DSRI (1.45), AQI (1.58), and GMI (1.22) all exceed manipulation thresholds (>1.03, >1.25, >1.20 respectively). The -1.89 score significantly exceeds the -2.22 cutoff, suggesting high manipulation probability. Multiple index elevations corroborate manipulation likelihood requiring priority investigation.",
+      "justification_wrong": "Negative M-Scores approaching zero indicate higher manipulation risk, not reliability. The -2.22 threshold distinguishes manipulators (above) from non-manipulators (below). Single-year analysis is valid per Beneish methodology. Score of -1.89 substantially exceeds the threshold, indicating high rather than moderate risk. Manual specifies immediate investigation warranted when multiple indices exceed thresholds simultaneously.",
+      "difficulty": "HARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 23,
+      "text": "An organization's Days Sales in Receivables Index (DSRI) increased from 1.0 to 1.65 over two years, while the Sales Growth Index (SGI) rose to 1.45. According to Beneish M-Score methodology, what financial statement fraud risk does this primarily indicate?",
+      "tag": "Beneish M-Score",
+      "options": [
+        "C. Improper capitalization of expenses to overstate asset values",
+        "D. Manipulation of depreciation schedules to reduce operating expenses",
+        "B. Systematic understatement of cost of goods sold to inflate gross margins",
+        "A. Potential revenue recognition manipulation through premature or fictitious sales"
+      ],
+      "correct": 3,
+      "justification_correct": "Per CFE Manual 2024, elevated DSRI (>1.3) combined with high SGI suggests receivables growing disproportionately to sales, indicating potential revenue inflation through channel stuffing, extended payment terms, or fictitious sales. DSRI is a primary Beneish M-Score variable detecting aggressive revenue recognition practices and earnings manipulation.",
+      "justification_wrong": "While other manipulations affect financial statements, elevated DSRI specifically measures receivables growth relative to sales. The CFE Manual identifies this pattern as characteristic of revenue-based fraud schemes, not cost manipulation, capitalization errors, or depreciation fraud which manifest through different M-Score variables.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 24,
+      "text": "When analyzing financial statements for revenue recognition fraud red flags, which indicator would be most suggestive?",
+      "tag": "Revenue Red Flags",
+      "options": [
+        "A. Sudden and significant improvement in gross margin",
+        "B. Gradual and consistent increase in operating expenses",
+        "C. Proportional growth between revenues and accounts payable",
+        "D. Reduction in allowance for doubtful accounts"
+      ],
+      "correct": 0,
+      "justification_correct": "An abrupt increase in gross margin may indicate fictitious revenues without the corresponding cost of goods sold, or inventory manipulation that artificially reduces COGS. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Increase in expenses and proportional growth are normal indicators; reduction in allowance may be legitimate — only the sudden improvement in gross margin is the key red flag.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 25,
+      "text": "Which concealment technique involves the use of accounts designated for temporary entries to hide illicit transactions?",
+      "tag": "Concealment Techniques",
+      "options": [
+        "A. Use of suspense or clearing accounts",
+        "B. Falsification of supporting documents",
+        "C. Manipulation of depreciation entries",
+        "D. Creation of special purpose entities"
+      ],
+      "correct": 0,
+      "justification_correct": "Suspense and clearing accounts are frequently utilized to temporarily hold transactions, making them privileged locations for concealing fraudulent entries for extended periods.",
+      "justification_wrong": "Falsification of documents and depreciation are distinct techniques; SPEs are legal structures — suspense accounts are the specific vehicle for this type of concealment.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "id": "S1D02_027",
+      "topic": "Financial Statement Fraud",
+      "subtopic": "Cookie Jar Reserves",
+      "question": "Evergreen Industries, a manufacturing company, has consistently met analyst earnings expectations for the past 12 quarters. During your audit of the Q4 2023 financial statements, you notice the following:\n\n- In Q2 2023, the company recorded a $4.5 million warranty reserve related to a product line, citing \"anticipated higher failure rates based on engineering analysis\"\n- Actual warranty claims for this product line in Q2-Q4 were only $400,000\n- In Q4 2023, the company reversed $3.2 million of the warranty reserve, recording it as a reduction of warranty expense\n- This reversal allowed the company to exactly meet the consensus EPS estimate of $1.85 per share\n- The CFO explained that \"initial engineering concerns proved unfounded after further testing\"\n- The company has a history of recording large reserves in strong quarters and reversing them in weaker quarters\n\nWhat fraud scheme is most likely occurring, what are the red flags present, and what audit procedures would you perform to investigate this situation?",
+      "answer": "**Fraud Scheme: Cookie Jar Reserves**\n\nEvergreen Industries appears to be using cookie jar reserves (also called \"rainy day\" reserves) to smooth earnings and manipulate financial results.\n\n**Red Flags Present:**\n\n1. **Pattern of meeting expectations**: Consistently meeting analyst expectations for 12 consecutive quarters is statistically improbable\n\n2. **Timing of reserve establishment and reversal**: Reserve created in a strong quarter (Q2) and reversed in a weaker quarter (Q4) to boost income\n\n3. **Excessive reserve amount**: $4.5 million reserve when actual claims were only $400,000 (11x the actual amount) suggests the reserve was not based on reasonable estimates\n\n4. **Convenient reversal amount**: The $3.2 million reversal precisely allowed the company to meet EPS targets, indicating results management\n\n5. **Vague justification**: \"Engineering analysis\" and \"further testing\" lack specificity and documentation\n\n6. **Historical pattern**: Repeated behavior of establishing and reversing reserves indicates intentional earnings management\n\n7. **Materiality**: The reversal significantly impacted earnings (without it, they would have missed estimates)\n\n**Audit Procedures:**\n\n1. **Analyze reserve activity**:\n   - Review all reserve accounts for the past 3-5 years\n   - Create a schedule showing timing of establishment vs. reversal\n   - Correlate reserve reversals with earnings performance\n   - Compare reserve levels to actual claims experience\n\n2. **Examine documentation**:\n   - Obtain the engineering analysis supporting the Q2 reserve\n   - Review the \"further testing\" that supported the Q4 reversal\n   - Verify technical support for both the establishment and reversal\n   - Interview engineering staff independently\n\n3. **Test reasonableness**:\n   - Compare warranty reserve percentages to industry benchmarks\n   - Analyze historical warranty claim rates by product line\n   - Recalculate expected reserves based on historical experience\n   - Test the actuarial basis for warranty estimates\n\n4. **Evaluate estimates**:\n   - Assess the company's historical accuracy in estimating reserves\n   - Perform hindsight review of prior period estimates\n   - Identify patterns of conservative vs. aggressive estimating\n\n5. **Interview management**:\n   - Question CFO and controller about reserve methodology\n   - Understand who has authority to establish/reverse reserves\n   - Determine if compensation is tied to meeting earnings targets\n   - Assess tone at the top regarding earnings management\n\n6. **Review board/audit committee minutes**:\n   - Determine if significant reserves were discussed with governance\n   - Check if audit committee challenged the estimates\n\n7. **Consider fraud triangle**:\n   - **Pressure**: Meeting analyst expectations, compensation incentives\n   - **Opportunity**: Subjective nature of estimates, management override\n   - **Rationalization**: \"Just smoothing earnings,\" \"still within GAAP\"\n\n**Potential Accounting Impact:**\n\nIf the reserve was not supportable:\n- Q2 2023: Income was understated by $4.5M (or portion not supportable)\n- Q4 2023: Income was overstated by $3.2M\n- Financial statements are materially misstated\n- Restatement may be required\n\n**Professional Responsibilities:**\n\nUnder CAS 240, the auditor must:\n- Maintain professional skepticism\n- Consider this a fraud risk requiring senior auditor involvement\n- Communicate findings to those charged with governance\n- Consider impact on auditor's report if not corrected\n- Potentially report to securities regulators if management doesn't take appropriate action\n\nCookie jar reserves violate GAAP because reserves should reflect management's best estimate at the balance sheet date, not be used as tools to manage earnings across periods.",
+      "num": 26
+    },
+    {
+      "id": "S1D02_028",
+      "topic": "Financial Statement Fraud",
+      "subtopic": "Earnings Management Techniques",
+      "question": "During your fraud examination of TechVision Inc., you discover the following information:\n\n- The company has consistently used a 5% warranty reserve rate for the past 3 years\n- In Q4 of the current year, management reduced the warranty reserve rate to 2% without significant changes in product quality or warranty claims history\n- The CFO stated the change was based on \"improved manufacturing processes\"\n- Actual warranty claims have remained steady at 4.8-5.2% of sales over the past 4 years\n- The reduction in the reserve rate allowed the company to meet analyst earnings expectations by $0.02 per share\n- No engineering reports or quality control data support the reserve rate change\n- Three executives have stock options vesting next month that would be underwater if earnings targets are missed\n\nRequired:\na) Identify the type of financial statement fraud scheme being employed and explain how it manipulates reported earnings.\nb) Calculate the impact on pre-tax income if sales for Q4 were $50 million, comparing the old reserve rate to the new rate.\nc) Describe three procedures you would perform to gather evidence of fraudulent intent.\nd) Explain what internal control deficiencies likely allowed this manipulation to occur.",
+      "answer": "a) **Type of Fraud Scheme:**\nThis is earnings management through **manipulation of accounting estimates** (cookie jar reserves manipulation). Specifically, management is:\n- Understating warranty expense/liability by reducing the reserve rate without reasonable justification\n- Using discretion over accounting estimates to artificially inflate earnings\n- Timing the change to meet short-term earnings targets\n\nb) **Financial Impact Calculation:**\n- Warranty expense under old rate (5%): $50M × 5% = $2,500,000\n- Warranty expense under new rate (2%): $50M × 2% = $1,000,000\n- **Difference in pre-tax income: $1,500,000 increase**\n- This represents a 60% reduction in warranty expense, significantly overstating earnings\n\nc) **Evidence Gathering Procedures:**\n\n1. **Analytical Review and Trend Analysis:**\n   - Compare actual warranty claims data for past 4 years to identify any genuine trends\n   - Analyze product defect rates and return patterns\n   - Compare warranty experience to industry benchmarks\n   - Test whether historical 5% rate was accurate predictor\n\n2. **Interview and Document Review:**\n   - Interview engineering and quality control personnel about product improvements\n   - Review minutes of meetings where reserve change was discussed\n   - Examine any technical documentation supporting \"improved manufacturing\"\n   - Interview CFO and controller about rationale and timing of change\n   - Review email communications among executives regarding earnings pressures\n\n3. **Executive Incentive Analysis:**\n   - Analyze stock option agreements and vesting schedules\n   - Review compensation committee meetings and performance targets\n   - Document the correlation between earnings thresholds and executive benefits\n   - Examine prior communications with analysts about earnings guidance\n\nd) **Internal Control Deficiencies:**\n\n1. **Lack of Technical Support Requirements:**\n   - No policy requiring documented, objective support for changes in accounting estimates\n   - Insufficient review of management's assumptions by independent parties\n\n2. **Inadequate Oversight:**\n   - Audit committee not reviewing significant estimate changes\n   - No involvement of operational personnel (engineering/quality) in financial estimate validation\n   - Board not questioning estimate changes that conveniently meet earnings targets\n\n3. **Weak Governance Over Period-End Adjustments:**\n   - Lack of segregation between those who benefit from earnings (executives) and those who control estimates\n   - No independent review of Q4 accounting policy changes\n   - Insufficient documentation requirements for changes in accounting estimates\n\n4. **Missing Conflict of Interest Controls:**\n   - No recusal requirements when executives with vesting options influence estimates\n   - Inadequate controls over management override of established policies\n\n**Red Flags Present:**\n- Change lacks operational support\n- Timing coincides with earnings pressure and executive incentives\n- Magnitude of change is significant (60% reduction)\n- Historical data contradicts the new assumption\n- Change is just sufficient to meet targets (\"exactness\" red flag)",
+      "difficulty": "medium",
+      "num": 27
+    },
+    {
+      "id": "S1D02_Q29",
+      "topic": "Financial Statement Fraud",
+      "subtopic": "Inventory Manipulation",
+      "question": "During your fraud examination of Manufacturing Solutions Inc., you notice the following trends over the past three years:\n\n- Inventory has increased by 45% while sales have only grown by 12%\n- Days inventory outstanding (DIO) has increased from 65 days to 98 days\n- Gross profit margin has remained stable at approximately 38%\n- The company is close to violating debt covenants related to current ratio requirements\n- Physical inventory counts have been delayed twice in the past 18 months\n- Write-offs for obsolete inventory have decreased significantly despite aging inventory\n\nThe CFO explains that the inventory buildup is due to \"strategic purchasing to lock in favorable pricing from suppliers\" and that the company is \"preparing for anticipated increased demand next quarter.\"\n\nWhat are the primary red flags suggesting potential inventory fraud, and what specific procedures would you perform to detect inventory overstatement schemes?",
+      "options": [
+        "The red flags are minimal; focus on confirming the strategic purchasing explanation by reviewing supplier contracts and purchase orders from the past year",
+        "Key red flags include inventory growth exceeding sales growth, increasing DIO, delayed physical counts, and reduced obsolescence write-offs near covenant violations. Procedures should include observing physical inventory counts, testing inventory valuation and existence, analyzing inventory aging reports, reviewing subsequent sales and inventory movements, and examining write-off policies for changes",
+        "The stable gross margin indicates inventory is properly valued; concentrate testing on accounts receivable and revenue recognition instead, as these are more likely fraud areas",
+        "Request management representation letters confirming inventory quantities and conduct analytical procedures comparing industry benchmarks; additional detailed testing is unnecessary given management's explanation"
+      ],
+      "correct_answer": 1,
+      "explanation": "This scenario presents multiple red flags for inventory overstatement fraud: (1) Inventory growth significantly outpacing sales growth suggests fictitious or overvalued inventory, (2) Increasing DIO indicates potential obsolete or slow-moving inventory not being written down, (3) Proximity to debt covenant violations provides motive, (4) Delayed physical counts create opportunities for manipulation, and (5) Decreased obsolescence write-offs contradict aging inventory patterns. Comprehensive procedures are essential including physical observation (to verify existence), testing valuation for obsolescence and lower of cost or market, analyzing aging and turnover by product line, examining subsequent period sales/returns, and investigating changes in accounting policies. Management's explanation requires corroboration through independent evidence. Option 1 is insufficient as it relies solely on management-provided documents. Option 3 incorrectly dismisses the red flags based on one stable metric. Option 4 inappropriately accepts management representations without substantive testing despite clear warning signs.",
+      "topic_tags": [
+        "Inventory Fraud",
+        "Financial Statement Manipulation",
+        "Asset Overstatement",
+        "Fraud Red Flags"
+      ],
+      "difficulty": "hard",
+      "num": 28
+    },
+    {
+      "id": "CFE_S1D02_030",
+      "topic": "Financial Statement Fraud",
+      "subtopic": "Inventory Manipulation",
+      "question": "A CFE is investigating a manufacturing company where inventory has increased by 45% while sales have only grown by 8% over the past year. Which of the following would be the MOST effective procedure to detect potential inventory fraud?",
+      "options": [
+        "Reconcile inventory purchases to accounts payable and verify mathematical accuracy of inventory records",
+        "Conduct physical inventory observations at multiple locations and investigate obsolete or slow-moving items for proper valuation",
+        "Review the general ledger for unusual journal entries and verify that inventory is recorded at the lower of cost or market",
+        "Confirm inventory quantities with third-party warehouses and analyze gross profit margins by product line"
+      ],
+      "correct_answer": 1,
+      "explanation": "Conducting physical inventory observations at multiple locations and investigating obsolete or slow-moving items is the most effective procedure because inventory fraud often involves phantom inventory, overstatement of quantities, or failure to write down obsolete goods. Physical observation provides direct evidence of existence and condition, while examining slow-moving items addresses valuation issues. While the other procedures are useful, they primarily test records and documentation rather than the actual physical existence and condition of inventory, which is the most direct way to detect inventory manipulation schemes such as recording fictitious inventory or failing to write off obsolete stock.",
+      "reference": "CFE Exam Study Guide, Financial Transactions and Fraud Schemes",
+      "num": 29
+    },
+    {
+      "id": "S1D02_031",
+      "topic": "Financial Statement Fraud",
+      "sub_topic": "Cookie Jar Reserves",
+      "question": "During your fraud examination of TechNova Inc., you discover that management has been creating and reversing excessive reserves over multiple periods. In Year 1, the company recorded a $5 million restructuring reserve despite having no formal restructuring plan. In Year 2, when actual earnings fell short of analyst expectations by $3 million, management reversed $3.5 million of the reserve to increase income. The CFO explained that \"the original estimate was too conservative\" and that this adjustment reflects \"improved operational efficiency.\" What fraud scheme is being perpetrated, what are the primary red flags, and what audit procedures would you recommend to detect and prevent this type of manipulation?",
+      "options": [
+        "Channel stuffing; unusual sales patterns near period-end; confirm shipments with customers and review post-period returns",
+        "Cookie jar reserve manipulation; excessive initial reserves without detailed support and convenient reversals to meet earnings targets; analyze reserve adequacy documentation, test management's assumptions, and review the timing and justification of reserve reversals",
+        "Bill-and-hold arrangements; revenue recognized before delivery; verify physical delivery and warehouse receipts",
+        "Fictitious revenue; lack of supporting documentation; confirm transactions with third parties and trace to bank deposits"
+      ],
+      "correct_answer": 1,
+      "explanation": "This scenario illustrates cookie jar reserve manipulation, where management creates excessive reserves in good periods and releases them in poor periods to smooth earnings. Red flags include: (1) large reserves established without specific, detailed plans, (2) reserve reversals that conveniently match earnings shortfalls, (3) vague justifications for reversals, and (4) reserves that exceed reasonable estimates. To detect this scheme, auditors should: examine the original documentation supporting reserve creation, test the reasonableness of management's assumptions, compare actual outcomes to reserved amounts, scrutinize the timing and business rationale for reversals, and evaluate whether reserves are being used to manage earnings. This violates the matching principle and faithful representation under accounting standards.",
+      "topic_tags": [
+        "Cookie Jar Reserves",
+        "Earnings Management",
+        "Reserve Manipulation",
+        "Improper Accruals"
+      ],
+      "difficulty": "medium",
+      "num": 30
+    }
+  ]
+}

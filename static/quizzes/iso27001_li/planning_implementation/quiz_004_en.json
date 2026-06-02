@@ -1,0 +1,710 @@
+{
+  "cert_id": "iso27001_li",
+  "domain_id": "planning_implementation",
+  "quiz_num": 4,
+  "domain_name": "Planejamento e Implementação",
+  "cert_name": "ISO 27001 Lead Implementer",
+  "lang": "en",
+  "questions": [
+    {
+      "num": 1,
+      "text": "The ISMS manager identifies that policies are adequate, but employees are inconsistent in adhering to requirements. What is the most effective measure to resolve this issue?",
+      "tag": "Awareness and Training",
+      "options": [
+        "A. Review the policies to simplify compliance requirements",
+        "B. Conduct targeted training sessions to improve understanding and adherence",
+        "C. Increase the frequency of audits to detect non-conformities",
+        "D. Introduce more stringent disciplinary measures to ensure compliance"
+      ],
+      "correct": 1,
+      "justification_correct": "When policies are adequate and the problem is behavioral, the root cause is lack of competence or awareness. Targeted training addresses the root cause, transforming passive culture.",
+      "justification_wrong": "Reviewing adequate policies is unnecessary; increasing audits is reactive; disciplinary measures alone do not resolve the root cause of the problem."
+    },
+    {
+      "num": 2,
+      "text": "An e-commerce company using IaaS identifies that misconfigurations in virtual servers may cause data breaches. What is the MOST effective way to manage this risk in compliance with ISO/IEC 27001?",
+      "tag": "Configuration Management",
+      "options": [
+        "A. Monitor and regularly audit the IaaS provider's infrastructure for failures",
+        "B. Implement configuration management policy and conduct regular internal analyses of configurations",
+        "C. Rely on the provider's automated tools to detect and correct failures",
+        "D. Use a hybrid approach combining IaaS with on-premises servers to reduce risk"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001 requires documented and verifiable controls. The configuration management policy establishes the hardening standard, and internal analyses verify operational compliance — demonstrating control effectiveness.",
+      "justification_wrong": "Monitoring only the provider is insufficient; automated tools without internal policy do not demonstrate compliance; hybrid approach does not resolve misconfiguration risks."
+    },
+    {
+      "num": 3,
+      "text": "During ISMS implementation, the organization faces difficulties ensuring that new employees understand security policies. Which approach is most effective for transferring organizational knowledge?",
+      "tag": "New Employee Integration",
+      "options": [
+        "A. Distribute a comprehensive security policy manual during onboarding",
+        "B. Develop a structured integration program with practical training, mentoring, and centralized repository",
+        "C. Require new employees to attend a one-day awareness workshop",
+        "D. Provide access to the risk register to familiarize them with identified risks and controls"
+      ],
+      "correct": 1,
+      "justification_correct": "Effectiveness (Clause 9.1) is measured by results. Option B addresses tacit knowledge through mentoring and practical experience, while ensuring a centralized repository per Clause 7.5 (Documented Information).",
+      "justification_wrong": "Manual without practice does not ensure understanding; single workshop is insufficient; access to risk register is complementary, not a substitute for the integration program."
+    },
+    {
+      "num": 4,
+      "text": "The CISO of an e-commerce platform expresses concern about protecting a dynamic Big Data environment with multiple formats. Which Big Data characteristic should be prioritized to align with ISO/IEC 27001?",
+      "tag": "Big Data and Security",
+      "options": [
+        "A. Focus on variety of formats to ensure uniform protection of all types",
+        "B. Address volume of data to ensure sufficient storage capacity and backups",
+        "C. Prioritize velocity of generation to ensure real-time monitoring and rapid threat detection",
+        "D. Concentrate on a single data format to simplify security management"
+      ],
+      "correct": 2,
+      "justification_correct": "Velocity aligns with control A.8.16 (Event Logging) of ISO/IEC 27002:2022 and is the foundation for incident management (Clause 10.1 and controls A.5.24-A.5.28). Availability and integrity depend on rapid threat detection.",
+      "justification_wrong": "Variety and volume are important but secondary; focusing on a single format compromises the comprehensive scope required by the ISMS."
+    },
+    {
+      "num": 5,
+      "text": "During the ISMS planning phase, poorly defined and misaligned security objectives are identified. What is the most effective method to establish meaningful objectives?",
+      "tag": "Security Objectives",
+      "options": [
+        "A. Review organizational mission and vision and define objectives according to these statements",
+        "B. Use risk assessment results to formulate objectives directly linked to identified risks",
+        "C. Consult senior management to identify business objectives and align security objectives to support them",
+        "D. Compare objectives with those of organizations in the same sector to establish realistic targets"
+      ],
+      "correct": 2,
+      "justification_correct": "Consulting senior management (Clause 5.1 — Leadership and Commitment) ensures security objectives align with strategic business objectives, providing necessary direction and support.",
+      "justification_wrong": "Mission and vision are too abstract; isolated risks may ignore strategic context; sector benchmarking does not account for organization-specific needs."
+    },
+    {
+      "num": 6,
+      "text": "A technology company implementing ISO/IEC 27001 needs to ensure that confidential project documents remain undisclosed. Which control is most effective?",
+      "tag": "Confidentiality Controls",
+      "options": [
+        "A. Implement encryption for all documents during storage and transmission",
+        "B. Require employees to sign NDAs before accessing documents",
+        "C. Conduct regular internal audits to verify document security",
+        "D. Restrict document access to employees working on the specific project"
+      ],
+      "correct": 0,
+      "justification_correct": "Encryption technically ensures confidentiality during storage and transmission, preventing unauthorized disclosure even in case of unintended access to the medium. Aligns with control A.8.24",
+      "justification_wrong": "NDAs create legal obligations but not technical protection; audits identify issues but do not protect; access restriction does not protect during transmission"
+    },
+    {
+      "num": 7,
+      "text": "A healthcare service provider needs to protect EHRs against alteration or deletion by unauthorized individuals. Which control is most appropriate?",
+      "tag": "Data Integrity",
+      "options": [
+        "A. Configure Role-Based Access Control (RBAC) to restrict modification privileges",
+        "B. Conduct semi-annual awareness training for employees handling EHRs",
+        "C. Encrypt EHRs using AES-256 to ensure confidentiality",
+        "D. Implement disaster recovery plan to restore EHRs in case of loss"
+      ],
+      "correct": 0,
+      "justification_correct": "RBAC ensures that only individuals with authorized roles can modify or delete EHRs, protecting integrity. Aligns with control A.5.15 (Access control) from ISO/IEC 27002:2022",
+      "justification_wrong": "Training reduces human error but does not impose technical restrictions; encryption protects confidentiality, not integrity; DRP addresses data loss"
+    },
+    {
+      "num": 8,
+      "text": "An multinational organization identified non-conformities in an internal audit. Which action best demonstrates ISO/IEC 27001 compliance in monitoring and resolving non-conformities?",
+      "tag": "Corrective Actions",
+      "options": [
+        "A. Conduct root cause analysis for each non-conformity and update the audit report",
+        "B. Designate a responsible party for corrective action and ensure completion date is recorded",
+        "C. Escalate all non-conformities to management team for immediate resolution",
+        "D. Prioritize non-conformities by severity and document corrective actions taken"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001 (Clause 10.1) requires designation of responsibility and recording of completion dates for corrective actions, promoting accountability and timely resolution. The combination of responsibility and date tracking",
+      "justification_wrong": "Root cause analysis is necessary but insufficient alone; escalating everything to management is impractical; prioritization without follow-up does not meet requirements"
+    },
+    {
+      "num": 9,
+      "text": "During Stage 1 audit, the auditor raises concerns about the documented scope of the ISMS. What does this scenario illustrate about the difference between Stage 1 and Stage 2 audits?",
+      "tag": "Certification Audits",
+      "options": [
+        "A. Stage 1 validates operational effectiveness; Stage 2 assesses ISMS scope",
+        "B. Stage 1 ensures scope is clearly defined; Stage 2 evaluates its implementation within the scope",
+        "C. Stage 1 verifies alignment with legal requirements; Stage 2 verifies documentation completeness",
+        "D. Stage 1 identifies documentation problems; Stage 2 addresses documentation gaps not resolved"
+      ],
+      "correct": 1,
+      "justification_correct": "Stage 1 audit focuses on the adequacy of ISMS scope and documentation, while Stage 2 evaluates implementation and operational effectiveness within the defined scope. (PECB ISO/IEC 27001 Lead Auditor)",
+      "justification_wrong": "Operational effectiveness is the focus of Stage 2; Stage 1 is not limited to legal requirements; Stage 2 does not specifically address documentation gaps not resolved"
+    },
+    {
+      "num": 10,
+      "text": "A manufacturing company prepares its security procedures. The team suggests a single comprehensive procedure covering all requirements. What is the most effective way to structure procedures?",
+      "tag": "ISMS Documentation",
+      "options": [
+        "A. Develop a single procedure integrating all technical and administrative controls",
+        "B. Create a set of procedures tailored to specific processes and aligned with operational workflows",
+        "C. Rely on existing procedures by adding an annex with reference to ISO controls",
+        "D. Focus only on procedures for high-risk areas identified in the risk assessment"
+      ],
+      "correct": 1,
+      "justification_correct": "Procedures tailored to specific processes ensure practicality, alignment with work flows, and ease of use — supporting security integration into business processes as per Clause 5.1",
+      "justification_wrong": "A single procedure becomes overly complex; references without implementation do not ensure compliance; focusing only on high-risk areas creates gaps"
+    },
+    {
+      "num": 11,
+      "text": "An organization has outsourced operations to an external provider. What is the best approach to ensure that the provider's employees are trained on security requirements?",
+      "tag": "Third-Party Management",
+      "options": [
+        "A. Require the provider to implement their own training program and provide evidence",
+        "B. Include provider employees in the organization's training and awareness sessions",
+        "C. Provide the provider with access to training materials for independent application",
+        "D. Audit the provider periodically to ensure employees are trained"
+      ],
+      "correct": 1,
+      "justification_correct": "Including provider employees in the organization's training sessions ensures consistency in understanding and adherence to specific requirements, aligned with Clause 7.2 (Competence) and control A.5.20 (Addressing third-party requirements).",
+      "justification_wrong": "Leaving responsibility to the provider may result in misalignment; providing materials without oversight is inconsistent; auditing verifies but does not implement."
+    },
+    {
+      "num": 12,
+      "text": "A project manager finalizes the Risk Treatment Plan. Which action ensures conformity with ISO/IEC 27001 and practicality of implementation?",
+      "tag": "Risk Treatment",
+      "options": [
+        "A. Include only technical controls to ensure implementation with good cost-benefit ratio",
+        "B. Prioritize controls that address high-probability risks according to risk assessment",
+        "C. Ensure the plan includes justification for the selection or rejection of each control option",
+        "D. Limit the plan to controls specified in Annex A of ISO/IEC 27001"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001 (Clause 6.1.3) requires documented justification for the selection or exclusion of controls, ensuring that decisions are traceable and aligned with the organization's risk profile.",
+      "justification_wrong": "Limiting to technical controls ignores administrative and physical controls; probability alone disregards impact and risk appetite; Annex A is not prescriptive."
+    },
+    {
+      "num": 13,
+      "text": "Corrective actions from previous audits are not being closed within deadlines. What should the organization focus on when developing a corrective action plan?",
+      "tag": "Delays in Corrective Actions",
+      "options": [
+        "A. Establish a dedicated tracking tool to monitor the progress of all actions",
+        "B. Conduct risk assessment to determine the impact of delays on corrective actions",
+        "C. Investigate and address the root causes of delays in corrective action implementation",
+        "D. Increase the frequency of management review meetings to ensure prioritization"
+      ],
+      "correct": 2,
+      "justification_correct": "Investigating the causes of delays—resource constraints, lack of accountability, inefficiencies—addresses the root cause of the problem, aligned with Clause 10.1 of ISO 27001 on root cause analysis.",
+      "justification_wrong": "Tracking tools improve monitoring but do not address the root cause; risk assessment understands impact but does not resolve it; more frequent meetings do not guarantee timely closure."
+    },
+    {
+      "num": 14,
+      "text": "The regulatory landscape changes frequently, affecting the ISMS compliance obligations. Which action should be prioritized to ensure continuous monitoring?",
+      "tag": "Regulatory Monitoring",
+      "options": [
+        "A. Schedule periodic compliance audits to identify gaps caused by changes",
+        "B. Designate a dedicated compliance officer to monitor regulatory updates and their implications",
+        "C. Develop a process to review regulatory changes annually and implement updates",
+        "D. Use an automated tool to track changes and notify stakeholders immediately"
+      ],
+      "correct": 1,
+      "justification_correct": "A dedicated compliance officer ensures a continuous monitoring mechanism and interpretation of regulatory changes, aligned with Clause 4.2 (Interested parties) and Clause 6.1 (Actions to address risks and opportunities).",
+      "justification_wrong": "Periodic audits are reactive; annual review is insufficient for frequent changes; automated tools require human interpretation that only a dedicated officer can provide."
+    },
+    {
+      "num": 15,
+      "text": "In a follow-up audit, the corrective action plan for a major non-conformity does not specify how progress will be monitored. How should the auditor address this gap?",
+      "tag": "Corrective Action Plans",
+      "options": [
+        "A. Accept the plan as sufficient, as it addresses the key required elements",
+        "B. Require the organization to include monitoring mechanisms to track progress and ensure accountability",
+        "C. Recommend informal monitoring during regular management meetings",
+        "D. Defer evaluation of monitoring mechanisms until the next oversight audit"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001 requires documented monitoring mechanisms to track the progress of corrective actions, ensuring accountability and timely closure—without these mechanisms, supervision is ineffective.",
+      "justification_wrong": "A plan without monitoring is incomplete; informal monitoring lacks structure and documentation; deferring evaluation compromises ISMS effectiveness."
+    },
+    {
+      "num": 16,
+      "text": "Senior management requires regular information about ISMS alignment with strategic objectives. Which tool best supports continuous improvement while ensuring this alignment?",
+      "tag": "ISMS Metrics",
+      "options": [
+        "A. Strategic planning software to integrate ISMS objectives with organizational goals",
+        "B. KPI tracking tool to measure ISMS results",
+        "C. ERP system to connect ISMS data to operational workflows",
+        "D. Risk heat map to prioritize and visualize high-risk areas"
+      ],
+      "correct": 1,
+      "justification_correct": "A KPI tracking tool measures ISMS results against predefined objectives, ensuring strategic alignment and supporting continuous improvement as per Clause 9.1 (Monitoring, measurement)",
+      "justification_wrong": "Strategic planning software is high-level without continuous metrics; ERP connects operational workflows but does not measure ISMS performance; risk heat map visualizes"
+    },
+    {
+      "num": 17,
+      "text": "The ISMS implementation project is behind schedule during the gap analysis phase. Which action best demonstrates the application of project management principles?",
+      "tag": "ISMS Project Management",
+      "options": [
+        "A. Extend the project timeline to allow more time for gap analysis",
+        "B. Allocate additional resources and reallocate team members as needed",
+        "C. Reduce the scope of gap analysis to focus only on critical compliance areas",
+        "D. Skip the gap analysis phase and proceed directly to risk assessment"
+      ],
+      "correct": 1,
+      "justification_correct": "Allocating additional resources and reallocation demonstrates proactive project management principles—resource optimization and schedule management—ensuring quality without compromising the project",
+      "justification_wrong": "Extending timeline delays the entire project; reducing scope creates incomplete understanding of the current state; skipping gap analysis eliminates a critical phase"
+    },
+    {
+      "num": 18,
+      "text": "An internal audit discovers that user permissions for financial data have not been reviewed for over one year, with unnecessary access granted. Which Annex A control was neglected?",
+      "tag": "Access Controls",
+      "options": [
+        "A. A.9.2.5 - Review of user access rights",
+        "B. A.10.1.1 - Policy for the use of cryptographic controls",
+        "C. A.12.6.2 - Restrictions on software installation",
+        "D. A.18.1.4 - Privacy and protection of personally identifiable information"
+      ],
+      "correct": 0,
+      "justification_correct": "Control A.9.2.5 emphasizes periodic review of access rights to ensure access is based on current business needs, addressing the identified gap in user permission management",
+      "justification_wrong": "A.10.1.1 refers to cryptography; A.12.6.2 to software restrictions; A.18.1.4 to personal data privacy—none related to review of access rights"
+    },
+    {
+      "num": 19,
+      "text": "When selecting a certification body, one has broad sectoral experience but weak regional presence. How should the Lead Implementer advise the organization?",
+      "tag": "Certification Body Selection",
+      "options": [
+        "A. Recommend the body with regional specialization for better audit efficiency",
+        "B. Prioritize the body with sectoral specialization, regardless of regional presence",
+        "C. Select the body with the lowest cost to optimize the budget",
+        "D. Suggest a detailed comparison of audit methodology and resources between options"
+      ],
+      "correct": 3,
+      "justification_correct": "A thorough comparison of audit methodology and resources determines which body is best equipped for specific needs, balancing sectoral expertise and practical considerations",
+      "justification_wrong": "Regional presence is secondary to sectoral specialization; prioritizing only specialization ignores logistical challenges; cost should not compromise certification quality"
+    },
+    {
+      "num": 20,
+      "text": "Management expresses concern that internal audit reports do not provide sufficient actionable insights. What is the most effective way to increase the value of future reports?",
+      "tag": "Audit Reports",
+      "options": [
+        "A. Include detailed recommendations to address non-conformities and improvement opportunities",
+        "B. Add industry best practice summaries for comparison with the ISMS",
+        "C. Increase audit frequency to provide more data for analysis",
+        "D. Use advanced data analytics tools to identify trends in findings"
+      ],
+      "correct": 0,
+      "justification_correct": "Detailed and actionable recommendations transform audit findings into concrete improvements, aligning with ISO 27001's focus on continuous improvement and effective communication (Clauses 9.2 and 10.2)",
+      "justification_wrong": "Best practices provide context but do not address specific needs; more audits without quality improves quantity, not relevance; analytics identifies trends but requires recommendations"
+    },
+    {
+      "num": 21,
+      "text": "A financial institution needs to restrict access to customer data only to authorized personnel. Which Annex A control best addresses this requirement?",
+      "tag": "Access Control",
+      "options": [
+        "A. Implement network segmentation to isolate customer data from other systems",
+        "B. Assign unique user IDs to all personnel accessing the data",
+        "C. Conduct quarterly audits of data access permissions",
+        "D. Use multi-factor authentication (MFA) to access customer data systems"
+      ],
+      "correct": 1,
+      "justification_correct": "Unique user IDs ensure accountability and traceability per control A.5.16 (Identity management) of ISO/IEC 27002:2022, ensuring that each access is attributed to an individual",
+      "justification_wrong": "Network segmentation isolates systems but does not control access by user; audits are periodic and do not apply real-time control; MFA strengthens"
+    },
+    {
+      "num": 22,
+      "text": "During certification audit readiness analysis, employees cannot locate ISMS documentation relevant to their roles. What should the Lead Implementer do?",
+      "tag": "Audit Readiness",
+      "options": [
+        "A. Ensure centralized storage and provide access credentials to employees",
+        "B. Develop a quick reference guide summarizing key documents and distribute to employees",
+        "C. Conduct a training session to familiarize employees with the documentation structure and retrieval",
+        "D. Assign team leaders the task of handling document retrieval during the audit"
+      ],
+      "correct": 2,
+      "justification_correct": "Training ensures that employees can access and effectively use documentation during the audit, demonstrating genuine ISMS engagement. This addresses Clause 7.3 (Awareness) and",
+      "justification_wrong": "Centralized storage resolves access but not the knowledge gap; summary guide is insufficient; centralizing with leaders raises concerns"
+    },
+    {
+      "num": 23,
+      "text": "An audit identifies inconsistencies in security messaging communication between departments. What is the MOST effective way to implement a unified communication plan?",
+      "tag": "Security Communication",
+      "options": [
+        "A. Develop a centralized communication strategy with standardized templates for all departments",
+        "B. Allow each department to adapt communication methods to their specific needs",
+        "C. Focus communication efforts on high-risk departments as priority targets",
+        "D. Introduce quarterly security newsletters to update all employees on security matters"
+      ],
+      "correct": 0,
+      "justification_correct": "A centralized strategy with standardized templates ensures consistent and clear messaging across the organization, addressing identified inconsistencies and meeting communication requirements",
+      "justification_wrong": "Departmental adaptation introduces more inconsistencies; focusing on high-risk ignores broad organizational awareness; quarterly newsletters alone are"
+    },
+    {
+      "num": 24,
+      "text": "In analyzing the external context of the ISMS, which aspect should be included for a comprehensive definition?",
+      "tag": "Organization Context",
+      "options": [
+        "A. Internal organizational policies and procedures for information security",
+        "B. Applicable legal and regulatory requirements, supply chain relationships, and market conditions",
+        "C. Roles and responsibilities of employees in maintaining security",
+        "D. Security classification levels used internally for sensitive information"
+      ],
+      "correct": 1,
+      "justification_correct": "Clause 4.1 of ISO 27001 specifies that external context includes legal, regulatory, supply chain, and market conditions that influence the ISMS (ISO/IEC 27001:2022)",
+      "justification_wrong": "Internal policies, employee roles, and security classifications are elements of the internal context, not external"
+    },
+    {
+      "num": 25,
+      "text": "A financial institution uses a strong AI system for fraud detection, making decisions without human intervention. The compliance team raises concerns about lack of transparency. How should the organization address this?",
+      "tag": "AI and Compliance",
+      "options": [
+        "A. Continue using the system without changes, since its decisions are accurate and efficient",
+        "B. Implement a process to document and validate AI system decisions to ensure accountability",
+        "C. Replace the system with weak AI that provides only recommendations for human review",
+        "D. Limit the system to low-risk decisions to avoid compliance issues"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001 emphasizes accountability and traceability in processes. Documenting and validating AI decisions ensures transparency and alignment with compliance requirements (Clause 9.1 — Monitoring)",
+      "justification_wrong": "Continuing without transparency violates compliance requirements; replacing with weak AI sacrifices advanced capabilities unnecessarily; limiting to low-risk"
+    },
+    {
+      "num": 26,
+      "text": "Departments are not cooperating with auditors citing time and resource constraints, resulting in incomplete findings. What is the most effective step for the ISMS manager?",
+      "tag": "Audit Cooperation",
+      "options": [
+        "A. Escalate the issue to senior management to demand department cooperation",
+        "B. Reschedule audits to accommodate departmental resource availability",
+        "C. Develop a communication plan explaining the importance of audits and addressing concerns",
+        "D. Reduce the audit scope to focus on controls requiring fewer resources"
+      ],
+      "correct": 2,
+      "justification_correct": "A communication plan fosters cooperation by clarifying the value and necessity of audits, offering opportunity to collaboratively address resource issues — aligned with Clause 9.2 of ISO 27001.",
+      "justification_wrong": "Escalation forces compliance without addressing root causes; rescheduling may cause further delays; reducing scope compromises audit program effectiveness."
+    },
+    {
+      "num": 27,
+      "text": "A technology company needs to regularly communicate ISMS performance metrics to senior management. Which method is most appropriate?",
+      "tag": "Management Communication",
+      "options": [
+        "A. Include detailed performance report in quarterly board meetings for analysis and discussion",
+        "B. Send monthly email updates with key metrics and incident resolutions",
+        "C. Establish real-time dashboard with performance metrics accessible to senior management",
+        "D. Schedule semi-annual sessions with senior management to present performance and discuss improvements"
+      ],
+      "correct": 0,
+      "justification_correct": "Detailed reports in quarterly board meetings ensure senior management receives structured updates for informed decision-making, aligned with Clause 9.3 (Management Review) of ISO 27001.",
+      "justification_wrong": "Monthly emails lack depth and structured discussion; real-time dashboard may overwhelm without proper context; semi-annual meetings are insufficient for timely decisions."
+    },
+    {
+      "num": 28,
+      "text": "In risk assessment, a manager suggests that outdated software running on critical servers is the primary risk. How should the Lead Implementer explain the relationship between vulnerability, threat, and risk?",
+      "tag": "Risk Concepts",
+      "options": [
+        "A. Outdated software is a risk because it exposes the organization to potential attacks",
+        "B. Outdated software is a vulnerability that combined with a relevant threat results in risk",
+        "C. Outdated software is a threat because it creates opportunity to be exploited by malicious actors",
+        "D. Outdated software is an impact because it directly affects operations"
+      ],
+      "correct": 1,
+      "justification_correct": "Outdated software is a vulnerability — a weakness exploited by threats such as malware. Risk emerges from the combination of vulnerability + threat + potential impact, as per ISO 27005:2022 and terminology definitions.",
+      "justification_wrong": "Risk requires vulnerability + threat, not vulnerability alone; software is not an active agent (threat); impact refers to consequences of a realized risk."
+    },
+    {
+      "num": 29,
+      "text": "A Lead Implementer prepares for a second-party audit conducted by a customer evaluating ISMS compliance. How does this audit differ from first- and third-party audits?",
+      "tag": "Audit Types",
+      "options": [
+        "A. It is conducted to prepare the organization for certification by reviewing internal processes",
+        "B. It is conducted by a certification body to verify compliance with ISO/IEC 27001",
+        "C. It is conducted by the customer to evaluate compliance with contractual or agreed requirements",
+        "D. It is conducted to review the ISMS after certification aiming for continued compliance"
+      ],
+      "correct": 2,
+      "justification_correct": "Second-party audit is conducted by an external party — typically the customer — to evaluate compliance with specific contractual requirements. First-party audits are internal; third-party audits are by certification bodies.",
+      "justification_wrong": "Certification preparation is the focus of internal audits; independent verification for ISO 27001 is third-party; post-certification review refers to management review activities."
+    },
+    {
+      "num": 30,
+      "text": "An e-commerce company suffered a ransomware attack rendering the order processing system inaccessible for 48 hours. Which information security principle was primarily affected?",
+      "tag": "CIA Principles",
+      "options": [
+        "A. Confidentiality, because sensitive data was exposed during the attack",
+        "B. Integrity, because the ransomware potentially altered system functionality",
+        "C. Availability, because the system was inaccessible for 48 hours",
+        "D. Both integrity and availability, as the attack interrupted access and functionality"
+      ],
+      "correct": 2,
+      "justification_correct": "The ransomware attack caused system unavailability for 48 hours — primary and direct impact on availability, a pillar of the CIA triangle defined in ISO 27000:2018 as the property of being accessible and usable upon demand.",
+      "justification_wrong": "Confidentiality was not indicated as affected; integrity was not described as compromised; the primary and most direct impact was on availability."
+    },
+    {
+      "num": 31,
+      "text": "During a management review of an ISMS under implementation, the security manager presents data indicating that the technical competence of employees responsible for administering critical controls is insufficient. The organization has limited financial resources and needs to decide quickly on the strategy. Which of the following approaches is MOST aligned with the requirements of ISO 27001:2022?",
+      "tag": "Resource Management and Competence",
+      "options": [
+        "A. Defer the implementation of critical controls until external specialists with international certification can be hired.",
+        "B. Implement a structured internal competence development program, document knowledge gaps, establish realistic timelines, and monitor progress through defined metrics.",
+        "C. Maintain implementation according to the original schedule, documenting in the Statement of Applicability that lack of competence justifies non-application of controls.",
+        "D. Hire specialized service providers to execute all technical controls, fully transferring responsibility for competence to external parties."
+      ],
+      "correct": 1,
+      "justification_correct": "Clause 7.2 of ISO 27001:2022 requires the organization to determine and provide the resources necessary for the establishment, implementation, maintenance and continual improvement of the ISMS, including competence.",
+      "justification_wrong": "Option A: Deferring critical controls violates expected implementation timelines and clause 8.1 on planned and controlled operations. Option C: Using lack of competence to justify non-applicability contradicts the risk-based approach required by clause 6.2. Option D: Full outsourcing does not eliminate organizational responsibility for competence management as per clause 5.1."
+    },
+    {
+      "num": 32,
+      "text": "During a management review of an ISMS under implementation, the security manager presents data on the effectiveness of Annex A controls that were selected in the Statement of Applicability. It is identified that some implemented controls are not generating the expected results in terms of risk reduction. What should be the correct approach according to ISO 27001:2022 to ensure that the ISMS remains effective?",
+      "tag": "Management Review and Control Effectiveness",
+      "options": [
+        "A. Management must automatically delegate to the IT department the selection of new controls, as it is responsible for ISMS operation and implementation.",
+        "B. Management must review the results of monitoring and measurement of controls, consider changes in internal and external context, and evaluate whether the Statement of Applicability remains suitable.",
+        "C. Management must immediately replace all controls that do not demonstrate effectiveness with equivalent controls from other security frameworks.",
+        "D. Management must maintain the current controls as originally defined in the SoA, as modifications during operation compromise the integrity of the ISMS."
+      ],
+      "correct": 1,
+      "justification_correct": "According to ISO 27001:2022, clause 7.5 (documented information), clause 8.1 (operational planning), clause 9.3 (management review) and clause 6.2 (risk treatment process), management must continuously evaluate control effectiveness and adjust the ISMS accordingly.",
+      "justification_wrong": "Alternative A violates clause 5 (leadership and commitment), as ISMS responsibilities fall on management and cannot be delegated without supervision. Alternative C risks incompatibility with the organization's risk context. Alternative D contradicts the continual improvement principle in clause 10.3."
+    },
+    {
+      "num": 33,
+      "text": "During a management review of an ISMS under implementation, the operations director questions why the organization invests significant resources in awareness and competence development of employees on information security, when robust technical controls are already implemented. As a Lead Implementer, what is the CORRECT technical justification for maintaining this investment according to ISO 27001:2022?",
+      "tag": "Competence Management and Awareness",
+      "options": [
+        "A. Clause 7.2 of ISO 27001:2022 requires that every person working under the organization's control be competent, as technical controls depend on human behavior and decision-making for their effectiveness.",
+        "B. Technical controls are sufficient to guarantee information security, but awareness is necessary only to meet regulatory requirements in certain sectors.",
+        "C. Employee awareness is an optional activity that should be implemented only in organizations processing sensitive third-party data.",
+        "D. Investment in competence reduces immediate operational costs, eliminating the need for internal audit and management review, therefore justifying the discontinuation of other ISMS activities."
+      ],
+      "correct": 0,
+      "justification_correct": "Alternative A is correct because it aligns with clause 7.2 (Competence) and 7.3 (Awareness) of ISO 27001:2022. The standard establishes that the organization must ensure that persons working under its control are competent to perform security-related tasks, as human factors are critical to control effectiveness.",
+      "justification_wrong": "Alternative B is incorrect because it reduces awareness to mere compliance requirement, when in reality it is an essential operational component. Alternative C contradicts the mandatory nature of awareness in clause 7.3. Alternative D is factually incorrect as competence investments do not eliminate audit and review requirements."
+    },
+    {
+      "num": 34,
+      "text": "During a management review of an ISMS under implementation, it was identified that the technical competence of the information security team is insufficient to adequately manage activities for operation and monitoring of controls. The organization is considering three approaches: (1) hire external consultants on a full-time basis; (2) implement a structured training program with internal mentoring; (3) transfer all responsibilities to a managed service provider. Which approach best satisfies the requirements of ISO 27001:2022?",
+      "tag": "Competence and Resources Management",
+      "options": [
+        "A. Implement a structured internal training program with mentoring, associated with succession planning development and periodic competence assessment aligned with operational needs.",
+        "B. Hire external consultants on a full-time basis to execute all operational security activities.",
+        "C. Completely transfer responsibility to a managed service provider, eliminating the need for internal competence.",
+        "D. Document competence gaps and monitor them quarterly without implementing immediate corrective actions."
+      ],
+      "correct": 0,
+      "justification_correct": "Clause 7.2 of ISO 27001:2022 requires the organization to determine the competencies necessary for persons executing work under its control, and take actions to acquire or develop such competencies, building internal capability.",
+      "justification_wrong": "Alternative B violates the principle of internal responsibility and creates excessive external dependence without developing organizational capacity. Alternative C transfers accountability inappropriately and does not develop internal strategic capability. Alternative D fails to address identified gaps and contradicts the corrective action requirements in clause 10.2."
+    },
+    {
+      "num": 35,
+      "text": "During a management review of an organization implementing ISO 27001:2022, it is identified that the information security objectives established in the previous year were not achieved in 40% of cases. Management questions whether this indicates ISMS failure. What is the MOST appropriate approach to evaluate this situation according to ISO 27001:2022?",
+      "tag": "Management Review and Continual Improvement",
+      "options": [
+        "A. Establish new objectives with extended timelines and reduce performance targets, since the ISMS is still in the maturation phase, as per clause 8.1.",
+        "B. Execute root cause analysis of the unachieved objectives performance, evaluating the adequacy of allocated resources, available competencies and factors affecting achievement.",
+        "C. Disregard unachieved objectives and focus exclusively on compliance indicators with Annex A controls, as clause 9.3 prioritizes control compliance over objective achievement.",
+        "D. Transfer responsibility for unachieved objectives to operational managers and implement immediate corrective actions without evaluating whether the objectives themselves were realistic."
+      ],
+      "correct": 1,
+      "justification_correct": "The answer B is aligned with clause 9.3 (Management Review) of ISO 27001:2022, which establishes that the organization must review its ISMS at planned intervals to ensure its continued suitability, adequacy and effectiveness, including analysis of objective achievement and contributing factors.",
+      "justification_wrong": "Option A is incorrect because reducing targets and timelines without root cause analysis contradicts the continual improvement principle and does not address the actual causes of non-conformity. Option C is incorrect because objective achievement is essential to demonstrating ISMS effectiveness. Option D assigns responsibility inappropriately and may implement ineffective corrective actions based on unrealistic objectives."
+    },
+    {
+      "num": 36,
+      "text": "During a management review of an Information Security Management System (ISMS) at an advanced implementation stage, the IT Director questions why the organization continues to invest significant resources in employee competency and awareness, given that formal policies and robust technical controls are already in operation. What is the MOST APPROPRIATE response a Lead Implementer should provide, considering ISO 27001:2022?",
+      "tag": "Competency Management, Awareness, and Continuous Improvement",
+      "options": [
+        "A. Competency and awareness are mandatory continuous investments because ISO 27001:2022 clause 7.3 requires that all people who work in the context of the ISMS undergo annual mandatory training",
+        "B. Although technical controls are essential, clause 7.3 establishes that competency, awareness, and communication are fundamental to the effective design, implementation, maintenance, and continual improvement of the ISMS",
+        "C. Awareness must be maintained because certification auditors require evidence of continuous training programs for certificate renewal",
+        "D. Investments in competency and awareness should be reduced as the ISMS matures, maintaining only updated policy documentation"
+      ],
+      "correct": 1,
+      "justification_correct": "Answer B is correct because it aligns with ISO 27001:2022 clause 7.3, which establishes that the organization must ensure that persons with responsibility for the ISMS are competent, and clause 7.2 on communication emphasizes that competency, awareness, and communication are fundamental to effective ISMS operation throughout its lifecycle",
+      "justification_wrong": "Option A is incorrect because there is no requirement for 'mandatory annual training for all' in the standard—clause 7.3 requires that competency be ensured based on organizational needs and roles, not on a fixed frequency"
+    },
+    {
+      "num": 37,
+      "text": "During ISMS implementation in a medium-sized organization, the Information Security Manager identifies that the Statement of Applicability (SoA) was developed without adequately considering justified exclusions of Annex A controls. The organization claimed that certain controls are not applicable because operations are entirely cloud-based. What is the MOST APPROPRIATE approach for validating these exclusions?",
+      "tag": "Statement of Applicability and Annex A Controls",
+      "options": [
+        "A. Automatically accept all cloud-related exclusions, since cloud service providers assume full responsibility for implementing security controls",
+        "B. Perform mapping between risks identified in risk assessment, established security objectives, and each exclusion documented in the SoA to justify their applicability determination",
+        "C. Verify that the organization has implemented at least 85% of Annex A controls before permitting any exclusion, establishing a minimum percentage threshold",
+        "D. Completely delegate validation of exclusions to the certification body during Stage 2 audit, preventing the organization from performing self-assessment"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 clause 6.2 (Determining the scope of the ISMS) and guidance on SoA establish that exclusions of controls must be justified based on risk assessment outcomes and organizational context. Mapping between risks, objectives, and exclusions demonstrates this justification",
+      "justification_wrong": "Alternative A is incorrect because cloud migration does not eliminate the organization's responsibility for justifying control exclusions; the SoA must reflect the organization's risk acceptance and control mapping regardless of deployment model"
+    },
+    {
+      "num": 38,
+      "text": "During ISMS implementation planning in a medium-sized organization, the Implementation Manager identifies multiple stakeholders with conflicting interests: Executive leadership demands compliance with international regulations, operational teams pressure for maintaining productivity, and employees fear increased access restrictions. According to ISO 27001:2022, what approach best addresses these conflicting interests?",
+      "tag": "Internal and External Context and Interested Parties",
+      "options": [
+        "A. Map all interested parties, determine their needs and expectations relevant to the ISMS, document this understanding, and use it to establish context and strategic direction for the ISMS",
+        "B. Prioritize exclusively executive requirements, since they have final approval authority for the ISMS and their interests must prevail",
+        "C. Implement restrictive controls that equally balance all conflicting interests regardless of security relevance, to avoid stakeholder dissatisfaction",
+        "D. Delegate stakeholder management to the Human Resources department, concentrating the implementation manager exclusively on technical documentation"
+      ],
+      "correct": 0,
+      "justification_correct": "According to ISO 27001:2022 clause 4.1 (Understanding the organization and its context), the organization must determine external and internal issues relevant to its purpose and strategic direction that affect the ISMS. This includes identifying and considering the needs and expectations of interested parties",
+      "justification_wrong": "Option B is incorrect as it violates the principle of adequate context by prioritizing exclusively one stakeholder group. Option C is technically inadequate because security decisions must be risk-based, not equally balanced. Option D undermines integrated governance required for ISMS effectiveness"
+    },
+    {
+      "num": 39,
+      "text": "During a management review of an ISMS implemented for 12 months, the Information Security Manager presents data on the effectiveness of Annex A controls. Significant competency gaps are identified in the team responsible for implementing cryptographic controls, impacting the quality of configurations performed. What must be the most appropriate approach to address this situation?",
+      "tag": "Leadership, Competency, and Continuous Improvement",
+      "options": [
+        "A. Register the competency gap as a minor non-conformity in the next certification audit and await the certification body's audit",
+        "B. Immediately implement a specialized training and development program, document the action plan with timeline and responsibilities, and reassess control effectiveness after competency improvement",
+        "C. Replace the entire technical team, since ISO 27001:2022 does not permit operational continuity with insufficient cryptographic control competencies",
+        "D. Maintain controls in current operational status and only revise the Statement of Applicability to document that cryptographic controls are excluded due to competency limitations"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 answer B aligns with the standard's requirements. Clause 5.3 (Leadership and commitment) requires that leadership ensure necessary resources, including competency. Clause 7.2 (Competency) requires determining competency needs and taking actions to address gaps. Clause 10.3 requires continual improvement",
+      "justification_wrong": "Alternative A is inadequate: awaiting certification audit for corrective action violates the continual improvement principle (clause 10.3) and represents deferred risk management. Alternative C is excessive; competency development is the appropriate control response"
+    },
+    {
+      "num": 40,
+      "text": "During a management review of an ISMS implemented for 12 months, it was identified that the competency of employees responsible for information security incident management has not kept pace with evolving internal and external cyber threats. The IT Director proposes three alternatives: (1) include specific training in the annual competency development plan; (2) contract permanent external consultants specialized in incident management; (3) reduce incident management scope to only mandatory regulatory requirements. Which alternative best addresses this situation?",
+      "tag": "Competency Management and Management Review",
+      "options": [
+        "A. Alternative (1) is most appropriate, since ISO 27001:2022 requirement 7.2 requires the organization to determine and provide necessary resources for effective ISMS implementation, including competency development",
+        "B. Alternative (2) is preferable, since contracting permanent external consultants guarantees compliance with requirement 8.1 on ISMS operations",
+        "C. Alternative (3) is more efficient, since it addresses requirement 6.1 on addressing risks and opportunities, allowing all employees to focus on regulatory requirements",
+        "D. A balanced combination of all three alternatives is mandatory by ISO 27001:2022, since no specific requirement exists on internal competency development priority"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 clause 7.2 (Resources) establishes that the organization must determine and provide resources necessary for effective ISMS implementation. Clause 7.3 (Competency) specifies that the organization must ensure persons in the ISMS context are competent through appropriate education, training, or experience. Internal competency development is the primary responsibility",
+      "justification_wrong": "Alternative (2) violates the principle of organizational responsibility for ISMS. Although external parties may supplement competencies, clause 8.4 restricts this as temporary support. Alternative (3) fails to address the identified threat evolution and violates risk management principles by reducing scope"
+    },
+    {
+      "num": 41,
+      "text": "During a management review of an ISMS under implementation, the IT director questions why the organization invests significant resources in controls for threats assessed with very low probability. He suggests focusing only on risks with high or medium probability. What is the most appropriate response from a Lead Implementer, considering ISO 27001:2022 requirements?",
+      "tag": "Management Review and Residual Risk Context",
+      "options": [
+        "A. Agree with the director, as ISO 27001:2022 clause 9.2 establishes that only risks with high probability should have controls implemented",
+        "B. Explain that the decision on risk treatment must consider not only probability but also impact and risk acceptance criteria",
+        "C. Inform that the organization must implement all 114 controls in Annex A of ISO 27001:2022 regardless of risk assessment, as established in",
+        "D. Suggest eliminating formal risk assessment and replacing it with informal qualitative analysis, reducing documentation and focusing only on controls"
+      ],
+      "correct": 1,
+      "justification_correct": "Option B is correct because it adequately reflects ISO 27001:2022 requirements. Clause 6.1.3 (Determination of information security risks) establishes that assessment must consider",
+      "justification_wrong": "Option A is incorrect as it misrepresents clause 9.2 (Internal audit), which does not restrict controls only to high probability risks. Option C is"
+    },
+    {
+      "num": 42,
+      "text": "During a management review of an ISMS under implementation, it was identified that the organization has multiple internal and external contexts relevant to information security. The operations director questions whether it is necessary to formally document all these contexts or if a less rigorous approach would be acceptable for medium-sized companies. What is the correct technical response?",
+      "tag": "Internal and External Context / Interested Parties",
+      "options": [
+        "A. The organization MUST formally document all relevant internal and external contexts and their interested parties, as required by clause 4.1 of ISO",
+        "B. Medium-sized companies may opt for an informal approach, provided that contexts are considered in risk assessments, as permitted by",
+        "C. Documentation is optional if the organization demonstrates, through risk analysis, that the contexts do not significantly affect its information assets",
+        "D. Clause 4.1 permits documentation of only external contexts; internal contexts may be managed verbally by leadership"
+      ],
+      "correct": 0,
+      "justification_correct": "Clause 4.1 of ISO 27001:2022 'Understanding the organization and its context' requires that the organization determine external and internal issues relevant to its purpose and that affect its ability to",
+      "justification_wrong": "Option B is incorrect because ISO 27001:2022 does not differentiate requirements by organization size; clause 4.1 is universally applicable. Option C is"
+    },
+    {
+      "num": 43,
+      "text": "During a management review of an ISMS under implementation, it is identified that information security objectives were established without adequately considering the results of risk assessment and applicable legal and regulatory obligations. The IT director argues that the objectives were based only on industry best practices and team experience. What is the correct action?",
+      "tag": "Information Security Objectives and Regulatory Compliance",
+      "options": [
+        "A. Maintain the current objectives and document that risk assessment was considered afterwards, thus meeting the traceability requirement of",
+        "B. Review and redefine information security objectives based formally on identified risks, legal and regulatory obligations, and stakeholder expectations",
+        "C. Accept the existing objectives as they are aligned with best practices, replacing only those that directly conflict with regulatory requirements",
+        "D. Delegate to operational managers the responsibility of adjusting objectives as needed during implementation, without requiring approval"
+      ],
+      "correct": 1,
+      "justification_correct": "As per clause 6.2 of ISO 27001:2022, information security objectives must be established based on context (internal and external, interested parties), security policy, and",
+      "justification_wrong": "Option A is incorrect because it ignores that objectives not grounded in risk assessment and regulatory obligations violate clause 6.2 and do not ensure"
+    },
+    {
+      "num": 44,
+      "text": "During a management review of an ISMS implemented 12 months ago, the information security manager presents data indicating that compliance rate with Annex A controls is 87%, however the organization identified that 23% of employees have not completed the mandatory annual awareness training. When considering clause 9.3 (Management Review) and clause 7.3",
+      "tag": "Management Review, Awareness and Competence",
+      "options": [
+        "A. Accept the 87% compliance result as satisfactory, since most controls are implemented, and schedule the awareness training for",
+        "B. Identify the awareness gap as a significant risk that impacts the overall ISMS effectiveness, determine root causes (resources, priorities), and establish corrective actions",
+        "C. Immediately implement disciplinary measures for the 23% of employees who did not complete the training, regardless of circumstances",
+        "D. Consider that awareness is the exclusive responsibility of the Human Resources department and should not be included in management review discussions"
+      ],
+      "correct": 1,
+      "justification_correct": "Clause 9.3 (Management Review) of ISO 27001:2022 establishes that the direction must review the ISMS at planned intervals to ensure ongoing adequacy, sufficiency and effectiveness, considering",
+      "justification_wrong": "Option A ignores the normative requirement that awareness is an essential component of ISMS effectiveness and management review must address all"
+    },
+    {
+      "num": 45,
+      "text": "During a management review of an ISMS under implementation, the technology director questions why the organization invested significant resources in controls for risks assessed as 'low probability and low impact'. A consultant responds that these controls were selected to meet specific regulatory requirements of the sector. What does ISO 27001:2022 establish?",
+      "tag": "Control Selection and Statement of Applicability",
+      "options": [
+        "A. The results of the organization's risk assessment and treatment, considering internal and external context, must be the primary criterion, complemented by",
+        "B. Regulatory requirements of the sector must always take priority over risk assessment results, ensuring legal compliance regardless of",
+        "C. Selection must be based solely on the board of directors' opinion, which better understands the organization's risk tolerance",
+        "D. Controls must be selected only for risks with high probability and high impact, eliminating controls for low risks even if required"
+      ],
+      "correct": 0,
+      "justification_correct": "Clause 6.2 of ISO 27001:2022 establishes that the organization must determine information security risks based on its risk assessment (clause 6.1). Clause 6.2 also makes clear",
+      "justification_wrong": "Option B is incorrect because, while legal compliance is important and considered in context, ISO 27001:2022 does not establish that regulatory requirements take"
+    },
+    {
+      "num": 46,
+      "text": "During a management review of an Information Security Management System (ISMS) in a multinational organization, the Chief Information Security Officer identifies that the Statement of Applicability (SoA) was approved 18 months ago without formal review. Upon examining changes in internal context (acquisition of a new business unit) and external context (new sector regulations), he questions the continued adequacy of the selected controls. What is the most appropriate course of action in accordance with ISO 27001:2022?",
+      "tag": "Management of Statement of Applicability and Continuous Review",
+      "options": [
+        "A. Conduct an immediate SoA review considering changes in context, interested parties, and business objectives, documenting updated justifications for all controls.",
+        "B. Maintain the current SoA until the next annual management review cycle, since 18 months is not a sufficient period to justify changes to controls.",
+        "C. Automatically include all 93 controls from Annex A of the newly acquired business unit in the existing SoA without individual risk analysis.",
+        "D. Delegate the SoA review to the regulatory compliance department, limiting it exclusively to identified sector regulations."
+      ],
+      "correct": 0,
+      "justification_correct": "In accordance with ISO 27001:2022 clause 6.2 (Information security objectives) and clause 8.2 (Determining the scope of the ISMS), the organization must determine and regularly review the applicability of controls. Material changes in context (new business units, regulations) trigger immediate SoA reviews, not only annual reviews. The SoA must remain a living document reflecting the current organizational landscape.",
+      "justification_wrong": "Option B ignores that material changes in context trigger immediate SoA reviews, not just annual ones. Option C violates the requirement for individual risk assessment per clause 6.1. Option D inappropriately delegates responsibility that should involve information security leadership in alignment with clause 5.1 (Leadership and commitment)."
+    },
+    {
+      "num": 47,
+      "text": "During a management review of an ISMS implementation, the Information Security Manager presents data indicating that the competence of the implementation team is not adequate for the defined information security objectives. The organization plans to hire external consultants to address this gap. What is the MOST APPROPRIATE approach in accordance with ISO 27001:2022 to resolve this situation?",
+      "tag": "Resource Management and Competence",
+      "options": [
+        "A. Hire external consultants without formally defining expected competencies, since external expertise will naturally fill all gaps.",
+        "B. Document identified competence gaps, clearly define necessary competencies, establish selection criteria for consultants, and define knowledge transfer mechanisms to build internal capacity.",
+        "C. Maintain only internal staff and invest in generic information security training without focusing on competencies specific to the organization's context.",
+        "D. Delegate all competency responsibility to the Human Resources department without involvement from leadership or the information security manager."
+      ],
+      "correct": 1,
+      "justification_correct": "Clause 7.2 (Competence) of ISO 27001:2022 requires the organization to determine necessary competencies, evaluate the adequacy of existing competencies, and implement actions to acquire or develop competencies. Option B fully addresses this requirement by formalizing the process, establishing clear criteria, and ensuring knowledge transfer. This approach builds organizational capability while addressing immediate gaps.",
+      "justification_wrong": "Option A disregards the requirement to formalize competencies (7.2), creating risk that external consultants may not align with the organization's specific objectives. Option C ignores the need for specialized competencies. Option D violates the requirement for information security management involvement in clause 5.1 (Leadership and commitment)."
+    },
+    {
+      "num": 48,
+      "text": "During a management review of an ISMS implementation, the Compliance Director questions why the organization is investing significant resources in updating the traceability matrix of controls from Annex A of ISO 27001:2022 to the Statement of Applicability (SoA), when controls have already been selected. What is the most appropriate technical justification for this activity?",
+      "tag": "Statement of Applicability Management and Continuous Maintenance",
+      "options": [
+        "A. The SoA must be reviewed periodically and updated whenever there are changes in internal or external context, interested parties, or ISMS scope, ensuring continued alignment with organizational needs.",
+        "B. The SoA traceability matrix is a static document that, once approved by management, requires no frequent reviews because controls remain constant over time.",
+        "C. SoA updates are mandatory only when non-conformities are identified in internal or external audits, serving primarily as a corrective action mechanism.",
+        "D. Control traceability in the SoA aims exclusively at meeting requirements from external regulatory bodies and has no direct relationship with the organization's own risk management."
+      ],
+      "correct": 0,
+      "justification_correct": "In accordance with ISO 27001:2022, clause 6.2 (Information security risk determination) and clause 8.2 (Determining the scope of the ISMS), the SoA must be a living document reflecting the current organizational scenario. Clause 10.3 (Continual improvement) emphasizes that the organization must continuously improve the effectiveness of the ISMS, which requires periodic SoA reviews. The traceability matrix ensures that all organizational risks are properly addressed through selected controls and justifies exclusions.",
+      "justification_wrong": "Option B contradicts the continuous improvement approach (clause 10.3) and ignores that changes in context, interested parties, and business objectives require SoA updates. Option C limits reviews only to non-conformities, missing opportunities for proactive risk management. Option D overlooks that the SoA serves the organization's own risk management objectives, which may extend beyond regulatory requirements."
+    },
+    {
+      "num": 49,
+      "text": "During a management review of an ISMS implementation, the Operations Director questions why the organization maintains controls from Annex A that were not selected in the Statement of Applicability (SoA). The Information Security Manager responds that some controls were maintained even though they are not applicable to the current context. What is the technical implication of this decision in accordance with ISO 27001:2022?",
+      "tag": "Statement of Applicability and Annex A Controls",
+      "options": [
+        "A. It violates clause 6.2 of ISO 27001:2022, because the SoA must document explicit justifications for exclusions, and maintaining unselected controls creates ambiguity about control ownership and effectiveness measurement.",
+        "B. It is a recommended conservative practice that provides additional protection, although it implies unnecessary operational costs without impact on risk reduction.",
+        "C. It demonstrates a lack of understanding of ISMS scope per clause 4.3, allowing unnecessary controls to remain indefinitely without review and potentially wasting resources.",
+        "D. It is completely aligned with ISO 27001:2022, as there is no restriction on the number of controls implemented beyond the minimum required for risk treatment."
+      ],
+      "correct": 0,
+      "justification_correct": "Clause 6.2 of ISO 27001:2022 requires the organization to maintain and preserve documented information about the risk treatment process, including the Statement of Applicability that must contain information on which controls are applicable and why. Maintaining controls not included in the SoA creates confusion about control responsibilities, effectiveness measurement, and audit scope. This violates the principle of documented decision-making and creates gaps in governance and accountability.",
+      "justification_wrong": "Option B is incorrect because, while additional controls may provide extra protection, ISO 27001:2022 does not recommend maintaining controls without clear justification in the SoA. Option C, while identifying a problem, uses imprecise language about scope per clause 4.3. Option D misinterprets the standard—while organizations may implement additional controls, the SoA must document all controls actually implemented and managed, whether from Annex A or elsewhere."
+    },
+    {
+      "num": 50,
+      "text": "During a management review of an ISMS at intermediate maturity stage, it is identified that the technical competence of employees responsible for implementing Annex A controls has significant gaps. The organization has limited budget available for external training. Which approach BEST aligns with ISO 27001:2022 requirements and the philosophy of continuous improvement?",
+      "tag": "Competency Management and Personnel Development in the ISMS",
+      "options": [
+        "A. Implement a structured internal mentoring program combined with selective external training focused on key personnel, documenting competency development outcomes and measuring effectiveness against defined objectives.",
+        "B. Defer implementation of complex Annex A controls until sufficient financial resources are available to hire external consultants for full implementation.",
+        "C. Conduct generic information security training for all employees simultaneously, documenting only attendance records in management meeting minutes.",
+        "D. Transfer implementation responsibilities to an external managed services provider, eliminating the need for internal competency development."
+      ],
+      "correct": 0,
+      "justification_correct": "Option A fully aligns with clause 7.2 (Competence) of ISO 27001:2022, which requires the organization to determine necessary competencies, evaluate adequacy of existing competencies, and implement actions to acquire or develop competencies through training, mentoring, or reassignment. This approach is also consistent with clause 7.4 (Communication), which emphasizes internal communication about competencies. The combined approach of internal mentoring and selective external training is cost-effective, builds sustainable organizational capability, and demonstrates commitment to continuous improvement per clause 10.3.",
+      "justification_wrong": "Option B is inadequate because it defers control implementation, violating the implementation roadmap and increasing residual risk exposure. Option C fails to meet clause 7.2 requirements for role-specific competency development and lacks documented evidence of competency adequacy. Option D transfers responsibility externally rather than building internal capability as required by clause 7.2, reducing organizational control and creating dependency risks."
+    }
+  ]
+}

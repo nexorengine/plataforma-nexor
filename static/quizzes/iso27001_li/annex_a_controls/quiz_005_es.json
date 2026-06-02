@@ -1,0 +1,710 @@
+{
+  "cert_id": "iso27001_li",
+  "domain_id": "annex_a_controls",
+  "quiz_num": 5,
+  "domain_name": "Controles Anexo A — ISO 27002",
+  "cert_name": "ISO 27001 Lead Implementer",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "En ISO 27002:2022, el control 5.1 (Políticas de seguridad de la información) se clasifica en el tema:",
+      "tag": "Clasificación de Controles",
+      "options": [
+        "C. Controles Físicos",
+        "A. Controles Tecnológicos",
+        "B. Controles Organizacionales",
+        "D. Controles de Personas"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27002:2022 organiza 93 controles en 4 temas. El control 5.1 de políticas pertenece a 37 controles Organizacionales (Governance), que definen marcos, políticas y procesos de SGSI a nivel directivo y estratégico.",
+      "justification_wrong": "Controles Tecnológicos (34) incluyen criptografía y control de acceso; Físicos (14) cubren instalaciones; Personas (8) aborda competencia y conciencia. Las políticas son responsabilidad organizacional y governance."
+    },
+    {
+      "num": 2,
+      "text": "¿Cuál es la diferencia fundamental entre ISO 27001:2022 e ISO 27002:2022?",
+      "tag": "Marcos Normativos",
+      "options": [
+        "D. Ambas establecen exactamente los mismos requisitos sin diferencia",
+        "C. ISO 27002 es de aplicación obligatoria; ISO 27001 es voluntaria",
+        "B. ISO 27001 solo cubre controles tecnológicos; ISO 27002 abarca todos los temas",
+        "A. ISO 27001 es normativa y auditable; ISO 27002 es orientativa con catálogo de controles"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 es normativa, define requisitos del SGSI y es auditable para certificación. ISO 27002:2022 proporciona catálogo de 93 controles (orientativo, no auditables directamente) agrupados en 4 temas para implementación según riesgos.",
+      "justification_wrong": "ISO 27001 abarca todos los temas mediante riesgos. ISO 27002 es complementaria, no obligatoria pero recomendada. ISO 27002 no reemplaza requisitos de 27001, sino facilita su implementación técnica y de controles."
+    },
+    {
+      "num": 3,
+      "text": "Conforme ISO 27001:2022 cláusula 6.1, la evaluación de riesgos de seguridad de la información debe incluir:",
+      "tag": "Evaluación de Riesgos",
+      "options": [
+        "B. Identificación de activos, amenazas, vulnerabilidades y cálculo de riesgos residuales",
+        "D. Evaluación anual obligatoria sin revisiones intermedias",
+        "A. Solo identificación de amenazas sin considerar vulnerabilidades",
+        "C. Únicamente cumplimiento normativo sin análisis técnico"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1.2 requiere evaluación integral: identificación de activos, amenazas, vulnerabilidades y evaluación de probabilidad/impacto. La cláusula 6.1.3 establece retención de información sobre riesgos evaluados y residuales.",
+      "justification_wrong": "Amenazas aisladas son insuficientes sin vulnerabilidades. Cumplimiento es requisito separado (4.2). La norma requiere evaluación continua (cláusula 6.1.1) y documentación de riesgos residuales aceptados, no cadencia fija."
+    },
+    {
+      "num": 4,
+      "text": "¿Cuál es el objetivo de la cláusula 7.5 (Control de cambios) en ISO 27001:2022?",
+      "tag": "Gestión del Cambio",
+      "options": [
+        "D. Autoridad exclusiva del departamento técnico sin participación de otras áreas",
+        "B. Asegurar que cambios en SGSI se evalúen, aprueban y documentan para mantener efectividad",
+        "A. Eliminar todos los cambios en sistemas de información",
+        "C. Reemplazar evaluación de riesgos por procedimientos de cambio"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 7.5 requiere que la organización controle cambios en SGSI: evaluación de impacto, aprobación antes de implementación, documentación y revisión post-implementación para asegurar que la seguridad se mantiene efectiva.",
+      "justification_wrong": "Cambios son necesarios en evolución de riesgos. Control de cambios es complementario, no reemplazo de evaluación de riesgos. Requiere participación multidisciplinaria (seguridad, operaciones, negocios) según cláusula 5.3 sobre roles."
+    },
+    {
+      "num": 5,
+      "text": "Conforme ISO 27001:2022, ¿cuál es el propósito principal del contexto de la organización en la fase de planificación del SGSI?",
+      "tag": "Organizacionales - Contexto y Gobernanza",
+      "options": [
+        "B. Establecer únicamente los controles técnicos necesarios para cumplimiento normativo",
+        "C. Documentar exclusivamente los riesgos de ciberseguridad identificados",
+        "A. Identificar partes interesadas, amenazas externas, internas y determinar el alcance del SGSI",
+        "D. Definir políticas de recursos humanos y capacitación del personal"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 4.1 ISO 27001:2022 establece que la organización debe determinar cuestiones externas/internas, partes interesadas relevantes y alcance del SGSI. Esto constituye la base para planificación efectiva e identificación sistemática del contexto organizacional.",
+      "justification_wrong": "Las opciones B, C y D representan aspectos parciales del SGSI. Los controles técnicos (B) se establecen post-evaluación de riesgos; los riesgos de ciberseguridad (C) son resultado del análisis contextual; recursos humanos (D) son consecuencia de la gobernanza definida."
+    },
+    {
+      "num": 6,
+      "text": "En ISO 27002:2022, el control 5.1 (Políticas de seguridad de la información) se clasifica como Organizacional. ¿Cuál es su contribución directa a la efectividad del SGSI?",
+      "tag": "Organizacionales - Políticas y Gobierno",
+      "options": [
+        "B. Reemplazar completamente la evaluación de riesgos en la organización",
+        "D. Automatizar los procesos de monitoreo de incidentes de seguridad",
+        "C. Garantizar la eliminación total de vulnerabilidades técnicas identificadas",
+        "A. Proporcionar marco de referencia normativo que alinea decisiones de seguridad con objetivos organizacionales"
+      ],
+      "correct": 3,
+      "justification_correct": "Control 5.1 ISO 27002:2022 establece políticas documentadas que comunican expectativas de seguridad y alinean recursos. Proporciona dirección estratégica esencial para coherencia decisional y gobernanza efectiva del SGSI según cláusulas 5.2 y 6.1 de ISO 27001:2022.",
+      "justification_wrong": "Opción B confunde políticas con evaluación de riesgos (procesos complementarios). Opción C atribuye eliminación de vulnerabilidades técnicas que requieren controles específicos (8.1-8.4). Opción D automatización es función de tecnología, no de política marco."
+    },
+    {
+      "num": 7,
+      "text": "Respecto a ISO 27002:2022 control 6.1 (Roles y responsabilidades), ¿cuál es la implicación crítica para la gobernanza del SGSI según ISO 27001:2022 cláusula 5.3?",
+      "tag": "Personas - Responsabilidades y Autoridad",
+      "options": [
+        "B. Centralizar todas las decisiones de seguridad en el departamento de TI exclusivamente",
+        "A. Asignar autoridad, responsabilidad y rendición de cuentas claras para SGSI, incluyendo rol de responsable de SGSI",
+        "C. Delegar responsabilidades de seguridad únicamente al personal técnico calificado",
+        "D. Establecer comités de seguridad sin necesidad de designar responsable específico"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 5.3 exige que la organización asigne responsabilidades claras, incluyendo designación de responsable SGSI con autoridad suficiente. Control 6.1 ISO 27002:2022 operacionaliza este requisito mediante definición explícita de roles, responsabilidades y rendición de cuentas.",
+      "justification_wrong": "Opción B vulnera principio de responsabilidad compartida y control 6.1. Opción C restringe excesivamente responsabilidades que requieren participación multidisciplinaria. Opción D contradice cláusula 5.3 que exige designación explícita de responsable con competencia demostrada."
+    },
+    {
+      "num": 8,
+      "text": "En ISO 27002:2022, el control 7.1 (Perímetro físico) se clasifica como control Físico. ¿Cómo contribuye a la prevención de acceso no autorizado conforme ISO 27001:2022 objetivo A.5.2?",
+      "tag": "Físicos - Control de Acceso Perimetral",
+      "options": [
+        "B. Implementar exclusivamente controles biométricos avanzados para autenticación de personal",
+        "C. Reemplazar monitoreo electrónico mediante protección física únicamente",
+        "A. Establecer barreras físicas (muros, vallas, cercos) que prevengan acceso no autorizado a áreas sensibles",
+        "D. Garantizar que solo empleados con credenciales digitales puedan transitar instalaciones"
+      ],
+      "correct": 2,
+      "justification_correct": "Control 7.1 ISO 27002:2022 establece perímetro físico como primera línea defensiva contra acceso no autorizado. Objetivo A.5.2 (Acceso a áreas) requiere control de entrada mediante barreras físicas combinadas con procedimientos administrativos, creando defensa en profundidad.",
+      "justification_wrong": "Opción B confunde niveles de control; biometría es complementaria (7.2) a perímetro. Opción C genera falsa dicotomía; ambos controles son necesarios según defensa en capas. Opción D mezcla control lógico con físico, siendo complementarios no sustitutivos."
+    },
+    {
+      "num": 9,
+      "text": "Conforme ISO 27002:2022 control 8.1 (Dispositivos de usuario final), ¿cuál es la medida preventiva fundamental contra compromiso de activos tecnológicos en endpoint?",
+      "tag": "Tecnológicos - Gestión de Dispositivos Terminales",
+      "options": [
+        "D. Automatizar eliminación remota de datos sin consentimiento del usuario para mitigación de riesgos",
+        "B. Instalar únicamente antivirus sin necesidad de políticas documentadas de control",
+        "A. Implementar políticas de dispositivos que establezcan requisitos de configuración, inventario y ciclo de vida",
+        "C. Prohibir completamente el uso de dispositivos personales en operaciones organizacionales"
+      ],
+      "correct": 2,
+      "justification_correct": "Control 8.1 ISO 27002:2022 requiere políticas documentadas para gestión integral de dispositivos terminales: inventario, asignación, configuración, mantenimiento y disposición. Constituye base para ISO 27001:2022 objetivo A.8.1 (Control de activos) y prevención de compromiso mediante gobernanza sistemática.",
+      "justification_wrong": "Opción B subestima alcance; antivirus sin política es medida reactiva incompleta. Opción C es inflexible; control 8.2 permite BYOD con restricciones apropiadas. Opción D viola privacidad y normativas de datos; disposición requiere procedimientos autorizados documentados."
+    },
+    {
+      "num": 10,
+      "text": "Según ISO/IEC 27001:2022, ¿cuál es el propósito principal de establecer criterios de aceptación de riesgos en la fase de planificación del SGSI?",
+      "tag": "Gestión de Riesgos",
+      "options": [
+        "C. Asegurar que todos los riesgos sean transferidos a terceros mediante seguros",
+        "B. Eliminar completamente todos los riesgos identificados mediante controles técnicos avanzados",
+        "A. Definir el nivel máximo de riesgo tolerable para la organización y servir como base para evaluaciones posteriores",
+        "D. Establecer penalizaciones económicas para incumplimientos de seguridad"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022, cláusula 6.1.3 establece que los criterios de aceptación de riesgos definen el umbral de tolerancia organizacional. Esto permite evaluar si riesgos residuales son aceptables post-tratamiento, fundamentando decisiones de implementación de controles.",
+      "justification_wrong": "La eliminación total (B) es inviable; la transferencia (C) no es obligatoria; las penalizaciones (D) no son propósito de criterios de aceptación según normativa."
+    },
+    {
+      "num": 11,
+      "text": "En ISO/IEC 27002:2022, el control 5.15 (Monitoreo de actividades) requiere registro de eventos de seguridad. ¿Cuál es el requisito mínimo de retención de logs según las mejores prácticas?",
+      "tag": "Controles Tecnológicos",
+      "options": [
+        "C. Indefinidamente en todos los sistemas sin límite de almacenamiento",
+        "A. Mínimo 3 meses en línea y 1 año en almacenamiento de archivo para análisis forense",
+        "D. Una semana en línea suficiente para respuesta a incidentes inmediatos",
+        "B. Solo durante el período operativo del sistema, sin obligación de retención histórica"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27002:2022, control 5.15 e ISO 27035-1 recomiendan retención mínima de 3 meses en línea para investigación activa y 12 meses en archivo para análisis forense y cumplimiento legal, balanceando detectabilidad con costo.",
+      "justification_wrong": "Período operativo (B) insuficiente; retención indefinida (C) impracticable; 1 semana (D) no permite investigaciones complejas ni cumplimiento regulatorio."
+    },
+    {
+      "num": 12,
+      "text": "Conforme ISO/IEC 27001:2022 cláusula 8.1, durante la implementación de controles de seguridad, ¿cuál debe ser el enfoque para garantizar su efectividad?",
+      "tag": "Implementación y Operación",
+      "options": [
+        "A. Implementar todos los controles simultáneamente para maximizar cobertura de riesgos",
+        "C. Seleccionar solo controles de bajo costo para optimizar presupuesto asignado",
+        "B. Priorizar controles según criticidad de activos, vulnerabilidades y residual de riesgos evaluado",
+        "D. Implementar controles únicamente recomendados por proveedores de tecnología"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022, cláusula 8.1 especifica que controles deben seleccionarse y priorizarse según evaluación de riesgos, criticidad de activos informacionales y resultados de análisis gap, asegurando alineación con objetivos organizacionales.",
+      "justification_wrong": "Implementación simultánea (A) arriesga fallas coordinadas; bajo costo (C) ignora necesidades de riesgos; dependencia de proveedores (D) compromete independencia de decisiones."
+    },
+    {
+      "num": 13,
+      "text": "Según ISO/IEC 27002:2022, el control 6.7 (Ingeniería social) requiere conciencia de empleados. ¿Cuál debe ser la frecuencia mínima de capacitación en seguridad recomendada?",
+      "tag": "Controles de Personas",
+      "options": [
+        "A. Anualmente al menos, con enfoque en simulaciones de phishing y vector de ataque actual",
+        "B. Una capacitación única en onboarding suficiente durante toda la relación laboral",
+        "D. Trimestralmente sin excepciones, independientemente del rol o criticidad",
+        "C. Solo para personal de TI; otras áreas no requieren entrenamiento especializado"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27002:2022, control 6.7 e ISO 27035 recomiendan capacitación mínima anual con refuerzo continuo, incluyendo simulaciones de phishing y amenazas emergentes para mantener conciencia activa en toda la población.",
+      "justification_wrong": "Capacitación única (B) obsoleta; exclusión de áreas (C) aumenta vulnerabilidad; frecuencia trimestral (D) impracticable, aunque mayor capacitación es beneficiosa."
+    },
+    {
+      "num": 14,
+      "text": "En ISO/IEC 27001:2022, ¿cuál es el mecanismo normativo para demostrar que el SGSI mantiene conformidad continua y es efectivo en tiempo de auditoría?",
+      "tag": "Verificación y Mejora Continua",
+      "options": [
+        "A. Auditoría interna anual y revisión por la dirección con evidencia documentada de hallazgos y acciones correctivas",
+        "B. Cumplir solo con auditorías externas certificadoras sin auditorías internas organizacionales",
+        "C. Autoevaluación informal mensual sin registro documentado de resultados",
+        "D. Revisión de controles únicamente cuando se presente un incidente de seguridad"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022, cláusula 9 (Evaluación del desempeño) establece auditoría interna periódica y revisión por la dirección como mecanismos formales documentados que demuestran conformidad, identifican deficiencias y generan mejora continua del SGSI.",
+      "justification_wrong": "Dependencia solo externa (B) omite responsabilidad organizacional; informalidad (C) incumple requisito de documentación; reactividad (D) no es verificación proactiva requerida."
+    },
+    {
+      "num": 15,
+      "text": "En el contexto de ISO 27001:2022, al implementar el control A.5.1 (Políticas de seguridad de la información), ¿cuál es el requisito fundamental respecto a la aprobación y comunicación de estas políticas?",
+      "tag": "Controles Organizacionales - Políticas",
+      "options": [
+        "D. La aprobación es responsabilidad exclusiva del departamento legal",
+        "A. Deben ser aprobadas por la dirección y comunicadas a todos los usuarios internos y externos relevantes",
+        "C. Deben publicarse únicamente en el portal interno sin comunicación formal",
+        "B. Solo requieren aprobación del responsable de seguridad de la información"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 5.1 exige que políticas de seguridad sean aprobadas por la dirección y comunicadas apropiadamente a partes interesadas relevantes. Esto asegura alineación estratégica y compromiso gerencial con el SGSI.",
+      "justification_wrong": "Opciones B, C, D violan principios de gobernanza SGSI. B subestima autoridad requerida, C incumple comunicación formal ISO 27001:2022, D excluye responsabilidad ejecutiva mandatada."
+    },
+    {
+      "num": 16,
+      "text": "Respecto al control A.6.2 (Competencia de recursos humanos) en ISO 27001:2022, ¿cuál es el enfoque correcto para evaluar y desarrollar competencias en seguridad de la información?",
+      "tag": "Controles de Personas - Competencia",
+      "options": [
+        "B. Evaluación de competencias inicial, desarrollo mediante capacitación continua y evaluación periódica del desempeño",
+        "C. Solo certificaciones externas ISO 27001 sin evaluación interna de competencias",
+        "D. Evaluación anual genérica sin vinculación a roles específicos de seguridad",
+        "A. Evaluación inicial única al contratación sin evaluaciones periódicas posteriores"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 A.6.2 requiere evaluación de competencias, capacitación y desarrollo continuo. Esto implica ciclo completo: evaluación inicial, formación, re-evaluación periódica alineada con responsabilidades específicas de seguridad.",
+      "justification_wrong": "Opción A incumple requisito de evaluación periódica. C ignora evaluación interna mandatada. D no diferencia roles ni frecuencia requerida. Todas violan modelo de mejora continua PDCA de ISO 27001:2022."
+    },
+    {
+      "num": 17,
+      "text": "En la implementación de A.8.1 (Perimetrales de seguridad física), ¿cuál es el principio fundamental para establecer zonas controladas en áreas donde se procesan datos clasificados?",
+      "tag": "Controles Físicos - Perímetros",
+      "options": [
+        "A. Un único perímetro de seguridad es suficiente para toda la organización independientemente de clasificación de activos",
+        "B. Establecer perímetros múltiples con niveles de control proporcionales a la sensibilidad de activos e información procesada",
+        "C. Los perímetros deben ser solo electrónicos sin barreras físicas visibles",
+        "D. Solo los servidores principales requieren perímetro, no áreas administrativas"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 A.8.1 requiere perímetros físicos proporcionales al riesgo. Control segmentado según clasificación de información: datos altamente sensibles merecen perímetros más restrictivos que áreas de acceso general.",
+      "justification_wrong": "Opción A es insuficiente, no diferencia riesgos. C incumple requisito de barreras físicas. D subestima protección administrativa. ISO 27001:2022 exige defensa estratificada basada en valor/sensibilidad de activos."
+    },
+    {
+      "num": 18,
+      "text": "Concerniente al control A.12.3 (Separación de redes) en ISO 27001:2022, ¿cuál es el objetivo principal y cómo debe implementarse en entornos con múltiples niveles de clasificación?",
+      "tag": "Controles Tecnológicos - Segmentación",
+      "options": [
+        "B. Aislamiento lógico de redes según clasificación de información, restricción de tráfico entre niveles de seguridad mediante controles en capas",
+        "A. Separación solo a nivel de firewall perimetral sin segmentación interna de subredes",
+        "D. Separación física obligatoria de todos los segmentos sin permitir ninguna interconexión",
+        "C. Unificación total de redes para maximizar eficiencia, con cifrado como único control"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 A.12.3 requiere segmentación lógica proporcional al riesgo. Implementación en capas: separación de redes sensibles, control de acceso entre segmentos, ACLs restrictivas. Equilibra protección con operabilidad.",
+      "justification_wrong": "A es insuficiente, falla en defensa profunda. C incumple segregación mandatada, cifrado no reemplaza segmentación. D es excesivo, impide operaciones legítimas. ISO 27001:2022 requiere balance riesgo-funcionalidad."
+    },
+    {
+      "num": 19,
+      "text": "En el control A.14.1 (Requisitos de seguridad en desarrollo) de ISO 27001:2022, ¿cómo debe integrarse la seguridad en el ciclo de vida de desarrollo de software desde la perspectiva de un Lead Implementer?",
+      "tag": "Controles Tecnológicos - Desarrollo Seguro",
+      "options": [
+        "A. Pruebas de seguridad solo en fase de testing, previo a lanzamiento",
+        "C. Responsabilidad exclusiva del equipo de pruebas sin participación de desarrolladores",
+        "D. Documentación de seguridad posterior al desarrollo como requisito administrativo",
+        "B. Integración desde especificación: requisitos de seguridad, diseño seguro, code review, testing continuo, validación pre-producción"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 A.14.1 exige seguridad integrada en SDLC: especificación de requisitos de seguridad, diseño seguro, validación en desarrollo, testing sistemático. Enfoque DevSecOps alineado con cláusula 5.2 de ISO 27001:2022.",
+      "justification_wrong": "Opción A es tardía, falla en prevención. C excluye responsabilidad compartida requerida. D incumple requisito de integración proactiva. ISO 27001:2022 demanda security-by-design, no security-by-afterthought."
+    },
+    {
+      "num": 20,
+      "text": "En el contexto de ISO 27001:2022, al establecer el alcance del SGSI, ¿cuál es el enfoque normativo CORRECTO para determinar los límites organizacionales y tecnológicos?",
+      "tag": "Alcance y Contexto Organizacional",
+      "options": [
+        "D. Permitir que el alcance sea dinámico sin documentación formal de cambios",
+        "A. Definir explícitamente los límites considerando activos, procesos, ubicaciones y dependencias externas según cláusula 4.3",
+        "C. Establecer el alcance únicamente basado en los activos de información críticos identificados",
+        "B. Incluir automáticamente todas las filiales sin importar jurisdicción o modelo operativo"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022, cláusula 4.3 exige determinar límites considerando activos, procesos, ubicaciones y dependencias externas. La documentación del alcance debe ser explícita y revisable, incluyendo justificación de exclusiones.",
+      "justification_wrong": "Las opciones B, C y D violan requisitos normativos: B ignora contexto organizacional, C es demasiado restrictivo para SGSI integral, D carece de gobernanza documentada requerida por 4.1 y 4.3."
+    },
+    {
+      "num": 21,
+      "text": "Respecto a ISO 27002:2022 controles tecnológicos, ¿cuál es la MEJOR estrategia de implementación para A.5.7 (Criptografía) considerando gestión del ciclo de vida de claves?",
+      "tag": "Controles Tecnológicos Avanzados",
+      "options": [
+        "B. Utilizar criptografía de software simple con cambio manual de claves anuales",
+        "A. Implementar HSM (Hardware Security Module) con gestión automática, rotación planificada y separación de responsabilidades según ISO 27002:2022 A.5.7",
+        "D. Mantener claves en repositorios compartidos con acceso documentado por auditoría",
+        "C. Confiar en la criptografía integrada del SO sin validación de fortaleza criptográfica"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27002:2022 A.5.7 requiere gestión robusta de claves criptográficas. HSM proporciona protección física, rotación automática, separación de deberes y cumplimiento de estándares FIPS/NIST para generación, almacenamiento y retiro.",
+      "justification_wrong": "Opciones B-D incumplen A.5.7: cambio manual es insuficiente, software simple carece de protección física, SO integrado sin validación no garantiza fortaleza, y repositorios compartidos violan segregación de acceso (A.8.3)."
+    },
+    {
+      "num": 22,
+      "text": "En auditoría interna de ISO 27001:2022 (cláusula 9.2), ¿cuál es el requisito NORMATIVO CRÍTICO para garantizar objetividad y competencia del programa de auditoría?",
+      "tag": "Evaluación de Cumplimiento",
+      "options": [
+        "B. Realizar auditorías anuales con el mismo personal interno sin especialización requerida",
+        "A. Establecer independencia del auditor interno, competencia técnica documentada y frecuencia basada en importancia según 9.2.1(c) y 9.2.2(c)",
+        "C. Permitir que la dirección audite su propio departamento bajo supervisión del CISO",
+        "D. Ejecutar auditorías trimestrales con auditorores externos sin documentación de hallazgos"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022, cláusula 9.2.1(c) y 9.2.2(c) requieren: independencia de auditores, competencia demostrada, plan basado en criticidad, documentación de resultados, seguimiento de no conformidades.",
+      "justification_wrong": "B carece de competencia especializada, C viola independencia fundamental (9.2.1), D usa auditorores externos innecesariamente sin cumplir requisitos internos. Frecuencia debe justificarse en 9.2.2(c)."
+    },
+    {
+      "num": 23,
+      "text": "Referente a ISO 27002:2022 controles organizacionales A.5.1 (Políticas para SGSI), ¿cuál es la ESTRATEGIA CORRECTA para alineación con gobernanza y cumplimiento regulatorio?",
+      "tag": "Controles Organizacionales Avanzados",
+      "options": [
+        "C. Implementar políticas operativas sin autorización de la dirección ejecutiva",
+        "A. Desarrollar políticas con aprobación de la dirección, revisión periódica vinculada a cambios regulatorios y comunicación integrada según A.5.1(b) y cláusula 5.2",
+        "B. Crear política genérica única sin vinculación a procesos específicos o regulaciones",
+        "D. Mantener políticas estáticas revisadas únicamente cuando auditoría externa lo requiera"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 5.2 y A.5.1(b) exigen políticas aprobadas por dirección, revisión periódica (incluyendo cambios normativos/regulatorios), comunicación efectiva, y vinculación con objetivos de seguridad.",
+      "justification_wrong": "B no considera contexto regulatorio, C carece de autorización requerida en 5.1 y 5.2, D incumple revisión periódica en A.5.1 y no integra cambios legislativos. Políticas deben ser dinámicas según 5.3.1(a)."
+    },
+    {
+      "num": 24,
+      "text": "En gestión de riesgos de seguridad (ISO 27001:2022 cláusula 6.1), ¿cuál es el CRITERIO NORMATIVO ÓPTIMO para definir la tolerancia al riesgo (risk appetite) considerando contexto organizacional?",
+      "tag": "Evaluación y Tratamiento de Riesgos",
+      "options": [
+        "B. Fijar umbrales de tolerancia únicamente basados en capacidad técnica de detección",
+        "A. Establecer niveles de tolerancia mediante evaluación de impacto financiero, regulatorio y reputacional alineados con objetivos organizacionales según 6.1.3 y A.12.6.1",
+        "D. Permitir que cada departamento defina independientemente su tolerancia al riesgo",
+        "C. Adoptar tolerancia cero para todos los riesgos sin diferenciación por criticidad"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022, cláusula 6.1.3 requiere criterios de evaluación de riesgos que consideren impacto (financiero, operacional, regulatorio, reputacional). Tolerancia debe alinearse con contexto (4.1) y objetivos (6.2).",
+      "justification_wrong": "B es insuficiente (solo detectabilidad), C es impracticable (recursos infinitos), D carece de gobernanza centralizada requerida en 5.1-5.2. La tolerancia debe ser coherente a nivel organizacional según 6.1.3."
+    },
+    {
+      "num": 25,
+      "text": "En la implementación de ISO 27001:2022, al establecer controles criptográficos según ISO 27002:2022 (A.10.1), ¿cuál es el principal criterio para determinar la fortaleza del algoritmo de cifrado en función del contexto organizacional?",
+      "tag": "Criptografía y Gestión de Claves",
+      "options": [
+        "D. La disponibilidad comercial del algoritmo en el mercado internacional",
+        "A. La evaluación del riesgo residual considerando amenazas actuales, requisitos regulatorios y la clasificación de activos de información",
+        "C. La compatibilidad con sistemas legacy independientemente del nivel de protección requerido",
+        "B. La longitud mínima de clave establecida por el NIST sin considerar contexto específico"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27002:2022 A.10.1 requiere seleccionar criptografía basada en evaluación de riesgos, activos, amenazas y cumplimiento normativo. La fortaleza debe alinearse con clasificación de datos y análisis de impacto. NIST SP 800-175B complementa con directrices contextuales.",
+      "justification_wrong": "Opciones B, C y D ignoran el enfoque basado en riesgos mandatorio en ISO 27001:2022 cláusula 6.1, que exige análisis contextual previo a seleccionar controles técnicos específicos."
+    },
+    {
+      "num": 26,
+      "text": "Respecto a control de acceso físico (ISO 27002:2022 A.11.1-A.11.3), ¿cuál es la estrategia de segregación más efectiva para implementar defensa en profundidad en instalaciones críticas que albergan servidores de datos clasificados?",
+      "tag": "Controles Físicos y Ambiental",
+      "options": [
+        "C. Permitir acceso libre a áreas con restricción solo en servidores específicos",
+        "A. Implementar múltiples perímetros con control de acceso basado en roles, autenticación multifactor física y monitoreo continuo de zonas restrictivas",
+        "D. Utilizar cerraduras mecánicas simples con llave compartida entre personal autorizado",
+        "B. Instalar una única puerta de acceso con vigilancia por cámara sin control de ingreso adicional"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27002:2022 A.11.1.1 y A.11.2.1 establecen perímetros múltiples, control diferenciado por zona y autenticación. A.11.2.2 requiere registro de acceso. Defensa en profundidad exige redundancia de controles compensatorios según ISO 27001:2022 A.5.16.",
+      "justification_wrong": "B, C y D no cumplen principios de defensa en profundidad ni trazabilidad requerida por A.8.2.3 (registro y monitoreo). Control único sin segregación vulnera ISO 27001:2022 cláusula 8.3."
+    },
+    {
+      "num": 27,
+      "text": "Al implementar gestión de incidentes de seguridad (ISO 27002:2022 A.6.8), ¿cuál enfoque garantiza eficacia de respuesta manteniendo cadena de custodia digital en cumplimiento de evidencia forense?",
+      "tag": "Incidentes y Continuidad",
+      "options": [
+        "A. Establecer procedimiento estructurado con roles definidos, aislamiento inmediato de sistemas afectados, captura forense certificada y auditoría de cambios antes de remediación",
+        "B. Responder rápidamente reiniciando sistemas sin documentación previa para minimizar tiempo de inactividad",
+        "D. Derivar inmediatamente a terceros externos sin análisis interno preliminar",
+        "C. Recopilar evidencia mediante herramientas estándar sin cadena de custodia formalizada"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27002:2022 A.6.8.1 requiere plan de respuesta con roles, escalación y comunicación. A.12.4.1 exige registros de auditoría. ISO 27035-1:2023 especifica procedimiento forense con cadena de custodia y documentación sistemática antes de remediación.",
+      "justification_wrong": "B ignora A.8.2.3; C viola requerimientos forenses; D incumple A.6.8.2 (análisis interno previo). ISO 27001:2022 cláusula 8.3 requiere evidencia documentada y auditable de todas las acciones."
+    },
+    {
+      "num": 28,
+      "text": "En contexto de terceros proveedores (ISO 27002:2022 A.5.22), ¿cuál estrategia de evaluación inicial y monitoreo continuo minimiza riesgo de herencia de vulnerabilidades en la cadena de suministro?",
+      "tag": "Gestión de Terceros y Proveedores",
+      "options": [
+        "B. Aceptar certificación ISO 27001 del proveedor sin verificación adicional ni monitoreo posterior",
+        "D. Confiar en garantías contractuales sin incluir derechos de auditoría o inspección",
+        "A. Realizar evaluación comparativa (benchmarking) pre-contractual incluida cláusula de auditoría, implementar SLA con métricas de seguridad medibles y auditorías de cumplimiento periódicas documentadas",
+        "C. Evaluar solo mediante cuestionarios de autoevaluación sin validación externa"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27002:2022 A.5.22.1 exige evaluación pre-contratación con criterios definidos. A.5.22.2 requiere monitoreo continuo y auditoría. ISO 27001:2022 cláusula 8.4 establece evaluación, selección y seguimiento sistemático de proveedores con riesgos documentados.",
+      "justification_wrong": "B ignora necesidad de validación independiente; C no cumple A.5.22.1; D violeta principios de diligencia debida. ISO 27035-3:2020 enfatiza herencias de riesgo terceros requieren auditoría periódica, no confianza unilateral."
+    },
+    {
+      "num": 29,
+      "text": "Respecto a Gestión de Cambios (ISO 27002:2022 A.8.3.2), ¿cuál enfoque integrado asegura que modificaciones de infraestructura crítica no introdan nuevas vulnerabilidades mientras mantiene disponibilidad operacional?",
+      "tag": "Gestión de Configuración y Cambios",
+      "options": [
+        "A. Implementar proceso CAB formal con evaluación de impacto de seguridad, pruebas en ambiente de préstamo aislado, rollback documentado y validación post-implementación con análisis de configuración basal",
+        "D. Prohibir completamente cambios en sistemas críticos para garantizar estabilidad",
+        "C. Autorizar cambios únicamente mediante aprobación técnica sin evaluar riesgos de seguridad",
+        "B. Ejecutar cambios directamente en producción documentando solo en retrospectiva"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27002:2022 A.8.3.2 requiere procedimiento de cambio con evaluación, aprobación, pruebas y documentación. A.8.3.1 exige control de configuración basal. ISO 27001:2022 A.5.23 establece gestión de cambios efectiva balanceando seguridad con operacionalidad mediante ambiente seguro de prueba.",
+      "justification_wrong": "B incumple trazabilidad requerida A.8.2.3; C ignora componente seguridad en CAB; D violeta disponibilidad (A.5.29). ISO 27035-2 requiere validación pos-cambio. ITIL 4 complementa enfoque de testing aislado previo producción."
+    },
+    {
+      "num": 30,
+      "text": "Una organización implementa ISO 27001:2022 y debe establecer criterios para clasificar activos de información. Según ISO 27002:2022, ¿cuál es el enfoque CORRECTO para la clasificación de información?",
+      "tag": "Controles Organizacionales - Clasificación de Activos",
+      "options": [
+        "B. Clasificar solo datos financieros y dejar información técnica sin categorizar",
+        "A. Implementar esquema de clasificación basado en confidencialidad, integridad y disponibilidad, documentando criterios y aplicándolos consistentemente a todos los activos",
+        "D. Delegar la clasificación exclusivamente al departamento de TI sin participación del negocio",
+        "C. Utilizar clasificación genérica única (público/confidencial) para todos los tipos de información"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27002:2022 control 5.11 establece que la clasificación debe considerar confidencialidad, integridad y disponibilidad. Requiere esquema estructurado, criterios documentados y aplicación consistente. Implica colaboración entre propietarios de información y responsables de seguridad para efectividad operacional.",
+      "justification_wrong": "Opciones B, C y D violan principios fundamentales: clasificación parcial crea brechas, clasificación uniforme ignora necesidades de protección diferenciadas, y exclusión de propietarios de negocio compromete precisión y relevancia del esquema implementado."
+    },
+    {
+      "num": 31,
+      "text": "Durante la implementación de ISO 27001:2022, se detecta que los empleados comparten contraseñas de acceso administrativo. ¿Cuál es la medida de control INTEGRAL requerida por ISO 27002:2022 para mitigar este riesgo?",
+      "tag": "Controles de Personas - Gestión de Acceso",
+      "options": [
+        "C. Reemplazar todas las contraseñas mensualmente sin revisar el comportamiento de usuarios",
+        "D. Prohibir acceso administrativo a empleados operacionales únicamente mediante eliminación de permisos",
+        "A. Solo establecer política de contraseñas complejas sin capacitación adicional",
+        "B. Implementar autenticación multifactor (MFA), control de acceso basado en roles (RBAC), capacitación en seguridad y auditoría de acceso administrativo"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 control 5.15 requiere autenticación fuerte (MFA) y 5.3 especifica acceso basado en necesidad operacional (RBAC). Control 6.3 establece capacitación obligatoria. Auditoría continua (control 8.15) monitorea conformidad. Enfoque integrado aborda tecnología, procesos y conciencia.",
+      "justification_wrong": "Opción A carece de autenticación fuerte; C es inefectiva sin cambio conductual; D limita operatividad sin resolver uso compartido. Gestión de acceso efectiva requiere control de múltiples capas: técnica, organizacional y humana según ISO 27002:2022."
+    },
+    {
+      "num": 32,
+      "text": "Una organización debe implementar control de acceso físico a su centro de datos según ISO 27002:2022. ¿Qué combinación de medidas constituye implementación COMPLETA?",
+      "tag": "Controles Físicos - Control de Acceso Físico",
+      "options": [
+        "A. Solo puerta con cerradura mecánica estándar y lista de visitantes",
+        "B. Autenticación multifactor (tarjeta + biométrico), registro de entradas/salidas, video vigilancia, segregación de zonas y procedimiento de escolta para visitantes",
+        "C. Vigilancia de cámaras sin registro de acceso individual",
+        "D. Restricción de acceso solo durante horario laboral, permitiendo libre tránsito fuera de horario"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27002:2022 control 7.1 exige autenticación multifactor para áreas restringidas, 7.3 requiere auditoría de acceso (logs), 7.5 especifica vigilancia, 7.7 establece segregación por criticidad, y 7.2 regula visitantes. Implementación completa integra: prevención, detección y registro.",
+      "justification_wrong": "Opción A es insuficiente (sin autenticación fuerte ni auditoría); C carece de trazabilidad individual; D presenta vulnerabilidad crítica (acceso no controlado nocturno). Control efectivo requiere capas múltiples: física, registral y procedural integradas."
+    },
+    {
+      "num": 33,
+      "text": "En un programa de gestión de parches según ISO 27002:2022, ¿cuál es el proceso CORRECTO para vulnerabilidades críticas de infraestructura de producción?",
+      "tag": "Controles Tecnológicos - Gestión de Parches",
+      "options": [
+        "D. Solo actualizar sistemas no críticos; sistemas de producción quedan excluidos",
+        "C. Posponer parches críticos hasta ventana de mantenimiento trimestral",
+        "B. Evaluación de criticidad, prueba en ambiente segregado, plan de rollback documentado, validación post-parche y registro de cambios antes de implementación",
+        "A. Aplicar parches inmediatamente en todos los sistemas sin validación previa"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27002:2022 control 8.2 requiere gestión de cambios controlada antes de implementación. Control 8.1 establece identificación de vulnerabilidades. Control 8.3 especifica monitoreo post-implementación. Enfoque controlado miniminiza riesgos operacionales y de seguridad mediante validación y documentación.",
+      "justification_wrong": "Opción A causa indisponibilidad operacional; C deja exposición de seguridad; D ignora criticidad. Parches críticos requieren ejecución balanceada: urgencia sin comprometer estabilidad operacional, con rastreabilidad completa según cambio gestionado."
+    },
+    {
+      "num": 34,
+      "text": "Una organización requiere demostrar conformidad continua con ISO 27001:2022. ¿Cuál es la estrategia INTEGRAL de monitoreo y medición establecida en el estándar?",
+      "tag": "Controles Organizacionales - Monitoreo y Revisión",
+      "options": [
+        "A. Auditoría anual única sin actividades de monitoreo continuo entre auditorías",
+        "B. Métricas de seguridad, indicadores clave (KPI), revisión gerencial periódica, auditorías internas, análisis de incidentes y ajuste de controles basado en resultados",
+        "D. Monitoreo técnico exclusivo de logs de sistema sin evaluación de efectividad de controles",
+        "C. Solo registrar incidentes de seguridad sin análisis de tendencias"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 9.1 exige monitoreo, medición y análisis. Cláusula 9.2 establece revisión gerencial periódica. Cláusula 9.3 requiere auditorías internas. Cláusula 8.6 especifica evaluación de efectividad. Ciclo PDCA integrado asegura mejora continua documentada y sistémica.",
+      "justification_wrong": "Opción A es no-conformidad crítica (requiere continuidad); C carece de análisis predictivo; D omite evaluación de eficacia de controles. Conformidad sostenida requiere marco de monitoreo holístico: técnico, gerencial y operacional con retroalimentación documentada."
+    },
+    {
+      "num": 35,
+      "text": "Durante la implementación de ISO 27001:2022, usted debe establecer criterios de aceptación de riesgos. Según ISO 27001:2022 cláusula 6.1.3, ¿cuál es el enfoque CORRECTO para definir el contexto de riesgo en organizaciones complejas con múltiples unidades de negocio?",
+      "tag": "Evaluación y Tratamiento de Riesgos",
+      "options": [
+        "A. Definir criterios uniformes globales aplicables a todas las unidades, independientemente de su perfil operativo y regulatorio",
+        "B. Establecer criterios diferenciados por unidad de negocio considerando su apetito de riesgo, requisitos regulatorios y contexto operativo específico",
+        "D. Delegar la definición de criterios únicamente al departamento de TI sin participación de la dirección",
+        "C. Aplicar criterios basados exclusivamente en benchmarks de la industria sin personalización organizacional"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1.3 requiere criterios de aceptación de riesgo definidos considerando el contexto de la organización. En estructuras complejas, criterios diferenciados permiten alineación con objetivos específicos de negocio, contextos regulatorios y apetito de riesgo diferenciado por unidad.",
+      "justification_wrong": "Criterios uniformes globales ignoran el contexto específico requerido por 6.1.3. Los benchmarks sin personalización no reflejan el riesgo real. La delegación exclusiva a TI viola el principio de responsabilidad de la dirección en ISO 27001:2022."
+    },
+    {
+      "num": 36,
+      "text": "En el contexto de ISO 27002:2022, control A.7.2 (Autorización de acceso a la información y otros activos), ¿cuál es la técnica ÓPTIMA para implementar segregación de funciones en entornos cloud híbridos donde los controles técnicos están distribuidos entre proveedores?",
+      "tag": "Control de Acceso - Personas",
+      "options": [
+        "D. Aplicar segregación solo en sistemas on-premise, considerando cloud como zona de confianza",
+        "C. Delegar la responsabilidad de segregación completamente al proveedor mediante SLA",
+        "B. Establecer matriz de segregación de funciones con validación de cumplimiento en todas las capas (IAM, aplicación, datos) coordinadas entre proveedores",
+        "A. Implementar segregación únicamente a nivel de aplicación, confiando en los controles del proveedor cloud"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27002:2022 A.7.2 exige autorización basada en segregación de funciones efectiva. En entornos híbridos, la validación multicapa coordinada entre proveedores garantiza cobertura completa. La matriz de segregación documentada proporciona trazabilidad y cumplimiento verificable requerido por el control.",
+      "justification_wrong": "Confiar exclusivamente en controles de proveedor viola responsabilidad organizacional. Los SLA no reemplazan validación interna. Considerar cloud como zona de confianza incumple principios de defensa en profundidad y validación independiente de controles."
+    },
+    {
+      "num": 37,
+      "text": "Conforme ISO 27002:2022 A.8.3 (Gestión de activos físicos removibles), durante una auditoría usted identifica que dispositivos USB cifrados se transportan sin mecanismos de tracking físico. ¿Cuál es la remediación INTEGRAL requerida?",
+      "tag": "Controles Físicos - Gestión de Activos",
+      "options": [
+        "D. Retirar todos los dispositivos removibles eliminando la necesidad de controles compensatorios",
+        "C. Aumentar permisos de acceso para usuarios autorizados a transportar dispositivos",
+        "A. Implementar cifrado de datos como única medida, considerándolo suficiente para cumplimiento",
+        "B. Añadir tracking RFID, procesos de cadena de custodia documentados, cifrado de datos y autorización previa de movimiento"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 A.8.3 requiere múltiples capas: identificación (tracking), autorización, documentación y protección de datos (cifrado). La combinación de tracking RFIF, cadena de custodia y cifrado proporciona visibilidad, responsabilidad y protección de confidencialidad exigida por el control.",
+      "justification_wrong": "Cifrado aislado no direcciona pérdida o robo sin detección. Aumentar permisos incrementa riesgo. Eliminar dispositivos no es siempre viable; remediación integral balancéa funcionalidad operativa con seguridad requerida por A.8.3."
+    },
+    {
+      "num": 38,
+      "text": "En implementación de ISO 27001:2022, usted debe evaluar la efectividad del control A.5.23 (Gestión de la seguridad de la información en relaciones con proveedores). ¿Cuál es el indicador de desempeño (KPI) CRÍTICO para validar madurez operativa en cadenas de suministro con 50+ proveedores?",
+      "tag": "Organizacionales - Gestión de Proveedores",
+      "options": [
+        "A. Número total de proveedores que han firmado acuerdos de confidencialidad",
+        "B. Porcentaje de proveedores con evaluaciones de seguridad documentadas anualmente, trazabilidad de hallazgos y planes de remediación verificados",
+        "C. Cantidad de auditorías externas realizadas al azar sin metodología estructurada",
+        "D. Nivel de gastos invertidos en seguridad de proveedores sin correlación con riesgos identificados"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 A.5.23 requiere evaluación continua de proveedores. El KPI debe medir cobertura (porcentaje), calidad (metodología documentada), seguimiento (trazabilidad) y cierre (remediación verificada), proporcionando visibilidad integral del riesgo de la cadena de suministro.",
+      "justification_wrong": "Solo firmas de acuerdos no validan cumplimiento operativo. Auditorías aleatorias carecen de estructura requerida. Gasto sin correlación con riesgo no mide efectividad. Los indicadores deben vincular a resultados medibles de evaluación y remediación."
+    },
+    {
+      "num": 39,
+      "text": "Durante la revisión periódica del SGSI conforme ISO 27001:2022 cláusula 9.3, identifica que controles A.6.8 (Gestión de proyectos) y A.6.2 (Personal y responsabilidades) tienen baja efectividad en proyectos ágiles. ¿Cuál es el enfoque RECOMENDADO para remediación adaptativa?",
+      "tag": "Organizacionales - Gobernanza Ágil",
+      "options": [
+        "C. Integrar controles de seguridad en sprints definiendo criterios de aceptación de seguridad, roles SGSI en equipos ágiles y validación en iteraciones",
+        "D. Implementar auditorías de seguridad post-implementación como único mecanismo de validación",
+        "A. Mantener procesos SGSI tradicionales waterfall sin adaptación a metodologías ágiles",
+        "B. Eliminar control A.6.8 en proyectos ágiles confiando en prácticas de desarrollo iterativo"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 requiere controles efectivos sin prescribir metodologías específicas. Integrar seguridad en ciclos ágiles mediante criterios de aceptación, asignación de responsabilidades en sprints y validación iterativa asegura cumplimiento mientras mantiene velocidad de desarrollo requerida.",
+      "justification_wrong": "Mantener waterfall reduce agilidad sin beneficio de seguridad. Eliminar controles incumple requisitos normativos. Auditorías post-implementación no detectan vulnerabilidades tempranamente. La integración iterativa proporciona equilibrio entre seguridad y efectividad operativa."
+    },
+    {
+      "num": 40,
+      "text": "En relación con ISO 27002:2022 control A.5.1 (Políticas de seguridad de la información), ¿qué elemento es esencial para garantizar su efectividad operacional?",
+      "tag": "Controles Organizacionales",
+      "options": [
+        "B. Políticas elaboradas exclusivamente por el equipo de seguridad sin participación de directivos",
+        "C. Actualización de políticas solo cuando ocurren incidentes de seguridad",
+        "D. Políticas enfocadas únicamente en conformidad normativa sin consideración de riesgos",
+        "A. Documento de políticas aprobado por la dirección, comunicado y revisado periódicamente"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 A.5.1 establece que las políticas deben aprobarse por la dirección, comunicarse efectivamente y revisarse a intervalos planificados para mantener su relevancia y alineación con objetivos organizacionales.",
+      "justification_wrong": "B, C y D incumplen requisitos fundamentales de gobernanza de seguridad, comunicación efectiva y revisión periódica especificados en el control A.5.1 de ISO 27002:2022."
+    },
+    {
+      "num": 41,
+      "text": "Respecto a ISO 27002:2022 control A.6.2 (Competencia de personal), ¿cuál es el enfoque correcto para evaluar y mantener competencias en seguridad de la información?",
+      "tag": "Controles de Personas",
+      "options": [
+        "B. Certificación obligatoria de todos los empleados sin considerar roles específicos",
+        "C. Capacitación anual genérica sin evaluación de desempeño en seguridad",
+        "D. Competencias basadas únicamente en experiencia previa sin programas de desarrollo",
+        "A. Evaluación inicial de competencias, capacitación continua, y verificación periódica de conocimientos aplicados"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 A.6.2 requiere determinar competencias necesarias, evaluar competencias existentes, proporcionar capacitación y verificar efectividad de manera continua según roles y responsabilidades.",
+      "justification_wrong": "Las opciones B, C y D no contemplan la evaluación sistemática, capacitación diferenciada por rol, ni verificación periódica de competencias exigidas por el estándar."
+    },
+    {
+      "num": 42,
+      "text": "Conforme a ISO 27002:2022 control A.11.1 (Perímetro y acceso físico), ¿cuál es el principio fundamental para proteger instalaciones que contienen activos de información?",
+      "tag": "Controles Físicos",
+      "options": [
+        "D. Utilizar barreras visibles sin validar efectividad mediante pruebas de intrusión",
+        "A. Establecer perímetros de seguridad con controles de acceso basados en evaluación de riesgos y necesidad de conocimiento",
+        "B. Permitir acceso irrestricto a áreas internas para facilitar operaciones",
+        "C. Implementar controles físicos únicamente en áreas de servidores, no en oficinas"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27002:2022 A.11.1 establece perímetros de seguridad alrededor de instalaciones, con controles de acceso basados en evaluación de riesgos y aplicando principio de menor privilegio según necesidades de roles.",
+      "justification_wrong": "B, C y D violan principios de defensa en profundidad, evaluación de riesgos diferenciada, y validación de efectividad de controles físicos especificados en ISO 27002:2022."
+    },
+    {
+      "num": 43,
+      "text": "En ISO 27002:2022 control A.14.2 (Seguridad en el desarrollo y cambios), ¿cuál es la práctica recomendada para integrar seguridad en el ciclo de vida de desarrollo?",
+      "tag": "Controles Tecnológicos",
+      "options": [
+        "B. Implementar controles de seguridad solo después que se detecten vulnerabilidades en producción",
+        "D. Aplicar parches de seguridad sin revisar impacto en funcionalidad de aplicaciones",
+        "C. Responsabilizar exclusivamente al equipo de desarrollo sin supervisión de seguridad",
+        "A. Incorporar requisitos de seguridad desde el diseño, implementar pruebas de seguridad y validar cambios antes de producción"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 A.14.2 requiere integrar seguridad en todo el ciclo de desarrollo, implementar pruebas de seguridad, validar cambios y mantener trazabilidad de requisitos de seguridad implementados.",
+      "justification_wrong": "B, C y D representan enfoques reactivos, sin gobernanza adecuada y sin validación de cambios, incumpliendo integración proactiva de seguridad exigida por el control."
+    },
+    {
+      "num": 44,
+      "text": "En la implementación de ISO 27001:2022, al establecer la política de seguridad de la información, ¿cuál es el requisito normativo crítico respecto a la aprobación y comunicación según la cláusula 5.2?",
+      "tag": "Políticas Organizacionales",
+      "options": [
+        "C. Debe limitarse a comunicación interna del departamento de TI únicamente",
+        "B. Requiere solo aprobación del responsable de seguridad sin necesidad de comunicación formal",
+        "D. La aprobación verbal de la gerencia general es suficiente para cumplimiento normativo",
+        "A. Debe ser aprobada por la alta dirección y comunicada a todos los niveles organizacionales de forma accesible y comprensible"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula 5.2 establece que la política debe ser aprobada por la alta dirección y comunicada a través de la organización de forma accesible. Esto garantiza alineación estratégica y compromiso visible del liderazgo en la gobernanza de seguridad.",
+      "justification_wrong": "Las opciones B, C y D violan requisitos explícitos: aprobación debe ser de alta dirección, comunicación debe ser organizacional integral, y debe ser documentada formalmente. Cumplimiento parcial genera brechas de gobernanza."
+    },
+    {
+      "num": 45,
+      "text": "Respecto a competencia y conciencia del personal (ISO 27001 cláusula 7.2 y 7.3), ¿cuál enfoque garantiza efectividad en la reducción de riesgo derivado del factor humano?",
+      "tag": "Recursos Humanos y Conciencia",
+      "options": [
+        "C. Delegar completamente la conciencia en seguridad a consultores externos sin involucramiento interno",
+        "A. Evaluación de competencias inicial, capacitación obligatoria anual, verificación de comprensión y registros documentados de cumplimiento",
+        "B. Realizar una sesión de inducción general sin seguimiento posterior ni evaluación de retención",
+        "D. Implementar solo controles técnicos sin intervención en comportamiento humano"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 7.2 y 7.3 requieren evaluación de competencias, capacitación apropiada, conciencia demostrable y documentación. Evidencia de comprensión reduce significativamente riesgo humano, principal causa de incidentes.",
+      "justification_wrong": "Opciones B, C, D incumplen requisitos normativos: falta seguimiento y evaluación continua, externalización sin responsabilidad interna viola gobernanza, y controles puramente técnicos sin factor humano dejan vectores de ataque operacionales."
+    },
+    {
+      "num": 46,
+      "text": "En el contexto de controles de acceso físico (ISO 27002 cláusula 7.1-7.3), ¿cuál estrategia integrada minimiza riesgo de acceso no autorizado a activos críticos?",
+      "tag": "Seguridad Física y Ambiental",
+      "options": [
+        "D. Permitir acceso libre durante horarios de oficina y restringir solo en horarios no laborales",
+        "B. Confiar exclusivamente en sistemas de tarjeta de proximidad sin vigilancia adicional",
+        "C. Implementar vigilancia visual sin controles de acceso automatizados ni registro de movimientos",
+        "A. Combinación de perímetro fortificado, puntos de acceso con autenticación multifactor, monitoreo CCTV continuo y registro de entrada/salida"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 7.1-7.3 establece enfoque defense-in-depth: perímetro, puntos de control, autenticación, monitoreo y auditoría. Combinación estratificada de controles preventivos y detectivos reduce vectores de compromiso físico.",
+      "justification_wrong": "Opciones B, C, D violan principios de defensa en profundidad: sistemas únicos fallan, vigilancia sin control es inefectiva, y acceso irrestricto genera riesgo de sabotaje, robo de datos o modificación de sistemas críticos."
+    },
+    {
+      "num": 47,
+      "text": "Conforme a ISO 27001:2022 cláusula 8.2 (Operaciones), ¿cuál es el requisito crítico para cambios en sistemas de información que garantice continuidad de seguridad?",
+      "tag": "Gestión de Cambios",
+      "options": [
+        "B. Permitir cambios de emergencia sin evaluación previa siempre que sea urgente",
+        "A. Evaluación de impacto de seguridad previa, autorización formal, implementación controlada, y evaluación post-implementación documentada",
+        "D. Autorizar cambios basados únicamente en criterios de negocio sin análisis de riesgos de seguridad",
+        "C. Notificar cambios a seguridad solo después de implementación completada"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 8.2 requiere proceso de cambio que incluya evaluación de seguridad, autorización, implementación controlada y verificación. Enfoque preventivo evita degradación inadvertida de controles o introducción de vulnerabilidades.",
+      "justification_wrong": "Opciones B, C, D incumplen gobernanza: cambios sin evaluación generan riesgos latentes, notificación posterior no permite mitigación proactiva, y exclusión de análisis de seguridad viola separación de responsabilidades y principio de revisión independiente."
+    },
+    {
+      "num": 48,
+      "text": "En la implementación de ISO 27002:2022 para criptografía y gestión de claves (cláusula 10.1), ¿cuál combinación de controles es normativa y técnicamente requerida?",
+      "tag": "Criptografía y Gestión de Claves",
+      "options": [
+        "D. Almacenar claves criptográficas en archivos de texto con acceso irrestricto a personal de TI",
+        "B. Implementar criptografía solo en comunicaciones externas, sin política formal documentada",
+        "C. Permitir que cada usuario seleccione algoritmos según preferencia sin estándares organizacionales",
+        "A. Política de criptografía explícita, algoritmos validados, gestión centralizada de claves con separación de funciones, auditoría de uso y rotación periódica"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27002:2022 cláusula 10.1 especifica: política documentada, algoritmos criptográficos apropiados validados por estándares (NIST, BSI), gestión centralizada de claves con segregación de funciones, auditoría y rotación. Control de ciclo completo minimiza riesgo criptográfico.",
+      "justification_wrong": "Opciones B, C, D violan requisitos normativos: cobertura incompleta, falta de política formal, ausencia de estándares y selección arbitraria comprometen integridad criptográfica, y almacenamiento inseguro de claves anula efectividad de cifrado. Riesgo crítico de compromiso de datos."
+    },
+    {
+      "text": "Una organización que utiliza servicios de almacenamiento en la nube pública para datos de clientes debe implementar el control A.5.23 (Seguridad de la información para el uso de servicios en la nube) de ISO 27002:2022. ¿Cuál es el enfoque MÁS completo para gestionar los riesgos de seguridad según este control?",
+      "tag": "a_5_23_cloud_services_security",
+      "options": [
+        "A. Establecer acuerdos contractuales que incluyan requisitos de seguridad, clasificación de datos, derechos de auditoría, notificación de incidentes, y procedimientos de portabilidad y eliminación segura de datos al finalizar el servicio",
+        "B. Solicitar al proveedor certificaciones ISO 27001 y SOC 2, confiando en que estos marcos garantizan la seguridad adecuada sin necesidad de controles adicionales por parte de la organización",
+        "C. Implementar cifrado de datos en tránsito mediante TLS y realizar copias de seguridad mensuales en las instalaciones de la organización como única medida de contingencia",
+        "D. Establecer un proceso de evaluación anual del proveedor basado únicamente en cuestionarios de autoevaluación completados por el departamento comercial del proveedor"
+      ],
+      "correct": 0,
+      "justification_correct": "El control A.5.23 requiere un enfoque integral que incluya: establecimiento de acuerdos contractuales claros con requisitos de seguridad específicos, definición de responsabilidades compartidas, clasificación y manejo de datos, derechos de auditoría y monitoreo, procedimientos de notificación de incidentes, y garantías sobre portabilidad y eliminación segura de datos. La opción A cubre estos aspectos esenciales del control, asegurando que los riesgos específicos del uso de servicios en la nube sean adecuadamente gestionados mediante controles contractuales y técnicos.",
+      "justification_wrong": "La opción B es insuficiente porque delegar completamente la responsabilidad de seguridad al proveedor basándose solo en certificaciones no cumple con el modelo de responsabilidad compartida requerido en servicios en la nube. La opción C aborda solo aspectos técnicos limitados (cifrado y respaldos) sin considerar los aspectos contractuales, legales y de gestión de proveedores que son fundamentales en A.5.23. La opción D es inadecuada porque las evaluaciones anuales basadas únicamente en autoevaluaciones del proveedor carecen de la profundidad, frecuencia y verificación independiente necesarias para una gestión efectiva de riesgos en servicios en la nube.",
+      "num": 49
+    },
+    {
+      "text": "Una organización está implementando el control A.8.16 (Monitoreo de actividades) de ISO 27002:2022 para detectar comportamientos anómalos en su red corporativa. El equipo de seguridad debe definir qué eventos específicos registrar y monitorear. ¿Cuál de las siguientes combinaciones representa la selección MÁS alineada con los objetivos de este control?",
+      "tag": "a_8_16_monitoring_activities",
+      "options": [
+        "A. Registro de todos los paquetes de red sin filtrado, almacenamiento indefinido de logs de aplicaciones no críticas, y monitoreo manual mensual de eventos de seguridad",
+        "B. Registro de intentos de acceso exitosos y fallidos a sistemas críticos, monitoreo de cambios en configuraciones de seguridad, detección de patrones de uso anómalo, y revisión regular de logs con alertas automatizadas",
+        "C. Monitoreo exclusivo de tráfico externo entrante, registro únicamente de accesos administrativos exitosos, y revisión trimestral de eventos sin correlación entre sistemas",
+        "D. Implementación de registros detallados solo después de incidentes confirmados, monitoreo limitado a horario laboral, y almacenamiento de logs por período mínimo de 30 días"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B refleja correctamente los principios del control A.8.16 al incluir: (1) registro comprensivo de eventos de seguridad relevantes tanto exitosos como fallidos para análisis forense, (2) monitoreo de cambios críticos en configuraciones que podrían indicar compromisos, (3) detección proactiva de anomalías mediante análisis de patrones, y (4) revisión sistemática con automatización para respuesta oportuna. ISO 27002:2022 A.8.16 especifica que el monitoreo debe detectar comportamiento anómalo, actividades no autorizadas y eventos de seguridad, requiriendo capacidades de correlación y análisis continuo.",
+      "justification_wrong": "La opción A genera volumen excesivo sin análisis efectivo y carece de frecuencia adecuada de revisión. La opción C es insuficiente al excluir tráfico interno (donde ocurren amenazas internas), registrar solo accesos exitosos (perdiendo intentos de intrusión), y carecer de correlación necesaria para detectar ataques complejos. La opción D es reactiva en lugar de preventiva, tiene cobertura temporal inadecuada (solo horario laboral), y retención insuficiente de logs para investigaciones forenses según mejores prácticas que requieren mínimo 90-180 días.",
+      "num": 50
+    }
+  ]
+}

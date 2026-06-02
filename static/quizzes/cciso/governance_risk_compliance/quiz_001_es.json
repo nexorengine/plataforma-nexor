@@ -1,0 +1,710 @@
+{
+  "cert_id": "cciso",
+  "domain_id": "governance_risk_compliance",
+  "quiz_num": 1,
+  "domain_name": "Governance, Risk & Compliance",
+  "cert_name": "CCISO",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Como CISO de una empresa que cotiza en bolsa y está sujeta al cumplimiento de SOX, estás diseñando controles de seguridad de la información para respaldar los requisitos de certificación de la Sección 302 del CEO y CFO. ¿Qué integración de marco de controles proporciona el MAYOR valor estratégico para demostrar la efectividad de los controles generales de TI (ITGC) para los sistemas de reporte financiero?",
+      "tag": "sox_itgc_control_frameworks",
+      "options": [
+        "A. Mapear los controles de COBIT 2019 a los requisitos de SOX e integrarlos con el ISMS de ISO 27001 para demostrar el monitoreo continuo de los controles de acceso a aplicaciones financieras, gestión de cambios y segregación de funciones",
+        "B. Implementar un programa de cumplimiento de SOX independiente administrado por auditores externos con pruebas de penetración anuales de los sistemas financieros y evaluaciones de vulnerabilidades trimestrales",
+        "C. Adoptar el marco de Ciberseguridad de NIST con enfoque en la función de Protección y requerir autenticación multifactor para todos los empleados que acceden a aplicaciones financieras",
+        "D. Establecer un marco de Control Interno COSO administrado exclusivamente por el departamento de finanzas con seguridad de TI proporcionando soporte técnico solo durante los períodos de auditoría"
+      ],
+      "correct": 0,
+      "justification_correct": "La opción A representa el enfoque estratégico del CISO para el cumplimiento de SOX al integrar COBIT (que aborda específicamente la gobernanza de TI y proporciona orientación detallada sobre ITGC) con el enfoque sistemático de ISMS de ISO 27001. Esta integración crea un ambiente de monitoreo continuo de controles que respalda directamente los requisitos de certificación ejecutiva bajo la Sección 302 de SOX. El mapeo demuestra a los ejecutivos, auditores y miembros del directorio cómo los controles de seguridad de la información protegen la integridad de los datos financieros, los controles de acceso aseguran la segregación de funciones y la gestión de cambios previene modificaciones no autorizadas a los sistemas financieros, todo crítico para el cumplimiento de SOX. Esta integración estratégica proporciona aseguramiento basado en evidencia para las certificaciones del CEO/CFO mientras mantiene una postura de seguridad continua en lugar de cumplimiento en un momento específico.",
+      "justification_wrong": "La opción B es táctica en lugar de estratégica, dependiendo de partes externas y evaluaciones en momentos específicos en lugar de construir capacidades de control interno y monitoreo continuo que los ejecutivos necesitan para la certificación continua. La opción C se enfoca en un solo marco sin abordar los requisitos específicos de ITGC (gestión de cambios, segregación de funciones, acceso al sistema) que SOX exige para los sistemas financieros. La opción D excluye al CISO de la gobernanza estratégica y relega la seguridad de la información a un rol de soporte, sin reconocer que los ITGC son fundamentalmente controles de seguridad de la información que requieren propiedad del CISO e integración con la gobernanza de seguridad más amplia; este enfoque aislado crea brechas en la efectividad de los controles y la responsabilidad ejecutiva."
+    },
+    {
+      "num": 2,
+      "text": "En reportes a nivel de junta directiva (board reporting), ¿qué métricas de riesgo de seguridad son críticas según COSO Enterprise Risk Management?",
+      "tag": "Board-Level Reporting",
+      "options": [
+        "B. Perfil de riesgo general, tolerancia de riesgo y exposición versus apetito empresarial",
+        "A. Número total de parches de software aplicados mensualmente",
+        "C. Cantidad de incidentes de seguridad resueltos en menos de 24 horas",
+        "D. Porcentaje de empleados capacitados en phishing anualmente"
+      ],
+      "correct": 0,
+      "justification_correct": "COSO ERM 2017 enfatiza reportar a gobernanza el perfil de riesgo consolidado, apetito empresarial y tolerancia aceptada. Junta requiere visión estratégica de exposición versus objetivos, no métricas operacionales granulares. Permite toma de decisiones informada a nivel C-suite.",
+      "justification_wrong": "A, C y D son métricas operacionales útiles para gestión táctica pero insuficientes para junta. No comunican exposición estratégica ni vinculación con continuidad empresarial. Junta necesita abstracción ejecutiva que estos KPIs operacionales no proporcionan."
+    },
+    {
+      "num": 3,
+      "text": "¿Cuál es la responsabilidad principal del Chief Information Security Officer (CISO) respecto a cumplimiento normativo según regulaciones como SOX y HIPAA?",
+      "tag": "Regulatory Compliance Frameworks",
+      "options": [
+        "A. Garantizar auditoría externa realice todas las pruebas de cumplimiento regulatorio",
+        "B. Asesorar a ejecutivos sobre riesgos de incumplimiento y supervisar efectividad de controles de compliance",
+        "D. Generar reportes de cumplimiento exclusivamente para departamento legal",
+        "C. Implementar manualmente todos los controles técnicos especificados por reguladores"
+      ],
+      "correct": 1,
+      "justification_correct": "SOX 404 y HIPAA Security Rule requieren que organización (incluyendo CISO) proporcione asesoramiento sobre riesgos y supervise controles. CISO actúa como asesor ejecutivo en programa de compliance, colaborando con legal, auditoría interna y operaciones.",
+      "justification_wrong": "A asume tercerización completa (responsabilidad no delegable). C es ejecución táctica, no responsabilidad CISO. D limita alcance indebidamente. CISO debe participar en governance, estrategia compliance y supervisión ejecutiva, no solo ejecución técnica."
+    },
+    {
+      "num": 4,
+      "text": "Como CISO de una organización de salud que experimenta un ataque de ransomware que afecta 75,000 registros de pacientes, debe establecer prioridades de respuesta a incidentes. Bajo los principios de gobierno de seguridad de la información y marcos regulatorios como HIPAA, ¿cuál debería ser su enfoque estratégico PRINCIPAL durante las primeras 24 horas?",
+      "tag": "breach_response_governance_strategy",
+      "options": [
+        "A. Contener la amenaza, preservar la evidencia forense e iniciar el proceso de evaluación de notificación de violación mientras se involucra asesoría legal para determinar las obligaciones regulatorias",
+        "B. Notificar inmediatamente a todos los individuos afectados dentro de las 24 horas para demostrar transparencia y minimizar el daño reputacional a la organización",
+        "C. Enfocarse exclusivamente en la restauración de sistemas y continuidad del negocio para minimizar la interrupción operacional antes de abordar cualquier requisito de cumplimiento",
+        "D. Negociar con los actores de amenaza para prevenir la exfiltración de datos mientras se retrasa la clasificación de violación hasta que se determine el alcance completo"
+      ],
+      "correct": 0,
+      "justification_correct": "La opción A refleja un gobierno estratégico apropiado de respuesta a incidentes a nivel de CISO. El enfoque principal debe ser la contención de la amenaza para prevenir daños adicionales, la preservación forense para apoyar la investigación y procesos legales, y el involucramiento inmediato del proceso de evaluación de violación con asesoría legal. Esto demuestra madurez en el gobierno de seguridad de la información al equilibrar respuesta técnica, preparación de cumplimiento regulatorio y gestión de riesgos. El CISO debe coordinar la respuesta multifuncional incluyendo equipos técnicos, legal, cumplimiento y liderazgo ejecutivo. Bajo HIPAA y marcos estándar de respuesta a incidentes (NIST, ISO 27035), la contención inmediata y preservación de evidencia son críticas, mientras que los plazos de notificación de violación permiten períodos razonables de investigación (típicamente 60 días para HIPAA) para evaluar con precisión el alcance antes de la notificación.",
+      "justification_wrong": "La opción B es incorrecta porque la notificación inmediata dentro de 24 horas no es requerida ni aconsejable antes de entender el alcance de la violación, lo que podría llevar a comunicaciones inexactas y violaciones regulatorias adicionales. La opción C falla en reconocer que las obligaciones de cumplimiento y legales corren paralelas a la respuesta técnica—un CISO no puede ignorar requisitos regulatorios, y el gobierno apropiado requiere pistas simultáneas. La opción D representa un gobierno de seguridad extremadamente pobre ya que negociar con actores de amenaza crea responsabilidad legal, puede violar la guía de aplicación de la ley y la política organizacional, y retrasar la clasificación de violación para evitar obligaciones de reporte constituye incumplimiento regulatorio y potencial exposición criminal. El CISO tiene deberes fiduciarios y regulatorios que prohíben tales enfoques."
+    },
+    {
+      "num": 5,
+      "text": "¿Cuál es la obligación contractual clave del procesador de datos personales según GDPR Artículo 28?",
+      "tag": "Legal and Contractual Obligations",
+      "options": [
+        "C. Transferir datos libremente a terceros sin notificación al responsable",
+        "D. Procesar datos únicamente en jurisdicciones de la UE sin excepciones",
+        "B. Firmar contrato (DPA) que asegure cumplimiento de GDPR y establezca responsabilidades de seguridad",
+        "A. Determinar independientemente los fines y medios del procesamiento de datos"
+      ],
+      "correct": 2,
+      "justification_correct": "GDPR Artículo 28 requiere Data Processing Agreement (DPA) formalizado entre responsable y procesador. DPA debe especificar medidas de seguridad (Artículo 32), alcance, naturaleza y duración de procesamiento. Es obligación contractual fundamental para establecer compliance framework.",
+      "justification_wrong": "A describe rol de responsable, no procesador. C viola Artículo 28 (prohibido procesamiento no autorizado). D es restricción técnica no universal (hay excepciones legales válidas bajo Capítulo 5 GDPR). Solo B establece marco contractual obligatorio."
+    },
+    {
+      "num": 6,
+      "text": "Como CISO de una empresa que cotiza en bolsa y está sujeta a las regulaciones SOX, estás desarrollando un marco de gobierno de seguridad de la información para respaldar la integridad de los reportes financieros. ¿Qué enfoque estratégico de control MEJOR alinea las responsabilidades de seguridad de la información con los requisitos de cumplimiento de SOX?",
+      "tag": "executive_security_governance_sox_compliance",
+      "options": [
+        "A. Establecer al CISO como el funcionario certificador de todos los controles generales de TI (ITGCs) que respaldan los sistemas financieros, con reporte directo al comité de auditoría sobre la efectividad de los controles",
+        "B. Implementar controles de segregación de funciones en los sistemas financieros, asignar al CFO la responsabilidad total de la certificación SOX, y proporcionar seguridad de TI solo como función de apoyo",
+        "C. Diseñar los controles de seguridad de la información como componentes integrados del marco de control interno, con el CISO colaborando con el CFO y CEO para asegurar que los controles de seguridad respalden sus obligaciones de certificación",
+        "D. Crear un equipo de cumplimiento SOX separado que reporte al asesor legal para manejar todos los requisitos de seguridad de sistemas financieros independientemente del programa de seguridad de la información"
+      ],
+      "correct": 2,
+      "justification_correct": "La opción C representa el enfoque estratégico correcto donde el CISO asegura que los controles de seguridad de la información (controles de acceso, gestión de cambios, segregación de funciones en aplicaciones financieras, registro de auditoría) estén integrados en el marco más amplio de control interno sobre reportes financieros (ICFR). Aunque el CEO y CFO tienen la responsabilidad de certificación bajo SOX 302 y 404, el rol estratégico del CISO es diseñar, implementar y validar los controles generales de TI y controles de aplicación que respaldan la integridad, confidencialidad y disponibilidad de los datos financieros. Este modelo de gobierno colaborativo asegura que los controles de seguridad habiliten en lugar de operar separadamente del cumplimiento SOX, reflejando un gobierno de seguridad de la información maduro alineado con la gestión de riesgos empresariales.",
+      "justification_wrong": "La opción A es incorrecta porque SOX coloca la responsabilidad de certificación en el CEO y CFO, no en el CISO; aunque el CISO valida los ITGCs, no certifica la efectividad general de los controles. La opción B es incorrecta ya que disminuye el rol estratégico del CISO a mero apoyo cuando los controles de seguridad de la información son fundamentales para el ICFR y requieren integración de gobierno a nivel ejecutivo, no subordinación. La opción D es incorrecta porque segregar los requisitos de seguridad SOX del programa de seguridad de la información crea silos de gobierno, esfuerzos duplicados e implementación de controles inconsistente que socava tanto la postura de seguridad como la efectividad del cumplimiento."
+    },
+    {
+      "num": 7,
+      "text": "En el contexto de reportes a nivel de junta directiva, ¿qué métrica es crítica según COSO y marcos de cumplimiento normativo?",
+      "tag": "Board-Level Reporting",
+      "options": [
+        "B. Exposición financiera por riesgos de ciberseguridad y postura de cumplimiento regulatorio",
+        "A. Número de parches de seguridad aplicados mensualmente",
+        "C. Cantidad de correos electrónicos bloqueados por antispam",
+        "D. Velocidad de transferencia de datos en la red corporativa"
+      ],
+      "correct": 0,
+      "justification_correct": "COSO ERM 2017 y directrices de SEC requieren que la junta monitoree exposición financiera derivada de riesgos de seguridad e incumplimiento normativo. Los reportes ejecutivos deben cuantificar impacto empresarial, no métricas técnicas operacionales.",
+      "justification_wrong": "A, C y D son métricas técnicas operacionales irrelevantes para junta directiva. No reflejan riesgo empresarial. La junta requiere inteligencia estratégica sobre exposición financiera y conformidad, no detalles técnicos."
+    },
+    {
+      "num": 8,
+      "text": "¿Cuál es la relación normativa entre GDPR y el programa de cumplimiento corporativo?",
+      "tag": "Regulatory Compliance Frameworks",
+      "options": [
+        "A. GDPR solo aplica a empresas europeas y no requiere cambios en programas globales",
+        "C. GDPR se enfoca únicamente en seguridad de red, no en privacidad de datos",
+        "B. GDPR establece obligaciones extraterritoriales sobre protección de datos personales, requiriendo Privacy by Design y DPA documentados",
+        "D. Las multas GDPR máximas son de €100,000 independiente del tamaño de violación"
+      ],
+      "correct": 2,
+      "justification_correct": "GDPR Art. 25 y 28 imponen obligaciones extraterritoriales a cualquier organización procesando datos de residentes EU. Requiere Privacy by Design, Data Protection Agreements documentados y evaluación de impacto. Multas hasta €20 millones o 4% de ingresos globales anuales (Art. 83).",
+      "justification_wrong": "A ignora alcance extraterritorial; C confunde GDPR con seguridad técnica únicamente; D subestima severidad punitiva. GDPR es régimen multinacional de privacidad integral, no limitado jurisdiccionalmente."
+    },
+    {
+      "num": 9,
+      "text": "En gestión de riesgos a nivel ejecutivo, ¿cómo se diferencia el riesgo inherente del riesgo residual según ISO 31000:2018?",
+      "tag": "Enterprise Risk Management",
+      "options": [
+        "D. Riesgo inherente solo aplica a amenazas externas, residual a internas",
+        "B. Riesgo inherente = nivel sin controles; Riesgo residual = nivel después de aplicar mitigaciones, determinando adecuación de controles",
+        "A. Riesgo inherente es teórico; riesgo residual es imaginario y no requiere evaluación",
+        "C. Son sinónimos y se usan indistintamente en reporting ejecutivo"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 31000:2018 define riesgo inherente como exposición sin controles existentes. Riesgo residual es el remanente post-mitigación. Esta distinción es crítica para evaluar suficiencia de controles y determinar aceptabilidad de riesgo a nivel directivo según apetito de riesgo corporativo.",
+      "justification_wrong": "A niega realidad de ambos; C confunde conceptos fundamentales de ERM; D asigna jurisdicción incorrecta. La distinción inherente/residual es aplicable a todo tipo de riesgo, tanto interno como externo."
+    },
+    {
+      "num": 10,
+      "text": "¿Cuál es la obligación específica de auditoría interna respecto a conformidad con SOX según COSO?",
+      "tag": "Audit Management & Legal Obligations",
+      "options": [
+        "B. Auditoría interna debe evaluar efectividad de controles internos sobre reporte financiero e informar independientemente a comité de auditoría y CEO",
+        "A. Auditoría interna solo debe reportar hallazgos financieros triviales al comité de auditoría",
+        "C. SOX elimina necesidad de auditoría interna en empresas públicas",
+        "D. Auditoría interna reporta únicamente deficiencias operacionales no relacionadas con riesgos financieros"
+      ],
+      "correct": 0,
+      "justification_correct": "SOX Sección 302 y 404 requieren que auditoría interna evalúe controles internos sobre reporte financiero, manteniendo independencia funcional y reportando directamente a comité de auditoría. COSO-ERM establece framework para esta evaluación integral de control interno.",
+      "justification_wrong": "A minimiza responsabilidad; C elimina requisito legal; D restringe alcance indebidamente. SOX refuerza auditoría interna como función crítica de supervisión independiente, no la elimina."
+    },
+    {
+      "num": 11,
+      "text": "Un CISO debe implementar un marco de gobierno de seguridad alineado con objetivos empresariales. Según ISO/IEC 27001:2022 y COBIT 2019, ¿cuál es el componente crítico que debe establecerse primero en la estructura de gobernanza de seguridad de la información?",
+      "tag": "Executive Security Governance",
+      "options": [
+        "D. Contratación de personal especializado en ciberseguridad ofensiva",
+        "C. Evaluación de vulnerabilidades en toda la infraestructura IT",
+        "B. Implementación inmediata de controles técnicos de ciberseguridad avanzados",
+        "A. Política de seguridad de la información con apoyo explícito de la junta directiva y dirección"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 5.1 y COBIT 2019 governance practise 1 exigen que la dirección establezca política de seguridad con compromiso visible de liderazgo ejecutivo. Este fundamento sustenta toda la estructura de gobernanza y alineamiento estratégico.",
+      "justification_wrong": "Implementar controles técnicos sin política aprobada por junta incumple requisitos de gobernanza. Evaluaciones de vulnerabilidades y contrataciones son actividades tácticas posteriores al establecimiento de gobierno."
+    },
+    {
+      "num": 12,
+      "text": "Para cumplimiento regulatorio de HIPAA (Healthcare), ¿cuál es la responsabilidad específica del CISO respecto a las notificaciones de violación de datos en conformidad con la Regla de Notificación de Brechas de Seguridad (45 CFR §§ 164.404-412)?",
+      "tag": "Regulatory Compliance Frameworks - HIPAA",
+      "options": [
+        "C. Esperar 180 días antes de notificar para completar investigación forense exhaustiva",
+        "D. Notificar solo a aseguradoras y no a pacientes cuando se comprometa información de salud",
+        "A. Notificar únicamente al departamento legal sin involucrar a autoridades regulatorias o individuos afectados",
+        "B. Coordinar notificación sin demora injustificable a individuos afectados, medios de comunicación y HHS cuando se afecte más de 500 residentes de una jurisdicción"
+      ],
+      "correct": 3,
+      "justification_correct": "45 CFR §164.404 requiere notificación sin demora injustificada. §164.405 exige notificación a individuos afectados. §164.406 y §164.407 requieren notificación a medios y HHS si >500 residentes. El CISO coordina estas notificaciones conforme plazos regulatorios.",
+      "justification_wrong": "La Regla de Notificación de HIPAA es específica: notificación sin demora, a múltiples partes interesadas simultáneamente, no secuencial. Esperar 180 días viola la ley. Excluir pacientes incumple requisitos de transparencia regulatoria."
+    },
+    {
+      "num": 13,
+      "text": "En el contexto de cumplimiento PCI-DSS 4.0 para organizaciones procesadoras de pagos, ¿cuál es el requerimiento crítico de gobernanza que debe documentar el CISO respecto a autenticación de múltiples factores en acceso administrativo?",
+      "tag": "Regulatory Compliance Frameworks - PCI-DSS",
+      "options": [
+        "C. MFA aplica solo a acceso a bases de datos de tarjetas, excluyendo servidores perimetrales y firewalls",
+        "A. MFA es opcional si la organización implementa encriptación de extremo a extremo en todas las transacciones",
+        "B. MFA es requerimiento obligatorio (Req 8.3) para todo acceso administrativo remoto e interactivo a ambiente de datos de tarjetas desde enero 2025",
+        "D. MFA debe implementarse solo durante auditorías anuales de cumplimiento PCI-DSS"
+      ],
+      "correct": 2,
+      "justification_correct": "PCI-DSS v4.0 Requisito 8.3 (efectivo enero 2025) exige MFA para todo acceso administrativo interactivo. Esto es requerimiento crítico sin excepciones. El CISO debe documentar política, implementación y evidencia de cumplimiento para certificación.",
+      "justification_wrong": "PCI-DSS no permite excepciones para MFA basadas en otras técnicas criptográficas. Limitarlo a bases de datos incumple alcance integral. No es operación temporal sino requerimiento permanente. Encriptación y MFA son controles complementarios obligatorios."
+    },
+    {
+      "num": 14,
+      "text": "Bajo el Artículo 32 del GDPR (Seguridad del Procesamiento) y principio de Privacy by Design, ¿cuál es la obligación específica del CISO respecto a evaluaciones de impacto de datos (DPIA) según Artículo 35 para reportar a junta directiva?",
+      "tag": "Regulatory Compliance Frameworks - GDPR",
+      "options": [
+        "A. Realizar DPIA únicamente cuando el Supervisor de Protección de Datos lo solicite formalmente",
+        "B. Realizar DPIA para procesamiento de alto riesgo, documentar resultados y reportar hallazgos críticos a dirección; consultar Autoridad de Protección si riesgo residual no puede mitigarse",
+        "C. DPIA son responsabilidad exclusiva del Responsable de Protección de Datos (DPO), no del CISO",
+        "D. Realizar DPIA anualmente sin importar cambios en procesamiento de datos o tecnologías"
+      ],
+      "correct": 1,
+      "justification_correct": "GDPR Art. 35 exige DPIA para procesamiento de alto riesgo. Art. 36 requiere consulta con Autoridad si riesgos residuales persisten. El CISO colabora con DPO en evaluación técnica. Art. 32 requiere reportar a directivos sobre medidas de seguridad implementadas y validadas.",
+      "justification_wrong": "DPIA no es actividad reactiva sino proactiva. Responsabilidad compartida entre CISO y DPO según roles. No es actividad anual automática sino desencadenada por cambios significativos en procesamiento. Autoridad debe consultarse si riesgos residuales permanecen tras mitigaciones."
+    },
+    {
+      "num": 15,
+      "text": "En marco de Enterprise Risk Management (ERM) según COSO ERM 2017 y risk reporting a nivel ejecutivo, ¿cuál es el enfoque correcto para que el CISO comunique riesgos de ciberseguridad no mitigables a la junta directiva?",
+      "tag": "Risk Management at Executive Level",
+      "options": [
+        "D. Delegar toda comunicación de riesgos al departamento de TI, manteniendo junta directiva solo informada sobre cumplimiento regulatorio",
+        "B. Traducir riesgos técnicos a impacto empresarial cuantificable (pérdida financiera potencial, continuidad operacional, reputacional) con opciones de tratamiento alineadas a apetito de riesgo corporativo",
+        "C. Solicitar presupuesto ilimitado argumentando que todos los riesgos técnicos son críticos y requieren mitigación inmediata",
+        "A. Presentar solo métricas técnicas de vulnerabilidades y porcentajes de parches aplicados sin contexto de riesgo empresarial"
+      ],
+      "correct": 1,
+      "justification_correct": "COSO ERM 2017 exige traducir riesgos técnicos a lenguaje empresarial. El CISO debe cuantificar impacto potencial y alinearse con apetito de riesgo de junta. Presentar opciones de tratamiento (mitigación, transferencia, aceptación) permite decisiones informadas estratégicas.",
+      "justification_wrong": "Métricas técnicas aisladas no comunican impacto ejecutivo. Presupuestos ilimitados sin priorización incumple governance corporativo. El CISO es responsable directo ante junta de riesgos cibernéticos como riesgos empresariales estratégicos, no solo tácticos."
+    },
+    {
+      "num": 16,
+      "text": "Una organización financiera debe implementar un marco de gobernanza de seguridad alineado con SOX (Sarbanes-Oxley). ¿Cuál es el componente crítico que debe reportar directamente al board de directores según la sección 302 de SOX?",
+      "tag": "Executive Security Governance & SOX Compliance",
+      "options": [
+        "D. El departamento de cumplimiento normativo sin autoridad sobre arquitectura de seguridad",
+        "C. El Chief Financial Officer (CFO) sin asesoría técnica de seguridad",
+        "B. El Chief Technology Officer (CTO) para supervisar únicamente infraestructura técnica",
+        "A. El Chief Information Security Officer (CISO) con responsabilidad directa sobre controles de seguridad de información financiera"
+      ],
+      "correct": 3,
+      "justification_correct": "SOX sección 302 requiere que directivos senior certifiquen controles internos sobre información financiera. El CISO debe reportar directamente al board garantizando que controles de seguridad protegen la integridad de datos financieros. COSO Framework y regulación SEC confirman esta estructura jerárquica.",
+      "justification_wrong": "El CTO se enfoca en tecnología operativa, no en gobernanza de riesgos de seguridad. CFO requiere asesoría técnica especializada. Cumplimiento normativo sin autoridad de seguridad no garantiza implementación efectiva de controles."
+    },
+    {
+      "num": 17,
+      "text": "En un programa de cumplimiento HIPAA, una organización de salud identifica que los registros electrónicos de pacientes (EHR) no poseen auditoría integral de accesos. Según el estándar HIPAA Security Rule 164.312(b), ¿qué acción es prioritaria?",
+      "tag": "HIPAA Regulatory Framework & Audit Management",
+      "options": [
+        "D. Documentar políticas de acceso sin implementar tecnología de monitoreo real",
+        "A. Implementar logging exhaustivo de accesos a EHR con capacidad de auditoría forense y análisis de comportamiento anómalo",
+        "B. Realizar únicamente backups diarios de bases de datos sin mecanismo de trazabilidad de accesos",
+        "C. Delegar auditoría de accesos a proveedores terceros sin supervisión interna"
+      ],
+      "correct": 1,
+      "justification_correct": "HIPAA Security Rule 164.312(b) exige Audit Controls (auditoría de sistemas). Requiere registrar y examinar accesos a datos protegidos (PHI). La solución A cumple con requisitos de trazabilidad forense, detección de anomalías y cumplimiento normativo de HHS OCR.",
+      "justification_wrong": "Backups sin auditoría no cumplen HIPAA. Delegación sin supervisión viola responsabilidad del cubierto (Covered Entity). Documentación sin tecnología es cumplimiento aparente, no real."
+    },
+    {
+      "num": 18,
+      "text": "Una empresa de comercio electrónico procesadora de pagos debe cumplir PCI-DSS 4.0. El CISO debe reportar al board sobre el estado de tokenización de datos de tarjetas. ¿Cuál es el requisito de tokenización según PCI-DSS Requirement 3.2.1?",
+      "tag": "PCI-DSS Compliance & Risk Management",
+      "options": [
+        "B. Permitir almacenamiento en texto plano de PAN si el ambiente está encriptado a nivel de red",
+        "D. Mantener PAN en base de datos con hash SHA-256 sin requisito adicional de tokenización",
+        "C. Tokenizar o encriptar PAN de manera que imposibilite reconstrucción del número original sin clave de detokenización",
+        "A. Tokenizar número de tarjeta primario (PAN) en sistemas de almacenamiento, manteniendo datos sensibles fuera del alcance de auditoría PCI"
+      ],
+      "correct": 2,
+      "justification_correct": "PCI-DSS 3.2.1 requiere que PAN no sea almacenado en texto plano. Tokenización debe hacer irrecuperable el PAN sin clave de detokenización controlada. Encriptación de fuerte debe cumplir requisitos de 3.4 (NIST/FIPS). La opción C refleja control técnico adecuado.",
+      "justification_wrong": "A: Tokenización no anula alcance PCI. B: Encriptación de red no protege almacenamiento. D: Hash SHA-256 no es suficiente; PCI requiere tokenización u encriptación fuerte reversible solo con clave."
+    },
+    {
+      "num": 19,
+      "text": "Una multinacional debe establecer gobernanza de consentimiento de datos bajo GDPR Artículo 7. El board requiere que el CISO presente métricas de cumplimiento. ¿Cuál es el mecanismo de validación que demuestra granularidad de consentimiento según GDPR?",
+      "tag": "GDPR Compliance & Legal Obligations",
+      "options": [
+        "B. Sistema de gestión de consentimiento (CMS) que documenta consentimiento específico, granular y revocable por categoría de procesamiento",
+        "A. Registro de consentimiento genérico para todas las categorías de procesamiento, válido indefinidamente sin renovación",
+        "C. Aviso legal único en términos de servicio asumiendo consentimiento implícito de usuarios",
+        "D. Auditoría anual de cumplimiento sin documentación real de consentimiento individual"
+      ],
+      "correct": 0,
+      "justification_correct": "GDPR Art. 7 requiere consentimiento específico, informado y granular por propósito. Un CMS auditable demuestra: (1) consentimiento explícito por categoría, (2) revocabilidad, (3) trazabilidad temporal. Recital 32 GDPR enfatiza granularidad sin bundling de propósitos.",
+      "justification_wrong": "A: Consentimiento genérico viola principio de granularidad (Art. 7.4). C: Consentimiento implícito rechazado por GDPR (Art. 4.11). D: Auditoría sin documentación no demuestra cumplimiento ante autoridades de protección de datos."
+    },
+    {
+      "num": 20,
+      "text": "En el contexto de Enterprise Risk Management (ERM), un CISO debe evaluar riesgos de seguridad integrados con riesgos operacionales y de cumplimiento para reporte ejecutivo. ¿Cuál es el marco que permite alineación bidireccional entre riesgos técnicos de seguridad y riesgos corporativos según COSO 2017?",
+      "tag": "Enterprise Risk Management & Board-Level Reporting",
+      "options": [
+        "C. ISO 31000 aplicado únicamente a riesgos de procesos financieros sin correlación con ciberseguridad",
+        "D. Scorecards de KPI técnicos desconectados de reportes de cumplimiento normativo del board",
+        "B. Framework COSO 2017 que integra riesgos de seguridad con objetivos estratégicos, operacionales y de cumplimiento en matriz multidimensional",
+        "A. Matriz de riesgos unidimensional que califica seguridad independientemente de objetivos empresariales"
+      ],
+      "correct": 2,
+      "justification_correct": "COSO 2017 (Enterprise Risk Management–Integrated Framework) establece 5 componentes: Gobernanza, Estrategia, Identificación de Riesgos, Respuesta al Riesgo y Monitoreo. Integra riesgos técnicos con objetivos estratégicos y regulatorios en visión unificada para consejo directivo.",
+      "justification_wrong": "A: Silos de riesgos no permiten visión integrada requerida por board. C: ISO 31000 es complementario pero no incluye integración COSO de objetivos empresariales. D: KPI desconectados imposibilitan toma de decisiones estratégica informada."
+    },
+    {
+      "num": 21,
+      "text": "Según la norma ISO/IEC 27001:2022 y el marco NIST Cybersecurity Framework, ¿cuál es el enfoque predominante para establecer la gobernanza de seguridad a nivel ejecutivo en organizaciones con múltiples líneas de negocio?",
+      "tag": "Executive Security Governance",
+      "options": [
+        "A. Implementar un modelo de gobernanza centralizado con autoridad única en seguridad de información, alineado a objetivos de negocio mediante RACI matrices y reportes trimestrales al comité de auditoría.",
+        "D. Implementar gobernanza reactiva basada únicamente en incidentes detectados.",
+        "B. Distribuir la responsabilidad de seguridad entre cada unidad de negocio sin coordinación central, permitiendo autonomía operativa.",
+        "C. Delegar todas las decisiones de seguridad al CISO sin participación de la junta directiva."
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27001:2022 requiere estructura de gobernanza definida con roles claros. NIST CSF establece integración con objetivos empresariales. Modelo centralizado con RACI proporciona accountability, transparencia y alineación estratégica necesarios para supervisión ejecutiva efectiva.",
+      "justification_wrong": "Opciones B, C y D violan principios de gobernanza corporativa: falta de coordinación (B), concentración excesiva (C) e ausencia de proactividad (D). SOX requiere supervisión de la junta en riesgos cibernéticos."
+    },
+    {
+      "num": 22,
+      "text": "En el contexto de GDPR Artículo 32 y SOX Sección 404, ¿qué elemento crítico debe incluir un programa de cumplimiento de controles de seguridad para organizaciones multinacionales con datos en múltiples jurisdicciones?",
+      "tag": "Regulatory Compliance Frameworks",
+      "options": [
+        "B. Aplicar uniformemente los mismos controles en todas las regiones sin considerar regulaciones locales.",
+        "C. Enfocarse únicamente en GDPR ignorando regulaciones de datos en otras jurisdicciones.",
+        "D. Implementar auditorías anuales genéricas sin análisis específico de controles.",
+        "A. Evaluación de brechas de cumplimiento específica por jurisdicción, incluyendo mapeo de requisitos ISO 27001, HIPAA, PCI-DSS y GDPR, con documentación de compensating controls y plan de remediación con cronograma."
+      ],
+      "correct": 3,
+      "justification_correct": "GDPR Art. 32 exige medidas técnicas y organizativas apropiadas. SOX 404 requiere evaluación interna de controles. Enfoque jurisdiccional múltiple asegura cumplimiento integral, documentación defensible y mitigación de riesgos regulatorios diferenciados.",
+      "justification_wrong": "Uniformidad (B) viola principios de privacidad por diseño. Ignorar jurisdicciones (C) genera incumplimiento. Auditorías genéricas (D) no satisfacen requisitos específicos de SOX 404 de evaluación efectiva y documentación."
+    },
+    {
+      "num": 23,
+      "text": "Conforme a HIPAA Security Rule 45 CFR § 164.308 y PCI-DSS v4.0, ¿cuál es la estructura correcta de Enterprise Risk Management (ERM) para organizaciones de atención sanitaria que procesan pagos electrónicos?",
+      "tag": "Enterprise Risk Management",
+      "options": [
+        "D. Realizar evaluaciones de riesgo ad-hoc sin documentación formal ni gobernanza.",
+        "B. Implementar solamente evaluaciones de riesgo HIPAA sin integrar PCI-DSS.",
+        "A. Integrar tres marcos: HIPAA Risk Analysis (§164.308(a)(1)(ii)), PCI-DSS Risk Assessment (Requirement 12.6.1), e ISO/IEC 31000 para cuantificación, con governance unificada en comité de riesgos ejecutivo.",
+        "C. Utilizar únicamente PCI-DSS omitiendo requisitos específicos de privacidad HIPAA."
+      ],
+      "correct": 2,
+      "justification_correct": "HIPAA exige Risk Analysis documentado. PCI-DSS v4.0 require Risk Assessment. ISO 31000 proporciona metodología de cuantificación. Integración de tres marcos en governance unificada satisface ambas regulaciones y proporciona visibilidad ejecutiva completa.",
+      "justification_wrong": "Separar evaluaciones (B, C) genera gaps de riesgo. HIPAA y PCI-DSS son mandatorios simultáneamente en healthcare pagador. Evaluaciones ad-hoc (D) incumplen requisitos de documentación y formalidad regulatoria."
+    },
+    {
+      "num": 24,
+      "text": "En el contexto de reportes a junta directiva según CIS Controls v8 y COSO Internal Control Framework, ¿cuál debe ser la frecuencia y contenido mínimo de reporte de riesgos cibernéticos críticos al Board of Directors?",
+      "tag": "Board-Level Reporting",
+      "options": [
+        "D. Comunicación informal sin documentación formal.",
+        "B. Reporte anual genérico sin métricas específicas.",
+        "C. Reportes solo cuando ocurren incidentes graves.",
+        "A. Reporte trimestral estructurado con: KRIs (Key Risk Indicators), análisis de brechas vs. CIS Controls prioritarios, posición de vulnerabilidades críticas, impacto financiero/reputacional estimado, y plan de mitigación con responsables y fechas."
+      ],
+      "correct": 3,
+      "justification_correct": "COSO Framework requiere reporte regular de riesgos significativos. CIS Controls v8 definen indicadores clave. Reporte trimestral con KRIs, análisis cuantitativo e impactos proporciona governance transparente, detecta tendencias y facilita decisiones ejecutivas informadas.",
+      "justification_wrong": "Reporte anual (B) es insuficiente para supervisión efectiva. Reportes reactivos (C) violan principios de gestión proactiva. Informalidad (D) incumple requisitos de documentación y auditabilidad de SOX y governance corporativa."
+    },
+    {
+      "num": 25,
+      "text": "Según NIST SP 800-53 Rev. 5 (CA controls), ISO/IEC 27001:2022 Anexo A 6.2 y SOX, ¿qué metodología de auditoría y testing de controles es requerida para validar la efectividad de los sistemas de información de una organización?",
+      "tag": "Audit Management",
+      "options": [
+        "D. Validación por personal de IT sin participación de auditoría interna independiente.",
+        "B. Testing únicamente de controles operativos sin evaluar diseño.",
+        "A. Auditoría integrada con tres componentes: evaluación de diseño de controles (SOX 404(a)), testing de operación efectiva (SOX 404(b)), y verificación de alineación con NIST CA-2 Assessment & Authorization, documentado en plan de auditoría con scope, criterios y periodicidad.",
+        "C. Auditoría anual genérica sin frameworks específicos de referencia."
+      ],
+      "correct": 2,
+      "justification_correct": "SOX 404 requiere evaluación de diseño Y operación efectiva. NIST CA-2 especifica Assessment & Authorization. ISO 27001 requiere validación periódica. Metodología integrada con documentación formal satisface requisitos múltiples y genera evidencia auditablesólida.",
+      "justification_wrong": "Separar diseño/operación (B) incumple SOX. Auditoría genérica (C) no satisface NIST CA-2 específicos. Testing sin independencia (D) viola principios de segregación de funciones y governance de auditoría interna."
+    },
+    {
+      "num": 26,
+      "text": "En el contexto de gobernanza de seguridad ejecutiva, ¿cuál es el mecanismo de reporte más alineado con el marco COSO ERM 2017 para comunicar riesgos de ciberseguridad al Consejo de Administración?",
+      "tag": "Executive Security Governance & Board Reporting",
+      "options": [
+        "C. Reportes anuales de cumplimiento normativo exclusivamente enfocados en auditoría interna",
+        "A. Reportes trimestrales de riesgos inherentes vs. residuales con mapeo a objetivos estratégicos y tolerancia de riesgo corporativa",
+        "D. Reportes semanales de actividades de seguridad operacional sin conexión a estrategia empresarial",
+        "B. Reportes mensuales de incidentes técnicos detallados con métricas de vulnerabilidades identificadas"
+      ],
+      "correct": 1,
+      "justification_correct": "COSO ERM 2017 establece que la gobernanza debe reportar riesgos inherentes vs. residuales alineados con objetivos estratégicos y tolerancia de riesgo. Los reportes al Consejo requieren perspectiva ejecutiva de impacto empresarial, no detalles técnicos operacionales.",
+      "justification_wrong": "Reportes técnicos detallados, anuales sin estrategia o semanales operacionales no cumplen requisitos de gobernanza ejecutiva de COSO ERM 2017, que enfatiza comunicación de riesgos alineada estratégicamente al Consejo."
+    },
+    {
+      "num": 27,
+      "text": "Conforme a GDPR Artículos 32-34, ¿cuál es la responsabilidad primaria del CISO respecto a la notificación de brechas de datos personales a autoridades supervisoras?",
+      "tag": "Regulatory Compliance Frameworks - GDPR",
+      "options": [
+        "D. Realizar auditoría completa antes de cualquier notificación",
+        "B. Implementar encriptación post-incidente y notificar públicamente sin evaluación de riesgo",
+        "A. Determinar la viabilidad técnica de notificación, informar al responsable del tratamiento dentro de 72 horas, documentar evaluación de riesgo para interesados",
+        "C. Notificar únicamente a clientes afectados, omitiendo a autoridades supervisoras"
+      ],
+      "correct": 2,
+      "justification_correct": "GDPR Art. 33 obliga notificar a autoridad supervisora en plazo de 72 horas sin demora indebida. Art. 34 requiere evaluación de riesgo para datos interesados. CISO asesora viabilidad técnica; responsable del tratamiento notifica formalmente.",
+      "justification_wrong": "GDPR no permite omitir autoridades, notificaciones post-incidente sin encriptación previa, ni diferir notificación sin evaluación de riesgo. El plazo de 72 horas es imperativo; auditorías completas no pueden anteceder la notificación obligatoria."
+    },
+    {
+      "num": 28,
+      "text": "En conformidad con PCI-DSS 4.0, ¿cuál es el requerimiento crítico de gestión de riesgos que debe implementar un CISO en organizaciones con acceso a datos de tarjetas de crédito?",
+      "tag": "Regulatory Compliance Frameworks - PCI-DSS",
+      "options": [
+        "B. Implementación exclusiva de encriptación de datos en tránsito sin evaluación de vulnerabilidades",
+        "D. Monitoreo únicamente de sistemas de pago sin incluir redes correlacionadas",
+        "C. Auditoría externa cada cinco años sin evaluación interna de riesgo",
+        "A. Programa de gestión de riesgos documentado con evaluación anual, mitigación de controles y validación de efectividad mediante penetration testing"
+      ],
+      "correct": 3,
+      "justification_correct": "PCI-DSS 4.0 Requisito 12.3.1 exige programa documentado de gestión de riesgos con evaluación anual, identificación de mitigaciones, validación de efectividad. Penetration testing (11.3) valida controles de acceso a datos de titulares.",
+      "justification_wrong": "PCI-DSS requiere evaluación integral anual, no solo encriptación pasiva. Auditorías externas (12.2) complementan, no reemplazan evaluación interna. Monitoreo debe incluir toda infraestructura de cardholder data environment (CDE)."
+    },
+    {
+      "num": 29,
+      "text": "Bajo SOX 404(b), ¿cuál es la obligación del CISO respecto a la evaluación de controles internos sobre la información financiera en sistemas de IT críticos?",
+      "tag": "Regulatory Compliance Frameworks - SOX",
+      "options": [
+        "D. Implementar controles técnicos sin documentación ni validación externa",
+        "C. Reportar únicamente al departamento de IT, sin involucramiento de auditoría o comités ejecutivos",
+        "B. Responsabilidad exclusiva de asegurar disponibilidad de sistemas sin relación directa a controles financieros",
+        "A. Evaluar diseño y operatividad de controles IT que soportan integridad de datos financieros; documentar deficiencias significativas; coordinar con auditor externo para validación de efectividad"
+      ],
+      "correct": 3,
+      "justification_correct": "SOX 404(b) responsabiliza a management (incluyendo CISO) evaluar diseño y operatividad de controles IT. Requisitos: documentación de deficiencias significativas, comunicación a auditor externo, validación de efectividad de controles compensatorios.",
+      "justification_wrong": "SOX 404(b) vincula IT directamente a integridad financiera, no es responsabilidad exclusiva de IT. Requiere transparencia con auditoría externa y gobernanza ejecutiva. Controles sin documentación incumplen obligaciones Sarbanes-Oxley."
+    },
+    {
+      "num": 30,
+      "text": "En el contexto de HIPAA Security Rule §164.308(a)(7), ¿cuál es el componente esencial de gobernanza que debe establecer el CISO para organizaciones de salud respecto a seguridad de información protegida (PHI)?",
+      "tag": "Regulatory Compliance Frameworks - HIPAA & Enterprise Risk Management",
+      "options": [
+        "A. Programa de seguridad documentado con responsables designados, evaluación de riesgos bienal, plan de corrección de hallazgos y auditoría periódica de cumplimiento",
+        "B. Implementación de firewalls únicamente en perimetral sin monitoreo interno de acceso a PHI",
+        "C. Delegación completa de seguridad a proveedores externalizados sin supervisión interna",
+        "D. Evaluación de riesgos única en implementación inicial, sin revisiones posteriores"
+      ],
+      "correct": 0,
+      "justification_correct": "HIPAA Security Rule §164.308(a)(7) requiere programa de seguridad documentado: designación de responsables (Security Officer), evaluación de riesgos (§164.308(a)(1)(ii) bienal), plan de corrección, auditoría periódica §164.308(a)(8).",
+      "justification_wrong": "HIPAA exige gobernanza integral, no solo perímetro. Supervisión de terceros es obligatoria (Business Associate Agreements). Evaluación de riesgos debe ser continua (bienal mínimo), no única. Firewalls aislados no cumplen requisitos de acceso y monitoreo."
+    },
+    {
+      "num": 31,
+      "text": "Un CISO debe reportar al Consejo de Administración sobre postura de riesgos cibernéticos. Según SOX (Sarbanes-Oxley Act), ¿cuál es la responsabilidad principal del auditor interno respecto a los controles de seguridad de información?",
+      "tag": "Board-Level Reporting & SOX Compliance",
+      "options": [
+        "B. Implementar directamente los controles técnicos de ciberseguridad en infraestructura de TI",
+        "A. Evaluar la efectividad de controles sobre sistemas financieros críticos y reportar hallazgos significativos al Comité de Auditoría",
+        "D. Certificar que todos los empleados completaron capacitación en ciberseguridad",
+        "C. Determinar el presupuesto anual de seguridad sin participación ejecutiva"
+      ],
+      "correct": 1,
+      "justification_correct": "SOX 302-404 requiere evaluación de efectividad de controles internos sobre reportes financieros. El auditor interno debe evaluar y reportar deficiencias significativas al Comité de Auditoría, incluyendo controles de sistemas que impactan integridad de datos financieros.",
+      "justification_wrong": "Implementación directa (B) es responsabilidad del CIO, no auditoría. Presupuestos (C) requieren participación ejecutiva. Capacitación (D) es actividad operativa, no evaluación de control efectivo."
+    },
+    {
+      "num": 32,
+      "text": "En cumplimiento HIPAA, un CISO descubre que registros de salud protegidos (PHI) fueron accedidos sin autorización. ¿Cuál es la notificación requerida según HIPAA Breach Notification Rule?",
+      "tag": "HIPAA Regulatory Compliance Framework",
+      "options": [
+        "C. Notificar solo al HHS dentro de 30 días y mantener confidencial respecto a pacientes",
+        "A. Notificar únicamente a los pacientes afectados dentro de 60 días calendarios",
+        "B. Notificar a pacientes, medios masivos (si >500 personas afectadas) y HHS dentro de 60 días calendarios sin demora injustificada",
+        "D. Notificar únicamente a aseguradoras y proveedores de atención médica terceros"
+      ],
+      "correct": 2,
+      "justification_correct": "45 CFR §164.400-414 Breach Notification Rule establece notificación a individuos afectados, medios masivos (si >500) y HHS dentro de 60 días calendarios sin demora no razonable. Incluye detalles de incidente y medidas mitigación.",
+      "justification_wrong": "A incompleto: omite notificación a medios/HHS. C viola HIPAA: pacientes deben notificarse. D omite HHS requerido por regulación federal."
+    },
+    {
+      "num": 33,
+      "text": "Una organización de comercio electrónico procesadora de tarjetas de crédito debe cumplir PCI-DSS 4.0. ¿Cuál es el control más crítico para Nivel 1 (>6M transacciones/año)?",
+      "tag": "PCI-DSS Compliance Framework",
+      "options": [
+        "C. Aplicar cifrado AES-128 solamente para almacenamiento de datos de titulares",
+        "D. Establecer contraseñas mínimo 6 caracteres alfanuméricos para acceso administrativo",
+        "B. Realizar evaluación externa de cumplimiento (ASV) mínimo bienal sin auditoría interna",
+        "A. Implementar tokenización de datos de tarjeta y cifrado de transmisión de datos sensibles"
+      ],
+      "correct": 3,
+      "justification_correct": "PCI-DSS 4.0 Requisito 4 (cifrado en transmisión) y Requisito 3 (protección datos almacenados) son críticos. Tokenización reduce scope de cumplimiento. Para Nivel 1, ASV externo anual + auditor interno obligatorio per Requisito 11.2.",
+      "justification_wrong": "B: ASV debe ser anual para Nivel 1. C: AES-128 aceptable pero PCI-DSS 4.0 requiere evaluación riesgos criptografía. D: Contraseñas mínimo 8 caracteres, no 6 per Requisito 8."
+    },
+    {
+      "num": 34,
+      "text": "Un CISO en jurisdicción GDPR debe implementar Data Protection Impact Assessment (DPIA). ¿En cuál situación es obligatoria la DPIA según GDPR Artículo 35?",
+      "tag": "GDPR Compliance & Data Privacy Governance",
+      "options": [
+        "A. Procesamiento de datos de clientes de bajo riesgo para marketing directo mediante email",
+        "C. Transferencia de datos personales internamente entre departamentos de RH y Finanzas",
+        "B. Tratamiento sistemático y extenso de datos sensibles de categorías especiales con evaluación automatizada de decisiones",
+        "D. Recopilación de nombre y correo electrónico en formulario de contacto web"
+      ],
+      "correct": 2,
+      "justification_correct": "GDPR Artículo 35 requiere DPIA para tratamientos de alto riesgo: procesamiento sistemático/extenso de datos sensibles (Art. 9), evaluación/decisiones automatizadas, vigilancia a gran escala. Obligatorio si cumplen criterios WP29 (ahora EDPB).",
+      "justification_wrong": "A: Marketing directo email no califica alto riesgo obligatorio. C: Transferencia intra-organizacional sin procesamiento riesgoso. D: Datos básicos públicos, bajo riesgo, no requiere DPIA."
+    },
+    {
+      "num": 35,
+      "text": "En Enterprise Risk Management (ERM), el CISO debe integrar riesgos cibernéticos en marco COSO II. ¿Cuál componente de COSO II debe mapear explícitamente controles cibernéticos?",
+      "tag": "Enterprise Risk Management & Executive Governance",
+      "options": [
+        "A. Control Activities - incluyendo controles preventivos, detectivos y correctivos de seguridad en procesos críticos",
+        "D. Risk Assessment - identificación de amenazas cibernéticas sin mapping a controles operacionales",
+        "C. Monitoring - únicamente a través de auditorías externas anuales sin evaluación continua",
+        "B. Information & Communication - solamente comunicación de incidentes post-evento al Consejo"
+      ],
+      "correct": 0,
+      "justification_correct": "COSO Internal Control - Integrated Framework II (2013) Componente 3 'Control Activities' requiere diseño e implementación de controles preventivos, detectivos y correctivos a nivel procesos transaccionales y sistemas. Ciberseguridad debe integrase aquí, no segregado.",
+      "justification_wrong": "B: Information & Communication es Componente 4, essential pero insuficiente sin control activities. C: Monitoring (Comp. 5) requiere evaluación continua, no solo auditoría anual. D: Risk Assessment (Comp. 2) identifica pero no implementa; control activities ejecutan."
+    },
+    {
+      "num": 36,
+      "text": "Un CISO implementa un modelo de gobernanza de seguridad donde los riesgos críticos se escalan directamente al Comité de Auditoría cada trimestre. ¿Cuál es el principal beneficio de esta estructura según COSO ERM 2017?",
+      "tag": "Gobernanza Ejecutiva y Reporting al Nivel de Junta",
+      "options": [
+        "C. Reemplaza completamente los reportes de cumplimiento normativo interno",
+        "D. Reduce la responsabilidad del CISO ante el CEO respecto a incidentes de seguridad",
+        "A. Garantiza alineación entre estrategia empresarial, objetivos de riesgo y supervisión de control interno",
+        "B. Elimina la necesidad de evaluaciones de riesgos operacionales en departamentos funcionales"
+      ],
+      "correct": 2,
+      "justification_correct": "COSO ERM 2017 establece que la alineación estratégica requiere que riesgos significativos escalen a gobernanza, asegurando que junta directiva supervisa estrategia, establecimiento de objetivos, y desempeño contra tolerancia de riesgo empresarial.",
+      "justification_wrong": "La escalación trimestral al Comité de Auditoría no elimina evaluaciones operacionales (B), ni reemplaza reportes de cumplimiento (C), ni reduce responsabilidad del CISO (D). Estas opciones contradicen principios de gobernanza multinivel."
+    },
+    {
+      "num": 37,
+      "text": "Una organización financiera bajo regulación SOX debe documentar cambios en controles de acceso administrativo. ¿Qué estándar normativo integrado es más relevante para validar la efectividad de esta documentación?",
+      "tag": "Marcos de Cumplimiento Normativo: SOX",
+      "options": [
+        "D. HIPAA Technical Safeguards para autenticación de dos factores",
+        "C. GDPR Artículo 32 para cifrado de datos personales en tránsito",
+        "B. ISO 27001:2022 limitada únicamente a clasificación de activos informáticos",
+        "A. COBIT 2019 con énfasis en evaluación independiente de la evidencia de control IT"
+      ],
+      "correct": 3,
+      "justification_correct": "SOX Sección 302/404 requiere evaluación periódica de controles internos sobre reportería financiera. COBIT 2019 proporciona framework para validar independencia, diseño y operación efectiva de controles IT integrados con procesos financieros.",
+      "justification_wrong": "ISO 27001 (B) no valida SOX específicamente; GDPR Artículo 32 (C) aplica a datos personales, no controles SOX; HIPAA (D) es específico de salud. SOX requiere evaluación independiente de control efectividad, no solo clasificación."
+    },
+    {
+      "num": 38,
+      "text": "Un CISO diseña un programa de gestión de riesgos empresariales donde riesgos de ciberseguridad se integran con riesgos operacionales, financieros y reputacionales. ¿Cuál framework normativo proporciona la estructura más completa para esta integración?",
+      "tag": "Gestión de Riesgos a Nivel Ejecutivo",
+      "options": [
+        "C. PCI-DSS v3.2.1 limitado a protección de datos de tarjetas de crédito",
+        "B. NIST Cybersecurity Framework v1.1 enfocado exclusivamente en ciberseguridad técnica",
+        "D. ITIL v4 orientado únicamente a operaciones de servicios IT",
+        "A. ISO/IEC 31000:2018 que define principios, marco y proceso de gestión de riesgos integrados"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 31000:2018 proporciona principios universales y proceso iterativo para gestión de riesgos empresariales integrados. Define contexto estratégico, identificación, análisis, evaluación y tratamiento de riesgos independiente de tipo de riesgo.",
+      "justification_wrong": "NIST CSF (B) es específico de ciberseguridad; PCI-DSS (C) es normativa de datos de pago; ITIL v4 (D) es framework operacional. Ninguno proporciona integración holística de riesgos empresariales múltiples como ISO 31000."
+    },
+    {
+      "num": 39,
+      "text": "Una organización de salud implementa un programa de cumplimiento HIPAA. El CISO debe determinar responsabilidades contractuales con proveedores de cloud. ¿Qué cláusula normativa es obligatoria según HIPAA?",
+      "tag": "Obligaciones Legales y Contractuales",
+      "options": [
+        "A. Acuerdo de Asociado de Negocio (BAA) que especifica obligaciones de salvaguarda técnica, física y administrativa",
+        "D. Acuerdo de procesamiento de datos que delega completamente responsabilidad de HIPAA al proveedor",
+        "B. Contrato de nivel de servicio (SLA) que garantiza disponibilidad del 99.99% sin mención de HIPAA",
+        "C. Contrato de licencia de software que limita auditoria de cumplimiento a procesos internos"
+      ],
+      "correct": 0,
+      "justification_correct": "HIPAA 45 CFR §164.504(e) requiere Business Associate Agreement (BAA) con proveedores que acceden a PHI. BAA especifica obligaciones de implementar salvaguardas técnicas (Subparte C), administrativas (Subparte B) y físicas, con auditoría de cumplimiento permitida.",
+      "justification_wrong": "SLA (B) no garantiza cumplimiento HIPAA; licencia de software (C) no cubre obligaciones HIPAA; delegación completa (D) es inválida—organización mantiene responsabilidad final. Solo BAA satisface requisitos 45 CFR §164.504."
+    },
+    {
+      "num": 40,
+      "text": "Un CISO prepara un reporte ejecutivo de gestión de auditorías internas para el Comité de Auditoría. ¿Cuál elemento es crítico para demostrar independencia del proceso de auditoría según COSO 2013?",
+      "tag": "Gestión de Auditorías a Nivel Ejecutivo",
+      "options": [
+        "C. Que el presupuesto de auditoría sea aprobado por el departamento de TI auditado",
+        "A. Que el jefe de auditoría interna reporte directamente al Comité de Auditoría, no al CFO operacional",
+        "B. Que auditoría interna utilice exclusivamente metodología de muestreo estadístico sin análisis cualitativo",
+        "D. Que todos los reportes de auditoría sean publicados en intranet sin restricciones de acceso"
+      ],
+      "correct": 1,
+      "justification_correct": "COSO 2013, componente Información, Comunicación y Supervisión establece que auditoría interna requiere independencia para efectividad. Reporte directo al Comité de Auditoría (no a administración operacional) garantiza independencia en evaluación de control efectividad.",
+      "justification_wrong": "Muestreo estadístico obligatorio (B) no garantiza independencia; presupuesto aprobado por departamento auditado (C) crea conflicto de interés; publicación sin restricciones (D) viola confidencialidad de hallazgos críticos. Solo estructura de reporte independiente valida COSO."
+    },
+    {
+      "num": 41,
+      "text": "En el contexto de gobernanza de seguridad ejecutiva, ¿cuál es el propósito principal del Comité de Auditoría en relación con la supervisión de riesgos de ciberseguridad conforme a las directrices del COSO Enterprise Risk Management Framework?",
+      "tag": "Executive Security Governance",
+      "options": [
+        "D. Supervisar únicamente incidentes de seguridad sin considerar evaluación de riesgos estratégicos",
+        "A. Establecer políticas de seguridad operacional y asegurar alineación con objetivos empresariales mediante evaluación independiente de riesgos",
+        "C. Reemplazar las funciones del Chief Information Security Officer en la ejecución táctica",
+        "B. Implementar directamente controles técnicos de firewall y detección de intrusiones"
+      ],
+      "correct": 1,
+      "justification_correct": "COSO ERM Framework establece que el Comité de Auditoría debe supervisar identificación, evaluación e integración de riesgos empresariales. La gobernanza ejecutiva requiere que el Comité evalúe independientemente alineación de ciberseguridad con objetivos organizacionales, delegando ejecución al CISO pero manteniendo supervisión estratégica.",
+      "justification_wrong": "La implementación técnica directa (opción B) contradice naturaleza de supervisión del Comité. Reemplazar roles CISO (C) viola separación de funciones. Supervisión reactiva sin evaluación estratégica (D) incumple directrices de governance proactiva del COSO."
+    },
+    {
+      "num": 42,
+      "text": "Bajo el régimen de cumplimiento SOX (Sarbanes-Oxley Act) Sección 404, ¿cuál es la responsabilidad principal del CISO respecto a la evaluación de controles internos sobre sistemas de información financiera?",
+      "tag": "Regulatory Compliance Frameworks",
+      "options": [
+        "B. Asumir responsabilidad directa de la auditoría financiera externa realizada por auditores independientes",
+        "D. Ejecutar únicamente pruebas de penetración sin evaluar marcos de control administrativo",
+        "A. Evaluar y reportar la efectividad de controles de TI que impactan integridad de datos financieros, incluyendo acceso, cambios y segregación de funciones",
+        "C. Limitar evaluación a vulnerabilidades técnicas sin considerar riesgos de control de cambios en sistemas"
+      ],
+      "correct": 2,
+      "justification_correct": "SOX 404 requiere evaluación de control interno sobre información financiera. El CISO es responsable de evaluar controles de TI como: acceso a sistemas, autorización de cambios, segregación de funciones, auditoría y recuperación. Estos controles sustanciales impactan confiabilidad de reportes financieros.",
+      "justification_wrong": "Auditoría externa (B) es responsabilidad de auditores independientes, no CISO. Omisión de controles administrativos (C) incumple SOX 404. Pruebas penetración sin evaluación holística (D) no satisface requisitos integrales de efectividad de controles."
+    },
+    {
+      "num": 43,
+      "text": "Conforme a GDPR Artículos 32-35, en el contexto de Privacy by Design y evaluación de impacto de protección de datos (DPIA), ¿qué responsabilidad ejecutiva debe delegarse y supervisarse respecto a controles de criptografía?",
+      "tag": "Compliance Program Management",
+      "options": [
+        "B. El departamento de marketing es responsable de seleccionar algoritmos criptográficos sin participación de seguridad",
+        "C. La criptografía no requiere evaluación en DPIA si la organización mantiene seguros físicos",
+        "D. El auditor externo debe implementar directamente cambios criptográficos sin aprobación de junta",
+        "A. La junta directiva debe supervisar que el DPO evalúe criptografía adecuada en DPIA, validando residuales aceptables y documentando en registro de decisiones de gobernanza"
+      ],
+      "correct": 3,
+      "justification_correct": "GDPR Art. 32 requiere criptografía de datos personales. Art. 35 (DPIA) exige evaluación de medidas técnicas. La junta supervisa que DPO y CISO evalúen suficiencia criptográfica, documentando decisiones conforme principios de responsabilidad demostrable (Art. 5.2).",
+      "justification_wrong": "Marketing sin seguridad (B) viola governance. Omisión criptografía (C) incumple Art. 32. Implementación unilateral de auditores (D) contradice roles de responsabilidad ejecutiva establecidos en GDPR."
+    },
+    {
+      "num": 44,
+      "text": "En el contexto de gestión de riesgos empresariales conforme a ISO 31000 y reportes a nivel ejecutivo, ¿cuál metodología es más apropiada para integrar riesgos de ciberseguridad en la matriz de riesgos corporativa que influya en decisiones estratégicas?",
+      "tag": "Enterprise Risk Management",
+      "options": [
+        "D. Delegar totalmente evaluación de ciberseguridad a departamento de TI sin supervisión de comité de riesgos",
+        "A. Mapear riesgos de ciberseguridad usando escala consistente con otros riesgos corporativos, vinculando a objetivos empresariales y evaluando impacto financiero, operacional y reputacional",
+        "B. Mantener riesgos de ciberseguridad en registros separados sin integración con evaluación de riesgos corporativos",
+        "C. Reportar únicamente frecuencia de incidentes sin contexto de probabilidad-impacto alineado a tolerancia de riesgo"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 31000 establece framework integrado de riesgos. CCISO debe mapear ciberseguridad usando escala consistente (probabilidad-impacto) vinculada a objetivos estratégicos. Evaluación de impacto financiero, operacional, reputacional facilita decisiones ejecutivas alineadas con tolerancia de riesgo corporativo.",
+      "justification_wrong": "Silos de información (B) viola principio integrado de ISO 31000. Enfoque únicamente frecuencia (C) omite evaluación cuantitativa-cualitativa requerida. Delegación sin supervisión (D) incumple responsabilidad de governance de riesgo empresarial."
+    },
+    {
+      "num": 45,
+      "text": "Bajo PCI-DSS v3.2.1 y obligaciones legales contractuales, ¿cuál es la responsabilidad del CISO respecto a reportes de cumplimiento a la junta directiva y cómo debe estructurarse evidencia de control para satisfacer auditoría de terceros (QSA)?",
+      "tag": "Audit Management & Legal Obligations",
+      "options": [
+        "C. Reportar cumplimiento anualmente sin documentación detallada de evidencia de control",
+        "B. Proporcionar únicamente resultados de escaneo de vulnerabilidades externos sin prueba de remediación",
+        "D. Permitir que proveedor de pagos gestione directamente validación de cumplimiento sin responsabilidad organizacional",
+        "A. Reportar trimestralmente estado de cumplimiento PCI-DSS, documentando evidencia de control con registros de evaluación, logs auditoría y resultados testing que QSA valida independientemente"
+      ],
+      "correct": 3,
+      "justification_correct": "PCI-DSS exige reportes documentados de cumplimiento con evidencia de control. CCISO debe mantener: evaluaciones formales, logs auditoría, pruebas penetración, attestations. QSA audita independientemente conforme estándares PCI. Documentación continua satisface obligaciones contractuales y legales.",
+      "justification_wrong": "Escaneo únicamente (B) insuficiente, requiere prueba remedición. Reportes anuales (C) incumplen frecuencia requerida de validación. Delegación total (D) no exime responsabilidad organizacional ni satisface obligaciones contractuales establecidas."
+    },
+    {
+      "num": 46,
+      "text": "Un CISO debe implementar un marco de gobierno de seguridad ejecutivo que alinee objetivos de negocio con controles de ciberseguridad. ¿Cuál es el componente crítico que falta en un modelo que incluye políticas, procedimientos y métricas pero carece de mecanismos de escalación y toma de decisiones en junta directiva?",
+      "tag": "Executive Security Governance",
+      "options": [
+        "A. Estructura de gobernanza con comités de riesgo y cadena de escalación definida hacia C-suite",
+        "C. Implementación de SIEM adicional con análisis predictivo",
+        "D. Contratación de analistas de seguridad junior",
+        "B. Incremento de presupuesto anual en seguridad del 15%"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 y NIST CSF enfatizan que la gobernanza requiere estructura formal con responsabilidades asignadas, comités de riesgo, y escalación transparente. Sin mecanismos de toma de decisiones en junta, los riesgos no se comunican efectivamente al nivel ejecutivo requerido por SOX y marcos fiduciarios.",
+      "justification_wrong": "Las opciones B, C y D son controles operacionales o tácticos que no abordan la brecha estructural de gobernanza. B carece de justificación de riesgo; C es técnico sin gobernanza; D es recursos sin marco."
+    },
+    {
+      "num": 47,
+      "text": "En reportes a junta directiva, un CISO presenta métricas de cumplimiento normativo. Para HIPAA y PCI-DSS simultáneamente, ¿cuál enfoque evita conflictos de control y maximiza eficiencia de auditoría sin comprometer estándares?",
+      "tag": "Board-Level Reporting & Regulatory Compliance",
+      "options": [
+        "D. Implementar controles genéricos que satisfagan promedio de ambos estándares",
+        "A. Mapeo de controles convergentes (overlapping controls) documentando alineación explícita entre HIPAA Security Rule 164.308 y PCI-DSS 3.4, priorizando requisitos más restrictivos",
+        "B. Mantener silos separados de cumplimiento con auditorías independientes anuales por cada normativa",
+        "C. Adoptar solo los controles de PCI-DSS al ser más maduros y auditar HIPAA posteriormente"
+      ],
+      "correct": 1,
+      "justification_correct": "CCISO requiere síntesis de marcos. ISO 27001 y NIST proporcionan mapeos de control. HIPAA 164.308 (acceso administrativo) y PCI-DSS 3.4 (cifrado) convergen en protección de datos. Documentar alineación reduce redundancia, mejora reportabilidad a junta y cumple 45 CFR § 164.308(a)(1).",
+      "justification_wrong": "Opción B genera ineficiencia y costos. C viola HIPAA. D incumple requisitos específicos de cada normativa al no aplicar criterios más restrictivos obligatorios."
+    },
+    {
+      "num": 48,
+      "text": "Un CISO debe integrar gestión de riesgos empresariales (ERM) con ciberseguridad. Según COSO 2017 y referencias de gobierno corporativo, ¿qué mecanismo cierra la brecha entre identificación de riesgo técnico y decisión estratégica de aceptación/mitigación en junta?",
+      "tag": "Risk Management at Executive Level",
+      "options": [
+        "D. Delegar decisiones de aceptación de riesgo al equipo técnico de seguridad",
+        "B. Crear dashboard de KPI de seguridad actualizado diariamente visible solo a CISO",
+        "C. Realizar evaluación de riesgos ad-hoc cada semestre sin mecanismo de escalación formal",
+        "A. Implementar Risk Register integrado con scoring de riesgo residual, vinculado a comité de auditoría con autoridad de aprobación y presupuesto"
+      ],
+      "correct": 3,
+      "justification_correct": "COSO ERM (2017) y CCISO exigen Risk Register centralizado con scoring, vinculación a presupuesto y autoridad de decisión en Audit Committee. Cierra brecha: técnicos identifican, ejecutivos aprueban y asignan recursos. Requisito de SOX 302/404 y governance standards.",
+      "justification_wrong": "B carece de escalación. C no es formal ni cíclica. D viola separación de responsabilidades y exposición fiduciaria. Ninguna vincula riesgo a autoridad de decisión y presupuesto en junta."
+    },
+    {
+      "num": 49,
+      "text": "Respecto a obligaciones legales y contractuales en GDPR, un CISO identifica que proveedores terceros procesan datos personales de EU sin Data Processing Agreements (DPA) explícitos. ¿Cuál es el riesgo de cumplimiento crítico y remediación correcta?",
+      "tag": "Legal and Contractual Obligations",
+      "options": [
+        "A. Riesgo de multa GDPR Art. 82 (responsabilidad civil); ejecutar DPA conforme Art. 28, auditar procesamiento y documentar en registro de tratamientos (Art. 30)",
+        "C. Riesgo de incompatibilidad de sistemas; reemplazar proveedores por alternativas EU-based",
+        "B. Riesgo menor sin consecuencia legal; actualizar contratos en próxima renovación anual",
+        "D. No hay riesgo si datos están encriptados; continuar relación sin cambios contractuales"
+      ],
+      "correct": 0,
+      "justification_correct": "GDPR Art. 28-32 requieren DPA explícitos. Ausencia viola Art. 5 (lawfulness) y activa responsabilidad bajo Art. 82. Art. 30 requiere documentación de procesamiento. Remediación: DPA + auditoría + registro de tratamientos. Multas hasta €20M o 4% ingresos globales.",
+      "justification_wrong": "B subestima obligación urgente (Art. 28 es mandatorio). C no es remediación (terceros EU pueden no existir/ser competitivos). D ignora requisito de consentimiento legal incluso con encriptación."
+    },
+    {
+      "num": 50,
+      "text": "Un programa de compliance integral debe alinear auditoría interna, auditores externos e instituciones regulatorias. En contexto de SOX y COBIT 5, ¿cuál estructura de gobernanza evita redundancias de auditoría y asegura eficacia de control sin comprometer independencia?",
+      "tag": "Audit Management & Enterprise Risk Management",
+      "options": [
+        "D. Excluir auditoría interna de temas regulatorios; solo auditores externos interactúan con reguladores",
+        "B. Auditoría interna y externa operan independientemente sin coordinación; reguladores realizan auditorías sorpresa sin notificación previa",
+        "C. Consolidar todas las auditorías en equipo único interno para reducir costos y redundancia",
+        "A. Audit Committee supervisando plan anual coordinado entre auditoría interna y externa; auditores externos revisan workpapers internos sin depender de ellos; regulatory reviews integradas en roadmap único"
+      ],
+      "correct": 3,
+      "justification_correct": "SOX 302-404 y COBIT 5.4 requieren Audit Committee coordinador. Auditoría interna aporta eficiencia operativa; externa valida independientemente (AS 1201). Reguladores integrados en roadmap evita sorpresas. Mantra: coordinación ≠ compromiso de independencia. COSO 2017 refuerza esto.",
+      "justification_wrong": "B viola independencia de auditores externos (AS 1201). C compromete independencia interna y externa (requisito SOX 302). D reduce visibilidad regulatoria y crea gaps de comunicación en cumplimiento."
+    }
+  ]
+}

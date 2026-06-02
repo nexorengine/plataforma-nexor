@@ -1,0 +1,710 @@
+{
+  "cert_id": "iso27001_li",
+  "domain_id": "fundamentals_isms",
+  "quiz_num": 4,
+  "domain_name": "Fundamentos e Gestão de ISMS",
+  "cert_name": "ISO 27001 Lead Implementer",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "¿Cuál es la relación correcta entre dato e información en el contexto de la seguridad de la información?",
+      "tag": "Conceptos Fundamentales",
+      "options": [
+        "A. Dato es información estructurada y procesada",
+        "B. Información es el significado y el valor atribuido a un conjunto de datos",
+        "C. Dato e información son términos intercambiables y equivalentes",
+        "D. Información es la forma bruta y no procesada del dato"
+      ],
+      "correct": 1,
+      "justification_correct": "La información resulta de la atribución de significado, contexto y valor a datos brutos — distinción fundamental en la ISO 27000:2018, que define información como datos dotados de relevancia",
+      "justification_wrong": "Dato es la forma bruta; información es el dato con significado atribuido. Los términos no son intercambiables en la terminología"
+    },
+    {
+      "num": 2,
+      "text": "Para determinar el valor de datos organizacionales con el objetivo de contratación de seguro, ¿cuál factor NO es relevante?",
+      "tag": "Valor de la Información",
+      "options": [
+        "A. El contenido intrínseco del dato",
+        "B. La facilidad de recuperación en caso de pérdida, incompletitud o incorreción",
+        "C. El color o formato visual utilizado en la presentación del dato",
+        "D. La importancia de los procesos de negocio que utilizan el dato"
+      ],
+      "correct": 2,
+      "justification_correct": "Color y formato visual son atributos estéticos sin impacto sobre el valor estratégico, operacional o de cumplimiento del dato para la organización. El valor se determina por el contenido",
+      "justification_wrong": "Contenido, recuperabilidad y criticidad para procesos son factores directamente relevantes para determinar el valor del dato"
+    },
+    {
+      "num": 3,
+      "text": "Un hacker obtiene acceso a un servidor y logra visualizar un archivo que contiene números de tarjetas de crédito. ¿Cuál principio del triángulo CIA fue violado?",
+      "tag": "Triángulo CIA",
+      "options": [
+        "A. Disponibilidad",
+        "B. Confidencialidad",
+        "C. Integridad",
+        "D. Autenticidad"
+      ],
+      "correct": 1,
+      "justification_correct": "La confidencialidad fue violada — datos fueron accedidos por entidad no autorizada, exponiendo información sensible a terceros sin permiso. (ISO/IEC 27000:2018, Cláusula 3.10)",
+      "justification_wrong": "Disponibilidad se refiere al acceso legítimo; integridad a la ausencia de alteraciones no autorizadas; el acceso indebido se"
+    },
+    {
+      "num": 4,
+      "text": "Los documentos impresos se dejan frecuentemente en la impresora de red del pasillo. ¿Cuál es la consecuencia que esto tiene para la confiabilidad de la información?",
+      "tag": "Confidencialidad Física",
+      "options": [
+        "A. La integridad de la información ya no está garantizada",
+        "B. La disponibilidad de la información ya no está garantizada",
+        "C. La confidencialidad de la información ya no está garantizada",
+        "D. La autenticidad de la información ya no está garantizada"
+      ],
+      "correct": 2,
+      "justification_correct": "Los documentos dejados en un lugar accesible a personas no autorizadas violan la confidencialidad, ya que cualquier persona en el pasillo puede acceder a información que debería estar restringida.",
+      "justification_wrong": "La integridad se vería afectada por alteraciones; la disponibilidad por imposibilidad de acceso; el problema aquí es el acceso físico no autorizado."
+    },
+    {
+      "num": 5,
+      "text": "Un análisis de riesgos bien realizado posee cuatro objetivos principales. ¿Cuál NO es uno de ellos?",
+      "tag": "Análisis de Riesgos",
+      "options": [
+        "A. Identificar los activos y sus valores",
+        "B. Implementar directamente las contramedidas durante el análisis",
+        "C. Establecer equilibrio entre los costos del incidente y los costos de las medidas de seguridad",
+        "D. Determinar vulnerabilidades y amenazas relevantes"
+      ],
+      "correct": 1,
+      "justification_correct": "El análisis de riesgos identifica, evalúa y prioriza riesgos — la implementación de contramedidas es una etapa posterior del tratamiento de riesgos, no un objetivo del análisis en sí mismo.",
+      "justification_wrong": "Identificar activos, establecer equilibrio costo-beneficio y determinar vulnerabilidades son objetivos legítimos del análisis de riesgos."
+    },
+    {
+      "num": 6,
+      "text": "¿Cómo se denomina un evento posible que puede tener un efecto perjudicial sobre la confiabilidad de la información?",
+      "tag": "Terminología de Riesgo",
+      "options": [
+        "A. Dependencia",
+        "B. Amenaza",
+        "C. Vulnerabilidad",
+        "D. Riesgo"
+      ],
+      "correct": 1,
+      "justification_correct": "Amenaza se define como la causa potencial de un incidente no deseado que puede resultar en daño a un sistema u organización — conforme ISO 27000:2018, Cláusula 3.74.",
+      "justification_wrong": "Vulnerabilidad es una debilidad que puede ser explotada; riesgo es la combinación de probabilidad e impacto; dependencia es una relación."
+    },
+    {
+      "num": 7,
+      "text": "¿Cuál es el propósito central de la gestión de riesgos en seguridad de la información?",
+      "tag": "Gestión de Riesgos",
+      "options": [
+        "A. Determinar con precisión la probabilidad estadística de que cada riesgo ocurra",
+        "B. Calcular el valor exacto del daño causado por incidentes de seguridad",
+        "C. Mapear todas las amenazas a las cuales los recursos de TI están expuestos",
+        "D. Implementar medidas para reducir los riesgos a un nivel aceptable por la organización"
+      ],
+      "correct": 3,
+      "justification_correct": "La gestión de riesgos tiene como objetivo tratar los riesgos identificados mediante controles que los reduzcan a un nivel aceptable conforme el apetito al riesgo de la organización. (ISO/IEC 27005:2022)",
+      "justification_wrong": "La probabilidad, el daño exacto y el mapeo de amenazas son actividades de la evaluación de riesgos, no el propósito central de la gestión"
+    },
+    {
+      "num": 8,
+      "text": "¿Qué caracteriza un análisis cualitativo de riesgos?",
+      "tag": "Tipos de Análisis",
+      "options": [
+        "A. Sigue cálculo preciso de probabilidad estadística para calcular pérdidas exactas",
+        "B. Se basa en escenarios y situaciones, produciendo una visión subjetiva de las posibilidades",
+        "C. Utiliza exclusivamente datos históricos cuantificados de incidentes anteriores",
+        "D. Requiere herramientas automatizadas para el procesamiento de grandes volúmenes de datos"
+      ],
+      "correct": 1,
+      "justification_correct": "El análisis cualitativo de riesgos se basa en juicio, escenarios y escalas descriptivas (alto/medio/bajo) en lugar de valores numéricos precisos — enfoque común cuando los datos estadísticos son limitados",
+      "justification_wrong": "El cálculo preciso y los datos históricos cuantificados caracterizan el análisis cuantitativo; las herramientas automatizadas son auxiliares"
+    },
+    {
+      "num": 9,
+      "text": "Después de un incendio en una sucursal de una aseguradora, el servidor fue destruido y las cintas de respaldo se derritieron. ¿Cuál es un ejemplo de daño INDIRECTO causado por el incendio?",
+      "tag": "Tipos de Daño",
+      "options": [
+        "A. Cintas de respaldo derretidas por el calor",
+        "B. Sistemas de computadora quemados directamente",
+        "C. Documentos consumidos por el fuego",
+        "D. Daños causados por el agua de los extintores de incendio"
+      ],
+      "correct": 3,
+      "justification_correct": "Los daños causados por el agua de los extintores son una consecuencia indirecta del combate al incendio, no del fuego en sí — ejemplificando daño colateral. Las cintas, servidores y documentos son daño directo",
+      "justification_wrong": "Las cintas, servidores y documentos son daños directos causados por el calor y el fuego — no son consecuencias indirectas del evento"
+    },
+    {
+      "num": 10,
+      "text": "Una empresa decide adoptar medidas únicamente para riesgos grandes, aceptando los pequeños sin acción. ¿Cómo se denomina esta estrategia de riesgo?",
+      "tag": "Estrategias de Riesgo",
+      "options": [
+        "A. Aceptación del riesgo",
+        "B. Evitar el riesgo",
+        "C. Neutralizar el riesgo",
+        "D. Transferir el riesgo"
+      ],
+      "correct": 0,
+      "justification_correct": "La aceptación del riesgo es la decisión consciente de no tomar acción sobre determinados riesgos, generalmente los de menor impacto o probabilidad, conforme al apetito de riesgo de la organización",
+      "justification_wrong": "Evitar elimina la actividad que genera el riesgo; neutralizar implementa controles; transferir repasa el riesgo a terceros"
+    },
+    {
+      "num": 11,
+      "text": "¿Cuál de los siguientes es un ejemplo de amenaza de origen humano?",
+      "tag": "Tipos de Amenaza",
+      "options": [
+        "A. Memoria USB infectada introducida en la red por un colaborador",
+        "B. Acumulación excesiva de polvo en la sala de servidores",
+        "C. Variación de tensión causando falla parcial en el suministro eléctrico",
+        "D. Falla de hardware por desgaste natural de los componentes"
+      ],
+      "correct": 0,
+      "justification_correct": "La introducción de memoria USB infectada es una acción humana —intencional o no— que configura amenaza de origen humano. El polvo, la variación de tensión y el desgaste son amenazas de origen ambiental",
+      "justification_wrong": "El polvo, las variaciones eléctricas y el desgaste del hardware son amenazas de origen no humano —ambiental o técnico"
+    },
+    {
+      "num": 12,
+      "text": "Una organización está estableciendo su Sistema de Gestión de Seguridad de la Información (SGSI) conforme a ISO 27001:2022. Durante la fase de planificación, la alta dirección necesita definir cómo comunicará el compromiso con la seguridad de la información a los colaboradores y partes interesadas. ¿Cuál documento formalmente establecido por la norma es responsable por esto?",
+      "tag": "Política de Seguridad de la Información",
+      "options": [
+        "A. Objetivos de Seguridad de la Información, que deben ser mensurables y alineados con los procesos de negocio",
+        "B. Política de Seguridad de la Información, que debe ser aprobada por la alta dirección y comunicada apropiadamente",
+        "C. Plan de Tratamiento de Riesgos, que detalla las acciones correctivas y preventivas para cada riesgo identificado",
+        "D. Matriz de Responsabilidades (RACI), que define los roles de cada departamento en la implementación del SGSI"
+      ],
+      "correct": 1,
+      "justification_correct": "Conforme a ISO 27001:2022, cláusula 5.2 (Política), la organización debe establecer una política de seguridad de la información que sea aprobada por la alta dirección y comunicada apropiadamente",
+      "justification_wrong": "A (Objetivos) define metas específicas, no la dirección estratégica general; C (Plan de Tratamiento) es operacional; D (Matriz RACI) define responsabilidades específicas"
+    },
+    {
+      "num": 13,
+      "text": "Un colaborador recibe una llamada de alguien alegando ser del centro de atención al cliente y solicitando su contraseña. ¿Qué tipo de amenaza es esta?",
+      "tag": "Ingeniería Social",
+      "options": [
+        "A. Amenaza de origen natural",
+        "B. Amenaza de origen organizacional",
+        "C. Ingeniería social",
+        "D. Amenaza de origen técnico"
+      ],
+      "correct": 2,
+      "justification_correct": "La ingeniería social manipula personas para revelar información confidencial o realizar acciones que comprometan la seguridad — en este caso, mediante vishing (voice phishing). (ISO/IEC 27002)",
+      "justification_wrong": "Las amenazas naturales y técnicas no implican manipulación humana; las amenazas organizacionales se refieren a fallos de proceso — la"
+    },
+    {
+      "num": 14,
+      "text": "Después de un incendio en una sucursal de una aseguradora, el personal se traslada a sucursales vecinas para continuar el trabajo. ¿En qué etapa del ciclo de incidentes se posiciona este sistema de preparación?",
+      "tag": "Ciclo de Incidentes",
+      "options": [
+        "A. Entre la amenaza y el incidente",
+        "B. Entre la recuperación y la amenaza",
+        "C. Entre el daño y la recuperación",
+        "D. Entre el incidente y el daño"
+      ],
+      "correct": 3,
+      "justification_correct": "El sistema de preparación — como el traslado de personal a un sitio alterno — actúa entre el incidente y el daño, limitando el impacto antes de que se consolide. (ISO 22301:2019)",
+      "justification_wrong": "Entre amenaza e incidente actúan medidas preventivas; entre recuperación y amenaza actúan mejoras; entre daño y recuperación"
+    },
+    {
+      "num": 15,
+      "text": "Entre los ejemplos de amenaza a la confiabilidad de la información, ¿cuál representa específicamente una amenaza a la integridad?",
+      "tag": "Integridad",
+      "options": [
+        "A. Cable suelto causando interrupción en la conexión",
+        "B. Alteración accidental de datos por un colaborador",
+        "C. Uso personal no autorizado de datos organizacionales",
+        "D. Falsificación de identidad para acceso al sistema"
+      ],
+      "correct": 1,
+      "justification_correct": "La alteración accidental de datos compromete la integridad — la propiedad de que la información no ha sido modificada de forma no autorizada o no intencional. (ISO/IEC 27000:2018, Cláu",
+      "justification_wrong": "Cable suelto afecta disponibilidad; uso personal afecta confidencialidad; falsificación de identidad afecta autenticidad —"
+    },
+    {
+      "num": 16,
+      "text": "Un miembro del equipo niega haber enviado un mensaje específico. ¿Qué aspecto de la confiabilidad de la información está en riesgo?",
+      "tag": "No-repudio",
+      "options": [
+        "A. Disponibilidad",
+        "B. No-repudio (irrefutabilidad)",
+        "C. Integridad",
+        "D. Confidencialidad"
+      ],
+      "correct": 1,
+      "justification_correct": "El no-repudio garantiza que el autor de una acción no pueda negarla posteriormente — su ausencia permite que los remitentes nieguen el envío de mensajes. (ISO/IEC 27000:2018, Cláusula 3.48)",
+      "justification_wrong": "Disponibilidad se refiere al acceso; integridad a la no alteración; confidencialidad al acceso restringido — la negación de autoría"
+    },
+    {
+      "num": 17,
+      "text": "¿Cómo se describe mejor el propósito de una política de seguridad de la información?",
+      "tag": "Política de Seguridad",
+      "options": [
+        "A. Documenta el análisis de riesgos y el proceso de búsqueda de contramedidas",
+        "B. Proporciona orientación y apoyo a la gestión en materia de seguridad de la información",
+        "C. Detalla especificaciones técnicas de cada control de seguridad implementado",
+        "D. Proporciona una visión integral sobre amenazas y sus posibles consecuencias"
+      ],
+      "correct": 1,
+      "justification_correct": "La política de seguridad de la información establece la dirección y el compromiso de la organización con la seguridad, proporcionando orientación estratégica a la gestión — conforme a la Cláusula 5.2 de",
+      "justification_wrong": "Análisis de riesgos y detalle técnico son documentos separados; el mapeo de amenazas es parte de la evaluación de riesgo"
+    },
+    {
+      "num": 18,
+      "text": "Un incidente de seguridad sobre servidor web se transfiere a un colega con más experiencia técnica. ¿Qué término describe esta transferencia?",
+      "tag": "Escalamiento de Incidentes",
+      "options": [
+        "A. Escalamiento funcional",
+        "B. Escalamiento jerárquico",
+        "C. Delegación operacional",
+        "D. Transferencia de responsabilidad"
+      ],
+      "correct": 0,
+      "justification_correct": "El escalamiento funcional transfiere el incidente a alguien con experiencia técnica específica en el mismo nivel jerárquico — a diferencia del escalamiento jerárquico que implica subir en la cadena de mando",
+      "justification_wrong": "Escalamiento jerárquico implica subir en la cadena de comando; delegación y transferencia son términos genéricos que no capturan"
+    },
+    {
+      "num": 19,
+      "text": "Un incidente de modificación no autorizada de datos de póliza se registra en el centro de atención con fecha, hora, descripción y posibles consecuencias. ¿Qué información crítica está FALTANDO?",
+      "tag": "Registro de Incidentes",
+      "options": [
+        "A. El nombre de la persona que reportó el incidente",
+        "B. El nombre del paquete de software utilizado",
+        "C. El número identificador de la PC involucrada",
+        "D. La lista de personas que fueron informadas sobre el incidente"
+      ],
+      "correct": 0,
+      "justification_correct": "El nombre del reportante es información esencial para la trazabilidad, responsabilidad y seguimiento del incidente — sin él, no es posible contactar a la fuente para información adicional",
+      "justification_wrong": "El nombre del software y número de PC son datos técnicos complementarios; lista de informados se produce después del registro — el nombre"
+    },
+    {
+      "num": 20,
+      "text": "En el ciclo del incidente, ¿cuál etapa ocurre inmediatamente después del incidente?",
+      "tag": "Ciclo de Incidentes",
+      "options": [
+        "A. Amenaza",
+        "B. Daño",
+        "C. Recuperación",
+        "D. Prevención"
+      ],
+      "correct": 1,
+      "justification_correct": "El ciclo de incidentes sigue la secuencia: Amenaza → Incidente → Daño → Recuperación. Después del incidente, el daño se materializa como consecuencia directa. (ISO/IEC 27035:2016)",
+      "justification_wrong": "La amenaza precede al incidente; recuperación es posterior al daño; prevención actúa antes de la amenaza — el daño es la etapa inmediatamente"
+    },
+    {
+      "num": 21,
+      "text": "¿Cuál de las siguientes es una medida de seguridad PREVENTIVA?",
+      "tag": "Tipos de Medidas",
+      "options": [
+        "A. Instalar sistema de registro que permite determinar alteraciones en el sistema",
+        "B. Desconectar todo el tráfico de internet después de que un hacker obtiene acceso",
+        "C. Almacenar información confidencial en una bóveda con acceso restringido",
+        "D. Activar equipo de respuesta después de la detección de incidente"
+      ],
+      "correct": 2,
+      "justification_correct": "La bóveda con acceso restringido impide el acceso no autorizado antes de que ocurra cualquier incidente — medida preventiva que actúa sobre la oportunidad. (ISO/IEC 27002:2022)",
+      "justification_wrong": "Sistema de registro es medida detectiva; desconectar tráfico después del acceso es medida represiva/correctiva; activar equipo es medida"
+    },
+    {
+      "num": 22,
+      "text": "En caso de un incendio, ¿cuál es un ejemplo de medida REPRESIVA?",
+      "tag": "Tipos de Medidas",
+      "options": [
+        "A. Contratar un seguro contra incendios anticipadamente",
+        "B. Extinguir el incendio después de la detección por sistema de alarma",
+        "C. Reparar los daños causados por el incendio después de su extinción",
+        "D. Instalar detectores de humo en las instalaciones"
+      ],
+      "correct": 1,
+      "justification_correct": "Extinguir el incendio es una medida represiva — actúa durante el incidente para contener y minimizar los daños en curso. (ISO 22301:2019)",
+      "justification_wrong": "El seguro y los detectores son medidas preventivas/detectivas que actúan antes o al inicio del incidente; reparar daños es una medida"
+    },
+    {
+      "num": 23,
+      "text": "¿Cuál es el objetivo principal de la clasificación de la información en una organización?",
+      "tag": "Clasificación de la Información",
+      "options": [
+        "A. Crear un manual sobre cómo manejar dispositivos móviles",
+        "B. Aplicar etiquetas haciendo la información más fácil de localizar",
+        "C. Estructurar la información de acuerdo con su sensibilidad y requisitos de protección",
+        "D. Determinar el costo de almacenamiento de cada categoría de información"
+      ],
+      "correct": 2,
+      "justification_correct": "La clasificación estructura la información por nivel de sensibilidad, determinando los controles de protección apropiados para cada categoría — conforme Control A.5.12 de ISO/IEC 27002:2",
+      "justification_wrong": "Dispositivos móviles, etiquetado para localización y costos de almacenamiento son objetivos distintos; la clasificación vis"
+    },
+    {
+      "num": 24,
+      "text": "¿Quién está autorizado para alterar la clasificación de un documento organizacional?",
+      "tag": "Propiedad de la Información",
+      "options": [
+        "A. El autor original del documento",
+        "B. El administrador responsable del almacenamiento",
+        "C. El propietario (dueño) del documento",
+        "D. El gerente del departamento donde se creó el documento"
+      ],
+      "correct": 2,
+      "justification_correct": "El propietario del activo de información es responsable de su clasificación y de autorizar cambios en esa clasificación — conforme Controles A.5.9 y A.5.12 de ISO/IEC 27002:",
+      "justification_wrong": "El autor, administrador y gerente del departamento pueden tener funciones relacionadas, pero la autoridad para alterar la clasific"
+    },
+    {
+      "num": 25,
+      "text": "La sala de informática está protegida por un lector de dispositivo de acceso exclusivo al departamento de gestión de sistemas. ¿Qué tipo de medida de seguridad es esta?",
+      "tag": "Medidas de Seguridad",
+      "options": [
+        "A. Medida de seguridad correctiva",
+        "B. Medida de seguridad física",
+        "C. Medida de seguridad lógica",
+        "D. Medida de seguridad represiva"
+      ],
+      "correct": 1,
+      "justification_correct": "El control de acceso físico por dispositivo (tarjeta, token) es una medida de seguridad física que protege las instalaciones y el hardware contra acceso no autorizado. (ISO/IEC 27002:20",
+      "justification_wrong": "Las medidas correctivas y represivas actúan después de incidentes; las medidas lógicas actúan a nivel de software y sistemas — el lector"
+    },
+    {
+      "num": 26,
+      "text": "En autenticación multifactor fuerte, ¿cuál factor se verifica cuando el usuario presenta su dispositivo de acceso (tarjeta o token)?",
+      "tag": "Autenticación",
+      "options": [
+        "A. Algo que usted es (biometría)",
+        "B. Algo que usted posee (posesión)",
+        "C. Algo que usted sabe (conocimiento)",
+        "D. Algo que usted hace (comportamiento)"
+      ],
+      "correct": 1,
+      "justification_correct": "El dispositivo de acceso representa el factor de posesión — algo que el usuario posee físicamente. Los tres factores clásicos de la autenticación fuerte son: posesión, conocimiento e inherencia (b",
+      "justification_wrong": "La biometría es el factor 'algo que usted es'; contraseña/PIN es 'algo que usted sabe'; comportamiento es factor adicional menos común — el"
+    },
+    {
+      "num": 27,
+      "text": "En la seguridad física con zonas concéntricas de protección (anillos de protección), ¿cuál de los siguientes NO es un anillo de protección?",
+      "tag": "Seguridad Física",
+      "options": [
+        "A. El edificio como perímetro",
+        "B. Un anillo intermedio como área controlada",
+        "C. Un objeto o activo específico como objetivo final",
+        "D. Un anillo externo como perímetro ampliado"
+      ],
+      "correct": 2,
+      "justification_correct": "En el enfoque de anillos de protección, los anillos son zonas concéntricas (externo, intermedio, interno/edificio). El 'objeto' es el activo protegido por el conjunto de los anillos — no es él próp",
+      "justification_wrong": "Edificio, anillo intermedio y anillo externo son ejemplos legítimos de anillos de protección en el enfoque de seguridad en capas"
+    },
+    {
+      "num": 28,
+      "text": "¿Qué amenaza puede ocurrir como resultado de la ausencia de una medida de seguridad FÍSICA adecuada?",
+      "tag": "Seguridad Física",
+      "options": [
+        "A. Un usuario visualizar archivos de otro usuario en el sistema",
+        "B. Un servidor apagarse por sobrecalentamiento de la sala",
+        "C. Un documento confidencial ser dejado accesible en la impresora",
+        "D. Hackers acceder libremente a la red de computadoras remotamente"
+      ],
+      "correct": 1,
+      "justification_correct": "El sobrecalentamiento de servidores se debe a la ausencia de controles físicos de temperatura y climatización — medida física de protección ambiental de las instalaciones. (ISO/IEC 27002:2022,",
+      "justification_wrong": "Acceso a archivos ajenos e invasión remota son problemas lógicos; documento en la impresora es problema de política/comportamiento"
+    },
+    {
+      "num": 29,
+      "text": "¿Cuál de las siguientes es una medida de seguridad TÉCNICA (lógica)?",
+      "tag": "Medidas Técnicas",
+      "options": [
+        "A. Asignar información a un propietario designado",
+        "B. Cifrado de archivos y datos almacenados",
+        "C. Crear política definiendo qué está permitido en correos electrónicos",
+        "D. Almacenar contraseñas de administración en caja fuerte física"
+      ],
+      "correct": 1,
+      "justification_correct": "El cifrado es una medida técnica/lógica que protege los datos mediante transformación matemática, tornándolos ilegibles sin la clave correspondiente. (ISO/IEC 27002:2022, Control 8",
+      "justification_wrong": "Asignación de propietario y creación de políticas son medidas organizacionales; caja fuerte física es medida física — solo el cifr"
+    },
+    {
+      "num": 30,
+      "text": "Los respaldos del servidor central se mantienen en la misma sala cerrada que el servidor. ¿Qué riesgo representa esto?",
+      "tag": "Backup y Recuperación",
+      "options": [
+        "A. Dificultad de recuperación rápida en caso de fallo del servidor",
+        "B. Imposibilidad de restauración en caso de incendio que destruya la sala",
+        "C. Ausencia de responsable designado por los respaldos",
+        "D. Acceso fácil de personas no autorizadas a los respaldos"
+      ],
+      "correct": 1,
+      "justification_correct": "Mantener respaldos en el mismo lugar del servidor los expone a los mismos riesgos físicos — incendio, inundación o desastre puede destruir simultáneamente servidor y respaldos, imposibilitando la re",
+      "justification_wrong": "Velocidad de recuperación no se ve afectada por la ubicación; responsabilidad y control de acceso son cuestiones distintas — el ries"
+    },
+    {
+      "num": 31,
+      "text": "¿Qué tipo de malware crea una red de computadoras comprometidas controlada remotamente?",
+      "tag": "Malware",
+      "options": [
+        "A. Bomba lógica",
+        "B. Botnet (Storm Worm o similar)",
+        "C. Caballo de Troya (Trojan)",
+        "D. Spyware"
+      ],
+      "correct": 1,
+      "justification_correct": "Las botnets son redes de dispositivos infectados y controlados remotamente por un atacante (botmaster), utilizadas para ataques DDoS, spam y otras actividades maliciosas. (ISO/IEC 27002:20",
+      "justification_wrong": "Bomba lógica ejecuta una acción en condición específica; Trojan disfraza malware en software legítimo; spyware recopila información"
+    },
+    {
+      "num": 32,
+      "text": "Una estación de trabajo fue infectada mediante un ataque de phishing dirigido. ¿Cuál es la acción más eficaz para PREVENIR tales incidentes en el futuro?",
+      "tag": "Prevención de Malware",
+      "options": [
+        "A. Implementar tecnología MAC (Control de Acceso Obligatorio)",
+        "B. Iniciar un programa de conciencia y capacitación en seguridad",
+        "C. Actualizar reglas del firewall perimetral",
+        "D. Actualizar las firmas del filtro de spam"
+      ],
+      "correct": 1,
+      "justification_correct": "El phishing explota el factor humano — la conciencia es la contramedida más eficaz, ya que capacita a los colaboradores para reconocer y resistir intentos de ingeniería social. (ISO/IEC",
+      "justification_wrong": "MAC, firewall y filtros de spam son controles técnicos complementarios que no eliminan la vulnerabilidad humana central"
+    },
+    {
+      "num": 33,
+      "text": "Información confidencial ha caído en manos equivocadas a través de laptops. ¿Cuál es el PRIMER paso para proponer medidas de seguridad organizacionales?",
+      "tag": "Seguridad de Dispositivos Móviles",
+      "options": [
+        "A. Formular una política integral para medios y dispositivos móviles",
+        "B. Designar personal de seguridad de la información",
+        "C. Cifrar inmediatamente las memorias USB y discos duros de laptops",
+        "D. Establecer política de control de acceso al sistema"
+      ],
+      "correct": 0,
+      "justification_correct": "La política es el punto de partida — define los requisitos, responsabilidades y controles necesarios, orientando todas las demás medidas subsecuentes. (ISO/IEC 27002:2022, Control",
+      "justification_wrong": "Designar personal, cifrar y control de acceso son medidas específicas que deben ser guiadas por una política previa"
+    },
+    {
+      "num": 34,
+      "text": "¿Cuál es el nombre del sistema que garantiza la coherencia y la gestión sistemática de la seguridad de la información en una organización?",
+      "tag": "SGSI",
+      "options": [
+        "A. Sistema de Gestión de Seguridad de la Información (SGSI / ISMS)",
+        "B. Rootkit de protección corporativa",
+        "C. Regulaciones de seguridad para información gubernamental clasificada",
+        "D. Sistema de Detección de Intrusiones (IDS)"
+      ],
+      "correct": 0,
+      "justification_correct": "El SGSI (Information Security Management System — ISMS) es el conjunto de políticas, procesos y controles que garantiza la gestión sistemática y coherente de la seguridad de la información. (ISO",
+      "justification_wrong": "Rootkit es malware; regulaciones gubernamentales son normativas específicas; IDS es herramienta de detección — solamente el SGSI"
+    },
+    {
+      "num": 35,
+      "text": "¿Cómo se denomina el proceso de verificar si la identidad de alguien es genuina y corresponde a lo que fue declarado?",
+      "tag": "Control de Acceso",
+      "options": [
+        "A. Autenticación",
+        "B. Autorización",
+        "C. Identificación",
+        "D. Auditoría"
+      ],
+      "correct": 0,
+      "justification_correct": "Autenticación es el proceso de verificar la identidad declarada — confirmar que el sujeto es quién afirma ser. Identificación es solo declarar la identidad; autorización define lo que el",
+      "justification_wrong": "Identificación es declarar quién se es; autorización es definir permisos después de la autenticación; auditoría es registrar y revisar"
+    },
+    {
+      "num": 36,
+      "text": "¿Por qué es necesario mantener un plan de recuperación de desastres actualizado y probarlo regularmente?",
+      "tag": "Continuidad del Negocio",
+      "options": [
+        "A. Para tener siempre acceso a copias de seguridad recientes ubicadas fuera de la oficina",
+        "B. Para manejar fallas operativas que ocurren en el día a día",
+        "C. Porque en caso de interrupción a gran escala, medidas y procedimientos desactualizados pueden ser inadecuados",
+        "D. Porque es requerido por la legislación de protección de datos personales"
+      ],
+      "correct": 2,
+      "justification_correct": "Planes desactualizados o no probados pueden fallar precisamente cuando más se necesitan — los entornos cambian, el personal se va, los sistemas evolucionan, haciendo que las pruebas regulares sean esenciales. (I",
+      "justification_wrong": "Las copias de seguridad externas y las fallas diarias son aspectos parciales; la legislación de protección de datos no es la razón principal para probar"
+    },
+    {
+      "num": 37,
+      "text": "¿Con base en cuál legislación una persona puede solicitar acceso a los datos personales registrados sobre ella?",
+      "tag": "Legislación y Privacidad",
+      "options": [
+        "A. Legislación sobre registros públicos",
+        "B. Legislación de protección de datos personales",
+        "C. Legislación de delitos informáticos",
+        "D. Legislación de información gubernamental (acceso público)"
+      ],
+      "correct": 1,
+      "justification_correct": "La legislación de protección de datos personales (como LGPD en Brasil o GDPR en Europa) garantiza el derecho del titular de acceder, corregir y solicitar eliminación de sus datos. (LGPD — Lei",
+      "justification_wrong": "Registros públicos tratan de transparencia gubernamental; delitos informáticos tratan de ilícitos digitales; acceso públ"
+    },
+    {
+      "num": 38,
+      "text": "¿Cuál de las siguientes opciones representa un acto legislativo o regulatorio que puede ser impuesto a todas las organizaciones?",
+      "tag": "Normas y Legislación",
+      "options": [
+        "A. Derechos de propiedad intelectual",
+        "B. ISO/IEC 27001:2022",
+        "C. ISO/IEC 27002:2022",
+        "D. Legislación de protección de datos personales"
+      ],
+      "correct": 3,
+      "justification_correct": "La legislación de protección de datos es de cumplimiento obligatorio por fuerza legal para todas las organizaciones que tratan datos personales. ISO 27001 e ISO 27002 son normas voluntarias de cer",
+      "justification_wrong": "ISO 27001 e ISO 27002 son normas voluntarias; derechos de propiedad intelectual son protecciones legales específicas — apenas"
+    },
+    {
+      "num": 39,
+      "text": "Los empleados utilizan el tiempo de espera para enviar correos electrónicos personales y navegar en internet. ¿Cómo el uso de recursos tecnológicos puede ser MEJOR regulado desde el punto de vista legal?",
+      "tag": "Política de Uso Aceptable",
+      "options": [
+        "A. Instalando aplicaciones que bloquean sitios web y filtran archivos adjuntos de correo electrónico",
+        "B. Elaborando código de conducta estableciendo derechos y obligaciones de empleador y empleados",
+        "C. Implementando regulaciones genéricas de privacidad",
+        "D. Instalando antivirus en todos los dispositivos"
+      ],
+      "correct": 1,
+      "justification_correct": "Un código de conducta (política de uso aceptable) documenta las reglas de uso, derechos y obligaciones de ambas partes — la base legal más sólida para regular el uso de recursos tecn",
+      "justification_wrong": "Bloqueos técnicos y antivirus son controles unilaterales sin base contractual; regulaciones genéricas de privacidad no"
+    },
+    {
+      "num": 40,
+      "text": "¿Bajo qué condiciones un empleador está autorizado a verificar si los empleados utilizan internet y correo electrónico corporativo para fines privados?",
+      "tag": "Monitoreo y Privacidad",
+      "options": [
+        "A. Si informa al empleado después de cada verificación realizada",
+        "B. Si los empleados están previamente conscientes de que tal monitoreo puede ocurrir",
+        "C. Si hay cortafuegos instalado en la red corporativa",
+        "D. Si el monitoreo se realiza únicamente por auditores externos"
+      ],
+      "correct": 1,
+      "justification_correct": "El monitoreo es legítimo cuando los empleados fueron previamente informados y consintieron — requisito de transparencia y consentimiento presente tanto en la LGPD como en el GDPR y en",
+      "justification_wrong": "Informar después de cada verificación es retroactivo e insuficiente; cortafuegos y auditores externos no son condiciones jurídicas pa"
+    },
+    {
+      "num": 41,
+      "text": "Una organización está implementando su SGSI conforme a ISO 27001:2022 y realizó un análisis de riesgos que identificó vulnerabilidades críticas en sus activos de información. Durante el ciclo PDCA, en la fase de Planificación (Plan), el equipo debe definir criterios de aceptación de riesgo. Considerando que la organización opera en un sector altamente regulado",
+      "tag": "ANALISIS_DE_RIESGOS_Y_CRITERIOS_ACEPTACION",
+      "options": [
+        "A. Utilizar exclusivamente análisis cuantitativo con métricas financieras, pues ISO 27001:2022 exige comprobación numé",
+        "B. Realizar análisis cualitativo complementado por análisis cuantitativo, considerando tanto el contexto regulatorio (LGPD)",
+        "C. Aplicar análisis cuantitativo únicamente para riesgos de conformidad regulatoria y análisis cualitativo para los demás, gar",
+        "D. Adoptar únicamente benchmarking sectorial como criterio de aceptación, comparando el perfil de riesgos con otras organizaciones"
+      ],
+      "correct": 1,
+      "justification_correct": "El análisis de riesgos en ISO 27001:2022 (sección 6.1.3) recomienda una combinación de enfoques cualitativos y cuantitativos. Para organizaciones reguladas por la LGPD e con informaciones crí",
+      "justification_wrong": "La opción A es incorrecta pues ISO 27001:2022 no exige exclusivamente análisis cuantitativo; reconoce métodos cualitativ"
+    },
+    {
+      "num": 42,
+      "text": "Una organización implementó un SGSI conforme a ISO 27001:2022 y está realizando su primer análisis de riesgos de seguridad de la información. Durante el proceso, el equipo identificó que la clasificación de información estaba incompleta, afectando la precisión de la evaluación. Al implementar un enfoque cualitativo de análisis de riesgos en este escenario, ¿cuál es",
+      "tag": "Análisis de Riesgos y Clasificación de Información",
+      "options": [
+        "A. El análisis cualitativo depende de juicios subjetivos y percepciones de los evaluadores, reduciendo la objetividad y comp",
+        "B. El análisis cualitativo exige siempre una segunda opinión de auditores externos certificados por la PECB para validar los r",
+        "C. El análisis cualitativo no puede utilizarse cuando existen informaciones no clasificadas, debiendo esperarse la clasif",
+        "D. El análisis cualitativo elimina automáticamente todos los riesgos de baja probabilidad, tornándolo inadecuado para orga"
+      ],
+      "correct": 0,
+      "justification_correct": "Conforme a ISO 27001:2022, sección A.12.6.1, y las directrices de análisis de riesgos en A.5.2, el enfoque cualitativo utiliza escalas (alto, medio, bajo) o matrices de riesgo que depe",
+      "justification_wrong": "B es incorrecta porque ISO 27001:2022 no exige validación externa de análisis cualitativos internos; recomienda docum"
+    },
+    {
+      "num": 43,
+      "text": "Una organización implementó su estructura de SGSI conforme ISO 27001:2022 y realizó un análisis de riesgos utilizando metodología cualitativa. Durante el proceso de tratamiento de riesgos, el equipo identificó que algunos riesgos fueron evaluados con probabilidad 'Media' e impacto 'Alto'. Considerando el ciclo PDCA y los principios de gestión de riesgo, qué",
+      "tag": "Tratamiento de Riesgos y Ciclo PDCA",
+      "options": [
+        "A. Aceptar todos los riesgos 'Medio-Alto' por no encuadrarse en la categoría de riesgo crítico, documentando solo la deci",
+        "B. Implementar controles para reducir la probabilidad y/o el impacto, sometiéndolos a la aprobación de la alta dirección y monito",
+        "C. Transferir automáticamente todos los riesgos a aseguradoras especializadas, eliminando la necesidad de controles téc",
+        "D. Ignorar la probabilidad e implementar controles solo basado en el impacto 'Alto', sin considerar la matriz de riesgo es"
+      ],
+      "correct": 1,
+      "justification_correct": "Conforme ISO 27001:2022, cláusula 6.1.3, los riesgos de seguridad de la información deben ser tratados a través de selección e implementación de controles apropiados. Riesgos con probabilida",
+      "justification_wrong": "Opción A viola el principio de gestión de riesgo al aceptar riesgos significativos sin tratamiento adecuado. Opción C represent"
+    },
+    {
+      "num": 44,
+      "text": "Una organización está implementando su SGSI conforme ISO 27001:2022 y necesita definir criterios para clasificación de informaciones. Durante el análisis, identifica que informaciones de valor estratégico alto, con largo período de retención legal, y que causarían daños significativos al negocio en caso de divulgación, deben recibir un nivel de protección dif",
+      "tag": "Clasificación_de_Información_y_Esquemas_de_Protección",
+      "options": [
+        "A. Establecer esquema de clasificación multidimensional basado en factores de impacto de confidencialidad, integridad",
+        "B. Aplicar automáticamente el nivel máximo de protección a todas las informaciones con período de retención superior a dos año",
+        "C. Utilizar solo el criterio de impacto financiero directo para determinar la clasificación, ya que valor estratégic",
+        "D. Delegar la clasificación exclusivamente al propietario de cada información, dispensando criterios objetivos, pues cada"
+      ],
+      "correct": 0,
+      "justification_correct": "La alternativa A es correcta pues refleja adecuadamente el enfoque prescrito por ISO 27001:2022, especialmente en las cláusulas 5.15 (Identificación de requisitos de información) y 6.1.3",
+      "justification_wrong": "B es incorrecta pues sobrevaloría período de retención como factor único de clasificación, no considerando el impacto real"
+    },
+    {
+      "num": 45,
+      "text": "Una organización implementó un SGSI conforme ISO 27001:2022 y está realizando el análisis de riesgos de seguridad de la información. Durante este proceso, identificó que una determinada información crítica utiliza autenticación simple (solo contraseña) para acceso, mientras que otras informaciones de menor criticidad poseen autenticación multifactor. Al evaluar",
+      "tag": "Análisis de Riesgos y Vulnerabilidades en SGSI",
+      "options": [
+        "A. Una vulnerabilidad técnica que reduce la capacidad de detección de accesos no autorizados, debiendo ser evaluada consi",
+        "B. Una amenaza humana que ocurre exclusivamente cuando colaboradores realizan ataques internos deliberados, siendo necesá",
+        "C. Una falla de clasificación de la información que debe ser corregida reclasificando la información como no-crítica, elimin",
+        "D. Un riesgo aceptable que no necesita tratamiento, pues autenticación simple atiende los requisitos de no-repudio ex"
+      ],
+      "correct": 0,
+      "justification_correct": "La respuesta correcta es A. Conforme ISO 27001:2022, cláusula 6.1, la organización debe determinar riesgos de seguridad de la información a través de análisis sistemático. Una vulnerabilidad es",
+      "justification_wrong": "B es incorrecta pues vulnerabilidades no son exclusivamente amenazas humanas; la ausencia de autenticación multifactor es u"
+    },
+    {
+      "num": 47,
+      "text": "Durante la implementación de un SGSI conforme a ISO 27001:2022, una organización realiza análisis de riesgos identificando múltiples vulnerabilidades en sus activos de información. Al considerar una vulnerabilidad específica de autenticación débil en sistemas críticos, el equipo de seguridad debe decidir entre aplicar una medida de control preventiva o un",
+      "tag": "Controles Preventivos vs Detectivos y Jerarquía de Medidas",
+      "options": [
+        "A. Implementar autenticación multifactor (AMF) antes de que ocurra cualquier acceso no autorizado, ya que las medidas preventivas son superiores en la jerarquía de controles",
+        "B. Implementar registros detallados de acceso y alertas de intentos de autenticación fallidos, pues las medidas detectivas son superiores a las preventivas",
+        "C. Esperar a que ocurra un incidente de seguridad para implementar medidas correctivas, permitiendo validar la materialidad real de la vulnerabilidad",
+        "D. Aplicar solo medidas represivas como bloqueo de cuentas después de la detección de fraude, prescindiendo de controles preventivos"
+      ],
+      "correct": 0,
+      "justification_correct": "La respuesta correcta es A. Conforme a ISO 27001:2022, sección 6.1 (Evaluación de riesgos de seguridad de la información), la organización debe determinar y evaluar riesgos. La jerarquía de controles establece que las medidas preventivas son preferibles por evitar que los riesgos se materialicen",
+      "justification_wrong": "La opción B es incorrecta porque las medidas detectivas, aunque importantes, solo identifican problemas que ya han ocurrido y no eliminan las vulnerabilidades subyacentes"
+    },
+    {
+      "num": 48,
+      "text": "Una organización está revisando su proceso de análisis de riesgos de seguridad de la información. Durante la evaluación cualitativa, el equipo identifica una vulnerabilidad crítica en un sistema heredado sin posibilidad inmediata de corrección. El riesgo fue clasificado como 'Extremo' con impacto potencial de 8 horas de indisponibilidad de servicio crítico. ¿Cuál es la opción más apropiada de tratamiento de riesgo?",
+      "tag": "Tratamiento y Aceptación de Riesgos en SGSI",
+      "options": [
+        "A. Implementar controles compensatorios (medidas detectivas/correctivas) para mitigar el riesgo mientras se trabaja en la solución de corrección a largo plazo",
+        "B. Aceptar formalmente el riesgo sin implementar controles adicionales, dado que la corrección no es económicamente viable en el corto plazo",
+        "C. Transferir completamente el riesgo por medio de contrato de seguro cibernético, eliminando la responsabilidad organizacional sobre la vulnerabilidad",
+        "D. Evitar el riesgo descontinuando el sistema heredado inmediatamente, independientemente del impacto operacional en las actividades comerciales"
+      ],
+      "correct": 0,
+      "justification_correct": "Conforme a ISO 27001:2022, cláusula 6.1.3 (Proceso de Tratamiento de Riesgo), cuando un riesgo no puede ser eliminado o corregido inmediatamente, la organización DEBE implementar controles compensatorios para reducir el riesgo a un nivel aceptable",
+      "justification_wrong": "La alternativa B es incorrecta porque la aceptación de riesgo sin controles compensatorios viola el principio fundamental de ISO 27001 de mantener la seguridad de la información en un nivel aceptable"
+    },
+    {
+      "num": 49,
+      "text": "Una organización implementó un SGSI conforme a ISO 27001:2022 y está refinando su estrategia de análisis de riesgos de seguridad de la información. Durante la evaluación cualitativa, el equipo identificó que la ausencia de un plan de respuesta a incidentes adecuado representa un factor crítico. ¿Cuál es la implicación más significativa de esta brecha cuando se considera el ciclo completo de medidas de seguridad?",
+      "tag": "Ciclo de Incidentes y Medidas de Seguridad",
+      "options": [
+        "A. La organización perderá la capacidad de implementar medidas preventivas, tornando imposible evitar futuras amenazas a los activos de información",
+        "B. El tiempo de detección de incidentes aumentará significativamente, comprometiendo la efectividad de las medidas detectivas y correctivas",
+        "C. El análisis cualitativo de riesgos se tornará inviable, necesitando la adopción exclusiva de metodología cuantitativa para validación",
+        "D. La implementación de autenticación multifactor será considerada ineficaz, requiriendo sustitución por soluciones basadas en biometría avanzada"
+      ],
+      "correct": 1,
+      "justification_correct": "Conforme a ISO 27001:2022 (sección 8.3 - Evaluación de riesgos) e ISO 27035:2016 (Gestión de incidentes), la ausencia de un plan de respuesta a incidentes compromete especialmente la capacidad de detectar, contener y recuperarse de incidentes, afectando significativamente el tiempo de detección",
+      "justification_wrong": "La opción A es incorrecta pues las medidas preventivas son independientes de la respuesta a incidentes y pueden implementarse aisladamente"
+    },
+    {
+      "num": 50,
+      "text": "Una organización implementó un SGSI conforme a ISO 27001:2022 e identificó que múltiples vulnerabilidades técnicas en sus aplicaciones web permiten acceso no autorizado a datos personales de clientes. Durante el análisis de riesgo cualitativo, el equipo clasificó este escenario como riesgo alto. Al considerar el ciclo PDCA y las medidas de protección, ¿cuál es la secuencia correcta?",
+      "tag": "Análisis de Riesgo y Medidas Preventivas/Detectivas",
+      "options": [
+        "A. Implementar pruebas de penetración (medida detectiva), corregir vulnerabilidades en el código (medida preventiva), aplicar",
+        "B. Aislar inmediatamente los servidores afectados (medida represiva), deshabilitar acceso a las aplicaciones web (medida correctiva)",
+        "C. Aumentar monitoreo de empleados sospechosos (medida detectiva), implementar autenticación multifactor (medida preventiva)",
+        "D. Contratar asesoría externa inmediatamente (medida correctiva), implementar clasificación de información (medida preventiva)"
+      ],
+      "correct": 0,
+      "justification_correct": "La respuesta A presenta la secuencia correcta de medidas conforme a ISO 27001:2022 y el ciclo PDCA. Las pruebas de penetración son medidas detectivas que identifican vulnerabilidades. La corrección",
+      "justification_wrong": "B mezcla inadecuadamente medidas represivas (aislamiento tardío) con correctivas (deshabilitar) antes de preventivas adecuadas"
+    },
+    {
+      "num": 50,
+      "text": "Durante la revisión crítica de un Sistema de Gestión de Seguridad de la Información (SGSI) conforme a ISO 27001:2022, la alta dirección identificó que las métricas de efectividad de los controles no están siendo recolectadas adecuadamente. La organización desea establecer un proceso robusto de recolección y análisis de datos de desempeño que permita la toma de decisiones",
+      "tag": "Monitoreo y Medición de Desempeño del SGSI",
+      "options": [
+        "A. Implementar indicadores clave de desempeño (KPIs) basados exclusivamente en conformidad regulatoria y auditoría externa",
+        "B. Establecer métricas cuantitativas y cualitativas que evalúen la eficacia de los controles, incluyendo tasa de detección de",
+        "C. Delegar la recolección de datos de desempeño al departamento de TI, sin necesidad de involucramiento de la alta dirección, enfocándose",
+        "D. Realizar mediciones solo cuando ocurren incidentes de seguridad, utilizando esa información para ajustes reactivos del"
+      ],
+      "correct": 1,
+      "justification_correct": "La ISO 27001:2022, cláusula 9.1, exige que la organización establezca qué necesita ser monitoreado y medido, los métodos de monitoreo y medición, cuándo se analizarán los resultados",
+      "justification_wrong": "La alternativa A es limitada por enfocarse solo en conformidad regulatoria, descuidando la evaluación continua de eficacia de"
+    }
+  ]
+}

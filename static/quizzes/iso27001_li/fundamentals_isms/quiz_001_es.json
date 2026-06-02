@@ -1,0 +1,710 @@
+{
+  "cert_id": "iso27001_li",
+  "domain_id": "fundamentals_isms",
+  "quiz_num": 1,
+  "domain_name": "Fundamentos e Gestão de ISMS",
+  "cert_name": "ISO 27001 Lead Implementer",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Según ISO/IEC 27001:2022, ¿cuál es el propósito principal del contexto de la organización (Cláusula 4)?",
+      "tag": "Contexto Organizacional",
+      "options": [
+        "C. Documentar exclusivamente las amenazas tecnológicas que enfrenta la organización",
+        "A. Determinar cuestiones internas/externas y requisitos de partes interesadas que afectan la dirección estratégica del ISMS",
+        "B. Establecer únicamente los objetivos de seguridad de la información para el siguiente periodo fiscal",
+        "D. Definir solamente la estructura organizacional del departamento de TI"
+      ],
+      "correct": 1,
+      "justification_correct": "Cláusula 4.1 y 4.2 de ISO 27001:2022 requieren determinar cuestiones internas/externas y necesidades/expectativas de partes interesadas relevantes al ISMS. Este análisis contextual fundamenta el alcance y dirección estratégica del sistema de gestión, siendo requisito obligatorio para establecer bases sólidas del ISMS.",
+      "justification_wrong": "Las opciones B, C y D representan actividades fragmentadas o específicas que no capturan el propósito integral del contexto organizacional. La Cláusula 4 establece requisitos holísticos para comprender el entorno completo (interno/externo, partes interesadas, alcance) que determina la pertinencia y efectividad del ISMS, no elementos aislados."
+    },
+    {
+      "num": 2,
+      "text": "En el ciclo PDCA aplicado al ISMS según ISO 27001:2022, ¿en qué fase se ejecuta la evaluación de riesgos de seguridad de la información?",
+      "tag": "Ciclo PDCA",
+      "options": [
+        "A. Act (Actuar) - durante las acciones correctivas",
+        "B. Check (Verificar) - en las auditorías internas",
+        "D. Do (Hacer) - durante la implementación de controles",
+        "C. Plan (Planificar) - durante la planificación del ISMS"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 6.1.2 de ISO 27001:2022 establece que la evaluación de riesgos es parte integral de la planificación (Plan). La organización debe definir y aplicar el proceso de evaluación de riesgos para identificar, analizar y evaluar riesgos antes de determinar el tratamiento, fundamentando las decisiones estratégicas del ISMS.",
+      "justification_wrong": "La evaluación de riesgos no corresponde a Check (auditorías/monitoreo de controles existentes), Do (implementación de decisiones tomadas) ni Act (mejora basada en resultados). Según Cláusula 6.1, es requisito de planificación que precede lógicamente a la implementación, verificación y mejora del sistema de gestión."
+    },
+    {
+      "num": 3,
+      "text": "¿Cuál afirmación describe correctamente el tratamiento de la Declaración de Aplicabilidad (SoA) en ISO 27001:2022?",
+      "tag": "Declaración de Aplicabilidad",
+      "options": [
+        "C. Debe incluir los controles necesarios (Cláusula 6.1.3.d), su estado de implementación, y justificación de inclusiones/exclusiones",
+        "B. Es un documento opcional que solo grandes organizaciones deben mantener",
+        "A. Debe incluir únicamente los controles del Anexo A que la organización ha implementado completamente",
+        "D. Solo requiere listar los 93 controles del Anexo A sin justificaciones adicionales"
+      ],
+      "correct": 0,
+      "justification_correct": "Cláusula 6.1.3.d y 6.1.3.e de ISO 27001:2022 establecen que la SoA debe contener: controles necesarios (referencia Cláusula 6.1.3.d), justificación de inclusiones, estado de implementación y justificación de exclusiones del Anexo A. Es información documentada obligatoria que demuestra la cobertura integral del tratamiento de riesgos.",
+      "justification_wrong": "La SoA es requisito obligatorio (no opcional) aplicable a toda organización certificable. No se limita a controles implementados completamente ni es simple listado del Anexo A. Cláusula 6.1.3 exige justificaciones explícitas de decisiones de tratamiento, demostrando razonamiento basado en evaluación de riesgos y aplicabilidad contextual."
+    },
+    {
+      "num": 4,
+      "text": "Según ISO 27001:2022 Cláusula 9.3, ¿qué debe considerar la Alta Dirección como entrada (input) obligatoria para la revisión por la dirección del ISMS?",
+      "tag": "Revisión por la Dirección",
+      "options": [
+        "C. Solamente las quejas de clientes relacionadas con incidentes de seguridad",
+        "D. Exclusivamente las recomendaciones técnicas del equipo de TI",
+        "A. Únicamente los resultados financieros del departamento de seguridad",
+        "B. Estado de acciones de revisiones previas, cambios en cuestiones internas/externas, información sobre desempeño del ISMS incluyendo no conformidades y resultados de auditorías"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 9.3.2 de ISO 27001:2022 especifica entradas obligatorias: estado de acciones de revisiones previas, cambios en cuestiones relevantes a partes interesadas, retroalimentación sobre desempeño de seguridad, resultados de evaluación de riesgos, estado de objetivos, auditorías internas, no conformidades/acciones correctivas, resultados de monitoreo/medición, y oportunidades de mejora continua.",
+      "justification_wrong": "Las opciones A, C y D representan elementos fragmentados o parciales. La Cláusula 9.3.2 exige una revisión integral y sistemática considerando múltiples dimensiones del ISMS (estratégico, operacional, cumplimiento, riesgos, desempeño). Entradas limitadas impedirían a la Alta Dirección tomar decisiones informadas sobre adecuación, conveniencia y eficacia del sistema."
+    },
+    {
+      "num": 5,
+      "text": "En ISO 27001:2022, ¿cuál es el enfoque correcto para determinar el alcance del ISMS según Cláusula 4.3?",
+      "tag": "Alcance del ISMS",
+      "options": [
+        "A. Debe abarcar automáticamente todas las ubicaciones físicas y procesos de la organización sin excepciones",
+        "D. Debe limitarse únicamente al departamento de tecnología de la información",
+        "B. Se determina considerando cuestiones internas/externas (4.1), requisitos de partes interesadas (4.2), interfaces/dependencias con actividades externas, justificando exclusiones",
+        "C. Lo define exclusivamente el auditor de certificación durante la auditoría inicial"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 4.3 de ISO 27001:2022 establece que el alcance debe determinarse considerando: cuestiones referidas en 4.1, requisitos en 4.2, interfaces y dependencias entre actividades realizadas por la organización y las realizadas por otras. La organización debe documentar el alcance como información documentada, justificando cualquier exclusión de requisitos aplicables.",
+      "justification_wrong": "El alcance no es automático (opción A), no lo impone el auditor externo (opción C), ni se restringe a TI (opción D). Cláusula 4.3 requiere decisión estratégica organizacional basada en análisis contextual, considerando límites, aplicabilidad y interfaces. Flexibilidad controlada permite alcances proporcionales manteniendo integridad de gestión de riesgos de seguridad información."
+    },
+    {
+      "num": 6,
+      "text": "Según ISO/IEC 27001:2022, ¿cuál es el requisito MÍNIMO para la declaración de aplicabilidad respecto a los controles del Anexo A?",
+      "tag": "Declaración de Aplicabilidad",
+      "options": [
+        "C. Documentar únicamente los controles excluidos con justificación de exclusión",
+        "D. Listar los controles aplicables sin necesidad de justificar exclusiones",
+        "A. Incluir todos los 93 controles con justificación de inclusión o exclusión",
+        "B. Incluir solamente los controles seleccionados con su estado de implementación"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1.3.d requiere que la declaración de aplicabilidad contenga los controles necesarios (referencia Anexo A) y justificación para inclusiones y exclusiones. Debe demostrar que ningún control necesario ha sido omitido, garantizando completitud del análisis de los 93 controles.",
+      "justification_wrong": "Las opciones incompletas violan la cláusula 6.1.3.d. La norma exige documentar TANTO inclusiones como exclusiones con justificación. Una declaración parcial impide demostrar que se consideraron sistemáticamente todos los controles aplicables, incumpliendo requisitos de auditoría y certificación."
+    },
+    {
+      "num": 7,
+      "text": "En el contexto de la organización (cláusula 4.1 ISO 27001:2022), ¿cuál elemento NO constituye una cuestión externa que deba determinarse?",
+      "tag": "Contexto de la Organización",
+      "options": [
+        "A. Requisitos legales de protección de datos del sector",
+        "B. Estructura organizacional y líneas de reporte internas",
+        "C. Tendencias tecnológicas emergentes en ciberseguridad",
+        "D. Situación económica y competitiva del mercado"
+      ],
+      "correct": 1,
+      "justification_correct": "La estructura organizacional y líneas de reporte son cuestiones INTERNAS según cláusula 4.1. Las cuestiones externas incluyen entorno legal, tecnológico, competitivo, cultural y económico. La comprensión del contexto diferencia factores internos (organización) de externos (entorno operativo).",
+      "justification_wrong": "Confundir cuestiones internas con externas invalida el análisis de contexto requerido en 4.1. Requisitos legales, tendencias tecnológicas y situación competitiva son factores externos que afectan al SGSI. La estructura interna pertenece a la cláusula 4.1 pero como factor organizacional interno."
+    },
+    {
+      "num": 8,
+      "text": "Respecto al liderazgo y compromiso (cláusula 5.1), ¿cuál acción demuestra DIRECTAMENTE el cumplimiento de que la alta dirección asegura la integración de los requisitos del SGSI en los procesos de negocio?",
+      "tag": "Liderazgo y Compromiso",
+      "options": [
+        "D. Participar en reuniones trimestrales de revisión del SGSI",
+        "C. Asignar presupuesto suficiente para el equipo de seguridad",
+        "A. Aprobar la política de seguridad de la información anualmente",
+        "B. Incorporar objetivos de seguridad en KPIs de procesos operativos críticos"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 5.1.f requiere integración de requisitos del SGSI en procesos organizacionales. Incorporar objetivos de seguridad en KPIs operativos demuestra que seguridad es parte del negocio, no función aislada. Esto evidencia compromiso directo con integración sistémica según ISO 27001:2022.",
+      "justification_wrong": "Aprobar políticas, asignar recursos o participar en reuniones son importantes pero no demuestran INTEGRACIÓN en procesos de negocio. La cláusula 5.1.f exige que seguridad sea parte inherente de operaciones, no actividad paralela. La integración requiere métricas de seguridad en objetivos operacionales."
+    },
+    {
+      "num": 9,
+      "text": "Durante una auditoría interna del SGSI, se identifica que un riesgo previamente aceptado ha cambiado su nivel. Según el ciclo PDCA, ¿en qué fase se encuentra esta situación y qué cláusula aplica?",
+      "tag": "Ciclo PDCA y Evaluación de Desempeño",
+      "options": [
+        "D. Plan - Cláusula 6.1.2 Evaluación de riesgos de seguridad",
+        "C. Check - Cláusula 9.1 Seguimiento, medición, análisis y evaluación",
+        "B. Act - Cláusula 10.1 Mejora continua",
+        "A. Check - Cláusula 9.3 Revisión por la dirección"
+      ],
+      "correct": 1,
+      "justification_correct": "Cláusula 9.1 (fase Check) requiere seguimiento y evaluación continua del desempeño de seguridad, incluyendo cambios en riesgos. La detección de variación en nivel de riesgo previamente evaluado corresponde a monitoreo sistemático, anterior a decisiones de tratamiento (Plan) o acciones correctivas (Act).",
+      "justification_wrong": "Aunque revisión por dirección (9.3) considera riesgos, es proceso de más alto nivel. La fase Act (10.1) aplica DESPUÉS de identificar la necesidad de cambio. Reevaluar en Plan (6.1.2) es consecuencia, no detección inicial. La cláusula 9.1 establece el seguimiento continuo que detecta cambios."
+    },
+    {
+      "num": 10,
+      "text": "¿Cuál afirmación es CORRECTA sobre la relación entre alcance del SGSI (cláusula 4.3) y exclusiones de controles del Anexo A?",
+      "tag": "Alcance y Aplicabilidad",
+      "options": [
+        "B. El alcance define límites pero todos los 93 controles son obligatorios independientemente",
+        "C. Exclusiones de controles determinan automáticamente el alcance del SGSI",
+        "D. El alcance geográfico permite excluir controles organizacionales sin justificación",
+        "A. Controles del Anexo A pueden excluirse si están fuera del alcance definido del SGSI"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 4.3 establece el alcance considerando cuestiones 4.1, requisitos 4.2 e interfaces. Cláusula 6.1.3.c permite excluir controles Anexo A si no son aplicables dentro del alcance definido, pero requiere justificación. El alcance determina qué controles son relevantes para los límites establecidos.",
+      "justification_wrong": "No todos los controles son obligatorios universalmente; dependen de aplicabilidad según alcance y contexto (6.1.3). Las exclusiones NO definen el alcance, son consecuencia del análisis dentro del alcance. Límites geográficos u organizacionales no justifican automáticamente exclusiones; requiere análisis formal según cláusula 6.1.3.d."
+    },
+    {
+      "num": 11,
+      "text": "Durante la implementación del SGSI según ISO 27001:2022, ¿cuál es el enfoque correcto para determinar el alcance cuando la organización opera en múltiples jurisdicciones con requisitos legales divergentes?",
+      "tag": "Determinación del Alcance",
+      "options": [
+        "D. Implementar el alcance basándose únicamente en la jurisdicción con requisitos más estrictos aplicándolo globalmente",
+        "A. Establecer un alcance único global excluyendo jurisdicciones con requisitos incompatibles hasta armonizar controles",
+        "C. Determinar un alcance integrado considerando interfaces, dependencias y requisitos específicos de cada jurisdicción dentro del sistema único",
+        "B. Definir alcances separados por jurisdicción, tratando cada uno como SGSI independiente con certificaciones distintas"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 cláusula 4.3 requiere que el alcance considere cuestiones externas e internas, incluyendo requisitos legales. Un SGSI puede tener alcance único considerando requisitos jurisdiccionales específicos mediante controles diferenciados según Anexo A, manteniendo coherencia sistémica y optimizando recursos de gestión.",
+      "justification_wrong": "Fragmentar el SGSI en sistemas independientes (B) genera ineficiencias y contradice el enfoque de gestión integrada. Excluir jurisdicciones (A) o aplicar uniformidad forzada (D) incumple requisitos de comprensión del contexto organizacional y necesidades de partes interesadas según cláusulas 4.1 y 4.2."
+    },
+    {
+      "num": 12,
+      "text": "En el contexto de liderazgo y compromiso de la alta dirección (cláusula 5.1), ¿cuál acción demuestra MEJOR el cumplimiento de los requisitos normativos para asegurar la integración del SGSI con los procesos de negocio?",
+      "tag": "Liderazgo y Compromiso",
+      "options": [
+        "A. Designar un Director de Seguridad de la Información con autoridad para tomar todas las decisiones del SGSI independientemente",
+        "B. Asegurar que los objetivos de seguridad de la información sean compatibles con la dirección estratégica y estén integrados en procesos organizacionales",
+        "C. Aprobar formalmente la política de seguridad y comunicarla a todo el personal mediante correo electrónico institucional",
+        "D. Participar trimestralmente en reuniones del comité de seguridad para revisar indicadores de desempeño del SGSI"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 5.1.1 (e) requiere explícitamente que la alta dirección asegure la integración de requisitos del SGSI en los procesos organizacionales. La compatibilidad con dirección estratégica (opción B) demuestra integración real versus actividades aisladas, alineándose con cláusula 6.2 sobre objetivos.",
+      "justification_wrong": "La delegación total (A) contradice la responsabilidad indelegable de la alta dirección según 5.1. Aprobar políticas (C) y participar en reuniones (D) son acciones necesarias pero insuficientes; no demuestran la integración sistémica requerida por 5.1.1 (e) para efectividad del SGSI en procesos de negocio."
+    },
+    {
+      "num": 13,
+      "text": "Al realizar la evaluación de riesgos de seguridad de la información según ISO 27001:2022 cláusula 6.1.2, ¿cuál elemento es OBLIGATORIO incluir en el proceso de valoración de riesgos?",
+      "tag": "Evaluación de Riesgos",
+      "options": [
+        "D. Realizar análisis de brechas comparando controles existentes contra todos los controles del Anexo A obligatoriamente",
+        "B. Evaluar las consecuencias potenciales que resultarían si los riesgos identificados se materializaran",
+        "A. Utilizar metodología cuantitativa basada en valores monetarios de activos y probabilidades estadísticas de incidentes",
+        "C. Clasificar todos los riesgos utilizando matriz de calor con cinco niveles de probabilidad e impacto mínimo"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1.2 (c)(2) requiere específicamente que el proceso de valoración evalúe las consecuencias potenciales si los riesgos se materializaran. Este requisito es obligatorio independientemente de la metodología empleada (cualitativa, cuantitativa o mixta), constituyendo elemento fundamental para determinar niveles de riesgo.",
+      "justification_wrong": "La norma no prescribe metodología específica (A) ni formato de clasificación particular (C), permitiendo flexibilidad según contexto organizacional (4.1). El análisis de controles del Anexo A (D) corresponde a tratamiento de riesgos (6.1.3) posterior a la valoración, no siendo parte del proceso de evaluación."
+    },
+    {
+      "num": 14,
+      "text": "Respecto a la Declaración de Aplicabilidad (SoA) requerida en ISO 27001:2022 cláusula 6.1.3 (d), ¿qué información debe contener OBLIGATORIAMENTE para cumplir requisitos normativos?",
+      "tag": "Declaración de Aplicabilidad",
+      "options": [
+        "A. Controles del Anexo A necesarios, controles adicionales implementados, justificación de inclusiones y estado de implementación detallado",
+        "C. Controles necesarios con referencias cruzadas al plan de tratamiento, plazos de implementación y responsables asignados",
+        "B. Exclusivamente los 93 controles del Anexo A con indicación binaria de aplicable/no aplicable para cada uno",
+        "D. Controles necesarios del Anexo A, controles adicionales si los hay, justificación de inclusiones y exclusiones de controles necesarios"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1.3 (d) especifica cuatro elementos obligatorios en la SoA: controles necesarios del Anexo A, cualquier control adicional necesario, justificación para las inclusiones, y justificación para exclusiones de controles necesarios. Estos elementos permiten trazabilidad completa entre riesgos, tratamiento y controles seleccionados.",
+      "justification_wrong": "Incluir estado de implementación (A) o plazos específicos (C) excede requisitos normativos del SoA, aunque útil en gestión. La indicación binaria simple (B) es insuficiente pues omite controles adicionales y justificaciones requeridas explícitamente por 6.1.3 (d), impidiendo demostrar razonamiento del tratamiento de riesgos."
+    },
+    {
+      "num": 15,
+      "text": "En el contexto de auditoría interna del SGSI según ISO 27001:2022 cláusula 9.2, ¿cuál criterio determina la frecuencia e importancia de los procesos a auditar?",
+      "tag": "Auditoría Interna",
+      "options": [
+        "B. Decisión del auditor líder basada en su experiencia profesional y conocimiento de incidentes de seguridad previos",
+        "D. Requisitos de la entidad certificadora establecidos en el plan de certificación y vigilancia del organismo acreditado",
+        "A. Cronograma anual equitativo cubriendo todos los procesos del SGSI con igual profundidad y periodicidad semestral mínima",
+        "C. Importancia de los procesos y resultados de auditorías previas, planificando y ejecutando el programa considerando estos factores"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula 9.2 (2) requiere explícitamente que el programa de auditoría considere la importancia de los procesos concernientes y los resultados de auditorías previas. Este enfoque basado en riesgo optimiza recursos y enfoca esfuerzos donde mayor valor aportan para evaluar efectividad del SGSI.",
+      "justification_wrong": "Aplicar frecuencia uniforme (A) ignora el enfoque basado en riesgo requerido por la norma. Basarse únicamente en criterio del auditor (B) carece de fundamento normativo objetivo. Los requisitos de certificación (D) son externos al SGSI; la auditoría interna debe responder a necesidades organizacionales según 9.2, no a agenda de certificadores."
+    },
+    {
+      "num": 16,
+      "text": "Durante la planificación del SGSI según ISO 27001:2022, ¿cuál es el requisito normativo específico para determinar los riesgos y oportunidades que deben abordarse?",
+      "tag": "Planificación y Contexto Organizacional",
+      "options": [
+        "C. Considerar las cuestiones referidas en 4.1 y los requisitos referidos en 4.2 para determinar riesgos y oportunidades",
+        "D. Aplicar directamente el Anexo A sin análisis previo del contexto organizacional",
+        "A. Considerar únicamente las cuestiones internas y externas identificadas en la cláusula 4.1",
+        "B. Evaluar exclusivamente los requisitos de las partes interesadas establecidos en 4.2"
+      ],
+      "correct": 0,
+      "justification_correct": "La cláusula 6.1.1 de ISO 27001:2022 establece explícitamente que la organización debe determinar los riesgos y oportunidades considerando tanto las cuestiones referidas en 4.1 (contexto) como los requisitos referidos en 4.2 (partes interesadas), asegurando que el SGSI alcance sus resultados previstos y prevenga efectos no deseados.",
+      "justification_wrong": "Las opciones parciales ignoran el enfoque integrado requerido por la cláusula 6.1.1. ISO 27001:2022 exige considerar simultáneamente contexto organizacional y requisitos de partes interesadas. Aplicar Anexo A sin análisis contextual contradice el enfoque basado en riesgos establecido en la cláusula 6.1.2 y la estructura de alto nivel."
+    },
+    {
+      "num": 17,
+      "text": "En el proceso de evaluación de riesgos de seguridad de la información según cláusula 6.1.2, ¿qué elemento NO es obligatorio definir y aplicar según la norma?",
+      "tag": "Gestión de Riesgos",
+      "options": [
+        "C. Identificación de propietarios del riesgo con autoridad y responsabilidad definida",
+        "D. Proceso para producir resultados comparables, válidos y consistentes",
+        "A. Criterios de aceptación del riesgo y criterios para realizar evaluaciones de riesgos",
+        "B. Metodología de valoración cuantitativa exclusivamente con métricas financieras"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1.2 no prescribe metodología específica (cuantitativa/cualitativa). Permite flexibilidad metodológica siempre que produzca resultados comparables y consistentes. La organización define criterios apropiados según su contexto, no exclusivamente métricas financieras cuantitativas, respetando el principio de adaptabilidad normativa.",
+      "justification_wrong": "Las opciones A, C y D son requisitos explícitos en cláusula 6.1.2. La norma exige definir criterios de aceptación (6.1.2.c), identificar propietarios (6.1.2.d), y asegurar resultados comparables (6.1.2.a). Imponer metodología cuantitativa financiera contradice la flexibilidad normativa y contexto organizacional establecidos en cláusula 4."
+    },
+    {
+      "num": 18,
+      "text": "Según ISO 27001:2022 cláusula 9.2, ¿cuál es el requisito específico respecto a la independencia de los auditores internos del SGSI?",
+      "tag": "Auditoría Interna",
+      "options": [
+        "C. Requiere rotación obligatoria de auditores cada ciclo de certificación trienal",
+        "B. La organización debe asegurar objetividad e imparcialidad, donde los auditores no auditen su propio trabajo",
+        "A. Los auditores deben ser externos certificados por organismos acreditados exclusivamente",
+        "D. Los auditores internos deben reportar exclusivamente a la alta dirección sin intermediarios"
+      ],
+      "correct": 1,
+      "justification_correct": "La cláusula 9.2.2.f de ISO 27001:2022 establece que la organización debe asegurar objetividad e imparcialidad del proceso de auditoría. ISO 19011:2018 complementa especificando que los auditores no deben auditar su propio trabajo, garantizando independencia sin prescribir certificaciones externas obligatorias.",
+      "justification_wrong": "ISO 27001:2022 no exige auditores externos certificados ni rotación trienal obligatoria. La cláusula 9.2 permite auditorías internas con personal propio cumpliendo imparcialidad. El reporte puede seguir estructura organizacional definida. El requisito esencial es objetividad e imparcialidad según 9.2.2.f, no configuraciones operativas específicas."
+    },
+    {
+      "num": 19,
+      "text": "Al implementar tratamiento de riesgos según cláusula 6.1.3, ¿cuál afirmación describe correctamente la relación con los controles del Anexo A?",
+      "tag": "Tratamiento de Riesgos y Controles",
+      "options": [
+        "A. Todos los controles del Anexo A son obligatorios independientemente del resultado de la evaluación de riesgos",
+        "B. Los controles se seleccionan comparando con Anexo A, pero pueden añadirse controles adicionales necesarios",
+        "D. Únicamente los controles categorizados como esenciales del Anexo A requieren implementación obligatoria",
+        "C. El Anexo A es referencial; la organización puede ignorarlo completamente si justifica controles alternativos"
+      ],
+      "correct": 1,
+      "justification_correct": "La cláusula 6.1.3.d requiere comparar controles determinados con Anexo A para verificar completitud. Cláusula 6.1.3.c permite controles adicionales necesarios no incluidos en Anexo A. La Declaración de Aplicabilidad (SoA) documenta controles incluidos, implementados y justificaciones de inclusiones/exclusiones según 6.1.3.e, permitiendo flexibilidad contextual.",
+      "justification_wrong": "El Anexo A no es totalmente obligatorio ni completamente opcional. ISO 27001:2022 exige comparación sistemática (6.1.3.d) sin imponer implementación total. No existe categorización esencial/no-esencial prescrita. Ignorar completamente Anexo A incumple requisito de comparación. La norma equilibra referencia estructurada con flexibilidad basada en riesgos organizacionales."
+    },
+    {
+      "num": 20,
+      "text": "Respecto a la Revisión por la Dirección según cláusula 9.3, ¿cuál elemento de entrada (input) es específicamente requerido por ISO 27001:2022?",
+      "tag": "Revisión por la Dirección",
+      "options": [
+        "A. Análisis detallado de estados financieros relacionados con inversiones en seguridad de la información",
+        "C. Evaluación individual del desempeño de cada empleado en cumplimiento de políticas de seguridad",
+        "D. Proyecciones de amenazas cibernéticas para el siguiente quinquenio con análisis predictivo",
+        "B. Estado de las acciones de revisiones anteriores por la dirección del SGSI"
+      ],
+      "correct": 3,
+      "justification_correct": "La cláusula 9.3.2.a de ISO 27001:2022 establece explícitamente como entrada obligatoria el estado de acciones de revisiones anteriores por la dirección, asegurando seguimiento sistemático y mejora continua. Este requisito garantiza trazabilidad decisional y accountability organizacional en la gobernanza del SGSI.",
+      "justification_wrong": "ISO 27001:2022 cláusula 9.3.2 no requiere estados financieros detallados, evaluaciones individuales de empleados ni proyecciones quinquenales. Las entradas obligatorias incluyen: cambios relevantes (9.3.2.b), información sobre desempeño del SGSI (9.3.2.c-f), retroalimentación partes interesadas (9.3.2.g), resultados evaluación riesgos (9.3.2.h) y oportunidades mejora continua (9.3.2.i)."
+    },
+    {
+      "num": 21,
+      "text": "En el contexto de implementación de ISMS según ISO 27001:2022, ¿cuál es el enfoque correcto para determinar el alcance cuando existen múltiples unidades de negocio con diferentes niveles de madurez en seguridad de la información?",
+      "tag": "Determinación del Alcance y Contexto Organizacional",
+      "options": [
+        "A. Establecer alcances separados por unidad de negocio y posteriormente integrarlos mediante certificaciones múltiples",
+        "B. Definir un alcance único que incluya todas las unidades, documentando exclusiones justificadas basadas en aplicabilidad de controles según cláusula 6.1.3",
+        "C. Implementar el ISMS solo en unidades con madurez alta y excluir las demás hasta alcanzar nivel homogéneo",
+        "D. Crear un alcance parcial inicial certificable y expandirlo progresivamente sin requerir nueva certificación"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 4.3 requiere que el alcance considere interfaces y dependencias organizacionales. La cláusula 6.1.3 permite exclusiones solo cuando los controles no sean aplicables, no por madurez. Un alcance único con exclusiones justificadas garantiza cobertura integral del contexto organizacional mientras mantiene conformidad normativa.",
+      "justification_wrong": "Alcances múltiples fragmentan la gestión integrada del riesgo y contradicen el enfoque sistémico de ISO 27001. Excluir unidades por madurez insuficiente viola el principio de mejora continua (cláusula 10) y la integridad del contexto organizacional. Expansiones posteriores requieren actualización certificativa conforme requisitos de acreditación."
+    },
+    {
+      "num": 22,
+      "text": "Durante la evaluación de riesgos según ISO 27001:2022, una organización identifica que un activo crítico tiene múltiples propietarios funcionales. ¿Cuál es el tratamiento metodológico correcto según las cláusulas 6.1.2 y A.5.9?",
+      "tag": "Evaluación y Tratamiento de Riesgos",
+      "options": [
+        "A. Asignar propiedad única al departamento con mayor dependencia operativa del activo",
+        "B. Designar un propietario principal con responsabilidad consolidada y definir co-propietarios con responsabilidades específicas documentadas en matriz RACI",
+        "D. Asignar propiedad rotatoria trimestral entre las áreas involucradas",
+        "C. Crear un comité de propiedad compartida sin asignación individual de responsabilidades"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 control A.5.9 requiere inventario de activos con propietarios definidos. Cláusula 5.3 establece asignación clara de responsabilidades. Un propietario principal con accountability consolidada y co-propietarios con responsabilidades específicas documentadas (matriz RACI) garantiza trazabilidad, evita ambigüedad y cumple requisitos de gobernanza del ISMS.",
+      "justification_wrong": "Propiedad compartida sin diferenciación de responsabilidades genera ambigüedad en accountability, violando cláusula 5.3. Propiedad rotatoria impide continuidad en gestión de activos y evaluación de riesgos. Asignación exclusiva a un área ignora interdependencias organizacionales y puede generar brechas en aplicación de controles."
+    },
+    {
+      "num": 23,
+      "text": "Al implementar gestión de cambios en el ISMS conforme ISO 27001:2022 cláusula 6.3, ¿cuál es el criterio determinante para clasificar un cambio como 'planificado' versus 'requerido por incidente'?",
+      "tag": "Gestión de Cambios del ISMS",
+      "options": [
+        "A. Origen del cambio: proactivo (planificado) versus reactivo (incidente)",
+        "C. Velocidad de implementación: cambios inmediatos son por incidente, diferidos son planificados",
+        "D. Naturaleza del cambio: mejoras son planificadas, correcciones son por incidente",
+        "B. Evaluación de impacto: cambios con impacto bajo son planificados, alto son por incidente"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 cláusula 6.3 distingue cambios por su naturaleza intencional y sistemática. Cambios planificados derivan de revisiones, auditorías o mejora continua (proactivos). Cambios por incidente son respuestas a eventos no planificados. Esta clasificación impacta procedimientos de autorización, evaluación de riesgos y documentación según cláusulas 6.1.2 y 7.5.",
+      "justification_wrong": "Impacto, velocidad o naturaleza correctiva no son criterios normativos de clasificación en cláusula 6.3. Cambios planificados pueden tener alto impacto; cambios por incidente pueden requerir implementación diferida. La distinción fundamental es el origen: gestión proactiva del ISMS versus respuesta reactiva a eventos, determinando tratamiento procedimental diferenciado."
+    },
+    {
+      "num": 24,
+      "text": "En auditorías internas del ISMS según ISO 27001:2022 cláusula 9.2 e ISO 19011:2018, ¿cuál constituye una no conformidad mayor versus observación cuando se detecta ausencia de procedimiento documentado para control A.8.16 (Monitoreo de actividades)?",
+      "tag": "Auditoría Interna y Evaluación de Conformidad",
+      "options": [
+        "A. No conformidad mayor: ausencia total de procedimiento documentado requerido por control obligatorio",
+        "C. No conformidad menor: documentación existe pero está incompleta o desactualizada",
+        "D. Depende del resultado de evaluación de riesgos que justifique aplicabilidad del control",
+        "B. Observación: el control existe operativamente pero carece de documentación formal"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1.3d establece que controles son aplicables según evaluación de riesgos y requisitos legales. La ausencia de procedimiento solo es no conformidad si el control es aplicable y necesario. Cláusula 7.5 requiere documentación según necesidad organizacional. La clasificación depende de: aplicabilidad declarada, evidencia de implementación y criticidad según contexto.",
+      "justification_wrong": "Clasificar automáticamente como no conformidad mayor sin evaluar aplicabilidad contradice enfoque basado en riesgos (cláusula 6.1). ISO 27001:2022 no requiere documentación específica para cada control, solo información documentada necesaria (cláusula 7.5). La severidad depende de contexto organizacional, no de presencia/ausencia documental aislada."
+    },
+    {
+      "num": 25,
+      "text": "Al establecer objetivos de seguridad de la información según ISO 27001:2022 cláusula 6.2, ¿cuál es el vínculo obligatorio con el proceso de evaluación de riesgos conforme a la estructura de alto nivel (HLS)?",
+      "tag": "Objetivos de Seguridad y Planificación",
+      "options": [
+        "C. Cada riesgo identificado requiere un objetivo específico de seguridad asociado",
+        "B. Objetivos deben ser medibles y coherentes con resultados de evaluación de riesgos, contribuyendo a tratamiento y mejora continua del ISMS",
+        "D. Objetivos pueden establecerse independientemente de riesgos si están alineados con política de seguridad",
+        "A. Los objetivos deben derivarse exclusivamente de riesgos clasificados como inaceptables"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 6.2 requiere objetivos medibles coherentes con política (5.2) y compromisos de mejora continua. HLS establece que planificación (cláusula 6) integre riesgos y oportunidades. Objetivos deben conectar con resultados de evaluación (6.1.2) y tratamiento de riesgos (6.1.3), pero no requieren correspondencia uno-a-uno, permitiendo objetivos estratégicos transversales.",
+      "justification_wrong": "Requerir objetivos exclusivos para riesgos inaceptables o correspondencia uno-a-uno contradice enfoque estratégico de HLS. Objetivos pueden abordar múltiples riesgos o mejoras sistémicas. Establecer objetivos sin considerar evaluación de riesgos viola integración requerida en cláusula 6 y principio de enfoque basado en riesgos fundamental en ISO 27001:2022."
+    },
+    {
+      "num": 26,
+      "text": "Durante la implementación de un SGSI en una organización multinacional con operaciones en sectores regulados, ¿cuál es el enfoque más adecuado para gestionar requisitos legales contradictorios entre jurisdicciones respecto al tratamiento de datos personales?",
+      "tag": "Contexto Organizacional y Requisitos Legales",
+      "options": [
+        "B. Implementar únicamente los requisitos del país sede corporativa para mantener consistencia operacional",
+        "A. Aplicar el principio de lex specialis y documentar en el Anexo SL las excepciones por jurisdicción, estableciendo controles diferenciados según ISO 27001:2022 cláusula 4.2",
+        "C. Delegar la responsabilidad de cumplimiento a cada filial local sin coordinación centralizada del SGSI",
+        "D. Suspender la certificación hasta que exista armonización legislativa internacional"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 4.2 exige comprender necesidades y expectativas de partes interesadas, incluyendo requisitos legales. El enfoque correcto aplica lex specialis (norma específica prevalece), documenta excepciones jurisdiccionales manteniendo integridad del SGSI, y establece controles diferenciados por contexto legal específico, cumpliendo cláusula 4.1 sobre comprensión del contexto organizacional.",
+      "justification_wrong": "Opciones B y C violan el principio de comprensión del contexto (cláusula 4.1) y gestión de requisitos legales (cláusula 4.2). La opción D es impracticable; ISO 27001 permite implementación adaptativa. La certificación requiere demostrar cumplimiento contextualizado, no uniformidad global absoluta que ignore realidades jurisdiccionales."
+    },
+    {
+      "num": 27,
+      "text": "Al establecer el alcance del SGSI según ISO 27001:2022 cláusula 4.3, una organización excluye servicios de desarrollo de software argumentando que son tercerizados. ¿Qué implicación tiene esta decisión para la certificación?",
+      "tag": "Determinación del Alcance del SGSI",
+      "options": [
+        "D. Es válido automáticamente bajo el principio de gestión de proveedores de la cláusula 8.1",
+        "C. Requiere únicamente declaración en el enunciado de aplicabilidad sin afectar certificabilidad",
+        "B. Constituye exclusión inadmisible si el desarrollo afecta la seguridad de activos dentro del alcance, según cláusula 4.3 y requisito de consideración de interfaces externas",
+        "A. Es aceptable si los proveedores tienen certificación ISO 27001 propia"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 cláusula 4.3 requiere que el alcance incluya interfaces externas y dependencias. Excluir desarrollo tercerizado que afecta activos del alcance viola este requisito; el control debe gestionarse mediante cláusula 5.19 (relaciones con proveedores) y Anexo A.5.19-5.22. La tercerización no justifica exclusión del alcance si existe dependencia de seguridad.",
+      "justification_wrong": "Opción A: certificación del proveedor no exime responsabilidad organizacional sobre interfaces. Opción C: el SoA documenta aplicabilidad de controles, no justifica exclusiones de alcance inadmisibles. Opción D: cláusula 8.1 (planificación operacional) requiere gestionar proveedores dentro del alcance, no excluirlos arbitrariamente."
+    },
+    {
+      "num": 28,
+      "text": "Durante una auditoría interna previa a certificación, se identifica que el proceso de gestión de cambios de la infraestructura crítica no documenta sistemáticamente la evaluación de riesgos de seguridad. ¿Cuál es la clasificación más apropiada de esta no conformidad?",
+      "tag": "Auditoría Interna y No Conformidades",
+      "options": [
+        "B. No conformidad menor, requiere acción correctiva antes de auditoría de certificación",
+        "D. Observación técnica que puede tratarse en ciclos de mejora continua posteriores",
+        "C. No conformidad mayor por incumplimiento sistemático de ISO 27001:2022 cláusula 6.1.2 (evaluación de riesgos) y 8.1 (planificación operacional), afectando eficacia del SGSI",
+        "A. Oportunidad de mejora, sin impacto en certificabilidad"
+      ],
+      "correct": 2,
+      "justification_correct": "Constituye no conformidad mayor porque: (1) incumple sistemáticamente cláusula 6.1.2 que exige evaluación de riesgos ante cambios, (2) viola cláusula 8.1 sobre planificación y control operacional, (3) afecta infraestructura crítica comprometiendo eficacia del SGSI, y (4) es sistemática (no puntual). ISO 19011:2018 define no conformidad mayor como incumplimiento que cuestiona capacidad del sistema.",
+      "justification_wrong": "No puede clasificarse como menor u oportunidad porque el incumplimiento es sistemático, afecta requisitos fundamentales (evaluación de riesgos) y compromete activos críticos. La ausencia sistemática de evaluación de riesgos en cambios críticos impide demostrar eficacia del SGSI, requisito esencial para certificación según ISO 27006."
+    },
+    {
+      "num": 29,
+      "text": "La alta dirección propone delegar la responsabilidad de revisión del SGSI (cláusula 9.3) al Comité de Seguridad de la Información presidido por el CISO. Desde la perspectiva de certificación ISO 27001:2022, ¿es aceptable esta delegación?",
+      "tag": "Liderazgo y Compromiso de la Alta Dirección",
+      "options": [
+        "B. No es aceptable; la cláusula 5.3 y 9.3 establecen que la revisión por la dirección es responsabilidad indelegable de la alta dirección, aunque puede recibir insumos del comité",
+        "D. Requiere únicamente que el CISO presente resultados posteriormente a la alta dirección",
+        "C. Es válido mediante documentación formal de delegación de autoridad según cláusula 5.3",
+        "A. Es aceptable si el CISO tiene nivel ejecutivo C-level con autoridad presupuestaria"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 cláusula 5.3 exige que la alta dirección asegure revisión del SGSI; cláusula 9.3 especifica que la dirección debe revisar el sistema para asegurar conveniencia, adecuación y eficacia continua. Esta es responsabilidad indelegable de liderazgo. El comité puede preparar insumos, pero la revisión formal, decisiones estratégicas y demostración de compromiso son exclusivas de alta dirección.",
+      "justification_wrong": "Ninguna condición (nivel ejecutivo, documentación formal o presentación posterior) legitima delegación completa. ISO 27001 fundamenta certificación en compromiso demostrable de alta dirección mediante participación directa en revisión. La delegación total contradice requisitos de liderazgo (cláusula 5) y elimina accountability requerida para certificación."
+    },
+    {
+      "num": 30,
+      "text": "Una organización certificada ISO 27001 implementa un cambio significativo en su modelo de negocio, adoptando servicios cloud que procesan información clasificada. ¿Qué acción es obligatoria respecto al SGSI y la certificación vigente?",
+      "tag": "Gestión de Cambios y Mantenimiento de Certificación",
+      "options": [
+        "A. Esperar a la siguiente auditoría de seguimiento programada para revisar el cambio",
+        "D. Solicitar nueva certificación completa desde cero para el nuevo modelo",
+        "B. Notificar al organismo de certificación según ISO 27006, reevaluar riesgos (cláusula 6.1.2), actualizar alcance si necesario (cláusula 4.3), modificar controles aplicables (cláusula 6.1.3) y documentar en SoA revisado",
+        "C. Únicamente actualizar la matriz de riesgos internamente sin notificación externa"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27006:2015 cláusula 9.6.3 requiere notificar cambios significativos al organismo certificador. Internamente, ISO 27001:2022 exige: reevaluar riesgos ante cambios (6.1.2), revisar alcance si hay nuevos límites/interfaces (4.3), adaptar controles (6.1.3 y Anexo A.5.23 para cloud), actualizar SoA documentando cambios en aplicabilidad. El cambio significativo puede requerir auditoría extraordinaria.",
+      "justification_wrong": "Opción A viola requisitos de notificación oportuna a certificador y gestión proactiva de cambios. Opción C es insuficiente; cambios significativos requieren revisión integral del SGSI y notificación. Opción D es innecesaria; la certificación puede mantenerse mediante gestión adecuada del cambio y auditoría extraordinaria si el organismo lo requiere."
+    },
+    {
+      "num": 31,
+      "text": "Durante la implementación del ISMS en una organización multinacional, el Lead Implementer identifica que las operaciones en tres jurisdicciones diferentes tienen requisitos legales conflictivos respecto al almacenamiento de datos personales. ¿Cuál es el enfoque más apropiado según ISO 27001:2022?",
+      "tag": "Contexto Organizacional y Requisitos Legales",
+      "options": [
+        "C. Documentar los requisitos jurisdiccionales específicos en la cláusula 4.2 y establecer controles diferenciados por ubicación en el Anexo A",
+        "D. Excluir las operaciones con conflictos legales del alcance del ISMS hasta resolver las discrepancias",
+        "B. Segmentar el alcance del ISMS en múltiples certificaciones independientes por jurisdicción",
+        "A. Aplicar el requisito legal más restrictivo a todas las jurisdicciones para asegurar cumplimiento uniforme"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 cláusula 4.2 requiere determinar partes interesadas y sus requisitos legales aplicables. La cláusula 6.1.3 permite tratamiento diferenciado de riesgos según contexto. El Anexo A (controles 5.31-5.34) contempla requisitos jurisdiccionales específicos. La segmentación mantiene alcance unificado mientras atiende particularidades regulatorias mediante controles contextualizados.",
+      "justification_wrong": "Opciones A y D ignoran la flexibilidad normativa para contextos operacionales diversos. Opción B genera fragmentación innecesaria y aumenta costos de certificación. ISO 27001:2022 permite ISMS único con controles diferenciados según requisitos de partes interesadas (cláusula 4.2), no requiere uniformidad absoluta ni exclusiones por complejidad regulatoria."
+    },
+    {
+      "num": 32,
+      "text": "Al evaluar la adecuación de la metodología de valoración de riesgos existente en una organización para cumplir ISO 27001:2022, ¿cuál criterio es determinante para su aceptabilidad?",
+      "tag": "Gestión de Riesgos del ISMS",
+      "options": [
+        "A. Utilización obligatoria de escalas cuantitativas con valores monetarios para impacto y probabilidad",
+        "D. Integración automática con herramientas de gestión de vulnerabilidades tipo CVE/CVSS",
+        "C. Aplicación exclusiva de la matriz 5x5 recomendada en ISO 31000 para clasificación de riesgos",
+        "B. Capacidad de producir resultados comparables y reproducibles que permitan priorización consistente de tratamientos"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1.2 c) requiere que la valoración de riesgos produzca \"resultados comparables y reproducibles\". No prescribe metodología específica (cualitativa/cuantitativa). El requisito esencial es consistencia metodológica para decisiones fundamentadas. ISO 27005:2022 sección 8.3 refuerza que criterios deben permitir comparación y priorización efectiva de riesgos.",
+      "justification_wrong": "Opción A contradice ISO 27001:2022 que acepta métodos cualitativos y cuantitativos. Opción C impone restricción inexistente; ISO 31000 es orientativa, no prescriptiva para ISO 27001. Opción D confunde valoración de riesgos (requisito normativo) con herramientas técnicas (opcionales). Cláusula 6.1.2 no especifica escalas ni herramientas obligatorias."
+    },
+    {
+      "num": 33,
+      "text": "Una organización certificada ISO 27001 experimenta una violación de datos que afecta a 50,000 registros de clientes. El equipo de respuesta contiene el incidente en 4 horas pero la notificación a la alta dirección ocurre 36 horas después. ¿Cuál es la no conformidad principal según ISO 27001:2022?",
+      "tag": "Operación y Respuesta a Incidentes",
+      "options": [
+        "D. No conformidad con cláusula 9.1 por deficiencias en monitoreo continuo que permitieron la violación",
+        "B. Violación de la cláusula 5.3 por fallo en asegurar comunicación oportuna de eventos significativos a la alta dirección",
+        "C. Incumplimiento del Control A.5.26 sobre respuesta a incidentes por no notificar autoridades en plazo regulatorio de 72 horas",
+        "A. Incumplimiento del Control A.5.24 sobre planificación y preparación de respuesta a incidentes por tiempo excesivo de contención"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 5.3 establece que alta dirección debe asegurar \"comunicación interna relevante\" del ISMS. Un incidente con 50,000 registros comprometidos constituye evento significativo requiriendo escalamiento inmediato. El retraso de 36 horas impide toma de decisiones estratégicas oportunas. Control A.5.24 especifica procedimientos de respuesta, pero cláusula 5.3 gobierna responsabilidad directiva.",
+      "justification_wrong": "Opción A incorrecta: contención en 4 horas demuestra eficacia operativa (A.5.24 cumplido). Opción C confunde requisitos GDPR con ISO 27001 (no prescribe plazos regulatorios específicos). Opción D inadecuada: violación no evidencia fallo de monitoreo per se (cláusula 9.1); la no conformidad crítica es comunicación directiva tardía."
+    },
+    {
+      "num": 34,
+      "text": "Durante auditoría interna, se detecta que el proceso de revisión de gestión del ISMS (cláusula 9.3) no incluye análisis de cambios en necesidades y expectativas de partes interesadas identificadas en cláusula 4.2. ¿Cómo debe categorizar el Lead Auditor este hallazgo?",
+      "tag": "Evaluación del Desempeño y Auditoría",
+      "options": [
+        "D. No conformidad Menor: requisito aplicable pero no crítico para efectividad del ISMS",
+        "A. Observación menor: la revisión cubre requisitos mínimos aunque podría mejorarse con información adicional",
+        "B. No conformidad Mayor: omisión de entrada obligatoria de revisión por dirección especificada en ISO 27001:2022 cláusula 9.3 e)",
+        "C. Oportunidad de mejora: cambios en partes interesadas son opcionales si no afectan riesgos identificados"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 cláusula 9.3.2 e) establece explícitamente como entrada obligatoria \"cambios en cuestiones externas e internas relevantes al ISMS\". Cláusula 4.2 define partes interesadas como parte del contexto organizacional (cláusula 4). Omitir este análisis constituye incumplimiento directo de requisito normativo SHALL, calificando como No Conformidad Mayor por falta sistemática.",
+      "justification_wrong": "Opción A subestima gravedad: no es mejora opcional sino requisito obligatorio (SHALL en 9.3.2 e). Opción C contradice texto normativo explícito vinculando cláusulas 4.2 y 9.3. Opción D inadecuada: incumplimiento de entrada obligatoria de revisión directiva siempre es Mayor según ISO 19011:2018, afecta capacidad de adaptación estratégica del ISMS."
+    },
+    {
+      "num": 35,
+      "text": "Al implementar el Control A.5.23 (Seguridad de la información para el uso de servicios en la nube), una organización utiliza servicios SaaS donde el proveedor tiene certificación ISO 27001 vigente. ¿Cuál acción del Lead Implementer es más consistente con requisitos normativos?",
+      "tag": "Controles del Anexo A - Controles Organizacionales",
+      "options": [
+        "A. Aceptar la certificación del proveedor como evidencia suficiente de cumplimiento y documentar en Declaración de Aplicabilidad sin evaluaciones adicionales",
+        "B. Realizar evaluación independiente de controles relevantes mediante cuestionarios, auditoría de certificados y revisión de acuerdos de nivel de servicio",
+        "C. Exigir al proveedor compartir informes de auditoría interna ISO 27001 completos como condición contractual obligatoria",
+        "D. Solicitar únicamente garantías contractuales de cumplimiento regulatorio sin verificación de implementación efectiva de controles"
+      ],
+      "correct": 1,
+      "justification_correct": "Control A.5.23 requiere \"acuerdos con proveedores de servicios nube\" que aborden seguridad información. ISO 27001:2022 cláusula 8.1 exige control de procesos externalizados. Certificación ISO 27001 del proveedor es indicador positivo pero no elimina responsabilidad organizacional de verificar controles específicos aplicables (alcance certificación, controles relevantes, SLAs). ISO 27002:2022 5.23 especifica evaluación continua proveedores.",
+      "justification_wrong": "Opción A viola principio de debida diligencia: certificación puede tener alcance diferente a servicios contratados. Opción C impráctica e innecesaria: informes internos son confidenciales; existen alternativas (SOC 2, cuestionarios). Opción D insuficiente: garantías contractuales sin verificación no demuestran efectividad (cláusula 9.1 requiere evidencia desempeño)."
+    },
+    {
+      "num": 36,
+      "text": "Durante la implementación del SGSI en una organización multinacional con operaciones cloud híbridas, ¿cuál es el enfoque más adecuado para determinar el alcance según ISO/IEC 27001:2022 cláusula 4.3?",
+      "tag": "Determinación del alcance del SGSI",
+      "options": [
+        "A. Incluir todos los activos de información independientemente de su criticidad, asegurando cobertura total de la certificación",
+        "D. Establecer el alcance únicamente considerando los procesos que procesan información clasificada como confidencial",
+        "B. Analizar cuestiones internas/externas (4.1), necesidades de partes interesadas (4.2), interfaces críticas y dependencias, justificando exclusiones técnicamente",
+        "C. Definir el alcance exclusivamente basándose en los requisitos legales aplicables y ubicaciones geográficas de la organización"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 4.3 requiere considerar cuestiones (4.1), requisitos de partes interesadas (4.2), interfaces y dependencias. El alcance debe ser lógico, justificado y documentado considerando el contexto completo, no criterios aislados. Las exclusiones deben justificarse técnicamente sin comprometer la seguridad.",
+      "justification_wrong": "Opciones A, C y D representan enfoques parciales o excesivos. La norma exige análisis integral contextual, no solo cobertura total, requisitos legales o clasificación de información. El alcance debe equilibrar viabilidad operativa con efectividad del SGSI, considerando todos los factores del contexto organizacional."
+    },
+    {
+      "num": 37,
+      "text": "Al evaluar el desempeño del SGSI según ISO/IEC 27001:2022 cláusula 9.1, un Lead Implementer identifica que los indicadores actuales no detectan desviaciones críticas. ¿Qué acción es prioritaria?",
+      "tag": "Seguimiento, medición, análisis y evaluación",
+      "options": [
+        "A. Incrementar la frecuencia de medición de los indicadores existentes para capturar más datos históricos de tendencias",
+        "D. Implementar controles adicionales del Anexo A para compensar las deficiencias en la detección de desviaciones",
+        "B. Rediseñar el sistema de medición determinando qué, cómo, cuándo medir y analizar, asegurando que los métodos produzcan resultados válidos y comparables",
+        "C. Solicitar auditoría externa inmediata para identificar gaps en los controles implementados y no conformidades mayores"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 9.1 exige determinar qué necesita seguimiento/medición, métodos apropiados, cuándo realizar y analizar resultados. Si los indicadores no detectan desviaciones críticas, el sistema de medición es inadecuado. Debe rediseñarse basándose en objetivos de seguridad y criterios de desempeño efectivos.",
+      "justification_wrong": "Incrementar frecuencia (A) no soluciona indicadores inadecuados. Auditorías externas (C) son reactivas, no preventivas para el sistema de medición. Implementar más controles (D) no resuelve deficiencias en monitorización. La cláusula 9.1 requiere validez y comparabilidad en métodos de medición específicos."
+    },
+    {
+      "num": 38,
+      "text": "Durante la revisión por la dirección (ISO/IEC 27001:2022 cláusula 9.3), la alta dirección debe considerar información específica como entrada. ¿Cuál conjunto de entradas es OBLIGATORIO según la norma?",
+      "tag": "Revisión por la dirección del SGSI",
+      "options": [
+        "B. Resultados de auditorías internas, estado de certificaciones ISO, análisis de incidentes de seguridad del último año, presupuesto aprobado para próximo período",
+        "D. Informes de cumplimiento normativo, indicadores financieros de TI, satisfacción de clientes con servicios de seguridad, roadmap tecnológico estratégico",
+        "A. Estado de acciones de revisiones previas, cambios en cuestiones externas/internas, información sobre desempeño del SGSI incluyendo tendencias, retroalimentación de partes interesadas, resultados de evaluaciones de riesgo, oportunidades de mejora continua",
+        "C. Evaluación de madurez del SGSI, benchmarking con competidores, análisis de nuevas tecnologías emergentes, propuestas de inversión en ciberseguridad"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 9.3 especifica entradas obligatorias: estado de acciones previas, cambios en cuestiones externas/internas relevantes al SGSI, información sobre desempeño y eficacia incluyendo tendencias en no conformidades, seguimiento, medición, auditorías, cumplimiento de objetivos, retroalimentación, resultados de valoración de riesgos y oportunidades de mejora continua.",
+      "justification_wrong": "Opciones B, C y D incluyen elementos útiles pero no todos son requisitos obligatorios de 9.3. Certificaciones, benchmarking, madurez y roadmaps tecnológicos pueden ser relevantes pero la norma especifica entradas concretas. La revisión debe basarse en el desempeño real del SGSI y contexto organizacional."
+    },
+    {
+      "num": 39,
+      "text": "Al implementar el proceso de tratamiento de riesgos según ISO/IEC 27001:2022 cláusula 6.1.3, una organización debe seleccionar opciones de tratamiento. ¿Cuál afirmación sobre las opciones es CORRECTA?",
+      "tag": "Proceso de tratamiento de riesgos",
+      "options": [
+        "A. La organización puede elegir entre evitar, aceptar, transferir o modificar riesgos, pero debe implementar obligatoriamente todos los controles del Anexo A aplicables",
+        "B. Para cada riesgo tratado mediante modificación, deben seleccionarse controles apropiados considerando resultados de valoración, comparando costos de implementación contra consecuencias, y producir un Plan de Tratamiento de Riesgos documentado",
+        "D. La transferencia de riesgos mediante seguros o tercerización elimina completamente la responsabilidad de la organización sobre dichos riesgos",
+        "C. La aceptación de riesgos solo es válida cuando los riesgos están por debajo del nivel de riesgo aceptable definido previamente por la organización"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 6.1.3 establece que para riesgos tratados mediante modificación, se seleccionan controles considerando resultados de valoración y comparación de costos/consecuencias. Requiere Plan de Tratamiento documentado (6.1.3.d) con información específica sobre tratamientos, responsables, plazos y recursos. No todos los controles Anexo A son obligatorios.",
+      "justification_wrong": "Opción A incorrecta: controles Anexo A se seleccionan según necesidad, no todos obligatoriamente (6.1.3.c). Opción C: aceptación es válida con aprobación de propietarios y justificación, independiente del nivel (ISO 31000). Opción D: transferir no elimina responsabilidad última sobre gestión de riesgos organizacional."
+    },
+    {
+      "num": 40,
+      "text": "Un Lead Implementer debe asegurar la competencia del personal que afecta el desempeño del SGSI (ISO/IEC 27001:2022 cláusula 7.2). ¿Cuál enfoque cumple integralmente el requisito normativo?",
+      "tag": "Competencia y concienciación",
+      "options": [
+        "D. Contratar exclusivamente profesionales certificados en ISO 27001 y ciberseguridad para roles críticos relacionados con el SGSI",
+        "B. Determinar competencia necesaria, asegurar que personal sea competente basándose en educación/formación/experiencia apropiadas, tomar acciones para adquirir competencia necesaria, evaluar eficacia de acciones tomadas y conservar información documentada como evidencia",
+        "A. Realizar evaluaciones anuales de desempeño del personal de seguridad TI y mantener registros de certificaciones profesionales vigentes",
+        "C. Implementar programa de capacitación obligatoria en seguridad de información para todos los empleados con evaluación de conocimientos mediante exámenes"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 7.2 requiere: determinar competencia necesaria, asegurar competencia basada en educación/formación/experiencia, tomar acciones para adquirir competencia (formación, tutoría, reasignación, contratación), evaluar eficacia de acciones y conservar información documentada apropiada. Es un proceso sistemático integral, no acciones aisladas.",
+      "justification_wrong": "Opción A solo cubre evaluación parcial. Opción C enfoca solo capacitación general, sin análisis de competencias específicas necesarias ni evaluación de eficacia. Opción D limita a contratación sin considerar desarrollo interno o evaluación continua. La norma requiere enfoque sistemático completo de gestión de competencias."
+    },
+    {
+      "num": 41,
+      "text": "Durante la implementación del ciclo PDCA en un SGSI según ISO/IEC 27001:2022, ¿en qué fase se debe realizar la evaluación de riesgos de seguridad de la información considerando los cambios en el contexto organizacional?",
+      "tag": "Ciclo PDCA y Gestión de Riesgos",
+      "options": [
+        "D. Actuar (Act), durante la revisión por la dirección según cláusula 9.3",
+        "B. Hacer (Do), durante la implementación de controles según cláusula 8.1",
+        "A. Planificar (Plan), según cláusula 6.1.2, antes de establecer controles",
+        "C. Verificar (Check), como parte de auditorías internas según cláusula 9.2"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 6.1.2 establece que la apreciación de riesgos debe realizarse en la fase de Planificación, considerando el contexto organizacional (cláusula 4) y las necesidades de partes interesadas (cláusula 4.2), antes de determinar y establecer los controles necesarios para el tratamiento de riesgos.",
+      "justification_wrong": "Las fases Do, Check y Act se enfocan en implementación, verificación y mejora respectivamente. La evaluación de riesgos es un requisito específico de la fase Plan (cláusula 6.1.2), no de auditorías internas, revisión por dirección o implementación de controles ya definidos."
+    },
+    {
+      "num": 42,
+      "text": "Un Lead Implementer debe documentar la metodología de evaluación de riesgos. ¿Cuál requisito normativo es imperativo para garantizar la coherencia y validez de resultados comparables según ISO/IEC 27001:2022?",
+      "tag": "Metodología de Apreciación de Riesgos",
+      "options": [
+        "D. Documentar riesgos únicamente en el Anexo A sin metodología formal",
+        "A. Utilizar exclusivamente metodologías cuantitativas basadas en ISO/IEC 27005",
+        "B. Asegurar que la metodología produzca resultados comparables, reproducibles y consistentes según cláusula 6.1.2 c)",
+        "C. Aplicar únicamente análisis cualitativo para facilitar la comprensión de la alta dirección"
+      ],
+      "correct": 2,
+      "justification_correct": "La cláusula 6.1.2 c) de ISO/IEC 27001:2022 requiere explícitamente que el proceso de apreciación de riesgos produzca resultados comparables, reproducibles y consistentes. Esta es una característica fundamental para garantizar la validez y confiabilidad del proceso de gestión de riesgos a lo largo del tiempo.",
+      "justification_wrong": "ISO/IEC 27001:2022 no prescribe metodologías específicas (cuantitativas o cualitativas) ni depende exclusivamente de ISO/IEC 27005. El Anexo A contiene controles, no metodologías de riesgos. La comparabilidad, reproducibilidad y consistencia son requisitos normativos explícitos en 6.1.2 c)."
+    },
+    {
+      "num": 43,
+      "text": "Al determinar el alcance del SGSI según cláusula 4.3, un Lead Implementer identifica que ciertos procesos externalizados procesan información crítica. ¿Cuál es el tratamiento normativo correcto?",
+      "tag": "Alcance del SGSI y Externalización",
+      "options": [
+        "D. Documentar como exclusión justificada en la Declaración de Aplicabilidad",
+        "B. Incluir estos procesos en el alcance y aplicar cláusula 8.1 sobre control de procesos, productos y servicios suministrados externamente",
+        "A. Excluir los procesos externalizados del alcance por estar fuera del control directo de la organización",
+        "C. Incluir solo si el proveedor externo está certificado en ISO/IEC 27001"
+      ],
+      "correct": 1,
+      "justification_correct": "La cláusula 4.3 requiere considerar interfaces y dependencias, y la cláusula 8.1 establece específicamente que la organización debe controlar procesos, productos y servicios suministrados externamente que sean relevantes para el SGSI. Los procesos externalizados que manejan información crítica deben incluirse y controlarse mediante requisitos contractuales apropiados.",
+      "justification_wrong": "No se pueden excluir arbitrariamente procesos relevantes del alcance. La certificación del proveedor no es requisito normativo. La Declaración de Aplicabilidad documenta controles del Anexo A, no exclusiones de alcance. ISO/IEC 27001:2022 cláusula 8.1 requiere control de externalizaciones relevantes."
+    },
+    {
+      "num": 44,
+      "text": "Durante la revisión por la dirección (cláusula 9.3), ¿cuál entrada es específicamente requerida por ISO/IEC 27001:2022 que refleja la efectividad del proceso de mejora continua del SGSI?",
+      "tag": "Revisión por la Dirección",
+      "options": [
+        "D. Certificaciones de proveedores tecnológicos críticos",
+        "B. Resultados financieros del ejercicio fiscal relacionados con seguridad de información",
+        "C. Cantidad de empleados capacitados en controles de seguridad durante el período",
+        "A. Estado de acciones provenientes de revisiones previas por la dirección, según cláusula 9.3.2 a)"
+      ],
+      "correct": 3,
+      "justification_correct": "La cláusula 9.3.2 a) de ISO/IEC 27001:2022 establece explícitamente que las entradas a la revisión por la dirección deben incluir el estado de las acciones de revisiones previas. Este requisito permite evidenciar el seguimiento y cierre de acciones, demostrando la efectividad del ciclo de mejora continua del SGSI.",
+      "justification_wrong": "Aunque resultados financieros, capacitación y certificaciones de proveedores pueden ser relevantes contextualmente, no son entradas específicamente requeridas por la cláusula 9.3.2. El estado de acciones previas (9.3.2 a) es requisito normativo explícito que demuestra mejora continua sistemática del SGSI."
+    },
+    {
+      "num": 45,
+      "text": "Un Lead Implementer debe establecer objetivos de seguridad de la información según cláusula 6.2. ¿Cuál característica NO es requerida normativamente para estos objetivos?",
+      "tag": "Objetivos de Seguridad de la Información",
+      "options": [
+        "A. Ser medibles según cláusula 6.2 a)",
+        "C. Incluir plazos específicos con fechas exactas de cumplimiento trimestral",
+        "D. Ser comunicados y actualizados según sea apropiado según cláusula 6.2 f)",
+        "B. Estar alineados con la política de seguridad de la información según cláusula 6.2 b)"
+      ],
+      "correct": 1,
+      "justification_correct": "La cláusula 6.2 requiere que los objetivos sean medibles, coherentes con la política, monitoreados, comunicados y actualizados. Sin embargo, no prescribe plazos específicos ni periodicidad trimestral. La cláusula 6.2 c) requiere considerar cuándo se cumplirán, pero permite flexibilidad organizacional en la determinación de plazos apropiados.",
+      "justification_wrong": "ISO/IEC 27001:2022 cláusula 6.2 establece explícitamente que los objetivos deben ser medibles (a), coherentes con la política (b), comunicados y actualizados (f). Los plazos deben considerarse (c) pero la norma no prescribe periodicidad específica trimestral, permitiendo adaptación al contexto organizacional."
+    },
+    {
+      "num": 46,
+      "text": "En un contexto de transformación digital acelerada, una organización multinacional debe determinar el alcance de su ISMS considerando interfaces complejas con proveedores cloud y subsidiarias autónomas. ¿Qué enfoque metodológico garantiza la conformidad con ISO 27001:2022 cláusula 4.3?",
+      "tag": "Determinación del Alcance y Contexto Organizacional",
+      "options": [
+        "B. Definición basada exclusivamente en ubicaciones físicas y activos tecnológicos críticos identificados en el inventario inicial",
+        "D. Establecimiento de alcance modular permitiendo exclusión de procesos tercerizados sin análisis de interdependencias",
+        "C. Delimitación por unidades de negocio con mayor exposición a riesgos cibernéticos según evaluaciones preliminares de amenazas",
+        "A. Análisis matricial integrando requisitos de partes interesadas (4.2), interfaces internas/externas, dependencias tecnológicas y exclusiones justificadas documentadas"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula 4.3 exige considerar cuestiones internas/externas (4.1), requisitos de partes interesadas (4.2), interfaces y dependencias. El análisis matricial integra sistemáticamente estos elementos obligatorios, asegurando que exclusiones sean justificadas y documentadas, evitando brechas en el tratamiento de riesgos en ecosistemas complejos.",
+      "justification_wrong": "Enfoques reduccionistas basados solo en activos físicos (B), exposición a riesgos (C) o exclusiones no justificadas (D) violan requisitos de cláusula 4.3. ISO 27001 exige análisis holístico de contexto, interfaces y dependencias, no permitiendo alcances arbitrarios que comprometan efectividad del ISMS en entornos interconectados."
+    },
+    {
+      "num": 47,
+      "text": "Durante una auditoría de certificación, se detecta que el proceso de revisión por la dirección (cláusula 9.3) ocurre trimestralmente pero los indicadores de desempeño del ISMS solo se actualizan semestralmente. ¿Qué no conformidad representa esto según estructura HLS?",
+      "tag": "Revisión por la Dirección y Mejora Continua",
+      "options": [
+        "B. No conformidad mayor en cláusula 9.1 por incumplimiento sistemático de requisitos de seguimiento, medición, análisis y evaluación",
+        "A. No conformidad menor en cláusula 9.3.2 por desfase temporal entre frecuencia de revisión y disponibilidad de información actualizada requerida",
+        "D. No conformidad mayor en cláusula 10.1 por imposibilidad de tomar decisiones basadas en datos actualizados para mejora continua",
+        "C. Oportunidad de mejora sin impacto en conformidad, considerando que revisiones trimestrales exceden requisitos mínimos normativos"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 cláusula 9.1 exige determinar qué, cómo y cuándo monitorear/medir, asegurando resultados válidos. La actualización semestral de indicadores imposibilita revisiones trimestrales efectivas basadas en datos actualizados, constituyendo fallo sistemático en el proceso de medición que afecta múltiples cláusulas (9.1, 9.3), caracterizando no conformidad mayor.",
+      "justification_wrong": "Aunque existe desfase (A), el problema fundamental radica en incumplimiento de requisitos de medición continua (9.1), no solo en timing de revisión. No es mera oportunidad de mejora (C) pues compromete efectividad del sistema. Aunque impacta mejora continua, la raíz está en medición inadecuada, no en cláusula 10.1 exclusivamente (D)."
+    },
+    {
+      "num": 48,
+      "text": "Una organización implementa controles del Anexo A mediante framework de control unificado mapeando simultáneamente a ISO 27001, SOC 2 y NIST CSF. Al documentar la Declaración de Aplicabilidad, ¿qué principio metodológico es mandatorio según ISO 27001:2022 cláusula 6.1.3 d)?",
+      "tag": "Declaración de Aplicabilidad y Tratamiento de Riesgos",
+      "options": [
+        "A. Demostrar equivalencia funcional entre controles de diferentes frameworks mediante matriz de correspondencia técnica validada por auditor externo",
+        "B. Incluir todos los controles del Anexo A con justificaciones individuales de inclusión/exclusión vinculadas a resultados de evaluación de riesgos",
+        "D. Documentar controles implementados con referencias cruzadas a múltiples frameworks sin requerir justificación de exclusiones específicas",
+        "C. Priorizar controles comunes a los tres frameworks para optimizar eficiencia operacional y reducir complejidad documental del ISMS"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1.3 d) exige que la Declaración de Aplicabilidad incluya controles necesarios (Anexo A u otros) con justificaciones de inclusión/exclusión. Estas decisiones deben basarse en evaluación de riesgos (6.1.2), no en frameworks externos. Independientemente de mapeos adicionales, cada control Anexo A requiere justificación explícita vinculada a riesgos organizacionales.",
+      "justification_wrong": "Equivalencias con frameworks externos (A, C, D) son prácticas complementarias pero no sustituyen requisito mandatorio de justificar decisiones sobre cada control Anexo A basándose en evaluación de riesgos propia. ISO 27001 no permite omitir justificaciones por usar controles mapeados a múltiples estándares o priorizar eficiencia sobre análisis riguroso."
+    },
+    {
+      "num": 49,
+      "text": "En la transición de ISO 27001:2013 a ISO 27001:2022, una organización certificada debe actualizar su tratamiento de riesgos considerando los 11 controles nuevos del Anexo A. ¿Qué enfoque garantiza conformidad continua durante el período de transición?",
+      "tag": "Gestión de Cambios Normativos y Transición",
+      "options": [
+        "D. Mantener Declaración de Aplicabilidad basada en ISO 27001:2013 hasta recertificación completa, agregando controles nuevos como anexo suplementario",
+        "A. Realizar gap analysis de los 11 controles nuevos, evaluar aplicabilidad mediante proceso de riesgos existente, actualizar SoA y planes de tratamiento antes de auditoría de transición",
+        "B. Implementar los 11 controles automáticamente como aplicables para demostrar conformidad proactiva, documentando evidencias de implementación completa",
+        "C. Solicitar extensión del período de transición hasta completar ciclo completo de evaluación de riesgos según metodología revisada ISO 31000:2018"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 requiere que controles nuevos sean evaluados mediante mismo proceso de riesgos (cláusula 6.1.2/6.1.3). Gap analysis identifica brechas, evaluación de aplicabilidad determina relevancia según contexto organizacional, y actualización de SoA/planes asegura conformidad. Este enfoque mantiene integridad metodológica del ISMS durante transición sin asumir aplicabilidad universal.",
+      "justification_wrong": "Implementación automática sin evaluación (B) viola principio de aplicabilidad basada en riesgos. Extensiones arbitrarias (C) no están contempladas en directrices de transición IAF. Mantener SoA obsoleta (D) genera no conformidad pues certificación debe reflejar versión vigente de la norma durante período de transición establecido."
+    },
+    {
+      "num": 50,
+      "text": "Una organización con ISMS certificado experimenta incidente de seguridad que compromete datos personales de 50,000 clientes. Al aplicar cláusula 10.1 (No conformidad y acción correctiva), ¿qué secuencia de acciones integra correctamente requisitos de ISO 27001:2022 con obligaciones GDPR?",
+      "tag": "Gestión de Incidentes y Acciones Correctivas",
+      "options": [
+        "D. Declaración pública de incidente → Contención técnica → Notificación universal a todos los interesados → Revisión completa del ISMS → Recertificación anticipada",
+        "B. Investigación forense completa → Determinación de causas raíz → Implementación de controles compensatorios → Notificación regulatoria → Documentación de lecciones aprendidas",
+        "C. Activación de plan de continuidad → Recuperación de sistemas → Evaluación de impacto → Notificación según umbrales de materialidad → Auditoría interna extraordinaria",
+        "A. Contención inmediata → Notificación a autoridad (72h) y afectados → Investigación de causas raíz → Acciones correctivas → Actualización de evaluación de riesgos → Revisión de eficacia"
+      ],
+      "correct": 3,
+      "justification_correct": "Secuencia integra requisitos ISO 27001 cláusula 10.1 (reacción, investigación de causas, acciones, revisión de eficacia) con GDPR Art. 33-34 (notificación 72h, comunicación a afectados). Contención inmediata minimiza daño, cumplimiento regulatorio es tiempo-crítico, investigación determina causas raíz, acciones correctivas previenen recurrencia, actualización de riesgos refleja nuevas amenazas, revisión cierra ciclo PDCA.",
+      "justification_wrong": "Investigación forense previa (B) retrasa notificaciones obligatorias violando GDPR. Plan de continuidad (C) es respuesta a disponibilidad, no específica para brechas de confidencialidad con notificación regulatoria. Declaración pública inmediata (D) puede agravar impacto reputacional sin análisis previo; recertificación anticipada no es requisito normativo para gestión de incidentes."
+    }
+  ]
+}

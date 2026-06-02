@@ -1,0 +1,229 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "inventory_fraud",
+  "quiz_num": 1,
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Marcus, un Certified Fraud Examiner, está analizando registros de inventario para una empresa minorista de electrónicos donde la gerencia sospecha de robo por parte de empleados. Revisa tres años de datos y nota que mientras los ingresos por ventas han aumentado un 12% anualmente, el porcentaje de costo de bienes vendidos se ha mantenido estable en 64%, pero la merma de inventario físico ha aumentado de 1.2% a 4.8% del valor total del inventario. El sistema de inventario perpetuo muestra registro consistente de compras y ventas. ¿Qué análisis debería priorizar Marcus para identificar el esquema más probable?",
+      "tag": "Inventory Manipulation & Trend Analysis",
+      "options": [
+        "A. Comparar los resultados del conteo físico de inventario con los registros perpetuos por ubicación y categoría de producto para identificar áreas específicas con las mayores discrepancias",
+        "B. Analizar registros de pagos a proveedores en busca de facturas duplicadas que indicarían un esquema de compras mediante empresa fantasma",
+        "C. Revisar las transacciones de descuentos de empleados para determinar si las ventas están siendo clasificadas incorrectamente para reducir la merma aparente",
+        "D. Examinar los flujos de aprobación de órdenes de compra para identificar cualquier elusión de controles de segregación de funciones"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "El aumento dramático en la merma de inventario físico (de 1.2% a 4.8%) mientras el sistema perpetuo muestra registro consistente indica una desconexión entre el inventario físico real y el inventario registrado. Este patrón es más consistente con robo de bienes físicos en lugar de esquemas de compras o manipulación de registros. Comparar los conteos físicos con los registros perpetuos por ubicación y categoría de producto ayudará a identificar dónde está desapareciendo físicamente el inventario, qué artículos específicos de alto valor están siendo objeto de robo, y potencialmente qué empleados tienen acceso a esas áreas. Este enfoque dirigido es más eficiente dada la clara tendencia de merma y proporcionará evidencia accionable del esquema de robo.",
+      "justification_wrong": "La Opción B se enfoca en esquemas de compras, pero el porcentaje estable de COGS y el patrón específico de merma física en aumento (no compras sobreestimadas) sugiere robo de inventario en lugar de compras fraudulentas. Los esquemas de facturas duplicadas típicamente inflarían el COGS. La Opción C aborda manipulación de ventas, pero el problema establece que los porcentajes de ventas y COGS son estables y consistentes, indicando que el registro de ingresos es probablemente preciso; el abuso de descuentos de empleados también aparecería típicamente en los datos de ventas en lugar de puramente como merma. La Opción D examina controles de compras, pero las fallas en la segregación de funciones en compras resultarían más probablemente en proveedores ficticios o precios inflados (afectando el porcentaje de COGS), no el aumento progresivo en la merma de inventario físico mostrado en este escenario donde el sistema perpetuo parece preciso."
+    },
+    {
+      "num": 2,
+      "text": "Rachel, una Certified Fraud Examiner, está investigando faltantes de inventario en una empresa manufacturera. Los conteos físicos muestran consistentemente menos artículos de los que registra el sistema de inventario perpetuo. La gerencia sospecha de robo pero no tiene evidencia directa. Rachel analiza órdenes de compra, reportes de recepción y registros de inventario del último año. Descubre que ciertos artículos de alto valor muestran reportes de recepción firmados por el supervisor de almacén, pero los artículos correspondientes nunca fueron ingresados al sistema de inventario perpetuo. ¿Qué esquema de fraude indica con MAYOR probabilidad este patrón?",
+      "tag": "Inventory Shortage",
+      "options": [
+        "A. El supervisor de almacén está robando inventario después de que es recibido y registrado, luego alterando los registros perpetuos para ocultar el robo.",
+        "B. El supervisor de almacén está desviando mercancía recibida antes de registrarla en el sistema perpetuo, sin crear rastro documental de su existencia.",
+        "C. Un agente de compras está creando órdenes de compra falsas y coludiendo con el supervisor de almacén para dividirse las ganancias de ventas de inventario fantasma.",
+        "D. El supervisor de almacén está registrando empleados fantasma en el sistema de nómina y convirtiendo inventario en efectivo para financiar los pagos fraudulentos."
+      ],
+      "correct": 1,
+      "difficulty": "STANDARD",
+      "justification_correct": "Este escenario describe un esquema de mercancía no conforme o robo en etapa de recepción. El supervisor de almacén firma reportes de recepción confirmando que la mercancía llegó (creando documentación para pago al proveedor) pero nunca ingresa los artículos al sistema de inventario perpetuo. Esto permite al supervisor apropiarse indebidamente de la mercancía inmediatamente al recibirla sin crear un faltante de inventario en papel, ya que los artículos nunca fueron registrados como inventario. El conteo físico coincide con los registros perpetuos porque los artículos robados nunca fueron registrados. Este esquema explota la brecha entre la recepción física y el registro en sistema, dificultando la detección hasta que el cruce de órdenes de compra con registros de inventario revela la discrepancia.",
+      "justification_wrong": "La opción A es incorrecta porque si los artículos fueran ingresados al sistema de inventario perpetuo y luego robados, alterar esos registros requeriría acciones fraudulentas adicionales y probablemente crearía pistas de auditoría o anomalías en el sistema; el escenario muestra que los artículos nunca fueron ingresados inicialmente. La opción C es incorrecta porque las órdenes de compra y reportes de recepción son legítimos (la mercancía fue efectivamente ordenada y recibida), no transacciones fantasma; el fraude ocurre en la etapa de registro, no en la etapa de compra, y no hay evidencia de órdenes de compra falsas. La opción D es incorrecta porque este escenario involucra desviación de inventario, no fraude de nómina; no hay indicación de empleados fantasma o manipulación de nómina en los hechos presentados, y vincular el robo de inventario con fraude de nómina requiere evidencia no presente en este patrón."
+    },
+    {
+      "num": 3,
+      "text": "Brandon, un examinador de fraude, está investigando un posible robo de inventario en una empresa manufacturera después de que la gerencia reportó faltantes de inventario inexplicables. Durante su examen, Brandon descubre que los registros de inventario perpetuo muestran cantidades significativamente mayores que los conteos físicos para varias materias primas de alto valor. ¿Cuál de los siguientes métodos de detección ayudaría MÁS efectivamente a Brandon a identificar si los faltantes resultan de robo por parte de empleados versus fraude en esquemas de compras?",
+      "tag": "Inventory Detection",
+      "options": [
+        "A. Analizar órdenes de compra e informes de recepción para identificar envíos divididos o proveedores ficticios en el ciclo de adquisiciones",
+        "B. Realizar conteos físicos de inventario sorpresa y comparar los resultados con los registros perpetuos en múltiples períodos de tiempo",
+        "C. Revisar facturas de ventas y documentos de envío para detectar ventas no registradas o esquemas de desvío de ingresos",
+        "D. Examinar los índices de rotación de inventario y compararlos con los puntos de referencia de la industria para operaciones manufactureras similares"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Analizar órdenes de compra e informes de recepción es el método más efectivo para distinguir entre robo y esquemas de compras porque el fraude de compras (como esquemas de sobornos, esquemas de proveedores ficticios o compras personales) deja evidencia documental en el ciclo de adquisiciones. Si los faltantes de inventario resultan de esquemas de compras, el examinador encontrará irregularidades como proveedores sin documentación apropiada, cantidades infladas en informes de recepción versus entregas reales, o pagos a empresas fantasma. Si la documentación de adquisiciones está limpia y se reconcilia apropiadamente, esto sugiere que los faltantes probablemente resultan de robo físico después de la recepción. Este enfoque dirigido prueba directamente los controles de adquisiciones y la documentación que revelarían señales de alerta de esquemas de compras.",
+      "justification_wrong": "La opción B (conteos físicos sorpresa) confirma que existen faltantes y puede disuadir robos futuros, pero no distingue la causa—tanto el robo por empleados como los esquemas de compras resultan en faltantes físicos que serían detectados mediante conteos. Este método identifica el síntoma pero no el tipo de fraude subyacente. La opción C (revisión de documentos de ventas y envío) prueba esquemas de fraude relacionados con ingresos o desvíos de envíos, lo cual no explicaría discrepancias entre registros perpetuos y conteos físicos de materias primas en manufactura. La opción D (análisis de índice de rotación de inventario) proporciona información analítica de alto nivel útil para detectar problemas generales de inventario pero carece de la especificidad necesaria para diferenciar entre robo que ocurre a nivel de almacén versus fraude integrado en el proceso de compras, ya que índices anormales podrían resultar de cualquier tipo de esquema o factores legítimos de negocio."
+    },
+    {
+      "num": 4,
+      "text": "Jessica, una Certified Fraud Examiner, está revisando los procedimientos de control de inventario en una empresa manufacturera donde la gerencia sospecha de robo de materias primas por parte de empleados. Ella observa que el supervisor de almacén tiene la capacidad de recibir envíos, actualizar registros de inventario, ajustar conteos de inventario por diferencias y aprobar órdenes de compra. ¿Cuál de las siguientes debilidades de control está contribuyendo MÁS directamente al riesgo de robo en este escenario?",
+      "tag": "Inventory Control",
+      "options": [
+        "A. Segregación inadecuada de funciones entre custodia de inventario, mantenimiento de registros y funciones de autorización",
+        "B. Ausencia de políticas de vacaciones obligatorias que requieran reemplazo temporal del supervisor de almacén",
+        "C. Falta de conteos físicos de inventario no anunciados realizados por personal independiente de las operaciones de almacén",
+        "D. Procedimientos insuficientes de verificación de antecedentes durante el proceso de contratación del personal de almacén"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "La debilidad de control principal es la falta de segregación de funciones. Los controles internos efectivos requieren separar la custodia de activos (recibir envíos), el mantenimiento de registros (actualizar registros de inventario y ajustar conteos) y la autorización (aprobar órdenes de compra). Cuando un individuo controla las tres funciones, puede perpetrar y ocultar el robo creando documentos de recepción ficticios, ajustando registros para ocultar faltantes y aprobando compras fraudulentas. Esta concentración de funciones incompatibles crea la oportunidad para que el supervisor de almacén robe materiales y manipule registros sin detección, lo cual es el contribuyente más directo al riesgo de robo en este escenario.",
+      "justification_wrong": "La Opción B, aunque las políticas de vacaciones obligatorias son un control detectivo útil que puede descubrir fraudes cuando los perpetradores son reemplazados temporalmente, este es un control secundario y no aborda la debilidad estructural fundamental que habilita el robo en primer lugar. La Opción C describe conteos físicos no anunciados, que son controles detectivos importantes pero no previenen que el supervisor manipule los resultados de conteo u oculte el robo mediante ajustes de registros ya que controla la función de mantenimiento de registros. La Opción D se relaciona con la verificación previa al empleo, que es un control preventivo de contratación pero no aborda la brecha de control sistemática que permite que un empleado de confianza pueda perpetrar y ocultar el robo mediante su acceso excesivo a funciones incompatibles."
+    },
+    {
+      "num": 5,
+      "text": "Un Certified Fraud Examiner está analizando registros de inventario en una empresa manufacturera tras denuncias de esquemas de inventario fantasma. El CFE aplica la Ley de Benford al primer dígito de 2,847 montos de transacciones de inventario y encuentra que el dígito \"5\" aparece en el 18.2% de las transacciones, mientras que el dígito \"1\" aparece en el 11.5% de las transacciones. Según la Ley de Benford, la frecuencia esperada para \"5\" es aproximadamente 7.9% y para \"1\" es aproximadamente 30.1%. ¿Qué debería concluir el CFE de este procedimiento analítico?",
+      "tag": "Inventory Manipulation & Benford's Law & Analytical Procedures",
+      "options": [
+        "A. La desviación sugiere manipulación potencial, ya que ambos dígitos muestran varianza significativa respecto a las frecuencias esperadas, lo que justifica investigación adicional sobre transacciones específicas que comienzan con \"5\"",
+        "B. La desviación es inmaterial porque la Ley de Benford se aplica únicamente a datos de cuentas por pagar y no puede utilizarse confiablemente para análisis de transacciones de inventario en entornos manufactureros",
+        "C. Los resultados confirman que ha ocurrido fraude porque cualquier varianza que exceda el 5% de las frecuencias esperadas de Benford constituye evidencia definitiva de manipulación intencional de datos",
+        "D. La desviación indica actividad comercial normal porque las transacciones de inventario típicamente siguen patrones de distribución uniforme en lugar de distribuciones logarítmicas predichas por la Ley de Benford"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "La Opción A aplica correctamente la Ley de Benford como procedimiento analítico de señal de alerta. Las desviaciones significativas de las frecuencias esperadas (5 apareciendo 18.2% vs. 7.9% esperado, y 1 apareciendo 11.5% vs. 30.1% esperado) indican potencial manipulación o fabricación de datos. La Ley de Benford establece que en conjuntos de datos de ocurrencia natural, los dígitos menores aparecen con mayor frecuencia como dígitos iniciales. La sobre-representación de \"5\" y sub-representación de \"1\" sugiere posible redondeo, estimación o fabricación de montos de inventario—común en esquemas de inventario fantasma donde los perpetradores crean registros falsos. Esta desviación justifica investigación adicional pero no constituye prueba conclusiva de fraude por sí misma, convirtiéndola en un procedimiento analítico apropiado para identificar áreas que requieren examen más profundo.",
+      "justification_wrong": "La Opción B es incorrecta porque la Ley de Benford puede aplicarse efectivamente a diversos conjuntos de datos financieros incluyendo transacciones de inventario, no solo cuentas por pagar; funciona bien con datos numéricos de ocurrencia natural en múltiples contextos empresariales. La Opción C es incorrecta porque las desviaciones de la Ley de Benford son indicadores o señales de alerta que requieren investigación, no prueba definitiva de fraude; la varianza estadística por sí sola no constituye evidencia de manipulación intencional, y no existe un umbral rígido del 5% que confirme fraude. La Opción D es incorrecta porque las transacciones de inventario en la mayoría de las organizaciones sí siguen patrones logarítmicos consistentes con la Ley de Benford en lugar de distribuciones uniformes; los montos de transacciones de ocurrencia natural tienden a conformarse a las frecuencias esperadas de Benford, haciendo que las desviaciones sean significativas."
+    },
+    {
+      "num": 6,
+      "text": "Marcus, un Certified Fraud Examiner, está revisando los registros de inventario de una empresa manufacturera y nota que durante los últimos 18 meses, el porcentaje de costo de bienes vendidos se ha mantenido constante en 62%, mientras que el índice de rotación de inventario ha disminuido de 8.2 a 5.1 veces por año. Los ingresos por ventas han aumentado un 12% durante este período, y la empresa no ha cambiado su mezcla de productos ni su estrategia de precios. ¿Qué esquema de fraude de inventario es más consistente con estos hallazgos analíticos?",
+      "tag": "Inventory Manipulation & Trend Analysis",
+      "options": [
+        "A. Se está registrando inventario ficticio para inflar activos y subestimar el costo de bienes vendidos",
+        "B. Se está robando inventario y cancelando mediante asientos contables fraudulentos a cuentas de gastos misceláneos",
+        "C. Un gerente de compras está recibiendo kickbacks de proveedores a cambio de aprobar facturas infladas",
+        "D. Se está retirando inventario físico pero las pérdidas por merma no se están registrando en el sistema contable",
+        "E. Se está reteniendo inventario obsoleto en los libros a valor completo en lugar de ajustarlo a la baja"
+      ],
+      "correct": 3,
+      "difficulty": "STANDARD",
+      "justification_correct": "Cuando se roba inventario físico pero la merma no se registra, el saldo de inventario permanece artificialmente alto en los libros mientras que el inventario real disminuye. Esto causa que el índice de rotación de inventario (COGS ÷ Inventario Promedio) disminuya porque el denominador está sobreestimado. El porcentaje de COGS permanece consistente porque el inventario robado que no se cancela no fluye a través de COGS—simplemente desaparece del stock físico mientras permanece como activo. Esto crea exactamente el patrón observado: porcentaje de COGS estable con rotación decreciente, indicando que el inventario en los libros no se está moviendo como debería.",
+      "justification_wrong": "La opción A es incorrecta porque el inventario ficticio subestimaría el COGS (haciendo que el porcentaje de COGS disminuya, no que permanezca estable) ya que el inventario final inflado reduciría el cálculo del costo de bienes vendidos. La opción B es incorrecta porque cancelar inventario robado a cuentas de gastos aumentaría los gastos totales y probablemente alertaría a la gerencia sobre gastos misceláneos inusuales, y no causaría la disminución del índice de rotación observada ya que el inventario se eliminaría de los libros. La opción C es incorrecta porque los esquemas de kickbacks típicamente involucran precios de compra inflados, lo que aumentaría el porcentaje de COGS con el tiempo en lugar de mantenerlo estable, y no explicaría directamente la disminución de la rotación de inventario. La opción E es incorrecta porque retener inventario obsoleto afecta la valoración del inventario pero no explicaría el índice de rotación decreciente en un escenario donde las ventas están aumentando—los artículos obsoletos típicamente ya tienen rotación cero o muy baja."
+    },
+    {
+      "num": 7,
+      "text": "Rachel, una examinadora de fraude, está revisando los registros de inventario permanente en una empresa manufacturera donde la gerencia sospecha de robo de inventario. Descubre que los conteos físicos reales muestran consistentemente faltantes en múltiples líneas de productos de alto valor, pero el sistema de inventario permanente no muestra ajustes o write-offs correspondientes. Los registros de ventas y documentos de envío parecen coincidir con las reducciones de inventario registradas. ¿Cuál de los siguientes pasos de investigación sería MÁS efectivo para identificar si los faltantes resultan de un esquema de robo interno?",
+      "tag": "Inventory Shortage",
+      "options": [
+        "A. Comparar las purchase orders con los receiving reports para identificar si las mercancías fueron realmente recibidas antes de ser registradas como adiciones de inventario",
+        "B. Revisar los precios de las facturas de venta para determinar si los productos están siendo vendidos por debajo del valor de mercado a cómplices externos",
+        "C. Analizar los registros de quejas de clientes para identificar patrones de envíos incompletos que podrían indicar errores de registro",
+        "D. Examinar los registros de horarios de empleados para determinar qué personal tuvo acceso a las áreas de inventario durante el horario laboral"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Cuando los registros permanentes muestran inventario que no existe físicamente, y los documentos de ventas/envíos coinciden con las reducciones registradas, la explicación más probable es que el inventario nunca fue realmente recibido pero fue registrado como recibido (un esquema de compras tal como inventario fantasma o esquema de recepción). Comparar las purchase orders con los receiving reports y verificar la recepción real a través de evidencia independiente (documentos de envío de proveedores, registros de pago, reportes de inspección) ayuda a identificar si las mercancías registradas como recibidas realmente ingresaron a las instalaciones. Esto aborda la causa raíz de la discrepancia validando las adiciones iniciales de inventario. En esquemas de compras, los perpetradores pueden crear receiving documents falsos o coludirse con proveedores para registrar inventario que nunca fue entregado, causando faltantes físicos mientras los registros permanentes permanecen inflados.",
+      "justification_wrong": "La opción B es incorrecta porque el escenario indica que los registros de ventas coinciden con las reducciones de inventario registradas, sugiriendo que el proceso de ventas está documentado apropiadamente; revisar los precios no explicaría por qué falta inventario físico cuando debería estar presente basándose en los registros de compras. La opción C es incorrecta porque las quejas de clientes sobre envíos incompletos típicamente resultarían en discrepancias entre los registros de ventas y las reducciones de inventario, pero el escenario establece que estos ya coinciden; esto indicaría un problema de salida en lugar de explicar el faltante existente. La opción D es incorrecta porque simplemente saber quién tuvo acceso no establece si ocurrió un robo o identifica el mecanismo del faltante; el acceso por sí solo es insuficiente sin examinar el rastro de evidencia documental que creó los registros permanentes inflados, y muchos empleados pueden tener acceso legítimo sin estar involucrados en el robo."
+    },
+    {
+      "num": 8,
+      "text": "Rebecca, una examinadora de fraude, está investigando un presunto robo de inventario en una instalación de manufactura. Ella observa que los conteos físicos de inventario muestran consistentemente faltantes, pero los registros de inventario perpetuo parecen precisos. Las órdenes de compra de los empleados muestran adquisiciones regulares a precios de mercado, y el almacén utiliza un sistema de inventario justo a tiempo. ¿Qué procedimiento analítico detectaría MÁS efectivamente si el inventario está siendo robado en el punto de recepción?",
+      "tag": "Inventory Detection",
+      "options": [
+        "A. Conciliar los informes de recepción con las órdenes de compra y los registros de inventario para identificar discrepancias entre las cantidades ordenadas, recibidas y registradas",
+        "B. Comparar los índices de rotación de inventario actuales con períodos anteriores para determinar si un movimiento más lento indica posible desvío",
+        "C. Revisar las facturas de proveedores en busca de pagos duplicados que puedan sugerir que se están procesando compras de inventario ficticias",
+        "D. Analizar los márgenes de utilidad bruta por línea de productos para detectar si los márgenes decrecientes se correlacionan con categorías específicas de inventario"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Conciliar los informes de recepción con las órdenes de compra y los registros de inventario apunta directamente al punto de recepción, que es donde probablemente ocurre el robo en este escenario. Dado que los conteos físicos muestran faltantes pero los registros perpetuos parecen precisos, el fraude probablemente está ocurriendo cuando llegan las mercancías pero antes de que sean debidamente registradas o almacenadas. Esta conciliación de tres vías (orden de compra, informe de recepción, registro de inventario) revelaría si las mercancías mostradas como recibidas en los documentos de recepción nunca llegaron a los registros de inventario o al almacenamiento físico, indicando robo en el muelle de recepción. Este procedimiento aborda específicamente el punto de vulnerabilidad sugerido por los hechos: los artículos se ordenan y aparecen en los registros, pero el inventario físico tiene faltantes.",
+      "justification_wrong": "La Opción B (análisis de rotación de inventario) no detectaría efectivamente el robo en la recepción porque en un sistema justo a tiempo, ya se espera que la rotación sea rápida, y el robo en la recepción en realidad aumentaría la rotación aparente (mercancías recibidas pero desviadas inmediatamente), no la disminuiría. La Opción C (revisión de pagos duplicados) prueba esquemas de compras y proveedores ficticios, pero el escenario indica que las compras son a precios de mercado sin indicación de irregularidades en los pagos; este procedimiento apunta al fraude de facturación, no al robo físico de inventario. La Opción D (análisis de margen de utilidad bruta) es demasiado indirecta para detectar robo en la recepción; aunque los márgenes eventualmente podrían verse afectados, este procedimiento no identificaría la vulnerabilidad específica en el punto de recepción, y los cambios en los márgenes podrían resultar de numerosos factores no relacionados con el robo en la recepción, como cambios de precios o cambios en la mezcla de productos."
+    },
+    {
+      "num": 9,
+      "text": "Sarah, una examinadora de fraude, está revisando los controles de inventario en un centro de distribución regional donde la gerencia sospecha de robo continuo. Ella descubre que el almacén utiliza un sistema de inventario perpetuo con escaneo de códigos de barras, pero los recuentos físicos solo se realizan anualmente. El gerente del almacén tiene autoridad exclusiva para ajustar los registros de inventario por mercancías dañadas y cancelaciones sin aprobación secundaria. El año pasado, la merma de inventario fue 8% por encima de las normas de la industria. ¿Qué debilidad de control debería identificar Sarah como la prioridad más alta para que la gerencia la aborde?",
+      "tag": "Inventory Control",
+      "options": [
+        "A. La falta de segregación de funciones que permite al gerente del almacén autorizar y registrar ajustes de inventario de forma independiente",
+        "B. La dependencia de un sistema de inventario perpetuo en lugar de un sistema periódico que proporcionaría oportunidades de conciliación más frecuentes",
+        "C. La poca frecuencia de los recuentos físicos de inventario en comparación con las transacciones de escaneo de códigos de barras diarias registradas en el sistema",
+        "D. La ausencia de procedimientos de análisis de variaciones para comparar los porcentajes reales de merma contra los puntos de referencia establecidos de la industria"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "La debilidad de control más crítica es la falta de segregación de funciones. Cuando una persona tiene la autoridad tanto para autorizar disposiciones de inventario (mercancías dañadas, cancelaciones) como para registrar esas transacciones sin verificación o aprobación independiente, se crea una oportunidad para la apropiación indebida de activos. El gerente del almacén podría robar inventario y ocultarlo creando entradas de ajuste ficticias. La segregación de funciones es un principio fundamental de control interno que requiere que diferentes individuos realicen las funciones de autorización, mantenimiento de registros y custodia. En el control de inventario, esto significa separar la autoridad para aprobar cancelaciones de la capacidad de registrar esos ajustes, lo cual aborda directamente el componente de oportunidad del triángulo del fraude.",
+      "justification_wrong": "La opción B es incorrecta porque los sistemas de inventario perpetuo generalmente proporcionan controles más fuertes que los sistemas periódicos al mantener registros continuos de los movimientos de inventario y permitir el monitoreo en tiempo real. El tipo de sistema no es la debilidad principal. La opción C es incorrecta porque aunque los recuentos físicos más frecuentes serían beneficiosos, la frecuencia de recuento anual en sí no es inusual para muchas organizaciones; el problema crítico es lo que sucede entre recuentos cuando se pueden realizar ajustes sin supervisión. La opción D es incorrecta porque el análisis de variaciones es un control detectivo que identifica problemas después de que ocurren, pero no previene que el fraude suceda. El problema de segregación de funciones es una debilidad de control preventivo que crea la oportunidad para el robo y el ocultamiento, haciéndolo la prioridad más alta a abordar."
+    },
+    {
+      "question": "During a routine audit of a manufacturing company's fixed asset register, you discover that several high-value pieces of equipment purchased within the past two years cannot be located. The asset custodian explains that the equipment was scrapped due to obsolescence, but you notice that the disposal forms lack proper authorization signatures and there are no photographs or external disposal receipts. Which of the following would be the MOST effective procedure to determine if assets were misappropriated rather than legitimately disposed of?",
+      "options": [
+        "Review the company's depreciation schedules to verify that the assets were fully depreciated before disposal",
+        "Interview the asset custodian's subordinates and examine maintenance records to assess whether the equipment was functional prior to alleged disposal",
+        "Recalculate the gain or loss on disposal and trace the entries to the general ledger",
+        "Send confirmation requests to the company's insurance provider to verify coverage was cancelled on the disposed assets"
+      ],
+      "correct_answer": 1,
+      "explanation": "Interviewing subordinates and examining maintenance records would help establish whether the equipment was actually obsolete or still functional, which is critical to determining if the disposal was legitimate. If maintenance records show recent repairs or the equipment was in working condition, this would indicate potential misappropriation. Option A is incorrect because depreciation status doesn't indicate whether disposal was legitimate. Option C only verifies accounting treatment, not the validity of the disposal. Option D might show when coverage ended but doesn't prove whether the asset was actually disposed of properly or stolen.",
+      "topic": "Asset Misappropriation — Inventory & Assets",
+      "subtopic": "Physical Asset Theft and Disposal Schemes",
+      "num": 10
+    },
+    {
+      "question": "A CFE is investigating suspected inventory theft at a manufacturing warehouse. Security logs show that John Miller, the warehouse supervisor, has been accessing the facility during non-business hours on weekends. Physical inventory counts consistently show shortages in high-value electronic components. Which of the following investigative procedures would be MOST effective in detecting whether Miller is using accomplices to remove inventory from the premises?",
+      "options": [
+        "Review Miller's bank statements for deposits that exceed his known salary",
+        "Analyze shipping and receiving documents for evidence of fictitious vendors or customers",
+        "Install covert surveillance cameras at warehouse exits and compare footage to gate access logs",
+        "Perform surprise inventory counts and compare results to perpetual inventory records"
+      ],
+      "correct_answer": 2,
+      "explanation": "While all options have investigative value, covert surveillance cameras (option C) would be most effective in directly detecting accomplices helping Miller remove inventory. This approach would reveal who is entering and leaving with Miller during non-business hours and what they are carrying. Option A might show unexplained wealth but wouldn't identify accomplices. Option B focuses on documentation schemes rather than physical theft. Option D would confirm shortages but not identify how inventory is being removed or who else is involved. Surveillance provides real-time evidence of the theft method and participants.",
+      "topic": "Asset Misappropriation",
+      "subtopic": "Inventory Theft Investigation Techniques",
+      "difficulty": "medium",
+      "num": 11
+    },
+    {
+      "question": "Michael Chen, CFE, is investigating a suspected inventory theft scheme at a manufacturing company. During his investigation, he discovers that the warehouse manager has been creating fictitious sales returns to cover up missing inventory. Which of the following audit procedures would be MOST effective in detecting this type of scheme?",
+      "options": [
+        "Review sales return documentation for proper authorization and match returned items to inventory receiving records",
+        "Perform a ratio analysis comparing cost of goods sold to total revenue over multiple periods",
+        "Conduct surprise physical inventory counts and reconcile results to perpetual inventory records",
+        "Interview the warehouse manager about inventory control procedures and document the responses"
+      ],
+      "correct_answer": 2,
+      "explanation": "Conducting surprise physical inventory counts and reconciling the results to perpetual inventory records (Option C) is the most effective procedure for detecting fictitious sales returns used to cover inventory theft. This direct verification method would reveal discrepancies between what should be in inventory according to the records (inflated by fake returns) and what is actually physically present. Option A, while useful, may not detect the scheme if the documentation appears proper. Option B might show anomalies but would not directly identify the specific scheme. Option D relies on the potentially dishonest employee's statements and would be the least reliable detection method.",
+      "topic": "Asset Misappropriation — Inventory & Assets",
+      "sub_topic": "Inventory Theft Schemes and Detection Methods",
+      "num": 12
+    },
+    {
+      "id": "S1D05-Q14",
+      "topic": "Asset Misappropriation — Inventory & Assets",
+      "question": "A CFE is investigating a suspected inventory theft scheme at a manufacturing company. The warehouse manager has exclusive access to inventory records and is responsible for conducting monthly physical counts. Which of the following red flags would MOST strongly indicate a potential asset misappropriation scheme involving inventory?\n\nA) Increasing gross profit margins over three consecutive quarters while inventory turnover remains constant\n\nB) Perpetual inventory records consistently showing higher quantities than physical counts, with the warehouse manager making frequent downward adjustments citing \"shrinkage\"\n\nC) Multiple purchase orders from the same vendor with slightly different pricing for identical items\n\nD) Discrepancies between the number of items shown as damaged in warehouse reports and the actual number of items disposed of through proper channels",
+      "options": [
+        "A) Increasing gross profit margins over three consecutive quarters while inventory turnover remains constant",
+        "B) Perpetual inventory records consistently showing higher quantities than physical counts, with the warehouse manager making frequent downward adjustments citing \"shrinkage\"",
+        "C) Multiple purchase orders from the same vendor with slightly different pricing for identical items",
+        "D) Discrepancies between the number of items shown as damaged in warehouse reports and the actual number of items disposed of through proper channels"
+      ],
+      "correct_answer": "B",
+      "explanation": "Option B is correct because perpetual records consistently exceeding physical counts, combined with one person having exclusive control over both records and counts, is a classic red flag for inventory theft. The perpetrator may be stealing inventory and adjusting records downward to conceal the theft, using \"shrinkage\" as a cover. This represents a segregation of duties violation and a pattern consistent with asset misappropriation. Option A suggests improving profitability, not theft. Option C might indicate billing schemes but not necessarily inventory theft. Option D could indicate issues but is less direct than B's pattern of consistent overstatement followed by adjustments by the same individual with exclusive access.",
+      "topic_tags": [
+        "inventory theft",
+        "segregation of duties",
+        "physical controls",
+        "red flags",
+        "perpetual inventory"
+      ],
+      "num": 13
+    },
+    {
+      "id": "S1D05-Q15",
+      "topic": "Asset Misappropriation — Inventory & Assets",
+      "question": "A CFE is investigating potential inventory theft at a manufacturing warehouse. During the investigation, the CFE discovers that the perpetual inventory records show 10,000 units of raw materials on hand, but the physical count reveals only 7,500 units. The warehouse manager explains that the difference is due to normal shrinkage and evaporation of volatile materials. Which of the following procedures would be MOST effective in determining whether the shortage is due to theft versus legitimate shrinkage?",
+      "options": [
+        "Compare the current shrinkage percentage to historical shrinkage rates for similar volatile materials and industry benchmarks",
+        "Interview all warehouse employees to determine if anyone witnessed suspicious activity",
+        "Review the warehouse manager's personal financial records for signs of financial pressure",
+        "Immediately report the shortage to law enforcement as evidence of theft"
+      ],
+      "correct_answer": 0,
+      "explanation": "Comparing current shrinkage rates to historical data and industry benchmarks (Option A) is the most effective initial analytical procedure. Legitimate shrinkage from evaporation should be relatively consistent over time and comparable to industry standards. If the current shortage significantly exceeds these benchmarks, it may indicate theft rather than normal shrinkage. This approach provides objective evidence before pursuing more invasive investigative steps. While interviewing employees (Option B) may be useful later, it's not as effective as analytical comparison. Reviewing personal financial records (Option C) is premature and may violate privacy rights without reasonable suspicion. Immediately reporting to law enforcement (Option D) is inappropriate without completing reasonable due diligence to determine if theft actually occurred.",
+      "topic_tags": [
+        "Inventory Theft",
+        "Physical Inventory Controls",
+        "Shrinkage Analysis",
+        "Investigative Procedures"
+      ],
+      "difficulty": "medium",
+      "num": 14
+    }
+  ]
+}

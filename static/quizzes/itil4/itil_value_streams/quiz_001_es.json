@@ -1,0 +1,710 @@
+{
+  "cert_id": "itil4",
+  "domain_id": "itil_value_streams",
+  "quiz_num": 1,
+  "domain_name": "Fluxos de Valor e Processos",
+  "cert_name": "ITIL 4 Managing Professional",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "¿Cuál es el propósito principal de la Service Value Chain en ITIL 4?",
+      "tag": "Service Value Chain - Fundamentos",
+      "options": [
+        "D. Definir exclusivamente los roles y responsabilidades del equipo técnico",
+        "A. Integrar actividades clave de la organización para crear valor mediante servicios",
+        "B. Reemplazar completamente los procesos ITIL v3 con nuevas prácticas ágiles",
+        "C. Establecer una estructura jerárquica rígida de gobernanza IT"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 define la Service Value Chain como modelo integrador que conecta actividades desde planeación hasta soporte, creando flujos de valor. Fuente: ITIL 4 Foundation, 2.3.1 Service Value Chain.",
+      "justification_wrong": "ITIL 4 no descarta ITIL v3, integra conceptos. La cadena de valor no es solo gobernanza ni exclusivamente roles técnicos; es un modelo holístico de creación de valor."
+    },
+    {
+      "num": 2,
+      "text": "En el contexto de fluxos de valor para restauración de servicios, ¿qué práctica de ITIL 4 es crítica para minimizar el tiempo de inactividad?",
+      "tag": "Service Value Chain - Restauración de Servicios",
+      "options": [
+        "B. Únicamente documentación exhaustiva de todos los procedimientos",
+        "C. Mantener repositorios de datos sin actualizaciones frecuentes",
+        "A. Gestión de Incidentes con automatización y escaladas predefinidas",
+        "D. Delegar todas las decisiones al nivel de dirección ejecutiva"
+      ],
+      "correct": 2,
+      "justification_correct": "La Gestión de Incidentes (Incident Management) es clave para restauración rápida. ITIL 4 enfatiza automatización, escaladas y tiempo de respuesta optimizado. Referencia: ITIL 4 - Incident Management Practice.",
+      "justification_wrong": "Solo documentación no restaura servicios. Repositorios estáticos y delegación ejecutiva retrasan respuestas. La automatización y definición clara de escaladas son esenciales para RTO/RPO."
+    },
+    {
+      "num": 3,
+      "text": "Una organización está experimentando retrasos frecuentes en la entrega de nuevos servicios a los clientes. El equipo directivo quiere entender cómo las diferentes actividades en la cadena de valor del servicio se conectan para crear valor. ¿Cuál afirmación describe MEJOR el propósito de los flujos de valor en el marco de trabajo ITIL 4?",
+      "tag": "value_streams_purpose",
+      "options": [
+        "A. Los flujos de valor definen secuencias específicas de actividades de la cadena de valor del servicio que una organización realiza para crear y entregar productos y servicios",
+        "B. Los flujos de valor son diagramas de flujo de trabajo detallados que documentan cada paso del proceso requerido para completar las actividades de gestión de incidentes",
+        "C. Los flujos de valor reemplazan la cadena de valor del servicio al proporcionar un enfoque lineal más simple para la entrega de servicios sin requerir múltiples actividades",
+        "D. Los flujos de valor son marcos de gobernanza que aseguran que los siete principios guía se apliquen por igual en todas las prácticas de gestión de servicios"
+      ],
+      "correct": 0,
+      "justification_correct": "La opción A es correcta según los conceptos de ITIL 4 Foundation. Los flujos de valor se definen como una serie de pasos que una organización realiza para crear y entregar productos y servicios a los consumidores. Representan combinaciones específicas de actividades de la cadena de valor del servicio (comprometer, planificar, diseñar y transicionar, obtener/construir, entregar y dar soporte, mejorar) que se adaptan a escenarios específicos. Los flujos de valor muestran cómo las actividades genéricas de la cadena de valor del servicio se combinan y secuencian para propósitos particulares, ayudando a las organizaciones a entender y optimizar sus procesos de creación de valor.",
+      "justification_wrong": "La opción B es incorrecta porque los flujos de valor no se limitan a diagramas de flujo de trabajo detallados para una sola práctica como la gestión de incidentes; abarcan múltiples actividades y prácticas para mostrar la creación de valor de extremo a extremo. La opción C es incorrecta porque los flujos de valor no reemplazan la cadena de valor del servicio; más bien, utilizan y combinan actividades de la cadena de valor del servicio en secuencias específicas. La opción D es incorrecta porque los flujos de valor no son marcos de gobernanza para aplicar principios guía; son modelos operativos específicos que muestran cómo las actividades de la cadena de valor se combinan para entregar valor en escenarios particulares."
+    },
+    {
+      "num": 4,
+      "text": "En el diseño de SLAs y métricas de servicio ITIL 4, ¿cuál es la relación correcta entre OLA, SLA y UC?",
+      "tag": "Métricas de Servicio y SLAs",
+      "options": [
+        "D. OLA y UC solo aplican a servicios internos, nunca a servicios externalizados",
+        "C. UC es independiente de SLA y OLA; cada uno opera sin coordinación",
+        "A. OLA respalda SLA; ambos soportados por UCs que definen obligaciones de proveedores externos",
+        "B. SLA reemplaza completamente la necesidad de OLAs y Underpinning Contracts"
+      ],
+      "correct": 2,
+      "justification_correct": "ITIL 4 estructura SLA (cliente-proveedor), OLA (interno) y UC (proveedores) como cadena integrada. SLA requiere OLAs y UCs internos para cumplimiento. Referencia: ITIL 4 Service Design.",
+      "justification_wrong": "No son independientes; SLA depende de OLA y UC para viabilidad. Los UCs aplican a proveedores externos también. Actúan como estructura jerárquica de compromisos."
+    },
+    {
+      "num": 5,
+      "text": "¿Cuál es el enfoque de ITIL 4 respecto a la integración DevOps en la Service Value Chain para obtención/construcción y transición de servicios?",
+      "tag": "Service Value Chain - DevOps Integration",
+      "options": [
+        "C. Implementar DevOps solo en ambientes de prueba, no en producción",
+        "B. Mantener separación estricta entre equipos de desarrollo y operaciones para control de cambios",
+        "A. Acelerar entrega de valor mediante colaboración continua entre desarrollo y operaciones, automatización y feedback rápido",
+        "D. Considerar DevOps una metodología antagónica a ITIL 4 que debe evitarse"
+      ],
+      "correct": 2,
+      "justification_correct": "ITIL 4 reconoce DevOps como enabler clave para acelerar valor. Integra desarrollo, operaciones y automatización en flujos. Referencia: ITIL 4 Managing Professional - DevOps Practice.",
+      "justification_wrong": "ITIL 4 no promueve silos. DevOps no es experimental; es práctica adoptada en producción. ITIL 4 y DevOps son complementarios, no antagónicos; comparten objetivo de valor continuo."
+    },
+    {
+      "num": 6,
+      "text": "En el contexto de ITIL 4 Service Value Chain, ¿cuál es el propósito principal de la actividad 'Mejorar' en relación con los flujos de valor?",
+      "tag": "Service Value Chain - Mejorar",
+      "options": [
+        "B. Diseñar nuevos servicios desde cero basándose en requisitos de negocio",
+        "D. Monitorear exclusivamente la disponibilidad técnica de la infraestructura",
+        "C. Establecer contratos y negociar términos de servicio con proveedores externos",
+        "A. Identificar y ejecutar mejoras continuas en los servicios y procesos para optimizar la creación de valor"
+      ],
+      "correct": 3,
+      "justification_correct": "ITIL 4 define 'Mejorar' como actividad transversal que optimiza continuamente servicios y procesos. Según Practice Guides, esta actividad se enfoca en identificar oportunidades de mejora basadas en métricas y retroalimentación para maximizar valor.",
+      "justification_wrong": "Las opciones B, C y D corresponden a otras actividades (Diseñar, Engajar, Obtener/Construir y Entregar-Soportar) específicas de la Service Value Chain, no a Mejorar."
+    },
+    {
+      "num": 7,
+      "text": "¿Cuál es la relación directa entre DevOps y los flujos de valor de ITIL 4 para la creación de nuevos servicios?",
+      "tag": "Integración DevOps con Service Value Chain",
+      "options": [
+        "A. DevOps acelera los flujos de Diseño-Transición-Obtener/Construir-Entregar mediante prácticas de automatización e integración continua",
+        "C. DevOps solo se aplica a equipos de desarrollo, no a servicios operacionales",
+        "D. DevOps elimina la necesidad de métricas de SLA en servicios digitales",
+        "B. DevOps reemplaza completamente la necesidad de planeación estratégica en ITIL 4"
+      ],
+      "correct": 0,
+      "justification_correct": "ITIL 4 Practice Guide reconoce que DevOps integra roles de desarrollo y operaciones, acelerando flujos de valor mediante automatización, feedback loops y entrega continua en actividades de Transición y Obtener/Construir.",
+      "justification_wrong": "Las opciones B, C y D contienen afirmaciones incorrectas: la planeación sigue siendo esencial, DevOps aplica a todo ciclo de vida, y los SLAs permanecen críticos independientemente del modelo de entrega."
+    },
+    {
+      "num": 8,
+      "text": "En un flujo de valor de restauración de servicio (incident recovery), ¿qué actividades de la Service Value Chain tienen mayor protagonismo según ITIL 4?",
+      "tag": "Flujos de Valor - Restauración de Servicios",
+      "options": [
+        "A. Entregar-Soportar (diagnóstico y remediación) e Engajar (comunicación con stakeholders)",
+        "D. Mejorar como única actividad crítica en recuperación",
+        "B. Diseño y Obtener/Construir (desarrollo de nuevas capacidades preventivas)",
+        "C. Planeación exclusivamente (definición de estrategia de continuidad)"
+      ],
+      "correct": 0,
+      "justification_correct": "Según ITIL 4 Service Value Chain, la restauración enfatiza Entregar-Soportar (resolución técnica) e Engajar (transparencia, comunicación). Mejorar actúa posteriormente en análisis de causa raíz post-incidente.",
+      "justification_wrong": "Opciones B, C y D subestiman roles específicos: Diseño-Obtener son posteriores, Planeación es estratégica no táctica, y Mejorar es complementaria, no principal, en recuperación inmediata."
+    },
+    {
+      "num": 9,
+      "text": "¿Cómo se integran Agile y Lean en los flujos de valor ITIL 4 para maximizar la entrega de valor?",
+      "tag": "Integración Agile-Lean con Service Value Chain",
+      "options": [
+        "D. Agile y Lean son metodologías incompatibles con ITIL 4",
+        "C. Solo se aplican a desarrollo, no a operaciones o soporte de servicios",
+        "A. Agile proporciona iteraciones frecuentes (sprints) y Lean elimina desperdicios, optimizando cada actividad del flujo de valor",
+        "B. Agile y Lean reemplazan completamente las métricas de SLA tradicionales"
+      ],
+      "correct": 2,
+      "justification_correct": "ITIL 4 Practice Guide integra explícitamente Agile (entregas incrementales, retroalimentación rápida) y Lean (eliminar muda, flujo continuo) en todas actividades para optimizar ciclos de valor y reducir tiempo de entrega.",
+      "justification_wrong": "B es falso: SLAs evolucionan pero persisten. C ignora aplicación transversal. D contradice normativos ITIL 4 que promueven compatibilidad con enfoques ágiles y lean en todo el ecosistema."
+    },
+    {
+      "num": 10,
+      "text": "¿Cuál es la relación entre métricas de servicio y SLAs en el contexto de ITIL 4 Managing Professional?",
+      "tag": "Métricas de Servicio y SLAs",
+      "options": [
+        "D. Los SLAs determinan las métricas; las métricas nunca pueden modificar SLAs existentes",
+        "B. Los SLAs son métricas; ambos términos son sinónimos en ITIL 4",
+        "C. Las métricas de servicio solo se aplican a infraestructura técnica, no a SLAs de negocio",
+        "A. Las métricas de servicio proporcionan datos para validar cumplimiento de SLAs y fundamentan negociaciones de mejora"
+      ],
+      "correct": 3,
+      "justification_correct": "ITIL 4 define métricas como datos cuantitativos de desempeño (disponibilidad, latencia, etc.) usados para monitorear SLAs. La relación es causal: métricas evidencian cumplimiento SLA y justifican ajustes contractuales.",
+      "justification_wrong": "B confunde términos: SLA es acuerdo contractual, métrica es medida. C ignora perspectiva integral de valor. D es inversamente incorrecto: métricas evolucionan y pueden justificar renegociación de SLAs."
+    },
+    {
+      "num": 11,
+      "text": "En el contexto de ITIL 4 Managing Professional, al diseñar un flujo de valor para la creación de un nuevo servicio digital, ¿cuál es el propósito PRIMARY de integrar prácticas Agile en las actividades de diseño y transición?",
+      "tag": "Service Value Chain: Design e Transición",
+      "options": [
+        "C. Garantizar que todos los sprints cumplan exactamente con el SLA predefinido sin desviaciones",
+        "A. Reducir ciclos de feedback e incrementar la capacidad de adaptación ante cambios en requisitos del cliente",
+        "D. Centralizar todas las decisiones arquitectónicas en un único equipo de diseño",
+        "B. Eliminar completamente la documentación técnica para acelerar el despliegue"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 enfatiza la integración de Agile para mejorar la capacidad de respuesta y adaptabilidad en flujos de valor. La iteración rápida y feedback continuo alinean con el modelo de valor ágil, permitiendo ajustes dinámicos según cambios en requisitos (SVS: Service Value Chain).",
+      "justification_wrong": "Eliminar documentación viola governance, los SLAs se negocian previamente no dentro de sprints, y la centralización contradice principios Agile de autonomía de equipos multifuncionales."
+    },
+    {
+      "num": 12,
+      "text": "Respecto a las métricas de servicio y SLAs en ITIL 4, ¿cuál es la diferencia clave entre un Service Level Indicator (SLI) y un Service Level Objective (SLO)?",
+      "tag": "Métricas de Servicio y SLAs",
+      "options": [
+        "C. El SLI es válido solo para servicios internos y el SLO únicamente para servicios externos",
+        "A. El SLI es la medida técnica observada del servicio, mientras que el SLO es el objetivo de desempeño acordado basado en SLIs",
+        "B. El SLO mide el tiempo de respuesta en milisegundos y el SLI mide la disponibilidad en porcentaje",
+        "D. El SLO se negocia con proveedores externos mientras que el SLI se define únicamente internamente"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 define SLI como indicadores técnicos medibles (ej: latencia, throughput) y SLO como objetivos de desempeño establecidos entre proveedor y consumidor basados en múltiples SLIs. Esta estructura permite linkage entre métricas técnicas y acuerdos de negocio.",
+      "justification_wrong": "Los SLIs/SLOs no están limitados a tipos específicos de servicios ni métricas particulares. Ambos se definen internamente; los SLOs se comunican/acuerdan externamente pero se establecen internamente."
+    },
+    {
+      "num": 13,
+      "text": "En un flujo de valor para restauración de servicios (service restoration), ¿cuál es el objetivo principal de aplicar principios Lean durante el diagnóstico de incidentes críticos?",
+      "tag": "Service Value Chain: Entregar y Soportar; Lean Integration",
+      "options": [
+        "D. Implementar automatización total del diagnóstico independientemente de la complejidad del incidente",
+        "A. Eliminar actividades que no agreguen valor inmediato, enfocando recursos en resolución rápida del problema raíz",
+        "B. Reducir el número de técnicos involucrados en la investigación para minimizar costos de personal",
+        "C. Retrasar la restauración del servicio hasta tener análisis exhaustivo de todas las causas potenciales"
+      ],
+      "correct": 1,
+      "justification_correct": "Lean elimina desperdicio (muda) enfocando en actividades de valor. En restauración, esto significa diagnosticar eficientemente sin procesos innecesarios, priorizando rapidez y efectividad. ITIL 4 integra Lean para optimizar MTR (Mean Time to Recovery) en flujos de valor críticos.",
+      "justification_wrong": "Reducir técnicos puede degradar calidad diagnóstica. Análisis exhaustivos contradicen principios Lean. La automatización indiscriminada ignora que algunos diagnósticos requieren expertise humana y contexto."
+    },
+    {
+      "num": 14,
+      "text": "Al integrar DevOps en el flujo de valor de diseño y transición de un nuevo servicio cloud-native, ¿cuál es el cambio FUNDAMENTAL en la responsabilidad de los equipos respecto al modelo tradicional ITIL?",
+      "tag": "Service Value Chain: Design e Transición; DevOps Integration",
+      "options": [
+        "B. El equipo de desarrollo mantiene exclusivamente el diseño mientras operaciones asume completamente la transición y soporte",
+        "D. Las responsabilidades se segmentan aún más entre especialistas de infraestructura, seguridad y networking",
+        "A. Los equipos de desarrollo y operaciones se integran en unidades multifuncionales con responsabilidad compartida desde diseño hasta soporte en producción",
+        "C. Se elimina la fase de diseño formal para pasar directamente a codificación y despliegue iterativo sin planificación"
+      ],
+      "correct": 2,
+      "justification_correct": "DevOps elimina silos mediante equipos cross-funcionales (dev+ops) con responsabilidad end-to-end. ITIL 4 reconoce esto en SVS, integrando DevOps para acelerar ciclos y mejorar calidad. La propiedad compartida del servicio desde concepción hasta operación es el cambio fundamental.",
+      "justification_wrong": "La segmentación de responsabilidades contradice DevOps. Eliminar diseño formal introduce riesgo. El modelo tradicional SÍ separaba equipos, lo que DevOps corrige."
+    },
+    {
+      "num": 15,
+      "text": "En ITIL 4 Managing Professional, ¿cómo debe estructurarse un SLA para un servicio crítico de e-commerce garantizando alineación con flujos de valor de entrega y soporte?",
+      "tag": "Service Value Chain: Entregar y Soportar; Métricas de Servicio y SLAs",
+      "options": [
+        "C. SLAs diferenciados por proveedor externo sin considerar el desempeño integral del servicio entregado al cliente",
+        "D. SLA sin métricas de soporte, enfocado solo en características técnicas del servicio durante horario comercial",
+        "A. SLA con múltiples SLOs (disponibilidad, latencia, recuperación) vinculados a Activities específicas del SVS y con umbrales de escalación clara según severidad",
+        "B. SLA único basado únicamente en disponibilidad porcentual sin detallar componentes ni tiempos de respuesta de soporte"
+      ],
+      "correct": 2,
+      "justification_correct": "ITIL 4 SVS requiere SLAs granulares alineados con Activities de Value Chain. Múltiples SLOs (disponibilidad, rendimiento, RTO/RPO) con escalaciones vinculan entrega y soporte. Los umbrales claros permiten acciones correctivas en Activities específicas (Obtener/Construir, Entregar, Soportar).",
+      "justification_wrong": "SLA único es insuficiente para servicios críticos. Ignorar soporte crea brechas. SLAs sin integración con proveedores completos no garantizan entrega de valor. Limitación a horarios comerciales contradice criticidad."
+    },
+    {
+      "num": 16,
+      "text": "En el contexto de la Cadena de Valor de Servicios (SVS) de ITIL 4, una organización necesita implementar un nuevo servicio de aplicación en la nube. ¿Cuál es el flujo de valor PRIMARIO que debe activarse para garantizar la integración óptima entre diseño, transición y entrega?",
+      "tag": "Service Value Chain - Flujos de Valor",
+      "options": [
+        "D. Improve → Deliver & Support → Plan → Engage → Design & Transition → Obtain/Build",
+        "A. Plan → Improve → Engage → Design & Transition → Obtain/Build → Deliver & Support",
+        "B. Engage → Plan → Obtain/Build → Design & Transition → Deliver & Support → Improve",
+        "C. Design & Transition → Obtain/Build → Deliver & Support → Plan → Engage → Improve"
+      ],
+      "correct": 1,
+      "justification_correct": "Según ITIL 4:2019, el flujo de valor para creación de nuevos servicios sigue la secuencia: Plan → Improve → Engage → Design & Transition → Obtain/Build → Deliver & Support. Esta estructura garantiza gobernanza, input de stakeholders, y construcción ordenada del servicio.",
+      "justification_wrong": "Las alternativas B, C y D presentan secuencias que violarían principios de gobernanza y feedback loops. B invierte diseño con obtención. C omite planificación inicial crítica. D comienza con mejora sin servicio existente."
+    },
+    {
+      "num": 17,
+      "text": "Una organización implementa métricas de servicio basadas en SLAs con tres niveles: Gold (95% disponibilidad), Silver (90%) y Bronze (85%). Un cliente Premium requiere SLA Gold pero experimenta 91% de disponibilidad mensual. ¿Cuál es el enfoque correcto según ITIL 4 para gestionar esta desviación?",
+      "tag": "Métricas de Servicio y SLAs",
+      "options": [
+        "C. Permitir desviación hasta 5% adicional considerando la naturaleza de la infraestructura de nube",
+        "B. Documentar el incumplimiento, analizar causas raíz, implementar plan de mejora con fecha de remediación acordada",
+        "D. Renegociar el SLA downgrade a Silver retroactivamente sin compensación",
+        "A. Aplicar penalización automática y notificar al cliente de incumplimiento inmediato"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 establece que incumplimientos de SLA requieren análisis formal, planes de mejora (Improve práctica), y diálogo transparente. La gestión reactiva con penalización sin contexto viola principios de colaboración y co-creación de valor.",
+      "justification_wrong": "A es punitivo sin análisis. C compromete estándares acordados. D es unilateral e injusto. ITIL 4 enfatiza service relationships y continual improvement sobre acciones disciplinarias inmediatas sin investigación."
+    },
+    {
+      "num": 18,
+      "text": "En un contexto DevOps integrado con ITIL 4, un equipo implementa entrega continua (CD) con releases cada 4 horas. ¿Cómo debe reorientarse la práctica de 'Service Transition' para soportar esta cadencia sin comprometer la estabilidad operacional?",
+      "tag": "Integración DevOps, Agile - Service Transition",
+      "options": [
+        "C. Implementar automated testing, feature flags, canary deployments y monitoreo real-time; shift de gates pre-deployment a post-deployment",
+        "A. Mantener gates de cambio tradicionales con aprobación 24h previas a cada release; documentar todos los cambios post-implementación",
+        "B. Eliminar completamente validaciones técnicas; confiar en tests automatizados y rollback inmediato ante fallos detectados",
+        "D. Reducir ambientes de staging a uno único; acelerar ciclos de aprobación manual sin aumentar cobertura de automatización"
+      ],
+      "correct": 0,
+      "justification_correct": "ITIL 4 y DevOps integrados requieren transición ágil: automatización de tests, feature flags para control de riesgos, monitoreo continuo. Los gates se transforman de preventivos a detectivos. SVS enfatiza feedback loops rápidos y responsabilidad compartida.",
+      "justification_wrong": "A mantiene rigidez incompatible con CD. B elimina controles necesarios. D carece de automatización crítica y multiplica riesgo manual. La cadencia 4h requiere confianza en sistemas, no en aprobaciones secuenciales."
+    },
+    {
+      "num": 19,
+      "text": "Una organización adopta Lean principles dentro de SVS de ITIL 4 para el servicio de 'Provisioning de Infraestructura'. Identifica que 35% del ciclo de valor es waste (esperas en aprobaciones manuales). ¿Cuál es la intervención Lean-ITIL 4 más efectiva?",
+      "tag": "Lean Integration - Value Stream Mapping",
+      "options": [
+        "A. Implementar sistema de aprobaciones paralelas con máximo 3 niveles; mantener documentación completa pre-aprobación",
+        "D. Crear comité centralizado para revisar aprobaciones; mejorar tiempos de respuesta a máximo 4 horas",
+        "B. Automatizar flujo de aprobación mediante reglas de negocio, descentralizar decisiones según roles, implementar self-service con guardrails",
+        "C. Eliminar todas las aprobaciones; permitir que técnicos creen infraestructura sin validación de gobernanza"
+      ],
+      "correct": 2,
+      "justification_correct": "Lean-ITIL 4 busca eliminar muda (waste) manteniendo control. Automatización con reglas de negocio, descentralización de decisiones y self-service gobernado son aplicaciones directas de value stream mapping y principios Lean respetando ITIL governance.",
+      "justification_wrong": "A mantiene waste. C elimina controles de riesgo y compliance. D centraliza aún más, aumentando ciclos de espera. Solo B equilibra flujo rápido con control distribuido inherente a DevOps-Lean-ITIL 4."
+    },
+    {
+      "num": 20,
+      "text": "En el dominio de 'Engage' (SVS), un equipo de Service Management debe alinear expectativas con clientes cuyas demandas evolucionan trimestralmente. ¿Cuál es el mecanismo ITIL 4 más robusto para mantener comunicación bidireccional y validar que el servicio sigue generando valor?",
+      "tag": "Service Value Chain - Engage Practice",
+      "options": [
+        "D. Contacto inicial en onboarding; relaciones posteriores manejadas exclusivamente por service desk técnico",
+        "C. Consejos de Servicio (Service Level Councils) con cadencia trimestral, co-ownership cliente-proveedor, y revisión de métricas de valor vs. costo",
+        "A. Reuniones anuales de SLA review con documentación formal de requerimientos finales",
+        "B. Encuestas de satisfacción post-incidente; reportes técnicos mensuales de disponibilidad y performance"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 práctica 'Engage' requiere diálogo continuo y co-creación. Consejos de Servicio trimestrales permiten evolución planificada de demandas, validar ROI percibido del cliente, y ajustar oferta de valor. Supera reportes técnicos puros con perspectiva de valor.",
+      "justification_wrong": "A es anual, demasiado rígido. B mide satisfacción sin alinear evolución de valor. D carece de vínculo estratégico cliente-proveedor. ITIL 4 enfatiza relationships y value co-creation; solo C implementa esto de manera estructurada."
+    },
+    {
+      "num": 21,
+      "text": "En el contexto de la Service Value Chain de ITIL 4, ¿cuál es el propósito principal de la actividad 'Obtener/Construir' cuando se integra con prácticas DevOps en la entrega de servicios digitales?",
+      "tag": "Service Value Chain - Obtain/Build",
+      "options": [
+        "C. Concentrarse únicamente en la documentación técnica post-implementación del servicio",
+        "A. Garantizar que los componentes del servicio se adquieran o construyan según especificaciones, integrando automatización, testing continuo y control de calidad dentro del flujo de valor",
+        "D. Ejecutar auditorías financieras para validar los gastos de adquisición de activos",
+        "B. Realizar exclusivamente la compra de licencias de software a proveedores externos sin intervención interna"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 SVS establece que Obtener/Construir integra prácticas DevOps mediante automatización, CI/CD y testing continuo. El flujo de valor enfatiza colaboración entre equipos cross-funcionales para garantizar calidad y velocidad en la entrega.",
+      "justification_wrong": "Las opciones B, C y D no abarcan la integración holística de Obtener/Construir con DevOps ni consideran el propósito de flujo de valor continuo y automatizado que ITIL 4 promueve en la cadena de valor."
+    },
+    {
+      "num": 22,
+      "text": "Un flujo de valor para restauración de servicios (incident recovery) debe transitar por múltiples actividades de la SVS. ¿En cuál secuencia lógica y qué actividades son críticas según ITIL 4?",
+      "tag": "Value Streams - Incident Recovery",
+      "options": [
+        "D. Transición → Soporte → Mejora, sin participación del equipo de Engajar en análisis de causa raíz",
+        "C. Mejora → Engajar → Soporte → Entrega, evitando retroalimentación al ciclo de diseño",
+        "A. Soporte → Entregar → Diseño → Mejora continua, priorizando identificación rápida, contención y restauración antes de análisis post-incidente",
+        "B. Planeación → Diseño → Obtener/Construir → Transición, enfocado en prevención exclusiva sin intervención operativa"
+      ],
+      "correct": 2,
+      "justification_correct": "ITIL 4 Value Streams para restauración prioriza: detección (Soporte) → contención/restauración (Entregar) → validación (Transición) → análisis de causa raíz (Mejora). Soporte e identificación rápida son críticos en la primera línea de respuesta.",
+      "justification_wrong": "Las alternativas B, C y D no respetan el flujo lógico de restauración rápida ni integran adecuadamente la retroalimentación de mejora continua que ITIL 4 exige en la cadena de valor para recuperación de incidentes."
+    },
+    {
+      "num": 23,
+      "text": "En la integración de ITIL 4 con Agile y Lean, ¿cómo se establece el equilibrio entre la flexibilidad iterativa (Agile) y la optimización de flujo (Lean) dentro de la actividad 'Diseño' de la Service Value Chain?",
+      "tag": "Integration Agile-Lean-ITIL4",
+      "options": [
+        "A. Aplicar ciclos cortos de diseño con validación incremental (Agile), eliminando desperdicios mediante visualización de flujos de trabajo y limitación del WIP (Lean), asegurando entrega rápida de valor",
+        "D. Implementar Lean exclusivamente en operaciones, reservando Agile solamente para proyectos de software",
+        "C. Priorizar únicamente velocidad de entrega (Agile) sin considerar optimización de procesos o reduce de desperdicio",
+        "B. Separar completamente los equipos Agile de los procesos Lean, garantizando que ambas metodologías no se interfieran"
+      ],
+      "correct": 0,
+      "justification_correct": "ITIL 4 integra Agile (iteración rápida, feedback) y Lean (eliminar desperdicio, flujo continuo) en Diseño. La sinergia maximiza valor mediante ciclos cortos validados, reducción de WIP y optimización de recursos según ITIL 4 Guiding Principles.",
+      "justification_wrong": "Opciones B, C y D fragmentan el enfoque integrado que ITIL 4 promueve. La separación artificial entre metodologías contradice la visión holística de la SVS y limita la optimización de valor en la cadena de servicio."
+    },
+    {
+      "num": 24,
+      "text": "¿Cuál es la relación normativa entre SLAs (Service Level Agreements) y métricas de servicio en ITIL 4, y cómo se alinean con objetivos comerciales en la actividad 'Entregar y Soportar'?",
+      "tag": "Metrics-SLAs-Service Delivery",
+      "options": [
+        "C. Las métricas de servicio se definen independientemente de SLAs, priorizando exclusivamente mediciones técnicas internas",
+        "B. Los SLAs son documentos puramente legales sin relación con métricas operativas reales",
+        "A. Los SLAs definen compromisos con clientes sobre disponibilidad, rendimiento y soporte; métricas de servicio miden desempeño real. Ambos se alinean mediante KPIs que vinculan objetivos técnicos con resultados comerciales esperados",
+        "D. SLAs se aplican solo a servicios externos; servicios internos no requieren métricas formales"
+      ],
+      "correct": 2,
+      "justification_correct": "ITIL 4 establece que SLAs y métricas son interdependientes: SLAs son compromisos contractuales, métricas demuestran cumplimiento. Su alineación con KPIs comerciales (disponibilidad, costo, satisfacción) permite gestión orientada a valor según SVSC.",
+      "justification_wrong": "Opciones B, C y D desconectan SLAs de métricas operativas, limitando visibilidad de cumplimiento y gestión de valor. ITIL 4 requiere integración bidireccional entre compromisos contractuales y medición de desempeño real."
+    },
+    {
+      "num": 25,
+      "text": "En el contexto de la actividad 'Mejorar' de la SVS, ¿cómo se estructura un programa de mejora continua que integre feedback de todas las otras actividades de la cadena de valor, minimizando disrupciones operativas?",
+      "tag": "Continual Improvement - SVS Integration",
+      "options": [
+        "D. Implementar mejoras exclusivamente cuando existan fallos críticos de servicio, sin planificación preventiva",
+        "A. Establecer ciclos de mejora basados en feedback de Soporte, Entrega, Transición y Diseño; priorizar mejoras de bajo riesgo mediante Lean experiments, validación incremental y comunicación continua con stakeholders",
+        "C. Recopilar datos solo de Soporte, ignorando retroalimentación de otras actividades de la SVS",
+        "B. Ejecutar mejoras masivas semestrales que paralicen todos los servicios para garantizar cambios radicales"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 Mejorar integra feedback holístico de la SVS mediante ciclos iterativos de bajo riesgo, validación incremental (Lean/Agile) y comunicación transparente. Minimiza disrupciones y maximiza adopción de cambios según Guiding Principles.",
+      "justification_wrong": "Opciones B, C y D violan principios ITIL 4: B causa disrupciones innecesarias; C fragmenta la cadena de valor; D reactivo sin visión estratégica. La mejora continua exige integración bidireccional y minimización proactiva de riesgos."
+    },
+    {
+      "num": 26,
+      "text": "En el contexto de flujos de valor para restauración de servicios, ¿cuál es el propósito principal de integrar prácticas Lean con la cadena de valor de ITIL 4 durante un incidente crítico?",
+      "tag": "Service Value Chain - Restauración",
+      "options": [
+        "B. Aumentar la velocidad de respuesta asignando más personal a cada actividad del flujo",
+        "A. Eliminar desperdicio en los procesos de diagnóstico y remediación mediante identificación de actividades sin valor agregado",
+        "D. Reducir costos eliminando la documentación de cambios durante la restauración",
+        "C. Implementar automatización total en todas las prácticas de gestión de incidentes"
+      ],
+      "correct": 1,
+      "justification_correct": "Lean enfatiza la eliminación de muda (desperdicio). En restauración, identificar actividades sin valor agregado en diagnóstico, escalado y remediación optimiza el flujo. ITIL 4 SVS integra Lean para maximizar eficiencia operacional sin comprometer calidad.",
+      "justification_wrong": "Asignar más personal no garantiza eficiencia (opción B). Automatización total es unrealista (C). Eliminar documentación de cambios viola governance y aumenta riesgos (D)."
+    },
+    {
+      "num": 27,
+      "text": "¿Cuál es el impacto de aplicar métricas de flujo de valor (lead time y cycle time) en la actividad de Transición dentro de ITIL 4 Managing Professional?",
+      "tag": "Métricas de Servicio - Service Value Chain",
+      "options": [
+        "A. Permite identificar cuellos de botella en procesos de release, validación y rollout, habilitando mejora continua basada en datos",
+        "B. Garantiza que todos los servicios se entreguen en menos de 24 horas mediante SLAs restrictivos",
+        "D. Mide exclusivamente el tiempo de desarrollo sin considerar integración con operaciones",
+        "C. Reemplaza la necesidad de pruebas exhaustivas reduciendo lead time mediante lanzamientos acelerados"
+      ],
+      "correct": 0,
+      "justification_correct": "Lead time (solicitud a entrega) y cycle time (inicio a fin) en Transición revelan ineficiencias. ITIL 4 SVS usa estas métricas para optimizar flujos de cambio, validación e implementación, alineado con mejora continua (CSI).",
+      "justification_wrong": "SLAs no garantizan 24h (B). Pruebas son mandatorias (C). Metrics incluyen todo el flujo operacional (D)."
+    },
+    {
+      "num": 28,
+      "text": "En un flujo de valor para nuevos servicios integrado con Agile y DevOps, ¿cómo debe la actividad de Diseño colaborar con Obtener/Construir para cumplir con ciclos iterativos?",
+      "tag": "Integration - DevOps, Agile & Service Value Chain",
+      "options": [
+        "C. Separando completamente Design de Build mediante gates formales que minimicen comunicación entre equipos",
+        "D. Delegando decisiones de diseño completamente al equipo de desarrollo sin participación de arquitectos",
+        "B. Completando toda la documentación de diseño antes de iniciar construcción para evitar cambios posteriores",
+        "A. Mediante sprints sincronizados donde el diseño emergente se valida con prototipos funcionales, incorporando feedback de stakeholders en iteraciones"
+      ],
+      "correct": 3,
+      "justification_correct": "Agile+DevOps requieren integración continua entre Design y Build. Sprints sincronizados, prototipado iterativo y feedback temprano permiten ajustes ágiles. ITIL 4 SVS habilita esta colaboración mediante artefactos compartidos y dailies.",
+      "justification_wrong": "Diseño completo-primero viola agilidad (B). Gates formales generan latencia (C). Prescindir de arquitectura causa deuda técnica (D)."
+    },
+    {
+      "num": 29,
+      "text": "¿Cuál es la relación correcta entre SLAs, métricas de servicio y el Service Value Chain en contextos de soporte operacional con métricas de disponibilidad crítica?",
+      "tag": "SLAs & Métricas - Support & Operations",
+      "options": [
+        "D. Los SLAs reemplazan la necesidad de métricas operacionales internas en el SVS",
+        "C. Las métricas de disponibilidad solo deben medirse al final de la cadena de valor en la actividad de Soporte",
+        "A. Los SLAs definen objetivos (p.ej., 99.5% disponibilidad), las métricas monitorean desempeño en cada actividad del SVS, e informan acciones de mejora",
+        "B. Los SLAs son compromisos con clientes que no requieren desglose de métricas en actividades específicas del SVS"
+      ],
+      "correct": 2,
+      "justification_correct": "SLAs establecen compromisos mensurables. Métricas de cada actividad (Plan, Design, Transition, Deliver, Support) rastrean contribución a SLA. Ej: Transition delay impacta disponibilidad. ITIL 4 integra ambas para gestión integral.",
+      "justification_wrong": "SLAs requieren métricas desglosadas (B). Métricas son end-to-end (C). SLAs y métricas operacionales coexisten (D)."
+    },
+    {
+      "num": 30,
+      "text": "En una organización que implementa ITIL 4 con práctica Lean Six Sigma, ¿cuál es la relación entre Value Stream Mapping (VSM) y la identificación de actividades que no generan valor en el flujo de restauración de servicios?",
+      "tag": "Lean Integration - Value Stream & Optimization",
+      "options": [
+        "D. VSM reemplaza la necesidad de métricas de disponibilidad y SLAs en restauración",
+        "A. VSM visualiza el flujo completo identificando wait times, handoffs redundantes y bucles de diagnóstico improductivos, permitiendo priorizar mejoras de impacto máximo",
+        "C. VSM solo documenta procesos sin generar insights sobre ineficiencias o datos cuantitativos",
+        "B. VSM es una herramienta exclusiva de Lean que no aplica a ITIL 4 Service Value Chain"
+      ],
+      "correct": 1,
+      "justification_correct": "VSM es técnica Lean que mapea flujos identificando muda. En restauración, revela escalados innecesarios, validaciones redundantes y delays de comunicación. ITIL 4 SVS adopta VSM para optimizar ciclos de incidente y reduce MTTR.",
+      "justification_wrong": "VSM es compatible con ITIL 4 (B). VSM genera insights cuantitativos (C). VSM complementa, no reemplaza, métricas (D)."
+    },
+    {
+      "num": 31,
+      "text": "Una organización implementa un flujo de valor para la restauración de servicios tras una interrupción crítica. ¿Cuál es el propósito principal de integrar prácticas Lean en esta actividad de la cadena de valor de servicio?",
+      "tag": "Service Value Chain - Restauración de Servicios",
+      "options": [
+        "B. Aumentar la capacidad de personal de soporte técnico durante la interrupción",
+        "C. Implementar controles de cambio más restrictivos para evitar futuras fallas",
+        "A. Eliminar desperdicios en el proceso de recuperación y reducir el tiempo de restauración (MTTR) mediante optimización de flujos",
+        "D. Transferir la responsabilidad de restauración al proveedor externo de infraestructura"
+      ],
+      "correct": 2,
+      "justification_correct": "ITIL 4 enfatiza integración Lean para eliminar desperdicios y optimizar flujos de valor. En restauración, Lean reduce tiempos innecesarios, mejora MTTR y acelera recuperación. Principio core de Service Value Chain.",
+      "justification_wrong": "Aumentar personal es táctica reactiva, no optimización Lean. Cambios restrictivos pertenecen a transición. Transferencia externaliza responsabilidad sin optimizar flujo interno."
+    },
+    {
+      "num": 32,
+      "text": "Al diseñar un nuevo servicio digital, el equipo debe establecer métricas de servicio y SLAs. ¿Cuál enfoque es MÁS alineado con los principios ITIL 4 para garantizar valor empresarial?",
+      "tag": "Métricas de Servicio y SLAs - Design",
+      "options": [
+        "A. Definir SLAs basados exclusivamente en disponibilidad técnica del 99.9% sin considerar impacto empresarial",
+        "D. Utilizar métricas heredadas del servicio anterior sin validación en nuevo contexto",
+        "B. Establecer métricas outcome-focused vinculadas a resultados empresariales y experiencia del usuario, no solo métricas técnicas",
+        "C. Implementar SLAs sin involucrar al cliente, basándose en capacidad técnica interna"
+      ],
+      "correct": 2,
+      "justification_correct": "ITIL 4 Service Value Chain enfatiza outcome-focused metrics vinculadas a valor empresarial. Métricas deben medir impacto en negocio, no solo uptime técnico. Alineación con objetivos de cliente es mandatorio.",
+      "justification_wrong": "Uptime técnico sin contexto empresarial ignora valor. Sin cliente no hay validación de relevancia. Métricas heredadas no consideran nuevo contexto de servicio."
+    },
+    {
+      "num": 33,
+      "text": "En un flujo de valor para crear nuevo servicio, la organización integra DevOps y Agile. ¿Cuál es el impacto esperado en la actividad 'Obtener/Construir' de la cadena de valor?",
+      "tag": "Service Value Chain - Obtener/Construir con DevOps y Agile",
+      "options": [
+        "B. Eliminación completa del testing debido a automatización DevOps garantiza calidad",
+        "C. Mayor documentación técnica para cumplir requisitos de compliance",
+        "D. Aumento de cambios urgentes no planificados durante construcción",
+        "A. Reducción de ciclos de desarrollo mediante entrega incremental, automatización y feedback continuo del cliente"
+      ],
+      "correct": 3,
+      "justification_correct": "DevOps + Agile en Obtener/Construir acelera ciclos mediante iteración rápida, automatización CI/CD y feedback continuo. ITIL 4 valida esta integración para reducir time-to-market y mejorar calidad incremental.",
+      "justification_wrong": "Testing no se elimina, se automatiza. Documentación no se reduce arbitrariamente. Cambios urgentes contradicen planificación iterativa controlada de Agile."
+    },
+    {
+      "num": 34,
+      "text": "Una organización experimenta degradación de SLA en servicio existente. Según ITIL 4, ¿cuál actividad de la cadena de valor debe ejecutarse primero para restaurar conformidad?",
+      "tag": "Service Value Chain - Mejora y Restauración",
+      "options": [
+        "D. Transferir servicio a equipo diferente sin investigación previa",
+        "B. Actividad 'Mejorar': analizar causa raíz del incumplimiento y optimizar procesos de delivery antes de rediseño",
+        "C. Implementar inmediatamente parche técnico sin validación de impacto",
+        "A. Diseñar rediseño completo del servicio sin diagnosticar causa raíz"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 Service Value Chain sitúa 'Mejorar' como actividad continua previa a rediseño. Diagnóstico de causa raíz, análisis de datos y optimización de procesos restauran SLA antes de decisiones mayores.",
+      "justification_wrong": "Rediseño sin diagnóstico desperdicia recursos. Parches sin validación generan nuevos incidentes. Transferencia de equipo sin análisis perpetúa problema de raíz."
+    },
+    {
+      "num": 35,
+      "text": "Al integrar Lean en la actividad 'Entregar y Soportar' de la cadena de valor, ¿cuál métrica es MÁS relevante para demostrar elimina­ción de desperdicios según ITIL 4?",
+      "tag": "Service Value Chain - Entregar y Soportar con Lean",
+      "options": [
+        "C. Aumento de volumen de personal en helpdesk para acelerar respuesta",
+        "A. Número total de tickets de soporte resueltos sin considerar calidad o re-aperturas",
+        "D. Implementación de restricciones de acceso para reducir cantidad de solicitudes",
+        "B. Reducción de tiempo de resolución (resolución en primera línea, ciclo de vida incidentes más corto) y disminución de re-trabajo"
+      ],
+      "correct": 3,
+      "justification_correct": "Lean en Entregar/Soportar mide eliminación de desperdicios mediante resolución rápida de primera línea y reducción de re-trabajo. ITIL 4 valida métricas outcome: tiempo de resolución y calidad (evitar re-aperturas).",
+      "justification_wrong": "Volumen sin calidad no elimina desperdicios. Restricciones reducen demanda artificialmente, no optimizan flujo. Tickets sin contexto de calidad no refleja mejora real."
+    },
+    {
+      "num": 36,
+      "text": "En el contexto de la Service Value Chain de ITIL 4, una organización necesita optimizar el flujo de valor para la restauración de servicios tras una interrupción crítica. ¿Cuál es el enfoque correcto que integra las actividades de 'Obtener/Construir' y 'Entregar y Soportar' para minimizar el MTTR?",
+      "tag": "Service Value Chain - Flujo de Restauración",
+      "options": [
+        "A. Establecer capacidades de automatización en Obtener/Construir que permitan despliegue inmediato de componentes pre-validados, coordinando paralelamente con Entregar y Soportar mediante alertas predictivas.",
+        "D. Aplicar cambios directamente en producción sin validación previa, acelerando Obtener/Construir independientemente de Entregar y Soportar.",
+        "C. Delegar toda responsabilidad de restauración a Entregar y Soportar, eliminando participación de Obtener/Construir en tiempos críticos.",
+        "B. Priorizar exclusivamente la documentación detallada en la fase Obtener/Construir antes de cualquier acción de Entregar y Soportar."
+      ],
+      "correct": 0,
+      "justification_correct": "ITIL 4 enfatiza la integración cross-funcional en la SVCh. Automatización pre-validada + orquestación paralela entre actividades reduce MTTR significativamente. DVP (Dynamic Value Property) requiere coordinación de capacidades técnicas con monitoreo continuo (Deliver & Support).",
+      "justification_wrong": "B ignora automatización; C fragmenta responsabilidades violando SVCh; D incumple Change Management y governance de ITIL 4, aumentando riesgos y MTTR."
+    },
+    {
+      "num": 37,
+      "text": "Una organización implementa métricas de SLA basadas en percentiles P95 de latencia en lugar de valores máximos absolutos. ¿Cuál es la ventaja estratégica de este enfoque según ITIL 4 Managing Professional y su integración con Lean-Agile?",
+      "tag": "Métricas de Servicio y SLAs - Enfoque Percentil",
+      "options": [
+        "C. Los valores máximos absolutos son siempre preferibles porque garantizan 100% cumplimiento de SLA.",
+        "A. Los percentiles P95 permiten identificar valores atípicos sin penalizar la métrica general, facilitando mejora continua incremental y realista de capacidades.",
+        "B. Los percentiles eliminan completamente la necesidad de monitoreo en tiempo real del servicio.",
+        "D. Los percentiles reducen responsabilidad operacional del proveedor de servicios sobre el desempeño."
+      ],
+      "correct": 1,
+      "justification_correct": "Percentiles P95 (ITIL 4 Service Measurement & Reporting) reflejan experiencia real del 95% de usuarios, permitiendo objetivos viables. Alineación Lean (eliminar variabilidad) + Agile (iteración) sin comprometer SLA realista. Basado en ISO/IEC 20000-1.",
+      "justification_wrong": "B es falso (monitoreo es esencial); C confunde absolutos con calidad; D invierte responsabilidad: percentiles exigen mayor rigor en continuidad."
+    },
+    {
+      "num": 38,
+      "text": "En un flujo de valor para creación de nuevos servicios, la organización debe decidir entre implementar DevOps full-stack desde inception o iniciar con Waterfall-Hybrid. Considerando ITIL 4 SVCh 'Plan-Design-Transition', ¿cuál decisión es más coherente con la madurez organizacional?",
+      "tag": "Integración DevOps-Agile en SVCh - Decisión de Modelo",
+      "options": [
+        "D. Separar completamente DevOps de ITIL 4, considerándolos frameworks incompatibles para este caso.",
+        "B. Implementar DevOps full-stack inmediatamente en 'Plan' sin evaluación de madurez de infraestructura o competencias del equipo.",
+        "C. Mantener Waterfall puro para evitar riesgos, rechazando prácticas ágiles en todas las fases SVCh.",
+        "A. Adoptar DevOps progresivo: iniciar 'Design' con prototipado ágil, establecer pipelines CI/CD en 'Transition' solo cuando capacidades técnicas y culturales estén validadas."
+      ],
+      "correct": 3,
+      "justification_correct": "ITIL 4 'Organizational Change Enablement' requiere adopción gradual. Waterfall-Hybrid permite validar en 'Design' antes de inversión masiva; DevOps progresivo en 'Transition' reduce riesgos. SVCh flexible según madurez (ITIL 4 Guiding Principles: Focus on Value).",
+      "justification_wrong": "B ignora Change Enablement; C rechaza modernización (contra ITIL 4); D es falso: ITIL 4 explícitamente integra DevOps (Service Transition, Automation)."
+    },
+    {
+      "num": 39,
+      "text": "Un equipo de Entregar y Soportar reporta que el SLA de availability es 99.5%, pero la métrica de 'Customer Satisfaction Score' (CSAT) cae 15% mes a mes. ¿Cuál es el análisis correcto según ITIL 4 Value Streams y Lean-Agile?",
+      "tag": "Integración de Métricas: Disponibilidad vs. Valor Percibido",
+      "options": [
+        "A. El SLA técnico no refleja experiencia del usuario; aplicar Value Stream Mapping (Lean) para identificar delays en el flujo de valor que degradan CSAT, aunque availability sea contractualmente compliant.",
+        "B. Aumentar SLA de availability a 99.9% garantiza automáticamente recuperación de CSAT.",
+        "C. CSAT bajo indica falla del proveedor externo, sin responsabilidad interna de la organización.",
+        "D. Las métricas de disponibilidad y CSAT son independientes; no requieren análisis integrado."
+      ],
+      "correct": 0,
+      "justification_correct": "ITIL 4 Service Measurement integra indicadores técnicos (availability) + de valor (CSAT). Lean Value Stream identifica desperdicio entre incident resolution y comunicación. Gap técnico-percibido señala problema de proceso (no solo infraestructura), requiriendo mejora en SVCh.",
+      "justification_wrong": "B asume relación lineal falsa; C externaliza responsabilidad (contra SVCh); D contradice integración ITIL 4 de métricas end-to-end."
+    },
+    {
+      "num": 40,
+      "text": "En la fase 'Mejorar' (Improve) de ITIL 4, una organización debe priorizar entre: (1) Reducir lead time de deploys (DevOps), (2) Mejorar MTTR de incidentes críticos, (3) Incrementar cobertura de automatización. ¿Cuál es el enfoque alineado con la Teoría de Restricciones (Theory of Constraints) aplicada a SVCh?",
+      "tag": "Mejora Continua - Priorización según Constraint Theory",
+      "options": [
+        "B. Implementar simultáneamente todas las mejoras (1, 2, 3) con igual presupuesto, asumiendo impacto similar en valor.",
+        "D. Delegar decisión de priorización completamente a áreas técnicas sin participación de Gestión de Servicios.",
+        "C. Priorizar solo lead time (DevOps) porque es tendencia actual, ignorando MTTR e inversión en automatización.",
+        "A. Identificar el cuello de botella (constraint) actual en SVCh mediante análisis de métricas; priorizar mejora exclusivamente en ese punto hasta liberarlo, luego rebalancear y reiterar."
+      ],
+      "correct": 3,
+      "justification_correct": "ToC (Goldratt) + ITIL 4 Improve: identificar constraint real (ej: MTTR elevado = restrict value flow). Mejorar constraint primero maximiza retorno. Lean-Agile iteration tras liberación del constraint. ISO/IEC 20000-1 exige análisis de bottlenecks en Continual Improvement.",
+      "justification_wrong": "B dispersa recursos sin ROI; C ignora criticidad de MTTR (SLA impact); D violaría governance ITIL 4 (Service Management debe orquestar mejoras)."
+    },
+    {
+      "num": 41,
+      "text": "En el contexto del Service Value Chain de ITIL 4, ¿cuál es el propósito principal de la actividad 'Plan' cuando se integra con metodologías Agile y Lean?",
+      "tag": "Service Value Chain: Planificación Estratégica",
+      "options": [
+        "C. Documentar exclusivamente procesos waterfall con ciclos de planificación de 12 meses sin iteraciones",
+        "A. Establecer la dirección estratégica del servicio, definir objetivos medibles y alinear recursos con capacidades organizacionales para crear valor sostenible",
+        "D. Delegar toda la planificación al equipo de DevOps eliminando supervisión estratégica",
+        "B. Ejecutar sprints de dos semanas para implementar cambios operacionales inmediatos sin validación de requisitos"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 (SVS) enfatiza que Plan debe definir dirección estratégica con objetivos alineados. La integración Agile/Lean requiere planificación adaptativa que permita iteraciones mientras mantiene gobernanza. La creación de valor sostenible depende de alineación recursos-capacidades.",
+      "justification_wrong": "Sprint sin validación previa viola principios ITIL de gobernanza. Waterfall de 12 meses contradice adaptabilidad Agile. Eliminar supervisión estratégica incumple ITIL 4 y genera riesgos de cumplimiento normativo y alineación con objetivos de negocio."
+    },
+    {
+      "num": 42,
+      "text": "Respecto a métricas de Service Value Stream en flujos de restauración de servicios, ¿cuál debe ser el indicador crítico que refleje la eficacia de la integración DevOps?",
+      "tag": "SVS: Métricas y KPIs de Restauración",
+      "options": [
+        "B. Únicamente el número total de incidentes registrados en el CMDB sin correlación con impacto de negocio",
+        "C. La satisfacción del cliente medida anualmente mediante encuestas genéricas post-incidente",
+        "D. El costo total de infraestructura dividido entre cantidad de tickets cerrados",
+        "A. Mean Time To Recovery (MTTR) combinado con Change Failure Rate (CFR) y Deployment Frequency para validar velocidad, calidad y frecuencia de remediación"
+      ],
+      "correct": 3,
+      "justification_correct": "ITIL 4 y DevOps convergen en MTTR (velocidad), CFR (confiabilidad) y Deployment Frequency (agilidad). Estos KPIs miden la efectividad del flujo de valor en restauración. ITIL 4 SVS requiere métricas end-to-end que demuestren creación de valor.",
+      "justification_wrong": "Contar incidentes sin contexto de negocio incumple ITIL 4 outcomes-based focus. Encuestas anuales no detectan patrones de degradación. Ratios costo-tickets ignoran calidad de remediación y reincidencia, incumpliendo enfoque de gestión de servicios moderno."
+    },
+    {
+      "num": 43,
+      "text": "En el contexto de 'Design' del Service Value Chain con enfoque Lean, ¿cuál es el mecanismo correcto para eliminar desperdicios en la definición de requisitos de SLA?",
+      "tag": "Service Value Chain: Design y Lean Principles",
+      "options": [
+        "B. Crear SLAs exhaustivos con más de 50 métricas para garantizar cobertura total de variables técnicas",
+        "C. Delegar completamente al proveedor técnico la definición de SLAs sin participación del cliente",
+        "D. Establecer SLAs con márgenes conservadores del 300% para evitar incumplimientos contractuales",
+        "A. Aplicar Value Stream Mapping para identificar actividades sin valor agregado, colaborar iterativamente con stakeholders y definir SLAs basados en outcomes reales de negocio"
+      ],
+      "correct": 3,
+      "justification_correct": "Lean enfatiza Value Stream Mapping para eliminar Muda (desperdicios). ITIL 4 Design requiere colaboración iterativa cliente-proveedor. SLAs outcome-focused minimizan complejidad innecesaria. Esta integración Lean-ITIL 4 garantiza eficiencia y relevancia contractual.",
+      "justification_wrong": "Más de 50 métricas generan overhead administrativo (Muda de complejidad). Exclusión de cliente viola ITIL 4 co-creation. Márgenes 300% ocultan ineficiencias operacionales y no reflejan capacidades reales. Contradicen optimización Lean."
+    },
+    {
+      "num": 44,
+      "text": "Durante la transición de un nuevo servicio digital, ¿cómo debe estructurarse el flujo de valor para integrar Agile, DevOps y controles ITIL 4 sin crear silos de responsabilidad?",
+      "tag": "Service Value Chain: Transición e Integración DevOps-Agile",
+      "options": [
+        "C. Ejecutar entregas Agile sin aprobaciones de Change, compensando con rollback automáticos ilimitados",
+        "A. Usar cross-functional value streams con responsabilidad end-to-end, Daily Standup integrado con Change Advisory Board, y Definition of Done que incluya requisitos de seguridad, compliance y operacionalidad ITIL 4",
+        "D. Implementar ITIL 4 formalmente pero ejecutar DevOps en paralelo con métricas inconsistentes",
+        "B. Mantener equipos DevOps completamente separados del Change Management, reportando únicamente a Development VP"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 SVS promueve value streams integrados. Cross-functional teams eliminan silos. Definition of Done debe incluir ITIL 4 requirements (seguridad, compliance, operacionalidad). Daily Standups con CAB aseguran gobernanza ágil. Esta estructura balancean velocidad y control.",
+      "justification_wrong": "DevOps independiente viola ITIL 4 integrated model y crea governance gaps. Entregas sin Change Management contradicen ITIL 4 transition practices y generan riesgos operacionales. Ejecución paralela con métricas inconsistentes impide trazabilidad y accountability."
+    },
+    {
+      "num": 45,
+      "text": "En el flujo de creación de nuevos servicios, ¿cuál es el criterio de salida correcto de la fase 'Improve' para garantizar que se cumplan objetivos de valor definidos en 'Plan'?",
+      "tag": "Service Value Chain: Ciclo de Mejora Continua",
+      "options": [
+        "D. Obtener sign-off del CIO mediante una reunión sin métricas objetivas de éxito",
+        "A. Validación de que las métricas de desempeño alcanzaron los targets definidos en Plan, retroalimentación positiva de usuarios/clientes, y documentación de lecciones aprendidas en el repositorio de conocimiento",
+        "C. Lograr la reducción de costos operacionales sin importar el impacto en capacidades de servicio",
+        "B. Completar todas las mejoras técnicas solicitadas por Development sin validación de impacto en outcomes de negocio"
+      ],
+      "correct": 1,
+      "justification_correct": "ITIL 4 Improve requiere validación outcomes-based. Los targets de Plan establecen criterios de éxito. Retroalimentación de stakeholders confirma creación de valor. Captura de lecciones aprendidas habilita mejora continua organisacional. Este enfoque cierra el ciclo SVS con evidencia tangible.",
+      "justification_wrong": "Mejoras técnicas desconectadas de outcomes ignoran ITIL 4 value focus. Reducción de costos sin contexto de capacidades genera technical debt. Sign-off subjetivo sin métricas incumple ITIL 4 evidence-based governance y no deja trazabilidad para auditoría."
+    },
+    {
+      "num": 46,
+      "text": "En el contexto de la Service Value Chain de ITIL 4, ¿cuál es el propósito principal de la actividad 'Mejorar' cuando se integra con prácticas Lean en la restauración de servicios?",
+      "tag": "Service Value Chain - Mejorar - Lean Integration",
+      "options": [
+        "B. Implementar nuevas tecnologías sin evaluar el impacto en los procesos existentes de soporte",
+        "A. Eliminar desperdicio y optimizar el flujo de valor mediante análisis de procesos actuales y mejora continua de la capacidad de respuesta ante incidentes",
+        "C. Centralizar todas las decisiones de mejora en un único equipo de arquitectura de servicios",
+        "D. Reducir exclusivamente los costos operacionales independientemente de la calidad del servicio"
+      ],
+      "correct": 1,
+      "justification_correct": "Según ITIL 4 SVS, Mejorar enfatiza optimización continua de valor. Lean añade eliminación de desperdicio y eficiencia de flujo. En restauración, esto significa acelerar resolución identificando cuellos de botella, reduciendo pasos innecesarios y mejorando predictibilidad de tiempos de recuperación.",
+      "justification_wrong": "Las opciones B, C y D violan principios fundamentales: B ignora análisis previo; C centraliza decisiones contrariamente a ITIL 4 que promueve colaboración; D sacrifica calidad por costo, violando gestión de valor de servicio."
+    },
+    {
+      "num": 47,
+      "text": "En una organización que implementa flujos de valor para servicios nuevos con enfoque DevOps, ¿cómo debe coordinarse la actividad 'Obtener/Construir' con 'Transición' para garantizar la entrega de valor conforme a ITIL 4?",
+      "tag": "Service Value Chain - Obtener/Construir - Transición - DevOps",
+      "options": [
+        "C. Delegar completamente Transición al proveedor externo sin supervisión del equipo interno",
+        "D. Priorizar únicamente velocidad de construcción ignorando aspectos de calidad y documentación en transición",
+        "A. Ejecutar Obtener/Construir y Transición en fases secuenciales separadas con validación formal entre cada etapa",
+        "B. Integrar ambas actividades mediante iteraciones continuas, automatización de pruebas y retroalimentación temprana para reducir riesgos y acelerar time-to-market"
+      ],
+      "correct": 3,
+      "justification_correct": "ITIL 4 SVS con DevOps integra Obtener/Construir y Transición en ciclos continuos. La automatización, pruebas integradas y feedback loops reducen defectos, cumplen SLAs y entregan valor incrementalmente, alineado con prácticas ágiles y lean.",
+      "justification_wrong": "A introduce retrasos y reduce agilidad. C elimina gobernanza de servicio. D compromete confiabilidad y compliance. ITIL 4 enfatiza integración y valor continuo, no waterfall ni negligencia de calidad."
+    },
+    {
+      "num": 48,
+      "text": "Respecto a las métricas de servicio en ITIL 4, ¿cuál debe ser la relación correcta entre KPIs de Service Value Chain y SLAs para asegurar la sostenibilidad del servicio?",
+      "tag": "Métricas de Servicio - SLAs - Value Chain Metrics",
+      "options": [
+        "C. Los KPIs de cada actividad SVS deben alinearse directamente con SLAs, creando trazabilidad continua de contribución al cumplimiento de compromisos de servicio",
+        "B. Los SLAs son únicamente compromisos con clientes; los KPIs internos de SVS se definen sin vinculación a resultados de SLAs",
+        "A. Los KPIs de SVS son independientes de SLAs; cada uno se gestiona en silos departamentales sin correlación",
+        "D. Los SLAs deben establecerse después de implementar todas las prácticas SVS sin revisión previa de capacidades internas"
+      ],
+      "correct": 0,
+      "justification_correct": "ITIL 4 establece que SVS produce valor mediante actividades integradas. KPIs en Planeación, Diseño, Obtener/Construir, Transición, Entregar y Mejorar deben mapear directamente a SLA targets. Esta trazabilidad permite identificar brechas y optimizar rendimiento.",
+      "justification_wrong": "A y B fragmentan gestión contrariamente a visión integrada de SVS. D invierte secuencia lógica; capacidades deben preceder compromisos. ITIL 4 enfatiza alineación end-to-end entre actividades y resultados comprometidos."
+    },
+    {
+      "num": 49,
+      "text": "En el flujo de valor para restauración de servicios integrado con Agile, ¿cuál es el mecanismo más efectivo para balancear velocidad de recuperación con estabilidad conforme a ITIL 4 y prácticas DevOps?",
+      "tag": "Service Value Chain - Restauración - Agile DevOps - Resiliencia",
+      "options": [
+        "C. Restaurar servicios manualmente independientemente del impacto para garantizar comprensión completa del problema",
+        "D. Crear equipas separadas: una para velocidad y otra para validación, sin integración durante el incidente",
+        "A. Implementar sprints de una semana para reparación sin documentación para maximizar velocidad",
+        "B. Definir runbooks automáticos basados en análisis previos de incidentes, con validación progresiva y rollback automático en detección de anomalías"
+      ],
+      "correct": 3,
+      "justification_correct": "ITIL 4 + DevOps + Agile: runbooks automáticos reducen MTTR (Mean Time To Recovery) y riesgo humano. Validación progresiva y rollback automático combinan rapidez con estabilidad. Monitoreo continuo detecta regresiones evitando cascadas.",
+      "justification_wrong": "A sacrifica integridad documentaria. C es ineficiente. D crea silos que retrasan decisiones. ITIL 4 requiere automatización inteligente, visibilidad continua y trazabilidad, incompatible con enfoques manuales o fragmentados."
+    },
+    {
+      "num": 50,
+      "text": "¿Cómo debe una organización certificada en ITIL 4 Managing Professional evaluar la madurez de integración entre Service Value Chain, DevOps y Lean para garantizar entrega sostenible de valor?",
+      "tag": "Service Value Chain - Integración - Madurez - Governance",
+      "options": [
+        "D. Confiar exclusivamente en evaluaciones externas sin participación de equipos operacionales internos",
+        "A. Medir únicamente el cumplimiento de SLAs sin considerar eficiencia de procesos internos",
+        "B. Evaluar independientemente cada práctica (SVS, DevOps, Lean) sin correlacionar resultados ni impactos cruzados",
+        "C. Auditar la trazabilidad de flujos de valor end-to-end, automatización de actividades críticas, feedback loops, reducción de desperdicio y alineación de métricas con objetivos de negocio"
+      ],
+      "correct": 3,
+      "justification_correct": "ITIL 4 SVS requiere evaluación holística: trazabilidad de flujo (Planeación→Mejora), automatización (DevOps), eficiencia (Lean), métricas alineadas y retroalimentación continua. Auditoría integrada valida madurez real sostenible.",
+      "justification_wrong": "A ignora eficiencia operacional. B pierde sinergia de integración; ITIL 4 es ecosistema interconectado. D excluye stakeholders críticos. Madurez requiere visión integrada con participación interna, métricas combinadas y mejora continua."
+    }
+  ]
+}

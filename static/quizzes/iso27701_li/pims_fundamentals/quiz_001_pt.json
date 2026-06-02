@@ -1,0 +1,710 @@
+{
+  "cert_id": "iso27701_li",
+  "domain_id": "pims_fundamentals",
+  "quiz_num": 1,
+  "domain_name": "Fundamentos de PIMS e Privacidade",
+  "cert_name": "ISO 27701 Lead Implementer",
+  "lang": "pt",
+  "questions": [
+    {
+      "num": 1,
+      "text": "De acordo com a ISO 27701:2019, qual é a principal diferença entre um Controlador de dados pessoais e um Operador de dados pessoais?",
+      "tag": "Papéis e Responsabilidades",
+      "options": [
+        "D. Ambos possuem responsabilidades idênticas conforme a ISO 27701",
+        "C. O Controlador apenas coleta dados, e o Operador decide como utilizá-los",
+        "A. O Controlador determina propósitos e meios do processamento, enquanto o Operador processa dados conforme instruções do Controlador",
+        "B. O Operador é sempre responsável pela conformidade legal, independentemente das instruções do Controlador"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27701:2019, cláusula 5.3: Controlador determina finalidades e meios; Operador processa conforme instruções documentadas. Define-se clara separação de responsabilidades de governança e conformidade.",
+      "justification_wrong": "Alternativas B, C e D contradizem a ISO 27701 e GDPR. Operador não é livre para decidir propósitos (B), Controlador não apenas coleta (C), e responsabilidades não são idênticas (D)."
+    },
+    {
+      "num": 2,
+      "text": "A ISO 27701:2019 é uma extensão da ISO 27001. Qual componente do PIMS (Privacy Information Management System) deve ser obrigatoriamente integrado com controles ISO 27001?",
+      "tag": "Integração ISO 27001 e 27701",
+      "options": [
+        "B. Controles de segurança da informação e controles específicos de privacidade em um sistema integrado",
+        "A. Apenas controles de criptografia de dados pessoais",
+        "D. Controles financeiros e de auditoria",
+        "C. Apenas políticas de retenção de dados"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019, Anexo A: PIMS integra-se com SGSI (ISO 27001) através de controles A.5 a A.18, cobrindo segurança (criptografia, acesso) e privacidade (consentimento, direitos). Integração obrigatória sistêmica.",
+      "justification_wrong": "A resposta correta é B. Alternativas A (apenas criptografia), C (apenas retenção) e D (controles financeiros) são incompletas e não refletem integração abrangente exigida pela norma."
+    },
+    {
+      "num": 3,
+      "text": "Conforme ISO 27701:2019, qual é o propósito principal de um Avaliação de Impacto à Proteção de Dados (AIPD) e em que contexto ela se aplica?",
+      "tag": "Ciclo de Vida de Dados Pessoais",
+      "options": [
+        "B. Documentar exclusivamente conformidade com auditorias externas anuais",
+        "A. Identificar riscos de segurança e privacidade antes do processamento de dados pessoais, especialmente em tratamentos de alto risco",
+        "D. Autorizar o Operador a processar dados sem restrições",
+        "C. Eliminar todos os dados pessoais da organização permanentemente"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27701:2019, cláusula 6.3 e GDPR Art. 35: AIPD identifica riscos de segurança e privacidade em processamentos novos ou modificados, especialmente alto risco. Ferramenta proativa de governança.",
+      "justification_wrong": "B confunde AIPD com auditoria; C é destruição ilegal; D viola princípios de privacidade. AIPD é requisito anterior ao processamento para mitigar riscos, não autorização irrestrita."
+    },
+    {
+      "num": 4,
+      "text": "De acordo com ISO 27701:2019 e LGPD, qual princípio fundamental governa o processamento de dados pessoais de indivíduos?",
+      "tag": "Conceitos de Privacidade e LGPD",
+      "options": [
+        "A. Finalidade: dados coletados somente para propósito lícito, específico e informado ao titular",
+        "C. Armazenamento perpetual: manter dados indefinidamente para segurança",
+        "D. Transparência unilateral: empresa decide o que comunicar ao titular",
+        "B. Maximização de coleta: obter o máximo de dados possível para fins comerciais"
+      ],
+      "correct": 0,
+      "justification_correct": "LGPD Art. 6 (Finalidade), ISO 27701:2019 cláusula 6.2: Princípio da finalidade exige propósito lícito, específico, explícito e informado. Fundamento de toda governança de privacidade.",
+      "justification_wrong": "B viola minimização (GDPR Art. 5); C viola retenção limitada; D viola transparência bilateral. Apenas A alinha-se com LGPD, GDPR e ISO 27701 sobre processamento legítimo e informado."
+    },
+    {
+      "num": 5,
+      "text": "No contexto do ciclo de vida de dados pessoais conforme ISO 27701:2019, qual é a responsabilidade principal durante a fase de 'Destruição ou Anonimização'?",
+      "tag": "Ciclo de Vida e Retenção de Dados",
+      "options": [
+        "B. Transferir dados para outro Controlador sem notificação ao titular",
+        "A. Excluir dados pessoais quando o propósito cessar ou período legal terminar, garantindo não-recuperação",
+        "C. Manter cópias indefinidas para fins de 'segurança histórica'",
+        "D. Anonimizar apenas dados sensíveis, mantendo demais dados identificáveis indefinidamente"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27701:2019, cláusula 6.5 (Retenção e Exclusão): Dados destruídos ou anonimizados irreversivelmente quando finalidade cessa. LGPD Art. 16: direito ao esquecimento. Obrigação de segurança na eliminação.",
+      "justification_wrong": "B viola consentimento; C viola retenção limitada; D é incompleto e seletivo ilicitamente. Apenas A cumpre ciclo de vida íntegro: coleta → processamento → destruição segura conforme prazos legais."
+    },
+    {
+      "num": 6,
+      "text": "Conforme ISO 27701:2019, qual é a principal diferença entre o papel de Controlador e Operador de dados pessoais na estrutura de um PIMS?",
+      "tag": "Papéis e Responsabilidades - Controlador vs Operador",
+      "options": [
+        "D. Ambos possuem responsabilidades idênticas nas auditorias de conformidade",
+        "B. O Operador é sempre responsável legal pela segurança dos dados independentemente de instruções",
+        "C. O Controlador apenas coleta dados; o Operador define políticas de retenção",
+        "A. O Controlador determina propósitos e meios do tratamento; o Operador processa dados conforme instruções do Controlador"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27701 cláusula 5.2 e GDPR Art. 4(7-8): Controlador determina fins/meios; Operador processa conforme instruções. Responsabilidades legais diferem fundamentalmente.",
+      "justification_wrong": "Operador possui responsabilidades limitadas e condicionadas. Controlador não é mero coletor. Responsabilidades não são idênticas conforme ISO 27701:2019."
+    },
+    {
+      "num": 7,
+      "text": "Qual conceito de privacidade estabelecido pela LGPD e alinhado à ISO 27701 refere-se ao direito do titular de dados de conhecer como seus dados são processados?",
+      "tag": "Conceitos de Privacidade - LGPD e Transparência",
+      "options": [
+        "C. Princípio da Integridade e Confidencialidade",
+        "D. Princípio da Segurança de Acesso",
+        "B. Princípio da Transparência e Informação",
+        "A. Princípio da Minimização de Dados"
+      ],
+      "correct": 2,
+      "justification_correct": "LGPD Art. 6(VI) e ISO 27701 cláusula 6.2: Transparência garante que titulares conheçam fins, meios e duração do processamento de seus dados.",
+      "justification_wrong": "Minimização refere-se à quantidade de dados. Integridade/Confidencialidade tratam segurança. Acesso é controle técnico, não princípio de privacidade."
+    },
+    {
+      "num": 8,
+      "text": "Na integração entre ISO 27001 e ISO 27701, qual aspecto adicional o PIMS (Privacy Information Management System) incorpora em relação ao SGSI tradicional?",
+      "tag": "Integração ISO 27001 e ISO 27701 - PIMS",
+      "options": [
+        "C. Eliminação de todos os procedimentos de backup e recuperação",
+        "D. Substituição completa da avaliação de riscos por avaliação de privacidade",
+        "B. Controles específicos para dados pessoais e conformidade com legislação de privacidade (GDPR, LGPD)",
+        "A. Apenas controles criptográficos mais robustos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27701 é extensão de ISO 27001 que adiciona requisitos específicos de privacidade: direitos de titulares, AVP (cláusula 5.8), ciclo de vida de dados (cláusula 6.3-6.4).",
+      "justification_wrong": "Criptografia é controle de 27001. Backup não é eliminado. PIMS complementa, não substitui avaliação de riscos de segurança."
+    },
+    {
+      "num": 9,
+      "text": "Conforme ISO 27701:2019, qual é o objetivo principal da Avaliação de Impacto à Privacidade (AVP) no contexto do ciclo de vida de dados pessoais?",
+      "tag": "Ciclo de Vida de Dados - Avaliação de Impacto à Privacidade (AVP)",
+      "options": [
+        "B. Identificar e mitigar riscos ao direito e às liberdades de titulares de dados antes do processamento",
+        "D. Garantir conformidade apenas com normas ISO, ignorando legislação externa",
+        "A. Implementar criptografia em todas as bases de dados",
+        "C. Substituir testes de penetração de segurança"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701 cláusula 5.8 e GDPR Art. 35: AVP avalia riscos ao direito/liberdade de titulares. Deve ocorrer antes do processamento de alto risco.",
+      "justification_wrong": "Criptografia é controle técnico, não objetivo da AVP. Testes de penetração não substituem AVP. Conformidade legislativa é essencial para AVP."
+    },
+    {
+      "num": 10,
+      "text": "Na gestão do ciclo de vida de dados pessoais segundo ISO 27701, qual fase inclui a definição clara de propósitos, bases legais e direitos dos titulares?",
+      "tag": "Ciclo de Vida de Dados Pessoais - Fase de Planejamento",
+      "options": [
+        "C. Processamento e Análise",
+        "D. Eliminação e Arquivamento",
+        "B. Planejamento e Design (antes da coleta)",
+        "A. Coleta e Armazenamento de dados"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27701 cláusula 6.2-6.3: Planejamento inclui definição de propósitos, base legal, direitos de acesso/retificação/apagamento antes da coleta efetiva.",
+      "justification_wrong": "Coleta é posterior ao planejamento. Processamento/análise ocorrem após definição. Eliminação é fase final do ciclo."
+    },
+    {
+      "num": 11,
+      "text": "Conforme ISO 27701:2019, qual é a principal diferença entre as responsabilidades de um Controlador e um Operador de dados pessoais no contexto de um PIMS (Privacy Information Management System)?",
+      "tag": "Papéis: Controlador vs. Operador",
+      "options": [
+        "B. O Operador é sempre responsável pela conformidade com GDPR/LGPD, independentemente de instruções",
+        "A. O Controlador determina finalidades e meios do tratamento, enquanto o Operador processa dados conforme instruções do Controlador",
+        "C. O Controlador executa operações técnicas, enquanto o Operador define políticas de privacidade",
+        "D. Ambos possuem responsabilidades idênticas na implementação de controles de privacidade"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27701:2019, seção 5.3, define claramente: Controlador determina 'se, como e por que' dados são processados; Operador executa processamento sob instrução do Controlador, mantendo conformidade técnica e organizacional.",
+      "justification_wrong": "Alternativa B ignora subordinação do Operador. C inverte responsabilidades. D desconhece estrutura de governança estabelecida pela norma ISO 27701 e GDPR Artigo 4."
+    },
+    {
+      "num": 12,
+      "text": "Um Controlador necessita integrar controles de privacidade (ISO 27701) com controles de segurança da informação (ISO 27001). Qual afirmação melhor descreve essa integração no contexto de um PIMS?",
+      "tag": "Integração ISO 27001 e ISO 27701",
+      "options": [
+        "B. ISO 27701 substitui completamente ISO 27001 para organizações que tratam dados pessoais",
+        "D. ISO 27701 aplica-se apenas a Operadores de dados, enquanto ISO 27001 aplica-se apenas a Controladores",
+        "A. ISO 27701 estende ISO 27001 com requisitos específicos de privacidade, complementando controles organizacionais e técnicos existentes",
+        "C. Os dois padrões operam independentemente; não há sobreposição ou necessidade de alinhamento"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27701:2019, seção 4, explicita que é uma 'extensão' de ISO 27001. A integração ocorre por: mapeamento de controles (Anexo A), ciclo PDCA único, documentação alinhada, roles definidas conforme Controlador/Operador.",
+      "justification_wrong": "B nega natureza complementar. C ignora dependências normativas. D não reflete que ambas as funções exigem ISO 27001 + cláusulas ISO 27701 específicas (seção 8)."
+    },
+    {
+      "num": 13,
+      "text": "Conforme ISO 27701:2019 e LGPD Art. 5, qual princípio de privacidade é violado quando uma organização coleta dados pessoais sem informar claramente sua finalidade e retém indefinidamente sem justificativa legal?",
+      "tag": "Princípios de Privacidade: LGPD e ISO 27701",
+      "options": [
+        "D. Disponibilidade, pois o Titular não consegue acessar seus dados",
+        "B. Apenas Confidencialidade, pois dados não foram expostos",
+        "C. Integridade, caso os dados tenham sido modificados durante armazenamento",
+        "A. Transparência e Necessidade (Princípios de Finalidade e Retenção conforme ISO 27701:2019, seção 6.2)"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27701:2019, seção 6.2, estabelece controles para Limitação de Finalidade e Retenção. LGPD Art. 5 reafirma necessidade, finalidade explícita e retenção mínima. Violação conjunta dos dois princípios mencionados.",
+      "justification_wrong": "B reduz a apenas confidencialidade. C confunde integridade com finalidade. D desconhece que disponibilidade é direito do Titular (acesso), não violação primária de coleta."
+    },
+    {
+      "num": 14,
+      "text": "Durante uma avaliação de ciclo de vida de dados pessoais em um PIMS, identificou-se que a fase de 'Armazenamento' não possui controles de criptografia em repouso. Qual controle específico de ISO 27701:2019 foi negligenciado?",
+      "tag": "Ciclo de Vida de Dados Pessoais",
+      "options": [
+        "C. Controle A.5.1.2 (Direcionamento de Segurança) - sem relação com criptografia",
+        "A. Controle A.8.2.3 (Criptografia) - Proteção de dados pessoais em repouso conforme ISO 27701, seção 8.2.2",
+        "D. Controle A.12.2.1 (Monitoramento) - que substitui necessidade de criptografia",
+        "B. Controle A.7.1.1 (Acesso Físico) - aplicável apenas a ambientes de servidor"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27701:2019, seção 8.2.2 (Anexo A, A.8.2.3), exige criptografia de dados pessoais em repouso como controle técnico obrigatório. Mapeado ao ciclo: coleta→processamento→armazenamento→destruição, abordando confidencialidade.",
+      "justification_wrong": "B aborda acesso físico apenas. C é genérico. D erra ao dizer monitoramento substitui criptografia; ambos são complementares conforme seção 8.2 da ISO 27701."
+    },
+    {
+      "num": 15,
+      "text": "Um Operador de dados pessoais foi notificado de uma violação de segurança (data breach). Conforme ISO 27701:2019 e LGPD Art. 33, qual é a responsabilidade do Operador perante o Controlador e a Autoridade Supervisora (ANPD)?",
+      "tag": "Gestão de Incidentes de Privacidade",
+      "options": [
+        "B. Operador comunica diretamente à ANPD, sem informar o Controlador, para evitar delegação",
+        "D. Operador comunica à ANPD primeiro, depois ao Controlador, se houver danos comprovados",
+        "C. Operador não tem obrigação de comunicar; responsabilidade é exclusiva do Controlador",
+        "A. Operador comunica incidente ao Controlador sem atrasos; Controlador decide notificação à ANPD conforme LGPD Art. 33 (72h)"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27701:2019, seção 8.3.2 (notificação de incidente), exige Operador notificar Controlador imediatamente. LGPD Art. 33 estabelece Controlador notifica ANPD em 72h se risco de direitos. Operador apoia, não substitui Controlador.",
+      "justification_wrong": "B viola cadeia de responsabilidade. C exime Operador; ISO 27701 define obrigação técnica. D erra sequência e condiciona a 'danos comprovados'; LGPD exige notificação por risco, não certeza."
+    },
+    {
+      "num": 16,
+      "text": "Uma organização implementa um PIMS (Privacy Information Management System) conforme ISO 27701:2019. Qual é a principal diferença entre as responsabilidades de um Controlador de dados pessoais e um Operador no contexto desta norma?",
+      "tag": "Papel Controlador vs. Operador",
+      "options": [
+        "D. Ambos possuem responsabilidades idênticas no ciclo de vida dos dados pessoais",
+        "C. O Controlador apenas coleta dados; o Operador realiza todas as atividades de processamento",
+        "B. O Operador é sempre responsável pela conformidade com GDPR/LGPD independentemente do contrato",
+        "A. O Controlador determina finalidades e meios do tratamento; o Operador processa conforme instruções do Controlador"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27701:2019, cláusula 5.2 e 5.3: Controlador determina objetivos/meios; Operador age sob instrução do Controlador. GDPR Art. 4(7) e 4(8) reforçam estas distinções fundamentais de responsabilidade e accountability.",
+      "justification_wrong": "Alternativa B é incorreta: responsabilidade é compartilhada conforme contrato (Art. 28 GDPR). C nega papel do Controlador. D ignora diferenças legais e normativas estabelecidas."
+    },
+    {
+      "num": 17,
+      "text": "Ao integrar controles de privacidade ISO 27701 com controles de segurança ISO 27001, uma organização identifica que o controle A.8.1.1 (ISO 27001) sobre inventário de ativos conflita com requisitos de privacidade. Qual abordagem está alinhada com a integração normativa?",
+      "tag": "Integração ISO 27001 e ISO 27701",
+      "options": [
+        "B. Estender o inventário de ativos para incluir ciclo de vida completo de dados pessoais, mantendo rastreabilidade de privacidade",
+        "D. Eliminar controles ISO 27001 que tratem dados pessoais",
+        "C. Priorizar ISO 27701 sobre ISO 27001 em caso de conflito",
+        "A. Manter os sistemas separados para evitar sobreposição de controles"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019, cláusula 4.2: integração complementar com ISO 27001. Extensão A.8.1.1 (ISO 27701) determina que inventários de ativos devem rastrear dados pessoais, seu ciclo de vida e responsabilidades associadas.",
+      "justification_wrong": "A ignora sinergia normativa. C cria hierarquia inexistente. D elimina base de segurança essencial. Integração significa expandir, não substituir."
+    },
+    {
+      "num": 18,
+      "text": "Durante uma avaliação de conformidade GDPR/LGPD dentro de um PIMS, identifica-se que a organização não documenta o 'direito ao esquecimento' (GDPR Art. 17) no seu processo de ciclo de vida de dados pessoais. Qual controle ISO 27701 deve ser aplicado para remediar esta lacuna?",
+      "tag": "Ciclo de Vida de Dados Pessoais e GDPR",
+      "options": [
+        "B. Controle A.8.2.4 (ISO 27701) - Exclusão de dados pessoais",
+        "C. Controle A.5.2.2 (ISO 27701) - Política de retenção de dados",
+        "A. Controle A.7.3.1 (ISO 27701) - Determinação de requisitos de privacidade",
+        "D. Controle A.6.1.1 (ISO 27701) - Consentimento do titular"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019, controle A.8.2.4 estabelece procedimentos para exclusão/destruição de dados pessoais conforme requisitos legais. GDPR Art. 17 exige direito ao esquecimento. Este controle operacionaliza o ciclo de vida completo.",
+      "justification_wrong": "A trata determinação inicial. C foca retenção, não exclusão. D trata consentimento. Apenas A.8.2.4 explicita processos de exclusão obrigatória conforme GDPR Art. 17."
+    },
+    {
+      "num": 19,
+      "text": "Uma organização atua como Processador (Operador) de dados de e-commerce. Conforme ISO 27701 e GDPR, qual documento é OBRIGATÓRIO manter registrado para demonstrar conformidade com o artigo 28 (GDPR) e requisitos de privacidade?",
+      "tag": "GDPR Art. 28 e Documentação PIMS",
+      "options": [
+        "C. Política de privacidade visível ao público em website",
+        "A. Apenas registros de acesso a servidores de dados",
+        "D. Relatório anual de incidentes de segurança",
+        "B. Contrato de Processamento de Dados (DPA) com cláusulas específicas de segurança, subprocessadores e direitos dos titulares"
+      ],
+      "correct": 3,
+      "justification_correct": "GDPR Art. 28 obriga Contrato de Processamento (DPA). ISO 27701:2019, cláusula A.8.3 requer documentação de acordos Controlador-Operador com obrigações de privacidade, segurança, subprocessamento e direitos de titular.",
+      "justification_wrong": "A é insuficiente; DPA vai além de logs. C é comunicação, não obrigação legal. D não atende Art. 28. Apenas DPA formaliza responsabilidades legais obrigatórias entre partes."
+    },
+    {
+      "num": 20,
+      "text": "Durante implementação de PIMS, uma organização deve executar uma Avaliação de Impacto sobre Proteção de Dados (AIPD/DPIA). Conforme ISO 27701 e GDPR, quando esta avaliação é OBRIGATÓRIA?",
+      "tag": "AIPD/DPIA e Risco de Privacidade",
+      "options": [
+        "D. Somente após ocorrência de incidente de segurança",
+        "A. Sempre que qualquer processamento de dados pessoais é iniciado",
+        "B. Apenas para processamento de dados de menores de idade",
+        "C. Quando o processamento apresenta risco elevado aos direitos/liberdades dos titulares (ex: biometria, decisões automatizadas em larga escala)"
+      ],
+      "correct": 3,
+      "justification_correct": "GDPR Art. 35 obriga DPIA quando processamento gera risco elevado (ex: biometria, dados sensíveis, decisões automatizadas). ISO 27701:2019, cláusula A.7.4.1 operacionaliza este requisito em avaliações de risco de privacidade.",
+      "justification_wrong": "A é desproporcional; nem todo processamento exige DPIA. B é específico demais. D é reativo, não preventivo. GDPR Art. 35 estabelece obrigação apenas para processamento de risco elevado."
+    },
+    {
+      "num": 21,
+      "text": "Conforme ISO 27701:2019, qual é a principal diferença entre as responsabilidades de um Controlador e um Operador de dados pessoais na implementação de um PIMS?",
+      "tag": "Papéis de Controlador vs. Operador",
+      "options": [
+        "D. O Controlador apenas autoriza o Operador, sem envolvimento na governança de dados",
+        "B. O Operador é sempre responsável pela conformidade com GDPR/LGPD, independentemente do Controlador",
+        "C. Ambos possuem responsabilidades idênticas na implementação de controles de privacidade",
+        "A. O Controlador determina finalidades e meios do processamento, enquanto o Operador processa dados sob instruções do Controlador"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27701:2019, seção 6.2, define claramente: Controlador determina propósitos e meios; Operador executa sob instruções documentadas. GDPR Art. 4(7) e LGPD Art. 5 confirmam esta distinção fundamental para alocação de responsabilidades.",
+      "justification_wrong": "Alternativas B, C, D distorcem responsabilidades. Operador não é sempre responsável isoladamente (B), responsabilidades não são idênticas (C), e Controlador possui papel ativo na governança (D)."
+    },
+    {
+      "num": 22,
+      "text": "No contexto de integração entre ISO 27001, ISO 27002 e ISO 27701, qual controle de ISO 27002 é especificamente estendido por ISO 27701 para abordar ciclo de vida de dados pessoais?",
+      "tag": "Integração de Normas ISMS e PIMS",
+      "options": [
+        "A. A8.3 (Segurança física e do ambiente) é estendida para proteger dados pessoais em mídia removível",
+        "D. A9.1 (Controle de acesso) é estendido unicamente para criptografia de dados pessoais",
+        "B. A5.2 (Posicionamento e responsabilidades de segurança da informação) é estendida com papéis específicos de Controlador/Operador",
+        "C. A13.1 (Gerenciamento de incidentes de segurança) é estendida apenas para notificação obrigatória à autoridade reguladora"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27701:2019, seção 5, integra A5.2 de ISO 27002, expandindo responsabilidades com papéis de Controlador, Operador e DPO. LGPD Art. 37-38 e GDPR Art. 37 reforçam necessidade de designação clara de responsabilidades.",
+      "justification_wrong": "A é específica demais (mídia removível não é extensão principal); C reduz escopo (notificação é requisito legal, não extensão de controle); D é impreciso (criptografia não é extensão exclusiva de A9.1)."
+    },
+    {
+      "num": 23,
+      "text": "Segundo ISO 27701:2019 e LGPD, qual é a obrigação primária de um Controlador de dados pessoais durante a fase de descarte no ciclo de vida de dados?",
+      "tag": "Ciclo de Vida de Dados Pessoais",
+      "options": [
+        "D. Arquivar dados em formato criptografado sem necessidade de exclusão posterior",
+        "B. Excluir ou anonimizar dados pessoais de forma segura, respeitando direito ao esquecimento (right to be forgotten)",
+        "C. Transferir dados para terceiros especializados em armazenamento de longo prazo",
+        "A. Manter dados indefinidamente para possíveis auditorias futuras"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27701:2019, A5.3.6, e LGPD Art. 16 exigem exclusão segura de dados quando finalidade cessou. GDPR Art. 17 (direito ao esquecimento) e LGPD Art. 18 estabelecem obrigação de eliminação ou anonimização irreversível.",
+      "justification_wrong": "A viola princípio de limitação de retenção; C transfere responsabilidade sem eliminação definitiva; D mantém dados indefinidamente, violando princípios LGPD/GDPR de minimização e retenção limitada."
+    },
+    {
+      "num": 24,
+      "text": "Em um PIMS implementado conforme ISO 27701:2019, qual é o propósito principal da Avaliação de Impacto à Proteção de Dados (DPIA/AIPD) e quando sua realização é obrigatória?",
+      "tag": "Conceitos de Privacidade: DPIA/AIPD",
+      "options": [
+        "A. Documentar tecnologias utilizadas no processamento, realizada anualmente sem obrigatoriedade",
+        "C. Validar conformidade com ISO 27001, realizada exclusivamente por auditores externos",
+        "B. Identificar e mitigar riscos ao direitos dos titulares antes de processamentos de alto risco, obrigatória conforme GDPR Art. 35 e LGPD Art. 32",
+        "D. Autorizar transferências internacionais de dados sem análise prévia de riscos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27701:2019, A5.2.10, e GDPR Art. 35 definem DPIA como avaliação prospectiva de risco. LGPD Art. 32 exige análise impacto para operações críticas. Obrigatoriedade ocorre para processamentos alto risco à privacidade.",
+      "justification_wrong": "A é superficial (documentação vs. avaliação de risco); C restringe executores indevidamente; D contradiz princípios de accountability e governança de transferências internacionais."
+    },
+    {
+      "num": 25,
+      "text": "Conforme ISO 27701:2019 e LGPD, qual é a responsabilidade específica de um Operador de dados quando este contrata um sub-processador (subcontratado)?",
+      "tag": "Governança de Operadores e Sub-processadores",
+      "options": [
+        "A. O Operador pode contratar qualquer sub-processador sem informar Controlador, transferindo integralmente responsabilidade",
+        "D. O Operador apenas notifica Controlador após contratação, sem necessidade de conformidade adicional",
+        "C. O sub-processador assume todas as obrigações legais, liberando Operador de qualquer responsabilidade",
+        "B. O Operador mantém responsabilidade plena, devendo obter consentimento prévio do Controlador e garantir conformidade do sub-processador"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27701:2019, A5.2.9, GDPR Art. 28(2)-(4) e LGPD Art. 33(1)-(2) estabelecem que Operador permanece responsável, necessita autorização prévia Controlador e contrato com sub-processador deve garantir conformidade.",
+      "justification_wrong": "A elimina accountability do Operador; C transfere responsabilidade indevidamente (Operador permanece responsável); D reduz obrigações (pós-contratação não é suficiente; consentimento prévio obrigatório)."
+    },
+    {
+      "num": 26,
+      "text": "Uma organização implementa um PIMS (Privacy Information Management System) conforme ISO 27701:2019. Durante a integração com ISO 27001, qual controle de privacidade deve ser mapeado especificamente para garantir que direitos dos titulares de dados sejam exercidos dentro de prazos legais (GDPR Art. 12)?",
+      "tag": "Integração ISO 27001/27701 e exercício de direitos",
+      "options": [
+        "A. A5.1.2 - Avaliar e documentar fluxos de dados pessoais, com procedimentos de resposta a solicitações de direitos em SLA máximo de 30 dias",
+        "B. A8.2.1 - Implementar criptografia end-to-end para todos os dados pessoais em repouso",
+        "C. A7.1.3 - Manter logs de acesso exclusivamente para auditoria interna",
+        "D. A6.2.2 - Delegar responsabilidades de privacidade apenas ao Data Protection Officer"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019, Anexo A, A5.1.2 exige avaliação contínua de fluxos de dados. GDPR Art. 12(3) estabelece 30 dias para responder direitos dos titulares. Procedimentos formalizados em SLA garantem conformidade legal e operacional.",
+      "justification_wrong": "A8.2.1 aborda confidencialidade técnica, não exercício de direitos. A7.1.3 limita-se a auditoria. A6.2.2 concentra responsabilidade inadequadamente, violando princípio de accountability distribuído da ISO 27701."
+    },
+    {
+      "num": 27,
+      "text": "Ao classificar papéis em um cenário de processamento de dados pessoais conforme ISO 27701, uma fintech contrata um provedor de nuvem para armazenar dados de clientes. O contrato estabelece que a fintech define 'o quê' e 'por quê' processar, enquanto o provedor executa 'como'. Qual é a relação correta entre as partes?",
+      "tag": "Papéis Controlador vs. Operador e responsabilidades contratuais",
+      "options": [
+        "D. O provedor é um sub-processador, sem necessidade de contrato explícito caso use criptografia AES-256",
+        "B. Fintech = Operador; Provedor = Controlador. O provedor assume responsabilidade legal conforme LGPD Art. 5º",
+        "C. Ambas são Controladoras conjuntas, dispensando acordo formal de processamento",
+        "A. Fintech = Controlador; Provedor = Operador. Contrato deve incluir termos de ISO 27701 Anexo A.6 sobre processamento sob instrução e segurança"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27701:2019, A.6.1 e A.6.2 definem papéis: Controlador determina fins/meios; Operador processa sob instrução. Contrato deve cobrir A.6.3 (termos de processamento). GDPR Art. 28 e LGPD Art. 5º exigem acordo escrito.",
+      "justification_wrong": "Inversão de papéis em B viola responsabilidade legal. C ignora requisito de contrato formal. D subestima obrigações: criptografia não substitui acordo contratual, e sub-processadores também requerem contrato (GDPR Art. 28(2-4))."
+    },
+    {
+      "num": 28,
+      "text": "Durante avaliação de impacto sobre privacidade (DPIA), conforme ISO 27701:2019 e GDPR Art. 35, uma organização identifica processamento de dados de categoria especial de menores. Qual controle deve ser priorizado na matriz de risco PIMS para mitigar este cenário crítico?",
+      "tag": "DPIA, categorias especiais de dados e controles mitigadores",
+      "options": [
+        "C. A.7.2.1 - Monitoramento contínuo com alertas em tempo real para qualquer acesso a dados de menores",
+        "A. A.5.2.3 - Consentimento informado documentado e controles de acesso com segregação de funções para dados de menores",
+        "D. A.4.1.2 - Destruição permanente dos dados após 12 meses, independentemente de finalidade legal",
+        "B. A.8.1.1 - Pseudonimização obrigatória de todos os identificadores com chave de reversão armazenada separadamente"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27701:2019, A.5.2.3 exige consentimento explícito e segregação para dados sensíveis. GDPR Art. 8 requer consentimento dos responsáveis para menores. Controles de acesso reduzem risco de exposição não autorizada.",
+      "justification_wrong": "Pseudonimização em B é complementar, não primária. C (monitoramento) é detective, não preventiva. D (destruição em 12 meses) viola princípio de retenção legítima e LGPD Art. 16 sobre prazos baseados em finalidade legal."
+    },
+    {
+      "num": 29,
+      "text": "Uma organização implementa o ciclo de vida de dados pessoais conforme ISO 27701:2019. Na fase de 'uso', identifica-se acesso excessivo por funcionários. Qual combinação de controles de ISO 27701 (Anexo A) e ISO 27002 deve ser aplicada para garantir princípio de 'minimização de dados' (GDPR Art. 5)?",
+      "tag": "Ciclo de vida de dados e princípio de minimização",
+      "options": [
+        "C. A.4.1.1 (Coleta limitada) + destruição de backups históricos sem análise de retenção legal",
+        "B. A.8.3.1 (Criptografia) + A.7.1.2 (logs de auditoria) apenas, sem restrição de acesso",
+        "D. A.5.2.1 (Política de consentimento) + eliminação automática de dados após 6 meses para todos os casos",
+        "A. A.5.1.1 (Políticas de dados) + A.9.2.1 (controle de acesso baseado em necessidade) + ISO 27002 A.9.2.5 (revisão de direitos de acesso)"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27701:2019, A.5.1.1 estabelece políticas de minimização. A.9.2.1 implementa controle de acesso por necessidade ('need-to-know'). ISO 27002 A.9.2.5 revisa direitos periodicamente. Conjunto garante acesso proporcional à finalidade.",
+      "justification_wrong": "B (criptografia/logs) é detective, não preventiva de acesso excessivo. C ignora obrigações legais de retenção. D padroniza prazo sem considerar bases legais distintas (contrato, obrigação legal, interesse legítimo per GDPR Art. 6)."
+    },
+    {
+      "num": 30,
+      "text": "Uma organização multinacional processa dados pessoais em múltiplas jurisdições (Brasil/UE). Qual abordagem de governança PIMS, conforme ISO 27701:2019, garante conformidade simultânea com LGPD e GDPR sem redundância operacional?",
+      "tag": "Governança transnacional, LGPD, GDPR e integração PIMS",
+      "options": [
+        "C. Priorizar conformidade LGPD globalmente, pois GDPR está em revisão (Digital Services Act)",
+        "A. Implementar padrão único baseado nos requisitos mais restritivos (GDPR), estruturar PIMS em Anexo A.2 (políticas corporativas) com configurações por jurisdição, e mapear obrigações legais em matriz de conformidade",
+        "B. Aplicar LGPD no Brasil e GDPR na UE em paralelo, mantendo sistemas PIMS completamente separados por geografia",
+        "D. Delegar conformidade a controladores locais sem coordenação centralizada, evitando responsabilidade corporativa"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27701:2019, A.2 recomenda políticas corporativas escaláveis com adaptações contextuais. Padrão mínimo = requisitos mais restritivos evita lacunas. Matriz de conformidade (ISO 27001 Anexo A) rastreia obrigações LGPD Art. 5-8 e GDPR Art. 5-6 simultaneamente.",
+      "justification_wrong": "B gera redundância operacional incompatível com eficiência. C desconsidera obrigações GDPR vigentes. D viola princípio de accountability (GDPR Art. 5(2), LGPD Art. 2º) e expõe organização a multas cumulativas em múltiplas jurisdições."
+    },
+    {
+      "num": 31,
+      "text": "Uma organização implementa um PIMS (Privacy Information Management System) baseado em ISO 27701. Qual é a principal diferença entre as responsabilidades de um Controlador de dados e um Operador de dados pessoais conforme definido na ISO 27701 e GDPR?",
+      "tag": "Papéis e Responsabilidades - Controlador vs. Operador",
+      "options": [
+        "D. Ambos possuem responsabilidades idênticas em relação à conformidade com GDPR e ISO 27701",
+        "C. O Controlador apenas coleta dados, enquanto o Operador realiza todas as análises e processamentos",
+        "A. O Controlador determina os propósitos e meios do processamento, enquanto o Operador processa dados sob instrução do Controlador",
+        "B. O Operador tem responsabilidade total sobre a segurança dos dados, independentemente do Controlador"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27701:2019 parágrafo 5.2 e GDPR Artigo 4º definem claramente: Controlador determina propósitos/meios; Operador processa sob instrução. Isso estabelece cadeia responsabilidade essencial para governança de privacidade.",
+      "justification_wrong": "Alternativas B, C e D contradizem normas. Operador não tem responsabilidade total (compartilhada), Controlador não apenas coleta, e responsabilidades não são idênticas conforme GDPR Art. 24-28 e ISO 27701 seção 5."
+    },
+    {
+      "num": 32,
+      "text": "Durante a implementação de um PIMS integrado à ISO 27001, um Lead Implementer identifica que o ciclo de vida dos dados pessoais não está documentado. Quais são as fases críticas que devem ser mapeadas conforme ISO 27701?",
+      "tag": "Ciclo de Vida de Dados Pessoais",
+      "options": [
+        "A. Apenas coleta, armazenamento e exclusão",
+        "C. Coleta e armazenamento, com exclusão opcional ao final",
+        "D. Processamento e transmissão, sem necessidade de documentar coleta ou exclusão",
+        "B. Coleta, processamento, armazenamento, transmissão, exclusão e destruição conforme propósitos originais"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27701:2019 anexo A.5.1.1 mapeia ciclo completo: coleta, processamento, armazenamento, transmissão, exclusão/destruição. Cada fase requer controles específicos de privacidade alinhados a ISO 27002 e requisitos GDPR/LGPD.",
+      "justification_wrong": "Alternativa A omite transmissão e destruição. C não reconhece destruição como mandatória. D ignora coleta e exclusão, violando obrigações de direito ao esquecimento (GDPR Art. 17) e LGPD Art. 16."
+    },
+    {
+      "num": 33,
+      "text": "Uma organização necessita realizar uma Avaliação de Impacto à Proteção de Dados (AIPD/DPIA) conforme ISO 27701 e GDPR. Em qual situação esta avaliação é obrigatória segundo as normas?",
+      "tag": "Governança e Conformidade - DPIA/AIPD",
+      "options": [
+        "A. Apenas quando há transferência internacional de dados para fora da UE",
+        "B. Quando processamento envolve dados sensíveis, automação de decisões, monitoramento sistemático ou processamento em larga escala",
+        "D. Quando há reclamação de usuários, independentemente do tipo de processamento",
+        "C. Somente se a organização processa mais de 10 mil registros mensais"
+      ],
+      "correct": 1,
+      "justification_correct": "GDPR Art. 35 e ISO 27701:2019 seção 6.3 definem cenários obrigatórios: dados sensíveis (Art. 9), automação de decisões (Art. 22), monitoramento sistemático, processamento em larga escala. AIPD é ferramenta essencial de accountability.",
+      "justification_wrong": "A restringe indevidamente (AIPD obrigatória além transferências). C usa volume como critério exclusivo (incorreto, contexto importa mais). D é reativo, quando AIPD é preventiva conforme GDPR e ISO 27701."
+    },
+    {
+      "num": 34,
+      "text": "Um Lead Implementer integra PIMS com ISO 27001:2022. Qual é o relacionamento correto entre controles ISO 27002 e extensões de privacidade ISO 27701?",
+      "tag": "Integração ISO 27001 - ISO 27701 - ISO 27002",
+      "options": [
+        "B. ISO 27002 fornece controles genéricos de segurança que ISO 27701 estende com requisitos específicos de privacidade (direitos de titulares, consentimento, portabilidade)",
+        "C. ISO 27701 e ISO 27002 são independentes e não devem ser combinadas na mesma implementação",
+        "A. ISO 27701 substitui completamente ISO 27001, tornando-a obsoleta para privacidade",
+        "D. ISO 27002 cobre privacidade, enquanto ISO 27701 cobre apenas segurança de informações"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019 parágrafo 1 e seção 4 definem-a como extensão de ISO 27001/27002. ISO 27002 fornece base técnica; ISO 27701 adiciona controles A.5 (direitos, consentimento, portabilidade) e A.6 (responsabilidades) de privacidade.",
+      "justification_wrong": "A nega propósito de extensão. C ignora integração obrigatória para PIMS efetivo. D inverte escopo: ISO 27002 é segurança genérica, ISO 27701 estende com privacidade conforme GDPR/LGPD."
+    },
+    {
+      "num": 35,
+      "text": "Uma operadora de saúde processa dados de pacientes em múltiplas jurisdições (Brasil, UE, EUA). Qual abordagem um Lead Implementer ISO 27701 deve adotar para conformidade?",
+      "tag": "Conformidade Multi-jurisdicional - GDPR, LGPD",
+      "options": [
+        "B. Aplicar padrão mais rigoroso (GDPR) globalmente como baseline de segurança/privacidade, complementando com requisitos locais (LGPD) conforme ISO 27701",
+        "D. Focar em conformidade GDPR/UE, ignorando LGPD pois afeta menor volume de dados",
+        "C. Criar três PIMS separados, um por jurisdição, sem integração",
+        "A. Implementar PIMS baseado apenas em LGPD, pois a organização é brasileira"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019 seção 5.1 recomenda abordagem orientada ao risco com conformidade multi-jurisdicional. GDPR (Art. 3) e LGPD (Art. 1º) aplicam-se extraterritorialmente. Baseline GDPR + requisitos locais = conformidade otimizada.",
+      "justification_wrong": "A nega aplicabilidade GDPR. C gera fragmentação e custos desnecessários; ISO 27701 promove integração. D viola LGPD aplicável a dados brasileiros e titulares no Brasil, independentemente de volume ou localização."
+    },
+    {
+      "num": 36,
+      "text": "Uma organização implementa um PIMS (Privacy Information Management System) conforme ISO 27701. Qual é a relação hierárquica entre os controles de privacidade e os controles de segurança da informação segundo a norma?",
+      "tag": "Integração ISO 27701 com ISO 27001",
+      "options": [
+        "A. Os controles de privacidade estendem e complementam os controles de segurança da ISO 27001, não os substituem",
+        "B. Os controles de privacidade substituem completamente os controles de segurança em contextos de dados pessoais",
+        "D. Os controles de segurança têm prioridade absoluta sobre controles de privacidade",
+        "C. Não existe relação hierárquica; são sistemas independentes e paralelos"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019 estabelece que PIMS é extensão de ISMS baseado em ISO 27001. Os controles de privacidade (Anexo A: A.1-A.8) complementam controles de segurança, criando estrutura integrada. Cláusula 4.2 reforça alinhamento com ISO 27001.",
+      "justification_wrong": "Controles não são independentes. PIMS depende de base de segurança ISMS. Privacidade não substitui segurança; ambas são necessárias para proteção dados pessoais em conformidade regulatória."
+    },
+    {
+      "num": 37,
+      "text": "No contexto de LGPD, uma empresa atua como Operador de Dados Pessoais processando informações em nome de um Controlador. Qual responsabilidade NÃO é do Operador segundo a norma ISO 27701 e LGPD?",
+      "tag": "Papéis Controlador vs Operador – LGPD/GDPR",
+      "options": [
+        "C. Assistir Controlador em cumprimento de direitos dos titulares (acesso, exclusão)",
+        "B. Determinar bases legais e finalidades do processamento de dados pessoais",
+        "D. Manter registros de atividades de processamento sob direção do Controlador",
+        "A. Implementar medidas técnicas e organizacionais de segurança conforme contrato de processamento"
+      ],
+      "correct": 1,
+      "justification_correct": "LGPD Art. 5º e ISO 27701 Cláusula 6.2 definem: Controlador determina bases legais e finalidades. Operador executa processamento sob instrução. Determinação de legalidade é responsabilidade exclusiva do Controlador, não delegável.",
+      "justification_wrong": "Operador é responsável por medidas de segurança (Art. 32 LGPD), assistência a direitos dos titulares e manutenção de registros. Apenas determinação de finalidades e bases legais permanece com Controlador."
+    },
+    {
+      "num": 38,
+      "text": "Uma organização implementa Data Protection Impact Assessment (DPIA) conforme ISO 27701. Em qual fase do ciclo de vida dos dados pessoais esse instrumento é MAIS CRÍTICO para um Lead Implementer alocar recursos?",
+      "tag": "Ciclo de vida de dados pessoais – DPIA",
+      "options": [
+        "B. Fase de concepção e design de novos processos de tratamento antes da implementação",
+        "D. Fase de compartilhamento, apenas quando há transferência internacional",
+        "A. Fase de retenção, quando dados já estão armazenados e processados",
+        "C. Fase de exclusão, quando dados são descartados do sistema"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019 Cláusula 6.4 e GDPR Art. 35 exigem DPIA antes de tratamento de risco elevado. Detecção precoce de riscos em design reduz custos remediação. DPIA prospectivo previne incidentes, não reativo.",
+      "justification_wrong": "DPIA em fases posteriores (retenção, exclusão) é remedial. Compliance exige avaliação a priori durante concepção. Compartilhamento internacional requer DPIA, mas não é fase única crítica da norma."
+    },
+    {
+      "num": 39,
+      "text": "Segundo ISO 27701:2019, qual controle do Anexo A diferencia EXPLICITAMENTE um PIMS de um ISMS tradicional baseado em ISO 27001?",
+      "tag": "Conceitos PIMS – Controles específicos privacidade",
+      "options": [
+        "B. Controle A.5 (Direitos do titular de dados) e A.6 (Consentimento e contratos) como elementos únicos de privacidade",
+        "C. Controle A.3 (Classificação de informações) idêntico aos requisitos ISO 27002",
+        "D. Controle A.7 (Transferência internacional de dados) como único controle de PIMS",
+        "A. Controle A.1 (Políticas de privacidade) e A.2 (Governança de privacidade) como estrutura de privacidade"
+      ],
+      "correct": 0,
+      "justification_correct": "Controles A.5 e A.6 de ISO 27701 são privacidade-específicos: gestão direitos titulares, consentimento informado, cláusulas contratuais de privacidade. ISO 27001/27002 não abordam direitos titulares ou consentimento explicitamente.",
+      "justification_wrong": "A.1/A.2 são estruturais. A.3 existe em ISO 27002. A.7 é importante, mas não único. Diferenciação real está em direitos dos titulares (A.5) e consentimento (A.6), não em transferências ou governança."
+    },
+    {
+      "num": 40,
+      "text": "Um Lead Implementer ISO 27701 realiza auditoria interna e identifica que a organização coleta dados pessoais de menores sem mecanismo de consentimento parental documentado. Qual norma e artigo é PRIORITÁRIO para remediação imediata?",
+      "tag": "Conformidade LGPD/GDPR – Consentimento menores",
+      "options": [
+        "A. ISO 27001:2022 Cláusula 8.3 (Acesso e controle de acessos)",
+        "D. GDPR Art. 25 (Privacy by design apenas em contextos de transferência)",
+        "C. ISO 27002 Controle 5.1.1 (Políticas de segurança da informação)",
+        "B. LGPD Art. 14 e GDPR Art. 8 (Consentimento de menores – consentimento parental obrigatório)"
+      ],
+      "correct": 3,
+      "justification_correct": "LGPD Art. 14 e GDPR Art. 8 exigem consentimento parental/representante legal para menores. Não conformidade é violação regulatória grave, incorrendo em sanções administrativas. ISO 27701 Cláusula 6.3 reforça este requisito.",
+      "justification_wrong": "ISO 27001/27002 abordam segurança, não consentimento parental específico. Privacy by design (GDPR Art. 25) é processual, não substitui obrigação legal de consentimento parental documentado para menores."
+    },
+    {
+      "num": 41,
+      "text": "De acordo com ISO 27701:2019, qual é a principal distinção entre um Controlador e um Operador de dados pessoais no contexto de um PIMS (Privacy Information Management System)?",
+      "tag": "Papel de Controlador vs. Operador",
+      "options": [
+        "B. O Operador é sempre responsável pela conformidade com GDPR/LGPD, independentemente das instruções recebidas",
+        "A. O Controlador determina as finalidades e meios do tratamento, enquanto o Operador processa dados conforme instruções do Controlador",
+        "D. O Controlador apenas coleta dados, enquanto o Operador realiza todas as análises e armazenamento",
+        "C. Ambos possuem responsabilidades idênticas quanto à segurança de dados pessoais"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27701:2019, seção 8.1 e Anexo A, define claramente: Controlador determina 'finalidades e meios' do tratamento; Operador processa 'sob instrução' do Controlador. GDPR Art. 4(7) e 4(8) corroboram essa distinção fundamental.",
+      "justification_wrong": "Operador não é responsável primário por conformidade regulatória (accountability é do Controlador per GDPR Art. 5). Responsabilidades não são idênticas. Controlador não apenas coleta; determina todo o contexto do tratamento."
+    },
+    {
+      "num": 42,
+      "text": "Conforme ISO 27701:2019, qual controle de privacidade deve ser implementado para garantir que dados pessoais sejam coletados apenas para finalidades legítimas e explicitamente comunicadas?",
+      "tag": "Conceitos de Privacidade e GDPR/LGPD",
+      "options": [
+        "B. Documentação de consentimento obtido após coleta de dados",
+        "D. Criptografia end-to-end de todos os dados pessoais durante a coleta",
+        "C. Princípio de Transparência e Limitação de Finalidade com política de privacidade clara antes da coleta",
+        "A. Implementação de Avaliação de Impacto à Proteção de Dados (AIPD) exclusivamente"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27701:2019, cláusula A.5.1 e A.6.1, exige Transparência e Limitação de Finalidade. GDPR Art. 6 e 13/14 e LGPD Art. 6 e 8 determinam consentimento e informações prévias à coleta, não após.",
+      "justification_wrong": "AIPD é controle complementar, não exclusivo. Consentimento deve preceder coleta. Criptografia é medida técnica de segurança, não garante finalidade legítima ou transparência."
+    },
+    {
+      "num": 43,
+      "text": "Na integração entre ISO 27001:2022 e ISO 27701:2019, qual é o impacto de um PIMS implementado sobre os controles de segurança da informação preexistentes?",
+      "tag": "Integração ISO 27001 e ISO 27701",
+      "options": [
+        "B. O PIMS estende os controles ISO 27001 com requisitos específicos de privacidade, mantendo compatibilidade e criando camadas adicionais",
+        "D. O PIMS reduz a necessidade de criptografia e autenticação multifator previstas em ISO 27001",
+        "C. Os controles ISO 27001 e ISO 27701 são independentes e não devem ser integrados no mesmo SGSI",
+        "A. O PIMS substitui completamente os controles ISO 27001, tornando-os obsoletos"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019, Introdução e cláusula 4.2, explicita que PIMS 'estende' SGSI ISO 27001 sem substituição. Cria estrutura integrada de controles privacidade+segurança conforme ISO 27001:2022 Anexo A e ISO 27002:2022.",
+      "justification_wrong": "PIMS não substitui; complementa. Não são independentes; integração é mandatória (ISO 27701:4.2). PIMS não reduz controles criptográficos; exige-os como base."
+    },
+    {
+      "num": 44,
+      "text": "Em relação ao ciclo de vida de dados pessoais conforme ISO 27701:2019, qual fase requer documentação específica de Avaliação de Impacto à Proteção de Dados (AIPD)?",
+      "tag": "Ciclo de Vida de Dados Pessoais",
+      "options": [
+        "A. Apenas na fase de coleta e armazenamento inicial",
+        "C. Exclusivamente na fase de exclusão de dados para auditoria final",
+        "B. Na fase de planejamento de novo tratamento que representa risco alto à privacidade, antes da implementação",
+        "D. Continuamente em todas as fases, a cada semana, sem exceção"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27701:2019, cláusula A.5.2 e A.8.2, junto com GDPR Art. 35 e LGPD Art. 32, requerem AIPD no 'planejamento' de tratamentos de alto risco antes da implementação.",
+      "justification_wrong": "AIPD não é exclusiva de coleta ou exclusão. Não é contínua semanalmente; realiza-se quando contexto operacional muda significativamente ou novo tratamento de alto risco é proposto."
+    },
+    {
+      "num": 45,
+      "text": "Conforme ISO 27701:2019 e LGPD/GDPR, qual é a obrigação primária de um Controlador de dados pessoais quando uma violação de segurança (vazamento) é detectada?",
+      "tag": "Conceitos de Privacidade - Violações e Notificação",
+      "options": [
+        "A. Notificar imediatamente todos os dados afetados em redes sociais para transparência",
+        "D. Implementar bloqueio de sistema por 30 dias como prova de responsabilidade",
+        "C. Notificar as autoridades supervisoras sem demora injustificada (72h GDPR) e, conforme risco, os titulares dos dados",
+        "B. Documentar internamente e aguardar requisição regulatória para divulgação"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27701:2019, cláusula A.8.3, GDPR Art. 33-34 e LGPD Art. 18, obrigam notificação à autoridade sem demora injustificada (72h GDPR) e aos titulares quando risco elevado.",
+      "justification_wrong": "Redes sociais não são canal oficial regulatório. Aguardar requisição viola mandato legal. Bloqueio de sistema não substitui notificação obrigatória e pode prejudicar investigação."
+    },
+    {
+      "num": 46,
+      "text": "Conforme ISO 27701:2019, ao integrar um PIMS (Privacy Information Management System) com a estrutura existente de ISO 27001, qual processo é MANDATÓRIO para garantir conformidade com ambos os padrões?",
+      "tag": "Integração PIMS e ISO 27001",
+      "options": [
+        "C. Implementar apenas os controles de criptografia e acesso, descartando controles de governança de privacidade",
+        "D. Certificar-se apenas no SGSI (ISO 27001) e ignorar a extensão de privacidade da ISO 27701",
+        "B. Substituir completamente os controles ISO 27001 pelos controles específicos de privacidade da ISO 27701",
+        "A. Realizar mapeamento de controles de privacidade (Anexo A ISO 27701) contra controles de segurança (Anexo A ISO 27001) com identificação de lacunas"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27701:2019 (cláusula 4.1 e Anexo A) estabelece que o PIMS deve integrar-se ao SGSI existente através de mapeamento sistemático de controles. Essa abordagem garante sinergia entre segurança e privacidade, evitando redundâncias e lacunas normativas.",
+      "justification_wrong": "As alternativas B, C e D negligenciam o requisito fundamental de integração complementar entre os dois padrões. Substituição total, exclusão de controles e certificação unilateral violam o princípio de alinhamento previsto na ISO 27701."
+    },
+    {
+      "num": 47,
+      "text": "Sob a perspectiva de ISO 27701:2019 e GDPR Art. 28, qual é a responsabilidade ESPECÍFICA de um Operador de Dados ao processar dados pessoais em nome de um Controlador?",
+      "tag": "Papel Controlador vs. Operador",
+      "options": [
+        "C. Manter cópia independente dos dados para fins de auditoria própria sem notificação ao Controlador",
+        "D. Delegar todas as responsabilidades de conformidade para subcontratados sem supervisão contínua",
+        "A. Implementar as medidas técnicas e organizacionais de segurança conforme instruções do Controlador, mantendo registros de processamento e notificando violações imediatamente",
+        "B. Determinar unilateralmente os propósitos e meios de processamento de dados pessoais"
+      ],
+      "correct": 2,
+      "justification_correct": "GDPR Art. 28 e ISO 27701:2019 (cláusula 8.2.2) definem que Operadores devem: (1) implementar medidas técnico-organizacionais conforme instruções, (2) manter documentação de processamento, (3) notificar violações. Essa estrutura garante accountability.",
+      "justification_wrong": "Alternativas B, C e D atribuem ao Operador responsabilidades de Controlador ou eliminárias a supervisão. GDPR Art. 28(4) proíbe processamento independente e Art. 28(2-3) exigem supervisão de subcontratados, invalidando essas opções."
+    },
+    {
+      "num": 48,
+      "text": "Considerando o ciclo de vida de dados pessoais conforme ISO 27701:2019, qual controle implementado na fase de 'DISPOSIÇÃO' é CRÍTICO para demonstrar conformidade com princípios de minimização (GDPR Art. 5 e LGPD Art. 6)?",
+      "tag": "Ciclo de Vida de Dados Pessoais",
+      "options": [
+        "A. Implementação de cronograma de retenção documentado com métodos de destruição seguros (shredding, degaussing) e verificação de exclusão completa",
+        "D. Anonimização reversível de dados mantendo chaves de desencriptação com o Controlador indefinidamente",
+        "B. Manutenção indefinida de dados em backup para fins de auditoria futura sem política de retenção",
+        "C. Transferência de dados para terceiros não autorizados para reduzir custos de armazenamento"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019 (cláusula 8.3.5) e GDPR Art. 5(1)(e) exigem destruição segura de dados ao fim da retenção. LGPD Art. 6 reforça: dados não devem ser mantidos além do necessário. Cronograma documentado + métodos verificáveis garantem conformidade.",
+      "justification_wrong": "B viola princípio de retenção limitada; C configura processamento ilícito; D não constitui anonimização real (Art. 4(1) GDPR define anonimização como irreversível). Nenhuma alternativa demonstra cumprimento de minimização."
+    },
+    {
+      "num": 49,
+      "text": "Na perspectiva de ISO 27701:2019, qual atividade é essencial durante a fase de 'COLETA' de dados pessoais para satisfazer simultaneamente requisitos de GDPR Art. 13 e LGPD Art. 9?",
+      "tag": "Conceitos de Privacidade (GDPR/LGPD)",
+      "options": [
+        "C. Informar apenas sobre propósitos primários, omitindo bases legais e direitos para simplificar transparência",
+        "A. Fornecer informações claras, concisas e transparentes sobre identidade do Controlador, propósitos, bases legais, direitos do titular e período de retenção",
+        "D. Obter consentimento genérico e irrevogável para todos os processamentos futuros sem especificar fins",
+        "B. Coletar dados sem informar o titular, justificando que o PIMS será implementado posteriormente"
+      ],
+      "correct": 1,
+      "justification_correct": "GDPR Art. 13 e LGPD Art. 9 exigem informações específicas no momento da coleta: identidade do Controlador, propósitos, bases legais, direitos, retenção. ISO 27701:2019 (cláusula 8.3.2) integra esse dever na fase de coleta como controle de transparência fundamental.",
+      "justification_wrong": "B viola direito à informação; C omite elementos obrigatórios (GDPR 13(2)(a), LGPD 9); D constitui consentimento inválido (GDPR Art. 4(11), LGPD Art. 8 exigem especificidade e revogabilidade). Todas violam conformidade."
+    },
+    {
+      "num": 50,
+      "text": "Conforme ISO 27701:2019 e LGPD Arts. 18-21, qual estrutura de governança é NECESSÁRIA para implementar efetivamente os direitos do titular de dados (acesso, retificação, exclusão, portabilidade)?",
+      "tag": "Governança de Privacidade e Direitos dos Titulares",
+      "options": [
+        "A. Definir procedimentos documentados com SLA (prazos: LGPD 15 dias), designar responsável (DPO ou equivalente), integrar direitos nos processos operacionais e manter registro de requisições",
+        "B. Implementar um formulário web sem análise de requisições e responder em prazo indefinido",
+        "C. Centralizar decisões sobre direitos exclusivamente na diretoria, sem envolvimento de departamentos operacionais",
+        "D. Negar sistematicamente requisições invocando conveniência administrativa como justificativa válida"
+      ],
+      "correct": 0,
+      "justification_correct": "LGPD Arts. 18-21 estabelecem direitos com prazo de 15 dias úteis. ISO 27701:2019 (cláusula 8.3.3 e 8.3.4) requer: procedimentos documentados, responsável designado, integração operacional e auditoria. Esse framework operacionaliza conformidade.",
+      "justification_wrong": "B não cumpre prazos legais; C falha em escalabilidade operacional; D viola direitos fundamentais. LGPD Art. 6(VI) permite negativa apenas com fundamentação específica e justificável, não por conveniência administrativa."
+    }
+  ]
+}

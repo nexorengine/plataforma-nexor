@@ -1,0 +1,151 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "financial_institution_fraud",
+  "quiz_num": 1,
+  "lang": "pt",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Lisa Chen, uma Certified Fraud Examiner revisando registros bancários, descobre que um proprietário de empresa fez sete depósitos separados em dinheiro em três diferentes agências ao longo de um período de 10 dias. Os depósitos foram de $7.500, $8.200, $9.000, $6.800, $7.900, $8.500 e $9.100, totalizando $57.000. O proprietário da empresa normalmente fazia depósitos semanais de $45.000 a $65.000 nos meses anteriores por meio de transações únicas. Quando questionado, o proprietário afirmou que queria 'distribuir os depósitos para evitar aborrecimentos com papelada'. Qual violação de combate à lavagem de dinheiro provavelmente ocorreu?",
+      "tag": "Financial Transactions & Fraud Schemes - Structuring, Related Party Transactions, and Money Laundering Schemes",
+      "options": [
+        "A. Structuring para evadir requisitos de arquivamento de Currency Transaction Report sob 31 U.S.C. § 5324",
+        "B. Falha em arquivar um Report of Foreign Bank and Financial Accounts sob 31 U.S.C. § 5314",
+        "C. Violação da Travel Rule exigindo manutenção de registros de transferência de fundos sob 31 C.F.R. § 1010.410",
+        "D. Falha em manter um Customer Identification Program adequado sob 31 C.F.R. § 1020.220"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Este cenário demonstra structuring sob 31 U.S.C. § 5324, que proíbe dividir transações em dinheiro em valores menores para evadir o limite de $10.000 para arquivamento de CTR. Os principais indicadores incluem: (1) múltiplos depósitos cada um abaixo de $10.000, (2) depósitos feitos em diferentes agências dentro de um curto período, (3) mudança de padrão em relação à prática comercial normal, e (4) a admissão do cliente da intenção de evitar papelada. O valor agregado e o padrão deliberado estabelecem structuring, que é um crime federal punível com até cinco anos de prisão. As instituições financeiras devem arquivar um Suspicious Activity Report quando detectam tais padrões, e a conduta viola tanto as disposições criminais quanto civis do Bank Secrecy Act.",
+      "justification_wrong": "A opção B está incorreta porque violações de FBAR envolvem falha em reportar contas financeiras estrangeiras superiores a $10.000, não padrões de depósito em dinheiro domésticos. Nada no cenário indica contas estrangeiras. A opção C está incorreta porque a Travel Rule se aplica a transferências de fundos de $3.000 ou mais entre instituições financeiras, exigindo transmissão de informações do cliente com transferências eletrônicas, não depósitos em dinheiro em uma única instituição. A opção D está incorreta porque violações de CIP se relacionam à falha de um banco em implementar procedimentos adequados de identificação de clientes na abertura de contas, não à detecção de padrões suspeitos de transações de clientes existentes. O cenário descreve questões de monitoramento de transações, não deficiências na abertura de contas."
+    },
+    {
+      "num": 2,
+      "text": "Um analista de compliance do Regional Commerce Bank revisa transações de uma conta comercial mantida pela Precision Manufacturing LLC. Durante seis meses, a conta apresenta transferências eletrônicas totalizando $780.000 para três empresas fornecedoras: TechSource Solutions, Industrial Supply Partners e Quality Components Inc. Todas as três fornecedoras compartilham o mesmo endereço comercial, foram constituídas dentro de 30 dias uma da outra e listam o mesmo registered agent. As fornecedoras emitem faturas para a Precision Manufacturing por serviços de consultoria, manutenção de equipamentos e fornecimento de componentes, respectivamente. Os pagamentos ocorrem quinzenalmente, e os fundos transferidos para as contas das fornecedoras são retirados via cashier's checks dentro de 72 horas. Qual red flag indica mais claramente um potencial esquema de fornecedor fantasma projetado para lavagem de dinheiro?",
+      "tag": "Financial Transactions & Fraud Schemes - Money Laundering and Shell Vendor Scheme",
+      "options": [
+        "A. Múltiplas fornecedoras compartilhando endereços comerciais e registered agents idênticos enquanto fornecem diferentes categorias de serviços",
+        "B. O cronograma de pagamentos quinzenais que corresponde aos prazos típicos de processamento de folha de pagamento",
+        "C. Transferências eletrônicas para contas de fornecedoras que totalizam menos do que o limite anual de $1 milhão",
+        "D. Cashier's checks sendo usados para saques em vez de transferências eletrônicas de fundos"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A convergência de múltiplas fornecedoras no mesmo endereço com o mesmo registered agent, formadas simultaneamente, representa um indicador clássico de esquema de fornecedor fantasma. Essas entidades carecem de independência operacional e parecem criadas apenas para receber e movimentar fundos. Em esquemas de fornecedores fantasmas usados para lavagem de dinheiro, fraudadores estabelecem empresas fictícias ou de fachada que parecem legítimas, mas existem apenas no papel para justificar pagamentos. A infraestrutura compartilhada (endereço, registered agent, momento de constituição) demonstra que estas não são relações comerciais arm's-length. Combinado com a rápida retirada de fundos, esse padrão sugere que as fornecedoras são condutos para movimentar fundos ilícitos em vez de entidades comerciais legítimas, o que é uma característica primária de layering na lavagem de dinheiro através de contas comerciais.",
+      "justification_wrong": "A Opção B está incorreta porque cronogramas de pagamento quinzenais, embora potencialmente parte de um padrão suspeito mais amplo, são comuns em operações comerciais legítimas para serviços recorrentes e não indicam fraude por si só. Muitas empresas pagam fornecedoras em cronogramas regulares. A Opção C está incorreta porque não há um limite anual de $1 milhão que determina se esquemas de fornecedores fantasmas devem ser reportados; os requisitos de suspicious activity reporting (SAR) sob o Bank Secrecy Act são baseados em padrões e red flags, não em limites arbitrários de valores para este tipo de esquema. A Opção D está incorreta porque o método de pagamento para saques (cashier's checks vs. transferências eletrônicas) é menos significativo do que o próprio padrão de retirada rápida; embora a extração rápida de fundos seja suspeita, o instrumento usado é uma consideração secundária e cashier's checks são instrumentos financeiros legítimos comumente usados em negócios."
+    },
+    {
+      "num": 3,
+      "text": "Linda, uma oficial de compliance em um banco comunitário, está revisando uma série de transações de uma conta empresarial mantida por uma concessionária de veículos local. Durante um período de três semanas, a concessionária fez 15 depósitos em dinheiro separados variando de $8.500 a $9.800, totalizando $142.000. O padrão histórico de depósitos da concessionária normalmente consistia em 2-3 depósitos por mês com média de $25.000 cada, principalmente por cheque. O proprietário da concessionária explicou que recentemente iniciou um \"programa de desconto para pagamento em dinheiro\" para aumentar as vendas. Qual é a obrigação regulatória PRINCIPAL de Linda sob o Bank Secrecy Act?",
+      "tag": "Money Laundering",
+      "options": [
+        "A. Preencher um Suspicious Activity Report porque o padrão sugere possível structuring para evitar os requisitos de preenchimento de CTR",
+        "B. Preencher múltiplos Currency Transaction Reports para cada depósito que se aproximou do limite de $10.000",
+        "C. Documentar a explicação do proprietário no arquivo da conta e continuar monitorando para futuras atividades suspeitas",
+        "D. Agregar os depósitos e preencher um único Currency Transaction Report para o valor total de $142.000"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Sob 31 USC 5318(g) e regulamentos FinCEN, instituições financeiras devem preencher um SAR quando detectam transações que parecem projetadas para evitar requisitos de reporte do BSA. Structuring—realizar múltiplas transações abaixo do limite de $10.000 do CTR para evitar reporte—é um crime federal sob 31 USC 5324. O padrão de 15 depósitos consistentemente abaixo de $10.000, combinado com um desvio significativo do comportamento estabelecido da conta, cria uma suspeita razoável de structuring. O SAR deve ser preenchido dentro de 30 dias da detecção inicial, independentemente de qualquer explicação do cliente. A explicação do negócio não elimina a natureza suspeita do padrão de structuring, e Linda tem o dever afirmativo de reportar esta atividade.",
+      "justification_wrong": "A opção B está incorreta porque CTRs individuais não são necessários para transações abaixo de $10.000; CTRs são preenchidos apenas para transações em dinheiro que excedem $10.000. Os depósitos descritos são especificamente estruturados para evitar este limite. A opção C está incorreta porque meramente documentar a explicação é insuficiente quando existe um padrão claro de potencial structuring; regulamentos BSA exigem reporte afirmativo através de um SAR, não monitoramento passivo. Aceitar explicações do cliente pelo valor nominal sem preencher um SAR quando atividade suspeita é evidente constituiria uma falha de compliance. A opção D está incorreta porque CTRs são preenchidos para transações individuais em dinheiro acima de $10.000, não valores agregados durante um período de tempo. Adicionalmente, agregar depósitos estruturados não abordaria a atividade suspeita subjacente de aparente structuring que requer preenchimento de SAR."
+    },
+    {
+      "num": 4,
+      "text": "Um compliance officer do First National Bank recebe uma intimação de grand jury solicitando todos os documentos relacionados a uma investigação interna de transferências bancárias suspeitas. O advogado externo do banco havia orientado a equipe de compliance a preparar uma cronologia detalhada das transações e entrevistas com funcionários especificamente para ajudar o advogado a avaliar possíveis obrigações de registro de SAR e exposição legal. Qual das seguintes alternativas melhor descreve a capacidade do banco de reter esses materiais investigativos da produção?",
+      "tag": "Attorney-Client Privilege_Work Product Doctrine",
+      "options": [
+        "A. Os materiais são protegidos pela work product doctrine porque foram preparados em antecipação de litígio sob orientação do advogado",
+        "B. Os materiais são protegidos pela attorney-client privilege porque contêm comunicações confidenciais entre o banco e o advogado",
+        "C. Os materiais devem ser produzidos porque investigações relacionadas ao BSA estão sujeitas a exceções regulatórias tanto para privilege quanto para work product protection",
+        "D. Os materiais devem ser produzidos porque investigações de compliance internas são registros comerciais ordinários não criados para fins legais"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A work product doctrine protege documentos e coisas tangíveis preparadas em antecipação de litígio ou para julgamento por ou para uma parte ou seu representante. Quando um advogado externo orienta a criação de materiais investigativos para avaliar exposição legal e risco de litígio, esses materiais se qualificam como work product mesmo que também sirvam funções de compliance. O fato de que o advogado solicitou a cronologia e entrevistas especificamente para avaliação legal estabelece a requisita antecipação de litígio, já que potenciais registros de SAR frequentemente precedem ações de enforcement ou litígio civil. A work product protection se aplica aqui mais diretamente do que a attorney-client privilege porque os materiais em si (cronologias, resumos de entrevistas) não são comunicações, mas sim documentos preparados sob orientação do advogado.",
+      "justification_wrong": "Opção B está incorreta porque a attorney-client privilege protege comunicações confidenciais entre advogado e cliente para fins de assessoria jurídica, mas os materiais investigativos em si (cronologias e entrevistas) não são comunicações—são documentos preparados a pedido do advogado. Embora comunicações entre o advogado e o compliance officer sobre esses materiais possam ser privilegiadas, as compilações factuais subjacentes são melhor protegidas sob a work product doctrine. Opção C está incorreta porque não há exceção regulatória geral à work product protection para investigações relacionadas ao BSA; embora existam certas obrigações regulatórias de reporte, a work product doctrine ainda pode se aplicar a materiais investigativos preparados em antecipação de litígio, mesmo em indústrias reguladas. Opção D está incorreta porque materiais preparados sob orientação de um advogado para avaliação legal não são registros comerciais ordinários; o propósito e contexto de sua criação (antecipação de litígio e assessoria jurídica) os removem da categoria de curso ordinário dos negócios e potencialmente os qualifica para work product protection."
+    },
+    {
+      "num": 5,
+      "text": "Angela Martinez, uma CFE investigando potencial lavagem de dinheiro no Regional Bank, revisa a atividade da conta de David Chen. Durante um período de 15 dias, Chen fez sete depósitos em dinheiro: $8.500, $9.200, $7.800, $9.500, $8.900, $9.100 e $7.700. Cada depósito foi feito em diferentes agências, e o padrão bancário histórico de Chen mostra depósitos mensais com média de $3.000. Chen opera um pequeno negócio de consultoria com recebimentos predominantemente por pagamentos eletrônicos. Qual violação a atividade de Chen provavelmente visa contornar?",
+      "tag": "Financial Transactions & Fraud Schemes - Structuring, Related Party Transactions, and Money Laundering Schemes",
+      "options": [
+        "A. O requisito de arquivamento do Currency Transaction Report sob o Bank Secrecy Act",
+        "B. O limite obrigatório de arquivamento do Suspicious Activity Report",
+        "C. O requisito de registro do Financial Crimes Enforcement Network",
+        "D. O processo de triagem de sanções do Office of Foreign Assets Control"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O padrão de múltiplos depósitos em dinheiro logo abaixo de $10.000 em diferentes locais representa um comportamento clássico de structuring projetado para evitar o requisito de arquivamento do Currency Transaction Report (CTR). Sob o Bank Secrecy Act, instituições financeiras devem arquivar CTRs para transações em moeda que excedam $10.000. Ao manter cada depósito abaixo deste limite e distribuí-los entre agências, Chen parece estar intencionalmente estruturando transações para evadir este requisito de reporte. O desvio de seu padrão normal de negócios e o uso de dinheiro em vez de pagamentos eletrônicos reforçam ainda mais esta conclusão. Structuring é um crime federal sob 31 USC § 5324, mesmo que os fundos subjacentes sejam legítimos.",
+      "justification_wrong": "A opção B está incorreta porque os Suspicious Activity Reports (SARs) não possuem um limite fixo que possa ser contornado através da divisão de transações; instituições financeiras devem arquivar SARs quando detectam atividade suspeita independentemente do valor, e o padrão de structuring de Chen por si só acionaria obrigações de arquivamento de SAR. A opção C está incorreta porque os requisitos de registro do FinCEN aplicam-se a negócios de serviços monetários, não a correntistas individuais fazendo depósitos, e não podem ser evitados através de structuring de transações. A opção D está incorreta porque a triagem de sanções do OFAC aplica-se a transações envolvendo indivíduos, entidades ou países designados em listas de sanções, não a valores de depósitos em dinheiro domésticos, e o padrão de structuring descrito não contornaria processos de conformidade com sanções."
+    },
+    {
+      "question": "Which of the following is a red flag indicator that a financial institution employee may be involved in an internal fraud scheme involving customer accounts?",
+      "options": [
+        "The employee consistently takes their full vacation time each year",
+        "The employee refuses promotion opportunities that would move them to a different department",
+        "The employee regularly rotates duties with other employees in their department",
+        "The employee maintains detailed documentation of all customer interactions"
+      ],
+      "correct_answer": 1,
+      "explanation": "An employee who refuses promotions or transfers that would move them away from their current position may be trying to maintain control over a fraud scheme they are operating. This is a classic red flag in financial institution fraud, as fraudsters often need continuous access to specific accounts or systems to perpetrate and conceal their schemes. In contrast, taking full vacations (option A) is actually a control mechanism that helps detect fraud, job rotation (option C) is a preventive control, and maintaining documentation (option D) is a positive indicator of proper procedures.",
+      "topic": "Financial Institution Fraud & Money Laundering",
+      "sub_topic": "Internal Fraud Red Flags",
+      "num": 6
+    },
+    {
+      "question": "Which of the following is the PRIMARY purpose of a financial institution's Customer Identification Program (CIP) under anti-money laundering regulations?",
+      "options": {
+        "A": "To verify the identity of individuals opening new accounts and assess their risk profile",
+        "B": "To monitor all wire transfers exceeding $3,000 for suspicious activity",
+        "C": "To ensure that all customer deposits are properly insured by federal agencies",
+        "D": "To calculate the appropriate interest rates based on customer creditworthiness"
+      },
+      "correct_answer": "A",
+      "explanation": "The Customer Identification Program (CIP) is a key component of the Bank Secrecy Act and USA PATRIOT Act requirements. Its primary purpose is to verify the identity of customers opening accounts through collecting identifying information (name, address, date of birth, identification number) and implementing risk-based procedures to verify that identity. This helps prevent money laundering, terrorist financing, and other financial crimes by ensuring financial institutions know who their customers are. Option B is incorrect as the threshold and scope described doesn't accurately reflect CIP requirements. Option C relates to deposit insurance, not anti-money laundering. Option D pertains to credit risk assessment, not identity verification for AML purposes.",
+      "topic": "S1D09",
+      "subtopic": "Customer Due Diligence & Know Your Customer (KYC) Requirements",
+      "num": 7
+    },
+    {
+      "question": "A fraud examiner is investigating suspicious activity at a commercial bank and discovers that a loan officer has been approving loans to fictitious borrowers, then diverting the loan proceeds to accounts controlled by the officer. The loan officer creates false documentation including credit reports, employment verification, and appraisals to make the loans appear legitimate. Which of the following BEST describes this type of financial institution fraud?",
+      "options": {
+        "A": "Check kiting scheme involving multiple bank accounts",
+        "B": "Loan fraud involving fictitious loan applications",
+        "C": "Wire transfer fraud using social engineering",
+        "D": "Credit card bust-out scheme"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario describes loan fraud involving fictitious loan applications, where a bank insider (the loan officer) creates entirely false borrowers and documentation to obtain loan proceeds fraudulently. This is a common type of financial institution fraud perpetrated by insiders who have the authority to approve loans and access to create or manipulate loan documentation. Check kiting (A) involves exploiting float time between banks by writing checks on accounts with insufficient funds. Wire transfer fraud (C) typically involves tricking someone into authorizing a fraudulent wire transfer. A bust-out scheme (D) involves obtaining credit cards, building credit limits, then maxing them out with no intention to repay. The key indicators here are the insider position, fictitious borrowers, and false documentation supporting fraudulent loans.",
+      "topic": "Financial Institution Fraud & Money Laundering",
+      "subtopic": "Insider Loan Fraud Schemes",
+      "num": 8
+    },
+    {
+      "question": "A fraud examiner is investigating suspicious activity at a commercial bank and discovers that a loan officer has been approving loans to fictitious borrowers using fabricated documentation. The loan officer then directs the loan proceeds to accounts they control and reports the loans as performing assets. Which of the following BEST describes this type of financial institution fraud?",
+      "options": {
+        "A": "Check kiting scheme",
+        "B": "Loan fraud scheme involving fictitious loans",
+        "C": "Prime bank instrument fraud",
+        "D": "Commercial loan skimming"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario describes a loan fraud scheme involving fictitious loans, where a bank insider (the loan officer) creates fraudulent loans to non-existent borrowers and diverts the funds for personal benefit. This is a common type of financial institution fraud that can cause significant losses and mask the bank's true financial condition. Check kiting (A) involves exploiting float time between banks. Prime bank instrument fraud (C) typically involves fraudulent investment schemes claiming to offer access to elite banking instruments. Commercial loan skimming (D) is not a recognized category of this type of internal fraud scheme.",
+      "topic": "Financial Institution Fraud & Money Laundering",
+      "subject": "S1D09",
+      "num": 9
+    },
+    {
+      "question": "Which of the following is the PRIMARY purpose of a financial institution's Customer Identification Program (CIP) under anti-money laundering regulations?",
+      "options": [
+        "To verify the identity of individuals opening new accounts",
+        "To monitor all wire transfers exceeding $3,000",
+        "To report suspicious activities to law enforcement within 24 hours",
+        "To ensure all cash transactions are recorded in the general ledger"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Customer Identification Program (CIP) is a fundamental component of a financial institution's anti-money laundering compliance program. The primary purpose of CIP is to verify the identity of individuals opening new accounts through collecting identifying information such as name, date of birth, address, and identification number. This verification helps prevent criminals from using false identities to open accounts for money laundering purposes. While monitoring wire transfers, reporting suspicious activities, and recording cash transactions are all important AML activities, they are not the primary purpose of the CIP specifically.",
+      "num": 10
+    }
+  ]
+}

@@ -1,0 +1,710 @@
+{
+  "cert_id": "cissp",
+  "domain_id": "security_architecture",
+  "quiz_num": 1,
+  "domain_name": "Security Architecture & Engineering",
+  "cert_name": "CISSP",
+  "lang": "en",
+  "questions": [
+    {
+      "num": 1,
+      "text": "In the Bell-LaPadula security model, which property prevents a subject at a higher classification level from writing information to a lower classification level?",
+      "tag": "Security Models - Bell-LaPadula",
+      "options": [
+        "B. The simple security property",
+        "A. The *-property (star property)",
+        "D. The discretionary security property",
+        "C. The tranquility property"
+      ],
+      "correct": 1,
+      "justification_correct": "The *-property (star property) in Bell-LaPadula enforces write-down restrictions, preventing high-level subjects from writing to low-level objects, thus avoiding information leakage. This is fundamental to maintaining confidentiality in multilevel security systems.",
+      "justification_wrong": "Simple security property enforces read-up restrictions (no read down). Tranquility prevents classification changes during operation. Discretionary security addresses access control lists, not write-down restrictions in mandatory access control."
+    },
+    {
+      "num": 2,
+      "text": "Which security model is specifically designed to protect data integrity and prevents the modification of information by subjects at lower integrity levels?",
+      "tag": "Security Models - Biba",
+      "options": [
+        "A. Bell-LaPadula model",
+        "D. Brewer-Nash (Chinese Wall) model",
+        "C. Clark-Wilson model",
+        "B. Biba integrity model"
+      ],
+      "correct": 3,
+      "justification_correct": "The Biba model is the integrity counterpart to Bell-LaPadula, implementing write-up and read-down restrictions. Low-integrity subjects cannot modify high-integrity objects, directly addressing data integrity concerns in multilevel systems.",
+      "justification_wrong": "Bell-LaPadula focuses on confidentiality. Clark-Wilson uses transformation procedures and access control triples. Brewer-Nash addresses conflict of interest. Only Biba fundamentally protects integrity through subject-object levels."
+    },
+    {
+      "num": 3,
+      "text": "In asymmetric cryptography, what is the primary security advantage of using a digital signature with a private key?",
+      "tag": "Cryptography - Digital Signatures",
+      "options": [
+        "A. It encrypts the entire message to prevent eavesdropping",
+        "D. It guarantees message confidentiality through key escrow",
+        "B. It provides non-repudiation and authenticity through the sender's private key",
+        "C. It eliminates the need for public key infrastructure"
+      ],
+      "correct": 2,
+      "justification_correct": "Digital signatures using private keys provide non-repudiation (sender cannot deny signing) and authenticity verification (public key proves signature origin). Per NIST SP 800-32, signatures ensure message integrity and signer identification without encrypting content.",
+      "justification_wrong": "Signatures don't encrypt messages (that's encryption's role). PKI is still required for key management. Key escrow is unrelated to signature function. Signatures provide integrity and authenticity, not confidentiality alone."
+    },
+    {
+      "num": 4,
+      "text": "Which Common Criteria assurance level requires formal verification and exhaustive testing suitable for highly critical systems?",
+      "tag": "Security Evaluation Criteria - Common Criteria",
+      "options": [
+        "B. EAL 6 (Semi-formally Verified Design and Tested)",
+        "D. EAL 5 (Semiformally Designed and Tested)",
+        "A. EAL 4 (Methodical Testing and Checking)",
+        "C. EAL 7 (Formally Verified Design and Tested)"
+      ],
+      "correct": 3,
+      "justification_correct": "EAL 7 (highest CC assurance level) mandates formal verification methods, mathematical proof of correctness, and comprehensive testing. ISO/IEC 15408 specifies EAL 7 for systems with extreme security requirements and high attack potential.",
+      "justification_wrong": "EAL 4 uses methodical testing without formal methods. EAL 5 adds semi-formal techniques. EAL 6 includes semi-formal verification but not full formal proof. EAL 7 uniquely requires complete formal verification and testing."
+    },
+    {
+      "num": 5,
+      "text": "In PKI, which component is responsible for verifying the authenticity of a Certificate Authority and maintaining the trust hierarchy?",
+      "tag": "Cryptography - PKI Architecture",
+      "options": [
+        "D. Online Certificate Status Protocol (OCSP) responder",
+        "C. Certificate Revocation List (CRL) server",
+        "B. Root Certificate Authority (Root CA)",
+        "A. Registration Authority (RA)"
+      ],
+      "correct": 2,
+      "justification_correct": "The Root CA is the trust anchor in PKI hierarchy, issuing certificates to subordinate CAs and end entities. Per NIST SP 800-32, the Root CA's self-signed certificate establishes the entire trust foundation, enabling verification of all downstream certificates.",
+      "justification_wrong": "RA handles enrollment requests but doesn't establish trust hierarchy. CRL/OCSP manage revocation status, not trust verification. Only Root CA serves as the ultimate trusted entity upon which the entire PKI trust chain depends and is verified."
+    },
+    {
+      "num": 6,
+      "text": "Which security model enforces the 'no write down' rule to maintain data integrity by preventing high-level subjects from writing to low-level objects?",
+      "tag": "Security Models - Integrity",
+      "options": [
+        "C. Clark-Wilson Model",
+        "B. Bell-LaPadula Model",
+        "D. Brewer-Nash Model",
+        "A. Biba Integrity Model"
+      ],
+      "correct": 3,
+      "justification_correct": "Biba model enforces write-down prohibition and read-up permission to prevent integrity violations. The *-property (star property) prevents high-level subjects from modifying low-level objects, protecting data integrity.",
+      "justification_wrong": "Bell-LaPadula addresses confidentiality with no read-up/write-down rules. Clark-Wilson uses transformation procedures and auditing. Brewer-Nash addresses Chinese Wall policy for conflict-of-interest prevention, not integrity constraints."
+    },
+    {
+      "num": 7,
+      "text": "In the Bell-LaPadula confidentiality model, what does the Simple Security Property enforce?",
+      "tag": "Security Models - Confidentiality",
+      "options": [
+        "D. All users must have equal access to all classified information",
+        "C. Subjects can only access objects at their exact clearance level",
+        "A. No read up - subjects cannot read objects at higher classification levels",
+        "B. No write down - subjects cannot write to lower classification levels"
+      ],
+      "correct": 2,
+      "justification_correct": "Bell-LaPadula's Simple Security Property (ss-property) enforces 'no read up': a subject at level L cannot read objects classified above L, preventing unauthorized disclosure of sensitive information. (CC Part 3, FIA_UAU).",
+      "justification_wrong": "No write down is the *-property (tranquility property). Option C misrepresents lattice-based access. Option D violates fundamental confidentiality principles and contradicts all mandatory access control frameworks."
+    },
+    {
+      "num": 8,
+      "text": "Which cryptographic technique provides non-repudiation by binding a user's identity to a message through an asymmetric algorithm?",
+      "tag": "Cryptography - Digital Signatures",
+      "options": [
+        "D. Diffie-Hellman key exchange protocol",
+        "A. Digital signature using private key encryption",
+        "C. Hash-based message authentication code (HMAC)",
+        "B. Symmetric key encryption with shared secret"
+      ],
+      "correct": 1,
+      "justification_correct": "Digital signatures use asymmetric cryptography: sender encrypts with private key, receiver verifies with public key. This proves origin, authenticity, and provides non-repudiation (ISO/IEC 27001:2022, Annex A.10.2).",
+      "justification_wrong": "HMAC provides authenticity but not non-repudiation (symmetric). DH enables key exchange, not signatures. Symmetric encryption cannot prove origin since both parties share the same key, failing non-repudiation."
+    },
+    {
+      "num": 9,
+      "text": "According to the Common Criteria evaluation methodology, what does an EAL4 rating represent?",
+      "tag": "Security Evaluation Criteria - Common Criteria",
+      "options": [
+        "D. Product suitable only for unclassified, non-critical applications",
+        "B. Informally developed product with minimal security assurance",
+        "C. Highest security assurance level requiring formal methods and verification",
+        "A. Methodically designed, tested, and reviewed security product"
+      ],
+      "correct": 3,
+      "justification_correct": "EAL4 (Methodically Designed, Tested and Reviewed) represents moderate assurance: systematic design, testing, review, and functional security verification. Suitable for moderate-risk environments (CC Part 1, v3.1 R5).",
+      "justification_wrong": "EAL1 is minimal assurance. EAL7 is highest assurance with formal methods. EAL4 is appropriate for critical commercial systems, not limited to unclassified only. Systematic testing distinguishes EAL4 from lower levels."
+    },
+    {
+      "num": 10,
+      "text": "Which physical security control provides a protective layer against unauthorized access while allowing authorized personnel entry through credential verification?",
+      "tag": "Physical Security - Access Control",
+      "options": [
+        "B. Open facility design with security guard observation",
+        "A. Mantrap (mantra) or security vestibule with dual-door access control",
+        "C. Single entry point without access restrictions",
+        "D. Perimeter fencing only, with unrestricted internal access"
+      ],
+      "correct": 1,
+      "justification_correct": "Mantraps/security vestibules enforce dual authentication: outer door authenticates entry, inner door authenticates exit. Prevents tailgating, piggybacking, and unauthorized access to sensitive areas (NIST SP 800-53 PE-2, PE-3).",
+      "justification_wrong": "Guard observation alone lacks layered control. Single entry and unrestricted access violate defense-in-depth principles. Perimeter fencing without internal controls cannot prevent insider threats or authorized credential misuse."
+    },
+    {
+      "num": 11,
+      "text": "In the Bell-LaPadula model, which property prevents information flow from higher classification levels to lower classification levels?",
+      "tag": "Security Models - Bell-LaPadula",
+      "options": [
+        "B. The simple security property",
+        "C. The tranquility property",
+        "A. The *-property (star property)",
+        "D. The dominance property"
+      ],
+      "correct": 2,
+      "justification_correct": "The *-property (star property) enforces the no-write-down rule, preventing subjects at higher levels from writing to objects at lower levels, thus preventing downward information flow. This is fundamental to Bell-LaPadula's confidentiality protection.",
+      "justification_wrong": "Simple security prevents read-up; tranquility prevents level changes; dominance is not a Bell-LaPadula property. Only the *-property specifically addresses preventing information leakage downward."
+    },
+    {
+      "num": 12,
+      "text": "Which security model is specifically designed to prevent integrity violations by enforcing the principle that subjects can only modify objects at their own classification level or lower?",
+      "tag": "Security Models - Biba Integrity Model",
+      "options": [
+        "D. Brewer-Nash (Chinese Wall) model",
+        "B. Biba integrity model",
+        "A. Bell-LaPadula model",
+        "C. Clark-Wilson model"
+      ],
+      "correct": 1,
+      "justification_correct": "The Biba model enforces write-up and read-down restrictions to maintain integrity. Subjects cannot write to higher-integrity objects (write-up principle) and cannot read from lower-integrity objects (read-down principle), preventing integrity corruption.",
+      "justification_wrong": "Bell-LaPadula focuses on confidentiality, not integrity. Clark-Wilson uses transaction logging and separation of duties. Brewer-Nash prevents conflicts of interest. Only Biba directly addresses the integrity constraint described."
+    },
+    {
+      "num": 13,
+      "text": "In Public Key Infrastructure (PKI), what is the primary purpose of a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP)?",
+      "tag": "Cryptography - PKI & Digital Certificates",
+      "options": [
+        "D. To generate new key pairs for end entities",
+        "A. To encrypt private keys for secure storage",
+        "C. To establish trust chains between certificate authorities",
+        "B. To verify that a digital certificate has not been compromised or is no longer valid"
+      ],
+      "correct": 3,
+      "justification_correct": "CRLs and OCSP provide mechanisms to check certificate validity status before relying parties trust a certificate. They identify revoked certificates due to compromise, key loss, or policy violations, as defined in RFC 5280 and RFC 6960.",
+      "justification_wrong": "CRLs do not encrypt private keys, establish CA chains, or generate keys. These are separate PKI functions. CRLs/OCSP serve only to communicate revocation status to prevent use of compromised or invalid certificates."
+    },
+    {
+      "num": 14,
+      "text": "According to the Common Criteria (CC) evaluation framework, what does an EAL4 rating indicate compared to EAL3?",
+      "tag": "Security Evaluation Criteria - Common Criteria",
+      "options": [
+        "B. Lower assurance requiring only basic static analysis",
+        "C. Equivalent assurance with different evaluation methodology",
+        "D. Highest possible assurance level requiring formal verification",
+        "A. Higher assurance through methodical design review and testing"
+      ],
+      "correct": 3,
+      "justification_correct": "EAL4 (Methodical Design, Test, and Review) provides higher assurance than EAL3 (Systematic Testing and Checked Releases) through more rigorous design documentation, testing, and security target verification. Per CC v3.1, EAL4 requires deeper analysis.",
+      "justification_wrong": "EAL3 provides higher assurance than EAL2, not lower. EAL4 and EAL3 differ in methodology rigor. EAL7 represents the highest assurance level requiring formal methods, not EAL4. EAL4 is methodical but not formal verification."
+    },
+    {
+      "num": 15,
+      "text": "In physical security design for data centers, what is the primary purpose of implementing mantrap (airlock) entry systems at critical facility boundaries?",
+      "tag": "Physical Security - Facility Design",
+      "options": [
+        "A. To reduce HVAC cooling costs by minimizing air exchange",
+        "C. To detect electromagnetic interference from external sources",
+        "B. To prevent piggybacking by ensuring only one authenticated person enters at a time",
+        "D. To provide emergency fire suppression activation points"
+      ],
+      "correct": 2,
+      "justification_correct": "Mantrap systems are access control mechanisms that isolate two sets of doors, allowing only one authenticated individual to pass through at a time, preventing tailgating/piggybacking. This enforces badge-per-person access control and is a standard NIST physical security control.",
+      "justification_wrong": "Mantraps do not address HVAC efficiency, EMI detection, or fire suppression. Their sole purpose is to enforce single-occupancy passage, preventing unauthorized personnel from entering by following authorized users. Other controls address environmental and emergency concerns."
+    },
+    {
+      "num": 16,
+      "text": "In the Bell-LaPadula security model, which property prevents information flow from a higher classification level to a lower classification level, thereby protecting confidentiality?",
+      "tag": "Bell-LaPadula Model",
+      "options": [
+        "C. The Tranquility Property",
+        "D. The Integrity Property",
+        "A. The Star Property (*-property)",
+        "B. The Simple Security Property"
+      ],
+      "correct": 2,
+      "justification_correct": "The *-property (Star Property) enforces the no-write-down rule, preventing subjects from writing information to lower classification levels. This is fundamental to Bell-LaPadula confidentiality protection, as defined in DoD 5200.28-STD.",
+      "justification_wrong": "Simple Security Property enforces no-read-up; Tranquility Property prevents classification changes; Integrity Property belongs to Biba model, not Bell-LaPadula."
+    },
+    {
+      "num": 17,
+      "text": "Which of the following best describes the primary purpose of the Brewer-Nash (Chinese Wall) model in multi-level security contexts?",
+      "tag": "Brewer-Nash Model",
+      "options": [
+        "D. To provide cryptographic isolation of sensitive data in distributed systems",
+        "C. To implement role-based access control with mandatory attribute binding",
+        "B. To enforce strict hierarchical classification levels across all information types",
+        "A. To prevent conflict of interest by dynamically restricting access based on previous access decisions"
+      ],
+      "correct": 3,
+      "justification_correct": "Brewer-Nash (Chinese Wall) prevents conflicts of interest by restricting access to competing/conflicting datasets after initial access. It's dynamic, context-aware access control. Defined in CISSP Domain 3 and security literature.",
+      "justification_wrong": "B describes lattice-based models; C is RBAC; D is cryptographic, not access control model."
+    },
+    {
+      "num": 18,
+      "text": "In PKI architecture, which component is responsible for revoking certificates and publishing revocation status to ensure clients can validate certificate validity at authentication time?",
+      "tag": "Public Key Infrastructure",
+      "options": [
+        "A. Certificate Authority (CA)",
+        "B. Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) responder",
+        "D. Time Stamping Authority (TSA)",
+        "C. Registration Authority (RA)"
+      ],
+      "correct": 1,
+      "justification_correct": "CRL and OCSP responders publish revocation information per RFC 5280 and RFC 6960. This enables real-time validation of certificate status, critical for trust infrastructure. CAs issue but don't directly publish revocation.",
+      "justification_wrong": "CAs issue certificates but revocation publication is separate function; RA authenticates requesters; TSA provides timestamps, not revocation."
+    },
+    {
+      "num": 19,
+      "text": "According to Common Criteria (CC) evaluation methodology, which Evaluation Assurance Level (EAL) represents 'methodical design, testing, and reviewed' security assurance, appropriate for commercial products requiring moderate trust?",
+      "tag": "Common Criteria & FIPS",
+      "options": [
+        "C. EAL 5",
+        "B. EAL 4",
+        "A. EAL 2",
+        "D. EAL 7"
+      ],
+      "correct": 1,
+      "justification_correct": "EAL 4 ('Methodically Designed, Tested, and Reviewed') is baseline for commercial products. EAL 2 is minimal; EAL 5-7 require formal methods/full design verification per ISO/IEC 15408.",
+      "justification_wrong": "EAL 2 is lower; EAL 5-7 require formal specifications/design verification unsuitable for typical commercial use."
+    },
+    {
+      "num": 20,
+      "text": "In facility security design, which layered perimeter control strategy combines guards, bollards, and surveillance to establish appropriate setback distance before reaching critical infrastructure?",
+      "tag": "Physical Security & Facility Design",
+      "options": [
+        "B. Single point of entry (SPOE) checkpoint",
+        "A. Defense in depth with stand-off distance",
+        "C. Continuous monitoring through CCTV only",
+        "D. Cryptographic access control boundaries"
+      ],
+      "correct": 1,
+      "justification_correct": "Stand-off distance combined with defense-in-depth (guards, bollards, surveillance) prevents vehicles/intruders from reaching sensitive areas. NIST SP 800-53 and DoD standards emphasize this multi-layer perimeter approach.",
+      "justification_wrong": "B limits flexibility; C lacks physical barriers; D is logical control, not physical perimeter security."
+    },
+    {
+      "num": 21,
+      "text": "In the Bell-LaPadula security model, which property prevents information flow from higher to lower classification levels, ensuring confidentiality?",
+      "tag": "Bell-LaPadula Model",
+      "options": [
+        "B. The simple security property",
+        "A. The *-property (star property)",
+        "D. The dominance property",
+        "C. The tranquility property"
+      ],
+      "correct": 1,
+      "justification_correct": "The *-property (confinement property) prevents write-down operations, blocking classified data from flowing to lower levels. This protects confidentiality by ensuring subjects at higher levels cannot write to lower-level objects.",
+      "justification_wrong": "Simple security property prevents read-up (reading higher classification). Tranquility and dominance are supportive constraints but don't directly enforce write-down restrictions fundamental to confidentiality protection."
+    },
+    {
+      "num": 22,
+      "text": "Which Common Criteria assurance level requires formal specification and verification with semiformal proof techniques?",
+      "tag": "Common Criteria Evaluation",
+      "options": [
+        "C. EAL6",
+        "D. EAL7",
+        "B. EAL5",
+        "A. EAL4"
+      ],
+      "correct": 0,
+      "justification_correct": "EAL6 (Methodical Analysis and Checked Implementation) mandates semiformal specification, design, and verification including modular architecture. It represents rigorous developmental controls between EAL5 and EAL7 per CC v3.1 guidance.",
+      "justification_wrong": "EAL4 focuses on functional testing; EAL5 adds semiformal design specification but less comprehensive verification; EAL7 requires formal mathematical proof exceeding EAL6's semiformal methods."
+    },
+    {
+      "num": 23,
+      "text": "In the Brewer-Nash (Chinese Wall) model, what primary mechanism prevents conflicts of interest in multi-client environments?",
+      "tag": "Brewer-Nash Model",
+      "options": [
+        "D. Cryptographic separation of client datasets",
+        "B. Dynamic access control based on prior information access history",
+        "A. Mandatory access control based on clearance levels",
+        "C. Role-based restrictions enforced at login"
+      ],
+      "correct": 1,
+      "justification_correct": "Brewer-Nash uses dynamic conflict-of-interest analysis by tracking prior access. Rules prevent subjects from accessing competing clients' data based on historical information exposure, creating dynamic separation walls.",
+      "justification_wrong": "Mandatory access control uses static classifications unsuitable for conflict detection. Role-based and cryptographic approaches don't address dynamic conflict-of-interest prevention inherent to multi-client confidentiality."
+    },
+    {
+      "num": 24,
+      "text": "Which digital signature algorithm provides quantum-resistant security and is recommended for long-term cryptographic validity per NIST SP 800-208?",
+      "tag": "Post-Quantum Cryptography",
+      "options": [
+        "B. RSA-2048 with SHA-256",
+        "A. ECDSA with P-256 curves",
+        "D. HMAC-SHA3 with 256-bit keys",
+        "C. ML-DSA (Dilithium) based on lattice assumptions"
+      ],
+      "correct": 3,
+      "justification_correct": "ML-DSA (Dilithium) is NIST-standardized post-quantum signature algorithm resistant to polynomial-time quantum attacks. Recommended for protecting long-lived data requiring decades of confidentiality per NIST guidance.",
+      "justification_wrong": "ECDSA, RSA, and HMAC are vulnerable to quantum computing. HMAC is authentication-only, not digital signature. Classical algorithms face cryptographically-relevant quantum computer threats within 10-30 years."
+    },
+    {
+      "num": 25,
+      "text": "In facility security design, what primary advantage does a man-trap (mantrap) provide over simple perimeter barriers?",
+      "tag": "Physical Security Infrastructure",
+      "options": [
+        "C. Eliminates need for CCTV monitoring systems",
+        "B. Provides sequential authentication and prevents tailgating by isolating individuals",
+        "D. Extends facility perimeter detection range beyond 100 meters",
+        "A. Reduces construction costs by 40-60 percent"
+      ],
+      "correct": 1,
+      "justification_correct": "Man-traps create two-stage authentication zones isolating individuals between outer and inner doors, preventing tailgating and enforcing individual credential verification. This sequential control exceeds perimeter-only protection effectiveness.",
+      "justification_wrong": "Cost reduction is secondary; man-traps complement rather than replace CCTV; detection range expansion belongs to perimeter sensors, not sequential access controls. Primary function is tailgating prevention through spatial isolation."
+    },
+    {
+      "num": 26,
+      "text": "In a Bell-LaPadula model implementation, a user with clearance level 'Secret' attempts to read a document classified 'Top Secret'. Which security property prevents this action?",
+      "tag": "Security Models - Bell-LaPadula",
+      "options": [
+        "A. Simple Security Property (ss-property)",
+        "D. Discretionary Security Property",
+        "C. Tranquility Property",
+        "B. *-Property (star property)"
+      ],
+      "correct": 0,
+      "justification_correct": "The Simple Security Property (ss-property) enforces the 'no read up' rule: subjects cannot read objects at higher classification levels. A Secret-cleared user cannot access Top Secret documents. ISC2 CISSP CBK, Domain 3.",
+      "justification_wrong": "The *-Property prevents 'write down'; Tranquility preserves classifications; Discretionary property concerns access controls—none prevent reading up."
+    },
+    {
+      "num": 27,
+      "text": "An organization implements the Biba Integrity Model to protect against unauthorized data modification. Which scenario violates the Biba model's core principle?",
+      "tag": "Security Models - Biba Integrity",
+      "options": [
+        "A. A high-integrity administrator modifies a low-integrity database record",
+        "B. A low-integrity user reads a high-integrity configuration file",
+        "D. A medium-integrity process writes to a medium-integrity log file",
+        "C. A high-integrity application executes code from a low-integrity source"
+      ],
+      "correct": 3,
+      "justification_correct": "Biba's 'no write down' rule prevents high-integrity subjects from writing to low-integrity objects, but 'no read up' is implicit. A high-integrity application executing low-integrity code violates integrity flow. ISC2 Domain 3 security models.",
+      "justification_wrong": "Option A is allowed (write down); Option B complies (read up permitted); Option D respects equal integrity levels."
+    },
+    {
+      "num": 28,
+      "text": "During Common Criteria (CC) evaluation, an organization seeks EAL4 certification for a cryptographic module. Which statement accurately describes EAL4 assurance level?",
+      "tag": "Security Evaluation Criteria - Common Criteria",
+      "options": [
+        "A. Methodically designed, tested, and reviewed product with moderate assurance",
+        "B. Formally verified design with maximum assurance for high-risk environments",
+        "D. Informally documented system with no independent evaluation required",
+        "C. Functionally tested product with minimal assurance suitable for low-risk systems"
+      ],
+      "correct": 0,
+      "justification_correct": "EAL4 ('Methodical Design, Testing, and Review') provides moderate assurance through systematic testing and design review. CC Part 3 (ISO/IEC 15408) defines EAL scales 1–7. EAL4 balances cost and assurance for many commercial products.",
+      "justification_wrong": "EAL7 is highest assurance; EAL1 is minimal; no CC level eliminates evaluation. EAL4 suits balanced security requirements."
+    },
+    {
+      "num": 29,
+      "text": "A financial institution uses RSA-2048 for digital signatures and SHA-256 for hashing. An attacker discovers the private key. Which cryptographic property is fundamentally compromised?",
+      "tag": "Cryptography - Digital Signatures & PKI",
+      "options": [
+        "B. Non-repudiation of digital signatures",
+        "D. Perfect forward secrecy of session keys",
+        "C. Collision resistance of the hash function",
+        "A. Confidentiality of encrypted messages only"
+      ],
+      "correct": 0,
+      "justification_correct": "Private key compromise destroys non-repudiation—attackers can forge signatures impersonating legitimate signers. RSA signature security depends entirely on private key secrecy. NIST SP 800-32 and ISC2 Domain 3 cryptography standards.",
+      "justification_wrong": "Confidentiality relates to encryption, not signatures; SHA-256 collision resistance is unaffected; forward secrecy applies to session negotiation."
+    },
+    {
+      "num": 30,
+      "text": "An organization implements the Clark-Wilson integrity model for its financial transaction system. Which mechanism is essential for enforcing separation of duties in Clark-Wilson?",
+      "tag": "Security Models - Clark-Wilson",
+      "options": [
+        "A. Constrained Data Items (CDIs) and Unconstrained Data Items (UDIs)",
+        "D. Cryptographic hash chains linking all transaction records",
+        "B. Transformation Procedures (TPs) with certification and access rules",
+        "C. Mandatory access control labels on all processes"
+      ],
+      "correct": 2,
+      "justification_correct": "Clark-Wilson enforces integrity via Transformation Procedures (TPs)—certified programs enforcing business rules—combined with access rules ensuring authorized users execute valid operations. TPs prevent unauthorized modifications. ISC2 CISSP Domain 3 security models.",
+      "justification_wrong": "CDIs/UDIs are data classifications, not enforcement mechanisms; MAC labels are Bell-LaPadula, not Clark-Wilson; hash chains provide audit trails, not control separation."
+    },
+    {
+      "num": 31,
+      "text": "A financial institution implements a multilevel security policy where data classification determines access rights. Users at lower privilege levels cannot read data classified at higher levels, but may write to higher levels. Which security model BEST describes this implementation?",
+      "tag": "Security Models",
+      "options": [
+        "C. Clark-Wilson model",
+        "D. Brewer-Nash (Chinese Wall) model",
+        "B. Biba integrity model",
+        "A. Bell-LaPadula model"
+      ],
+      "correct": 3,
+      "justification_correct": "Bell-LaPadula enforces confidentiality via 'no read up, no write down' rules. The described policy matches this: lower-level users cannot read higher-classified data (no read up) and may write upward. ISO/IEC 27005 references this foundational model for multilevel security architectures.",
+      "justification_wrong": "Biba addresses integrity (no write up, no read down), opposite to described rules. Clark-Wilson ensures transaction consistency. Brewer-Nash mitigates conflict-of-interest in data access, not classification hierarchies. None match the stated confidentiality constraints."
+    },
+    {
+      "num": 32,
+      "text": "An organization evaluates a cryptographic module against international standards before procurement. The evaluation confirms the module implements FIPS 140-3 Level 2 certification with validated algorithms. What is the PRIMARY assurance gained from this certification?",
+      "tag": "Security Evaluation Criteria & Cryptography",
+      "options": [
+        "B. The module implements approved algorithms with documented security properties and physical tampering detection",
+        "C. The module guarantees key lengths exceed 4096 bits for all operations",
+        "A. The module resists all known and future cryptographic attacks indefinitely",
+        "D. The module eliminates the need for key management policies in the organization"
+      ],
+      "correct": 0,
+      "justification_correct": "FIPS 140-3 Level 2 requires approved algorithms (NIST-validated), cryptographic integrity testing, and limited physical security (e.g., tamper detection). NIST SP 800-132 confirms this validates implementation quality and operational security. It provides documented assurance of cryptographic correctness, not theoretical invulnerability.",
+      "justification_wrong": "No certification guarantees perpetual attack resistance or eliminates management policies. Key length requirements vary by algorithm and threat model per NIST SP 800-175B; Level 2 does not mandate 4096-bit keys universally. Certification addresses module quality, not absolute security."
+    },
+    {
+      "num": 33,
+      "text": "During PKI infrastructure design, an organization must choose between a hierarchical CA structure and a distributed trust model. The organization operates across 15 geographically dispersed offices with regulatory requirements for local certificate issuance authority. Which design BEST balances security and operational resilience?",
+      "tag": "Public Key Infrastructure (PKI)",
+      "options": [
+        "B. 15 independent root CAs with no central coordination or cross-certification",
+        "C. Single online root CA issuing all certificates directly to end entities",
+        "A. Single root CA with 15 subordinate CAs per office, implementing strict offline root security",
+        "D. Mesh topology with every office CA cross-certifying with all others"
+      ],
+      "correct": 2,
+      "justification_correct": "Hierarchical design with offline root and subordinate CAs optimizes security (root compromise prevents mass issuance) and operational resilience. RFC 5280 and NIST SP 800-32 endorse this topology. Local authorities gain autonomy; central root ensures trust integrity. Offline roots mitigate key compromise.",
+      "justification_wrong": "Independent roots create trust fragmentation and management overhead. Online root CAs increase compromise risk. Direct issuance scales poorly. Full mesh cross-certification is operationally expensive and complicates revocation. None provide the required balance of decentralized operations with centralized security."
+    },
+    {
+      "num": 34,
+      "text": "A data center implements defense-in-depth physical security with mantraps, CCTV, biometric access controls, and environmental monitoring. An attacker successfully bypasses the mantrap using a valid credential stolen from an authorized employee. Which security principle is MOST directly violated by this scenario?",
+      "tag": "Physical Security & Facility Design",
+      "options": [
+        "D. Least privilege",
+        "A. Separation of duties",
+        "B. Authentication and accountability",
+        "C. Non-repudiation"
+      ],
+      "correct": 2,
+      "justification_correct": "The scenario violates authentication (credential does not bind to legitimate user; stolen credential ≠ true identity) and accountability (system cannot verify who actually entered). NIST SP 800-53 PA-2 requires authentication mechanisms that ensure entered individual is rightful credential holder. Multimodal verification addresses this.",
+      "justification_wrong": "Separation of duties addresses role conflicts, not credential theft. Non-repudiation ensures actors cannot deny actions; not the primary concern here. Least privilege limits permissions but does not prevent false authentication. Authentication failure is the root cause per NIST guidance."
+    },
+    {
+      "num": 35,
+      "text": "An organization implements digital signatures using RSA-2048 with SHA-256 hashing for legally binding contracts. A security audit identifies that the same private key is used for both digital signatures and TLS encryption on the web server. What is the PRIMARY security risk introduced by key reuse?",
+      "tag": "Cryptography & Digital Signatures",
+      "options": [
+        "A. SHA-256 becomes vulnerable to collision attacks",
+        "D. Simultaneous use of signatures and encryption reduces cipher strength by half",
+        "B. RSA-2048 key length is insufficient for dual purposes",
+        "C. Compromise of the key for one purpose exposes both signature and encryption capabilities"
+      ],
+      "correct": 3,
+      "justification_correct": "Key reuse violates separation principle: a single compromise exposes both signature creation (repudiation risk, contract disputes) and encryption (confidentiality breach). NIST SP 800-57 Part 1 mandates separate keys for distinct cryptographic purposes to limit attack impact and preserve security properties.",
+      "justification_wrong": "SHA-256 integrity is independent of RSA key reuse. RSA-2048 is adequate for both purposes individually. Cipher strength does not mathematically halve with key reuse. The risk is operational exposure scope, not algorithmic weakening per NIST guidance."
+    },
+    {
+      "num": 36,
+      "text": "In a Bell-LaPadula model implementation, a subject at security level SECRET attempts to read an object classified CONFIDENTIAL. Which fundamental security principle prevents this operation?",
+      "tag": "Bell-LaPadula Model",
+      "options": [
+        "C. The tranquility principle allows temporary declassification",
+        "D. The discretionary access control permits read operations across levels",
+        "A. The Simple Security Property (*-property) prohibits reading down",
+        "B. The *-property (confinement property) prevents write-up operations"
+      ],
+      "correct": 2,
+      "justification_correct": "Bell-LaPadula's Simple Security Property (ss-property) enforces no-read-down: subjects cannot read objects at lower classification levels. This prevents information flow from classified to unclassified domains.",
+      "justification_wrong": "The *-property governs write operations (no-write-up), not read operations. Tranquility and DAC are orthogonal concepts in this context."
+    },
+    {
+      "num": 37,
+      "text": "A financial organization implements the Clark-Wilson security model to protect transaction integrity. Which element is MOST critical for preventing unauthorized modifications?",
+      "tag": "Clark-Wilson Model",
+      "options": [
+        "D. Role-based access control (RBAC) without transaction logging",
+        "B. Classification of all data as either CDI or UDI with mandatory encryption",
+        "A. Separation of duty (SoD) enforced through constrained data items (CDIs)",
+        "C. Implementation of Bell-LaPadula confidentiality controls"
+      ],
+      "correct": 2,
+      "justification_correct": "Clark-Wilson ensures integrity through CDIs (constrained data items), UDIs (unconstrained data items), transformation procedures (TPs), and integrity verification procedures (IVPs). SoD via CDIs prevents unauthorized modifications.",
+      "justification_wrong": "Clark-Wilson is integrity-focused, not confidentiality-focused. Encryption and Bell-LaPadula are separate mechanisms. Logging alone without SoD enforcement is insufficient."
+    },
+    {
+      "num": 38,
+      "text": "During Common Criteria evaluation, an operating system achieves EAL4. What assurance level does this represent, and what is the corresponding development methodology requirement?",
+      "tag": "Common Criteria Evaluation",
+      "options": [
+        "B. EAL4 represents maximum assurance with formal methods and proof of correctness",
+        "A. EAL4 (Methodically Designed) requires formal security policy model and informal design verification",
+        "D. EAL4 mandates Common Criteria Protection Profile (PP) compliance exclusively",
+        "C. EAL4 requires only basic functional testing without design documentation"
+      ],
+      "correct": 1,
+      "justification_correct": "EAL4 (Methodically Designed, Tested, Reviewed) requires formal security policies, informal design verification, functional/penetration testing. It balances assurance and development cost per ISO/IEC 15408.",
+      "justification_wrong": "EAL7 provides formal methods/proof. EAL1 allows minimal testing. PP is optional. EAL4 is mid-range assurance with structured development."
+    },
+    {
+      "num": 39,
+      "text": "A PKI implementation uses RSA-2048 for asymmetric encryption and SHA-256 for certificate hashing. An attacker obtains a private key and performs signature forgery. Which cryptographic control FAILED to prevent this compromise?",
+      "tag": "PKI & Digital Signatures",
+      "options": [
+        "D. Certificate pinning and revocation checking on client endpoints",
+        "B. SHA-256 collision resistance in certificate generation",
+        "C. RSA-2048 mathematical strength against factorization",
+        "A. Key storage protection (secure key management and HSM deployment)"
+      ],
+      "correct": 3,
+      "justification_correct": "Private key compromise bypasses cryptographic algorithm strength. Secure key storage (HSM, encrypted keystores, access controls) per NIST SP 800-57 is essential. Algorithm strength is irrelevant if keys are compromised.",
+      "justification_wrong": "SHA-256 and RSA-2048 are cryptographically sound. Certificate pinning/revocation detection do not prevent key theft but detect misuse post-compromise."
+    },
+    {
+      "num": 40,
+      "text": "A Tier 3 data center implements a security perimeter with bollards, badge readers, and CCTV. An unauthorized person tailgates through a secured door using a stolen badge. Which physical security design principle was NOT adequately implemented?",
+      "tag": "Physical Security & Site Design",
+      "options": [
+        "B. Man-trap requiring badge AND biometric verification for high-value areas",
+        "D. Security guard presence with visual verification during peak hours",
+        "C. CCTV monitoring as primary access control mechanism replacing badges",
+        "A. Mantrap (air-lock) vestibule with dual authentication to prevent tailgating"
+      ],
+      "correct": 3,
+      "justification_correct": "Mantraps/air-locks with dual authentication (badge + biometric or dual-door interlocks) per NIST SP 800-53 (PE-3) prevent tailgating by ensuring only one authorized person per credential use.",
+      "justification_wrong": "CCTV is detective, not preventive. Guards are human-dependent. Bollards address vehicle threats, not personnel tailgating. Dual authentication requires infrastructure, not just monitoring."
+    },
+    {
+      "num": 41,
+      "text": "In the Bell-LaPadula security model, which property ensures that a subject at a higher classification level cannot write information to a lower classification level?",
+      "tag": "Security Models - Bell-LaPadula",
+      "options": [
+        "D. The confinement property",
+        "C. The tranquility property",
+        "B. The simple security property",
+        "A. The *-property (star property)"
+      ],
+      "correct": 3,
+      "justification_correct": "The *-property (star property) prevents write-down operations, enforcing that high-classified subjects cannot write to lower classifications. This protects information confidentiality by preventing covert channels and unauthorized information flow downward.",
+      "justification_wrong": "Simple security property prevents read-up (not write-down). Tranquility prevents classification changes during operation. Confinement is not a Bell-LaPadula property; it relates to program flow analysis and containment mechanisms."
+    },
+    {
+      "num": 42,
+      "text": "Which Common Criteria (CC) assurance level requires formal specification and formal verification of security properties, including top-level specification review?",
+      "tag": "Security Evaluation Criteria - Common Criteria",
+      "options": [
+        "B. EAL 5 (Semiformally Designed and Tested)",
+        "D. EAL 7 (Formally Verified Design and Tested)",
+        "C. EAL 6 (Semiformally Verified Design and Tested)",
+        "A. EAL 4 (Methodically Designed, Tested, and Reviewed)"
+      ],
+      "correct": 2,
+      "justification_correct": "EAL 6 requires semiformal specification and verification, including formal top-level specification, semiformal correspondence proofs, and focused security testing. Per ISO/IEC 15408, it balances rigor with practical implementation cost.",
+      "justification_wrong": "EAL 4 uses methodical design without formality. EAL 5 employs semiformal specification but less verification. EAL 7 (highest) requires fully formal methods beyond typical evaluation scope and is rarely achieved in practice."
+    },
+    {
+      "num": 43,
+      "text": "In the Brewer-Nash (Chinese Wall) model, what is the primary control mechanism that prevents conflicts of interest in multi-client environments?",
+      "tag": "Security Models - Brewer-Nash",
+      "options": [
+        "A. Mandatory role-based access control enforcing job responsibilities",
+        "C. Static classification of subjects into mutually exclusive security clearance levels",
+        "D. Implicit deny with explicit role enumeration across competing entities",
+        "B. Dynamic access control based on information access history and conflict-of-interest rules"
+      ],
+      "correct": 3,
+      "justification_correct": "Brewer-Nash uses dynamic conflict-of-interest rules; access depends on prior access history. If a subject accessed information from one client, they cannot access competing client data. This prevents consultants/advisors from conflicts of interest dynamically.",
+      "justification_wrong": "Role-based access is static, not conflict-aware. Clearance levels don't address competing interest conflicts. Implicit deny doesn't capture dynamic conflict relationships needed for multi-client confidentiality requirements."
+    },
+    {
+      "num": 44,
+      "text": "Which cryptographic technique is used to provide non-repudiation in PKI environments, ensuring a signer cannot deny creating a digital signature?",
+      "tag": "Cryptography - Digital Signatures & PKI",
+      "options": [
+        "C. Message authentication codes (MAC) with pre-shared symmetric keys",
+        "D. Hash-based message authentication codes (HMAC) with session keys",
+        "A. Symmetric encryption with shared keys and key derivation functions",
+        "B. Asymmetric encryption using the signer's private key to create a signature digest"
+      ],
+      "correct": 3,
+      "justification_correct": "Digital signatures use asymmetric cryptography; signers sign with private keys, verifiable by public keys. Only the private key holder can create valid signatures, providing non-repudiation. Per FIPS 186-4, DSA, RSA, and ECDSA are standard algorithms.",
+      "justification_wrong": "Symmetric encryption requires shared keys, preventing non-repudiation (both parties share the key). MACs and HMACs authenticate but don't bind to a specific party's private key, failing to prevent repudiation."
+    },
+    {
+      "num": 45,
+      "text": "In facility security design, which physical security control is considered a preventive measure against unauthorized access when placed at the perimeter of a data center?",
+      "tag": "Physical Security - Site & Facility Design",
+      "options": [
+        "D. Intrusion detection sensors triggering alarms when perimeter is breached",
+        "C. Security guards and visitor logs documenting all entry/exit events",
+        "A. Closed-circuit television (CCTV) systems with 24/7 monitoring and recording",
+        "B. Mantrap (access control vestibule) with dual authentication gates and card readers"
+      ],
+      "correct": 3,
+      "justification_correct": "Mantraps (access control vestibules) prevent tailgating and unauthorized entry by forcing sequential authentication at dual gates. This is preventive—physically blocking unauthorized access before it occurs. Per NIST SP 800-53, AC-2 and PE-3 control access.",
+      "justification_wrong": "CCTV, guards, and sensors are detective/responsive controls; they detect breaches after occurrence. Mantraps actively prevent access by design, stopping unauthorized entry at the perimeter before system compromise."
+    },
+    {
+      "num": 46,
+      "text": "In the Bell-LaPadula security model, which property ensures that a subject at a higher classification level cannot write information to an object at a lower classification level?",
+      "tag": "Security Models - Bell-LaPadula",
+      "options": [
+        "C. The tranquility property",
+        "D. The confinement property",
+        "B. The simple security property",
+        "A. The *-property (star property)"
+      ],
+      "correct": 3,
+      "justification_correct": "The *-property (star property) in Bell-LaPadula prevents write-down operations, ensuring no information flows from higher to lower classification levels. This maintains confidentiality by preventing covert channels and unauthorized downward information flow.",
+      "justification_wrong": "Simple security property enforces read-up restrictions (no read-down). Tranquility prevents classification changes during operation. Confinement is not a Bell-LaPadula property. Only *-property addresses write restrictions."
+    },
+    {
+      "num": 47,
+      "text": "Which Common Criteria assurance level (EAL) provides 'methodically tested and checked'?",
+      "tag": "Security Evaluation Criteria - Common Criteria",
+      "options": [
+        "C. EAL5",
+        "A. EAL3",
+        "D. EAL6",
+        "B. EAL4"
+      ],
+      "correct": 3,
+      "justification_correct": "EAL4 represents 'methodically tested and checked' assurance level with increased rigor in design documentation, testing, and vulnerability assessment. ISO/IEC 15408-1 defines EAL4 as suitable for high-risk applications requiring moderate assurance.",
+      "justification_wrong": "EAL3 is 'methodically designed and tested,' EAL5 is 'semi-formally designed and tested,' EAL6 is 'semi-formally verified design and tested.' Each level has distinct requirements per Common Criteria specification."
+    },
+    {
+      "num": 48,
+      "text": "In a PKI hierarchy, which certificate revocation mechanism provides near-real-time status but requires periodic communication with a responder?",
+      "tag": "Cryptography - PKI and Certificate Management",
+      "options": [
+        "C. CRL Distribution Points (CDP)",
+        "B. Online Certificate Status Protocol (OCSP)",
+        "A. Certificate Revocation List (CRL)",
+        "D. OCSP Stapling with long validity periods"
+      ],
+      "correct": 1,
+      "justification_correct": "OCSP (RFC 6960) provides real-time status queries via dedicated responder without downloading entire CRL. Each verification requires communication with OCSP responder, enabling timely revocation detection versus batch CRL updates.",
+      "justification_wrong": "CRL requires periodic downloads of all revoked certificates. CDP distributes CRL locations, not real-time status. OCSP Stapling reduces responder load but still depends on OCSP for freshness. Only OCSP provides per-query status."
+    },
+    {
+      "num": 49,
+      "text": "The Brewer-Nash (Chinese Wall) model is primarily designed to address which conflict of interest scenario?",
+      "tag": "Security Models - Brewer-Nash",
+      "options": [
+        "B. Enforcing mandatory access control hierarchy",
+        "C. Implementing information flow from classified to unclassified",
+        "A. Preventing information disclosure between competing organizations",
+        "D. Restricting write operations based on integrity levels"
+      ],
+      "correct": 2,
+      "justification_correct": "Brewer-Nash prevents conflicts of interest (e.g., consulting firms working for competing clients). It dynamically restricts access to prevent information leakage between competing datasets while maintaining flexible access policies.",
+      "justification_wrong": "Option B describes MAC (mandatory access control). Option C relates to Bell-LaPadula. Option D relates to Biba integrity model. Brewer-Nash uniquely addresses dynamic conflict-of-interest scenarios through sanitized information and access mediation."
+    },
+    {
+      "num": 50,
+      "text": "When designing a data center with Faraday cage protection, which electromagnetic threat is being mitigated?",
+      "tag": "Physical Security - Facility Design",
+      "options": [
+        "D. Radio frequency jamming of wireless networks",
+        "B. Power surge attacks only",
+        "A. Electromagnetic interference (EMI) and electromagnetic pulse (EMP)",
+        "C. Thermal imaging reconnaissance"
+      ],
+      "correct": 2,
+      "justification_correct": "Faraday cages attenuate external electromagnetic fields and contain internal EM radiation. They protect against EMI/EMP events per NIST SP 800-53 PE-18, preventing data exfiltration via side-channel EM emissions and external EMP damage.",
+      "justification_wrong": "Power surge protection uses surge suppressors, not Faraday cages. Thermal imaging requires perimeter controls/opaque barriers. RF jamming mitigation involves frequency hopping or shielded communications. Faraday cages specifically address electromagnetic field threats."
+    }
+  ]
+}

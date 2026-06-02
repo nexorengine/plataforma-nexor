@@ -1,0 +1,249 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "inventory_fraud",
+  "quiz_num": 1,
+  "domain_name": "S1D05 · Asset Misappropriation — Inventory & Assets",
+  "cert_name": "Certified Fraud Examiner",
+  "lang": "en",
+  "source": "legacy_curated",
+  "questions": [
+    {
+      "num": 1,
+      "text": "What is the primary effect of fraudulently overstating ending inventory in the financial statements?",
+      "tag": "Inventory Manipulation",
+      "options": [
+        "A. COGS is overstated and gross profit decreases",
+        "B. Current liabilities are overstated",
+        "C. Revenue is understated for the period",
+        "D. COGS is understated and gross profit is overstated"
+      ],
+      "correct": 3,
+      "justification_correct": "COGS = Beginning Inventory + Purchases - Ending Inventory. A higher ending inventory reduces calculated COGS, artificially inflating gross profit and period results. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "COGS decreases (not increases) with overstated ending inventory; liabilities and revenue are not directly affected by this specific manipulation.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 2,
+      "text": "Marcus, a Certified Fraud Examiner, is analyzing inventory records for a retail electronics company where management suspects employee theft. He reviews three years of data and notices that while sales revenue has increased by 12% annually, the cost of goods sold percentage has remained stable at 64%, but physical inventory shrinkage has increased from 1.2% to 4.8% of total inventory value. The perpetual inventory system shows consistent recording of purchases and sales. Which analysis should Marcus prioritize to identify the most likely scheme?",
+      "tag": "Inventory Manipulation & Trend Analysis",
+      "options": [
+        "A. Compare physical inventory count results to perpetual records by location and product category to identify specific areas with the greatest discrepancies",
+        "B. Analyze vendor payment records for duplicate invoices that would indicate a shell company purchasing scheme",
+        "C. Review employee discount transactions to determine if sales are being improperly classified to reduce apparent shrinkage",
+        "D. Examine purchase order approval workflows to identify any circumvention of segregation of duties controls"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "The dramatic increase in physical inventory shrinkage (from 1.2% to 4.8%) while the perpetual system shows consistent recording indicates a disconnect between actual physical inventory and recorded inventory. This pattern is most consistent with theft of physical goods rather than purchasing schemes or recording manipulation. Comparing physical counts to perpetual records by location and product category will help identify where inventory is physically disappearing, which specific high-value items are targeted, and potentially which employees have access to those areas. This targeted approach is most efficient given the clear shrinkage trend and will provide actionable evidence of the theft scheme.",
+      "justification_wrong": "Option B focuses on purchasing schemes, but the stable COGS percentage and the specific pattern of increasing physical shrinkage (not overstated purchases) suggests inventory theft rather than fraudulent purchasing. Duplicate invoice schemes would typically inflate COGS. Option C addresses sales manipulation, but the problem states sales and COGS percentages are stable and consistent, indicating the revenue recording is likely accurate; employee discount abuse would also typically appear in the sales data rather than purely as shrinkage. Option D examines purchasing controls, but segregation of duties failures in purchasing would more likely result in fictitious vendors or inflated prices (affecting COGS percentage), not the progressive increase in physical inventory shrinkage shown in this scenario where the perpetual system appears accurate."
+    },
+    {
+      "num": 3,
+      "text": "Rachel, a Certified Fraud Examiner, is investigating inventory shortages at a manufacturing company. Physical counts consistently show fewer items than the perpetual inventory system records. Management suspects theft but has no direct evidence. Rachel analyzes purchase orders, receiving reports, and inventory records for the past year. She discovers that certain high-value items show receiving reports signed by the warehouse supervisor, but the corresponding items were never entered into the perpetual inventory system. Which fraud scheme does this pattern MOST likely indicate?",
+      "tag": "Inventory Shortage",
+      "options": [
+        "A. The warehouse supervisor is stealing inventory after it is received and recorded, then altering the perpetual records to conceal the theft.",
+        "B. The warehouse supervisor is diverting received goods before recording them in the perpetual system, creating no documentary trail of their existence.",
+        "C. A purchasing agent is creating false purchase orders and colluding with the warehouse supervisor to split proceeds from phantom inventory sales.",
+        "D. The warehouse supervisor is recording ghost employees in the payroll system and converting inventory to cash to fund the fraudulent payments."
+      ],
+      "correct": 1,
+      "difficulty": "STANDARD",
+      "justification_correct": "This scenario describes a non-conforming goods scheme or receipt-stage theft. The warehouse supervisor signs receiving reports confirming goods arrived (creating vendor payment documentation) but never enters the items into the perpetual inventory system. This allows the supervisor to misappropriate the goods immediately upon receipt without creating an inventory shortage on paper, since the items were never recorded as inventory. The physical count matches the perpetual records because the stolen items were never logged. This scheme exploits the gap between physical receipt and system recording, making detection difficult until cross-referencing purchase orders with inventory records reveals the discrepancy.",
+      "justification_wrong": "Option A is incorrect because if items were entered into the perpetual inventory system and then stolen, altering those records would require additional fraudulent actions and would likely create audit trails or system anomalies; the scenario shows items were never entered initially. Option C is incorrect because the purchase orders and receiving reports are legitimate (goods were actually ordered and received), not phantom transactions; the fraud occurs at the recording stage, not the purchasing stage, and there's no evidence of false purchase orders. Option D is incorrect because this scenario involves inventory diversion, not payroll fraud; there is no indication of ghost employees or payroll manipulation in the facts presented, and linking inventory theft to payroll fraud requires evidence not present in this pattern."
+    },
+    {
+      "num": 4,
+      "text": "Brandon, a fraud examiner, is investigating potential inventory theft at a manufacturing company after management reported unexplained inventory shortages. During his examination, Brandon discovers that the perpetual inventory records show significantly higher quantities than the physical counts for several high-value raw materials. Which of the following detection methods would MOST effectively help Brandon identify whether the shortages result from employee theft versus purchasing scheme fraud?",
+      "tag": "Inventory Detection",
+      "options": [
+        "A. Analyzing purchase orders and receiving reports to identify split shipments or fictitious vendors in the procurement cycle",
+        "B. Conducting surprise physical inventory counts and comparing results to perpetual records across multiple time periods",
+        "C. Reviewing sales invoices and shipping documents to detect unrecorded sales or revenue diversion schemes",
+        "D. Examining inventory turnover ratios and comparing them to industry benchmarks for similar manufacturing operations"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Analyzing purchase orders and receiving reports is the most effective method to distinguish between theft and purchasing schemes because purchasing fraud (such as kickback schemes, fictitious vendor schemes, or personal purchases) leaves documentary evidence in the procurement cycle. If inventory shortages result from purchasing schemes, the examiner will find irregularities such as vendors without proper documentation, inflated quantities on receiving reports versus actual deliveries, or payments to shell companies. If the procurement documentation is clean and reconciles properly, this suggests the shortages more likely result from physical theft after receipt. This targeted approach directly tests the procurement controls and documentation that would reveal purchasing scheme red flags.",
+      "justification_wrong": "Option B (surprise physical counts) confirms that shortages exist and may deter future theft, but does not distinguish the cause—both employee theft and purchasing schemes result in physical shortages that would be detected through counts. This method identifies the symptom but not the underlying fraud type. Option C (sales and shipping document review) tests for revenue-related fraud schemes or shipment diversions, which would not explain discrepancies between perpetual records and physical counts of raw materials in manufacturing. Option D (inventory turnover ratio analysis) provides high-level analytical insight useful for detecting general inventory problems but lacks the specificity needed to differentiate between theft occurring at the warehouse level versus fraud embedded in the purchasing process, as abnormal ratios could result from either scheme type or legitimate business factors."
+    },
+    {
+      "num": 5,
+      "text": "Jessica, a Certified Fraud Examiner, is reviewing inventory control procedures at a manufacturing company where management suspects employee theft of raw materials. She observes that the warehouse supervisor has the ability to receive shipments, update inventory records, adjust inventory counts for variances, and approve purchase orders. Which of the following control weaknesses is MOST directly contributing to the theft risk in this scenario?",
+      "tag": "Inventory Control",
+      "options": [
+        "A. Inadequate segregation of duties among inventory custody, recordkeeping, and authorization functions",
+        "B. Absence of mandatory vacation policies requiring temporary replacement of the warehouse supervisor",
+        "C. Failure to conduct unannounced physical inventory counts by personnel independent of warehouse operations",
+        "D. Insufficient background screening procedures during the hiring process for warehouse personnel"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "The primary control weakness is the lack of segregation of duties. Effective internal controls require separating custody of assets (receiving shipments), recordkeeping (updating inventory records and adjusting counts), and authorization (approving purchase orders). When one individual controls all three functions, they can perpetrate and conceal theft by creating fictitious receiving documents, adjusting records to hide shortages, and approving fraudulent purchases. This concentration of incompatible duties creates the opportunity for the warehouse supervisor to steal materials and manipulate records without detection, which is the most direct contributor to theft risk in this scenario.",
+      "justification_wrong": "Option B, while mandatory vacation policies are a useful detective control that can uncover frauds when perpetrators are temporarily replaced, this is a secondary control and does not address the fundamental structural weakness that enables theft in the first place. Option C describes unannounced physical counts, which are important detective controls but do not prevent the supervisor from manipulating count results or concealing theft through record adjustments since they control the recordkeeping function. Option D relates to pre-employment screening, which is a preventive hiring control but does not address the systemic control gap that allows an otherwise trusted employee to both perpetrate and conceal theft through their excessive access to incompatible functions."
+    },
+    {
+      "num": 6,
+      "text": "A Certified Fraud Examiner is analyzing inventory records at a manufacturing company following allegations of phantom inventory schemes. The CFE applies Benford's Law to the first digit of 2,847 inventory transaction amounts and finds that the digit \"5\" appears in 18.2% of transactions, while the digit \"1\" appears in 11.5% of transactions. According to Benford's Law, the expected frequency for \"5\" is approximately 7.9% and for \"1\" is approximately 30.1%. What should the CFE conclude from this analytical procedure?",
+      "tag": "Inventory Manipulation & Benford's Law & Analytical Procedures",
+      "options": [
+        "A. The deviation suggests potential manipulation, as both digits show significant variance from expected frequencies, warranting further investigation into specific transactions beginning with \"5\"",
+        "B. The deviation is immaterial because Benford's Law applies only to accounts payable data and cannot be reliably used for inventory transaction analysis in manufacturing environments",
+        "C. The results confirm fraud has occurred because any variance exceeding 5% from Benford's expected frequencies constitutes definitive evidence of intentional data manipulation",
+        "D. The deviation indicates normal business activity because inventory transactions typically follow uniform distribution patterns rather than logarithmic distributions predicted by Benford's Law"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Option A correctly applies Benford's Law as an analytical red flag procedure. The significant deviations from expected frequencies (5 appearing 18.2% vs. expected 7.9%, and 1 appearing 11.5% vs. expected 30.1%) indicate potential manipulation or fabrication of data. Benford's Law states that in naturally occurring datasets, lower digits appear more frequently as leading digits. The over-representation of \"5\" and under-representation of \"1\" suggests possible rounding, estimation, or fabrication of inventory amounts—common in phantom inventory schemes where perpetrators create false records. This deviation warrants further investigation but is not conclusive proof of fraud by itself, making it an appropriate analytical procedure for identifying areas requiring deeper examination.",
+      "justification_wrong": "Option B is incorrect because Benford's Law can be effectively applied to various financial datasets including inventory transactions, not just accounts payable; it works well with naturally occurring numerical data across multiple business contexts. Option C is incorrect because Benford's Law deviations are indicators or red flags requiring investigation, not definitive proof of fraud; statistical variance alone does not constitute evidence of intentional manipulation, and there is no rigid 5% threshold that confirms fraud. Option D is incorrect because inventory transactions in most organizations do follow logarithmic patterns consistent with Benford's Law rather than uniform distributions; naturally occurring transaction amounts tend to conform to Benford's expected frequencies, making deviations significant."
+    },
+    {
+      "num": 7,
+      "text": "Marcus, a Certified Fraud Examiner, is reviewing inventory records for a manufacturing company and notices that over the past 18 months, the cost of goods sold percentage has remained consistent at 62%, while the inventory turnover ratio has declined from 8.2 to 5.1 times per year. Sales revenue has increased by 12% during this period, and the company has not changed its product mix or pricing strategy. Which inventory fraud scheme is most consistent with these analytical findings?",
+      "tag": "Inventory Manipulation & Trend Analysis",
+      "options": [
+        "A. Fictitious inventory is being recorded to inflate assets and understate cost of goods sold",
+        "B. Inventory is being stolen and written off through fraudulent journal entries to miscellaneous expense accounts",
+        "C. A purchasing manager is receiving kickbacks from vendors in exchange for approving inflated invoices",
+        "D. Physical inventory is being removed but shrinkage losses are not being recorded in the accounting system",
+        "E. Obsolete inventory is being retained on the books at full value rather than being written down"
+      ],
+      "correct": 3,
+      "difficulty": "STANDARD",
+      "justification_correct": "When physical inventory is stolen but shrinkage is not recorded, the inventory balance remains artificially high on the books while actual inventory decreases. This causes the inventory turnover ratio (COGS ÷ Average Inventory) to decline because the denominator is overstated. The COGS percentage remains consistent because stolen inventory that is not written off does not flow through COGS—it simply disappears from physical stock while remaining as an asset. This creates the exact pattern observed: stable COGS percentage with declining turnover, indicating inventory on the books is not moving as it should be.",
+      "justification_wrong": "Option A is incorrect because fictitious inventory would understate COGS (making the COGS percentage decrease, not remain stable) since the inflated ending inventory would reduce the cost of goods sold calculation. Option B is incorrect because writing off stolen inventory to expense accounts would increase total expenses and likely alert management to unusual miscellaneous expenses, and would not cause the turnover ratio decline observed since inventory would be removed from the books. Option C is incorrect because kickback schemes typically involve inflated purchase prices, which would increase COGS percentage over time rather than keeping it stable, and would not directly explain the inventory turnover decline. Option E is incorrect because retaining obsolete inventory affects inventory valuation but would not explain the declining turnover ratio in a scenario where sales are increasing—obsolete items typically have zero or very low turnover already."
+    },
+    {
+      "num": 8,
+      "text": "Rachel, a fraud examiner, is reviewing perpetual inventory records at a manufacturing company where management suspects inventory theft. She discovers that actual physical counts consistently show shortages across multiple high-value product lines, but the perpetual inventory system shows no corresponding adjustments or write-offs. Sales records and shipping documents appear to match recorded inventory reductions. Which of the following investigative steps would be MOST effective in identifying whether the shortages result from an internal theft scheme?",
+      "tag": "Inventory Shortage",
+      "options": [
+        "A. Compare purchase orders with receiving reports to identify whether goods were actually received before being recorded as inventory additions",
+        "B. Review sales invoice pricing to determine if products are being sold below market value to external accomplices",
+        "C. Analyze customer complaint records to identify patterns of short shipments that might indicate recording errors",
+        "D. Examine employee time records to determine which personnel had access to inventory areas during business hours"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "When perpetual records show inventory that does not exist physically, and sales/shipping documents match recorded reductions, the most likely explanation is that inventory was never actually received but was recorded as received (a purchasing scheme such as phantom inventory or receiving scheme). Comparing purchase orders with receiving reports and verifying actual receipt through independent evidence (shipping documents from vendors, payment records, inspection reports) helps identify whether goods recorded as received actually entered the facility. This addresses the root cause of the discrepancy by validating the initial inventory additions. In purchasing schemes, perpetrators may create false receiving documents or collude with vendors to record inventory that was never delivered, causing physical shortages while perpetual records remain inflated.",
+      "justification_wrong": "Option B is incorrect because the scenario indicates sales records match recorded inventory reductions, suggesting the sales process is properly documented; reviewing pricing would not explain why physical inventory is missing when it should be present based on purchase records. Option C is incorrect because customer complaints about short shipments would typically result in discrepancies between sales records and inventory reductions, but the scenario states these already match; this would indicate an outbound problem rather than explaining the existing shortage. Option D is incorrect because merely knowing who had access does not establish whether theft occurred or identify the mechanism of the shortage; access alone is insufficient without examining the documentary evidence trail that created the inflated perpetual records, and many employees may have legitimate access without being involved in theft."
+    },
+    {
+      "num": 9,
+      "text": "Rebecca, a fraud examiner, is investigating suspected inventory theft at a manufacturing facility. She observes that physical inventory counts consistently show shortages, yet the perpetual inventory records appear accurate. Employee purchase orders show regular acquisitions at market rates, and the warehouse uses a just-in-time inventory system. Which analytical procedure would MOST effectively detect whether inventory is being stolen at the point of receipt?",
+      "tag": "Inventory Detection",
+      "options": [
+        "A. Reconcile receiving reports with purchase orders and inventory records to identify discrepancies between quantities ordered, received, and recorded",
+        "B. Compare current inventory turnover ratios with prior periods to determine if slower movement indicates potential diversion",
+        "C. Review vendor invoices for duplicate payments that might suggest fictitious inventory purchases are being processed",
+        "D. Analyze gross profit margins by product line to detect whether declining margins correlate with specific inventory categories"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Reconciling receiving reports with purchase orders and inventory records directly targets the point of receipt, which is where the theft likely occurs in this scenario. Since physical counts show shortages but perpetual records appear accurate, the fraud is likely occurring when goods arrive but before they are properly recorded or stored. This three-way match (PO, receiving report, inventory record) would reveal if goods shown as received on receiving documents never made it into inventory records or physical storage, indicating theft at the receiving dock. This procedure specifically addresses the vulnerability point suggested by the facts: items are ordered and appear in records, but physical inventory is short.",
+      "justification_wrong": "Option B (inventory turnover analysis) would not effectively detect theft at receipt because in a just-in-time system, turnover is already expected to be rapid, and theft at receipt would actually increase apparent turnover (goods received but immediately diverted), not decrease it. Option C (duplicate payment review) tests for purchasing schemes and fictitious vendors, but the scenario indicates purchases are at market rates with no indication of payment irregularities; this procedure targets billing fraud, not physical inventory theft. Option D (gross profit margin analysis) is too indirect for detecting theft at receipt; while margins might eventually be affected, this procedure wouldn't pinpoint the specific vulnerability at the receiving point, and margin changes could result from numerous factors unrelated to theft at receipt, such as pricing changes or product mix shifts."
+    },
+    {
+      "num": 10,
+      "text": "Sarah, a fraud examiner, is reviewing the inventory controls at a regional distribution center where management suspects ongoing theft. She discovers that the warehouse uses a perpetual inventory system with barcode scanning, but physical counts are only conducted annually. The warehouse manager has sole authority to adjust inventory records for damaged goods and write-offs without secondary approval. Last year, inventory shrinkage was 8% above industry norms. Which control weakness should Sarah identify as the highest priority for management to address?",
+      "tag": "Inventory Control",
+      "options": [
+        "A. The lack of segregation of duties allowing the warehouse manager to independently authorize and record inventory adjustments",
+        "B. The reliance on a perpetual inventory system rather than a periodic system that would provide more frequent reconciliation opportunities",
+        "C. The infrequency of physical inventory counts compared to the daily barcode scanning transactions recorded in the system",
+        "D. The absence of variance analysis procedures to compare actual shrinkage percentages against established industry benchmarks"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "The most critical control weakness is the lack of segregation of duties. When one person has the authority to both authorize inventory disposals (damaged goods, write-offs) and record those transactions without independent verification or approval, it creates an opportunity for asset misappropriation. The warehouse manager could steal inventory and conceal it by creating fictitious adjustment entries. Segregation of duties is a fundamental internal control principle that requires different individuals to perform authorization, recordkeeping, and custody functions. In inventory control, this means separating the authority to approve write-offs from the ability to record those adjustments, which directly addresses the opportunity component of the fraud triangle.",
+      "justification_wrong": "Option B is incorrect because perpetual inventory systems generally provide stronger controls than periodic systems by maintaining continuous records of inventory movements and enabling real-time monitoring. The system type is not the primary weakness. Option C is incorrect because while more frequent physical counts would be beneficial, the annual count frequency itself is not unusual for many organizations; the critical issue is what happens between counts when adjustments can be made without oversight. Option D is incorrect because variance analysis is a detective control that identifies problems after they occur, but it does not prevent the fraud from happening. The segregation of duties issue is a preventive control weakness that creates the opportunity for theft and concealment, making it the higher priority to address."
+    },
+    {
+      "question": "During a routine audit of a manufacturing company's fixed asset register, you discover that several high-value pieces of equipment purchased within the past two years cannot be located. The asset custodian explains that the equipment was scrapped due to obsolescence, but you notice that the disposal forms lack proper authorization signatures and there are no photographs or external disposal receipts. Which of the following would be the MOST effective procedure to determine if assets were misappropriated rather than legitimately disposed of?",
+      "options": [
+        "Review the company's depreciation schedules to verify that the assets were fully depreciated before disposal",
+        "Interview the asset custodian's subordinates and examine maintenance records to assess whether the equipment was functional prior to alleged disposal",
+        "Recalculate the gain or loss on disposal and trace the entries to the general ledger",
+        "Send confirmation requests to the company's insurance provider to verify coverage was cancelled on the disposed assets"
+      ],
+      "correct_answer": 1,
+      "explanation": "Interviewing subordinates and examining maintenance records would help establish whether the equipment was actually obsolete or still functional, which is critical to determining if the disposal was legitimate. If maintenance records show recent repairs or the equipment was in working condition, this would indicate potential misappropriation. Option A is incorrect because depreciation status doesn't indicate whether disposal was legitimate. Option C only verifies accounting treatment, not the validity of the disposal. Option D might show when coverage ended but doesn't prove whether the asset was actually disposed of properly or stolen.",
+      "topic": "Asset Misappropriation — Inventory & Assets",
+      "subtopic": "Physical Asset Theft and Disposal Schemes",
+      "num": 11
+    },
+    {
+      "question": "A CFE is investigating suspected inventory theft at a manufacturing warehouse. Security logs show that John Miller, the warehouse supervisor, has been accessing the facility during non-business hours on weekends. Physical inventory counts consistently show shortages in high-value electronic components. Which of the following investigative procedures would be MOST effective in detecting whether Miller is using accomplices to remove inventory from the premises?",
+      "options": [
+        "Review Miller's bank statements for deposits that exceed his known salary",
+        "Analyze shipping and receiving documents for evidence of fictitious vendors or customers",
+        "Install covert surveillance cameras at warehouse exits and compare footage to gate access logs",
+        "Perform surprise inventory counts and compare results to perpetual inventory records"
+      ],
+      "correct_answer": 2,
+      "explanation": "While all options have investigative value, covert surveillance cameras (option C) would be most effective in directly detecting accomplices helping Miller remove inventory. This approach would reveal who is entering and leaving with Miller during non-business hours and what they are carrying. Option A might show unexplained wealth but wouldn't identify accomplices. Option B focuses on documentation schemes rather than physical theft. Option D would confirm shortages but not identify how inventory is being removed or who else is involved. Surveillance provides real-time evidence of the theft method and participants.",
+      "topic": "Asset Misappropriation",
+      "subtopic": "Inventory Theft Investigation Techniques",
+      "difficulty": "medium",
+      "num": 12
+    },
+    {
+      "question": "Michael Chen, CFE, is investigating a suspected inventory theft scheme at a manufacturing company. During his investigation, he discovers that the warehouse manager has been creating fictitious sales returns to cover up missing inventory. Which of the following audit procedures would be MOST effective in detecting this type of scheme?",
+      "options": [
+        "Review sales return documentation for proper authorization and match returned items to inventory receiving records",
+        "Perform a ratio analysis comparing cost of goods sold to total revenue over multiple periods",
+        "Conduct surprise physical inventory counts and reconcile results to perpetual inventory records",
+        "Interview the warehouse manager about inventory control procedures and document the responses"
+      ],
+      "correct_answer": 2,
+      "explanation": "Conducting surprise physical inventory counts and reconciling the results to perpetual inventory records (Option C) is the most effective procedure for detecting fictitious sales returns used to cover inventory theft. This direct verification method would reveal discrepancies between what should be in inventory according to the records (inflated by fake returns) and what is actually physically present. Option A, while useful, may not detect the scheme if the documentation appears proper. Option B might show anomalies but would not directly identify the specific scheme. Option D relies on the potentially dishonest employee's statements and would be the least reliable detection method.",
+      "topic": "Asset Misappropriation — Inventory & Assets",
+      "sub_topic": "Inventory Theft Schemes and Detection Methods",
+      "num": 13
+    },
+    {
+      "id": "S1D05-Q14",
+      "topic": "Asset Misappropriation — Inventory & Assets",
+      "question": "A CFE is investigating a suspected inventory theft scheme at a manufacturing company. The warehouse manager has exclusive access to inventory records and is responsible for conducting monthly physical counts. Which of the following red flags would MOST strongly indicate a potential asset misappropriation scheme involving inventory?\n\nA) Increasing gross profit margins over three consecutive quarters while inventory turnover remains constant\n\nB) Perpetual inventory records consistently showing higher quantities than physical counts, with the warehouse manager making frequent downward adjustments citing \"shrinkage\"\n\nC) Multiple purchase orders from the same vendor with slightly different pricing for identical items\n\nD) Discrepancies between the number of items shown as damaged in warehouse reports and the actual number of items disposed of through proper channels",
+      "options": [
+        "A) Increasing gross profit margins over three consecutive quarters while inventory turnover remains constant",
+        "B) Perpetual inventory records consistently showing higher quantities than physical counts, with the warehouse manager making frequent downward adjustments citing \"shrinkage\"",
+        "C) Multiple purchase orders from the same vendor with slightly different pricing for identical items",
+        "D) Discrepancies between the number of items shown as damaged in warehouse reports and the actual number of items disposed of through proper channels"
+      ],
+      "correct_answer": "B",
+      "explanation": "Option B is correct because perpetual records consistently exceeding physical counts, combined with one person having exclusive control over both records and counts, is a classic red flag for inventory theft. The perpetrator may be stealing inventory and adjusting records downward to conceal the theft, using \"shrinkage\" as a cover. This represents a segregation of duties violation and a pattern consistent with asset misappropriation. Option A suggests improving profitability, not theft. Option C might indicate billing schemes but not necessarily inventory theft. Option D could indicate issues but is less direct than B's pattern of consistent overstatement followed by adjustments by the same individual with exclusive access.",
+      "topic_tags": [
+        "inventory theft",
+        "segregation of duties",
+        "physical controls",
+        "red flags",
+        "perpetual inventory"
+      ],
+      "num": 14
+    },
+    {
+      "id": "S1D05-Q15",
+      "topic": "Asset Misappropriation — Inventory & Assets",
+      "question": "A CFE is investigating potential inventory theft at a manufacturing warehouse. During the investigation, the CFE discovers that the perpetual inventory records show 10,000 units of raw materials on hand, but the physical count reveals only 7,500 units. The warehouse manager explains that the difference is due to normal shrinkage and evaporation of volatile materials. Which of the following procedures would be MOST effective in determining whether the shortage is due to theft versus legitimate shrinkage?",
+      "options": [
+        "Compare the current shrinkage percentage to historical shrinkage rates for similar volatile materials and industry benchmarks",
+        "Interview all warehouse employees to determine if anyone witnessed suspicious activity",
+        "Review the warehouse manager's personal financial records for signs of financial pressure",
+        "Immediately report the shortage to law enforcement as evidence of theft"
+      ],
+      "correct_answer": 0,
+      "explanation": "Comparing current shrinkage rates to historical data and industry benchmarks (Option A) is the most effective initial analytical procedure. Legitimate shrinkage from evaporation should be relatively consistent over time and comparable to industry standards. If the current shortage significantly exceeds these benchmarks, it may indicate theft rather than normal shrinkage. This approach provides objective evidence before pursuing more invasive investigative steps. While interviewing employees (Option B) may be useful later, it's not as effective as analytical comparison. Reviewing personal financial records (Option C) is premature and may violate privacy rights without reasonable suspicion. Immediately reporting to law enforcement (Option D) is inappropriate without completing reasonable due diligence to determine if theft actually occurred.",
+      "topic_tags": [
+        "Inventory Theft",
+        "Physical Inventory Controls",
+        "Shrinkage Analysis",
+        "Investigative Procedures"
+      ],
+      "difficulty": "medium",
+      "num": 15
+    }
+  ]
+}

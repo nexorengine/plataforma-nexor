@@ -1,0 +1,172 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "fraudulent_disbursements",
+  "quiz_num": 1,
+  "lang": "pt",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Miranda, uma supervisora de folha de pagamento em uma empresa de manufatura, vem adicionando funcionários fictícios ao sistema de folha de pagamento nos últimos oito meses. Ela usa endereços residenciais de propriedades vagas, cria contas de depósito direto sob seu controle e garante que os funcionários fantasmas sejam atribuídos a diferentes departamentos com taxas de pagamento variadas. Qual dos seguintes controles seria MAIS eficaz para detectar o esquema de funcionários fantasmas de Miranda?",
+      "tag": "Ghost Employee",
+      "options": [
+        "A. Exigir que os gerentes de departamento verifiquem fisicamente e aprovem a existência de todos os funcionários listados em seus relatórios de folha de pagamento departamental a cada período de pagamento",
+        "B. Implementar uma política que exija que toda documentação de contratação de novos funcionários inclua duas formas de identificação emitidas pelo governo que sejam fotocopiadas e mantidas nos arquivos de pessoal",
+        "C. Estabelecer um mandato de que os supervisores de folha de pagamento tirem dias de férias consecutivos obrigatórios durante os quais outro funcionário assume todas as responsabilidades de processamento da folha de pagamento",
+        "D. Configurar o sistema de folha de pagamento para sinalizar quaisquer funcionários que compartilhem as mesmas informações de conta bancária ou endereços de correspondência para revisão da gerência"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Exigir que os gerentes de departamento verifiquem fisicamente a existência dos funcionários em seus relatórios de folha de pagamento é o controle de detecção mais eficaz porque funcionários fantasmas, por definição, nunca comparecem ao trabalho. Quando os gerentes são obrigados a confirmar que cada pessoa listada realmente trabalha em seu departamento, funcionários fictícios serão imediatamente identificados, pois nenhuma pessoa física existe. Esta verificação independente por alguém fora da função de folha de pagamento cria segregação de funções e aborda diretamente a vulnerabilidade central explorada em esquemas de funcionários fantasmas—a falta de verificação de que os funcionários realmente existem e executam trabalho.",
+      "justification_wrong": "A Opção B aborda documentação para novas contratações, mas não detectaria o esquema porque Miranda poderia fabricar ou obter documentos de identificação fraudulentos ao criar os funcionários fantasmas, e este é um controle preventivo em vez de detectivo que ocorre apenas na contratação. A Opção C sobre férias obrigatórias é um controle detectivo valioso para muitas fraudes de folha de pagamento, mas Miranda projetou o esquema para parecer rotineiro em múltiplos departamentos com taxas variadas, tornando menos provável que um substituto temporário reconheça imediatamente os funcionários fictícios sem procedimentos ativos de verificação. A Opção D detectaria alguns esquemas de funcionários fantasmas onde os perpetradores reutilizam contas bancárias ou endereços, mas Miranda estruturou especificamente seu esquema para evitar este sinal de alerta usando diferentes endereços de propriedades vagas e contas bancárias separadas, tornando este controle ineficaz contra sua abordagem particular."
+    },
+    {
+      "num": 2,
+      "text": "Sarah, uma examinadora de fraudes, está revisando pedidos de reembolso de despesas em uma empresa de manufatura. Ela percebe que Marcus, um representante de vendas, apresentou recibos de hotel para uma conferência de três dias em Chicago. Os recibos mostram que ele ficou em um hotel premium por $450 por noite. A investigação de Sarah revela que Marcus realmente ficou em um hotel econômico por $120 por noite e alterou os recibos originais manipulando os valores e o nome do hotel usando software de edição de fotos. Marcus recebeu reembolso pelos valores inflados. Que tipo de esquema de reembolso de despesas Marcus cometeu?",
+      "tag": "Expense Reimbursement",
+      "options": [
+        "A. Esquema de reembolso de despesas descaracterizadas",
+        "B. Esquema de reembolso de despesas superestimadas",
+        "C. Esquema de reembolso de despesas fictícias",
+        "D. Esquema de reembolso múltiplo"
+      ],
+      "correct": 1,
+      "difficulty": "STANDARD",
+      "justification_correct": "Este é um esquema de reembolso de despesas superestimadas porque Marcus realmente incorreu em uma despesa empresarial legítima (a estadia no hotel), mas manipulou a documentação de suporte para inflar o custo real de $120 para $450 por noite. Em esquemas de superestimação, o funcionário genuinamente incorre na despesa, mas busca reembolso por um valor maior do que o efetivamente pago, alterando recibos ou outros documentos de suporte. A característica chave é que uma despesa real ocorreu, mas o perpetrador deturpa o valor verdadeiro para obter reembolso excessivo.",
+      "justification_wrong": "A opção A está incorreta porque um esquema de despesa descaracterizada envolve reivindicar uma despesa pessoal como despesa empresarial, como apresentar um recibo de jantar pessoal como despesa de entretenimento de cliente. A estadia de Marcus no hotel foi legitimamente relacionada a negócios para a conferência. A opção C está incorreta porque um esquema de despesa fictícia envolve apresentar reivindicações para despesas que nunca ocorreram, como criar recibos falsos para compras inexistentes. Marcus realmente ficou em um hotel e incorreu em despesas reais de hospedagem. A opção D está incorreta porque um esquema de reembolso múltiplo envolve buscar pagamento mais de uma vez pela mesma despesa, como apresentar o mesmo recibo para diferentes gerentes ou combinar reembolso da empresa com cobrança ao cliente pelo mesmo custo. Marcus apenas apresentou os recibos alterados uma vez para reembolso."
+    },
+    {
+      "num": 3,
+      "text": "Maria, supervisora de folha de pagamento em uma empresa de manufatura, vem adicionando funcionários fictícios ao sistema de folha de pagamento nos últimos 18 meses. Ela cria arquivos de pessoal falsos, processa depósitos diretos em contas que ela controla e garante que esses funcionários fantasmas sejam atribuídos a diferentes departamentos com supervisores variados. Qual dos seguintes controles internos seria MAIS eficaz na detecção do esquema de funcionários fantasmas de Maria?",
+      "tag": "Ghost Employee",
+      "options": [
+        "A. Exigir que o departamento de recursos humanos verifique independentemente todos os funcionários no registro de folha de pagamento contra arquivos de pessoal ativos a cada trimestre",
+        "B. Implementar uma política de que todos os novos contratados devem preencher o Formulário I-9 dentro de três dias da data de início e enviá-lo ao escritório de compliance",
+        "C. Determinar que todos os desembolsos de folha de pagamento que excedam $5.000 por período de pagamento exijam autorização dupla do gerente de folha de pagamento e do controller",
+        "D. Estabelecer uma exigência de que supervisores de departamento revisem e aprovem eletronicamente os cartões de ponto antes do processamento da folha de pagamento a cada período de pagamento"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A verificação independente pelo RH contra o registro de folha de pagamento é o controle mais eficaz porque aborda diretamente o esquema de funcionários fantasmas ao comparar duas fontes independentes de dados. Esta reconciliação identificaria funcionários que aparecem na folha de pagamento que não possuem arquivos de pessoal legítimos correspondentes, expondo os trabalhadores fictícios. A independência da função de RH em relação ao processamento da folha de pagamento é crítica, pois cria segregação de funções que impede que um supervisor de folha de pagamento crie registros falsos e os verifique. Esta reconciliação periódica tem como alvo específico a vulnerabilidade que Maria explorou ao criar tanto lançamentos na folha de pagamento quanto arquivos de pessoal falsos.",
+      "justification_wrong": "A opção B está incorreta porque embora a conformidade com o Formulário I-9 seja importante para verificação de elegibilidade de emprego, Maria já criou arquivos de pessoal falsos, que poderiam facilmente incluir formulários I-9 fraudulentos. Este controle se concentra em conformidade de imigração em vez de detectar funcionários fictícios depois que foram adicionados ao sistema. A opção C está incorreta porque o limite de valor se aplica a desembolsos individuais, não pagamentos cumulativos a funcionários fantasmas. O esquema de Maria provavelmente envolve múltiplos pagamentos menores a diferentes funcionários fictícios que individualmente ficam abaixo do limite de $5.000, permitindo que a fraude contorne este controle inteiramente. A opção D está incorreta porque a aprovação de cartões de ponto por supervisores assume que os funcionários realmente existem e estão atribuídos a departamentos específicos. Como Maria atribuiu funcionários fantasmas em diferentes departamentos, supervisores não familiarizados com todos os trabalhadores em suas áreas podem aprovar cartões de ponto sem reconhecer que os funcionários são fictícios, especialmente em departamentos maiores com alta rotatividade ou trabalho em turnos."
+    },
+    {
+      "num": 4,
+      "text": "Rachel Martinez, gerente de folha de pagamento de uma empresa manufatureira regional, tem processado contracheques para um funcionário chamado \"David Chen\" nos últimos 18 meses. Durante uma auditoria interna de rotina, o examinador de fraudes descobre que o arquivo pessoal de David Chen contém apenas documentação mínima, seus cartões de ponto são sempre aprovados por Rachel, e seus contracheques são depositados diretamente em uma conta sobre a qual Rachel tem autoridade de assinatura. David Chen nunca participou do programa de seguro saúde da empresa, e nenhum outro funcionário se lembra de tê-lo conhecido. Qual dos seguintes procedimentos analíticos detectaria MAIS efetivamente este tipo de esquema de forma contínua?",
+      "tag": "Ghost Employee",
+      "options": [
+        "A. Comparar o registro de folha de pagamento com os registros de recursos humanos e verificar independentemente os funcionários com gerentes de departamento que não possuem responsabilidades sobre a folha de pagamento",
+        "B. Reconciliar o total de despesas de folha de pagamento com os valores do ano anterior e investigar quaisquer aumentos que excedam a taxa de inflação em mais de dois pontos percentuais",
+        "C. Exigir que todos os funcionários usem relógios de ponto biométricos e revisar relatórios de exceção para funcionários que consistentemente registram entrada no mesmo horário a cada período de pagamento",
+        "D. Conduzir auditorias aleatórias de arquivos de pessoal para garantir que todos os formulários fiscais exigidos e documentação de elegibilidade de emprego tenham sido devidamente preenchidos e retidos"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A opção A é o controle mais efetivo porque esquemas de ghost employee são bem-sucedidos quando os registros de folha de pagamento não são verificados independentemente em relação ao pessoal real. Ao comparar os registros de folha de pagamento com os registros de RH e obter confirmação independente de gerentes de departamento que não têm acesso ou autoridade sobre a folha de pagamento, a organização cria segregação de funções e verificação independente. Os gerentes de departamento seriam capazes de confirmar se os funcionários realmente trabalham em suas áreas, e esta referência cruzada identificaria imediatamente discrepâncias onde alguém aparece na folha de pagamento mas é desconhecido dos gerentes operacionais. Este procedimento aborda diretamente a vulnerabilidade central na fraude de ghost employee: a capacidade de um insider da folha de pagamento adicionar funcionários fictícios sem detecção através de canais de verificação independentes.",
+      "justification_wrong": "A opção B é insuficiente porque comparações de folha de pagamento ano a ano são muito amplas para detectar ghost employees individuais, especialmente quando o esquema envolve valores relativamente pequenos ou quando contratações legítimas, aumentos ou horas extras podem mascarar as adições fraudulentas. O salário de um único ghost employee pode cair dentro de faixas normais de variação. A opção C foca na manipulação de relógio de ponto mas não detectaria um esquema de ghost employee onde o perpetrador simplesmente fabrica registros de tempo ou estabelece padrões consistentes para evitar suspeitas; sistemas biométricos apenas verificam que alguém registrou entrada, não que o funcionário é legítimo. A opção D aborda conformidade de documentação mas não verifica se os funcionários realmente existem ou trabalham na empresa; um perpetrador sofisticado como Rachel poderia facilmente criar arquivos de pessoal completos com documentos forjados para o ghost employee, tornando este controle inefetivo para detecção."
+    },
+    {
+      "num": 5,
+      "text": "Maria, uma escriturária de contas a pagar em uma empresa de manufatura, percebe que o representante de vendas Jason apresentou relatórios de despesas para o mesmo jantar de negócios em três ocasiões distintas ao longo de um período de seis meses. Cada relatório mostra datas, nomes de restaurantes e valores idênticos ($287,50), mas lista nomes diferentes de clientes como participantes. A política de reembolso de despesas da empresa exige documentação de suporte apenas para despesas superiores a $500. Qual é a ação inicial MAIS apropriada de Maria para tratar este potencial indicador de fraude?",
+      "tag": "Expense Reimbursement",
+      "options": [
+        "A. Solicitar que Jason forneça recibos originais e verificação das reuniões com clientes para todas as três submissões de despesas para determinar se ocorreram reembolsos duplicados.",
+        "B. Imediatamente reportar Jason às autoridades policiais, uma vez que o padrão de valores idênticos constitui evidência prima facie de fraude em reembolso de despesas.",
+        "C. Negar apenas a submissão de despesa mais recente e aprovar as duas reivindicações anteriores, já que elas já foram processadas através do fluxo de aprovação normal.",
+        "D. Conduzir uma investigação secreta acessando o email e calendário de Jason sem seu conhecimento para verificar se as reuniões com clientes realmente ocorreram."
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A Opção A representa a resposta inicial apropriada a um sinal de alerta em reembolso de despesas. Quando despesas duplicadas ou suspeitas são identificadas, o primeiro passo é reunir documentação adicional e verificar a legitimidade das reivindicações antes de fazer acusações. Solicitar recibos originais e verificação de reuniões permite a Maria determinar se isso é um erro inocente (como reenviar uma reivindicação rejeitada) ou fraude intencional envolvendo despesas mal caracterizadas ou fictícias. Esta abordagem segue procedimentos adequados de controle interno ao buscar esclarecimentos antes da escalada, ao mesmo tempo que cria uma trilha de auditoria documentada. Sob protocolos de exame de fraude em reembolso de despesas, a verificação de documentação de suporte é a base para determinar se ocorreram reembolsos duplicados ou esquemas de despesas fictícias.",
+      "justification_wrong": "A Opção B é prematura e excessiva. Embora valores e datas idênticos sejam indicadores de fraude, eles não constituem evidência prima facie que exija envolvimento imediato das autoridades policiais. A cadeia apropriada de resposta envolve verificação interna primeiro, depois reportar através dos canais organizacionais adequados (como para a gerência ou auditoria interna) antes de envolver autoridades externas. A Opção C é inadequada porque falha em abordar a questão subjacente e potencialmente permite que reembolsos fraudulentos permaneçam. Simplesmente negar a reivindicação mais recente enquanto aprova reivindicações anteriores potencialmente fraudulentas não cumpre responsabilidades fiduciárias ou objetivos de controle interno. A Opção D viola direitos de privacidade e potencialmente infringe leis federais como o Stored Communications Act. Acessar o email e calendário de um funcionário sem autorização adequada, fundamentos legais ou conhecimento do funcionário constitui uma técnica investigativa inadequada que pode expor a empresa a responsabilidade legal e tornar qualquer evidência inadmissível."
+    },
+    {
+      "num": 6,
+      "text": "Sarah Chen, gerente de folha de pagamento de uma empresa de manufatura, tem processado contracheques para um funcionário chamado Michael Torres nos últimos 18 meses. Torres aparece em todos os relatórios de folha de pagamento e recebe depósitos diretos quinzenalmente. No entanto, durante uma auditoria de rotina, o examinador de fraude descobre que Torres nunca registrou ponto, não possui arquivo de funcionário no departamento de recursos humanos, e seu número de Social Security listado pertence ao marido de Sarah. Os depósitos diretos vão para uma conta que Sarah pode acessar. Qual elemento estabelece mais diretamente este esquema como fraude de funcionário fantasma ao invés de outra forma de fraude na folha de pagamento?",
+      "tag": "Ghost Employee",
+      "options": [
+        "A. Torres é uma pessoa fictícia que não executa realmente nenhum trabalho para a empresa, mas recebe compensação através do sistema de folha de pagamento",
+        "B. Sarah tem a capacidade de manipular registros de folha de pagamento e redirecionar fundos para contas sob seu controle",
+        "C. A fraude continuou por um período prolongado sem detecção pela administração ou controles internos",
+        "D. Torres aparece no sistema de folha de pagamento com informações de identificação fraudulentas incluindo um número de Social Security apropriado indevidamente"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A característica definidora da fraude de funcionário fantasma é que o 'funcionário' não existe ou não trabalha para a organização, mas recebe compensação através do sistema de folha de pagamento. A essência deste esquema é a criação de um trabalhador fantasma na folha de pagamento que não executa nenhum serviço real. O fato de que Torres nunca registra ponto, não possui arquivo no RH, e não trabalha realmente para a empresa enquanto recebe contracheques regulares estabelece isto como um esquema de funcionário fantasma. O perpetrador cria ou mantém uma pessoa fictícia na folha de pagamento para se apropriar indevidamente de fundos, o que o distingue de outras fraudes na folha de pagamento envolvendo funcionários reais.",
+      "justification_wrong": "A Opção B descreve uma fraqueza de controle e método de execução que poderia se aplicar a múltiplos tipos de esquemas de fraude na folha de pagamento, incluindo horas falsificadas, esquemas de comissão, ou aumentos não autorizados para funcionários reais—não especificamente fraude de funcionário fantasma. A Opção C identifica um fator de duração e deficiência de controle comum a muitos esquemas de fraude em todas as categorias, mas não distingue fraude de funcionário fantasma de outras manipulações de folha de pagamento que também poderiam persistir sem detecção. A Opção D foca no uso de identificação falsa, que é um mecanismo usado para facilitar o esquema, mas credenciais fraudulentas também poderiam ser usadas em cenários de roubo de identidade ou para ocultar outras fraudes na folha de pagamento; o elemento crítico é a inexistência do trabalhador executando serviços, não meramente a falsificação de documentos."
+    },
+    {
+      "id": "S1D04_012",
+      "question": "A fraud examiner is investigating a suspected purchase card scheme at a mid-size manufacturing company. Which of the following red flags would be MOST indicative of a purchasing card (P-card) misappropriation scheme?",
+      "options": [
+        "An employee consistently splits purchases into amounts just below the individual transaction approval threshold",
+        "An employee submits expense reimbursements for the same business meals shown on their corporate credit card statement",
+        "Multiple employees from the same department use their P-cards at the same vendor during a single month",
+        "An employee's P-card statements show regular purchases from office supply stores"
+      ],
+      "correct_answer": 0,
+      "explanation": "Splitting purchases to avoid approval thresholds is a classic red flag for P-card fraud, as it allows the employee to bypass supervisory review and potentially make unauthorized purchases. This technique, known as 'split purchasing' or 'structuring,' is deliberately designed to circumvent internal controls. Option B describes duplicate expense reimbursement fraud rather than P-card misappropriation. Option C could be legitimate business activity. Option D, by itself, is not suspicious as office supplies are common business purchases.",
+      "topic": "Purchase Card Fraud",
+      "subject": "S1D04",
+      "num": 7
+    },
+    {
+      "id": "S1D04-013",
+      "question": "A controller at a manufacturing company created fictitious vendor accounts and submitted false invoices for payment. Over two years, the controller approved and processed payments totaling $450,000 to these shell companies, which were deposited into bank accounts the controller controlled. Which of the following controls would have been MOST effective in preventing this billing scheme?",
+      "options": [
+        "Requiring dual signatures on all checks over $10,000",
+        "Implementing vendor master file controls with independent verification of new vendors before payment",
+        "Conducting periodic bank reconciliations by someone independent of the payment process",
+        "Requiring original invoices to be stamped 'PAID' to prevent duplicate payments"
+      ],
+      "correct_answer": 1,
+      "explanation": "This scenario describes a shell company billing scheme, where the fraudster creates fictitious vendors and submits false invoices. The most effective preventive control is implementing vendor master file controls with independent verification of new vendors (Option B). This would include verifying vendor legitimacy through background checks, obtaining business licenses, confirming physical addresses, and requiring approval from someone independent of the payment function before adding vendors to the system. Option A (dual signatures) is a detective control that might identify suspicious payments but doesn't prevent the creation of shell vendors. Option C (bank reconciliations) is also detective in nature and occurs after payments are made. Option D (stamping invoices) prevents duplicate payment schemes but wouldn't stop payments to fictitious vendors with false invoices.",
+      "topic": "Shell Company Billing Schemes",
+      "sub_topic": "Vendor Master File Controls",
+      "num": 8
+    },
+    {
+      "id": "S1D04-Q014",
+      "topic": "Purchasing Card Fraud",
+      "question": "Sarah Chen, a Certified Fraud Examiner, is investigating suspected purchasing card (p-card) fraud at a manufacturing company. She discovers that Michael Torres, a department manager, has been making personal purchases on his company p-card for the past 18 months. The unauthorized purchases total $47,000 and include electronics, furniture, and vacation expenses. Michael altered transaction descriptions on his monthly p-card reconciliations to make the purchases appear business-related. What type of asset misappropriation scheme has Michael committed, and what are THREE key internal controls that could have prevented or detected this fraud earlier?",
+      "options": [
+        "This is a purchasing card fraud scheme (a type of billing fraud). Key controls include: (1) requiring original itemized receipts for all p-card transactions, (2) implementing an independent review process where someone other than the cardholder reviews monthly statements and supporting documentation, and (3) establishing transaction limits and merchant category code (MCC) blocks to restrict purchases to business-related categories only.",
+        "This is an expense reimbursement scheme. Key controls include: (1) requiring supervisor pre-approval for all purchases, (2) conducting annual vendor audits, and (3) segregating duties between payment processing and reconciliation.",
+        "This is a check tampering scheme. Key controls include: (1) implementing positive pay systems, (2) requiring dual signatures on all checks, and (3) performing monthly bank reconciliations by someone independent of the disbursement function.",
+        "This is a vendor fraud scheme. Key controls include: (1) maintaining an approved vendor list, (2) requiring competitive bidding for all purchases, and (3) conducting background checks on all vendors before adding them to the system."
+      ],
+      "correct": 0,
+      "explanation": "Michael committed purchasing card (p-card) fraud, which is a type of billing scheme where employees misuse company credit cards for personal purchases. This differs from expense reimbursement schemes where employees seek reimbursement for personal expenses. The three critical controls for preventing p-card fraud are: (1) Requiring original itemized receipts ensures that actual purchases can be verified, making it harder to misrepresent transactions; (2) Independent review by someone other than the cardholder provides segregation of duties and objective oversight of spending patterns; and (3) Transaction limits and MCC blocks use system-based preventive controls to restrict card usage to appropriate merchant categories and spending amounts, preventing unauthorized purchase types. Additional effective controls include data analytics to identify unusual spending patterns, periodic audits of p-card usage, and cardholder training on acceptable use policies.",
+      "reference": "Fraud Examiners Manual, Asset Misappropriation: Fraudulent Disbursements - Billing Schemes - Purchasing Card Fraud",
+      "num": 9
+    },
+    {
+      "id": "S1D04_015",
+      "question": "A company's accounts payable clerk has been creating fictitious vendors in the system and submitting false invoices for payment. Which of the following controls would be MOST effective in preventing this type of disbursement fraud?",
+      "options": [
+        "Requiring all new vendors to be approved by management and verified through independent due diligence before being added to the master vendor file",
+        "Implementing a policy that all invoices over a certain dollar threshold must be approved by department heads",
+        "Requiring two signatures on all disbursement checks regardless of amount",
+        "Conducting annual physical inventory counts and reconciling them to accounting records"
+      ],
+      "correct_answer": 0,
+      "explanation": "The most effective control against fictitious vendor schemes is to implement segregation of duties and authorization controls over the vendor master file. Requiring management approval and independent verification (such as checking business registration, tax ID, physical address, and speaking with vendor contacts) before adding vendors prevents accounts payable clerks from unilaterally creating shell companies. While dual signatures (option C) can help detect fraud, they may not prevent it if the supporting documentation appears legitimate. Approval thresholds (option B) won't stop small fraudulent invoices. Physical inventory counts (option D) are irrelevant to fictitious vendor schemes since no actual goods are involved. Vendor master file controls, combined with periodic reviews of vendor activity and analytical procedures to identify suspicious patterns, form the foundation of preventing fictitious vendor disbursement fraud.",
+      "topic": "Fictitious Vendor Schemes",
+      "sub_topic": "Disbursement Controls",
+      "num": 10
+    },
+    {
+      "question": "During an investigation of purchasing card (P-card) fraud at a manufacturing company, you discover that a warehouse supervisor has been making unauthorized personal purchases totaling $45,000 over 18 months. The supervisor used the company P-card to buy electronics, furniture, and appliances that were delivered to residential addresses. Which of the following controls would have been MOST effective in preventing this scheme?",
+      "options": [
+        "Requiring monthly reconciliation of P-card statements with supporting receipts and delivery addresses verified by an independent reviewer",
+        "Establishing a policy that prohibits P-card use for purchases over $500",
+        "Requiring all P-card holders to attend annual ethics training",
+        "Implementing a policy requiring two signatures on all purchase orders"
+      ],
+      "correct_answer": 0,
+      "explanation": "The most effective control would be requiring monthly reconciliation of P-card statements with supporting receipts and delivery addresses verified by an independent reviewer. This control directly addresses the fraud method by ensuring that someone independent reviews where purchases are being delivered, which would reveal residential addresses for company purchases. It also creates timely detection opportunities through monthly reviews. While dollar limits (option B) might reduce the size of individual fraudulent purchases, they wouldn't prevent the scheme. Ethics training (option C) is a soft control that wouldn't reliably prevent determined fraud. Two signatures on purchase orders (option D) doesn't apply to P-card transactions, which are designed to bypass the purchase order process for convenience.",
+      "topic": "Purchasing Card (P-Card) Fraud",
+      "sub_topic": "Asset Misappropriation — Disbursements",
+      "num": 11
+    }
+  ]
+}

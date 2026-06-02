@@ -1,0 +1,710 @@
+{
+  "cert_id": "cism",
+  "domain_id": "info_risk_management",
+  "quiz_num": 3,
+  "domain_name": "Information Risk Management",
+  "cert_name": "CISM",
+  "lang": "pt",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Uma organização estabelece seu apetite por risco em 15% de perda potencial anual. Durante uma avaliação de risco, identifica-se uma ameaça com impacto de 20% de perda potencial. Qual é a ação mais apropriada conforme a estratégia de gerenciamento de risco?",
+      "tag": "Risk Appetite and Tolerance",
+      "options": [
+        "A. Implementar controles para mitigar o risco a níveis aceitáveis (≤15%)",
+        "B. Aceitar o risco pois a organização possui recursos suficientes",
+        "D. Evitar a atividade relacionada sem análise de impacto",
+        "C. Transferir completamente o risco via seguro"
+      ],
+      "correct": 0,
+      "justification_correct": "Conforme CISM e ISO 31000, quando o risco excede o apetite estabelecido, a mitigação é a resposta apropriada. A organização deve implementar controles para reduzir o risco ao nível tolerável, mantendo alinhamento com a estratégia organizacional.",
+      "justification_wrong": "Aceitar risco acima do apetite viola governança; transferência total ignora mitigation como primeira opção; evitar sem análise é decisão prematura não baseada em risco residual."
+    },
+    {
+      "num": 2,
+      "text": "Ao realizar uma análise de ameaça e vulnerabilidade (TVA), um analista de risco identifica uma vulnerabilidade crítica em um sistema legado sem possibilidade de patch. Qual é o tratamento de risco mais adequado neste cenário?",
+      "tag": "Threat and Vulnerability Analysis",
+      "options": [
+        "B. Aceitar o risco documentando justificativa e monitoramento contínuo",
+        "D. Evitar completamente o uso do sistema sem alternativa",
+        "A. Mitigar através de controles compensatórios e monitoramento intensivo",
+        "C. Transferir para fornecedor externo imediatamente"
+      ],
+      "correct": 2,
+      "justification_correct": "Quando remediation direta é impossível, CISM e ISO 27001 recomendam controles compensatórios (segmentação, monitoramento, detecção de intrusão). Esta abordagem reduz vulnerabilidade mantendo continuidade operacional.",
+      "justification_wrong": "Aceitação pura sem controles é negligente; transferência não elimina vulnerabilidade interna; evitar sem alternativa descarta ativo crítico sem análise técnica adequada."
+    },
+    {
+      "num": 3,
+      "text": "Uma organização implementa um programa de Key Risk Indicators (KRIs) para monitoramento contínuo. Qual característica NÃO é essencial para um KRI efetivo conforme as melhores práticas de gerenciamento de risco?",
+      "tag": "Key Risk Indicators (KRIs)",
+      "options": [
+        "B. Estar alinhado com riscos estratégicos identificados na avaliação de risco",
+        "C. Possuir limiar de alerta definido previamente para ação imediata",
+        "D. Apresentar histórico de dados coletados há no mínimo 10 anos",
+        "A. Ser mensurável objetivamente com dados confiáveis e atualizados"
+      ],
+      "correct": 2,
+      "justification_correct": "Conforme CISM e COSO, KRIs efetivos requerem mensurabilidade, alinhamento e limiares. Histórico mínimo de 10 anos é impraticável; alguns KRIs são novos. O que importa é tendência relevante e capacidade preditiva.",
+      "justification_wrong": "Mensurabilidade, alinhamento e limiares são componentes críticos de KRIs efetivos. A exigência de 10 anos é excessiva, arbitrária e inviável para novas ameaças ou organizações."
+    },
+    {
+      "num": 4,
+      "text": "Uma avaliação de impacto nos negócios (BIA) identifica que a indisponibilidade de um processo crítico causa perda de R$ 50.000/hora. O risco residual após implementação de mitigações é estimado em 2% de probabilidade anual. Como este risco residual deve ser tratado?",
+      "tag": "Business Impact Analysis and Residual Risk",
+      "options": [
+        "A. Documentar e comunicar ao conselho, mantendo monitoramento contínuo via KRIs",
+        "D. Transferir 100% via contrato de seguros",
+        "C. Aceitar sem documentação pois probabilidade é baixa",
+        "B. Eliminar completamente através de investimento adicional ilimitado"
+      ],
+      "correct": 0,
+      "justification_correct": "Risco residual é inevitável e deve ser aceito formalmente com documentação. Conforme CISM e ISO 31000, deve ser comunicado à governança e monitorado continuamente. Eliminação total é economicamente inviável.",
+      "justification_wrong": "Eliminação total é impraticável; aceitação sem documentação viola compliance; seguro cobre apenas perdas financeiras, não descontinuidade operacional completa."
+    },
+    {
+      "num": 5,
+      "text": "Ao comunicar riscos ao conselho de administração, um CISM deve apresentar análise que demonstre alinhamento com estratégia organizacional. Qual elemento é CRÍTICO nesta comunicação conforme melhores práticas de governança?",
+      "tag": "Risk Communication to Board",
+      "options": [
+        "B. Análise custo-benefício das opções de tratamento com recomendação clara da gestão de risco",
+        "C. Listagem de todos os incidentes históricos dos últimos 20 anos",
+        "D. Números absolutos de vulnerabilidades sem contextualização de impacto",
+        "A. Detalhes técnicos exaustivos sobre todas as vulnerabilidades identificadas"
+      ],
+      "correct": 0,
+      "justification_correct": "CISM e COSO exigem comunicação executiva focada em impacto ao negócio e decisões. Análise custo-benefício com recomendação alinhada à estratégia permite conselho tomar decisões informadas e apropriadas.",
+      "justification_wrong": "Detalhes técnicos excessivos afastam foco estratégico; histórico longo sem contexto atual é irrelevante; números sem impacto não facilitam decisão executiva."
+    },
+    {
+      "num": 6,
+      "text": "Uma organização estabelece seu apetite por risco em 15% de redução anual em receita operacional. Qual é a relação correta entre apetite por risco e tolerância ao risco neste contexto?",
+      "tag": "Risk Appetite and Tolerance",
+      "options": [
+        "D. O apetite por risco é determinado exclusivamente pela área de compliance",
+        "A. O apetite por risco é o limite máximo aceitável; a tolerância representa variações aceitáveis dentro desse limite",
+        "B. Apetite e tolerância são sinônimos e devem ser idênticos em qualquer organização",
+        "C. A tolerância ao risco deve sempre ser inferior ao apetite por risco estabelecido"
+      ],
+      "correct": 1,
+      "justification_correct": "ISACA CISM define apetite por risco como nível estratégico de risco aceitável e tolerância como variações operacionais permitidas. Apetite é limite superior; tolerância operacionaliza esse limite com flexibilidade controlada.",
+      "justification_wrong": "Apetite e tolerância diferem em escopo e aplicação. Não são sinônimos. Tolerância pode estar acima ou abaixo conforme contexto operacional. Apetite envolve board e stakeholders estratégicos."
+    },
+    {
+      "num": 7,
+      "text": "Durante uma avaliação de risco, a organização identifica uma vulnerabilidade crítica em sistemas legados sem plano de remedição em 24 meses. Qual opção de tratamento de risco é mais apropriada segundo frameworks ISACA?",
+      "tag": "Risk Treatment Options",
+      "options": [
+        "A. Evitar o risco descontinuando o sistema legado imediatamente",
+        "D. Mitigar implementando controles compensatórios e monitoramento intensivo",
+        "C. Transferir completamente o risco ao fornecedor de software legado",
+        "B. Aceitar o risco documentando a decisão consciente com aprovação executiva"
+      ],
+      "correct": 1,
+      "justification_correct": "Sistemas legados críticos geralmente exigem mitigação com controles compensatórios (segmentação de rede, monitoramento 24/7, IDS/IPS) até modernização. Evitar/transferir são impraticáveis; aceitação sem mitigação é negligente.",
+      "justification_wrong": "Evitar exigeria descontinuidade impraticável. Transferência integral ao fornecedor não elimina responsabilidade organizacional. Aceitação pura sem controles viola governança de risco."
+    },
+    {
+      "num": 8,
+      "text": "Um Key Risk Indicator (KRI) para risco operacional é 'número de incidentes de segurança não detectados em 30 dias'. Qual crítica mais relevante a este KRI segundo boas práticas CISM?",
+      "tag": "Key Risk Indicators (KRIs)",
+      "options": [
+        "B. O KRI é reativo, não preditivo; não antecipa deterioração do risco operacional",
+        "C. O indicador é demasiadamente simples e não captura nuances de severidade",
+        "A. O KRI é excessivamente complexo e requer múltiplas fontes de dados",
+        "D. O KRI viola confidencialidade por expor dados de incidentes"
+      ],
+      "correct": 0,
+      "justification_correct": "KRIs efetivos (COBIT/CISM) devem ser preditivos e forward-looking. 'Incidentes não detectados' é métrica reativa (pós-falha). Indicadores adequados incluem: cobertura de monitoramento, tempo detecção, vulnerabilidades pendentes.",
+      "justification_wrong": "Complexidade não é critério eliminatório. Severidade pode ser agregada. Confidencialidade gerenciável via anonimização. A questão central é previsibilidade: KRI deve alertar antes de materialização do risco."
+    },
+    {
+      "num": 9,
+      "text": "Na análise de risco de um novo produto fintech, utiliza-se metodologia de matriz de probabilidade x impacto (4x4). Um risco com probabilidade 'Baixa' e impacto 'Crítico' resulta em prioridade média. Qual é a limitação crítica desta abordagem segundo ISACA?",
+      "tag": "Risk Assessment Methodologies",
+      "options": [
+        "C. A multiplicação linear de probabilidade x impacto subestima riscos de baixa probabilidade/alto impacto (tail risks)",
+        "B. A matriz ignora risco residual e não considera efetividade de controles existentes",
+        "D. Matrizes não permitem rastreabilidade de riscos ao longo do tempo",
+        "A. Matrizes 4x4 são obsoletas; apenas matrizes 5x5 são aceitáveis para CISM"
+      ],
+      "correct": 0,
+      "justification_correct": "Modelos lineares (P×I) falham em riscos catastróficos baixa-frequência/alto-impacto (cyberataques críticos, falhas regulatórias). ISACA recomenda análise qualitativa + quantitativa + análise de cenários para tail risks.",
+      "justification_wrong": "Matrizes 4x4 são válidas conforme escopo. Residual é etapa separada. Rastreabilidade depende gestão de registro, não formato matriz. A limitação fundamental é inadequação para eventos extremos."
+    },
+    {
+      "num": 10,
+      "text": "O risco residual identificado pós-implementação de controles mitigadores é comunicado ao board como 'aceitável'. Qual informação crítica está faltando nesta comunicação de risco segundo padrões CISM/COBIT?",
+      "tag": "Risk Communication to Board",
+      "options": [
+        "C. Detalhamento técnico de cada controle mitigador implementado",
+        "A. Identificação do proprietário do risco e responsável pela monitoração contínua",
+        "D. Previsão de probabilidade de eventos futuros em 5 anos",
+        "B. Comparação explícita do risco residual contra apetite/tolerância aprovados"
+      ],
+      "correct": 3,
+      "justification_correct": "Comunicação efetiva ao board (CISM Domain 2) deve contextualizar risco residual contra apetite/tolerância estabelecidos. Declarar 'aceitável' sem este benchmark é opinião; com contexto é decisão informada e rastreável.",
+      "justification_wrong": "Proprietário importante mas pode estar em documentação suplementar. Detalhe técnico excessivo para board executivo. Previsões 5-anos são imprecisas. O fator crítico para governança é alinhamento estratégico."
+    },
+    {
+      "num": 11,
+      "text": "Uma organização estabeleceu seu apetite por risco em 15% de probabilidade de materialização de ameaças críticas. Durante uma avaliação de risco, identifica-se uma vulnerabilidade com probabilidade estimada de 20% e impacto de R$ 5 milhões. Qual é a melhor abordagem para alinhar essa situação com a estratégia de risco?",
+      "tag": "Risk Appetite and Tolerance",
+      "options": [
+        "D. Evitar a atividade que gera esse risco, independentemente da importância estratégica.",
+        "C. Transferir o risco completamente via seguro, sem implementar controles internos.",
+        "B. Aceitar o risco, pois o impacto financeiro não ultrapassa o limite de tolerância estabelecido.",
+        "A. Implementar controles mitigadores para reduzir a probabilidade abaixo de 15%, mantendo a exposição dentro do apetite organizacional."
+      ],
+      "correct": 3,
+      "justification_correct": "Conforme CISM Body of Knowledge, risk appetite define o nível aceitável; risco acima deve sofrer tratamento. Mitigação reduz probabilidade alinhando-se à estratégia. ISACA guidance 2022 recomenda controles proporcionais ao desvio de apetite.",
+      "justification_wrong": "Aceitar risco acima do apetite viola princípios de governança. Evitar sem análise é reativo. Transferência sem mitigação deixa resíduos descontrolados."
+    },
+    {
+      "num": 12,
+      "text": "Na condução de uma Análise de Impacto nos Negócios (BIA) para suportar avaliação de risco, qual elemento é MAIS crítico para determinar a priorização de proteção de ativos?",
+      "tag": "Business Impact Analysis",
+      "options": [
+        "C. A idade e obsolescência técnica do sistema que suporta o ativo.",
+        "D. A localização geográfica do ativo e regulamentações locais aplicáveis.",
+        "B. O Recovery Time Objective (RTO) e Maximum Tolerable Downtime (MTD) associados ao ativo.",
+        "A. O valor contábil do ativo no balanço patrimonial da organização."
+      ],
+      "correct": 2,
+      "justification_correct": "BIA ISACA (Risk Evaluation and Treatment) estabelece que RTO/MTD são determinantes para criticidade. Esses definem tolerância operacional e impacto ao negócio, orientando priorização de controles. NIST SP 800-34 corrobora essa abordagem.",
+      "justification_wrong": "Valor contábil não reflete impacto operacional. Obsolescência é fator técnico secundário. Geografia é contextual, não determinante de criticidade de negócio."
+    },
+    {
+      "num": 13,
+      "text": "Uma organização implementa análise de ameaças e vulnerabilidades usando metodologia CVSS (Common Vulnerability Scoring System). Um especialista identifica uma vulnerabilidade com CVSS 7.5 (alto). Qual deve ser a PRIMEIRA ação conforme as melhores práticas de gestão de risco?",
+      "tag": "Threat and Vulnerability Analysis",
+      "options": [
+        "B. Registrar a vulnerabilidade no risk register, contextualizá-la à criticidade do ativo afetado e avaliar opções de tratamento.",
+        "A. Patchar imediatamente a vulnerabilidade, independentemente do contexto operacional ou criticidade do ativo.",
+        "C. Desabilitar o serviço afetado até que patch esteja disponível e testado.",
+        "D. Ignorar, pois CVSS 7.5 é classificado como 'médio-alto' em escala de severidade."
+      ],
+      "correct": 0,
+      "justification_correct": "CISM exige que vulnerabilidades sejam integradas ao risk register com contexto organizacional. CVSS fornece severidade técnica, mas decisão de tratamento deve considerar criticidade do ativo, impacto ao negócio e viabilidade operacional, conforme ISACA guidance.",
+      "justification_wrong": "Patching sem avaliação causa disruption. Desabilitar pode impactar operações. CVSS 7.5 é efetivamente 'alto', não 'médio-alto', exigindo ação."
+    },
+    {
+      "num": 14,
+      "text": "Um CISM está comunicando resultados de avaliação de risco ao board. Identifica risco residual de R$ 2 milhões após mitigação. O board questiona por que o risco não foi 'eliminado'. Qual é a resposta técnica CORRETA?",
+      "tag": "Risk Communication to Board",
+      "options": [
+        "D. Todo risco deve ser eliminado; se houver residual, a organização está em não-conformidade com frameworks.",
+        "A. Risco residual é inevitável e aceitável; o objetivo de mitigação é reduzir, não eliminar, alinhando-se ao apetite por risco.",
+        "B. O departamento de TI falhou na implementação de controles e deve ser responsabilizado financeiramente.",
+        "C. Risco residual indica que a avaliação de risco foi conduzida incorretamente e deve ser refeita."
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 31000 e CISM definem risco residual como aquele remanescente após tratamento. Nunca é zero; é aceitável se dentro de apetite. Comunicação clara ao board diferencia risco inerente, tratado e residual, reforçando decisões informadas.",
+      "justification_wrong": "Culpa operacional não é apropriada em governance de risco. Retrabalho sem base é ineficiente. Frameworks permitem residual alinhado ao apetite; conformidade não exige zero."
+    },
+    {
+      "num": 15,
+      "text": "Uma organização estabelece Key Risk Indicators (KRIs) para monitorar continuamente a saúde de um risco crítico: 'número de acessos não autorizados a sistemas financeiros'. Qual característica melhor define um KRI EFETIVO conforme CISM?",
+      "tag": "Key Risk Indicators",
+      "options": [
+        "D. KRI deve ser comunicado exclusivamente à auditoria interna, sem envolvimento de liderança operacional.",
+        "B. KRI deve ser mensurável, com threshold definido, e fornecer alerta antecipado antes da materialização do risco.",
+        "C. KRI deve ser tão granular quanto possível, capturando cada incidente individual independentemente de relevância.",
+        "A. KRI deve refletir apenas dados históricos de 12 meses anteriores, sem projeções futuras."
+      ],
+      "correct": 1,
+      "justification_correct": "CISM define KRIs como métricas preditivas que sinalizam mudança na postura de risco antes de ocorrência. Devem ter thresholds, ser mensuráveis e acionáveis. ISACA guidance 2022 enfatiza natureza 'leading' de KRIs, não apenas histórica.",
+      "justification_wrong": "KRIs exigem capacidade preditiva, não apenas histórico. Granularidade excessiva reduz utilidade. Comunicação restrita prejudica governance; KRIs devem informar decisões de liderança operacional e estratégica."
+    },
+    {
+      "num": 16,
+      "text": "Uma organização identificou que seu apetite por risco de segurança da informação é de máximo 5% de probabilidade de incidente crítico anualmente. Após implementar controles, o risco residual resultou em 3% de probabilidade. Qual é a melhor ação conforme a estratégia de gerenciamento de risco?",
+      "tag": "risk appetite and tolerance",
+      "options": [
+        "A. Aceitar o risco residual, pois está dentro do apetite de risco definido",
+        "D. Implementar controles adicionais para reduzir a 1%",
+        "B. Transferir imediatamente o risco via seguro, independentemente do apetite",
+        "C. Evitar a atividade para reduzir o risco a zero"
+      ],
+      "correct": 0,
+      "justification_correct": "O risco residual de 3% está dentro do apetite de 5%, permitindo aceitação conforme COSO ERM. Aceitar riscos alinhados ao apetite é decisão estratégica legítima, evitando over-control e preservando eficiência operacional.",
+      "justification_wrong": "Transferir ou evitar sem análise desconsidera a aceitabilidade do risco dentro do apetite. Reduzir a 1% implicaria investimento desproporcional sem benefício estratégico."
+    },
+    {
+      "num": 17,
+      "text": "Durante uma avaliação de risco, o CISO deve documentar não apenas ameaças identificadas, mas também o contexto de por que certas vulnerabilidades não foram priorizadas. Qual framework normativo orienta melhor essa prática de rastreabilidade?",
+      "tag": "risk assessment methodologies",
+      "options": [
+        "B. ITIL v4 – Service design and risk optimization",
+        "D. NIST RMF – Risk reporting to stakeholders",
+        "C. COBIT 5 – Governance framework only",
+        "A. ISO/IEC 27005:2022 – Risk assessment and treatment planning"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 27005:2022 estabelece explicitamente a necessidade de documentar decisões de risco, critérios de avaliação e justificativas para priorização. Fornece rastreabilidade completa conforme boas práticas internacionais de gestão de risco.",
+      "justification_wrong": "ITIL v4 foca operações, não metodologia de avaliação. COBIT 5 é framework de governança. NIST RMF orienta comunicação, não documentação metodológica de avaliação."
+    },
+    {
+      "num": 18,
+      "text": "Um banco identificou elevada exposição a fraude em canais digitais. O CISO apresenta ao board quatro opções de tratamento: (1) implementar autenticação multifator; (2) adquirir seguro cibernético; (3) descontinuar canais digitais; (4) aceitar perdas até R$ 500 mil/ano. Qual combinação de tratamentos demonstra estratégia balanceada conforme Norma ISO 31000?",
+      "tag": "risk treatment options",
+      "options": [
+        "A. Apenas opção 3 (evitar) para eliminar o risco completamente",
+        "B. Implementar opção 1 (mitigar) + opção 2 (transferir) + avaliar opção 4 (aceitar residual)",
+        "D. Alternância entre opções 1 e 3 conforme volatilidade mensal",
+        "C. Somente opção 4 (aceitar), pois R$ 500 mil é insignificante"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 31000 recomenda combinação de tratamentos. Mitigação reduz probabilidade (MFA), transferência através seguro cobre perdas, e aceitação do residual alinha risco tolerância. Abordagem holística e resiliente.",
+      "justification_wrong": "Evitar descontinua negócio. Aceitar sem mitigação é irresponsável. Alternância mensal desrespeita consistência de estratégia. Combinação balanceada é mais efetiva que tratamento único."
+    },
+    {
+      "num": 19,
+      "text": "O registro de risco (risk register) de uma organização inclui um risco com probabilidade 4/5 e impacto 4/5, resultando em score 16/25. Após implementação de controle, o score caiu para 8/25. Como denominar essa redução e qual é o próximo passo conforme boas práticas CISM?",
+      "tag": "risk register and residual risk",
+      "options": [
+        "A. Risco mitigado; encerrar o acompanhamento imediatamente",
+        "D. Risco evitado; comunicar sucesso total ao board",
+        "B. Risco mitigado; documentar como risco residual e manter monitoramento contínuo",
+        "C. Risco transferido; remover do registro de risco"
+      ],
+      "correct": 2,
+      "justification_correct": "Score reduzido caracteriza mitigação bem-sucedida. Risco residual 8/25 permanece no registro com KRIs associados para monitoramento contínuo. CISM exige rastreabilidade permanente e reeavaliação periódica conforme COSO.",
+      "justification_wrong": "Encerrar desconsidera existência de risco residual. Transferência requer terceiro. Evitar implica eliminação total (improvável em 8/25). Declarar sucesso total negligencia vigilância contínua."
+    },
+    {
+      "num": 20,
+      "text": "Um CISO estabeleceu KRIs para risco de vazamento de dados: (1) taxa de incidentes de confidencialidade por trimestre; (2) % de endpoints sem antivírus atualizado; (3) número de acessos privilegiados não-auditados; (4) preço das ações após incidente. Qual indicador está INCORRETAMENTE definido como KRI conforme ISO 31000 e CISM?",
+      "tag": "key risk indicators (KRIs)",
+      "options": [
+        "C. Indicador 1 – rastreia histórico de ocorrências de risco",
+        "D. Indicador 3 – identifica lacuna de segurança relacionada a risco",
+        "A. Indicador 2 – mede controle preventivo, não risco",
+        "B. Indicador 4 – reflete consequência de risco, não sinal antecedente"
+      ],
+      "correct": 3,
+      "justification_correct": "KRI deve ser indicador antecedente que sinalize proximidade de risco, não consequência ex-post. Preço de ações é métrica de impacto operacional, não KRI. ISO 31000 define KRIs como sinais de alerta precoce (leading indicators).",
+      "justification_wrong": "Indicadores 1, 2, 3 são válidos KRIs: rastreiam ocorrências, cobertura de controles e gaps de auditoria respectivamente, todos sinalizando exposição antes de materialização total."
+    },
+    {
+      "num": 21,
+      "text": "Uma organização financeira estabeleceu risco máximo aceitável (risk appetite) de 5% para operações de crédito. Após avaliação, identificou-se exposição de 8%. Qual decisão alinha-se melhor com governança de risco conforme COSO II?",
+      "tag": "Risk Appetite and Tolerance",
+      "options": [
+        "A. Implementar controles mitigatórios até reduzir o risco para 3%, documentando a estratégia no plano de tratamento",
+        "B. Aceitar o risco de 8% considerando potencial de retorno superior",
+        "C. Transferir integralmente o risco via seguro sem análise de custo-benefício",
+        "D. Evitar completamente a linha de crédito, eliminando a exposição"
+      ],
+      "correct": 0,
+      "justification_correct": "A mitigação controlada alinha-se ao COSO II e NIST SP 800-39. Documentação formal em plano de tratamento garante rastreabilidade e governança. Decisão fundamentada em análise risco-retorno responde adequadamente à tolerância estabelecida.",
+      "justification_wrong": "Aceitar exposição acima do appetite viola diretrizes de risco. Transferência sem análise não é decisão fundamentada. Evitar elimina valor estratégico sem justificativa racional conforme frameworks de risco."
+    },
+    {
+      "num": 22,
+      "text": "Ao conduzir análise de ameaças e vulnerabilidades críticas conforme ISO 31010, qual combinação metodológica é MAIS adequada para ambiente complexo e interdependências sistêmicas?",
+      "tag": "Threat and Vulnerability Analysis",
+      "options": [
+        "A. Aplicar unicamente matriz de probabilidade-impacto com base em dados históricos",
+        "B. Integrar FMEA (Failure Mode and Effects Analysis) com modeling de cenários para capturar efeitos cascata",
+        "D. Executar análise de risco baseada em opinião de especialistas sem validação quantitativa",
+        "C. Utilizar exclusivamente checklist de vulnerabilidades conhecidas de fornecedores"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 31010 recomenda combinação de métodos. FMEA identifica falhas críticas; cenários modelam interdependências. Essa integração é superior em ambientes complexos, capturando efeitos cascata frequentemente ignorados por métodos isolados.",
+      "justification_wrong": "Matriz isolada não capture interdependências. Checklists estáticos perdem ameaças emergentes. Opinião sem validação viola rigor metodológico exigido em certificação sênior conforme CISM e normas ISO."
+    },
+    {
+      "num": 23,
+      "text": "Uma organização identificou risco residual de 6% em processo crítico após implementação de controles. O risk appetite é 4%. Qual ação MELHOR demonstra governança madura conforme CISM Domain 2?",
+      "tag": "Residual Risk and Risk Register",
+      "options": [
+        "B. Ignorar o risco residual assumindo que controles implementados são suficientes",
+        "D. Liquidar o risco removendo completamente o processo do portfólio de negócios",
+        "A. Registrar o risco residual no Risk Register e escalar formalmente ao comitê de risco com plano de redução adicional ou aceitar explicitamente",
+        "C. Aumentar o risk appetite para 6% e comunicar a mudança apenas ao gestor operacional"
+      ],
+      "correct": 2,
+      "justification_correct": "CISM exige transparência e governança formal. Registrar no Risk Register, escalar ao comitê e documentar decisão (mitigar/aceitar) alinha com NIST SP 800-39 e ISO 31000. Decisão consciente sobre risco residual acima do appetite é atribuição do board.",
+      "justification_wrong": "Ignorar viola dever fiduciário. Aumentar appetite unilateralmente contorna controles. Liquidar é extremo sem análise risco-retorno. Nenhuma dessas ações demonstra governança madura conforme exigências certificação sênior."
+    },
+    {
+      "num": 24,
+      "text": "Ao definir Key Risk Indicators (KRIs) para monitoramento contínuo de risco operacional, qual característica é CRÍTICA conforme melhores práticas de risco?",
+      "tag": "Key Risk Indicators",
+      "options": [
+        "B. KRIs devem ser preditivos ou antecipatórios, com limites de alerta vinculados ao risk appetite, e revisados periodicamente",
+        "C. KRIs devem incluir todos os indicadores operacionais disponíveis para máxima cobertura",
+        "A. KRIs devem ser exclusivamente quantitativos e derivados de dados históricos de 5 anos",
+        "D. KRIs são ferramentas de conformidade obrigatória apenas para setores regulados"
+      ],
+      "correct": 0,
+      "justification_correct": "KRIs eficazes são preditivos (ERM frameworks). Limites vinculados ao appetite permitem gestão proativa. Revisão periódica garante relevância. COSO II e ISO 31000 enfatizam antecipação sobre reação. KRIs qualitativos-quantitativos são válidos.",
+      "justification_wrong": "Dados históricos sozinhos não são preditivos. Todos indicadores criam ruído, não foco. KRIs não são exclusivos de setores regulados—toda organização madura monitora risco de forma contínua conforme CISM."
+    },
+    {
+      "num": 25,
+      "text": "Uma BIA (Business Impact Analysis) identificou RTO de 4 horas e RPO de 1 hora para sistema crítico. Ao comunicar risco de descontinuidade ao board, qual elemento é ESSENCIAL para decisão fundamentada conforme governance de risco?",
+      "tag": "Business Impact Analysis and Risk Communication",
+      "options": [
+        "B. Comunicar RTO/RPO com cenários de probabilidade, custo de mitigação, e comparação com risk appetite organizacional",
+        "A. Apresentar apenas o impacto financeiro estimado sem contexto de probabilidade",
+        "C. Explicar RTO/RPO usando terminologia técnica extremamente detalhada para demonstrar expertise",
+        "D. Informar que sistema atende padrões de mercado e portanto o risco é aceitável"
+      ],
+      "correct": 0,
+      "justification_correct": "Comunicação eficaz ao board integra BIA com análise de risco. Incluir probabilidade, custo-benefício e alinhamento ao appetite permite decisão estratégica. CISM Domain 2 enfatiza comunicação contextualizada. Assim board pode priorizar investimentos racionalmente.",
+      "justification_wrong": "Impacto isolado sem probabilidade não informa decisão. Jargão técnico sem tradução executiva falha na comunicação. Conformidade com padrões não garante aceitabilidade estratégica. Board requer visão integrada risco-negócio, não apenas métricas técnicas."
+    },
+    {
+      "num": 26,
+      "text": "Uma organização implementou um programa de gerenciamento de riscos alinhado à ISO 31000:2018. Durante a avaliação de risco de uma aplicação crítica, identificou-se vulnerabilidade de autenticação multifator. O CISO deve decidir entre aceitar o risco residual com compensações técnicas, transferir via seguro cibernético ou mitigar implementando MFA. Qual abordagem MELHOR se alinha com a estratégia de risco quando o custo de mitigação excede significativamente o impacto potencial, mas existem controles compensatórios robustos?",
+      "tag": "risk_treatment_options_advanced",
+      "options": [
+        "A. Aceitar o risco residual documentando controles compensatórios e monitorando via KRIs específicos",
+        "B. Transferir completamente o risco via contrato de seguro cibernético com cobertura integral",
+        "D. Mitigar imediatamente independentemente do custo-benefício para eliminar toda exposição",
+        "C. Evitar o risco desativando a aplicação até implementação de MFA"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 31000:2018 permite aceitar risco residual quando controles compensatórios existem e custos de mitigação excedem benefícios. Monitoramento contínuo via KRIs (ex: tentativas de acesso não autorizado, anomalias de sessão) garante eficácia dos controles. Documentação é obrigatória para governança.",
+      "justification_wrong": "Transferência total não mitiga risco operacional interno. Evitar elimina valor de negócio. Mitigação forçada ignora análise custo-benefício que é fundamental em risk management strategy segundo CISM."
+    },
+    {
+      "num": 27,
+      "text": "Durante a análise de apetite e tolerância ao risco para infraestrutura crítica de TI, o board estabeleceu: RTO máximo 4h, RPO 1h, tolerância financeira de USD 500k/incidente. Uma Business Impact Analysis (BIA) revelou impacto de USD 2M/hora em perda de disponibilidade. Qual declaração MELHOR reflete a relação entre achados de BIA e decisões de tratamento de risco?",
+      "tag": "business_impact_analysis_risk_appetite",
+      "options": [
+        "C. BIA não influencia decisões de tratamento; apenas board define tolerância final",
+        "A. BIA valida que a tolerância ao risco (USD 500k) é inadequada; recomenda-se renegociar apetite ou aumentar investimentos em prevenção/detecção",
+        "B. BIA indica impacto alto, mas RTO/RPO definidos pelo board superam necessidade, logo aceitar risco sem mitigação adicional",
+        "D. BIA recomenda automaticamente transferência de risco via terceiros para reduzir exposição"
+      ],
+      "correct": 1,
+      "justification_correct": "BIA quantifica impacto (USD 2M/h) e identifica gap entre tolerância declarada (USD 500k) e realidade operacional. CISM exige alinhamento entre achados de BIA e apetite/tolerância. Gap justifica investimento em mitigação ou renegociação de limites com board. ISACA frameworks enfatizam essa conexão.",
+      "justification_wrong": "Opção B ignora gap crítico. C subestima papel de BIA em informar apetite. D presume transferência como solução universal sem análise. BIA é entrada crucial para decisões estratégicas de risco."
+    },
+    {
+      "num": 28,
+      "text": "Um registro de risco (risk register) organizacional inclui 150 riscos. A equipe de gerenciamento de riscos deve priorizar esforços de monitoramento e reporte executivo. Qual combinação de critérios de priorização MELHOR se alinha com a abordagem de Key Risk Indicators (KRIs) para comunicação eficaz ao board conforme CISM?",
+      "tag": "risk_register_kri_board_communication",
+      "options": [
+        "B. Reportar todos os 150 riscos ao board em formato tabular; deixar executivos definirem relevância",
+        "D. Priorizar por complexidade técnica; usar KRIs apenas para riscos de conformidade",
+        "A. Selecionar top 10-15 riscos por probabilidade×impacto; associar KRI (métrica preditiva) a cada; reporte mensal com tendências e breaches de threshold",
+        "C. Focar apenas em riscos já materializados (históricos); monitorar através de métricas reativas"
+      ],
+      "correct": 2,
+      "justification_correct": "CISM/ISACA recomendam risk register com top riscos prioritários (10-15) para board reporting. KRIs são indicadores preditivos (leading indicators) que alertam desvios antes de materialização. Reporte estruturado com thresholds e tendências suporta decisão executiva e alinhamento com apetite.",
+      "justification_wrong": "B sobrecarrega board com volume. C é reativo, não preventivo. D limita KRIs inadequadamente. Abordagem eficaz exige seleção, indicadores preditivos e cadência apropriada conforme governança corporativa."
+    },
+    {
+      "num": 29,
+      "text": "Numa avaliação de risco usando metodologia híbrida (qualitativa + quantitativa), um risco de segurança foi classificado como 'Médio' (escala 1-5). Após implementação de controle compensatório, o gerente de risco documenta risco residual como 'Médio-Baixo'. A auditoria questiona: há evidência quantitativa de redução? Qual abordagem de threat and vulnerability analysis MELHOR suporta essa avaliação?",
+      "tag": "risk_assessment_methodologies_residual_risk",
+      "options": [
+        "C. Reclassificar para 'Baixo' imediatamente; controles compensatórios sempre reduzem risco significativamente",
+        "A. Quantificar probabilidade antes/depois (ex: 40% → 15%) e impacto (USD 1M → USD 300k); demonstrar delta via análise custo-benefício do controle",
+        "B. Confiar em julgamento expert; documentação qualitativa é suficiente para auditoria",
+        "D. Manter risco original; controles compensatórios não afetam classificação de risco residual"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-30 e ISO 31000 exigem quantificação de risco residual antes/depois para validar eficácia. Threat and vulnerability analysis deve demonstrar: redução de probabilidade (via detecção/resposta) e/ou impacto (via limitação). Abordagem híbrida combina qualitativo com dados numéricos para credibilidade auditoria.",
+      "justification_wrong": "B ignora demanda por evidência quantitativa. C é impreciso; compensatórios têm efeito parcial. D nega impacto de controles. CISM exige rigor analítico em avaliação de risco residual."
+    },
+    {
+      "num": 30,
+      "text": "Uma organização enfrenta divergência entre risk appetite declarada pelo board ('Baixo') e comportamento de aceitação de riscos em projetos ('Médio-Alto'). O CISO identifica falta de alinhamento entre estratégia de risco e decisões operacionais. Qual ação MAIS APROPRIADA para restaurar consistência na governança de risco?",
+      "tag": "risk_management_strategy_governance",
+      "options": [
+        "D. Implementar restrições rígidas sem envolver stakeholders operacionais; impor conformidade imediata",
+        "C. Aumentar apetite para 'Médio-Alto' oficialmente para alinhar com comportamento atual",
+        "A. Estabelecer política formal de risco associando apetite/tolerância a critérios de decisão operacional; treinar stakeholders; auditar aderência periódica",
+        "B. Aceitar divergência como normal; board define estratégia, operações implementam autonomamente"
+      ],
+      "correct": 2,
+      "justification_correct": "CISM e COBIT exigem cascata de apetite/tolerância em política formal com critérios operacionais explícitos. Treinamento e auditoria asseguram compreensão e aderência. Isso reequilibra estratégia e execução, restaurando governança. Alternativas ignoram mecanismos de alinhamento essenciais.",
+      "justification_wrong": "B abandona governança. C mascara problema mudando estratégia. D ignora necessidade de entendimento e buy-in. Governança eficaz em risco exige integração entre nível estratégico e operacional com comunicação clara."
+    },
+    {
+      "num": 31,
+      "text": "Uma organização financeira identificou que sua tolerância ao risco de conformidade regulatória é de 2% de desvios máximos anuais. Durante a avaliação de risco, descobriu-se uma taxa atual de 3,5% de não-conformidades. Qual é a melhor ação de tratamento de risco neste cenário?",
+      "tag": "Risk Appetite and Tolerance",
+      "options": [
+        "B. Aceitar o risco e ajustar o apetite ao nível atual de 3,5%",
+        "D. Evitar completamente as operações associadas ao risco",
+        "C. Transferir o risco através de seguros de compliance",
+        "A. Implementar controles mitigadores imediatos para reduzir a taxa para dentro da tolerância"
+      ],
+      "correct": 3,
+      "justification_correct": "Quando o risco excede a tolerância estabelecida, a mitigação é a resposta apropriada per ISACA CISM principles. O risco de 3,5% versus tolerância de 2% exige redução através de controles. Aceitar desviaria da governança; transferência é secundária; evitar é desproporcional.",
+      "justification_wrong": "Aceitar riscos acima da tolerância viola princípios de governança corporativa e frameworks como ISO 31000. Transferência e evitação não endereçam a lacuna de conformidade identificada de forma economicamente viável para instituição financeira."
+    },
+    {
+      "num": 32,
+      "text": "Ao conduzir uma Análise de Impacto nos Negócios (BIA) em preparação para avaliação de risco, um CISM deve determinar o Recovery Time Objective (RTO) e Recovery Point Objective (RPO). Qual é a relação correta entre estes parâmetros e a estratégia de risco?",
+      "tag": "Business Impact Analysis",
+      "options": [
+        "B. RTO e RPO refletem o apetite a risco organizacional e informam a seleção de controles mitigadores",
+        "C. RPO deve ser sempre igual a RTO para garantir consistência técnica",
+        "D. BIA não necessita de RTO/RPO; estes são definidos exclusivamente em planos de continuidade",
+        "A. RTO e RPO são definidos independentemente do risco; determinam apenas capacidade técnica de recuperação"
+      ],
+      "correct": 0,
+      "justification_correct": "Per ISO 31000 e CISM Body of Knowledge, RTO/RPO derivam de impacto ao negócio (BIA) e refletem tolerância ao risco. Definem a estratégia de tratamento: RTO/RPO menores exigem controles mais robustos. São insumos críticos para decisões de risco organizacional e seleção de mitigadores.",
+      "justification_wrong": "RTO e RPO não são puros parâmetros técnicos; são decisões de negócio alinhadas ao apetite de risco. Não devem ser iguais (RPO geralmente < RTO). BIA é etapa essencial que os informa. Integração com estratégia de risco é mandatória por frameworks de governança."
+    },
+    {
+      "num": 33,
+      "text": "Um CISM está desenvolvendo Indicadores-Chave de Risco (KRIs) para monitoramento contínuo de vulnerabilidades críticas em infraestrutura cloud. Qual característica é ESSENCIAL para que um KRI seja efetivo em detecção precoce de degradação de postura de risco?",
+      "tag": "Key Risk Indicators (KRIs)",
+      "options": [
+        "C. Ser atualizado manualmente a cada semestre por auditoria independente",
+        "A. Ser vinculado a métricas operacionais apenas; KRIs não devem incluir dados de vulnerabilidade",
+        "D. Refletir apenas riscos históricos; não deve prever riscos futuros",
+        "B. Possuir limiares definidos (thresholds) derivados de risco aceitável e tolerance levels"
+      ],
+      "correct": 3,
+      "justification_correct": "Conforme ISACA CISM e ISO 31000, KRIs efetivos exigem thresholds pré-definidos alinhados a apetite e tolerância de risco. Permitem detecção precoce quando ultrapassados, acionando tratamento preventivo. Devem ser preditivos e monitorados continuamente, não reativos.",
+      "justification_wrong": "KRIs devem integrar dados operacionais e de vulnerabilidade. Atualização semestral é insuficiente para ambiente cloud. KRIs preditivos são superiores aos históricos. Sem thresholds claros, KRIs tornam-se métricas vagas sem capacidade de decisão ou escalação efetiva."
+    },
+    {
+      "num": 34,
+      "text": "Uma organização de varejo realizou avaliação de risco e identificou vulnerabilidades em sistema de ponto-de-venda (POS) com probabilidade MÉDIA e impacto ALTO. O custo de mitigação é R$ 500 mil, enquanto risco residual após mitigação seria R$ 200 mil. O custo de transferência (seguro cibernético) é R$ 150 mil. Qual opção é mais alinhada à estratégia de risco prudente?",
+      "tag": "Risk Treatment Options",
+      "options": [
+        "C. Combinar mitigação parcial com transferência, otimizando custo-benefício",
+        "B. Mitigar totalmente, investindo R$ 500 mil para alcançar nível residual de R$ 200 mil",
+        "D. Evitar completamente o segmento de POS para eliminar exposição",
+        "A. Aceitar o risco atual (R$ X) sem tratamento para economizar recursos"
+      ],
+      "correct": 0,
+      "justification_correct": "Abordagem blended alinha-se a ISACA CISM e ISO 31000: risco ALTO exige ação, mas combinação de mitigação + transferência otimiza ROI. Mitigação parcial + seguro (R$ 500k + 150k vs. apenas 500k) oferece proteção robusta contra impacto residual com eficiência econômica superior.",
+      "justification_wrong": "Aceitar risco ALTO impactante viola governança. Mitigação total (R$ 500k) é custosa se seguro complementar é mais econômico. Evitar POS é desproporcional e elimina receita crítica. Decisão deve balancear proteção, custo e continuidade operacional per framework de risco."
+    },
+    {
+      "num": 35,
+      "text": "Ao comunicar risco residual ao Conselho de Administração, um CISM deve apresentar riscos que, apesar de controles implementados, permanecerão na organização. Qual é o atributo MAIS CRÍTICO para credibilidade e efetividade dessa comunicação?",
+      "tag": "Risk Communication to Board",
+      "options": [
+        "D. Focar exclusivamente em percentuais de redução de risco sem contextualizar exposição remanescente",
+        "B. Articular claramente como risco residual foi quantificado, rationale de tolerabilidade e plano de monitoramento contínuo",
+        "A. Apresentar apenas riscos residuais; omitir mitigações implementadas para evitar complexidade",
+        "C. Usar terminologia técnica avançada para demonstrar sofisticação em gestão de risco"
+      ],
+      "correct": 1,
+      "justification_correct": "Per ISACA CISM e melhores práticas de governança, comunicação efetiva ao Board requer transparência: quantificação clara (valor/probabilidade), justificativa de aceitabilidade dentro de apetite, e mecanismos de monitoramento. Demonstra apropriada ownership e accountability de risco residual.",
+      "justification_wrong": "Omitir mitigações reduz credibilidade e entendimento contextual. Jargão técnico alieniza executivos não-técnicos. Focar apenas em percentuais mascara exposição real. Board necessita visão completa: onde estamos (residual), como chegamos (mitigação), e como monitora (KRIs/escalação) para governance efetivo."
+    },
+    {
+      "num": 36,
+      "text": "Uma organização financeira estabeleceu seu apetite de risco em 15% para operações de crédito. Durante uma avaliação de risco, identificou-se que a taxa atual de inadimplência está em 18%. Qual é a ação mais apropriada conforme frameworks de gestão de risco corporativo?",
+      "tag": "Risk Appetite and Tolerance",
+      "options": [
+        "A. Implementar controles adicionais ou reduzir exposição até atingir tolerância aceitável",
+        "D. Documentar o desvio e continuar operações sem ação corretiva",
+        "B. Aceitar o risco pois representa apenas 3% acima do apetite",
+        "C. Transferir todo o risco via seguros sem análise de custo-benefício"
+      ],
+      "correct": 0,
+      "justification_correct": "Quando o risco real excede apetite/tolerância estabelecido, gestão proativa exige tratamento: mitigação (controles), redução de exposição ou transferência. ISO 31000 e COSO ERM definem que tolerância é limite máximo aceitável. Monitorar KRIs e implementar ações corretivas é mandatório.",
+      "justification_wrong": "Opções B, C e D violam princípios de governança de risco. Aceitar desvio sem justificativa, transferir sem análise ou ignorar excesso de tolerância falha em responsabilidade fiduciária e compliance normativo."
+    },
+    {
+      "num": 37,
+      "text": "Um CISO conduz análise de vulnerabilidade em infraestrutura crítica usando metodologia CVSS 3.1 e identifica 120 vulnerabilidades. Para priorização efetiva de remediação, qual fator adicional ao CVSS é crítico conforme frameworks integrados de gestão de risco?",
+      "tag": "Threat and Vulnerability Analysis",
+      "options": [
+        "B. Unicamente o score CVSS, pois representa severidade técnica completa",
+        "C. Preferência do fornecedor de segurança por ordem de disclosure",
+        "D. Quantidade total de vulnerabilidades independente de impacto operacional",
+        "A. Viabilidade técnica de patch e contexto de negócio do ativo (criticidade operacional)"
+      ],
+      "correct": 3,
+      "justification_correct": "CVSS 3.1 (NIST) mede severidade técnica, mas Risk Management (ISO 31000, NIST Cybersecurity Framework) exige análise de contexto: criticidade do ativo, impact operacional, probabilidade exploração, interdependências. Priorização efetiva integra técnica + negócio.",
+      "justification_wrong": "Usar apenas CVSS ignora contexto organizacional. Vulnerabilidade crítica em ativo não-essencial merece menor prioridade que severidade média em sistema crítico. Abordagem puramente técnica falha em alinhamento estratégico."
+    },
+    {
+      "num": 38,
+      "text": "Após tratamento de risco via mitigação (implementação de controles de acesso), o risco residual calculado permanece acima da tolerância estabelecida. Conforme COSO ERM e governança de risco, qual decisão é mais apropriada?",
+      "tag": "Risk Treatment Options and Residual Risk",
+      "options": [
+        "D. Transferir automaticamente via seguro sem avaliação de cobertura e lacunas",
+        "A. Escalar para board/comitê de risco com recomendação de ação adicional ou aceitação formal documentada",
+        "B. Implementar mitigação indefinidamente até eliminar totalmente o risco residual",
+        "C. Ignorar risco residual pois mitigação já foi executada"
+      ],
+      "correct": 1,
+      "justification_correct": "Risco residual acima de tolerância requer governança executiva. Opções: aceitar formalmente (documentado, aprovado por board), mitigar adicionalmente, transferir (com análise custo-benefício) ou evitar atividade. COSO ERM e ISO 31000 exigem escalação e decisão informada.",
+      "justification_wrong": "Mitigação indefinida não é viável economicamente. Ignorar risco residual viola compliance. Transferência automática sem análise técnica e financeira é irresponsável e pode deixar lacunas não cobertas."
+    },
+    {
+      "num": 39,
+      "text": "Uma organização implementa Key Risk Indicators (KRIs) para monitorar risco operacional. Um KRI crítico (tempo médio de resolução de incidentes) ultrapassou limite de 8 horas para 12 horas. Qual ação imediata recomenda a melhor prática de gestão de risco?",
+      "tag": "Key Risk Indicators and Risk Monitoring",
+      "options": [
+        "D. Reduzir frequência de monitoramento de KRI para evitar detecção de desvios",
+        "B. Aguardar próximo período de reporte para validar se foi anomalia isolada",
+        "A. Investigar causa-raiz, documentar, escalar conforme plano de resposta e implementar ações corretivas monitoradas",
+        "C. Aumentar o limite de tolerância de KRI para 12 horas sem análise"
+      ],
+      "correct": 2,
+      "justification_correct": "KRIs medem saúde de riscos em tempo real (COSO ERM, ISACA). Quando KRI excede threshold, acionamento rápido é essencial: investigação causa-raiz, comunicação à liderança, execução de plano de resposta pré-definido, rastreamento de remediação.",
+      "justification_wrong": "Aguardar descarta oportunidade de ação proativa. Aumentar limite sem análise mascara problema de controle. Reduzir monitoramento é contrário a gestão efetiva. KRIs só agregam valor com resposta rápida e documentada."
+    },
+    {
+      "num": 40,
+      "text": "O board solicita ao CRO comunicação sobre riscos que poderiam impactar objetivos estratégicos nos próximos 12 meses. Qual estrutura de comunicação de risco é mais alinhada a COSO ERM e governança corporativa?",
+      "tag": "Risk Communication to Board",
+      "options": [
+        "C. Comunicação verbal informal focando em riscos recentes sem documentação formal",
+        "B. Lista técnica detalhada de todas as vulnerabilidades e eventos de risco sem hierarquização",
+        "D. Resumo executivo de risco zero com omissão de desvios para não preocupar investidores",
+        "A. Relatório com riscos priorizados por probabilidade/impacto, KRIs tendência, tratamentos em progresso, apetite vs. risco real, lacunas de controle e recomendações"
+      ],
+      "correct": 3,
+      "justification_correct": "Comunicação estratégica de risco ao board (COSO ERM 2017, ISACA) exige: contextualização de negócio, hierarchização por relevância, análise tendência via KRIs, status de tratamentos, comparação apetite vs. realidade, recomendações de ação, formato executivo.",
+      "justification_wrong": "Detalhe técnico sem síntese confunde decisores. Omissão de risco ou comunicação informal viola fiduciária e compliance. Board necessita visão estratégica integrada, não listas técnicas. Transparência de risco é pilar de governança."
+    },
+    {
+      "num": 41,
+      "text": "Uma organização implementou uma estratégia de gestão de riscos baseada em apetite ao risco de 15% de perda potencial anual. Após avaliação, identificou risco residual de 8%. Qual é a ação mais apropriada segundo CISM?",
+      "tag": "Risk Appetite and Tolerance",
+      "options": [
+        "D. Transferir todo o risco para terceiros independentemente do custo",
+        "C. Implementar controles adicionais sem análise de custo-benefício",
+        "A. Aceitar o risco residual, pois está dentro do apetite estabelecido",
+        "B. Rejeitar imediatamente qualquer risco acima de 5%"
+      ],
+      "correct": 2,
+      "justification_correct": "Risco residual de 8% está dentro do apetite de 15%, alinhado com tolerância de risco. CISM recomenda aceitação quando residual está abaixo do apetite, após tratamento adequado. Decisão baseada em análise custo-benefício prévia.",
+      "justification_wrong": "Rejeitar 8% (opção B) ignora apetite definido. Controles ilimitados (C) violam princípio de custo-benefício. Transferência automática (D) é ineficiente economicamente e não segue framework de gestão de risco."
+    },
+    {
+      "num": 42,
+      "text": "Durante análise de vulnerabilidade crítica em sistema de pagamento, o CISO identifica gap entre frequência de exploração (90% anual) e impacto (perda de R$ 50M). Qual metodologia de avaliação é mais apropriada?",
+      "tag": "Risk Assessment Methodologies",
+      "options": [
+        "C. Método Delphi com painéis de especialistas externos apenas",
+        "B. Abordagem híbrida: qualitativa para probabilidade + quantitativa para impacto",
+        "D. Avaliação subjetiva baseada em experiência do CISO sem documentação",
+        "A. Análise Qualitativa simples baseada em cores (vermelho/amarelo/verde)"
+      ],
+      "correct": 1,
+      "justification_correct": "Abordagem híbrida (ISO 31000) combina métodos: qualitativo para frequência (90% = alta) e quantitativo para impacto (R$ 50M). Apropriada para riscos críticos com dados econômicos precisos e incerteza em probabilidade.",
+      "justification_wrong": "Qualitativa simples (A) insuficiente para risco financeiro. Delphi (C) é suplementar, não primária. Subjetividade sem documentação (D) viola compliance CISM e governança de risco. Métodos devem ser defensáveis e auditáveis."
+    },
+    {
+      "num": 43,
+      "text": "Empresa com 2000 ativos identificou 450 riscos no registro. Implementou opções de tratamento: 200 mitigados, 150 aceitos, 80 transferidos. Qual indicador-chave de risco (KRI) melhor monitora efetividade de tratamento?",
+      "tag": "Key Risk Indicators (KRIs)",
+      "options": [
+        "D. Proporção de controles compensatórios falhos / controles implementados",
+        "B. Cobertura de tratamento de risco = (450-0)/450 = 100%",
+        "C. Razão riscos residuais não testados / riscos tratados mitigados",
+        "A. Taxa de riscos pendentes = 450/2000 = 22,5%"
+      ],
+      "correct": 0,
+      "justification_correct": "KRI deve medir efetividade contínua de controles mitigadores. Proporção de falhas em controles compensatórios (D) indica degradação de proteção, gerando alerta precoce antes de materialização. Alinhado com COSO e monitoramento contínuo CISM.",
+      "justification_wrong": "Taxa de pendentes (A) ignora qualidade do tratamento. Cobertura 100% (B) é métrica de implementação, não efetividade. Razão residuais (C) é estática; não detecta degradação dinâmica. KRI efetivo avalia monitoramento contínuo de controles ativos."
+    },
+    {
+      "num": 44,
+      "text": "Análise de Impacto aos Negócios (BIA) identificou RTO crítico de 4 horas para e-commerce. Risco de indisponibilidade com frequência moderada (20% anual) e perda estimada de R$ 3M por hora. Qual opção de tratamento é MENOS apropriada?",
+      "tag": "Business Impact Analysis and Risk Treatment",
+      "options": [
+        "C. Transferência: contratar seguro cibernético com cobertura de interrupção",
+        "D. Prevenção: contratação de novo datacenter sem análise de custo-benefício",
+        "A. Mitigação: implementar redundância geográfica e failover automático",
+        "B. Aceitação: documentar tolerância ao downtime de 4 horas no registro de riscos"
+      ],
+      "correct": 1,
+      "justification_correct": "Prevenção ilimitada (D) viola gestão de risco. Impacto de R$ 3M/hora x 4h RTO = até R$ 12M. Investimento em novo datacenter sem custo-benefício é ineficiente. Decisão deve comparar custo vs. benefício, seguindo ISO 31000 e framework CISM.",
+      "justification_wrong": "Mitigação (A) reduz frequência/impacto justificadamente. Aceitação (B) é válida se documentada e dentro de apetite. Transferência (C) complementa mitigação de forma econômica. Apenas prevenção sem análise é inapropriada para decisões de risco."
+    },
+    {
+      "num": 45,
+      "text": "CISO apresenta comunicação de risco ao Conselho indicando 12 riscos em nível crítico (vermelho) e risco residual corporativo de 18% vs. apetite de 12%. Qual abordagem de comunicação é MAIS efetiva segundo CISM?",
+      "tag": "Risk Communication to Board",
+      "options": [
+        "B. Sumário executivo com: narrativa de gap (18% vs 12%), roadmap de mitigação de 6 meses e KRIs de rastreamento",
+        "A. Relatório técnico com 50 páginas detalhando todas as 450 vulnerabilidades identificadas",
+        "D. Apresentação genérica de conformidade descrevendo frameworks ISO 27001 e NIST apenas",
+        "C. Comunicação verbal informal sem documentação formal de decisões aprovadas"
+      ],
+      "correct": 0,
+      "justification_correct": "Comunicação efetiva ao Conselho (CISM Domain 2) requer: 1) Gap análise clara (18% vs 12%); 2) Roadmap tangível com prazos; 3) KRIs para monitoramento contínuo. Sumário executivo contextualiza riscos em linguagem estratégica, facilitando decisões.",
+      "justification_wrong": "Relatório de 50 páginas (A) sobrecarrega decisores. Verbal sem documentação (C) viola governança e compliance. Apresentação genérica (D) não comunica estado atual ou ações específicas. Conselho necessita informação acionável, não técnica ou teórica."
+    },
+    {
+      "num": 46,
+      "text": "Uma organização implementa uma estratégia de risco que aceita riscos específicos enquanto mitiga outros. Qual elemento é CRÍTICO para garantir que essa estratégia permaneça alinhada com o apetite de risco corporativo ao longo do tempo?",
+      "tag": "Risk Appetite and Tolerance",
+      "options": [
+        "D. Delegação integral da gestão de risco ao departamento de compliance",
+        "B. Realização anual de assessment de riscos sem necessidade de validação executiva",
+        "A. Monitoramento contínuo de Key Risk Indicators (KRIs) com thresholds pré-estabelecidos e reportes periódicos ao board",
+        "C. Documentação estática do apetite de risco no plano estratégico sem atualizações"
+      ],
+      "correct": 2,
+      "justification_correct": "KRIs com thresholds e reportes periódicos ao board (ISO 31000:2018, COSO ERM 2017) permitem monitoramento contínuo, detecção precoce de desvios e ajustes estratégicos. Board governa risco de forma dinâmica, não estática.",
+      "justification_wrong": "Assessment anual é insuficiente para volatilidade moderna; apetite estático ignora mudanças ambientais; compliance não substitui governança holística de risco."
+    },
+    {
+      "num": 47,
+      "text": "Ao conduzir análise de ameaças e vulnerabilidades para um sistema crítico, um CISM identifica vulnerabilidade de exposição (CVSS 7.8) com ameaça crítica potencial. Qual abordagem MELHOR integra essa análise ao risco residual?",
+      "tag": "Threat and Vulnerability Analysis",
+      "options": [
+        "D. Transferir o risco exclusivamente para seguradora sem validar mitigações internas",
+        "B. Avaliar probabilidade de exploração x impacto financeiro/operacional, documentar controles existentes e risco residual aceito formalmente",
+        "C. Aceitar automaticamente todo risco CVSS ≥7.0 como intolerável sem análise de contexto",
+        "A. Calcular risco residual apenas pelo CVSS, sem considerar probabilidade ou impacto no negócio"
+      ],
+      "correct": 1,
+      "justification_correct": "Risco = Ameaça × Vulnerabilidade × Impacto (NIST SP 800-30). Integração adequada considera probabilidade realista, impacto empresarial, controles existentes (ISO 31000:2018) e formaliza risco residual com aprovação executiva.",
+      "justification_wrong": "CVSS isolado ignora contexto organizacional; aceitação automática viola princípios de governança; transferência sem mitigação é abdicação de responsabilidade."
+    },
+    {
+      "num": 48,
+      "text": "Uma organização financeira implementa Business Impact Analysis (BIA) e identifica RTO de 4 horas e RPO de 1 hora para sistema crítico de pagamentos. Qual decisão de tratamento de risco é mais APROPRIADA para alinhar-se a esses parâmetros?",
+      "tag": "Risk Treatment Options and Business Impact Analysis",
+      "options": [
+        "B. Mitigar com redundância geográfica, failover automático e testes periódicos de recuperação validando RTO/RPO",
+        "C. Evitar completamente operações de pagamento desativando o sistema",
+        "A. Aceitar o risco e manter backup manual semanal",
+        "D. Transferir 100% do risco para terceira plataforma sem governança interna"
+      ],
+      "correct": 0,
+      "justification_correct": "RTO/RPO baixos exigem mitigação robusta: redundância geográfica, failover automático, testes validados (ISO 22301, NIST BC guidelines). Aceitação/evasão/transferência pura não atendem requisitos operacionais críticos.",
+      "justification_wrong": "Backup semanal viola RPO de 1h; evasão inviabiliza negócio; transferência pura elimina accountability organizacional sem eliminar risco residual."
+    },
+    {
+      "num": 49,
+      "text": "Ao comunicar riscos críticos ao board, um CISM apresenta register contendo 127 riscos com diversos níveis de severidade. Qual abordagem MAXIMIZA efetividade da comunicação executiva?",
+      "tag": "Risk Communication to Board",
+      "options": [
+        "A. Apresentar lista completa de 127 riscos com detalhes técnicos de cada vulnerabilidade",
+        "C. Comunicar verbalmente sem documentação formal para agilizar aprovações",
+        "D. Delegar toda comunicação ao Chief Risk Officer sem participação do CISM",
+        "B. Filtrar e reportar apenas riscos que excedem apetite corporativo, com trending, KRIs, priorização e recomendações de ação executiva"
+      ],
+      "correct": 3,
+      "justification_correct": "Governança efetiva (COSO ERM 2017) exige comunicação executiva filtrada: riscos relevantes ao apetite, trending temporal, KRIs monitorizados, recomendações acionáveis. Board governa exceções, não operacionalidades.",
+      "justification_wrong": "127 riscos sobrecarregam governance; detalhes técnicos ofuscam decisão executiva; informalidade compromete auditoria; delegação única elimina perspectiva técnica complementar."
+    },
+    {
+      "num": 50,
+      "text": "Uma organização enfrenta risco emergente de conformidade regulatória com potencial penalidade de R$50M. A estratégia atual combina aceitação parcial do risco com mitigation limitada. Qual mecanismo é ESSENCIAL para monitorar e validar essa decisão híbrida?",
+      "tag": "Risk Register and Key Risk Indicators",
+      "options": [
+        "C. Confiar exclusivamente em auditorias externas para validação",
+        "D. Remover o risco do register após aprovação da diretoria",
+        "A. Registrar a decisão no risk register sem KRIs e revisar anualmente",
+        "B. Estabelecer KRIs específicos (ex: % conformidade regulatória, lead time de correção), alertas de threshold, owner designado e ciclo de review trimestral com accountability"
+      ],
+      "correct": 3,
+      "justification_correct": "KRIs com thresholds, alertas, owners e ciclos de review (ISO 31000:2018, COSO) permitem monitoramento ativo de decisão híbrida. Detectam desvios antes de materialização de R$50M. Garante accountability contínua, não just-once.",
+      "justification_wrong": "Review anual é inadequado para risco de R$50M; auditoria externa é reactiva; remoção do register elimina rastreabilidade e governança contínua necessária para decisão aceita."
+    }
+  ]
+}

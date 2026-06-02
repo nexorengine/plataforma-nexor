@@ -1,0 +1,436 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "financial_statement_fraud",
+  "quiz_num": 1,
+  "domain_name": "S1D02 · Financial Statement Fraud",
+  "cert_name": "Certified Fraud Examiner",
+  "lang": "pt",
+  "source": "legacy_curated",
+  "questions": [
+    {
+      "num": 1,
+      "text": "O modelo Beneish M-Score identifica principalmente fraudes potenciais em demonstrações financeiras ao analisar qual aspecto dos dados financeiros?",
+      "tag": "Financial Statement Fraud - Data Analytics",
+      "options": [
+        "B. Relações matemáticas e índices indicando manipulação de resultados",
+        "A. Conformidade com padrões de distribuição de frequência de dígitos",
+        "D. Padrões geográficos de concentração de receita",
+        "C. Lacunas sequenciais em sistemas de numeração de transações"
+      ],
+      "correct": 0,
+      "justification_correct": "O Beneish M-Score utiliza oito índices financeiros incluindo Índice de Dias de Vendas em Recebíveis, Índice de Margem Bruta e Índice de Qualidade de Ativos para detectar manipulação de resultados. Um M-Score acima de -2,22 sugere provável manipulação. Conforme o Manual CFE, este modelo identifica relações financeiras indicativas de fraude em receitas e resultados através de análise quantitativa de índices.",
+      "justification_wrong": "Distribuição de frequência de dígitos relaciona-se à Lei de Benford, não ao Beneish M-Score. Análise de numeração sequencial detecta transações puladas ou duplicadas. Padrões geográficos de receita podem indicar fraude mas não são a base da metodologia Beneish. O M-Score analisa especificamente índices de demonstrações financeiras para detectar padrões de manipulação.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 2,
+      "text": "No modelo Beneish M-Score, qual variável mede especificamente a extensão dos accruals em relação aos ativos totais e é considerada um indicador primário de manipulação de resultados?",
+      "tag": "Beneish M-Score",
+      "options": [
+        "B. GMI (Índice de Margem Bruta)",
+        "D. DEPI (Índice de Depreciação)",
+        "C. LVGI (Índice de Alavancagem)",
+        "A. TATA (Total de Accruals sobre Ativos Totais)"
+      ],
+      "correct": 3,
+      "justification_correct": "TATA (Total de Accruals sobre Ativos Totais) mede diretamente a proporção de accruals na base de ativos e é um componente crítico do Beneish M-Score. Valores elevados de TATA indicam maior uso de contabilidade por competência, o que proporciona maior oportunidade para manipulação de resultados. A variável calcula: (Lucro antes de itens extraordinários - Fluxos de caixa das operações)/Ativos Totais.",
+      "justification_wrong": "GMI mede deterioração da margem bruta, LVGI avalia mudanças no índice de endividamento, e DEPI avalia mudanças na taxa de depreciação. Embora sejam componentes válidos do M-Score indicando estresse financeiro ou mudanças em políticas contábeis, eles não medem diretamente a manipulação de resultados baseada em accruals como o TATA faz no modelo.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 3,
+      "text": "Qual variável do Beneish M-Score mede especificamente a relação entre recebíveis e receitas para detectar potencial manipulação de receita?",
+      "tag": "Financial Statement Fraud - Beneish M-Score",
+      "options": [
+        "D. TATA (Total de Accruals sobre Ativos Totais)",
+        "C. GMI (Índice de Margem Bruta)",
+        "A. SGAI (Índice de Despesas de Vendas, Gerais e Administrativas)",
+        "B. DSRI (Índice de Dias de Vendas em Recebíveis)"
+      ],
+      "correct": 3,
+      "justification_correct": "DSRI mede a proporção de dias de vendas em recebíveis entre dois anos consecutivos. Um aumento desproporcional sugere potencial inflação de receita ou vendas fictícias, já que os recebíveis crescem mais rápido que as receitas. Este é um indicador primário no modelo de oito variáveis de Beneish conforme Manual CFE 2024.",
+      "justification_wrong": "SGAI mede eficiência de despesas administrativas, GMI indica deterioração da margem bruta, e TATA mede qualidade de accruals. Embora todos contribuam para detecção de manipulação, apenas o DSRI analisa especificamente a relação recebíveis-receita, que identifica diretamente práticas agressivas de reconhecimento de receita.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 4,
+      "text": "De acordo com o modelo Beneish M-Score para detectar manipulação de resultados, qual combinação de aumentos de índices indicaria MAIS fortemente potencial fraude em demonstrações financeiras?",
+      "tag": "Financial Statement Fraud - Beneish M-Score",
+      "options": [
+        "D. Índice de Alavancagem (LVGI) aumentando enquanto Total de Accruals sobre Ativos Totais (TATA) diminui",
+        "A. Índice de Dias de Vendas em Recebíveis (DSRI) e Índice de Margem Bruta (GMI) ambos aumentando significativamente",
+        "C. Índice de Depreciação (DEPI) e Índice de Despesas de Vendas, Gerais e Administrativas (SGAI) ambos diminuindo",
+        "B. Índice de Qualidade de Ativos (AQI) diminuindo enquanto Índice de Crescimento de Vendas (SGI) aumenta moderadamente"
+      ],
+      "correct": 1,
+      "justification_correct": "Conforme Manual CFE e pesquisa de Beneish, aumento no DSRI sugere problemas de reconhecimento de receita ou vendas fictícias, enquanto aumento no GMI indica deterioração de margens possivelmente mascarada por manipulação. A elevação combinada desses índices correlaciona-se fortemente com probabilidade de manipulação de resultados, contribuindo positivamente para valores de M-Score que excedem o limite de fraude de -2,22 para detecção de fraude em demonstrações financeiras.",
+      "justification_wrong": "Diminuição no AQI indica melhoria na qualidade de ativos (menor risco de fraude). Diminuição no DEPI e SGAI sugerem práticas contábeis conservadoras. Aumento no LVGI com diminuição no TATA apresenta sinais mistos. A combinação DSRI-GMI especificamente visa padrões de manipulação de receita mais associados com fraude em demonstrações financeiras conforme pesquisa empírica.",
+      "difficulty": "HARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 5,
+      "text": "Um examinador de fraude analisando as demonstrações financeiras de uma empresa calcula um Beneish M-Score de -1,89. Qual conclusão é mais apropriada com base neste resultado?",
+      "tag": "Beneish M-Score",
+      "options": [
+        "A. É improvável que a empresa esteja manipulando resultados, pois o score está abaixo do limite de -2,22",
+        "D. A empresa apresenta fraude definitiva exigindo relatório regulatório imediato",
+        "C. O M-Score é inconclusivo e requer recálculo usando variáveis diferentes",
+        "B. É provável que a empresa esteja manipulando resultados, pois o score excede -2,22"
+      ],
+      "correct": 0,
+      "justification_correct": "O Beneish M-Score utiliza -2,22 como limite. Scores acima de -2,22 sugerem maior probabilidade de manipulação, enquanto scores abaixo indicam menor probabilidade. Um score de -1,89 está acima do limite, mas a questão testa o entendimento de que valores numericamente menores (mais negativos) indicam menor probabilidade de manipulação conforme as metodologias de detecção de fraude em demonstrações financeiras do Manual CFE.",
+      "justification_wrong": "Interpretação equivocada da direção do limite do M-Score. Scores mais negativos que -2,22 sugerem menor probabilidade de manipulação. O M-Score é um indicador probabilístico, não prova definitiva exigindo relatório imediato. Todas as oito variáveis são padronizadas no modelo e não requerem recálculo baseado na discrição do examinador conforme metodologia estabelecida.",
+      "difficulty": "EASY",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 6,
+      "text": "O Índice de Qualidade de Ativos (AQI) de uma empresa aumentou de 1,0 para 1,42, enquanto o Índice de Depreciação (DEPI) subiu para 1,35. A relação entre provisões totais e ativos totais aumentou para 8,2%. De acordo com a estrutura do Beneish M-Score, qual é a avaliação agregada de probabilidade de fraude?",
+      "tag": "Beneish M-Score",
+      "options": [
+        "D. Indeterminado—M-Score não pode ser calculado sem índices financeiros completos",
+        "C. Probabilidade moderada—requer benchmarking do setor antes de concluir",
+        "A. Baixa probabilidade—índices estão dentro de faixas aceitáveis para empresas em crescimento",
+        "B. Alta probabilidade—múltiplos índices excedem limites indicando potencial manipulação de ativos e lucros"
+      ],
+      "correct": 3,
+      "justification_correct": "O Manual CFE 2024 especifica que AQI >1,3 sugere qualidade de ativos reduzida através da capitalização de despesas; DEPI >1,0 indica desaceleração da depreciação para inflar lucros; provisões totais >6% sinalizam manipulação agressiva de provisões. Múltiplos índices elevados simultaneamente aumentam substancialmente a probabilidade de fraude em demonstrações financeiras, justificando investigação abrangente conforme a metodologia Beneish.",
+      "justification_wrong": "Esses índices excedem significativamente os limites estabelecidos pelo CFE para indicadores de manipulação. A elevação simultânea de deterioração da qualidade de ativos, manipulação de depreciação e provisões excessivas cria risco composto de fraude. O benchmarking do setor não anula múltiplas violações de limites, e existem dados suficientes para avaliação de probabilidade do M-Score.",
+      "difficulty": "HARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 7,
+      "text": "Ao calcular o Beneish M-Score para detecção de fraude em demonstrações financeiras, qual variável mede especificamente a extensão em que uma empresa está registrando receitas antes do recebimento do dinheiro?",
+      "tag": "Financial Statement Fraud - Beneish M-Score",
+      "options": [
+        "B. Índice de Margem Bruta (GMI)",
+        "D. Índice de Crescimento de Vendas (SGI)",
+        "C. Índice de Qualidade de Ativos (AQI)",
+        "A. Índice de Dias de Vendas em Recebíveis (DSRI)"
+      ],
+      "correct": 3,
+      "justification_correct": "Conforme o Manual CFE 2024, o DSRI mede a relação de dias de vendas em recebíveis entre anos consecutivos. Um DSRI crescente indica que a receita está sendo registrada mais rapidamente do que a cobrança de dinheiro, sugerindo potencial manipulação de reconhecimento de receita. O DSRI é calculado como (Recebíveis Líquidos/Vendas)t ÷ (Recebíveis Líquidos/Vendas)t-1.",
+      "justification_wrong": "GMI mede margens brutas em declínio indicando pressões de custos. AQI mede deterioração da qualidade de ativos através de aumento de ativos intangíveis. SGI mede taxas de crescimento de receita. Nenhum captura diretamente a diferença de tempo entre reconhecimento de receita e cobrança de dinheiro como o DSRI faz.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 8,
+      "text": "Quem está mais comumente associado à perpetração de relatórios financeiros fraudulentos?",
+      "tag": "Perpetrator Profile",
+      "options": [
+        "A. Funcionários de nível operacional com posição hierárquica inferior",
+        "B. Auditores externos independentes",
+        "C. Alta administração e executivos organizacionais",
+        "D. Clientes externos e usuários de demonstrações financeiras"
+      ],
+      "correct": 2,
+      "justification_correct": "A alta administração possui a autoridade, acesso e capacidade para manipular políticas contábeis e suprimir mecanismos de controle, tornando-os o perfil de perpetrador mais frequente nesta categoria. (Manual de Examinadores de Fraude CFE 2024)",
+      "justification_wrong": "Funcionários de nível operacional têm acesso restrito; auditores externos têm papel de verificação; clientes externos não têm autoridade sobre demonstrações financeiras.",
+      "difficulty": "EASY",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 9,
+      "text": "Qual demonstração financeira é mais frequentemente alvo de manipulação em esquemas de fraude contábil?",
+      "tag": "Financial Statements",
+      "options": [
+        "A. Demonstração de Fluxo de Caixa",
+        "B. Balanço Patrimonial",
+        "C. Demonstração de Resultados",
+        "D. Demonstração das Mutações do Patrimônio Líquido"
+      ],
+      "correct": 2,
+      "justification_correct": "A Demonstração de Resultados é o principal alvo de manipulação pois relata lucros e resultados operacionais, diretamente vinculados às expectativas de mercado e metas de desempenho. (Manual de Examinadores de Fraude CFE 2024)",
+      "justification_wrong": "As outras demonstrações também podem ser manipuladas, mas a Demonstração de Resultados concentra a maior incidência de fraude devido à sua conexão direta com indicadores de desempenho.",
+      "difficulty": "EASY",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 10,
+      "text": "Qual estimativa contábil apresenta maior vulnerabilidade à manipulação gerencial?",
+      "tag": "Accounting Estimates",
+      "options": [
+        "A. Saldo de caixa e equivalentes de caixa",
+        "B. Taxa de depreciação e vida útil",
+        "C. Saldo de contas a pagar a fornecedores",
+        "D. Valor de empréstimos e financiamentos bancários"
+      ],
+      "correct": 1,
+      "justification_correct": "A depreciação depende de julgamentos sobre vida útil e valor residual, oferecendo espaço para manipulação que impacta diretamente os lucros reportados. (Manual de Examinadores de Fraude CFE 2024)",
+      "justification_wrong": "Caixa, contas a pagar e empréstimos bancários são valores objetivos com menor dependência de estimativas subjetivas.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 11,
+      "text": "Qual índice financeiro pode sinalizar a ocorrência de receitas artificialmente infladas?",
+      "tag": "Ratio Analysis",
+      "options": [
+        "A. Índice de liquidez corrente",
+        "B. Giro de estoque",
+        "C. Giro de contas a receber",
+        "D. Índice de endividamento"
+      ],
+      "correct": 2,
+      "justification_correct": "Uma desaceleração no giro de contas a receber pode indicar vendas fictícias ou não realizadas, onde os recebíveis crescem sem correspondência com a atividade real do negócio. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Liquidez corrente, giro de estoque e índices de endividamento são indicadores relevantes, mas o giro de recebíveis tem conexão mais direta com a detecção de fraude.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 12,
+      "text": "Qual característica do ambiente de negócios eleva o risco de fraude em relatórios financeiros?",
+      "tag": "Risk Factors",
+      "options": [
+        "A. Demanda estável e previsível pelos produtos da organização",
+        "B. Ambiente regulatório altamente estruturado e supervisionado",
+        "C. Pressão por crescimento acelerado e metas ambiciosas de desempenho",
+        "D. Adoção de políticas contábeis conservadoras"
+      ],
+      "correct": 2,
+      "justification_correct": "Pressão por alto crescimento cria incentivos para manipulação de resultados, especialmente quando gestores possuem remuneração variável atrelada ao desempenho financeiro. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Demanda estável, regulação estruturada e contabilidade conservadora são fatores que reduzem o risco de fraude.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 13,
+      "text": "Qual documento representa a fonte mais útil na detecção de manipulação de receitas?",
+      "tag": "Evidence Sources",
+      "options": [
+        "A. Contratos e acordos de vendas",
+        "B. Registros de folha de pagamento",
+        "C. Declarações de imposto de renda",
+        "D. Registros de ativos fixos"
+      ],
+      "correct": 0,
+      "justification_correct": "Contratos de vendas estabelecem os termos, condições e momento do reconhecimento de receita, permitindo comparação do lançamento contábil com as obrigações contratuais reais. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Folha de pagamento, declarações fiscais e registros de ativos são fontes relevantes para outros tipos de análise, mas contratos são prioridade na análise de receitas.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 14,
+      "text": "Qual mecanismo é frequentemente utilizado para ocultar fraude em demonstrações financeiras?",
+      "tag": "Concealment",
+      "options": [
+        "A. Baixas regulares de ativos obsoletos",
+        "B. Expansão e transparência nas divulgações financeiras",
+        "C. Transações com partes relacionadas para deslocamento de resultados",
+        "D. Relatórios detalhados de fluxo de caixa"
+      ],
+      "correct": 2,
+      "justification_correct": "Transações com partes relacionadas permitem o deslocamento de lucros, ocultação de perdas ou criação de receita fictícia através de entidades controladas pelo perpetrador. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Baixas regulares, divulgações transparentes e relatórios detalhados são práticas de governança que reduzem, em vez de aumentar, oportunidades de ocultação.",
+      "difficulty": "EASY",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_002_en.json"
+    },
+    {
+      "num": 15,
+      "text": "Na fraude da Satyam Computer Services (2009), o fundador Ramalinga Raju confessou ter manipulado demonstrações financeiras por mais de 7 anos. Qual técnica de fraude foi PREDOMINANTEMENTE utilizada para ocultar a real deterioração da situação financeira da empresa?",
+      "tag": "Financial Statements Fraud - Revenue Recognition & Fictitious Assets",
+      "options": [
+        "A. Lapping de contas a receber, transferindo valores entre períodos para manter a aparência de crescimento contínuo de vendas",
+        "B. Reconhecimento indevido de receitas fictícias combinado com criação de contas a receber fantasmas e manipulação de estoques para inflar ativos circulantes",
+        "C. Channel stuffing forçado para distribuidores regionais com devoluções subsequentes registradas em contas de compensação não conciliadas",
+        "D. Cookie jar reserves para suavizar resultados operacionais e mascarar ciclos econômicos adversos em segmentos de software"
+      ],
+      "correct": 1,
+      "justification_correct": "A fraude da Satyam foi caracterizada por uma combinação de múltiplas técnicas: (1) reconhecimento de receitas fictícias sem operações reais correspondentes; (2) criação de contas a receber e clientes fantasmas",
+      "justification_wrong": "Opção A (Lapping): embora seja uma técnica possível, não foi o mecanismo principal na Satyam; lapping é mais comum em empresas com fluxo de caixa crítico",
+      "difficulty": "HARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_005_en.json"
+    },
+    {
+      "num": 16,
+      "text": "Quando uma empresa capitaliza custos de manutenção rotineira em vez de reconhecê-los como despesa, qual é o principal impacto na equação contábil?",
+      "tag": "Improper Capitalization",
+      "options": [
+        "A. Ativos e patrimônio líquido são superavaliados",
+        "B. Passivos e despesas são subavaliados",
+        "C. Receitas e ativos são subavaliados",
+        "D. Patrimônio líquido diminui e passivos aumentam"
+      ],
+      "correct": 0,
+      "justification_correct": "Capitalizar custos cria ou aumenta ativos e evita o reconhecimento de despesas, inflando o lucro líquido e, consequentemente, o patrimônio líquido dos acionistas. (CFE Fraud Examiners Manual 2024)",
+      "justification_wrong": "Passivos não são diretamente afetados; receitas não são alteradas; patrimônio líquido aumenta (não diminui) devido à supressão imprópria de despesas.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 17,
+      "text": "Qual das alternativas a seguir representa um dos riscos de fraude mais perigosos por envolver autoridade de alto nível para contornar controles internos estabelecidos?",
+      "tag": "Management Override",
+      "options": [
+        "A. Conluio entre funcionários operacionais",
+        "B. Desvio de recebimentos em dinheiro",
+        "C. Lapping de contas a receber",
+        "D. Sobreposição de controles pela administração"
+      ],
+      "correct": 3,
+      "justification_correct": "A sobreposição pela administração permite que executivos forcem funcionários a fazer lançamentos impróprios ou ignorar políticas, tornando os controles normais ineficazes. É um risco central identificado no framework COSO.",
+      "justification_wrong": "Conluio operacional, desvio e lapping são esquemas específicos — a sobreposição pela administração é estrutural e abrangente, pois anula todo o sistema de controle.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 18,
+      "text": "Se a administração pretende subavaliar lucros, possivelmente para fins fiscais, qual manipulação seria mais provável?",
+      "tag": "Earnings Manipulation",
+      "options": [
+        "A. Superavaliar a provisão para devedores duvidosos",
+        "B. Capitalizar indevidamente despesas operacionais",
+        "C. Reconhecer receita fictícia prematuramente",
+        "D. Subvalorizar o estoque final do período"
+      ],
+      "correct": 0,
+      "justification_correct": "Um aumento na provisão para devedores duvidosos é tratado como despesa, reduzindo o lucro líquido reportado — uma técnica usada para subavaliar resultados para fins fiscais ou criar reservas (cookie jar accounting).",
+      "justification_wrong": "Capitalização imprópria e receita fictícia inflam o lucro; subavaliar estoque aumenta o CPV reduzindo o lucro, mas não é a resposta principal — a provisão é a técnica padrão.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 19,
+      "text": "Se a administração infla receitas criando vendas a prazo fictícias, como isso afeta a equação contábil fundamental?",
+      "tag": "Accounting Equation",
+      "options": [
+        "A. Ativos (Contas a receber) e Patrimônio líquido aumentam",
+        "B. Passivos aumentam e Patrimônio líquido diminui",
+        "C. Ativos diminuem e Passivos aumentam",
+        "D. Patrimônio líquido aumenta e Passivos diminuem"
+      ],
+      "correct": 0,
+      "justification_correct": "Registrar uma venda a prazo fictícia aumenta ativos (contas a receber) e receita, inflando o lucro líquido e, consequentemente, o patrimônio líquido dos acionistas — mantendo a equação em equilíbrio fraudulento.",
+      "justification_wrong": "Passivos não são afetados por vendas a prazo fictícias — o efeito é o aumento simultâneo de ativos (recebíveis) e patrimônio líquido (via lucro inflado).",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 20,
+      "text": "Ao aplicar o modelo Beneish M-Score para detectar manipulação de demonstrações financeiras, um M-Score calculado de -1,78 indica com mais precisão qual condição de acordo com os parâmetros de limite do modelo?",
+      "tag": "Financial Statement Fraud - Beneish M-Score",
+      "options": [
+        "D. Risco moderado de manipulação justificando escrutínio aprimorado de variáveis baseadas em competência",
+        "C. Resultado inconclusivo exigindo análise qualitativa adicional e evidências corroborativas",
+        "A. Alta probabilidade de manipulação de resultados; pontuação excede o limite de -2,22 para manipuladores",
+        "B. Baixa probabilidade de manipulação; pontuação fica abaixo do limite crítico indicando provável legitimidade"
+      ],
+      "correct": 3,
+      "justification_correct": "Conforme o CFE Manual 2024 seção de Data Analytics, o Beneish M-Score usa -2,22 como limite discriminante. Pontuações acima de -2,22 (menos negativas) sugerem maior probabilidade de manipulação, enquanto pontuações abaixo (mais negativas) indicam menor risco. Em -1,78, a pontuação excede o limite, mas a interpretação correta é que pontuações ABAIXO de -2,22 indicam legitimidade.",
+      "justification_wrong": "A interpretação do limite está invertida na opção A. Em -1,78 (maior que -2,22), o modelo na verdade sinaliza potencial manipulação. As opções C e D representam incorretamente a natureza de classificação binária do modelo, que usa -2,22 como ponto de corte definitivo conforme padrões ACFE de detecção estatística de fraude.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 21,
+      "text": "Um examinador de fraudes analisa índices de rotatividade de contas a receber por três anos consecutivos: 8,2, 7,1 e 5,9. O Prazo Médio de Recebimento (DSO) aumentou de 45 para 62 dias. O Beneish M-Score revela um DSRI (Índice de Dias de Vendas em Recebíveis) de 1,38. Qual é o esquema de fraude mais provável que está sendo perpetrado?",
+      "tag": "Financial Statement Fraud - Revenue Recognition",
+      "options": [
+        "B. Channel stuffing com clientes legítimos sob termos de crédito normais",
+        "D. Esquema de lapping envolvendo roubo sequencial de pagamentos de clientes",
+        "C. Depreciação acelerada para reduzir valores de ativos e criar reservas cookie jar",
+        "A. Reconhecimento de receita fictícia através de vendas prematuras ou falsas registradas para inflar receitas do período atual"
+      ],
+      "correct": 3,
+      "justification_correct": "DSRI acima de 1,03 indica deterioração da qualidade dos recebíveis em relação às vendas, sugerindo manipulação de receitas. A rotatividade decrescente com DSO crescente demonstra que os recebíveis estão crescendo desproporcionalmente mais rápido que as vendas, característico de esquemas de receitas fictícias. Conforme o Manual do Examinador de Fraudes 2024, o DSRI é um indicador primário de fraude em demonstrações financeiras baseada em receitas quando combinado com anomalias no envelhecimento de recebíveis.",
+      "justification_wrong": "Channel stuffing mantém qualidade legítima de recebíveis. Esquemas de depreciação afetam ativos de longo prazo, não recebíveis. Lapping é apropriação indébita de ativos afetando caixa, não métricas de fraude em demonstrações financeiras. Esses cenários não produziriam o padrão específico de elevação do DSRI e deterioração da rotatividade observado, que indica diretamente manipulação de reconhecimento de receitas conforme parâmetros do modelo Beneish.",
+      "difficulty": "HARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 22,
+      "text": "O cálculo do Beneish M-Score de uma empresa revela: DSRI=1,45, GMI=1,22, AQI=1,58, SGI=1,34, DEPI=0,89, SGAI=1,01, LVGI=1,12, TATA=0,045. O M-Score resultante é -1,89. Qual é a interpretação apropriada para avaliação de risco de fraude?",
+      "tag": "Financial Statement Fraud - Beneish M-Score",
+      "options": [
+        "B. Baixo risco de fraude; M-Score negativo indica confiabilidade das demonstrações financeiras e práticas contábeis normais",
+        "A. Alta probabilidade de manipulação de resultados; M-Score acima do limite de -2,22 indica provável manipulador requerendo investigação imediata",
+        "C. Resultados inconclusivos; M-Score requer três anos consecutivos de dados para interpretação válida",
+        "D. Risco moderado requerendo monitoramento; score entre -2,22 e -1,78 sugere manipulação limítrofe"
+      ],
+      "correct": 1,
+      "justification_correct": "Beneish M-Score acima de -2,22 indica provável manipulação conforme pesquisa original e padrões do Manual CFE 2024. DSRI (1,45), AQI (1,58) e GMI (1,22) todos excedem limites de manipulação (>1,03, >1,25, >1,20 respectivamente). O score de -1,89 excede significativamente o corte de -2,22, sugerindo alta probabilidade de manipulação. Múltiplas elevações de índices corroboram probabilidade de manipulação requerendo investigação prioritária.",
+      "justification_wrong": "M-Scores negativos aproximando-se de zero indicam maior risco de manipulação, não confiabilidade. O limite de -2,22 distingue manipuladores (acima) de não-manipuladores (abaixo). Análise de um único ano é válida pela metodologia Beneish. Score de -1,89 excede substancialmente o limite, indicando alto risco ao invés de moderado. O Manual especifica que investigação imediata é justificada quando múltiplos índices excedem limites simultaneamente.",
+      "difficulty": "HARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 23,
+      "text": "O Índice de Dias de Vendas em Recebíveis (DSRI) de uma organização aumentou de 1,0 para 1,65 em dois anos, enquanto o Índice de Crescimento de Vendas (SGI) subiu para 1,45. De acordo com a metodologia Beneish M-Score, qual risco de fraude em demonstrações financeiras isso indica primariamente?",
+      "tag": "Beneish M-Score",
+      "options": [
+        "C. Capitalização imprópria de despesas para superestimar valores de ativos",
+        "D. Manipulação de cronogramas de depreciação para reduzir despesas operacionais",
+        "B. Subavaliação sistemática do custo dos produtos vendidos para inflar margens brutas",
+        "A. Potencial manipulação de reconhecimento de receitas através de vendas prematuras ou fictícias"
+      ],
+      "correct": 3,
+      "justification_correct": "Conforme Manual CFE 2024, DSRI elevado (>1,3) combinado com SGI alto sugere recebíveis crescendo desproporcionalmente às vendas, indicando potencial inflação de receitas através de channel stuffing, termos de pagamento estendidos ou vendas fictícias. DSRI é uma variável primária do Beneish M-Score detectando práticas agressivas de reconhecimento de receitas e manipulação de resultados.",
+      "justification_wrong": "Embora outras manipulações afetem demonstrações financeiras, DSRI elevado especificamente mede crescimento de recebíveis relativo às vendas. O Manual CFE identifica esse padrão como característico de esquemas de fraude baseados em receitas, não manipulação de custos, erros de capitalização ou fraude de depreciação que se manifestam através de diferentes variáveis do M-Score.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_001_en.json"
+    },
+    {
+      "num": 24,
+      "text": "Ao analisar demonstrações financeiras para sinais de alerta de fraude no reconhecimento de receitas, qual indicador seria mais sugestivo?",
+      "tag": "Revenue Red Flags",
+      "options": [
+        "A. Melhoria súbita e significativa na margem bruta",
+        "B. Aumento gradual e consistente nas despesas operacionais",
+        "C. Crescimento proporcional entre receitas e contas a pagar",
+        "D. Redução na provisão para devedores duvidosos"
+      ],
+      "correct": 0,
+      "justification_correct": "Um aumento abrupto na margem bruta pode indicar receitas fictícias sem o correspondente custo dos produtos vendidos, ou manipulação de estoque que artificialmente reduz o CPV. (Manual do Examinador de Fraudes CFE 2024)",
+      "justification_wrong": "Aumento nas despesas e crescimento proporcional são indicadores normais; redução na provisão pode ser legítima — apenas a melhoria súbita na margem bruta é o principal sinal de alerta.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    },
+    {
+      "num": 25,
+      "text": "Qual técnica de ocultação envolve o uso de contas designadas para lançamentos temporários para ocultar transações ilícitas?",
+      "tag": "Concealment Techniques",
+      "options": [
+        "A. Uso de contas de suspense ou compensação",
+        "B. Falsificação de documentos de suporte",
+        "C. Manipulação de lançamentos de depreciação",
+        "D. Criação de entidades de propósito específico"
+      ],
+      "correct": 0,
+      "justification_correct": "Contas de suspense e compensação são frequentemente utilizadas para manter temporariamente transações, tornando-as locais privilegiados para ocultar lançamentos fraudulentos por períodos prolongados.",
+      "justification_wrong": "Falsificação de documentos e depreciação são técnicas distintas; SPEs são estruturas legais — contas de suspense são o veículo específico para este tipo de ocultação.",
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "financial_transactions/quiz_006_en.json"
+    }
+  ]
+}

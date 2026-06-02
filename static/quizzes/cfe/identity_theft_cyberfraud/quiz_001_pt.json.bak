@@ -1,0 +1,123 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "identity_theft_cyberfraud",
+  "quiz_num": 1,
+  "domain_name": "S1D08 · Identity Theft & Cyberfraud",
+  "cert_name": "Certified Fraud Examiner",
+  "lang": "pt",
+  "source": "legacy_curated",
+  "questions": [
+    {
+      "text": "Under the Computer Fraud and Abuse Act (CFAA), 18 U.S.C. § 1030, a former employee uses their previously assigned credentials to access their former employer's database three months after termination to retrieve personal files they had stored on the company server. The employer had not yet deactivated the account. Which of the following best describes the legal status of this access under the CFAA?",
+      "tag": "cfaa_unauthorized_access_exceeds_authorized_access",
+      "options": [
+        "A. The access is unauthorized under 18 U.S.C. § 1030(a)(2) because authorization terminated with employment, regardless of whether credentials were revoked",
+        "B. The access is authorized because the employer failed to revoke credentials, demonstrating implicit continued authorization under agency principles",
+        "C. The access violates only state computer trespass laws, not the CFAA, because the employee accessed only their own personal files",
+        "D. The access constitutes exceeding authorized access under 18 U.S.C. § 1030(a)(4) only if the employee obtained information for commercial advantage or private financial gain"
+      ],
+      "correct": 0,
+      "justification_correct": "Under the CFAA, authorization is typically tied to the employment relationship and the employer's access policies. When employment terminates, the former employee's authorization to access the employer's computer systems also terminates, even if technical access remains possible due to the employer's failure to revoke credentials. Courts have consistently held that accessing a computer system after authorization has been revoked or terminated constitutes 'unauthorized access' under 18 U.S.C. § 1030(a)(2). The termination of employment ends the agency relationship and any authority to access employer systems, making subsequent access unauthorized regardless of whether credentials still function. This principle was reinforced in cases like LVRC Holdings LLC v. Brekka and United States v. Rodriguez, which examined the scope of authorization under the CFAA.",
+      "justification_wrong": "Option B is incorrect because the employer's administrative failure to revoke credentials does not create implicit authorization; authorization depends on the employment relationship and access policies, not technical capability. Option C is incorrect because the CFAA applies to unauthorized access regardless of what files are accessed, and federal jurisdiction exists when the computer is used in interstate commerce. Option D is incorrect because 18 U.S.C. § 1030(a)(2) prohibits unauthorized access to obtain information without requiring proof of commercial advantage or financial gain; that element applies specifically to subsection (a)(4) involving fraud, which is a separate violation.",
+      "num": 1,
+      "difficulty": "STANDARD",
+      "legacy": true,
+      "legacy_source": "law_cfe/quiz_006_en.json"
+    },
+    {
+      "question": "A fraudster sets up a fake website that mimics a legitimate bank's login page, sends phishing emails to customers directing them to the site, and captures their usernames and passwords when they attempt to log in. The fraudster then uses these credentials to transfer funds from victims' accounts. Which of the following BEST describes the primary identity theft technique used in this scenario?",
+      "options": {
+        "A": "Pretexting through social engineering to obtain sensitive information directly from bank employees",
+        "B": "Phishing to harvest authentication credentials through a fraudulent website",
+        "C": "Skimming devices installed on ATM machines to capture card data",
+        "D": "Dumpster diving to obtain discarded bank statements containing account information"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario describes a classic phishing attack where the fraudster creates a fake website (spoofing) to deceive victims into voluntarily entering their credentials. Phishing is a form of social engineering that uses fraudulent emails and fake websites to harvest sensitive information. Option A is incorrect because pretexting involves creating a fabricated scenario to extract information, typically through direct communication. Option C is incorrect because skimming involves physical devices that capture data from card magnetic stripes. Option D is incorrect because this scenario involves electronic fraud rather than physical theft of discarded documents.",
+      "topic": "S1D08",
+      "sub_topic": "phishing_spoofing_credential_harvesting",
+      "num": 2
+    },
+    {
+      "id": "S1D08-Q004",
+      "topic": "Identity Theft & Cyberfraud",
+      "subtopic": "Phishing and Social Engineering Attacks",
+      "question": "A fraud examiner is investigating a case where employees at ABC Corporation received emails appearing to be from their IT department, requesting they click a link to verify their credentials. Several employees complied, and their login information was subsequently used to access the company's financial system and initiate unauthorized wire transfers totaling $250,000. The perpetrator created a fake website that mimicked the company's legitimate login page. Which of the following BEST describes this type of cyberfraud scheme?",
+      "options": [
+        "Spear phishing combined with website spoofing to harvest credentials for financial fraud",
+        "Pretexting attack using malware injection to compromise the network infrastructure",
+        "Pharming attack that redirected DNS queries to a malicious server",
+        "Vishing scheme using voice-over-IP technology to impersonate IT personnel"
+      ],
+      "correct_answer": 0,
+      "explanation": "This scenario describes a spear phishing attack combined with website spoofing. Spear phishing is a targeted email attack directed at specific individuals or organizations, often impersonating a trusted entity (in this case, the IT department). The fake website that mimicked the legitimate login page is website spoofing, designed to harvest credentials. Option B is incorrect because pretexting typically involves creating a fabricated scenario to obtain information, and there's no indication of malware injection here. Option C (pharming) would involve redirecting users through DNS manipulation rather than email links. Option D (vishing) involves voice communications, not email. This type of attack is common in identity theft and cyberfraud cases, where criminals use social engineering to trick victims into voluntarily providing sensitive information that is then used for financial fraud.",
+      "tags": [
+        "identity-theft",
+        "phishing",
+        "social-engineering",
+        "credential-harvesting",
+        "cyberfraud"
+      ],
+      "num": 3
+    },
+    {
+      "question": "A fraud examiner is investigating a case where an employee of a healthcare organization accessed patient records without authorization and sold personal information including Social Security numbers, birth dates, and medical history to identity thieves on the dark web. The victims later discovered fraudulent credit card accounts and medical claims filed in their names. Under which federal statute would this employee's conduct MOST likely be prosecuted?",
+      "options": {
+        "A": "The Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule",
+        "B": "The Identity Theft and Assumption Deterrence Act",
+        "C": "The Electronic Communications Privacy Act",
+        "D": "The Fair Credit Reporting Act"
+      },
+      "answer": "B",
+      "explanation": "The Identity Theft and Assumption Deterrence Act (18 U.S.C. § 1028) makes it a federal crime to knowingly transfer, possess, or use another person's means of identification with the intent to commit unlawful activity. This statute specifically addresses the theft and misuse of personal identifying information like Social Security numbers and birth dates for fraudulent purposes. While HIPAA violations may also apply, the Identity Theft and Assumption Deterrence Act is the primary federal statute for prosecuting identity theft crimes. The ECPA deals with electronic communications interception, and the FCRA regulates credit reporting agencies rather than identity theft perpetrators.",
+      "num": 4
+    },
+    {
+      "id": "S1D08_Q005",
+      "topic": "Identity Theft & Cyberfraud",
+      "subtopic": "Phishing and Social Engineering",
+      "question": "A fraud examiner is investigating a case where an employee received an email appearing to be from the company's CEO requesting immediate wire transfer of funds to a new vendor account. The email address was slightly misspelled and the transfer was completed before verification. What type of cyberfraud scheme is this, and what preventive control would be most effective?",
+      "options": [
+        "A. Ransomware attack; implement multi-factor authentication",
+        "B. Business Email Compromise (BEC); implement dual authorization for fund transfers",
+        "C. Distributed Denial of Service (DDoS); implement firewall restrictions",
+        "D. SQL injection; implement database encryption"
+      ],
+      "correct_answer": "B",
+      "explanation": "This scenario describes a Business Email Compromise (BEC) or CEO fraud scheme, where attackers impersonate executives to authorize fraudulent payments. The most effective preventive control is implementing dual authorization requirements for fund transfers, which ensures that no single person can complete a wire transfer without independent verification. This would have caught the fraud even though the employee was deceived by the social engineering. Multi-factor authentication (A) helps prevent account takeover but wouldn't stop an employee from acting on a fraudulent email. DDoS attacks (C) and SQL injection (D) are different types of cyber attacks unrelated to this scenario.",
+      "difficulty": "Medium",
+      "tags": [
+        "identity theft",
+        "cyberfraud",
+        "phishing",
+        "business email compromise",
+        "social engineering",
+        "preventive controls"
+      ],
+      "num": 5
+    },
+    {
+      "id": "S1D08_Q007",
+      "topic": "Identity Theft & Cyberfraud",
+      "subtopic": "Phishing and Social Engineering Attacks",
+      "question": "A fraudster sends emails to employees of XYZ Corporation pretending to be the company's IT department, requesting that recipients click a link and enter their login credentials to \"verify their accounts.\" Several employees comply, and the fraudster uses the stolen credentials to access the company's internal systems and steal customer data. Which of the following BEST describes this type of cyberfraud scheme?",
+      "options": [
+        "A spear phishing attack targeting specific individuals within an organization",
+        "A pretexting scheme using fabricated scenarios to obtain information",
+        "A phishing attack using deceptive emails to obtain sensitive information",
+        "A baiting attack offering something enticing to compromise systems"
+      ],
+      "answer": 2,
+      "explanation": "This scenario describes a phishing attack, which involves sending fraudulent electronic communications (typically emails) that appear to come from a reputable source to trick recipients into revealing sensitive information such as passwords, account numbers, or other credentials. While spear phishing (option A) is a more targeted form of phishing aimed at specific individuals, the scenario describes a general attack sent to multiple employees. Pretexting (option B) typically involves more elaborate fabricated scenarios and often direct interaction. Baiting (option D) involves offering something desirable (like free downloads) to entice victims. The key elements here are the mass email approach, impersonation of a trusted entity (IT department), and the goal of credential harvesting through a deceptive link.",
+      "difficulty": "Medium",
+      "tags": [
+        "cyberfraud",
+        "phishing",
+        "social engineering",
+        "identity theft",
+        "credential theft"
+      ],
+      "num": 6
+    }
+  ]
+}

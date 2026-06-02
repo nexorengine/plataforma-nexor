@@ -1,0 +1,710 @@
+{
+  "cert_id": "cissp",
+  "domain_id": "iam",
+  "quiz_num": 1,
+  "domain_name": "Identity & Access Management",
+  "cert_name": "CISSP",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "En el contexto del control de acceso lógico, ¿cuál es la diferencia fundamental entre autenticación y autorización según las normas ISO/IEC 27001 e ISO/IEC 27002?",
+      "tag": "Identificación/Autenticación/Autorización",
+      "options": [
+        "D. Autenticación es responsabilidad del usuario; autorización del administrador",
+        "A. Autenticación verifica la identidad del usuario; autorización determina qué recursos puede acceder",
+        "B. Ambas términos son sinónimos en seguridad de acceso",
+        "C. Autorización precede a autenticación en el flujo de control"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27002:2022 A.8.2 diferencia claramente: autenticación establece identidad del usuario (verificación de credenciales); autorización otorga permisos específicos a recursos. Son procesos secuenciales distintos en el ciclo de control acceso.",
+      "justification_wrong": "Opción B ignora distinciones normativas. Opción C invierte orden lógico. Opción D asigna responsabilidades incorrectamente; ambas requieren colaboración técnica y administrativa."
+    },
+    {
+      "num": 2,
+      "text": "¿Cuál protocolo de autenticación utiliza un servidor de distribución de claves (KDC) y tickets criptográficos para implementar Single Sign-On (SSO) sin transmitir contraseñas por la red?",
+      "tag": "SSO y Protocolos de Autenticación",
+      "options": [
+        "D. OAuth 2.0 (RFC 6749)",
+        "A. Kerberos (RFC 4120)",
+        "C. LDAP (RFC 4511)",
+        "B. RADIUS (RFC 2865)"
+      ],
+      "correct": 1,
+      "justification_correct": "RFC 4120 especifica Kerberos como protocolo basado en KDC que emite tickets criptográficos, elimina transmisión de contraseñas y habilita SSO. Utiliza criptografía simétrica (DES, AES) para autenticación mutua entre cliente-servidor.",
+      "justification_wrong": "RADIUS es protocolo AAA sin KDC. LDAP es servicio directorio, no autenticación primaria. OAuth 2.0 es framework autorización para delegación, requiere transmisión de credenciales iniciales."
+    },
+    {
+      "num": 3,
+      "text": "En el modelo de control de acceso basado en atributos (ABAC), ¿qué componente es responsable de evaluar las políticas de acceso utilizando atributos de sujeto, recurso y ambiente?",
+      "tag": "Modelos de Control de Acceso (ABAC)",
+      "options": [
+        "A. Policy Decision Point (PDP)",
+        "D. Role-Based Access Control (RBAC)",
+        "B. Policy Enforcement Point (PEP)",
+        "C. Access Control List (ACL)"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-162 define PDP como componente que evalúa políticas ABAC contra atributos contextuales (usuario, recurso, acción, entorno). PEP implementa decisiones. ABAC es modelo más granular que MAC/DAC/RBAC.",
+      "justification_wrong": "PEP ejecuta decisión, no evalúa. ACL es mecanismo DAC primitivo. RBAC agrupa usuarios en roles, menos flexible que atributos dinámicos del modelo ABAC."
+    },
+    {
+      "num": 4,
+      "text": "¿Cuál es el propósito principal de SAML (Security Assertion Markup Language) en la federación de identidades y cuál entidad genera las aserciones de autenticación?",
+      "tag": "SAML y Federación de Identidades",
+      "options": [
+        "D. Valida certificados digitales; la autoridad certificación genera aserciones",
+        "A. Permite autorización; la entidad relying party genera aserciones",
+        "C. Realiza cifrado de sesiones; el service provider genera aserciones",
+        "B. Permite intercambio de información autenticación entre dominios; el proveedor identidad genera aserciones"
+      ],
+      "correct": 3,
+      "justification_correct": "OASIS SAML 2.0 standard define que Identity Provider (IdP) emite aserciones XML firmadas criptográficamente con información autenticación para Service Provider (SP) en arquitectura federada, habilitando SSO cross-domain.",
+      "justification_wrong": "Opción A invierte entidades y confunde autorización. Opción C asigna incorrectamente generación. Opción D describe PKI, distinto de SAML para federación identidades."
+    },
+    {
+      "num": 5,
+      "text": "Según ISO/IEC 27001:2022, ¿qué objetivo de control específico cubre la responsabilidad de registrar y monitorear accesos a sistemas de información para establecer trazabilidad de acciones de usuario?",
+      "tag": "Accountability y Gestión de Sesiones",
+      "options": [
+        "C. A.8.4 - Restricción acceso información",
+        "A. A.8.3 - Gestión de derechos acceso",
+        "B. A.8.2 - Control acceso usuario",
+        "D. A.8.1 - Usuario y gestión acceso administrativo"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 Anexo A.8.3 especifica registro eventos acceso, auditoría y monitoreo para asegurar accountability. Logs de sesión y bitácoras establecen trazabilidad de quién, qué, cuándo, dónde en actividades acceso.",
+      "justification_wrong": "A.8.2 es control usuario general. A.8.4 cubre restricción información. A.8.1 cubre administración. Ninguno enfatiza específicamente logging/auditoría como A.8.3."
+    },
+    {
+      "num": 6,
+      "text": "En un modelo de control de acceso basado en roles (RBAC), ¿cuál es el principio fundamental que diferencia este modelo del control discrecional (DAC)?",
+      "tag": "Modelos de Control de Acceso",
+      "options": [
+        "B. Cada usuario tiene control total sobre sus recursos sin intervención administrativa",
+        "C. El acceso se determina únicamente por atributos del usuario y del recurso en tiempo real",
+        "A. El propietario del recurso delega decisiones de acceso a un administrador central basado en roles asignados",
+        "D. Se requiere autenticación multifactor para cada decisión de acceso"
+      ],
+      "correct": 2,
+      "justification_correct": "RBAC centraliza decisiones mediante roles predefinidos, mientras DAC permite al propietario otorgar permisos discrecionalmente. NIST SP 800-92 especifica que RBAC reduce complejidad administrativa al agrupar permisos en roles, mejorando escalabilidad y auditabilidad respecto a DAC.",
+      "justification_wrong": "DAC se caracteriza por control del propietario (opción B). ABAC utiliza atributos (opción C). MFA es mecanismo de autenticación, no control de acceso (opción D)."
+    },
+    {
+      "num": 7,
+      "text": "¿Cuál es la principal ventaja de implementar Single Sign-On (SSO) con Kerberos frente a RADIUS en entornos corporativos?",
+      "tag": "Autenticación Centralizada - Kerberos vs RADIUS",
+      "options": [
+        "D. RADIUS no soporta comunicación sobre redes inalámbricas, limitando su uso",
+        "A. Kerberos utiliza tickets con validez temporal, evitando transmisión repetida de credenciales y proporcionando autenticación mutua entre cliente y servidor",
+        "B. RADIUS requiere almacenamiento de contraseñas en texto plano, mientras Kerberos las cifra automáticamente",
+        "C. Kerberos es más liviano en términos de consumo de ancho de banda que RADIUS"
+      ],
+      "correct": 1,
+      "justification_correct": "Kerberos (RFC 1510) utiliza tickets TGT con validez temporal, eliminando transmisión de credenciales en cada autenticación. Proporciona autenticación mutua y es estándar en Microsoft Active Directory. NIST SP 800-63B recomienda Kerberos para SSO empresarial por su robustez.",
+      "justification_wrong": "RADIUS soporta cifrado de contraseñas (opción B). RADIUS es más liviano (opción C). RADIUS funciona en wireless autenticado (opción D). La ventaja principal es la arquitectura de tickets de Kerberos."
+    },
+    {
+      "num": 8,
+      "text": "En un escenario de federación de identidades con SAML 2.0, ¿cuál es el rol del Service Provider (SP) en la aseveración de autenticación?",
+      "tag": "Federación de Identidades - SAML 2.0",
+      "options": [
+        "D. El SP actúa como intermediario cifrando todas las aseveraciones antes de entregarlas al usuario",
+        "C. El SP almacena copias de las aseveraciones SAML para auditoría sin procesar su contenido",
+        "B. El SP genera un nuevo token después de validar credenciales nuevamente con el IdP en cada solicitud",
+        "A. El SP confía en la aseveración firmada digitalmente por el Identity Provider y otorga acceso sin reautenticar al usuario"
+      ],
+      "correct": 3,
+      "justification_correct": "SAML 2.0 (OASIS Standard) establece que SP confía en aseveración firmada del IdP, eliminando reautenticación. SP valida firma digital, verificando integridad sin renegoción de credenciales. NIST SP 800-63C especifica este modelo de confianza en federación.",
+      "justification_wrong": "Opción B describe reautenticación innecesaria. Opción C no procesa aseveración correctamente. Opción D confunde ciframiento; SAML usa firmas, no solo ciframiento. SP consume, no genera, aseveraciones."
+    },
+    {
+      "num": 9,
+      "text": "¿Cuál es la diferencia funcional crítica entre OAuth 2.0 y SAML 2.0 respecto a su propósito principal?",
+      "tag": "Protocolos de Autenticación y Autorización",
+      "options": [
+        "A. OAuth 2.0 se enfoca en autorización mediante delegación de acceso a recursos, mientras SAML 2.0 es un protocolo de autenticación para federación de identidades",
+        "B. SAML 2.0 utiliza tokens JWT, mientras OAuth 2.0 usa aseveraciones XML cifradas",
+        "D. Ambos protocolos son funcionalmente idénticos pero SAML 2.0 es más moderno",
+        "C. OAuth 2.0 requiere que el usuario comparta credenciales con aplicaciones terceras, mientras SAML 2.0 no"
+      ],
+      "correct": 0,
+      "justification_correct": "OAuth 2.0 (RFC 6749) es framework de autorización permitiendo delegación sin compartir credenciales. SAML 2.0 (OASIS) autentica identidad usuario en contextos federados. RFC 6819 especifica OAuth para acceso a recursos; SAML para SSO empresarial. Propósitos distintos.",
+      "justification_wrong": "Opción B invierte tecnologías (JWT en OAuth, XML en SAML). Opción C describe OAuth mal; no comparte credenciales (ventaja core). Opción D es falsa; SAML 2.0 es anterior y tienen propósitos diferentes, no equivalentes."
+    },
+    {
+      "num": 10,
+      "text": "En gestión de sesiones seguras, ¿cuál es el riesgo principal que mitiga la regeneración de identificadores de sesión post-autenticación?",
+      "tag": "Gestión de Sesiones - Session Fixation",
+      "options": [
+        "A. Previene ataques de fijación de sesión (session fixation) donde atacante pre-establece un ID conocido antes de autenticación del usuario",
+        "D. Impide que usuarios accedan simultáneamente desde múltiples dispositivos",
+        "C. Reduce el consumo de memoria en servidor almacenando menos sesiones concurrentes",
+        "B. Elimina la necesidad de validar tokens CSRF en formularios web"
+      ],
+      "correct": 0,
+      "justification_correct": "Session fixation (OWASP A07:2021) ocurre cuando atacante fija ID sesión pre-autenticación. Regeneración post-autenticación invalida ID conocido, forzando generación nueva. NIST SP 800-63B Section 7.1 requiere regeneración después autenticación exitosa.",
+      "justification_wrong": "Opción B describe protección CSRF, distinta a regeneración. Opción C es optimización de memoria, no seguridad de sesión. Opción D describe restricción de concurrencia, no mitigación de fixation. Session fixation es riesgo específico de ID pre-establecidos."
+    },
+    {
+      "num": 11,
+      "text": "En un entorno corporativo, se implementa autenticación de dos factores utilizando Kerberos como mecanismo de SSO. Un usuario inicia sesión con contraseña y luego recibe un código OTP. ¿Cuál es la vulnerabilidad crítica en este diseño según NIST SP 800-63B?",
+      "tag": "Autenticación MFA y Kerberos",
+      "options": [
+        "B. El código OTP no puede transmitirse de forma segura en redes IP",
+        "D. NIST SP 800-63B no permite usar Kerberos con autenticación de dos factores",
+        "C. La contraseña y OTP viajan en el mismo canal de comunicación",
+        "A. Kerberos no fue diseñado para integrar MFA; el ticket TGT no valida el segundo factor"
+      ],
+      "correct": 3,
+      "justification_correct": "Kerberos obtiene un TGT (Ticket Granting Ticket) basado en contraseña; MFA posterior no vincula ese factor al TGT. NIST SP 800-63B-3 requiere que MFA sea parte del proceso de autenticación inicial, no posterior. La arquitectura de Kerberos no integra nativamente factores adicionales post-TGT.",
+      "justification_wrong": "OTP puede transmitirse seguramente encriptado; ambos factores pueden viajar en canales diferentes; NIST permite Kerberos con extensiones MFA adecuadas como PKINIT o extensiones posteriores."
+    },
+    {
+      "num": 12,
+      "text": "Una organización utiliza SAML 2.0 para federar identidades entre IdP corporativo y múltiples SPs en la nube. ¿Cuál es el riesgo primario según ISO/IEC 27001:2022 si no se implementa validación de firma XML del assertion?",
+      "tag": "SAML y Federación de Identidades",
+      "options": [
+        "D. El cifrado de credentials se deshabilitaría automáticamente",
+        "C. Los atributos SAML no se sincronizarían entre SPs",
+        "B. El IdP no podría mantener sesiones concurrentes en múltiples SPs",
+        "A. El navegador del usuario podría inyectar assertions falsas sin validación, permitiendo elevación de privilegios"
+      ],
+      "correct": 3,
+      "justification_correct": "Sin validación de firma XML del assertion SAML, un atacante puede interceptar y modificar claims (aud, nameID, atributos) o inyectar assertions completamente falsas. ISO/IEC 27001:2022 Apéndice A.8.2 requiere autenticidad de información; OASIS SAML 2.0 Core especifica validación obligatoria de firma digital del assertion.",
+      "justification_wrong": "Sesiones concurrentes no dependen de firma XML; sincronización de atributos es independiente de validación de firma; cifrado de credentials no está ligado a validación de firma de assertions."
+    },
+    {
+      "num": 13,
+      "text": "En un modelo RBAC implementado según estándar INCITS 359, se detecta que un usuario con rol 'Auditor' puede acceder a archivos de 'Finanzas'. Esto viola el principio de segregación de deberes. ¿Cuál es la causa raíz más probable según la definición formal de RBAC?",
+      "tag": "Modelos de Control de Acceso (RBAC)",
+      "options": [
+        "C. El archivo de 'Finanzas' no tiene atributo clasificado de 'Confidencial'",
+        "A. El rol 'Auditor' contiene permisos no autorizados que debieron separarse usando constraints dinámicos de RBAC-3",
+        "D. RBAC es inherentemente incompatible con segregación de deberes",
+        "B. La base de datos de usuarios no implementa hash criptográfico para roles"
+      ],
+      "correct": 1,
+      "justification_correct": "INCITS 359 (RBAC estándar) define niveles: RBAC-0 base, RBAC-1 jerarquía de roles, RBAC-2 constraints estáticos, RBAC-3 constraints dinámicos. Segregación de deberes requiere constraints dinámicos (RBAC-3) que prevengan combinaciones conflictivas. Sin ellos, un rol puede acumular permisos conflictivos.",
+      "justification_wrong": "Hash criptográfico no define permisos; clasificación de archivos es atributo independiente; RBAC es compatible con segregación de deberes cuando se implementan constraints apropiados (RBAC-3)."
+    },
+    {
+      "num": 14,
+      "text": "Se configura RADIUS para autenticar usuarios remotos VPN. El servidor RADIUS comparte secret compartido 'Password123' con el NAS. ¿Cuál es el impacto de seguridad crítico según RFC 2865 si el secret es débil?",
+      "tag": "RADIUS y Autenticación Remota",
+      "options": [
+        "D. La encriptación de contraseñas del usuario se deshabilitaría completamente",
+        "C. El protocolo RADIUS cambiaría automáticamente a TACACS+",
+        "B. Los clientes VPN no podrán establecer conexiones concurrentes",
+        "A. Un atacante puede ejecutar ataque de fuerza bruta sobre el secret y forjar Response packets falsas con atributos arbitrarios"
+      ],
+      "correct": 3,
+      "justification_correct": "RFC 2865 especifica que Response packet se valida usando MD5(Code+ID+Length+RequestAuth+Attributes+Secret). Un secret débil permite fuerza bruta rápida para derivar el secret, permitiendo forjar responses ACCEPT auténticas con atributos arbitrarios, comprometiendo toda autenticación.",
+      "justification_wrong": "Sesiones concurrentes no dependen de secret strength; cambio de protocolo no es automático; encriptación de contraseña (User-Password) depende del secret compartido, pero no se deshabilita, sino que se compromete."
+    },
+    {
+      "num": 15,
+      "text": "Una empresa implementa LDAP para gestionar identidades en Active Directory. Se configura autenticación simple (sin TLS). ¿Cuál es el riesgo primario según NIST SP 800-206 (LDAP Security Recommendations)?",
+      "tag": "Identity Management Lifecycle y LDAP",
+      "options": [
+        "C. Active Directory no sincronizará los cambios de atributos con otros directorios",
+        "B. El servidor LDAP rechazará automáticamente binds de clientes sin certificados X.509",
+        "D. El algoritmo de hashing de contraseñas en LDAP se vuelve reversible",
+        "A. Las credenciales se transmiten en texto plano; un atacante en la red puede capturar contraseñas mediante sniffing y reutilizarlas"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-206 exige TLS para LDAP. Sin TLS, LDAP simple transmite credenciales (BindDN y password) en texto plano sobre red insegura. Un atacante en ruta (MITM) puede capturar credenciales via packet sniffing y reutilizarlas. RFC 4511 recomienda obligatoriamente TLS/SSL para proteger autenticación LDAP.",
+      "justification_wrong": "Certificados X.509 no son rechazados automáticamente sin TLS; sincronización de atributos es independiente de TLS; hashing de contraseñas en LDAP no cambia su reversibilidad basada en TLS."
+    },
+    {
+      "num": 16,
+      "text": "En una arquitectura de autenticación Kerberos, ¿cuál es el propósito principal del Ticket Granting Ticket (TGT) y qué mecanismo de seguridad previene su falsificación?",
+      "tag": "Kerberos y Autenticación",
+      "options": [
+        "C. El TGT es generado únicamente para servicios de red y no puede reutilizarse en múltiples sesiones",
+        "A. El TGT contiene credenciales cifradas con la clave simétrica del usuario; su validación ocurre mediante timestamp y nonce para evitar replay attacks según RFC 4120",
+        "B. El TGT almacena en texto plano las credenciales de sesión para acelerar autenticaciones posteriores",
+        "D. El TGT previene falsificación mediante hash MD5 del nombre del usuario en cada solicitud"
+      ],
+      "correct": 1,
+      "justification_correct": "RFC 4120 (Kerberos) especifica que TGT se cifra con clave del KDC, validado por timestamp y nonce. Previene replay attacks y falsificación mediante criptografía simétrica y mecanismos temporales. Fundamental en arquitectura Kerberos.",
+      "justification_wrong": "Las alternativas B, C y D contienen falsos conceptos: texto plano viola seguridad, TGT sí se reutiliza, y MD5 no es mecanismo de prevención en Kerberos moderno. RFC 4120 define cifrado simétrico con TS/nonce."
+    },
+    {
+      "num": 17,
+      "text": "¿Cuál es la diferencia técnica fundamental entre SAML 2.0 y OAuth 2.0 en términos de propósito y modelo de flujo de datos en arquitecturas de acceso federado?",
+      "tag": "Federación de Identidades (SAML vs OAuth)",
+      "options": [
+        "D. OAuth 2.0 es un estándar más antiguo diseñado para entornos empresariales; SAML 2.0 está orientado exclusivamente a aplicaciones móviles",
+        "C. SAML 2.0 es superior porque utiliza cifrado de extremo a extremo; OAuth 2.0 transmite tokens sin protección",
+        "B. Ambos protocolos cumplen idéntica función; la diferencia radica solo en el formato de codificación utilizado (XML vs JSON)",
+        "A. SAML 2.0 es un framework de autenticación con flujo basado en XML y assertion firmadas; OAuth 2.0 es un protocolo de autorización con flujo token basado en JSON, orientado a delegación de permisos"
+      ],
+      "correct": 3,
+      "justification_correct": "OASIS SAML 2.0 define autenticación mediante XML assertions firmadas. OAuth 2.0 (RFC 6749) es framework de autorización con tokens JSON. SAML autentica identidad; OAuth delega permisos. Propósitos y flujos fundamentalmente distintos.",
+      "justification_wrong": "Opción B ignora arquitectura diferente. C es falso: OAuth usa TLS. D invierte cronología: OAuth 2.0 es más reciente (2012). Confundir propósito de autenticación vs autorización es error crítico en IAM."
+    },
+    {
+      "num": 18,
+      "text": "En implementación de RBAC (Role-Based Access Control) versus ABAC (Attribute-Based Access Control), ¿cuál es la ventaja técnica de ABAC en escenarios de control de acceso granular y dinámico según NIST SP 800-162?",
+      "tag": "Modelos de Control de Acceso (RBAC vs ABAC)",
+      "options": [
+        "B. ABAC es más simple que RBAC porque elimina validación de credenciales en cada solicitud",
+        "A. ABAC evalúa múltiples atributos de usuario, recurso, entorno y acción en tiempo real mediante políticas condicionales, permitiendo decisiones granulares dinámicas sin reconfiguración de roles",
+        "C. ABAC no requiere autenticación previa del usuario, otorgando acceso basado únicamente en atributos IP",
+        "D. ABAC es inferior porque genera mayor latencia en evaluación de acceso comparado con RBAC estático"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-162 especifica ABAC evalúa atributos (usuario, recurso, acción, entorno) dinámicamente. Permite control granular sin rol redesign. Supera limitaciones de RBAC en contextos variables. Decisiones condicionales en tiempo real.",
+      "justification_wrong": "B es falso: ABAC requiere autenticación. C confunde atributos con IP address. D invierte ventaja: aunque hay latencia, flexibilidad compensa. RBAC estático es limitado en ambientes dinámicos según NIST."
+    },
+    {
+      "num": 19,
+      "text": "¿Cuál es el mecanismo técnico mediante el cual RADIUS (RFC 2865) proporciona confidencialidad de credenciales en autenticación de acceso remoto, y qué vulnerabilidad inherente persiste en su diseño criptográfico?",
+      "tag": "RADIUS y Protocolos de Autenticación",
+      "options": [
+        "B. RADIUS implementa cifrado simétrico AES-256 entre cliente y servidor, sin vulnerabilidades conocidas",
+        "C. RADIUS protege credenciales mediante hashing irreversible SHA-512 con salt aleatorio en cada paquete",
+        "D. RADIUS utiliza Diffie-Hellman para negociación de clave de sesión antes de transmitir credenciales",
+        "A. RADIUS cifra password del usuario con MD5(Secret + Request Authenticator); vulnerabilidad: MD5 es débil, salt es predecible y ataque offline es viable contra shared secret comprometido"
+      ],
+      "correct": 3,
+      "justification_correct": "RFC 2865 especifica cifrado password con MD5(shared_secret + Request_Authenticator). MD5 es criptográficamente débil (colisiones). Shared secret comprometido permite ataque offline. Vulnerabilidad fundamental persiste en RADIUS moderno.",
+      "justification_wrong": "B es falso: RADIUS no usa AES-256. C confunde mecanismo: usa cifrado, no hash irreversible. D es incorrecto: RADIUS no negocia sesión con DH. RFC 2865 especifica solo cifrado password con MD5 débil."
+    },
+    {
+      "num": 20,
+      "text": "En gestión del ciclo de vida de identidades (Identity Management Lifecycle), ¿cuál es el objetivo de la fase de 'Recertification' y qué estándar normativo establece los requisitos mínimos de auditoría en esta etapa?",
+      "tag": "Identity Management Lifecycle y Accountability",
+      "options": [
+        "A. Recertification valida periódicamente que accesos asignados permanecen necesarios y apropiados; ISO 27001 y SOC 2 Type II requieren auditoría con evidencia de revisión, aprobación y remediación de accesos obsoletos",
+        "D. Recertification valida solo cambios de password sin evaluar relevancia de accesos asignados",
+        "B. Recertification es proceso único realizado solo durante onboarding inicial del usuario",
+        "C. Recertification elimina automáticamente todos los permisos después de 90 días sin intervención manual"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 (A.5.2) y SOC 2 Type II requieren recertificación periódica de accesos. Valida necesidad continua, mitigando privilege creep. Auditoría documenta revisión, aprobación, evidencia. Fase crítica en IAM governance.",
+      "justification_wrong": "B es falso: recertification es periódica (anual típicamente). C es incorrecto: requiere aprobación humana. D reduce alcance: recertification evalúa relevancia total de accesos, no solo password. ISO 27001 establece requisito explícito."
+    },
+    {
+      "num": 21,
+      "text": "En una arquitectura de autenticación federada con SAML 2.0, ¿cuál es el principal riesgo de seguridad asociado con la validación insuficiente de aserciones SAML en el Service Provider (SP)?",
+      "tag": "SAML & Federación de Identidades",
+      "options": [
+        "D. Incompatibilidad con protocolos LDAP heredados en sistemas legacy",
+        "C. Aumento de latencia en la autenticación por validación criptográfica",
+        "A. Suplantación de identidad mediante inyección de aserciones malformadas o alteradas",
+        "B. Pérdida de sincronización de relojes entre IdP y SP causando rechazo de tokens"
+      ],
+      "correct": 2,
+      "justification_correct": "OASIS SAML 2.0 especifica validación mandatoria de firmas digitales y timestamps. Sin validación robusta de aserciones (SAML assertions), un atacante puede inyectar aserciones falsificadas, permitiendo suplantación. NIST SP 800-95 enfatiza validación de integridad en federación.",
+      "justification_wrong": "B es operacional, C impacta rendimiento mas no seguridad crítica, D es incompatibilidad técnica irrelevante para vulnerabilidad SAML específica."
+    },
+    {
+      "num": 22,
+      "text": "¿Cuál es la principal ventaja de implementar Kerberos con delegación controlada (constrained delegation) respecto a autenticación básica HTTP en entornos Microsoft Active Directory?",
+      "tag": "Kerberos & Protocolo de Autenticación",
+      "options": [
+        "A. Elimina transmisión de credenciales en texto plano y limita impersonación a servicios específicos pre-autorizados",
+        "C. Permite autenticación sin sincronización de relojes entre cliente y servidor",
+        "B. Reduce el número de servidores KDC requeridos en arquitectura distribuida",
+        "D. Facilita integración con sistemas basados en OAuth 2.0 sin adaptadores"
+      ],
+      "correct": 0,
+      "justification_correct": "RFC 4559 (SPNEGO/Kerberos) y MS-SFU especifican delegación limitada (S4U2Proxy). Previene transmisión de credenciales en texto (RFC 2617) y restringe impersonación a servicios específicos mediante Authorization-only tickets, mejorando seguridad en confianzas transversales.",
+      "justification_wrong": "B ignora KDC single point; C requiere sincronización; D OAuth es protocolo distinto sin compatibilidad nativa Kerberos."
+    },
+    {
+      "num": 23,
+      "text": "En un modelo de control de acceso basado en atributos (ABAC), ¿cuál es la implicación de seguridad crítica al implementar evaluación de políticas con lógica booleana compleja sin auditoría de decisiones?",
+      "tag": "ABAC & Modelos de Control de Acceso",
+      "options": [
+        "A. Imposibilidad de demostrar accountability y trazar decisiones de acceso negadas/otorgadas para cumplimiento normativo",
+        "B. Aumento automático de latencia en autenticación por cálculo de atributos",
+        "D. Requerimiento de incrementar MFA para todos los usuarios del sistema",
+        "C. Conflicto inevitable entre políticas ABAC y reglas RBAC heredadas"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-162 especifica auditoría obligatoria en ABAC. Sin logging de evaluaciones, se viola nonrepudiation (ISO 27001 A.12.4.1) e impide forensics. Lógica booleana compleja sin trazabilidad genera riesgos de incumplimiento regulatorio y accountability deficiente.",
+      "justification_wrong": "B es impacto rendimiento, C es falso coexisten, D es contramedida indiscriminada incorrecta."
+    },
+    {
+      "num": 24,
+      "text": "¿Cuál es el principal vector de ataque cuando RADIUS se configura sin implementar Message Authenticator (RFC 2869) en un entorno de autenticación inalámbrica (WiFi 802.1X)?",
+      "tag": "RADIUS & Autenticación Remota",
+      "options": [
+        "C. Degradación forzada a autenticación LDAP sin cifrado en fallback automático",
+        "A. Ataques de modificación de Access-Accept/Access-Reject sin detección, permitiendo acceso no autorizado o denegación de servicio",
+        "D. Imposibilidad técnica de usar encriptación EAP-TLS concurrentemente",
+        "B. Interceptación de contraseñas mediante sniffing de tráfico de gestión DHCP"
+      ],
+      "correct": 1,
+      "justification_correct": "RFC 2869 Message Authenticator proporciona autenticación de integridad de paquetes RADIUS. Sin él, atacante en red puede modificar respuestas (Access-Accept malicioso, Access-Reject para DoS). NIST SP 800-153 requiere Message Authenticator en RADIUS para 802.1X.",
+      "justification_wrong": "B requiere tunnel break (EAP cifra), C no es fallback automático, D EAP-TLS es compatible con RADIUS."
+    },
+    {
+      "num": 25,
+      "text": "En implementación de SSO (Single Sign-On) con OAuth 2.0, ¿cuál es la vulnerabilidad crítica del flujo 'implicit grant' que NIST SP 800-63-3 desaconseja para clientes confidenciales?",
+      "tag": "OAuth 2.0 & SSO",
+      "options": [
+        "C. Incompatibilidad obligatoria con refresh tokens causando re-autenticación frecuente",
+        "A. Exposición de tokens de acceso en URL y falta de mecanismo de autorización de código, permitiendo robo de tokens via referer logs o histórico del navegador",
+        "B. Incapacidad del servidor de autorización para validar la identidad del cliente mediante credenciales secretas",
+        "D. Forzamiento de HTTPS causando latencia excesiva en procesamiento criptográfico"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-63-3 Section 5.2.3.3 prohibe implicit grant. Tokens en URL exponen a XSS, referer leakage, browser history. RFC 6749 recomienda authorization code flow con PKCE. Vulnerable a token interception sin protección criptográfica.",
+      "justification_wrong": "B describe implicit correctamente pero no es vulnerabilidad; C refresh tokens son opcionales; D HTTPS no causa latencia crítica en flujo."
+    },
+    {
+      "num": 26,
+      "text": "En una arquitectura de acceso lógico multinivel, una organización implementa RBAC con delegación de autoridad. ¿Cuál es el riesgo crítico si no se establece una matriz de separación de funciones (SoD) entre roles de administrador, revisor y ejecutor?",
+      "tag": "RBAC y Separación de Funciones",
+      "options": [
+        "B. Degradación del rendimiento en la autenticación multifactor",
+        "D. Aumento de latencia en consultas LDAP al directorio activo",
+        "C. Incompatibilidad con protocolos RADIUS en entornos federados",
+        "A. Violación de principio de menor privilegio permitiendo fraude transaccional y pérdida de accountability"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-53 AC-5 requiere SoD. Sin matriz de conflictos, roles críticos pueden acumular privilegios permitiendo transacciones no autorizadas sin detección. Violación directa de accountability y controles compensatorios requeridos en ISO 27001:2022 A.9.2.1.",
+      "justification_wrong": "RADIUS y LDAP son mecanismos de autenticación/directorio, no relacionados directamente con SoD. El rendimiento MFA no depende de matrices de separación funcional."
+    },
+    {
+      "num": 27,
+      "text": "Una organización migra de autenticación basada en contraseña a OAuth 2.0 con SAML 2.0 para SSO empresarial. ¿Qué vulnerabilidad específica del flujo Authorization Code podría permitir token hijacking si no se implementa PKCE?",
+      "tag": "OAuth 2.0, SAML y SSO Avanzado",
+      "options": [
+        "B. Replay attacks contra el IdP mediante inyección de assertions SAML sin firma",
+        "A. Interceptación de authorization code en aplicaciones móviles nativas sin capacidad de almacenamiento seguro de secrets",
+        "C. Degradación de Kerberos en Windows Server 2016 sin TGT renewal",
+        "D. Exfiltración de credenciales a través de canales LDAP no cifrados"
+      ],
+      "correct": 1,
+      "justification_correct": "RFC 7636 PKCE mitiga code interception en flujos públicos. Sin PKCE, aplicaciones nativas son vulnerables a authorization code theft si un atacante intercambia el código antes que la aplicación legítima. Crítico en mobile per OWASP OAuth 2.0 Threat Model.",
+      "justification_wrong": "SAML assertions se validan por firma, Kerberos TGT y LDAP son mecanismos separados. Estas opciones no direccionan la vulnerabilidad específica del flujo OAuth Authorization Code."
+    },
+    {
+      "num": 28,
+      "text": "En un sistema de control de acceso físico integrado con lógico, se requiere auditar intentos fallidos de acceso a zona restringida. ¿Cuál es la práctica CORRECTA para implementar Non-Repudiation según ISO 27001:2022 A.8.2.4 considerando identidad, timestamp y acción?",
+      "tag": "Control Físico-Lógico Integrado y Accountability",
+      "options": [
+        "D. Implementar registros rotados diarios sin hash criptográfico de integridad entre eventos",
+        "A. Registrar evento con firma digital asimétrica, timestamp sincronizado NTP Stratum-1 y correlación ticket de acceso físico-lógico en log centralizado inmutable",
+        "C. Usar Simple Network Time Protocol (SNTP) con sincronización local al servidor de aplicaciones",
+        "B. Almacenar intentos en tabla SQL con índice clustered sin encriptación dado que los logs son solo internos"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 A.8.2.4 y NIST SP 800-53 AU-2/AU-3 requieren: identidad verificada, timestamp exacto (NTP Stratum-1 ±1ms), integridad criptográfica. Non-repudiation requiere firma digital asimétrica. Correlación físico-lógico en SIEM es práctica senior.",
+      "justification_wrong": "SQL no encriptado viola confidencialidad. SNTP local no es suficiente para accountability. Logs rotados sin hash violan integridad y repudiation (NIST SP 800-92)."
+    },
+    {
+      "num": 29,
+      "text": "En un esquema de Attribute-Based Access Control (ABAC), una política requiere: (Usuario.Departamento='Finanzas' AND Recurso.Clasificacion='Confidencial' AND Hora.Actual entre 09:00-17:00 AND Dispositivo.CertificadoMDM=true). ¿Qué componente de la arquitectura decide la evaluación final de acceso?",
+      "tag": "ABAC y Modelos Avanzados de Control",
+      "options": [
+        "D. RADIUS servidor respondiendo accept/reject basado solo en grupo de usuario",
+        "B. Servidor LDAP realizando búsqueda de atributos sin evaluar condiciones de contexto",
+        "C. Kerberos KDC generando tickets con todos los atributos embebidos",
+        "A. Policy Decision Point (PDP) evaluando la política compleja y retornando decision al Policy Enforcement Point (PEP)"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-162 ABAC define PDP como autoridad decisoria evaluando políticas multi-atributo complejas (usuario, recurso, ambiente, acción). PEP es enforcement. LDAP/Kerberos/RADIUS son fuentes de atributos, no decisores. OASIS XACML Standard.",
+      "justification_wrong": "LDAP solo obtiene atributos. Kerberos KDC no evalúa contexto temporal/dispositivo. RADIUS es mecanismo simpe autenticación, no decisión ABAC avanzada."
+    },
+    {
+      "num": 30,
+      "text": "Una auditoría de identidad descubre que durante transición de RADIUS legacy a Kerberos en ambiente Windows Server 2019, se mantuvieron ambos servicios durante 6 meses. ¿Cuál es el hallazgo crítico de seguridad relacionado con sesiones activas y ticket reuse?",
+      "tag": "Session Management y Transición de Mecanismos",
+      "options": [
+        "B. RADIUS usa UDP sin cifrado permitiendo credential stuffing con contraseñas legacy",
+        "D. Incompatibilidad de protocolos causa desconexión automática cada 30 minutos",
+        "A. Vulnerabilidad de ticket replay: tokens Kerberos válidos (TGT 8-10h) pueden reutilizarse simultáneamente sin invalidación en RADIUS, creando race condition de sesiones duplicadas",
+        "C. Kerberos requiere sincronización de reloj exacta imposible de mantener en 2019"
+      ],
+      "correct": 2,
+      "justification_correct": "RFC 3748 RADIUS y RFC 4120 Kerberos tienen ciclos de vida sesión distintos. Sin mecanismo de cross-authentication invalidation, atacante puede obtener token Kerberos y mantener sesión RADIUS simultáneamente. NIST SP 800-63B-3 advierte riesgos en transiciones. Requiere single sign-off centralizado.",
+      "justification_wrong": "RADIUS usa cifrado compartido. Sincronización Kerberos es manejable en 2019. Incompatibilidad de protocolos no causa desconexión automática bajo supervisión correcta."
+    },
+    {
+      "num": 31,
+      "text": "Una organización implementa autenticación multifactor (MFA) combinando contraseña + token hardware TOTP. Un atacante obtiene la contraseña mediante phishing. ¿Cuál es el principal beneficio de seguridad logrado?",
+      "tag": "MFA y Factores de Autenticación",
+      "options": [
+        "B. Elimina completamente los ataques de phishing contra usuarios",
+        "C. Reduce el tiempo de procesamiento de autenticación",
+        "D. Aumenta la entropía de contraseñas del usuario",
+        "A. Mitiga el riesgo de comprometer credenciales estáticas mediante factor de posesión no replicable"
+      ],
+      "correct": 3,
+      "justification_correct": "MFA implementa defensa en profundidad (NIST SP 800-63B). Token TOTP requiere posesión física; atacante necesitaría ambos factores. Phishing solo captura contraseña (conocimiento), no el dispositivo. Esto cumple principio de factores independientes.",
+      "justification_wrong": "Phishing aún es viable contra MFA si se redirige sesión activa. Tiempo procesamiento es secundario. Entropía de contraseña no se afecta por MFA adicional."
+    },
+    {
+      "num": 32,
+      "text": "En arquitectura Kerberos, el TGS (Ticket Granting Server) emite un ticket después de validar el TGT. ¿Qué riesgo de seguridad existe si el TGS no verifica la antigüedad del TGT presentado?",
+      "tag": "Kerberos y Protocolos de Autenticación",
+      "options": [
+        "C. El cliente puede obtener múltiples tickets para la misma sesión",
+        "D. Degradación de cifrado de contraseña en la autenticación inicial",
+        "A. Replay attack: reutilización de TGT expirado para obtener acceso no autorizado",
+        "B. Man-in-the-middle puede inyectar falsas credenciales en el canal"
+      ],
+      "correct": 2,
+      "justification_correct": "RFC 4120 establece validación temporal de TGT. Sin verificación de expiración, atacante reutiliza TGT capturado anteriormente (replay). Aunque Kerberos incluye timestamp, omitir validación elimina esta protección crítica contra reutilización de credenciales.",
+      "justification_wrong": "MITM requiere interceptación de canal, no es específico de validación temporal. Múltiples tickets no es riesgo directo. Cifrado de contraseña ocurre en autenticación inicial, no en TGS."
+    },
+    {
+      "num": 33,
+      "text": "Una empresa configura SAML 2.0 para SSO entre aplicación interna y IdP corporativo. El SP (Service Provider) recibe asserción sin validar firma digital del IdP. ¿Cuál es el impacto de seguridad crítico?",
+      "tag": "SAML y Federación de Identidad",
+      "options": [
+        "D. El cifrado de asserción se vuelve innecesario",
+        "A. Atacante puede falsificar asserción SAML y acceder como usuario legítimo sin credenciales válidas",
+        "C. La sesión SSO se expira más rápidamente",
+        "B. El IdP no puede verificar la identidad del SP solicitante"
+      ],
+      "correct": 1,
+      "justification_correct": "OASIS SAML 2.0 estándar requiere validación obligatoria de firma digital XML. Sin validación, atacante construye asserción maliciosa con atributos elevados. No hay autenticación de origen IdP. Esto viola principio de autenticación fuerte.",
+      "justification_wrong": "Verificación SP es responsabilidad de IdP mediante metadatos SAML. Expiración sesión es independiente. Cifrado y firma son controles complementarios, ambos requeridos."
+    },
+    {
+      "num": 34,
+      "text": "En modelo ABAC (Attribute-Based Access Control), una política autoriza acceso si (departamento=Finanzas AND clasificación_documento=Público AND hora_actual < 18:00). ¿Qué ventaja proporciona respecto a RBAC tradicional?",
+      "tag": "Modelos de Control de Acceso",
+      "options": [
+        "C. Eliminación de necesidad de autenticación multifactor",
+        "D. Mejora automática de rendimiento de autorización",
+        "A. Flexibilidad para restricciones contextuales y temporales sin modificar código ni roles",
+        "B. Reducción absoluta de intentos de acceso no autorizado"
+      ],
+      "correct": 2,
+      "justification_correct": "ABAC (NIST SP 800-178) evalúa múltiples atributos: usuario, recurso, entorno, tiempo. RBAC solo considera rol estático. Política temporal/contextual en ABAC se implementa declarativamente. RBAC requeriría roles adicionales (Finanzas_Diurno, etc.), explosión combinatoria.",
+      "justification_wrong": "Ningún modelo de acceso previene intentos no autorizados por sí solo. MFA es capa de autenticación ortogonal. Rendimiento depende de motor de evaluación, no del modelo conceptual."
+    },
+    {
+      "num": 35,
+      "text": "Una organización implementa RADIUS para autenticación centralizada de acceso VPN. El servidor RADIUS comparte secreto compartido (shared secret) débil con múltiples clientes NAS. ¿Qué ataque es posible según RFC 2865?",
+      "tag": "RADIUS y Autenticación Remota",
+      "options": [
+        "B. Descifrado de contraseña capturando paquete Access-Request sin cifrado TLS",
+        "D. Degradación de método autenticación a PAP sin encriptación",
+        "A. Falsificación de respuesta RADIUS (Access-Accept/Reject) mediante cálculo débil de verificador MD5",
+        "C. Inyección de atributos adicionales por tercer NAS válido conociendo secret compartido"
+      ],
+      "correct": 2,
+      "justification_correct": "RFC 2865 especifica Response Authenticator = MD5(Code+ID+Length+RequestAuth+Attributes+Secret). Secret débil permite precálculo de Response válido. Atacante falsifica Access-Accept. RFC 6613 recomienda TLS para mitigar; secret débil es vulnerabilidad crítica.",
+      "justification_wrong": "Contraseña en Access-Request usa User-Password = MD5(Secret XOR pass). Sin TLS es risky pero requerimiento es secret débil. Inyección requiere interceptación activa. CHAP/MS-CHAPv2 son más seguros, no degradación automática."
+    },
+    {
+      "num": 36,
+      "text": "En una arquitectura de identidad federada con SAML 2.0, usted implementa un servicio de proveedor de identidad (IdP) corporativo. ¿Cuál es el mecanismo de seguridad crítico que DEBE validarse en cada asertión SAML para prevenir ataques de suplantación?",
+      "tag": "SAML & Federación de Identidad",
+      "options": [
+        "A. Firma digital de la asertión SAML con certificado X.509 del IdP",
+        "D. Verificación del User-Agent del navegador del consumidor",
+        "B. Validación exclusiva del atributo NameID sin criptografía",
+        "C. Confirmación de la dirección IP del cliente en la asertión"
+      ],
+      "correct": 0,
+      "justification_correct": "SAML 2.0 (OASIS) exige firma digital con certificado X.509 del IdP para garantizar autenticidad e integridad de asertiones. La validación del certificado y la firma previene suplantación y ataques de intermediario. Esta es la base criptográfica de confianza en federación.",
+      "justification_wrong": "NameID sin criptografía es insuficiente (no asegura origen). IP y User-Agent son débiles contra spoofing y no proporcionan garantía criptográfica de autenticidad según estándares SAML 2.0."
+    },
+    {
+      "num": 37,
+      "text": "Implementa Kerberos en entorno corporativo con múltiples dominios. Un usuario intenta acceder a un recurso en dominio remoto. ¿Cuál es la secuencia correcta de confianza de dominio y emisión de tickets según RFC 4120?",
+      "tag": "Autenticación Kerberos Multi-Dominio",
+      "options": [
+        "A. TGT local → Ticket de servicio intradóminio → TGT forestal → Ticket interdóminio",
+        "D. Token de sesión HTTP directo bypass Kerberos entre dominios",
+        "C. Validación directa con KDC remoto sin TGT intermediario",
+        "B. TGT local → Referral ticket a KDC remoto → TGT remoto → Ticket de servicio remoto"
+      ],
+      "correct": 3,
+      "justification_correct": "RFC 4120 especifica: usuario obtiene TGT local del KDC de origen. Solicita referral ticket apuntando a KDC remoto. Usa referral para obtener TGT remoto. Finalmente obtiene ticket de servicio remoto. Esto establece cadena transitividad confianza.",
+      "justification_wrong": "Opción A: orden incorrecto de referral. Opción C: viola arquitectura Kerberos (requiere TGTs). Opción D: no es mecanismo Kerberos válido. Solo B refleja RFC 4120 para dominios multiples."
+    },
+    {
+      "num": 38,
+      "text": "En control de acceso basado en atributos (ABAC), usted define política: permitir acceso a expediente médico SI (departamento=Oncología AND tiempo=horaLaboral AND ubicación=RedCorporativa). ¿Qué componente ABAC es responsable de evaluar esta lógica compleja en tiempo real?",
+      "tag": "ABAC - Attribute-Based Access Control",
+      "options": [
+        "B. Access Control List (ACL) estática preconfigurable",
+        "D. Policy Enforcement Point (PEP) que intercepta solicitudes",
+        "A. Policy Decision Point (PDP) con motor de evaluación de políticas",
+        "C. Attribute Authority que almacena atributos de usuario"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-178 define PDP como componente que evalúa dinámicamente políticas ABAC contra atributos (usuario, recurso, ambiente). En este caso evalúa departamento, tiempo, ubicación en tiempo real. PEP intercepta; Attribute Authority provee datos; ACL es estática.",
+      "justification_wrong": "ACL es modelo DAC/RBAC estático. Attribute Authority almacena datos, no evalúa. PEP aplica decisiones PDP pero no evalúa. Solo PDP posee motor de evaluación de lógica condicional compleja requerida por ABAC."
+    },
+    {
+      "num": 39,
+      "text": "Configura OAuth 2.0 para aplicación móvil third-party que accede a datos de usuario en servidor de recursos corporativo. ¿Cuál grant type es RECOMENDADO por OAuth 2.0 RFC 6749 específicamente para aplicaciones públicas sin capacidad de almacenar secreto de cliente?",
+      "tag": "OAuth 2.0 - Autenticación y Autorización",
+      "options": [
+        "B. Client Credentials Grant usando credenciales hardcodeadas",
+        "C. Resource Owner Password Credentials Grant sin verificación",
+        "D. Implicit Grant con access token en URL fragment",
+        "A. Authorization Code Grant con Proof Key for Public Clients (PKCE)"
+      ],
+      "correct": 3,
+      "justification_correct": "RFC 6749 y RFC 7636 recomiendan Authorization Code + PKCE para clientes públicos (móviles, SPAs). PKCE mitiga authorization code interception en canales inseguros. Clients públicos no pueden proteger secrets en memoria.",
+      "justification_wrong": "Option B: Client Credentials no para clientes públicos (requiere secret). C: Password Grant expone credenciales usuario. D: Implicit es legacy, deprecated por seguridad (token en URL). Solo PKCE es estándar moderno certificado para apps públicas."
+    },
+    {
+      "num": 40,
+      "text": "En auditoría de sesión según estándar ISO 27001:2022 Anexo A.9.2.1, detecta que sistema termina sesión de usuario después de 30 minutos inactividad, PERO no invalida token JWT en servidor. ¿Cuál es la vulnerabilidad de gestión de sesión identificada y su riesgo asociado?",
+      "tag": "Session Management & Lifecycle de Identidad",
+      "options": [
+        "A. Token JWT válido aún puede ser usado para reautenticar aunque sesión está cerrada (reutilización de token)",
+        "C. Servidor debe usar solo cookies HttpOnly en lugar de JWT",
+        "B. Usuario puede crear múltiples sesiones simultáneas sin límite",
+        "D. Tiempo inactividad de 30 minutos no cumple PCI-DSS (requiere 15 min)"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001 Anexo A.9.2.1 requiere terminación de sesión en servidor. JWT sin invalidación en servidor permite reutilización post-logout (estateless weakness). Atacante captura JWT y lo usa hasta expiración original, bypaseando sesión cerrada localmente.",
+      "justification_wrong": "B: límite sesiones es control diferente. C: JWT vs cookies es mecanismo distinto; ambos requieren invalidación servidor. D: 30min vs 15min es variación cumplimiento, no vulnerabilidad core. Solo A identifica fallo de sincronización sesión cliente-servidor."
+    },
+    {
+      "num": 41,
+      "text": "En un ambiente Kerberos, ¿cuál es el propósito principal del Ticket Granting Ticket (TGT) y qué componente lo emite?",
+      "tag": "Autenticación - Kerberos",
+      "options": [
+        "C. El TGT es emitido por el Key Distribution Center (KDC) y reemplaza completamente la necesidad de contraseñas en la red",
+        "D. El TGT es emitido por el servidor de aplicaciones y proporciona acceso permanente sin límite temporal",
+        "B. El TGT es emitido por el Ticket Granting Server (TGS) y cifra directamente las credenciales del usuario para acceso a recursos",
+        "A. El TGT es emitido por el Authentication Server (AS) y permite al cliente obtener tickets de servicio sin reauthenticarse en cada solicitud"
+      ],
+      "correct": 3,
+      "justification_correct": "RFC 4120 especifica que el AS emite el TGT tras autenticar al usuario. El TGT permite obtener service tickets del TGS sin reauthenticación, reduciendo exposición de credenciales. Este es el principio fundamental de Kerberos para SSO.",
+      "justification_wrong": "El TGS genera service tickets, no TGTs. El TGT no cifra credenciales sino que actúa como token. No reemplaza contraseñas sino que las protege. El TGT tiene límite temporal (lifetime configurado)."
+    },
+    {
+      "num": 42,
+      "text": "Respecto a SAML 2.0, ¿cuál es la diferencia crítica entre el flujo SSO iniciado por Identity Provider (IdP) versus iniciado por Service Provider (SP)?",
+      "tag": "Federación de Identidades - SAML",
+      "options": [
+        "D. El flujo IdP-iniciado no requiere AuthnRequest, mientras SP-iniciado implementa circular redirects infinitos",
+        "C. En flujo IdP-iniciado, SAML Assertion se envía como parámetro GET; en SP-iniciado, se envía en POST",
+        "B. El flujo SP-iniciado es más seguro porque valida certificados SAML antes de cualquier autenticación",
+        "A. En flujo IdP-iniciado, el usuario se autentica primero en el IdP; en SP-iniciado, se redirige al IdP sin contexto previo de sesión"
+      ],
+      "correct": 3,
+      "justification_correct": "OASIS SAML 2.0 especifica ambos flujos. IdP-iniciado: usuario autenticado en IdP inicia acceso a SP. SP-iniciado: usuario solicita acceso a SP, quien redirige a IdP para AuthnRequest. SP-iniciado es estándar recomendado por su seguridad (CSRF mitigation).",
+      "justification_wrong": "Ambos flujos validan certificados. POST se usa en ambos (artifact binding alternativo). IdP-iniciado sí puede requerir AuthnRequest según configuración. No hay redirects circulares en implementaciones correctas."
+    },
+    {
+      "num": 43,
+      "text": "En control de acceso basado en atributos (ABAC), ¿cuál de los siguientes elementos es crítico para la evaluación de políticas y diferencia ABAC de RBAC?",
+      "tag": "Modelos de Control de Acceso",
+      "options": [
+        "B. La asignación estática de roles que no cambia durante la sesión del usuario",
+        "D. La implementación de lista de control de acceso (ACL) inmutable en cada objeto",
+        "C. La delegación de autoridad exclusivamente al propietario del recurso (DAC)",
+        "A. La evaluación dinámica de atributos del usuario, recurso, ambiente y acción en tiempo de decisión (PDP)"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-162 define ABAC como modelo que evalúa dinámicamente atributos (usuario: departamento, recurso: clasificación, ambiente: hora/IP, acción: operación) mediante Policy Decision Point (PDP). Esto proporciona granularidad superior a RBAC basado en roles estáticos.",
+      "justification_wrong": "RBAC utiliza roles estáticos, no ABAC. DAC no es componente de ABAC. ACLs son primitivas de DAC, no mecanismo de ABAC. ABAC requiere evaluación dinámica, no estática."
+    },
+    {
+      "num": 44,
+      "text": "En un arquitectura de sesión distribuida con OAuth 2.0, ¿cuál es la vulnerabilidad más crítica del flujo Implicit Grant y por qué fue deprecado?",
+      "tag": "Protocolos de Delegación - OAuth",
+      "options": [
+        "C. Implicit Grant requiere múltiples round-trips aumentando latencia en comparación con Authorization Code",
+        "B. El servidor de autorización no puede validar al cliente porque el flujo no requiere Client Secret",
+        "A. El token de acceso se expone en la URL/historial del navegador sin mecanismo seguro de renovación (refresh token)",
+        "D. El token de acceso se cifra con algoritmos débiles (MD5) por defecto en navegadores"
+      ],
+      "correct": 2,
+      "justification_correct": "RFC 6749 (obsoleto) y RFC 8252 especifican que Implicit Grant retorna access_token directamente en fragment URL, exponiéndolo a XSS, historial y logs. Ausencia de refresh_token impide renovación segura. Deprecado en OAuth 2.0 Security Best Current Practice (RFC 8252).",
+      "justification_wrong": "Authorization Code flujo también puede no usar Client Secret en apps públicas. La validación de cliente no es mecanismo primario de seguridad en Implicit. Latencia no es razón de deprecación. Los tokens no se cifran con MD5 a nivel de protocolo."
+    },
+    {
+      "num": 45,
+      "text": "Respecto a MFA y binding de sesión, ¿cuál es la defensa más efectiva contra ataques de token theft después de autenticación exitosa?",
+      "tag": "Autenticación Multifactor - Accountability",
+      "options": [
+        "A. Implementar device binding combinado con behavioral analytics, invalidando sesiones cuando atributos (IP, User-Agent, certificado de dispositivo) cambian significativamente",
+        "B. Renovar el token de sesión cada 5 minutos automáticamente sin validación adicional del usuario",
+        "D. Requiere al usuario re-autenticar con MFA cada vez que cambia de página dentro de la aplicación",
+        "C. Almacenar el token en localStorage en lugar de memoria para persistencia entre pestañas"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-63-3 y OWASP recomienda device binding (certificados, TPM) + behavioral analysis como defensa contra token theft post-autenticación. Cambios anómalos en IP/User-Agent/dispositivo invalidan sesión, implementando zero-trust principle y accountability en acceso.",
+      "justification_wrong": "Renovación sin validación no previene uso de token robado. localStorage es vulnerable a XSS (anti-patrón). Re-autenticación en cada página es UX inviable y no previene token theft simultáneo. Estas medidas no implementan defense-in-depth."
+    },
+    {
+      "num": 46,
+      "text": "En una arquitectura de autenticación federada, una organización implementa SAML 2.0 con cifrado de aserciones. ¿Cuál es la principal ventaja de cifrar la aserción completa versus solo firmarla digitalmente en el contexto de confidencialidad?",
+      "tag": "SAML_Federacion_Seguridad",
+      "options": [
+        "B. La firma digital es suficiente para confidencialidad y el cifrado solo añade overhead de procesamiento innecesario",
+        "C. El cifrado elimina la necesidad de validar la integridad de la aserción en el lado del ServiceProvider",
+        "A. El cifrado protege el contenido de la aserción del acceso no autorizado durante transmisión y almacenamiento, cumpliendo NIST SP 800-63-3",
+        "D. Solo el cifrado permite implementar SSO entre múltiples dominios administrativos"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-63-3 establece que cifrado + firma proporciona confidencialidad e integridad. Firma valida autenticidad e integridad, pero solo cifrado garantiza confidencialidad contra eavesdropping. RFC 2246 (TLS) y OASIS SAML 2.0 Core especifican esta separación de controles.",
+      "justification_wrong": "Opción B ignora NIST SP 800-4B sobre separación de mecanismos. Opción C viola principio de defensa en profundidad. Opción D confunde SSO con cifrado; SSO funciona sin cifrado de aserción."
+    },
+    {
+      "num": 47,
+      "text": "Un auditor evaluá un sistema RADIUS implementado para autenticación de VPN con PAP (Password Authentication Protocol). ¿Cuál es la deficiencia crítica de seguridad identificada según RFC 2865 y qué mecanismo correctivo se recomienda?",
+      "tag": "RADIUS_Autenticacion_Protocolos",
+      "options": [
+        "C. La debilidad es que RADIUS usa UDP; cambiar a TCP eliminaría la necesidad de CHAP",
+        "A. PAP transmite credenciales en texto plano; debe implementarse CHAP o EAP con TLS según RFC 2865 sección 3.2",
+        "B. PAP es seguro si RADIUS se encapsula en IPsec; no se requieren cambios de protocolo",
+        "D. PAP no soporta MFA; se debe reemplazar completamente RADIUS con OAuth 2.0"
+      ],
+      "correct": 1,
+      "justification_correct": "RFC 2865 documenta que PAP envía contraseñas sin cifrar en saltos intermedios. CHAP (RFC 1994) usa hash MD5 unidireccional. EAP-TLS (RFC 5216) proporciona autenticación mutua con certificados, cumpliendo NIST SP 800-63-3 para credenciales de propósito general.",
+      "justification_wrong": "Opción B: IPsec no cifra carga útil RADIUS interna. Opción C: UDP/TCP es capa de transporte; no resuelve transmisión de credenciales. Opción D: OAuth es autorización, no autenticación; innecesario remplazo de RADIUS."
+    },
+    {
+      "num": 48,
+      "text": "Una organización implementa ABAC (Attribute-Based Access Control) combinado con sesiones dinámicas. ¿Cuál es el riesgo principal de seguridad si los atributos de contexto (ubicación geográfica, hora, dispositivo) no se revalidan periódicamente durante la sesión?",
+      "tag": "ABAC_Sesiones_Accountability",
+      "options": [
+        "C. Los atributos ABAC son estáticos por definición y no pueden cambiar durante una sesión activa",
+        "D. La revalidación periódica aumenta latencia de red sin beneficio de seguridad medible",
+        "B. El token de sesión se vuelve inválido automáticamente si se modifica cualquier atributo, cerrando todas las sesiones activas",
+        "A. Escalada de privilegios temporal: cambios en atributos post-autenticación no son detectados, violando principio de reevaluación continua de NIST SP 800-162"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-162 (ABAC guide) especifica que decisiones de control deben reevaluarse cuando contexto cambia. Si usuario se reubica a jurisdicción restringida o dispositivo se compromete sin invalidación de sesión, acceso no autorizado persiste. ISC2 CISSP CBK enfatiza sesiones son punto de control crítico.",
+      "justification_wrong": "Opción B: cierre automático no es comportamiento estándar. Opción C: contexto ABAC es dinámico por diseño. Opción D: NIST SP 800-63-3 requiere reevaluación; overhead es justificado."
+    },
+    {
+      "num": 49,
+      "text": "En una arquitectura Kerberos (RFC 4120), un atacante intercepta un TGT (Ticket Granting Ticket) válido. Bajo qué condición específica este TGT interceptado NO puede ser utilizado para obtener tickets de servicio adicionales, incluso en su período de validez?",
+      "tag": "Kerberos_Tickets_Seguridad",
+      "options": [
+        "B. Si la estación de trabajo cliente implementa borrado seguro de memoria del TGT tras cada acceso a un servicio",
+        "C. Si el TGT está vinculado a dirección IP origen y el atacante accede desde red diferente que la sesión original",
+        "D. Si Kerberos v5 usa cifrado AES-256; los TGT cifrados con AES nunca pueden ser reutilizados",
+        "A. Si el KDC implementa validación de timestamp con skew máximo de 5 minutos y detecta replay con número de secuencia único (nonce)"
+      ],
+      "correct": 1,
+      "justification_correct": "RFC 4120 especifica que TGT puede incluir restricción de dirección cliente (c-addr). Si validación de origen es obligatoria y atacante presenta TGT desde IP distinta, KDC rechaza según sección 3.3.3. Esto detiene ataques de robo de token sin tLS. NIST SP 800-63-3 recomienda vinculación de contexto.",
+      "justification_wrong": "Opción A: timestamp/nonce previene replay del TGT inicial, pero no reutilización en ventana válida. Opción B: borrado es post-uso; no previene intercepción pre-uso. Opción D: AES solo cifra; no invalida reutilización si atacante posee clave."
+    },
+    {
+      "num": 50,
+      "text": "Un auditor identifica que un sistema OAuth 2.0 para delegación de permisos a aplicaciones terceras utiliza implicit flow en navegador web. ¿Cuál es la vulnerabilidad principal documentada en OAuth 2.0 Security Best Current Practice (RFC 6819 / draft-ietf-oauth-security-topics) y qué remediación es obligatoria para CISSP?",
+      "tag": "OAuth_Delegacion_Vulnerabilidades",
+      "options": [
+        "A. Implicit flow expone access_token en URL/historial del navegador sin validación PKCE; debe implementarse authorization_code flow + PKCE (RFC 7636) obligatoriamente",
+        "B. OAuth 2.0 no soporta encriptación de tokens; solo soluciona delegación de autorización, no autenticación segura",
+        "D. Access tokens en implicit flow se invalidan automáticamente al cerrar pestaña del navegador, proporcionando seguridad suficiente",
+        "C. El implicit flow es seguro si se usa con HTTPS; RFC 6819 no identifica vulnerabilidades adicionales"
+      ],
+      "correct": 0,
+      "justification_correct": "RFC 6819 y draft-ietf-oauth-security-topics-19 desaconsejan implicit flow para browsers. Tokens aparecen en URL (XSS exposure), historial navegador, referer headers. PKCE (RFC 7636) + authorization_code flow mitiga riesgos. NIST SP 800-63-3 B.3.1 requiere este flujo para aplicaciones públicas.",
+      "justification_wrong": "Opción B: OAuth 2.0 + OIDC (OpenID Connect) proporciona autenticación. Opción C: HTTPS no oculta URLs en historial/referer. Opción D: Cierre de pestaña no garantiza invalidación server-side; token persiste si reutilizado."
+    }
+  ]
+}

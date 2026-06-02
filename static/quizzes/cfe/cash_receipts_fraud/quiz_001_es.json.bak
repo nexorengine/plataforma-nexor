@@ -1,0 +1,241 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "cash_receipts_fraud",
+  "quiz_num": 1,
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Sandra, una recepcionista en un consultorio dental, recolecta copagos de pacientes en efectivo al momento del servicio. El consultorio no emite recibos a menos que los pacientes los soliciten específicamente. Sandra ha estado sustrayendo pagos en efectivo de pacientes cuyas cuentas ella sabe que se pagan principalmente a través de reembolsos de seguros en lugar de estados de cuenta posteriores. Ella registra estas transacciones en el sistema de citas como \"seguro pendiente\" en lugar de \"copago recolectado\". ¿Qué característica de las operaciones del consultorio está explotando Sandra principalmente para ocultar su esquema de skimming?",
+      "tag": "Skimming",
+      "options": [
+        "A. La ausencia de verificación independiente entre el efectivo recolectado y las transacciones registradas en el sistema contable",
+        "B. La falta de implementación de verificaciones adecuadas de antecedentes durante el proceso de contratación de empleados que manejan efectivo",
+        "C. La falta de cámaras de vigilancia posicionadas para monitorear el área de recepción donde se recolectan los pagos",
+        "D. La decisión del consultorio de aceptar pagos en efectivo en lugar de requerir todos los pagos con tarjeta de crédito o cheque"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Sandra está explotando la falta de conciliación independiente entre el efectivo recibido y los montos registrados. El skimming ocurre antes de que los fondos ingresen al sistema contable, lo que dificulta su detección sin controles que verifiquen que todos los pagos recolectados se registren adecuadamente. La debilidad principal es que nadie verifica de manera independiente que el efectivo que Sandra recolecta coincida con lo que ingresa en el sistema. Ella simplemente puede embolsarse el efectivo y no registrarlo (o registrarlo como pendiente), y sin conciliación entre los recibos reales y las transacciones registradas, el robo permanece oculto. Esto representa una deficiencia fundamental en el control interno del manejo de recibos de efectivo.",
+      "justification_wrong": "La opción B es incorrecta porque aunque las verificaciones de antecedentes son un control detectivo preventivo, no abordan la debilidad operacional que Sandra está explotando activamente para ocultar su robo continuo. Incluso empleados con antecedentes limpios pueden cometer fraude cuando los controles internos están ausentes. La opción C es incorrecta porque las cámaras de vigilancia son un control detectivo que podría identificar comportamiento sospechoso, pero Sandra está explotando específicamente la brecha en el registro que permite que el efectivo no registrado pase desapercibido; las cámaras por sí solas no detectarían transacciones que nunca se registran. La opción D es incorrecta porque aceptar efectivo no es en sí misma una debilidad de control que Sandra explota; el skimming puede ocurrir con cheques y otras formas de pago mediante una falta similar de conciliación. El método de pago es menos relevante que la ausencia de controles de verificación."
+    },
+    {
+      "num": 2,
+      "text": "Miranda, una cajera en una farmacia minorista, ha estado robando efectivo de la caja registradora al anular transacciones legítimas de clientes después de que los clientes se retiran de la tienda y embolsándose el efectivo de esas ventas. Para detectar este esquema, ¿cuál de los siguientes sería el control MÁS efectivo?",
+      "tag": "Cash Larceny",
+      "options": [
+        "A. Implementar un sistema que requiera aprobación del gerente para todas las anulaciones de transacciones y reembolsos con notificación en tiempo real",
+        "B. Realizar conteos sorpresa de efectivo al final de cada turno y comparar los totales con los resúmenes de la cinta registradora",
+        "C. Requerir que dos empleados estén presentes en todo momento cuando la caja registradora esté abierta para operaciones comerciales",
+        "D. Conciliar los montos de depósito bancario diarios con el total de ventas registrado en el sistema de punto de venta"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Requerir aprobación del gerente para anulaciones con notificación en tiempo real es el control más efectivo porque aborda directamente el mecanismo del fraude. Los esquemas de cash larceny que involucran anulaciones post-transacción explotan la capacidad de alterar registros después de que la venta se completa. Al requerir aprobación supervisora inmediata y notificación para cada anulación, el esquema se vuelve difícil de ejecutar sin detección. El aspecto en tiempo real previene que Miranda acumule numerosas anulaciones fraudulentas, y la revisión del gerente crea responsabilidad y escrutinio sobre las transacciones específicas que están siendo manipuladas. Este control previene el fraude en el punto de ocurrencia en lugar de detectarlo después del hecho.",
+      "justification_wrong": "La opción B (conteos sorpresa de efectivo) puede eventualmente detectar faltantes pero es menos efectiva porque en este esquema de anulaciones, la caja registradora probablemente cuadrará ya que Miranda anula la transacción y retira el efectivo correspondiente—no hay faltante en la caja registradora para encontrar. La opción C (dos empleados presentes) proporciona disuasión general pero no previene el esquema ya que las anulaciones aún pueden procesarse con otro empleado cerca que puede no estar monitoreando cada detalle de transacción. La opción D (conciliar depósitos con ventas) no detectará este esquema porque las transacciones anuladas reducen las ventas registradas para igualar el monto depositado—los libros parecerán cuadrar ya que tanto el registro de venta como el efectivo son removidos del sistema."
+    },
+    {
+      "num": 3,
+      "text": "María, una empleada de cuentas por cobrar en una empresa de distribución mayorista, ha estado robando pagos de clientes durante seis meses. Cuando el Cliente A envía un cheque por $2,000, María se lo queda y no registra el pago. Dos semanas después, cuando el Cliente B envía un cheque por $2,500, María aplica $2,000 a la cuenta del Cliente A y roba los $500 restantes. Continúa este patrón con pagos subsecuentes. ¿Qué control sería más efectivo para detectar el esquema de María?",
+      "tag": "Lapping",
+      "options": [
+        "A. Que una parte independiente prepare conciliaciones mensuales de los estados de cuenta de clientes con el libro auxiliar de cuentas por cobrar e investigue las disputas de clientes sobre los saldos de sus cuentas",
+        "B. Requerir que María tome días de vacaciones consecutivos obligatorios mientras otro empleado realiza sus funciones y procesa los pagos entrantes durante su ausencia",
+        "C. Implementar una política que requiera que todos los pagos de clientes superiores a $1,000 sean aprobados por un supervisor antes de ser registrados en el sistema de cuentas por cobrar",
+        "D. Segregar funciones de manera que María pueda recibir pagos de clientes pero no pueda realizar ajustes o cancelaciones en las cuentas de clientes sin aprobación gerencial"
+      ],
+      "correct": 1,
+      "difficulty": "STANDARD",
+      "justification_correct": "Las vacaciones obligatorias son el control detectivo más efectivo para esquemas de lapping porque el lapping requiere ocultamiento continuo a través de manipulación constante de pagos. El perpetrador debe aplicar constantemente nuevos recibos para cubrir robos previos. Cuando María está ausente y otro empleado maneja el procesamiento de pagos, el esquema colapsará porque los pagos entrantes no serán aplicados incorrectamente para cubrir los montos robados anteriormente, causando que las discrepancias en las cuentas de clientes salgan a la luz inmediatamente. Esta separación temporal expone el efecto en cascada del fraude que ha estado oculto mediante actividad continua.",
+      "justification_wrong": "La Opción A, aunque útil, puede no detectar el lapping oportunamente porque María puede manipular el momento de los registros para asegurar que los saldos de las cuentas parezcan actuales cuando se envían los estados de cuenta, y los clientes pueden no disputar sus cuentas si los pagos eventualmente se acreditan (aunque tardíamente). La Opción C es inefectiva porque la aprobación del supervisor del registro de pagos no previene ni detecta la aplicación incorrecta de fondos; María simplemente mostraría el monto legítimo del pago siendo registrado, solo que en la cuenta de cliente incorrecta. La Opción D aborda un riesgo de fraude diferente (ajustes o cancelaciones no autorizadas) pero no previene el lapping, ya que María solo necesita la capacidad de recibir y aplicar incorrectamente pagos entre cuentas de clientes, la cual retiene bajo este control."
+    },
+    {
+      "num": 4,
+      "text": "Rebecca, la gerente de cuentas por cobrar en Stratton Industries, tiene la responsabilidad exclusiva de abrir el correo, registrar los pagos de los clientes en las cuentas y preparar los depósitos bancarios. La gerencia sospecha que puede estar ocurriendo un esquema de lapping. ¿Cuál de los siguientes controles sería MÁS efectivo para prevenir el lapping en este escenario?",
+      "tag": "Lapping Prevention",
+      "options": [
+        "A. Requerir segregación de funciones para que la apertura del correo y el manejo de efectivo sean realizados por empleados diferentes a aquellos que registran los pagos en las cuentas de los clientes.",
+        "B. Implementar una política que requiera que Rebecca tome días de vacaciones consecutivos anualmente durante los cuales otro empleado desempeñe sus funciones.",
+        "C. Realizar conciliaciones periódicas no anunciadas comparando los estados de cuenta de los clientes con el libro auxiliar de cuentas por cobrar.",
+        "D. Establecer autorización dual obligatoria para todas las cancelaciones de cuentas de clientes que excedan un monto predeterminado."
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "La segregación de funciones es el control preventivo más efectivo contra los esquemas de lapping. El lapping ocurre cuando un empleado con acceso tanto a los recibos de efectivo entrantes como al registro de cuentas roba un pago de un cliente y lo oculta aplicando un pago subsecuente de otro cliente a la cuenta del primer cliente. Al separar las funciones de manejo de efectivo y registro de cuentas por cobrar entre diferentes empleados, se elimina la oportunidad de perpetrar un esquema de lapping desde su origen. Este control previene que el fraude ocurra en lugar de simplemente detectarlo después del hecho, convirtiéndolo en la medida preventiva más sólida.",
+      "justification_wrong": "La opción B (vacaciones obligatorias) es un control detectivo en lugar de un control preventivo. Si bien puede ayudar a descubrir un esquema de lapping en curso cuando otro empleado asume temporalmente las funciones y nota irregularidades, no previene que el esquema se inicie o continúe después de que el empleado regrese. La opción C (conciliaciones periódicas) también es un control detectivo que puede identificar discrepancias causadas por lapping pero no previene que el empleado ejecute el esquema en primer lugar. La opción D (autorización dual para cancelaciones) aborda un riesgo de fraude diferente relacionado con cancelaciones ficticias o ajustes no autorizados de cuentas, pero no previene el lapping, que involucra la aplicación incorrecta de pagos reales de clientes en lugar de cancelaciones de cuentas."
+    },
+    {
+      "num": 5,
+      "text": "María, una cajera minorista, acepta $150 en efectivo de un cliente por mercancía. Ella ingresa la transacción en el sistema de punto de venta pero inmediatamente la anula, eliminando el registro del sistema. Se embolsa los $150 y le entrega al cliente un recibo que muestra la transacción anulada. Más tarde ese día, Tom, otro cajero, retira $150 del cajón de su caja registradora después de registrar apropiadamente una venta en efectivo y lo coloca en su bolsillo. ¿Qué tipos de esquemas han cometido María y Tom?",
+      "tag": "Skimming vs Larceny",
+      "options": [
+        "A. María cometió skimming y Tom cometió cash larceny",
+        "B. María cometió cash larceny y Tom cometió skimming",
+        "C. Tanto María como Tom cometieron esquemas de skimming",
+        "D. Tanto María como Tom cometieron esquemas de cash larceny"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "María cometió skimming porque tomó el efectivo antes de que fuera registrado en el sistema contable de la compañía. Aunque ingresó la transacción inicialmente, la anuló, asegurándose de que el efectivo nunca se reflejara en los libros y registros de la compañía. El skimming implica el robo de efectivo antes de que ingrese al sistema contable. Tom cometió cash larceny porque robó dinero que ya había sido apropiadamente registrado como ingreso en el sistema de punto de venta. El cash larceny implica robar dinero después de que ha sido registrado en los libros de la compañía, lo cual crea un faltante directo que debe ser ocultado por otros medios.",
+      "justification_wrong": "La opción B invierte los esquemas—la anulación de la transacción por parte de María significa que el efectivo nunca ingresó a los libros (skimming), no larceny, mientras que el robo de Tom ocurrió después del registro (larceny), no antes. La opción C clasifica incorrectamente el robo de Tom como skimming cuando él robó fondos registrados, lo cual es la característica definitoria de larceny en lugar de skimming. La opción D clasifica incorrectamente el robo de María como larceny cuando ella evitó que el efectivo fuera registrado al anular la transacción, lo cual es el sello distintivo de un esquema de skimming en lugar de larceny."
+    },
+    {
+      "num": 6,
+      "text": "Karen, una cajera en una farmacia minorista, procesa transacciones de ventas en efectivo pero ocasionalmente no registra ciertas ventas a través del sistema punto de venta. En su lugar, se queda con el efectivo de estas ventas no registradas mientras proporciona a los clientes recibos escritos a mano que ella afirma son generados durante el mantenimiento del sistema. La gerencia sospecha fraude y solicita a un Certified Fraud Examiner que identifique el procedimiento de analítica de datos más efectivo para detectar este esquema. ¿Qué procedimiento revelaría con mayor probabilidad la actividad de skimming de Karen?",
+      "tag": "Skimming",
+      "options": [
+        "A. Comparar los registros de reducción de inventario con los ingresos por ventas registradas para identificar faltantes de mercancía que correspondan a ingresos no registrados",
+        "B. Conciliar las cintas de caja registradora diarias con las boletas de depósito bancario para detectar diferencias entre los recibos registrados y los montos depositados",
+        "C. Analizar las transacciones de reembolso a clientes en busca de patrones inusuales tales como reembolsos procesados sin ventas originales correspondientes",
+        "D. Revisar los registros de tarjetas de tiempo de empleados contra los turnos de manejo de efectivo para identificar irregularidades de horario durante períodos de alto volumen"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Comparar la reducción de inventario con las ventas registradas es el método de detección más efectivo para esquemas de skimming de ventas. Cuando un cajero hace skimming de efectivo al no registrar ventas, la mercancía aún sale del inventario, creando una discrepancia entre la reducción de inventario físico y los ingresos registrados. Esta merma de inventario sin el correspondiente ingreso por ventas es un indicador primario de skimming en el punto de venta. Dado que Karen está proporcionando productos a los clientes pero no registrando las transacciones, el inventario mostrará faltantes inexplicables que exceden las tasas normales de merma, haciendo de este procedimiento analítico la herramienta de detección más sólida para este esquema específico.",
+      "justification_wrong": "La opción B es incorrecta porque conciliar las cintas de caja registradora con los depósitos detecta cash larceny (robo después del registro), no skimming. En el esquema de Karen, las ventas nunca se registran en la caja registradora, por lo que la cinta de la caja registradora y los depósitos conciliarían correctamente—ambos simplemente estarían subestimados. La opción C es incorrecta porque analizar patrones de reembolso detecta esquemas fraudulentos de reembolso, no skimming de ventas no registradas. Karen no está procesando reembolsos falsos; simplemente no está registrando ventas legítimas. La opción D es incorrecta porque revisar registros de tarjetas de tiempo y horarios no detecta directamente el skimming. Aunque tal análisis podría identificar oportunidad, no revela la discrepancia real entre inventario y ventas que evidencia transacciones no registradas, haciéndolo un método de detección más débil que la conciliación de inventario."
+    },
+    {
+      "num": 7,
+      "text": "Marcus, un empleado de la sala de correo en una empresa de facturación médica, ha estado robando pagos de clientes que llegan como cheques a nombre de la empresa. Abre los sobres, retira los cheques, falsifica el endorso de la empresa y los deposita en su cuenta bancaria personal utilizando una aplicación de banca móvil. El sistema contable de la empresa muestra estas facturas como pendientes. ¿Cuál de los siguientes esquemas de fraude está cometiendo Marcus?",
+      "tag": "Cash Larceny",
+      "options": [
+        "A. Cash larceny porque está robando pagos registrados después de que hayan ingresado al sistema contable",
+        "B. Skimming porque está retirando pagos antes de que se registren en los libros de la empresa",
+        "C. Lapping porque está ocultando el robo aplicando pagos subsiguientes a cuentas anteriores",
+        "D. Check tampering porque está alterando la información del beneficiario en los cheques de los clientes"
+      ],
+      "correct": 1,
+      "difficulty": "STANDARD",
+      "justification_correct": "Esto es skimming, no cash larceny. El skimming ocurre cuando un empleado roba efectivo o cheques antes de que se registren en el sistema contable de la empresa. Dado que Marcus intercepta los cheques en la sala de correo antes de que lleguen al departamento de contabilidad, y las facturas permanecen pendientes en el sistema, los pagos nunca fueron registrados. La distinción clave es el momento del robo en relación con el registro de la transacción. Aunque se robaron cheques (lo que algunos podrían asociar con cash larceny), el factor crítico es que estos ingresos nunca ingresaron a los libros.",
+      "justification_wrong": "La opción A es incorrecta porque el cash larceny específicamente involucra robar dinero que ya ha sido registrado en los registros contables de la empresa. En este escenario, las facturas permanecen pendientes, indicando que los pagos nunca fueron registrados. La opción C es incorrecta porque el lapping es una técnica de ocultamiento donde un empleado encubre un robo aplicando un pago de cliente subsiguiente a la cuenta de un cliente anterior, creando un esquema rotativo. Marcus no está usando pagos subsiguientes para ocultar su robo. La opción D es incorrecta porque el check tampering involucra alterar un cheque que la organización ha preparado (típicamente cheques por pagar), como cambiar el beneficiario o el monto. Marcus no está alterando los cheques en sí mismos; simplemente está robando cheques entrantes y falsificando un endorso."
+    },
+    {
+      "num": 8,
+      "text": "Margaret, una empleada de cuentas por cobrar en un distribuidor regional de suministros médicos, ha estado robando pagos de clientes durante ocho meses. Ella oculta el robo aplicando pagos posteriores de otros clientes a las cuentas de las cuales robó. El auditor externo de la compañía está planeando enviar confirmaciones de saldo de cuenta a una muestra de clientes. ¿Cuál de las siguientes acciones sería MÁS efectiva para que Margaret prevenga la detección de su esquema a través del proceso de confirmación?",
+      "tag": "Lapping",
+      "options": [
+        "A. Interceptar las respuestas de confirmación de los clientes cuyos pagos ella desvió y alterar las respuestas para que coincidan con los registros subestimados de la compañía antes de devolverlas al auditor",
+        "B. Solicitar que el auditor excluya de la muestra de confirmación a cualquier cliente cuyas cuentas muestren períodos de cobranza que excedan los 90 días para evitar confusión del cliente",
+        "C. Crear notas de crédito ficticias para cancelar los saldos pendientes de los clientes cuyos pagos ella robó antes de la fecha de confirmación",
+        "D. Retrasar el registro de pagos legítimos recientes en el sistema contable hasta después de que se envíen las confirmaciones para que tenga pagos adicionales disponibles para continuar con el lapping"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Interceptar y alterar las respuestas de confirmación es el método más efectivo para prevenir la detección porque el lapping crea una discrepancia entre los registros de la compañía (que muestran saldos por cobrar inflados) y los registros de los clientes (que muestran saldos correctos más bajos o saldos cero si pagaron). Cuando los clientes reciben confirmaciones mostrando que deben más de lo que realmente deben, estarán en desacuerdo con el saldo. Al interceptar estas respuestas y alterarlas para que coincidan con los registros fraudulentos antes de que lleguen al auditor, Margaret elimina el mecanismo de detección principal. Esto aborda directamente la vulnerabilidad central que las confirmaciones externas crean para los esquemas de lapping—verificación independiente de terceros que evita el control del perpetrador sobre los registros internos.",
+      "justification_wrong": "La opción B es incorrecta porque Margaret carece de autoridad para dictaminar qué cuentas seleccionan los auditores para confirmación; los auditores mantienen independencia en la selección de muestras, y solicitar exclusiones probablemente generaría sospecha en lugar de prevenir la detección. La opción C es incorrecta porque crear notas de crédito ficticias podría eliminar temporalmente algunos saldos de los libros, pero esto crea un rastro de fraude diferente que requiere aprobaciones adicionales, genera inconsistencias en la documentación y no aborda el patrón sistemático de saldos inflados a través de múltiples cuentas con lapping que las confirmaciones revelarían. La opción D es incorrecta porque retrasar el registro de pagos legítimos no resuelve el problema fundamental—los clientes cuyos pagos fueron robados aún recibirán confirmaciones mostrando saldos que ya pagaron, y estos clientes responderán al auditor indicando la discrepancia, exponiendo así el esquema de lapping sin importar si Margaret tiene pagos adicionales para continuar la rotación."
+    },
+    {
+      "num": 9,
+      "text": "Susan Martinez, la examinadora de fraude en Greenfield Medical Center, recientemente descubrió que un empleado de facturación había estado malversando pagos de pacientes acreditando cheques entrantes a otras cuentas de pacientes con saldos pendientes, y luego cubriendo esas cuentas cuando llegaban pagos posteriores. ¿Cuál de los siguientes controles sería MÁS efectivo para prevenir que este tipo de esquema de lapping ocurra en el futuro?",
+      "tag": "Lapping Prevention",
+      "options": [
+        "A. Requerir que los clientes reciban estados de cuenta mensuales mostrando todos los pagos acreditados a sus cuentas",
+        "B. Implementar una política de que el empleado de facturación debe tomar vacaciones anuales de al menos cinco días consecutivos",
+        "C. Instalar cámaras de videovigilancia en el área donde ocurre el procesamiento de pagos",
+        "D. Requerir que el empleado de facturación provea un fidelity bond antes de manejar pagos de clientes"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Enviar estados de cuenta mensuales directamente a los clientes es el control preventivo más efectivo contra el lapping porque crea una verificación independiente fuera del control del perpetrador. Cuando los clientes reciben estados de cuenta mostrando los pagos acreditados a sus cuentas, cualquier discrepancia entre lo que pagaron y lo que fue acreditado se vuelve inmediatamente evidente. Este ciclo de retroalimentación externa hace que los esquemas de lapping sean extremadamente difíciles de sostener, ya que el perpetrador no puede manipular tanto los registros internos como el conocimiento independiente del cliente sobre sus pagos. La comunicación directa entre la organización y el cliente evita la capacidad del defraudador de ocultar la malversación.",
+      "justification_wrong": "La opción B (vacaciones obligatorias) es un control detectivo en lugar de preventivo; ayuda a descubrir esquemas de lapping en curso cuando el perpetrador está ausente y no puede continuar el ciclo de encubrimiento, pero no previene que el esquema comience. La opción C (videovigilancia) podría disuadir algún fraude pero no prevendría efectivamente el lapping ya que la actividad fraudulenta involucra registros contables en lugar de robo físico que las cámaras capturarían; las funciones laborales legítimas del empleado incluyen procesar pagos. La opción D (fidelity bond) es un control compensatorio que proporciona recuperación de seguro después de que ocurre una pérdida pero no hace nada para prevenir el esquema de lapping en sí; los bonds transfieren el riesgo pero no reducen la oportunidad de fraude."
+    },
+    {
+      "num": 10,
+      "text": "Durante una auditoría de rutina en una farmacia minorista, el examinador de fraude descubre que un cajero ha estado aceptando pagos de clientes por recetas médicas pero no registra ciertas transacciones en el sistema de punto de venta. El cajero se embolsa el efectivo antes de que ingrese a los registros contables de la farmacia. En un caso separado en la misma farmacia, otro empleado retira efectivo del cajón de la caja registradora al final de su turno después de que todas las ventas han sido debidamente registradas. ¿Cómo debe clasificar el examinador de fraude estos dos esquemas?",
+      "tag": "Skimming vs Larceny",
+      "options": [
+        "A. El primer esquema es skimming porque el efectivo fue robado antes de ser registrado, mientras que el segundo esquema es cash larceny porque el robo ocurrió después de que las ventas fueron registradas",
+        "B. Ambos esquemas se clasifican como skimming porque ambos involucran el robo de recibos de efectivo por empleados con acceso a pagos de clientes",
+        "C. El primer esquema es cash larceny porque involucra manipulación de la caja registradora, mientras que el segundo esquema es skimming porque ocurre después del horario comercial",
+        "D. Ambos esquemas se clasifican como cash larceny porque los fondos robados pertenecían al empleador al momento del robo"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "La distinción clave entre skimming y cash larceny es el punto en el cual ocurre el robo en relación con los registros contables. El skimming involucra el robo de efectivo antes de que sea registrado en los libros y registros de la organización, convirtiéndolo en un esquema fuera de libros que es más difícil de detectar mediante conciliación. El cash larceny involucra el robo de efectivo después de que ha sido registrado en el sistema contable, creando un faltante en libros que puede ser detectado mediante la conciliación del efectivo físico con los montos registrados. En el primer caso, el cajero roba pagos antes de que ingresen al sistema contable, lo cual es skimming. En el segundo caso, el empleado roba efectivo que ya ha sido registrado, lo cual es cash larceny.",
+      "justification_wrong": "La opción B clasifica incorrectamente ambos esquemas como skimming, sin reconocer que el segundo esquema involucra robo después del registro, lo cual es la característica definitoria del cash larceny. La opción C invierte las clasificaciones correctas e introduce factores irrelevantes como 'manipulación de la caja registradora' y el momento 'después del horario comercial,' ninguno de los cuales determina la distinción entre skimming y larceny. La opción D clasifica incorrectamente ambos como cash larceny y utiliza un razonamiento defectuoso sobre la propiedad; aunque ambos montos pertenecen al empleador, el factor crítico es si el robo ocurrió antes o después del registro contable, no la propiedad al momento del robo."
+    },
+    {
+      "id": "S1D03-Q17",
+      "question": "A nonprofit organization receives numerous cash and check donations through the mail. Which of the following internal controls would be MOST effective in preventing the misappropriation of these incoming receipts?",
+      "options": [
+        "Having the accounting department open all mail and prepare a list of receipts before forwarding to the cashier",
+        "Requiring two employees to be present when opening mail containing payments, with one creating an independent log",
+        "Implementing a lockbox system where donations are sent directly to the bank for processing",
+        "Requiring all employees who handle cash to take mandatory annual vacations of at least one week"
+      ],
+      "correct_answer": 2,
+      "explanation": "A lockbox system is the most effective control because it completely removes employee access to incoming cash receipts. The bank receives and processes all payments directly, eliminating the opportunity for theft before receipts are recorded. While having two employees present (option B) is a good control, it still allows access to the funds. Opening mail in accounting (option A) simply shifts the opportunity to a different department. Mandatory vacations (option D) are a detective control that may help discover fraud but don't prevent initial misappropriation of mail receipts.",
+      "topic": "Cash Receipts Internal Controls",
+      "subtopic": "Mail Receipt Controls",
+      "num": 11
+    },
+    {
+      "id": "S1D03_018",
+      "category": "Asset Misappropriation — Cash Receipts",
+      "question": "A retail store manager creates fake refund transactions and pockets the cash from the register. Which of the following internal controls would be MOST effective in preventing this scheme?",
+      "options": [
+        "Requiring all refunds to be supported by original receipts and approved by a supervisor",
+        "Conducting annual inventory counts",
+        "Segregating duties between accounts payable and accounts receivable",
+        "Implementing mandatory vacation policies for cashiers"
+      ],
+      "correct": 0,
+      "explanation": "Fraudulent refund schemes involve creating false refund transactions to justify removing cash from the register. The most effective control is requiring original receipts and supervisory approval for all refunds, which makes it difficult to process fake refunds. Annual inventory counts (option B) would not detect cash refund fraud. Segregating AP and AR duties (option C) is irrelevant to cash register refunds. Mandatory vacations (option D) are a detective control but not as directly preventive as refund documentation and approval requirements.",
+      "topic": "Fraudulent Refunds",
+      "num": 12
+    },
+    {
+      "id": "S1D03_019",
+      "question": "A customer service representative processes daily mail orders and has access to both the cash receipts and customer account records. Which of the following internal controls would be MOST effective in preventing this employee from misappropriating cash receipts and concealing the theft through unauthorized account adjustments?",
+      "options": [
+        "Requiring daily bank deposits to be made by the same employee who opens the mail",
+        "Implementing segregation of duties between cash handling and accounts receivable recordkeeping functions",
+        "Having the employee prepare daily reconciliations of cash receipts to deposit slips",
+        "Requiring the employee to take mandatory vacation days once per year"
+      ],
+      "correct_answer": 1,
+      "explanation": "The most effective control is segregation of duties between cash handling and accounts receivable recordkeeping. When one employee has access to both physical cash and the ability to adjust customer accounts, they can steal cash and cover it up by writing off accounts, creating false credits, or manipulating records. Separating these functions ensures that no single person can both perpetrate and conceal a theft. Option A actually increases risk by concentrating duties. Option C is ineffective because the same person performing the reconciliation can manipulate it. Option D (mandatory vacation) is a useful detective control but not as fundamentally preventive as proper segregation of duties.",
+      "topic": "Asset Misappropriation",
+      "subtopic": "Cash Receipts",
+      "cognitive_level": "Application",
+      "reference": "CFE Exam Study Guide - Segregation of Duties in Cash Receipts",
+      "num": 13
+    },
+    {
+      "id": "S1D03-Q020",
+      "topic": "Asset Misappropriation — Cash Receipts",
+      "question": "A company receives customer payments through lockbox services at a bank. Which of the following controls would be MOST effective in preventing an employee from misappropriating these receipts?",
+      "options": [
+        "Requiring the bank to send daily deposit summaries directly to the accounting department for reconciliation with customer accounts",
+        "Having the mailroom supervisor open all lockbox correspondence and verify payment amounts",
+        "Designating a trusted employee to pick up payments from the bank and prepare deposit slips",
+        "Implementing a policy requiring two signatures on all checks deposited through the lockbox"
+      ],
+      "correct_answer": 0,
+      "explanation": "When using lockbox services, the bank receives payments directly from customers and deposits them without company employees handling the cash or checks. The most effective control is having the bank send deposit summaries directly to accounting for reconciliation with customer accounts, creating an independent verification trail. This segregates duties and removes employees from the cash receipt process entirely. Options B and C reintroduce employee access to cash receipts, creating opportunities for theft. Option D is ineffective because customer payments already bear customer signatures, and the lockbox system bypasses the need for company endorsements at the receipt stage.",
+      "topic_tags": [
+        "Lockbox Controls",
+        "Cash Receipt Controls",
+        "Segregation of Duties",
+        "Preventive Controls"
+      ],
+      "difficulty": "Medium",
+      "num": 14
+    },
+    {
+      "id": "S1D03_021",
+      "question": "A retail store implements a point-of-sale system that automatically records all transactions and generates a sequential receipt for each sale. However, the cashier has discovered that by voiding a transaction immediately after the customer leaves and pocketing the cash, they can steal funds. Which of the following controls would be MOST effective in preventing this scheme?",
+      "options": [
+        "Requiring management approval for all voids and refunds with immediate notification",
+        "Installing security cameras pointed at the cash register",
+        "Conducting random cash counts at shift changes",
+        "Requiring two employees to be present during all transactions"
+      ],
+      "correct_answer": 0,
+      "explanation": "Requiring management approval for all voids and refunds with immediate notification is the most effective control because it directly addresses the mechanism of the fraud. The scheme relies on the cashier's ability to void legitimate transactions without oversight. Immediate management notification and approval requirements create a contemporaneous review process that makes it difficult for the cashier to complete unauthorized voids. While security cameras (option B) might deter some fraud, they require active monitoring or post-event review to be effective. Random cash counts (option C) might eventually detect shortages but don't prevent the voiding scheme. Requiring two employees (option D) is costly and impractical for most retail operations.",
+      "topic": "Cash Register Manipulation",
+      "scope": "S1D03",
+      "num": 15
+    }
+  ]
+}

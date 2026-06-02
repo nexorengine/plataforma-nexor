@@ -1,0 +1,710 @@
+{
+  "cert_id": "cissp",
+  "domain_id": "security_assessment",
+  "quiz_num": 1,
+  "domain_name": "Security Assessment & Testing",
+  "cert_name": "CISSP",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "¿Cuál es el objetivo primario de una evaluación de vulnerabilidades en el contexto de NIST SP 800-53?",
+      "tag": "Estrategias de Evaluación",
+      "options": [
+        "C. Eliminar todos los riesgos sin considerar el costo-beneficio organizacional",
+        "D. Certificar que el sistema cumple con requisitos de disponibilidad únicamente",
+        "A. Identificar, documentar y priorizar debilidades de seguridad antes de que sean explotadas",
+        "B. Realizar exclusivamente pruebas de penetración en entornos de producción"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-53 RA-5 establece que la evaluación de vulnerabilidades debe identificar y documentar hallazgos para priorización de remediación. La evaluación precede a la explotación activa, diferenciándose de penetración testing que es más invasivo.",
+      "justification_wrong": "Penetración testing es más invasivo que evaluación de vulnerabilidades. No es realista eliminar todos los riesgos. La evaluación abarca confidencialidad, integridad y disponibilidad, no solo disponibilidad."
+    },
+    {
+      "num": 2,
+      "text": "En una estrategia de prueba de controles de seguridad, ¿qué diferencia fundamental existe entre un test de \"caja blanca\" y \"caja negra\"?",
+      "tag": "Prueba de Controles de Seguridad",
+      "options": [
+        "B. Caja blanca es más rápida; caja negra siempre requiere más tiempo",
+        "C. Caja negra es más costosa que caja blanca en todos los escenarios",
+        "D. Caja blanca solo se aplica a aplicaciones web, caja negra a infraestructura",
+        "A. Caja blanca proporciona acceso a código fuente y documentación; caja negra no dispone de información interna"
+      ],
+      "correct": 3,
+      "justification_correct": "OWASP Testing Guide y NIST SP 800-115 definen caja blanca con acceso completo (transparente) y caja negra sin acceso a internals. Caja gris es enfoque híbrido. La diferencia radica en transparencia, no en velocidad o costo absoluto.",
+      "justification_wrong": "Velocidad depende de complejidad, no del tipo. Costo varía según scope. Ambos tipos aplican a aplicaciones, infraestructura e infraestructura equivalentemente en contextos diferentes."
+    },
+    {
+      "num": 3,
+      "text": "Conforme a ISO/IEC 27001:2022, ¿cuál es la finalidad primaria del análisis de cobertura de pruebas en evaluación de seguridad?",
+      "tag": "Análisis de Cobertura de Pruebas",
+      "options": [
+        "C. Reemplazar completamente las auditorías internas programadas",
+        "A. Garantizar que todos los controles críticos identificados en el SGSI sean evaluados sistemáticamente",
+        "B. Maximizar el número de vulnerabilidades detectadas sin importar su relevancia",
+        "D. Certificar la inexistencia total de riesgos residuales"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 Clause 9.2 requiere evaluación periódica de controles. Cobertura de pruebas asegura que controles críticos identificados en Análisis de Riesgos (Clause 6.1) sean sistemáticamente validados, no eliminados ni descubiertos aleatoriamente.",
+      "justification_wrong": "Cantidad no garantiza calidad. Auditoría interna es independiente de testing. Riesgos residuales siempre existen; testing mitiga pero no certifica inexistencia absoluta."
+    },
+    {
+      "num": 4,
+      "text": "En una prueba de penetración ética dentro del marco NIST SP 800-115, ¿cuál debe ser el primer paso formal?",
+      "tag": "Penetration Testing",
+      "options": [
+        "D. Ejecutar ataques de denegación de servicio para evaluar resiliencia",
+        "C. Explotar vulnerabilidades críticas identificadas sin validación previa",
+        "B. Escanear inmediatamente toda la red objetivo sin comunicación previa",
+        "A. Establecer un acuerimiento escrito (Rules of Engagement) que documente alcance, autorización y restricciones"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-115 Technical Security Testing sección 3.4 especifica que antes de cualquier actividad se requiere documentar Rules of Engagement (ROE): alcance, autoridades, objetivos, restricciones legales y técnicas para asegurar legitimidad.",
+      "justification_wrong": "Escaneo sin ROE es ilegal. Explotación sin validación es reckless. DDoS activos violarían ROE típicamente. Documentación legal precede toda actividad técnica."
+    },
+    {
+      "num": 5,
+      "text": "¿Cuál es la principal diferencia entre una revisión de código estático (SAST) y dinámico (DAST) conforme a estándares de seguridad de software?",
+      "tag": "Revisión de Código",
+      "options": [
+        "A. SAST analiza código fuente sin ejecutarlo; DAST ejecuta la aplicación para detectar vulnerabilidades en tiempo de ejecución",
+        "D. SAST requiere acceso a código; DAST requiere acceso a código fuente también",
+        "C. DAST es más económico que SAST en todas las circunstancias",
+        "B. SAST detecta todos los defectos; DAST solo detecta vulnerabilidades criticas"
+      ],
+      "correct": 0,
+      "justification_correct": "OWASP SAMM y NIST SP 800-64 definen SAST como análisis estático de código fuente (compile-time) para identificar defectos; DAST como pruebas dinámicas (runtime) que detectan comportamientos anómalos. Complementarios, no excluyentes.",
+      "justification_wrong": "Ni SAST detecta todo ni DAST solo críticas. Costo varía. DAST típicamente NO requiere acceso a código fuente; esa es ventaja diferenciadora de análisis dinámico."
+    },
+    {
+      "num": 6,
+      "text": "Durante una evaluación de seguridad, usted debe seleccionar una estrategia de prueba que proporcione cobertura completa de todos los caminos de ejecución de código sin exponer el sistema a riesgos operacionales. ¿Cuál es la estrategia más apropiada?",
+      "tag": "assessment_and_test_strategies",
+      "options": [
+        "B. Pruebas directas en producción con monitoreo en tiempo real",
+        "A. Pruebas en entorno de laboratorio con datos sintéticos antes de pruebas en producción",
+        "D. Análisis estático sin consideración de comportamiento dinámico",
+        "C. Evaluación exclusiva de documentación sin validación técnica"
+      ],
+      "correct": 1,
+      "justification_correct": "Según NIST SP 800-115, las pruebas en ambientes controlados previos a producción minimizan riesgos operacionales. Las transacciones sintéticas permiten validar todas las rutas sin comprometer sistemas en vivo, alineado con ISO/IEC 27001:2022 requisito A.14.2.1.",
+      "justification_wrong": "Pruebas en producción violan principios de seguridad del cambio; análisis estático solo detecta vulnerabilidades obvias; evaluación documental carece de validación técnica verificable según OWASP Testing Guide."
+    },
+    {
+      "num": 7,
+      "text": "En una prueba de penetración de alcance controlado, el pentester descubre una vulnerabilidad crítica en autenticación de API. ¿Cuál es el protocolo correcto de reporte según estándares CISSP?",
+      "tag": "penetration_testing",
+      "options": [
+        "C. Retener información hasta obtener compensación adicional",
+        "A. Reportar inmediatamente públicamente para acelerar remedición",
+        "B. Informar confidencialmente al cliente dentro del acuerdo de alcance, documentar hallazgos con evidencia reproducible",
+        "D. Compartir detalles técnicos con competidores para benchmarking de seguridad"
+      ],
+      "correct": 2,
+      "justification_correct": "PTES (Penetration Testing Execution Standard) y Code of Ethics ISC2 requieren reporte confidencial al cliente, documentación con pruebas reproducibles y notificación responsable. NIST SP 800-115 especifica cadena de custodia de hallazgos críticos.",
+      "justification_wrong": "Divulgación pública incumple NDA y ley de responsabilidad civil; retención es extorsión; compartir con terceros viola confidencialidad contractual y ética profesional CISSP."
+    },
+    {
+      "num": 8,
+      "text": "Durante análisis de registros de auditoría de acceso a datos sensibles, identifica 47 accesos fallidos seguidos de 1 exitoso desde IP externa. ¿Qué técnica de revisión está aplicando?",
+      "tag": "log_reviews",
+      "options": [
+        "B. Validación de cumplimiento normativo exclusivamente",
+        "C. Auditoría de cambios de configuración",
+        "A. Análisis de anomalías mediante detección de patrones de comportamiento anormal",
+        "D. Monitoreo de disponibilidad de servicio"
+      ],
+      "correct": 2,
+      "justification_correct": "El patrón fuerza bruta + acceso exitoso indica anomalía. ISO/IEC 27035:2016 requiere análisis de eventos anómalos. NIST SP 800-92 documenta técnicas de correlación de registros para detectar intentos de compromiso mediante patrones estadísticos.",
+      "justification_wrong": "Cumplimiento normativo es retrospectivo; cambios de configuración son eventos distintos; disponibilidad no aborda patrones de acceso malicioso según metodología SIEM estándar."
+    },
+    {
+      "num": 9,
+      "text": "En una evaluación de controles de seguridad de una aplicación web, ¿cuál combinación de técnicas proporciona máxima cobertura de vulnerabilidades OWASP Top 10?",
+      "tag": "security_control_testing",
+      "options": [
+        "A. Solo análisis estático (SAST) del código fuente",
+        "D. Validación de documentación de arquitectura",
+        "C. Pruebas de caja negra sin acceso a código",
+        "B. Análisis estático (SAST) + análisis dinámico (DAST) + revisión manual de código + pruebas de casos de mal uso"
+      ],
+      "correct": 3,
+      "justification_correct": "OWASP Testing Guide v4.2 y NIST SP 800-115 recomiendan enfoque integrado: SAST detecta defectos de código, DAST valida comportamiento en tiempo ejecución, revisión manual captura lógica floja, casos de mal uso verifica escenarios adversarios.",
+      "justification_wrong": "SAST solo detecta 60% de vulnerabilidades; DAST sin SAST pierde defectos internos; caja negra excluye lógica sensible; documentación sin validación técnica no verifica implementación actual."
+    },
+    {
+      "num": 10,
+      "text": "Al evaluar métricas de seguridad de gestión, ¿cuál indicador es más efectivo para demostrar tendencia de riesgo en auditorías de log según ISO/IEC 27001:2022?",
+      "tag": "security_management_metrics",
+      "options": [
+        "C. Disponibilidad del servicio de logging en porcentaje",
+        "B. Tasa de eventos críticos/anómalos por millón de transacciones con desviación estándar trimestral",
+        "A. Número total de eventos registrados por mes (sin filtrado)",
+        "D. Cantidad de reglas SIEM configuradas"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 A.12.4.1 requiere métrica cuantitativa normalizada. Tasa por millón transacciones elimina sesgo de volumen; desviación estándar trimestral detecta cambios de tendencia estadísticamente significativos versus ruido operacional.",
+      "justification_wrong": "Eventos totales sin contexto no indican riesgo; disponibilidad mide funcionalidad, no seguridad; cantidad de reglas no correlaciona con efectividad según NIST SP 800-128 principios de metrología."
+    },
+    {
+      "num": 11,
+      "text": "Durante una evaluación de seguridad, se requiere validar la efectividad de los controles de acceso implementados en una aplicación crítica. ¿Cuál es el enfoque más apropiado según NIST SP 800-53 para realizar esta prueba de control?",
+      "tag": "security_control_testing",
+      "options": [
+        "D. Solicitar certificaciones de cumplimiento previas del proveedor de software",
+        "C. Implementar monitoreo pasivo que registre accesos sin interferir en operaciones",
+        "A. Realizar pruebas funcionales contra la lógica de autorización mediante casos de prueba que intenten escalar privilegios y acceder a recursos no autorizados",
+        "B. Revisar únicamente la documentación de políticas de acceso sin ejecutar pruebas técnicas"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-53 CA-2 requiere pruebas funcionales de controles. Las pruebas deben verificar que la lógica de autorización funciona correctamente, incluyendo intentos de escalación de privilegios y acceso no autorizado, validando efectividad operativa real.",
+      "justification_wrong": "Documentación sin pruebas técnicas no valida implementación real (opción B). Monitoreo pasivo no prueba controles (opción C). Certificaciones externas no reemplazan evaluación independiente (opción D) según NIST SP 800-53 CA-2."
+    },
+    {
+      "num": 12,
+      "text": "Un equipo de evaluación planifica un ejercicio de prueba de penetración en un entorno de producción crítico. Conforme a ISO/IEC 27001:2022 y mejores prácticas, ¿qué aspecto es FUNDAMENTAL antes de ejecutar la prueba?",
+      "tag": "penetration_testing",
+      "options": [
+        "D. Realizar pruebas solo durante horarios fuera de negocio para minimizar impacto operativo",
+        "A. Obtener autorización escrita explícita del propietario del sistema y definir alcance, límites temporales, y exclusiones técnicas documentadas",
+        "C. Ejecutar pruebas sin restricciones para evaluar respuesta ante ataques desconocidos",
+        "B. Notificar al equipo de seguridad operativa el mismo día de la prueba para mayor autenticidad"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 A.6.5 y PTES (Penetration Testing Execution Standard) requieren autorización formal, definición explícita de alcance, límites temporales y exclusiones. Documentación de consentimiento es requisito legal y ético fundamental.",
+      "justification_wrong": "Notificación el mismo día compromete validez (opción B). Sin restricciones viola autorización legal (opción C). Horarios fuera de negocio no reemplaza autorización formal (opción D). Estos enfoques incumplen estándares normativos."
+    },
+    {
+      "num": 13,
+      "text": "Al realizar análisis de cobertura de pruebas en una aplicación web, se identifica que solo 62% del código crítico ha sido evaluado. De acuerdo con OWASP Testing Guide y métricas de seguridad, ¿qué acción es más adecuada?",
+      "tag": "test_coverage_analysis",
+      "options": [
+        "A. Aceptar el 62% como suficiente dado que supera 50% de cobertura",
+        "B. Ejecutar pruebas adicionales en módulos no cubiertos, priorizando funcionalidad crítica de seguridad, con meta mínima 85-90%",
+        "D. Extender pruebas a 100% de líneas de código incluyendo funciones triviales",
+        "C. Aumentar cobertura únicamente si hay vulnerabilidades confirmadas previas"
+      ],
+      "correct": 1,
+      "justification_correct": "OWASP Testing Guide y métricas CISSP recomiendan cobertura 85-90% mínimo para código crítico. Priorización por riesgo es esencial. El 62% en funcionalidad crítica es insuficiente; requiere análisis de brecha y pruebas complementarias enfocadas.",
+      "justification_wrong": "62% es subóptimo para código crítico (opción A). Esperar vulnerabilidades es reactivo, no preventivo (opción C). Cobertura 100% es ineficiente; debe ser basada en riesgo (opción D) según ISO/IEC 27001."
+    },
+    {
+      "num": 14,
+      "text": "Durante una revisión de auditoría de logs en un sistema de gestión de identidades (IDM), se detecta una discrepancia: accesos registrados sin correspondientes eventos de autenticación. ¿Cuál es el problema técnico más probable y la acción recomendada?",
+      "tag": "log_reviews",
+      "options": [
+        "C. Los logs de IDM y autenticación están en sistemas desacoplados; aceptar la discrepancia como normal",
+        "A. Fallo en sincronización de timestamps; ejecutar sincronización NTP y auditar integridad de logs con HMAC según NIST SP 800-92",
+        "D. Implementar encriptación end-to-end de credenciales para ocultar accesos no documentados",
+        "B. Los usuarios están utilizando sesiones prolongadas legitimadas; no requiere acción correctiva"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-92 (Audit Log Management) requiere sincronización de tiempo entre sistemas y validación de integridad. Discrepancias indican posible desincronización horaria o gaps de logging. NTP y verificación criptográfica de logs resuelven la raíz técnica.",
+      "justification_wrong": "Sesiones prolongadas no explican eventos faltantes (opción B). Sistemas desacoplados requieren correlación (opción C). Encriptación no soluciona auditoría (opción D). Según NIST SP 800-92, logs deben ser íntegros, confiables y correlacionados."
+    },
+    {
+      "num": 15,
+      "text": "En una evaluación de seguridad de API REST, se aplican pruebas de casos de mal uso (misuse case testing) para validar protecciones contra amenazas OWASP Top 10. ¿Cuál es el objetivo principal y la metodología correcta?",
+      "tag": "misuse_case_testing",
+      "options": [
+        "D. Validar que todas las solicitudes HTTP retornan códigos de estado 200 OK",
+        "C. Ejecutar fuzzing aleatorio en endpoints sin estrategia definida",
+        "A. Identificar escenarios negativos donde actores maliciosos intentan violar requisitos de seguridad mediante inyección, autenticación débil y autorización defectuosa documentados en casos de uso adverso",
+        "B. Documentar todos los casos de uso legítimos sin considerar acciones adversariales"
+      ],
+      "correct": 2,
+      "justification_correct": "Misuse case testing (OWASP) define escenarios donde actores maliciosos violan requisitos. Incluye inyección SQL, autenticación débil, escalación de privilegios. Documentación formal de amenazas adversarias guía pruebas sistemáticas contra OWASP Top 10.",
+      "justification_wrong": "Casos de uso legítimos no incluyen amenazas (opción B). Fuzzing sin estrategia es ineficiente (opción C). Códigos HTTP 200 no validan seguridad (opción D). Según OWASP, misuse cases requieren modelado formal de amenazas adversarias."
+    },
+    {
+      "num": 16,
+      "text": "Durante una evaluación de seguridad integral, un profesional debe determinar la estrategia óptima para validar la efectividad de controles de seguridad en un entorno de producción crítico. ¿Cuál enfoque proporciona el mayor equilibrio entre cobertura de riesgos y minimización de impacto operacional?",
+      "tag": "Estrategias de Evaluación y Testing",
+      "options": [
+        "B. Pruebas de penetración activas simultáneas en todos los sistemas críticos durante horario laboral",
+        "C. Auditoría documental exclusiva sin validación técnica de controles implementados",
+        "D. Escaneo de vulnerabilidades continuo con acceso administrativo irrestricto en producción",
+        "A. Pruebas no invasivas combinadas con simulaciones sintéticas y revisiones de logs en períodos de bajo uso"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-53A y ISO 27001:2022 recomiendan enfoques graduales: pruebas no invasivas, transacciones sintéticas y análisis de logs equilibran validación de controles con minimización de riesgos operacionales. Cumple CISSP Domain 6 sobre assessment strategies.",
+      "justification_wrong": "Opciones B, C y D violan principios de evaluación prudente: B causa indisponibilidad, C no valida implementación real, D introduce riesgos innecesarios en producción según ISO 27001 y NIST."
+    },
+    {
+      "num": 17,
+      "text": "Un equipo de testing de seguridad necesita validar que los controles de acceso lógico previenen escalación de privilegios en aplicaciones multi-tenant. ¿Qué combinación de técnicas proporciona cobertura más completa según estándares de testing?",
+      "tag": "Pruebas de Controles de Seguridad",
+      "options": [
+        "A. Análisis estático de código, testing de interfaz de API, misuse case testing y validación de boundary conditions",
+        "B. Únicamente escaneo automatizado de vulnerabilidades conocidas con CVSS ≥ 7.0",
+        "D. Penetration testing sin restricciones de scope en ambiente de producción",
+        "C. Revisión documental de políticas de acceso sin validación técnica de implementación"
+      ],
+      "correct": 0,
+      "justification_correct": "OWASP y NIST SP 800-53 especifican testing multi-capa: análisis estático detecta defectos de código, testing de interfaz valida controles implementados, misuse cases simulan ataques, boundary testing previene bypasses. Cobertura comprehensiva para escenarios multi-tenant.",
+      "justification_wrong": "B pierde vulnerabilidades zero-day, C no valida implementación real, D incumple governance. Testing efectivo requiere estrategia combinada per OWASP Testing Guide."
+    },
+    {
+      "num": 18,
+      "text": "Durante revisión de logs de auditoría de un sistema crítico, se identifica patrón anómalo: acceso a 50,000 registros en 2 minutos durante horario de poca actividad. ¿Cuál es el análisis prioritario para determinar clasificación de riesgo según metodología de evaluación de seguridad?",
+      "tag": "Revisión de Logs de Auditoría",
+      "options": [
+        "D. Ejecutar penetration test activo contra la cuenta para reproducir el incidente",
+        "B. Inmediatamente desactivar cuenta de usuario sin investigación adicional",
+        "A. Correlacionar timestamp del acceso con cambios de configuración, validar credenciales de usuario, verificar funcionalidad legítima, comparar con línea base histórica",
+        "C. Ignorar el evento si la contraseña cumple con política de complejidad requerida"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 A.12.4.1 y NIST SP 800-53 AU-6 requieren correlación de eventos, validación contextual y análisis histórico antes de clasificación. Técnica SIEM de análisis multi-variable previene falsos positivos y validaimpacto real.",
+      "justification_wrong": "B viola investigación forense, C ignora anomalía contextual, D puede destruir evidencia. Análisis prudente requiere validación en fases per SANS Incident Handler Handbook."
+    },
+    {
+      "num": 19,
+      "text": "Una organización implementa cobertura de análisis de code review en aplicaciones web considerando OWASP Top 10 2021. ¿Cuál métrica de cobertura es más indicativa de efectividad real de control según estándares de testing de seguridad?",
+      "tag": "Análisis de Cobertura de Testing",
+      "options": [
+        "D. Tiempo total invertido en revisión de código sin correlación con riesgos identificados",
+        "A. Porcentaje de líneas de código revisado + funciones críticas identificadas + vulnerabilidades de lógica de negocio detectadas + validación de datos mapeada",
+        "C. Cantidad de falsos positivos reportados por herramienta de análisis estático",
+        "B. Únicamente número total de líneas de código escaneadas por herramienta SAST automatizada"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-53 SI-7 y OWASP Testing Guide especifican cobertura multi-dimensional: cantidad + criticidad + tipos de vulnerabilidad. Métrica combinada refleja efectividad real de detección versus volumen de código.",
+      "justification_wrong": "B mide actividad, no efectividad. C mide precisión de herramienta, no cobertura de riesgos. D es métrica de esfuerzo sin correlación con resultados per CISSP Domain 6 testing metrics."
+    },
+    {
+      "num": 20,
+      "text": "Un equipo de seguridad evalúa vulnerabilidades en una API REST crítica utilizando testing de interfaz especializado. ¿Cuál secuencia de técnicas proporciona validación más exhaustiva de control de acceso y protección de datos según NIST y estándares de testing?",
+      "tag": "Testing de Interfaz y Validación de Controles",
+      "options": [
+        "C. Validación de campos de formulario sin testing de lógica de negocio o mecanismos criptográficos",
+        "D. Testing limitado a vulnerabilidades de inyección SQL sin considerar broken access control (OWASP #1)",
+        "A. Testing de autenticación (tokens expirados/inválidos), autorización (escalación horizontal/vertical), validación de entrada (injection), criptografía de datos en tránsito y encriptación de datos en reposo",
+        "B. Únicamente prueba de credenciales válidas con usuario administrativo en endpoint de producción"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-53 AC-3 y OWASP API Security exigen validación integral: autenticación, autorización, inyección, criptografía. Cobertura holística detecta múltiples vectores de ataque en APIs según OWASP Testing Guide v4.",
+      "justification_wrong": "B incumple principios de testing (sin negación de acceso), C omite lógica critica, D enfoca solo una clase de vulnerabilidad ignorando broken access control que es vector primario per OWASP Top 10."
+    },
+    {
+      "num": 21,
+      "text": "En una estrategia de prueba de seguridad integral, ¿cuál es el principal diferenciador entre un test de penetración black-box y un assessment de vulnerabilidades tradicional según NIST SP 800-115?",
+      "tag": "Estrategias de Assessment y Penetration Testing",
+      "options": [
+        "D. Ambos son idénticos en metodología pero difieren solo en documentación final",
+        "B. El assessment de vulnerabilidades requiere acceso administrativo mientras que penetration test opera sin credenciales",
+        "A. El penetration test simula ataques reales con contexto de adversario mientras que el assessment enumera vulnerabilidades sin cadena de explotación",
+        "C. El penetration test solo detecta CVEs conocidos y el assessment incluye zero-days"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-115 establece que penetration testing demuestra cadenas de explotación reales simulando adversarios, mientras assessment de vulnerabilidades cataloga hallazgos sin validar impacto operacional. El contexto de adversario es diferenciador clave.",
+      "justification_wrong": "Las otras opciones confunden premisas técnicas: acceso administrativo no es requisito definitorio, CVE coverage es orthogonal a metodología, y las metodologías difieren fundamentalmente en objetivo y alcance."
+    },
+    {
+      "num": 22,
+      "text": "¿Cuál enfoque de cobertura de test (test coverage analysis) es más efectivo para validar controles compensatorios en un ambiente donde los controles primarios están degradados, según ISO/IEC 27001:2022?",
+      "tag": "Análisis de Cobertura de Test y Control Testing",
+      "options": [
+        "A. Cobertura de caminos críticos (critical path coverage) enfocada en flujos de negocio con validación de efectividad compensatoria",
+        "D. Cobertura de instrucción (instruction coverage) en rutinas de logging",
+        "C. Cobertura de ramas (branch coverage) en excepciones de validación",
+        "B. Cobertura de línea de código (line coverage) en módulos de autenticación"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27001:2022 Anexo A.8 requiere validar que controles compensatorios mitiguen riesgos de controles primarios degradados. Cobertura de caminos críticos asegura que flujos sensibles están protegidos aunque controles estén comprometidos.",
+      "justification_wrong": "Las coberturas de código (línea, rama, instrucción) son tácticas de testing de software, no estrategias de validación de controles de seguridad compensatorios. No direccionan mitigación de riesgos operacionales."
+    },
+    {
+      "num": 23,
+      "text": "En misuse case testing para un sistema de transferencia financiera, ¿qué técnica de generación de casos de mal uso (abuse cases) alinea mejor con el modelo de amenaza STRIDE según OWASP?",
+      "tag": "Misuse Case Testing y Threat Modeling",
+      "options": [
+        "D. Usar solo test cases positivos invertidos sin contexto de adversario",
+        "B. Generar casos basados únicamente en historias de usuario invertidas sin correlación amenaza-control",
+        "A. Mapear cada elemento STRIDE (Spoofing, Tampering, Repudiation, etc.) a un misuse case específico con validación de controles mitigantes",
+        "C. Ejecutar fuzz testing de inputs sin definición previa de escenarios maliciosos"
+      ],
+      "correct": 2,
+      "justification_correct": "OWASP y NIST SP 800-53 recomiendan correlacionar cada categoría STRIDE a controles específicos. Misuse cases deben mapear amenazas a mitigaciones, validando que cada control neutraliza su amenaza correspondiente.",
+      "justification_wrong": "Las inversiones de historias de usuario carecen de rigor de threat modeling. Fuzz testing es complementario, no sustituto. Test cases positivos invertidos no capturan lógica intencional maliciosa del adversario."
+    },
+    {
+      "num": 24,
+      "text": "¿Cuál métrica de efectividad de auditoría (audit log analysis) según NIST SP 800-92 permite detectar patrones de ataque multi-etapa que no serían evidentes en alertas individuales?",
+      "tag": "Revisión de Logs y Security Metrics",
+      "options": [
+        "B. Conteo simple de excepciones por tipo de evento en período de 24 horas",
+        "C. Alertas basadas en umbrales estáticos de intentos fallidos de acceso",
+        "A. Análisis de correlación temporal de eventos (time-windowed event correlation) con análisis de trayectorias de ataque conocidas",
+        "D. Reportes agregados de eventos sin análisis de secuenciación"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-92 sección 4.2 especifica que correlación temporal permite detectar cadenas de ataque (reconnaissance → exploitation → persistence). Análisis de trayectorias conocidas (attack chains) identifica patrones multi-etapa no obvios.",
+      "justification_wrong": "Métricas simples (conteos, umbrales estáticos, agregaciones) pierden contexto temporal y causal. No detectan ataques sofisticados que operan en timeframes extendidos o con patrones heterogéneos."
+    },
+    {
+      "num": 25,
+      "text": "En revisión de código estática (static code review) de controles criptográficos, ¿cuál hallazgo representaría un fallo de control crítico que requiere testing dinámico inmediato según OWASP ASVS y CWE-327?",
+      "tag": "Code Review y Security Control Testing",
+      "options": [
+        "D. Logaritmo de operaciones criptográficas sin optimización de performance",
+        "B. Comentarios en código describiendo algoritmos alternativos sin uso práctico",
+        "A. Uso de algoritmos criptográficos débiles (MD5, DES, RC4) sin validación de generación de claves o implementación de derivación segura",
+        "C. Librerías criptográficas sin documentación de versión"
+      ],
+      "correct": 2,
+      "justification_correct": "OWASP ASVS 6.2.2 y CWE-327 clasifican uso de algoritmos débiles como crítico. Fallo de control requiere testing dinámico para validar si cifrado es realmente inseguro y si derivación de claves cumple NIST SP 800-132.",
+      "justification_wrong": "Comentarios, documentación de versión y logaritmo de performance son hallazgos menores. No representan fallos funcionales de control criptográfico que comprometieran confidencialidad o integridad de datos."
+    },
+    {
+      "num": 26,
+      "text": "Durante una evaluación de seguridad integral, usted debe determinar la estrategia óptima de prueba para un sistema crítico que procesa transacciones financieras en tiempo real. ¿Cuál enfoque combina efectivamente validación de controles con minimización de riesgo operacional?",
+      "tag": "assessment_and_test_strategies",
+      "options": [
+        "B. Pruebas destructivas completas durante mantenimiento programado sin validación previa de controles",
+        "D. Evaluación de vulnerabilidades sin correlación con pruebas de penetración",
+        "A. Pruebas de penetración no invasivas en paralelo con transacciones sintéticas de bajo volumen en horarios no pico",
+        "C. Auditoría pasiva exclusiva sin pruebas activas de funcionalidad de seguridad"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-53A establece que evaluaciones de sistemas críticos requieren balanceo entre rigor técnico y continuidad operacional. Transacciones sintéticas permiten validación sin impacto, mientras que penetración limitada reduce riesgo de disruption según ISO/IEC 27001:2022.",
+      "justification_wrong": "Opción B viola principios de gobernanza de pruebas; C omite validación activa requerida por COSO; D incumple NIST SP 800-115 sobre integración metodológica de técnicas evaluativas."
+    },
+    {
+      "num": 27,
+      "text": "Al revisar logs de auditoría de un sistema de control de acceso después de detectar anomalía de escalada de privilegios, identifica 47,000 registros diarios. ¿Cuál técnica de análisis proporciona máxima detección con eficiencia operacional?",
+      "tag": "log_reviews",
+      "options": [
+        "B. Análisis basado en reglas correlacionadas con estadísticas de línea base y machine learning para patrones anómalos",
+        "D. Filtrado simple por tipo de evento sin consideración de secuencia de acciones",
+        "C. Muestreo aleatorio del 5% de eventos sin análisis de correlación temporal",
+        "A. Revisión manual secuencial de todos los registros durante 8 horas laborales"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-53 AU-6 recomienda análisis automatizado de auditoría con detección de anomalías. ISO/IEC 27035 enfatiza correlación temporal. Machine learning detecta patrones no definibles en reglas, mejorando sensibilidad según SANS Log Analysis Best Practices.",
+      "justification_wrong": "A es ineficiente y error-prone; C reduce detectabilidad de eventos relacionados; D ignora contexto temporal crítico para escaladas de privilegios identificadas por MITRE ATT&CK."
+    },
+    {
+      "num": 28,
+      "text": "En análisis de cobertura de pruebas para una aplicación de servicios financieros, detecta que código de ruta crítica tiene 64% de cobertura, mientras que validación de entrada alcanza 92%. ¿Cuál acción es más crítica según estándares de evaluación?",
+      "tag": "test_coverage_analysis",
+      "options": [
+        "B. Priorizar incremento de cobertura de ruta crítica a mínimo 85% porque regula comportamiento funcional de seguridad",
+        "C. Mantener cobertura actual dado que suma ponderada supera 75% combinado",
+        "A. Aumentar cobertura de entrada a 98% dado que ya supera umbral mínimo de seguridad",
+        "D. Ejecutar únicamente pruebas de penetración para compensar déficit de cobertura de código"
+      ],
+      "correct": 0,
+      "justification_correct": "OWASP Testing Guide y CWE/SANS Top 25 establecen que rutas críticas de seguridad requieren mínimo 85% de cobertura. PCI DSS 6.5.1 exige validación exhaustiva de lógica de seguridad. Déficit en ruta crítica representa riesgo residual mayor que validación de entrada.",
+      "justification_wrong": "A ignora criticidad diferenciada de componentes; C aplica métrica ponderada incorrectamente; D no sustituye análisis de código por pruebas dinámicas per NIST SP 800-115."
+    },
+    {
+      "num": 29,
+      "text": "Implementa misuse case testing para identificar vectores de ataque en módulo de autenticación. ¿Cuál combinación de escenarios proporciona cobertura óptima de vulnerabilidades intencionales?",
+      "tag": "misuse_case_testing",
+      "options": [
+        "C. Pruebas de credenciales válidas con permisos normales sin escenarios adversarios",
+        "B. Únicamente intentos de acceso no autorizado sin variación de técnica de ataque",
+        "A. Ataques de fuerza bruta, inyección de credenciales nulas, bypass de autenticación multifactor y lateral movement post-autenticación",
+        "D. Validación de mensajes de error informativos para mejorar experiencia de usuario"
+      ],
+      "correct": 2,
+      "justification_correct": "OWASP Misuse Case Framework establece que cobertura requiere: ataque directo (fuerza bruta), evasión de controles (inyección), explotación de arquitectura (bypass MFA) y post-explotación (lateral movement). ISO/IEC 27001:2022 A.14.2.1 requiere pruebas adversarias multivector.",
+      "justification_wrong": "B omite técnicas de variación; C no representa escenarios maliciosos; D mide usabilidad en lugar de postura de seguridad adversaria per NIST Secure Software Development Framework."
+    },
+    {
+      "num": 30,
+      "text": "Durante evaluación de interface de API REST para procesamiento de datos sensibles, debe establecer métricas de seguridad de gestión. ¿Cuál métrica compuesta proporciona indicador más significativo de postura de seguridad?",
+      "tag": "security_management_metrics",
+      "options": [
+        "C. Tiempo medio de respuesta a incidentes de seguridad independiente de severidad",
+        "D. Satisfacción de usuarios con tiempos de autenticación medida mediante encuestas",
+        "A. Porcentaje de endpoints con validación de entrada + tasa de resolución de vulnerabilidades críticas detectadas en últimos 90 días",
+        "B. Número absoluto de pruebas ejecutadas sin contexto de riesgo residual"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-55 Rev.1 define métricas efectivas como indicadores binarios de implementación + medida de remediación. Combinación de cobertura de controles + velocidad de corrección proporciona visibilidad de postura dinámica según ISO/IEC 27004 en contexto de riesgo residual.",
+      "justification_wrong": "B carece de contexto de criticidad; C omite correlación con severidad requerida por COSO ERM; D mide satisfacción operativa no postura de seguridad per NIST SP 800-53 CA-2."
+    },
+    {
+      "num": 31,
+      "text": "Durante una evaluación de seguridad integral, usted debe seleccionar la estrategia de prueba más apropiada para validar la efectividad de controles compensatorios en un entorno crítico. ¿Cuál enfoque combina validación de diseño con verificación operacional sin interrumpir servicios?",
+      "tag": "assessment_and_test_strategies",
+      "options": [
+        "C. Revisión documental exclusiva de políticas y procedimientos de controles",
+        "A. Pruebas no invasivas con análisis de logs históricos y synthetic transactions para validar comportamiento sin perturbación",
+        "D. Testing de caja blanca con modificación temporal de reglas de firewall en producción",
+        "B. Penetration testing destructivo en horarios no operacionales para simular ataques reales"
+      ],
+      "correct": 1,
+      "justification_correct": "Conforme NIST SP 800-53A, las pruebas no invasivas (revisión de logs, synthetic transactions) validan controles sin riesgo operacional. El análisis de transacciones sintéticas verifica comportamiento funcional bajo condiciones predefinidas, cumpliendo COBIT 2019 para evaluación continua.",
+      "justification_wrong": "Testing destructivo (B) viola principios de operación continua. Documentación exclusiva (C) no verifica operación real. Modificación en producción (D) incumple ITIL y genera riesgos operacionales no aceptables en entornos críticos."
+    },
+    {
+      "num": 32,
+      "text": "Al revisar logs de auditoría de un sistema financiero, detecta patrones anómalos: múltiples intentos fallidos de acceso seguidos de acceso exitoso con privilegios elevados. ¿Cuál es el análisis correcto según estándares de revisión de logs?",
+      "tag": "log_reviews",
+      "options": [
+        "B. Indicador de ataque de fuerza bruta exitoso; requiere análisis forense inmediato, aislamiento y correlación con otros logs (SIEM)",
+        "A. Evento normal de reintentos; requiere solo notificación al usuario sin investigación adicional",
+        "D. Anomalía técnica del sistema de logs; reiniciar servicio de auditoría para resolver",
+        "C. Actividad de administración legítima; generar ticket de cambio retrospectivo"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27035 requiere correlación de eventos para identificar incidentes. La secuencia fuerza bruta + acceso exitoso + elevación constituye indicador de compromiso. NIST 800-61 especifica forense inmediata, aislamiento y análisis SIEM para atribuir responsabilidad.",
+      "justification_wrong": "Opción A normaliza riesgo crítico. C falsifica auditoría. D destruye evidencia forense. Estos enfoques incumplen obligaciones de detección de GDPR Artículo 33 y SOX 404."
+    },
+    {
+      "num": 33,
+      "text": "Diseña un plan de cobertura de testing para una aplicación bancaria con 850 métodos. Requiere validación de autenticación, autorización, inyección SQL y gestión de sesiones. ¿Qué métrica de cobertura y técnica es más rigurosa según estándares de seguridad?",
+      "tag": "test_coverage_analysis",
+      "options": [
+        "B. Cobertura de caminos críticos al 100% mediante análisis de flujo de datos + misuse cases (OWASP Top 10) + interface testing",
+        "D. Cobertura equivalente al 100% de líneas mediante herramienta de cobertura estática",
+        "C. Cobertura de métodos públicos al 80% con unit testing automatizado",
+        "A. Cobertura de línea de código del 60% mediante testing funcional aleatorio"
+      ],
+      "correct": 0,
+      "justification_correct": "OWASP ASVS y NIST SP 800-53 (SI-6) requieren validación de caminos críticos, no solo cobertura de líneas. Misuse cases (OWASP) + interface testing garantizan detección de vulnerabilidades lógicas de seguridad. Análisis de flujo de datos identifica inyecciones y fallos de validación.",
+      "justification_wrong": "Cobertura porcentual sin contexto (A, C, D) no valida lógica de seguridad. Herramientas estáticas (D) no detectan vulnerabilidades lógicas. Testing aleatorio (A) carece de rigor estructurado. CVSS y CWE priorizan validación de caminos de riesgo."
+    },
+    {
+      "num": 34,
+      "text": "Realiza un assessment de vulnerabilidades en una arquitectura de microservicios. Identifica inconsistencias en parcheos entre 12 servicios y ausencia de validación en 3 interfaces API. ¿Cuál enfoque remediativo es más alineado con gestión de métricas de seguridad?",
+      "tag": "security_management_metrics",
+      "options": [
+        "B. Establecer KPI de porcentaje de vulnerabilidades criticadas/remediadas, SLA de parcheo por criticidad y métrica de defectos por interface; priorizar por CVSS y riesgo residual",
+        "D. Implementar parches en pre-producción solo y mantener producción sin cambios",
+        "C. Reportar incidencias a desarrolladores sin seguimiento de cumplimiento",
+        "A. Parchear inmediatamente todos los servicios y revalidar interfaces en pruebas posteriores"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27004 especifica métricas cuantificables para eficacia de controles: porcentaje remedición, SLA parcheo, defectos por componente. NIST 800-55 requiere baseline de métricas y análisis de tendencias. Priorización por CVSS (FIRST.org) y riesgo residual alinea recursos.",
+      "justification_wrong": "Opción A carece de métricas. C omite trazabilidad y accountability. D amplía ventana de exposición a riesgos. Incumplen ITIL, COBIT 2019 (APO12: gestión de riesgos cuantificada)."
+    },
+    {
+      "num": 35,
+      "text": "Desarrolla una estrategia de penetration testing para validar segmentación de red en un datacenter híbrido (on-premises + cloud). ¿Cuál enfoque cumple principios de responsabilidad compartida y pruebas no destructivas?",
+      "tag": "penetration_testing",
+      "options": [
+        "C. Pruebas coordinadas con reglas de engagement documentadas: escaneo de puertos, fuzzing acotado y validación de lateral movement respetando límites de segmentación; análisis de configuración de ACLs y grupos de seguridad",
+        "D. Simulación teórica mediante diagramas de arquitectura sin ejecución práctica",
+        "B. Testing externo solo; infraestructura cloud está bajo responsabilidad del proveedor CSP",
+        "A. Pruebas intrusivas en todos los segmentos sin restricción; desactivar temporalmente firewalls perimetrales"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-115 requiere scope documentado y reglas de engagement. ISO 27001 Anexo A.12.6.1 valida control de acceso mediante testing. Modelo responsabilidad compartida (AWS/Azure/GCP) exige testing en capas del cliente. Lateral movement y ACLs validan segmentación efectiva.",
+      "justification_wrong": "Opción A viola legalidad y SLA. B omite validación de responsabilidad del cliente en cloud. D carece de verificación operacional. NIST 800-171 y SOC 2 requieren validación práctica de controles de segmentación."
+    },
+    {
+      "num": 36,
+      "text": "En una estrategia de prueba de penetración de caja gris contra una arquitectura de microservicios, ¿cuál es el enfoque más efectivo para evaluar la postura de seguridad sin generar falsos positivos excesivos?",
+      "tag": "penetration_testing_strategy",
+      "options": [
+        "D. Utilizar herramientas automatizadas genéricas sin contextualización de la arquitectura específica",
+        "C. Limitar las pruebas solo a componentes expuestos públicamente ignorando comunicación intra-servicio",
+        "B. Ejecutar escaneo de vulnerabilidades completo simultáneamente en todos los endpoints sin restricción de tasa",
+        "A. Combinar reconocimiento pasivo con análisis de API Gateway y mapeo de dependencias de servicios antes de pruebas activas"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-115 recomienda validar la arquitectura antes de pruebas activas en entornos complejos. El mapeo de dependencias reduce falsos positivos y mejora precisión. La comunicación intra-servicio es crítica en microservicios (OWASP Testing Guide).",
+      "justification_wrong": "Escaneo no coordinado causa degradación de servicio. Ignorar comunicación interna pierde vectores de ataque reales. Herramientas genéricas no entienden contexto de orquestación de contenedores."
+    },
+    {
+      "num": 37,
+      "text": "¿Qué métrica de cobertura de prueba de seguridad es más significativa para validar control de acceso en aplicaciones basadas en roles (RBAC) según estándares de certificación?",
+      "tag": "test_coverage_analysis",
+      "options": [
+        "B. Número de combinaciones rol-recurso-acción probadas contra matriz de control de acceso definida",
+        "C. Cantidad de vulnerabilidades encontradas respecto a vulnerabilidades totales esperadas",
+        "A. Porcentaje de rutas de código ejecutadas dividido entre total de líneas de código fuente",
+        "D. Ratio de tiempo de prueba automatizada versus prueba manual realizada"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27001:2022 enfatiza validación de controles de acceso mediante matriz RACI. La cobertura de combinaciones rol-recurso-acción es métrica específica para RBAC (OWASP Testing Guide v4.2, sección Access Control).",
+      "justification_wrong": "Cobertura de código no garantiza validación de lógica de autorización. Conteo de vulnerabilidades es métrica de resultado, no cobertura. Ratio temporal no mide efectividad del control."
+    },
+    {
+      "num": 38,
+      "text": "Al revisar logs de auditoría de un servidor de aplicaciones para detectar patrones de exfiltración de datos, ¿cuál es el enfoque analítico más robusto según estándares de forensía digital?",
+      "tag": "log_review_forensics",
+      "options": [
+        "D. Examinar solo logs de errores descartando acceso exitoso",
+        "B. Correlacionar eventos de autenticación, transferencia de datos y cambios de permisos con análisis de anomalías estadísticas",
+        "A. Buscar manualmente cadenas específicas de datos sensibles en archivos de log sin correlación temporal",
+        "C. Confiar exclusivamente en alertas generadas por herramientas SIEM sin validación manual"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-92 (Guide to Computer Security Log Management) requiere correlación de eventos múltiples. RFC 5424 y ISO/IEC 27037 establecen cadena de custodia y análisis forense. Anomalías estadísticas detectan patrones anormales de volumen/velocidad.",
+      "justification_wrong": "Búsqueda manual sin contexto pierde relaciones causales. SIEM genera falsos positivos sin validación. Logs de error solo muestran fallos, no acceso anómalo exitoso."
+    },
+    {
+      "num": 39,
+      "text": "En una evaluación de código fuente de aplicación Java que utiliza Spring Framework, ¿cuál técnica de análisis estático es más efectiva para identificar vulnerabilidades de inyección SQL no capturadas por herramientas genéricas?",
+      "tag": "code_review_sast",
+      "options": [
+        "A. Análisis de flujo de datos rastreando construcción de queries desde entrada de usuario hasta ejecución en base de datos",
+        "B. Búsqueda de palabras clave 'SELECT', 'INSERT' en código fuente sin análisis de contexto",
+        "C. Ejecutar escaneo SAST con configuración predeterminada sin customización para Spring",
+        "D. Validar solo métodos públicos ignorando utilización de librerías internas y helpers"
+      ],
+      "correct": 0,
+      "justification_correct": "OWASP ASVS 5.2.2 requiere rastreo de flujo de datos para inyección. CWE-89 especifica análisis de contexto. Herramientas especializadas en Spring (FindBugs, Checkmarx con reglas Spring) detectan parametrización inadecuada.",
+      "justification_wrong": "Búsqueda por palabras clave genera falsos positivos/negativos. Configuración predeterminada no cubre patrones específicos de Spring Data JPA. Métodos privados y helpers son vectores reales de ataque."
+    },
+    {
+      "num": 40,
+      "text": "¿Cuál es el componente de auditoría más crítico para demostrar cumplimiento de no-repudio en transacciones financieras según marcos de certificación de seguridad?",
+      "tag": "audit_logs_nonrepudiation",
+      "options": [
+        "B. Registro inmutable con timestamp sincronizado (NTP), identidad del actor, acción realizada, datos modificados y firma digital",
+        "C. Logs agregados en servidor central sin validación de integridad local",
+        "D. Archivo de auditoría con rotación diaria sin mecanismo de protección contra escritura",
+        "A. Registro de intentos fallidos de autenticación con dirección IP del cliente"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27001:2022 A.12.4.1 y NIST SP 800-171 Rev.2 requieren integridad y autenticidad de logs. PCI-DSS 10.2 especifica timestamp, identidad, acción y datos. Firma digital valida no-repudio (RFC 3161 para timestamping).",
+      "justification_wrong": "Solo fallos no documenta autorización de transacciones exitosas. Centralización sin validación local permite tampering en tránsito. Rotación sin WORM o firma permite modificación post-facto."
+    },
+    {
+      "num": 41,
+      "text": "Durante una evaluación de seguridad integral, usted debe seleccionar una estrategia de prueba que combine análisis estático y dinámico. ¿Cuál enfoque proporciona el mayor valor en la detección de vulnerabilidades de lógica de negocio en aplicaciones críticas según NIST SP 800-115?",
+      "tag": "assessment_and_test_strategies",
+      "options": [
+        "B. Únicamente análisis dinámico automatizado con herramientas DAST comerciales",
+        "C. Pruebas de caja negra sin análisis de cobertura de código",
+        "A. Pruebas de caja blanca combinadas con pruebas de penetración manual enfocadas en misuse cases",
+        "D. Revisión de logs post-incidente sin validación preventiva"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-115 recomienda integrar análisis estático (caja blanca) con dinámico (penetración manual) para identificar vulnerabilidades de lógica de negocio no detectables por herramientas automatizadas. Las pruebas de misuse case validan controles contra escenarios adversariales específicos.",
+      "justification_wrong": "DAST automatizado carece de contexto de negocio. Caja negra sin cobertura omite rutas críticas. Logs post-incidente son detectivos, no preventivos. Solo uno integra estrategias complementarias con rigor normativo."
+    },
+    {
+      "num": 42,
+      "text": "En pruebas de control de seguridad de un sistema de autenticación multifactor, detecta que el token JWT expira en 24 horas. ¿Cuál es el enfoque de test más crítico según ISO/IEC 27001 Anexo A.9.4.3?",
+      "tag": "security_control_testing",
+      "options": [
+        "A. Validar que tokens expirados rechacen acceso y pruebas de replay attack con tokens válidos capturados",
+        "B. Verificar únicamente que la contraseña de 8 caracteres cumple requisitos mínimos",
+        "C. Aceptar 24 horas como estándar sin cuestionar la duración de sesión",
+        "D. Probar solo en ambiente de desarrollo sin replicar carga de producción"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27001 A.9.4.3 requiere pruebas de invalidación de sesión y prevención de reuso. Token de 24h requiere validar rechazo post-expiración y resistencia a replay attacks. Este control es fundamental para mantener integridad de autenticación.",
+      "justification_wrong": "Contraseña es componente separado (A.9.4.2). Aceptar sin análisis incumple rigor de testing. Ambiente de desarrollo no refleja escenarios reales de ataque. La opción A es la única que valida el control de manera comprehensiva."
+    },
+    {
+      "num": 43,
+      "text": "Al realizar análisis de cobertura de test en un componente de criptografía, encuentra que ciertas rutas de manejo de errores carecen de validación. ¿Qué métrica de CVSS v3.1 y estrategia de revisión de código se aplican para priorizar este hallazgo?",
+      "tag": "test_coverage_analysis_code_review",
+      "options": [
+        "C. Ignorar ya que el error handling es responsabilidad del desarrollador, no de seguridad",
+        "B. CVSS base 3.1 (Low) porque el código 'funciona' en casos normales",
+        "A. CVSS base 7.5 (High) por falla de validación criptográfica; ejecutar análisis taint-flow y arquitectura de canales auxiliares",
+        "D. Asignar puntuación basada únicamente en conteo de líneas de código no probadas"
+      ],
+      "correct": 2,
+      "justification_correct": "Fallas en criptografía generan CVSS ≥7.5 por impacto en confidencialidad/integridad. Análisis taint-flow rastrea flujos de datos sensibles. Revisión de canales auxiliares (timing attacks, power analysis) es crítica en componentes criptográficos según CWE-327.",
+      "justification_wrong": "CVSS 3.1 subestima riesgo criptográfico. Error handling es responsabilidad de seguridad (OWASP A02:2021). Conteo de líneas no captura severidad de vulnerabilidades lógicas. Solo opción A integra CVSS normativo con técnicas avanzadas."
+    },
+    {
+      "num": 44,
+      "text": "Durante una evaluación de vulnerabilidad automatizada, el scanner reporta 200 hallazgos. Según NIST SP 800-53 RA-5 y mejores prácticas, ¿cuál es el siguiente paso crítico antes de validación manual?",
+      "tag": "vulnerability_assessment",
+      "options": [
+        "D. Confiar en puntuaciones CVSS automáticas sin considerar configuración específica del entorno",
+        "B. Reportar todos los 200 hallazgos a gerencia sin análisis técnico adicional",
+        "C. Parchear inmediatamente todos los sistemas identificados sin validación",
+        "A. Correlacionar hallazgos, eliminar falsos positivos mediante análisis de contexto, filtrar por impacto de negocio y aplicabilidad"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST RA-5(b) requiere análisis de resultados de scanning incluyendo determinación de falsos positivos. Correlación reduce ruido, prioriza por impacto real y alineamiento con arquitectura. Filtrado contextual es esencial antes de remediation.",
+      "justification_wrong": "Reportar sin análisis incumple RA-5. Parcheo sin validación causa disrupciones innecesarias. CVSS genérico ignora configuración local (riesgo residual). Solo opción A sigue ciclo normativo riguroso de VA."
+    },
+    {
+      "num": 45,
+      "text": "Implementa transacciones sintéticas para monitoreo continuo de una API de transferencia bancaria. ¿Qué elemento es CRÍTICO según ISO/IEC 27001 A.12.4.1 y prevención de fraude?",
+      "tag": "synthetic_transactions",
+      "options": [
+        "C. Ejecutar pruebas solo en horarios no pico para evitar impacto",
+        "A. Inyectar transacciones con montos conocidos, patrones anómalos y validar detección de anomalías; registrar latencias y rechazos en logs auditable",
+        "D. Verificar únicamente que la transacción se completa sin validar integridad de datos",
+        "B. Usar transacciones reales de clientes para simular tráfico sin reversión"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001 A.12.4.1 requiere monitoreo de eventos de seguridad. Transacciones sintéticas con montos controlados, patrones anómalos e inyección de fallos validan detección en tiempo real. Logs auditables demuestran cumplimiento y rastrabilidad.",
+      "justification_wrong": "Transacciones reales de clientes violan privacidad y PCI-DSS. Pruebas solo en off-peak omiten escenarios de ataque. Sin validación de integridad se pierden indicadores de manipulación. Solo opción A integra monitoreo detective y preventivo normativo."
+    },
+    {
+      "num": 46,
+      "text": "Durante una evaluación de seguridad integral, usted debe determinar si los controles de acceso implementados realmente previenen el acceso no autorizado. ¿Cuál estrategia de prueba proporciona la evidencia más confiable de efectividad del control según NIST SP 800-53?",
+      "tag": "security_control_testing",
+      "options": [
+        "B. Revisión de documentación de políticas y procedimientos de acceso",
+        "D. Análisis de cambios de configuración en los últimos 30 días",
+        "A. Pruebas de penetración simuladas con escenarios de ataque realistas contra los controles",
+        "C. Entrevistas con administradores sobre la configuración del control"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-53 requiere pruebas funcionales directas (testing) para validar efectividad de controles. Penetration testing proporciona evidencia operacional real de si el control resiste ataques, superando pruebas documentales.",
+      "justification_wrong": "Documentación, entrevistas y análisis de cambios son evaluaciones indirectas insuficientes para validar funcionamiento real de controles de acceso según estándares de testing."
+    },
+    {
+      "num": 47,
+      "text": "En análisis de cobertura de pruebas (test coverage analysis) para una aplicación crítica, identifica que solo el 62% de las rutas de código se han ejecutado durante testing. ¿Qué implicación tiene esto según ISO/IEC 27001:2022?",
+      "tag": "test_coverage_analysis",
+      "options": [
+        "A. Es aceptable si la cobertura supera el 50% como umbral mínimo regulatorio",
+        "B. Representa una brecha de control que requiere evidencia adicional de efectividad mediante pruebas complementarias",
+        "C. Indica que el 38% restante debe certificarse mediante auditoría externa únicamente",
+        "D. Demuestra que los riesgos residuales del 38% están dentro de tolerancia aceptable"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 requiere validación objetiva de controles. Cobertura incompleta genera brecha; debe compensarse con pruebas alternativas (análisis estático, revisión de código, misuse cases) para demostrar efectividad del 38% no cubierto.",
+      "justification_wrong": "No existe umbral de 50% en normativa. Análisis de riesgos requiere cobertura comprehensiva documentada; auditoría externa no sustituye responsabilidad del propietario del sistema."
+    },
+    {
+      "num": 48,
+      "text": "Al revisar logs de autenticación, detecta patrones anómalos: 47 intentos fallidos desde IP 203.0.113.5 en 8 minutos seguidos de un acceso exitoso. ¿Qué técnica de análisis de logs complementaría mejor la investigación según NIST SP 800-92?",
+      "tag": "log_reviews",
+      "options": [
+        "A. Correlacionar con logs de red (firewall/IDS) y análisis de transacciones sintéticas para reproducir el escenario",
+        "D. Documentar el incidente en acta y archivar logs para auditoría anual",
+        "B. Generar reportes estadísticos mensuales comparativos de intentos fallidos",
+        "C. Reconfigurar políticas de contraseña para aumentar complejidad"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-92 recomienda correlación de múltiples fuentes de logs y validación mediante transacciones sintéticas para investigación forense. Combinar logs de acceso, red e IDS y simular acceso proporciona análisis integral de compromiso.",
+      "justification_wrong": "Reportes estadísticos no investigan incidente específico. Cambios de política son reactivos sin análisis. Archivo sin análisis incumple requisitos de incident response."
+    },
+    {
+      "num": 49,
+      "text": "Implementa una estrategia de misuse case testing para validar que un sistema previene ataques de escalada de privilegios. ¿Cuál enfoque alinea mejor con las prácticas de secure development según OWASP Testing Guide v4.2?",
+      "tag": "misuse_case_testing",
+      "options": [
+        "A. Documentar casos de abuso reflejando motivaciones de atacante, intentar explotar mediante inyección SQL y buffer overflows",
+        "B. Crear tablas de matriz de riesgos y ejecutar pruebas de carga para validar estabilidad bajo ataque",
+        "C. Realizar revisión estática de código para detectar funciones privilegiadas sin validación de autorización",
+        "D. Efectuar pentesting blackbox genérico sin escenarios específicos de escalada previamente modelados"
+      ],
+      "correct": 0,
+      "justification_correct": "OWASP v4.2 enfatiza modelado de casos de abuso derivados de análisis de amenaza. Documentar motivaciones del atacante e intentar exploits específicos (SQLi, buffer overflow) en contexto de escalada proporciona validación dirigida y realista.",
+      "justification_wrong": "Matrices de riesgos no reemplazan testing. Revisión estática es complementaria pero incompleta. Pentesting blackbox sin casos de uso predefinidos carece de cobertura estratégica de escalada."
+    },
+    {
+      "num": 50,
+      "text": "Después de pruebas de interfaz (interface testing) entre tres microservicios críticos, genera métricas de seguridad: 94% de endpoints validados, 3 vulnerabilidades de inyección encontradas, tiempo promedio de respuesta 245ms. ¿Cuál conclusión sobre riesgo es más precisa según ISO/IEC 27005?",
+      "tag": "security_management_metrics",
+      "options": [
+        "D. Debe retenerse ambiente en producción hasta lograr 100% de endpoints sin vulnerabilidades detectadas",
+        "B. Las 3 vulnerabilidades representan riesgo residual que requiere evaluación cualitativa de impacto, probabilidad y controles compensatorios antes de autorización",
+        "A. El sistema es seguro porque 94% de endpoints pasaron validación y tiempo de respuesta es aceptable",
+        "C. Las métricas son suficientes; inyecciones son comunes en microservicios, aceptable mantener estado actual"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27005 requiere evaluación cuantitativa de riesgos residuales: análisis de impacto (severidad de inyecciones), probabilidad de explotación, y evaluación de controles compensatorios. Aceptación requiere decisión formal de riesgo documentada.",
+      "justification_wrong": "94% sin análisis de severidad es insuficiente. Aceptar vulns comunes incumple due diligence. Exigir 100% es perfeccionismo sin análisis costo-beneficio; decisión de riesgo requiere evaluación cuantitativa formal."
+    }
+  ]
+}

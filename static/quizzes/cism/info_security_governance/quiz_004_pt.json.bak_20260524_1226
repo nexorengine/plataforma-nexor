@@ -1,0 +1,710 @@
+{
+  "cert_id": "cism",
+  "domain_id": "info_security_governance",
+  "quiz_num": 4,
+  "domain_name": "Information Security Governance",
+  "cert_name": "CISM",
+  "lang": "pt",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Um novo CISO em organização manufatureira está coletando artefatos para entender o estado de segurança. Qual seria o MENOS valioso para avaliar a postura de risco?",
+      "tag": "Avaliação de Estado",
+      "options": [
+        "A. Log de incidentes de segurança",
+        "B. Registros de treinamento de conscientização",
+        "C. Resultados de testes de penetração",
+        "D. Relatório ao conselho de administração"
+      ],
+      "correct": 3,
+      "justification_correct": "Um relatório ao conselho é informação secundária que pode ter sido filtrada e editada — os outros artefatos são registros primários mais valiosos e menos sujeitos a viés. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Log de incidentes, registros de treinamento e resultados de pentest são evidências primárias diretas do estado de segurança — o relatório ao conselho é derivado e pode estar editado."
+    },
+    {
+      "num": 2,
+      "text": "Qual é o valor de uma análise de impacto nos negócios (BIA) para um líder de segurança?",
+      "tag": "BIA",
+      "options": [
+        "A. Fornece visão da criticidade dos sistemas de TI",
+        "B. Fornece visão da criticidade dos processos de negócio",
+        "C. Fornece visão da criticidade das aplicações de software",
+        "D. Não agrega valor pois foca em continuidade de negócios, não em segurança"
+      ],
+      "correct": 1,
+      "justification_correct": "O propósito da BIA é fornecer visão concisa da criticidade dos processos de negócio — a partir daí, as dependências nos sistemas de informação (aplicações e infraestrutura) podem ser determinadas. (CISM Review Manual, ISACA)",
+      "justification_wrong": "A criticidade de sistemas e aplicações são derivadas da BIA, não seu foco primário; a BIA é valiosa para segurança ao identificar quais processos e sistemas merecem maior proteção."
+    },
+    {
+      "num": 3,
+      "text": "Um líder de segurança foi solicitado a justificar a implementação de nova estratégia de segurança. Como deve responder?",
+      "tag": "Business Case",
+      "options": [
+        "A. Desenvolver plano de projeto com pessoal, tarefas e cronograma",
+        "B. Desenvolver matriz de riscos com consequências se a estratégia não for implementada",
+        "C. Desenvolver diagrama SWOT com forças, fraquezas, oportunidades e ameaças",
+        "D. Desenvolver business case com critérios de sucesso, requisitos, custos e plano de ação"
+      ],
+      "correct": 3,
+      "justification_correct": "Um business case é o melhor método para justificar um projeto ou iniciativa — inclui declaração do problema, estados atual e futuro desejados, recursos necessários, requisitos e critérios de sucesso. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Plano de projeto documenta a execução, não justifica a necessidade; matriz de riscos não justifica a estratégia; SWOT não é usado para justificar estratégias — o business case é o instrumento correto."
+    },
+    {
+      "num": 4,
+      "text": "Qual é o principal benefício de uma função de arquitetura de segurança em uma organização distribuída de grande porte?",
+      "tag": "Arquitetura de Segurança",
+      "options": [
+        "A. Maior satisfação dos colaboradores de engenharia",
+        "B. Melhores resultados em avaliações de vulnerabilidades",
+        "C. Maior consistência no uso de ferramentas e configurações",
+        "D. Menor custo de operações de segurança"
+      ],
+      "correct": 2,
+      "justification_correct": "O principal benefício da arquitetura de segurança é a consistência na abordagem em todas as instâncias da organização. Por exemplo, uma arquitetura de referência para controle de acesso garantiria que SAML 2.0 fosse usado para SSO em todas as unidades de negócio. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Satisfação de engenheiros é efeito colateral; avaliações de vulnerabilidades podem melhorar mas não é o benefício principal; custos podem até aumentar com consistência — a consistência de configurações é o benefício central."
+    },
+    {
+      "num": 5,
+      "text": "Uma organização identificou que sua política de segurança é amplamente aspiracional. Qual é o maior risco dessa situação?",
+      "tag": "Política de Segurança",
+      "options": [
+        "A. Confusão entre os usuários finais sobre o que é permitido",
+        "B. Aparência de que a organização não controla suas práticas de segurança",
+        "C. Aumento de multas regulatórias por não conformidade",
+        "D. Vulnerabilidades não mitigadas por falta de orientação"
+      ],
+      "correct": 1,
+      "justification_correct": "Uma política amplamente aspiracional significa que a organização está publicamente comprometida com práticas que não segue — em processos legais relacionados à segurança, isso cria aparência de falta de controle e pode ser usado contra a organização. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Confusão, multas e vulnerabilidades são consequências possíveis mas secundárias — a exposição jurídica pela aparência de falta de controle é o risco mais significativo."
+    },
+    {
+      "num": 6,
+      "text": "Uma estimativa do número de vezes que uma ameaça pode ocorrer em um dado ano é conhecida como:",
+      "tag": "Conceitos de Risco",
+      "options": [
+        "A. Expectativa de perda anualizada (ALE)",
+        "B. Taxa de ocorrência anualizada (ARO)",
+        "C. Fator de exposição (EF)",
+        "D. Fator de exposição anualizado (AEF)"
+      ],
+      "correct": 1,
+      "justification_correct": "A Taxa de Ocorrência Anualizada (ARO) é definida como estimativa do número de vezes que uma ameaça ocorrerá por ano. (CISM Review Manual, ISACA)",
+      "justification_wrong": "ALE é o produto de ARO pelo SLE; fator de exposição é percentual do valor do ativo perdido; AEF não é terminologia padrão."
+    },
+    {
+      "num": 7,
+      "text": "Joel assina boletins de segurança de três fornecedores de TI. Qual afirmação melhor descreve a adequação dessas fontes?",
+      "tag": "Inteligência de Ameaças",
+      "options": [
+        "A. Joel também deve assinar fontes não fornecedores como US-CERT e InfraGard",
+        "B. As fontes de consultoria de segurança de Joel são adequadas",
+        "C. Joel deve descontinuar os fornecedores e assinar fontes não fornecedores",
+        "D. Joel deve focar em threat hunting na dark web"
+      ],
+      "correct": 0,
+      "justification_correct": "O melhor conjunto de consultores de segurança inclui todos os fornecedores de TI, além de fontes não fornecedores como US-CERT e InfraGard. Fontes não fornecedores fornecem perspectiva mais ampla sobre o cenário de ameaças. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Apenas fornecedores é insuficiente; descontinuar fornecedores perde informações relevantes; threat hunting na dark web não é atividade típica de gestão de riscos."
+    },
+    {
+      "num": 8,
+      "text": "Janice, CISO em organização de saúde, descobriu que praticamente todos os funcionários são administradores locais em seus laptops. Isso é um exemplo de:",
+      "tag": "Vulnerabilidades",
+      "options": [
+        "A. Ameaça interna",
+        "B. Vulnerabilidade",
+        "C. Ameaça",
+        "D. Incidente"
+      ],
+      "correct": 1,
+      "justification_correct": "O fato de usuários finais serem administradores locais significa que têm controle administrativo sobre seus computadores — podem instalar software e alterar configurações, o que representa uma vulnerabilidade que pode agravar situações de malware. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Não é ameaça interna por si só (embora possa agravá-la); não é uma ameaça ativa; não é um incidente — é uma fraqueza configuracional que é uma vulnerabilidade."
+    },
+    {
+      "num": 9,
+      "text": "Uma campanha de cibercriminoso para realizar reconhecimento, desenvolver ferramentas especializadas e construir presença de longo prazo silenciosa no ambiente de uma organização é conhecida como:",
+      "tag": "APT",
+      "options": [
+        "A. Ataque watering hole",
+        "B. Hacktivismo",
+        "C. Campanha de persistência avançada (APC)",
+        "D. Ameaça persistente avançada (APT)"
+      ],
+      "correct": 3,
+      "justification_correct": "Uma APT (Advanced Persistent Threat) é campanha de longo prazo de reconhecimento, desenvolvimento de ferramentas e estabelecimento de presença silenciosa no ambiente — é 'avançada' pelo reconhecimento e ferramentas, 'persistente' pelo design de longo prazo, e 'ameaça' pelo objetivo final. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Watering hole é ataque via site comprometido; hacktivismo é motivado por ideologia; APC não é terminologia padrão — APT é o termo correto."
+    },
+    {
+      "num": 10,
+      "text": "Qual fator em análise de riscos é mais difícil de determinar com precisão e por quê?",
+      "tag": "Análise de Riscos",
+      "options": [
+        "A. Fator de exposição — pois depende do valor do ativo",
+        "B. Expectativa de perda única — pois combina múltiplas variáveis",
+        "C. Probabilidade do evento — especialmente em eventos de alto impacto e baixa frequência",
+        "D. Impacto do evento — pois envolve danos intangíveis difíceis de quantificar"
+      ],
+      "correct": 2,
+      "justification_correct": "A probabilidade do evento é a mais difícil de determinar com precisão — particularmente para eventos de alto impacto e baixa frequência. É por isso que a análise de riscos é essencialmente qualitativa em sua natureza. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Fator de exposição e SLE são relativamente determináveis; impacto tangível é mensurável — a probabilidade de eventos raros e de alto impacto é intrinsecamente a mais incerta."
+    },
+    {
+      "num": 11,
+      "text": "Qual é a melhor descrição do que é tratamento de risco?",
+      "tag": "Tratamento de Riscos",
+      "options": [
+        "A. Adicionar um risco ao registro de riscos",
+        "B. Atribuir um risco a líder de departamento",
+        "C. Reduzir um risco por meio de mitigação",
+        "D. Decidir o que fazer com um risco"
+      ],
+      "correct": 3,
+      "justification_correct": "O tratamento de risco é melhor descrito como uma decisão sobre o que fazer com um risco específico. As escolhas são aceitar, mitigar, transferir ou evitar o risco. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Adicionar ao registro e atribuir são atividades de documentação; reduzir por mitigação é apenas uma das opções — tratamento é a decisão abrangente sobre o que fazer."
+    },
+    {
+      "num": 12,
+      "text": "Um analista de riscos estuda um risco após decisão de mitigação e constata que a mitigação não elimina todo o risco. Como deve proceder?",
+      "tag": "Risco Residual",
+      "options": [
+        "A. Rejeitar o plano de tratamento",
+        "B. Registrar o risco residual",
+        "C. Informar a gestão que o plano está incompleto",
+        "D. Não fazer nada"
+      ],
+      "correct": 1,
+      "justification_correct": "Após o tratamento de risco, frequentemente existe risco residual que é tipicamente registrado no registro de riscos como novo risco a ser analisado e tratado. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Rejeitar o plano é desnecessário; informar que está incompleto é impreciso; não fazer nada equivale a ignorar o risco residual — registrá-lo é o procedimento correto."
+    },
+    {
+      "num": 13,
+      "text": "Qual é a pessoa mais adequada para ser proprietária de controle relacionado ao acesso a uma aplicação de negócio?",
+      "tag": "Propriedade de Controles",
+      "options": [
+        "A. Chefe do departamento que usa a aplicação",
+        "B. Service desk de TI",
+        "C. Gestor de segurança",
+        "D. Líder de TI"
+      ],
+      "correct": 0,
+      "justification_correct": "O chefe do departamento que usa a aplicação é o mais adequado para ser proprietário do controle de acesso — essa pessoa decidirá quem deve ter acesso à aplicação e com quais papéis. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Service desk executa mudanças de acesso mas não deve revisar seu próprio trabalho; gestor de segurança e líder de TI não conhecem suficientemente as operações de negócio para decidir sobre acesso."
+    },
+    {
+      "num": 14,
+      "text": "Um departamento de segurança conduz revisões trimestrais de acesso dos usuários ao sistema financeiro. Quem é a melhor pessoa para aprovar o acesso contínuo?",
+      "tag": "Revisão de Acesso",
+      "options": [
+        "A. Gestor de segurança",
+        "B. Gerente de TI",
+        "C. Controller corporativo",
+        "D. Gerentes dos respectivos usuários"
+      ],
+      "correct": 2,
+      "justification_correct": "A melhor pessoa para aprovar acesso contínuo a uma aplicação é um líder de unidade de negócio ou chefe de departamento — alguém responsável pelos processos de negócio suportados pelo sistema. O controller corporativo é responsável pelas operações financeiras suportadas. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Gestor de segurança e gerente de TI não estão familiarizados com operações financeiras; gerentes dos usuários podem não conhecer o departamento financeiro suficientemente."
+    },
+    {
+      "num": 15,
+      "text": "Qual é a melhor descrição do que é gestão de riscos de segurança da informação?",
+      "tag": "Gestão de Riscos",
+      "options": [
+        "A. Identificar e tratar ameaças à organização",
+        "B. Identificar e tratar vulnerabilidades nos sistemas",
+        "C. Identificar riscos e tomar decisões sobre eles",
+        "D. Identificar riscos e mitigá-los a níveis aceitáveis"
+      ],
+      "correct": 2,
+      "justification_correct": "A gestão de riscos de segurança da informação consiste em identificar riscos e tomar decisões sobre o que fazer com eles — as decisões podem resultar em mitigação, mas também em aceitação, transferência ou evitar o risco. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Ameaças e vulnerabilidades são entradas para o processo; mitigar é apenas uma das opções de tratamento — identificar e decidir é a definição mais abrangente e correta."
+    },
+    {
+      "num": 16,
+      "text": "O CISO deve expandir o licenciamento da ferramenta de varredura de vulnerabilidades para incluir quais redes?",
+      "tag": "Gestão de Vulnerabilidades",
+      "options": [
+        "A. Todas as redes internas e externas",
+        "B. Apenas o data center primário",
+        "C. Todas as redes, mas sem manter registros por limitação de licença",
+        "D. Apenas o data center secundário"
+      ],
+      "correct": 0,
+      "justification_correct": "O CISO deve expandir o licenciamento para incluir todas as redes internas e externas. Muitas ferramentas mantêm histórico de vulnerabilidades por ativo — expandir o licenciamento habilita essa funcionalidade para todas as redes. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Licenciar apenas o primário ou secundário deixa lacunas; operar sem manter registros destrói histórico valioso — todas as redes precisam de cobertura completa."
+    },
+    {
+      "num": 17,
+      "text": "Uma organização decide desenvolver um conjunto completo de políticas, procedimentos, padrões e diretrizes. Qual deve ser desenvolvido primeiro?",
+      "tag": "Hierarquia de Documentos",
+      "options": [
+        "A. Procedimentos",
+        "B. Padrões",
+        "C. Processos",
+        "D. Políticas"
+      ],
+      "correct": 3,
+      "justification_correct": "Políticas são as regras de negócio que regem o comportamento e devem ser desenvolvidas primeiro. Em seguida, processos e procedimentos alinhados com as políticas. Por último, diretrizes que oferecem sugestões de implementação. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Procedimentos não devem ser criados antes das políticas; padrões especificam como implementar políticas; processos dependem das políticas — políticas são sempre o ponto de partida."
+    },
+    {
+      "num": 18,
+      "text": "A declaração 'Senhas devem conter letras maiúsculas e minúsculas, números e símbolos, com no mínimo 12 caracteres' é um exemplo de:",
+      "tag": "Hierarquia de Documentos",
+      "options": [
+        "A. Padrão",
+        "B. Política",
+        "C. Diretriz",
+        "D. Procedimento"
+      ],
+      "correct": 0,
+      "justification_correct": "Essa é uma declaração de padrão — especificações detalhadas sobre qualquer tópico devem aparecer em um padrão, não em uma política. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Política não deve conter especificações técnicas detalhadas; diretriz é não vinculativa; procedimento descreve etapas de execução — especificações técnicas são padrões."
+    },
+    {
+      "num": 19,
+      "text": "A métrica 'Percentual de patches aplicados dentro do SLA em servidores de manufatura' transmite qual mensagem à gestão executiva?",
+      "tag": "Métricas",
+      "options": [
+        "A. O risco associado aos SLAs e se são adequados",
+        "B. O tempo de inatividade na manufatura enquanto patches são aplicados",
+        "C. O esforço para aplicar patches de segurança nos servidores",
+        "D. O risco de incidentes de segurança que poderiam interromper as operações"
+      ],
+      "correct": 3,
+      "justification_correct": "Essa métrica ajuda a gestão a entender o risco de incidente ou violação de segurança. Se a tendência cair, levará mais tempo para servidores serem corrigidos — aumentando a probabilidade de intrusão e interrupção da manufatura. (CISM Review Manual, ISACA)",
+      "justification_wrong": "SLAs e tempo de inatividade são aspectos operacionais; esforço para patching não revela risco — o risco de incidentes que podem interromper operações é a mensagem estratégica."
+    },
+    {
+      "num": 20,
+      "text": "Qual tipo de relatório é mais apropriado para enviar a um conselho de administração?",
+      "tag": "Reporte ao Conselho",
+      "options": [
+        "A. Métricas trimestrais de alto nível e lista de incidentes de segurança",
+        "B. Métricas semanais detalhadas",
+        "C. Relatórios semanais detalhados e de varredura de vulnerabilidades",
+        "D. Relatórios de varredura de vulnerabilidades e lista de incidentes"
+      ],
+      "correct": 0,
+      "justification_correct": "Um conselho de administração estará interessado em informações de alto nível sobre o programa de segurança, geralmente em formato resumido. Uma lista de incidentes de segurança também é informação valiosa. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Métricas semanais detalhadas e relatórios de vulnerabilidades são excessivamente técnicos para o conselho — alto nível e resumido é o formato correto."
+    },
+    {
+      "num": 21,
+      "text": "Qual é a melhor solução para proteger aplicação SaaS de ataques de camada 7?",
+      "tag": "Controles Técnicos",
+      "options": [
+        "A. Proteção avançada contra malware",
+        "B. Cloud Access Security Broker (CASB)",
+        "C. Filtro de conteúdo web",
+        "D. Web Application Firewall (WAF)"
+      ],
+      "correct": 3,
+      "justification_correct": "Um WAF é a melhor solução para proteger aplicações SaaS de ataques de camada 7, como injeção de SQL, buffer overflow e cross-site scripting. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Antimalware é para endpoints; CASB controla acesso a aplicações em nuvem; filtro de conteúdo bloqueia sites — apenas WAF protege especificamente ataques de camada 7 em aplicações web."
+    },
+    {
+      "num": 22,
+      "text": "Como uma política de uso aceitável (AUP) difere de uma política de segurança da informação?",
+      "tag": "Políticas",
+      "options": [
+        "A. Diferem apenas no nome; são funcionalmente idênticas",
+        "B. AUP define comportamento esperado dos colaboradores; política de SI detalha regras de negócio de cibersegurança",
+        "C. Política de SI define comportamento esperado; AUP detalha regras de negócio de cibersegurança",
+        "D. AUP se aplica apenas a trabalhadores não técnicos; política de SI apenas a técnicos"
+      ],
+      "correct": 1,
+      "justification_correct": "AUP define comportamento esperado de todos os trabalhadores. Política de segurança da informação também se aplica a todos, mas define regras de negócio de cibersegurança em muitos tópicos, incluindo alguns não relevantes para trabalhadores não técnicos. (CISM Review Manual, ISACA)",
+      "justification_wrong": "São documentos distintos; a política de SI não define comportamento esperado — a AUP faz isso; ambas se aplicam a todos, não apenas a grupos específicos."
+    },
+    {
+      "num": 23,
+      "text": "Qual certificação é reconhecida por conhecimento e experiência em auditoria de sistemas de informação e proteção?",
+      "tag": "Certificações",
+      "options": [
+        "A. CGEIT",
+        "B. CRISC",
+        "C. CISA",
+        "D. CISSP"
+      ],
+      "correct": 2,
+      "justification_correct": "CISA (Certified Information Systems Auditor) é reconhecida por exigir experiência em auditoria de sistemas de informação e proteção de sistemas de informação. (CISM Review Manual, ISACA)",
+      "justification_wrong": "CGEIT é para governança de TI empresarial; CRISC é para gestão de riscos e controles de SI; CISSP é certificação geral de segurança — apenas CISA é específica para auditoria de sistemas."
+    },
+    {
+      "num": 24,
+      "text": "O CISO de organização com 1.000 colaboradores quer implementar função de monitoramento de segurança 24/7/365. Qual é a melhor opção?",
+      "tag": "Operações de Segurança",
+      "options": [
+        "A. Terceirizar para MSSP especializado em monitoramento de eventos de segurança",
+        "B. Montar equipe de TI e monitoramento de segurança 24/7 com funcionários próprios",
+        "C. Montar função de monitoramento 24/7/365 com funcionários permanentes de tempo integral",
+        "D. Implementar plataforma de monitoramento e enviar alertas para equipe 5x8 após horas"
+      ],
+      "correct": 0,
+      "justification_correct": "A melhor opção é terceirizar para um MSSP. A principal vantagem é custo — as taxas de um MSSP serão fração do custo de contratar e equipar equipe própria capaz de cobrir 21 turnos por semana com férias, afastamentos e treinamento. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Montar equipe própria 24/7 é extremamente custoso; equipe 5x8 deixa lacunas críticas de cobertura — MSSP oferece cobertura completa com custo controlado."
+    },
+    {
+      "num": 25,
+      "text": "Qual é o melhor regime para gerenciar o conteúdo de uma política de segurança?",
+      "tag": "Gestão de Políticas",
+      "options": [
+        "A. Desenvolver política alinhada com ISO 27001, NIST 800-53 ou CIS CSC e revisar anualmente",
+        "B. Desenvolver política alinhada com padrões conhecidos e o negócio, revisar anualmente e quando mudanças significativas ocorrem",
+        "C. Terceirizar desenvolvimento de política e ter a firma revisando anualmente",
+        "D. Desenvolver política alinhada com padrões conhecidos e o negócio"
+      ],
+      "correct": 1,
+      "justification_correct": "A melhor política inicial harmoniza com a organização e é estruturada em padrão apropriado como ISO 27001, NIST 800-53 ou CIS CSC. Deve ser revisada pelo menos anualmente e quando a organização passa por mudanças significativas. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Revisão apenas anual pode ser insuficiente diante de mudanças significativas; terceirizar sem controle interno compromete o alinhamento; desenvolver sem revisão cria documentos desatualizados."
+    },
+    {
+      "num": 26,
+      "text": "Novo CISO em empresa manufatureira descobriu que mais de um terço dos sistemas operacionais de ICS são muito antigos. Qual é a melhor resposta?",
+      "tag": "Segurança de ICS",
+      "options": [
+        "A. Mudar para fornecedores com sistemas operacionais modernos e suportados",
+        "B. Atualizar sistemas operacionais e instalar bibliotecas retrocompatíveis",
+        "C. Virtualizar sistemas operacionais desatualizados",
+        "D. Isolar sistemas ICS em redes segmentadas e endurecidas"
+      ],
+      "correct": 3,
+      "justification_correct": "A melhor resposta é isolar os ambientes ICS em redes separadas e endurecidas com controles rígidos de acesso — isso reduz significativamente a probabilidade e o impacto de ameaças comuns. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Mudar de fornecedores pode ser proibitivamente caro; virtualizar não resolve a vulnerabilidade do SO subjacente; atualizar pode ser impossível com software ICS legado — isolamento é a solução prática."
+    },
+    {
+      "num": 27,
+      "text": "Como o CISO deve descrever a situação de ICS desatualizado para a gestão sênior?",
+      "tag": "Comunicação Executiva",
+      "options": [
+        "A. A organização precisa modernizar seus sistemas de controle industrial",
+        "B. A organização precisa isolar e proteger seus sistemas de controle industrial",
+        "C. A organização precisa exigir que fornecedores de ICS migrem para sistemas mais modernos",
+        "D. A organização deve terceirizar seu ICS para provedor de nuvem ICS"
+      ],
+      "correct": 1,
+      "justification_correct": "A melhor mensagem para a gestão sênior é de mitigação por meio de isolamento protetor — mesmo ambientes ICS com sistemas operacionais modernos devem ser isolados das demais redes da organização. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Modernizar é proibitivamente caro; exigir atualização de fornecedores pode não ser viável; terceirizar para nuvem não resolve a questão de segurança — isolamento é a mensagem correta."
+    },
+    {
+      "num": 28,
+      "text": "Qual é a melhor linguagem para política de verificação de antecedentes em organização multinacional?",
+      "tag": "Políticas de RH",
+      "options": [
+        "A. Antes de contratar, todos os funcionários devem passar por verificação de antecedentes onde permitido por lei",
+        "B. Antes de contratar, todos os trabalhadores, funcionários ou consultores, devem passar por verificação",
+        "C. Antes de contratar, todos os trabalhadores, independentemente do tipo, devem passar por verificação onde permitido por lei",
+        "D. Antes de contratar e anualmente, todos os funcionários devem passar por verificação de antecedentes"
+      ],
+      "correct": 2,
+      "justification_correct": "A melhor linguagem inclui todos os tipos de trabalhadores (funcionários, contratados, temporários, consultores) E reconhece que verificações não são permitidas em todos os países com a frase 'onde permitido por lei'. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Excluir tipos específicos de trabalhadores cria lacunas; não incluir 'onde permitido por lei' torna a política inflexível para países restritivos; revisão anual é boa prática mas não é o foco da linguagem."
+    },
+    {
+      "num": 29,
+      "text": "Um funcionário vazou informações vitais via serviço de armazenamento em nuvem não aprovado. Qual é o melhor controle administrativo para prevenir isso no futuro?",
+      "tag": "Controles de Segurança",
+      "options": [
+        "A. Exigir que funcionários reconheçam a conformidade com a política de segurança anualmente por escrito",
+        "B. Implementar sistema CASB",
+        "C. Implementar DLP baseado em endpoint",
+        "D. Implementar GPO para bloquear dispositivos USB de armazenamento em massa"
+      ],
+      "correct": 0,
+      "justification_correct": "Exigir reconhecimento anual da política de segurança é o único controle administrativo entre as opções. CASB, DLP e GPO são controles técnicos, não administrativos como a questão especifica. (CISM Review Manual, ISACA)",
+      "justification_wrong": "CASB, DLP e GPO são controles técnicos — a questão pede controle administrativo, que é o reconhecimento formal da política."
+    },
+    {
+      "num": 30,
+      "text": "Qual controle pode melhorar mais a segurança de software em organização SaaS que já realiza pentests trimestrais?",
+      "tag": "SDLC Seguro",
+      "options": [
+        "A. Scans SAST como parte do processo de build de software",
+        "B. Testes de penetração mensais",
+        "C. Treinamento obrigatório de desenvolvimento seguro para todos os desenvolvedores",
+        "D. Scans diários de aplicações web em produção"
+      ],
+      "correct": 0,
+      "justification_correct": "SAST (Static Application Security Testing) integrado ao processo de build é a melhor solução — organizações modernas com DevOps e DevSecOps integram segurança às ferramentas de automação, identificando defeitos antes do deploy. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Pentests mais frequentes não atacam a causa raiz; treinamento produz melhoria gradual; scans diários de produção não previnem defeitos na fase de desenvolvimento."
+    },
+    {
+      "num": 31,
+      "text": "Qual é a melhor fonte para padrões de hardening de sistemas e componentes?",
+      "tag": "Hardening",
+      "options": [
+        "A. Microsoft",
+        "B. NIST",
+        "C. SANS",
+        "D. Center for Internet Security (CIS)"
+      ],
+      "correct": 3,
+      "justification_correct": "O CIS (Center for Internet Security) possui biblioteca abrangente de padrões de hardening para sistemas operacionais de servidores, dispositivos de rede, sistemas operacionais de endpoint e vários subsistemas incluindo SGBDs. Os controles CIS são altamente respeitados e mantidos atualizados. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Microsoft é fonte para seus próprios produtos; NIST não é a melhor fonte para hardening; SANS não é o melhor fonte para padrões de hardening — CIS tem a cobertura mais abrangente e reconhecida."
+    },
+    {
+      "num": 32,
+      "text": "Ao implementar CIS Benchmarks em servidores de produção pela primeira vez, qual é o melhor método?",
+      "tag": "Hardening",
+      "options": [
+        "A. Implementar todas as configurações de uma vez em ambientes de teste e depois produção",
+        "B. Implementar as configurações gradualmente em ambientes de teste e depois produção",
+        "C. Implementar todas as configurações de uma vez diretamente em produção",
+        "D. Implementar as configurações gradualmente diretamente em produção"
+      ],
+      "correct": 1,
+      "justification_correct": "CIS Benchmarks são altamente detalhados — há dezenas de configurações para sistemas de servidor. Aplicar gradualmente garante que mudanças de configuração não afetem adversamente os sistemas de produção, testando primeiro em ambiente de teste. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Aplicar tudo de uma vez pode resultar em falhas difíceis de diagnosticar; implementar diretamente em produção sem teste é má prática — gradual em teste primeiro é a abordagem segura."
+    },
+    {
+      "num": 33,
+      "text": "Qual é a melhor abordagem para triagem de candidatos a diretor de segurança em organização financeira midsize?",
+      "tag": "Recrutamento",
+      "options": [
+        "A. Exigir CISSP ou CISM ou certificações similares",
+        "B. Desejar CISSP ou CISM e experiência relevante",
+        "C. Exigir CISSP e CISM",
+        "D. Exigir CISSP ou CISM e diploma avançado"
+      ],
+      "correct": 1,
+      "justification_correct": "A experiência relevante é a característica mais importante em candidato a diretor de segurança. Certificações como CISSP e CISM são ótimos complementos. Exigir certificações avançadas em excesso pode excluir candidatos qualificados. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Exigir certificações sem considerar experiência pode excluir candidatos qualificados; exigir ambas CISSP e CISM é excessivo; diploma avançado obrigatório reduz desnecessariamente o pool de candidatos."
+    },
+    {
+      "num": 34,
+      "text": "Como uma estatística operacional sobre varreduras de segurança pode ser transformada em métrica significativa para a gestão sênior?",
+      "tag": "Métricas de Segurança",
+      "options": [
+        "A. Evitar o uso de jargão técnico",
+        "B. Expressar a métrica em termos de negócio e resultados potenciais",
+        "C. Mostrar a métrica em dashboard visualmente atraente",
+        "D. Descrever a estatística em narrativa de sumário executivo"
+      ],
+      "correct": 1,
+      "justification_correct": "Uma estatística operacional pode ser transformada em métrica de negócio significativa usando termos de negócio e descrevendo resultados potenciais — por exemplo, tempo para aplicar patches pode ser descrito em termos de exposição ao risco de violação que poderia interromper operações críticas. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Remover jargão sem contexto de negócio é insuficiente; dashboard visual pode não adicionar contexto; narrativa executiva sem quantificação é menos eficaz — termos de negócio com outcomes é o diferencial."
+    },
+    {
+      "num": 35,
+      "text": "Qual das seguintes métricas de segurança é melhor descrita como um indicador líder (leading indicator) de ataque?",
+      "tag": "KRI e KPI",
+      "options": [
+        "A. Número de regras de firewall acionadas",
+        "B. Número de sessões de treinamento de conscientização concluídas",
+        "C. Percentual de sistemas escaneados",
+        "D. Tempo médio para aplicar patches de segurança"
+      ],
+      "correct": 3,
+      "justification_correct": "Existe forte correlação entre a ausência de patches e a probabilidade e sucesso de ataques. Sistemas patcheados rapidamente são muito menos provavelmente atacados com sucesso — tempo de patching prediz eventos futuros. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Regras de firewall e sistemas escaneados são indicadores operacionais; treinamento indica conscientização mas não prediz ataques diretamente — tempo de patching tem correlação direta com probabilidade de ataque."
+    },
+    {
+      "num": 36,
+      "text": "A métrica 'Percentual de sistemas com instalação completa de antimalware avançado' é melhor descrita como:",
+      "tag": "Tipos de Métricas",
+      "options": [
+        "A. Indicador operacional chave (KOI)",
+        "B. Indicador de desempenho chave (KPI)",
+        "C. Indicador de meta chave (KGI)",
+        "D. Indicador de risco chave (KRI)"
+      ],
+      "correct": 2,
+      "justification_correct": "Uma métrica de conclusão de instalação está mais associada a uma meta estratégica — neste caso, a instalação de antimalware avançado em todos os sistemas. Esta métrica poderia ser um KRI também, pois pode indicar redução de risco por melhoria na capacidade. (CISM Review Manual, ISACA)",
+      "justification_wrong": "KOI não é termo padrão da indústria; KPI mede desempenho contínuo; KRI indica áreas de risco potencial — a conclusão de uma instalação é melhor como KGI de meta estratégica."
+    },
+    {
+      "num": 37,
+      "text": "Qual tipo de métrica é mais adequado para mostrar a redução de risco resultante de melhorias no SIEM de uma organização?",
+      "tag": "Métricas",
+      "options": [
+        "A. KGI",
+        "B. RACI",
+        "C. KRI",
+        "D. ROSI"
+      ],
+      "correct": 2,
+      "justification_correct": "Um KRI (Key Risk Indicator) é a métrica mais adequada — este será um desafio pois eventos de alto impacto ocorrem raramente. Ainda assim, o KRI é o tipo mais correto para medir redução de risco. (CISM Review Manual, ISACA)",
+      "justification_wrong": "KGI é para metas; RACI é framework de responsabilidades; ROSI é retorno sobre investimento em segurança — KRI indica áreas de risco potencial e sua variação ao longo do tempo."
+    },
+    {
+      "num": 38,
+      "text": "O que SMART significa no contexto de métricas de segurança?",
+      "tag": "Métricas SMART",
+      "options": [
+        "A. Security Metrics Are Risk Treatment",
+        "B. Específico, Mensurável, Alcançável, Relevante e Baseado no Tempo",
+        "C. Específico, Mensurável, Acionável, Relevante e Baseado no Tempo",
+        "D. Específico, Gerenciável, Acionável, Relevante e Baseado no Tempo"
+      ],
+      "correct": 1,
+      "justification_correct": "SMART, no contexto de métricas, significa Específico, Mensurável, Alcançável (Achievable), Relevante e Baseado no Tempo (Time-related). (CISM Review Manual, ISACA)",
+      "justification_wrong": "Security Metrics Are Risk Treatment é um distrator; Acionável e Gerenciável não são as definições corretas das letras A e M no acrônimo SMART de métricas."
+    },
+    {
+      "num": 39,
+      "text": "Métricas que mostram a efetividade de um programa de gestão de riscos NÃO incluiriam qual das seguintes?",
+      "tag": "Métricas de Risco",
+      "options": [
+        "A. Redução no número de eventos de segurança",
+        "B. Redução no impacto de eventos de segurança",
+        "C. Redução no tempo para remediar vulnerabilidades",
+        "D. Redução no número de patches aplicados"
+      ],
+      "correct": 3,
+      "justification_correct": "O número de patches aplicados não é métrica que indica efetividade de um programa de gestão de riscos nem de gestão de vulnerabilidades. As outras métricas são potencialmente úteis para programas de gestão de riscos. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Redução de eventos, impacto e tempo de remediação são métricas válidas de efetividade do programa de riscos — número de patches aplicados mede volume de trabalho, não efetividade."
+    },
+    {
+      "num": 40,
+      "text": "Exemplos de métricas de desempenho de programa de segurança incluem todos os seguintes, EXCETO:",
+      "tag": "Métricas de Desempenho",
+      "options": [
+        "A. Tempo para detectar incidentes de segurança",
+        "B. Tempo para remediar incidentes de segurança",
+        "C. Tempo para realizar scans de segurança",
+        "D. Tempo para descobrir vulnerabilidades"
+      ],
+      "correct": 2,
+      "justification_correct": "O tempo para realizar scans de segurança não é um bom exemplo de métrica de desempenho de programa de segurança. As outras métricas — detectar incidentes, remediar incidentes e descobrir vulnerabilidades — são exemplos válidos. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Detectar incidentes, remediar incidentes e descobrir vulnerabilidades são métricas de desempenho diretas do programa — tempo de realização de scans é métrica operacional de menor valor estratégico."
+    },
+    {
+      "num": 41,
+      "text": "Qual é o propósito de métricas de entrega de valor (value delivery metrics)?",
+      "tag": "Métricas de Valor",
+      "options": [
+        "A. Redução de custos de longo prazo",
+        "B. Redução no ROSI",
+        "C. Aumento no ROSI",
+        "D. Aumento no lucro líquido"
+      ],
+      "correct": 0,
+      "justification_correct": "Métricas de entrega de valor são mais frequentemente associadas à redução de custos de longo prazo em proporção a outras medidas como número de funcionários e ativos. (CISM Review Manual, ISACA)",
+      "justification_wrong": "ROSI e lucro líquido não são as associações primárias de métricas de entrega de valor — a redução proporcional de custos é o foco central."
+    },
+    {
+      "num": 42,
+      "text": "Joseph, CISO, precisa de método padrão para medir e publicar informações sobre a efetividade do programa de segurança. Qual é a melhor abordagem?",
+      "tag": "Frameworks de Medição",
+      "options": [
+        "A. Scaled score",
+        "B. NIST Cybersecurity Framework (CSF)",
+        "C. Business Model for Information Security (BMIS)",
+        "D. Balanced Scorecard (BSC)"
+      ],
+      "correct": 3,
+      "justification_correct": "O Balanced Scorecard é uma ferramenta bem conhecida para medir o desempenho e a efetividade de uma organização — determina quão bem a organização está cumprindo sua missão e objetivos estratégicos e quão bem está alinhada com os objetivos organizacionais gerais. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Scaled score não é método para publicar métricas; NIST CSF não é tipicamente usado para publicar métricas de programa; BMIS é para entender relacionamentos, não publicar métricas."
+    },
+    {
+      "num": 43,
+      "text": "Qual é a melhor descrição do framework COBIT?",
+      "tag": "COBIT",
+      "options": [
+        "A. Framework de processos e controles de segurança integrável com ITIL ou ISO 20000",
+        "B. Framework de controles de TI sobre o qual controles de segurança podem ser adicionados",
+        "C. Framework de processos de TI com processos de segurança opcionais quando Extended COBIT é implementado",
+        "D. Framework de processos de TI com processos de segurança integrados em todo o framework"
+      ],
+      "correct": 3,
+      "justification_correct": "COBIT é framework de processos de TI com processos de segurança integrados em todo o framework. Desenvolvido pela ISACA, seus quatro domínios são: planejar e organizar, adquirir e implementar, entregar e suportar, e monitorar e avaliar. (CISM Review Manual, ISACA)",
+      "justification_wrong": "COBIT não é estritamente framework de controles de segurança; não existe Extended COBIT; os processos de segurança estão integrados, não são opcionais."
+    },
+    {
+      "num": 44,
+      "text": "Uma organização é obrigada pelo PCI DSS a incluir várias políticas altamente técnicas. Qual é a melhor abordagem?",
+      "tag": "PCI DSS e Políticas",
+      "options": [
+        "A. Implementar política técnica de segurança com todos os itens PCI, com AUP separada para todos os trabalhadores",
+        "B. Incorporar todas as políticas PCI na política de SI e deixar os usuários identificarem o que é relevante",
+        "C. Incluir todos os itens PCI na política de SI e indicar quais são aplicáveis aos usuários finais",
+        "D. Manter as políticas PCI fora da política geral de segurança para não confundir usuários não técnicos"
+      ],
+      "correct": 0,
+      "justification_correct": "A melhor abordagem é separar: documento de política técnica/mandatória para trabalhadores técnicos com todas as políticas PCI, e AUP separada para todos os usuários finais com conteúdo de segurança acessível. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Incorporar tudo em um documento é confuso para usuários não técnicos; deixar usuários identificarem relevância é inadequado; excluir da política geral cria lacunas de conformidade."
+    },
+    {
+      "num": 45,
+      "text": "Qual é a melhor métrica de nível gerencial para gestão de vulnerabilidades?",
+      "tag": "Métricas de Vulnerabilidades",
+      "options": [
+        "A. Tempo médio desde disponibilidade do patch até aplicação bem-sucedida",
+        "B. Tempo médio desde varredura de vulnerabilidades até aplicação do patch",
+        "C. Tempo médio para aplicar um patch com sucesso",
+        "D. Número de patches de segurança aplicados"
+      ],
+      "correct": 0,
+      "justification_correct": "Esta é a métrica mais significativa — mostra a história sobre quanto tempo servidores ficam desprotegidos por patches de segurança, o que equivale a exposição e risco de intrusão e violação com impactos potencialmente danos. (CISM Review Manual, ISACA)",
+      "justification_wrong": "Tempo desde varredura ignora o período antes da varredura; tempo apenas para aplicar patch tem pouca relevância de negócio; número de patches mede volume de trabalho, não exposição ao risco."
+    },
+    {
+      "num": 46,
+      "text": "Um CISO está implementando um programa de Third Party Risk Management (TPRM) e precisa estabelecer métricas de governança para monitorar a efetividade do programa. Qual métrica é mais apropriada para demonstrar ao conselho que o programa está reduzindo o risco operacional associado a fornecedores críticos?",
+      "tag": "Third Party Risk Management e Métricas de Segurança",
+      "options": [
+        "A. Percentual de fornecedores críticos com avaliações de risco atualizadas anualmente e incidentes de segurança atribuíveis a terceiros como proporção do risco total identificado",
+        "B. Número total de fornecedores submetidos a questionários de segurança e quantidade de auditorias presenciais realizadas",
+        "C. Redução em percentual dos custos de segurança relacionados a terceiros e economia obtida com consolidação de fornecedores",
+        "D. Conformidade com 100% dos requisitos contratuais de segurança e certificações ISO 27001 de todos os fornecedores"
+      ],
+      "correct": 0,
+      "justification_correct": "A métrica apresentada em A alinha-se com os princípios de governança estabelecidos no CISM Review Manual, que enfatiza a necessidade de métricas de resultado (outcome metrics) que demonstrem redução efetiva de risco, não apenas atividades. Avaliações atualizadas de risco de fornecedores críticos permitem acompanhamento contínuo, enquanto o rastreamento de incidentes atribuíveis a terceiros como proporção do risco total identificado fornece uma visão KPI (Key Performance Indicator) que comunica redução de risco ao conselho. Esta abordagem está alinhada com frameworks como NIST Cybersecurity Framework (Govern function) e ISO 31000 para gerenciamento de risco de terceiros.",
+      "justification_wrong": "Opção B mede atividades (lagging indicators) e não resultados, não demonstrando efetivamente redução de risco. Opção C foca em métricas financeiras que não refletem postura de segurança real ou redução de risco operacional. Opção D é excessivamente rígida e impraticável; conformidade com 100% de requisitos e certificações de todos os fornecedores não é métrica realista de risco reduzido, especialmente considerando que nem todos os terceiros têm o mesmo perfil de criticidade, conforme orientado pelo TPRM no CISM Review Manual."
+    },
+    {
+      "num": 47,
+      "text": "Um CISO está conduzindo uma revisão de maturidade do programa de governança de segurança da informação utilizando o modelo CMMI. A organização atualmente opera em nível 2 (Gerenciado) e deseja atingir nível 3 (Definido). Durante a gap analysis, identificou-se que as decisões de tratamento de risco não seguem um processo padronizado documentado e variam conforme o executivo responsável. Qual deve ser a prioridade imediata do CISO para fechar essa lacuna crítica de governança?",
+      "tag": "Maturidade CMMI e Tratamento de Risco",
+      "options": [
+        "A. Estabelecer um processo formal e documentado de tratamento de risco com critérios de decisão padronizados, aprovado pelo comitê diretor de cibersegurança, que seja replicável e consistente em toda a organização.",
+        "B. Implementar um sistema automatizado de scoring de risco que elimine completamente a necessidade de julgamento humano nas decisões de tratamento.",
+        "C. Aumentar a frequência das revisões de acesso e auditoria interna para compensar a falta de padronização nas decisões de risco.",
+        "D. Contratar consultores externos para validar cada decisão de tratamento de risco tomada pelos executivos da organização."
+      ],
+      "correct": 0,
+      "justification_correct": "A resposta correta alinha-se com o CMMI nível 3 (Definido), que exige processos padronizados, documentados e repetíveis. Conforme ISACA CISM Review Manual, a transição do nível 2 para 3 exige estabelecimento de processos definidos com critérios consistentes. A aprovação pelo comitê diretor de cibersegurança garante alinhamento estratégico e responsabilidade executiva, essencial para governança efetiva. O tratamento de risco deve seguir critérios predeterminados (aceitar, mitigar, transferir, evitar) aplicáveis uniformemente.",
+      "justification_wrong": "Opção B é inadequada pois o CMMI nível 3 não elimina julgamento profissional, apenas padroniza o processo. Opção C trata sintoma, não a causa raiz - auditoria frequente não cria consistência sem processo definido. Opção D é dependência externa desnecessária; consultores validam, mas não substituem a governança interna estabelecida pela organização, violando princípio de responsabilidade do conselho e independência auditoria."
+    },
+    {
+      "num": 48,
+      "text": "Uma organização está estabelecendo seu programa de governança de segurança da informação e precisa definir como o comitê diretor de cibersegurança deve avaliar a efetividade das decisões de tratamento de risco aprovadas pela alta administração. Qual abordagem MELHOR alinha a avaliação de efetividade com os princípios de governança corporativa e responsabilidade fiduciária do conselho?",
+      "tag": "Governance Decision Making and Board Accountability",
+      "options": [
+        "A. Implementar um framework de revisão bianual onde o comitê diretor compara riscos residuais contra o apetite de risco corporativo documentado, com relatórios executivos ao conselho incluindo desvios e ações corretivas necessárias",
+        "B. Estabelecer métricas de conformidade técnica focadas em percentual de patches aplicados e atualizações de software realizadas mensalmente pelo departamento de TI",
+        "C. Utilizar exclusivamente indicadores de resultado (lagging indicators) como número de incidentes ocorridos e multas regulatórias para determinar se as decisões foram apropriadas",
+        "D. Delegar a avaliação de efetividade integralmente ao Chief Information Security Officer (CISO) com relatórios trimestrais ao departamento de auditoria interna"
+      ],
+      "correct": 0,
+      "justification_correct": "A resposta correta (A) alinha-se aos princípios de Information Security Governance do CISM Review Manual ISACA. A avaliação de efetividade de decisões de tratamento de risco deve ser contínua, estruturada e comparada contra o apetite de risco corporativo estabelecido. O comitê diretor de cibersegurança funciona como elo entre a gestão executiva e o conselho, responsável por supervisionar a implementação das decisões de risco aprovadas. A inclusão de relatórios executivos ao conselho demonstra accountability e suporta a responsabilidade fiduciária. Esta abordagem segue as melhores práticas de governança corporativa (alinhadas com SOX e princípios de governance).",
+      "justification_wrong": "Opção B é inadequada pois confunde métricas técnicas operacionais com avaliação de efetividade de decisões estratégicas de governança. Opção C utiliza apenas lagging indicators sem considerar leading indicators (como completude de remediação de risco aprovada), violando princípios de gestão proativa de risco. Opção D viola o princípio de separação de responsabilidades e supervisão independente; o comitê diretor deve avaliar o CISO, não ser substituído por ele, conforme estabelecido no estatuto do programa e structure of governance."
+    },
+    {
+      "num": 49,
+      "text": "Uma organização implementou um programa de segurança da informação com governança estabelecida, porém o conselho administrativo solicitou evidências quantitativas sobre a efetividade das decisões de tratamento de risco aprovadas nos últimos 12 meses. O CISO deve apresentar métricas que demonstrem o impacto das ações de mitigação em relação aos objetivos de negócio. Qual abordagem de mensuração é mais apropriada para este contexto de prestação de contas executiva?",
+      "tag": "Métricas de Segurança e KPIs para Decisões de Risco",
+      "options": [
+        "A. Indicadores de desempenho lagging (KPIs retrospectivos) que comparam redução percentual de eventos de segurança e exposição residual versus baseline inicial, correlacionando com redução de perdas financeiras potenciais",
+        "B. Indicadores técnicos de volume de patches aplicados e quantidade de vulnerabilidades identificadas pelo scanning automático, demonstrando atividade de remediação",
+        "C. Indicadores operacionais de compliance como percentual de funcionários que completaram treinamento de segurança e quantidade de políticas aprovadas",
+        "D. Indicadores de capacidade do SOC como tempo médio de detecção (MTTD) e tempo médio de resolução (MTTR) sem correlação com redução de risco residual"
+      ],
+      "correct": 0,
+      "justification_correct": "Conforme CISM Review Manual - Information Security Governance, métricas lagging (indicadores retrospectivos) são as mais apropriadas para demonstrar ao conselho o impacto efetivo das decisões de tratamento de risco aprovadas. Estas métricas correlacionam ações implementadas com resultados mensuráveis em redução de exposição e potencial financeiro protegido, alinhadas com ITIL e framework de governança corporativa. O CISO deve quantificar risco residual antes e depois das implementações, demonstrando ROI em segurança e cumprimento da responsabilidade executiva de prestação de contas sobre decisões estratégicas de risco.",
+      "justification_wrong": "Opção B é insuficiente pois mede atividade técnica, não impacto no risco de negócio. Opção C aborda compliance operacional, não efetividade de tratamento de risco. Opção D apresenta métricas operacionais do SOC que, isoladamente, não demonstram redução de exposição residual ou impacto nas decisões de risco aprovadas pelo conselho, falhando em conectar tecnologia com objetivos estratégicos de governança."
+    },
+    {
+      "num": 50,
+      "text": "Um CISO de uma organização financeira está implementando um programa de governança de segurança da informação e precisa estabelecer mecanismos de oversight do conselho administrativo. A organização opera em múltiplas jurisdições com requisitos regulatórios distintos (Basileia III, SOX, LGPD). Qual estrutura de comitê de governança é MAIS apropriada para garantir independência, segregação de funções e responsabilidade executiva no tratamento de decisões de risco críticas?",
+      "tag": "Governança Executiva e Estrutura de Comitês",
+      "options": [
+        "A. Um comitê único de Risco que consolida todas as responsabilidades de segurança, compliance e auditoria interna, com representação de CISO, CRO, General Counsel e CFO, reportando ao CEO",
+        "B. Um comitê de Cibersegurança independente com CISO, Diretor de Auditoria Interna (não subordinado ao CISO), representante do Conselho e especialista externo, separado do comitê de Risco Corporativo, com duplo reporte ao Conselho e Comitê de Auditoria",
+        "C. Um comitê executivo informal de segurança liderado pelo CISO com participação ad-hoc de stakeholders operacionais, evitando estruturas formalizadas que retardem tomadas de decisão",
+        "D. Uma estrutura matricial onde o CISO subordina-se simultaneamente ao CRO e ao Diretor de TI, eliminando hierarquias redundantes e concentrando decisões de risco em uma única linha de reporte"
+      ],
+      "correct": 1,
+      "justification_correct": "A alternativa B alinha-se com as melhores práticas de governança estabelecidas no CISM Review Manual ISACA. A estrutura com comitê de cibersegurança independente garante: (1) Segregação de funções - Auditoria Interna não subordinada ao CISO assegura independência nas avaliações; (2) Representação do Conselho demonstra accountability executiva conforme exigências de SOX e diretrizes de Basileia III sobre governança de risco; (3) Duplo reporte ao Conselho e Comitê de Auditoria fortalece a supervisão de decisões de tratamento de risco críticas; (4) Separação do comitê de Risco Corporativo evita conflitos de interesse em decisões estratégicas de segurança. Isso reflete a responsabilidade do conselho no oversight de cibersegurança reconhecida em frameworks regulatórios internacionais.",
+      "justification_wrong": "A (estrutura única de risco) viola princípios de segregação de funções e concentra poder excessivamente no CISO, reduzindo independência do oversight. C (informalidade) não atende requisitos de governança corporativa e compliance (SOX, Basileia III) que exigem estruturas formalizadas com documentação clara de responsabilidades. D (subordinação dual ao CRO e TI) cria ambiguidade hierárquica, dilui responsabilidade clara sobre decisões de risco críticas e favorece priorização operacional sobre segurança estratégica, contrariando os princípios de alinhamento estratégico do CISM."
+    }
+  ]
+}
