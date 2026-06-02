@@ -435,21 +435,51 @@ function render() {
     };
   });
 
-  // Badges
-  var bgHtml = '';
-  DOMAINS.forEach(function(d) {
-    var earned = allData[d.key].status === 'earned';
-    bgHtml += '<div class="bdot' + (earned ? ' earned' : '') + '">';
-    bgHtml += d.code.replace('S','').replace('D','.');
-    bgHtml += '</div>';
-  });
+  // Badges visuais
   var s1all = DOMAINS.filter(function(d){return d.section===1&&allData[d.key].status==='earned';}).length === 20;
   var s2all = DOMAINS.filter(function(d){return d.section===2&&allData[d.key].status==='earned';}).length === 16;
   var s3all = DOMAINS.filter(function(d){return d.section===3&&allData[d.key].status==='earned';}).length === 9;
-  bgHtml += '<div class="bdot' + (s1all ? ' earned' : '') + '">S1</div>';
-  bgHtml += '<div class="bdot' + (s2all ? ' earned' : '') + '">S2</div>';
-  bgHtml += '<div class="bdot' + (s3all ? ' earned' : '') + '">S3</div>';
-  bgHtml += '<div class="bdot' + ((s1all&&s2all&&s3all) ? ' earned' : '') + '">PRE</div>';
+  var premAll = s1all && s2all && s3all;
+
+  function badgeFile(code, section) {
+    var num = code.replace(/^S\d+D/,'').padStart(2,'0');
+    if (section === 1) return 'CFE_SID' + num + '.png';
+    if (section === 2) return 'CFE_S2D' + num + '.png';
+    if (section === 3) return 'CFE_S3D' + num + '.png';
+    return '';
+  }
+  function badgeItem(file, label, earned) {
+    return '<div class="badge-item"><div class="badge-img-wrap' + (earned?' earned':'') + '">' +
+      '<img src="static/badges/cfe/' + file + '" alt="' + label + '" loading="lazy">' +
+      '</div><div class="badge-label">' + label + '</div></div>';
+  }
+
+  var bgHtml = '';
+  bgHtml += '<div class="badge-group" style="width:100%"><div class="badges-section-title">Seção 1 · Financial Transactions</div><div style="display:flex;flex-wrap:wrap;gap:10px">';
+  DOMAINS.filter(function(d){return d.section===1;}).forEach(function(d){
+    bgHtml += badgeItem(badgeFile(d.code,1), d.code, allData[d.key].status==='earned');
+  });
+  bgHtml += '</div></div>';
+
+  bgHtml += '<div class="badge-group" style="width:100%"><div class="badges-section-title">Seção 2 · Investigation</div><div style="display:flex;flex-wrap:wrap;gap:10px">';
+  DOMAINS.filter(function(d){return d.section===2;}).forEach(function(d){
+    bgHtml += badgeItem(badgeFile(d.code,2), d.code, allData[d.key].status==='earned');
+  });
+  bgHtml += '</div></div>';
+
+  bgHtml += '<div class="badge-group" style="width:100%"><div class="badges-section-title">Seção 3 · Prevention & Deterrence</div><div style="display:flex;flex-wrap:wrap;gap:10px">';
+  DOMAINS.filter(function(d){return d.section===3;}).forEach(function(d){
+    bgHtml += badgeItem(badgeFile(d.code,3), d.code, allData[d.key].status==='earned');
+  });
+  bgHtml += '</div></div>';
+
+  bgHtml += '<div class="badge-special" style="display:flex;flex-wrap:wrap;gap:10px;width:100%;margin-top:8px;padding-top:8px;border-top:0.5px solid var(--bd)">';
+  bgHtml += badgeItem('CFE_S01.png', 'S1 MASTER', s1all);
+  bgHtml += badgeItem('CFE_S02.png', 'S2 MASTER', s2all);
+  bgHtml += badgeItem('CFE_S03.png', 'S3 MASTER', s3all);
+  bgHtml += badgeItem('CFE_PREMIUM.png', 'CFE PREMIUM', premAll);
+  bgHtml += '</div>';
+
   g('badges-grid').innerHTML = bgHtml;
 
   // Simulado
