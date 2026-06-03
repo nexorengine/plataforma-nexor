@@ -1,0 +1,710 @@
+{
+  "cert_id": "cism",
+  "domain_id": "incident_management_cism",
+  "quiz_num": 2,
+  "domain_name": "Incident Management",
+  "cert_name": "CISM",
+  "lang": "pt",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Durante o desenvolvimento do plano de resposta a incidentes, qual elemento é CRÍTICO para garantir que todas as partes interessadas compreendam suas responsabilidades e autoridades?",
+      "tag": "incident response plan development",
+      "options": [
+        "A. Definição clara de papéis, responsabilidades e estrutura de autoridade do CSIRT",
+        "C. Realização de backups diários de todos os sistemas",
+        "B. Implementação de ferramentas SIEM de última geração",
+        "D. Contratação de consultor externo para validação anual"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-61 e ISO/IEC 27035 estabelecem que papéis, responsabilidades e autoridades devem ser claramente documentados no plano. CISM exige estrutura organizacional explícita do CSIRT com cadeia de comando definida.",
+      "justification_wrong": "Ferramentas SIEM são suporte operacional, não essencial para plano. Backups são contingência. Consultor externo é validação, não elemento crítico do plano."
+    },
+    {
+      "num": 2,
+      "text": "Qual classificação de incidente, conforme NIST SP 800-61, requer escalação IMEDIATA e envolvimento da alta gestão?",
+      "tag": "incident classification and categorization",
+      "options": [
+        "B. Tentativa de acesso negada a sistema não crítico de desenvolvimento",
+        "C. Falha de autenticação única resolvida em menos de 5 minutos",
+        "A. Incidente de Severidade Crítica com impacto em operações essenciais ou dados confidenciais de alto valor",
+        "D. Aviso de atualização de segurança em servidor interno"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-61 Rev.3 e ISO/IEC 27035 definem severidade crítica por impacto operacional e confidencialidade. CISM exige escalação imediata para incidentes com potencial de comprometimento em larga escala.",
+      "justification_wrong": "Tentativas negadas não representam ameaça ativa. Falhas resolvidas rapidamente são de baixa criticidade. Avisos de atualização são manutenção preventiva, não incidente."
+    },
+    {
+      "num": 3,
+      "text": "Em uma investigação forense, qual cadeia de custódia DEVE ser mantida para garantir admissibilidade legal das evidências?",
+      "tag": "forensic investigation",
+      "options": [
+        "D. Assinatura digital de arquivos compactados após coleta",
+        "A. Documentação contínua de quem acessou, quando, onde, por quanto tempo e para qual propósito cada evidência",
+        "B. Fotografias da tela do computador antes do isolamento",
+        "C. Armazenamento de mídias em sala com controle de temperatura"
+      ],
+      "correct": 1,
+      "justification_correct": "RFC 3227 e ISO/IEC 27037 estabelecem cadeia de custódia por rastreabilidade completa de acesso. CISM e padrões forenses exigem registro detalhado (Who, When, Where, Why, How) para validade legal.",
+      "justification_wrong": "Fotografias são documentação complementar. Controle ambiental preserva mídias, não cadeia. Assinatura digital após compactação compromete integridade da prova original."
+    },
+    {
+      "num": 4,
+      "text": "Qual procedimento é ESSENCIAL na notificação regulatória pós-incidente conforme LGPD e normativas similares?",
+      "tag": "regulatory notification requirements",
+      "options": [
+        "D. Informar apenas acionistas e não divulgar para órgãos públicos",
+        "B. Enviar comunicado à imprensa antes de notificar órgãos reguladores",
+        "C. Aguardar conclusão completa da investigação antes de qualquer notificação",
+        "A. Notificar a autoridade competente em até 72 horas se houver risco aos direitos de pessoas, com descrição clara do incidente"
+      ],
+      "correct": 3,
+      "justification_correct": "LGPD Art. 34, GDPR Art. 33 e ISO/IEC 27035 estabelecem prazo máximo de 72 horas para notificação de autoridades em caso de risco. CISM exige documentação e comunicação tempestiva.",
+      "justification_wrong": "Imprensa não é notificação regulatória obrigatória. Investigação completa pode ultrapassar prazo. Acionistas não substituem autoridades reguladoras."
+    },
+    {
+      "num": 5,
+      "text": "Na revisão pós-incidente (post-incident review), qual ação garante implementação efetiva de lições aprendidas?",
+      "tag": "post-incident review and lessons learned",
+      "options": [
+        "B. Realizar reunião com todas as áreas e gerar relatório descritivo final",
+        "D. Comunicar verbalmente aos líderes sobre pontos críticos identificados",
+        "C. Arquivar relatório no banco de dados após 30 dias",
+        "A. Documentar achados, atribuir proprietários para cada ação corretiva, estabelecer prazos e monitorar conclusão através de rastreamento formal"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-61 e ISO/IEC 27035 exigem atribuição de responsabilidades, prazos específicos e acompanhamento verificável. CISM enfatiza ciclo completo: identificar → atribuir → implementar → validar.",
+      "justification_wrong": "Relatório descritivo sem ações é documentação passiva. Arquivo após 30 dias não garante implementação. Comunicação verbal é informal, não auditável."
+    },
+    {
+      "num": 6,
+      "text": "Durante o desenvolvimento do plano de resposta a incidentes, qual elemento é CRÍTICO para garantir que a organização possa rapidamente ativar seus recursos de resposta?",
+      "tag": "Incident Response Plan Development",
+      "options": [
+        "B. Documentação completa de todos os sistemas de TI da organização",
+        "D. Certificação de todos os membros da equipe em segurança cibernética",
+        "C. Implementação de ferramentas SIEM antes da finalização do plano",
+        "A. Definição clara de estrutura de governança com papéis, responsabilidades e cadeia de comando pré-estabelecida"
+      ],
+      "correct": 3,
+      "justification_correct": "ISACA CISM reconhece que papéis, responsabilidades e cadeia de comando claramente definidos são pré-requisitos essenciais. Estrutura de governança permite ativação rápida sem ambiguidades durante crises, alinhado com NIST SP 800-61 e ISO 27035.",
+      "justification_wrong": "Documentação de sistemas é importante, mas secundária. Ferramentas não garantem plano. Certificações individuais não substituem estrutura organizacional efetiva para resposta coordenada."
+    },
+    {
+      "num": 7,
+      "text": "Em relação à classificação e categorização de incidentes, qual critério MELHOR alinha-se com a priorização de recursos durante a resposta?",
+      "tag": "Incident Classification and Categorization",
+      "options": [
+        "D. Localização geográfica dos sistemas comprometidos",
+        "A. Apenas a quantidade de dados afetados",
+        "C. Velocidade de detecção do incidente",
+        "B. Impacto potencial no negócio, confidencialidade/integridade/disponibilidade e número de usuários afetados"
+      ],
+      "correct": 3,
+      "justification_correct": "ISACA enfatiza que classificação deve considerar impacto comercial, dimensões CIA e escopo de usuários afetados. Isso permite alocação eficiente de recursos e respostas proporcionais, conforme ISO 27035 e NIST SP 800-61.",
+      "justification_wrong": "Apenas volume de dados é insuficiente. Velocidade de detecção não reflete gravidade. Localização geográfica é contexto, não critério de severidade principal."
+    },
+    {
+      "num": 8,
+      "text": "Qual é a responsabilidade primária de um CSIRT/CIRT durante a fase de ESCALONAMENTO de um incidente crítico?",
+      "tag": "Incident Response Team and Escalation Procedures",
+      "options": [
+        "B. Comunicar promptamente aos stakeholders relevantes (gestão, legal, comunicações) seguindo procedimentos pré-definidos de escalação",
+        "D. Conduzir investigação forense completa antes de qualquer comunicação externa",
+        "A. Desabilitar acesso de todos os usuários aos sistemas afetados imediatamente",
+        "C. Encerrar todas as operações comerciais até resolução completa do incidente"
+      ],
+      "correct": 0,
+      "justification_correct": "CISM destaca que escalação segue protocolos pré-estabelecidos comunicando aos stakeholders apropriados (executivos, legal, PR). Tempestividade é crítica. NIST SP 800-61 e ISO 27035 reforçam comunicação estruturada e hierárquica.",
+      "justification_wrong": "Desabilitar acesso sem análise causa danos desnecessários. Encerrar operações é decisão executiva, não CSIRT. Investigação forense é paralela, não pré-requisito para escalação."
+    },
+    {
+      "num": 9,
+      "text": "Na investigação forense de incidentes, qual prática FUNDAMENTAL deve ser implementada para manter a cadeia de custódia e admissibilidade em potencial processo legal?",
+      "tag": "Forensic Investigation",
+      "options": [
+        "C. Armazenar todas as evidências em servidor centralizado com acesso irrestrito à equipe",
+        "A. Criar múltiplas cópias de evidências em mídias diferentes para redundância",
+        "D. Realizar investigação apenas com ferramentas proprietárias desenvolvidas internamente",
+        "B. Documentar, verificar integridade (hash criptográfico) e manter registro detalhado de quem acessou cada evidência e quando"
+      ],
+      "correct": 3,
+      "justification_correct": "ISACA e NIST SP 800-86 exigem cadeia de custódia rigorosa: documentação detalhada, verificação de integridade via hash (MD5, SHA-256), rastreamento de acesso. Essencial para validade forense e conformidade regulatória.",
+      "justification_wrong": "Múltiplas cópias não garantem integridade. Acesso irrestrito compromete cadeia de custódia. Ferramentas proprietárias carecem de auditoria e validação independente."
+    },
+    {
+      "num": 10,
+      "text": "Qual elemento é ESSENCIAL incluir em uma revisão pós-incidente (post-incident review) para garantir melhoria contínua alinhada aos objetivos CISM?",
+      "tag": "Post-Incident Review and Lessons Learned",
+      "options": [
+        "B. Avaliação da resposta em relação ao plano, identificação de gaps, documento de lições aprendidas e plano de ações corretivas com responsáveis e prazos",
+        "D. Simulação de incidente idêntico para validar correções implementadas",
+        "A. Apenas análise técnica detalhada das vulnerabilidades exploradas",
+        "C. Relatório confidencial enviado apenas à diretoria executiva"
+      ],
+      "correct": 0,
+      "justification_correct": "CISM enfatiza que pós-incidente deve documentar lições aprendidas, gaps no plano, ações corretivas específicas com responsáveis e prazos. Integrando com governança e melhoria contínua, alinhado a ISO 27035 e melhores práticas.",
+      "justification_wrong": "Apenas análise técnica ignora aspecto organizacional/processual. Sigilo impede aprendizado coletivo. Simulação pós-incidente é atividade separada, não substitui revisão estruturada."
+    },
+    {
+      "num": 11,
+      "text": "Durante o desenvolvimento do plano de resposta a incidentes, qual elemento é CRÍTICO para garantir que as ações de resposta não comprometam a investigação forense?",
+      "tag": "Plano de Resposta a Incidentes e Investigação Forense",
+      "options": [
+        "C. Restauração rápida dos sistemas para minimizar impacto comercial",
+        "A. Preservação da cadeia de custódia e isolamento imediato de evidências digitais",
+        "D. Delegação total da investigação ao provedor de serviços em nuvem",
+        "B. Notificação imediata aos stakeholders externos sem documentação"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-61 e ISO/IEC 27035-1 enfatizam preservação de cadeia de custódia como essencial. Isolamento imediato evita contaminação de evidências, permitindo investigação forense válida legalmente e suportando análise de causa raiz sem comprometer integridade.",
+      "justification_wrong": "Notificação sem documentação viola rastreabilidade. Restauração prematura destrói evidências críticas. Delegação sem supervisão compromete controle, responsabilidade e qualidade da investigação conforme CISM Domain 4."
+    },
+    {
+      "num": 12,
+      "text": "Em uma classificação de incidentes segundo NIST SP 800-61, qual critério de categorização deve ser PRIMARIAMENTE considerado para determinar o nível de severidade?",
+      "tag": "Classificação e Categorização de Incidentes",
+      "options": [
+        "B. Impacto potencial à confidencialidade, integridade, disponibilidade e conformidade regulatória",
+        "A. Apenas o número de usuários afetados no momento da detecção",
+        "D. A percepção subjetiva da gerência sobre importância da área afetada",
+        "C. O tempo decorrido desde o início não confirmado do incidente"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-61 Rev. 3 define severidade por impacto na tríade CIA mais conformidade regulatória (LGPD, HIPAA, PCI-DSS). Análise de impacto potencial—não apenas afetados atuais—permite priorização objetiva, escalonamento apropriado e alocação adequada de recursos.",
+      "justification_wrong": "Número de usuários é indicador parcial, tempo decorrido não correlaciona com severidade, percepção subjetiva viola princípios de governança. CISM exige critérios objetivos, mensuráveis, alinhados a impacto organizacional real e requisitos legais."
+    },
+    {
+      "num": 13,
+      "text": "Qual é a composição MAIS APROPRIADA de uma equipe de resposta a incidentes (CSIRT) conforme melhores práticas de CISM e ISO/IEC 27035?",
+      "tag": "Equipe de Resposta a Incidentes (CSIRT/CIRT)",
+      "options": [
+        "D. Operadores de helpdesk com experiência em ticketing de incidentes",
+        "A. Apenas técnicos de segurança de TI do departamento de infraestrutura",
+        "C. Exclusivamente consultores externos especializados em forense digital",
+        "B. Representantes multidisciplinares: segurança, operações, jurídico, comunicações, gestão de riscos e liderança executiva"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 27035-1 e NIST SP 800-61 recomendam equipes multifuncionais. Composição diversa garante: resposta técnica eficaz, comunicação apropriada, conformidade legal, continuidade de negócio e escalação executiva. Cada função complementa perspectivas críticas para resolução integrada.",
+      "justification_wrong": "Equipes monofuncionais (técnicos isolados, consultores externos apenas, helpdesk) carecem de visão holística. Faltam capacidades de decisão executiva, contexto legal e continuidade de negócio. CISM Domain 4 exige governança integrada com múltiplos stakeholders."
+    },
+    {
+      "num": 14,
+      "text": "Qual procedimento de escalação é MAIS ADEQUADO quando um incidente evoluir de severidade média para crítica durante a resposta inicial?",
+      "tag": "Procedimentos de Escalação",
+      "options": [
+        "D. Publicar informação no portal interno da empresa para transparência máxima com todos os funcionários",
+        "A. Aguardar conclusão da análise inicial antes de notificar níveis superiores",
+        "B. Ativar imediatamente critérios de escalação pré-definidos, envolvendo comando executivo e stakeholders críticos com plano de comunicação estruturado",
+        "C. Informar apenas ao diretor de TI via email para não causar alarme desnecessário"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27035-2 e NIST SP 800-61 especificam escalação acionada por critérios objetivos de mudança de severidade. Envolvimento imediato de executivos e comunicação estruturada permite decisões críticas (ativação de BC, respostas legais), mitigação rápida e conformidade com notificação regulatória.",
+      "justification_wrong": "Aguardar análise completa retarda ação executiva crucial. Email informal não documenta nem garante ação. Publicação indiscriminada expõe detalhes operacionais, prejudica investigação, viola confidencialidade e pode agravar reputação segundo melhores práticas de crise."
+    },
+    {
+      "num": 15,
+      "text": "Em uma análise pós-incidente (post-incident review), qual elemento é ESSENCIAL para transformar lições aprendidas em melhoria contínua mensurada?",
+      "tag": "Análise Pós-Incidente e Lições Aprendidas",
+      "options": [
+        "D. Atribuir culpa individual aos técnicos envolvidos para responsabilização disciplinar",
+        "C. Conduzir reunião informal com equipe, sem registros formais, para liberar pessoal rapidamente",
+        "A. Documentar apenas falhas técnicas identificadas durante o incidente",
+        "B. Estabelecer plano de remediação com proprietários, prazos específicos, métricas de sucesso e rastreamento até implementação"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 27035-3 e NIST SP 800-61 exigem: documentação formal de lições, plano de remediação com proprietários/prazos, métricas quantificáveis (MTTR redução, cobertura controles) e rastreamento até encerramento. Abordagem sistemática garante continuidade, prevenção recorrência e demonstra maturidade.",
+      "justification_wrong": "Documentação parcial (técnica apenas) ignora processos, cultura. Reuniões informais perdem rastreabilidade. Responsabilização individual sem contexto sistêmico desestimula relatos futuros, reduz cultura de segurança. CISM exige análise objetiva, estruturada e orientada a melhoria, não punição."
+    },
+    {
+      "num": 16,
+      "text": "Ao estabelecer um plano de resposta a incidentes, qual elemento é MAIS crítico para garantir a efetividade da comunicação durante uma crise de segurança que afete múltiplas unidades de negócio?",
+      "tag": "crisis_communication",
+      "options": [
+        "A. Definição prévia de canais de comunicação, responsáveis designados e mensagens-chave para cada stakeholder",
+        "C. Publicação de todos os detalhes técnicos do incidente nas redes sociais para transparência total",
+        "B. Contratação de agência externa de relações públicas imediatamente após o incidente ser detectado",
+        "D. Aguardar conclusão completa da investigação forense antes de qualquer comunicação externa"
+      ],
+      "correct": 0,
+      "justification_correct": "CISM e NIST SP 800-61 enfatizam planejamento prévio de comunicação de crise com canais, responsáveis e mensagens segmentadas. Evita improvisação, garante consistência e compliance com requisitos regulatórios.",
+      "justification_wrong": "Agências externas (B) causam atrasos. Divulgação técnica completa (C) expõe vulnerabilidades. Aguardar conclusão (D) viola requisitos de notificação urgente em LGPD e regulamentações."
+    },
+    {
+      "num": 17,
+      "text": "Uma organização classifica incidentes conforme severidade e impacto comercial. Qual fator diferencia adequadamente um incidente Crítico (Tier 1) de um incidente Alto (Tier 2) na estrutura de categorização CISM?",
+      "tag": "incident_classification",
+      "options": [
+        "A. Apenas o número de sistemas afetados, independente do impacto financeiro ou operacional",
+        "B. Potencial de interrupção de funções comerciais críticas, comprometimento massivo de dados sensíveis e impacto regulatório imediato",
+        "C. A velocidade de resposta que o time conseguir atingir, variando conforme disponibilidade de pessoal",
+        "D. O fabricante do software afetado e versão, determinando automaticamente a severidade"
+      ],
+      "correct": 1,
+      "justification_correct": "CISM Domain 4 define severidade por impacto comercial, confidencialidade/integridade dados e conformidade. Incidentes Tier 1 afetam funções críticas e exigem escalação imediata com ativação de plano de contingência.",
+      "justification_wrong": "Apenas quantidade de sistemas (A) ignora impacto real. Velocidade de resposta (C) é consequência, não critério. Fabricante (D) é irrelevante; impacto define severidade."
+    },
+    {
+      "num": 18,
+      "text": "Durante investigação forense de uma violação de dados, o CSIRT deve seguir qual procedimento para manter a cadeia de custódia (chain of custody) alinhado com requisitos legais e CISM?",
+      "tag": "forensic_investigation",
+      "options": [
+        "D. Armazenar evidências originais em servidor de produção ativo para facilitar acesso rápido durante a análise",
+        "B. Permitir acesso irrestrito de múltiplos investigadores simultaneamente para acelerar análise e documentar apenas ao final",
+        "A. Documentar cada acesso, modificação e transferência de evidências com timestamp, responsável identificado e justificativa técnica; manter cópias hash MD5",
+        "C. Realizar investigação sem documentação formal, confiando na experiência do investigador-chefe para manter integridade"
+      ],
+      "correct": 2,
+      "justification_correct": "CISM e NIST SP 800-101 exigem documentação rigorosa: responsável, data/hora, justificativa. Hash criptográfico (SHA-256 preferido) comprova integridade. Cadeia contínua é pré-requisito para admissibilidade judicial.",
+      "justification_wrong": "Acesso múltiplo sem controle (B) compromete evidência. Ausência de documentação (C) inviabiliza legalmente. Servidor ativo (D) violações integridade e contamina investigação."
+    },
+    {
+      "num": 19,
+      "text": "Uma análise pós-incidente (post-incident review) identifica falhas repetitivas em procedimentos de detecção. Qual ação alinha-se MELHOR com a filosofia de 'lessons learned' do CISM?",
+      "tag": "lessons_learned",
+      "options": [
+        "B. Documentar raízes causa, implementar controles corretivos, atualizar procedimentos, treinar equipe e validar efetividade em 30-60 dias",
+        "D. Requerer apenas documento de 'acknowledged' assinado pelos stakeholders sem implementação concreta de mudanças",
+        "A. Arquivar o relatório para referência futura e esperar ocorrência de incidente similar antes de agir",
+        "C. Culpabilizar o responsável pela falha e implementar punições disciplinares imediatas"
+      ],
+      "correct": 0,
+      "justification_correct": "CISM enfatiza ciclo contínuo de melhoria: análise de causa-raiz, controles preventivos, educação contínua e validação de efetividade. Post-incident review deve resultar em ações documentadas e mensuráveis.",
+      "justification_wrong": "Apenas arquivar (A) desperdiça oportunidade de prevenção. Culpabilização (C) inibe reportes de incidentes. Acknowledgement sem ação (D) não reduz risco residual."
+    },
+    {
+      "num": 20,
+      "text": "Uma organização regulada (LGPD, PCI-DSS) sofre incidente de vazamento de dados pessoais. Qual fator crítico deve ser priorizado na integração entre resposta a incidentes e plano de continuidade de negócio (BCM)?",
+      "tag": "business_continuity_integration",
+      "options": [
+        "B. Restaurar operações críticas priorizadas por RTO/RPO enquanto preserva evidências forenses, coordena notificações regulatórias e mantém plano de continuidade ativo",
+        "D. Focar apenas em recuperação técnica, delegando conformidade regulatória para departamento jurídico após conclusão da resposta",
+        "A. Ativar recuperação de dados de backup imediatamente, sem aguardar conclusão de investigação ou análise de impacto",
+        "C. Desligar todos os sistemas afetados indefinidamente até resolução completa da investigação, aceitando indisponibilidade total"
+      ],
+      "correct": 0,
+      "justification_correct": "CISM Domain 4 integra resposta a incidentes com BCM: ativar plano com RTO/RPO mantendo investigação forense, cumprir janelas regulatórias de notificação (72h LGPD) e restaurar funções críticas em paralelo.",
+      "justification_wrong": "Restauração precipitada (A) contamina evidências. Desligamento indefinido (C) viola SLAs e RTO. Separar compliance (D) gera brechas legais e risco reputacional."
+    },
+    {
+      "num": 21,
+      "text": "Uma organização implementou um plano de resposta a incidentes que define escalação em três níveis. O incidente atual envolve comprometimento de dados de clientes em produção. Qual nível de escalação é apropriado e qual stakeholder deve ser notificado conforme ITIL v4 e frameworks de governance?",
+      "tag": "escalation_procedures",
+      "options": [
+        "D. Nível 1 - Time de help desk; notificação ao departamento de comunicações",
+        "B. Nível 3 - CISO e Chief Risk Officer; notificação a stakeholders executivos e órgãos reguladores",
+        "C. Nível 2 - Gerente de segurança; notificação apenas ao diretor de TI",
+        "A. Nível 1 - Analista técnico; notificação ao gerente de TI"
+      ],
+      "correct": 1,
+      "justification_correct": "Conforme NIST SP 800-61 e ISO/IEC 27035, incidentes com exposição de dados pessoais requerem escalação máxima envolvendo CISO, executivos e notificação regulatória. ITIL v4 determina envolvimento de stakeholders críticos em incidentes de severidade alta.",
+      "justification_wrong": "Níveis 1 e 2 são inadequados pois não acionam governance executiva necessária para incidentes com exposição de dados. Nível 1 ao help desk é insuficiente para comprometimento de produção. Comunicações sem CISO/CRO viola conformidade regulatória."
+    },
+    {
+      "num": 22,
+      "text": "Durante investigação forense de um incidente APT, o time CSIRT necessita preservar evidências digitais para possível ação legal. Qual procedimento segue corretamente a cadeia de custódia conforme ISO/IEC 27037 e NIST?",
+      "tag": "forensic_investigation",
+      "options": [
+        "C. Fotografar artefatos, desligar sistema imediatamente, coletar memória RAM após shutdown",
+        "B. Usar write-blockers, registrar hash SHA-256/SHA-512, manter log detalhado de acesso com data/hora, assinatura de todos os manipuladores",
+        "A. Coletar evidências em mídia compartilhada, documentar hash MD5, permitir acesso múltiplo da equipe",
+        "D. Coletar evidências sem documentação inicial, validar integridade posteriormente, delegar custódia para TI"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27037 e NIST SP 800-86 exigem: write-blockers, hash criptográfico robusto (SHA-256+), cadeia custódia documentada com assinaturas, log rastreável. Hash MD5 é considerado comprometido para propósitos forenses críticos.",
+      "justification_wrong": "Opção A usa MD5 fraco e permite manipulação irrestrita. Opção C gera perda de memória volátil crítica. Opção D viola integridade de evidência. Apenas B garante admissibilidade legal e conformidade com padrões internacionais de forense digital."
+    },
+    {
+      "num": 23,
+      "text": "A organização necessita integrar business continuity com plano de resposta a incidentes. Um incidente nível crítico afeta RTO de 4 horas. Qual abordagem garante alinhamento com ISO/IEC 27035 e BS 65000?",
+      "tag": "business_continuity_integration",
+      "options": [
+        "B. Plano de resposta define gatilhos BC baseados em RTO/RPO, com comitê integrado CISO/BCM; testes anuais conjuntos; escalação automática em T+30min",
+        "C. Business continuity opera independentemente de incidente; notificação posterior ao restauro",
+        "A. Ativar plano BC apenas após conclusão completa da investigação forense",
+        "D. Direcionar todos incidentes para BC sem análise prévia; estabelecer RTO único de 24h para todos serviços"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27035 e BS 65000 exigem integração planejada com critérios pré-definidos (RTO/RPO), governança conjunta CISO/BCM, testes coordenados e escalação tempestiva. Gatilho em T+30min garante ativação célere em incidentes críticos.",
+      "justification_wrong": "Opção A cria overhead temporal inaceitável (4h RTO violado). Opção C desalinha segurança-continuidade. Opção D é inflexível e inadequada para incidentes menores. Apenas B implementa integração adaptativa conforme normas internacionais de gestão de crises."
+    },
+    {
+      "num": 24,
+      "text": "Um incidente de vazamento de PII foi identificado. A organização está sujeita a LGPD, GDPR e regulações estaduais. Qual sequência de notificação satisfaz ALL os requisitos regulatórios, conforme normas aplicáveis?",
+      "tag": "regulatory_notification_requirements",
+      "options": [
+        "B. Notificação: (1) Autoridade proteção dados (ANPD/DPA) em 72h; (2) Afetados em prazo máximo regulatório; (3) Media/órgãos se exposição alta; (4) Documentar impacto risco para cada jurisdição",
+        "C. Informar apenas afetados; reguladores se solicitarem; manter sigilo até resolução",
+        "A. Notificar autoridades reguladoras em 30 dias; comunicar afetados conforme disponibilidade; arquivar em auditoria",
+        "D. Notificar simultaneamente todos stakeholders em 5 dias; sem análise impacto prévia"
+      ],
+      "correct": 0,
+      "justification_correct": "LGPD (Art. 34), GDPR (Art. 33-34) e leis estaduais exigem: notificação autoridades em 72h máximo, afetados conforme risco, disclosure público se necessário. Análise impacto por jurisdição é mandatório. Opção B cumpre timing crítico e gradação de comunicação.",
+      "justification_wrong": "Opção A viola LGPD/GDPR em timing (30 dias excessivo). Opção C omite compliance regulatória obrigatória. Opção D não diferencia urgência entre autoridades e afetados. Apenas B garante conformidade com múltiplas jurisdições conforme jurisprudência e guidelines ANPD."
+    },
+    {
+      "num": 25,
+      "text": "Na revisão pós-incidente, o time identificou 8 oportunidades de melhoria. Qual processo de 'lessons learned' garante conversão em ações efetivas, conforme NIST SP 800-61 e ISO/IEC 27035-1?",
+      "tag": "post_incident_review_lessons_learned",
+      "options": [
+        "A. Documentar findings em relatório; compartilhar com stakeholders; sem atribuição de responsabilidade ou timeline",
+        "B. Análise causal (5 Porquês), priorização por impacto/viabilidade, atribuição RACI, timeline explícita, rastreamento em registro de mudanças integrado, revisão trimestral de execução",
+        "D. Automatizar todas as ações detectadas sem validação de viabilidade; implementação em 48h",
+        "C. Reunir team em debriefing; discutir verbalmente; confiar em memória para implementação futura"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-61 e ISO/IEC 27035-1 definem: análise causal estruturada, priorização baseada em risco, proprietários claros (RACI), prazos explícitos, rastreamento formali integrado ao change management, métricas de progresso. Abordagem sistemática transforma insights em melhorias quantificáveis.",
+      "justification_wrong": "Opção A carece de accountability e execução. Opção C é informal e impede rastreabilidade. Opção D ignora análise causal e viabilidade técnica. Apenas B implementa ciclo de melhoria contínua conforme frameworks de gestão de incidentes maduros e conformidade com ISO."
+    },
+    {
+      "num": 26,
+      "text": "Durante uma resposta a incidente de segurança, o CISO precisa determinar se notificações regulatórias são obrigatórias. Qual framework normativo estabelece critérios de materialidade e timing para notificação de breach de dados pessoais?",
+      "tag": "regulatory_notification_requirements",
+      "options": [
+        "D. PCI DSS v4.0 - obriga notificação apenas após conclusão da investigação forense completa",
+        "B. ISO 27035 - recomenda notificação em até 30 dias úteis sem considerar materialidade",
+        "C. NIST CSF - estabelece timeline única de 48 horas para todas as categorias de incidente",
+        "A. LGPD (Lei Geral de Proteção de Dados) - notificação em até 72 horas à ANPD quando há risco aos direitos dos titulares"
+      ],
+      "correct": 3,
+      "justification_correct": "LGPD Art. 18 obriga notificação à ANPD em até 72 horas quando há risco aos direitos dos titulares. A materialidade é avaliada pelo controlador. Crítico para compliance regulatório brasileiro em resposta a incidentes.",
+      "justification_wrong": "ISO 27035 (30 dias) e NIST CSF (48h) não são mandatórios legalmente no Brasil. PCI DSS permite investigação prévia, mas LGPD estabelece timeline fixa de 72 horas em risco real."
+    },
+    {
+      "num": 27,
+      "text": "Um CSIRT corporativo identifica que um incidente de ransomware afeta sistemas críticos de produção. A equipe deve decidir entre isolamento imediato ou continuação monitorada para forensia. Qual princípio de design do plano de resposta a incidentes prioriza essa decisão?",
+      "tag": "incident_response_plan_development",
+      "options": [
+        "B. Isolamento obrigatório de qualquer sistema infectado independentemente do impacto operacional",
+        "A. Balanceamento entre preservação de evidências forenses e minimização de impacto operacional conforme RTO/RPO definidos",
+        "C. Continuação indefinida do monitoramento até aprovação do conselho de administração",
+        "D. Priorização absoluta da coleta forense sobre a restauração de serviços de negócio"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-61 e ISO 27035 estabelecem que a decisão entre preservação forense e minimização de impacto deve considerar RTO/RPO organizacionais. Princípio de trade-off entre evidência e continuidade operacional.",
+      "justification_wrong": "Isolamento cego ignora RTO/RPO. Continuação indefinida viola princípio de contenção. Priorização forense absoluta compromete continuidade. Decisão deve ser documentada no plano e considerar risco residual."
+    },
+    {
+      "num": 28,
+      "text": "Na fase de classificação de incidentes, o CISO recebe notícia de acesso não autorizado a dados de clientes empresariais (não PII sensível). Qual critério de categorização determina o nível de severidade e acionamento da escalação?",
+      "tag": "incident_classification_and_categorization",
+      "options": [
+        "B. Combinação de: confidencialidade (impacto dados), disponibilidade (se houver), integridade, AND contexto de negócio conforme matriz de criticidade",
+        "A. Apenas o volume de registros afetados determina severidade; dados empresariais sempre classificam como 'Baixo'",
+        "C. Exclusivamente a presença de PII; dados empresariais não requerem escalação acima de LOW",
+        "D. Número de minutos entre detecção e contenção; incidentes resolvidos em <2h são sempre LOW"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27035 e NIST SP 800-61 prescrevem classificação multidimensional: C/I/A + contexto organizacional. Dados empresariais podem ter severidade CRÍTICA se relacionados a segredos comerciais ou compliance regulatório específico.",
+      "justification_wrong": "Volume isolado é insuficiente. PII não é único critério - dados comerciais podem ter impacto equivalente. Tempo de resolução não determina severidade inicial. Contexto de negócio é critério essencial omitido em alternativas incorretas."
+    },
+    {
+      "num": 29,
+      "text": "Após contenção de incidente, durante a revisão pós-incidente (post-incident review), identificam-se 7 findings críticos. O documento de 'lessons learned' deve atender qual padrão para garantir integração efetiva ao programa de segurança?",
+      "tag": "post_incident_review_and_lessons_learned",
+      "options": [
+        "D. Relatório técnico detalhado focado apenas em timeline forense; ações operacionais são responsabilidade do helpdesk",
+        "B. Documento estruturado RACI com ações rastreáveis, prazos, proprietários e vinculação a controles (ISO 27001/NIST CSF) com follow-up trimestral",
+        "C. Ata de reunião arquivada sem ações formalizadas; lições aprendidas são implícitas",
+        "A. Relatório livre descritivo com análise causal e recomendações informais para discussão gerencial"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27035:2023 e NIST SP 800-61 exigem documentação estruturada com proprietários de ações, prazos e rastreabilidade. Integração ao programa de segurança requer vínculo explícito a controles e follow-up formalizado.",
+      "justification_wrong": "Relatório informal não garante implementação. Atas sem ações não permitem rastreamento. Timeline forense isolada não aborda causa raiz. Padrão RACI + controles mapeia responsabilidades e garante ciclo de melhoria contínua."
+    },
+    {
+      "num": 30,
+      "text": "Em uma simulação de incidente crítico (Tabletop Exercise), o CISO identifica que comunicação de crise com stakeholders externos não está documentada. Qual elemento normativo deve estar integrado ao plano de resposta para garantir conformidade e confiança?",
+      "tag": "crisis_communication_and_business_continuity_integration",
+      "options": [
+        "D. Coordenação exclusiva com órgãos reguladores; comunicação com clientes é responsabilidade da área comercial pós-incidente",
+        "A. Apenas press release genérico preparado pelo marketing; não requer aprovação legal ou compliance",
+        "B. Matriz de stakeholders, templates pré-aprovados por Legal/Compliance, cadeia de aprovação, timing e canais por tipo de incidente conforme regulações vigentes",
+        "C. Comunicação espontânea e imediata em redes sociais para demonstrar transparência; detalhes técnicos devem ser omitidos apenas após incidente encerrado"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27035, LGPD e NIST SP 800-61 exigem plano de comunicação pré-aprovado com matriz de stakeholders, templates legalmente revisados, timing e escalação. Integração com continuidade de negócio garante consistência e conformidade.",
+      "justification_wrong": "Press release genérico viola LGPD Art. 18. Comunicação espontânea em redes sociais gera riscos legais. Exclusão de clientes compromete confiança. Plano integrado ao BC garante coordenação entre stakeholders internos e externos."
+    },
+    {
+      "num": 31,
+      "text": "Uma organização financeira sofreu uma violação de dados envolvendo informações de clientes. O gerente de segurança da informação deve determinar o nível de gravidade do incidente para ativar o plano de resposta apropriado. Qual fator é MAIS crítico na classificação inicial deste incidente?",
+      "tag": "incident_classification_and_categorization",
+      "options": [
+        "A. Volume de registros de clientes afetados e potencial impacto regulatório",
+        "C. Tipo de malware detectado nos logs de firewall",
+        "B. Identidade do atacante e localização geográfica",
+        "D. Data e hora exata do primeiro acesso não autorizado"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27035 e NIST SP 800-61 enfatizam que classificação deve considerar escopo (volume), impacto operacional e conformidade regulatória (LGPD/Lei 12.965). Volume de dados e obrigações de notificação regulatória determinam escalação apropriada.",
+      "justification_wrong": "Identidade do atacante, tipo de malware e timestamps, embora relevantes para investigação forense, não são fatores primários para classificação inicial de gravidade conforme frameworks normativos de resposta a incidentes."
+    },
+    {
+      "num": 32,
+      "text": "Durante o desenvolvimento do plano de resposta a incidentes, a organização deve definir claramente a composição e responsabilidades do CSIRT. Qual composição MELHOR atende aos requisitos de resposta eficaz em ambiente híbrido com dados sensíveis?",
+      "tag": "incident_response_team",
+      "options": [
+        "A. Apenas analistas de segurança internos com acesso a todos os sistemas",
+        "B. Gerente de incidentes, analista forense, especialista em comunicação, especialista em rede e representante jurídico",
+        "D. Contratação exclusiva de consultoria externa para investigação e remediação",
+        "C. Equipe de TI geral responsável por múltiplas funções sem definição de papéis específicos"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-61 Rev. 3 e ISO 27035 recomendam equipes multidisciplinares com papéis definidos: coordenador/gerente, técnicos forenses, especialistas em comunicação, representação legal e stakeholders críticos. Isso garante resposta completa e conformidade regulatória.",
+      "justification_wrong": "Acesso irrestrito internamente cria riscos; funções genéricas impedem resposta coordenada; dependência exclusiva externa reduz controle e velocidade. Híbrido com papéis claros é mais eficaz conforme melhores práticas certificadas."
+    },
+    {
+      "num": 33,
+      "text": "Um incidente de segurança foi identificado e classificado como CRÍTICO. As procedures de escalação da organização não estão claramente documentadas. Qual é a consequência MAIS provável dessa falha conforme frameworks de incident management?",
+      "tag": "escalation_procedures",
+      "options": [
+        "C. Melhoria imediata na velocidade de detecção de incidentes futuros",
+        "A. Redução automática dos custos de investigação forense",
+        "B. Atrasos em notificações regulatórias, comunicação inconsistente com stakeholders e decisões inadequadas de continuidade de negócio",
+        "D. Aumento automático de recursos de TI sem justificativa orçamentária"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27035 e NIST SP 800-61 estabelecem que escalação clara é crítica para: notificações legais tempestivas (LGPD exige 72h), coordenação entre níveis de gestão, ativação de planos de contingência. Falta gera atrasos, inconsistência e não-conformidade.",
+      "justification_wrong": "Escalação não reduz custos automaticamente, não melhora detecção prospectiva por si, e não justifica alocação arbitrária de recursos. O impacto real é processual e regulatório, não operacional imediato."
+    },
+    {
+      "num": 34,
+      "text": "Durante uma investigação forense de incidente, qual abordagem MELHOR preserva a integridade das evidências e garante aceitabilidade em processos legais, conforme padrões de certificação CISM?",
+      "tag": "forensic_investigation",
+      "options": [
+        "A. Coleta imediata de dados sem documentação, congelamento de sistema e destruição de logs antigos",
+        "B. Isolamento do sistema afetado, documentação de cadeia de custódia, hash criptográfico de artefatos e replicação forense certificada",
+        "C. Análise em tempo real do sistema operacional comprometido sem cópias offline",
+        "D. Exclusão de dados temporários para acelerar investigação e reduzir espaço de armazenamento"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27035 e manuais forenses (NIST SP 800-86) exigem: isolamento, cadeia de custódia documentada, hash MD5/SHA-256 para integridade, cópias forenses certificadas. Protocolo garante admissibilidade em cortes brasileiras e internacionais.",
+      "justification_wrong": "Coleta sem documentação invalida evidências; análise in-situ contamina cena; exclusão de dados prejudica investigação. Violam cadeia de custódia, inutilizando provas conforme Code of Federal Procedures e legislação brasileira."
+    },
+    {
+      "num": 35,
+      "text": "Ao concluir a investigação de um incidente de segurança, a organização realiza a reunião de lições aprendidas. Qual prática MELHOR garante que os aprendizados sejam efetivamente integrados aos controles e planos de continuidade de negócio?",
+      "tag": "post_incident_review_lessons_learned",
+      "options": [
+        "A. Documentar oralmente as constatações em reunião única e retomar operações normais imediatamente",
+        "C. Arquivar relatório em servidor compartilhado sem acompanhamento de implementação",
+        "B. Registrar formalmente todos os achados, atribuir proprietários para remediação, integrar ao roadmap de segurança e revisar plano de continuidade com métricas KPI",
+        "D. Culpabilizar indivíduos e equipes envolvidas no incidente para evitar futuros lapsos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27035:2016 seção 7.4 exige: análise formal, documentação estruturada, atribuição de proprietários, integração a planos de segurança/continuidade com métricas mensuráveis. Ciclo fechado garante melhoria contínua e conformidade com PDCA.",
+      "justification_wrong": "Documentação oral não é auditável; arquivamento sem acompanhamento não gera mudanças; culpabilização prejudica cultura de segurança. Sem proprietários e KPIs, lições não se traduzem em ações concretas conforme normas de gestão de incidentes."
+    },
+    {
+      "num": 36,
+      "text": "Uma organização financeira implementou um plano de resposta a incidentes que classifica eventos de segurança em 4 níveis. Um ataque de ransomware afeta 15% dos servidores de produção, comprometendo a disponibilidade de sistemas críticos por 2 horas. Qual classificação e ação de escalação são mais apropriadas conforme NIST SP 800-61 e COBIT 2019?",
+      "tag": "Classificação e Escalação de Incidentes",
+      "options": [
+        "B. Alto (P2) - Escalar para gerente de TI e aguardar análise de impacto antes de ativar BC",
+        "A. Crítico (P1) - Escalar imediatamente para CISO, CEO e ativar plano de continuidade de negócio",
+        "C. Médio (P3) - Notificar equipe de segurança e resolver em até 24 horas",
+        "D. Baixo (P4) - Documentar e resolver conforme disponibilidade de recursos"
+      ],
+      "correct": 1,
+      "justification_correct": "Indisponibilidade de sistemas críticos em 15% com impacto operacional imediato caracteriza incidente P1. NIST SP 800-61 recomenda escalação executiva e ativação de BC/DR. COBIT 2019 APO12 enfatiza resposta imediata para eventos com impacto nos objetivos empresariais.",
+      "justification_wrong": "Classificações P2, P3 e P4 subestimam severidade do evento. Ransomware com 2 horas de indisponibilidade em ambiente crítico exige resposta máxima. Aguardar análise (P2) viola RTO. Classificações inferiores negligenciam impacto regulatório e reputacional."
+    },
+    {
+      "num": 37,
+      "text": "Durante investigação forense de um incidente de exfiltração de dados, o CSIRT necessita coletar evidências de um servidor em produção. Qual abordagem alinha com ISO/IEC 27035:2023 e cadeia de custódia forense?",
+      "tag": "Investigação Forense e Cadeia de Custódia",
+      "options": [
+        "B. Capturar volatilidade (memória RAM, conexões ativas) antes de desligar, documentar com SHA-256, manter cadeia de custódia rigorosa com assinatura de múltiplas testemunhas",
+        "A. Desligar imediatamente o servidor, criar imagem forense de disco e documentar hash criptográfico MD5 da mídia original",
+        "C. Executar ferramentas de análise remota sem desconexão, gerar logs de acesso e confiar em timestamps do sistema operacional",
+        "D. Solicitar ao servidor proprietário realizar backup antes da coleta forense para não impactar operações"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27035:2023 seção 7.3 recomenda capturar volatilidade antes de desligar. SHA-256 garante integridade criptográfica superior ao MD5. Cadeia de custódia com múltiplas testemunhas atende NIST SP 800-86 e requisitos regulatórios (LGPD, lei penal).",
+      "justification_wrong": "Opção A: MD5 é criptograficamente quebrado. Desligar sem capturar volatilidade perde evidências críticas de memória. Opção C: Análise remota compromete integridade forense. Opção D: Backup prejudica análise forense e cadeia de custódia."
+    },
+    {
+      "num": 38,
+      "text": "Uma instituição de saúde sofreu incidente de privacidade com exposição de 50 mil registros de pacientes (PII). Quais notificações regulatórias e timeframes devem ser cumpridos conforme LGPD e normas setoriais?",
+      "tag": "Requisitos de Notificação Regulatória",
+      "options": [
+        "A. Notificar ANPD em até 72 horas, indivíduos afetados em até 10 dias úteis, autoridades de saúde (Anvisa) conforme protocolo específico",
+        "C. Publicar comunicado na imprensa primeiro, depois notificar ANPD em até 48 horas",
+        "D. Aguardar conclusão da investigação forense completa antes de qualquer notificação (até 90 dias)",
+        "B. Notificar apenas os indivíduos afetados em até 30 dias, ANPD apenas se houver dano grave comprovado"
+      ],
+      "correct": 0,
+      "justification_correct": "LGPD Art. 18 exige notificação da ANPD em até 72 horas após detecção. LGPD Art. 16 requer comunicação com indivíduos quando risco é identificado. Resolução CFM nº 1.821/2007 e ANVISA estabelecem protocolos específicos para setor saúde com notificação compulsória.",
+      "justification_wrong": "Opção B: 30 dias viola LGPD (72h). Dano grave não é pré-requisito para notificação. Opção C: Ordem correta é ANPD primeiro. Opção D: Aguardar 90 dias viola compliance e aumenta exposição legal."
+    },
+    {
+      "num": 39,
+      "text": "No contexto de pós-incidente, qual abordagem de 'lessons learned' melhor atende ITIL 4 e NIST Post-Incident Review, garantindo melhoria contínua?",
+      "tag": "Análise Pós-Incidente e Lições Aprendidas",
+      "options": [
+        "A. Reunião rápida com resposta técnica em até 2 dias, foco em culpabilidade individual, documentação em email interno",
+        "C. Enviar questionário aos envolvidos e arquivar respostas sem análise adicional",
+        "D. Delegar análise ao time de segurança sem envolver stakeholders de negócio e operações",
+        "B. Reunião estruturada 5-7 dias pós-resolução, análise não-punitiva de causas raiz (5 porquês), ações corretivas priorizadas, registro formal em repositório corporativo com rastreamento de implementação"
+      ],
+      "correct": 3,
+      "justification_correct": "ITIL 4 DPO (Problem Optimization) recomenda revisão estruturada 5-7 dias pós-incidente. NIST SP 800-61 seção 4.4 enfatiza análise não-punitiva e rastreamento de implementação. Timing permite dados completos sem perda de contexto.",
+      "justification_wrong": "Opção A: 2 dias é insuficiente. Culpabilidade prejudica engajamento. Email não é formalização. Opção C: Questionário sem análise não gera insights. Opção D: Exclui perspectivas essenciais de impacto operacional e regulatório."
+    },
+    {
+      "num": 40,
+      "text": "Uma organização integra seu plano de resposta a incidentes com estratégia de continuidade de negócio (BC/DR). Um incidente afeta RTO de 4 horas. Qual decisão de ativação de failover alinha com ISO/IEC 27031 e COBIT 2019 APO13?",
+      "tag": "Integração com Continuidade de Negócio e Decisão de Failover",
+      "options": [
+        "D. Estabelecer critério claro pré-definido: se RTO será excedido em 30 minutos conforme IVA (Impact vs. Availability), ativar automaticamente com aprovação do Crisis Manager",
+        "A. Ativar failover imediatamente quando incidente é detectado, independente de análise de impacto, para minimizar RTD",
+        "C. Ativar failover apenas após investigação forense completa no sistema primário",
+        "B. Aguardar 30 minutos para confirmar necessidade de failover, analisando impacto e custo, coordenando com comitê de crise"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27031 seção 8.5 recomenda decisão de failover baseada em análise pré-definida de impacto versus disponibilidade (IVA). COBIT 2019 APO13 enfatiza critérios predefinidos e governance clara. Margem de 30 minutos permite análise rápida sem exceder RTO crítico.",
+      "justification_wrong": "Opção A: Failover sem análise causa custos desnecessários e compromete forense. Opção B: 30 minutos pode exceder RTO de 4 horas em cenários rápidos. Opção C: Forense não deve bloquear continuidade de negócio. Decisão automática descentralizada viola governance."
+    },
+    {
+      "num": 41,
+      "text": "Durante o desenvolvimento do plano de resposta a incidentes, qual elemento é CRÍTICO para garantir que a organização atenda aos requisitos regulatórios de notificação em tempo real?",
+      "tag": "incident_response_plan_development",
+      "options": [
+        "D. Delegação total de responsabilidade de notificação ao departamento jurídico após conclusão da investigação",
+        "C. Definição genérica de prazos de notificação sem diferenciação por severidade",
+        "B. Documentação exclusiva de contatos internos da equipe de segurança",
+        "A. Integração de procedimentos de notificação com timelines específicas por tipo de incidente e jurisdição regulatória"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-61 e ISO/IEC 27035 exigem integração de requisitos regulatórios (LGPD, GDPR) no plano com timelines específicas. A notificação deve ser planejada por tipo de incidente e jurisdição, considerando prazos variáveis (72h GDPR, 30 dias LGPD) e severidade.",
+      "justification_wrong": "Opções B, C e D violam normas regulatórias. Notificação genérica, tardia ou delegada exclusivamente não cumprem requisitos de resposta rápida e transparência exigidos por GDPR, LGPD e legislações setoriais."
+    },
+    {
+      "num": 42,
+      "text": "Qual classificação de incidente, conforme ITIL e ISO/IEC 27035, EXIGE escalação imediata para alta gestão e acionamento de crisis communication?",
+      "tag": "incident_classification_and_categorization",
+      "options": [
+        "B. Violações de confidencialidade afetando dados de menos de 100 usuários internos",
+        "D. Falhas em backups automatizados sem impacto em sistemas de produção",
+        "A. Incidentes críticos com impacto potencial em múltiplas linhas de negócio, reputação ou continuidade operacional",
+        "C. Tentativas de acesso não autorizado bloqueadas por controles de segurança"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27035 classifica como críticos incidentes com alto impacto em negócio, reputação ou continuidade. Estes requerem escalação executiva, ativação de crise e comunicação estruturada. ITIL corrobora com classificação de severidade máxima.",
+      "justification_wrong": "Opções B, C e D representam severidades baixas ou médias. Não requerem escalação executiva imediata nem crisis communication. Seguem procedimentos padrão de tratamento de incidentes rotineiros conforme ITIL."
+    },
+    {
+      "num": 43,
+      "text": "Em uma investigação forense de incidente, qual prática VIOLA os padrões internacionais de preservação de evidências e comprometeria a viabilidade legal?",
+      "tag": "forensic_investigation",
+      "options": [
+        "B. Executar investigação em sistema original de produção sem isolar ou documentar estado inicial",
+        "D. Utilizar tools forenses validadas e documentar todos os comandos executados em log",
+        "C. Manter cadeia de custódia documentada com cronograma detalhado de acesso a evidências",
+        "A. Realizar análise forense em cópia forense autenticada com hash MD5/SHA-256 em ambiente isolado"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-101, ISO/IEC 27037 e padrões judiciais exigem isolamento imediato do sistema original, captura de imagem forense e análise em cópia. Análise em produção contamina evidências e viola cadeia de custódia, inviabilizando uso legal.",
+      "justification_wrong": "Opções A, C e D estão alinhadas com boas práticas forenses. Imagens autenticadas, cadeia de custódia documentada e tools validadas são mandatórias conforme NIST e padrões internacionais de investigação criminal."
+    },
+    {
+      "num": 44,
+      "text": "Durante a revisão pós-incidente (Post-Incident Review), qual atividade é FUNDAMENTAL para transformar lições aprendidas em melhorias operacionais sustentáveis?",
+      "tag": "post_incident_review_lessons_learned",
+      "options": [
+        "C. Atribuir culpa a indivíduos específicos para evitar responsabilidade corporativa",
+        "B. Realizar reunião retrospectiva sem documentação formal e confiar em memória coletiva da equipe",
+        "A. Documentar causas raiz, implementar ações corretivas rastreáveis com responsáveis e prazos, e validar efetividade em incidentes futuros",
+        "D. Arquivar relatório de incidente sem comunicação de lições para restante da organização"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27035 e NIST SP 800-61 exigem análise formal de causas raiz, planos de ação com proprietários e prazos, comunicação organizacional e validação de implementação. Isso evita repetição de incidentes e melhora resiliência contínua.",
+      "justification_wrong": "Opções B, C e D violam governança. Falta de documentação, atribuição de culpa pessoal e isolamento de lições impedem aprendizado organizacional e perpetuam vulnerabilidades exploradas em futuros incidentes."
+    },
+    {
+      "num": 45,
+      "text": "Qual integração entre Plano de Resposta a Incidentes e Continuidade de Negócio (BCM) é CRÍTICA para evitar decisões conflitantes durante crise?",
+      "tag": "business_continuity_integration",
+      "options": [
+        "A. Definir critérios de decisão claramente (ativar BC, encerrar operações, modo degradado) antes da crise, com papéis executivos pré-designados e testes conjuntos",
+        "B. Manter planos separados e decidir ativação de BC durante o incidente conforme situação emergente",
+        "D. Delegar decisões de BC exclusivamente ao departamento de TI sem envolvimento executivo",
+        "C. Priorizar resposta técnica de segurança acima de viabilidade financeira e operacional"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27035 e ISO 22301 exigem integração pré-planejada de incidente + BC com critérios de decisão, papéis executivos e testes conjuntos. Evita conflitos e decisões caóticas sob pressão, garantindo continuidade aligned com RTO/RPO.",
+      "justification_wrong": "Opções B, C e D criam riscos. Planos separados causam desalinhamento, priorização errada de segurança vs. negócio, e decisões isoladas por TI sem contexto executivo. ISO 22301 rejeita esses modelos operacionais."
+    },
+    {
+      "num": 46,
+      "text": "Uma organização está desenvolvendo seu plano de resposta a incidentes e precisa definir critérios de classificação que permitam priorização eficaz. Conforme NIST SP 800-61 e ISO/IEC 27035, qual abordagem melhor integra impacto de negócio com severidade técnica?",
+      "tag": "incident_classification_categorization",
+      "options": [
+        "B. Classificação exclusivamente por tipo de ameaça (malware, DDoS, acesso não autorizado) sem considerar contexto organizacional",
+        "C. Categorização única baseada apenas em número de sistemas afetados, independente do tipo de dado envolvido",
+        "D. Priorização apenas segundo conformidade regulatória, negligenciando impacto operacional imediato",
+        "A. Matriz de risco que cruza impacto potencial (confidencialidade, integridade, disponibilidade) com probabilidade de comprometimento e tempo de detecção"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-61 e ISO/IEC 27035 recomendam matriz multidimensional cruzando impacto de negócio (CIA), probabilidade e tempo de resposta. Integra perspectivas técnica e estratégica, alinhando classificação com objetivos organizacionais e permitindo alocação eficiente de recursos.",
+      "justification_wrong": "Opções B, C, D falham em integração multidimensional. Classificação por tipo de ameaça apenas, número de sistemas ou conformidade isoladamente não refletem complexidade real do incidente nem permitem priorização balanceada entre impacto técnico e negócio."
+    },
+    {
+      "num": 47,
+      "text": "Na composição de um CSIRT corporativo, o Chief Information Security Officer (CISO) solicita definição de papéis especializados para investigação forense. Qual estrutura de equipe alinha melhor com NIST SP 800-61 e boas práticas SANS?",
+      "tag": "incident_response_team_csirt",
+      "options": [
+        "A. Líder de incidente, analista forense, especialista em comunicação, gestor de recuperação, analista de inteligência de ameaças e especialista em conformidade regulatória",
+        "D. Estrutura ad-hoc contratada externamente apenas quando incidente crítico é identificado",
+        "C. Equipe exclusivamente técnica composta apenas por engenheiros de rede e administradores de sistemas",
+        "B. Único analista multifuncional responsável por todas as fases de resposta e investigação técnica"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-61 e SANS recomendam equipe multidisciplinar com papéis distintos: liderança, investigação forense, comunicação, recuperação, inteligência e conformidade. Especialização permite profundidade técnica, segregação de funções, e cobertura de aspectos técnicos, jurídicos e comunicacionais simultaneamente.",
+      "justification_wrong": "B não permite profundidade forense. C negligencia comunicação e conformidade. D causa atraso crítico e perda de evidências. Estruturas não especializadas ou reativas violam princípios de resposta rápida e investigação rigorosa estabelecidos em diretrizes internacionais."
+    },
+    {
+      "num": 48,
+      "text": "Durante investigação forense de incidente de exfiltração de dados sensíveis, o time de resposta deve preservar cadeia de custódia. Conforme NIST SP 800-86 e ISO/IEC 27037, qual sequência de ações é tecnicamente correta?",
+      "tag": "forensic_investigation",
+      "options": [
+        "D. Exclusão de arquivos temporários antes da aquisição para evitar contaminação de evidência",
+        "B. Análise de logs em tempo real, busca por palavras-chave no disco, reinicialização para teste, depois captura de imagem",
+        "C. Captura de imagem sem documentação prévia, transferência para laboratório forense sem controle de acesso documentado",
+        "A. Isolamento imediato do sistema, documentação de estado volátil (memória/processos), captura de imagem forense, geração de hash criptográfico MD5 ou SHA-256, armazenamento seguro e documentação completa"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-86 e ISO/IEC 27037 estabelecem: isolamento, documentação de voláteis, aquisição com hash, armazenamento seguro e rastreabilidade completa. Sequência preserva integridade forense, validade legal e detectabilidade de qualquer acesso ou modificação.",
+      "justification_wrong": "B viola princípio de preservação de voláteis antes de análise. C quebra cadeia de custódia e comprometem admissibilidade legal. D destrói evidência crítica. Nenhuma alternativa alternativa segue ISO/IEC 27037 ou permite reconstrução confiável de eventos."
+    },
+    {
+      "num": 49,
+      "text": "Após incidente de comprometimento de credenciais de administrador, o CISO deve executar post-incident review conforme NIST SP 800-61 e ISO/IEC 27035. Qual sequência integra lições aprendidas com melhoria contínua de controles?",
+      "tag": "post_incident_review_lessons_learned",
+      "options": [
+        "D. Reunião executiva superficial focada apenas em danos financeiros e comunicação externa",
+        "A. Reunião de debriefing com timeline técnica completa, análise de gaps de detecção/resposta, identificação de causas raiz, plano de ação com responsabilidades, prazos e métricas de sucesso, integração em plano de melhorias de segurança anual",
+        "C. Culpabilização de indivíduo responsável e implementação de punições disciplinares",
+        "B. Documentação rápida de incidente sem análise de causas raiz, arquivo em repositório central"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-61 e ISO/IEC 27035 prescrevem debriefing estruturado com causas raiz, gaps detectados, plano de ação com proprietários e prazos. Integração em roadmap anual de segurança garante melhoria contínua baseada em evidência operacional real.",
+      "justification_wrong": "B omite análise de causas raiz e sistemática. C prejudica confiança e aprendizado. D ignora oportunidades técnicas de melhoria. Nenhuma alternativa alternativa permite ciclo PDCA efetivo ou transformação de incidente em ativo de segurança organizacional."
+    },
+    {
+      "num": 50,
+      "text": "Uma organização multinacional sofre incidente de ransomware afetando dados de clientes em UE, Canadá e Brasil. Conforme GDPR, PIPEDA, LGPD e NIST SP 800-61, qual abordagem de notificação regulatória é tecnicamente completa?",
+      "tag": "regulatory_notification_requirements",
+      "options": [
+        "A. Notificação centralizada única em inglês para todas as jurisdições, enviada simultaneamente após 48 horas da detecção",
+        "B. Notificações separadas para cada autoridade (CNIL/EDPB, PIPEDA Commissioner, ANPD) em idioma local, com conteúdo específico a lei local, dentro de prazos regulatórios (GDPR 72h, LGPD 30d úteis), incluindo técnica de remediação conforme NIST SP 800-61",
+        "C. Notificação apenas ao diretor executivo e board, sem envolvimento de autoridades de proteção de dados",
+        "D. Divulgação pública imediata em redes sociais e comunicado de imprensa antes de notificação regulatória"
+      ],
+      "correct": 1,
+      "justification_correct": "GDPR (72h), PIPEDA, LGPD (30d úteis) exigem notificações separadas em idioma local dentro de prazos distintos. NIST SP 800-61 recomenda incluir técnica de remediação. Abordagem diferenciada por jurisdição cumpre obrigações legais e demonstra diligência técnica apropriada.",
+      "justification_wrong": "A ignora prazos diferentes (72h vs 30d) e requisitos linguísticos/específicos. C viola obrigações regulatórias. D compromete reputação e viola cronograma de notificação regulatória. Nenhuma alternativa alternativa cumpre simultaneamente GDPR, LGPD e PIPEDA."
+    }
+  ]
+}
