@@ -396,7 +396,7 @@ function render() {
   var naBtn = document.querySelector('.na-btn');
   if (naBtn) {
     naBtn.onclick = function() {
-      window.location.href = '../cfe/' + naBtn.getAttribute('data-key') + '/index.html';
+      window.location.href = '../mini_apps/cfe/' + naBtn.getAttribute('data-key') + '/index.html';
     };
   }
 
@@ -430,7 +430,7 @@ function render() {
   document.querySelectorAll('.dc').forEach(function(btn) {
     btn.onclick = function() {
       if (btn.getAttribute('data-unlocked') === '1') {
-        window.location.href = '../cfe/' + btn.getAttribute('data-key') + '/index.html';
+        window.location.href = '../mini_apps/cfe/' + btn.getAttribute('data-key') + '/index.html';
       }
     };
   });
