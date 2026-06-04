@@ -1,0 +1,682 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "insurance_fraud",
+  "quiz_num": 2,
+  "domain_name": "Insurance Fraud",
+  "cert_name": "Certified Fraud Examiner",
+  "lang": "pt",
+  "source": "fractal_quiz_v1",
+  "schema": "FractalQuiz-v1",
+  "layers": {
+    "F1": "Definição",
+    "F2": "Distinção",
+    "F3": "Aplicação",
+    "F4": "Síntese"
+  },
+  "total": 51,
+  "questions": [
+    {
+      "num": 1,
+      "text": "No contexto de fraude de seguros, qual é a definição precisa de 'sinistro padronizado'?",
+      "options": [
+        "A. Um sinistro que segue exatamente o mesmo padrão de outros sinistros anteriores da mesma seguradora",
+        "B. Um sinistro que atende aos critérios mínimos estabelecidos pela apólice e não apresenta características anômalas ou indicadores de fraude",
+        "C. Um sinistro que foi processado dentro do prazo regulatório padrão estabelecido pela SUSEP",
+        "D. Um sinistro que envolve apenas danos materiais sem envolvimento de terceiros"
+      ],
+      "correct": 1,
+      "tag": "claim_classification",
+      "layer": "F1"
+    },
+    {
+      "num": 2,
+      "text": "Qual é a distinção fundamental entre 'fraude de seguros de primeira parte' e 'fraude de segunda parte'?",
+      "options": [
+        "A. Fraude de primeira parte envolve apenas o segurador, enquanto fraude de segunda parte envolve apenas o segurado",
+        "B. Fraude de primeira parte é cometida pelo segurado ou beneficiário contra a seguradora; fraude de segunda parte é cometida por prestadores de serviços ou profissionais contra a seguradora",
+        "C. Fraude de primeira parte ocorre durante a subscrição, enquanto fraude de segunda parte ocorre durante a liquidação",
+        "D. Fraude de primeira parte é sempre detectada imediatamente, enquanto fraude de segunda parte pode levar anos para ser identificada"
+      ],
+      "correct": 1,
+      "tag": "fraud_typology",
+      "layer": "F1"
+    },
+    {
+      "num": 3,
+      "text": "No contexto de fraude de seguros, o termo 'exagero de sinistro' refere-se a qual situação específica?",
+      "options": [
+        "A. A apresentação de múltiplos sinistros pela mesma ocorrência para diferentes seguradoras",
+        "B. A reclamação de um valor de indenização superior ao dano real ou à cobertura contratada",
+        "C. A falsificação completa de documentos de suporte para um sinistro inexistente",
+        "D. A reincidência frequente de sinistros pelo mesmo segurado dentro de um período curto"
+      ],
+      "correct": 1,
+      "tag": "loss_severity_manipulation",
+      "layer": "F1"
+    },
+    {
+      "num": 4,
+      "text": "Qual é a definição técnica de 'colusão' em investigações de fraude de seguros?",
+      "options": [
+        "A. O ato de um único indivíduo cometer fraude de forma isolada contra a seguradora",
+        "B. Um acordo secreto entre duas ou mais partes para fraudar a seguradora, frequentemente envolvendo coordenação de ações e falsificação de provas",
+        "C. A ocorrência simultânea de múltiplos sinistros do mesmo segurado no mesmo período",
+        "D. A negação deliberada de responsabilidade por parte da seguradora em um sinistro válido"
+      ],
+      "correct": 1,
+      "tag": "conspiracy_definitions",
+      "layer": "F1"
+    },
+    {
+      "num": 5,
+      "text": "No contexto regulatório brasileiro, qual é a definição de 'sinistro apócrifo'?",
+      "options": [
+        "A. Um sinistro que foi reportado mas nunca foi de fato indenizado pela seguradora",
+        "B. Um sinistro que não é autêntico ou foi integralmente fabricado, não tendo ocorrido a situação coberta pela apólice",
+        "C. Um sinistro que foi parcialmente exagerado, com alguns danos reais e outros fictícios",
+        "D. Um sinistro que não foi reportado dentro do prazo contratual estabelecido na apólice"
+      ],
+      "correct": 1,
+      "tag": "claim_authenticity",
+      "layer": "F1"
+    },
+    {
+      "num": 6,
+      "text": "Qual é a característica distintiva de um 'roubo encenado' (staged theft) em fraude de seguros?",
+      "options": [
+        "A. O roubo de um item de baixo valor para testar a resposta da seguradora antes de um sinistro maior",
+        "B. A fabricação deliberada de um cenário de roubo pelo próprio segurado ou com sua conivência, resultando em reclamação fraudulenta de indenização",
+        "C. O roubo de bens que já foram previamente sinistrados em outro período",
+        "D. O roubo de documentos de apólice para impedir a investigação de seguros"
+      ],
+      "correct": 1,
+      "tag": "staged_loss_schemes",
+      "layer": "F1"
+    },
+    {
+      "num": 7,
+      "text": "Em relação ao termo 'subscrição abusiva' (churning), qual das alternativas melhor define este conceito?",
+      "options": [
+        "A. A recusa sistemática de renovar apólices de segurados de baixo risco",
+        "B. A substituição frequente e desnecessária de apólices de seguros válidas, frequentemente com o objetivo de gerar comissões extras ou ocultar fraudes anteriores",
+        "C. A emissão de apólices com limites de cobertura artificialmente baixos para reduzir sinistros",
+        "D. A rejeição deliberada de renovações de apólice para aumentar a rentabilidade da carteira"
+      ],
+      "correct": 1,
+      "tag": "underwriting_abuse",
+      "layer": "F1"
+    },
+    {
+      "num": 8,
+      "text": "Qual é a definição precisa de 'beneficiário designado' no contexto de fraude de seguros de vida?",
+      "options": [
+        "A. Qualquer pessoa que recebe notificação de uma apólice de seguro de vida",
+        "B. A pessoa ou entidade nomeada na apólice para receber os benefícios em caso de morte do segurado ou ocorrência do sinistro",
+        "C. O agente de seguros responsável pela venda da apólice ao segurado",
+        "D. O investigador indicado pela seguradora para examinar a validade do sinistro"
+      ],
+      "correct": 1,
+      "tag": "beneficiary_fraud",
+      "layer": "F1"
+    },
+    {
+      "num": 9,
+      "text": "No contexto de fraude de indenização trabalhista, o que define especificamente uma 'lesão fantasma'?",
+      "options": [
+        "A. Uma lesão que foi corretamente diagnosticada mas não impediu o retorno do funcionário ao trabalho",
+        "B. Uma lesão alegada pelo funcionário que não ocorreu efetivamente ou foi significativamente exagerada em relação aos sintomas reais",
+        "C. Uma lesão prévia do funcionário que ressurgiu naturalmente durante o período de trabalho",
+        "D. Uma lesão documentada em relatório médico anterior que não foi divulgada na apólice"
+      ],
+      "correct": 1,
+      "tag": "workers_compensation_fraud",
+      "layer": "F1"
+    },
+    {
+      "num": 10,
+      "text": "Qual é a definição técnica de 'prescrição' no contexto regulatório de fraude de seguros no Brasil?",
+      "options": [
+        "A. A autorização legal concedida pela SUSEP para ignorar sinistros suspeitos",
+        "B. O prazo legal após o qual um crime ou ação judicial relacionada a fraude de seguros não pode mais ser processado",
+        "C. O período em que a seguradora tem para pagar um sinistro validado",
+        "D. O tempo máximo que um investigador pode levar para concluir uma investigação de fraude"
+      ],
+      "correct": 1,
+      "tag": "legal_framework",
+      "layer": "F1"
+    },
+    {
+      "num": 11,
+      "text": "Em fraude de seguro auto, qual é a definição de 'acidente em série'?",
+      "options": [
+        "A. Um único acidente que danifica múltiplos veículos no local do sinistro",
+        "B. A ocorrência de múltiplos sinistros envolvendo o mesmo veículo em um curto período de tempo",
+        "C. Múltiplas reclamações de sinistro relacionadas ao mesmo acidente por diferentes partes envolvidas",
+        "D. Um padrão deliberado de acidentes organizados envolvendo o mesmo condutor ou grupo de indivíduos para obter indenizações repetidas"
+      ],
+      "correct": 3,
+      "tag": "auto_insurance_schemes",
+      "layer": "F1"
+    },
+    {
+      "num": 12,
+      "text": "Qual é a definição precisa de 'falsa declaração material' (material misrepresentation) em seguros?",
+      "options": [
+        "A. Um erro tipográfico não intencional em documentos de subscrição que não afeta a avaliação de risco",
+        "B. Uma afirmação falsa ou omissão de fato relevante feita intencionalmente durante a subscrição que teria influenciado a decisão de cobertura ou o prêmio da seguradora",
+        "C. Uma declaração que foi verdadeira no momento da subscrição mas se tornou falsa posteriormente",
+        "D. A não divulgação de informações que o segurado acredita ser não essencial para a cobertura"
+      ],
+      "correct": 1,
+      "tag": "policy_fraud",
+      "layer": "F1"
+    },
+    {
+      "num": 13,
+      "text": "No contexto de fraude de sinistros de propriedade, o que define especificamente um 'incêndio criminoso por lucro'?",
+      "options": [
+        "A. Qualquer incêndio que causa perda de propriedade coberta por seguro",
+        "B. Um incêndio originado de causa desconhecida em propriedade segurada",
+        "C. Um incêndio intencionalmente provocado pelo proprietário ou por sua conivência, com o objetivo de obter indenização de seguro superior ao valor real da propriedade perdida",
+        "D. Um incêndio acidental que resulta em reclamação de seguro dentro de 30 dias da subscrição da apólice"
+      ],
+      "correct": 2,
+      "tag": "property_insurance_arson",
+      "layer": "F1"
+    },
+    {
+      "num": 14,
+      "text": "Um investigador de fraudes de seguros está comparando dois sinistros de seguro residencial. No primeiro caso, o segurado contratou um aumento de cobertura uma semana antes do incêndio; no segundo, o segurado solicitou uma redução de cobertura dois meses antes da perda. Qual característica é mais indicativa de fraude intencional (hard fraud)?",
+      "options": [
+        "A. O aumento recente de cobertura, pois demonstra intenção pré-planejada de lucrar com a perda",
+        "B. A redução de cobertura, pois indica falta de confiança do segurado na seguradora",
+        "C. Ambos os casos apresentam igual nível de suspeita, independentemente do timing",
+        "D. Nenhum dos dois é indicativo, pois mudanças de cobertura são procedimentos administrativos normais"
+      ],
+      "correct": 0,
+      "tag": "Características Indicativas de Fraude Intencional",
+      "layer": "F2"
+    },
+    {
+      "num": 15,
+      "text": "Diferencie entre um sinistro de seguro saúde envolvendo procedimentos médicos desnecessários (soft fraud) e um sinistro completamente fabricado (hard fraud). Qual é a distinção essencial?",
+      "options": [
+        "A. No soft fraud, o evento causador do sinistro ocorreu mas foi exagerado; no hard fraud, o evento nunca ocorreu",
+        "B. No soft fraud há intenção criminosa clara; no hard fraud a intenção é duvidosa",
+        "C. No hard fraud, apenas o valor reclamado é inflacionado; no soft fraud, o sinistro é totalmente falso",
+        "D. Não há distinção prática entre os dois, ambos são criminosos"
+      ],
+      "correct": 0,
+      "tag": "Distinção entre Soft Fraud e Hard Fraud",
+      "layer": "F2"
+    },
+    {
+      "num": 16,
+      "text": "Um investigador está analisando dois casos de seguro de responsabilidade civil. Caso A: um comerciante reclama por lesão corporal de um cliente alegando queda em seu estabelecimento, mas câmeras de segurança mostram que o cliente não caiu. Caso B: um comerciante admite que um cliente caiu genuinamente, mas infla o valor da indenização médica em 200%. Qual caso representa fraude mais grave do ponto de vista penal?",
+      "options": [
+        "A. Caso A, pois envolve a fabricação completa do evento sinistral (hard fraud)",
+        "B. Caso B, pois o valor inflacionado é desproporcional",
+        "C. Ambos são igualmente graves, sem diferença de grau",
+        "D. Caso B é mais grave, pois demonstra maior sofisticação na execução"
+      ],
+      "correct": 0,
+      "tag": "Comparação de Gravidade de Fraudes Distintas",
+      "layer": "F2"
+    },
+    {
+      "num": 17,
+      "text": "Uma seguradora está distinguindo entre dois tipos de fraude envolvendo sinistros de seguro auto: o 'staged accident' (acidente encenado) e o 'exaggeration of damages' (exagero de danos). Qual característica é exclusiva do staged accident?",
+      "options": [
+        "A. A colisão é deliberadamente causada e planejada para parecer acidental",
+        "B. Os danos materiais reais são magnificados em valor nas fotografias",
+        "C. Apenas o reembolso de franquia é solicitado fraudulentamente",
+        "D. A seguradora recusa cobertura inicial, mas o segurado insiste na reclamação"
+      ],
+      "correct": 0,
+      "tag": "Staged Accident versus Exaggeration of Damages",
+      "layer": "F2"
+    },
+    {
+      "num": 18,
+      "text": "Dois investigadores estão analisando sinistros de roubo de propriedade. Investigador A encontra evidências de que o proprietário vendeu itens supostamente roubados no mercado negro. Investigador B encontra que itens foram reportados como roubados, mas existem recibos de compra do proprietário datados após a data do roubo alegado. Qual investigador identificou um indicador mais definitivo de fraude?",
+      "options": [
+        "A. Investigador A, pois venda de itens roubados é evidência direta de possessão ilícita",
+        "B. Investigador B, pois a compra de itens 'roubados' após a alegada data do roubo é logicamente impossível",
+        "C. Ambos identificaram indicadores igualmente fortes, variando por jurisdição",
+        "D. Nenhum dos dois, pois documentação pode ser falsificada com facilidade"
+      ],
+      "correct": 1,
+      "tag": "Inconsistências Cronológicas em Sinistros de Roubo",
+      "layer": "F2"
+    },
+    {
+      "num": 19,
+      "text": "Um investigador compara dois esquemas de fraude envolvendo seguros de vida. Esquema 1: Um beneficiário falsifica atestado de óbito. Esquema 2: Um segurado em fase terminal incrementa intencionalmente sua morte para antecipar o pagamento da indenização. Qual diferença fundamental distingue esses esquemas?",
+      "options": [
+        "A. O Esquema 1 envolve falsificação de documentos; o Esquema 2 envolve ato executado pelo segurado",
+        "B. O Esquema 2 é mais grave porque a morte é antecipada",
+        "C. O Esquema 1 é impossível de ser detectado; o Esquema 2 deixa sempre evidências médicas",
+        "D. Não há distinção significativa; ambos envolvem morte e fraude simultânea"
+      ],
+      "correct": 0,
+      "tag": "Fraude em Seguros de Vida: Falsificação versus Manipulação",
+      "layer": "F2"
+    },
+    {
+      "num": 20,
+      "text": "Uma seguradora está diferenciando entre dois padrões de fraude em sinistros de seguro saúde. Padrão A: Um médico prescreve procedimentos desnecessários mas tecnicamente realizados. Padrão B: Um médico cobra procedimentos que nunca foram realizados. Qual padrão caracteriza melhor a 'phantom billing'?",
+      "options": [
+        "A. Padrão A, pois envolve procedimentos reais mas desnecessários",
+        "B. Padrão B, pois envolve cobrança de serviços não prestados",
+        "C. Ambos são formas equivalentes de phantom billing",
+        "D. Nenhum deles, pois phantom billing refere-se exclusivamente a fraudes administrativas"
+      ],
+      "correct": 1,
+      "tag": "Phantom Billing versus Unnecessary Treatment",
+      "layer": "F2"
+    },
+    {
+      "num": 21,
+      "text": "Um investigador distingue entre dois casos de fraude em seguro de indenização trabalhista. Caso 1: Empregado alega lesão em horário de trabalho que ocorreu fora do estabelecimento. Caso 2: Empregado sofreu lesão real em horário de trabalho, mas retorna ao trabalho enganosamente antes de estar recuperado para receber bônus. Qual caso representa 'claim outside scope of employment'?",
+      "options": [
+        "A. Caso 1, pois a lesão não ocorreu no contexto de trabalho coberto",
+        "B. Caso 2, pois o empregado manipulou a duração da indenização",
+        "C. Ambos são formas de 'outside scope'",
+        "D. Nenhum deles é classificado corretamente como 'outside scope'"
+      ],
+      "correct": 0,
+      "tag": "Lesão Dentro versus Fora do Escopo do Emprego",
+      "layer": "F2"
+    },
+    {
+      "num": 22,
+      "text": "Um investigador de seguros está comparando dois padrões de fraude de segurados. Padrão 1: Um grupo de indivíduos coordena múltiplos sinistros contra a mesma seguradora em período curto. Padrão 2: Um indivíduo submete repetidamente pequenos sinistros em diferentes seguradoras ao longo de anos. Qual padrão é melhor caracterizado como 'organized fraud ring'?",
+      "options": [
+        "A. Padrão 1, pois envolve coordinação de múltiplos perpetradores",
+        "B. Padrão 2, pois a duração indica rede organizada estabelecida",
+        "C. Ambos representam igualmente um organized fraud ring",
+        "D. Nenhum deles é tecnicamente um organized fraud ring"
+      ],
+      "correct": 0,
+      "tag": "Organized Fraud Rings versus Individual Repeat Offenders",
+      "layer": "F2"
+    },
+    {
+      "num": 23,
+      "text": "Dois investigadores analisam fraudes de seguros de propriedade. Investigador A descobre que um proprietário aumentou o valor declarado da propriedade para R$ 500.000 logo antes de um incêndio. Investigador B descobre que o mesmo proprietário havia solicitado empréstimo hipotecário usando a propriedade como garantia por R$ 450.000 três meses antes. Qual situação fornece contexto mais relevante para suspecita de fraude?",
+      "options": [
+        "A. Apenas a descoberta do Investigador A, pois o aumento de cobertura é indicador direto",
+        "B. Apenas a descoberta do Investigador B, pois demonstra necessidade financeira",
+        "C. Ambas as descobertas em conjunto, pois estabelecem tanto capacidade quanto motivação",
+        "D. Nenhuma das descobertas é relevante, pois ambas são transações legais legítimas"
+      ],
+      "correct": 2,
+      "tag": "Motivação Financeira versus Capacidade de Executar Fraude",
+      "layer": "F2"
+    },
+    {
+      "num": 24,
+      "text": "Uma seguradora está diferenciando entre dois esquemas envolvendo sinistros de seguro residencial. Esquema 1: Um segurado simula roubo de bens reportando itens de alto valor que nunca possuiu. Esquema 2: Um segurado genuinamente teve itens roubados, mas infla lista incluindo itens destruídos em sinistro anterior não coberto. Qual esquema é mais difícil de detectar através de análise de recibos?",
+      "options": [
+        "A. Esquema 1, pois não há recibos para os itens nunca adquiridos",
+        "B. Esquema 2, pois mistura sinistros legítimos com itens de sinistro anterior",
+        "C. Ambos são igualmente difíceis de detectar",
+        "D. Esquema 1 é mais fácil de detectar através da falta de documentação"
+      ],
+      "correct": 1,
+      "tag": "Fraude de Roubo Simulado versus Inflação de Reclamação Mista",
+      "layer": "F2"
+    },
+    {
+      "num": 25,
+      "text": "Um investigador está analisando dois pedidos de indenização de seguro. Pedido 1: Segurado alega perda total de residência em enchente, com estimativa de reconstrução de R$ 300.000. Pedido 2: Segurado alega dano parcial de R$ 50.000 em residência com valor total de R$ 800.000. Qual pedido apresenta maior risco estatístico de fraude baseado no padrão de reclamação?",
+      "options": [
+        "A. Pedido 1, pois sinistros totais são menos frequentes e mais lucrativos",
+        "B. Pedido 2, pois o dano parcial permite reclamações repetidas subsequentes",
+        "C. Ambos apresentam risco equivalente",
+        "D. Nenhum deles apresenta risco aumentado; o valor é irrelevante para fraude"
+      ],
+      "correct": 0,
+      "tag": "Padrões de Risco em Sinistros Totais versus Parciais",
+      "layer": "F2"
+    },
+    {
+      "num": 26,
+      "text": "Um investigador compara dois casos de fraude em seguro de vida de grupo oferecido por empregador. Caso 1: Um beneficiário reporta morte de segurado seis meses após término da cobertura, fornecendo atestado de óbito datado dentro do período coberto. Caso 2: Um beneficiário reporta morte de segurado durante cobertura ativa, mas investigação posterior descobre que o segurado estava vivo e recebendo benefícios governamentais sob outro nome. Qual caso envolve técnica de fraude mais sofisticada?",
+      "options": [
+        "A. Caso 1, pois envolve manipulação temporal de documentos públicos",
+        "B. Caso 2, pois requer manutenção de identidade dupla prolongada",
+        "C. Ambos requerem sofisticação equivalente",
+        "D. Caso 1 é mais sofisticado, pois fraudar autoridades de registro é mais complexo que criar identidade dupla"
+      ],
+      "correct": 1,
+      "tag": "Fraudes Temporais versus Fraudes de Identidade em Seguros de Vida",
+      "layer": "F2"
+    },
+    {
+      "num": 27,
+      "text": "Uma seguradora recebe uma reclamação de roubo de joias avaliadas em R$ 150.000. O investigador descobre que o segurado havia aumentado o valor da cobertura em 300% apenas duas semanas antes do sinistro e que não possui documentação de compra ou certificado de autenticidade. Qual é a técnica investigativa mais apropriada neste cenário?",
+      "options": [
+        "A. Aceitar a reclamação imediatamente, pois o aumento de cobertura é procedimento legal permitido",
+        "B. Solicitar avaliação forense independente, registros de compra originais e investigar os padrões de comportamento do segurado antes do sinistro",
+        "C. Negar categoricamente a reclamação sem investigação adicional baseado unicamente no timing do aumento",
+        "D. Transferir o caso para o departamento jurídico para iniciar litígio imediato"
+      ],
+      "correct": 1,
+      "tag": "Property_Insurance_Fraud_Detection",
+      "layer": "F3"
+    },
+    {
+      "num": 28,
+      "text": "Um agente de seguros está sendo investigado por possível fraude em aplicações de seguros de vida. O investigador identifica que o agente omitiu informações críticas sobre histórico médico de candidatos para reduzir prêmios e aumentar suas comissões. Esta conduta caracteriza qual tipo de fraude?",
+      "options": [
+        "A. Fraude do segurado (insurance fraud) pois o segurado se beneficia diretamente",
+        "B. Fraude do provedor (provider fraud) cometida por intermediário para ganho financeiro pessoal",
+        "C. Fraude regulatória contra o estado apenas, não constituindo fraude de seguros",
+        "D. Prática comercial agressiva legal, desde que documentada internamente"
+      ],
+      "correct": 1,
+      "tag": "Life_Insurance_Fraud_Investigation",
+      "layer": "F3"
+    },
+    {
+      "num": 29,
+      "text": "Uma clínica médica apresenta padrão anômalo: 85% de seus pacientes cobertos por seguro saúde recebem procedimentos cirúrgicos desnecessários comparado à média nacional de 12%. Qual indicador de fraude está presente?",
+      "options": [
+        "A. Volume de sinistros fora do padrão esperado (frequency outlier analysis)",
+        "B. Simples variação estatística dentro dos parâmetros aceitáveis de prática médica",
+        "C. Indicador de melhor qualidade assistencial da clínica",
+        "D. Problema administrativo que não requer investigação de fraude"
+      ],
+      "correct": 0,
+      "tag": "Health_Insurance_Fraud_Patterns",
+      "layer": "F3"
+    },
+    {
+      "num": 30,
+      "text": "Um investigador de fraudes analisa um sinistro de dano veicular onde o laudo de avaliação da oficina autorizada é 40% superior ao laudo de perito independente. Quais são os passos investigativos mais adequados?",
+      "options": [
+        "A. Aceitar automaticamente o laudo da oficina por ser autorizada pela seguradora",
+        "B. Comparar histórico de laudos da oficina, analisar margem de lucro, revisar se há relacionamento financeiro entre avaliador e proprietário do veículo",
+        "C. Pagar integralmente ambos os valores para evitar controvérsia",
+        "D. Rejeitar o sinistro completamente por desconfiança injustificada da documentação"
+      ],
+      "correct": 1,
+      "tag": "Auto_Insurance_Fraud_Examination",
+      "layer": "F3"
+    },
+    {
+      "num": 31,
+      "text": "Uma seguradora identifica que um médico regularmente atesta incapacidade total temporária (ITT) em sinistros de indenização trabalhista para seus pacientes-segurados, com períodos significativamente mais longos que a média da especialidade. Qual é o risco de fraude presente?",
+      "options": [
+        "A. Inexistência de risco, pois médicos são profissionais autônomos de confiança",
+        "B. Colusão entre provedor de saúde e segurado para inflacionar duração de benefícios e custos",
+        "C. Procedimento padrão sem indicadores de fraude potencial",
+        "D. Risco únicamente administrativo, não constituindo fraude"
+      ],
+      "correct": 1,
+      "tag": "Workers_Comp_Fraud_Conspiracy",
+      "layer": "F3"
+    },
+    {
+      "num": 32,
+      "text": "Um investigador descobre que um segurado contratou serviços de um 'despachante de sinistros' que oferece orientação sobre como preencher reclamações para maximizar indenizações, frequentemente incluindo alegações inflacionadas. Como classificar esta atividade?",
+      "options": [
+        "A. Serviço legal de consultoria de seguros sem problemas de conformidade",
+        "B. Potencial fraude de organização criminal specializada em esquemas coordenados de sinistros fraudulentos",
+        "C. Atividade benéfica que ajuda segurados a compreender seus direitos",
+        "D. Matéria exclusivamente de direito contratual, não relacionada a fraude"
+      ],
+      "correct": 1,
+      "tag": "Organized_Insurance_Fraud_Rings",
+      "layer": "F3"
+    },
+    {
+      "num": 33,
+      "text": "Uma seguradora recebe sinistro de seguro residencial por incêndio onde o segurado havia modificado a apólice 6 meses antes, aumentando a cobertura de R$ 200.000 para R$ 600.000. Análise financeira mostra que o segurado estava endividado. Qual fator é MENOS relevante para determinar suspeita de fraude?",
+      "options": [
+        "A. Motivação financeira evidenciada por endividamento",
+        "B. Timing suspeito entre aumento de cobertura e sinistro",
+        "C. A cor original da pintura das paredes antes do incêndio",
+        "D. Evidência de acelerador de fogo ou padrão anômalo de queimadura"
+      ],
+      "correct": 2,
+      "tag": "Fire_Loss_Investigation_Elements",
+      "layer": "F3"
+    },
+    {
+      "num": 34,
+      "text": "Um investigador está avaliando um sinistro de indenização trabalhista onde o empregado alega lesão por esforço repetitivo (LER). Não há testemunhas do evento, documentação médica é vaga e o empregado está ativo em redes sociais postando vídeos de atividades fisicamente exigentes. Qual é a abordagem investigativa mais apropriada?",
+      "options": [
+        "A. Negar imediatamente o sinistro baseado nas postagens de mídia social",
+        "B. Investigar inconsistências entre declarações, registros médicos, depoimentos de empregador e evidências digitais; solicitar exames médicos independentes",
+        "C. Aceitar a reclamação automaticamente pois é diagnóstico médico reconhecido",
+        "D. Suspender investigação por questões de privacidade do empregado"
+      ],
+      "correct": 1,
+      "tag": "Workers_Comp_Occupational_Injury_Verification",
+      "layer": "F3"
+    },
+    {
+      "num": 35,
+      "text": "Uma seguradora implanta sistema de inteligência artificial para detectar padrões de fraude comparando dados históricos de sinistros legítimos versus fraudulentos. Qual é o risco principal desta abordagem automatizada?",
+      "options": [
+        "A. Eliminação completa de falsos positivos na detecção de fraude",
+        "B. Possível perpetuação de vieses do conjunto de dados histórico e discriminação injustificada contra certos grupos demográficos",
+        "C. Aumento garantido em 100% da taxa de detecção sem efeitos colaterais",
+        "D. Redução de custos operacionais sem necessidade de revisão humana posterior"
+      ],
+      "correct": 1,
+      "tag": "Fraud_Detection_Technology_Ethics",
+      "layer": "F3"
+    },
+    {
+      "num": 36,
+      "text": "Um gerente de reivindicações suspeita que um sinistro recorrente de um cliente é parte de esquema de fraude sistêmica. O investigador identifica que o cliente apresentou 8 sinistros em 18 meses, todos com valores ligeiramente abaixo do limite de investigação automática da seguradora. Qual tática fraudulenta está sendo utilizada?",
+      "options": [
+        "A. Fraude em cascata com fragmentação estratégica de sinistros para evitar detecção",
+        "B. Comportamento normal de segurado com má sorte frequente",
+        "C. Indicador de má qualidade dos produtos da seguradora",
+        "D. Padrão de reivindicações que não requer investigação cruzada de histórico"
+      ],
+      "correct": 0,
+      "tag": "Serial_Fraud_Pattern_Recognition",
+      "layer": "F3"
+    },
+    {
+      "num": 37,
+      "text": "Uma corretora de seguros está sob investigação por possível fraude. Descobrimento revelou que a corretora recebe prêmios de clientes, mas classifica fraudulentamente as apólices em categorias de risco mais baixo nas bases de dados da seguradora para reduzir os prêmios a repassar. Qual é o tipo de fraude?",
+      "options": [
+        "A. Fraude de manipulação de risco com redução fraudulenta de classificação de risco",
+        "B. Procedimento operacional aceitável de negociação comercial",
+        "C. Erro administrativo simples sem consequências materiais",
+        "D. Estratégia legal de optimização de custo para benefício do cliente"
+      ],
+      "correct": 0,
+      "tag": "Premium_Fraud_Risk_Misrepresentation",
+      "layer": "F3"
+    },
+    {
+      "num": 38,
+      "text": "Um investigador de fraudes está revisando um sinistro de seguro residencial onde o segurado relata roubo de bens avaliados em R$ 180.000. A investigação revela que: (1) não há sinais de arrombamento, (2) sistema de alarme foi desativado 3 dias antes, (3) segurado teve recente separação matrimonial litigiosa e (4) bens alegadamente roubados não aparecem em listagens de receptadores conhecidos. Qual conclusão investigativa é mais apropriada?",
+      "options": [
+        "A. Os fatos isoladamente provam fraude e justificam negação automática",
+        "B. Os indicadores combinados (falta de sinais de arrombamento, desativação de alarme, motivação financeira por litígio) requerem investigação aprofundada antes de conclusão definitiva",
+        "C. Aceitar reclamação totalmente pois sistema de alarme desativação é procedimento legítimo",
+        "D. Investigar apenas questões técnicas de arrombamento, ignorando contexto financeiro e pessoal"
+      ],
+      "correct": 1,
+      "tag": "Comprehensive_Fraud_Indicator_Analysis",
+      "layer": "F3"
+    },
+    {
+      "num": 39,
+      "text": "Uma seguradora recebe reclamação de cobertura médica de franquia reduzida para procedimento cirúrgico. Investigação identifica que o procedimento foi codificado incorretamente no sistema, permitindo acesso a franquia menor do que a apólice autorizava. O prestador alega ser erro administrativo sincero. Qual é a posição investigativa adequada?",
+      "options": [
+        "A. Aceitar explicação sem questionar, pois erros administrativos são frequentes",
+        "B. Investigar padrão de erros similares do prestador, verificar se há benefício financeiro recorrente, revisar sistema de controle de codificação do prestador",
+        "C. Pagar o valor solicitado para evitar disputa com prestador estabelecido",
+        "D. Processar criminalmente o prestador imediatamente sem investigação adicional"
+      ],
+      "correct": 1,
+      "tag": "Healthcare_Coding_Fraud_Verification",
+      "layer": "F3"
+    },
+    {
+      "num": 40,
+      "text": "Um investigador de fraudes de seguros está analisando um sinistro de saúde onde um segurado apresentou recibos médicos de procedimentos realizados em clínica privada. Ao verificar os registros da clínica, descobriu que o estabelecimento não possui licença ativa há 18 meses. Qual é a técnica investigativa mais apropriada para validar a autenticidade dos documentos apresentados neste caso?",
+      "options": [
+        "A. Solicitar cópia digital dos prontuários ao estabelecimento e comparar assinaturas dos médicos",
+        "B. Realizar verificação forense de documentos, incluindo análise de tinta, papel e recursos de segurança, além de contatar órgãos reguladores de saúde",
+        "C. Entrevistar o segurado sobre detalhes do procedimento e solicitar referências de outros pacientes da clínica",
+        "D. Calcular o valor do sinistro baseado em tabelas de preços do mercado e descartar reclamações que excedem 30% da média"
+      ],
+      "correct": 1,
+      "tag": "Document_Verification_Advanced",
+      "layer": "F4"
+    },
+    {
+      "num": 41,
+      "text": "Durante uma investigação de fraude de seguro residencial, um examinador identificou que o segurado contratou três seguradoras diferentes para o mesmo imóvel no prazo de 60 dias, cada uma cobrindo danos por incêndio. Duas semanas após a terceira apólice entrar em vigor, o imóvel sofreu incêndio total. Qual conceito de fraude de seguros melhor descreve essa conduta?",
+      "options": [
+        "A. Fraude de sobresseguro com intenção fraudulenta manifesta",
+        "B. Sinistro legítimo com má gestão de apólices pelo segurado",
+        "C. Cobertura duplicada resultante de erro administrativo",
+        "D. Fraude por representação errada das condições da propriedade"
+      ],
+      "correct": 0,
+      "tag": "Fraudulent_Intent_Indicators",
+      "layer": "F4"
+    },
+    {
+      "num": 42,
+      "text": "Um examinador de sinistros está revisando uma reclamação de seguro de responsabilidade civil onde um terceiro alega ferimentos graves decorrentes de acidente em propriedade do segurado. O investigador descobre que o terceiro e o segurado frequentam o mesmo ginásio há 3 anos, têm contatos telefônicos regulares e ambos enfrentam dificuldades financeiras. O terceiro atualizou sua apólice de saúde apenas 10 dias antes do suposto acidente. Qual combinação de fatores sugere maior potencial de fraude?",
+      "options": [
+        "A. Apenas a atualização recente da apólice de saúde, que pode indicar previsão de sinistro",
+        "B. O relacionamento prévio e as dificuldades financeiras de ambas as partes, isoladamente",
+        "C. A convergência de relacionamento pessoal existente, dificuldades financeiras paralelas, atualizações recentes de cobertura e comunicações frequentes",
+        "D. As dificuldades financeiras, pois todos os sinistros envolvendo pessoas com problemas econômicos devem ser investigados"
+      ],
+      "correct": 2,
+      "tag": "Collusion_Pattern_Recognition",
+      "layer": "F4"
+    },
+    {
+      "num": 43,
+      "text": "Em uma investigação de fraude de indenização trabalhista, o investigador identifica que o funcionário alegou incapacidade total para trabalho, mas registros de redes sociais mostram atividades físicas intensas postadas durante o período do sinistro. O funcionário argumenta que as imagens são antigas e foram compartilhadas automaticamente. Qual metodologia investigativa deve ser priorizada para validar essa alegação?",
+      "options": [
+        "A. Análise de metadados EXIF das imagens, incluindo data de criação, localização e dispositivo utilizado, com suporte pericial digital",
+        "B. Solicitar ao funcionário prova de que as imagens são antigas através de testemunhas",
+        "C. Descartar as imagens como evidência por não serem documentação oficial",
+        "D. Comparar apenas a descrição visual das atividades com o tipo de lesão alegada"
+      ],
+      "correct": 0,
+      "tag": "Digital_Forensics_Evidence",
+      "layer": "F4"
+    },
+    {
+      "num": 44,
+      "text": "Uma seguradora está desenvolvendo um modelo preditivo de fraude para sinistros de seguro auto. O analista de risco descobre que sinistros ocorrendo em áreas com maior densidade demográfica têm taxa de fraude 45% superior às áreas rurais. Qual é a consideração ética e regulatória mais crítica ao utilizar essa variável no modelo?",
+      "options": [
+        "A. Implementar a variável livremente, pois baseia-se em dados históricos reais",
+        "B. Implementar a variável com mecanismos de auditoria explícita para evitar discriminação geográfica ou proxy discriminação por características protegidas",
+        "C. Remover a variável completamente, pois qualquer diferença geográfica indica viés automaticamente",
+        "D. Utilizar apenas em análises internas sem comunicar aos reguladores"
+      ],
+      "correct": 1,
+      "tag": "Bias_Analytics_Compliance",
+      "layer": "F4"
+    },
+    {
+      "num": 45,
+      "text": "Um investigador de seguros está examinando um sinistro de seguro de vida integral onde o segurado faleceu 14 meses após a contratação da apólice. A investigação revela que o segurado omitiu informações sobre diagnóstico prévio de doença terminal em sua proposta. A causa da morte está listada como sendo relacionada a essa condição. Qual é a ação regulatória mais apropriada para a seguradora?",
+      "options": [
+        "A. Pagar integralmente o sinistro, pois a morte ocorreu após o período de contestação",
+        "B. Negar totalmente o sinistro e rescindir a apólice retroativamente",
+        "C. Investigar se a omissão foi fraudulenta ou negligente, e se fraudulenta, negar; se negligente, considerar reembolso do prêmio",
+        "D. Pagar 50% do valor de benefício como penalidade administrativa"
+      ],
+      "correct": 2,
+      "tag": "Contestation_Period_Legal_Framework",
+      "layer": "F4"
+    },
+    {
+      "num": 46,
+      "text": "Durante uma investigação de fraude em seguro de saúde, um examinador identifica um padrão onde um dentista credenciado alega procedimentos de tratamento de canal em 47 pacientes segurados em um período de 90 dias, comparado à média de 8 procedimentos anuais de outros dentistas na região. Quais dados adicionais seriam mais relevantes para fundamentar suspeita de fraude antes de uma ação formal?",
+      "options": [
+        "A. Verificar se o dentista frequenta conferências profissionais regularmente",
+        "B. Revisar os prontuários dos pacientes para correlação entre diagnósticos alegados e achados radiográficos, além de entrevistar amostra de pacientes",
+        "C. Solicitar ao dentista documentação de onde obtém seus materiais odontológicos",
+        "D. Verificar se o consultório tem seguro de responsabilidade profissional adequado"
+      ],
+      "correct": 1,
+      "tag": "Provider_Billing_Pattern_Analysis",
+      "layer": "F4"
+    },
+    {
+      "num": 47,
+      "text": "Uma seguradora recebe informação de inteligência que uma oficina de reparação de automóveis está em conluio com produtores de sinistros para inflar valores de reparo. Qual sequência de investigação de fraude é mais metodologicamente sólida para este tipo de esquema?",
+      "options": [
+        "A. Confrontar imediatamente a oficina com as suspeitas e solicitar registros",
+        "B. Conduzir análise retrospectiva de sinistros da oficina, análise comparativa de valores com oficinas similares, investigação encoberta de reparos teste, entrevista com clientes independentes",
+        "C. Confiar exclusivamente em denúncias anônimas e cancelar todos os relacionamentos com a oficina",
+        "D. Aumentar aleatoriamente inspeções de qualidade sem fundamentação investigativa"
+      ],
+      "correct": 1,
+      "tag": "Staged_Accident_Network_Investigation",
+      "layer": "F4"
+    },
+    {
+      "num": 48,
+      "text": "Um examinador de seguros está analisando a diferença entre as alegações de um sinistro de seguro de propriedade antes e depois da ajuda de um advogado contratado pelo segurado. Os valores aumentaram de R$ 45.000 para R$ 127.000. A documentação adicional inclui itens que não estavam no inventário original. Qual é o problema investigativo mais pertinente nesta situação?",
+      "options": [
+        "A. Qualquer aumento de sinistro após envolvimento de advogado é indicador definitivo de fraude",
+        "B. Investigar se há adição de itens legítimos não documentados originalmente versus adição de itens fictícios, requerendo validação independente e entrevistas",
+        "C. Denegar o aumento automaticamente, pois apenas o valor inicial é válido",
+        "D. Aceitar o valor revisto, pois advogados têm responsabilidade ética de reclamações precisas"
+      ],
+      "correct": 1,
+      "tag": "Post_Loss_Documentation_Discrepancies",
+      "layer": "F4"
+    },
+    {
+      "num": 49,
+      "text": "Em uma investigação de fraude de seguro de incapacidade de longo prazo, um investigador obtém vídeo de vigilância mostrando o segurado realizando atividades que contradizem sua alegação de incapacidade. O advogado do segurado argumenta que a vigilância foi conduzida de forma invasiva, violando privacidade. Qual é o marco legal mais relevante no contexto de investigação de fraude de seguros no Brasil?",
+      "options": [
+        "A. A Lei de Proteção de Dados (LGPD) permite vigilância sem restrições em investigações de fraude",
+        "B. A vigilância é permitida se fundamentada em suspeita razoável, conduzida respeitando proporção e privacidade, e não invadindo domicílio sem consentimento",
+        "C. Qualquer evidência visual é inadmissível em processos de fraude de seguros",
+        "D. Investigadores de fraude de seguros têm imunidade de privacidade sob regulações da SUSEP"
+      ],
+      "correct": 1,
+      "tag": "Legal_Compliance_Privacy_Laws",
+      "layer": "F4"
+    },
+    {
+      "num": 50,
+      "text": "Um examinador de fraudes está investigando um sinistro de seguro de vida onde o beneficiário é uma corporação. O segurado é o principal acionista. A apólice foi emitida 8 meses antes da morte, com soma segurada de R$ 5 milhões. A corporação enfrenta dificuldades financeiras significativas. Qual análise é mais crítica para determinar se há fraude ou negligência na subscrição?",
+      "options": [
+        "A. Verificar apenas se a morte foi natural ou acidental conforme alegado",
+        "B. Analisar insurable interest, documentação de subscrição original, underwriting guidelines, comunicações pré-morte do segurado, e evidências de planejamento fraudulento",
+        "C. Descartar automaticamente sinistros onde beneficiário é corporação",
+        "D. Comparar o valor da apólice com a receita anual da corporação sem contexto adicional"
+      ],
+      "correct": 1,
+      "tag": "Underwriting_Due_Diligence_Life_Insurance",
+      "layer": "F4"
+    },
+    {
+      "num": 51,
+      "text": "Uma seguradora implementa sistema automático que nega sinistros de determinadas nacionalidades em percentual superior a 40%, baseado em histórico de fraude agregado. Um regulador questiona essa prática. Qual é a mais apropriada resposta da seguradora sob perspectiva de conformidade e ética?",
+      "options": [
+        "A. Defender a prática como baseada em análise de dados atuariais válidos",
+        "B. Reconhecer que pode constituir discriminação indireta em violação de normas regulatórias, e revisitar critérios de avaliação de risco com garantias de individualização",
+        "C. Modificar o sistema para incluir mais nacionalidades no critério de negação",
+        "D. Argumentar que decisões automatizadas estão isentas de regulações anti-discriminação"
+      ],
+      "correct": 1,
+      "tag": "Algorithmic_Fairness_Regulatory_Standards",
+      "layer": "F4"
+    }
+  ]
+}
