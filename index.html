@@ -191,8 +191,7 @@ function setLang(l){
   ['en','pt','es'].forEach(function(x){
     g('btn-'+x).classList.toggle('active', x===l);
   });
-  applyLang();
-  render();
+  setLang(lang);
 }
 
 function applyLang(){
