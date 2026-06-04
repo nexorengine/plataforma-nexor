@@ -96,17 +96,19 @@ def load_badge_b64(domain_id):
     return None
 
 def merge_fc(fc_en, fc_pt, fc_es):
-    """Mescla flashcards dos 3 idiomas"""
+    """Mescla flashcards dos 3 idiomas — alinha por topic"""
     merged = []
     cards_en = fc_en.get("cards", [])
     cards_pt = fc_pt.get("cards", [])
     cards_es = fc_es.get("cards", [])
+    # Indexa PT e ES por topic para alinhamento correto
     for i, card in enumerate(cards_en):
-        c_pt = cards_pt[i] if i < len(cards_pt) else card
-        c_es = cards_es[i] if i < len(cards_es) else card
+        topic = card["topic"]
+        c_pt = cards_pt[i] if i < len(cards_pt) else {}
+        c_es = cards_es[i] if i < len(cards_es) else {}
         merged.append({
             "id": card["id"],
-            "topic": card["topic"],
+            "topic": topic,
             "front": {
                 "en": card["front"].get("en", ""),
                 "pt": c_pt["front"].get("pt", ""),
