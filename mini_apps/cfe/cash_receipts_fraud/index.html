@@ -418,7 +418,8 @@ function tr(k,v){var s=(TX[lang]||TX.en)[k]||k;if(v)Object.keys(v).forEach(funct
 function g(id){return document.getElementById(id);}
 function st(id,val){var e=g(id);if(e)e.textContent=val;}
 function best(){return h1.length?Math.max.apply(null,h1.map(function(h){return h.s;})):0;}
-function unlocked(){return best()>=70;}
+function unlocked(){return h1.length>0;}
+function q2recommended(){return best()>=80;}
 function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');}
 function shuf(a){var b=a.slice();for(var i=b.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=b[i];b[i]=b[j];b[j]=t;}return b;}
 function shuffOpts(q){var opts=q.options.slice(),ct=opts[q.correct];for(var i=opts.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=opts[i];opts[i]=opts[j];opts[j]=t;}return Object.assign({},q,{options:opts,correct:opts.indexOf(ct)});}
@@ -613,8 +614,23 @@ function updateHero(){
   st('stflash',fcDone.length+'/50');
   st('stlevel',b>=80?'★★★':b>=60?'★★☆':'★☆☆');
   updateBadge();
-  var lk=g('q2lock');if(lk)lk.innerHTML=unlocked()?'':'&#128274;';
-  st('q2lockprog',b>0?tr('q2best')+' '+b+'%':'');
+  var lk=g('q2lock');
+  if(lk){
+    if(unlocked()){
+      lk.innerHTML='';
+    } else {
+      lk.innerHTML='&#128274;';
+    }
+  }
+  if(unlocked()){
+    if(q2recommended()){
+      st('q2lockprog',tr('q2ready')||'✓ Pronto para avançar!');
+    } else {
+      st('q2lockprog',b>0?(tr('q2best')||'Melhor')+': '+b+'% · '+(tr('q2tip')||'Recomendado: 80%+'):'');
+    }
+  } else {
+    st('q2lockprog',tr('q2tip2')||'Complete o Quiz 1 para desbloquear');
+  }
 }
 function updateBadge(){
   var b=best(),earned=b>=80;
