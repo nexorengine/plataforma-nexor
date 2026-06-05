@@ -4,7 +4,7 @@
   "domain_code": "S1D08",
   "domain_name": "S1D08 · Identity Theft & Cyberfraud",
   "lang": "pt",
-  "total": 47,
+  "total": 48,
   "schema": "FractalFlashcard-v1",
   "layers": {
     "F1": "Definição",
@@ -16,518 +16,529 @@
     {
       "id": 1,
       "layer": "F1",
-      "topic": "definicao_roubo_identidade",
+      "topic": "phishing_definicao",
       "front": {
-        "pt": "Como se define roubo de identidade no contexto de fraude cibernética?"
+        "pt": "O que é phishing e qual é seu objetivo principal no roubo de identidade?"
       },
       "back": {
-        "pt": "Roubo de identidade é o uso não autorizado de informações pessoais de outra pessoa para cometer fraude ou outro crime. Envolve a apropriação de dados como nome, número de CPF, dados bancários ou informações de cartão de crédito. Um criminoso pode abrir contas de crédito falsas ou realizar compras fraudulentas utilizando esses dados roubados."
+        "pt": "Phishing é uma técnica de fraude cibernética que utiliza mensagens eletrônicas enganosas (emails, SMS, redes sociais) para induzir vítimas a revelar informações sensíveis ou credenciais. O objetivo é obter dados pessoais, financeiros ou de autenticação para cometer fraude identitária ou acesso não autorizado. Um exemplo comum é um email falso que se passa por um banco, solicitando que o usuário confirme suas credenciais clicando em um link malicioso."
       }
     },
     {
       "id": 2,
       "layer": "F1",
-      "topic": "definicao_phishing",
+      "topic": "man_in_the_middle_definicao",
       "front": {
-        "pt": "O que é phishing e qual é seu mecanismo de funcionamento básico?"
+        "pt": "Como se define um ataque Man-in-the-Middle (MITM) no contexto de cyberfraud?"
       },
       "back": {
-        "pt": "Phishing é um ataque de engenharia social que usa mensagens fraudulentas (e-mail, SMS ou mensagens instantâneas) para enganar vítimas a revelar informações sensíveis. O atacante se faz passar por uma entidade confiável, como um banco ou rede social, e fornece um link para um site falsificado. Quando a vítima insere suas credenciais, elas são capturadas pelo criminoso."
+        "pt": "Um ataque Man-in-the-Middle é uma interceptação de comunicação entre duas partes sem que elas saibam, permitindo ao atacante ler, modificar ou roubar informações em tempo real. No contexto de roubo de identidade, um MITM pode capturar credenciais de login, dados bancários ou informações pessoais durante transações online. Exemplo: um criminoso intercepta dados de uma conexão WiFi desprotegida enquanto uma vítima realiza compras online."
       }
     },
     {
       "id": 3,
       "layer": "F1",
-      "topic": "definicao_malware",
+      "topic": "malware_definicao",
       "front": {
-        "pt": "Como se define malware e quais são suas principais funções em ataques cibernéticos?"
+        "pt": "Qual é a definição de malware e quais são seus usos principais em fraudes de identidade?"
       },
       "back": {
-        "pt": "Malware (software malicioso) é um programa de computador projetado para infiltrar-se, danificar ou comprometer sistemas sem consentimento. Suas funções incluem roubar dados, monitorar atividades do usuário, destruir informações ou controlar o dispositivo remotamente. Exemplos comuns incluem trojans, worms, spyware e backdoors utilizados em fraudes cibernéticas."
+        "pt": "Malware (software malicioso) é qualquer programa ou código desenvolvido para danificar, infiltrar ou comprometer um sistema de computador sem consentimento do usuário. Em roubo de identidade, malware pode registrar teclas digitadas, capturar dados de tela, roubar senhas e informações bancárias. Tipos comuns incluem trojans, worms e backdoors que permitem acesso não autorizado a dados pessoais e financeiros."
       }
     },
     {
       "id": 4,
       "layer": "F1",
-      "topic": "definicao_dados_biometricos",
+      "topic": "two_factor_authentication_bypass",
       "front": {
-        "pt": "O que são dados biométricos e por que representam um alvo valioso para fraude?"
+        "pt": "Como se define o bypass de autenticação em dois fatores (2FA) e qual seu impacto em fraude de identidade?"
       },
       "back": {
-        "pt": "Dados biométricos são identificadores únicos e permanentes baseados em características físicas ou comportamentais, como impressões digitais, íris, reconhecimento facial ou padrão de voz. São valiosos para criminosos porque, ao contrário de senhas, não podem ser alterados se comprometidos. Uma vez roubados, possibilitam acesso permanente a sistemas de autenticação multifatorial."
+        "pt": "O bypass de 2FA é a técnica de contornar mecanismos de segurança de dois fatores (senha + código SMS/aplicativo) para ganhar acesso não autorizado a contas. Fraudadores utilizam técnicas como SIM swapping, interceptação de códigos SMS ou exploração de vulnerabilidades no sistema de autenticação. Exemplo: um criminoso convence a operadora de telefonia a transferir o número da vítima para seu SIM card, recebendo códigos de 2FA e comprometendo contas bancárias e de email."
       }
     },
     {
       "id": 5,
       "layer": "F1",
-      "topic": "definicao_credential_stuffing",
+      "topic": "keylogger_definicao",
       "front": {
-        "pt": "O que é credential stuffing e como ele difere de força bruta?"
+        "pt": "O que é um keylogger e como ele facilita o roubo de identidade em ambientes cibernéticos?"
       },
       "back": {
-        "pt": "Credential stuffing é um ataque em que criminosos usam pares de nome de usuário e senha previamente roubados para acessar contas em múltiplas plataformas. Diferencia-se da força bruta porque usa credenciais reais já comprometidas, em vez de tentar adivinhar senhas aleatoriamente. É eficaz porque muitas pessoas reutilizam as mesmas credenciais em vários sites."
+        "pt": "Um keylogger é um programa ou dispositivo que registra todas as teclas digitadas em um teclado, capturando senhas, números de cartão de crédito e informações pessoais sensíveis. Pode ser instalado como software (através de malware) ou como hardware físico entre o teclado e o computador. Criminosos usam keyloggers para monitorar atividades online da vítima e coletar dados para fraude identitária e roubo financeiro."
       }
     },
     {
       "id": 6,
       "layer": "F1",
-      "topic": "definicao_man_in_the_middle",
+      "topic": "sim_swapping_definicao",
       "front": {
-        "pt": "Como se define um ataque Man-in-the-Middle (MITM) no contexto de roubo de identidade?"
+        "pt": "Como se define SIM swapping no contexto de roubo de identidade e fraude cibernética?"
       },
       "back": {
-        "pt": "Um ataque Man-in-the-Middle é quando um criminoso se posiciona entre a vítima e a entidade legítima para interceptar comunicações. O atacante pode capturar dados sensíveis como credenciais de login ou informações de transações. Por exemplo, em uma rede Wi-Fi pública, um criminoso pode interceptar dados não criptografados transmitidos entre o dispositivo da vítima e um servidor bancário."
+        "pt": "SIM swapping é a prática de fraudar uma operadora de telefonia móvel para transferir o número de telefone da vítima para um SIM card controlado pelo criminoso. Isso permite que o fraudador receba códigos de verificação de dois fatores, acessando contas bancárias, email e redes sociais. O atacante geralmente utiliza engenharia social para convencer funcionários da operadora a realizar a transferência."
       }
     },
     {
       "id": 7,
       "layer": "F1",
-      "topic": "definicao_dois_autenticacao_dois",
+      "topic": "credential_stuffing_definicao",
       "front": {
-        "pt": "O que é autenticação de dois fatores (2FA) e qual é seu propósito na prevenção de fraude?"
+        "pt": "O que é credential stuffing e qual é seu mecanismo de funcionamento em cyberfraud?"
       },
       "back": {
-        "pt": "Autenticação de dois fatores é um mecanismo de segurança que exige duas formas diferentes de comprovação de identidade para acessar uma conta. Típicamente combina algo que você sabe (senha) com algo que você tem (código gerado por aplicativo) ou é (dado biométrico). Reduz significativamente o risco de roubo de identidade pois, mesmo com a senha comprometida, o criminoso não consegue acessar a conta sem o segundo fator."
+        "pt": "Credential stuffing é um ataque automatizado que testa combinações de usernames e senhas roubadas em múltiplas plataformas online para ganhar acesso não autorizado a contas. Criminosos utilizam listas de credenciais obtidas em vazamentos de dados anteriores, esperando que usuários reutilizem as mesmas senhas em vários serviços. Exemplo: senhas roubadas de um vazamento de banco de dados são testadas contra contas de email, redes sociais e serviços financeiros."
       }
     },
     {
       "id": 8,
       "layer": "F1",
-      "topic": "definicao_dark_web",
+      "topic": "deep_web_dark_web_definicao",
       "front": {
-        "pt": "O que é a dark web e qual é sua relação com crimes de identidade?"
+        "pt": "Como se diferenciam deep web e dark web no contexto de mercados de roubo de identidade e cyberfraud?"
       },
       "back": {
-        "pt": "A dark web é uma parte da internet acessível apenas através de softwares ou configurações especiais que garantem anonimato, como o Tor. É frequentemente utilizada para compra e venda ilegal de dados roubados, incluindo informações de identidade pessoal. Criminosos comercializam dados de roubo de identidade, números de cartão de crédito e credenciais comprometidas em mercados clandestinos da dark web."
+        "pt": "A deep web é qualquer conteúdo da internet não indexado por mecanismos de busca (emails privados, bancos online, registros médicos), enquanto a dark web é uma camada deliberadamente oculta acessível apenas através de softwares especiais como Tor. Criminosos utilizam a dark web para comprar/vender dados roubados de identidade, trocar ferramentas de ataque e negociar serviços de fraude. A deep web em si é legítima, mas a dark web é frequentemente associada a atividades ilícitas."
       }
     },
     {
       "id": 9,
       "layer": "F1",
-      "topic": "definicao_keylogger",
+      "topic": "vpn_proxy_definicao",
       "front": {
-        "pt": "Como se define um keylogger e como ele facilita o roubo de identidade?"
+        "pt": "Qual é a definição de VPN e proxy, e como são utilizados em atividades de cyberfraud e roubo de identidade?"
       },
       "back": {
-        "pt": "Um keylogger é um software ou dispositivo que registra todas as teclas digitadas pelo usuário em um teclado. Criminosos o utilizam para capturar senhas, números de cartão de crédito e outras informações sensíveis digitadas. Pode ser instalado através de malware, trojans ou ser um dispositivo físico colocado entre o teclado e o computador, facilitando o roubo de identidade sem o conhecimento da vítima."
+        "pt": "Uma VPN (Rede Virtual Privada) cria uma conexão criptografada entre um dispositivo e um servidor remoto, mascarando o endereço IP e criptografando dados. Um proxy atua como intermediário entre o usuário e a internet. Criminosos utilizam VPNs e proxies para ocultar sua localização geográfica, acessar contas de identidade roubadas de outros países e evitar rastreamento. Fraudadores também as utilizam para contornar bloqueios geográficos e realizar transações fraudulentas de forma anônima."
       }
     },
     {
       "id": 10,
       "layer": "F1",
-      "topic": "definicao_skimming",
+      "topic": "data_breach_definicao",
       "front": {
-        "pt": "O que é skimming de cartão de crédito e como funciona na prática?"
+        "pt": "Como se define uma violação de dados (data breach) e qual é sua relevância para o roubo de identidade?"
       },
       "back": {
-        "pt": "Skimming é o roubo de informações do cartão de crédito usando dispositivos clandestinos colocados em máquinas de leitura legítimas, como caixas eletrônicos ou bombas de gasolina. O dispositivo lê e armazena os dados do cartão quando ele é inserido. Criminosos também podem usar skimmers portáteis em estabelecimentos comerciais para copiar informações de cartões durante transações, depois usam os dados roubados para fraude."
+        "pt": "Uma violação de dados é o acesso não autorizado e a exposição de informações pessoais sensíveis de uma organização, incluindo nomes, endereços, números de segurança social, dados bancários e credenciais. As violações podem ocorrer através de ataques hackers, negligência interna ou falhas de segurança. Essas brechas alimentam diretamente atividades de roubo de identidade, pois criminosos vendem ou utilizam os dados roubados para abrir contas fraudulentas."
       }
     },
     {
       "id": 11,
       "layer": "F1",
-      "topic": "definicao_vishing",
+      "topic": "social_engineering_pretexting",
       "front": {
-        "pt": "O que é vishing no contexto de engenharia social e roubo de identidade?"
+        "pt": "O que é pretexting como técnica de engenharia social e como se relaciona com roubo de identidade?"
       },
       "back": {
-        "pt": "Vishing (voice phishing) é um ataque de engenharia social realizado por telefone onde o criminoso se faz passar por representante de uma instituição legítima. O atacante convence a vítima a revelar informações sensíveis como números de cartão, CPF ou credenciais bancárias. Por exemplo, um golpista liga se passando por banco e pede confirmação de dados pessoais, capturando informações para roubo de identidade ou fraude financeira."
+        "pt": "Pretexting é criar uma falsa situação ou história persuasiva para enganar uma pessoa e obter informações confidenciais ou acesso físico/digital. Um fraudador pode se passar por funcionário do banco, técnico de suporte ou representante de governo para convencer a vítima a revelar dados sensíveis. Exemplo: um criminoso liga para a vítima fingindo ser do banco e solicita confirmação de dados pessoais, números de cartão ou senhas para 'verificar segurança'."
       }
     },
     {
       "id": 12,
       "layer": "F1",
-      "topic": "definicao_acesso_nao_autorizado",
+      "topic": "account_takeover_definicao",
       "front": {
-        "pt": "Como se define acesso não autorizado a computadores no contexto de crime cibernético?"
+        "pt": "Como se define Account Takeover (ATO) no contexto de fraude cibernética e qual é seu impacto?"
       },
       "back": {
-        "pt": "Acesso não autorizado é a entrada em um sistema de computador ou rede sem permissão legal do proprietário. Constitui crime sob várias legislações, incluindo o Computer Fraud and Abuse Act nos EUA. Pode ser realizado através de hacking, roubo de credenciais, exploração de vulnerabilidades ou engenharia social. Uma vez dentro do sistema, o criminoso pode roubar dados, instalar malware ou cometer fraudes adicionais."
+        "pt": "Account Takeover (ATO) é o acesso não autorizado e a apropriação de uma conta online (email, banco, rede social, e-commerce) por um criminoso, que passa a controlar e utilizar a conta em benefício próprio. O atacante pode fazer transações financeiras, roubar mais dados pessoais ou usar a conta para fraudar outras pessoas. ATO geralmente resulta de phishing, credential stuffing, força bruta ou roubo de credenciais através de malware."
       }
     },
     {
       "id": 13,
       "layer": "F2",
-      "topic": "distincao_phishing_vishing",
+      "topic": "phishing_vs_vishing",
       "front": {
-        "pt": "Qual a diferença entre phishing e vishing em ataques de roubo de identidade?"
+        "pt": "Qual é a diferença entre phishing e vishing no contexto de roubo de identidade?"
       },
       "back": {
-        "pt": "Phishing utiliza comunicações eletrônicas (email, SMS, mensagens) para enganar vítimas, enquanto vishing (voice phishing) usa chamadas telefônicas. O vishing é frequentemente mais eficaz porque a voz humana cria confiança instantânea. Exemplo: um criminoso ligando se passando por banco para obter dados bancários difere do email fraudulento solicitando clique em link malicioso."
+        "pt": "Phishing é um ataque que usa e-mail ou mensagens fraudulentas para induzir vítimas a fornecer dados pessoais, enquanto vishing (voice phishing) utiliza chamadas telefônicas ou mensagens de voz para o mesmo propósito. O phishing é baseado em comunicação escrita e geralmente em massa, enquanto vishing é mais direcionado e pessoal. Exemplo: um phishing pode ser um e-mail falso de um banco solicitando confirmação de senha, enquanto vishing seria uma ligação pretendendo ser do banco para coletar informações de cartão de crédito."
       }
     },
     {
       "id": 14,
       "layer": "F2",
-      "topic": "distincao_credential_stuffing_brute_force",
+      "topic": "malware_vs_adware",
       "front": {
-        "pt": "Como se diferencia credential stuffing de ataques de força bruta na fraude cibernética?"
+        "pt": "Como se diferencia malware de adware em ataques de cyberfraud?"
       },
       "back": {
-        "pt": "Credential stuffing reutiliza pares de credenciais (usuário/senha) vazadas de breaches anteriores em múltiplas contas, enquanto força bruta testa sistematicamente várias combinações de senhas contra uma única conta. Credential stuffing é mais rápido e eficaz porque as credenciais já existem, ao passo que força bruta é computacionalmente intensiva. Exemplo: usar milhões de combinações email/senha roubadas versus tentar todas as variações possíveis de uma senha."
+        "pt": "Malware é qualquer software malicioso projetado para danificar, controlar ou roubar dados do sistema, incluindo vírus, trojans e worms, enquanto adware é software que exibe anúncios indesejados frequentemente associado a roubo de dados de navegação. Todo adware pode ser considerado malicioso, mas nem todo malware é adware; o adware tem foco principal em publicidade, enquanto malware tem objetivos variados de roubo ou destruição. Exemplo: um trojan bancário é malware, mas um programa que rastreia seus hábitos de navegação para exibir anúncios direcionados é adware."
       }
     },
     {
       "id": 15,
       "layer": "F2",
-      "topic": "distincao_malware_adware",
+      "topic": "breach_vs_leak",
       "front": {
-        "pt": "Qual é a distinção entre malware e adware no contexto de roubo de dados pessoais?"
+        "pt": "Qual é a distinção entre data breach e data leak no roubo de identidade?"
       },
       "back": {
-        "pt": "Malware é software malicioso com intenção destrutiva que pode roubar dados, criptografar arquivos ou controlar sistemas, enquanto adware exibe publicidade invasiva (frequentemente malicioso). Todo adware pode ser prejudicial, mas nem todo malware é adware. Exemplo: ransomware é malware puro que criptografa dados; software que rastreia dados bancários enquanto mostra propagandas é adware malicioso."
+        "pt": "Um data breach é um acesso não autorizado a dados confidenciais, geralmente por invasão direta dos sistemas de uma organização, enquanto um data leak é a exposição não intencional ou deliberada de dados já acessados para o público. A diferença chave é que breach envolve o ato de violar a segurança, enquanto leak envolve a disseminação ou exposição dos dados após o acesso. Exemplo: um hacker invadindo o banco de dados de um varejista é um breach; os dados sendo postados em um fórum dark web é um leak subsequente."
       }
     },
     {
       "id": 16,
       "layer": "F2",
-      "topic": "distincao_data_breach_identity_theft",
+      "topic": "credential_stuffing_vs_brute_force",
       "front": {
-        "pt": "Como diferenciar um data breach de roubo de identidade em contexto investigativo?"
+        "pt": "Como se diferencia credential stuffing de brute force attack no contexto de fraude cibernética?"
       },
       "back": {
-        "pt": "Data breach é o acesso não autorizado a dados armazenados em sistemas; roubo de identidade é o uso fraudulento desses dados pessoais para cometer crimes. Um breach é o evento de exposição, enquanto roubo de identidade é a consequência criminosa do uso dos dados. Exemplo: hackers acessam banco de dados de clientes (breach); posteriormente usam nomes/SSNs para abrir contas falsas (roubo de identidade)."
+        "pt": "Credential stuffing usa combinações de credenciais roubadas (nome de usuário e senha) obtidas de breaches anteriores para tentar acessar múltiplas contas, enquanto brute force tenta adivinhar a senha testando todas as combinações possíveis. Credential stuffing explora a reutilização de senhas entre plataformas e é mais eficiente, enquanto brute force é computacionalmente intensivo e não direcionado. Exemplo: usar credenciais do LinkedIn vazado para tentar acessar contas de e-mail é credential stuffing; tentar adivinhar uma senha testando 'senha123', 'senha124', etc., é brute force."
       }
     },
     {
       "id": 17,
       "layer": "F2",
-      "topic": "distincao_pharming_phishing",
+      "topic": "man_in_the_middle_vs_man_in_the_browser",
       "front": {
-        "pt": "Qual a diferença entre pharming e phishing como técnicas de fraude cibernética?"
+        "pt": "Qual a diferença entre ataque Man-in-the-Middle (MITM) e Man-in-the-Browser (MITB) em roubo de identidade?"
       },
       "back": {
-        "pt": "Phishing engana o usuário para clicar em links maliciosos ou inserir credenciais em sites fraudulentos; pharming manipula o sistema DNS para redirecionar usuários para sites falsos automaticamente, sem necessidade de engano. Pharming é mais sofisticado e afeta múltiplos usuários simultaneamente. Exemplo: phishing envia email falso do banco; pharming redireciona digitação correta da URL bancária para site criminoso."
+        "pt": "Um ataque MITM intercepta comunicações entre duas partes na rede, capturando dados em trânsito, enquanto MITB injeta código malicioso diretamente no navegador da vítima para capturar transações sem interferência perceptível. MITM requer posicionamento na rede ou desvio de tráfego, enquanto MITB é executado localmente no dispositivo infectado. Exemplo: um MITM pode interceptar dados de WiFi público, enquanto MITB é quando um malware no seu computador modifica a transação bancária antes de você clicar em enviar."
       }
     },
     {
       "id": 18,
       "layer": "F2",
-      "topic": "distincao_two_factor_authentication_tipos",
+      "topic": "keylogger_vs_screencapture",
       "front": {
-        "pt": "Como se diferenciam os tipos de autenticação multifator (conhecimento vs possessão vs inerência)?"
+        "pt": "Como se diferencia um keylogger de um screen capture malicioso em fraude cibernética?"
       },
       "back": {
-        "pt": "Autenticação por conhecimento (algo que sabe: senha, PIN), por possessão (algo que possui: token, telefone), por inerência (algo que é: biometria, impressão digital). Criminosos exploram cada tipo diferentemente. Exemplo: phishing consegue senhas (conhecimento); SIM swapping contorna possessão; deepfakes fraudulentos tentam enganar biometria facial."
+        "pt": "Um keylogger registra todas as teclas digitadas por um usuário (senhas, mensagens, pesquisas), capturando informações sequenciais digitadas, enquanto screen capture malicioso fotografa a tela do dispositivo em intervalos, capturando informações visuais e contextuais. Keyloggers são mais eficientes para capturar senhas e dados datilogravados, enquanto screen capture é mais versátil para roubar informações visuais como números de cartão em imagens. Exemplo: um keylogger captura a senha quando você a digita; um screen capture malicioso fotografa a tela quando você visualiza seu extrato bancário."
       }
     },
     {
       "id": 19,
       "layer": "F2",
-      "topic": "distincao_whaling_spear_phishing",
+      "topic": "typosquatting_vs_url_hijacking",
       "front": {
-        "pt": "Qual a distinção entre whaling e spear phishing em ataques direcionados?"
+        "pt": "Qual é a distinção entre typosquatting e URL hijacking no contexto de fraude cibernética?"
       },
       "back": {
-        "pt": "Spear phishing é ataque customizado contra indivíduo ou pequeno grupo com pesquisa prévia; whaling é spear phishing direcionado especificamente a executivos de alto nível (C-level). Whaling é mais sofisticado em pesquisa e pretensão, buscando acesso aos maiores recursos. Exemplo: email falso para funcionário comum é spear phishing; email elaborado para CEO fingindo ser conselho é whaling."
+        "pt": "Typosquatting registra domínios com nomes similares ao site legítimo mas com pequenos erros (como 'goggle.com' em vez de 'google.com') que usuários digitam incorretamente, enquanto URL hijacking redireciona o tráfego de uma URL legítima para um site fraudulento através de técnicas técnicas. Typosquatting explora erros humanos e requer registro de domínios, enquanto hijacking explora vulnerabilidades de segurança ou configurações DNS. Exemplo: typosquatting é criar 'amazn.com' esperando usuários digitarem incorretamente; hijacking é modificar o DNS para redirecionar 'amazon.com' para um site falso."
       }
     },
     {
       "id": 20,
       "layer": "F2",
-      "topic": "distincao_session_hijacking_man_in_middle",
+      "topic": "public_wifi_attack_vs_evil_twin",
       "front": {
-        "pt": "Como diferenciar session hijacking de ataques man-in-the-middle (MITM) em roubo de dados?"
+        "pt": "Como se diferencia um ataque em WiFi público de um ataque de evil twin em roubo de identidade?"
       },
       "back": {
-        "pt": "Session hijacking rouba o token/cookie de sessão ativa para usar a conexão já autenticada; MITM intercepta comunicação entre dois pontos para ler ou modificar dados em tempo real. Session hijacking reutiliza autenticação existente; MITM não precisa dela. Exemplo: roubar cookie de sessão para acessar conta já logada (hijacking) versus interceptar senha em rede WiFi aberta (MITM)."
+        "pt": "Um ataque em WiFi público explora vulnerabilidades de redes WiFi abertas ou fracamente criptografadas para interceptar tráfego de dados já existentes, enquanto um evil twin cria uma rede WiFi falsa com nome legítimo para atrair vítimas e capturar suas credenciais. Ambos ocorrem em redes sem fio, mas o ataque em WiFi público é passivo/reativo, enquanto evil twin é ativo e enganoso. Exemplo: monitorar dados em uma rede de café aberta é ataque em WiFi público; criar uma rede chamada 'AirportWiFi' falsa no aeroporto para coletar senhas é evil twin."
       }
     },
     {
       "id": 21,
       "layer": "F2",
-      "topic": "distincao_keylogger_screen_capture",
+      "topic": "social_engineering_vs_pretexting",
       "front": {
-        "pt": "Qual a diferença entre keylogger e screen capture malicioso no roubo de credenciais?"
+        "pt": "Qual a diferença entre social engineering geral e pretexting como técnicas de roubo de identidade?"
       },
       "back": {
-        "pt": "Keylogger registra cada tecla digitada (captura senhas, buscas, mensagens); screen capture fotografa tela em intervalos para capturar informações visuais (incluindo teclados virtuais). Screen capture é mais eficaz contra senhas em teclado virtual; keylogger é mais eficaz contra entrada tradional. Exemplo: keylogger registra '12345' digitado; screen capture fotografa seleção de PIN em teclado touchscreen."
+        "pt": "Engenharia social é uma estratégia ampla de manipulação psicológica para induzir pessoas a divulgar informações confidenciais ou realizar ações de segurança comprometida, enquanto pretexting é uma técnica específica de engenharia social que envolve criar um cenário falso ou identidade fictícia para ganhar confiança. Pretexting é um subconjunto ou tática dentro da engenharia social mais abrangente. Exemplo: engenharia social inclui phishing, pretexting e manipulação psicológica; pretexting específico seria um fraudador se passando por técnico de TI para obter acesso ao sistema."
       }
     },
     {
       "id": 22,
       "layer": "F2",
-      "topic": "distincao_botnet_trojan",
+      "topic": "account_takeover_vs_identity_theft",
       "front": {
-        "pt": "Como se diferencia um botnet de um trojan no contexto de fraude cibernética?"
+        "pt": "Como se diferencia account takeover de roubo de identidade verdadeira em fraude cibernética?"
       },
       "back": {
-        "pt": "Trojan é um programa malicioso que se disfarça de software legítimo e executa ações maliciosas em máquina infectada; botnet é rede de múltiplas máquinas infectadas (bots) controladas remotamente por um comando central. Um trojan é singular; botnet é uma rede coordenada. Exemplo: trojan bancário em computador rouba credenciais; botnet de milhares de computadores executa ataques DDoS coordenados."
+        "pt": "Account takeover é ganhar acesso não autorizado a uma conta existente específica (e-mail, redes sociais, banco) usando credenciais roubadas ou técnicas de bypass, enquanto roubo de identidade verdadeira é usar dados pessoais de alguém para criar novas contas ou solicitar crédito em nome dessa pessoa. Account takeover afeta uma conta conhecida, enquanto roubo de identidade cria novo histórico fraudulento. Exemplo: account takeover é quando um criminoso acessa sua conta do Gmail já existente; roubo de identidade é quando usa suas informações pessoais para solicitar um empréstimo em seu nome."
       }
     },
     {
       "id": 23,
       "layer": "F2",
-      "topic": "distincao_zero_day_known_vulnerability",
+      "topic": "trojan_vs_worm",
       "front": {
-        "pt": "Qual a distinção entre vulnerabilidade zero-day e vulnerabilidade conhecida em ataques cibernéticos?"
+        "pt": "Qual é a distinção entre um trojan horse e um worm no contexto de fraude cibernética e roubo de identidade?"
       },
       "back": {
-        "pt": "Zero-day é vulnerabilidade desconhecida pelo desenvolvedor e sem patch disponível; vulnerabilidade conhecida foi divulgada e tem correção disponível. Zero-days são muito mais valiosas para atacantes criminosos porque ninguém pode se defender. Exemplo: zero-day permite que hacker invada sistema sem defesa antes da revelação pública; vulnerabilidade conhecida de navegador pode ser fechada atualizando o software."
+        "pt": "Um trojan horse é malware disfarçado como software legítimo que requer ação do usuário (instalação ou execução) para ser ativado, enquanto um worm é malware auto-replicante que se propaga automaticamente entre sistemas sem necessidade de ação do usuário. Trojans precisam de enganação para entrar, enquanto worms exploram vulnerabilidades para se disseminar autonomamente. Exemplo: um trojan é um programa falso de atualização de Flash que contém malware; um worm é código que se copia automaticamente através de redes de computadores vulneráveis."
       }
     },
     {
       "id": 24,
       "layer": "F2",
-      "topic": "distincao_exfiltration_encryption_ransomware",
+      "topic": "session_hijacking_vs_cookie_theft",
       "front": {
-        "pt": "Como diferenciar ataque de exfiltração de dados do roubo por ransomware criptografado?"
+        "pt": "Como se diferencia session hijacking de cookie theft em ataques de cyberfraud?"
       },
       "back": {
-        "pt": "Exfiltração copia dados confidenciais para servidor externo sem que vítima saiba; ransomware criptografa dados localmente e exige pagamento para descriptografar. Exfiltração é roubo silencioso; ransomware é extorsão visível. Exemplo: hacker rouba milhões de registros clientes secretamente (exfiltração) versus sistema fica travado com mensagem pedindo bitcoin (ransomware)."
+        "pt": "Session hijacking é o roubo ou interceptação do identificador de sessão único (token) entre um usuário autenticado e um servidor para assumir o controle da sessão, enquanto cookie theft é o roubo específico dos dados armazenados em cookies do navegador. Session hijacking usa cookies como um meio, mas refere-se à captura do controle da sessão, enquanto cookie theft foca no roubo do arquivo cookie em si. Exemplo: session hijacking é quando um criminoso intercepta seu token de sessão bancária para fazer transações em seu nome; cookie theft é quando rouba o arquivo cookie contendo informações de autenticação do seu navegador."
       }
     },
     {
       "id": 25,
       "layer": "F3",
-      "topic": "deteccao_credenciais_comprometidas",
+      "topic": "deteccao_phishing_campanhas",
       "front": {
-        "pt": "Como detectar se credenciais de um cliente foram comprometidas em um ataque cibernético?"
+        "pt": "Como detectar uma campanha de phishing direcionada ao roubo de identidade?"
       },
       "back": {
-        "pt": "Procure por padrões incomuns de login (localização geográfica impossível, horários atípicos), tentativas de reset de senha, alterações em dados cadastrais não autorizadas e notificações de serviços de monitoramento de dark web. Exemplo: um cliente recebe alerta de que suas credenciais aparecem em base de dados vazada; simultaneamente, aparecem logins da sua conta em outro país. Recomenda-se verificar histórico de transações e implementar autenticação multifator imediatamente."
+        "pt": "O phishing é um ataque que envia mensagens fraudulentas fingindo ser de instituições legítimas para coletar credenciais. Os red flags incluem: links suspeitos, erros de digitação, solicitação urgente de informações pessoais e endereços de e-mail falsos. Exemplo: um banco real nunca pedirá CPF via e-mail; campanhas sofisticadas (spear phishing) são personalizadas com dados da vítima para aumentar credibilidade."
       }
     },
     {
       "id": 26,
       "layer": "F3",
-      "topic": "red_flags_fraude_documentos",
+      "topic": "sinais_alerta_fraude_identidade",
       "front": {
-        "pt": "Quais são os sinais de alerta ao investigar possível uso fraudulento de documentos de identidade?"
+        "pt": "Quais são os red flags mais comuns de roubo de identidade que um investigador CFE deve observar?"
       },
       "back": {
-        "pt": "Red flags incluem: discrepâncias entre documento apresentado e informações de referência, alterações visíveis em documento (rasuras, fotosshopping), dados biométricos inconsistentes e múltiplas aplicações com mesmo documento em diferentes nomes. Exemplo prático: um investigador identifica que o mesmo número de CPF foi usado em 5 aberturas de conta bancária em semanas, com nomes e endereços diferentes. Verificar autenticidade com órgão emissor original é essencial."
+        "pt": "Os sinais incluem: contas abertas sem autorização, alterações não autorizadas em documentos, crédito comprometido, notificações de débitos desconhecidos e registros de SSN em múltiplos perfis de crédito. Um investigador deve monitorar relatórios de crédito para anomalias, verificar extratos bancários irregulares e entrevistar vítimas sobre atividades não reconhecidas para confirmar fraude versus erro administrativo."
       }
     },
     {
       "id": 27,
       "layer": "F3",
-      "topic": "investigacao_conta_email_comprometida",
+      "topic": "prevencao_credenciais_roubadas",
       "front": {
-        "pt": "Como investigar uma conta de email corporativa que foi comprometida e usada para fraude interna?"
+        "pt": "Como se aplica o princípio de proteção de credenciais para prevenir roubo de identidade em ambientes corporativos?"
       },
       "back": {
-        "pt": "Analise logs de acesso (IP, localização, dispositivo), verifique regras de encaminhamento de email configuradas, examine histórico de alteração de senha e recuperação de conta, e recupere emails deletados. Exemplo: investigador descobre que um gerente teve sua conta comprometida; o atacante criou regra de encaminhamento silencioso para seus emails financeiros. Preserve toda e-mail correspondence e coordene com TI para isolamento imediato da conta."
+        "pt": "A proteção inclui: implementar autenticação multifator (MFA), usar senhas criptografadas, evitar reutilização de senhas e realizar rotações periódicas. As organizações devem treinar funcionários para não compartilhar credenciais e usar gestores de senhas seguros. Exemplo: um banco que implementa biometria + token garante que mesmo com senha roubada, o acesso é bloqueado, reduzindo exposição de dados sensíveis de clientes."
       }
     },
     {
       "id": 28,
       "layer": "F3",
-      "topic": "metodos_recuperacao_identidade_roubada",
+      "topic": "analise_vazamento_dados_massa",
       "front": {
-        "pt": "Quais são os passos práticos para ajudar uma vítima a recuperar sua identidade roubada?"
+        "pt": "Como investigar um vazamento de dados em massa que facilitou roubo de identidade em larga escala?"
       },
       "back": {
-        "pt": "Oriente a vítima a: notificar instituições financeiras e agências de crédito, colocar congelamento de crédito, revisar relatórios de crédito, contestar transações fraudulentas e registrar boletim de ocorrência. Exemplo: após descobrir abertura de cartão de crédito fraudulento em seu nome, a vítima contata as três principais agências de crédito e solicita bloqueio de crédito por 7 anos. Documentar todas as comunicações é crucial para o processo de recuperação."
+        "pt": "O investigador deve: identificar a origem do vazamento (servidor comprometido, insider, vulnerabilidade explorada), quantificar registros expostos (nomes, SSN, datas nascimento), determinar período de exposição e notificar autoridades regulatórias. Exemplo: violação de BD de hospital exposição 2 milhões de pacientes com CPF/RG requer análise de logs de acesso, tráfego de rede e identificação se terceiros transferiram dados ilicitamente."
       }
     },
     {
       "id": 29,
       "layer": "F3",
-      "topic": "rastreamento_fundos_roubo_identidade",
+      "topic": "deteccao_malware_identidade",
       "front": {
-        "pt": "Como rastrear fundos movimentados após roubo de identidade para fins de investigação criminal?"
+        "pt": "Como detectar se malware foi instalado especificamente para roubar dados de identidade em um computador comprometido?"
       },
       "back": {
-        "pt": "Use análise de fluxo de fundos através de contas bancárias, rastreie transferências eletrônicas via SWIFT ou ACH, analise padrões de saque e identifique contas receptoras. Trabalhe com instituições financeiras para obter registros de transação detalhados. Exemplo: investigador descobre que fundos roubados de conta da vítima foram transferidos para conta em outro banco, depois para carteira digital, finalmente convertidos em criptomoeda. Documentação de cada etapa é necessária para perseguição legal."
+        "pt": "Sinais incluem: comportamento lento, processos desconhecidos em execução, alterações no hosts file, atividade de rede suspeita para servidores C&C e gravação de keystrokes. Um investigador deve analisar logs de aplicação, executar análise forense de disco rígido e verificar tráfego de rede capturado. Exemplo: trojan bancário que monitora digitação de credenciais em sites financeiros deixa rastros em cache de navegador e conexões de rede para domínios maliciosos."
       }
     },
     {
       "id": 30,
       "layer": "F3",
-      "topic": "validacao_autenticidade_documento_digital",
+      "topic": "investigacao_account_takeover",
       "front": {
-        "pt": "Como validar a autenticidade de um documento digital suspeito durante investigação de fraude de identidade?"
+        "pt": "Quais são os procedimentos para investigar um account takeover (tomada de conta) resultante de roubo de identidade?"
       },
       "back": {
-        "pt": "Verifique metadados do arquivo (data de criação, modificação), realize análise forense de imagem, compare com exemplos legítimos e valide assinaturas digitais quando aplicável. Exemplo: um investigador recebe um contrato assinado digitalmente; analisa metadados e descobre que foi modificado horas após a assinatura original. Qualquer discrepância entre assinatura, timestamp e conteúdo indica possível fraude. Documentação técnica completa sustenta evidência em tribunal."
+        "pt": "O processo inclui: verificar logs de acesso anormal (IP estrangeiro, horários fora do padrão), revisar histórico de alterações de senha/recuperação, analisar transações fraudulentas e verificar forwarding de e-mail não autorizado. Um investigador deve entrevistar o proprietário da conta, coletar evidência forense de dispositivos, e determinar se engenharia social ou comprometimento técnico causou o acesso. Exemplo: conta de e-mail corporativa acessada da Rússia com redirecionamento silencioso para fraudador."
       }
     },
     {
       "id": 31,
       "layer": "F3",
-      "topic": "deteccao_aplicacoes_fraudulentas",
+      "topic": "validacao_documentos_falsificados",
       "front": {
-        "pt": "Quais indicadores técnicos revelam aplicativos móveis fraudulentos usados em esquemas de roubo de identidade?"
+        "pt": "Como validar se documentos de identidade utilizados em fraude são falsificados versus roubados de identidade verdadeira?"
       },
       "back": {
-        "pt": "Procure por: permissões excessivas solicitadas, reviews suspeitas, desenvolvedor desconhecido, comunicações de rede não autorizadas para servidores externos, e variações de nome semelhante a apps legítimas. Exemplo: criminosos lançam app 'Banc@Seguro' que imita visual do banco real mas solicita acesso a câmera, contatos e localização; usuários desavisados instalam e suas credenciais são capturadas. Análise de código e captura de tráfego de rede revelam comportamento malicioso."
+        "pt": "A validação envolve: verificação de números de série, holograma, tinta reativa, características de segurança com órgão emissor (Receita Federal, IFP), análise forense de imagem digital e comparação biométrica. Se o documento é falso, implica fraude de identidade sintética; se é roubado, é roubo de identidade verdadeira. Exemplo: passaporte com chip danificado, foto alterada digitalmente e número de série duplicado indica falsificação profissional."
       }
     },
     {
       "id": 32,
       "layer": "F3",
-      "topic": "investigacao_vazamento_dados_pessoais",
+      "topic": "rastreamento_fluxo_fundos_fraude",
       "front": {
-        "pt": "Como investigar um vazamento de dados pessoais em ambiente corporativo e identificar o responsável?"
+        "pt": "Como rastrear o fluxo de fundos roubados via identidade para identificar receptáculos finais?"
       },
       "back": {
-        "pt": "Analise logs de acesso ao banco de dados, identifique quem baixou/exportou dados, verifique timestamps, examine comunicações (email, chat) da pessoa suspeita e busque motivação (rancor, pressão financeira). Exemplo: departamento de RH identifica que 10.000 registros de funcionários foram exportados; investigação mostra que analista com acesso legítimo exportou dados em pendrive dias antes de demissão. Análise de logs e entrevistas revelam que vendeu dados para rival. Preservação de evidência digital é crítica."
+        "pt": "O rastreamento utiliza: análise de transferências bancárias, relatórios de transação de câmaras de compensação, investigação de contas mulas, histórico de movimentação e cooperação com instituições financeiras. Um investigador CFE deve documentar cadeia de custódia financeira e conectar transações a nomes/contas suspeitas. Exemplo: fundos roubados de conta bancária da vítima transferidos para múltiplas contas intermediárias em 48 horas, depois convertidos em criptomoeda, rastreáveis apenas em blockchain público."
       }
     },
     {
       "id": 33,
       "layer": "F3",
-      "topic": "validacao_legitimidade_pedidos_dados",
+      "topic": "evidencia_forense_cibernetica",
       "front": {
-        "pt": "Como validar se pedidos para verificação de identidade online são legitimamente originários de instituições reais?"
+        "pt": "Como coletar e preservar evidência forense de um computador com suspeita de fraude cibernética para manter admissibilidade legal?"
       },
       "back": {
-        "pt": "Nunca clique em links de email ou mensagem; sempre contate a instituição diretamente através de número publicado oficialmente no site, jamais usando contato fornecido na mensagem. Instituições legítimas não solicitam credenciais completas por email. Exemplo: cliente recebe email aparentemente do seu banco solicitando confirmação de CPF e senha para 'atualizar sistema'; é na verdade phishing. Ligação para número verificado do banco confirma que nunca enviaram tal email. Conscientização sobre estes padrões previne furtos."
+        "pt": "A cadeia de custódia requer: fotografia de cena, isolamento do equipamento da rede, clonagem forense com hash criptográfico (MD5/SHA-256), documentação detalhada e armazenamento seguro. O investigador nunca deve ligar o computador comprometido, pois isto pode destruir evidência volátil (RAM, sessões ativas). Exemplo: imagem bit-a-bit de disco rígido com verificação hash permite análise repetida em laboratório forense sem contaminação."
       }
     },
     {
       "id": 34,
       "layer": "F3",
-      "topic": "forense_atividade_navegacao_web",
+      "topic": "analise_padroes_fraude_identidade",
       "front": {
-        "pt": "Como usar forense de navegação web para rastrear atividades suspeitas em investigação de fraude cibernética?"
+        "pt": "Como aplicar análise de padrões comportamentais para detectar fraude de identidade antes do dano financeiro?"
       },
       "back": {
-        "pt": "Recupere histórico de navegação, cache, cookies e armazenamento local do navegador, analise sites visitados, cronologia de acessos e dados preenchidos. Ferramentas como Autopsy ou navegadores em modo forense preservam evidência. Exemplo: investigador analisa histórico de browser de computador corporativo onde fraude interna ocorreu; descobre visitas repetidas a site de gerenciamento de conta bancária pessoal, uso de VPN para mascarar localização, acesso a dados sensíveis minutos depois. Essa sequência fortalece caso contra suspeito."
+        "pt": "Técnicas incluem: monitoramento de desvios de transação normal (compras em locais geográficos impossíveis, montantes atípicos), análise de frequência de login, mudanças em perfil de risco e alertas de anomalia em tempo real. Instituições usam machine learning para comparar atividades presentes com histórico de usuário. Exemplo: titular com padrão de gastos de R$ 2.000/mês apresenta súbito gasto de R$ 50.000 em eletrônicos em país diferente com IP novo = acionamento imediato de investigação."
       }
     },
     {
       "id": 35,
       "layer": "F3",
-      "topic": "analise_padrao_comportamento_online",
+      "topic": "coordenacao_investigacao_multijurisdicional",
       "front": {
-        "pt": "Como análise de padrão comportamental online ajuda a detectar fraude de identidade em andamento?"
+        "pt": "Como coordenar investigação de roubo de identidade que atravessa fronteiras internacionais e múltiplas jurisdições?"
       },
       "back": {
-        "pt": "Compare padrões normais do usuário (horários de acesso, dispositivos utilizados, localização, volume de transações) com atividade atual; desvios significativos indicam possível comprometimento. Modelos baseados em machine learning detectam anomalias automaticamente. Exemplo: cliente normalmente acessa conta de laptop em São Paulo entre 8h-18h; de repente surgem logins de smartphone em Miami às 3 da manhã com múltiplas tentativas de transferência. Sistema de detecção de anomalia sinaliza como risco alto. Investigação confirma comprometimento e fraude é bloqueada em tempo real."
+        "pt": "Procedimentos incluem: notificação a autoridades locais, solicitação de mutual legal assistance (MLA), comunicação com órgãos internacionais (INTERPOL, FBI), preservação de evidência em conformidade com leis locais e cooperação com provedores de internet/bancos em diferentes países. Um investigador CFE deve documentar todas as comunicações e respeitar privacidade de dados local. Exemplo: fraude de identidade originada no Brasil com operação em Nigéria requer coordenação com polícia federal brasileira e órgão de aplicação da lei nigeriano."
       }
     },
     {
       "id": 36,
       "layer": "F3",
-      "topic": "investigacao_fraude_loja_online",
+      "topic": "auditoria_controles_tecnologia",
       "front": {
-        "pt": "Como investigar e documentar fraude em transação de comércio eletrônico para fins de legal accountability?"
+        "pt": "Como auditar controles tecnológicos de uma instituição para identificar deficiências que facilitam roubo de identidade?"
       },
       "back": {
-        "pt": "Colete: IP do comprador, localização geográfica, timestamp de transação, endereço de entrega, método de pagamento, histórico de conta, comunicações com vendedor e padrão de compra anterior. Compare com transações legítimas. Exemplo: loja detecta 50 transações de alto valor em 2 horas usando mesmo cartão de crédito mas endereços de entrega diferentes em 5 países. Investigador identifica IP comum, analisa que roubo de dados ocorreu em semana anterior, rastreia fundos. Documentação completa sustenta denúncia ao FBI e ressarcimento à vítima."
+        "pt": "A auditoria inclui: revisão de logs de acesso, teste de penetração, avaliação de vulnerabilidades, análise de firewall/IDS, segregação de dados sensíveis e conformidade com NIST/ISO. Um investigador verifica se dados de identidade (CPF, RG) estão criptografados em repouso e em trânsito. Exemplo: auditoria detecta que senhas de funcionários armazenadas em texto plano em planilha compartilhada, criando risco massivo de comprometimento de acesso privilegiado."
       }
     },
     {
       "id": 37,
       "layer": "F4",
-      "topic": "relacao_roubo_identidade_fraude_financeira",
+      "topic": "phishing_como_vetor_inicial_roubo_identidade",
       "front": {
-        "pt": "Como o roubo de identidade se relaciona com a fraude financeira e qual é o impacto cascata dessa conexão?"
+        "pt": "Por que o phishing é considerado o vetor inicial mais eficaz para ataques de roubo de identidade em massa?"
       },
       "back": {
-        "pt": "O roubo de identidade fornece a base para fraude financeira, permitindo que o fraudador abra contas, solicite empréstimos ou realize transações em nome da vítima. A conexão é crítica porque cada incidente de roubo de identidade pode gerar múltiplas fraudes financeiras simultâneas. Por exemplo, um fraudador que rouba dados de identificação pode abrir 5-10 contas bancárias e cartões de crédito antes da detecção, multiplicando o dano financeiro e a complexidade da investigação."
+        "pt": "O phishing é eficaz porque explora a engenharia social para contornar defesas técnicas, convencendo vítimas a voluntariamente revelar credenciais. Criminosos enviam e-mails fraudulentos que simulam instituições legítimas, direcionando usuários a sites falsos onde inserem dados pessoais e financeiros. Uma única campanha de phishing pode comprometer milhares de identidades simultaneamente, gerando dados para fraudes futuras. Exemplo: e-mail falso de banco solicitando atualização de dados bancários direciona à página fraudulenta que captura CPF, conta e senha."
       }
     },
     {
       "id": 38,
       "layer": "F4",
-      "topic": "impacto_forensica_digital_investigacao_cyberfraud",
+      "topic": "relacao_dados_roubados_venda_darknet",
       "front": {
-        "pt": "Qual é o impacto da análise forense digital na qualidade e admissibilidade de evidências em casos de cyberfraud?"
+        "pt": "Como se relacionam os dados de identidade roubados em cyberfraud com o mercado de venda na dark web?"
       },
       "back": {
-        "pt": "A análise forense digital garante que as evidências sejam coletadas, preservadas e analisadas de forma metodológica, mantendo a integridade e rastreabilidade necessárias para aceitação legal. Evidências mal coletadas ou comprometidas podem ser consideradas inadmissíveis em tribunal, inviabilizando processos. Um investigador que não segue protocolos de hash MD5/SHA256 ou não documenta a cadeia de custódia adequadamente pode comprometer todo um caso de fraude cibernética."
+        "pt": "Dados de identidade roubados alimentam um ecossistema criminal estruturado na dark web, onde são vendidos em lotes ou individualmente a outros fraudadores. Criminosos utilizam criptomoedas para transações anônimas, e os dados podem ser revendidos múltiplas vezes antes de serem explorados. Esse mercado secundário prolonga o ciclo de fraude e afeta vítimas muito tempo após o roubo inicial. Exemplo: base de dados com 10 mil CPFs e senhas roubados pode ser vendida por centenas de dólares na dark web, sendo posteriormente utilizada para fraudes de crédito."
       }
     },
     {
       "id": 39,
       "layer": "F4",
-      "topic": "vulnerabilidade_autenticacao_multifator_fraude",
+      "topic": "impacto_api_insegura_cascata_roubo_dados",
       "front": {
-        "pt": "Por que a autenticação multifatorial é importante para mitigar ataques de apropriação de conta, e como seu comprometimento amplifica riscos?"
+        "pt": "Qual é o impacto de uma API insegura em aplicativos sobre a cascata de roubo de dados de identidade?"
       },
       "back": {
-        "pt": "A autenticação multifatorial cria camadas de proteção que dificultam o acesso não autorizado mesmo com credenciais roubadas. Quando comprometida (via SIM swapping ou malware), elimina essa barreira crítica, permitindo acesso irrestrito à conta e a todos os dados associados. Um fraudador que contorna MFA pode comprometer contas bancárias, e-mails corporativos e acessar informações sensíveis que facilitam fraudes secundárias."
+        "pt": "APIs inseguras funcionam como portas traseiras que permitem acesso não autorizado a grandes volumes de dados de usuários armazenados em servidores. Um único ponto de falha em uma API pode comprometer dados de milhões de usuários simultaneamente, criando uma cascata de exposições. Diferentemente de ataques direcionados, falhas em APIs afetam toda a base de dados, multiplicando o dano potencial. Exemplo: API de autenticação fraca permite que atacante acesse banco de dados de milhões de usuários contendo CPF, nome completo e histórico de transações."
       }
     },
     {
       "id": 40,
       "layer": "F4",
-      "topic": "conexao_malware_phishing_roubo_identidade",
+      "topic": "sintese_credenciais_comprometidas_reutilizacao",
       "front": {
-        "pt": "Como malware e phishing trabalham em conjunto para amplificar riscos de roubo de identidade?"
+        "pt": "Por que a reutilização de credenciais comprometidas em múltiplas plataformas amplifica o risco de roubo de identidade?"
       },
       "back": {
-        "pt": "Phishing frequentemente entrega malware como payload, criando uma combinação sinérgica: phishing compromete o comportamento do usuário enquanto malware compromete o dispositivo. Malware captura credenciais, dados bancários e documentos de identificação após o usuário clicar em um link phishing. Um ataque integrado pode resultar em roubo de múltiplos identificadores (CPF, RG, dados bancários) em uma única campanha."
+        "pt": "Quando credenciais são roubadas em um site, criminosos testam as mesmas combinações de usuário/senha em outros serviços, processo denominado credential stuffing. Vítimas que utilizam a mesma senha em múltiplas contas expõem todas essas contas simultaneamente após uma única violação. Isso permite que fraudadores acessem dados financeiros, e-mail e redes sociais com uma única credencial comprometida. Exemplo: senha roubada de rede social permite acesso a conta bancária, e-mail corporativo e serviço de pagamento da mesma vítima."
       }
     },
     {
       "id": 41,
       "layer": "F4",
-      "topic": "relacao_dados_pessoais_expostos_risco_multiplicador",
+      "topic": "relacao_deepfake_roubo_identidade_biometrica",
       "front": {
-        "pt": "Por que dados pessoais expostos em uma violação inicial representam um risco multiplicador para fraudes futuras?"
+        "pt": "Como os deepfakes se relacionam com o roubo de identidade biométrica em fraudes de verificação?"
       },
       "back": {
-        "pt": "Dados pessoais roubados (nome, CPF, endereço, telefone) fornecem a base para múltiplos tipos de fraude e servem como moeda no mercado negro de dados. Um conjunto de informações pessoais pode ser usado para roubo de identidade agravado, fraude de crédito, BEC e até mesmo como entrada para ataques direcionados adicionais. Um vazamento de dados de 10.000 pessoas pode gerar fraudes em cascata durante anos."
+        "pt": "Deepfakes utilizam IA para criar vídeos e imagens falsificadas de indivíduos reais, contornando sistemas de verificação biométrica baseados em reconhecimento facial. Criminosos usam deepfakes para enganar sistemas de verificação em tempo real durante abertura de contas bancárias ou acessos a plataformas sensíveis. Diferencia-se do roubo tradicional por não exigir acesso físico a dados biométricos, apenas ao vídeo ou fotografia da vítima. Exemplo: atacante cria deepfake de cliente para abertura de conta bancária digital, utilizando vídeo de verificação facial que passa nos controles de biometria."
       }
     },
     {
       "id": 42,
       "layer": "F4",
-      "topic": "sintese_ataque_multicamadas_cyberfraud",
+      "topic": "impacto_man_in_middle_comunicacao_sensivel",
       "front": {
-        "pt": "Como investigadores devem considerar ataques de cyberfraud como eventos multicamadas e qual é a importância dessa abordagem?"
+        "pt": "Qual é o impacto de um ataque Man-in-the-Middle (MITM) sobre a interceptação de comunicações sensíveis em roubo de identidade?"
       },
       "back": {
-        "pt": "Ataques modernos raramente envolvem um único vetor; combinam phishing, malware, engenharia social e exploração de vulnerabilidades em sequência. Investigadores que focam apenas em uma camada perdem a visão holística e podem falhar em identificar o padrão real de ataque. Analisar o ataque como multicamadas (reconhecimento → acesso inicial → persistência → exfiltração) permite compreender motivação, sofisticação do atacante e escala real da fraude."
+        "pt": "Ataques MITM permitem que criminosos interceptem comunicações não criptografadas entre usuário e servidor, capturando dados sensíveis transmitidos em tempo real. O atacante posiciona-se entre as partes, lendo e potencialmente modificando mensagens sem detecção. Isso é particularmente devastador em redes públicas (WiFi) onde a criptografia não é obrigatória. Exemplo: em WiFi público, atacante intercepta login bancário não-criptografado e captura CPF, conta, agência e senha do usuário."
       }
     },
     {
       "id": 43,
       "layer": "F4",
-      "topic": "regulacao_compliance_investigacao_fraude_digital",
+      "topic": "sintese_vulnerabilidade_firmware_risco_permanente",
       "front": {
-        "pt": "Como requisitos regulatórios (LGPD, GDPR) impactam a metodologia de investigação de roubo de identidade e cyberfraud?"
+        "pt": "Por que uma vulnerabilidade em firmware de dispositivo representa um risco permanente de roubo de identidade em cyberfraud?"
       },
       "back": {
-        "pt": "Regulações como LGPD e GDPR estabelecem obrigações de notificação, retenção e proteção de dados que modificam como investigadores coletam, armazenam e compartilham evidências digitais. Violações de compliance durante investigação podem resultar em multas além do dano do crime original. Investigadores devem balancear coleta forense com direitos à privacidade, notificação obrigatória de vítimas e cooperação com autoridades regulatórias."
+        "pt": "Firmware reside no nível mais baixo do dispositivo, anterior até ao sistema operacional, sendo raramente atualizado pelos usuários. Uma vulnerabilidade de firmware permanece explorada mesmo após reinstalação do SO ou limpeza do dispositivo. Criminosos podem instalar malware persistente que sobrevive a limpezas e atualizações, capturando dados de identidade indefinidamente. Exemplo: router comprometido continua capturando credenciais de todos os usuários conectados ao WiFi mesmo após múltiplas reinicializações."
       }
     },
     {
       "id": 44,
       "layer": "F4",
-      "topic": "indicadores_comportamentais_vs_tecnicas_deteccao_ato",
+      "topic": "conexao_vishing_social_engineering_escala",
       "front": {
-        "pt": "Por que indicadores comportamentais são frequentemente mais eficazes que assinatura técnicas na detecção de apropriação de conta (ATO)?"
+        "pt": "Como o vishing (voice phishing) se conecta à engenharia social em escala para roubo de identidade?"
       },
       "back": {
-        "pt": "Indicadores técnicos (IP, user-agent) podem ser falsificados ou legitimamente variáveis, enquanto padrões comportamentais (login em horários anormais, mudança de linguagem, transações atípicas) são mais difíceis de replicar. Um atacante pode usar VPN para mascarar IP, mas dificilmente consegue imitar o padrão de comportamento exato da vítima. Análise comportamental integrada com dados técnicos fornece detecção mais robusta de ATO."
+        "pt": "Vishing combina engenharia social com contato direto por telefone, criando senso de urgência e autoridade que aumenta taxa de sucesso comparado a phishing por e-mail. Criminosos utilizam scripts refinados e dados previamente roubados para se passar por instituições legítimas, convencendo vítimas a revelar informações sensíveis verbalmente. Diferencia-se do phishing por eliminar barreiras de desconfiança do formato textual. Exemplo: criminoso liga fingindo ser gerente de banco, menciona débito suspeito (dados reais roubados), convencendo vítima a confirmar dados bancários completos."
       }
     },
     {
       "id": 45,
       "layer": "F4",
-      "topic": "relacao_dados_roubados_venda_mercado_negro",
+      "topic": "impacto_acesso_logs_auditoria_fraude_encoberta",
       "front": {
-        "pt": "Como a venda de dados roubados em mercados negros acelera a cadeia de fraude e complica investigações?"
+        "pt": "Qual é o impacto de um criminoso ganhar acesso aos logs de auditoria na ocultação de fraudes de identidade?"
       },
       "back": {
-        "pt": "Dados roubados vendidos em dark markets são redistribuídos para múltiplos fraudadores, criando centenas de incidentes secundários de fraude que emanam de um único roubo inicial. Essa dispersão dificulta rastreamento porque cada comprador de dados pode usar as informações de forma diferente. Um conjunto de CPFs roubados pode gerar fraudes simultâneas em diferentes bancos, instituições de crédito e empresas de telecomunicações, fragmentando evidências investigativas."
+        "pt": "Logs de auditoria registram todas as atividades em sistemas, servindo como evidência forense de ataques. Quando criminosos ganham acesso a esses logs, podem deletar ou modificar registros de suas atividades maliciosas, criando illusão de normalidade. Isso torna quase impossível detectar quando e como dados foram roubados, facilitando fraudes prolongadas sem detecção. Exemplo: após roubo de identidade e abertura de contas fraudulentas, criminoso deleta logs mostrando acesso não autorizado, ocultando trilha de auditoria da fraude."
       }
     },
     {
       "id": 46,
       "layer": "F4",
-      "topic": "impacto_velocidade_ataque_resposta_investigativa",
+      "topic": "relacao_biometria_comportamental_deteccao_roubo",
       "front": {
-        "pt": "Qual é o impacto da velocidade dos ataques de cyberfraud modernos sobre a capacidade de resposta investigativa?"
+        "pt": "Como a biometria comportamental se relaciona com a detecção precoce de roubo de identidade em transações digitais?"
       },
       "back": {
-        "pt": "Ataques automáticos e em escala (milhares de tentativas por segundo) ocorrem mais rápido que processos investigativos tradicionais podem responder, criando janelas críticas onde dano continua se acumulando. A detecção rápida é fundamental; atraso de 24 horas pode significar comprometimento de centenas de contas adicionais. Investigadores devem implementar monitoramento em tempo real e protocolos de resposta ágil para mitigar esse descompasso temporal."
+        "pt": "Biometria comportamental analisa padrões únicos do usuário (velocidade digitação, movimento mouse, padrão de cliques) para criar perfil de autenticação contínua. Quando criminoso utiliza credenciais roubadas, seus padrões comportamentais diferem significativamente do proprietário legítimo. Sistemas baseados em IA detectam anomalias comportamentais antes que fraudes de grande valor ocorram. Exemplo: sistema detecta que tentativa de transação tem padrão de digitação diferente, velocidade anormal e horário incomum, bloqueando acesso e alertando sobre possível roubo de identidade."
       }
     },
     {
       "id": 47,
       "layer": "F4",
-      "topic": "desafio_jurisdicao_investigacao_crime_cibernetico",
+      "topic": "sintese_segmentacao_rede_mitigacao_movimento_lateral",
       "front": {
-        "pt": "Como a natureza transnacional da cyberfraud complica investigações e qual é a importância de cooperação internacional?"
+        "pt": "Por que a segmentação de rede é crítica para mitigar o movimento lateral após roubo de identidade de funcionário?"
       },
       "back": {
-        "pt": "Cyberfraud frequentemente envolve fraudadores em país A, infraestrutura de comando em país B, vítimas em país C e dados armazenados em servidores em país D, fragmentando jurisdição e autoridade investigativa. Sem cooperação internacional via tratados e agências (como Interpol, FBI), investigadores ficam impedidos de acessar evidências ou prender suspeitos. Um caso de roubo de identidade com vítimas brasileiras pode requerer coordenação com autoridades dos EUA, Rússia e Singapura simultaneamente."
+        "pt": "Segmentação de rede divide infraestrutura em zonas isoladas com controles de acesso específicos, impedindo que compromisso de uma credencial de funcionário afete toda a organização. Sem segmentação, criminoso que rouba credenciais de funcionário tem acesso ilimitado a todos os sistemas conectados. Com segmentação, acesso fica restrito ao segmento específico, contendo a exposição. Exemplo: funcionário de financeiro tem credenciais roubadas, mas segmentação impede acesso ao banco de dados de clientes mesmo com credenciais válidas."
+      }
+    },
+    {
+      "id": 48,
+      "layer": "F4",
+      "topic": "impacto_inteligencia_artificial_personalizacao_fraude",
+      "front": {
+        "pt": "Qual é o impacto da inteligência artificial na personalização de ataques de roubo de identidade em cyberfraud?"
+      },
+      "back": {
+        "pt": "IA permite que criminosos personalizem ataques analisando dados roubados sobre vítimas em tempo real, aumentando significativamente taxas de sucesso. Algoritmos de machine learning identificam padrões de comportamento e preferências, permitindo spear-phishing altamente direcionado. Diferencia-se de ataques em massa porque cada mensagem é customizada baseada no perfil específico da vítima. Exemplo: IA analisa dados roubados de LinkedIn, Facebook e histórico bancário, criando e-mail phishing hiperpersonalizado mencionando projeto específico de trabalho e banco onde vítima tem conta."
       }
     }
   ]

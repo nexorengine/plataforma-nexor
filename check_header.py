@@ -1,0 +1,7 @@
+f = open(r'C:\ARAGORN\aragorn_quiz\cfe\index.html', encoding='utf-8')
+c = f.read()
+f.close()
+# Busca o header HTML (após o </style>)
+idx = c.find('</style>')
+html_start = c.find('<', idx)
+print(c[html_start:html_start+500])
