@@ -626,7 +626,17 @@ function updateBadge(){
 }
 
 // Eventos estaticos
-g('btn-back').onclick=function(){window.location.href='/cfe/index.html';};
+g('btn-back').onclick=function(){
+  ttsStop();
+  clearInterval(Q1.tint);clearInterval(Q2.tint);
+  if(window.speechSynthesis)window.speechSynthesis.cancel();
+  window.location.href='/cfe/index.html';
+};
+window.addEventListener('beforeunload',function(){
+  ttsStop();
+  clearInterval(Q1.tint);clearInterval(Q2.tint);
+  if(window.speechSynthesis)window.speechSynthesis.cancel();
+});
 g('btn-theme').onclick=function(){dark=!dark;localStorage.setItem('nx_dark',dark?'1':'0');applyTheme();};
 g('btn-pt').onclick=function(){setLang('pt');};
 g('btn-en').onclick=function(){setLang('en');};
