@@ -149,7 +149,6 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:100
 @keyframes badgeEarned{0%{transform:scale(0.3) rotate(-15deg);opacity:0}60%{transform:scale(1.15) rotate(3deg)}100%{transform:scale(1) rotate(0);opacity:1}}
 .badge-anim{animation:badgeEarned .7s ease-out}
 @media(max-width:480px){.domain-title{font-size:16px}.q-text{font-size:13px}.option{padding:11px 12px}.fc-text{font-size:14px}.sc-pct{font-size:44px}.stats-row{gap:12px}}
-.cert-badge{font-size:11px;font-weight:600;padding:3px 8px;border-radius:5px;background:rgba(255,255,255,0.2);color:#FFF;letter-spacing:0.06em}
 </style>
 </head>
 <body>
@@ -159,7 +158,6 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:100
   <div class="topbar-left">
     <button class="back-btn" id="btn-back">&#8592;</button>
     <div class="logo">NEXOR<span class="logo-dot">_</span></div>
-    <div class="cert-badge">CFE 2026</div>
   </div>
   <div class="topbar-right">
     <div class="lang-toggle">
@@ -420,8 +418,7 @@ function tr(k,v){var s=(TX[lang]||TX.en)[k]||k;if(v)Object.keys(v).forEach(funct
 function g(id){return document.getElementById(id);}
 function st(id,val){var e=g(id);if(e)e.textContent=val;}
 function best(){return h1.length?Math.max.apply(null,h1.map(function(h){return h.s;})):0;}
-function unlocked(){return h1.length>0;}
-function q2recommended(){return best()>=80;}
+function unlocked(){return best()>=70;}
 function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');}
 function shuf(a){var b=a.slice();for(var i=b.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=b[i];b[i]=b[j];b[j]=t;}return b;}
 function shuffOpts(q){var opts=q.options.slice(),ct=opts[q.correct];for(var i=opts.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=opts[i];opts[i]=opts[j];opts[j]=t;}return Object.assign({},q,{options:opts,correct:opts.indexOf(ct)});}
@@ -616,23 +613,8 @@ function updateHero(){
   st('stflash',fcDone.length+'/50');
   st('stlevel',b>=80?'★★★':b>=60?'★★☆':'★☆☆');
   updateBadge();
-  var lk=g('q2lock');
-  if(lk){
-    if(unlocked()){
-      lk.innerHTML='';
-    } else {
-      lk.innerHTML='&#128274;';
-    }
-  }
-  if(unlocked()){
-    if(q2recommended()){
-      st('q2lockprog',tr('q2ready')||'✓ Pronto para avançar!');
-    } else {
-      st('q2lockprog',b>0?(tr('q2best')||'Melhor')+': '+b+'% · '+(tr('q2tip')||'Recomendado: 80%+'):'');
-    }
-  } else {
-    st('q2lockprog',tr('q2tip2')||'Complete o Quiz 1 para desbloquear');
-  }
+  var lk=g('q2lock');if(lk)lk.innerHTML=unlocked()?'':'&#128274;';
+  st('q2lockprog',b>0?tr('q2best')+' '+b+'%':'');
 }
 function updateBadge(){
   var b=best(),earned=b>=80;
@@ -645,7 +627,7 @@ function updateBadge(){
 }
 
 // Eventos estaticos
-g('btn-back').onclick=function(){window.location.href='/cfe/index.html';};
+g('btn-back').onclick=function(){window.location.href='../../cfe/index.html';};
 g('btn-theme').onclick=function(){dark=!dark;localStorage.setItem('nx_dark',dark?'1':'0');applyTheme();};
 g('btn-pt').onclick=function(){setLang('pt');};
 g('btn-en').onclick=function(){setLang('en');};
