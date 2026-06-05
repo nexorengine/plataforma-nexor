@@ -122,7 +122,7 @@ def merge_fc(fc_en, fc_pt, fc_es):
         })
     return merged
 
-def generate_mini_app(domain, q1en, q1pt, q1es, fc_merged, badge_b64):
+def generate_mini_app(domain, q1en, q1pt, q1es, q2en, q2pt, q2es, fc_merged, badge_b64):
     """Gera o HTML completo do mini-app para um dominio"""
 
     # Serializa dados como base64 para evitar conflito de aspas
@@ -130,6 +130,11 @@ def generate_mini_app(domain, q1en, q1pt, q1es, fc_merged, badge_b64):
         "en": base64.b64encode(json.dumps(q1en, ensure_ascii=False).encode()).decode(),
         "pt": base64.b64encode(json.dumps(q1pt, ensure_ascii=False).encode()).decode(),
         "es": base64.b64encode(json.dumps(q1es, ensure_ascii=False).encode()).decode(),
+    }
+    q2_b64 = {
+        "en": base64.b64encode(json.dumps(q2en, ensure_ascii=False).encode()).decode(),
+        "pt": base64.b64encode(json.dumps(q2pt, ensure_ascii=False).encode()).decode(),
+        "es": base64.b64encode(json.dumps(q2es, ensure_ascii=False).encode()).decode(),
     }
     fc_b64 = base64.b64encode(json.dumps(fc_merged, ensure_ascii=False).encode()).decode()
 
@@ -499,7 +504,11 @@ var QS1 = {{
   pt: JSON.parse(atob('{q1_b64["pt"]}')),
   es: JSON.parse(atob('{q1_b64["es"]}'))
 }};
-var QS2 = {{en:[],pt:[],es:[]}};
+var QS2 = {{
+  en: JSON.parse(utfDecode('{q2_b64["en"]}')),
+  pt: JSON.parse(utfDecode('{q2_b64["pt"]}')),
+  es: JSON.parse(utfDecode('{q2_b64["es"]}'))
+}};
 var FC  = JSON.parse(atob('{fc_b64}'));
 
 var TX = {{
@@ -854,6 +863,21 @@ def main():
             falhou.append(dom_id)
             continue
 
+        # Carrega quiz_002 (opcional)
+        q2_en_path = Path(QUIZZES_DIR) / dom_key / "quiz_002_en.json"
+        q2_pt_path = Path(QUIZZES_DIR) / dom_key / "quiz_002_pt.json"
+        q2_es_path = Path(QUIZZES_DIR) / dom_key / "quiz_002_es.json"
+        try:
+            if q2_en_path.exists() and q2_pt_path.exists() and q2_es_path.exists():
+                q2en = json.load(open(str(q2_en_path), encoding="utf-8"))["questions"]
+                q2pt = json.load(open(str(q2_pt_path), encoding="utf-8"))["questions"]
+                q2es = json.load(open(str(q2_es_path), encoding="utf-8"))["questions"]
+            else:
+                q2en, q2pt, q2es = [], [], []
+        except Exception as e:
+            print(f"  AVISO quiz_002: {e}")
+            q2en, q2pt, q2es = [], [], []
+
         # Carrega flashcards
         fc_en_path = Path(FLASHCARD_DIR) / dom_key / "flashcards_en.json"
         fc_pt_path = Path(FLASHCARD_DIR) / dom_key / "flashcards_pt.json"
@@ -891,7 +915,7 @@ def main():
 
         # Gera HTML
         try:
-            html = generate_mini_app(domain, q1en, q1pt, q1es, fc_merged, badge_b64)
+            html = generate_mini_app(domain, q1en, q1pt, q1es, q2en, q2pt, q2es, fc_merged, badge_b64)
         except Exception as e:
             print(f"  ERRO gerando HTML: {e}")
             falhou.append(dom_id)
