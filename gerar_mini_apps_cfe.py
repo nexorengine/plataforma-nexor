@@ -1,12 +1,12 @@
 """
 NEXOR -- GERADOR AUTOMATICO 44 MINI-APPS CFE v1
 Gera index.html para cada dominio CFE com:
-  · Quiz 1 trilíngue (EN/PT/ES)
-  · Flashcards trilíngues
-  · Badge embutido (base64)
-  · Template v5 aprovado
+  Â· Quiz 1 trilÃ­ngue (EN/PT/ES)
+  Â· Flashcards trilÃ­ngues
+  Â· Badge embutido (base64)
+  Â· Template v5 aprovado
 
-Pula corruption_bribery (S1D06) — ja existe como s1d06_v5.html
+Pula corruption_bribery (S1D06) â€” ja existe como s1d06_v5.html
 
 USO:
     python gerar_mini_apps_cfe.py
@@ -20,20 +20,20 @@ import json, base64, os, re
 from pathlib import Path
 from datetime import datetime
 
-# ═══ CONFIGURACAO ═══════════════════════════════════════════
+# â•â•â• CONFIGURACAO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 QUIZZES_DIR   = r"static\quizzes\cfe"
 FLASHCARD_DIR = r"static\flashcards\cfe"
 BADGES_DIR    = r"static\badges\cfe"
 OUTPUT_DIR    = r"mini_apps\cfe"
 
-# ═══ MAPA DE DOMINIOS ════════════════════════════════════════
+# â•â•â• MAPA DE DOMINIOS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 DOMAINS = [
     {"id":"s1d01","key":"accounting_concepts","code":"S1D01","name":"Accounting Concepts & Financial Analysis","section":1,"badge_name":"Financial Analysis Specialist"},
     {"id":"s1d02","key":"financial_statement_fraud","code":"S1D02","name":"Financial Statement Fraud","section":1,"badge_name":"Financial Statement Fraud Specialist"},
-    {"id":"s1d03","key":"cash_receipts_fraud","code":"S1D03","name":"Asset Misappropriation — Cash Receipts","section":1,"badge_name":"Cash Receipts Fraud Specialist"},
-    {"id":"s1d04","key":"fraudulent_disbursements","code":"S1D04","name":"Asset Misappropriation — Disbursements","section":1,"badge_name":"Disbursements Fraud Specialist"},
-    {"id":"s1d05","key":"inventory_fraud","code":"S1D05","name":"Asset Misappropriation — Inventory & Assets","section":1,"badge_name":"Inventory Fraud Specialist"},
-    # S1D06 pulado — ja existe
+    {"id":"s1d03","key":"cash_receipts_fraud","code":"S1D03","name":"Asset Misappropriation â€” Cash Receipts","section":1,"badge_name":"Cash Receipts Fraud Specialist"},
+    {"id":"s1d04","key":"fraudulent_disbursements","code":"S1D04","name":"Asset Misappropriation â€” Disbursements","section":1,"badge_name":"Disbursements Fraud Specialist"},
+    {"id":"s1d05","key":"inventory_fraud","code":"S1D05","name":"Asset Misappropriation â€” Inventory & Assets","section":1,"badge_name":"Inventory Fraud Specialist"},
+    # S1D06 pulado â€” ja existe
     {"id":"s1d07","key":"data_theft_ip","code":"S1D07","name":"Theft of Data & Intellectual Property","section":1,"badge_name":"Data Protection Specialist"},
     {"id":"s1d08","key":"identity_theft_cyberfraud","code":"S1D08","name":"Identity Theft & Cyberfraud","section":1,"badge_name":"Cyber Fraud Specialist"},
     {"id":"s1d09","key":"financial_institution_fraud","code":"S1D09","name":"Financial Institution Fraud & Money Laundering","section":1,"badge_name":"Financial Crimes Specialist"},
@@ -75,7 +75,7 @@ DOMAINS = [
     {"id":"s3d09","key":"ethics_fraud_examiners","code":"S3D09","name":"Ethics for Fraud Examiners","section":3,"badge_name":"Ethics Specialist"},
 ]
 
-# ═══ HELPERS ══════════════════════════════════════════════════
+# â•â•â• HELPERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 def load_json(path):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
@@ -96,7 +96,7 @@ def load_badge_b64(domain_id):
     return None
 
 def merge_fc(fc_en, fc_pt, fc_es):
-    """Mescla flashcards dos 3 idiomas — alinha por topic"""
+    """Mescla flashcards dos 3 idiomas â€” alinha por topic"""
     merged = []
     cards_en = fc_en.get("cards", [])
     cards_pt = fc_pt.get("cards", [])
@@ -110,14 +110,14 @@ def merge_fc(fc_en, fc_pt, fc_es):
             "id": card["id"],
             "topic": topic,
             "front": {
-                "en": card["front"].get("en", ""),
-                "pt": c_pt["front"].get("pt", ""),
-                "es": c_es["front"].get("es", "")
+                "en": card.get("front", {}).get("en", ""),
+                "pt": c_pt.get("front", {}).get("pt", ""),
+                "es": c_es.get("front", {}).get("es", "")
             },
             "back": {
-                "en": card["back"].get("en", ""),
-                "pt": c_pt["back"].get("pt", ""),
-                "es": c_es["back"].get("es", "")
+                "en": card.get("back", {}).get("en", ""),
+                "pt": c_pt.get("back", {}).get("pt", ""),
+                "es": c_es.get("back", {}).get("es", "")
             }
         })
     return merged
@@ -144,9 +144,9 @@ def generate_mini_app(domain, q1en, q1pt, q1es, q2en, q2pt, q2es, fc_merged, bad
     dom_sec  = domain["section"]  # 1
     bdg_name = domain["badge_name"]
 
-    sec_label_pt = f"Seção {dom_sec}"
+    sec_label_pt = f"SeÃ§Ã£o {dom_sec}"
     sec_label_en = f"Section {dom_sec}"
-    sec_label_es = f"Sección {dom_sec}"
+    sec_label_es = f"SecciÃ³n {dom_sec}"
 
     lk_key = f"nx_cfe_{dom_id}"
 
@@ -155,7 +155,7 @@ def generate_mini_app(domain, q1en, q1pt, q1es, q2en, q2pt, q2es, fc_merged, bad
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>NEXOR · {dom_code} · {dom_name}</title>
+<title>NEXOR Â· {dom_code} Â· {dom_name}</title>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:rgba(217,119,6,0.15)}}
 :root{{
@@ -182,6 +182,7 @@ body{{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:10
 .back-btn{{width:30px;height:30px;border:1.5px solid rgba(255,255,255,0.3);border-radius:6px;background:rgba(255,255,255,0.15);color:#FFF;font-size:16px;font-weight:600;display:flex;align-items:center;justify-content:center}}
 .logo{{font-size:15px;font-weight:600;letter-spacing:0.08em;color:#FFF}}
 .logo-dot{{color:#FCD34D}}
+.cert-badge{{font-size:11px;font-weight:600;padding:3px 8px;border-radius:5px;background:rgba(255,255,255,0.2);color:#FFF;letter-spacing:0.06em}}
 .topbar-right{{display:flex;align-items:center;gap:5px}}
 .lang-toggle{{display:flex;gap:3px}}
 .lang-btn{{font-size:11px;font-weight:600;padding:5px 9px;border-radius:6px;background:rgba(255,255,255,0.15);color:#FFF;border:1.5px solid rgba(255,255,255,0.3)}}
@@ -291,8 +292,8 @@ body{{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:10
 .badge-wrap{{padding:16px;border-top:0.5px solid var(--bd)}}
 .badge-card{{border:0.5px solid #333;border-radius:10px;padding:14px;display:flex;align-items:center;gap:14px;background:#0D0D0D;transition:all .3s}}
 .badge-card.earned{{border-color:var(--amber)}}
-.badge-img-wrap{{width:48px;height:48px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:#0D0D0D}}
-.badge-img{{width:44px;height:44px;object-fit:contain;filter:none;transition:filter .5s}}
+.badge-img-wrap{{width:80px;height:80px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:#0D0D0D}}
+.badge-img{{width:76px;height:76px;object-fit:contain;filter:none;transition:filter .5s}}
 .badge-img.earned{{filter:none}}
 .badge-name{{font-size:13px;font-weight:600;color:#FFFFFF;margin-bottom:2px}}
 .badge-desc{{font-size:12px;color:rgba(255,255,255,0.6)}}
@@ -310,6 +311,7 @@ body{{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:10
   <div class="topbar-left">
     <button class="back-btn" id="btn-back">&#8592;</button>
     <div class="logo">NEXOR<span class="logo-dot">_</span></div>
+    <div class="cert-badge">CFE 2026</div>
   </div>
   <div class="topbar-right">
     <div class="lang-toggle">
@@ -323,7 +325,7 @@ body{{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:10
 </div>
 
 <div class="hero">
-  <div class="domain-code" id="dc">{dom_code} · CFE 2026</div>
+  <div class="domain-code" id="dc">{dom_code} Â· CFE 2026</div>
   <div class="domain-title">{dom_name}</div>
   <div class="domain-sub" id="dsub"></div>
   <div class="progress-row">
@@ -499,61 +501,66 @@ body{{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:10
 </div>
 
 <script>
+function utfDecode(b64){{
+  return decodeURIComponent(atob(b64).split('').map(function(c){{
+    return '%'+('00'+c.charCodeAt(0).toString(16)).slice(-2);
+  }}).join(''));
+}}
 var QS1 = {{
-  en: JSON.parse(atob('{q1_b64["en"]}')),
-  pt: JSON.parse(atob('{q1_b64["pt"]}')),
-  es: JSON.parse(atob('{q1_b64["es"]}'))
+  en: JSON.parse(utfDecode('{q1_b64["en"]}')),
+  pt: JSON.parse(utfDecode('{q1_b64["pt"]}')),
+  es: JSON.parse(utfDecode('{q1_b64["es"]}'))
 }};
 var QS2 = {{
   en: JSON.parse(utfDecode('{q2_b64["en"]}')),
   pt: JSON.parse(utfDecode('{q2_b64["pt"]}')),
   es: JSON.parse(utfDecode('{q2_b64["es"]}'))
 }};
-var FC  = JSON.parse(atob('{fc_b64}'));
+var FC  = JSON.parse(utfDecode('{fc_b64}'));
 
 var TX = {{
-  pt:{{sub:'CFE 2026 · {dom_code} · 50 questões · 50 flashcards',
-    lscore:'MELHOR SCORE',lattempts:'TENTATIVAS',lflash:'FLASHCARDS',llevel:'NÍVEL',
-    fcsec:'FLASHCARDS · {{d}} / 50 DOMINADOS',fcfront:'FRENTE',fcback:'VERSO',fchint:'Toque para ver a resposta',
-    bno:'Não sei',byes:'Sei',qnum:'Q {{n}}/50',att:'TENTATIVA {{n}}',
-    bcfm:'Confirmar',bnxt:'Próxima',bprv:'Anterior',bfin:'Finalizar',
-    bok:'✓ Correto!',berr:'✗ Incorreto — resposta correta: {{l}}',
-    jok:'✓ JUSTIFICATIVA',jwrong:'✗ DISTRÁTORES',
-    scbd:'DESEMPENHO POR DIFICULDADE',schist:'HISTÓRICO',
+  pt:{{sub:'CFE 2026 Â· {dom_code} Â· 50 questÃµes Â· 50 flashcards',
+    lscore:'MELHOR SCORE',lattempts:'TENTATIVAS',lflash:'FLASHCARDS',llevel:'NÃVEL',
+    fcsec:'FLASHCARDS Â· {{d}} / 50 DOMINADOS',fcfront:'FRENTE',fcback:'VERSO',fchint:'Toque para ver a resposta',
+    bno:'NÃ£o sei',byes:'Sei',qnum:'Q {{n}}/50',att:'TENTATIVA {{n}}',
+    bcfm:'Confirmar',bnxt:'PrÃ³xima',bprv:'Anterior',bfin:'Finalizar',
+    bok:'âœ“ Correto!',berr:'âœ— Incorreto â€” resposta correta: {{l}}',
+    jok:'âœ“ JUSTIFICATIVA',jwrong:'âœ— DISTRÃTORES',
+    scbd:'DESEMPENHO POR DIFICULDADE',schist:'HISTÃ“RICO',
     bretake:'Tentar novamente',bscores:'Scores',
-    bdgtitle:'BADGE DO DOMÍNIO',bdgname:'{bdg_name}',
-    bdglocked:'Atinja 80% para conquistar',bdgearned:'Badge conquistado!',bdgearnedtag:'✓ Conquistado!',
-    lvlt:'★☆☆ Candidate in Training',lvlp:'★★☆ Candidate in Progress',lvlr:'★★★ Exam Ready',
-    nohist:'Nenhuma tentativa ainda',cin:'Concluído em',
-    q2locked:'Complete o Quiz 1 com ≥ 70% para desbloquear',q2best:'Melhor Q1:',attsuffix:'· Tentativa {{n}}',finish:'Finalizar'}},
-  en:{{sub:'CFE 2026 · {dom_code} · 50 questions · 50 flashcards',
+    bdgtitle:'BADGE DO DOMÃNIO',bdgname:'{bdg_name}',
+    bdglocked:'Atinja 80% para conquistar',bdgearned:'Badge conquistado!',bdgearnedtag:'âœ“ Conquistado!',
+    lvlt:'â˜…â˜†â˜† Candidate in Training',lvlp:'â˜…â˜…â˜† Candidate in Progress',lvlr:'â˜…â˜…â˜… Exam Ready',
+    nohist:'Nenhuma tentativa ainda',cin:'ConcluÃ­do em',
+    q2locked:'Complete o Quiz 1 com â‰¥ 70% para desbloquear',q2best:'Melhor Q1:',attsuffix:'Â· Tentativa {{n}}',finish:'Finalizar'}},
+  en:{{sub:'CFE 2026 Â· {dom_code} Â· 50 questions Â· 50 flashcards',
     lscore:'BEST SCORE',lattempts:'ATTEMPTS',lflash:'FLASHCARDS',llevel:'LEVEL',
-    fcsec:'FLASHCARDS · {{d}} / 50 MASTERED',fcfront:'FRONT',fcback:'BACK',fchint:'Tap to reveal answer',
+    fcsec:'FLASHCARDS Â· {{d}} / 50 MASTERED',fcfront:'FRONT',fcback:'BACK',fchint:'Tap to reveal answer',
     bno:"Don't know",byes:'Know it',qnum:'Q {{n}}/50',att:'ATTEMPT {{n}}',
     bcfm:'Confirm',bnxt:'Next',bprv:'Previous',bfin:'Finish',
-    bok:'✓ Correct!',berr:'✗ Incorrect — correct answer: {{l}}',
-    jok:'✓ JUSTIFICATION',jwrong:'✗ DISTRACTORS',
+    bok:'âœ“ Correct!',berr:'âœ— Incorrect â€” correct answer: {{l}}',
+    jok:'âœ“ JUSTIFICATION',jwrong:'âœ— DISTRACTORS',
     scbd:'PERFORMANCE BY DIFFICULTY',schist:'ATTEMPT HISTORY',
     bretake:'Try again',bscores:'Scores',
     bdgtitle:'DOMAIN BADGE',bdgname:'{bdg_name}',
-    bdglocked:'Score 80%+ to earn this badge',bdgearned:'Badge earned!',bdgearnedtag:'✓ Earned!',
-    lvlt:'★☆☆ Candidate in Training',lvlp:'★★☆ Candidate in Progress',lvlr:'★★★ Exam Ready',
+    bdglocked:'Score 80%+ to earn this badge',bdgearned:'Badge earned!',bdgearnedtag:'âœ“ Earned!',
+    lvlt:'â˜…â˜†â˜† Candidate in Training',lvlp:'â˜…â˜…â˜† Candidate in Progress',lvlr:'â˜…â˜…â˜… Exam Ready',
     nohist:'No attempts yet',cin:'Completed in',
-    q2locked:'Complete Quiz 1 with ≥ 70% to unlock',q2best:'Best Q1:',attsuffix:'· Attempt {{n}}',finish:'Finish'}},
-  es:{{sub:'CFE 2026 · {dom_code} · 50 preguntas · 50 flashcards',
+    q2locked:'Complete Quiz 1 with â‰¥ 70% to unlock',q2best:'Best Q1:',attsuffix:'Â· Attempt {{n}}',finish:'Finish'}},
+  es:{{sub:'CFE 2026 Â· {dom_code} Â· 50 preguntas Â· 50 flashcards',
     lscore:'MEJOR PUNTAJE',lattempts:'INTENTOS',lflash:'FLASHCARDS',llevel:'NIVEL',
-    fcsec:'FLASHCARDS · {{d}} / 50 DOMINADOS',fcfront:'FRENTE',fcback:'REVERSO',fchint:'Toque para ver la respuesta',
-    bno:'No sé',byes:'Lo sé',qnum:'P {{n}}/50',att:'INTENTO {{n}}',
+    fcsec:'FLASHCARDS Â· {{d}} / 50 DOMINADOS',fcfront:'FRENTE',fcback:'REVERSO',fchint:'Toque para ver la respuesta',
+    bno:'No sÃ©',byes:'Lo sÃ©',qnum:'P {{n}}/50',att:'INTENTO {{n}}',
     bcfm:'Confirmar',bnxt:'Siguiente',bprv:'Anterior',bfin:'Finalizar',
-    bok:'✓ ¡Correcto!',berr:'✗ Incorrecto — respuesta correcta: {{l}}',
-    jok:'✓ JUSTIFICACIÓN',jwrong:'✗ DISTRACTORES',
+    bok:'âœ“ Â¡Correcto!',berr:'âœ— Incorrecto â€” respuesta correcta: {{l}}',
+    jok:'âœ“ JUSTIFICACIÃ“N',jwrong:'âœ— DISTRACTORES',
     scbd:'RENDIMIENTO POR DIFICULTAD',schist:'HISTORIAL',
     bretake:'Intentar de nuevo',bscores:'Scores',
     bdgtitle:'INSIGNIA DEL DOMINIO',bdgname:'{bdg_name}',
-    bdglocked:'Alcanza 80%+ para obtener esta insignia',bdgearned:'¡Insignia obtenida!',bdgearnedtag:'✓ ¡Obtenida!',
-    lvlt:'★☆☆ Candidato en Formación',lvlp:'★★☆ Candidato en Progreso',lvlr:'★★★ Listo para el Examen',
-    nohist:'Ningún intento todavía',cin:'Completado en',
-    q2locked:'Complete el Quiz 1 con ≥ 70% para desbloquear',q2best:'Mejor Q1:',attsuffix:'· Intento {{n}}',finish:'Finalizar'}}
+    bdglocked:'Alcanza 80%+ para obtener esta insignia',bdgearned:'Â¡Insignia obtenida!',bdgearnedtag:'âœ“ Â¡Obtenida!',
+    lvlt:'â˜…â˜†â˜† Candidato en FormaciÃ³n',lvlp:'â˜…â˜…â˜† Candidato en Progreso',lvlr:'â˜…â˜…â˜… Listo para el Examen',
+    nohist:'NingÃºn intento todavÃ­a',cin:'Completado en',
+    q2locked:'Complete el Quiz 1 con â‰¥ 70% para desbloquear',q2best:'Mejor Q1:',attsuffix:'Â· Intento {{n}}',finish:'Finalizar'}}
 }};
 
 var lang=localStorage.getItem('nx_lang')||'pt';
@@ -569,7 +576,8 @@ function tr(k,v){{var s=(TX[lang]||TX.en)[k]||k;if(v)Object.keys(v).forEach(func
 function g(id){{return document.getElementById(id);}}
 function st(id,val){{var e=g(id);if(e)e.textContent=val;}}
 function best(){{return h1.length?Math.max.apply(null,h1.map(function(h){{return h.s;}})):0;}}
-function unlocked(){{return best()>=70;}}
+function unlocked(){{return h1.length>0;}}
+function q2recommended(){{return best()>=80;}}
 function fmt(s){{return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');}}
 function shuf(a){{var b=a.slice();for(var i=b.length-1;i>0;i--){{var j=Math.floor(Math.random()*(i+1));var t=b[i];b[i]=b[j];b[j]=t;}}return b;}}
 function shuffOpts(q){{var opts=q.options.slice(),ct=opts[q.correct];for(var i=opts.length-1;i>0;i--){{var j=Math.floor(Math.random()*(i+1));var t=opts[i];opts[i]=opts[j];opts[j]=t;}}return Object.assign({{}},q,{{options:opts,correct:opts.indexOf(ct)}});}}
@@ -619,8 +627,13 @@ function showTab(name){{
   if(name==='flash')renderFC();
   if(name==='quiz1'){{if(!Q1.qs.length)startQ(1);else renderQ(1);}}
   if(name==='quiz2'){{
-    if(!unlocked()){{g('q2locked').style.display='block';g('q2active').style.display='none';}}
-    else{{g('q2locked').style.display='none';g('q2active').style.display='block';if(!Q2.qs.length)startQ(2);else renderQ(2);}}
+    if(!unlocked()){{
+      g('q2locked').style.display='block';g('q2active').style.display='none';
+      var tip=g('q2lockprog');if(tip){{tip.style.color='var(--amber)';tip.style.fontWeight='600';}}
+    }}else{{
+      g('q2locked').style.display='none';g('q2active').style.display='block';
+      if(!Q2.qs.length)startQ(2);else renderQ(2);
+    }}
   }}
   if(name==='score')renderScore();
 }}
@@ -749,7 +762,7 @@ function renderScore(){{
   sb('sbeasy','speasy','EASY');sb('sbstd','spstd','STANDARD');sb('sbhard','sphard','HARD');
   var html='';
   h1.slice().reverse().forEach(function(h){{
-    html+='<div class="sc-hist-row"><div class="sc-hist-date">'+h.dt+' · '+tr('att',{{n:h.att}})+(h.tm?' · '+h.tm:'')+'</div>';
+    html+='<div class="sc-hist-row"><div class="sc-hist-date">'+h.dt+' Â· '+tr('att',{{n:h.att}})+(h.tm?' Â· '+h.tm:'')+'</div>';
     html+='<div style="display:flex;align-items:center;gap:8px"><span class="sc-hist-score">'+h.s+'%</span>';
     if(h.s===bst)html+='<span class="sc-best">&#9733;</span>';
     html+='</div></div>';
@@ -762,10 +775,16 @@ function updateHero(){{
   g('hprog').style.width=b+'%';st('hpct',b+'%');
   st('stscore',b>0?b+'%':'\\u2014');st('stattempts',h1.length);
   st('stflash',fcDone.length+'/50');
-  st('stlevel',b>=80?'★★★':b>=60?'★★☆':'★☆☆');
+  st('stlevel',b>=80?'â˜…â˜…â˜…':b>=60?'â˜…â˜…â˜†':'â˜…â˜†â˜†');
   updateBadge();
-  var lk=g('q2lock');if(lk)lk.innerHTML=unlocked()?'':'&#128274;';
-  st('q2lockprog',b>0?tr('q2best')+' '+b+'%':'');
+  var lk=g('q2lock');
+  if(lk){{lk.innerHTML=unlocked()?'':'&#128274;';}}
+  if(unlocked()){{
+    if(q2recommended()){{st('q2lockprog',tr('q2ready')||'\u2713 Ready to advance!');}}
+    else{{st('q2lockprog',b>0?(tr('q2best')||'Best')+': '+b+'% · Recommended: 80%+':'');}}
+  }}else{{
+    st('q2lockprog',tr('q2tip2')||'Complete Quiz 1 to unlock');
+  }}
 }}
 function updateBadge(){{
   var b=best(),earned=b>=80;
@@ -773,12 +792,22 @@ function updateBadge(){{
   card.classList.toggle('earned',earned);img.classList.toggle('earned',earned);
   if(earned){{img.classList.add('badge-anim');localStorage.setItem('{lk_key}_badge','true');}}
   tag.className=earned?'badge-tag earned':'badge-tag';
-  tag.textContent=earned?tr('bdgearnedtag'):(b>0?b+'% · '+(80-b)+'% left':'need 80%');
+  tag.textContent=earned?tr('bdgearnedtag'):(b>0?b+'% Â· '+(80-b)+'% left':'need 80%');
   st('bdgdesc',earned?tr('bdgearned'):tr('bdglocked'));
 }}
 
 // Eventos estaticos
-g('btn-back').onclick=function(){{window.location.href='../../cfe/index.html';}};
+g('btn-back').onclick=function(){{
+  ttsStop();
+  clearInterval(Q1.tint);clearInterval(Q2.tint);
+  if(window.speechSynthesis)window.speechSynthesis.cancel();
+  window.location.href='/cfe/index.html';
+}};
+window.addEventListener('beforeunload',function(){{
+  ttsStop();
+  clearInterval(Q1.tint);clearInterval(Q2.tint);
+  if(window.speechSynthesis)window.speechSynthesis.cancel();
+}});
 g('btn-theme').onclick=function(){{dark=!dark;localStorage.setItem('nx_dark',dark?'1':'0');applyTheme();}};
 g('btn-pt').onclick=function(){{setLang('pt');}};
 g('btn-en').onclick=function(){{setLang('en');}};
@@ -825,7 +854,7 @@ window.addEventListener('load',function(){{
     return html
 
 
-# ═══ MAIN ═════════════════════════════════════════════════════
+# â•â•â• MAIN â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 def main():
     print("=" * 70)
     print("  NEXOR -- GERADOR AUTOMATICO 44 MINI-APPS CFE v1")
@@ -841,7 +870,7 @@ def main():
         dom_key = domain["key"]
         dom_code = domain["code"]
 
-        print(f"\n  [{i+1}/{len(DOMAINS)}] {dom_code} · {dom_key}")
+        print(f"\n  [{i+1}/{len(DOMAINS)}] {dom_code} Â· {dom_key}")
 
         # Carrega quizzes
         q1_en_path = Path(QUIZZES_DIR) / dom_key / "quiz_001_en.json"
@@ -908,7 +937,7 @@ def main():
             if alt.exists():
                 badge_path = alt
             else:
-                print(f"  AVISO badge nao encontrado: {badge_fname} — usando placeholder")
+                print(f"  AVISO badge nao encontrado: {badge_fname} â€” usando placeholder")
                 badge_b64 = ""
         else:
             badge_b64 = base64.b64encode(badge_path.read_bytes()).decode()
@@ -927,7 +956,7 @@ def main():
         with open(str(out_path), "w", encoding="utf-8") as f:
             f.write(html)
 
-        print(f"  OK → {out_path} ({len(html):,} chars)")
+        print(f"  OK â†’ {out_path} ({len(html):,} chars)")
         ok += 1
 
     print("\n" + "=" * 70)
