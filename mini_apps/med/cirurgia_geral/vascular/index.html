@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXOR MED — Cirurgia Vascular</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#07090f;--bg2:#0d1120;--bg3:#111827;
+  --border:#1a2a45;--border2:#243550;
+  --blue:#4a8fd4;--green:#27ae60;--red:#c0392b;--amber:#d4a017;
+  --text:#c8d6e8;--text2:#7a9bbf;--text3:#3a5575;
+  --med:#8b1a1a;--med2:#a52020;
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+.app{max-width:900px;margin:0 auto;padding:0 1rem 3rem;}
+.hdr{display:flex;align-items:center;gap:10px;padding:1rem 0;border-bottom:1px solid var(--border);margin-bottom:1.5rem;}
+.hdr-logo{font-size:14px;font-weight:700;letter-spacing:2px;color:#e8f0fa;}
+.hdr-logo span{color:var(--med2);}
+.hdr-title{font-size:10px;color:var(--text2);letter-spacing:1px;flex:1;}
+.hdr-back{background:none;border:1px solid var(--border);border-radius:4px;padding:4px 12px;cursor:pointer;font-family:'Inter',sans-serif;font-size:9px;color:var(--text3);letter-spacing:1px;transition:all .15s;text-decoration:none;display:inline-block;}
+.hdr-back:hover{border-color:var(--blue);color:var(--blue);}
+.btn{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:8px 18px;cursor:pointer;font-family:'Inter',sans-serif;font-size:11px;color:var(--text2);transition:all .15s;text-decoration:none;display:inline-block;}
+.btn:hover{border-color:var(--blue);color:var(--blue);}
+.btn.primary{background:var(--med);border-color:var(--med2);color:#fff;}
+.btn.primary:hover{background:var(--med2);}
+.slabel{font-size:9px;letter-spacing:2.5px;color:var(--text3);text-transform:uppercase;margin-bottom:12px;}
+:root{--accent:#1a3a6a;--accent2:#1a3a6add;}
+.screen{display:none;}.screen.active{display:block;}
+.domain-header{display:flex;align-items:center;gap:14px;margin-bottom:1.5rem;}
+.domain-badge-img{width:56px;height:56px;object-fit:contain;}
+.domain-title{font-size:18px;font-weight:700;color:#e8f0fa;}
+.domain-sub{font-size:10px;color:var(--text3);letter-spacing:1px;margin-top:2px;}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.5rem;}
+.menu-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.3rem;cursor:pointer;transition:all .2s;}
+.menu-card:hover{border-color:var(--accent2);background:var(--bg3);}
+.menu-card-title{font-size:13px;font-weight:600;color:#e8f0fa;margin-bottom:4px;}
+.menu-card-meta{font-size:10px;color:var(--text3);}
+.menu-card-badge{display:inline-block;margin-top:8px;background:rgba(139,26,26,.12);border:1px solid rgba(165,32,32,.3);border-radius:3px;padding:2px 8px;font-size:9px;letter-spacing:1px;color:var(--med2);}
+.fc-progress{font-size:10px;color:var(--text3);letter-spacing:1px;margin-bottom:.8rem;text-align:center;}
+.fc-layer-badge{display:inline-block;padding:3px 10px;border-radius:3px;font-size:9px;letter-spacing:1.5px;font-weight:600;margin-bottom:.8rem;}
+.lF1{background:rgba(74,143,212,.15);border:1px solid rgba(74,143,212,.4);color:#4a8fd4;}
+.lF2{background:rgba(39,174,96,.15);border:1px solid rgba(39,174,96,.4);color:#27ae60;}
+.lF3{background:rgba(212,160,23,.15);border:1px solid rgba(212,160,23,.4);color:#d4a017;}
+.lF4{background:rgba(192,57,43,.15);border:1px solid rgba(192,57,43,.4);color:#c0392b;}
+.fc-card{background:var(--bg2);border:1px solid var(--border2);border-radius:12px;padding:2rem 1.5rem;min-height:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;cursor:pointer;transition:all .3s;margin-bottom:.8rem;}
+.fc-card.flipped{background:var(--bg3);border-color:var(--accent2);}
+.fc-side{font-size:8px;letter-spacing:2px;color:var(--text3);text-transform:uppercase;margin-bottom:10px;}
+.fc-text{font-size:15px;color:#e8f0fa;line-height:1.6;}
+.fc-hint{font-size:10px;color:var(--text3);margin-top:12px;}
+.fc-nav{display:flex;gap:8px;justify-content:center;margin-bottom:.8rem;flex-wrap:wrap;}
+.fc-btn{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:7px 16px;cursor:pointer;font-family:'Inter',sans-serif;font-size:11px;color:var(--text2);transition:all .15s;}
+.fc-btn:hover{border-color:var(--blue);color:var(--blue);}
+.fc-btn.primary{background:var(--med);border-color:var(--med2);color:#fff;}
+.fc-btn.primary:hover{background:var(--med2);}
+.quiz-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;}
+.quiz-prog{font-size:10px;color:var(--text3);letter-spacing:1px;}
+.quiz-diff{font-size:9px;padding:2px 8px;border-radius:3px;font-weight:600;letter-spacing:1px;}
+.dEASY{background:rgba(39,174,96,.15);border:1px solid rgba(39,174,96,.3);color:#27ae60;}
+.dSTANDARD{background:rgba(74,143,212,.15);border:1px solid rgba(74,143,212,.3);color:#4a8fd4;}
+.dHARD{background:rgba(192,57,43,.15);border:1px solid rgba(192,57,43,.3);color:#c0392b;}
+.quiz-tag{font-size:9px;color:var(--text3);letter-spacing:1px;margin-bottom:8px;text-transform:uppercase;}
+.quiz-q{background:var(--bg2);border:1px solid var(--border2);border-radius:10px;padding:1.3rem;margin-bottom:.8rem;font-size:14px;color:#e8f0fa;line-height:1.7;}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;margin-bottom:.8rem;}
+.quiz-opt{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:11px 15px;cursor:pointer;font-size:13px;color:var(--text);transition:all .15s;text-align:left;font-family:'Inter',sans-serif;}
+.quiz-opt:hover:not([disabled]){border-color:var(--blue);background:var(--bg3);}
+.quiz-opt.correct{border-color:var(--green)!important;background:rgba(39,174,96,.1)!important;color:#27ae60!important;}
+.quiz-opt.wrong{border-color:var(--red)!important;background:rgba(192,57,43,.1)!important;color:#c0392b!important;}
+.quiz-opt.reveal{border-color:var(--green)!important;background:rgba(39,174,96,.05)!important;}
+.quiz-feedback{background:var(--bg3);border:1px solid var(--border2);border-radius:8px;padding:1rem;margin-bottom:.8rem;font-size:12px;line-height:1.6;display:none;}
+.quiz-feedback.show{display:block;}
+.fb-correct{color:var(--green);font-weight:600;margin-bottom:4px;}
+.fb-wrong{color:var(--text2);font-size:11px;}
+.quiz-next{background:var(--med);border:1px solid var(--med2);border-radius:6px;padding:9px 22px;cursor:pointer;font-family:'Inter',sans-serif;font-size:12px;color:#fff;transition:all .15s;display:none;}
+.quiz-next.show{display:inline-block;}
+.quiz-next:hover{background:var(--med2);}
+.quiz-exit{background:none;border:1px solid var(--border);border-radius:6px;padding:9px 16px;cursor:pointer;font-family:'Inter',sans-serif;font-size:11px;color:var(--text3);transition:all .15s;margin-left:8px;display:none;}
+.quiz-exit.show{display:inline-block;}
+.quiz-exit:hover{border-color:var(--blue);color:var(--blue);}
+.sc-box{background:var(--bg2);border:1px solid var(--border2);border-radius:12px;padding:1.5rem;margin-bottom:1rem;}
+.sc-title{font-size:11px;letter-spacing:2px;color:var(--text3);text-transform:uppercase;margin-bottom:1rem;}
+.sc-score{font-size:40px;font-weight:700;color:#e8f0fa;margin-bottom:4px;}
+.sc-level{display:inline-block;padding:4px 12px;border-radius:4px;font-size:10px;letter-spacing:2px;font-weight:600;margin-bottom:1rem;}
+.sc-level.ready{background:rgba(39,174,96,.15);border:1px solid rgba(39,174,96,.4);color:#27ae60;}
+.sc-level.progress{background:rgba(212,160,23,.15);border:1px solid rgba(212,160,23,.4);color:#d4a017;}
+.sc-level.training{background:rgba(192,57,43,.15);border:1px solid rgba(192,57,43,.4);color:#c0392b;}
+.sc-bars{margin:.8rem 0;}
+.sc-bar-row{display:flex;align-items:center;gap:10px;margin-bottom:7px;}
+.sc-bar-lbl{font-size:9px;color:var(--text3);letter-spacing:1px;width:60px;}
+.sc-bar-track{flex:1;height:5px;background:var(--bg3);border-radius:3px;overflow:hidden;}
+.sc-bar-fill{height:100%;border-radius:3px;transition:width .8s ease;}
+.feasy{background:var(--green);}.fstd{background:var(--blue);}.fhard{background:var(--red);}
+.sc-bar-pct{font-size:10px;color:var(--text2);width:32px;text-align:right;}
+.sc-msg{font-size:12px;color:var(--text2);line-height:1.7;padding:1rem;background:var(--bg3);border-radius:8px;border-left:3px solid var(--med2);}
+.btn-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem;}
+.qsel-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.5rem;}
+.qsel-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.3rem;cursor:pointer;transition:all .2s;position:relative;}
+.qsel-card:hover{border-color:var(--accent2);background:var(--bg3);}
+.qsel-num{font-size:28px;font-weight:700;color:var(--accent2);margin-bottom:6px;}
+.qsel-lbl{font-size:12px;color:#e8f0fa;margin-bottom:3px;}
+.qsel-meta{font-size:10px;color:var(--text3);}
+.saved-tag{position:absolute;top:8px;right:8px;font-size:8px;letter-spacing:1px;color:var(--green);background:rgba(39,174,96,.1);border:1px solid rgba(39,174,96,.3);border-radius:2px;padding:1px 5px;display:none;}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="hdr">
+  <div class="hdr-logo">nexor_<span style="color:var(--med2)">MED</span></div>
+  <div class="hdr-title">CIRURGIA GERAL · D08</div>
+  <a href="../../index.html" class="hdr-back" id="hdr-back-btn">← Domínios</a>
+</div>
+
+<!-- MENU -->
+<div id="s-menu" class="screen active">
+  <div class="domain-header">
+    <img src="../../badges/med/cirurgia_geral/D08_VASCULAR.png" class="domain-badge-img" alt="Cirurgia Vascular">
+    <div>
+      <div class="domain-title">Cirurgia Vascular</div>
+      <div class="domain-sub">CIRURGIA GERAL · D08 · NEXOR MED</div>
+    </div>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card" onclick="startFlashcards()">
+      <div class="menu-card-title">FractalFlashcards</div>
+      <div class="menu-card-meta">48 cards · 4 camadas cognitivas</div>
+      <div class="menu-card-badge">F1 · F2 · F3 · F4</div>
+    </div>
+    <div class="menu-card" onclick="showQSel()">
+      <div class="menu-card-title">FractalQuiz</div>
+      <div class="menu-card-meta">2 quizzes · 50 questões cada</div>
+      <div class="menu-card-badge">EASY · STANDARD · HARD</div>
+    </div>
+  </div>
+</div>
+
+<!-- QUIZ SELECT -->
+<div id="s-qsel" class="screen">
+  <div class="domain-title" style="margin-bottom:4px">Selecionar Quiz</div>
+  <div class="domain-sub" style="margin-bottom:1.5rem">Cirurgia Vascular</div>
+  <div class="qsel-grid">
+    <div class="qsel-card" onclick="startQuiz(0)">
+      <div class="saved-tag" id="sv1">SALVO</div>
+      <div class="qsel-num">01</div>
+      <div class="qsel-lbl">Quiz 001</div>
+      <div class="qsel-meta">50 questões · FractalQuiz</div>
+    </div>
+    <div class="qsel-card" onclick="startQuiz(1)">
+      <div class="saved-tag" id="sv2">SALVO</div>
+      <div class="qsel-num">02</div>
+      <div class="qsel-lbl">Quiz 002</div>
+      <div class="qsel-meta">50 questões · Zero repeat</div>
+    </div>
+  </div>
+  <button class="btn" onclick="show('s-menu')">← Voltar</button>
+</div>
+
+<!-- FLASHCARDS -->
+<div id="s-fc" class="screen">
+  <div class="fc-progress" id="fc-prog"></div>
+  <div style="text-align:center"><span class="fc-layer-badge" id="fc-lb"></span></div>
+  <div class="fc-card" id="fc-card" onclick="flipCard()">
+    <div class="fc-side" id="fc-side">FRENTE</div>
+    <div class="fc-text" id="fc-text"></div>
+    <div class="fc-hint" id="fc-hint">Toque para revelar</div>
+  </div>
+  <div class="fc-nav">
+    <button class="fc-btn" onclick="fcNav(-1)">← Anterior</button>
+    <button class="fc-btn" onclick="flipCard()">Virar</button>
+    <button class="fc-btn" onclick="fcNav(1)">Próximo →</button>
+  </div>
+  <div style="text-align:center;margin-top:.5rem">
+    <button class="fc-btn primary" onclick="show('s-menu')">← Menu</button>
+  </div>
+</div>
+
+<!-- QUIZ -->
+<div id="s-quiz" class="screen">
+  <div class="quiz-header">
+    <div class="quiz-prog" id="qp"></div>
+    <div class="quiz-diff" id="qd"></div>
+  </div>
+  <div class="quiz-tag" id="qt"></div>
+  <div class="quiz-q" id="qq"></div>
+  <div class="quiz-opts" id="qo"></div>
+  <div class="quiz-feedback" id="qf">
+    <div class="fb-correct" id="fbc"></div>
+    <div class="fb-wrong" id="fbw"></div>
+  </div>
+  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+    <button class="quiz-next" id="qn" onclick="nextQ()">Próxima →</button>
+    <button class="quiz-exit" id="qe" onclick="show('s-qsel')">Sair do Quiz</button>
+  </div>
+</div>
+
+<!-- SCORECARD -->
+<div id="s-sc" class="screen">
+  <div class="sc-box">
+    <div class="sc-title">RESULTADO · D08</div>
+    <div class="sc-score" id="sc-score"></div>
+    <div class="sc-level" id="sc-lv"></div>
+    <div class="sc-bars">
+      <div class="sc-bar-row"><div class="sc-bar-lbl">EASY</div><div class="sc-bar-track"><div class="sc-bar-fill feasy" id="b-easy" style="width:0%"></div></div><div class="sc-bar-pct" id="p-easy">0%</div></div>
+      <div class="sc-bar-row"><div class="sc-bar-lbl">STANDARD</div><div class="sc-bar-track"><div class="sc-bar-fill fstd" id="b-std" style="width:0%"></div></div><div class="sc-bar-pct" id="p-std">0%</div></div>
+      <div class="sc-bar-row"><div class="sc-bar-lbl">HARD</div><div class="sc-bar-track"><div class="sc-bar-fill fhard" id="b-hard" style="width:0%"></div></div><div class="sc-bar-pct" id="p-hard">0%</div></div>
+    </div>
+    <div class="sc-msg" id="sc-msg"></div>
+  </div>
+  <div class="btn-row">
+    <button class="btn primary" onclick="startQuiz(curQ)">Refazer</button>
+    <button class="btn" onclick="show('s-qsel')">Outro Quiz</button>
+    <button class="btn" onclick="show('s-menu')">Menu</button>
+    <a href="../../index.html" class="btn">← Domínios</a>
+  </div>
+</div>
+
+</div>
+<script>
+const FC=[];
+const QZ=[[],[]];
+const DK='vascular';
+
+let fi=0,ff=false;
+let qi=0,qdata=[],qans=[],qok=0,curQ=0;
+
+function show(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  // Atualiza botão voltar do header
+  const hb=document.getElementById('hdr-back-btn');
+  if(id==='s-menu'){hb.href='../../index.html';hb.textContent='← Domínios';}
+  else if(id==='s-fc'||id==='s-qsel'){hb.href='javascript:void(0)';hb.onclick=()=>show('s-menu');hb.textContent='← Menu';}
+  else if(id==='s-quiz'){hb.href='javascript:void(0)';hb.onclick=()=>show('s-qsel');hb.textContent='← Quizzes';}
+  else if(id==='s-sc'){hb.href='javascript:void(0)';hb.onclick=()=>show('s-menu');hb.textContent='← Menu';}
+}
+
+// FLASHCARDS
+function startFlashcards(){fi=0;ff=false;show('s-fc');renderFC();}
+function renderFC(){
+  const c=FC[fi];if(!c)return;ff=false;
+  const ln={F1:'F1 · Definição',F2:'F2 · Distinção',F3:'F3 · Aplicação',F4:'F4 · Síntese'};
+  const lc={F1:'lF1',F2:'lF2',F3:'lF3',F4:'lF4'};
+  document.getElementById('fc-prog').textContent=(fi+1)+' / '+FC.length+' · '+c.camada;
+  const lb=document.getElementById('fc-lb');lb.textContent=ln[c.camada]||c.camada;lb.className='fc-layer-badge '+(lc[c.camada]||'');
+  document.getElementById('fc-side').textContent='FRENTE';
+  document.getElementById('fc-text').textContent=c.frente;
+  document.getElementById('fc-hint').textContent='Toque para revelar';
+  document.getElementById('fc-card').classList.remove('flipped');
+}
+function flipCard(){
+  const c=FC[fi];if(!c)return;
+  if(!ff){ff=true;document.getElementById('fc-side').textContent='VERSO';document.getElementById('fc-text').textContent=c.verso;document.getElementById('fc-hint').textContent='';document.getElementById('fc-card').classList.add('flipped');}
+  else{ff=false;renderFC();}
+}
+function fcNav(d){fi=Math.max(0,Math.min(FC.length-1,fi+d));renderFC();}
+
+// QUIZ
+function showQSel(){
+  try{if(localStorage.getItem('nx_med_'+DK+'_q1'))document.getElementById('sv1').style.display='block';}catch(e){}
+  try{if(localStorage.getItem('nx_med_'+DK+'_q2'))document.getElementById('sv2').style.display='block';}catch(e){}
+  show('s-qsel');
+}
+function startQuiz(idx){
+  curQ=idx;qdata=QZ[idx];qi=0;qok=0;
+  qans=new Array(qdata.length).fill(null);
+  show('s-quiz');renderQ();
+}
+function renderQ(){
+  const q=qdata[qi];if(!q)return;
+  document.getElementById('qp').textContent=(qi+1)+' / '+qdata.length;
+  const dd=document.getElementById('qd');dd.textContent=q.difficulty||'';dd.className='quiz-diff d'+(q.difficulty||'STANDARD');
+  document.getElementById('qt').textContent=(q.tag||'').replace(/_/g,' ').toUpperCase();
+  document.getElementById('qq').textContent=q.text||q.enunciado||'';
+  const oo=document.getElementById('qo');oo.innerHTML='';
+  (q.options||[]).forEach((o,i)=>{
+    const b=document.createElement('button');b.className='quiz-opt';b.textContent=o;
+    b.onclick=()=>ans(i+1,b,q);oo.appendChild(b);
+  });
+  document.getElementById('qf').classList.remove('show');
+  document.getElementById('qn').classList.remove('show');
+  document.getElementById('qe').classList.remove('show');
+}
+function ans(ch,btn,q){
+  document.querySelectorAll('.quiz-opt').forEach(o=>o.disabled=true);
+  const ok=ch===q.correct;if(ok)qok++;qans[qi]=ch;
+  document.querySelectorAll('.quiz-opt').forEach((o,i)=>{
+    if(i+1===q.correct)o.classList.add(ok?'correct':'reveal');
+    else if(i+1===ch&&!ok)o.classList.add('wrong');
+  });
+  document.getElementById('fbc').textContent=(ok?'✓ Correto! ':'✗ Incorreto. ')+(q.justification_correct||'');
+  document.getElementById('fbw').textContent=q.justification_wrong||'';
+  document.getElementById('qf').classList.add('show');
+  document.getElementById('qn').classList.add('show');
+  document.getElementById('qe').classList.add('show');
+}
+function nextQ(){
+  if(qi<qdata.length-1){qi++;renderQ();}
+  else{saveResult();showSC();}
+}
+function saveResult(){
+  try{localStorage.setItem('nx_med_'+DK+'_q'+(curQ+1),JSON.stringify({correct:qok,total:qdata.length,answers:qans,ts:Date.now()}));}catch(e){}
+}
+function showSC(){
+  show('s-sc');
+  const tot=qdata.length,pct=Math.round(qok/tot*100);
+  const bl={EASY:{ok:0,t:0},STANDARD:{ok:0,t:0},HARD:{ok:0,t:0}};
+  qdata.forEach((q,i)=>{const lv=q.difficulty||'STANDARD';if(bl[lv]){bl[lv].t++;if(qans[i]===q.correct)bl[lv].ok++;}});
+  const ep=bl.EASY.t>0?Math.round(bl.EASY.ok/bl.EASY.t*100):pct;
+  const sp=bl.STANDARD.t>0?Math.round(bl.STANDARD.ok/bl.STANDARD.t*100):pct;
+  const hp=bl.HARD.t>0?Math.round(bl.HARD.ok/bl.HARD.t*100):Math.max(0,pct-15);
+  let lc,lt;
+  if(pct>=80){lc='ready';lt='EXAM READY';}
+  else if(pct>=60){lc='progress';lt='IN PROGRESS';}
+  else{lc='training';lt='TRAINING';}
+  let msg='';
+  if(pct>=80)msg='<strong>Excelente domínio de Cirurgia Vascular.</strong> Desempenho no nível dos aprovados.'+(hp<70?' Atenção extra nas questões Hard.':' Continue mantendo esse ritmo.');
+  else if(pct>=60)msg='<strong>Progresso sólido em Cirurgia Vascular.</strong> Você domina os fundamentos.'+(sp<70?' Reforce as questões Standard.':' Foque nas Hard.');
+  else msg='<strong>Continue estudando Cirurgia Vascular.</strong> '+(ep<70?'Revise os conceitos básicos.':'Você domina o básico — aprofunde nas Standard e Hard.');
+  document.getElementById('sc-score').textContent=qok+'/'+tot+' ('+pct+'%)';
+  const lel=document.getElementById('sc-lv');lel.textContent=lt;lel.className='sc-level '+lc;
+  setTimeout(()=>{
+    const sb=(id,pid,v)=>{const b=document.getElementById(id),p=document.getElementById(pid);if(b)b.style.width=v+'%';if(p)p.textContent=v+'%';};
+    sb('b-easy','p-easy',ep);sb('b-std','p-std',sp);sb('b-hard','p-hard',hp);
+    const m=document.getElementById('sc-msg');if(m)m.innerHTML=msg;
+  },150);
+}
+</script>
+</body>
+</html>
