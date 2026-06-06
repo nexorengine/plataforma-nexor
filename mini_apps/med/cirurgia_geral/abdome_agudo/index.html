@@ -109,13 +109,13 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
 <div class="hdr">
   <div class="hdr-logo">nexor_<span style="color:var(--med2)">MED</span></div>
   <div class="hdr-title">CIRURGIA GERAL · D01</div>
-  <a href="../../index.html" class="hdr-back" id="hdr-back-btn">← Domínios</a>
+  <a href="../../../../med/cirurgia_geral/index.html" class="hdr-back" id="hdr-back-btn">← Domínios</a>
 </div>
 
 <!-- MENU -->
 <div id="s-menu" class="screen active">
   <div class="domain-header">
-    <img src="../../badges/med/cirurgia_geral/D01_ABDOME_AGUDO.png" class="domain-badge-img" alt="Abdome Agudo">
+    <img src="../../../../badges/med/cirurgia_geral/D01_ABDOME_AGUDO.png" class="domain-badge-img" alt="Abdome Agudo">
     <div>
       <div class="domain-title">Abdome Agudo</div>
       <div class="domain-sub">CIRURGIA GERAL · D01 · NEXOR MED</div>
@@ -211,7 +211,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
     <button class="btn primary" onclick="startQuiz(curQ)">Refazer</button>
     <button class="btn" onclick="show('s-qsel')">Outro Quiz</button>
     <button class="btn" onclick="show('s-menu')">Menu</button>
-    <a href="../../index.html" class="btn">← Domínios</a>
+    <a href="../../../../med/cirurgia_geral/index.html" class="btn">← Domínios</a>
   </div>
 </div>
 
@@ -229,7 +229,7 @@ function show(id){
   document.getElementById(id).classList.add('active');
   // Atualiza botão voltar do header
   const hb=document.getElementById('hdr-back-btn');
-  if(id==='s-menu'){hb.href='../../index.html';hb.textContent='← Domínios';}
+  if(id==='s-menu'){hb.href='../../../../med/cirurgia_geral/index.html';hb.textContent='← Domínios';}
   else if(id==='s-fc'||id==='s-qsel'){hb.href='javascript:void(0)';hb.onclick=()=>show('s-menu');hb.textContent='← Menu';}
   else if(id==='s-quiz'){hb.href='javascript:void(0)';hb.onclick=()=>show('s-qsel');hb.textContent='← Quizzes';}
   else if(id==='s-sc'){hb.href='javascript:void(0)';hb.onclick=()=>show('s-menu');hb.textContent='← Menu';}
