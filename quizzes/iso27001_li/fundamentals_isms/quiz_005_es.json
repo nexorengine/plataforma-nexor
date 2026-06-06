@@ -1,0 +1,710 @@
+{
+  "cert_id": "iso27001_li",
+  "domain_id": "fundamentals_isms",
+  "quiz_num": 5,
+  "domain_name": "Fundamentos e Gestão de ISMS",
+  "cert_name": "ISO 27001 Lead Implementer",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "En el contexto de ISO 27001:2022, ¿cuál es el propósito principal de la tríada CIA en la gestión de la seguridad de la información?",
+      "tag": "Fundamentos CIA",
+      "options": [
+        "B. Crear un modelo de auditoría basado en tres fases de evaluación",
+        "D. Implementar tres niveles de encriptación en todos los sistemas",
+        "A. Establecer los tres pilares fundamentales: Confidencialidad, Integridad y Disponibilidad como objetivos de seguridad",
+        "C. Definir los roles del Chief Information Officer dentro de la organización"
+      ],
+      "correct": 2,
+      "justification_correct": "La tríada CIA (Confidencialidad, Integridad, Disponibilidad) constituye los objetivos fundamentales de seguridad de información según ISO 27001:2022, Anexo A. Estos pilares guían el diseño e implementación de controles de seguridad.",
+      "justification_wrong": "Las opciones B, C y D son interpretaciones incorrectas. ISO 27001 no propone auditoría en tres fases basada en CIA, ni define roles específicos como CIO, ni prescribe niveles de encriptación como estructura fundamental."
+    },
+    {
+      "num": 2,
+      "text": "¿Cuál es la relación entre la familia ISO 27000 y ISO 27001:2022 en términos de cobertura normativa?",
+      "tag": "Familia ISO 27000",
+      "options": [
+        "B. ISO 27000 reemplaza completamente a ISO 27001 en nuevas certificaciones",
+        "C. La familia ISO 27000 es exclusivamente para auditoría externa obligatoria",
+        "D. ISO 27001 solo aplica a empresas financieras y ISO 27000 al sector público",
+        "A. ISO 27001 es el estándar de implementación mientras que ISO 27002 proporciona directrices de control"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 (requisitos de SGSI) e ISO 27002:2022 (directrices de control) son complementarios. ISO 27000 es la familia general. ISO 27001 define requisitos certificables, ISO 27002 proporciona orientación sobre su implementación según Anexo A.",
+      "justification_wrong": "ISO 27000 no reemplaza ISO 27001; ambos coexisten. La familia no es exclusiva para auditoría ni tiene restricciones sectoriales. ISO 27001 aplica a cualquier organización independientemente del sector."
+    },
+    {
+      "num": 3,
+      "text": "¿Cómo se integra el High Level Structure (HLS) en ISO 27001:2022?",
+      "tag": "High Level Structure (HLS)",
+      "options": [
+        "D. Limita la aplicabilidad de ISO 27001 a organizaciones de más de 500 empleados",
+        "A. Define una estructura común de 10 cláusulas para sistemas de gestión, mejorando compatibilidad con otras normas ISO",
+        "C. Reemplaza completamente el modelo PDCA tradicional de seguridad",
+        "B. Establece un modelo jerárquico de solo tres niveles organizacionales"
+      ],
+      "correct": 1,
+      "justification_correct": "HLS (Estructura de Alto Nivel) es un marco común a sistemas de gestión ISO (ISO 27001, ISO 9001, ISO 45001). ISO 27001:2022 adopta 10 cláusulas estructuradas: contexto, liderazgo, planificación, soporte, operación, evaluación, mejora. Facilita integración normativa.",
+      "justification_wrong": "HLS no prescribe niveles organizacionales específicos, complementa (no reemplaza) PDCA, y no tiene restricciones de tamaño organizacional. Es un facilitador de compatibilidad, no un limitante."
+    },
+    {
+      "num": 4,
+      "text": "¿Cuál es el rol del ciclo PDCA en la implementación de ISO 27001:2022?",
+      "tag": "PDCA y Mejora Continua",
+      "options": [
+        "C. Limitar la mejora de seguridad a una única vez al año",
+        "B. Reemplazar la necesidad de auditorías internas y externas de certificación",
+        "D. Aplicarse exclusivamente a la fase de planificación del SGSI",
+        "A. Proporcionar un método iterativo (Planificar-Hacer-Verificar-Actuar) para establecer, implementar, mantener y mejorar continuamente el SGSI"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022, Cláusula 4.4 y 8.1-8.6, enfatiza PDCA como ciclo continuo. Planificar (política, objetivos), Hacer (implementación), Verificar (auditoría, métricas), Actuar (mejora). Es fundamental para la efectividad sostenida del SGSI.",
+      "justification_wrong": "PDCA no elimina auditorías certificadas, es complementario. No restringe mejora anual; es iterativo permanente. Aplica a todo el SGSI, no solo planificación. Es un enfoque transversal de mejora continua."
+    },
+    {
+      "num": 5,
+      "text": "¿Qué elementos debe contener el caso de negocio (Business Case) para justificar la implementación de un SGSI según ISO 27001:2022?",
+      "tag": "Business Case para SI",
+      "options": [
+        "A. Análisis de riesgos, beneficios financieros, recursos requeridos y alineación estratégica organizacional",
+        "B. Solo costos de software de seguridad y número de contraseñas implementadas",
+        "C. Exclusivamente normativas regulatorias sin considerar valor empresarial",
+        "D. Únicamente el presupuesto de auditoría externa de certificación"
+      ],
+      "correct": 0,
+      "justification_correct": "El Business Case debe justificar inversión en SGSI mediante: análisis riesgos (Cláusula 6.1), ROI, recursos humanos/financieros, cumplimiento legal (Cláusula 6.2), alineación con objetivos estratégicos (Cláusula 4.2). Proporciona justificación ejecutiva integral.",
+      "justification_wrong": "Casos enfocados solo en software, métricas técnicas aisladas o normativa sin valor empresarial son incompletos. Auditoría es verificación posterior, no justificación inicial. El caso debe demostrar valor holístico para dirección."
+    },
+    {
+      "num": 6,
+      "text": "¿Cuál es la principal diferencia entre la confidencialidad e integridad en el contexto de la tríada CIA según ISO/IEC 27001:2022?",
+      "tag": "Fundamentos CIA",
+      "options": [
+        "C. Confidencialidad se aplica solo a datos en tránsito; integridad solo a datos en reposo",
+        "A. Confidencialidad protege contra divulgación no autorizada; integridad protege contra modificación no autorizada",
+        "D. Confidencialidad requiere encriptación AES; integridad requiere hash SHA-256",
+        "B. Confidencialidad es sinónimo de autenticación; integridad es sinónimo de no repudio"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 define confidencialidad como propiedad de que la información no esté disponible ni sea divulgada a individuos no autorizados, mientras que integridad es la propiedad de precisión e integridad. Ambas son atributos distintos de la tríada CIA.",
+      "justification_wrong": "Las opciones B, C y D confunden conceptos. Confidencialidad no es autenticación; CIA aplica a todos los estados de datos; no prescribe algoritmos específicos en la definición conceptual."
+    },
+    {
+      "num": 7,
+      "text": "¿Cuál norma ISO de la familia 27000 establece los requisitos para sistemas de gestión de seguridad de la información?",
+      "tag": "Familia ISO 27000",
+      "options": [
+        "B. ISO/IEC 27001:2022",
+        "A. ISO/IEC 27000:2022",
+        "D. ISO/IEC 27003:2022",
+        "C. ISO/IEC 27002:2022"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27001:2022 especifica requisitos para establecer, implementar, mantener y mejorar continuamente un SGSI. ISO/IEC 27000 proporciona vocabulario; ISO/IEC 27002 da directrices; ISO/IEC 27003 proporciona guía de implementación.",
+      "justification_wrong": "ISO/IEC 27000 es vocabulario; ISO/IEC 27002 son directrices de implementación (no requisitos mandatorios); ISO/IEC 27003 es guía complementaria. Solo ISO/IEC 27001:2022 estructura requisitos obligatorios."
+    },
+    {
+      "num": 8,
+      "text": "En el contexto del enfoque de ciclo de vida PDCA de ISO/IEC 27001:2022, ¿cuál es el propósito principal de la fase 'Verificar' (Check)?",
+      "tag": "PDCA",
+      "options": [
+        "C. Implementar operacionalmente los controles definidos en la planificación",
+        "B. Medir, monitorear y evaluar la conformidad de procesos respecto a requisitos del SGSI",
+        "D. Comunicar los resultados de auditoría a la dirección para obtener aprobación",
+        "A. Identificar controles de seguridad y planificar la implementación del SGSI"
+      ],
+      "correct": 1,
+      "justification_correct": "Según ISO/IEC 27001:2022 cláusula 8.4, la fase Check incluye monitoreo, medición, análisis y evaluación para determinar qué se ha logrado y qué necesita mejora, evaluando conformidad contra objetivos del SGSI.",
+      "justification_wrong": "Plan corresponde a identificación (opción A); Do a implementación (opción C); Act a comunicación y mejora (opción D). Check es específicamente monitoreo y evaluación de desempeño."
+    },
+    {
+      "num": 9,
+      "text": "¿Cuál es el componente esencial del enfoque High Level Structure (HLS) implementado en ISO/IEC 27001:2022 que mejora la integración con otros SGSI?",
+      "tag": "High Level Structure",
+      "options": [
+        "D. El enfoque exclusivo en controles técnicos sin consideración de controles administrativos",
+        "C. La obligatoriedad de implementar todos los 14 controles de la Anexo A",
+        "A. La inclusión de cláusulas 4 a 10 con estructura idéntica a otras normas de sistemas de gestión",
+        "B. El requisito de auditoría externa obligatoria cada seis meses"
+      ],
+      "correct": 2,
+      "justification_correct": "HLS en ISO/IEC 27001:2022 proporciona estructura común (cláusulas 4-10: Contexto, Liderazgo, Planificación, Apoyo, Operación, Evaluación, Mejora) permitiendo integración con ISO 9001, ISO 14001, ISO 45001, facilitando SGSI integrados.",
+      "justification_wrong": "Auditoría no es obligatoria cada 6 meses; no todos los controles de Anexo A son obligatorios (depende del análisis de riesgos); CIA requiere controles técnicos y administrativos combinados. HLS es estructural, no operacional."
+    },
+    {
+      "num": 10,
+      "text": "¿Cuál elemento debe incluirse en un caso de negócio (business case) para la implementación de un SGSI conforme ISO/IEC 27001:2022?",
+      "tag": "Caso de Negocio para SI",
+      "options": [
+        "A. Solo costos de licencias de software de seguridad y presupuesto de auditoría externa",
+        "B. Análisis de riesgos actual, beneficios esperados, costos, cronograma y alineación estratégica organizacional",
+        "D. Exclusivamente métricas técnicas de cifrado y vulnerabilidades sin consideración de impacto comercial",
+        "C. Enumeración detallada de todos los 114 controles del Anexo A con evaluaciones individuales de riesgo"
+      ],
+      "correct": 1,
+      "justification_correct": "Un business case integral para SGSI debe demostrar viabilidad mediante: análisis costo-beneficio, alineación con objetivos organizacionales, cronograma realista, recursos requeridos, retorno sobre inversión esperado. ISO/IEC 27001:2022 cláusula 5.1 requiere que liderazgo asigne recursos basados en casos justificados.",
+      "justification_wrong": "Opción A es incompleta (solo costos); opción C prescribe solución antes de análisis; opción D carece de perspectiva de negocio requerida. El business case debe ser holístico: técnico, operacional y estratégico para obtener patrocinio ejecutivo."
+    },
+    {
+      "num": 11,
+      "text": "En el contexto de ISO 27001:2022, ¿cuál es el propósito principal del análisis de riesgos dentro del ciclo PDCA durante la fase de Planificación (Plan)?",
+      "tag": "PDCA y Gestión de Riesgos",
+      "options": [
+        "D. Realizar auditorías internas para verificar el cumplimiento de controles ya implementados",
+        "C. Establecer políticas de seguridad sin necesidad de evaluar el impacto potencial en la organización",
+        "B. Documentar exclusivamente las amenazas externas sin considerar vulnerabilidades internas del sistema",
+        "A. Identificar, analizar y evaluar riesgos de seguridad de la información para determinar controles necesarios según ISO 27002:2022"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1 requiere que la organización determine riesgos y oportunidades considerando contexto interno/externo. El análisis de riesgos en PLAN identifica qué controles de ISO 27002 son necesarios para tratamiento de riesgos.",
+      "justification_wrong": "Opciones B, C y D reflejan aproximaciones incompletas: B ignora vulnerabilidades internas; C omite evaluación de impacto; D corresponde a fase CHECK, no PLAN del ciclo PDCA."
+    },
+    {
+      "num": 12,
+      "text": "Respecto a la estructura de alto nivel (HLS) de ISO 27001:2022, ¿qué cláusula establece la necesidad de determinar el contexto organizacional como requisito fundamental?",
+      "tag": "HLS y Contexto Organizacional",
+      "options": [
+        "B. Cláusula 5 (Liderazgo), enfocada exclusivamente en responsabilidades de la dirección",
+        "C. Cláusula 8 (Operación), dedicada a la implementación de controles de seguridad",
+        "D. Cláusula 10 (Mejora), orientada únicamente a auditorías y acciones correctivas",
+        "A. Cláusula 4 (Contexto de la organización), que requiere comprender la organización y su contexto"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula 4.1 requiere determinar contexto interno/externo, partes interesadas, requisitos legales/regulatorios. Esto es fundacional en HLS para identificar alcance y objetivos del SGSI.",
+      "justification_wrong": "B, C y D son cláusulas válidas pero no establecen contexto: B trata liderazgo; C operacionalización; D mejora continua. Contexto debe determinarse primero en PLAN."
+    },
+    {
+      "num": 13,
+      "text": "En la familia ISO 27000, ¿cuál es la relación funcional entre ISO 27001:2022 (requisitos SGSI) e ISO 27002:2022 (controles) dentro de un programa de implementación?",
+      "tag": "Familia ISO 27000 y Controles",
+      "options": [
+        "B. ISO 27002 es obligatoria en todos los casos y debe implementarse completamente sin evaluación de riesgos previa",
+        "C. ISO 27001 y ISO 27002 son estándares independientes sin relación en la implementación práctica del SGSI",
+        "D. ISO 27001 reemplaza a ISO 27002 en las nuevas versiones 2022, eliminando la necesidad de consultar controles",
+        "A. ISO 27001 define qué SGSI implementar; ISO 27002 proporciona el catálogo de controles disponibles para seleccionar según evaluación de riesgos"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 A.12 y Anexo A especifican que los controles de ISO 27002 son referencia normativa. La selección de controles depende del análisis de riesgos realizado conforme cláusula 6.1.3 de ISO 27001.",
+      "justification_wrong": "B asume obligatoriedad total sin riesgos; C nega interdependencia documentada; D es factualmente incorrecta: ISO 27002:2022 sigue vigente como estándar de controles complementario."
+    },
+    {
+      "num": 14,
+      "text": "¿Cómo se integra el principio CIA (Confidencialidad, Integridad, Disponibilidad) en la construcción del caso de negocio (business case) para implementar un SGSI ISO 27001?",
+      "tag": "CIA y Caso de Negocio",
+      "options": [
+        "C. El caso de negocio debe enfocarse únicamente en Confidencialidad, ignorando Integridad y Disponibilidad",
+        "B. CIA es un concepto puramente técnico sin relevancia para decisiones financieras o estratégicas de negocio",
+        "D. CIA se aplica solo después de implementar el SGSI, en la fase de auditoría externa y certificación",
+        "A. CIA fundamenta la justificación de inversión al demostrar cómo riesgos no tratados impactarían activos críticos, legitimando controles en términos de ROI y continuidad operativa"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 Anexo A.1 y cláusula 6.1 vinculan análisis de riesgos CIA con objetivos organizacionales. El business case articula cómo proteger C, I, A genera valor: reducción de brechas, cumplimiento legal, reputación.",
+      "justification_wrong": "B descontextualiza CIA; C sesga el enfoque; D invierte cronología: CIA es requisito en PLAN, no resultado de CHECK. Business case precede implementación."
+    },
+    {
+      "num": 15,
+      "text": "En un ciclo PDCA completo de ISO 27001:2022, ¿cuál es la función específica de la fase CHECK (Verificación) y cómo se diferencia de la fase DO (Operación)?",
+      "tag": "Ciclo PDCA y Mejora Continua",
+      "options": [
+        "B. CHECK y DO son sinónimos; ambas fases realizan la misma actividad de monitoreo de controles sin diferenciación",
+        "C. DO realiza auditorías internas y CHECK implementa nuevos controles; sus roles son invertidos respecto a la práctica común",
+        "A. DO ejecuta controles planificados; CHECK verifica su efectividad mediante auditorías internas y análisis de KPIs según cláusula 9.2, identificando no conformidades",
+        "D. CHECK es opcional si la organización implementa correctamente en DO; no es necesaria para mantener certificación ISO 27001"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 cláusula 9.2 requiere evaluación del desempeño. DO (cláusula 8) ejecuta controles; CHECK (cláusula 9) monitorea, mide y audita su efectividad, generando evidencia para ACT.",
+      "justification_wrong": "B ignora diferenciación funcional; C invierte responsabilidades; D declara CHECK opcional, contradictorio con cláusula 9 obligatoria. PDCA requiere retroalimentación sistemática."
+    },
+    {
+      "num": 16,
+      "text": "Según ISO 27001:2022, ¿cuál es el propósito principal de establecer el contexto de la organización en la fase inicial de implementación del SGSI?",
+      "tag": "Contexto Organizacional y Alcance",
+      "options": [
+        "C. Establecer métricas de rendimiento de seguridad",
+        "A. Identificar partes interesadas, factores internos/externos y determinar límites del SGSI para alineación estratégica",
+        "D. Implementar directamente controles sin evaluación previa",
+        "B. Realizar únicamente auditoría interna de sistemas existentes"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 4.1 requiere determinar contexto organizacional, partes interesadas relevantes y límites del SGSI. Este análisis es fundamental para la planificación estratégica y alineación con objetivos empresariales antes de implementar cualquier control.",
+      "justification_wrong": "Las opciones B, C y D omiten el análisis integral del contexto requerido por la norma. La auditoría interna es posterior; las métricas se derivan del contexto; los controles deben ser contextualizados previamente."
+    },
+    {
+      "num": 17,
+      "text": "En el modelo HLS (High Level Structure) de ISO 27001:2022, ¿qué cambio significativo introduce respecto a versiones anteriores en la gestión de riesgos?",
+      "tag": "High Level Structure y Gestión de Riesgos",
+      "options": [
+        "D. Separación total entre riesgo de SI y riesgos empresariales",
+        "A. Integración obligatoria de evaluación y tratamiento de riesgos con metodología unificada en cláusula 6.1 y 6.2",
+        "C. Aplicación exclusiva de controles preventivos sin tratamiento",
+        "B. Eliminación completa de la evaluación de riesgos"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusulas 6.1 (Evaluación) y 6.2 (Tratamiento) establecen proceso integrado de gestión de riesgos alineado con ISO 31000. HLS requiere evaluación sistemática de riesgos de información y decisiones documentadas sobre aceptación o tratamiento.",
+      "justification_wrong": "La evaluación de riesgos es obligatoria en 27001:2022. No es exclusivamente preventiva; incluye mitigación, transferencia y aceptación. Los riesgos de SI deben contextualizarse con estrategia empresarial según cláusula 4."
+    },
+    {
+      "num": 18,
+      "text": "Respecto al principio CIA (Confidencialidad, Integridad, Disponibilidad), ¿cómo ISO 27001:2022 integra este concepto en la definición de objetivos de seguridad de la información?",
+      "tag": "Triada CIA y Objetivos de SI",
+      "options": [
+        "A. CIA es base para definir objetivos de seguridad (cláusula 6.2), priorizándose según contexto y riesgos identificados",
+        "D. CIA solo aplica a datos electrónicos, no a información física",
+        "C. ISO 27001:2022 reemplaza CIA por nuevos principios de seguridad",
+        "B. CIA se aplica uniformemente a todos los activos sin diferenciación"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 establece que objetivos de seguridad (cláusula 6.2) deben derivarse de necesidades de información identificadas en evaluación de riesgos, considerando CIA según contexto organizacional. Cada activo requiere análisis diferenciado de estos principios.",
+      "justification_wrong": "Aplicación uniforme ignora diferenciación de riesgos. CIA no es reemplazado; permanece como fundamento. La información física requiere también protección CIA bajo concepto integral de 'información' de ISO 27001."
+    },
+    {
+      "num": 19,
+      "text": "¿Cuál es la relación entre el ciclo PDCA (Plan-Do-Check-Act) y el Anexo A de ISO 27001:2022 en términos de implementación de controles?",
+      "tag": "Ciclo PDCA y Selección de Controles",
+      "options": [
+        "A. PDCA estructura implementación continua; Anexo A proporciona catálogo de 93 controles seleccionables según cláusula 6.2 (Plan) y monitoreo (Check/Act)",
+        "C. PDCA solo aplica a procesos, no a controles de seguridad",
+        "B. Anexo A contiene controles estáticos sin relación con mejora continua",
+        "D. Los controles del Anexo A se implementan una sola vez sin revisión"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 integra PDCA (cláusula 4.4) como framework de mejora continua. Anexo A (93 controles) se selecciona en fase 'Plan' (cláusula 6.2), se implementa ('Do'), se monitorea ('Check' cláusula 9.1) y ajusta ('Act' cláusula 10.3).",
+      "justification_wrong": "Anexo A no es estático; requiere revisión periódica (cláusula 8.2). Los controles son dinámicos. PDCA es aplicable a toda gestión de SGSI. Revisión y mejora son obligatorias anualmente mínimo según cláusula 9.3."
+    },
+    {
+      "num": 20,
+      "text": "En la construcción del caso de negocio (Business Case) para implementación de SGSI, ¿qué elementos deben justificarse conforme a ISO 27001:2022 y buenas prácticas de gobernanza?",
+      "tag": "Caso de Negocio y Justificación",
+      "options": [
+        "B. Solo inversión en infraestructura tecnológica",
+        "C. Cumplimiento normativo sin evaluar impacto empresarial",
+        "A. Alineación estratégica, análisis costo-beneficio, riesgos empresariales, conformidad regulatoria y reputación corporativa",
+        "D. Únicamente reducción de incidentes sin contexto estratégico"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 cláusula 4.3 exige demostración del valor SGSI para la organización. Business case integral incluye: alineación con objetivos (cláusula 4.2), análisis costo-beneficio, mitigación de riesgos empresariales, cumplimiento legal y ventaja competitiva/reputación.",
+      "justification_wrong": "Enfoque solo tecnológico ignora governance. Conformidad sin impacto empresarial no justifica inversión. Reducción de incidentes es métrica, no justificación integral. El caso de negocio debe demostrar ROI y valor estratégico para patrocinio ejecutivo."
+    },
+    {
+      "num": 21,
+      "text": "En el contexto de ISO 27001:2022, ¿cuál es el propósito principal del análisis de brecha (gap analysis) durante la fase de diagnóstico inicial de implementación?",
+      "tag": "Evaluación de Estado Actual y Diagnóstico",
+      "options": [
+        "D. Establecer presupuestos financieros sin análisis técnico previo de controles",
+        "A. Identificar desviaciones entre el estado actual del SGSI y los requisitos normativos de ISO 27001:2022, estableciendo la línea base para el plan de implementación",
+        "C. Evaluar únicamente la competencia del personal de seguridad existente sin considerar procesos",
+        "B. Determinar exclusivamente los activos de información que requieren cifrado inmediato según la cláusula 8.3.3"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022, cláusula 4.3 (Determinación del alcance) y 6.1 (Evaluación de riesgos) requieren identificar el estado actual versus requisitos normativos. El gap analysis fundamenta la arquitectura del SGSI, alineándose con el ciclo PDCA (Planificar-Hacer-Verificar-Actuar).",
+      "justification_wrong": "Las opciones B, C y D representan aplicaciones parciales o incorrectas del análisis de brecha, ignorando su propósito integrador de evaluación holística del SGSI conforme ISO 27001:2022."
+    },
+    {
+      "num": 22,
+      "text": "¿Cómo se relaciona la aplicación del principio de confidencialidad (CIA) con el Anexo A de ISO 27001:2022 en la selección de controles?",
+      "tag": "Triada CIA y Selección de Controles",
+      "options": [
+        "D. Los controles del Anexo A se aplican indistintamente sin mapeo específico a componentes CIA según el contexto",
+        "B. La confidencialidad determina restricciones de acceso (A.5.1 Políticas de acceso, A.6.2 Gestión de acceso usuario), mientras que integridad e disponibilidad son complementarias en la protección equilibrada de activos",
+        "A. Los controles de confidencialidad (Anexo A: A.5.1, A.5.2, A.6.1, A.6.2) se seleccionan exclusivamente basándose en el nivel de clasificación de datos, sin considerar disponibilidad",
+        "C. Solo la confidencialidad es evaluada en riesgos, siendo integridad y disponibilidad responsabilidad exclusiva del área operativa"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 Anexo A organiza controles alineados con CIA. Confidencialidad mapea a A.5.1-5.2, A.6.1-6.2 (acceso); integridad a A.8.1-8.3; disponibilidad a A.8.2, A.11.1-11.4. El equilibrio CIA refleja el enfoque sistémico requerido en cláusula 6 (Planificación).",
+      "justification_wrong": "Opciones A, C y D violan principios de ISO 27001:2022 que requieren evaluación integrada CIA con mapeo explícito a controles del Anexo A según riesgos contextualizados, no exclusiones sectoriales."
+    },
+    {
+      "num": 23,
+      "text": "En la implementación del HLS (High Level Structure) de ISO 27001:2022, ¿qué cláusulas del Anexo al ISO/IEC/ISO GUIDE 2012 establecen la estructura común con otras normas de gestión?",
+      "tag": "HLS y Alineamiento con Familia ISO 27000",
+      "options": [
+        "D. ISO 27001:2022 no implementa HLS, manteniéndose estructura previa de edición 2013",
+        "A. Las cláusulas 4 (Contexto), 5 (Liderazgo), 6 (Planificación), 7 (Apoyo), 8 (Operación) y 9 (Evaluación) conforman la estructura armónica HLS aplicada consistentemente en ISO 9001, ISO 14001 e ISO 45001",
+        "B. Solo la cláusula 8 (Operación) requiere alineamiento HLS, siendo las demás específicas de ISO 27001:2022",
+        "C. El HLS se limita a requerimientos de documentación sin impactar la arquitectura de procesos"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 adopta completamente HLS (cláusulas 4-10), alineado con ISO/IEC Guide 35:2017 y compatibilidad integrada con ISO 9001:2015, ISO 14001:2015, ISO 45001:2018. Este alineamiento facilita SGSI integrados conforme familia ISO 27000.",
+      "justification_wrong": "Opciones B, C y D contradicen la estructura fundamental de ISO 27001:2022 que adopta HLS en su integridad, impactando gobernanza, procesos y documentación de manera transversal y sistemática."
+    },
+    {
+      "num": 24,
+      "text": "¿Cuál es la relación crítica entre el caso de negocio (business case) para SI y el ciclo PDCA en la justificación de inversiones en SGSI según ISO 27001:2022?",
+      "tag": "Business Case y Ciclo PDCA para SI",
+      "options": [
+        "C. PDCA se aplica solo en auditoría interna, sin conexión con decisiones de inversión del business case",
+        "A. El business case articula valor financiero y operativo (justificación presupuestaria), mientras PDCA estructura la implementación iterativa, mejora continua y retroalimentación de ROI en cláusulas 8.1-10.3 de ISO 27001:2022",
+        "B. El business case es responsabilidad exclusiva de finanzas, independiente del ciclo PDCA que ejecuta TI",
+        "D. El business case no requiere validación cuantitativa si existe soporte directivo verbal"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 integra business case (contexto estratégico, cláusula 4) con PDCA (cláusulas 6-10): Planificar (6), Hacer (8), Verificar (9), Actuar (10). Esta sinergia garantiza sostenibilidad de inversiones SI y mejora continua alineada con objetivos organizacionales.",
+      "justification_wrong": "Opciones B, C y D fragmentan responsabilidades sistémicas y contradicen el enfoque integrado de ISO 27001:2022 que exige gobernanza única donde business case y PDCA se refuerzan mutuamente para decisiones basadas en riesgos."
+    },
+    {
+      "num": 25,
+      "text": "En una auditoría de conformidad ISO 27001:2022 a nivel Lead Implementer, ¿cómo se evidencia la efectividad del control A.7.2 (Competencia) respecto al ciclo PDCA y la familia ISO 27000?",
+      "tag": "Auditoría de Controles y Ciclo de Mejora Continua",
+      "options": [
+        "D. Evaluando competencia solo en momento de contratación, sin revisión periódica",
+        "C. Solicitando certificaciones ISO 27001 Lead Auditor de todo el personal de seguridad indistintamente",
+        "A. Mediante registros de capacitación anual estática sin relación con cambios de riesgos o evolución de controles",
+        "B. Documentando planes de competencia vinculados a evaluación de riesgos (Planificar-6), ejecución con asignaciones de roles (Hacer-8), verificación de desempeño contra indicadores (Verificar-9) y mejora continua (Actuar-10), alineado con ISO 27003:2017 para implementación"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 A.7.2 requiere competencia dinámica. Su efectividad en auditoría se evidencia mediante trazabilidad PDCA: riesgos identificados (Plan) generan planes de capacitación (Do), evaluaciones de desempeño (Check), acciones correctivas (Act). ISO 27003:2017 complementa implementación práctica.",
+      "justification_wrong": "Opciones A, C y D representan enfoques estáticos, no integrados o desproporcionados que violarían ISO 27001:2022 al ignorar el vínculo obligatorio entre competencia, gestión de riesgos y mejora continua sistémica del SGSI."
+    },
+    {
+      "num": 26,
+      "text": "En un contexto de implementación ISO 27001:2022, al establecer el alcance del SGSI mediante el análisis de contexto externo e interno, ¿cuál es el propósito principal de identificar las partes interesadas relevantes según la cláusula 4.2?",
+      "tag": "Contexto y alcance del SGSI",
+      "options": [
+        "D. Crear un registro administrativo obligatorio de todas las partes interesadas sin necesidad de evaluar su relevancia",
+        "C. Establecer políticas de acceso restrictivo que limiten la participación de partes interesadas en decisiones de SGSI",
+        "B. Asignar presupuesto de seguridad de información de manera equitativa entre todos los stakeholders identificados",
+        "A. Determinar sus necesidades y expectativas respecto a la información y seguridad, alineando objetivos de SI con la estrategia organizacional"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula 4.2 exige identificar partes interesadas para comprender sus necesidades y expectativas respecto a información y SI. Esta información es fundamental para definir el alcance efectivo del SGSI y alinear objetivos de SI con la estrategia organizacional, garantizando legitimidad y sostenibilidad del sistema.",
+      "justification_wrong": "Las opciones B, C y D no reflejan el propósito normativo. B presupone distribución financiera no especificada en 4.2. C contradice el principio de transparencia. D omite el análisis de relevancia requerido para determinar quién debe ser considerado parte interesada significativa."
+    },
+    {
+      "num": 27,
+      "text": "Durante la evaluación de riesgos conforme a ISO 27001:2022 cláusula 6.1.2, al aplicar el modelo CIA (Confidentiality, Integrity, Availability), ¿cómo debe priorizarse el análisis cuando un activo de información crítico enfrenta múltiples amenazas simultáneamente?",
+      "tag": "Evaluación y tratamiento de riesgos SI",
+      "options": [
+        "D. Aplicación secuencial de controles solo para la amenaza de probabilidad más alta, ignorando las restantes",
+        "C. Selección de la dimensión CIA con menor impacto para minimizar esfuerzos de tratamiento de riesgos",
+        "B. Enfoque exclusivo en Confidentiality dado que siempre presenta mayor riesgo que Integrity o Availability en cualquier contexto",
+        "A. Evaluación combinada de impacto CIA con probabilidad de amenazas, documentando matriz de riesgos residuales por cada dimensión de SI"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 6.1.2 requiere evaluación holística de riesgos considerando impacto y probabilidad. El modelo CIA debe evaluarse integralmente: una amenaza puede comprometer múltiples dimensiones simultáneamente. Documentar matriz de riesgos por dimensión CIA permite seleccionar controles proporcionados (cláusula 6.2) según criticidad real del activo.",
+      "justification_wrong": "B es falso: contexto organizacional determina prioridad CIA, no existe jerarquía universal. C contradice 6.1.3 sobre aceptación de riesgos. D viola principio de defensa en profundidad: múltiples amenazas requieren análisis concurrente para identificar vectores de ataque complejos no detectables secuencialmente."
+    },
+    {
+      "num": 28,
+      "text": "Conforme al High Level Structure (HLS) implementado en ISO 27001:2022, la integración del SGSI con otros sistemas de gestión (SGC, SGA) debe garantizar coherencia en documentación y gobernanza. ¿Cuál es el mecanismo normativo clave para lograr esta integración sin duplicación de procesos?",
+      "tag": "HLS e integración de sistemas de gestión",
+      "options": [
+        "B. Creación de un SGSI completamente separado e independiente con documentación y criterios únicos para evitar confusiones entre estándares",
+        "A. Estructura común de contexto, liderazgo y planificación (cláusulas 4, 5, 6) que permite mapeo de procesos y reutilización de infraestructuras de gobernanza existentes",
+        "C. Implementación obligatoria de un software integrado de gestión que automáticamente sincronice todos los sistemas sin intervención humana",
+        "D. Delegación de la integración únicamente al área de Compliance, excluyendo participación de seguridad de información en decisiones estratégicas"
+      ],
+      "correct": 1,
+      "justification_correct": "HLS (Anexo SL ISO/IEC, reflejado en ISO 27001:2022) establece estructura común: cláusulas 4 (contexto), 5 (liderazgo), 6 (planificación). Esta armonización permite integrar SGSI con ISO 9001, 14001, etc., mediante procesos comunes, políticas unificadas y gobernanza coherente, reduciendo redundancia documental y operativa.",
+      "justification_wrong": "B rechaza integración requerida por HLS. C asume automatización total sin consideración de decisiones normativas estratégicas. D fragmenta responsabilidades: liderazgo ejecutivo (5.1) debe conducir integración holística; Compliance es ejecutor, no solo responsable."
+    },
+    {
+      "num": 29,
+      "text": "En el ciclo PDCA aplicado a la mejora continua del SGSI (ISO 27001:2022 cláusulas 8, 9, 10), ¿cuál es el rol específico de la evaluación del desempeño (cláusula 9) en la retroalimentación que alimenta la revisión por la dirección y acciones correctivas?",
+      "tag": "Ciclo PDCA y mejora continua",
+      "options": [
+        "C. Limitar la evaluación a cumplimiento normativo externo, excluyendo métricas de desempeño operativo del SGSI",
+        "D. Automatizar completamente el monitoreo sin participación de la dirección, eliminando necesidad de revisión periódica",
+        "B. Realizar cambios inmediatos en controles sin documentación, basados en percepciones del equipo de seguridad sobre mejoras necesarias",
+        "A. Monitorear indicadores de SI (KPIs), realizar auditorías internas y evaluar conformidad, generando datos objetivos que justifiquen decisiones correctivas en revisión por dirección"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula 9 (Evaluación del desempeño) requiere monitoreo, medición, análisis y evaluación mediante KPIs, auditorías internas (9.2) y evaluación de conformidad. Estos datos objetivos alimentan la revisión por dirección (9.3), permitiendo decisiones informadas sobre correcciones, mejoras y reorientación estratégica del SGSI.",
+      "justification_wrong": "B viola principios de gestión del cambio (cláusula 8.5) y documentación (4.4). C excluye métricas operativas esenciales para mejora continua. D elimina gobernanza requerida: dirección debe revisar periódicamente (9.3) e impulsar acciones según datos de desempeño; automatización sin liderazgo compromete efectividad del SGSI."
+    },
+    {
+      "num": 30,
+      "text": "Al desarrollar el caso de negocio para implementación de SGSI ISO 27001:2022, ¿cuál debe ser el enfoque integral para justificar inversión en seguridad de información considerando tanto riesgos de ciberseguridad como beneficios organizacionales?",
+      "tag": "Caso de negocio para SI",
+      "options": [
+        "A. Análisis costo-beneficio que integre: reducción de riesgos residuales (cláusula 6.1.3), cumplimiento normativo, mejora de reputación, retención de clientes y ventaja competitiva mediante SGSI certificado",
+        "C. Justificación basada únicamente en requisitos regulatorios, ignorando oportunidades de diferenciación competitiva mediante SI como factor estratégico",
+        "D. Presentación de caso de negocio sin métricas de línea base, impidiendo demostración posterior de ROI o mejoras alcanzadas",
+        "B. Enfoque exclusivamente financiero limitado a costos operativos del SGSI, sin considerar beneficios intangibles o reducción de riesgo"
+      ],
+      "correct": 0,
+      "justification_correct": "Un caso de negocio sólido para SGSI ISO 27001:2022 debe integrar: cuantificación de riesgos evitados (cláusula 6.1.3), costos de implementación y operación, cumplimiento de requisitos legales/regulatorios (4.1), y beneficios estratégicos (confianza de stakeholders, acceso a mercados, ventaja competitiva). ISO 27001 posibilita diferenciación en el mercado.",
+      "justification_wrong": "B omite beneficios intangibles pero críticos (reputación, confianza del cliente), reduciendo persuasión ejecutiva. C subordina SI a compliance reactivo, perdiendo oportunidad de posicionamiento estratégico. D imposibilita evaluación de éxito: métricas línea base (cláusula 9.1) son fundamentales para demostrar efectividad y justificar inversiones futuras."
+    },
+    {
+      "num": 31,
+      "text": "En el contexto de ISO 27001:2022, al establecer el alcance del SGSI mediante el análisis de contexto, ¿cuál es el propósito principal de identificar las partes interesadas relevantes?",
+      "tag": "Contexto organizacional y partes interesadas",
+      "options": [
+        "B. Reducir exclusivamente los costos de implementación del SGSI",
+        "C. Eliminar la necesidad de realizar análisis de riesgo",
+        "A. Determinar sus requisitos y expectativas en seguridad de la información para asegurar conformidad normativa",
+        "D. Centralizar todas las decisiones en el comité de seguridad"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022, cláusula 4.1 requiere comprender las partes interesadas externas e internas y sus requisitos para definir el contexto. Las expectativas en SI impactan directamente el alcance y objetivos del SGSI según la sección 4.3.",
+      "justification_wrong": "Alternativas incorrectas confunden partes interesadas con reducción de costos, eliminan análisis de riesgo (cláusula 6.2 es mandatoria) o centralizan decisiones sin fundamento normativo."
+    },
+    {
+      "num": 32,
+      "text": "Durante la evaluación de riesgos según ISO 27001:2022, ¿qué criterio fundamental debe establecerse antes de ejecutar el proceso de análisis de riesgos?",
+      "tag": "Gestión de riesgos - Evaluación de riesgos",
+      "options": [
+        "A. Criterios de aceptación de riesgos definidos formalmente basados en el apetito de riesgo organizacional",
+        "D. El uso obligatorio de metodologías cuantitativas únicamente",
+        "B. La selección exclusiva de controles de ISO 27002 sin evaluación previa",
+        "C. La eliminación total de todos los riesgos identificados"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022, cláusula 6.1.3 especifica que la organización debe establecer y mantener criterios de aceptación de riesgos antes del análisis. Estos criterios reflejan el contexto y apetito de riesgo según sección 6.1.1.",
+      "justification_wrong": "Seleccionar controles sin análisis viola cláusula 6.2. Eliminación total es impracticable. ISO 27001 no prescribe métodos cuantitativos únicos, permitiendo métodos cualitativos según ANEXO A."
+    },
+    {
+      "num": 33,
+      "text": "En el ciclo PDCA aplicado a un SGSI conforme ISO 27001:2022, ¿cuál es el resultado esperado de la fase 'Verificar' (Check) que demuestre la efectividad de los controles implementados?",
+      "tag": "PDCA y ciclo de mejora continua",
+      "options": [
+        "A. Monitoreo y medición de controles con indicadores de desempeño que evidencien cumplimiento de objetivos de SI",
+        "B. Implementación inmediata de nuevos controles sin evaluación previa",
+        "C. Documentación exclusiva de incidentes sin análisis de causas raíz",
+        "D. Auditoría interna realizada sin periodicidad definida"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022, cláusula 9.1 (Monitoreo y medición) y 9.2 (Auditoría interna) conforman la fase Check del PDCA. Requieren indicadores de desempeño contra objetivos (cláusula 6.2) y evaluación periódica de efectividad.",
+      "justification_wrong": "Implementar sin evaluación omite el análisis crítico. Documentar incidentes sin análisis incumple cláusula 8.4. Auditoría sin periodicidad viola cláusula 9.2.1 que exige planificación según intervalos definidos."
+    },
+    {
+      "num": 34,
+      "text": "Conforme a ISO 27001:2022 cláusula 8.1, ¿qué considera la organización como elemento esencial al planificar la implementación de acciones para abordar riesgos identificados?",
+      "tag": "Planeación de control - Tratamiento de riesgos",
+      "options": [
+        "C. Aceptar todos los riesgos identificados para optimizar presupuesto",
+        "A. Evaluar opciones de tratamiento (mitigación, aceptación, evitación, transferencia) considerando costo-beneficio",
+        "B. Implementar únicamente controles del Anexo A sin validación contextual",
+        "D. Eliminar el plan de tratamiento de riesgos si la dirección lo autoriza verbalmente"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022, cláusula 8.1 requiere evaluar opciones de tratamiento de riesgos considerando aplicabilidad, eficacia y viabilidad. La selección debe documentarse en el plan de tratamiento según cláusula 6.2.",
+      "justification_wrong": "Anexo A proporciona opciones, no prescripción mandatoria sin análisis. Aceptar todos los riesgos incumple responsabilidad de dirección. Autorización verbal omite documentación requerida en cláusula 8.1 e incumple 7.4."
+    },
+    {
+      "num": 35,
+      "text": "En el contexto del principio CIA (Confidentiality, Integrity, Availability) en ISO 27001:2022, ¿cómo debe la organización aplicar este principio al definir los objetivos de seguridad de la información?",
+      "tag": "Fundamentos CIA y objetivos de SI",
+      "options": [
+        "A. Integrar CIA como dimensiones transversales evaluando cuál aplica a cada activo según su criticidad y requisitos del negocio",
+        "D. Implementar CIA únicamente para cumplimiento regulatorio sin considerar riesgos operacionales",
+        "C. Establecer CIA como controles técnicos excluyendo medidas administrativas",
+        "B. Aplicar únicamente Confidentiality en todos los activos de información"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 cláusula 6.2 (Objetivos de SI) y contexto de riesgos requieren alinear CIA con clasificación de activos y requisitos del negocio. Cada dimensión CIA se evalúa según impacto específico (cláusula 6.1.2).",
+      "justification_wrong": "CIA no es exclusivamente Confidentiality. Cláusula 8.2 requiere controles técnicos y organizacionales (no solo técnicos). CIA es principio fundamental de riesgo, no exclusivamente regulatorio según sección 4.2."
+    },
+    {
+      "num": 36,
+      "text": "En el contexto de ISO 27001:2022, al implementar el High Level Structure (HLS), ¿cuál es el propósito principal de la cláusula 4.1 'Comprensión de la organización y su contexto'?",
+      "tag": "HLS y Contexto Organizacional",
+      "options": [
+        "C. Crear un inventario detallado de todos los activos de información",
+        "D. Implementar controles técnicos preventivos basados en amenazas actuales",
+        "B. Definir exclusivamente los riesgos cibernéticos identificados en auditorías externas",
+        "A. Establecer los parámetros internos y externos que afectan la política de seguridad de la información"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022, cláusula 4.1 requiere comprender cuestiones internas/externas relevantes para el SGSI. Esto incluye contexto organizacional, stakeholders, requisitos legales y expectativas que influyen en la dirección estratégica de seguridad.",
+      "justification_wrong": "Las opciones B, C, D son actividades posteriores o específicas del SGSI. La comprensión del contexto precede al análisis de riesgos (cláusula 6.1), inventarios (cláusula 5.15) y selección de controles (cláusula 8.1)."
+    },
+    {
+      "num": 37,
+      "text": "Respecto al ciclo PDCA aplicado a ISO 27001:2022, ¿en qué fase del ciclo se ejecutan primordialmente las actividades de 'evaluación del desempeño' y 'auditoría interna'?",
+      "tag": "PDCA y Monitoreo",
+      "options": [
+        "B. En la fase Check (Verificación) conforme a las cláusulas 9.1 y 9.2",
+        "D. En la fase Act (Actuación) para ajustes correctivos únicamente",
+        "A. En la fase Plan (Planificación) para definir métricas de control",
+        "C. En la fase Do (Ejecución) durante la operación del SGSI"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 cláusula 9 'Evaluación del desempeño' (9.1 Monitoreo, 9.2 Auditoría Interna) corresponde a la fase Check del PDCA. Mide cumplimiento, efectividad y conformidad respecto a lo planificado.",
+      "justification_wrong": "Plan define métricas (opción A), Do ejecuta operaciones (C), Act realiza acciones correctivas/preventivas (D). La verificación es función específica de Check independientemente de cuándo ocurra la corrección."
+    },
+    {
+      "num": 38,
+      "text": "En la construcción del caso de negocio (business case) para un SGSI ISO 27001:2022, ¿cuál es el elemento de análisis crítico que articula los beneficios con la triada CIA?",
+      "tag": "Caso de Negocio y CIA",
+      "options": [
+        "C. La evaluación de riesgos cuantitativos de activos críticos sin considerar contexto externo",
+        "D. El cumplimiento normativo como único justificante de inversión en seguridad",
+        "B. La alineación entre protección de Confidencialidad, Integridad y Disponibilidad con objetivos estratégicos organizacionales",
+        "A. El retorno de inversión (ROI) expresado únicamente en reducción de incidentes de confidencialidad"
+      ],
+      "correct": 2,
+      "justification_correct": "El caso de negocio debe demostrar cómo la CIA protege activos estratégicos, reduce riesgos y genera valor empresarial. ISO 27001:2022 requiere análisis de contexto (cláusula 4) y objetivos de seguridad (cláusula 5.2) vinculados a necesidades organizacionales.",
+      "justification_wrong": "Opción A limita CIA a un solo pilar. C ignora análisis contextual requerido. D es insuficiente pues el cumplimiento es consecuencia, no causa, del valor del SGSI. El business case requiere justificación multidimensional."
+    },
+    {
+      "num": 39,
+      "text": "Según ISO 27001:2022 y su familia ISO 27000, ¿cuál es la relación normativa entre ISO 27001 (SGSI) e ISO 27002 (Código de Prácticas) en el proceso de selección de controles?",
+      "tag": "Familia ISO 27000",
+      "options": [
+        "B. ISO 27001 define el marco; ISO 27002 proporciona controles potenciales que se seleccionan según riesgos identificados (cláusula 8.1)",
+        "D. Ambas normas son independientes y pueden implementarse sin relación entre ellas",
+        "A. ISO 27002 es obligatoria para implementar ISO 27001 y reemplaza el análisis de riesgos",
+        "C. ISO 27002 es informativa y su aplicación depende exclusivamente de auditorías externas"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 cláusula 8.1 requiere seleccionar controles de fuentes diversas (incluyendo ISO 27002) basado en análisis de riesgos. ISO 27002:2022 ofrece 93 controles organizativos y técnicos como catálogo de referencia, no como requisito obligatorio.",
+      "justification_wrong": "ISO 27002 no es prescriptiva sino consultiva (opción A, C). La selección es riesgo-dependiente (cláusula 6.1), no obligatoria. Las normas están interconectadas (opción D es falsa). ISO 27001 es normativa; ISO 27002 es descriptiva."
+    },
+    {
+      "num": 40,
+      "text": "En la implementación de ISO 27001:2022, ¿cómo se integra el concepto de 'información' como activo dentro del análisis de riesgos (cláusula 6.1) considerando el contexto de la triada CIA?",
+      "tag": "Análisis de Riesgos y Activos CIA",
+      "options": [
+        "C. Se asigna valor monetario fijo a toda información independientemente de su contexto de uso",
+        "B. Se evalúan conjuntamente las amenazas, vulnerabilidades e impactos sobre confidencialidad, integridad y disponibilidad de la información según su criticidad organizacional",
+        "D. El análisis de riesgos excluye información digital para enfocarse solo en documentación física",
+        "A. La información se valora únicamente por su clasificación de confidencialidad sin evaluar integridad ni disponibilidad"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1.1 requiere proceso de análisis de riesgos sistemático. La información es activo central; su valoración integra CIA según impacto en disponibilidad operativa, integridad datos y confidencialidad. Cláusula A.5.9 especifica clasificación multidimensional.",
+      "justification_wrong": "Opción A reduce CIA a un pilar. C ignora contextualización dinámica de riesgos. D es anacrónico; ISO 27001 cubre todo tipo información. El análisis debe ser holístico, no fragmentado ni estático."
+    },
+    {
+      "num": 41,
+      "text": "Según ISO/IEC 27001:2022, ¿cuál es el propósito principal del contexto de la organización en relación con el Sistema de Gestión de Seguridad de la Información (SGSI)?",
+      "tag": "Contexto y Alcance del SGSI",
+      "options": [
+        "D. Identificar solamente las amenazas externas del ciberespacio",
+        "A. Determinar cuestiones externas e internas relevantes que afecten la capacidad de la organización de lograr los objetivos del SGSI",
+        "C. Definir únicamente los roles y responsabilidades del personal de TI",
+        "B. Establecer exclusivamente los controles técnicos de seguridad requeridos"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022, cláusula 4.1 requiere que la organización determine cuestiones externas e internas que sean pertinentes para el SGSI, considerando tanto el contexto como las partes interesadas relevantes.",
+      "justification_wrong": "Las opciones B, C y D son demasiado restrictivas. Aunque incluyen elementos del SGSI, no capturan el propósito holístico del análisis contextual exigido por la norma."
+    },
+    {
+      "num": 42,
+      "text": "En el contexto de ISO/IEC 27001:2022, ¿cuál es la relación correcta entre el análisis de riesgos y la selección de controles del Anexo A?",
+      "tag": "Evaluación y Tratamiento de Riesgos",
+      "options": [
+        "B. Los controles del Anexo A son aplicables automáticamente a todas las organizaciones, independientemente del análisis de riesgos",
+        "D. ISO/IEC 27001:2022 no requiere análisis de riesgos cuando se implementan todos los controles del Anexo A",
+        "C. El análisis de riesgos determina qué controles del Anexo A son necesarios, complementados por controles adicionales si es necesario",
+        "A. La selección de controles del Anexo A debe basarse exclusivamente en los resultados del análisis de riesgos de la organización"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022, cláusula 6.2 y Anexo A establecen que los controles deben seleccionarse basándose en la evaluación de riesgos, siendo los del Anexo A una referencia que puede complementarse con controles adicionales.",
+      "justification_wrong": "A es incompleta (no menciona complementación); B contradice la cláusula 6.1.3; D viola el principio fundamental de gestión de riesgos de la norma."
+    },
+    {
+      "num": 43,
+      "text": "¿Cuál de los siguientes elementos NO es un requisito directo del High Level Structure (HLS) en ISO/IEC 27001:2022?",
+      "tag": "Estructura de Alto Nivel (HLS)",
+      "options": [
+        "A. Contexto de la organización y determinación de partes interesadas",
+        "D. Planificación de acciones para abordar riesgos y oportunidades",
+        "C. Especificación detallada de algoritmos criptográficos para cada organización",
+        "B. Liderazgo y compromiso de la dirección en todos los niveles"
+      ],
+      "correct": 2,
+      "justification_correct": "La especificación de algoritmos criptográficos es una decisión técnica derivada del tratamiento de riesgos, no un requisito estructural del HLS establecido en ISO/IEC 27001:2022.",
+      "justification_wrong": "A, B y D son requisitos explícitos del HLS en cláusulas 4, 5 y 6 respectivamente de ISO/IEC 27001:2022."
+    },
+    {
+      "num": 44,
+      "text": "En el ciclo PDCA aplicado a ISO/IEC 27001:2022, ¿cuál es el propósito principal de la fase 'Verificar' en relación con la monitorización y medición?",
+      "tag": "Ciclo PDCA y Mejora Continua",
+      "options": [
+        "D. Responsabilizar únicamente al departamento de seguridad de todos los resultados",
+        "C. Eliminar controles que muestren bajo desempeño sin investigación de causas raíz",
+        "B. Implementar inmediatamente cambios sin análisis previo de resultados",
+        "A. Recolectar datos de desempeño del SGSI y evaluarlos contra criterios de medición establecidos"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 27001:2022, cláusula 8 requiere monitorización, medición, análisis y evaluación del desempeño del SGSI contra criterios establecidos, fundamental en la fase de verificación del PDCA.",
+      "justification_wrong": "B viola principios de gestión del cambio; C ignora el análisis de causas raíz; D contradice el enfoque sistémico de responsabilidad compartida del SGSI."
+    },
+    {
+      "num": 45,
+      "text": "Respecto al triángulo CIA (Confidencialidad, Integridad, Disponibilidad), ¿cuál es su aplicación correcta en ISO/IEC 27001:2022 como marco conceptual?",
+      "tag": "Conceptos Fundamentales CIA",
+      "options": [
+        "A. CIA es un modelo obligatorio que todas las organizaciones deben implementar de forma idéntica",
+        "D. CIA solo es relevante para organizaciones del sector financiero según ISO/IEC 27001:2022",
+        "C. ISO/IEC 27001:2022 reemplazó el modelo CIA por un nuevo framework propietario de PECB",
+        "B. CIA proporciona los atributos fundamentales que orientan la identificación, clasificación y protección de activos de información"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 27001:2022 utiliza CIA como fundamento conceptual para definir objetivos de seguridad de la información en la evaluación de riesgos y selección de controles, adaptable al contexto organizacional.",
+      "justification_wrong": "A es prescriptiva (contra flexibilidad de la norma); C es falsa (CIA permanece en la familia ISO/IEC 27000); D es restrictivo (CIA aplica universalmente)."
+    },
+    {
+      "num": 46,
+      "text": "En el contexto de ISO 27001:2022, ¿cuál es la relación fundamental entre el enfoque High Level Structure (HLS) y la integración del Sistema de Gestión de Seguridad de la Información (SGSI) con otros sistemas de gestión?",
+      "tag": "HLS e Integración Sistémica",
+      "options": [
+        "D. HLS reemplaza completamente la necesidad de controles específicos de seguridad de información",
+        "C. HLS elimina la necesidad de auditorías internas separadas para diferentes sistemas",
+        "A. HLS proporciona una estructura común de 10 cláusulas que facilita la alineación con ISO 9001, ISO 14001 y otras normas de sistemas de gestión",
+        "B. HLS es exclusiva de ISO 27001 y no permite integración con otros estándares de gestión"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 adoptó HLS desde Anexo SL, proporcionando estructura común (contexto, liderazgo, planificación, soporte, operación, evaluación, mejora) que facilita integración con ISO 9001, ISO 14001 y otros estándares, permitiendo gestión integrada eficiente según cláusula 4.4.1.",
+      "justification_wrong": "Alternativas B, C y D contradicen principios fundamentales de HLS: HLS está diseñado para interoperabilidad; no elimina auditorías separadas; y requiere controles específicos de seguridad independientemente de la estructura común adoptada."
+    },
+    {
+      "num": 47,
+      "text": "Respecto a la tríada CIA (Confidencialidad, Integridad, Disponibilidad), ¿cómo interpreta ISO 27001:2022 la confidencialidad en el contexto de información clasificada como 'interna' versus 'restringida'?",
+      "tag": "Triada CIA y Clasificación",
+      "options": [
+        "B. Confidencialidad implica que solo individuos autorizados puedan acceder; la clasificación determina alcance de autorización según cláusula 6.1.2 en contexto de objetivos",
+        "D. Información interna y restringida requieren encriptación de extremo a extremo obligatoria",
+        "C. La confidencialidad es responsabilidad exclusiva del departamento legal, no del SGSI",
+        "A. ISO 27001 no diferencia entre niveles de confidencialidad; todos los datos reciben protección idéntica"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 define confidencialidad (cláusula 3.1) como restricción de acceso a autorizados; la clasificación de información (ISO 27002:2022 cláusula 5.12) establece niveles de protección diferenciados. Contexto organizacional (cláusula 4.1) determina requisitos según clasificación.",
+      "justification_wrong": "A es falso: clasificación diferencia protección. C: seguridad es responsabilidad compartida. D: encriptación es un control, no requisito universal para toda información interna; proporcionalidad riesgo-control aplica según A.7.2."
+    },
+    {
+      "num": 48,
+      "text": "En el ciclo PDCA aplicado a ISO 27001:2022, ¿cuál es la función específica de la fase 'Verificar' (Check) respecto a la evaluación de la efectividad del SGSI?",
+      "tag": "PDCA y Evaluación de Efectividad",
+      "options": [
+        "C. Documentar únicamente incidentes detectados sin análisis de causas raíz",
+        "D. Verificar que la documentación del SGSI sea legible y accesible",
+        "B. Implementar nuevos controles de seguridad sin evaluar resultados previos",
+        "A. Realizar auditorías internas y evaluaciones de conformidad para determinar si objetivos de seguridad se logran, según cláusula 9.2"
+      ],
+      "correct": 3,
+      "justification_correct": "Fase 'Check' del PDCA en ISO 27001:2022 (cláusula 9.2) incluye auditorías internas y evaluación de conformidad para determinar efectividad del SGSI respecto a objetivos (cláusula 6.2). Análisis de desempeño (cláusula 9.1) complementa verificación.",
+      "justification_wrong": "B contradice PDCA: sin verificación previa no hay mejora informada. C: análisis de incidentes requiere investigación de causas (cláusula 8.3.1). D: documentación es soporte, no función de verificación de efectividad."
+    },
+    {
+      "num": 49,
+      "text": "¿Cómo se articula el 'caso de negocio para seguridad de información' con la justificación de inversiones en controles ISO 27001:2022 desde perspectiva de evaluación de riesgos?",
+      "tag": "Caso de Negocio y Evaluación de Riesgos",
+      "options": [
+        "D. El caso de negocio solo considera costo de controles, no beneficios de mitigación de riesgos",
+        "C. Solo organizaciones críticas requieren caso de negocio; pequeñas empresas implementan controles por cumplimiento regulatorio",
+        "A. El caso de negocio cuantifica valor de reducción de riesgo versus costo de controles, alineado con proceso evaluación riesgos (cláusula 6.1.2) y contexto organizacional (4.1)",
+        "B. Los controles se implementan sin justificación económica; la seguridad es costo fijo independiente del riesgo"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 requiere evaluación riesgos (6.1.2) que establece línea base para seleccionar controles (A.5.1). Caso de negocio justifica inversión comparando costo control versus impacto riesgo residual, alineado con criterios riesgo (4.1) y recursos (5.3).",
+      "justification_wrong": "B: controles son decisiones basadas en riesgo, no costos fijos. C: metodología evaluación riesgos aplica a todas organizaciones (6.1.2). D: análisis económico incluye ambos lados: costo-beneficio es esencial para justificación de inversión."
+    },
+    {
+      "num": 50,
+      "text": "Considerando la familia ISO 27000, ¿cuál es la relación jerárquica entre ISO 27001:2022 como norma de gestión y ISO 27002:2022 respecto a la aplicabilidad de controles en el SGSI?",
+      "tag": "Familia ISO 27000 y Selectividad de Controles",
+      "options": [
+        "A. ISO 27001 es prescriptiva y obliga implementación de todos los 93 controles de ISO 27002; esta última es informativa",
+        "C. ISO 27002 reemplaza completamente ISO 27001 en auditorías de certificación actuales",
+        "D. Ambas normas son equivalentes; seleccionar una u otra es indiferente para cumplimiento",
+        "B. ISO 27001 es normativa para SGSI; ISO 27002 proporciona catálogo de controles del cual la organización selecciona según evaluación riesgos (cláusula A.5.1)"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 (cláusula A.5.1) establece selección de controles basada en evaluación riesgos; ISO 27002:2022 ofrece catálogo con orientación implementación. Relación: 27001 es normativa (requisitos SGSI), 27002 es guía práctica para selección y aplicación de controles.",
+      "justification_wrong": "A: ISO 27001 no obliga todos controles; selectividad es principio fundamental. C: 27001 es estándar certificable actual; 27002 es complemento. D: No son equivalentes; 27001 define SGSI, 27002 es referencia técnica de controles disponibles."
+    }
+  ]
+}

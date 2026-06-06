@@ -1,0 +1,710 @@
+{
+  "cert_id": "security_plus",
+  "domain_id": "threats_attacks_vulns",
+  "quiz_num": 1,
+  "domain_name": "Threats, Attacks & Vulnerabilities",
+  "cert_name": "CompTIA Security+",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Una organización detecta tráfico cifrado saliente desde múltiples estaciones de trabajo hacia un servidor C2 externo. El análisis forense revela que las máquinas ejecutan instrucciones remotas sin conocimiento del usuario. ¿Qué tipo de amenaza describe mejor este escenario?",
+      "tag": "Malware Types - Botnet",
+      "options": [
+        "A. Rootkit con capacidades de kernel-mode persistence",
+        "B. Botnet con arquitectura cliente-servidor centralizada",
+        "D. Spyware con exfiltración de credenciales administrativas",
+        "C. Ransomware en fase de reconocimiento pre-cifrado"
+      ],
+      "correct": 1,
+      "justification_correct": "Según CompTIA SY0-701, un botnet constituye una red de sistemas comprometidos controlados remotamente mediante servidores C2 (Command & Control). La comunicación cifrada bidireccional y ejecución de comandos remotos sin intervención del usuario son características distintivas de arquitecturas botnet centralizadas, típicamente usadas para DDoS, spam o criptominería distribuida.",
+      "justification_wrong": "Rootkits priorizan ocultamiento persistente en capas bajas del sistema. Ransomware ejecuta cifrado inmediato post-compromiso. Spyware enfoca en recolección pasiva de datos. Ninguno requiere infraestructura C2 activa para control remoto distribuido simultáneo como los botnets según objetivos 1.2 SY0-701."
+    },
+    {
+      "num": 2,
+      "text": "Un atacante envía correos personalizados al CFO de una empresa financiera, suplantando la identidad del CEO y solicitando transferencias urgentes a cuentas offshore. ¿Qué técnica de ingeniería social se está empleando?",
+      "tag": "Social Engineering - Whaling",
+      "options": [
+        "A. Spear phishing dirigido a departamento financiero",
+        "B. Whaling con pretexting de autoridad ejecutiva",
+        "D. Business Email Compromise sin ingeniería social",
+        "C. Vishing mediante canales de comunicación corporativa"
+      ],
+      "correct": 1,
+      "justification_correct": "CompTIA SY0-701 objetivo 1.1 define whaling como ataques de phishing dirigidos específicamente a ejecutivos de alto nivel (C-level). La combinación de suplantación del CEO (pretexting de autoridad) y objetivo CFO clasifica este ataque como whaling. El pretexting añade contexto fraudulento de urgencia para manipular decisiones financieras críticas.",
+      "justification_wrong": "Spear phishing es dirigido pero no necesariamente a ejecutivos. Vishing requiere comunicación por voz/teléfono. BEC puede incluir ingeniería social como componente esencial. El escenario combina elementos específicos de whaling (ejecutivo objetivo) con pretexting (falsa urgencia/autoridad) según taxonomía CompTIA Domain 1."
+    },
+    {
+      "num": 3,
+      "text": "Durante una prueba de seguridad, se inyecta la cadena ' OR '1'='1' -- en un campo de autenticación web, logrando acceso sin credenciales válidas. ¿Qué vulnerabilidad de aplicación está siendo explotada?",
+      "tag": "Application Attacks - SQL Injection",
+      "options": [
+        "C. LDAP Injection con escalación de privilegios backend",
+        "D. Command Injection en capa de presentación web",
+        "A. Cross-Site Scripting (XSS) reflejado tipo DOM-based",
+        "B. SQL Injection mediante bypass de autenticación booleana"
+      ],
+      "correct": 3,
+      "justification_correct": "Según CompTIA SY0-701 objetivo 1.3, SQL Injection explota validación insuficiente de entradas para manipular consultas SQL. La payload ' OR '1'='1' -- crea una condición booleana siempre verdadera, el doble guion comenta el resto de la query original. Esta técnica clásica bypasea autenticación al forzar resultado true en verificación de credenciales SQL.",
+      "justification_wrong": "XSS inyecta scripts ejecutables en navegadores cliente, no manipula lógica SQL backend. LDAP Injection ataca directorios LDAP con sintaxis diferente. Command Injection ejecuta comandos de sistema operativo. La sintaxis SQL específica (' OR condición --) y contexto de bypass de autenticación confirman SQLi según OWASP Top 10 referenciado en SY0-701."
+    },
+    {
+      "num": 4,
+      "text": "Un analista observa tráfico ARP masivo en el segmento de red indicando que un host malicioso responde broadcasts ARP con su propia MAC address para múltiples IPs legítimas. ¿Qué ataque de red se está ejecutando?",
+      "tag": "Network Attacks - ARP Poisoning",
+      "options": [
+        "A. DNS Cache Poisoning con redirección de resolución",
+        "C. MAC Flooding contra tabla CAM del switch",
+        "B. ARP Poisoning para Man-in-the-Middle local",
+        "D. DHCP Starvation con agotamiento de pool disponible"
+      ],
+      "correct": 2,
+      "justification_correct": "CompTIA SY0-701 objetivo 1.4 define ARP Poisoning como envenenamiento de tablas ARP mediante respuestas ARP falsificadas. El atacante responde broadcasts ARP asociando su MAC con IPs legítimas, redirigiendo tráfico destinado a esas IPs hacia su host. Esto establece posición MITM en capa 2 para interceptar/modificar comunicaciones del segmento local.",
+      "justification_wrong": "DNS Poisoning manipula resoluciones de nombres en capa de aplicación. MAC Flooding satura tabla CAM del switch para provocar modo hub. DHCP Starvation agota direcciones IP disponibles. El escenario describe específicamente respuestas ARP fraudulentas vinculando MAC del atacante a múltiples IPs según características Layer 2 de ARP Spoofing en SY0-701."
+    },
+    {
+      "num": 5,
+      "text": "Una organización necesita identificar vulnerabilidades técnicas en sus sistemas sin explotar activamente las debilidades encontradas. ¿Qué metodología debe implementar según mejores prácticas de seguridad?",
+      "tag": "Vulnerability Management - Scanning vs Pentesting",
+      "options": [
+        "D. Bug Bounty Program con investigadores externos certificados",
+        "B. Vulnerability Scanning automatizado con análisis de patches",
+        "A. Penetration Testing con reglas de engagement limitadas",
+        "C. Red Team Exercise simulando adversarios APT reales"
+      ],
+      "correct": 1,
+      "justification_correct": "CompTIA SY0-701 objetivo 1.8 diferencia vulnerability scanning (identificación automatizada de debilidades sin explotación) de penetration testing (explotación activa validando impacto). Vulnerability scanners (Nessus, Qualys, OpenVAS) detectan vulnerabilidades conocidas, configuraciones inseguras y parches faltantes mediante firmas y análisis no invasivos, cumpliendo requisito de no explotación activa según metodología NIST 800-115.",
+      "justification_wrong": "Penetration testing explota activamente vulnerabilidades para validar impacto real. Red Team simula ataques adversariales completos con explotación. Bug Bounty programs incentivan descubrimiento que puede incluir explotación. Solo vulnerability scanning proporciona identificación sistemática sin explotación activa de debilidades según taxonomía CompTIA y estándares NIST/OWASP en SY0-701 Domain 1."
+    },
+    {
+      "num": 6,
+      "text": "Un atacante compromete un sistema y instala software que intercepta llamadas del sistema operativo para ocultar procesos maliciosos, archivos y conexiones de red. ¿Qué tipo de malware describe mejor este escenario?",
+      "tag": "malware types",
+      "options": [
+        "A. Rootkit",
+        "C. Spyware",
+        "B. Trojan",
+        "D. Ransomware"
+      ],
+      "correct": 0,
+      "justification_correct": "Un rootkit opera a nivel privilegiado modificando el kernel o APIs del sistema para ocultar su presencia y la de otros malware. Según CompTIA Security+ SY0-701, los rootkits interceptan llamadas del sistema para permanecer indetectables ante herramientas de seguridad convencionales, manipulando la visibilidad de procesos, archivos y conexiones de red.",
+      "justification_wrong": "Los trojans disfrazan su función maliciosa como software legítimo. El spyware recopila información sin ocultarse a nivel del sistema operativo. El ransomware cifra datos para extorsión. Ninguno manipula las llamadas del sistema operativo para ocultar procesos como característica principal, que es la funcionalidad distintiva de los rootkits según SY0-701."
+    },
+    {
+      "num": 7,
+      "text": "Durante un ataque de phishing dirigido, un atacante envía correos electrónicos personalizados a ejecutivos de alto nivel de una organización, suplantando la identidad del CEO para solicitar transferencias bancarias urgentes. ¿Cómo se clasifica este ataque?",
+      "tag": "social engineering",
+      "options": [
+        "A. Spear phishing",
+        "D. Vishing",
+        "B. Whaling",
+        "C. Pretexting"
+      ],
+      "correct": 2,
+      "justification_correct": "Whaling es un ataque de phishing dirigido específicamente a ejecutivos de alto nivel (C-level) o personal con autoridad significativa. Según CompTIA Security+ SY0-701, se caracteriza por mensajes altamente personalizados que explotan la posición y autoridad de las víctimas para lograr transferencias financieras, acceso a datos sensibles o comprometer decisiones corporativas críticas.",
+      "justification_wrong": "Spear phishing ataca objetivos específicos pero no necesariamente ejecutivos de alto nivel. Pretexting crea escenarios fabricados pero no se limita a ejecutivos. Vishing utiliza llamadas telefónicas, no correos electrónicos. Whaling es el término preciso para ataques dirigidos a altos ejecutivos mediante ingeniería social sofisticada según SY0-701."
+    },
+    {
+      "num": 8,
+      "text": "Una aplicación web no valida adecuadamente la entrada del usuario en un formulario de búsqueda, permitiendo que un atacante inyecte código JavaScript que se ejecuta en los navegadores de otros usuarios. ¿Qué vulnerabilidad describe este escenario?",
+      "tag": "application attacks",
+      "options": [
+        "B. Cross-Site Scripting (XSS)",
+        "D. Buffer Overflow",
+        "C. Cross-Site Request Forgery (CSRF)",
+        "A. SQL Injection"
+      ],
+      "correct": 0,
+      "justification_correct": "Cross-Site Scripting (XSS) ocurre cuando una aplicación incluye datos no validados en páginas web sin codificación apropiada, permitiendo la ejecución de scripts maliciosos en navegadores de víctimas. Según CompTIA Security+ SY0-701, XSS explota la confianza del usuario en un sitio específico, inyectando código JavaScript que roba sesiones, cookies o redirige usuarios.",
+      "justification_wrong": "SQL Injection ataca bases de datos mediante consultas maliciosas, no ejecuta scripts en navegadores. CSRF fuerza acciones autenticadas sin conocimiento del usuario pero no inyecta código ejecutable. Buffer Overflow sobrescribe memoria del sistema. Solo XSS permite inyectar y ejecutar JavaScript en navegadores de víctimas mediante validación inadecuada según SY0-701."
+    },
+    {
+      "num": 9,
+      "text": "Un atacante intercepta solicitudes de resolución DNS en una red corporativa y responde con direcciones IP falsas que redirigen a los usuarios hacia sitios maliciosos. ¿Qué tipo de ataque de red se está ejecutando?",
+      "tag": "network attacks",
+      "options": [
+        "C. Man-in-the-Middle (MITM)",
+        "D. Replay Attack",
+        "B. DNS Poisoning",
+        "A. ARP Poisoning"
+      ],
+      "correct": 2,
+      "justification_correct": "DNS Poisoning (o DNS Spoofing) compromete el proceso de resolución de nombres proporcionando respuestas DNS falsificadas que redirigen tráfico hacia servidores maliciosos. Según CompTIA Security+ SY0-701, este ataque manipula cachés DNS o intercepta consultas para asociar nombres legítimos con direcciones IP controladas por atacantes, facilitando phishing o distribución de malware.",
+      "justification_wrong": "ARP Poisoning manipula tablas ARP en redes locales, no resolución DNS. MITM es una categoría amplia que puede incluir DNS poisoning pero no es específica. Replay Attack retransmite datos capturados previamente. DNS Poisoning es el término preciso para manipulación de respuestas de resolución de nombres según SY0-701 cuando se alteran registros DNS."
+    },
+    {
+      "num": 10,
+      "text": "Una organización necesita identificar vulnerabilidades conocidas en sus sistemas mediante escaneo automatizado sin intentar explotarlas. ¿Qué actividad de seguridad debe implementar?",
+      "tag": "vulnerability scanning vs penetration testing",
+      "options": [
+        "A. Penetration Testing",
+        "C. Vulnerability Scanning",
+        "D. Red Team Exercise",
+        "B. Threat Hunting"
+      ],
+      "correct": 1,
+      "justification_correct": "Vulnerability Scanning utiliza herramientas automatizadas para identificar debilidades conocidas, configuraciones incorrectas y parches faltantes sin explotar activamente las vulnerabilidades. Según CompTIA Security+ SY0-701, el escaneo de vulnerabilidades proporciona evaluación regular y no intrusiva mediante comparación con bases de datos de CVE y configuraciones de seguridad estándar (CIS Benchmarks).",
+      "justification_wrong": "Penetration Testing explota activamente vulnerabilidades para demostrar impacto real. Threat Hunting busca proactivamente amenazas existentes en el entorno. Red Team Exercise simula ataques adversarios completos. Solo Vulnerability Scanning identifica vulnerabilidades conocidas mediante escaneo automatizado sin explotación, proporcionando descubrimiento pasivo según SY0-701."
+    },
+    {
+      "num": 11,
+      "text": "Un atacante ejecuta un script malicioso en el navegador de usuarios legítimos para robar cookies de sesión sin validación del servidor. ¿Qué tipo de vulnerabilidad está siendo explotada?",
+      "tag": "Application Attacks",
+      "options": [
+        "C. SQL Injection de segundo orden",
+        "A. Cross-Site Scripting (XSS) reflejado",
+        "D. Server-Side Request Forgery (SSRF)",
+        "B. Cross-Site Request Forgery (CSRF)"
+      ],
+      "correct": 1,
+      "justification_correct": "XSS permite inyectar scripts maliciosos que se ejecutan en el contexto del navegador de la víctima, robando cookies, tokens de sesión o credenciales. OWASP Top 10 clasifica XSS como A03:2021 (Injection). CompTIA Security+ SY0-701 especifica XSS como ataque de aplicación donde el código malicioso se ejecuta client-side sin sanitización adecuada de entrada.",
+      "justification_wrong": "CSRF explota sesiones autenticadas para ejecutar acciones no autorizadas pero requiere interacción del usuario autenticado, no inyección de scripts. SQL Injection ataca bases de datos mediante consultas maliciosas. SSRF fuerza al servidor a realizar peticiones no autorizadas. Ninguna de estas opciones involucra ejecución de scripts en el navegador del cliente."
+    },
+    {
+      "num": 12,
+      "text": "Durante un análisis forense, se detecta malware que intercepta llamadas del sistema operativo y se oculta de herramientas antivirus convencionales ejecutándose en modo kernel. ¿Qué clasificación de malware describe mejor esta amenaza?",
+      "tag": "Malware Types",
+      "options": [
+        "B. Rootkit de modo kernel",
+        "A. Spyware avanzado con técnicas de ofuscación",
+        "D. Trojan con capacidades de keylogging",
+        "C. Bootkit con persistencia UEFI"
+      ],
+      "correct": 0,
+      "justification_correct": "Los rootkits de modo kernel operan con privilegios máximos del sistema, interceptando llamadas API y syscalls para ocultar procesos, archivos y conexiones de red. CompTIA Security+ SY0-701 define rootkits como malware diseñado específicamente para evasión y ocultamiento mediante manipulación de funciones del sistema operativo a nivel kernel, diferenciándolos de otros tipos de malware.",
+      "justification_wrong": "Spyware recolecta información pero no necesariamente opera a nivel kernel con técnicas de ocultamiento avanzadas. Bootkits infectan el sector de arranque pero el escenario describe operación en kernel en ejecución. Los trojans disfrazan funcionalidad maliciosa pero no definen específicamente las capacidades de ocultamiento a nivel kernel descritas en el escenario."
+    },
+    {
+      "num": 13,
+      "text": "Un atacante envía paquetes ARP gratuitos falsos a switches en una red LAN para asociar su MAC address con la IP del gateway predeterminado. ¿Qué ataque de red está ejecutando y cuál es su objetivo principal?",
+      "tag": "Network Attacks",
+      "options": [
+        "A. DNS Spoofing para redireccionar tráfico web",
+        "C. MAC Flooding para bypass de segmentación",
+        "B. ARP Poisoning para Man-in-the-Middle",
+        "D. DHCP Starvation para denegación de servicio"
+      ],
+      "correct": 2,
+      "justification_correct": "ARP Poisoning manipula tablas ARP mediante respuestas falsas para interceptar tráfico entre hosts, posicionando al atacante como intermediario (MITM). CompTIA Security+ SY0-701 especifica ARP Poisoning como técnica de Layer 2 que explota la falta de autenticación en el protocolo ARP (RFC 826), permitiendo redirección de tráfico para interceptación o modificación.",
+      "justification_wrong": "DNS Spoofing manipula resoluciones de nombres de dominio, no tablas ARP. MAC Flooding satura las tablas CAM de switches para forzar modo hub, diferente a envenenar cachés ARP específicas. DHCP Starvation agota pools de direcciones IP disponibles mediante solicitudes masivas, no involucra manipulación de asociaciones IP-MAC mediante ARP gratuitos."
+    },
+    {
+      "num": 14,
+      "text": "Una organización implementa un proceso automatizado que identifica CVEs aplicables a su infraestructura sin intentar explotarlos. ¿Qué actividad de seguridad describe mejor esta práctica según CompTIA Security+?",
+      "tag": "Vulnerability Assessment",
+      "options": [
+        "D. Red Team Assessment con reglas de enfrentamiento",
+        "C. Vulnerability Scanning automatizado",
+        "B. Threat Hunting basado en indicadores de compromiso",
+        "A. Penetration Testing pasivo sin credenciales"
+      ],
+      "correct": 1,
+      "justification_correct": "Vulnerability Scanning identifica debilidades conocidas (CVEs) mediante análisis automatizado sin explotación activa. CompTIA Security+ SY0-701 diferencia explícitamente vulnerability scanning (identificación no invasiva) de penetration testing (explotación controlada). Los scanners correlacionan versiones de software contra bases de datos de vulnerabilidades como NVD (NIST) sin comprometer sistemas.",
+      "justification_wrong": "Penetration Testing explota vulnerabilidades para demostrar impacto real, superando la mera identificación. Threat Hunting busca proactivamente amenazas ocultas mediante análisis de comportamiento, no enumeración de CVEs. Red Team simula adversarios reales con técnicas de explotación completas, no escaneo automatizado. Todas estas actividades son más invasivas que vulnerability scanning."
+    },
+    {
+      "num": 15,
+      "text": "Un atacante compromete servidores web legítimos mediante inyección SQL, luego modifica páginas para distribuir malware a visitantes. Este ataque en cadena combina técnicas de explotación. ¿Qué vector describe la fase de distribución de malware?",
+      "tag": "Application Attacks",
+      "options": [
+        "D. Buffer overflow con shellcode injection",
+        "C. Command injection con escalación de privilegios",
+        "A. Drive-by download mediante watering hole",
+        "B. Phishing dirigido con ingeniería social"
+      ],
+      "correct": 2,
+      "justification_correct": "Watering hole ataca sitios frecuentados por víctimas objetivo, comprometiéndolos para infectar visitantes legítimos mediante drive-by downloads. CompTIA Security+ SY0-701 clasifica este vector como ataque de cadena de suministro donde sitios legítimos comprometidos distribuyen malware automáticamente. La fase inicial (SQL injection) permite el compromiso del watering hole para distribución masiva.",
+      "justification_wrong": "Phishing requiere interacción directa del usuario con mensajes fraudulentos, no distribución automática desde sitios comprometidos. Command injection explota validación deficiente de comandos del sistema pero no describe distribución de malware a visitantes. Buffer overflow explota gestión incorrecta de memoria para ejecutar código, sin relación con compromiso de sitios web para distribución maliciosa."
+    },
+    {
+      "num": 16,
+      "text": "Durante un análisis forense post-incidente, se identifica que un malware modificó tablas SSDT (System Service Descriptor Table) y ocultó procesos maliciosos del Task Manager mediante técnicas de hooking en kernel mode. ¿Qué tipo de malware corresponde a este comportamiento?",
+      "tag": "Malware Types - Rootkit",
+      "options": [
+        "B. Trojan con privilegios administrativos estándar",
+        "C. Spyware con técnicas de persistencia mediante registro",
+        "A. Rootkit modo kernel con capacidades de ocultación avanzada",
+        "D. Ransomware con ofuscación de archivos críticos del sistema"
+      ],
+      "correct": 2,
+      "justification_correct": "La modificación de SSDT y el hooking a nivel kernel son características distintivas de rootkits modo kernel. Estas técnicas permiten interceptar llamadas al sistema operativo y ocultar procesos, archivos y conexiones de red. CompTIA Security+ SY0-701 clasifica rootkits según su nivel de acceso (user-mode vs kernel-mode), siendo los últimos más peligrosos por su capacidad de manipular estructuras fundamentales del sistema operativo.",
+      "justification_wrong": "Trojans, spyware y ransomware operan típicamente en user-mode o con privilegios administrativos sin modificar estructuras críticas del kernel. La manipulación de SSDT requiere acceso kernel-mode exclusivo de rootkits avanzados. Técnicas de persistencia mediante registro o cifrado de archivos no involucran hooking de system calls a nivel kernel ni alteración de tablas descriptor de servicios del sistema."
+    },
+    {
+      "num": 17,
+      "text": "Un atacante envía correos personalizados al CFO utilizando información extraída del LinkedIn corporativo, suplantando al CEO y solicitando transferencia urgente de fondos con lenguaje específico del sector financiero de la organización. ¿Qué técnica de ingeniería social describe este escenario?",
+      "tag": "Social Engineering - Whaling",
+      "options": [
+        "C. Phishing masivo con suplantación de identidad ejecutiva",
+        "A. Spear phishing dirigido a ejecutivos de nivel medio",
+        "D. Vishing mediante canales de comunicación corporativa",
+        "B. Whaling con pretexting basado en OSINT empresarial"
+      ],
+      "correct": 3,
+      "justification_correct": "Whaling ataca específicamente ejecutivos C-level (CEO, CFO, COO). La combinación de inteligencia OSINT (Open Source Intelligence) de LinkedIn, personalización extrema, pretexting (crear escenario urgente creíble) y suplantación del CEO constituye whaling avanzado. CompTIA Security+ SY0-701 establece que whaling requiere investigación previa, personalización sofisticada y objetivos de alto valor organizacional, diferenciándolo del spear phishing estándar.",
+      "justification_wrong": "Spear phishing es dirigido pero no necesariamente a C-levels. Phishing masivo carece de personalización. Vishing requiere interacción telefónica/voz. El escenario combina reconocimiento OSINT, targeting de CFO (ejecutivo C-level), pretexting elaborado con contexto financiero específico y suplantación ejecutiva, elementos característicos que definen whaling según taxonomías CompTIA Security+ como ataque especializado contra alta dirección organizacional."
+    },
+    {
+      "num": 18,
+      "text": "Un pentester descubre que una aplicación web concatena directamente input del usuario en queries SQL sin sanitización: 'SELECT * FROM users WHERE username='' + input + '''. Inyectando ' OR '1'='1' -- obtiene acceso completo a la base de datos. ¿Qué control OWASP mitigaría efectivamente esta vulnerabilidad?",
+      "tag": "Application Attacks - SQL Injection",
+      "options": [
+        "B. Uso obligatorio de prepared statements con parameterización",
+        "D. Habilitación de HttpOnly y Secure flags en cookies de sesión",
+        "A. Implementación de Content Security Policy (CSP) restrictiva",
+        "C. Configuración de CORS (Cross-Origin Resource Sharing) estricta"
+      ],
+      "correct": 0,
+      "justification_correct": "Prepared statements con parameterización separan lógica SQL de datos usuario, evitando interpretación de input como código ejecutable. OWASP Top 10 y CompTIA Security+ SY0-701 identifican parameterized queries como control primario contra SQLi. La base de datos trata parámetros exclusivamente como datos, no comandos SQL, neutralizando inyecciones independientemente del input malicioso proporcionado por atacantes.",
+      "justification_wrong": "CSP mitiga XSS, no SQLi. CORS controla acceso cross-origin a recursos, no previene inyección SQL. HttpOnly/Secure protegen cookies contra XSS/intercepción pero no sanitizan queries SQL. Prepared statements constituyen el control fundamental OWASP contra SQLi al separar sintaxis SQL de datos usuario mediante parameterización, mientras controles mencionados abordan vectores ataque diferentes (XSS, session hijacking, acceso cross-domain)."
+    },
+    {
+      "num": 19,
+      "text": "Durante un ataque, un adversario intercepta el hash NTLM de autenticación entre cliente y servidor, lo captura sin descifrarlo, y lo reenvía al servidor objetivo para autenticarse como usuario legítimo. ¿Qué técnica de ataque de red describe este escenario y qué contramedida PKI lo previene?",
+      "tag": "Network Attacks - Replay Attack",
+      "options": [
+        "B. Replay attack, mitigado mediante nonces/timestamps en protocolos challenge-response",
+        "C. Pass-the-hash attack, mitigado exclusivamente mediante segmentación de red",
+        "D. ARP poisoning, mitigado mediante implementación de DNSSEC",
+        "A. MITM attack, mitigado mediante Perfect Forward Secrecy (PFS)"
+      ],
+      "correct": 0,
+      "justification_correct": "Replay attacks capturan credenciales/hashes válidos y los retransmiten. Contramedida efectiva: nonces (números únicos) o timestamps en protocolos challenge-response (Kerberos, NTLMv2) que invalidan credenciales previamente usadas. CompTIA Security+ SY0-701 establece que elementos temporales/únicos en autenticación previenen reutilización de credenciales capturadas, fundamental en protocolos seguros modernos contra ataques de repetición.",
+      "justification_wrong": "MITM implica interceptación activa con alteración; PFS protege claves sesión pero no previene replay. Pass-the-hash explota hashes para autenticación lateral pero replay específicamente retransmite datos capturados. Segmentación limita movimiento lateral, no previene replay. ARP poisoning y DNSSEC son irrelevantes. Nonces/timestamps en challenge-response invalidan credenciales reutilizadas, control específico contra replay attacks según marcos CompTIA."
+    },
+    {
+      "num": 20,
+      "text": "Una organización debe seleccionar entre vulnerability scanning automatizado mensual o penetration testing trimestral para cumplimiento PCI-DSS. El CISO argumenta costos limitados. ¿Qué diferencia técnica fundamental justifica mantener ambos controles complementarios según marcos de seguridad?",
+      "tag": "Vulnerability Management - Scanning vs Pentesting",
+      "options": [
+        "D. Vulnerability scanning requiere credenciales administrativas; pentesting opera siempre en modalidad black-box sin acceso previo",
+        "C. Pentesting solo valida controles perimetrales externos; vulnerability scanning cubre exclusivamente amenazas internas de red",
+        "A. Vulnerability scanning identifica vulnerabilidades conocidas (CVE); pentesting explota cadenas de vulnerabilidades mediante técnicas adversarias reales validando explotabilidad",
+        "B. Ambos controles son redundantes; vulnerability scanning automatizado reemplaza completamente pentesting al cubrir más sistemas simultáneamente"
+      ],
+      "correct": 2,
+      "justification_correct": "Vulnerability scanners detectan vulnerabilidades conocidas (CVE) mediante firmas/heurísticas pero no validan explotabilidad real ni cadenas ataque complejas. Pentesting simula adversarios reales explotando vulnerabilidades combinadas, pivoting, escalamiento privilegios y validando impacto negocio. CompTIA Security+ SY0-701 y NIST SP 800-115 establecen ambos como complementarios: scanning automatizado continuo + pentesting periódico validando riesgo real explotable.",
+      "justification_wrong": "No son redundantes; scanners identifican CVEs pero no validan explotabilidad contextual ni técnicas adversarias avanzadas. Pentesting abarca perímetro, interno, aplicaciones, no solo externos. Ambos pueden operar credencialed/uncredentialed según objetivos. La complementariedad radica en: scanning detecta vulnerabilidades conocidas automáticamente; pentesting valida mediante explotación manual la exposición real, cadenas ataque y impacto negocio según marcos NIST/CompTIA."
+    },
+    {
+      "num": 21,
+      "text": "Durante un análisis forense, se detecta un rootkit Tipo II que intercepta syscalls del kernel modificando la System Service Descriptor Table (SSDT). ¿Qué técnica de detección sería MÁS efectiva para identificar esta amenaza persistente avanzada?",
+      "tag": "Malware - Rootkit",
+      "options": [
+        "D. Implementación de sandboxing con virtualización basada en hipervisor Tipo 2",
+        "B. Análisis de integridad mediante verificación criptográfica de memory dumps del kernel contra valores baseline conocidos",
+        "A. Escaneo basado en firmas con definiciones actualizadas diariamente",
+        "C. Monitoreo de comportamiento heurístico a nivel de espacio de usuario"
+      ],
+      "correct": 1,
+      "justification_correct": "Los rootkits kernel-mode que modifican SSDT requieren análisis de integridad del kernel mediante memory forensics y verificación criptográfica contra baselines confiables. NIST SP 800-86 recomienda técnicas de memoria volátil para detectar modificaciones en estructuras críticas del kernel que evaden detecciones tradicionales.",
+      "justification_wrong": "Firmas tradicionales son inefectivas contra rootkits avanzados con técnicas anti-forenses. Heurística de usuario no alcanza nivel kernel. Sandboxing Tipo 2 opera sobre SO comprometido. Se requiere análisis directo de memoria kernel según metodologías NIST SP 800-86 para amenazas persistentes avanzadas."
+    },
+    {
+      "num": 22,
+      "text": "Un atacante ejecuta un ataque de Business Email Compromise (BEC) combinando OSINT de LinkedIn, spoofing de dominio homográfico con caracteres Unicode (xn--) y técnicas de pretexting. ¿Qué control preventivo del NIST Cybersecurity Framework sería PRIORITARIO?",
+      "tag": "Social Engineering - Spear Phishing",
+      "options": [
+        "D. Implementación de autenticación multifactor basada en SMS",
+        "A. Implementar DMARC con política reject y alineación estricta SPF/DKIM",
+        "B. Capacitación anual obligatoria de seguridad con evaluaciones teóricas",
+        "C. Filtrado de contenido web mediante proxy con inspección SSL/TLS"
+      ],
+      "correct": 1,
+      "justification_correct": "DMARC con política reject previene spoofing de dominio validando alineación SPF/DKIM, mitigando BEC efectivamente. NIST CSF PR.AT-1 y PR.DS-5 priorizan controles técnicos sobre dominios organizacionales. RFC 7489 establece DMARC como defensa primaria contra email spoofing en ataques dirigidos.",
+      "justification_wrong": "Capacitación es importante pero insuficiente contra ingeniería social sofisticada. Proxy web no previene email spoofing. MFA-SMS vulnerable a SIM swapping y no mitiga origen fraudulento. DMARC (RFC 7489) con reject es control técnico prioritario según NIST CSF."
+    },
+    {
+      "num": 23,
+      "text": "Durante pruebas de penetración, se identifica una vulnerabilidad de Second-Order SQL Injection donde datos maliciosos almacenados se ejecutan en contexto diferente. ¿Qué medida de remediación implementaría según OWASP ASVS nivel 3?",
+      "tag": "Application Attacks - SQL Injection",
+      "options": [
+        "B. Implementación de Web Application Firewall con reglas ModSecurity CRS",
+        "A. Sanitización de entrada mediante blacklist de caracteres SQL especiales",
+        "D. Codificación de salida mediante htmlspecialchars() en todas las consultas",
+        "C. Parametrización completa con prepared statements y validación contextual en todos los puntos de salida de datos"
+      ],
+      "correct": 3,
+      "justification_correct": "OWASP ASVS v4.0 nivel 3 (V5.3.4) requiere prepared statements parametrizados y validación contextual en todos los puntos de uso, no solo entrada. Second-order SQLi se ejecuta en contexto posterior, necesitando controles en almacenamiento y recuperación. Defensa en profundidad con parametrización completa.",
+      "justification_wrong": "Blacklists son bypasseables y no recomendadas por OWASP. WAF es control compensatorio, no remediación. htmlspecialchars() previene XSS, no SQLi. OWASP ASVS V5.3.4 nivel 3 exige prepared statements en todos los contextos para second-order injection."
+    },
+    {
+      "num": 24,
+      "text": "Un SOC detecta tráfico ARP gratuito anómalo cada 30 segundos con MAC address diferente reclamando la IP del gateway. Simultáneamente, el IDS registra certificados SSL inesperados. ¿Qué ataque complejo está ocurriendo?",
+      "tag": "Network Attacks - ARP Poisoning + MITM",
+      "options": [
+        "D. VLAN hopping mediante double-tagging con ARP cache poisoning secundario",
+        "A. ARP spoofing combinado con SSL stripping mediante herramienta sslstrip",
+        "C. Ataque de denegación de servicio mediante ARP flooding con MAC randomization",
+        "B. ARP poisoning con MITM activo ejecutando SSL/TLS interception mediante certificado fraudulento"
+      ],
+      "correct": 3,
+      "justification_correct": "ARP gratuito con MAC cambiante indica ARP poisoning para MITM. Certificados SSL inesperados confirman SSL/TLS interception activa con certificado fraudulento (no stripping). ISO 27001 A.13.1.1 y NIST SP 800-52 describen estos ataques combinados que requieren inspección de certificados y Dynamic ARP Inspection.",
+      "justification_wrong": "SSL stripping degrada a HTTP (sin certificados nuevos). DoS por ARP flooding no explica certificados SSL. VLAN hopping no genera certificados fraudulentos. Evidencia indica MITM activo con interception SSL completa según NIST SP 800-52, no downgrade attacks."
+    },
+    {
+      "num": 25,
+      "text": "Al comparar vulnerability assessment versus penetration testing según NIST SP 800-115, ¿qué afirmación caracteriza CORRECTAMENTE la diferencia metodológica fundamental entre ambos?",
+      "tag": "Vulnerability Scanning vs Penetration Testing",
+      "options": [
+        "B. Ambos utilizan metodologías idénticas pero penetration testing requiere mayor frecuencia de ejecución trimestral",
+        "A. Vulnerability scanning identifica debilidades potenciales mediante herramientas automatizadas; penetration testing explota vulnerabilidades validando impacto real mediante cadenas de ataque",
+        "C. Vulnerability assessment es exclusivamente pasivo sin interacción con sistemas; penetration testing siempre genera interrupción de servicios",
+        "D. Penetration testing utiliza únicamente herramientas comerciales certificadas; vulnerability scanning emplea scripts personalizados"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-115 sección 3 diferencia claramente: vulnerability assessment identifica y clasifica debilidades mediante escaneo automatizado; penetration testing explota activamente vulnerabilidades mediante metodología de ataque simulado validando impacto real con encadenamiento. Objetivos y técnicas son fundamentalmente diferentes en profundidad y metodología.",
+      "justification_wrong": "Metodologías son distintas en profundidad y objetivo, no solo frecuencia. Assessment puede ser activo (escaneo autenticado). Pentest profesional minimiza interrupción mediante técnicas controladas. Ambos pueden usar herramientas comerciales/opensource. NIST SP 800-115 establece diferencias metodológicas claras."
+    },
+    {
+      "num": 26,
+      "text": "Durante un análisis forense post-incidente, se identifica que un RAT (Remote Access Trojan) estableció persistencia mediante modificación de HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run y ocultó procesos manipulando SSDT (System Service Descriptor Table). ¿Qué clasificación de malware complementaria describe MEJOR esta capacidad de ocultamiento?",
+      "tag": "Malware Types - Rootkit",
+      "options": [
+        "B. Bootkit con modificación de MBR/GPT para evasión",
+        "A. Rootkit en modo kernel con técnicas de hooking avanzado",
+        "D. Polymorphic trojan con capacidades de metamorfismo",
+        "C. Fileless malware con ejecución exclusiva en memoria"
+      ],
+      "correct": 1,
+      "justification_correct": "La manipulación de SSDT indica hooking a nivel kernel para interceptar llamadas del sistema y ocultar procesos/archivos, característica definitoria de rootkits modo kernel. Según NIST SP 800-83, rootkits kernel-mode modifican estructuras críticas del SO para evasión persistente, diferenciándose de bootkits (arranque) y malware fileless (sin persistencia en registro).",
+      "justification_wrong": "Bootkits infectan sector de arranque (MBR/GPT), no manipulan SSDT. Fileless malware evita escritura en disco y no modifica registro. Malware polimórfico cambia firma pero no implementa hooking kernel. La manipulación SSDT es exclusiva de rootkits kernel-mode según taxonomía MITRE ATT&CK (T1014)."
+    },
+    {
+      "num": 27,
+      "text": "Un atacante envía correos personalizados a ejecutivos financieros utilizando información de LinkedIn sobre proyectos de M&A (Mergers & Acquisitions), suplantando identidad del CEO mediante dominio homógrafo (compаny.com con 'а' cirílico). ¿Qué vector de ingeniería social combina ESTA técnica?",
+      "tag": "Social Engineering - Advanced Techniques",
+      "options": [
+        "C. Business Email Compromise (BEC) con spoofing SMTP",
+        "D. Vishing con impersonation usando deepfake de voz",
+        "B. Spear phishing con pretexting basado en OSINT",
+        "A. Whaling con typosquatting mediante homógrafos IDN"
+      ],
+      "correct": 3,
+      "justification_correct": "Whaling ataca ejecutivos C-level, typosquatting mediante homógrafos IDN (Internationalized Domain Names) explota caracteres Unicode visualmente idénticos para bypass perceptual. NIST SP 800-45 documenta ataques homográficos IDN. La combinación targeting ejecutivo + dominio homógrafo caracteriza whaling sofisticado según CISA Alert AA21-148A sobre BEC avanzado.",
+      "justification_wrong": "Aunque hay elementos spear phishing/pretexting, el targeting específico a ejecutivos y dominio homógrafo define whaling. BEC típicamente usa compromiso de cuenta real, no homógrafos. Vishing requiere canal telefónico/VoIP. El uso de homógrafos IDN es técnica distintiva documentada en RFC 4690 sobre consideraciones de seguridad IDN."
+    },
+    {
+      "num": 28,
+      "text": "Durante prueba de penetración web, se identifica endpoint vulnerable: https://api.bank.com/transfer?amount=1000&to=ACC123. Al interceptar con Burp Suite, modificar parámetros y reenviar request SIN regenerar token CSRF, la transacción se ejecuta exitosamente. ¿Qué vulnerabilidad OWASP Top 10:2021 representa PRINCIPALMENTE este escenario?",
+      "tag": "Application Attacks - CSRF vs Authentication",
+      "options": [
+        "A. A01:2021 Broken Access Control con IDOR (Insecure Direct Object Reference)",
+        "C. A04:2021 Insecure Design por ausencia de validación CSRF",
+        "D. A03:2021 Injection mediante parameter tampering",
+        "B. A07:2021 Identification and Authentication Failures"
+      ],
+      "correct": 1,
+      "justification_correct": "CSRF (Cross-Site Request Forgery) explota ausencia de validación de origen de requests. OWASP A04:2021 Insecure Design engloba fallas arquitectónicas como omisión de tokens anti-CSRF. NIST SP 800-53 Rev.5 (SI-10) requiere validación de integridad de inputs. La ejecución exitosa sin regenerar token CSRF indica diseño inseguro, no falla de autenticación.",
+      "justification_wrong": "IDOR (A01) requiere acceso no autorizado a objetos; aquí el usuario legítimo ejecuta acción indeseada. A07 implica fallas de autenticación/sesión, pero el usuario está autenticado. A03 Injection requiere interpretación maliciosa de datos. CWE-352 clasifica CSRF específicamente bajo design flaws según OWASP ASVS V4.2."
+    },
+    {
+      "num": 29,
+      "text": "Un Blue Team detecta tráfico NTP (puerto 123/UDP) con factor de amplificación 556x desde 15,000 IPs únicas hacia servidor corporativo. Análisis de packets revela comando 'monlist' explotado. ¿Qué tipo de ataque de red y mitigación ESPECÍFICA aplican MEJOR?",
+      "tag": "Network Attacks - DDoS Amplification",
+      "options": [
+        "D. SYN flood attack; habilitar SYN cookies y aumentar backlog queue",
+        "B. Smurf attack mediante ICMP; implementar filtrado anti-spoofing BCP38/RFC2827",
+        "A. Reflection DDoS; mitigar deshabilitando 'monlist' (CVE-2013-5211) y rate-limiting NTP",
+        "C. DNS amplification; configurar Response Rate Limiting (RRL) en servidores autoritativos"
+      ],
+      "correct": 2,
+      "justification_correct": "Comando NTP 'monlist' (CVE-2013-5211) permite reflection DDoS con amplificación ~556x. CISA Alert TA14-013A especifica deshabilitar 'monlist' y actualizar NTPd. BCP38 (RFC2827) aplica a prevención general de spoofing pero no es específico NTP. Mitigación precisa: 'disable monitor' en ntp.conf según US-CERT recomendaciones DRDoS.",
+      "justification_wrong": "Smurf usa ICMP broadcast (obsoleto). DNS amplification explota resolvers abiertos, no protocolo NTP. SYN flood ataca TCP handshake, no UDP/123. El factor 556x y puerto 123 identifican inequívocamente NTP amplification. NIST SP 800-189 documenta DRDoS específicamente NTP monlist como vector crítico histórico."
+    },
+    {
+      "num": 30,
+      "text": "Un CISO debe decidir entre ejecutar vulnerability scanning mensual con Nessus/OpenVAS versus penetration testing trimestral. Considerando ROI, cobertura continua y compliance PCI-DSS 4.0, ¿qué estrategia representa MEJOR equilibrio según frameworks de gestión de riesgos?",
+      "tag": "Vulnerability Management - Scanning vs PenTest",
+      "options": [
+        "B. Penetration testing exclusivo trimestral con metodología PTES para validación exhaustiva",
+        "D. Red Team engagement semestral con adversary emulation según MITRE ATT&CK",
+        "C. Vulnerability scanning únicamente con gestión por SLA de remediación 30/60/90 días según severidad",
+        "A. Scanning automatizado continuo + penetration testing anual en sistemas críticos (enfoque híbrido PCI-DSS 11.3/11.4)"
+      ],
+      "correct": 3,
+      "justification_correct": "PCI-DSS 4.0 requisitos 11.3.1 (scanning trimestral interno/externo) y 11.4.1 (penetration testing anual) establecen baseline. NIST SP 800-115 recomienda enfoque híbrido: scanning continuo (detección) + pentest periódico (validación explotabilidad). Enfoque híbrido optimiza ROI, cumple compliance y balancea cobertura/profundidad según ISO 27001:2022 A.8.8.",
+      "justification_wrong": "Penetration testing exclusivo es costoso y genera snapshots temporales, no monitoreo continuo. Scanning solo identifica vulnerabilidades pero no valida explotabilidad real. Red Team es avanzado pero excede necesidades compliance básicas. NIST Cybersecurity Framework función DE.CM-8 requiere ambos métodos complementarios para gestión efectiva de vulnerabilidades."
+    },
+    {
+      "num": 31,
+      "text": "Durante un análisis forense, se detecta un malware que modifica el Master Boot Record (MBR) y carga antes que el sistema operativo, evadiendo la detección de antivirus tradicionales. ¿Qué tipo de malware está presente?",
+      "tag": "malware types - rootkit",
+      "options": [
+        "B. Trojan de acceso remoto (RAT)",
+        "A. Rootkit bootkit",
+        "C. Ransomware con capacidades de persistencia",
+        "D. Spyware con privilegios kernel-mode"
+      ],
+      "correct": 1,
+      "justification_correct": "Un bootkit es un tipo especializado de rootkit que infecta el MBR o UEFI/BIOS, ejecutándose antes del sistema operativo. Esta ubicación privilegiada permite evadir mecanismos de seguridad del SO y mantener persistencia absoluta, característica distintiva documentada en CompTIA Security+ SY0-701 Objective 2.4 sobre análisis de malware avanzado.",
+      "justification_wrong": "RAT opera a nivel de aplicación/kernel tras carga del SO. Ransomware cifra archivos pero no necesariamente infecta MBR. Spyware kernel-mode requiere SO cargado. Ninguno opera pre-boot como los bootkits, según taxonomía de malware CompTIA Security+ SY0-701."
+    },
+    {
+      "num": 32,
+      "text": "Un atacante envía correos personalizados al CFO utilizando información obtenida de LinkedIn sobre proyectos de adquisición corporativa, solicitando transferencia urgente. ¿Qué técnica de ingeniería social se está empleando?",
+      "tag": "social engineering - whaling",
+      "options": [
+        "C. Vishing corporativo",
+        "B. Whaling con pretexting",
+        "A. Spear phishing dirigido",
+        "D. Business Email Compromise (BEC) genérico"
+      ],
+      "correct": 1,
+      "justification_correct": "Whaling ataca específicamente ejecutivos de alto nivel (C-level). El pretexting crea un escenario fabricado (urgencia de adquisición) usando inteligencia OSINT. La combinación de targeting ejecutivo más contexto elaborado define whaling con pretexting según CompTIA Security+ SY0-701 Objective 2.2 sobre ataques de ingeniería social sofisticados.",
+      "justification_wrong": "Spear phishing es dirigido pero no necesariamente a ejecutivos C-level. Vishing usa canal telefónico, no email. BEC genérico carece de la personalización OSINT y targeting ejecutivo específico que caracterizan whaling, según taxonomía CompTIA Security+ SY0-701 Domain 2."
+    },
+    {
+      "num": 33,
+      "text": "Una aplicación web vulnerable permite que un atacante inyecte el payload: ' OR '1'='1' -- en el campo de login. ¿Qué control de seguridad mitigaría efectivamente este ataque?",
+      "tag": "application attacks - SQL injection",
+      "options": [
+        "A. Implementar Web Application Firewall (WAF) con reglas OWASP",
+        "D. Codificación de salida HTML en respuestas",
+        "B. Sanitización de entrada con expresiones regulares únicamente",
+        "C. Prepared statements con consultas parametrizadas"
+      ],
+      "correct": 3,
+      "justification_correct": "Prepared statements separan código SQL de datos usuario mediante parámetros enlazados (bind parameters), previniendo interpretación de entrada maliciosa como comandos SQL. Es la defensa primaria contra SQLi según OWASP Top 10 y CompTIA Security+ SY0-701 Objective 2.3, eliminando la vulnerabilidad en origen mediante arquitectura segura.",
+      "justification_wrong": "WAF es defensa perimetral secundaria, evadible. Regex puede fallar con payloads ofuscados. Codificación HTML previene XSS, no SQLi. Solo prepared statements garantizan separación código-datos a nivel arquitectónico según mejores prácticas OWASP y CompTIA Security+ SY0-701."
+    },
+    {
+      "num": 34,
+      "text": "Durante un ataque DDoS volumétrico, el tráfico malicioso alcanza 300 Gbps mediante reflection amplification usando servidores NTP mal configurados. ¿Qué técnica de mitigación sería más efectiva?",
+      "tag": "network attacks - DDoS",
+      "options": [
+        "D. Configurar SYN cookies en servidores de aplicación",
+        "A. Implementar rate limiting en firewall perimetral",
+        "B. Activar BCP38 ingress filtering en routers upstream",
+        "C. Contratar servicio de scrubbing center con capacidad superior"
+      ],
+      "correct": 3,
+      "justification_correct": "Ataques volumétricos de 300 Gbps exceden capacidad típica de enlaces empresariales. Scrubbing centers (Cloud-based DDoS mitigation) desvían tráfico mediante BGP, filtran ataques con infraestructura masiva (Tbps) y retornan tráfico limpio. Es la solución estándar para DDoS volumétrico según CompTIA Security+ SY0-701 Objective 2.3 y RFC 4732.",
+      "justification_wrong": "Rate limiting perimetral es inefectivo si el ataque satura uplink. BCP38 previene spoofing pero no mitigatraffic ya amplificado. SYN cookies protegen contra SYN floods, no ataques reflection volumétricos. Solo scrubbing centers tienen capacidad para absorber ataques multigigabit según CompTIA Security+ SY0-701."
+    },
+    {
+      "num": 35,
+      "text": "Una organización debe elegir entre vulnerability scanning automatizado mensual o penetration testing manual anual. ¿Cuál es la diferencia técnica fundamental entre ambos enfoques?",
+      "tag": "vulnerability scanning vs penetration testing",
+      "options": [
+        "D. Scanning cumple requisitos de compliance; pentesting no tiene valor regulatorio",
+        "C. Scanning genera falsos positivos; pentesting garantiza resultados 100% precisos",
+        "B. Scanning requiere credenciales administrativas; pentesting opera sin autenticación",
+        "A. Scanning identifica vulnerabilidades conocidas; pentesting explota vulnerabilidades para validar impacto real"
+      ],
+      "correct": 3,
+      "justification_correct": "Vulnerability scanning automatizado detecta vulnerabilidades conocidas (CVEs) mediante signatures sin explotación. Penetration testing simula atacantes reales explotando vulnerabilidades encadenadas para demostrar impacto de negocio. Esta distinción fundamental está definida en CompTIA Security+ SY0-701 Objective 1.8 y frameworks como PTES/OSSTMM.",
+      "justification_wrong": "Ambos pueden operar con/sin credenciales (authenticated/unauthenticated scans). Pentesting también genera falsos positivos. Ambos tienen valor compliance según frameworks (PCI-DSS requiere ambos). La diferencia clave es detección vs. explotación activa según CompTIA Security+ SY0-701 y NIST SP 800-115."
+    },
+    {
+      "num": 36,
+      "text": "Durante un análisis forense, detecta un proceso que intercepta llamadas al sistema operativo antes de llegar al kernel, modificando respuestas de comandos como 'ps' y 'netstat' para ocultar su presencia. ¿Qué tipo de malware está presente y cuál es su método de persistencia primario?",
+      "tag": "Malware Types - Rootkit",
+      "options": [
+        "A. Rootkit de nivel kernel con hooking de System Service Descriptor Table (SSDT)",
+        "B. Trojan con técnicas de process hollowing y reflective DLL injection",
+        "C. Spyware avanzado utilizando API hooking en modo usuario exclusivamente",
+        "D. Bootkit con modificación del Master Boot Record (MBR) únicamente"
+      ],
+      "correct": 0,
+      "justification_correct": "La interceptación de llamadas del sistema antes del kernel con modificación de respuestas indica un rootkit de nivel kernel. El hooking SSDT permite redirigir system calls para ocultar procesos, archivos y conexiones de red. CompTIA Security+ SY0-701 especifica que rootkits operan a nivel kernel o bootloader para máxima evasión y persistencia mediante manipulación de estructuras fundamentales del SO.",
+      "justification_wrong": "Process hollowing y DLL injection son técnicas de trojans que operan en modo usuario. API hooking exclusivo en modo usuario puede ser detectado fácilmente. Bootkits modifican el arranque pero no interceptan llamadas del kernel en tiempo de ejecución. La manipulación de respuestas de comandos del sistema requiere acceso privilegiado a nivel kernel mediante hooking SSDT."
+    },
+    {
+      "num": 37,
+      "text": "Un atacante compromete credenciales del CFO mediante ingeniería social, luego envía transferencias bancarias fraudulentas desde su cuenta legítima durante horario laboral. Logs muestran autenticación MFA válida desde IP corporativa conocida. ¿Qué vector de ataque combinado es más probable?",
+      "tag": "Social Engineering - Whaling + Advanced Techniques",
+      "options": [
+        "D. Pretexting combinado con ARP poisoning para MITM y captura de tokens de sesión activos",
+        "B. Spear phishing con credential harvesting y posterior MFA fatigue attack con push bombing",
+        "A. Whaling con session hijacking posterior mediante cookie theft después de MFA bypass",
+        "C. Vishing para obtener códigos MFA en tiempo real durante autenticación legítima del usuario"
+      ],
+      "correct": 3,
+      "justification_correct": "Vishing (voice phishing) permite al atacante interactuar en tiempo real con el CFO (whaling target) solicitando códigos MFA mientras simultáneamente los ingresa en sesión de autenticación. Esto explica MFA válida desde IP corporativa si el CFO proporcionó códigos durante llamada engañosa. CompTIA SY0-701 enfatiza ataques híbridos que combinan ingeniería social con bypass de controles técnicos mediante manipulación humana directa.",
+      "justification_wrong": "Session hijacking requeriría compromiso técnico adicional no indicado. MFA fatigue genera logs de múltiples intentos rechazados. ARP poisoning desde red corporativa generaría anomalías en logs de red. El escenario indica autenticación aparentemente legítima sin alertas técnicas, consistente con víctima proporcionando códigos MFA voluntariamente bajo engaño durante interacción de voz en tiempo real con atacante."
+    },
+    {
+      "num": 38,
+      "text": "Su IDS detecta un payload: ' OR '1'='1'; DROP TABLE users; -- en campo de búsqueda web. La aplicación usa prepared statements con parámetros vinculados. ¿Cuál es el resultado esperado y la defensa efectiva demostrada?",
+      "tag": "Application Attacks - SQL Injection Defense",
+      "options": [
+        "A. Ataque fallido; prepared statements tratan todo el input como datos literales, no código SQL ejecutable",
+        "C. Ataque exitoso mediante second-order injection almacenando payload para ejecución posterior",
+        "B. Ejecución parcial; el comentario SQL (--) bypasea la parametrización causando eliminación de tabla",
+        "D. Bypass mediante encoding Unicode que convierte parámetros vinculados en concatenación de strings"
+      ],
+      "correct": 0,
+      "justification_correct": "Prepared statements con parámetros vinculados (parameterized queries) previenen SQL injection tratando todo input usuario como datos literales, no código ejecutable. El motor de base de datos separa completamente la lógica SQL de los datos. OWASP y CompTIA SY0-701 establecen esta técnica como defensa primaria efectiva contra SQLi, incluso con payloads maliciosos complejos, neutralizando metacaracteres SQL.",
+      "justification_wrong": "Prepared statements correctamente implementados no permiten ejecución parcial de comandos SQL. Second-order injection requiere almacenamiento y posterior uso sin sanitización, no aplicable aquí. Unicode encoding no bypasea parámetros vinculados cuando están correctamente implementados a nivel de motor de base de datos. La separación estructura-datos en prepared statements es fundamental e inmune a variaciones de encoding del payload."
+    },
+    {
+      "num": 39,
+      "text": "Detecta tráfico de múltiples hosts internos enviando solicitudes SYN con IP source spoofing hacia servidor externo. Wireshark muestra patrones de comando-y-control en puerto 6667 IRC. ¿Qué amenaza caracteriza este escenario y cuál es la prioridad de mitigación?",
+      "tag": "Network Attacks - Botnet + DDoS",
+      "options": [
+        "A. Botnet activa ejecutando DDoS distribuido; prioridad: aislar hosts infectados y bloquear C&C externo",
+        "B. ARP poisoning interno generando traffic reflection; prioridad: hardening de switches con DAI/DHCP snooping",
+        "D. Replay attack coordinado; prioridad: implementar timestamps y nonces en protocolos de sesión",
+        "C. DNS amplification attack desde red interna; prioridad: rate limiting en resolver DNS recursivo"
+      ],
+      "correct": 0,
+      "justification_correct": "Múltiples hosts enviando SYN con source spoofing más comunicaciones puerto 6667 (IRC tradicional para C&C) indica botnet comprometida ejecutando DDoS. CompTIA SY0-701 identifica botnets como infraestructura de múltiples sistemas comprometidos controlados centralizadamente. Prioridad: segmentar hosts infectados, bloquear comunicaciones C&C y remediar infecciones para prevenir participación en ataques DDoS distribuidos coordinados externamente.",
+      "justification_wrong": "ARP poisoning afecta comunicaciones locales LAN, no genera patrones C&C externos. DNS amplification usa puerto 53 UDP con queries específicas, no SYN floods desde múltiples internos. Replay attacks reutilizan tráfico legítimo capturado, no generan nuevas conexiones C&C IRC. El patrón de múltiples hosts con comportamiento coordinado y comunicación C&C externa es firma distintiva de botnet."
+    },
+    {
+      "num": 40,
+      "text": "Su vulnerability scanner reporta OpenSSL 1.0.1e vulnerable a Heartbleed (CVE-2014-0160) en servidor producción. Penetration test manual no extrae información sensible tras 500 intentos explotando TLS heartbeat. ¿Cuál es la interpretación correcta y acción requerida?",
+      "tag": "Vulnerability Scanning vs Penetration Testing",
+      "options": [
+        "B. Verdadero positivo; parche inmediato requerido independiente del resultado del pentest manual limitado",
+        "D. Scanner desactualizado; actualizar firmas de detección antes de determinar existencia de vulnerabilidad",
+        "C. Vulnerabilidad teórica sin riesgo práctico; documentar como aceptación de riesgo residual aceptable",
+        "A. Falso positivo del scanner; ninguna acción necesaria dado que pentest confirmó no explotabilidad real"
+      ],
+      "correct": 0,
+      "justification_correct": "Vulnerability scanners identifican configuraciones vulnerables basados en versiones y firmas; pentests validan explotabilidad práctica pero tienen limitaciones de tiempo/técnica. Heartbleed es vulnerabilidad crítica confirmada en OpenSSL 1.0.1e (CVE-2014-0160). CompTIA SY0-701 distingue: scanners detectan vulnerabilidades potenciales; pentests validan exploits. Versión vulnerable confirmada requiere remediación inmediata; fallo en explotación manual no invalida riesgo inherente documentado por CVE.",
+      "justification_wrong": "Falsos positivos requieren confirmación técnica de ausencia de vulnerabilidad, no solo fallo en explotación. OpenSSL 1.0.1e contiene Heartbleed confirmado por CVE público. Documentar como riesgo aceptable una vulnerabilidad crítica conocida con parche disponible viola principios de gestión de vulnerabilidades. La versión de OpenSSL es verificable independientemente de firmas del scanner; el problema es configuración real confirmada, no detección errónea."
+    },
+    {
+      "num": 41,
+      "text": "Durante un análisis forense, se detecta un rootkit en modo kernel que intercepta llamadas NtQuerySystemInformation para ocultar procesos. ¿Qué técnica de detección sería MÁS efectiva para identificar este tipo de rootkit?",
+      "tag": "MALWARE_ROOTKIT",
+      "options": [
+        "A. Implementar Direct Kernel Object Manipulation (DKOM) scanning mediante verificación cruzada de EPROCESS structures",
+        "B. Ejecutar análisis heurístico basado en comportamiento desde el espacio de usuario",
+        "C. Utilizar escaneo de firmas antimalware actualizado diariamente",
+        "D. Realizar análisis de tráfico de red mediante IDS con reglas Snort"
+      ],
+      "correct": 0,
+      "justification_correct": "Los rootkits kernel-mode que implementan hooking de SSDT (System Service Descriptor Table) requieren técnicas como DKOM scanning que comparan estructuras del kernel directamente en memoria, detectando inconsistencias entre listas de procesos ocultas y visibles. CompTIA Security+ SY0-701 Domain 1.2 especifica técnicas avanzadas de detección de rootkits mediante acceso directo a objetos del kernel.",
+      "justification_wrong": "Análisis heurístico de usuario, firmas tradicionales e IDS no acceden directamente a estructuras kernel-mode. Los rootkits SSDT-hooking operan en Ring 0, interceptando syscalls antes de que el espacio de usuario los procese. Según NIST SP 800-83, rootkits kernel requieren análisis de memoria a bajo nivel para detección efectiva."
+    },
+    {
+      "num": 42,
+      "text": "Un actor de amenaza utiliza BGP hijacking combinado con DNSSEC stripping en un ataque sofisticado. ¿Qué vector de ataque se está ejecutando principalmente?",
+      "tag": "NETWORK_ATTACKS",
+      "options": [
+        "D. Replay attack con session token interception",
+        "A. ARP poisoning con MAC flooding secundario",
+        "C. Man-in-the-Middle mediante route manipulation y downgrade attack",
+        "B. DNS poisoning tipo Kaminsky attack"
+      ],
+      "correct": 2,
+      "justification_correct": "BGP hijacking redirige tráfico mediante anuncios de rutas falsas (route manipulation), mientras DNSSEC stripping elimina validación criptográfica, facilitando MITM. RFC 7454 documenta BGP hijacking como vector MITM. CompTIA Security+ SY0-701 Domain 1.4 clasifica esta combinación como ataque MITM avanzado con manipulación de infraestructura de enrutamiento.",
+      "justification_wrong": "ARP poisoning opera en Layer 2 local, no afecta BGP (Layer 3/4). DNS poisoning Kaminsky explota debilidades en transaction IDs pero no requiere BGP hijacking. Replay attacks capturan/retransmiten datos sin manipular rutas. Según NIST SP 800-54, BGP hijacking+DNSSEC stripping constituye específicamente MITM infrastructure-level."
+    },
+    {
+      "num": 43,
+      "text": "Se detecta tráfico C2 (Command & Control) cifrado usando Domain Generation Algorithms (DGA) con 50,000 dominios generados diariamente. ¿Qué técnica de threat intelligence es MÁS efectiva para mitigar esta botnet?",
+      "tag": "THREAT_INTELLIGENCE",
+      "options": [
+        "B. Análisis de entropía DNS con machine learning para detectar patrones DGA algorítmicos",
+        "A. Blacklisting reactivo de IOCs mediante feeds de STIX/TAXII",
+        "D. Sinkholing de dominios conocidos mediante DNS RPZ",
+        "C. Implementación de geofencing bloqueando ASNs sospechosos"
+      ],
+      "correct": 0,
+      "justification_correct": "DGAs generan dominios pseudoaleatorios con alta entropía. Machine learning detecta patrones estadísticos (distribución de caracteres, longitud, n-grams) imposibles de blacklistear reactivamente. MITRE ATT&CK T1568.002 documenta DGA detection mediante análisis de entropía. CompTIA Security+ SY0-701 Domain 1.7 enfatiza técnicas proactivas basadas en comportamiento para amenazas dinámicas.",
+      "justification_wrong": "Blacklisting IOCs falla ante 50,000 dominios diarios. Sinkholing requiere conocer dominios previamente (imposible con DGA). Geofencing no impide DGA si botnet usa infraestructura distribuida. Según NIST SP 800-150, DGAs requieren detección algorítmica behavioral, no signature-based. Análisis de entropía identifica randomness characteristic de DGA."
+    },
+    {
+      "num": 44,
+      "text": "Durante una evaluación de seguridad, se identifica una vulnerabilidad de Second-Order SQL Injection en un sistema de gestión de contenido. ¿Qué característica distingue este ataque de SQL Injection tradicional?",
+      "tag": "APPLICATION_ATTACKS",
+      "options": [
+        "B. Utiliza blind SQL injection mediante time-based techniques",
+        "D. Implementa union-based injection con stacked queries",
+        "C. Explota stored procedures sin validación de parámetros",
+        "A. El payload malicioso se almacena en la base de datos y se ejecuta en una transacción SQL posterior"
+      ],
+      "correct": 3,
+      "justification_correct": "Second-Order SQLi almacena payload malicioso en primera transacción (ej: registro usuario) que se ejecuta cuando la aplicación recupera/usa esos datos en consulta posterior. OWASP Testing Guide v4 Sección 4.8.5.7 define esta técnica. CompTIA Security+ SY0-701 Domain 1.3 especifica SQLi avanzados donde payload y ejecución ocurren en momentos/contextos diferentes.",
+      "justification_wrong": "Blind SQLi infiere datos mediante respuestas booleanas/temporales pero no requiere almacenamiento. Stored procedures sin validación son vector estándar, no definen Second-Order. Union-based/stacked queries son técnicas de explotación inmediatas. Según CWE-89, Second-Order específicamente implica persistencia de payload seguida de ejecución diferida en contexto SQL distinto."
+    },
+    {
+      "num": 45,
+      "text": "Una organización debe seleccionar entre vulnerability scanning y penetration testing para evaluar su postura de seguridad. ¿Qué factor es CRÍTICO para esta decisión según metodologías estándar?",
+      "tag": "VULNERABILITY_ASSESSMENT",
+      "options": [
+        "B. Penetration testing siempre incluye social engineering mientras vulnerability scanning solo evalúa sistemas técnicos",
+        "A. Los vulnerability scans son automatizados e identifican vulnerabilidades conocidas, mientras penetration testing valida explotabilidad mediante técnicas adversariales",
+        "D. Penetration testing genera menos falsos positivos pero tiene mayor cobertura que vulnerability scanning",
+        "C. Vulnerability scanning requiere mayor privilegio de acceso que penetration testing"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-115 diferencia: vulnerability assessment identifica/clasifica vulnerabilidades mediante scanners automatizados; penetration testing simula atacantes reales validando explotabilidad con técnicas manuales. CompTIA Security+ SY0-701 Domain 1.8 establece esta distinción como fundamental: scanning=identificación, pentesting=validación mediante explotación controlada. Metodología PTES confirma esta diferenciación crítica.",
+      "justification_wrong": "Pentesting puede excluir social engineering según alcance. Vulnerability scanning puede ejecutarse con credenciales (authenticated) o sin ellas, no requiere inherentemente más privilegios. Pentesting tiene menor cobertura (profundidad sobre amplitud) que scanning automatizado. Según OWASP Testing Guide, la distinción crítica es automatización/identificación vs. validación manual/explotación."
+    },
+    {
+      "num": 46,
+      "text": "Un atacante implementa un malware polimórfico que cifra archivos del sistema, modifica el MBR para persistencia y establece comunicación C2 mediante DGA (Domain Generation Algorithm). ¿Qué combinación de técnicas de detección es más efectiva según NIST SP 800-83?",
+      "tag": "malware types - advanced analysis",
+      "options": [
+        "B. Verificación de firmas hash SHA-256, escaneo de registros de Windows y análisis estático de binarios",
+        "D. IDS basado en firmas Snort, análisis de puertos abiertos y verificación de certificados digitales",
+        "A. Análisis heurístico basado en comportamiento, monitoreo de entropía en filesystem y análisis de tráfico DNS con machine learning",
+        "C. Sandboxing temporal de 5 minutos, análisis de checksums MD5 y revisión manual de logs del sistema"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-83 Rev.1 recomienda detección multicapa para malware avanzado: análisis heurístico comportamental detecta acciones maliciosas sin firmas conocidas, monitoreo de entropía identifica cifrado ransomware, y análisis DNS con ML detecta patrones DGA. Esta combinación aborda polimorfismo, persistencia MBR y comunicación C2 simultáneamente.",
+      "justification_wrong": "Opciones B y C dependen excesivamente de análisis estático (firmas/hashes) inefectivo contra polimorfismo. Sandboxing de 5 minutos puede ser insuficiente para malware con timers anti-análisis. Opción D con IDS basado en firmas no detecta variantes polimórficas nuevas según limitaciones documentadas en NIST SP 800-94."
+    },
+    {
+      "num": 47,
+      "text": "Durante una auditoría forense, se descubre que un APT utilizó pretexting combinado con typosquatting de dominio interno y certificados SSL válidos emitidos por CA comprometida. ¿Qué control preventivo hubiera sido más efectivo según MITRE ATT&CK?",
+      "tag": "social engineering - advanced threats",
+      "options": [
+        "A. Implementación de Certificate Pinning, DANE (DNS-based Authentication of Named Entities) y validación de CAA records",
+        "D. Segmentación de red por VLANs, firewall perimetral con IPS y antivirus actualizado en endpoints",
+        "B. Filtrado de correo electrónico con SPF/DKIM, capacitación anual de usuarios y lista negra de dominios maliciosos",
+        "C. Autenticación multifactor SMS, política de contraseñas complejas y monitoreo de logs de autenticación"
+      ],
+      "correct": 0,
+      "justification_correct": "MITRE ATT&CK técnica T1608.005 indica Certificate Pinning previene confianza en certificados válidos pero comprometidos. DANE (RFC 6698) valida certificados mediante DNSSEC, y CAA records (RFC 8659) especifican CAs autorizadas, previniendo emisión fraudulenta. Esta combinación neutraliza la cadena de ataque descrita efectivamente.",
+      "justification_wrong": "Opción B no previene certificados SSL válidos maliciosos emitidos por CA comprometida. MFA por SMS (opción C) es vulnerable a SIM swapping y no aborda el vector de certificados. Opción D implementa controles perimetrales que no validan legitimidad de certificados TLS internos según taxonomía MITRE."
+    },
+    {
+      "num": 48,
+      "text": "Un pentester identifica que una aplicación web sanitiza inputs mediante blacklist básica, usa prepared statements, pero construye consultas dinámicas concatenando strings para cláusulas ORDER BY. ¿Qué técnica de explotación es viable?",
+      "tag": "application attacks - SQL injection variants",
+      "options": [
+        "C. CSRF mediante tokens predecibles generados con timestamp del servidor",
+        "D. Buffer overflow en funciones de procesamiento de strings mediante payloads de Unicode overlong",
+        "A. SQL Injection mediante ORDER BY con CASE statements condicionales para exfiltración blind boolean-based",
+        "B. Stored XSS aprovechando falta de output encoding en respuestas JSON del backend"
+      ],
+      "correct": 2,
+      "justification_correct": "OWASP Testing Guide v4.2 documenta que prepared statements no protegen columnas de ORDER BY que requieren concatenación dinámica. Técnica de SQLi blind boolean-based mediante CASE statements condicionales (ejemplo: ORDER BY CASE WHEN (condition) THEN column1 ELSE column2 END) permite exfiltración bit a bit sin errores visibles.",
+      "justification_wrong": "Prepared statements previenen SQLi tradicional en valores, pero no en identificadores dinámicos. No hay evidencia de falta de output encoding (opción B) ni generación de tokens CSRF (opción C). Buffer overflow (opción D) no es viable en aplicaciones interpretadas con sanitización activa según CWE-89 scope."
+    },
+    {
+      "num": 49,
+      "text": "Un analista SOC detecta tráfico con paquetes ARP gratuitous seguidos de ICMP redirects y posteriormente sesiones TLS con Perfect Forward Secrecy. ¿Qué análisis forense determina compromiso efectivo según NIST SP 800-115?",
+      "tag": "network attacks - MITM detection",
+      "options": [
+        "C. Captura de handshake TLS completo, extracción de certificado y validación de cipher suite negociado",
+        "D. Análisis de tiempos de respuesta RTT, comparación de fingerprints TCP/IP y revisión de logs del firewall perimetral",
+        "B. Comparación de tablas ARP con registros DHCP, verificación de gateway legítimo mediante traceroute y análisis de TTL en paquetes ICMP",
+        "A. Verificación de Certificate Transparency logs, validación HSTS preload status y análisis de TLS session resumption tickets"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-115 establece que PFS previene descifrado post-captura pero no previene MITM activo. Certificate Transparency logs detectan certificados fraudulentos emitidos, HSTS preload valida si dominio fuerza HTTPS legítimo, y TLS session tickets revelan manipulación de sesión. Estos controles verifican integridad end-to-end contra MITM sofisticado.",
+      "justification_wrong": "Opción B verifica ARP spoofing pero no confirma compromiso TLS con PFS activo. Opción C falla porque certificado puede ser válido (CA comprometida). Opción D no detecta MITM con certificados válidos y proxy transparente. ARP poisoning + ICMP redirect indican preparación de MITM según RFC 5227."
+    },
+    {
+      "num": 50,
+      "text": "Una organización debe elegir entre vulnerability scanning con credenciales privilegiadas versus penetration testing para sistemas SCADA/ICS críticos. ¿Qué criterio técnico es determinante según IEC 62443-3-2?",
+      "tag": "vulnerability scanning vs penetration testing",
+      "options": [
+        "B. Penetration testing provee validación real de explotabilidad; vulnerability scanning solo detecta CVEs teóricos sin contexto operacional",
+        "C. Vulnerability scanning es más económico y cumple requisitos de compliance básicos; penetration testing requiere certificaciones especializadas costosas",
+        "D. Penetration testing simula APT real y debe priorizarse; vulnerability scanning genera falsos positivos excesivos en entornos industriales",
+        "A. Vulnerability scanning credenciado identifica vulnerabilidades sin riesgo operacional; pentest activo puede causar disrupciones en PLCs con firmware legacy sin failsafe"
+      ],
+      "correct": 3,
+      "justification_correct": "IEC 62443-3-2 SR 7.6 especifica que en sistemas ICS/SCADA, el análisis de seguridad debe minimizar riesgo operacional. Vulnerability scanning credenciado (agentless) identifica vulnerabilidades mediante consultas pasivas sin explotar. Pentest activo puede desestabilizar PLCs legacy sin protecciones failsafe, arriesgando seguridad física y disponibilidad crítica según ISA/IEC 62443 guidelines.",
+      "justification_wrong": "Aunque pentest valida explotabilidad real (opción B), IEC 62443 prioriza seguridad operacional sobre exhaustividad en sistemas críticos. Criterio económico (opción C) es secundario a seguridad. Opción D ignora que disrupciones en SCADA pueden causar daños físicos/ambientales. Estándar IEC 62443-3-2 tabla A.1 recomienda enfoque conservador."
+    }
+  ]
+}

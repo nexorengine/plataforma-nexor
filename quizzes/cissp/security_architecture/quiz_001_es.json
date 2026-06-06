@@ -1,0 +1,710 @@
+{
+  "cert_id": "cissp",
+  "domain_id": "security_architecture",
+  "quiz_num": 1,
+  "domain_name": "Security Architecture & Engineering",
+  "cert_name": "CISSP",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "En el modelo de seguridad Bell-LaPadula, ¿cuál es el propósito principal de la propiedad 'No Write Down' (sin escritura hacia abajo)?",
+      "tag": "Modelos de Seguridad - Bell-LaPadula",
+      "options": [
+        "D. Garantizar que la integridad de datos no sea comprometida por actualizaciones concurrentes",
+        "C. Bloquear acceso de usuarios sin autenticación multifactor",
+        "A. Prevenir que sujetos en niveles de clasificación superiores escriban información a niveles inferiores, evitando pérdida de confidencialidad",
+        "B. Permitir lectura solo en el mismo nivel de clasificación del sujeto"
+      ],
+      "correct": 2,
+      "justification_correct": "Bell-LaPadula enforces confidentiality mediante No Write Down: sujetos clasificados no pueden escribir a niveles inferiores, previniendo flujos de información sensible. Definido en DoD 5200.28-STD (Trusted Computer System Evaluation Criteria - TCSEC).",
+      "justification_wrong": "Las otras opciones confunden propiedades de integridad (Biba), autenticación, o mecanismos de concurrencia, no relacionados con el objetivo de confidencialidad de Bell-LaPadula."
+    },
+    {
+      "num": 2,
+      "text": "¿Cuál de los siguientes criterios de evaluación especifica niveles de garantía (EAL 1-7) para validar implementaciones criptográficas y controles de seguridad?",
+      "tag": "Criterios de Evaluación - Common Criteria",
+      "options": [
+        "D. ITSEC (Information Technology Security Evaluation Criteria)",
+        "B. FIPS 140-2 (ahora FIPS 140-3)",
+        "A. Common Criteria (ISO/IEC 15408)",
+        "C. TCSEC (Rainbow Book)"
+      ],
+      "correct": 2,
+      "justification_correct": "Common Criteria (ISO/IEC 15408) define 7 niveles EAL (Evaluation Assurance Levels) para evaluar productos de seguridad. EAL 1-4 son moderados; EAL 5-7 requieren análisis formal. Estándar internacional de facto.",
+      "justification_wrong": "FIPS 140 valida módulos criptográficos específicamente, no sistemas completos. TCSEC y ITSEC son criterios heredados/europeos, predecesores a Common Criteria."
+    },
+    {
+      "num": 3,
+      "text": "En criptografía asimétrica, ¿cuál es la ventaja principal de usar infraestructura de clave pública (PKI) sobre distribución manual de claves públicas?",
+      "tag": "Criptografía - PKI y Distribución de Claves",
+      "options": [
+        "A. Escalabilidad mediante certificados digitales emitidos por autoridades certificadoras (CA) confiables, autenticación de claves públicas y revocación centralizada",
+        "D. Proporcionar cifrado simétrico más rápido que criptografía de curva elíptica",
+        "B. Eliminar la necesidad de canales seguros para transmisión inicial de claves",
+        "C. Reducir la complejidad computacional de operaciones criptográficas RSA"
+      ],
+      "correct": 0,
+      "justification_correct": "PKI (RFC 5280, X.509) proporciona confianza escalable mediante CA, vinculación sujeto-clave en certificados, y protocolos OCSP/CRL para revocación. Soluciona autenticación de clave pública sin distribución manual.",
+      "justification_wrong": "Opción B es falsa: PKI requiere confianza inicial en CA. C confunde complejidad (RSA es fijo). D mezcla conceptos: criptografía asimétrica con simétrica; ECC es asimétrica, no más rápida que simétrica."
+    },
+    {
+      "num": 4,
+      "text": "Según FIPS 199 y NIST SP 800-53, ¿cuál es el propósito principal de clasificar sistemas de información en categorías de seguridad (BAJO, MODERADO, ALTO)?",
+      "tag": "Criterios de Evaluación - FIPS/NIST",
+      "options": [
+        "B. Asignar presupuestos de ciberseguridad según tamaño de organizaciones",
+        "D. Establecer jerarquías administrativas de autorización de usuarios",
+        "A. Determinar el nivel de impacto potencial de pérdida de confidencialidad, integridad o disponibilidad, para seleccionar controles de seguridad proporcionales",
+        "C. Validar cumplimiento de normativas internacionales de encriptación"
+      ],
+      "correct": 2,
+      "justification_correct": "FIPS 199 categoriza sistemas evaluando impacto (BAJO/MODERADO/ALTO) en confidencialidad, integridad, disponibilidad. NIST SP 800-53 mapea categorías a catálogos de controles proporcionales. Enfoque de riesgo diferenciado.",
+      "justification_wrong": "B es presupuestario (no normativo). C mezcla validación criptográfica (FIPS 140). D confunde niveles de acceso (control de acceso granular vs. categorización de sistema)."
+    },
+    {
+      "num": 5,
+      "text": "En el modelo de seguridad Clark-Wilson, ¿cuál es el mecanismo clave que garantiza integridad mediante transacciones con validación de estado?",
+      "tag": "Modelos de Seguridad - Clark-Wilson",
+      "options": [
+        "A. Ejecución de Programas de Transacción Certificados (TP) que transforman datos de estado válido a estado válido, verificados mediante auditoría y separación de deberes",
+        "C. Implementación de matrices de control de acceso (ACL) para bloquear lectura entre niveles de confidencialidad",
+        "D. Ejecución de firmas digitales RSA en cada operación de lectura para detectar modificaciones",
+        "B. Cifrado de todos los datos en reposo usando AES-256 bajo control de autoridades certificadoras"
+      ],
+      "correct": 0,
+      "justification_correct": "Clark-Wilson (IEEE 610.12) define Transacciones (TP) certificadas que preservan integridad transformando datos entre estados válidos. Incluye segregación de deberes y logs para auditoría. Modelo orientado a integridad comercial.",
+      "justification_wrong": "B es cifrado (confidencialidad, no integridad de transacciones). C describe Bell-LaPadula (confidencialidad). D es mecanismo criptográfico, no modelo de integridad transaccional como Clark-Wilson."
+    },
+    {
+      "num": 6,
+      "text": "En el modelo de seguridad Bell-LaPadula, ¿cuál es el propósito principal de la propiedad '*' (estrella)?",
+      "tag": "Modelos de Seguridad - Bell-LaPadula",
+      "options": [
+        "C. Eliminar la necesidad de controles de acceso discrecionales en el sistema",
+        "A. Garantizar que un sujeto en nivel de seguridad alto no pueda escribir información a un objeto de nivel bajo",
+        "B. Permitir que cualquier usuario acceda a información clasificada sin restricciones",
+        "D. Facilitar la transferencia de datos entre dominios de seguridad diferentes"
+      ],
+      "correct": 1,
+      "justification_correct": "La propiedad '*' (write-up property) en Bell-LaPadula previene la fuga de información (covert channels) prohibiendo escrituras hacia niveles inferiores. Según TCSEC (FIPS 198-1), esto mantiene la confidencialidad evitando que información clasificada fluya hacia niveles desclasificados. Es fundamental para sistemas multi-nivel.",
+      "justification_wrong": "Las opciones B, C y D malinterpretan el propósito de la propiedad '*'. B ignora restricciones; C confunde mecanismos de control; D no captura la esencia de prevención de fuga de información clasificada hacia niveles inferiores de confidencialidad."
+    },
+    {
+      "num": 7,
+      "text": "¿Cuál es la diferencia fundamental entre el modelo Biba y Bell-LaPadula en contexto de integridad de datos?",
+      "tag": "Modelos de Seguridad - Biba vs Bell-LaPadula",
+      "options": [
+        "A. Biba protege integridad mediante regla de no-escritura-abajo; Bell-LaPadula protege confidencialidad mediante no-lectura-arriba",
+        "C. Bell-LaPadula es superior para proteger información clasificada en múltiples niveles",
+        "D. Ambos modelos protegen confidencialidad pero Biba añade control de acceso obligatorio",
+        "B. Biba permite lectura-arriba pero prohíbe escritura-arriba para mantener integridad"
+      ],
+      "correct": 0,
+      "justification_correct": "Biba implementa reglas inversas a Bell-LaPadula: no-lectura-abajo y no-escritura-arriba protegen integridad. Bell-LaPadula usa no-lectura-arriba (simple security) y no-escritura-abajo (estrella) para confidencialidad. ISO/IEC 15408 (Common Criteria) diferencia ambos por objetivo: confidencialidad vs integridad.",
+      "justification_wrong": "B invierte correctamente la regla pero ignora el objetivo de integridad. C confunde confidencialidad con integridad. D es incorrecto: Bell-LaPadula no añade integridad; Biba se diseñó específicamente para ello según literatura CISSP estándar."
+    },
+    {
+      "num": 8,
+      "text": "En criptografía PKI, ¿cuál es el rol específico de la clave privada en la firma digital según FIPS 186-4?",
+      "tag": "Criptografía - PKI y Firmas Digitales",
+      "options": [
+        "A. Cifrar el documento completo para garantizar confidencialidad durante la transmisión",
+        "D. Generar números aleatorios criptográficamente seguros para inicializar sesiones TLS",
+        "B. Crear un hash del documento y cifrarlo para proporcionar autenticación, no repudio e integridad",
+        "C. Validar que el certificado X.509 no haya expirado en la cadena de certificación"
+      ],
+      "correct": 2,
+      "justification_correct": "FIPS 186-4 especifica que la clave privada crea una firma digital: genera hash(mensaje) y lo cifra con la clave privada. Esto proporciona autenticación (demuestra posesión de clave privada), no repudio (firmante no puede negar) e integridad (cualquier alteración invalida firma). No cifra el documento completo.",
+      "justification_wrong": "A confunde cifrado asimétrico (para confidencialidad) con firma digital. C describe validación de certificados, no función de clave privada en firma. D describe generación de números aleatorios, que es ortogonal a firma digital según FIPS 186-4."
+    },
+    {
+      "num": 9,
+      "text": "¿Cuál es el propósito principal del modelo Clark-Wilson en contexto de sistemas de información comerciales?",
+      "tag": "Modelos de Seguridad - Clark-Wilson",
+      "options": [
+        "D. Proteger contra ataques de denegación de servicio en infraestructuras críticas",
+        "B. Garantizar integridad mediante separación de deberes y validación de transacciones bien formadas",
+        "C. Implementar control de acceso basado en roles para administración de bases de datos",
+        "A. Proporcionar clasificación de datos en múltiples niveles de confidencialidad como Bell-LaPadula"
+      ],
+      "correct": 1,
+      "justification_correct": "Clark-Wilson (1987) enfatiza integridad en sistemas comerciales mediante: separación de deberes, transacciones bien formadas (transformation procedures) y auditoría. Diferencia entre datos certificados y no certificados. Ideal para aplicaciones contables donde integridad es crítica, según NIST SP 800-53 y literatura CISSP.",
+      "justification_wrong": "A describe Bell-LaPadula, no Clark-Wilson. C mezcla RBAC (que Clark-Wilson usa) con su propósito principal (integridad, no clasificación). D se enfoca en disponibilidad/DoS, ajeno al modelo Clark-Wilson centrado en integridad de transacciones comerciales."
+    },
+    {
+      "num": 10,
+      "text": "En evaluación de seguridad Common Criteria (ISO/IEC 15408), ¿qué diferencia existe entre un Perfil de Protección (PP) y un Target of Evaluation (ToE)?",
+      "tag": "Criterios de Evaluación - Common Criteria",
+      "options": [
+        "C. El PP es obligatorio en todas las evaluaciones; el ToE es opcional para productos específicos",
+        "A. El PP define requisitos de seguridad genéricos; el ToE es la implementación específica evaluada contra un PP",
+        "D. Ambos términos son sinónimos en evaluaciones Common Criteria y pueden usarse indistintamente",
+        "B. El ToE es siempre más seguro que el PP porque se somete a pruebas de penetración reales"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 15408 define: PP (Protection Profile) = especificación de requisitos de seguridad genéricos para clase de productos; ToE (Target of Evaluation) = producto específico o sistema evaluado. Un ToE implementa/se evalúa contra un PP. Esta distinción es fundamental en metodología CC según NIST SP 800-23.",
+      "justification_wrong": "B introduce pruebas de penetración, no definida en la distinción PP/ToE. C es falso: PP es plantilla reutilizable, ToE es específico. D ignora la relación genérico-específico que define ambos conceptos en Common Criteria según ISO/IEC 15408-1:2022."
+    },
+    {
+      "num": 11,
+      "text": "En el modelo de seguridad Bell-LaPadula, ¿cuál es el propósito principal de la propiedad *-property (star property)?",
+      "tag": "Modelos de Seguridad - Bell-LaPadula",
+      "options": [
+        "B. Permitir que sujetos de nivel bajo escriban en objetos de nivel alto",
+        "D. Autenticar la identidad del sujeto antes de cualquier operación",
+        "C. Eliminar la necesidad de verificación de acceso discrecional",
+        "A. Prevenir la fuga de información hacia niveles de clasificación inferiores"
+      ],
+      "correct": 3,
+      "justification_correct": "La propiedad *-property (confinement property) en Bell-LaPadula asegura que un sujeto no puede escribir información hacia niveles de clasificación inferiores (no write-down), previniendo flujos de información no autorizados descendentes. Esto garantiza la confidencialidad en sistemas multinivel.",
+      "justification_wrong": "La opción B describe write-down, explícitamente prohibido. C ignora que DAC es complementario a MAC. D corresponde a autenticación, mecanismo externo al modelo de seguridad formal."
+    },
+    {
+      "num": 12,
+      "text": "¿Cuál es la diferencia crítica entre el modelo Biba y el modelo Clark-Wilson respecto a la integridad?",
+      "tag": "Modelos de Seguridad - Biba vs Clark-Wilson",
+      "options": [
+        "B. Biba es obligatorio y Clark-Wilson es discrecional",
+        "C. Clark-Wilson solo aplica a datos en reposo; Biba protege datos en tránsito",
+        "D. Biba utiliza criptografía; Clark-Wilson utiliza controles administrativos únicamente",
+        "A. Biba enfatiza niveles de integridad jerárquicos; Clark-Wilson usa transacciones atómicas y auditoría"
+      ],
+      "correct": 3,
+      "justification_correct": "Biba implementa integridad mediante niveles jerárquicos (no read-up, no write-down de integridad). Clark-Wilson protege integridad mediante Constrained Data Items (CDIs), Transformation Procedures (TPs) y logs de auditoría para mantener estados consistentes en transacciones comerciales.",
+      "justification_wrong": "B es inexacta: ambos pueden ser obligatorios. C confunde capas OSI con modelos de integridad. D incorrecto: Biba no requiere criptografía; Clark-Wilson integra múltiples controles técnicos y administrativos."
+    },
+    {
+      "num": 13,
+      "text": "Según los Criterios Comunes (Common Criteria ISO/IEC 15408), ¿qué representa el nivel de garantía EAL4?",
+      "tag": "Criterios de Evaluación - Common Criteria",
+      "options": [
+        "B. Verificación formal completa del código fuente; máxima garantía alcanzable",
+        "D. Evaluación basada únicamente en documentación del fabricante; sin pruebas técnicas",
+        "A. Diseño modular con pruebas de penetración independiente; garantía moderada-alta",
+        "C. Pruebas funcionales básicas sin análisis de diseño; garantía mínima"
+      ],
+      "correct": 2,
+      "justification_correct": "EAL4 (Moderate) requiere diseño modular documentado, pruebas funcionales e interfaz, análisis de vulnerabilidades dirigidas y evaluación independiente. Proporciona garantía moderada-alta adecuada para sistemas comerciales sensibles (ISO/IEC 15408:2022).",
+      "justification_wrong": "B describe verificación formal (EAL7). C corresponde a EAL1. D no es metodología reconocida en CC. EAL4 exige análisis técnico riguroso, no solo documentación."
+    },
+    {
+      "num": 14,
+      "text": "En una arquitectura PKI (Public Key Infrastructure), ¿cuál es el propósito específico de una Certificate Revocation List (CRL) frente a OCSP?",
+      "tag": "Criptografía - PKI y Gestión de Certificados",
+      "options": [
+        "B. CRL usa criptografía asimétrica; OCSP utiliza simétrica",
+        "A. CRL es un registro periódico de certificados revocados; OCSP proporciona validación en tiempo real mediante consulta online",
+        "D. CRL tiene validez indefinida; OCSP expira después de 24 horas",
+        "C. OCSP es obligatorio en todas las PKI; CRL es opcional"
+      ],
+      "correct": 1,
+      "justification_correct": "CRL (RFC 5280) es un archivo distribuido periódicamente listando certificados revocados. OCSP (RFC 6960) valida estado de certificado mediante protocolo online, reduciendo latencia y ancho de banda. OCSP proporciona validación just-in-time crítica para seguridad operativa.",
+      "justification_wrong": "B: ambos usan asimétrica. C: ninguno es mandatorio universalmente. D: CRL tiene período de validez definido (nextUpdate); OCSP responders definen thisUpdate y nextUpdate independientemente."
+    },
+    {
+      "num": 15,
+      "text": "¿Cuál es el principio de diseño de seguridad física que requiere que ninguna persona pueda acceder a áreas críticas sin que otra persona lo verifique?",
+      "tag": "Seguridad Física - Principios de Diseño",
+      "options": [
+        "C. Principio de menor privilegio en credenciales biométricas",
+        "D. Control de acceso basado en roles (RBAC) para áreas restringidas",
+        "B. Defensa en profundidad con perimetral múltiple",
+        "A. Segregación de funciones (Separation of Duties) aplicada a acceso físico"
+      ],
+      "correct": 3,
+      "justification_correct": "El principio de Separation of Duties aplicado a seguridad física requiere control dual (two-person rule) donde ningún individuo puede ejecutar acciones críticas sin supervisión. ISO/IEC 27001:2022 y NIST SP 800-53 RF-6 respaldan este control contra amenazas internas.",
+      "justification_wrong": "B: defensa profunda es complementaria pero no define autorización dual. C: menor privilegio no prescribe supervisión física requerida. D: RBAC es mecanismo de control, no el principio de segregación de funciones físico."
+    },
+    {
+      "num": 16,
+      "text": "En el modelo de seguridad Bell-LaPadula, ¿cuál es el propósito principal de la propiedad 'estrella' (*-property) y cómo se relaciona con la clasificación de información?",
+      "tag": "Modelos de Seguridad - Bell-LaPadula",
+      "options": [
+        "B. Permitir lectura de cualquier nivel de clasificación sin restricciones de seguridad",
+        "D. Implementar controles de acceso obligatorio basados únicamente en roles de usuario",
+        "C. Garantizar que procesos de nivel bajo puedan ejecutar operaciones en datos clasificados",
+        "A. Prevenir escritura hacia niveles inferiores (no-write-down) para mantener confidencialidad e integridad de datos clasificados"
+      ],
+      "correct": 3,
+      "justification_correct": "La *-property (propiedad estrella) en Bell-LaPadula establece que un sujeto no puede escribir información hacia un nivel de clasificación inferior al suyo. Esto previene corrupción de datos clasificados. Es fundamental para mantener la integridad de la confidencialidad en sistemas multiclasificados (TCSEC/DoD 5220.22-M).",
+      "justification_wrong": "Opción B ignora restricciones de confidencialidad. Opción C viola principios de Bell-LaPadula. Opción D describe DAC, no propiedades matemáticas de este modelo MAC específico usado en sistemas militares."
+    },
+    {
+      "num": 17,
+      "text": "¿Cuál es la diferencia fundamental entre el modelo Biba y Bell-LaPadula en cuanto a la dirección de protección de integridad?",
+      "tag": "Modelos de Seguridad - Biba vs Bell-LaPadula",
+      "options": [
+        "A. Biba protege integridad con restricciones de lectura hacia niveles superiores (no-read-up) mientras Bell-LaPadula protege confidencialidad",
+        "B. Biba utiliza clasificación de confidencialidad mientras Bell-LaPadula emplea niveles de confianza en datos",
+        "C. Biba requiere encriptación de datos mientras Bell-LaPadula solo utiliza controles de acceso",
+        "D. Biba es aplicable solo a sistemas criptográficos y Bell-LaPadula a bases de datos"
+      ],
+      "correct": 0,
+      "justification_correct": "Biba invierte la dirección de protección: implementa no-read-up (no lectura hacia arriba) para prevenir que datos de baja integridad contaminen procesos de alta integridad. Bell-LaPadula protege confidencialidad con no-write-down. Ambos son modelos MAC complementarios (ISO/IEC 27002).",
+      "justification_wrong": "B confunde niveles de clasificación con integridad. C es falso; ambos modelos funcionan sin criptografía. D es incorrecto; ambos aplican a sistemas de información generales con requisitos de seguridad multinivel."
+    },
+    {
+      "num": 18,
+      "text": "En evaluaciones bajo Common Criteria (CC), ¿qué representa el nivel de aseguramiento (EAL) y cuál es la relación entre evaluación de funcionalidad (PP/ST) y garantías?",
+      "tag": "Criterios de Evaluación - Common Criteria",
+      "options": [
+        "B. EAL es sinónimo de clasificación de confidencialidad de datos evaluados",
+        "C. EAL reemplaza la necesidad de análisis de riesgos en organizaciones",
+        "A. EAL mide rigor de evaluación independiente; PP define requisitos funcionales mientras ST documenta como se cumplen; garantías validan implementación correcta",
+        "D. PP y ST son idénticos y EAL elimina la necesidad de auditorías posteriores"
+      ],
+      "correct": 2,
+      "justification_correct": "Common Criteria (ISO/IEC 15408) estructura evaluaciones en: Perfil de Protección (PP) = requisitos genéricos, Destino de Seguridad (ST) = implementación específica, EAL 1-7 = nivel de rigor de evaluación independiente. Garantías validan que se cumplen objetivos de seguridad (CCIMB, NIAP).",
+      "justification_wrong": "B confunde EAL con clasificación de información. C es falso; CC complementa análisis de riesgos pero no los reemplaza. D es incorrecto; ST y PP tienen propósitos distintos y auditorías son independientes de evaluaciones CC."
+    },
+    {
+      "num": 19,
+      "text": "En infraestructura PKI, ¿cuál es el propósito específico de la cadena de certificados y cómo se valida la confianza desde un certificado de entidad final hasta la Autoridad Certificadora Raíz?",
+      "tag": "Criptografía - PKI y Certificados Digitales",
+      "options": [
+        "A. Establecer ruta confiable de validación mediante verificación progresiva de firmas digitales desde entidad final hasta raíz; cada certificado valida el anterior (RFC 5280, X.509)",
+        "C. Crear copias de seguridad redundantes de claves privadas en servidores distribuidos",
+        "B. Cifrar datos durante transmisión de certificados en internet",
+        "D. Limitar número máximo de usuarios que pueden acceder a servicios PKI"
+      ],
+      "correct": 0,
+      "justification_correct": "Cadena de certificados (certificate chain) valida confianza mediante verificación secuencial de firmas. Cada certificado intermedio o final se valida contra su emisor usando criptografía asimétrica. Termina en certificado raíz auto-firmado de confianza (RFC 5280, PKIX standards, NIST SP 800-32).",
+      "justification_wrong": "B describe función de TLS, no cadena de certificados. C es función de gestión de claves, no validación de confianza. D no relaciona con cadena de confianza; es control de acceso administrativo."
+    },
+    {
+      "num": 20,
+      "text": "¿Cuál es el requisito fundamental para la aplicación del modelo Clark-Wilson en sistemas transaccionales y cómo se diferencia de Bell-LaPadula en su enfoque de integridad?",
+      "tag": "Modelos de Seguridad - Clark-Wilson",
+      "options": [
+        "C. Reemplazar completamente controles de acceso basados en roles en organizaciones financieras",
+        "D. Establecer clasificación de datos idéntica a Bell-LaPadula pero con restricciones adicionales",
+        "A. Garantizar integridad de datos comerciales mediante transformaciones certificadas (TPs) validadas por revisores independientes; protege integridad en tránsito y almacenamiento, no confidencialidad",
+        "B. Implementar encriptación AES-256 como única medida de protección de integridad"
+      ],
+      "correct": 2,
+      "justification_correct": "Clark-Wilson enfatiza integridad a través de Transformation Procedures (TPs) certificadas y Constrained Data Items (CDIs) validados por revisores. Protege estados consistentes de datos en sistemas transaccionales (entornos comerciales/financieros). Diferente de Bell-LaPadula que protege confidencialidad (RFC 3675, NIST SP 800-12).",
+      "justification_wrong": "B simplifica protección de integridad; Clark-Wilson es modelo lógico que puede usar criptografía. C es incorrecto; modelo complementa controles DAC/RBAC. D confunde niveles de clasificación con procedimientos de integridad certificados."
+    },
+    {
+      "num": 21,
+      "text": "En el modelo de seguridad Bell-LaPadula, ¿cuál es la implicación principal de la propiedad 'star property' (*-property) en contextos de sistemas de clasificación multinivel?",
+      "tag": "Security Models - Bell-LaPadula",
+      "options": [
+        "C. Elimina la necesidad de validación en tiempo de ejecución mediante matriz de control de acceso",
+        "B. Permite lectura de objetos en niveles superiores sin restricción de clasificación",
+        "D. Facilita la transición de sujetos entre dominios de seguridad sin auditoría",
+        "A. Previene escrituras hacia niveles de clasificación inferiores, evitando flujo de información descendente"
+      ],
+      "correct": 3,
+      "justification_correct": "La *-property (confinement property) en Bell-LaPadula establece que un sujeto en nivel L solo puede escribir en objetos de nivel ≥L. Esto previene escrituras hacia abajo, evitando filtraciones de información clasificada. Referencia: NIST SP 800-12.",
+      "justification_wrong": "Las opciones B, C y D son incorrectas: B describe lectura (simple security), C ignora requerimientos de control de acceso, D contradice principios de auditoría en modelos formales."
+    },
+    {
+      "num": 22,
+      "text": "Conforme a Common Criteria (CC) versión 3.1, ¿qué relación existe entre Evaluation Assurance Levels (EAL) y la cobertura de vulnerabilidades conocidas en un Producto de Evaluación?",
+      "tag": "Security Evaluation Criteria - Common Criteria",
+      "options": [
+        "C. Common Criteria no aborda vulnerabilidades; solo valida conformidad con estándares FIPS 140-2",
+        "A. Niveles EAL superiores requieren análisis de vulnerabilidades específicas pero no garantizan eliminación de todas las vulnerabilidades de día cero",
+        "B. EAL 1-3 cubren completamente todas las vulnerabilidades; EAL 4-7 solo auditan aspectos de configuración",
+        "D. Cada EAL proporciona cobertura garantizada de vulnerabilidades proporcional al nivel numérico alcanzado"
+      ],
+      "correct": 1,
+      "justification_correct": "Common Criteria (ISO/IEC 15408) establece que EAL determina rigor evaluativo mediante análisis de fuentes, diseño y pruebas. Niveles superiores (EAL4+) requieren análisis de vulnerabilidades conocidas, mas no eliminan vulnerabilidades desconocidas. CCIMB Guidelines. ",
+      "justification_wrong": "B es falso (EAL progresión es incremental); C niega evaluación CC; D asume garantía absoluta inexistente en evaluación de seguridad."
+    },
+    {
+      "num": 23,
+      "text": "En criptografía asimétrica, ¿cuál es el principio fundamental que diferencia RSA de esquemas basados en curvas elípticas (ECC) respecto a complejidad computacional y tamaño de clave?",
+      "tag": "Cryptography - Asymmetric Algorithms",
+      "options": [
+        "B. RSA es computacionalmente superior en todos los casos; ECC solo se utiliza en dispositivos legacy sin procesamiento matemático",
+        "A. ECC utiliza logaritmo discreto elíptico (dificultad superexponencial en curvas primas), permitiendo claves más cortas que RSA para equivalente seguridad (256-bit ECC ≈ 2048-bit RSA)",
+        "D. ECC no puede implementarse en estándares de gobierno (FIPS); se restringe a criptografía comercial no regulada",
+        "C. Ambos algoritmos utilizan factorización de números primos; la diferencia radica únicamente en implementación de software"
+      ],
+      "correct": 1,
+      "justification_correct": "ECC aprovecha la dureza relativa del problema de logaritmo discreto elíptico (ECDLP), ofreciendo seguridad equivalente con claves significativamente menores. NIST SP 800-56A y FIPS 186-4 avalan eficiencia de ECC.",
+      "justification_wrong": "B ignora ventajas documentadas de ECC; C confunde factorización (RSA) con ECDLP; D es incorrecto (FIPS 186-4 incluye ECC como estándar federal)."
+    },
+    {
+      "num": 24,
+      "text": "Respecto al modelo Clark-Wilson, ¿cuál es el mecanismo de control principal que asegura integridad transaccional en sistemas de información financiera?",
+      "tag": "Security Models - Clark-Wilson",
+      "options": [
+        "B. Encriptación end-to-end de todos los datos; cualquier modificación dispara cierre automático de la sesión sin auditoría posterior",
+        "D. Matriz de control de acceso tradicional (DAC) sin mecanismos adicionales de validación de transacciones",
+        "A. Triplete (usuario, programa, dato) validado mediante Constrained Data Items (CDI) y Unconstrained Data Items (UDI), garantizando transacciones certificadas sin anomalías",
+        "C. Clasificación multinivel similar a Bell-LaPadula aplicada a transacciones contables y financieras"
+      ],
+      "correct": 2,
+      "justification_correct": "Clark-Wilson (ISO/IEC 10746) define Constrained Data Items (protegidos) y Unconstrained Data Items mediante Transformation Procedures validadas, asegurando integridad transaccional en auditoría financiera sin comprometer confidencialidad.",
+      "justification_wrong": "B enfatiza confidencialidad sobre integridad transaccional; C malaplica Bell-LaPadula (orientado confidencialidad); D ignora mecanismos Clark-Wilson de validación certificada."
+    },
+    {
+      "num": 25,
+      "text": "En diseño de seguridad física de instalaciones, ¿qué principio arquitectónico debe aplicarse según NIST SP 800-53 para garantizar redundancia en sistemas de control de acceso perimetral?",
+      "tag": "Physical Security - Facility Design",
+      "options": [
+        "A. Implementar controles de acceso en múltiples puntos (guardias, lectores biométricos, sistemas electrónicos independientes) con capacidad de operación degradada si un componente falla",
+        "D. Sistemas de vigilancia por CCTV reemplazan necesidad de controles de acceso físicos en instalaciones de nivel confidencial",
+        "B. Un único punto de control centralizado con máxima automatización elimina redundancia innecesaria y reducidores costos operativos",
+        "C. Redundancia perimetral se limita a respaldo de energía; validación de identidad requiere un único mecanismo certificado"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-53 (PE-3, PE-4) exige controles en profundidad con redundancia en acceso perimetral: múltiples capas de autenticación, independencia de componentes y capacidad degradada. Arquitectura resiliente ante fallos.",
+      "justification_wrong": "B ignora principios defense-in-depth; C limita redundancia inadecuadamente; D confunde vigilancia (detección) con control de acceso (prevención)."
+    },
+    {
+      "num": 26,
+      "text": "Una organización implementa un modelo de seguridad multinivel donde usuarios de nivel SECRET no pueden escribir en objetos de nivel TOP SECRET, pero sí leer objetos de nivel inferior. ¿Cuál modelo de seguridad formal se describe?",
+      "tag": "Modelos de Seguridad Formal",
+      "options": [
+        "A. Bell-LaPadula (Propiedad de No-Escritura hacia Arriba/No-Lectura hacia Abajo)",
+        "B. Biba (Integridad: No-Lectura hacia Abajo/No-Escritura hacia Arriba)",
+        "C. Clark-Wilson (Separación de Deberes con Transacciones Certificadas)",
+        "D. Brewer-Nash (Modelo de Muralla China para Conflicto de Intereses)"
+      ],
+      "correct": 0,
+      "justification_correct": "Bell-LaPadula implementa confidencialidad mediante: (1) no-lectura hacia abajo (sujeto no lee objetos inferiores) y (2) no-escritura hacia arriba (sujeto no escribe objetos superiores). RFC 2246 e ISO/IEC 15408:2009 validan este modelo para sistemas multinivel clasificados.",
+      "justification_wrong": "Biba invierte la lógica para integridad. Clark-Wilson certifica transacciones. Brewer-Nash aísla usuarios competidores. Ninguno implementa exactamente las restricciones de flujo confidencial descritas."
+    },
+    {
+      "num": 27,
+      "text": "En evaluación bajo Common Criteria (CC), un componente de seguridad alcanza EAL-4 (Metodical Design). ¿Qué garantía de rigor de evaluación proporciona este nivel según ISO/IEC 15408-3:2022?",
+      "tag": "Criterios de Evaluación de Seguridad",
+      "options": [
+        "C. Pruebas exhaustivas de penetración y análisis semiformal de arquitectura",
+        "B. Especificación formal con evidencia independiente de validación de código fuente completo",
+        "D. Certificación de cumplimiento regulatorio sin análisis técnico de implementación",
+        "A. Diseño modular documentado con análisis de vulnerabilidades del fabricante"
+      ],
+      "correct": 3,
+      "justification_correct": "EAL-4 requiere: diseño modular documentado, evaluación de guías de vulnerabilidades, análisis independiente limitado. ISO/IEC 15408-3:2022 define EAL-4 como nivel intermedio: más rigor que EAL-3, menos que EAL-5 (Semiformal).",
+      "justification_wrong": "EAL-5 requiere especificación formal. EAL-7 demanda penetración exhaustiva. EAL-1 no incluye validación técnica. La opción D describe marketing, no evaluación técnica."
+    },
+    {
+      "num": 28,
+      "text": "Una infraestructura PKI implementa certificados X.509v3 con extensión 'Key Usage' restringida a digitalSignature. Un administrador intenta usar la clave privada para cifrado de datos. ¿Qué resultado esperado según RFC 5280?",
+      "tag": "Criptografía y PKI",
+      "options": [
+        "B. Se permite cifrado con advertencia de seguridad (validación permisiva)",
+        "C. El servidor de certificados revoca automáticamente el certificado",
+        "A. El navegador/cliente DEBE rechazar la operación de cifrado (validación mandatoria)",
+        "D. Se ejecuta cifrado sin restricción (extensión X.509v3 es opcional)"
+      ],
+      "correct": 2,
+      "justification_correct": "RFC 5280 §4.2.1.3 estipula que aplicaciones MUST validar la extensión 'Key Usage'. Si la clave se usa fuera de los usos permitidos, la aplicación DEBE rechazar la operación. Es control criptográfico crítico.",
+      "justification_wrong": "RFC 5280 no permite validación permisiva. Revocación no es automática. La extensión es crítica (no opcional) cuando presente en cadena de certificados X.509v3."
+    },
+    {
+      "num": 29,
+      "text": "En diseño de seguridad física para Data Center Tier-IV (ISO/IEC 27001:2022), se requiere redundancia de sistemas de control de acceso biométrico. ¿Cuál configuración cumple redundancia crítica?",
+      "tag": "Seguridad Física e Instalaciones",
+      "options": [
+        "A. Dos lectores biométricos independientes en serie con respaldo eléctrico UPS de 15 minutos",
+        "B. Lector biométrico primario + cerradura mecánica de respaldo + UPS con capacidad 4+ horas + fuente alterna",
+        "D. Biometría con doble factor (PIN + huella) sin componentes redundantes adicionales",
+        "C. Sistema biométrico único con caché de plantillas digitales para 48 horas"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 Anexo A.11.2 requiere: múltiples mecanismos independientes, respaldo de poder crítico (4+ horas), controles mecánicos para fallo de energía. Opción B: biometría redundante + fallback + autonomía crítica.",
+      "justification_wrong": "15 minutos de UPS es insuficiente. Caché de plantillas es vulnerabilidad. Doble factor sin redundancia de componentes no asegura disponibilidad. Serie degrada confiabilidad vs. paralelo."
+    },
+    {
+      "num": 30,
+      "text": "Un modelo Clark-Wilson de control de acceso implementa Transacciones Certificadas (CT) y Constrained Data Items (CDI). Un CDI modifica valores inconsistentemente. ¿Qué principio se vulnera y cómo remediar según el modelo?",
+      "tag": "Modelos de Seguridad: Integridad",
+      "options": [
+        "A. Vulnera 'Certificación de Transformación': requiere verificación de integridad (checksums/HMAC) en CADA transacción",
+        "D. Falla 'Propiedad Transitiva': implementar auditoría pasiva sin remediación técnica",
+        "B. Violación de 'Separación de Deberes': necesita autorización de múltiples administradores sin restricción criptográfica",
+        "C. Incumple 'No-Escritura hacia Arriba': requiere degradar clasificación del CDI automáticamente"
+      ],
+      "correct": 0,
+      "justification_correct": "Clark-Wilson C1: Certificación asegura que CT transforman CDI consistentemente. Violación requiere verificación criptográfica (HMAC-SHA256, checksums) en cada transacción certificada. NIST SP 800-53 AC-3 valida este control.",
+      "justification_wrong": "Separación de deberes (C2) es control diferente. Bell-LaPadula (no escritura hacia arriba) no es Clark-Wilson. Auditoría pasiva no remedia, apenas detecta. Clark-Wilson es modelo PREVENTIVO."
+    },
+    {
+      "num": 31,
+      "text": "Una organización implementa un sistema de control de acceso multinivel donde los usuarios de nivel bajo NO pueden leer datos de nivel alto, pero SÍ pueden escribir en ellos. ¿Cuál modelo de seguridad describe esta política?",
+      "tag": "Modelos de Seguridad - Biba",
+      "options": [
+        "A. Modelo Biba (Integridad)",
+        "B. Modelo Bell-LaPadula (Confidencialidad)",
+        "D. Modelo Brewer-Nash (Conflicto de Intereses)",
+        "C. Modelo Clark-Wilson (Transacciones)"
+      ],
+      "correct": 0,
+      "justification_correct": "Biba implementa propiedad *-integrity (escritura hacia arriba permitida, lectura hacia arriba bloqueada). Protege integridad contra modificaciones no autorizadas. RFC 1244 y Common Criteria ISO/IEC 15408 reconocen este modelo para entornos donde la integridad es crítica, típico en sistemas SCADA e industriales.",
+      "justification_wrong": "Bell-LaPadula protege confidencialidad (no leer arriba, escribir abajo). Clark-Wilson enfatiza transacciones y auditoría. Brewer-Nash maneja conflictos de intereses dinámicamente. Ninguno describe la propiedad de integridad de Biba."
+    },
+    {
+      "num": 32,
+      "text": "Durante una evaluación de criterios comunes, un producto alcanza EAL4 (Methodical Design & Testing). ¿Cuál es la implicación principal respecto a garantías de seguridad según ISO/IEC 15408?",
+      "tag": "Criterios de Evaluación - Common Criteria",
+      "options": [
+        "D. Indica máximo nivel de aseguramiento disponible en la norma CC",
+        "A. Garantiza protección contra amenazas de actores avanzados con recursos ilimitados",
+        "C. Certifica que el producto es inatacable en todos los escenarios de implementación",
+        "B. Demuestra diseño metodológico, pruebas independientes y análisis de vulnerabilidades documentadas"
+      ],
+      "correct": 3,
+      "justification_correct": "EAL4 requiere: análisis de diseño detallado, pruebas independientes funcionales, búsqueda de vulnerabilidades sistemática y documentación técnica rigurosa. ISO/IEC 15408:2022 posiciona EAL4 como equilibrio razonable entre aseguramiento y viabilidad comercial para sistemas moderados.",
+      "justification_wrong": "EAL4 NO es inmune a actores avanzados (eso es EAL7). No garantiza invulnerabilidad absoluta. EAL7 es máximo nivel. EAL4 es apropiado para gobierno y defensa de nivel medio."
+    },
+    {
+      "num": 33,
+      "text": "En una infraestructura PKI, un certificado digital firmado por CA raíz expira antes que el CRL (Certificate Revocation List) sea publicado. ¿Cuál es el riesgo de seguridad CRÍTICO?",
+      "tag": "Criptografía y PKI - Gestión de Ciclo de Vida",
+      "options": [
+        "D. El certificado raíz debe ser reemplazado inmediatamente por política de rotación",
+        "A. El certificado sigue siendo válido porque el CRL aún no refleja su estado",
+        "B. Las aplicaciones cliente no pueden validar la revocación hasta descarga del CRL",
+        "C. La firma digital del certificado se vuelve criptográficamente débil automáticamente"
+      ],
+      "correct": 2,
+      "justification_correct": "RFC 5280 (X.509) y NIST SP 800-57 establecen que la validación de revocación debe ocurrir ANTES de aceptar el certificado. Si el CRL no está disponible a tiempo, existe ventana de vulnerabilidad donde certificados revocados podrían usarse. OCSP stapling mitiga este riesgo.",
+      "justification_wrong": "A es incorrecto: expiración es diferente a revocación. C confunde expiración con debilidad criptográfica. D no es procedimiento estándar. La brecha es temporal, no requiere cambio radical de infraestructura."
+    },
+    {
+      "num": 34,
+      "text": "Se diseña una sala de servidores con control de acceso biométrico, cerraduras electromagnéticas y vigilancia CCTV continua. Según normas de seguridad física FIPS 140-3 y ISO 27001, ¿cuál aspecto FALTA para cumplimiento integral?",
+      "tag": "Seguridad Física - Diseño de Instalaciones",
+      "options": [
+        "B. Sistema de detección de intrusión redundante independiente de vigilancia CCTV",
+        "D. Auditoría de logs de acceso cada 24 horas sin excepción",
+        "A. Protección de puntos débiles como ductos de aire acondicionado, cableado de entrada y superficies compartidas",
+        "C. Autenticación multifactor para todos los empleados sin excepción"
+      ],
+      "correct": 2,
+      "justification_correct": "FIPS 140-3 y ISO/IEC 27001:2022 exigen perímetro defensivo completo. Ductos HVAC, cableado sin protección y áreas compartidas son vectores de compromiso. NIST SP 800-53 SC-7 especifica monitoreo de todos los puntos de entrada lógica y física sin excepciones.",
+      "justification_wrong": "B es recomendable pero no obligatorio si CCTV es confiable. C es excesivo para personal operativo. D cada 24h es suficiente; no requiere auditoría en tiempo real. A aborda vulnerabilidades estructurales fundamentales."
+    },
+    {
+      "num": 35,
+      "text": "Un algoritmo de hash SHA-256 genera colisión controlada en laboratorio con complejidad 2^120. ¿Cuál es la recomendación de seguridad CORRECTA según NIST SP 800-175B y Common Criteria?",
+      "tag": "Criptografía - Funciones Hash y Fortaleza",
+      "options": [
+        "A. Descontinuar SHA-256 inmediatamente porque su resistencia se reduce a 2^120 operaciones",
+        "C. Implementar SHA-256 solo en ambiente desconectado hasta publicación de parches",
+        "B. SHA-256 mantiene validez para aplicaciones no criptográficas pero debe reemplazarse en firmas digitales",
+        "D. Evaluar viabilidad práctica: 2^120 sigue siendo computacionalmente infactible; considerar migración planeada a SHA-3"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-175B establece que 2^128 es umbral mínimo de fortaleza. Aunque 2^120 es teórico, representa degradación. No es ataque práctico inmediato pero justifica migración planeada a SHA-3-256 (inmune a colisiones por diseño). Transición gradual recomendada por ISO/IEC 10118-3.",
+      "justification_wrong": "A es alarmista: ataque teórico no invalida uso actual. B es incorrecto: hash sigue siendo válido si se gestiona transición adecuadamente. C es innecesariamente restrictivo. D balancea realismo técnico con prudencia de seguridad."
+    },
+    {
+      "num": 36,
+      "text": "En una arquitectura de seguridad multinivel, se implementa el modelo Bell-LaPadula para proteger información clasificada. Un usuario con clearance SECRET intenta escribir en un objeto clasificado CONFIDENTIAL. ¿Cuál es el resultado según la propiedad *-property (estrella)?",
+      "tag": "Modelos de Seguridad - Bell-LaPadula",
+      "options": [
+        "D. Depende de atributos categóricos; Bell-LaPadula no controla categorías compartimentalizadas",
+        "A. La escritura se permite; la propiedad *-property no restringe escrituras hacia niveles inferiores",
+        "B. La escritura se rechaza; viola la propiedad *-property que prohíbe escritura a niveles menores",
+        "C. Se permite con auditoría obligatoria; existe excepción para canales certificados"
+      ],
+      "correct": 2,
+      "justification_correct": "La propiedad *-property (confinement property) de Bell-LaPadula prohíbe a sujetos escribir en objetos clasificados a niveles inferiores al su clearance (no-write-down). Un sujeto SECRET no puede escribir a CONFIDENTIAL. ISO/IEC 27005:2022, RFC 2828.",
+      "justification_wrong": "Confunde la dirección de restricción (write-down vs write-up) o desconoce que *-property es mandatoria sin excepciones en modelo formal Bell-LaPadula puro. FIPS 200 establece principios de compartimentalización pero Bell-LaPadula es explícito."
+    },
+    {
+      "num": 37,
+      "text": "Una organización implementa controles criptográficos según FIPS 140-3 Nivel 3. Se requiere proteger claves de cifrado en reposo. ¿Cuál configuración cumple requisitos de almacenamiento seguro de claves en HSM?",
+      "tag": "Criptografía - Cumplimiento FIPS 140-3",
+      "options": [
+        "C. Usar split-knowledge con 3 custodios; almacenar compartimentos en servidores separados con TLS 1.3",
+        "A. Almacenar claves en base de datos cifrada con AES-256-CBC; respaldo en USB encriptado",
+        "D. Implementar key wrapping con claves maestras en memoria volátil; renovación automática cada 90 días",
+        "B. Generar y almacenar claves exclusivamente en HSM certificado FIPS 140-3 Nivel 3; acceso mediante autenticación multifactor"
+      ],
+      "correct": 3,
+      "justification_correct": "FIPS 140-3 Nivel 3 requiere Hardware Security Module certificado para generación, almacenamiento y gestión de claves criptográficas. Autenticación multifactor es obligatoria para acceso (IdentityBasedAuthentication). NIST SP 800-57 Part 1, FIPS PUB 140-3:2019.",
+      "justification_wrong": "Las alternativas A, C y D son prácticas débiles: almacenamiento en BD/USB (A) no aísla claves, split-knowledge sin HSM (C) no garantiza protección, claves en RAM (D) exposición a cold-boot attacks. Solo HSM certificado cumple Nivel 3."
+    },
+    {
+      "num": 38,
+      "text": "Se diseña infraestructura PKI corporativa. El CA raíz se compromete parcialmente (acceso no autorizado a logs de certificación, pero clave privada intacta). ¿Qué mecanismo de detección temprana según Common Criteria nivel EAL5 hubiese prevenido este incidente?",
+      "tag": "Criptografía - PKI y Evaluación Common Criteria",
+      "options": [
+        "D. Auditoría offline con copias inmutables de registros de CA; análisis forense mensual con tercero independiente",
+        "A. Implementar certificación de atributos (AC) con política de auditoría mandatoria y monitoreo de logs en tiempo real",
+        "B. Usar sellos de tiempo (timestamping) en operaciones CA; validar integridad mediante hash criptográfico diario",
+        "C. Replicar CA en arquitectura activo-pasivo; transferencia de claves entre réplicas cada 30 días"
+      ],
+      "correct": 1,
+      "justification_correct": "Common Criteria EAL5 (Security Modules) exige auditoría mandatoria de acciones privilegiadas con control de integridad. Certificados de atributos (RFC 5755) + monitoreo real-time detectan accesos no autorizados a logs. ISO/IEC 15408-1:2022, RFC 5280 Section 4.2.2.",
+      "justification_wrong": "Timestamping (B) protege integridad pero no detecta accesos; replicación (C) no previene; auditoría offline (D) es reactiva. EAL5 requiere detección prospectiva mediante controles de acceso + auditoría online con alertas inmediatas."
+    },
+    {
+      "num": 39,
+      "text": "Una instalación de datacenter crítico requiere protección física según NIST SP 800-53 categoría MODERATE. El perímetro exterior tiene zona de amortiguamiento (buffer zone) de 25 metros. ¿Cuál control ADICIONAL es obligatorio para cumplir requisito PE-1 (Política de Perímetro Físico)?",
+      "tag": "Seguridad Física - Diseño de Instalaciones",
+      "options": [
+        "D. Fosa de 2 metros; detector de metales; registro manual de visitantes en libro",
+        "A. Cerco de 3 metros con cámaras CCTV cada 20 metros; acceso controlado mediante portero",
+        "C. Monitoreo mediante drones autónomos; búsqueda perimetral diaria; guardias armados 24x7",
+        "B. Doble vallado perimetral con espacio vigilado; sistemas de detección de movimiento; control de acceso biométrico en puntos de entrada"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-53 PE-1 requiere: perímetro con mecanismo de detección de intrusiones, acceso limitado a puntos monitoreados, y sistemas de vigilancia (CCTV). Doble cerco + detección de movimiento + control biométrico satisface requisitos de segregación física y detección. NIST SP 800-53B-2023.",
+      "justification_wrong": "Opción A (insuficiente - cerco único); C (excesiva, impráctica); D (precaria - registro manual no es control de acceso). Categoría MODERATE requiere defensa en profundidad con detección prospectiva, no solo disuasión."
+    },
+    {
+      "num": 40,
+      "text": "En análisis de modelo Brewer-Nash (Chinese Wall), un consultor trabaja para empresas en competencia dentro mismo sector. Período de evaluación: 120 días. ¿Cuál mecanismo de control previene conflicto de interés según política de muralla china dinámica?",
+      "tag": "Modelos de Seguridad - Brewer-Nash",
+      "options": [
+        "B. Prohibir acceso a archivo de empresa B si accedió archivo empresa A en últimos 120 días; excepción si autorización ejecutiva de ambas",
+        "C. Crear túneles de datos encriptados separados; confidencialidad garantizada por segregación lógica",
+        "D. Monitorear lecturas simultáneas mediante etiquetas de flujo; bloquear si datos confidenciales cruzan límite sectorial",
+        "A. Permitir acceso simultáneo a archivos de ambas empresas; auditoría retrospectiva cada 30 días"
+      ],
+      "correct": 0,
+      "justification_correct": "Brewer-Nash modelo implementa Chinese Wall dinámica: sujeto NO puede acceder archivos de competidores dentro período histórico sin consentimiento explícito de ambas organizaciones. Ventana temporal (120d) es requisito clave. ISO/IEC 10164, INFOSEC Community Standard.",
+      "justification_wrong": "Opción A (auditoría no previene conflit); C (encriptación ≠ separación lógica de acceso); D (monitoreo es detective, no preventivo). Solo B implementa control preventivo de conflicto inherente a modelo Brewer-Nash con período retención dinámico."
+    },
+    {
+      "num": 41,
+      "text": "En el modelo de seguridad Bell-LaPadula, ¿cuál es la implicación principal de la propiedad '*-property' (star property) respecto a la integridad de datos en sistemas multinivel?",
+      "tag": "Modelos de Seguridad - Bell-LaPadula",
+      "options": [
+        "B. Permite lecturas sin restricción entre niveles de clasificación garantizando disponibilidad",
+        "A. Prohíbe escrituras hacia niveles de clasificación inferiores, previniendo filtraciones de información sensible",
+        "C. Establece controles de integridad mediante firmas digitales en cada transacción",
+        "D. Implementa segregación física entre usuarios de diferentes dominios de seguridad"
+      ],
+      "correct": 1,
+      "justification_correct": "La propiedad *-property en Bell-LaPadula prohíbe que un sujeto en nivel bajo escriba en objetos de nivel alto, evitando contaminación de datos clasificados. Esto es fundamental para mantener confidencialidad en arquitecturas multinivel conforme a estándares de evaluación común (CC).",
+      "justification_wrong": "Las opciones B, C y D son incorrectas: B describe la propiedad de lectura simple, C confunde con mecanismos criptográficos ajenos al modelo, D es característica de Clark-Wilson o control de acceso físico."
+    },
+    {
+      "num": 42,
+      "text": "Según el modelo de integridad Biba, ¿cuál es el propósito primordial de la regla 'no read down' y su relación con la seguridad de sistemas críticos?",
+      "tag": "Modelos de Seguridad - Biba",
+      "options": [
+        "D. Garantizar autenticación multifactor en cada acceso a recursos de sistemas críticos",
+        "A. Evitar que procesos de alta integridad lean datos de baja integridad, contaminando su nivel de confianza",
+        "B. Permitir que administradores de bajo nivel lean información confidencial de niveles superiores",
+        "C. Forzar cifrado AES-256 en todas las comunicaciones entre niveles de integridad"
+      ],
+      "correct": 1,
+      "justification_correct": "Biba implementa 'no read down' para prevenir que sujetos de alta integridad dependan de datos de baja confiabilidad. Crítico en sistemas SCADA e ICS conforme a NIST SP 800-82, protegiendo integridad operacional.",
+      "justification_wrong": "B contradice el principio de no lectura hacia abajo, C y D son mecanismos orthogonales (criptografía y autenticación) no inherentes al modelo Biba de integridad."
+    },
+    {
+      "num": 43,
+      "text": "El modelo Clark-Wilson introduce el concepto de 'Constrained Data Item' (CDI) y 'Transformation Procedures' (TP). ¿Cuál es la validación esencial que debe ejecutarse según este modelo para garantizar integridad?",
+      "tag": "Modelos de Seguridad - Clark-Wilson",
+      "options": [
+        "D. Implementación de redundancia geográfica en múltiples datacenters",
+        "C. Auditoría en tiempo real de todas las lecturas de datos no restringidos",
+        "A. Verificación de invariantes de integridad antes y después de cada transformación autorizada",
+        "B. Encriptación end-to-end de todos los CDI almacenados en repositorios"
+      ],
+      "correct": 2,
+      "justification_correct": "Clark-Wilson exige que TPs mantengan invariantes de integridad CDI. FIPS 140-2 y CC EAL4+ requieren validación pre/post transformación. Fundamental en sistemas financieros y transaccionales para asegurar consistencia.",
+      "justification_wrong": "B es control criptográfico separado, C es auditoría (no validación), D es disponibilidad, no integridad según Clark-Wilson."
+    },
+    {
+      "num": 44,
+      "text": "En evaluación de seguridad bajo Common Criteria (CC), ¿qué nivel de aseguramiento (EAL) es obligatorio para productos de cifrado asimétrico destinados a infraestructura crítica nacional según NIST?",
+      "tag": "Criterios de Evaluación de Seguridad - Common Criteria",
+      "options": [
+        "B. EAL2 proporciona suficiente garantía para cualquier aplicación gubernamental",
+        "A. EAL4 (Metodically Designed, Tested and Reviewed) es el mínimo aceptado para PKI en infraestructuras críticas",
+        "C. EAL7 es obligatorio sin excepción para todo software de seguridad",
+        "D. EAL1 es adecuado si se implementan firewalls perimetrales"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-53 y FIPS 140-3 recomiendan EAL4+ para componentes criptográficos de infraestructura crítica. CC EAL4 requiere análisis de vulnerabilidad formal y pruebas independientes, alineado con NIST CMMC L3.",
+      "justification_wrong": "B subestima garantía necesaria, C es excesivo e innecesario, D es insuficiente; los firewalls no compensan deficiencias en evaluación de módulos criptográficos."
+    },
+    {
+      "num": 45,
+      "text": "En diseño de PKI para firma digital, ¿cuál es la función criptográfica que proporciona autenticación del origen y no-repudio según ISO/IEC 27001 y FIPS 186-4?",
+      "tag": "Criptografía - PKI y Firmas Digitales",
+      "options": [
+        "D. Clave compartida pre-distribuida mediante canal seguro fuera de banda",
+        "C. Certificado X.509 sin necesidad de validación criptográfica adicional",
+        "B. Algoritmo de cifrado simétrico AES en modo ECB para todos los documentos",
+        "A. Función hash criptográfica (SHA-256) combinada con cifrado asimétrico (RSA/ECDSA) sobre el hash"
+      ],
+      "correct": 3,
+      "justification_correct": "FIPS 186-4 especifica que firma digital requiere: hash criptográfico (resistente colisión) + cifrado asimétrico con clave privada del firmante. SHA-256/RSA-2048 mínimo. ISO/IEC 27001 8.2.3 exige estos mecanismos para no-repudio.",
+      "justification_wrong": "B (ECB es inseguro, simétricas no proveen no-repudio), C (certificado solo autentica identidad, no contenido), D (simétricas requieren pre-distribución, sin no-repudio bilateral)."
+    },
+    {
+      "num": 46,
+      "text": "En un modelo de seguridad multinivel, se implementa Bell-LaPadula para proteger clasificación de datos. Un sujeto en nivel SECRET intenta escribir en un objeto UNCLASSIFIED. ¿Cuál propiedad del modelo se viola?",
+      "tag": "Modelos de Seguridad - Bell-LaPadula",
+      "options": [
+        "B. Propiedad Estrella (violación de integridad)",
+        "C. Propiedad Discrecional (violación de control de acceso)",
+        "D. Propiedad Transitiva (violación de cascada de seguridad)",
+        "A. Propiedad Simple de Seguridad (violación de confidencialidad)"
+      ],
+      "correct": 0,
+      "justification_correct": "La propiedad Estrella (*-property) de Bell-LaPadula prohíbe escritura hacia abajo (write-down). Un sujeto SECRET escribiendo a UNCLASSIFIED viola esta restricción, permitiendo información clasificada fluya hacia niveles inferiores, comprometiendo confidencialidad. ISO/IEC 15408 valida este principio.",
+      "justification_wrong": "Simple Security previene lectura hacia arriba. Discrecional es control DAC independiente. Transitiva no es propiedad Bell-LaPadula. Estas no se violarían en este escenario específico de escritura hacia abajo."
+    },
+    {
+      "num": 47,
+      "text": "Una organización implementa modelo Clark-Wilson para asegurar integridad en sistemas de transacciones financieras. ¿Cuál elemento es CRÍTICO para mantener la integridad de datos bajo este modelo?",
+      "tag": "Modelos de Seguridad - Clark-Wilson",
+      "options": [
+        "C. Validación criptográfica de mensajes en cada acceso",
+        "D. Separación absoluta entre usuarios y datos",
+        "B. Atributos de clasificación multinivel obligatoria",
+        "A. Programas de transformación certificados (Transformation Procedures - TP)"
+      ],
+      "correct": 3,
+      "justification_correct": "Clark-Wilson enfatiza Transformation Procedures certificadas como mecanismo principal. Solo TPs autorizadas pueden modificar datos integrables, garantizando transiciones estado-válido a estado-válido. NIST SP 800-12 confirma TPs como núcleo del modelo para integridad comercial.",
+      "justification_wrong": "Clasificación multinivel es Bell-LaPadula, no Clark-Wilson. Validación criptográfica es complementaria, no esencial. Separación usuario-datos no es principio Clark-Wilson que usa roles y TPs autorizadas."
+    },
+    {
+      "num": 48,
+      "text": "Durante evaluación Common Criteria (CC) de un producto de criptografía, se determina EAL4 como nivel de aseguramiento. ¿Qué implica este nivel respecto a métodos de evaluación?",
+      "tag": "Criterios de Evaluación - Common Criteria",
+      "options": [
+        "B. Análisis de diseño estructurado con validación de especificaciones de seguridad",
+        "A. Evaluación mediante pruebas funcionales sin análisis de diseño formal",
+        "C. Verificación matemática exhaustiva de todas las propiedades de seguridad",
+        "D. Certificación sin intervención de evaluadores independientes acreditados"
+      ],
+      "correct": 0,
+      "justification_correct": "EAL4 (Methodical Testing and Checked Design) requiere análisis de diseño estructurado, pruebas funcionales y validación contra especificaciones de seguridad. ISO/IEC 15408 define este nivel para productos moderadamente críticos con documentación detallada.",
+      "justification_wrong": "EAL4 supera pruebas-funcionales simples (EAL1-2). No requiere verificación matemática exhaustiva (EAL6-7). Requiere evaluadores independientes acreditados, nunca auto-certificación ISO/IEC 15408."
+    },
+    {
+      "num": 49,
+      "text": "En infraestructura PKI corporativa, se implementa firma digital usando RSA-2048 y SHA-256. Un auditor detecta que el certificado de la Autoridad Certificadora vence en 6 meses. ¿Cuál riesgo de integridad criptográfica se materializa?",
+      "tag": "Criptografía - PKI y Firmas Digitales",
+      "options": [
+        "B. Incapacidad para validar cadena de confianza (chain of trust) post-expiración CA",
+        "A. Debilitamiento del algoritmo RSA por envejecimiento temporal de claves",
+        "C. Compromiso automático de todas las firmas digitales emitidas previamente",
+        "D. Reducción criptográfica de SHA-256 a SHA-1 por defecto del sistema"
+      ],
+      "correct": 0,
+      "justification_correct": "Expiración CA rompe cadena de confianza para validación prospectiva. Certificados subordinados no podrán verificarse contra CA expirada, invalidando firmas digitales futuras. NIST SP 800-32 requiere renovación CA pre-expiración para continuidad operacional.",
+      "justification_wrong": "RSA-2048 no se debilita por tiempo. Firmas previas permanecen válidas matemáticamente. SHA-256 no degrada a SHA-1. El riesgo es operacional (cadena confianza) no criptográfico intrínseco."
+    },
+    {
+      "num": 50,
+      "text": "Una instalación de datos clasificados implementa control de acceso físico mediante badge RFID de proximidad con criptografía Challenge-Response. ¿Cuál vulnerabilidad fundamental permanece en este diseño?",
+      "tag": "Seguridad Física - Control de Acceso",
+      "options": [
+        "A. Susceptibilidad a relay attacks por falta de validación de distancia temporal",
+        "D. Incapacidad de RFID para almacenar más de 128 bits de información segura",
+        "B. Debilitamiento del Challenge-Response por colisiones de hash SHA-1",
+        "C. Incompatibilidad con estándares FIPS 140-2 para módulos criptográficos"
+      ],
+      "correct": 0,
+      "justification_correct": "RFID Challenge-Response sin validación de tiempo/distancia es vulnerable a relay attacks. Atacante puede amplificar señal extendiéndola físicamente. NIST SP 800-53 (SC-7) requiere mecanismos anti-relay para autenticación proximidad en áreas críticas.",
+      "justification_wrong": "Challenge-Response mitiga colisiones hash. RFID con criptografía puede ser FIPS 140-2. Limitación bits no es vulnerabilidad si diseño es robusto. Relay attack es verdadera debilidad sistémica de RFID proximidad."
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "identity_theft_cyberfraud",
+  "domain_code": "S1D08",
+  "domain_name": "S1D08 · Identity Theft & Cyberfraud",
+  "lang": "es",
+  "total": 48,
+  "schema": "FractalFlashcard-v1",
+  "layers": {
+    "F1": "Definição",
+    "F2": "Distinção",
+    "F3": "Aplicação",
+    "F4": "Síntese"
+  },
+  "cards": [
+    {
+      "id": 1,
+      "layer": "F1",
+      "topic": "definicion_robo_identidad",
+      "front": {
+        "es": "¿Cómo se define el robo de identidad en el contexto del ciberfraud?"
+      },
+      "back": {
+        "es": "El robo de identidad es el uso no autorizado de información personal de otra persona (nombre, número de seguro social, datos bancarios) para cometer fraude o delitos. En ciberfraud, los delincuentes obtienen esta información mediante hacking, phishing o brechas de datos, y la utilizan para abrir cuentas, realizar compras fraudulentas o solicitar crédito. Por ejemplo, un atacante puede usar datos robados de un cliente para obtener una tarjeta de crédito a su nombre."
+      }
+    },
+    {
+      "id": 2,
+      "layer": "F1",
+      "topic": "definicion_carding",
+      "front": {
+        "es": "¿Qué es el carding y cómo se define en el fraude cibernético?"
+      },
+      "back": {
+        "es": "El carding es la práctica ilegal de usar datos de tarjetas de crédito o débito robadas para realizar compras fraudulentas en línea o en tiendas físicas. Los carding rings son grupos organizados que compran números de tarjetas en el dark web y las utilizan sistemáticamente antes de que sean canceladas. Este delito causa pérdidas significativas a instituciones financieras y comerciantes, quienes absorben el costo de los cargos fraudulentos."
+      }
+    },
+    {
+      "id": 3,
+      "layer": "F1",
+      "topic": "definicion_credential_stuffing",
+      "front": {
+        "es": "¿Cuál es la definición de credential stuffing en ataques cibernéticos?"
+      },
+      "back": {
+        "es": "Credential stuffing es una técnica de ataque automatizado donde los ciberdelincuentes utilizan credenciales (nombres de usuario y contraseñas) robadas de brechas previas para acceder a múltiples cuentas en diferentes plataformas. Los atacantes aprovechan el hecho de que muchas personas reutilizan las mismas credenciales en varios servicios. Por ejemplo, si se roba una base de datos de un servicio de streaming, los atacantes intentarán esas mismas credenciales en bancos, redes sociales y otras plataformas."
+      }
+    },
+    {
+      "id": 4,
+      "layer": "F1",
+      "topic": "definicion_account_takeover",
+      "front": {
+        "es": "¿Cómo se define la toma de control de cuenta (Account Takeover - ATO)?"
+      },
+      "back": {
+        "es": "La toma de control de cuenta (ATO) es el acto de obtener acceso no autorizado a una cuenta en línea de otra persona mediante diversos métodos como credential stuffing, phishing, SIM swapping o explotación de vulnerabilidades. Una vez dentro, el atacante puede cambiar contraseñas, modificar información de contacto, transferir fondos o realizar fraudes en nombre del propietario legítimo. El ATO es frecuente en cuentas bancarias, de correo electrónico y redes sociales, siendo el correo electrónico un objetivo crítico porque facilita el acceso a otras cuentas."
+      }
+    },
+    {
+      "id": 5,
+      "layer": "F1",
+      "topic": "definicion_session_hijacking",
+      "front": {
+        "es": "¿Qué es el session hijacking y cómo se define en ciberseguridad?"
+      },
+      "back": {
+        "es": "El session hijacking (secuestro de sesión) es una técnica de ataque donde un ciberdelincuente intercepta y roba la sesión activa de un usuario autenticado, permitiéndole actuar como si fuera ese usuario sin conocer la contraseña. El atacante captura cookies de sesión o tokens mediante man-in-the-middle attacks o malware, luego los utiliza para acceder a sistemas y datos sensibles. Por ejemplo, un atacante puede interceptar la sesión de un usuario en su banco y ejecutar transferencias fraudulentas."
+      }
+    },
+    {
+      "id": 6,
+      "layer": "F1",
+      "topic": "definicion_phishing_variantes",
+      "front": {
+        "es": "¿Cuál es la definición de vishing y cómo se diferencia del phishing tradicional?"
+      },
+      "back": {
+        "es": "El vishing (voice phishing) es un ataque de ingeniería social que utiliza llamadas telefónicas en lugar de correos electrónicos para engañar a las víctimas y obtener información sensible. Mientras que el phishing es predominantemente basado en correo electrónico, el vishing aprovecha la comunicación verbal para crear urgencia y establecer confianza más rápidamente. Un ejemplo típico es cuando un atacante se hace pasar por un representante bancario llamando para confirmar datos de cuenta, convenciendo a la víctima de revelar números de PIN o contraseñas."
+      }
+    },
+    {
+      "id": 7,
+      "layer": "F1",
+      "topic": "definicion_whaling",
+      "front": {
+        "es": "¿Qué define al whaling y a quiénes apunta específicamente?"
+      },
+      "back": {
+        "es": "El whaling es una forma sofisticada de spear phishing dirigida específicamente a ejecutivos de alto nivel (CEOs, CFOs, directores) de organizaciones. Los atacantes investigan exhaustivamente a sus objetivos para crear mensajes altamente personalizados que imitan comunicaciones legítimas de colegas o autoridades. El objetivo es típicamente obtener acceso a sistemas críticos, información financiera sensible o ejecutar transferencias bancarias fraudulentas de gran valor. Por ejemplo, un atacante se hace pasar por el CEO pidiendo transferencia urgente de fondos al CFO."
+      }
+    },
+    {
+      "id": 8,
+      "layer": "F1",
+      "topic": "definicion_malware_tipos",
+      "front": {
+        "es": "¿Cómo se define el spyware y cuál es su propósito principal en ataques de identidad?"
+      },
+      "back": {
+        "es": "El spyware es un malware diseñado para monitorear secretamente la actividad de un usuario sin su consentimiento, capturando información sensible como credenciales, datos bancarios, mensajes y comportamiento de navegación. En el contexto del robo de identidad, el spyware permite a los atacantes recopilar datos personales directamente del dispositivo de la víctima en tiempo real. Por ejemplo, el spyware keylogger registra cada pulsación de tecla, capturando contraseñas y números de tarjeta de crédito mientras la víctima navega sin saberlo."
+      }
+    },
+    {
+      "id": 9,
+      "layer": "F1",
+      "topic": "definicion_formjacking",
+      "front": {
+        "es": "¿Qué es el formjacking y cómo se define en fraude electrónico?"
+      },
+      "back": {
+        "es": "El formjacking es un ataque cibernético donde los delincuentes inyectan código malicioso en formularios en línea (especialmente de checkout en tiendas e-commerce) para capturar datos sensibles de usuarios como números de tarjeta de crédito, información personal y direcciones. El código inyectado funciona invisiblemente mientras el usuario completa el formulario normalmente, enviando los datos capturados a servidores de los atacantes. Un ejemplo es cuando el código malicioso se inyecta en el formulario de pago de una tienda online, robando datos de cientos de miles de transacciones."
+      }
+    },
+    {
+      "id": 10,
+      "layer": "F1",
+      "topic": "definicion_doctoring_digital",
+      "front": {
+        "es": "¿Cómo se define la manipulación digital (doctoring) de documentos en contexto de fraude de identidad?"
+      },
+      "back": {
+        "es": "La manipulación digital de documentos (doctoring) es la alteración técnica de documentos digitales o sus versiones escaneadas mediante herramientas de edición para cambiar información y cometer fraude. En robo de identidad, los atacantes alteran documentos como licencias de conducir, pasaportes, comprobantes de ingresos o estados bancarios para respaldar solicitudes fraudulentas. Por ejemplo, un delincuente puede editar digitalmente un comprobante de ingresos falso o una licencia de conducir alterada para abrir una cuenta bancaria a nombre de una víctima."
+      }
+    },
+    {
+      "id": 11,
+      "layer": "F1",
+      "topic": "definicion_synthetic_identity",
+      "front": {
+        "es": "¿Qué es el robo de identidad sintética y cómo se construye?"
+      },
+      "back": {
+        "es": "El robo de identidad sintética es la creación de una identidad fraudulenta combinando información real e inventada (información real parcial con datos falsos adicionales) para eludir detección de sistemas anti-fraude. Los atacantes combinan números de seguro social reales con nombres, direcciones y fechas de nacimiento falsas para crear una identidad 'nueva' que es difícil de vincular con una sola víctima. Este tipo de fraude es particularmente insidioso porque afecta simultáneamente a múltiples individuos y puede pasar desapercibido durante años antes de ser detectado por agencias de crédito."
+      }
+    },
+    {
+      "id": 12,
+      "layer": "F1",
+      "topic": "definicion_data_broker",
+      "front": {
+        "es": "¿Cómo se definen los data brokers y cuál es su relación con el robo de identidad?"
+      },
+      "back": {
+        "es": "Los data brokers son empresas legales que recopilan, agregan y venden datos personales sobre individuos (nombres, direcciones, historiales crediticios, comportamiento de compra) a terceros con fines comerciales. Aunque operan legalmente, los data brokers representan un riesgo significativo para el robo de identidad porque sus bases de datos son objetivos atractivos para hackers, y sus prácticas de seguridad a menudo son deficientes. Cuando los data brokers sufren brechas, millones de registros de información personal se exponen, proporcionando a los delincuentes los datos necesarios para ejecutar ataques de robo de identidad a escala masiva."
+      }
+    },
+    {
+      "id": 13,
+      "layer": "F2",
+      "topic": "distincion_phishing_vishing",
+      "front": {
+        "es": "¿Cuál es la diferencia entre phishing y vishing en el contexto del robo de identidad?"
+      },
+      "back": {
+        "es": "Phishing es un ataque basado en correo electrónico o mensajes digitales que intenta capturar credenciales mediante enlaces maliciosos o formularios fraudulentos. Vishing (voice phishing) utiliza llamadas telefónicas o mensajes de voz para engañar a las víctimas y obtener información personal. Ejemplo: un atacante envía un correo falsificado de un banco (phishing), mientras que otro llama haciéndose pasar por soporte técnico (vishing) para obtener números de tarjeta de crédito."
+      }
+    },
+    {
+      "id": 14,
+      "layer": "F2",
+      "topic": "distincion_credential_stuffing_brute_force",
+      "front": {
+        "es": "¿Cómo se diferencia el credential stuffing del ataque de fuerza bruta?"
+      },
+      "back": {
+        "es": "Credential stuffing utiliza credenciales robadas previamente en breaches para intentar acceso a múltiples cuentas, aprovechando la reutilización de contraseñas. Brute force intenta adivinar contraseñas probando sistemáticamente combinaciones hasta encontrar la correcta. Ejemplo: credential stuffing usa 10 millones de pares usuario-contraseña de un breach anterior, mientras que brute force prueba todas las combinaciones posibles de caracteres contra una cuenta específica."
+      }
+    },
+    {
+      "id": 15,
+      "layer": "F2",
+      "topic": "distincion_malware_adware",
+      "front": {
+        "es": "¿Cuál es la diferencia clave entre malware y adware en ataques cibernéticos?"
+      },
+      "back": {
+        "es": "Malware es software malicioso diseñado para dañar, infiltrarse o comprometer sistemas; incluye virus, troyanos y ransomware con intenciones destructivas. Adware es software que despliega publicidad no deseada y, aunque intrusivo, típicamente no daña directamente el sistema, aunque sí recopila datos. Ejemplo: un troyano bancario (malware) roba credenciales financieras, mientras que adware podría mostrar pop-ups constantemente y rastrear hábitos de navegación sin cifrado."
+      }
+    },
+    {
+      "id": 16,
+      "layer": "F2",
+      "topic": "distincion_data_breach_data_exfiltration",
+      "front": {
+        "es": "¿En qué se diferencia una violación de datos (data breach) de la exfiltración de datos en investigaciones de fraude?"
+      },
+      "back": {
+        "es": "Una violación de datos es el acceso no autorizado a información sensible que puede o no implicar su movimiento fuera del sistema. La exfiltración de datos es específicamente la transferencia no autorizada de datos fuera de la organización hacia sistemas externos controlados por atacantes. Ejemplo: un breach puede ser detectado cuando un atacante accede a una base de datos de clientes, pero solo representa exfiltración cuando esos datos se descargan hacia servidores criminales en el extranjero."
+      }
+    },
+    {
+      "id": 17,
+      "layer": "F2",
+      "topic": "distincion_insider_threat_external_attack",
+      "front": {
+        "es": "¿Cuál es la diferencia fundamental entre una amenaza interna (insider threat) y un ataque externo en ciberfraud?"
+      },
+      "back": {
+        "es": "Una amenaza interna proviene de individuos dentro de la organización (empleados, contratistas) que tienen acceso legítimo pero lo utilizan maliciosamente. Un ataque externo proviene de actores fuera de la organización sin acceso previo autorizado. Ejemplo: un empleado de TI que roba datos de clientes desde su estación de trabajo (insider) versus un criminal que ejecuta un ataque de phishing contra empleados desde internet (externo)."
+      }
+    },
+    {
+      "id": 18,
+      "layer": "F2",
+      "topic": "distincion_open_source_intelligence_hacking",
+      "front": {
+        "es": "¿Cómo se diferencia el OSINT (Open Source Intelligence) del hacking en recopilación de información para fraude?"
+      },
+      "back": {
+        "es": "OSINT recopila información de fuentes públicas disponibles legalmente (redes sociales, registros públicos, información corporativa) sin acceso no autorizado. Hacking accede ilegalmente a sistemas protegidos para obtener información confidencial. Ejemplo: OSINT podría identificar que un ejecutivo viaja a menudo mediante LinkedIn y registros de viajes públicos; hacking accedería ilegalmente al servidor de correos de la empresa para encontrar itinerarios financieros secretos."
+      }
+    },
+    {
+      "id": 19,
+      "layer": "F2",
+      "topic": "distincion_synthetic_identity_stolen_identity",
+      "front": {
+        "es": "¿Cuál es la diferencia entre identidad sintética e identidad robada en el contexto del fraude?"
+      },
+      "back": {
+        "es": "Identidad sintética combina información real e información falsa para crear una identidad completamente nueva que no pertenece a una persona real existente. Identidad robada utiliza información personal completamente real de una persona existente sin su consentimiento. Ejemplo: identidad sintética podría combinar un número de Seguro Social real con nombre falso e historial crediticio fabricado; identidad robada usa todos los datos reales de una víctima para abrir cuentas a su nombre."
+      }
+    },
+    {
+      "id": 20,
+      "layer": "F2",
+      "topic": "distincion_exploit_vulnerability",
+      "front": {
+        "es": "¿Cuál es la diferencia entre una vulnerabilidad y un exploit en ataques cibernéticos?"
+      },
+      "back": {
+        "es": "Una vulnerabilidad es una debilidad o defecto en el software, hardware o procedimientos de seguridad que podría ser explotada. Un exploit es un método o código específico que aprovecha esa vulnerabilidad para obtener acceso no autorizado o ejecutar acciones maliciosas. Ejemplo: una falta de validación de entrada en un formulario web es una vulnerabilidad; el código SQL injection que un atacante escribe para explotarla es el exploit."
+      }
+    },
+    {
+      "id": 21,
+      "layer": "F2",
+      "topic": "distincion_authentication_authorization",
+      "front": {
+        "es": "¿Cómo se diferencian la autenticación y la autorización en sistemas de seguridad digital?"
+      },
+      "back": {
+        "es": "Autenticación verifica la identidad del usuario confirmando que es quien dice ser (mediante contraseña, biometría, etc.). Autorización determina qué acciones o recursos puede utilizar ese usuario autenticado. Ejemplo: autenticación es ingresar contraseña correcta para acceder a la cuenta bancaria; autorización es que ese usuario solo pueda transferir dinero a cuentas predefinidas, no a cualquier cuenta."
+      }
+    },
+    {
+      "id": 22,
+      "layer": "F2",
+      "topic": "distincion_social_engineering_phishing_relation",
+      "front": {
+        "es": "¿Cómo se relacionan pero diferencian la ingeniería social del phishing?"
+      },
+      "back": {
+        "es": "Ingeniería social es una técnica amplia que manipula psicológicamente a las personas para revelar información o ejecutar acciones comprometedoras; incluye múltiples métodos. Phishing es una forma específica de ingeniería social que utiliza comunicaciones (email, SMS) fraudulentas haciéndose pasar por entidades confiables. Ejemplo: ingeniería social incluye pretexting telefónico, scams, phishing y vishing como diferentes tácticas; phishing específicamente usa email fraudulento de 'PayPal' para capturar credenciales."
+      }
+    },
+    {
+      "id": 23,
+      "layer": "F2",
+      "topic": "distincion_zero_day_known_vulnerability",
+      "front": {
+        "es": "¿Cuál es la diferencia entre una vulnerabilidad de día cero (zero-day) y una vulnerabilidad conocida?"
+      },
+      "back": {
+        "es": "Una vulnerabilidad zero-day es una debilidad de seguridad desconocida para el proveedor y el público, por lo que no existe parche disponible. Una vulnerabilidad conocida ha sido identificada, documentada y típicamente tiene parches disponibles. Ejemplo: una vulnerabilidad zero-day en navegador podría ser explotada antes de que el fabricante la descubra; una vulnerabilidad conocida en Windows está documentada en CVE con parches disponibles que usuarios pueden aplicar."
+      }
+    },
+    {
+      "id": 24,
+      "layer": "F2",
+      "topic": "distincion_encryption_obfuscation",
+      "front": {
+        "es": "¿Cómo se diferencia la encriptación de la ofuscación en protección de datos?"
+      },
+      "back": {
+        "es": "Encriptación transforma datos usando algoritmos matemáticos con claves, haciéndolos inlegibles sin la clave correcta; proporciona protección criptográfica fuerte. Ofuscación oculta o complica datos para desalentar acceso casual pero no proporciona protección matemática; los datos pueden decodificarse sin clave. Ejemplo: encriptación AES-256 protege datos de forma que solo con la clave correcta pueden accederse; ofuscación podría ser codificación Base64 que cualquiera puede decodificar fácilmente con herramientas públicas."
+      }
+    },
+    {
+      "id": 25,
+      "layer": "F3",
+      "topic": "deteccion_robos_credenciales",
+      "front": {
+        "es": "¿Cuáles son las señales de alerta que indican que las credenciales de un empleado han sido robadas en un ataque de ciberfraud?"
+      },
+      "back": {
+        "es": "Las señales incluyen: accesos desde ubicaciones geográficas inusuales, múltiples intentos fallidos de login seguidos de uno exitoso, cambios repentinos en patrones de actividad (acceso fuera de horario laboral), y transacciones anómalas. En contexto forense, debe investigarse el registro de eventos del servidor, logs de acceso VPN y patrones de transferencias de datos. Ejemplo: Un contador accede a la plataforma desde China a las 3 AM cuando normalmente trabaja en horario local de 9 AM a 5 PM, seguido de transferencia no autorizada de fondos."
+      }
+    },
+    {
+      "id": 26,
+      "layer": "F3",
+      "topic": "prevencion_vishing_attacks",
+      "front": {
+        "es": "¿Cómo detectar y prevenir ataques de vishing (voice phishing) dirigidos al personal financiero de una organización?"
+      },
+      "back": {
+        "es": "El vishing utiliza llamadas telefónicas para extraer información sensible, frecuentemente haciéndose pasar por autoridades o colegas. La detección incluye: verificar identidad mediante canales conocidos, reconocer urgencia artificial y solicitudes de credenciales, y analizar patrones de llamadas anómalas en registros PBX. La prevención requiere capacitación en políticas de verificación de identidad y procedimientos de confirmación de transacciones. Ejemplo: Un defraudador llama al departamento de finanzas haciéndose pasar por el CEO, solicitando transferencia urgente citando una supuesta emergencia corporativa."
+      }
+    },
+    {
+      "id": 27,
+      "layer": "F3",
+      "topic": "investigacion_account_takeover",
+      "front": {
+        "es": "¿Cuál es el protocolo investigativo recomendado para determinar si una cuenta corporativa ha sido comprometida por un tercero no autorizado?"
+      },
+      "back": {
+        "es": "El protocolo incluye: revisar logs de autenticación y acceso para actividades sospechosas, analizar cambios en configuración de cuenta (recuperación email, número de teléfono), examinar historial de sesiones activas, y documentar intentos de reset de contraseña. También debe verificarse el dispositivo desde el cual se realizó el acceso mediante análisis forense. Ejemplo: En una investigación de ATO de cuenta ejecutiva, se descubrió que la contraseña fue cambiada desde una dirección IP de Rusia, seguido de acceso a archivos confidenciales de M&A y transferencia de fondos."
+      }
+    },
+    {
+      "id": 28,
+      "layer": "F3",
+      "topic": "analisis_solicitudes_documentos_falsificados",
+      "front": {
+        "es": "¿Cómo identificar en una investigación de fraude si documentos presentados como verificación de identidad han sido falsificados o manipulados digitalmente?"
+      },
+      "back": {
+        "es": "El análisis debe incluir: evaluación de metadatos del archivo (fecha de creación, modificación, software utilizado), comparación de fuentes de luz y sombras en imágenes, verificación de patrones de píxeles inconsistentes indicativos de edición, y contraste con documentos originales de registros públicos. Se puede emplear software de análisis forense de imágenes y validación con autoridades emisoras. Ejemplo: Un investigador descubre que la licencia de conducir presentada durante apertura de cuenta fraudulenta tiene metadatos que muestran edición realizada días después de la fecha supuesta de emisión, revelando manipulación digital."
+      }
+    },
+    {
+      "id": 29,
+      "layer": "F3",
+      "topic": "red_flags_bizum_transferencias_atipicas",
+      "front": {
+        "es": "¿Cuáles son los indicadores clave que señalan transferencias fraudulentas a través de sistemas de pago instantáneo como Bizum o Stripe en contexto de ciberfraud?"
+      },
+      "back": {
+        "es": "Los indicadores incluyen: múltiples transferencias pequeñas para evadir detección (structuring), transferencias rápidas a cuentas recientemente creadas, cambios en patrones de gasto normal del usuario, y transferencias a jurisdicciones de alto riesgo. Técnicamente, debe analizarse la velocidad de transacción, dispositivos utilizados y métodos de autenticación empleados. Ejemplo: Una víctima de ATO realiza 20 transferencias de €495 en 2 horas a diferentes cuentas abiertas hace 48 horas, evitando el límite de reporte de €500."
+      }
+    },
+    {
+      "id": 30,
+      "layer": "F3",
+      "topic": "validacion_autenticidad_documentos_identidad",
+      "front": {
+        "es": "¿Qué procedimientos técnicos y forenses se aplican para validar la autenticidad de documentos de identidad digitales o fotografiados durante una investigación de robo de identidad?"
+      },
+      "back": {
+        "es": "Los procedimientos incluyen: análisis de hologramas y características de seguridad mediante fotografía especializada, verificación de números de serie contra bases de datos gubernamentales, análisis de patrones de desgaste consistentes con edad del documento, y validación de datos biográficos con registros civiles. Se utilizan escáneres especializados para detectar alteraciones microscópicas. Ejemplo: En investigación de fraude de apertura de cuenta, análisis forense reveló que el pasaporte presentado tenía número de serie válido pero fecha de emisión posterior al supuesto robo de identidad reportado por la víctima."
+      }
+    },
+    {
+      "id": 31,
+      "layer": "F3",
+      "topic": "deteccion_proxy_anonimizacion_cyberfraud",
+      "front": {
+        "es": "¿Cómo pueden detectarse en logs de investigación el uso de servidores proxy, VPN o herramientas de anonimización empleadas por defraudadores para ocultar su ubicación real?"
+      },
+      "back": {
+        "es": "La detección requiere análisis de logs de dirección IP origen, identificación de patrones de tráfico consistentes con servicios VPN/proxy conocidos, revisión de certificados SSL/TLS, y análisis de tiempos de latencia anómalos. Herramientas como whois queries, geolocalización avanzada y análisis de ASN revelan infraestructura de anonimización. Ejemplo: Un investigador descubre que múltiples accesos ATO a una cuenta corporativa provienen de direcciones IP registradas a proveedores VPN comerciales populares, todas dentro de ventanas de 2 segundos de diferencia, indicando ataque automatizado enmascarado."
+      }
+    },
+    {
+      "id": 32,
+      "layer": "F3",
+      "topic": "investigacion_esquemas_romance_scam",
+      "front": {
+        "es": "¿Cuál es el enfoque investigativo específico para documentar y desmantelar esquemas de romance fraud (catfishing) que culminan en solicitudes de transferencias de fondos?"
+      },
+      "back": {
+        "es": "El enfoque debe documentar: la progresión temporal de la relación fraudulenta, análisis de imágenes falsificadas (reverse image search), patrones de solicitudes financieras escaladas, análisis de perfiles en redes sociales, y cadena de transferencias de fondos. Se debe preservar toda comunicación (mensajes, correos, llamadas) y mapear redes de cómplices. Ejemplo: Investigación reveló que 47 víctimas fueron seducidas por 8 perfiles distintos (mismas fotos de una persona real), todas solicitando fondos dentro de 4-6 semanas, dirigiendo transferencias a 3 cuentas intermediarias antes de destino final."
+      }
+    },
+    {
+      "id": 33,
+      "layer": "F3",
+      "topic": "forense_whatsapp_telegram_fraude",
+      "front": {
+        "es": "¿Qué técnicas forenses se aplican para recuperar y analizar evidencia de comunicaciones de fraude en aplicaciones cifradas como WhatsApp o Telegram durante investigaciones de ciberfraud?"
+      },
+      "back": {
+        "es": "Las técnicas incluyen: extracción de datos de dispositivos móviles (backup locales, cloud), análisis de metadatos de mensajes (timestamps, patrones de comunicación), reconstrucción de conversaciones eliminadas mediante recuperación de datos, y correlación con registros de llamadas y ubicación. La cadena de custodia es crítica porque estos datos son altamente sensibles. Ejemplo: En investigación de BEC, se recuperó de backup iCloud del teléfono del ejecutable comprometido toda secuencia de comunicaciones con el atacante, revelando coordinación con múltiples cómplices y prueba de conocimiento previo del proceso de autorización."
+      }
+    },
+    {
+      "id": 34,
+      "layer": "F3",
+      "topic": "analisis_comportamiento_digital_indicadores_fraude",
+      "front": {
+        "es": "¿Cómo se analiza el comportamiento digital de un usuario para identificar desviaciones que indiquen fraude interno o toma de control de cuenta en tiempo real?"
+      },
+      "back": {
+        "es": "El análisis utiliza User and Entity Behavior Analytics (UEBA) para establecer líneas base de comportamiento normal: patrones de login, volumen de datos accedidos, tipos de archivos consultados, velocidad de navegación y horarios de acceso. Desviaciones flagrantes incluyen acceso a sistemas nunca utilizados antes, transferencia de volúmenes anómalos de datos, y actividad fuera de horario consistente. Ejemplo: Sistema UEBA detecta que empleado de marketing accede repentinamente a database de números de ruta bancaria y comenzó a descargar listas de proveedores a las 2 AM, patrones nunca antes observados en 3 años de empleo."
+      }
+    },
+    {
+      "id": 35,
+      "layer": "F3",
+      "topic": "validacion_fuentes_transferencias_internacionales",
+      "front": {
+        "es": "¿Cuál es el procedimiento para rastrear y validar el origen de transferencias internacionales fraudulentas en investigaciones de ciberfraud que involucran jurisdicciones múltiples?"
+      },
+      "back": {
+        "es": "El procedimiento requiere: solicitar registros SWIFT/IBAN a instituciones financieras, análisis de códigos bancarios y verificación de instituciones receptoras, coordinación con autoridades locales en países destino, rastreo de beneficiarios finales mediante Egmont Group (FIU), y análisis de patrones de transferencias previas. Se documentan todas las intermediarias y bucles de blanqueo. Ejemplo: Fraude de USD 500,000 originado de ATO corporativo fue rastreado a través de 7 transferencias internacionales en 48 horas: USA → México → Hong Kong → Singapur → Emiratos Árabes → back to Dubai account con identidad falsa."
+      }
+    },
+    {
+      "id": 36,
+      "layer": "F3",
+      "topic": "proteccion_datos_biometricos_robo_identidad",
+      "front": {
+        "es": "¿Cuáles son los riesgos específicos de robo de datos biométricos (huella dactilar, reconocimiento facial, iris) en contexto de fraude de identidad y cómo se detectan en investigaciones?"
+      },
+      "back": {
+        "es": "Los riesgos incluyen: falsificación de autenticación biométrica mediante deepfakes de alta resolución, ataques de presentación física (spoofing), y venta en dark web de datos biométricos robados. La detección requiere análisis de calidad de imagen biométrica, patrones de liveness detection, análisis forense de dispositivos biométricos y logs de intentos fallidos previos a acceso exitoso. Ejemplo: Investigación de fraude de apertura de cuenta reveló que datos biométricos faciales utilizados fueron derivados de video de YouTube antiguo del titular real, procesados a través de software deepfake de código abierto y presentados al sistema de verificación de identidad digital."
+      }
+    },
+    {
+      "id": 37,
+      "layer": "F4",
+      "topic": "relacion_robo_identidad_fraude_financiero",
+      "front": {
+        "es": "¿Cómo se relaciona el robo de identidad con los esquemas de fraude financiero y cuál es el impacto en las víctimas?"
+      },
+      "back": {
+        "es": "El robo de identidad facilita el fraude financiero al permitir a los delincuentes acceder a cuentas bancarias, solicitar crédito y realizar transacciones no autorizadas utilizando la información personal de la víctima. El impacto es devastador: daño crediticio prolongado, pérdidas monetarias significativas y años de restauración de identidad. Por ejemplo, un delincuente que obtiene número de seguro social puede abrir tarjetas de crédito a nombre de la víctima, acumulando deudas que afectan su historial crediticio permanentemente."
+      }
+    },
+    {
+      "id": 38,
+      "layer": "F4",
+      "topic": "conexion_ingenieria_social_ciberataques",
+      "front": {
+        "es": "¿Por qué la ingeniería social es considerada el vector inicial más efectivo en ataques de ciberfraud y cómo se relaciona con otras técnicas maliciosas?"
+      },
+      "back": {
+        "es": "La ingeniería social explota las debilidades humanas en lugar de vulnerabilidades técnicas, lo que la hace altamente efectiva como puerta de entrada para ataques más complejos como malware o acceso a sistemas. Se relaciona directamente con phishing, pretexting y vishing, que obtienen credenciales que habilitan ataques posteriores. Un atacante puede usar ingeniería social para obtener credenciales de un empleado, facilitando luego un ataque BEC o ransomware a toda la organización."
+      }
+    },
+    {
+      "id": 39,
+      "layer": "F4",
+      "topic": "impacto_autenticacion_multifactor_prevencion_identidad",
+      "front": {
+        "es": "¿Cuál es el impacto de la autenticación multifactor (MFA) en la prevención del robo de identidad digital y por qué los atacantes buscan eludirla?"
+      },
+      "back": {
+        "es": "La MFA agrega capas adicionales de seguridad más allá de contraseñas, requiriendo múltiples formas de verificación (SMS, biometría, aplicaciones). Aunque reduce significativamente el éxito de ataques ATO, los delincuentes buscan eludirla mediante SIM swapping, intercepción de códigos o ingeniería social. Por ejemplo, si MFA está habilitada pero el atacante realiza SIM swapping, puede recibir códigos de verificación y comprometer la cuenta completamente."
+      }
+    },
+    {
+      "id": 40,
+      "layer": "F4",
+      "topic": "relacion_malware_robo_credenciales_fraude",
+      "front": {
+        "es": "¿Cómo se relacionan los programas maliciosos (keyloggers, credential stealers) con el robo de identidad y qué conexión existe con el fraude subsecuente?"
+      },
+      "back": {
+        "es": "El malware roba credenciales, datos de tarjetas de crédito y información personal que los delincuentes utilizan para cometer robo de identidad y fraude financiero. Keyloggers capturan contraseñas y números de tarjeta, mientras que credential stealers extraen datos de navegadores y aplicaciones almacenadas. Un keylogger instalado mediante descarga drive-by puede capturar credenciales bancarias que un atacante usa inmediatamente para transferencias no autorizadas o compras fraudulentas."
+      }
+    },
+    {
+      "id": 41,
+      "layer": "F4",
+      "topic": "conexion_datos_oscuros_mercados_ilicitos_identidad",
+      "front": {
+        "es": "¿Cuál es la relación entre los mercados negros (dark web) y el comercio de identidades robadas, y cómo esto facilita esquemas de fraude a escala?"
+      },
+      "back": {
+        "es": "Los mercados en la dark web actúan como plataformas donde delincuentes compran y venden identidades completas, credenciales y datos personales robados a precios variables. Esta comercialización masiva permite que criminales sin habilidades técnicas cometan fraude accesible. Por ejemplo, un paquete de identidad completa (nombre, SSN, datos bancarios) puede venderse por $100-$500, permitiendo que cualquiera con recursos cometa fraude de cuenta bancaria o solicitudes de crédito fraudulentas."
+      }
+    },
+    {
+      "id": 42,
+      "layer": "F4",
+      "topic": "impacto_vulnerabilidades_terceros_cadena_suministro_identidad",
+      "front": {
+        "es": "¿Por qué las vulnerabilidades en terceros y proveedores representan un riesgo significativo para el robo de identidad en masa, y cuál es el nexo con brechas de datos?"
+      },
+      "back": {
+        "es": "Los delincuentes atacan deliberadamente terceros y proveedores porque acceden a bases de datos centralizadas de millones de clientes, ampliando exponencialmente el daño de una única brecha. Una vulnerabilidad en un proveedor de servicios comparte datos de múltiples organizaciones simultáneamente. La brecha de Equifax en 2017 expuso información de 147 millones de personas, permitiendo fraude de identidad masivo durante años debido a la naturaleza centralizada de los datos crediticios."
+      }
+    },
+    {
+      "id": 43,
+      "layer": "F4",
+      "topic": "relacion_incidentes_fraude_recuperacion_crediticia",
+      "front": {
+        "es": "¿Cómo se relacionan los incidentes iniciales de robo de identidad con los desafíos prolongados de recuperación crediticia y qué responsabilidades tienen las instituciones?"
+      },
+      "back": {
+        "es": "Un incidente de robo de identidad inicia daño crediticio inmediato (cuentas fraudulentas, deudas no autorizadas) que requiere años de disputa y remedios. Las instituciones financieras deben reportar a agencias de crédito, pero la carga recae frecuentemente en la víctima para demostrar fraude. Legalmente, bajo FCRA y Fair Credit Billing Act, instituciones deben investigar disputas, pero la recuperación total de un perfil crediticio puede tomar 7-10 años, durante los cuales la víctima enfrenta tasas de interés más altas y denegación de crédito."
+      }
+    },
+    {
+      "id": 44,
+      "layer": "F4",
+      "topic": "conexion_compliance_regulatorio_investigacion_cibercrimen",
+      "front": {
+        "es": "¿Cómo se relacionan los requisitos de cumplimiento normativo (GDPR, CCPA, notificación de brecha) con las obligaciones investigativas en casos de robo de identidad y ciberfraud?"
+      },
+      "back": {
+        "es": "La normativa requiere notificación rápida de brechas, preservación de evidencia y investigaciones formales que se superponen con investigaciones criminales de CFE. El incumplimiento resulta en sanciones significativas además de responsabilidad civil. Por ejemplo, bajo GDPR, una organización que descubre robo de identidad debe notificar en 72 horas, investigar la causa, preservar logs digitales y coordinar con autoridades, lo que acelera investigaciones forenses pero complica cadena de custodia y privilegio abogado-cliente."
+      }
+    },
+    {
+      "id": 45,
+      "layer": "F4",
+      "topic": "impacto_autenticacion_biometrica_mitigacion_robo_identidad",
+      "front": {
+        "es": "¿Cuál es el impacto de la autenticación biométrica en la mitigación del robo de identidad digital y qué limitaciones presenta esta tecnología?"
+      },
+      "back": {
+        "es": "La biometría (huella dactilar, reconocimiento facial, iris) vincula autenticación a características físicas únicas, siendo mucho más difícil de comprometer que contraseñas. Sin embargo, limitaciones incluyen suplantación de biometría (masks de silicona, deepfakes), riesgos si bases de datos biométricas se ven comprometidas, y desafíos en rescisión. Un ladrón de identidad puede usar máscara 3D de silicona para eludir reconocimiento facial, o deepfakes para spoofing de verificación facial remota."
+      }
+    },
+    {
+      "id": 46,
+      "layer": "F4",
+      "topic": "relacion_investigacion_forense_digital_evidencia_legal",
+      "front": {
+        "es": "¿Cómo se relacionan las técnicas de investigación forense digital con los requisitos de evidencia legal admisible en casos de ciberfraud y robo de identidad?"
+      },
+      "back": {
+        "es": "La evidencia digital obtenida mediante investigación forense solo es admisible si cumple estándares de autenticidad, cadena de custodia ininterrumpida, y reproducibilidad metodológica. Fallos en preservación forense resultan en exclusión de evidencia y casos desestimados. Por ejemplo, logs de servidor deben preservarse con hashes criptográficos verificables, documentación completa de acceso y análisis forense realizado por profesionales certificados para que sean aceptables en tribunal como prueba de transacciones fraudulentas específicas."
+      }
+    },
+    {
+      "id": 47,
+      "layer": "F4",
+      "topic": "conexion_vulnerabilidades_iot_expansion_superficie_ataque",
+      "front": {
+        "es": "¿Cómo se relacionan las vulnerabilidades en dispositivos IoT con la expansión de la superficie de ataque para robo de identidad y acceso de cuentas no autorizado?"
+      },
+      "back": {
+        "es": "Dispositivos IoT (smartwatches, cámaras, termostatos) frecuentemente carecen de actualizaciones de seguridad y ejecutan sistemas operativos desactualizados, creando puntos de entrada para ataques. Los delincuentes comprometern redes IoT para acceder a redes domésticas, instalar malware de captura de credenciales, o usar dispositivos como proxys para ataques coordinados. Un router WiFi IoT comprometido puede permitir interceptación de tráfico, captura de credenciales bancarias ingresadas en el mismo network, facilitando fraude de cuenta posterior."
+      }
+    },
+    {
+      "id": 48,
+      "layer": "F4",
+      "topic": "impacto_monitoreo_credito_deteccion_temprana_fraude",
+      "front": {
+        "es": "¿Por qué el monitoreo de crédito y detección temprana son críticos en la respuesta al robo de identidad, y cuál es el impacto en limitación de daños?"
+      },
+      "back": {
+        "es": "El monitoreo de crédito detecta actividad fraudulenta días después de robo de identidad, permitiendo congelamiento de crédito, disputas y alertas de fraude que minimizan daño antes de que se abran múltiples cuentas. Víctimas que monitorean activamente enfrentan pérdidas significativamente menores que aquellas que descubren fraude meses después. Por ejemplo, detección dentro de 48 horas permite congelamiento de seguridad Social Security con agencias de crédito, impidiendo que delincuentes abran nuevas cuentas, mientras que detección 6 meses después puede resultar en decenas de miles de dólares en fraude acumulado ya establecido."
+      }
+    }
+  ]
+}

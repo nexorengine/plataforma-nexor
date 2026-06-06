@@ -1,0 +1,710 @@
+{
+  "cert_id": "cissp",
+  "domain_id": "security_risk_management",
+  "quiz_num": 1,
+  "domain_name": "Security & Risk Management",
+  "cert_name": "CISSP",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Según ISO/IEC 27000, ¿cuál es la definición más precisa de 'confidencialidad' en el contexto de la seguridad de la información?",
+      "tag": "Principios CIA",
+      "options": [
+        "D. Proceso de clasificar información según su nivel de sensibilidad organizacional",
+        "C. Capacidad de asegurar que los sistemas están disponibles cuando los usuarios autorizados lo requieren",
+        "B. Garantía de que los datos permanecen inalterados durante su almacenamiento y transmisión",
+        "A. Propiedad de que la información no se ponga a disposición ni se revele a individuos, entidades o procesos no autorizados"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 27000:2018 define confidencialidad como la propiedad de que la información no esté disponible ni sea revelada a individuos, entidades o procesos no autorizados. Esta definición establece el fundamento del principio CIA y aplica controles de acceso basados en necesidad de conocer.",
+      "justification_wrong": "Las opciones B y C describen integridad y disponibilidad respectivamente. La opción D confunde confidencialidad con clasificación de información, que es un control implementado para proteger la confidencialidad según ISO/IEC 27002:2022, pero no su definición fundamental normativa."
+    },
+    {
+      "num": 2,
+      "text": "En el contexto de gestión de riesgos según ISO 31000, ¿qué acción representa correctamente la estrategia de 'transferencia de riesgo'?",
+      "tag": "Gestión de Riesgos",
+      "options": [
+        "A. Implementar controles técnicos para reducir la probabilidad de ocurrencia del evento adverso",
+        "B. Contratar una póliza de ciberseguro que cubra pérdidas por incidentes de ransomware",
+        "C. Decidir no implementar una tecnología debido a riesgos inaceptables",
+        "D. Aceptar formalmente el riesgo residual después de implementar controles"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 31000:2018 define transferencia de riesgo como compartir el riesgo con terceras partes mediante contratos, seguros o externalización. El ciberseguro transfiere las consecuencias financieras del riesgo al asegurador, manteniendo la responsabilidad primaria pero mitigando el impacto económico según NIST SP 800-39.",
+      "justification_wrong": "La opción A describe mitigación/reducción de riesgo. La opción C representa evitación de riesgo mediante eliminación de la actividad. La opción D corresponde a aceptación de riesgo. Estas son estrategias distintas en el tratamiento de riesgos según ISO 31000 y NIST frameworks."
+    },
+    {
+      "num": 3,
+      "text": "Bajo el modelo de responsabilidad legal corporativa, ¿qué concepto describe mejor la obligación de los ejecutivos de proteger los activos organizacionales?",
+      "tag": "Gobierno Corporativo",
+      "options": [
+        "B. Due diligence",
+        "C. Prudent man rule",
+        "A. Due care",
+        "D. Separation of duties"
+      ],
+      "correct": 2,
+      "justification_correct": "Due care representa la responsabilidad legal de actuar responsablemente y tomar medidas razonables para proteger activos organizacionales. Implica implementar controles apropiados según estándares de la industria. Se diferencia de due diligence (investigación previa) según principios de gobierno corporativo y jurisprudencia anglosajona aplicable.",
+      "justification_wrong": "Due diligence es la investigación y verificación previa de controles. Prudent man rule guía decisiones fiduciarias de inversión. Separation of duties es un principio de control interno operacional. Estos conceptos no describen la responsabilidad ejecutiva directa de proteger activos según frameworks legales corporativos."
+    },
+    {
+      "num": 4,
+      "text": "Según el estándar ISC² de ética profesional, ¿cuál es la prioridad MÁS ALTA en el Código de Ética del CISSP?",
+      "tag": "Ética Profesional",
+      "options": [
+        "D. Avanzar y proteger la profesión",
+        "B. Proteger a la sociedad, el bien común, la infraestructura necesaria y el público",
+        "C. Proporcionar servicio competente y diligente a los principales",
+        "A. Actuar honorable, honesta, justa, responsable y legalmente"
+      ],
+      "correct": 1,
+      "justification_correct": "El Código de Ética de (ISC)² establece explícitamente como Canon I y prioridad máxima: 'Proteger a la sociedad, el bien común, la infraestructura necesaria y el público'. Esta obligación supersede lealtades organizacionales o personales, estableciendo la responsabilidad social como principio rector fundamental del profesional CISSP.",
+      "justification_wrong": "Aunque los otros cánones son obligatorios, el Código de Ética (ISC)² establece jerarquía explícita: sociedad (Canon I) precede a principales (Canon II), profesión (Canon III) y conducta personal (Canon IV). Esta priorización distingue la responsabilidad del profesional certificado ante intereses conflictivos."
+    },
+    {
+      "num": 5,
+      "text": "En el marco de clasificación de información, ¿qué criterio determina principalmente el nivel de clasificación que debe asignarse a un activo informacional?",
+      "tag": "Clasificación de Información",
+      "options": [
+        "B. El número de personas con acceso autorizado al activo informacional",
+        "D. Los requisitos de cumplimiento regulatorio aplicables al sector industrial",
+        "C. El impacto potencial para la organización si la información se divulga, modifica o destruye",
+        "A. El costo de implementar controles de seguridad para proteger la información"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27002:2022 establece que la clasificación debe basarse en el valor e importancia para la organización, determinado por el impacto de comprometer confidencialidad, integridad o disponibilidad. El análisis de impacto ante divulgación, alteración o pérdida es el criterio fundamental según mejores prácticas de valoración de activos.",
+      "justification_wrong": "El costo de controles (A) es consecuencia, no determinante de clasificación. El número de usuarios (B) es factor operacional secundario. Requisitos regulatorios (D) pueden establecer clasificaciones mínimas pero no son el criterio fundamental de valoración según ISO/IEC 27005 y metodologías de gestión de riesgos."
+    },
+    {
+      "num": 6,
+      "text": "Según ISO/IEC 27001:2022, ¿cuál es el propósito principal del tratamiento de riesgos en un Sistema de Gestión de Seguridad de la Información (SGSI)?",
+      "tag": "Gestión de Riesgos",
+      "options": [
+        "C. Documentar únicamente los riesgos de alta criticidad para auditoría externa",
+        "B. Eliminar completamente todos los riesgos identificados en la organización",
+        "D. Transferir automáticamente todos los riesgos residuales a terceros mediante pólizas",
+        "A. Seleccionar e implementar controles para modificar el riesgo a niveles aceptables"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 6.1.3 establece que el tratamiento de riesgos debe seleccionar opciones apropiadas (mitigar, evitar, transferir, aceptar) e implementar controles del Anexo A para modificar riesgos hasta alcanzar niveles aceptables definidos por criterios organizacionales. La gestión busca equilibrio riesgo-control.",
+      "justification_wrong": "Eliminar todos los riesgos es económicamente inviable e imposible. Documentar solo alta criticidad ignora el enfoque holístico requerido. La transferencia automática no constituye tratamiento integral según ISO 27001, que exige análisis caso por caso y decisiones fundamentadas sobre opciones de tratamiento apropiadas."
+    },
+    {
+      "num": 7,
+      "text": "En el marco de due diligence para seguridad de la información, ¿qué elemento diferencia fundamentalmente la due diligence de la due care según jurisprudencia corporativa?",
+      "tag": "Due Diligence y Due Care",
+      "options": [
+        "A. Due diligence es la investigación previa razonable; due care es la implementación continua de controles",
+        "C. Due diligence requiere certificación ISO; due care solo políticas internas documentadas",
+        "B. Due diligence aplica solo a fusiones; due care a operaciones diarias exclusivamente",
+        "D. Due diligence es responsabilidad del CISO; due care del Consejo de Administración únicamente"
+      ],
+      "correct": 0,
+      "justification_correct": "Due diligence constituye el estándar de investigación y planificación razonable antes de acciones (ej. adquisiciones, contratos), mientras due care representa la implementación continua y diligente de controles. Ambos conceptos del common law establecen expectativas de responsabilidad profesional y debida diligencia gerencial según estándares de la industria.",
+      "justification_wrong": "Ambos conceptos aplican transversalmente a toda la organización, no se limitan a escenarios específicos. No requieren certificaciones obligatorias sino adherencia a estándares razonables de la industria. La responsabilidad es compartida organizacionalmente según roles, no exclusiva de posiciones específicas conforme gobierno corporativo moderno."
+    },
+    {
+      "num": 8,
+      "text": "Bajo NIST SP 800-53 Rev. 5, ¿cuál es la relación correcta entre controles de baseline y el proceso de tailoring?",
+      "tag": "Marcos de Control",
+      "options": [
+        "C. Baselines aplican a sistemas legacy; tailoring exclusivamente a infraestructura cloud moderna",
+        "B. Baselines son obligatorios sin modificación; tailoring aplica solo a controles compensatorios adicionales",
+        "D. Baselines los define el auditor externo; tailoring es responsabilidad exclusiva del proveedor tecnológico",
+        "A. Baselines son conjuntos predefinidos de controles; tailoring personaliza mediante adición, eliminación o refinamiento"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST SP 800-53 Rev. 5 define baselines de seguridad (Low, Moderate, High) como puntos de partida según impacto. El proceso de tailoring (Capítulo 3) permite personalizar baselines mediante asignación de valores, compensación, adición o eliminación de controles justificada según contexto organizacional, misión y ambiente operacional específico.",
+      "justification_wrong": "Baselines no son inmutables; el tailoring es fundamental para aplicabilidad práctica. La diferenciación legacy/cloud es errónea; aplica a cualquier sistema según clasificación de impacto. La responsabilidad del tailoring recae en la organización implementadora, no en auditores ni proveedores exclusivamente, siguiendo principios de ownership."
+    },
+    {
+      "num": 9,
+      "text": "En el contexto de clasificación de información según su sensibilidad, ¿qué criterio determina principalmente el nivel de clasificación apropiado?",
+      "tag": "Clasificación de Activos",
+      "options": [
+        "A. El impacto potencial de la divulgación, modificación o destrucción no autorizada sobre la organización",
+        "C. La antigüedad temporal del dato desde su creación hasta la fecha actual de evaluación",
+        "D. El número de empleados con acceso actual independientemente de sus roles funcionales",
+        "B. El costo de adquisición o desarrollo original del activo de información clasificado"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27002:2022 control 5.12 y FIPS 199 establecen que la clasificación debe basarse en análisis de impacto considerando confidencialidad, integridad y disponibilidad (tríada CIA). El valor informacional se determina por consecuencias potenciales de compromisos de seguridad sobre objetivos de negocio, no por métricas financieras o temporales.",
+      "justification_wrong": "El costo histórico no refleja valor actual ni sensibilidad informacional. La antigüedad es irrelevante sin análisis de impacto contextual; datos antiguos pueden ser altamente sensibles. El número de usuarios autorizados no determina clasificación; información altamente clasificada puede tener muchos usuarios legítimos con necesidad de conocer (need-to-know)."
+    },
+    {
+      "num": 10,
+      "text": "Según el modelo de Governanza de Seguridad de la Información, ¿cuál es la responsabilidad primaria del Consejo de Administración (Board of Directors)?",
+      "tag": "Governanza de Seguridad",
+      "options": [
+        "C. Respuesta operacional inmediata a incidentes de seguridad y coordinación con equipos SOC",
+        "D. Configuración de firewalls, sistemas IDS/IPS y revisión diaria de logs de eventos de seguridad",
+        "B. Implementación técnica directa de controles de seguridad en infraestructura crítica organizacional",
+        "A. Supervisión estratégica, aprobación de apetito de riesgo y aseguramiento de recursos adecuados para seguridad"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 27014:2020 (Governance of Information Security) establece que el órgano de gobierno debe evaluar, dirigir y monitorear la seguridad información alineada con objetivos organizacionales. NIST Cybersecurity Framework y COBIT 2019 confirman responsabilidades del Board: definir apetito de riesgo, aprobar políticas, asegurar recursos y supervisar rendimiento estratégico.",
+      "justification_wrong": "El Consejo opera en nivel estratégico de governanza, no en implementación técnica u operaciones diarias. La respuesta a incidentes y tareas técnicas corresponden a niveles gerenciales y operacionales (CISO, equipos técnicos). La configuración de dispositivos es responsabilidad de administradores de sistemas, no del órgano de gobierno corporativo."
+    },
+    {
+      "num": 11,
+      "text": "Una organización multinacional debe cumplir simultáneamente con GDPR europeo y regulaciones de residencia de datos en Asia-Pacífico. ¿Qué enfoque de gobernanza proporciona la mayor coherencia operacional manteniendo el cumplimiento jurisdiccional?",
+      "tag": "Cumplimiento Regulatorio Transfronterizo",
+      "options": [
+        "C. Aplicar únicamente los requisitos más estrictos globalmente ignorando especificidades regionales para simplificar la gestión",
+        "A. Implementar un marco de controles comunes basado en ISO/IEC 27001 con anexos jurisdiccionales específicos y evaluaciones de transferencia internacional según Art. 46 GDPR",
+        "B. Establecer centros de datos independientes por jurisdicción con políticas de seguridad completamente segregadas sin transferencias transfronterizas",
+        "D. Delegar completamente el cumplimiento a proveedores cloud certificados en cada región sin supervisión corporativa centralizada"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001 proporciona un marco de controles armonizable internacionalmente. Los anexos jurisdiccionales permiten adaptaciones específicas según GDPR Art. 46 (salvaguardas apropiadas para transferencias) y regulaciones locales, manteniendo coherencia operacional mediante controles base comunes mientras satisface requisitos regionales diferenciados de privacidad y residencia de datos.",
+      "justification_wrong": "Segregación total (B) genera ineficiencias operacionales extremas y duplicación innecesaria. Aplicar solo requisitos máximos (C) puede violar principios de minimización y proporcionalidad según GDPR Art. 5. Delegar completamente (D) incumple responsabilidad de controlador según GDPR Art. 24 y principios de due diligence organizacional."
+    },
+    {
+      "num": 12,
+      "text": "Durante un análisis cuantitativo de riesgos, el equipo calcula un ALE de $450,000 para ransomware. La solución de respaldo propuesta cuesta $180,000 anuales y reduce el impacto 75%. ¿Cuál es la evaluación correcta según metodología estándar?",
+      "tag": "Análisis Cuantitativo de Riesgos",
+      "options": [
+        "C. Análisis insuficiente: debe considerarse RTO/RPO antes de calcular ROI financiero del control propuesto",
+        "A. ROI negativo: el control cuesta $180k pero solo ahorra $112.5k anuales, generando pérdida neta de $67.5k",
+        "D. Control inadecuado: soluciones de respaldo no mitigan ransomware efectivamente según estándares NIST",
+        "B. ROI positivo: ahorro de $337.5k menos inversión de $180k genera beneficio neto de $157.5k anuales, justificando implementación"
+      ],
+      "correct": 3,
+      "justification_correct": "ALE mitigado = $450k × 0.75 = $337.5k ahorro anual. ROI = ($337.5k - $180k) / $180k = 87.5% retorno positivo. Según NIST SP 800-30, cuando beneficio anual supera costo anual del control, existe justificación cuantitativa clara. El beneficio neto de $157.5k anuales valida económicamente la implementación del control.",
+      "justification_wrong": "Opción A invierte el cálculo (usa 25% remanente en lugar de 75% mitigado). RTO/RPO (C) son criterios operacionales importantes pero no invalidan el análisis financiero ROI básico. Respaldos (D) son controles fundamentales anti-ransomware según NIST CSF (PR.IP-4) y CIS Controls v8 (Control 11), constituyendo defensa probada."
+    },
+    {
+      "num": 13,
+      "text": "Una evaluación de madurez de seguridad revela: políticas documentadas (Nivel 2), controles implementados inconsistentemente (Nivel 2-3), sin métricas formales (Nivel 1). Según CMMI, ¿qué acción estratégica prioriza la progresión estructurada?",
+      "tag": "Modelos de Madurez de Seguridad",
+      "options": [
+        "B. Estandarizar implementación de controles consistentemente en toda la organización y establecer procesos repetibles documentados (alcanzar Nivel 3 Definido)",
+        "A. Avanzar directamente a optimización continua (Nivel 5) mediante automatización y machine learning en detección de amenazas",
+        "D. Implementar programa de métricas y KPIs inmediatamente antes de estandarizar controles para medir estado actual",
+        "C. Mantener estado actual hasta completar certificación ISO 27001, luego avanzar simultáneamente todos los niveles"
+      ],
+      "correct": 0,
+      "justification_correct": "CMMI requiere progresión secuencial: Nivel 3 (Definido) exige procesos estandarizados y consistentes organizacionalmente. Con implementación inconsistente actual (Nivel 2), consolidar controles mediante procedimientos documentados y repetibles es prerequisito estructural antes de gestión cuantitativa (Nivel 4) u optimización (Nivel 5). CMMI-DEV v2.0 valida este enfoque incremental.",
+      "justification_wrong": "Saltar a Nivel 5 (A) sin fundamentos intermedios genera gaps críticos y fragilidad sistémica. ISO 27001 (C) complementa pero no reemplaza progresión estructurada de madurez; certificación no eleva automáticamente niveles CMMI. Métricas (D) requieren procesos estables para medir (Nivel 4); implementarlas prematuramente sin estandarización genera datos inconsistentes inútiles."
+    },
+    {
+      "num": 14,
+      "text": "El CISO debe presentar riesgos de seguridad al Consejo de Administración. ¿Qué enfoque de comunicación alinea efectivamente perspectivas técnicas con responsabilidades fiduciarias del Consejo según governance frameworks?",
+      "tag": "Comunicación de Riesgos a Ejecutivos",
+      "options": [
+        "B. Contextualizar riesgos de ciberseguridad como riesgos empresariales estratégicos con impactos financieros, reputacionales y regulatorios cuantificados vinculados a objetivos de negocio",
+        "C. Delegar la presentación al equipo técnico de seguridad que posee conocimiento profundo de amenazas y arquitectura actual",
+        "D. Enfocarse exclusivamente en comparaciones de gasto de seguridad contra promedios industriales y benchmarks de inversión",
+        "A. Presentar análisis técnico detallado de vulnerabilidades CVE con puntuaciones CVSS y vectores de ataque para demostrar profundidad técnica"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST CSF Framework Core y COBIT 2019 (objetivo EDM03) establecen que governance requiere traducir riesgos técnicos a impactos empresariales. Consejos ejercen supervisión fiduciaria sobre riesgos estratégicos; contextualizar ciberseguridad en términos financieros, reputacionales y regulatorios vinculados a objetivos organizacionales permite toma de decisiones informada según deberes de diligencia y lealtad corporativa.",
+      "justification_wrong": "Detalles técnicos CVE/CVSS (A) carecen de contexto empresarial relevante para Consejo y oscurecen decisiones estratégicas. Delegación técnica (C) abdica responsabilidad ejecutiva del CISO y genera brecha comunicacional. Benchmarks de gasto (D) son informativos pero insuficientes; inversión sin vinculación a riesgos específicos no facilita supervisión fiduciaria efectiva."
+    },
+    {
+      "num": 15,
+      "text": "Una organización implementa clasificación de datos con niveles Público, Interno, Confidencial y Restringido. ¿Qué principio fundamental debe regir la asignación inicial de clasificación según mejores prácticas de gestión de información?",
+      "tag": "Clasificación y Manejo de Información",
+      "options": [
+        "B. Los propietarios de datos (data owners) del negocio deben determinar clasificación basándose en impacto empresarial, valor y requisitos regulatorios específicos del contexto",
+        "C. Clasificación automática mediante algoritmos de machine learning analizando contenido y metadatos sin intervención humana para garantizar consistencia",
+        "A. El departamento de seguridad TI debe clasificar centralizadamente todos los datos según análisis técnico de sensibilidad y requisitos de controles",
+        "D. Aplicar clasificación máxima (Restringido) por defecto a todos los datos nuevos hasta revisión trimestral para minimizar riesgos de exposición"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27001:2022 (Anexo A.8.2) y NIST SP 800-60 establecen que propietarios de datos (roles de negocio con responsabilidad sobre información) deben determinar clasificación. Ellos comprenden contexto empresarial, valor, impacto de divulgación y requisitos regulatorios específicos. Seguridad provee framework y guía, pero clasificación efectiva requiere conocimiento del contexto que solo data owners poseen.",
+      "justification_wrong": "Clasificación centralizada TI (A) carece de contexto empresarial y escala pobremente; seguridad es custodio, no propietario. ML automático (C) puede asistir pero requiere validación humana contextual; algoritmos carecen de comprensión de impacto empresarial. Clasificación máxima default (D) genera sobre-protección ineficiente, obstaculiza operaciones legítimas y viola principio de proporcionalidad."
+    },
+    {
+      "num": 16,
+      "text": "En el contexto de ISO/IEC 27005, ¿cuál es la principal diferencia entre análisis de riesgo cualitativo y cuantitativo en términos de tratamiento de incertidumbre?",
+      "tag": "Risk Assessment Methodologies",
+      "options": [
+        "B. El cualitativo siempre requiere menos recursos pero proporciona resultados más precisos para decisiones ejecutivas",
+        "A. El cualitativo usa escalas descriptivas mientras el cuantitativo asigna valores monetarios y probabilidades estadísticas con intervalos de confianza",
+        "D. El cualitativo es obligatorio antes del cuantitativo según NIST SP 800-30 Rev.1 en todos los casos",
+        "C. El cuantitativo elimina completamente la subjetividad mediante algoritmos determinísticos sin intervención humana"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27005:2022 establece que el análisis cualitativo utiliza escalas descriptivas (alto/medio/bajo) mientras el cuantitativo emplea valores numéricos específicos, probabilidades estadísticas y análisis de incertidumbre mediante distribuciones. El cuantitativo permite cálculo de ALE, SLE y exposición con intervalos de confianza para decisiones basadas en ROI.",
+      "justification_wrong": "La opción B es incorrecta porque mayor rapidez no implica mayor precisión ejecutiva. La C falla porque todo análisis cuantitativo contiene elementos subjetivos en estimaciones de probabilidad. La D es falsa ya que NIST SP 800-30 Rev.1 permite seleccionar el enfoque según contexto organizacional sin secuencia obligatoria."
+    },
+    {
+      "num": 17,
+      "text": "Según NIST SP 800-37 Rev.2 (Risk Management Framework), ¿en qué fase se realiza la categorización de sistemas de información mediante FIPS 199?",
+      "tag": "Risk Management Framework",
+      "options": [
+        "C. Assess - como parte de la evaluación de efectividad de controles implementados",
+        "B. Categorize - como actividad inicial antes de la selección de controles de seguridad",
+        "A. Select - durante la selección de controles basada en líneas base de seguridad",
+        "D. Authorize - previo a la decisión de autorización de operación del sistema"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-37 Rev.2 establece que la fase CATEGORIZE es el primer paso del RMF donde se aplica FIPS 199 para determinar niveles de impacto (bajo/moderado/alto) en confidencialidad, integridad y disponibilidad. Esta categorización fundamenta la selección posterior de líneas base de controles según NIST SP 800-53.",
+      "justification_wrong": "Select ocurre después de categorizar y utiliza los resultados de FIPS 199 para elegir líneas base. Assess evalúa controles ya implementados, no categoriza sistemas. Authorize es la fase final de aceptación de riesgo residual. La secuencia correcta es: Categorize→Select→Implement→Assess→Authorize→Monitor según RMF."
+    },
+    {
+      "num": 18,
+      "text": "En un programa de Gestión de Riesgo de Terceros, ¿cuál metodología se alinea mejor con ISO/IEC 27036 para evaluación continua de proveedores críticos de servicios cloud?",
+      "tag": "Third-Party Risk Management",
+      "options": [
+        "A. Auditorías anuales SOC 2 Type II combinadas con monitoreo continuo mediante indicadores de riesgo clave (KRI) y cláusulas de derecho a auditoría",
+        "C. Certificación ISO 27001 inicial suficiente para toda la duración contractual sin reevaluaciones periódicas",
+        "D. Evaluaciones exclusivamente basadas en reportes públicos de brechas sin análisis de controles específicos del servicio contratado",
+        "B. Cuestionarios trimestrales de autoevaluación sin validación independiente y revisión anual de pólizas de seguros cibernéticos"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27036-4:2016 establece que la gestión de riesgos en relaciones cloud requiere evaluaciones independientes (SOC 2 Type II), monitoreo continuo mediante KRI, y derechos contractuales de auditoría. Esta combinación proporciona aseguramiento periódico verificable y visibilidad operacional continua sobre controles críticos del proveedor.",
+      "justification_wrong": "Autoevaluaciones sin validación independiente carecen de objetividad requerida por ISO 27036. Una certificación inicial se deprecia sin vigilancia continua ante cambios operacionales. Depender únicamente de reportes de brechas es reactivo y no evalúa postura de seguridad proactiva ni controles compensatorios específicos del servicio."
+    },
+    {
+      "num": 19,
+      "text": "Al implementar tratamiento de riesgo según ISO 31000:2018, ¿cuál acción representa correctamente la estrategia de 'compartir' riesgo?",
+      "tag": "Risk Treatment Strategies",
+      "options": [
+        "D. Aceptar formalmente el riesgo residual documentando la decisión en el registro de tratamiento de riesgos",
+        "B. Transferir consecuencias financieras mediante seguros cibernéticos manteniendo responsabilidad sobre gestión del riesgo operacional",
+        "A. Implementar controles técnicos redundantes para reducir la probabilidad de materialización del riesgo identificado",
+        "C. Descontinuar completamente la actividad que genera exposición al riesgo inaceptable para la organización"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 31000:2018 define 'compartir' riesgo como distribuir consecuencias mediante seguros, contratos o asociaciones mientras se retiene responsabilidad de gestión. El seguro cibernético transfiere impacto financiero pero la organización mantiene obligación de implementar controles y gestionar el riesgo operacionalmente, diferenciándose de mera transferencia absoluta.",
+      "justification_wrong": "Implementar controles redundantes es mitigación/reducción, no compartir. Descontinuar actividades representa evitación del riesgo eliminando la fuente. Aceptar formalmente es retención del riesgo. ISO 31000 diferencia claramente estas cuatro opciones: evitar, modificar (reducir), compartir (transferir parcialmente) y retener (aceptar)."
+    },
+    {
+      "num": 20,
+      "text": "En el contexto de due diligence para fusiones y adquisiciones (M&A), ¿qué elemento es crítico evaluar según marcos de valoración de riesgo cibernético empresarial?",
+      "tag": "Enterprise Risk Management",
+      "options": [
+        "A. Exclusivamente el inventario de activos tecnológicos y su valor de reemplazo contable actualizado",
+        "B. Pasivos contingentes por brechas históricas, cumplimiento regulatorio, madurez de controles y capacidad de integración de programas de seguridad",
+        "D. Presupuesto histórico de ciberseguridad como porcentaje de ingresos sin análisis de efectividad del gasto",
+        "C. Únicamente certificaciones vigentes de seguridad sin revisión de efectividad operacional de controles implementados"
+      ],
+      "correct": 1,
+      "justification_correct": "El due diligence efectivo en M&A requiere evaluación integral: pasivos por brechas no reveladas (impacto financiero y reputacional), gaps de cumplimiento regulatorio (multas potenciales), madurez de controles (costos de remediación post-adquisición), y compatibilidad de arquitecturas de seguridad. Esta evaluación holística cuantifica riesgo real para valoración empresarial.",
+      "justification_wrong": "El inventario de activos es insuficiente sin evaluar vulnerabilidades y exposiciones. Certificaciones sin validación operacional no garantizan efectividad real de controles. El presupuesto histórico no refleja eficiencia ni efectividad del programa. NIST Cybersecurity Framework y FAIR requieren análisis multidimensional de riesgo tecnológico en transacciones corporativas."
+    },
+    {
+      "num": 21,
+      "text": "En el contexto de gestión de riesgos empresariales (ERM), ¿cuál es la diferencia fundamental entre riesgo inherente y riesgo residual según ISO 31000:2018?",
+      "tag": "Risk Management Frameworks",
+      "options": [
+        "D. El riesgo inherente requiere aceptación ejecutiva; el residual requiere aprobación operativa",
+        "C. El riesgo inherente afecta activos críticos; el residual afecta activos secundarios",
+        "A. El riesgo inherente existe antes de controles; el residual persiste después de implementar tratamientos",
+        "B. El riesgo inherente es cuantificable; el residual es únicamente cualitativo"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 31000:2018 define riesgo inherente como el nivel de riesgo antes de cualquier acción para modificarlo, mientras que riesgo residual es el que permanece tras la implementación de controles. Esta distinción es fundamental para evaluar la efectividad de los tratamientos de riesgo y determinar si son necesarios controles adicionales.",
+      "justification_wrong": "Las opciones incorrectas confunden características metodológicas (cuantitativo vs cualitativo), clasificaciones de activos o niveles de aprobación que no definen la relación temporal y causal entre riesgo inherente y residual establecida en estándares de gestión de riesgos."
+    },
+    {
+      "num": 22,
+      "text": "Un CISO debe seleccionar un marco de seguridad para una organización multinacional del sector financiero. ¿Qué combinación de marcos proporciona la cobertura más comprehensiva considerando cumplimiento regulatorio y mejores prácticas operativas?",
+      "tag": "Security Frameworks Integration",
+      "options": [
+        "C. SOC 2 Type II para auditoría, PCI DSS para pagos, GDPR para privacidad",
+        "D. COSO ERM para riesgos empresariales, OCTAVE para análisis, FAIR para cuantificación",
+        "A. COBIT 2019 para gobernanza, ISO/IEC 27001 para SGSI, NIST CSF para operaciones",
+        "B. ITIL v4 para servicios, TOGAF para arquitectura, SABSA para diseño de seguridad"
+      ],
+      "correct": 2,
+      "justification_correct": "COBIT 2019 establece gobernanza de TI empresarial, ISO/IEC 27001 proporciona certificación internacional de SGSI requerida por muchos reguladores financieros, y NIST CSF ofrece enfoque práctico para gestión de riesgos de ciberseguridad. Esta combinación cubre estrategia, cumplimiento y operaciones según mejores prácticas reconocidas globalmente.",
+      "justification_wrong": "Las alternativas presentan marcos válidos pero no óptimos para el contexto: ITIL/TOGAF son marcos de TI general sin enfoque específico de seguridad; SOC2/PCI/GDPR son requisitos de cumplimiento específicos sin cubrir gobernanza integral; COSO/OCTAVE/FAIR son metodologías de riesgo sin abordar controles operativos comprehensivos."
+    },
+    {
+      "num": 23,
+      "text": "Durante la clasificación de activos de información según ISO/IEC 27001:2022, ¿qué criterio debe tener prioridad para determinar el nivel de clasificación de un activo que contiene múltiples tipos de datos con diferentes sensibilidades?",
+      "tag": "Asset Classification",
+      "options": [
+        "C. El promedio ponderado de las clasificaciones de todos los datos",
+        "D. La clasificación del propietario del proceso de negocio que utiliza el activo",
+        "A. El volumen total de datos almacenados en el activo",
+        "B. El nivel de clasificación más alto de cualquier dato contenido (high-water mark)"
+      ],
+      "correct": 3,
+      "justification_correct": "El principio de high-water mark establece que un activo debe clasificarse según el dato más sensible que contenga, garantizando protección adecuada para toda la información. Este enfoque, respaldado por ISO/IEC 27001:2022 Anexo A.5.12, previene exposición inadvertida de datos sensibles mediante controles insuficientes basados en clasificaciones promedio.",
+      "justification_wrong": "Volumen no determina sensibilidad; datos críticos pueden ser mínimos pero altamente sensibles. Promedios ponderados diluyen la protección necesaria para datos críticos. La clasificación del propietario del proceso no refleja la sensibilidad intrínseca de los datos, creando vulnerabilidades si controles son inadecuados para el contenido real."
+    },
+    {
+      "num": 24,
+      "text": "En el contexto de Due Diligence para adquisiciones corporativas (M&A), ¿cuál es el enfoque más efectivo para evaluar la postura de ciberseguridad de la empresa objetivo cuando existe información limitada pre-adquisición?",
+      "tag": "Third-Party Risk Management",
+      "options": [
+        "A. Solicitar certificaciones ISO 27001 y reportes SOC 2 Type II de los últimos 12 meses",
+        "C. Ejecutar cuestionarios de riesgo estandarizados y validar mediante evidencia documental",
+        "B. Requerir penetration testing externo y revisión completa de código fuente",
+        "D. Conducir entrevistas con CISO, revisar políticas, analizar incidentes históricos y verificar stack tecnológico"
+      ],
+      "correct": 3,
+      "justification_correct": "Un enfoque multinivel combinando entrevistas ejecutivas, revisión documental, análisis de incidentes previos y evaluación técnica proporciona visión comprehensiva y validada. NIST SP 800-161 y frameworks M&A de ciberseguridad recomiendan evaluaciones cualitativas y cuantitativas integradas para identificar pasivos ocultos, deuda técnica y exposiciones críticas pre-adquisición.",
+      "justification_wrong": "Certificaciones pueden estar desactualizadas o no reflejar estado actual. Penetration testing pre-adquisición generalmente no es permitido por confidencialidad y acceso limitado. Cuestionarios solos son autorreportados sin validación independiente, insuficientes para decisiones de M&A que requieren verificación profunda de capacidades y vulnerabilidades reales."
+    },
+    {
+      "num": 25,
+      "text": "Al implementar un programa de gestión de riesgos de terceros según NIST SP 800-161r1, ¿qué factor debe considerarse primero para determinar el nivel de escrutinio aplicable a un proveedor de servicios cloud crítico?",
+      "tag": "Supply Chain Risk Management",
+      "options": [
+        "A. El costo anual del contrato y el porcentaje del presupuesto de TI representado",
+        "B. La criticidad de los datos/sistemas confiados y el impacto potencial de falla del proveedor",
+        "C. La ubicación geográfica del proveedor y jurisdicciones de almacenamiento de datos",
+        "D. El tiempo de relación comercial existente y experiencia histórica de desempeño"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-161r1 establece que la evaluación de riesgos de terceros debe basarse primariamente en criticidad del activo/servicio e impacto potencial al negocio. La clasificación de datos procesados, criticidad de sistemas y consecuencias de interrupción determinan rigurosidad de due diligence, controles contractuales y monitoreo continuo requeridos.",
+      "justification_wrong": "Costo es factor financiero secundario que no refleja criticidad operativa o de seguridad. Ubicación geográfica es importante para cumplimiento pero subsidiaria a criticidad funcional. Experiencia histórica informa pero no determina nivel de escrutinio; proveedores confiables manejando sistemas críticos requieren evaluación rigurosa independientemente del historial."
+    },
+    {
+      "num": 26,
+      "text": "Una organización multinacional debe implementar controles de privacidad transfronterizos. Bajo GDPR, ¿cuál mecanismo de transferencia internacional ofrece mayor flexibilidad operativa mientras mantiene cumplimiento cuando las Cláusulas Contractuales Estándar resultan insuficientes?",
+      "tag": "Privacy & Data Protection",
+      "options": [
+        "B. Certificación Privacy Shield entre UE-EE.UU. vigente",
+        "D. Evaluación de Impacto de Transferencia (TIA) documentada",
+        "A. Binding Corporate Rules (BCR) aprobadas por autoridades supervisoras competentes",
+        "C. Consentimiento explícito del interesado para cada transferencia"
+      ],
+      "correct": 2,
+      "justification_correct": "Las BCR (Art. 47 GDPR) proporcionan marco vinculante corporativo para transferencias intragrupo, ofreciendo flexibilidad operativa superior mediante políticas globales preaprobadas por autoridades de protección de datos. Permiten flujos de datos continuos sin requerir consentimiento individual ni mecanismos ad-hoc por transferencia, siendo ideales para organizaciones multinacionales complejas.",
+      "justification_wrong": "Privacy Shield fue invalidado (Schrems II, 2020). El consentimiento (Art. 49 GDPR) es excepcional, no sistemático. Las TIA complementan pero no sustituyen mecanismos de transferencia. Las BCR ofrecen estructura permanente y escalable para operaciones globales complejas."
+    },
+    {
+      "num": 27,
+      "text": "Durante análisis de riesgo cuantitativo, se determina ALE=$450,000 para amenaza de ransomware. La solución EDR propuesta cuesta $180,000 anual y reduce exposición 65%. ¿Cuál métrica valida la inversión desde perspectiva de gestión de riesgo empresarial?",
+      "tag": "Quantitative Risk Analysis",
+      "options": [
+        "D. Ratio costo-beneficio de 0.40 indicando eficiencia operacional",
+        "B. Reducción de SLE a $157,500 con ARO constante",
+        "A. ROI positivo de 62.5% con recuperación en 7.4 meses",
+        "C. ALE residual de $157,500 generando ahorro neto de $112,500 anual"
+      ],
+      "correct": 3,
+      "justification_correct": "ALE residual = $450,000 × (1-0.65) = $157,500. Ahorro anual = $450,000 - $157,500 = $292,500. Beneficio neto = $292,500 - $180,000 = $112,500. Esta métrica (ISO 31000) demuestra valor empresarial real considerando inversión, alineándose con objetivos de gestión financiera de riesgo y justificando presupuesto ejecutivo.",
+      "justification_wrong": "El ROI calculado incorrectamente ignora ALE residual. La reducción de SLE confunde componentes (SLE×ARO=ALE). El ratio debe ser <1 pero no refleja ahorro absoluto. El ALE residual con ahorro neto presenta valor empresarial cuantificable para decisión ejecutiva informada."
+    },
+    {
+      "num": 28,
+      "text": "Una organización clasificada debe implementar defensa en profundidad para activos críticos nivel Secret. ¿Qué combinación de controles satisface requisitos de protección multinivel según Common Criteria EAL4+ y principios de diseño seguro?",
+      "tag": "Security Architecture & Design",
+      "options": [
+        "C. Cifrado simétrico, biometría facial, VLANs administrativas, SIEM con correlación",
+        "A. Cifrado AES-256, autenticación multifactor, segmentación de red, auditoría inmutable",
+        "B.Tokenización de datos, SSO empresarial, firewalls perimetrales, logging centralizado",
+        "D. DLP endpoint, autenticación RADIUS, DMZ dual-homed, retención logs 180 días"
+      ],
+      "correct": 1,
+      "justification_correct": "EAL4+ (ISO 15408) requiere diseño metodológico, testing riguroso y controles verificables. La combinación satisface: protección de confidencialidad (AES-256 NSA Suite B), autenticación fuerte (NIST SP 800-63B), separación de privilegios (segmentación), y responsabilidad (auditoría inmutable NIST SP 800-92), implementando defensa por capas con controles complementarios técnicos y operacionales.",
+      "justification_wrong": "SSO no garantiza autenticación fuerte requerida. Biometría facial tiene vulnerabilidades de suplantación. DMZ dual-homed presenta riesgos arquitectónicos. La opción A proporciona controles fundamentales verificables, complementarios y alineados con estándares de clasificación gubernamental y aseguramiento multinivel."
+    },
+    {
+      "num": 29,
+      "text": "Un CISO debe presentar postura de riesgo al Consejo Directivo tras evaluación BIA. ¿Cuál métrica comunica efectivamente exposición empresarial alineada con apetito de riesgo corporativo y facilita decisiones estratégicas?",
+      "tag": "Risk Management Strategy",
+      "options": [
+        "A. Matriz de calor con distribución de riesgos inherentes y residuales por dominio",
+        "C. Tiempo promedio de detección (MTTD) y respuesta (MTTR) de incidentes trimestrales",
+        "B. Puntuación CVSS agregada de vulnerabilidades críticas pendientes de remediación",
+        "D. Porcentaje de cumplimiento de controles SOC 2 Tipo II auditados"
+      ],
+      "correct": 0,
+      "justification_correct": "La matriz de calor (ISO 31000, NIST RMF) visualiza riesgos inherentes vs residuales, permitiendo al Consejo comprender exposición actual, efectividad de controles y desviaciones del apetito de riesgo. Facilita decisiones estratégicas sobre aceptación, transferencia o inversión adicional, comunicando postura empresarial mediante lenguaje ejecutivo no técnico alineado con objetivos corporativos.",
+      "justification_wrong": "CVSS es técnico operacional, no estratégico. MTTD/MTTR son KPIs operacionales sin contexto de impacto empresarial. Cumplimiento SOC 2 es binario y auditivo. La matriz de calor traduce riesgo técnico a exposición empresarial, permitiendo gobernanza estratégica informada por el Consejo."
+    },
+    {
+      "num": 30,
+      "text": "Una organización enfrenta litigio donde evidencia digital forense es crucial. ¿Qué requisito es crítico para garantizar admisibilidad judicial bajo estándares Daubert y mantener cadena de custodia según ISO 27037?",
+      "tag": "Legal & Forensics",
+      "options": [
+        "C. Análisis forense realizado exclusivamente por peritos certificados GCFA o equivalente",
+        "B. Preservación de metadatos originales mediante copia bit-a-bit con timestamps sincronizados",
+        "A. Recolección mediante herramientas validadas con funciones hash criptográficas documentadas",
+        "D. Documentación de metodología científica reproducible con validación de integridad verificable"
+      ],
+      "correct": 3,
+      "justification_correct": "Daubert establece que evidencia científica debe basarse en metodología probada, sujeta a revisión por pares y generalmente aceptada. ISO 27037 requiere procedimientos documentados, verificables y repetibles. La documentación metodológica con validación de integridad satisface ambos: admisibilidad judicial (metodología científica) y cadena de custodia (verificación continua), siendo fundamental para defensa o procesamiento legal exitoso.",
+      "justification_wrong": "Herramientas validadas son necesarias pero insuficientes sin metodología documentada. Preservación bit-a-bit es técnica específica, no requisito global. Certificaciones profesionales añaden credibilidad pero no garantizan admisibilidad. La metodología científica reproducible y documentada es fundamento legal para admisibilidad bajo escrutinio judicial riguroso."
+    },
+    {
+      "num": 31,
+      "text": "Una organización financiera debe clasificar datos bajo múltiples marcos regulatorios (PCI-DSS, SOX, GDPR). ¿Qué principio de clasificación debe aplicarse cuando un mismo activo cumple criterios de diferentes niveles?",
+      "tag": "Clasificación de Información",
+      "options": [
+        "B. Promediar los niveles de clasificación requeridos por cada marco",
+        "D. Delegar la decisión al propietario del dato sin criterios predefinidos",
+        "C. Aplicar únicamente la clasificación del marco regulatorio primario",
+        "A. Aplicar el nivel de clasificación más restrictivo (highest watermark)"
+      ],
+      "correct": 3,
+      "justification_correct": "El principio de highest watermark establece que cuando existe conflicto entre múltiples esquemas de clasificación, debe aplicarse el nivel más restrictivo para garantizar cumplimiento integral. ISO/IEC 27001:2022 Anexo A.5.12 y NIST SP 800-60 Vol.1 establecen este criterio como práctica fundamental en entornos multi-regulados, asegurando que todos los controles necesarios se implementen adecuadamente.",
+      "justification_wrong": "Promediar niveles diluye controles necesarios, violar requisitos específicos. Aplicar solo marco primario ignora obligaciones secundarias creando brechas de cumplimiento. Delegar sin criterios genera inconsistencias y posibles incumplimientos regulatorios. La clasificación requiere metodología sistemática basada en requisitos más estrictos para protección efectiva según ISO 27001 y frameworks regulatorios aplicables."
+    },
+    {
+      "num": 32,
+      "text": "Durante un Business Impact Analysis (BIA), se identifican dos procesos críticos con RTO de 4 horas. El primero genera $500K/hora de pérdida; el segundo, $50K/hora pero su interrupción causa incumplimiento regulatorio con sanciones de $10M. ¿Cómo debe priorizarse la recuperación?",
+      "tag": "Business Continuity Planning",
+      "options": [
+        "B. Priorizar el proceso con riesgo regulatorio considerando sanciones potenciales",
+        "D. Renegociar el RTO del segundo proceso para reducir costos de recuperación",
+        "C. Recuperar ambos simultáneamente dado el mismo RTO requerido",
+        "A. Priorizar el proceso con mayor impacto financiero directo ($500K/hora)"
+      ],
+      "correct": 0,
+      "justification_correct": "El BIA debe considerar impactos tangibles e intangibles según ISO 22301:2019 cláusula 8.2.3. Los riesgos regulatorios con sanciones potenciales de $10M superan significativamente pérdidas operacionales de $2M (4h × $500K). NIST SP 800-34 Rev.1 establece que impactos legales/regulatorios constituyen factores críticos prioritarios. La priorización efectiva evalúa consecuencias totales, no solo pérdidas operacionales inmediatas.",
+      "justification_wrong": "Priorizar solo impacto financiero directo ignora riesgos regulatorios mayores, violando principios de análisis holístico del BIA según ISO 22301. Recuperación simultánea puede ser técnicamente inviable y no refleja priorización basada en criticidad real. Renegociar RTOs basándose en costos compromete objetivos de continuidad establecidos mediante análisis de impacto riguroso conforme estándares internacionales."
+    },
+    {
+      "num": 33,
+      "text": "Un CISO debe seleccionar métricas para reportar efectividad del programa de seguridad al Consejo Directivo. ¿Qué conjunto de métricas proporciona mayor valor estratégico según frameworks de governance?",
+      "tag": "Security Metrics & KPIs",
+      "options": [
+        "D. Logs generados diariamente, ancho de banda consumido por seguridad, tickets cerrados",
+        "C. Cantidad de políticas publicadas, horas de entrenamiento completadas, dispositivos actualizados",
+        "B. Porcentaje de reducción de riesgo residual, ROI en controles, tiempo medio de detección (MTTD)",
+        "A. Número de vulnerabilidades detectadas, patches aplicados, intentos de intrusión bloqueados"
+      ],
+      "correct": 2,
+      "justification_correct": "COBIT 2019 y NIST Cybersecurity Framework v1.1 establecen que métricas estratégicas deben vincular actividades de seguridad con objetivos de negocio. Reducción de riesgo residual, ROI y MTTD son Key Risk Indicators (KRIs) y Key Performance Indicators (KPIs) que demuestran efectividad del programa en términos comprensibles para dirección. ISO/IEC 27004:2016 enfatiza métricas orientadas a resultados sobre actividades operacionales.",
+      "justification_wrong": "Métricas operacionales (vulnerabilidades, patches, intentos bloqueados) carecen de contexto estratégico para dirección ejecutiva. Indicadores de actividad (políticas, entrenamiento, actualizaciones) miden esfuerzo, no efectividad. Métricas técnicas (logs, bandwidth, tickets) son demasiado granulares para governance según COBIT 2019. El Consejo requiere indicadores que demuestren gestión efectiva de riesgos empresariales conforme ISO 27004."
+    },
+    {
+      "num": 34,
+      "text": "Una organización implementa controles compensatorios porque el control primario recomendado por PCI-DSS es técnicamente inviable. ¿Qué requisito es MANDATORIO para validar la aceptabilidad del control compensatorio?",
+      "tag": "Control Frameworks & Compliance",
+      "options": [
+        "B. Demostrar mediante análisis de riesgos que proporciona protección equivalente al requisito original",
+        "D. Que el control compensatorio utilice tecnología más reciente que la especificada",
+        "A. Que el control compensatorio sea más económico que el control original",
+        "C. Obtener aprobación del auditor externo antes de la implementación"
+      ],
+      "correct": 0,
+      "justification_correct": "PCI-DSS v4.0 sección 6.3 establece que controles compensatorios deben: (1) cumplir intención y rigor del requisito original, (2) proporcionar nivel similar de defensa, (3) estar por encima de otros requisitos, (4) ser proporcionales al riesgo adicional. El análisis de riesgos documentado demostrando equivalencia es requisito fundamental. ISO/IEC 27001:2022 cláusula 6.1.3(d) igualmente requiere justificación de controles alternativos basada en evaluación de riesgos.",
+      "justification_wrong": "Costo reducido no valida efectividad del control compensatorio según PCI-DSS. Aprobación previa del auditor no es requisito mandatorio aunque recomendable; la documentación rigurosa es esencial. Tecnología reciente no garantiza equivalencia funcional con requisito original. PCI-DSS v4.0 enfatiza que validación debe basarse en análisis de efectividad para mitigar riesgo específico, no en factores económicos o tecnológicos."
+    },
+    {
+      "num": 35,
+      "text": "Durante la fase de Asset Identification del risk assessment, se descubre que 30% de activos críticos no tienen propietario (asset owner) designado. ¿Cuál es la implicación más significativa para el programa de gestión de riesgos?",
+      "tag": "Risk Management Process",
+      "options": [
+        "A. Incremento en costos de inventario de activos y herramientas de descubrimiento",
+        "C. Necesidad de implementar controles técnicos adicionales de protección",
+        "B. Imposibilidad de establecer accountability para decisiones de aceptación de riesgo",
+        "D. Retraso en la obtención de certificaciones ISO 27001"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 5.3 y NIST SP 800-39 establecen que ownership es fundamental para accountability en gestión de riesgos. Sin propietario designado, no existe responsable para: valorar activos, aprobar controles, aceptar riesgos residuales o autorizar excepciones. COBIT 2019 práctica APO12.01 enfatiza que asignación clara de ownership es prerequisito para gobernanza efectiva de activos y decisiones informadas sobre riesgos.",
+      "justification_wrong": "Costos de inventario son consecuencia secundaria, no impacto principal en gestión de riesgos. Controles técnicos adicionales no compensan ausencia de accountability organizacional requerida por ISO 27001. Aunque falta de ownership puede afectar certificación, la implicación crítica es imposibilidad de tomar decisiones válidas sobre riesgos sin responsables definidos según frameworks NIST y COBIT para governance efectiva."
+    },
+    {
+      "num": 36,
+      "text": "Durante una auditoría de cumplimiento SOC 2 Type II, el auditor identifica que los registros de acceso privilegiado a sistemas críticos se almacenan solo 45 días. ¿Cuál es la deficiencia primaria desde la perspectiva de Security & Risk Management?",
+      "tag": "Compliance & Audit Management",
+      "options": [
+        "C. Falta de implementación de SIEM para correlación de eventos de seguridad en tiempo real",
+        "A. Incumplimiento de requisitos de retención para investigaciones forenses y análisis de tendencias de seguridad",
+        "D. Ausencia de cifrado en tránsito para los registros durante su transferencia al repositorio",
+        "B. Violación directa de controles CC6.1 de Common Criteria relacionados con monitoreo lógico"
+      ],
+      "correct": 1,
+      "justification_correct": "SOC 2 TSC CC7.2 requiere retención suficiente de registros para soportar investigaciones post-incidente. NIST SP 800-92 recomienda mínimo 90 días para logs privilegiados, permitiendo análisis forenses efectivos. ISO 27001:2022 A.8.15 exige períodos acordes al valor evidencial y requisitos legales.",
+      "justification_wrong": "CC6.1 se enfoca en segmentación lógica, no retención. SIEM es mecanismo técnico complementario pero no resuelve la deficiencia de política de retención. Cifrado en tránsito es requisito separado no relacionado con duración de almacenamiento de logs."
+    },
+    {
+      "num": 37,
+      "text": "Una organización multinacional debe transferir datos biométricos de empleados desde la UE hacia sus centros de procesamiento en EE.UU. tras la invalidación del Privacy Shield. ¿Cuál mecanismo legal proporciona la base más robusta bajo GDPR?",
+      "tag": "Privacy & Data Protection",
+      "options": [
+        "D. Realizar Data Protection Impact Assessment (DPIA) documentando necesidad del procesamiento transfronterizo",
+        "C. Aplicar Cláusulas Contractuales Estándar (SCC) complementadas con medidas técnicas suplementarias",
+        "B. Obtener consentimiento explícito de cada empleado mediante formularios digitales auditables",
+        "A. Implementar Binding Corporate Rules (BCR) aprobadas por la autoridad de control competente"
+      ],
+      "correct": 1,
+      "justification_correct": "Post-Schrems II (C-311/18), las SCC actualizadas (2021/914) son el mecanismo preferido cuando se complementan con medidas técnicas/organizativas que aseguren nivel de protección esencialmente equivalente (Art. 46 GDPR). EDPB Recommendations 01/2020 exigen evaluación caso-por-caso con salvaguardas adicionales.",
+      "justification_wrong": "BCR requieren proceso de aprobación extenso (12-18 meses) menos ágil que SCC. Consentimiento empleado es base legal problemática por desequilibrio de poder (WP29 Opinion 2/2017). DPIA es requisito procedimental obligatorio pero no constituye base legal para transferencia internacional."
+    },
+    {
+      "num": 38,
+      "text": "Al evaluar riesgo residual post-implementación de controles compensatorios para vulnerabilidad crítica en sistema legacy sin parche disponible, ¿qué factor determina principalmente si el riesgo es aceptable según marcos enterprise?",
+      "tag": "Risk Assessment & Treatment",
+      "options": [
+        "A. La reducción porcentual de likelihood alcanzada mediante controles de red y monitoreo intensivo",
+        "C. La existencia de cobertura de seguro cibernético que cubra impacto financiero de explotación exitosa",
+        "D. El tiempo estimado hasta migración del sistema legacy hacia plataforma moderna soportada",
+        "B. El posicionamiento del riesgo residual dentro del apetito y tolerancia definidos por la Junta Directiva"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 31000:2018 y NIST RMF establecen que aceptación de riesgo residual debe alinearse con apetito/tolerancia organizacional formalmente definidos. COSO ERM enfatiza que decisiones de aceptación corresponden a niveles ejecutivos según umbrales pre-establecidos, no métricas técnicas aisladas.",
+      "justification_wrong": "Reducción de likelihood es input técnico pero no criterio decisorio final. Transferencia mediante seguro es estrategia de tratamiento complementaria, no determina aceptabilidad inherente del riesgo. Planes de remediación futuros no validan aceptación del riesgo presente sin aprobación formal."
+    },
+    {
+      "num": 39,
+      "text": "Durante un ejercicio de threat modeling mediante STRIDE para API REST de pagos, se identifica riesgo de Elevation of Privilege. ¿Cuál control es más efectivo para este vector específico según defense-in-depth?",
+      "tag": "Threat Modeling & Security Architecture",
+      "options": [
+        "D. Desplegar Web Application Firewall (WAF) con reglas OWASP ModSecurity Core Rule Set actualizadas",
+        "A. Implementar OAuth 2.0 con PKCE y validación estricta de redirect_uri en flujo de autorización",
+        "C. Habilitar mutual TLS (mTLS) para autenticación de certificados cliente-servidor en capa transporte",
+        "B. Aplicar principle of least privilege mediante RBAC granular con validación de claims en cada endpoint"
+      ],
+      "correct": 3,
+      "justification_correct": "Elevation of Privilege en STRIDE se mitiga primariamente mediante controles de autorización robustos. RBAC con validación continua de privilegios por operación (NIST SP 800-162) y verificación de claims JWT previene escalación vertical/horizontal. OAuth 2.0 Token Introspection (RFC 7662) complementa validando alcance en runtime.",
+      "justification_wrong": "OAuth/PKCE mitiga Spoofing (autenticación), no autorización granular. mTLS aborda Tampering/Spoofing en transporte pero no privilegios de aplicación. WAF provee defensa perimetral genérica pero no enforcement de lógica de autorización específica por recurso/acción."
+    },
+    {
+      "num": 40,
+      "text": "Una organización de salud enfrenta demanda regulatoria por notificación tardía de brecha bajo HIPAA. Investigación revela que el equipo clasificó incorrectamente el incidente como security incident en lugar de breach. ¿Qué falla en el programa de gestión de riesgos causó esto?",
+      "tag": "Incident Response & Legal Compliance",
+      "options": [
+        "C. Implementación inadecuada de controles preventivos que permitieron la materialización del incidente inicial",
+        "B. Falta de capacitación técnica del CSIRT en análisis forense digital para determinar alcance de compromiso",
+        "D. Carencia de cobertura de seguro E&O (Errors and Omissions) para proteger contra sanciones regulatorias",
+        "A. Ausencia de integración entre marcos de gestión de incidentes (NIST SP 800-61) y requisitos específicos de notificación regulatoria"
+      ],
+      "correct": 3,
+      "justification_correct": "HIPAA Breach Notification Rule (45 CFR §164.400) define breach mediante criterios legales específicos distintos de definiciones técnicas de incident. ISO 27035 y NIST SP 800-61 r2 requieren procedimientos que mapeen clasificación técnica a obligaciones legales/regulatorias. Falla evidencia desconexión entre procesos operacionales y compliance.",
+      "justification_wrong": "Capacitación forense mejora investigación pero no aborda problema de clasificación legal/regulatoria. Controles preventivos son anteriores al evento, no relacionados con gestión post-incidente. Seguro E&O mitiga impacto financiero pero no corrige deficiencia procedimental que causó incumplimiento."
+    },
+    {
+      "num": 41,
+      "text": "Una organización multinacional debe cumplir simultáneamente con GDPR, CCPA y LGPD. ¿Cuál principio de privacidad representa el denominador común más restrictivo que garantiza cumplimiento transversal?",
+      "tag": "Privacy & Data Protection",
+      "options": [
+        "C. Notificación de brecha dentro de 72 horas a autoridades",
+        "A. Minimización de datos con retención limitada y propósito específico",
+        "D. Designación obligatoria de Data Protection Officer",
+        "B. Consentimiento explícito revocable para todo procesamiento"
+      ],
+      "correct": 1,
+      "justification_correct": "La minimización de datos (GDPR Art. 5.1.c, CCPA §1798.100, LGPD Art. 6-III) es el principio universal más restrictivo presente en las tres regulaciones. Establece recolección limitada al propósito declarado, reduciendo superficie de riesgo legal y técnico independientemente de jurisdicción.",
+      "justification_wrong": "Consentimiento tiene excepciones legales (interés legítimo GDPR Art. 6.1.f). Notificación 72h es específica GDPR/LGPD pero CCPA no especifica plazo idéntico. DPO es obligatorio solo bajo condiciones específicas GDPR Art. 37, no universal."
+    },
+    {
+      "num": 42,
+      "text": "Durante un análisis cuantitativo de riesgo, el ALE calculado es $450,000 y la implementación de controles cuesta $380,000 anuales con 75% de efectividad. ¿Cuál métrica determina correctamente la viabilidad financiera?",
+      "tag": "Risk Assessment",
+      "options": [
+        "D. CBA positivo con beneficio neto de $337,500 anuales",
+        "A. ROI negativo de -$42,500 indica rechazo del control",
+        "C. ROSI de 11% ($42,500/$380,000) valida implementación",
+        "B. Valor de riesgo residual de $112,500 justifica la inversión"
+      ],
+      "correct": 2,
+      "justification_correct": "ROSI (Return on Security Investment) = (ALE × Efectividad - Costo) / Costo. Cálculo: ($450,000 × 0.75 - $380,000) / $380,000 = $42,500/$380,000 = 11.18%. ROSI positivo según NIST SP 800-65 valida económicamente la inversión en controles, proporcionando retorno cuantificable.",
+      "justification_wrong": "ROI tradicional no aplica directamente a seguridad. Riesgo residual ($112,500) es informativo pero no métrica de viabilidad. CBA erróneo: beneficio neto real es $42,500 ($337,500 - $380,000), no considera correctamente costos de implementación."
+    },
+    {
+      "num": 43,
+      "text": "Un CISO implementa Defense in Depth con controles en capas. ¿Cuál arquitectura demuestra correctamente independencia de fallos según principios de seguridad de Saltzer & Schroeder?",
+      "tag": "Security Architecture",
+      "options": [
+        "C. MFA combinando token TOTP, biometría vascular y pregunta contextual conductual",
+        "A. WAF→IPS→Firewall compartiendo misma base de firmas",
+        "B. Autenticación biométrica respaldada por mismo sistema biométrico en modo failover",
+        "D. Cifrado en tránsito y reposo usando AES-256 con mismas llaves derivadas"
+      ],
+      "correct": 0,
+      "justification_correct": "MFA con factores heterogéneos (posesión/TOTP, inherencia/biometría, conocimiento/contextual) implementa separación de privilegios y economía de mecanismos (Saltzer & Schroeder, 1975). Fallo en un factor no compromete otros, cumpliendo independencia según ISO 27001:2022 Control 5.17.",
+      "justification_wrong": "Opción A: dependencia común en firmas viola independencia. Opción B: failover del mismo sistema no provee diversidad (single point of failure). Opción D: reutilización de llaves crea dependencia criptográfica, violando separación de mecanismos según NIST SP 800-57."
+    },
+    {
+      "num": 44,
+      "text": "Bajo ISO 31000:2018, una organización identifica riesgo con probabilidad 15% e impacto $2M. Post-tratamiento: probabilidad 8%, impacto $1.8M, costo control $50K anual. ¿Cuál categoría de tratamiento se ejecutó?",
+      "tag": "Risk Treatment",
+      "options": [
+        "B. Transferencia parcial mediante aseguramiento proporcional",
+        "A. Mitigación con reducción de exposición del 62%",
+        "C. Evitación con eliminación de vulnerabilidad raíz",
+        "D. Aceptación con controles compensatorios residuales"
+      ],
+      "correct": 1,
+      "justification_correct": "Mitigación reduce probabilidad e impacto mediante controles. ALE inicial: $300K (15%×$2M). ALE post-tratamiento: $144K (8%×$1.8M). Reducción: $156K (52% del ALE, 62% considerando inversión neta). ISO 31000:2018 clasifica esto como modificación del riesgo mediante controles internos.",
+      "justification_wrong": "Transferencia implica terceros (seguros, outsourcing) sin evidencia. Evitación requiere eliminar actividad (probabilidad→0%). Aceptación implica no modificar el riesgo, pero aquí hay inversión activa en controles reduciendo probabilidad/impacto significativamente."
+    },
+    {
+      "num": 45,
+      "text": "Durante clasificación de información según FIPS 199, datos tienen impacto ALTO en confidencialidad, MODERADO en integridad y BAJO en disponibilidad. ¿Cuál determinación de categorización de seguridad es correcta?",
+      "tag": "Information Classification",
+      "options": [
+        "A. Categoría ALTA aplicando principio high-water mark de impacto máximo",
+        "D. Categoría BAJA priorizando disponibilidad según continuidad operacional",
+        "C. Categoría mixta ALTA-MODERADA-BAJA por objetivos diferenciados",
+        "B. Categoría MODERADA mediante promedio ponderado de impactos"
+      ],
+      "correct": 0,
+      "justification_correct": "FIPS 199 establece categorización por high-water mark: SC = {(confidencialidad, impacto), (integridad, impacto), (disponibilidad, impacto)} donde categoría global = MAX(impactos). Sistema se clasifica ALTO porque el impacto máximo (confidencialidad) dicta nivel, determinando controles NIST SP 800-53 baseline correspondiente.",
+      "justification_wrong": "FIPS 199 prohíbe promedios o ponderaciones. Categorías mixtas no existen en estándar federal; se usa valor máximo único. Priorizar disponibilidad contradice metodología prescrita; impacto ALTO en cualquier objetivo de seguridad determina categoría sistémica según §3.2 FIPS 199."
+    },
+    {
+      "num": 46,
+      "text": "Una organización multinacional debe armonizar controles de seguridad bajo GDPR, SOX y PCI-DSS simultáneamente. ¿Cuál estrategia de framework integration optimiza cumplimiento reduciendo redundancias operacionales?",
+      "tag": "Compliance Integration",
+      "options": [
+        "D. Utilizar COBIT 2019 exclusivamente como metamarco delegando interpretaciones regulatorias a auditores externos especializados",
+        "B. Adoptar ISO 27001 como baseline y realizar gap analysis separado para cada regulación mediante matrices independientes",
+        "C. Establecer tres programas paralelos de compliance con equipos dedicados para evitar conflictos interpretativos entre jurisdicciones",
+        "A. Implementar Unified Compliance Framework (UCF) mapeando controles comunes a través de Common Controls Framework (CCF) con trazabilidad bidireccional"
+      ],
+      "correct": 3,
+      "justification_correct": "UCF con CCF proporciona metodología estructurada para mapear controles overlapping entre múltiples frameworks. Según NIST SP 800-53 Rev5 y ISO/IEC 27001:2022 Annex A, la consolidación mediante common control inheritance reduce duplicación hasta 60% manteniendo rigor normativo. Trazabilidad bidireccional garantiza auditabilidad cross-regulatory.",
+      "justification_wrong": "ISO 27001 solo como baseline requiere esfuerzo duplicado en gap analysis (B). Programas paralelos multiplican costos operacionales sin sinergia (C). COBIT como metamarco único no cubre especificidades técnicas de PCI-DSS DSS v4.0 requirements (D). Estas opciones ignoran principios de control rationalization documentados en CMMC 2.0."
+    },
+    {
+      "num": 47,
+      "text": "Durante risk assessment cuantitativo, el CISO calcula ALE para activo crítico: ARO=0.3, SLE=$850,000. Auditoría cuestiona metodología al comparar con ML-based predictive models mostrando 47% varianza. ¿Cuál limitación fundamental explica esta discrepancia?",
+      "tag": "Quantitative Risk Analysis",
+      "options": [
+        "B. Cálculo ALE tradicional asume distribución uniforme de eventos cuando amenazas reales siguen distribuciones Poisson o power-law con fat tails",
+        "C. Single Loss Expectancy ignora costos indirectos como reputational damage cuantificables mediante Net Promoter Score regression analysis",
+        "D. Absence de Monte Carlo simulation en metodología determinística impide capturar interdependencias entre threat vectors correlacionados",
+        "A. Factor Analysis of Information Risk (FAIR) no considera threat intelligence feeds actualizados en tiempo real para ajustar frecuencias"
+      ],
+      "correct": 0,
+      "justification_correct": "ALE clásico (ARO×SLE) presupone eventos uniformemente distribuidos, contradiciendo evidencia empírica según FAIR Institute y investigaciones de Cyentia. Ciberataques exhiben clustering temporal (Poisson) y magnitudes extremas (power-law). NIST SP 800-30 Rev1 reconoce esta limitación recomendando análisis de distribuciones. Varianza 47% es consistente con tail risk subestimado.",
+      "justification_wrong": "FAIR sí integra threat intelligence mediante TEF (Threat Event Frequency) calibrado (A). SLE cubre pérdidas directas; reputación requiere análisis separado pero no explica varianza estadística (C). Monte Carlo mejora precisión pero discrepancia señala problema distribucional subyacente, no falta de simulación (D). Raíz causal es asunción distribucional errónea."
+    },
+    {
+      "num": 48,
+      "text": "Organización implementa Zero Trust Architecture según NIST SP 800-207. Pentester bypassa microsegmentación exfiltrando datos mediante DNS tunneling sobre puerto 53 permitido. ¿Qué principio Zero Trust falló en implementación?",
+      "tag": "Zero Trust Architecture",
+      "options": [
+        "C. Falta de integration entre Policy Decision Point (PDP) y SIEM impidió correlation de volumen anómalo queries DNS temporal",
+        "B. Implicit trust zone persistió en resolución DNS al no aplicar continuous verification a tráfico considerado infraestructura crítica",
+        "A. Policy Enforcement Point (PEP) no inspeccionó payload DNS mediante deep packet inspection con entropy analysis para detectar anomalías",
+        "D. Modelo Kipling Method (5W1H) no validó WHEN component en políticas time-based access control para servicios DNS recursivos"
+      ],
+      "correct": 1,
+      "justification_correct": "Zero Trust core tenet según NIST SP 800-207 §2.1: 'never trust, always verify' sin excepciones. DNS frecuentemente recibe implicit trust por criticidad operacional, violando principio fundamental. NSA Cybersecurity Advisory 'Selecting Secure DNS' enfatiza inspeccionar TODO tráfico DNS. Fallo fue architectural: asumir confianza inherente en protocolo infraestructural contradice ZT philosophy.",
+      "justification_wrong": "Aunque DPI con entropy analysis detecta tunneling (A), ausencia no explica fallo arquitectónico ZT sino implementación tool-específica. SIEM correlation (C) es detective control, no preventivo según ZT verification principle. Kipling Method time validation (D) es irrelevante para este vector; DNS tunneling no depende de temporalidad sino de data encoding. Raíz: violación de verify-everything mandate."
+    },
+    {
+      "num": 49,
+      "text": "Junta directiva exige ROI cuantificable de inversión $4.2M en Security Operations Center (SOC). CISO debe presentar métricas defensibles. ¿Cuál framework métrico proporciona mayor rigor actuarial para justificar inversión?",
+      "tag": "Security Metrics & ROI",
+      "options": [
+        "A. Gordon-Loeb Model calculando optimal investment level mediante derivadas parciales de expected loss function considerando vulnerability y breach probability",
+        "C. Return on Security Investment (ROSI) mediante fórmula (ALE_before - ALE_after - Investment_cost) / Investment_cost ajustado por discount rate",
+        "D. Value at Risk (VaR) cibernético al 95% confidence interval usando historical simulation de incident costs últimos 5 años",
+        "B. Balanced Scorecard (BSC) adaptado con KPIs categorizados en Financial, Customer, Internal Process y Learning/Growth perspectives"
+      ],
+      "correct": 0,
+      "justification_correct": "Gordon-Loeb Model (Management Science, 2002) proporciona fundamento económico riguroso mediante optimización matemática: inversión óptima es fracción de expected loss modulada por breach probability y effectiveness. Peer-reviewed y citado en NIST Cybersecurity Framework. Permite justificar por qué $4.2M es racional versus over/under-investment. Único modelo con derivación actuarial formal.",
+      "justification_wrong": "BSC es framework cualitativo sin quantification actuarial (B). ROSI simplifica excesivamente ignorando probabilistic nature y no optimiza investment level (C). VaR cibernético estima pérdida potencial pero no demuestra optimalidad de inversión específica $4.2M ni effectiveness marginal (D). Gordon-Loeb único con proof matemático de investment rationality según optimization theory."
+    },
+    {
+      "num": 50,
+      "text": "Auditoría revela que Disaster Recovery Plan (DRP) alcanza RTO=4h y RPO=1h según pruebas, pero BIA actualizado indica Maximum Tolerable Downtime (MTD)=2h para sistema ERP. ¿Cuál acción priorizada alinea resiliencia con business requirements?",
+      "tag": "Business Continuity Planning",
+      "options": [
+        "D. Re-categorizar sistema ERP de Tier-1 a Tier-2 en asset classification ajustando MTD según capacidades técnicas actuales disponibles",
+        "B. Renegociar MTD con business stakeholders justificando cost-benefit analysis donde reducir RTO de 4h a 2h requiere 340% budget increase",
+        "C. Establecer manual workaround procedures documentando degraded operations mode permitiendo funciones críticas durante recovery window",
+        "A. Implementar active-active datacenter replication con automated failover reduciendo RTO a <30min mediante orchestration platform"
+      ],
+      "correct": 3,
+      "justification_correct": "MTD es business-driven constraint no negociable según ISO 22301:2019 §8.2.4 y NIST SP 800-34 Rev1. Gap RTO(4h) > MTD(2h) representa unacceptable risk. Opción A address root cause técnico mediante architectural improvement. Active-active con automated failover es solución probada para mission-critical systems. Business requirements dictate technical solutions, no viceversa según BCP principles.",
+      "justification_wrong": "Renegociar MTD (B) invierte incorrectamente jerarquía: business define tolerancia, IT la habilita. Manual workarounds (C) no garantizan cumplimiento MTD=2h sistemáticamente. Re-categorizar ERP (D) es administratively manipular risk acceptance sin executive approval formal ni risk treatment plan según ISO 31000. Único approach válido: mejorar capabilities técnicas hasta satisfacer business-defined MTD."
+    }
+  ]
+}

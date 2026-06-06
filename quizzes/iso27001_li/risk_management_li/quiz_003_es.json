@@ -1,0 +1,710 @@
+{
+  "cert_id": "iso27001_li",
+  "domain_id": "risk_management_li",
+  "quiz_num": 3,
+  "domain_name": "Gestão de Risco — ISO 27005",
+  "cert_name": "ISO 27001 Lead Implementer",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Según ISO 27005:2022, ¿cuál es el propósito primario del proceso de identificación de activos en la gestión de riesgos de seguridad de la información?",
+      "tag": "Identificación de Activos",
+      "options": [
+        "A. Establecer un inventario completo de todos los activos de información para determinar el alcance de la evaluación de riesgos",
+        "D. Identificar proveedores externos que gestionen los activos críticos",
+        "C. Determinar únicamente los activos que requieren cifrado obligatorio",
+        "B. Asignar valores económicos a cada activo para calcular el impacto financiero directo"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022, apartado 7.2 establece que la identificación de activos es fundamental para definir el contexto y alcance de la evaluación de riesgos, creando un inventario exhaustivo que incluye activos tangibles e intangibles relacionados con la información.",
+      "justification_wrong": "Aunque la valoración económica es relevante, no es el propósito primario; la identificación de activos trasciende criterios de cifrado específico o dependencia exclusiva de proveedores externos según 27005:2022."
+    },
+    {
+      "num": 2,
+      "text": "En el contexto de ISO 27005:2022, ¿cómo se diferencia una amenaza de una vulnerabilidad durante el análisis de riesgos?",
+      "tag": "Análisis de Amenazas y Vulnerabilidades",
+      "options": [
+        "B. La vulnerabilidad es siempre de origen externo mientras que la amenaza es interna",
+        "D. Ambas son términos sinónimos utilizados indistintamente en la evaluación de riesgos",
+        "A. La amenaza es un agente externo potencial que puede explotar una debilidad (vulnerabilidad) en el sistema o proceso",
+        "C. Las amenazas tienen mayor probabilidad de ocurrencia que las vulnerabilidades según la matriz de riesgos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022, apartados 7.3 y 7.4 definen claramente: amenaza como evento potencial que puede comprometer la seguridad, y vulnerabilidad como debilidad explorable. La combinación de amenaza + vulnerabilidad genera riesgo.",
+      "justification_wrong": "Amenazas y vulnerabilidades tienen orígenes diversos (internas y externas); no son sinónimos sino elementos interdependientes cuya interacción materializa el riesgo según la formulación: Riesgo = Amenaza × Vulnerabilidad × Impacto."
+    },
+    {
+      "num": 3,
+      "text": "¿Cuál es la relación entre la evaluación de riesgos y el tratamiento de riesgos según ISO 27001:2022 y ISO 27005:2022?",
+      "tag": "Evaluación y Tratamiento de Riesgo",
+      "options": [
+        "D. La evaluación de riesgos solo es requerida si el tratamiento identifica riesgos críticos",
+        "B. El tratamiento de riesgos debe ejecutarse antes de la evaluación para establecer controles preventivos",
+        "A. La evaluación de riesgos es un proceso previo que proporciona la información cuantificada necesaria para decidir sobre las opciones de tratamiento",
+        "C. Son procesos independientes sin relación directa en el ciclo de gestión de riesgos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1 y ISO 27005:2022 apartado 7.5 establecen que la evaluación proporciona el análisis cuantitativo/cualitativo que fundamenta las decisiones de tratamiento (aceptar, mitigar, transferir, evitar).",
+      "justification_wrong": "El tratamiento sin evaluación previa viola el principio de toma de decisiones basada en riesgos; estos son procesos secuenciales interdependientes, no independientes ni paralelos según 27001:2022 cláusula 6."
+    },
+    {
+      "num": 4,
+      "text": "En ISO 27005:2022, ¿qué representa el Riesgo Residual (RR) y cómo se relaciona con el Riesgo Tolerable (RTP)?",
+      "tag": "Riesgo Residual y Tolerable",
+      "options": [
+        "D. El riesgo residual se calcula antes del tratamiento y el riesgo tolerable después",
+        "A. El riesgo residual es el riesgo remanente tras aplicar controles, que debe compararse y mantenerse por debajo del riesgo tolerable aceptado",
+        "C. El riesgo tolerable solo aplica a activos críticos, mientras que el riesgo residual aplica a todos",
+        "B. El riesgo residual y el riesgo tolerable son idénticos en magnitud después de implementar cualquier control"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 apartados 7.5 y 7.6 definen: riesgo residual = riesgo post-tratamiento; riesgo tolerable = umbral aceptable definido organizacionalmente. La validación requiere RR ≤ RTP para aceptación de riesgos.",
+      "justification_wrong": "Riesgo residual y tolerable NO son idénticos; se definen en diferentes momentos. RTP se establece antes del tratamiento como criterio de aceptación, no después de implementar controles según 27005:2022."
+    },
+    {
+      "num": 5,
+      "text": "¿Cuál es el alcance apropiado de un Plan de Tratamiento de Riesgos (PTR) según ISO 27005:2022 en una implementación de ISO 27001:2022?",
+      "tag": "Plan de Tratamiento de Riesgos (PTR)",
+      "options": [
+        "B. Listar solo los controles técnicos que serán implementados en infraestructura y sistemas",
+        "C. Describir únicamente las amenazas externas y sus respectivas contramedidas",
+        "A. Documentar objetivos de tratamiento, opciones seleccionadas, responsables, cronograma, recursos y criterios de aceptación para cada riesgo identificado",
+        "D. Incluir exclusivamente los riesgos clasificados como 'críticos' excluyendo riesgos bajos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 apartado 7.5 especifica que el PTR debe ser integral: incluir descripción del riesgo, opciones de tratamiento, responsables, plazos, recursos, métricas y alinearse con la cláusula 6.2 de ISO 27001:2022.",
+      "justification_wrong": "El PTR trasciende controles técnicos únicamente; debe abarcar controles organizacionales, de personal y tecnológicos. No excluye riesgos bajos; todos requieren decisión documentada de tratamiento según 27005:2022 apartado 7.5."
+    },
+    {
+      "num": 6,
+      "text": "Según ISO 27005:2022, en la fase de identificación de activos, ¿cuál es el criterio primordial para clasificar un elemento como activo de información?",
+      "tag": "Identificación de Activos",
+      "options": [
+        "C. Estar registrado obligatoriamente en un inventario físico centralizado",
+        "B. Tener un costo de adquisición superior a 5000 euros",
+        "D. Ser tangible y ubicado dentro de las instalaciones de la organización",
+        "A. Poseer valor para la organización y requerir protección contra pérdida de confidencialidad, integridad o disponibilidad"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022, apartado 6.4.1, establece que un activo debe tener valor para la organización y requerir protección contra amenazas. La clasificación se fundamenta en criticidad operativa y riesgos potenciales.",
+      "justification_wrong": "Las opciones B, C y D son criterios secundarios o incorrectos. El costo no determina clasificación de activo; hay activos no tangibles críticos; no todos requieren ubicación física."
+    },
+    {
+      "num": 7,
+      "text": "En el análisis de amenazas conforme ISO 27005:2022, ¿qué diferencia fundamental existe entre una amenaza y una vulnerabilidad?",
+      "tag": "Análisis de Amenazas y Vulnerabilidades",
+      "options": [
+        "B. Las amenazas son internas y las vulnerabilidades siempre externas",
+        "D. Una amenaza requiere siempre intención maliciosa; una vulnerabilidad es accidental",
+        "A. La amenaza es una causa potencial de incidente indeseado; la vulnerabilidad es una debilidad que puede ser explotada por amenazas",
+        "C. La vulnerabilidad tiene probabilidad cuantificable; la amenaza no puede medirse"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022, cláusula 6.4.2, diferencia: amenaza como 'fuente potencial de daño' y vulnerabilidad como 'debilidad que puede ser explotada'. Ambas son independientes; la coincidencia genera riesgo.",
+      "justification_wrong": "B es falso: amenazas pueden ser internas. C es incorrecto: ambas pueden cuantificarse. D no es válido: amenazas no requieren intención; vulnerabilidades pueden ser intencionales."
+    },
+    {
+      "num": 8,
+      "text": "Respecto a la evaluación de riesgo en ISO 27005:2022, ¿cuál es el propósito primario de la matriz de riesgo (criticidad vs. probabilidad)?",
+      "tag": "Evaluación de Riesgo",
+      "options": [
+        "C. Cumplir requisitos legales sin necesidad de análisis técnico posterior",
+        "D. Distribuir equitativamente el presupuesto de seguridad entre todos los activos",
+        "B. Eliminar completamente todos los riesgos identificados en la organización",
+        "A. Facilitar la priorización de riesgos para orientar la asignación de recursos y estrategias de tratamiento"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022, apartado 6.5, establece que la evaluación de riesgo permite priorización para decisiones de tratamiento. La matriz ordena riesgos por impacto y probabilidad, optimizando recursos.",
+      "justification_wrong": "B es irreal: riesgos residuales persisten. C desconoce que evaluación precede cumplimiento. D es ineficiente: asignación debe ser proporcional al nivel de riesgo, no equitativa."
+    },
+    {
+      "num": 9,
+      "text": "Conforme ISO 27005:2022, en el tratamiento del riesgo, ¿cuál es la relación entre las opciones de tratamiento (mitigación, aceptación, evitación, transferencia) y el riesgo residual?",
+      "tag": "Tratamiento del Riesgo y Riesgo Residual",
+      "options": [
+        "C. El riesgo residual solo existe si se selecciona la opción de aceptación del riesgo",
+        "D. La transferencia de riesgo convierte el riesgo residual en responsabilidad del tercero sin mantener supervisión",
+        "A. El riesgo residual es el remanente después de aplicar opciones de tratamiento; no se elimina completamente",
+        "B. La mitigación elimina totalmente el riesgo residual; las otras opciones generan riesgo residual"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022, cláusula 6.6, define riesgo residual como el remanente después del tratamiento. Todas las opciones (mitigación, aceptación, evitación, transferencia) generan riesgo residual que requiere monitoreo continuo.",
+      "justification_wrong": "B es falso: mitigación no elimina totalmente. C es incorrecto: riesgo residual existe en todas opciones. D desconoce que transferencia requiere supervisión; responsabilidad no se transfiere, sí el riesgo parcialmente."
+    },
+    {
+      "num": 10,
+      "text": "Según ISO 27005:2022, ¿cuál es el protocolo normativo para la revisión y actualización del Registro de Tratamiento de Riesgo (RTP) durante el ciclo de vida de la organización?",
+      "tag": "Registro de Tratamiento de Riesgo (RTP)",
+      "options": [
+        "B. Revisión bienal obligatoria sin necesidad de evaluaciones adicionales ante cambios",
+        "D. Revisión mensual de todos los registros sin excepción, independientemente de cambios relevantes",
+        "C. Actualización solo cuando se produce un incidente de seguridad documentado",
+        "A. Revisión anual como mínimo, y después de cambios significativos en activos, amenazas, vulnerabilidades o controles"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022, apartado 6.8, establece que el RTP requiere revisión periódica (mínimo anual) y evaluación adicional ante cambios sustanciales en contexto organizacional, activos o amenazas.",
+      "justification_wrong": "B infraestima frecuencia ante cambios. C es reactivo: evaluación debe ser proactiva. D es ineficiente: revisiones deben ser basadas en riesgo y eventos significativos, no automáticamente mensual."
+    },
+    {
+      "num": 11,
+      "text": "Según ISO 27005:2022, durante la fase de análisis de vulnerabilidades, ¿cuál es el propósito principal de identificar las debilidades en los controles existentes?",
+      "tag": "Análisis de Vulnerabilidades",
+      "options": [
+        "C. Justificar el presupuesto de seguridad para el próximo año fiscal",
+        "B. Eliminar completamente todos los riesgos identificados",
+        "A. Determinar la capacidad de las amenazas para explotar las debilidades y causar impacto",
+        "D. Reemplazar inmediatamente todos los controles deficientes"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 establece que vulnerabilidades son debilidades que pueden ser explotadas por amenazas. El análisis permite evaluar la probabilidad de explotación y determinar el nivel de riesgo resultante, siendo fundamental para la posterior evaluación de riesgo.",
+      "justification_wrong": "Las alternativas B, C y D representan acciones posteriores o incorrectas. El análisis de vulnerabilidades no elimina riesgos directamente, ni justifica presupuestos, ni ordena reemplazo automático de controles sin evaluación de riesgo previa."
+    },
+    {
+      "num": 12,
+      "text": "En el contexto de ISO 27001:2022 y ISO 27005:2022, ¿cuál es la diferencia crítica entre el Tratamiento del Riesgo (RTP) y el Riesgo Residual?",
+      "tag": "Tratamiento y Riesgo Residual",
+      "options": [
+        "B. RTP y riesgo residual son sinónimos que describen el mismo concepto de control",
+        "A. RTP son acciones implementadas para modificar el riesgo; riesgo residual es lo que permanece después del tratamiento",
+        "D. El riesgo residual debe ser siempre cero después de implementar RTP",
+        "C. RTP solo aplica a riesgos críticos; riesgo residual aplica a todos los riesgos"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 define RTP como opciones (mitigación, eliminación, transferencia, aceptación) para modificar riesgo. Riesgo residual es el nivel restante post-tratamiento. La aceptación del residual es responsabilidad de la dirección según ISO 27001:2022 cláusula 6.2.",
+      "justification_wrong": "B es conceptualmente falso. C es incorrecto: RTP aplica a todos los riesgos evaluados. D viola principios de gestión de riesgo: siempre existe riesgo residual; debe ser aceptable según contexto organizacional, no necesariamente cero."
+    },
+    {
+      "num": 13,
+      "text": "Durante la identificación de activos según ISO 27005:2022, ¿qué característica debe cumplir un activo para ser incluido en el inventario de evaluación de riesgo?",
+      "tag": "Identificación de Activos",
+      "options": [
+        "C. Solo sistemas computacionales y servidores; datos y personas no son considerados activos",
+        "A. Debe ser tangible y tener un valor monetario asignado en el balance contable",
+        "D. Debe estar únicamente bajo control del departamento de TI de la organización",
+        "B. Debe ser necesario para soportar los procesos del negocio y potencialmente vulnerable a amenazas"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 define activos como cualquier cosa que tenga valor para la organización y requiera protección. Incluye información, sistemas, personas, procesos. La vulnerabilidad a amenazas es criterio esencial para evaluación de riesgo ISMS.",
+      "justification_wrong": "A es restrictivo: muchos activos son intangibles (datos, reputación). C omite activos críticos: personal e información son vulnerables a amenazas. D ignora responsabilidades compartidas: controles de información y personas involucran múltiples departamentos según ISO 27001."
+    },
+    {
+      "num": 14,
+      "text": "¿Cuál es el enfoque metodológico correcto para la evaluación de riesgo en ISO 27005:2022 cuando la organización carece de datos históricos de incidentes?",
+      "tag": "Evaluación de Riesgo",
+      "options": [
+        "B. Utilizar juicio experto, benchmarks de la industria, escenarios hipotéticos y validación con stakeholders",
+        "C. Asumir que no existen riesgos reales en la organización",
+        "A. Posponer la evaluación hasta acumular mínimo 5 años de datos de incidentes históricos",
+        "D. Aplicar exclusivamente controles genéricos sin análisis específico de probabilidad e impacto"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 cláusula 8.2 permite múltiples fuentes: datos históricos, juicio experto, datos de la industria, simulaciones. Ausencia de historial no invalida evaluación; requiere métodos cualitativos/cuantitativos adaptativos con validación de expertos.",
+      "justification_wrong": "A es impracticable: organizaciones nuevas deben evaluar riesgo. C ignora realidad de amenazas cibernéticas. D omite rigor analítico: controles sin análisis de riesgo específico violarían ISO 27001:2022 cláusula 6.2 sobre determinación de riesgo aceptable."
+    },
+    {
+      "num": 15,
+      "text": "Según ISO 27005:2022, ¿cuál es la responsabilidad de la organización respecto al monitoreo del riesgo residual después de implementar el Tratamiento del Riesgo?",
+      "tag": "Monitoreo y Control de Riesgo Residual",
+      "options": [
+        "D. Transferir completamente la responsabilidad de monitoreo al proveedor de seguros de ciberseguridad",
+        "B. Monitorear continuamente para detectar cambios en amenazas, vulnerabilidades o impacto que puedan alterar el nivel aceptado",
+        "C. Revisar el riesgo residual únicamente durante la renovación anual de la certificación ISO 27001",
+        "A. El riesgo residual no requiere monitoreo si fue formalmente aceptado por la dirección"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 cláusula 8.5 exige monitoreo y revisión continua de riesgos. ISO 27001:2022 cláusula 8.3 requiere evaluación periódica de riesgos. Cambios en contexto (nuevas amenazas, vulnerabilidades, activos) pueden invalidar aceptación previa del residual.",
+      "justification_wrong": "A es pasiva: aceptación no elimina monitoreo requerido. C es insuficiente: ISO requiere evaluación periódica, no anual solamente. D es incorrecto: responsabilidad de monitoreo es de la organización, no transferible a terceros; seguros mitigan impacto, no riesgo operacional."
+    },
+    {
+      "num": 16,
+      "text": "En el contexto de ISO 27005:2022, durante la fase de análisis de amenazas, ¿cuál es el propósito principal de identificar las fuentes de amenaza y sus motivaciones?",
+      "tag": "Análisis de Amenazas y Vulnerabilidades",
+      "options": [
+        "D. Clasificar amenazas por orden alfabético para fines de documentación",
+        "C. Eliminar completamente todas las amenazas identificadas mediante tratamiento preventivo",
+        "A. Establecer el contexto para comprender qué activos podrían ser objetivos y cómo podrían ser atacados, facilitando evaluaciones de probabilidad más precisas",
+        "B. Determinar exclusivamente el costo económico de implementar controles de mitigación"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022, numeral 7.3.1, establece que identificar fuentes de amenaza y motivaciones permite comprender el panorama de amenazas y evaluar probabilidades de explotación. Este análisis es fundamental para la evaluación de riesgos subsecuente.",
+      "justification_wrong": "Las opciones B, C y D no se alinean con el enfoque metodológico de ISO 27005:2022. La evaluación de amenazas no busca eliminación total, ni es un ejercicio de clasificación administrativa, ni enfatiza costos en esta fase."
+    },
+    {
+      "num": 17,
+      "text": "Conforme a ISO 27001:2022 y ISO 27005:2022, ¿cuál es la diferencia crítica entre vulnerabilidad y debilidad en el contexto de la evaluación de riesgos de seguridad de información?",
+      "tag": "Análisis de Vulnerabilidades",
+      "options": [
+        "C. Vulnerabilidad se aplica solo a sistemas técnicos, mientras que debilidad se refiere únicamente a procesos organizacionales",
+        "B. Son términos sinónimos utilizados indistintamente en evaluaciones de riesgo",
+        "D. Debilidad es más grave que vulnerabilidad y requiere tratamiento inmediato",
+        "A. Vulnerabilidad es una debilidad específica en un activo que podría ser explotada por una amenaza; debilidad es un término más genérico que abarca deficiencias en controles, procesos o activos sin necesaria explotabilidad inmediata"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022, sección 7.4, define vulnerabilidad como debilidad en un activo que podría ser explotada. No todas las debilidades constituyen vulnerabilidades explotables. Esta distinción es crítica para priorización de tratamiento de riesgos.",
+      "justification_wrong": "Las opciones B, C y D representan conceptualizaciones incorrectas. Los términos no son sinónimos, aplican a múltiples dominios, y la gravedad no está determinada por la denominación sino por el riesgo residual resultante."
+    },
+    {
+      "num": 18,
+      "text": "En una evaluación cuantitativa de riesgos siguiendo ISO 27005:2022, ¿cuál es el método más apropiado para determinar la Probabilidad de Explotación (PE) cuando datos históricos son limitados o inexistentes?",
+      "tag": "Evaluación de Riesgo - Métodos Cuantitativos",
+      "options": [
+        "D. Utilizar únicamente datos de benchmarks de industria sin ajuste contextual",
+        "C. Omitir el cálculo de probabilidad y enfocarse exclusivamente en impacto potencial",
+        "A. Utilizar juicio experto estructurado mediante técnicas Delphi o talleres facilitados con especialistas en seguridad, amenazas y contexto empresarial para estimar PE basada en escenarios plausibles",
+        "B. Asumir una probabilidad estándar del 50% para todas las amenazas identificadas"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022, numeral 7.5.5, reconoce que cuando datos históricos son insuficientes, el juicio experto estructurado es metodológicamente válido. Las técnicas Delphi proporcionan convergencia de opiniones informadas sobre PE.",
+      "justification_wrong": "Las opciones B, C y D no cumplen rigor metodológico. Probabilidades uniformes son arbitrarias, omitir probabilidad invalida el análisis cuantitativo, y benchmarks sin contextualización no reflejan postura de riesgo específica."
+    },
+    {
+      "num": 19,
+      "text": "¿Cuál es el rol fundamental del Riesgo Residual (RR) en la decisión de aceptación de riesgos según ISO 27001:2022 y ISO 27005:2022?",
+      "tag": "Riesgo Residual y Aceptación de Riesgo",
+      "options": [
+        "C. El RR solo es relevante para auditoría externa y no impacta decisiones internas de tratamiento",
+        "A. El RR representa el nivel de riesgo remanente después de aplicar controles y tratamientos; la organización debe evaluarlo contra criterios de aceptabilidad establecidos en su contexto para tomar decisiones informadas de aceptación o tratamiento adicional",
+        "B. El RR es sinónimo de riesgo inherente y no cambia independientemente de los controles implementados",
+        "D. El RR debe ser siempre cero para cumplir ISO 27001:2022"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022, numeral 6.2 y ISO 27005:2022, sección 7.6, establecen que RR es el riesgo post-tratamiento. Su evaluación contra criterios de aceptabilidad definidos por la organización fundamenta decisiones de aceptación de riesgo o tratamiento adicional.",
+      "justification_wrong": "Las opciones B, C y D son incorrectas. RR difiere de riesgo inherente, es crítico para decisiones internas, y la aceptabilidad es contextual, no la eliminación absoluta de riesgo."
+    },
+    {
+      "num": 20,
+      "text": "En el marco de un Registro de Tratamiento de Riesgos (RTP) conforme a ISO 27001:2022, ¿qué información crítica debe incluirse para garantizar trazabilidad y eficacia del programa de tratamiento?",
+      "tag": "Registro de Tratamiento de Riesgos (RTP)",
+      "options": [
+        "A. Identificación del riesgo, opción de tratamiento seleccionada, controles asignados, responsables, fechas de implementación, métricas de efectividad y riesgos residuales proyectados para seguimiento continuo",
+        "D. La lista de amenazas sin vinculación a activos o impactos",
+        "C. Únicamente el costo estimado de implementación de controles",
+        "B. Solo el nombre del riesgo y su descripción general"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022, numeral 6.2 y Anexo A (controles) requieren que RTP contenga elementos trazables: identificación, tratamiento, responsabilidades, cronograma e indicadores. Esto asegura governanza y accountability del programa de gestión de riesgos.",
+      "justification_wrong": "Las opciones B, C y D carecen de información integral necesaria para gobernanza. Un RTP incompleto no permite seguimiento, rendición de cuentas ni evaluación de efectividad de controles."
+    },
+    {
+      "num": 21,
+      "text": "Durante el tratamiento de riesgos según ISO 27005:2022, una organización decide implementar controles adicionales para reducir la probabilidad de ocurrencia de un incidente de seguridad. ¿Cuál es la clasificación correcta de esta opción de tratamiento?",
+      "tag": "Tratamiento de Riesgo",
+      "options": [
+        "A. Mitigación del riesgo",
+        "C. Evitación del riesgo",
+        "D. Transferencia del riesgo",
+        "B. Aceptación del riesgo"
+      ],
+      "correct": 0,
+      "justification_correct": "La mitigación reduce probabilidad o impacto mediante controles. ISO 27005:2022 §8.5 define que reducir la probabilidad de ocurrencia mediante controles técnicos u organizacionales es mitigación. Implementar medidas preventivas como autenticación multifactor o encriptación ejemplifica esta opción.",
+      "justification_wrong": "Aceptación mantiene riesgo sin controles. Evitación elimina actividades riesgosas. Transferencia desplaza responsabilidad. Ninguna coincide con implementar controles que reduzcan probabilidad."
+    },
+    {
+      "num": 22,
+      "text": "En la fase de identificación de activos (ISO 27005:2022 §7.1), una organización clasifica sus activos considerando dependencias e interconexiones. ¿Cuál es el propósito principal de este análisis de interdependencias?",
+      "tag": "Identificación de Activos",
+      "options": [
+        "C. Identificar proveedores de seguros para cobertura de riesgos",
+        "B. Establecer el costo total de propiedad de cada activo",
+        "D. Reducir automáticamente la valoración de activos interconectados",
+        "A. Determinar el impacto potencial en cascada cuando un activo se ve comprometido"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 requiere entender relaciones entre activos para evaluar impacto completo de incidentes. Activos interdependientes pueden sufrir efectos en cascada. Ejemplo: falla de red afecta aplicaciones dependientes, ampliando impacto real.",
+      "justification_wrong": "Costo de propiedad es consideración financiera, no objetivo de análisis de dependencias. Cobertura de seguros es post-riesgo. Clasificación automática no se justifica por interdependencias."
+    },
+    {
+      "num": 23,
+      "text": "Durante la evaluación de vulnerabilidades según ISO 27005:2022 §7.3, se identifican vulnerabilidades potenciales sin amenazas activas conocidas. ¿Cómo debe proceder la organización en este escenario?",
+      "tag": "Análisis de Amenazas y Vulnerabilidades",
+      "options": [
+        "D. Esperar confirmación de amenaza antes de documentar la vulnerabilidad",
+        "C. Transferir inmediatamente todas al proveedor del software",
+        "B. Mantenerlas en el registro de vulnerabilidades y evaluar riesgo residual potencial",
+        "A. Descartar las vulnerabilidades porque sin amenazas no generan riesgo"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 §7.3 especifica que riesgo = amenaza × vulnerabilidad × impacto. Vulnerabilidades sin amenaza actual pueden ser explotadas futuro. Deben documentarse, monitorearse y evaluarse respecto riesgo residual potencial.",
+      "justification_wrong": "Descartar vulnerabilidades ignora riesgo emergente. Transferencia unilateral sin evaluación es irresponsable. Esperar amenaza es reactivo; ISO 27001 demanda proactividad en gestión de vulnerabilidades."
+    },
+    {
+      "num": 24,
+      "text": "Un Lead Implementer realiza el Plan de Tratamiento de Riesgos (RTP) conforme ISO 27005:2022 §9. Para un riesgo con impacto crítico, la opción de tratamiento seleccionada es 'aceptación'. ¿Cuál es el requisito normativo crítico?",
+      "tag": "Plan de Tratamiento de Riesgos (RTP)",
+      "options": [
+        "D. Requiere transferencia de responsabilidad a terceros contratados",
+        "C. Solo es válida si la probabilidad es inferior al 5% anual",
+        "B. La aceptación automáticamente cumple ISO 27001 sin documentación adicional",
+        "A. La aceptación debe ser aprobada por la Dirección con pleno conocimiento del riesgo residual"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 §8.5 y ISO 27001:2022 §6.2 exigen que aceptación de riesgo sea decisión consciente, documentada y aprobada por responsables competentes. Especialmente crítico en riesgos de alto impacto; evidencia de consentimiento informado es obligatoria.",
+      "justification_wrong": "Aceptación requiere documentación explícita. No hay umbral de probabilidad normativo del 5%. Transferencia es opción distinta de aceptación."
+    },
+    {
+      "num": 25,
+      "text": "Tras implementar controles, la organización calcula el riesgo residual según ISO 27005:2022. El riesgo residual excede el apetito de riesgo definido. ¿Cuál es la acción normativa requerida?",
+      "tag": "Riesgo Residual",
+      "options": [
+        "A. Implementar controles adicionales o volver a evaluar la tolerancia de riesgo con aprobación explícita",
+        "B. Aceptar automáticamente el riesgo residual sin acciones adicionales",
+        "D. Trasladar la responsabilidad de gestión al departamento de TI únicamente",
+        "C. Eliminar el activo generador del riesgo de forma inmediata"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 §10 y ISO 27001:2022 §6.2 establecen que riesgo residual debe ser evaluado, documentado y aceptado formalmente. Si excede apetito, requerir controles adicionales o justificación documentada de modificación de criterios de tolerancia aprobada por Dirección.",
+      "justification_wrong": "Aceptación automática viola principios de gobernanza. Eliminación activo puede ser desproporcionada. Responsabilidad es organizacional, no solo IT."
+    },
+    {
+      "num": 26,
+      "text": "Durante la evaluación de riesgos conforme ISO 27005:2022, un analista identifica que la probabilidad de ocurrencia de una amenaza es MEDIA y el impacto potencial es ALTO. Aplicando una matriz de riesgos 3x3, ¿cuál es el nivel de riesgo resultante y qué acción de tratamiento es OBLIGATORIA según ISO 27001:2022?",
+      "tag": "Evaluación y Tratamiento de Riesgos",
+      "options": [
+        "D. Riesgo CRÍTICO; obliga la interrupción inmediata de operaciones",
+        "A. Riesgo ALTO; requiere tratamiento inmediato (mitigación, aceptación documentada o evitación)",
+        "B. Riesgo MEDIO; puede diferirse el tratamiento hasta el próximo período de revisión",
+        "C. Riesgo BAJO; solo requiere monitoreo sin implementación de controles"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 § 8.4 establece que riesgos ALTO requieren tratamiento prioritario. ISO 27001:2022 § 6.2 exige que riesgos significativos sean tratados mediante mitigación, aceptación consciente, evitación o transferencia, documentando decisiones en RTP.",
+      "justification_wrong": "Opciones B, C y D contravienen cláusulas 6.2 y 8.4 de ambos estándares. Riesgos ALTO no pueden diferirse, ignorarse ni causar interrupción automática sin evaluación previa del contexto organizacional."
+    },
+    {
+      "num": 27,
+      "text": "En el contexto de ISO 27005:2022, durante la identificación de activos de información, un analista debe clasificar un servidor físico que alberga bases de datos de clientes. ¿Cuál es el enfoque CORRECTO para determinar el valor del activo según la norma?",
+      "tag": "Identificación de Activos y Valoración",
+      "options": [
+        "A. Evaluar confidencialidad, integridad y disponibilidad (CIA) considerando impacto en objetivos del negocio si se compromete",
+        "C. Asignar valor máximo a todos los activos que almacenen datos personales",
+        "B. Basarse exclusivamente en el costo de adquisición del equipamiento físico",
+        "D. Utilizar únicamente benchmarks de industria sin considerar contexto organizacional específico"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 § 7.2.1 requiere valorar activos considerando impacto en confidencialidad, integridad, disponibilidad y cumplimiento regulatorio. El valor se determina por consecuencias del compromiso, no por costo de reemplazo. ISO 27001:2022 § A.5.9 alinea este enfoque.",
+      "justification_wrong": "Opciones B, C y D aplican métodos superficiales. El costo físico no refleja riesgo real; valor máximo automático ignora contexto; benchmarks sin adaptación local no cumplen requisito de evaluación contextualizada de ISO 27005."
+    },
+    {
+      "num": 28,
+      "text": "Tras implementar controles de mitigación según el RTP (Plan de Tratamiento de Riesgos), el Lead Implementer debe evaluar el riesgo residual. ¿Cuál es la metodología CORRECTA para calcular riesgo residual conforme ISO 27005:2022 y cuál es la responsabilidad final de aceptación?",
+      "tag": "Riesgo Residual y Aceptación",
+      "options": [
+        "D. La aceptación de riesgo residual es responsabilidad exclusiva del equipo de seguridad, sin participación de la dirección",
+        "C. Riesgo Residual se calcula solo sobre amenazas externas, excluyendo vulnerabilidades internas",
+        "B. Riesgo Residual siempre es cero si los controles están implementados correctamente",
+        "A. Riesgo Residual = Riesgo Original - Efectividad de Controles; aceptación por propietario de riesgo con documentación formal en acta"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 § 8.5 define riesgo residual como remanente tras tratamiento. La fórmula implícita es Roriginal - (Roriginal × Efectividad%). ISO 27001:2022 § 6.2 exige que aceptación sea autorizada por propietario con competencia y documentada formalmente.",
+      "justification_wrong": "Opción B ignora que controles tienen efectividad parcial. Opción C contraviene ISO 27005:2022 que evalúa ALL vectores. Opción D viola segregación de responsabilidades; dirección debe autorizar aceptación estratégica con conocimiento completo del riesgo."
+    },
+    {
+      "num": 29,
+      "text": "Durante el análisis de vulnerabilidades en ISO 27005:2022, se identifica que un activo crítico presenta múltiples vulnerabilidades (Cvss 7.5, 8.1, 9.0). Aplicando el enfoque de análisis de amenazas, ¿cuál es el criterio CORRECTO para priorizar el tratamiento de vulnerabilidades?",
+      "tag": "Análisis de Amenazas y Vulnerabilidades",
+      "options": [
+        "D. Priorizar exclusivamente por puntuación CVSS sin evaluar contexto de amenaza ni probabilidad de explotación",
+        "B. Remediar solo vulnerabilidades CVSS ≥ 9.0; ignorar aquellas CVSS < 8.0",
+        "A. Cruzar CVSS con probabilidad de explotación y disponibilidad de exploits públicos, considerando capacidad de amenazantes relevantes al contexto",
+        "C. Aplicar parches en orden aleatorio para no predecibilidad"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 § 8.2-8.3 exige análisis combinado: CVSS proporciona severidad técnica, pero probabilidad de explotación + amenazantes reales + disponibilidad de exploits definen prioridad. Contexto organizacional es decisivo. Enfoque holístico cumple § 7.4.1.",
+      "justification_wrong": "Opción B ignora que CVSS 7.5-8.1 pueden ser críticas si fácilmente explotables en contexto específico. Opción C carece de rigor científico. Opción D aplica solo criterio técnico sin análisis de riesgo integral requerido por ISO 27005:2022."
+    },
+    {
+      "num": 30,
+      "text": "Un Lead Implementer detecta que durante la evaluación de riesgos inicial, el equipo omitió evaluar riesgos derivados de terceros proveedores de servicios en la nube. Conforme ISO 27005:2022 y ISO 27001:2022, ¿cuál es la acción CORRECTA y qué cláusula normativa lo respalda?",
+      "tag": "Gestión de Riesgos en Cadena de Suministro",
+      "options": [
+        "D. Diferir evaluación de riesgos de terceros para auditoría externa anual",
+        "C. Aceptar todos los riesgos cloud implícitamente mediante firmas de SLA",
+        "A. Realizar evaluación adicional de riesgos de proveedores externos incluyendo análisis de amenazas y vulnerabilidades del ambiente cloud; documentar en Plan de Gestión de Riesgos; ISO 27001:2022 § 8.1 y ISO 27005:2022 § 7.2 exigen inclusión de terceros",
+        "B. Los riesgos de proveedores externos son responsabilidad exclusiva del proveedor; no requieren evaluación propia"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 § 8.1 exige que SMSI aborde riesgos vinculados a actividades externas. ISO 27005:2022 § 7.2 incluye evaluación de activos y amenazas en ecosistema ampliado. Responsabilidad compartida requiere evaluación propia independiente del proveedor.",
+      "justification_wrong": "Opción B aboga por transferencia de responsabilidad sin análisis; ISO 27001 lo prohibe. Opción C confunde SLA con gestión de riesgos. Opción D viola principio de riesgo inherente; evaluación debe preceder decisiones de tratamiento, no diferirse."
+    },
+    {
+      "num": 31,
+      "text": "Durante la identificación de activos en ISO 27005:2022, una organización detecta que ciertos activos de información no están documentados formalmente. ¿Cuál es el enfoque correcto según la norma?",
+      "tag": "Identificación de Activos",
+      "options": [
+        "A. Documentar todos los activos identificados, incluyendo los implícitos, en un inventario centralizado con criterios de clasificación definidos",
+        "B. Excluir activos informales del análisis de riesgos por ser de bajo impacto",
+        "C. Registrar únicamente activos críticos tangibles en bases de datos separadas",
+        "D. Delegar la identificación exclusivamente al departamento de TI"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 cláusula 7.2 requiere identificación exhaustiva y documentación sistemática de todos los activos de información, incluyendo intangibles. El inventario centralizado con criterios de clasificación asegura completitud y trazabilidad en posteriores fases de análisis de riesgos.",
+      "justification_wrong": "Excluir activos del análisis viola principio de exhaustividad. Registro separado fragmenta control. Delegación exclusiva a TI omite perspectiva organizacional integral necesaria para identificación completa."
+    },
+    {
+      "num": 32,
+      "text": "En el análisis de amenazas conforme ISO 27005:2022, se identifica una amenaza interna con probabilidad media y impacto alto. ¿Cuál es el tratamiento de riesgo más apropiado?",
+      "tag": "Análisis de Amenazas y Vulnerabilidades",
+      "options": [
+        "A. Reducción mediante controles detectivos y preventivos antes de aceptar residualmente",
+        "D. Transferencia sin análisis previo de viabilidad",
+        "C. Eliminación total de la amenaza mediante despido masivo",
+        "B. Aceptación inmediata porque la probabilidad no es alta"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 cláusula 8.3 establece que riesgos con impacto alto requieren reducción sistemática. Controles detectivos (auditorías internas, monitoreo) y preventivos (capacitación, segregación funcional) disminuyen probabilidad antes de aceptar riesgo residual conforme cláusula 8.4.",
+      "justification_wrong": "Probabilidad media no justifica inacción ante impacto alto. Eliminación es inviable y desproporcionada. Transferencia sin análisis de viabilidad incumple cláusula 8.4 sobre tratamiento racional y documentado."
+    },
+    {
+      "num": 33,
+      "text": "Al evaluar vulnerabilidades en infraestructura crítica, se descubre deficiencia en parches de seguridad. ¿Cómo debe documentarse en el Plan de Tratamiento de Riesgos (RTP)?",
+      "tag": "Tratamiento de Riesgo y RTP",
+      "options": [
+        "D. Incluir únicamente en reportes de auditoría sin plan de acción",
+        "C. Registrar como acción correctiva únicamente post-incidente",
+        "B. Anotar únicamente que se aplicarán parches sin detalles de implementación",
+        "A. Especificar control, responsable, cronograma, recursos, criterio de efectividad y seguimiento periódico"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 cláusula 8.4 y Anexo A (A.12.6.1) requieren que RTP documente: control específico, propietario, plazo, recursos asignados, métrica de efectividad y periodicidad de revisión. Esto garantiza trazabilidad, implementación ordenada y demostración de cumplimiento normativo.",
+      "justification_wrong": "Documentación vaga incumple requisitos de trazabilidad. Reactividad post-incidente viola principio preventivo. Exclusión de RTP fragmenta gestión de riesgos."
+    },
+    {
+      "num": 34,
+      "text": "En evaluación de riesgos residuales post-implementación de controles, el riesgo se reduce de nivel 'Alto' a 'Bajo'. ¿Qué validación adicional prescribe ISO 27005:2022?",
+      "tag": "Riesgo Residual",
+      "options": [
+        "B. Aceptación automática sin validación porque alcanzó nivel bajo",
+        "C. Evaluación únicamente mediante cuestionarios al personal implementador",
+        "A. Verificación de efectividad de controles mediante testing, auditoría interna y comparación contra línea base definida",
+        "D. Re-evaluación solo si se detecta nuevo incidente"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 cláusula 8.5 requiere validación objetiva de riesgo residual mediante: pruebas funcionales de controles, auditorías de cumplimiento, y comparación con criterios de aceptabilidad predefinidos. Esto confirma que riesgo es realmente 'aceptable' conforme apetito de riesgo organizacional.",
+      "justification_wrong": "Aceptación sin validación incumple cláusula 8.5. Cuestionarios subjetivos no verifican efectividad real. Reactividad post-incidente es ineficaz; validación es preventiva y periódica."
+    },
+    {
+      "num": 35,
+      "text": "Una organización implementa ISO 27001:2022 Lead. Durante revisión de riesgos, identifica que ciertos riesgos residuales requieren monitoreo continuo. ¿Cuál es el mecanismo de control integral conforme a ambas normas?",
+      "tag": "Integración ISO 27001:2022 e ISO 27005:2022",
+      "options": [
+        "C. Revisar riesgos solo ante cambios organizacionales mayores",
+        "A. Incluir monitoreo en procesos de revisión gerencial (cláusula 9.3 ISO 27001) con métricas de KRI y revisión anual de riesgos",
+        "D. Mantener registros de riesgos sin integración a planes de mejora continua",
+        "B. Delegar monitoreo exclusivamente a SOC sin participación del ISMS"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 9.3 (revisión gerencial) integra ISO 27005:2022 cláusula 9 (monitoreo y revisión). Mecanismo integral: KRI (Key Risk Indicators), análisis de tendencias, y revisión anual formal de cartera de riesgos. Asegura retroalimentación continua al ISMS.",
+      "justification_wrong": "Delegación fragmentada debilita gobernanza. Reactividad omite detección temprana. Registros desvinculados de mejora continua incumplen cláusula 10.3 ISO 27001 sobre mejora."
+    },
+    {
+      "num": 36,
+      "text": "Durante la evaluación de riesgos conforme ISO 27005:2022, usted identifica que un activo crítico de información presenta una vulnerabilidad de autenticación débil con probabilidad de explotación alta. ¿Cuál es el enfoque más apropiado según el criterio de aceptabilidad de riesgos?",
+      "tag": "Evaluación y aceptabilidad de riesgos",
+      "options": [
+        "A. Aplicar tratamiento inmediato del riesgo mediante fortalecimiento de mecanismos de autenticación multifactor, documentando en el registro de tratamiento de riesgos (RTP)",
+        "D. Monitorear pasivamente sin aplicar tratamientos hasta próxima auditoría anual",
+        "C. Transferir completamente el riesgo mediante póliza de seguros cibernético",
+        "B. Aceptar el riesgo residual documentando justificación de negocio sin implementar controles"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 (cláusula 8.5) establece que vulnerabilidades críticas con alta probabilidad requieren tratamiento activo. El RTP documenta opciones: reducción, retención, evitación o transferencia. La autenticación multifactor es control preventivo sobre vulnerabilidad identificada.",
+      "justification_wrong": "Opciones B-D incumplen obligación de tratamiento de riesgos inaceptables. Aceptación sin controles viola principio de due diligence. Monitoreo pasivo no mitiga riesgos activos. Transferencia total es impracticable para vulnerabilidades técnicas internas."
+    },
+    {
+      "num": 37,
+      "text": "En la fase de identificación de activos (ISO 27005:2022, cláusula 7.2), usted debe clasificar información sensible procesada en sistemas cloud híbridos. ¿Qué enfoque integral asegura coherencia con ISO 27001:2022 A.8.1?",
+      "tag": "Identificación y clasificación de activos",
+      "options": [
+        "C. Usar clasificación genérica estándar sin personalización al contexto organizacional",
+        "A. Clasificar activos únicamente por ubicación física (on-premise vs cloud) y responsable técnico",
+        "B. Aplicar matriz de clasificación multidimensional considerando: confidencialidad, integridad, disponibilidad, criticidad empresarial y cumplimiento normativo según ISO 27001 Anexo A",
+        "D. Clasificar solo datos en tránsito, excluyendo datos en reposo del inventario de activos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 requiere identificación integral de activos con atributos relevantes (cláusula 7.2). ISO 27001:2022 A.8.1 exige clasificación basada en CIA + criticidad. Matriz multidimensional habilita decisiones de tratamiento proporcionales al contexto híbrido.",
+      "justification_wrong": "Opción A omite dimensiones de seguridad críticas. C ignora principio de materialidad al contexto organizacional. D incumple cobertura integral; datos en reposo requieren protección equivalente conforme ISO 27001 A.8.2 (manejo de activos)."
+    },
+    {
+      "num": 38,
+      "text": "Durante análisis de ameazas (ISO 27005:2022, cláusula 7.3), identifica que actores de amenaza internos (empleados) representan 60% del riesgo residual en acceso a bases de datos sensibles. ¿Cuál es la estrategia óptima de tratamiento alineada con ISO 27001:2022?",
+      "tag": "Análisis de amenazas y tratamiento de riesgos",
+      "options": [
+        "A. Implementar exclusivamente separación de funciones (A.6.2) y control de acceso basado en roles (A.8.3) con auditoría continua",
+        "C. Depender únicamente de firewalls perimetrales y encriptación de datos",
+        "B. Despedir a todos los empleados con acceso crítico para eliminar la amenaza interna",
+        "D. Aplicar monitoreo sin restricciones de privacidad laboral mediante keylogging universal"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 A.6.2 y A.8.3 establecen segregación de funciones y control de acceso basado en necesidad. ISO 27005:2022 recomienda tratamiento multi-capa: técnico (RBAC), procedural (cambios de rol), organizacional (auditoría) y cultural (conciencia).",
+      "justification_wrong": "B es proporción desproporcionada. C ignora amenaza interna (cortafuegos no protege contra usuarios autorizados). D viola privacidad laboral y leyes de protección de datos (GDPR, LGPD), invalidando control por ilegalidad."
+    },
+    {
+      "num": 39,
+      "text": "Usted completa análisis de vulnerabilidades en infraestructura crítica usando CVSS v3.1. Vulnerabilidad X obtiene score 7.5 (alto). ¿Cuál es el criterio correcto de priorización de tratamiento alineado con ISO 27005:2022 y rigor de certificación senior?",
+      "tag": "Análisis de vulnerabilidades y análisis cuantitativo",
+      "options": [
+        "D. Tratar todas las vulnerabilidades CVSS ≥7 con igual urgencia sin análisis diferenciado",
+        "A. Priorizar exclusivamente por score CVSS sin considerar impacto empresarial ni probabilidad de explotación en ambiente específico",
+        "C. Ignorar CVSS y depender solo de juicio experto cualitativo sin métricas objetivas",
+        "B. Aplicar matriz de riesgo integrando: score CVSS, contexto de amenaza, activos afectados, capacidad defensiva y tolerancia de riesgo organizacional"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 (cláusula 8.3) requiere análisis cuantitativo integrado. CVSS es insumo, no decisión final. Matriz de riesgo integra vulnerabilidad (CVSS), probabilidad de explotación (amenazas contextuales), impacto empresarial (activos) y postura defensiva.",
+      "justification_wrong": "A yD aplican mecanicismo sin contexto organizacional. C carece de objetividad requerida en certificación senior. Enfoque integrado diferencia vulnerabilidades en sistemas expuestos vs aislados, priorizando eficiencia del tratamiento."
+    },
+    {
+      "num": 40,
+      "text": "En la revisión de riesgo residual post-tratamiento (ISO 27005:2022, cláusula 8.5), su organización implementó autenticación MFA reduciendo riesgo de acceso no autorizado de 8.2 a 3.5 (escala 0-10). La directiva establece tolerancia máxima de 4.0. ¿Cuál es la acción correcta de governance?",
+      "tag": "Riesgo residual y apetito de riesgo",
+      "options": [
+        "D. Aceptar silenciosamente sin documentación formal aprovechando que está dentro de tolerancia",
+        "C. Continuar tratamiento indefinidamente aunque sea económicamente inviable",
+        "A. Aceptar formalmente el riesgo residual (3.5) mediante decisión documentada del propietario de riesgo, registrando en RTP y comunicando a stakeholders",
+        "B. Rechazar el tratamiento e implementar controles adicionales hasta reducir a cero riesgo"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 cláusula 8.5 y ISO 27001:2022 cláusula 6.2 requieren decisión formal documentada de aceptación de riesgos residuales aceptables. RTP debe registrar decisión, autoridad responsable y comunicación a stakeholders. Transparencia es requisito de governance.",
+      "justification_wrong": "B persigue riesgo cero (inviable económicamente). C viola eficiencia de recursos. D omite documentación formal violando ISO 27001 cláusula 7.4 (información documentada). Aunque numéricamente aceptable, incumplimiento procesal invalida autorización."
+    },
+    {
+      "num": 41,
+      "text": "En el proceso de identificación de activos según ISO 27005:2022, ¿cuál es el criterio primario para determinar si un activo debe ser incluido en el alcance del análisis de riesgos de seguridad de la información?",
+      "tag": "Identificación de Activos",
+      "options": [
+        "C. Su ubicación física dentro de las instalaciones corporativas",
+        "B. Su costo de adquisición inicial en el inventario financiero",
+        "D. Su antigüedad y tiempo de vida útil estimado",
+        "A. Su contribución a la confidencialidad, integridad o disponibilidad de la información crítica de la organización"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022, clausula 6.2 establece que activos deben evaluarse según su impacto en CIA. Solo aquellos que afecten confidencialidad, integridad o disponibilidad de información merecen análisis de riesgo profundo.",
+      "justification_wrong": "Criterios económicos, ubicación física o antigüedad son irrelevantes para seguridad información. ISO 27005 enfatiza atributos de seguridad, no características administrativas o financieras."
+    },
+    {
+      "num": 42,
+      "text": "Durante el análisis de vulnerabilidades en ISO 27005:2022, una vulnerabilidad tiene probabilidad de explotación del 85% y pérdida potencial de €500.000. El factor de riesgo inherente es 0,95. ¿Cuál es la fórmula correcta para calcular el riesgo?",
+      "tag": "Análisis de Vulnerabilidades",
+      "options": [
+        "D. Riesgo = 0,85 × 0,95 / €500.000 = 0,0016",
+        "B. Riesgo = 0,85 × €500.000 × 0,95 = €403.750",
+        "C. Riesgo = (0,85 + €500.000) × 0,95 = €475.425",
+        "A. Riesgo = (0,85 × €500.000) / 0,95 ≈ €447.368"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022, anexo C recomienda: Riesgo = Probabilidad × Impacto × Factor Inherente. Fórmula (B) aplica multiplicación directa de componentes, reflejando exposición real ajustada.",
+      "justification_wrong": "Opciones A, C, D utilizan operaciones matemáticas incorrectas (división, suma) que no corresponden al modelo de evaluación cuantitativa de ISO 27005."
+    },
+    {
+      "num": 43,
+      "text": "En el contexto de ISO 27001:2022 y tratamiento de riesgos, ¿cuál es la diferencia técnica entre RTP (Risk Treatment Plan) y Plan de Mejora Continua respecto a riesgos residuales?",
+      "tag": "Tratamiento de Riesgos",
+      "options": [
+        "B. RTP es reactivo y aplica solo después de incidentes; mejora continua es preventiva y cíclica",
+        "C. RTP no considera riesgos residuales; mejora continua optimiza controles existentes permanentemente",
+        "A. RTP aborda riesgos identificados post-análisis; el Plan de Mejora gestiona desviaciones detectadas en auditorías",
+        "D. RTP y Plan de Mejora son sinónimos en ISO 27001, solo diferente nomenclatura"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022, clausula 8.3 define RTP para riesgos identificados. ISO 27005:2022, clausula 8 establece mejora continua evalúa eficacia post-implementación. RTP es específico; mejora es iterativa.",
+      "justification_wrong": "RTP considera explícitamente riesgos residuales (ISO 27005:2022, 8.6). Mejora continua no es solo post-incidente sino cíclica. No son sinónimos funcionales."
+    },
+    {
+      "num": 44,
+      "text": "Según ISO 27005:2022, al evaluar una amenaza con severidad 7/10 contra un activo con valor 3/10 y vulnerabilidad presente (factor 1), ¿qué nivel de riesgo resulta y cuál es la acción recomendada?",
+      "tag": "Evaluación de Riesgos",
+      "options": [
+        "D. Riesgo EXTREMO (7×3=21, escala 1-20); eliminación total de activo o proceso",
+        "C. Riesgo BAJO (7-3=4); aceptación implícita sin documentación formal",
+        "B. Riesgo MODERADO (7+3+1=11); monitoreo trimestral con controles estándar",
+        "A. Riesgo CRÍTICO (7×3×1=21); tratamiento obligatorio inmediato con mitigación o aceptación documentada"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022, clausula 7.4 multiplica Amenaza × Valor × Vulnerabilidad. Resultado 21 (escala típica 1-25) es CRÍTICO. Clausula 8 requiere tratamiento documentado (mitigación/aceptación).",
+      "justification_wrong": "Suma (B), resta (C) o interpretaciones de escalas no estándar (D) violan ISO 27005. Riesgo bajo no justifica aceptación implícita; toda decisión requiere documentación formal."
+    },
+    {
+      "num": 45,
+      "text": "En la revisión post-implementación de controles de ISO 27001:2022, el riesgo residual de una amenaza crítica después de mitigación es 8/25. ¿Cuál es la decisión normativa correcta según ISO 27005:2022?",
+      "tag": "Riesgo Residual",
+      "options": [
+        "A. Aceptar residual si stakeholders autorizan; documentar justificación y implementar monitoreo continuo",
+        "B. Rechazar y exigir mitigación adicional hasta alcanzar riesgo ≤2/25",
+        "D. Evitar aceptación; retornar a fase de identificación de activos para redefinir alcance",
+        "C. Transferir completamente a terceros mediante seguros o outsourcing"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022, clausula 8.6 y ISO 27001:2022, clausula 6.2 permiten aceptación residual si riesgo es tolerable y autorizado por dirección. Requiere documentación formal y monitoreo.",
+      "justification_wrong": "Nivel residual 8/25 no es rechazable automáticamente; transferencia total es tratamiento parcial. Retornar a identificación es innecesario si se evalúa apropiadamente."
+    },
+    {
+      "num": 46,
+      "text": "En el contexto de ISO 27005:2022, al realizar la evaluación de riesgo en una organización con múltiples unidades de negocio, ¿cuál es el enfoque más alineado con la norma para determinar el alcance del análisis de activos?",
+      "tag": "Identificación de Activos - Alcance Multinivel",
+      "options": [
+        "B. Incluir únicamente activos tangibles de infraestructura tecnológica de cada unidad",
+        "C. Aplicar el mismo criterio de inventario a todas las unidades sin considerar diferencias contextuales",
+        "A. Definir el alcance basado en contexto organizacional, límites del SGSI y dependencias críticas entre unidades",
+        "D. Limitar la evaluación solo a activos que generan ingresos directos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 §5.4 establece que la identificación de activos debe considerar contexto organizacional, límites del SGSI e interdependencias. Enfoque sistémico que permite capturar activos críticos en arquitecturas complejas multisite.",
+      "justification_wrong": "B ignora activos intangibles (datos, procesos); C carece de análisis contextual; D excluye activos que soportan operaciones sin ROI directo."
+    },
+    {
+      "num": 47,
+      "text": "Durante el análisis de amenazas según ISO 27005:2022, se identifica que una amenaza de origen interno presenta dos vectores de ataque independientes hacia un mismo activo crítico. ¿Cómo debe tratarse esta situación en la evaluación de riesgo?",
+      "tag": "Análisis de Amenazas - Vectores Múltiples",
+      "options": [
+        "B. Seleccionar solo el vector con mayor probabilidad de ocurrencia y descartar el secundario",
+        "C. Combinar ambos vectores en una única amenaza compuesta sin diferenciación de controles",
+        "D. Evaluar el riesgo como la suma aritmética de probabilidades de ambos vectores",
+        "A. Evaluar cada vector de forma independiente y documentar el riesgo agregado considerando correlaciones"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 §5.5 requiere análisis exhaustivo de amenazas con consideración de múltiples escenarios. Evaluación independiente permite diseñar controles específicos por vector, mejorando efectividad del tratamiento de riesgo.",
+      "justification_wrong": "B pierde cobertura defensiva; C impide granularidad en controles; D usa metodología matemática incorrecta (suma directa de probabilidades sin lógica combinatoria)."
+    },
+    {
+      "num": 48,
+      "text": "En la fase de análisis de vulnerabilidades (ISO 27005:2022), se descubre que una vulnerabilidad crítica de software no tiene parche disponible del fabricante. ¿Cuál es la acción más alineada con la norma para la evaluación de riesgo resultante?",
+      "tag": "Análisis de Vulnerabilidades - Gestión de Brechas",
+      "options": [
+        "C. Aceptar el riesgo como inevitable debido a dependencia del tercero",
+        "B. Desactivar inmediatamente el sistema hasta que el fabricante libere el parche",
+        "A. Documentar la vulnerabilidad, evaluar riesgo con controles compensatorios y definir plan de mitigación en RTP",
+        "D. Clasificar como vulnerabilidad no evaluable y excluirla del registro de riesgos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 §5.6 y 27001:2022 §8.2 establecen evaluar vulnerabilidades con controles disponibles. RTP documenta medidas alternativas. Mantiene trazabilidad y permite decisiones informadas sobre tratamiento de riesgo residual.",
+      "justification_wrong": "B impacta continuidad sin análisis; C evita responsabilidad; D viola requisitos de documentación de riesgos."
+    },
+    {
+      "num": 49,
+      "text": "Al aplicar matriz de evaluación de riesgo (ISO 27005:2022), la organización utiliza escala cualitativa (Bajo/Medio/Alto) para probabilidad e impacto. ¿Cuál es el aspecto crítico de validación según la norma para garantizar consistencia en calificaciones?",
+      "tag": "Evaluación de Riesgo - Criterios de Consistencia",
+      "options": [
+        "D. Cambiar la escala de calificación trimestral para evitar sesgos",
+        "B. Permitir que cada evaluador aplique sus propios criterios para maximizar flexibilidad",
+        "A. Definir criterios explícitos para cada nivel, validar con evidencia histórica y asegurar aplicación homogénea por evaluadores",
+        "C. Usar solo opinión de expertos sin documentación de fundamentos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 §5.7 exige claridad en criterios de evaluación y aplicación consistente. Anexo C proporciona matrices de referencia. Validación con datos históricos asegura trazabilidad y repetibilidad en evaluaciones sucesivas.",
+      "justification_wrong": "B genera inconsistencias; C carece de rigor metodológico; D introduce volatilidad que compromete trending de riesgos."
+    },
+    {
+      "num": 50,
+      "text": "En el tratamiento de riesgo (ISO 27005:2022), después de implementar controles, se determina un riesgo residual aceptable pero superior a cero. ¿Cuál es el requisito normativo respecto a la documentación y comunicación de este riesgo residual?",
+      "tag": "Tratamiento de Riesgo - Riesgo Residual",
+      "options": [
+        "C. Comunicar solo al equipo de seguridad; la dirección no necesita estar informada",
+        "D. Registrar en bases de datos internas sin requerimiento de aprobación formal",
+        "B. No documentar riesgos residuales aceptables para evitar complicaciones en auditoría",
+        "A. Documentar en RTP con justificación de aceptación, obtener aprobación formal de la dirección y monitorear periódicamente"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 §5.8 y 27001:2022 §8.3.2 requieren documentar decisiones de tratamiento, incluida aceptación de riesgo residual, con autorización de la dirección. Monitoreo continuo es mandatorio para validar que permanece aceptable.",
+      "justification_wrong": "B viola requisitos de documentación; C incumple cadena de autorización; D carece de control y trazabilidad formal."
+    }
+  ]
+}

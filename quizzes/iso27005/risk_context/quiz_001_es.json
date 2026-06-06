@@ -1,0 +1,710 @@
+{
+  "cert_id": "iso27005",
+  "domain_id": "risk_context",
+  "quiz_num": 1,
+  "domain_name": "Contexto e Fundamentos da Gestão de Risco",
+  "cert_name": "ISO 27005 Risk Manager",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Según ISO 27005:2022, ¿cuál es la relación fundamental entre vulnerabilidad, amenaza e impacto en la evaluación de riesgo?",
+      "tag": "Conceptos Fundamentales",
+      "options": [
+        "A. La vulnerabilidad es la debilidad que una amenaza puede explotar, generando potencial impacto",
+        "B. El impacto es la causa directa de la vulnerabilidad sin relación con amenazas externas",
+        "C. La amenaza y vulnerabilidad son conceptos idénticos en el contexto del análisis de riesgo",
+        "D. La vulnerabilidad determina automáticamente la severidad de cualquier amenaza identificada"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 §4.1 define vulnerabilidad como debilidad explorable por amenaza. La relación causal amenaza-vulnerabilidad genera impacto potencial. Esta es la tríada fundamental del riesgo según ISO 31000 integrado en 27005.",
+      "justification_wrong": "Las opciones B, C y D violan principios de ISO 27005:2022. B ignora dependencia entre factores; C confunde términos distintos; D asume determinismo incorrecto sin considerar probabilidad y contexto."
+    },
+    {
+      "num": 2,
+      "text": "En el contexto de ISO 27005:2022, ¿cómo se diferencia el riesgo residual del riesgo inherente?",
+      "tag": "Conceptos de Riesgo",
+      "options": [
+        "B. Riesgo residual es mayor que riesgo inherente en todas las circunstancias",
+        "C. Ambos términos son sinónimos utilizados indistintamente en evaluación de riesgo",
+        "A. Riesgo inherente es el riesgo antes de controles; riesgo residual es el que permanece después de aplicar controles",
+        "D. El riesgo inherente solo aplica a amenazas externas mientras residual a internas"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 §5.4.1 establece que riesgo residual es el resultado post-tratamiento de controles, mientras inherente es el estado inicial. Esta distinción es crítica para efectividad de controles según ISO 27001:2022 §6.1.",
+      "justification_wrong": "B es incorrecto: controles pueden reducir riesgo residual; C confunde definiciones normativas; D segmenta incorrectamente la naturaleza del riesgo ignorando integración holística de ISO 27005."
+    },
+    {
+      "num": 3,
+      "text": "Conforme a ISO 27005:2022, ¿cuál es el propósito principal de establecer criterios de riesgo en la fase inicial del proceso?",
+      "tag": "Estructura del Proceso de Riesgo",
+      "options": [
+        "D. Asignar responsabilidades exclusivas del dueño del riesgo sin consulta a partes interesadas",
+        "C. Reemplazar la necesidad de análisis cuantitativo con criterios cualitativos únicamente",
+        "A. Definir umbrales de aceptación y referencias para evaluar significancia de riesgos identificados",
+        "B. Eliminar automáticamente todos los riesgos detectados sin evaluar impacto"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 §5.2 requiere establecer criterios de riesgo para determinar si riesgo es aceptable. Esto habilita evaluación consistente y decisiones informadas sobre tratamiento, alineado con apetito de riesgo.",
+      "justification_wrong": "B ignora necesidad de evaluación; C confunde métodos (cuali/cuanti son complementarios §5.4); D viola principio de consulta §5.1.2 fundamental en ISO 31000 integrado."
+    },
+    {
+      "num": 4,
+      "text": "En ISO 27005:2022, ¿cómo se define la probabilidad en relación con el cálculo de riesgo?",
+      "tag": "Parámetros de Evaluación",
+      "options": [
+        "D. Probabilidad y frecuencia son términos idénticos sin distinción técnica en análisis",
+        "C. La probabilidad no afecta la evaluación final si el impacto potencial es catastrófico",
+        "A. Probabilidad es la verosimilitud de que amenaza explote vulnerabilidad, factor esencial en fórmula de riesgo",
+        "B. Probabilidad es independiente del impacto y se calcula exclusivamente mediante datos históricos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 §5.4.3 establece que riesgo = probabilidad × impacto. Probabilidad representa verosimilitud de ocurrencia de evento; es variable independiente crítica junto a impacto para cuantificar riesgo.",
+      "justification_wrong": "B ignora contexto prospectivo; C es incorrecto: probabilidad baja con impacto alto sigue siendo riesgo evaluable; D confunde variables: frecuencia es observación histórica, probabilidad incluye escenarios futuros."
+    },
+    {
+      "num": 5,
+      "text": "Según ISO 27005:2022, ¿cuál es la importancia de la comunicación y consulta con partes interesadas en el proceso de gestión de riesgo?",
+      "tag": "Comunicación y Consulta",
+      "options": [
+        "A. Esencial para asegurar perspectivas diversas, validar supuestos y mejorar aceptación de decisiones de riesgo",
+        "C. Limitada a comunicación top-down del equipo de seguridad sin retroalimentación",
+        "D. Necesaria únicamente cuando existen desacuerdos formales sobre evaluación",
+        "B. Opcional solo en fases finales después de decisiones técnicas completadas"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 §5.1.2 y ISO 31000:2018 §5.3 subrayan que comunicación continua con partes interesadas es crítica. Valida contexto, mejora calidad análisis y facilita implementación efectiva de tratamientos.",
+      "justification_wrong": "B ignora integración continua requerida; C viola principio consultivo de ISO 31000; D limita participación a conflictos omitiendo beneficios preventivos de consulta proactiva durante todas fases del proceso."
+    },
+    {
+      "num": 6,
+      "text": "Según ISO 27005:2022, ¿cuál es la relación fundamental entre vulnerabilidad, amenaza e impacto en el contexto de la evaluación de riesgos de seguridad de la información?",
+      "tag": "Conceptos Fundamentales de Riesgo",
+      "options": [
+        "B. El impacto determina la existencia de vulnerabilidades en los sistemas",
+        "D. La vulnerabilidad y el impacto son sinónimos en la gestión de riesgos",
+        "C. La amenaza es independiente de la vulnerabilidad y causa directamente el impacto",
+        "A. La vulnerabilidad es explotada por una amenaza, causando potencialmente un impacto en los activos"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 define que el riesgo emerge cuando una amenaza explota una vulnerabilidad, resultando en impacto a activos. Esta triada (amenaza-vulnerabilidad-impacto) es fundacional para análisis de riesgos. La relación causal es: amenaza + vulnerabilidad = exposición → impacto potencial.",
+      "justification_wrong": "Las opciones B, C y D contradicen la estructura normativa. El impacto no causa vulnerabilidades (B es inversa). Amenazas sin vulnerabilidades no generan riesgo (C es incorrecto). Vulnerabilidad e impacto son conceptos distintos en ISO 27005:2022 (D es falso)."
+    },
+    {
+      "num": 7,
+      "text": "En el contexto de ISO 27005:2022, ¿cómo se diferencia el riesgo residual del riesgo original en un proceso iterativo de tratamiento de riesgos?",
+      "tag": "Tipos de Riesgo y Residual",
+      "options": [
+        "A. El riesgo residual es el que permanece después de aplicar controles de tratamiento al riesgo original",
+        "B. El riesgo residual es equivalente al riesgo aceptable dentro del apetito al riesgo organizacional",
+        "D. El riesgo residual es superior al original debido a controles mal implementados",
+        "C. El riesgo original se elimina completamente, dejando solo riesgo residual sin relación con el primero"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 §4.1 define riesgo residual como aquel que permanece después del tratamiento de riesgos. El riesgo original se reduce mediante controles (mitigación, transferencia, aceptación, evitación). La evaluación residual verifica si queda dentro de criterios aceptables.",
+      "justification_wrong": "B confunde riesgo residual con riesgo aceptable; pueden coincidir pero no son sinónimos. C es incorrecto: existe relación directa entre ambos. D contradice la lógica: controles bien implementados reducen riesgo residual, no lo aumentan."
+    },
+    {
+      "num": 8,
+      "text": "¿Cuál es el rol de las 'partes interesadas' (stakeholders) en el proceso de comunicación y consulta de riesgos según ISO 27005:2022?",
+      "tag": "Partes Interesadas y Comunicación de Riesgo",
+      "options": [
+        "B. Ejecutar exclusivamente el tratamiento de riesgos sin participación en evaluación",
+        "A. Proporcionar perspectivas, contexto y validación de criterios de riesgo, fomentando alineación estratégica",
+        "C. Determinar unilateralmente la aceptabilidad de todos los riesgos identificados",
+        "D. Comunicar riesgos solo a la dirección ejecutiva, excluyendo niveles operativos"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 §5.1 establece que comunicación y consulta iterativa con partes interesadas son esenciales. Incluye propietarios de activos, usuarios, gerencia y funciones de cumplimiento. Proveen contexto, validan criterios y aseguran apropiación de tratamientos.",
+      "justification_wrong": "B excluye participación temprana (contra principio de consulta). C centraliza decisiones (ISO 27005 requiere distribución según roles). D restringe comunicación: ISO 27005 enfatiza transparencia multinivel para eficacia de controles."
+    },
+    {
+      "num": 9,
+      "text": "Conforme a ISO 27005:2022 basada en ISO 31000, ¿cómo se integra el 'apetito al riesgo' con los 'criterios de riesgo' en el establecimiento del contexto?",
+      "tag": "Contexto y Criterios de Riesgo",
+      "options": [
+        "D. Ambos conceptos se aplican únicamente a riesgos de conformidad, no operacionales",
+        "A. El apetito al riesgo define los límites aceptables de riesgo que informan los criterios de evaluación",
+        "B. Los criterios de riesgo determinan el apetito, siendo independientes de la estrategia organizacional",
+        "C. El apetito al riesgo es irrelevante si se establecen criterios técnicos cuantitativos"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 31000 y 27005:2022 §5 establecen que apetito al riesgo (capacidad/disposición de aceptar riesgo) fundamenta criterios de riesgo (tolerancias, umbrales). Criterios reflejan apetito y estrategia. Son interdependientes en fase de contexto.",
+      "justification_wrong": "B invierte relación causal. C ignora que criterios deben alinearse con apetito estratégico. D es falso: aplican a todos los tipos de riesgo (operacional, estratégico, cumplimiento, seguridad información)."
+    },
+    {
+      "num": 10,
+      "text": "¿Cuál es la relación normativa entre ISO 27001 (SGSI) e ISO 27005 (Gestión de Riesgos) según la estructura de la norma actualizada?",
+      "tag": "Integración ISO 27001 e ISO 27005",
+      "options": [
+        "B. ISO 27001 reemplaza ISO 27005, siendo innecesaria la aplicación simultánea de ambas",
+        "D. ISO 27005 es aplicable solo para organizaciones de gran escala con riesgos complejos",
+        "A. ISO 27005 proporciona el proceso estructurado de gestión de riesgos que fundamenta la selección de controles en ISO 27001",
+        "C. Ambas normas operan independientemente sin interdependencias metodológicas"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 y ISO 27001:2022 están integradas conceptualmente. ISO 27005 proporciona proceso de evaluación de riesgos (probabilidad, impacto) que informa selección de controles del Anexo A en ISO 27001. Ciclo PDCA requiere ambas.",
+      "justification_wrong": "B es incorrecto: ISO 27001 requiere gestión riesgos; ISO 27005 detalla cómo hacerlo. C niega integración explícita en normativas. D es falso: ISO 27005 aplica a cualquier escala; es escalable según contexto organizacional."
+    },
+    {
+      "num": 11,
+      "text": "Según ISO 27005:2022, ¿cuál es la relación matemática fundamental entre los componentes del riesgo durante el proceso de evaluación?",
+      "tag": "Conceptos Fundamentales de Riesgo",
+      "options": [
+        "B. Riesgo = Amenaza + Vulnerabilidad + Impacto",
+        "D. Riesgo = Valor del Activo / (Probabilidad × Impacto)",
+        "C. Riesgo = Probabilidad + Impacto - Controles",
+        "A. Riesgo = Probabilidad × Impacto × Vulnerabilidad"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 establece explícitamente que el riesgo es función de la probabilidad de que una amenaza explote una vulnerabilidad multiplicada por el impacto resultante. Esta formulación es coherente con ISO 31000:2018 en su enfoque cuantitativo de evaluación de riesgos.",
+      "justification_wrong": "Las alternativas B, C y D no representan la metodología estándar de ISO 27005:2022. La suma de componentes, inclusión de controles en la fórmula base, o divisiones por activos no son enfoques normalizados en la evaluación inicial de riesgo inherente."
+    },
+    {
+      "num": 12,
+      "text": "En el contexto de ISO 27005:2022, ¿cuál es la diferencia crítica entre riesgo inherente y riesgo residual?",
+      "tag": "Evaluación y Tratamiento del Riesgo",
+      "options": [
+        "D. El riesgo inherente es teórico; el residual es únicamente el riesgo realizado",
+        "C. El riesgo inherente se comunica a stakeholders; el residual es solo para directivos",
+        "A. El riesgo inherente existe antes de aplicar controles; el residual permanece después de implementarlos",
+        "B. El riesgo inherente es aceptable; el residual requiere siempre mitigación adicional"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 diferencia claramente: riesgo inherente es la exposición sin controles, mientras riesgo residual es el que persiste post-implementación de medidas. Esta distinción es fundamental para evaluar eficacia de controles según ISO 27001:2022 y justifica decisiones de tratamiento adicional.",
+      "justification_wrong": "Las alternativas B, C y D contienen concepciones erróneas. No todo riesgo residual requiere mitigación (puede ser aceptado), la comunicación aplica a ambos tipos, y el riesgo residual no es únicamente realizado sino potencial post-controles."
+    },
+    {
+      "num": 13,
+      "text": "Conforme a ISO 27005:2022 y su alineación con ISO 31000:2018, ¿cuál es el propósito primario del establecimiento de criterios de riesgo en la fase de contexto?",
+      "tag": "Estructura y Contexto de ISO 27005:2022",
+      "options": [
+        "C. Definir los procesos de auditoría interna post-implementación",
+        "B. Identificar todas las amenazas potenciales del entorno externo",
+        "D. Establecer presupuestos para controles de seguridad de la información",
+        "A. Determinar los umbrales cuantitativos y cualitativos para evaluar la aceptabilidad del riesgo"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022, numeral 5.4 (Establecimiento del contexto), requiere definir criterios de riesgo como referencias para evaluar la magnitud e importancia de riesgos identificados. Estos criterios, coherentes con ISO 31000:2018, determinan la aceptabilidad y necesidad de tratamiento.",
+      "justification_wrong": "Identificación de amenazas ocurre en fase posterior de evaluación, no en contexto. Auditoría y presupuestos son actividades secundarias. Los criterios de riesgo son determinantes de aceptabilidad, no herramientas de planificación financiera."
+    },
+    {
+      "num": 14,
+      "text": "Respecto a ISO 27005:2022, ¿cómo debe integrarse el apetito al riesgo organizacional en el marco de gestión de riesgos de seguridad de la información?",
+      "tag": "Apetito al Riesgo e Integración Organizacional",
+      "options": [
+        "A. Como parámetro declarado en la política de seguridad que orienta las decisiones de aceptabilidad del riesgo",
+        "D. En las comunicaciones externas a auditores y organismos reguladores",
+        "C. Como factor de ajuste posterior al cálculo final de riesgo residual",
+        "B. Únicamente en la evaluación de riesgos estratégicos de nivel empresa"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022, integrado con ISO 31000:2018, establece que el apetito al riesgo debe ser definido por la dirección y comunicado como criterio fundamental durante el establecimiento del contexto. Esto permite que la evaluación de aceptabilidad sea coherente con la estrategia organizacional.",
+      "justification_wrong": "El apetito al riesgo no es limitado a decisiones estratégicas ni es un factor de ajuste post-cálculo. Tampoco es exclusivamente para comunicaciones externas. Su función es establecer un marco referencial integral desde el inicio del proceso de gestión."
+    },
+    {
+      "num": 15,
+      "text": "En conformidad con ISO 27005:2022, ¿cuál es el rol específico de las partes interesadas en la fase de comunicación y consulta durante el proceso de gestión del riesgo?",
+      "tag": "Comunicación, Consulta y Partes Interesadas",
+      "options": [
+        "D. Validar únicamente la documentación de riesgos aceptados por la dirección",
+        "B. Autorizar formalmente todos los tratamientos de riesgo antes de su implementación",
+        "C. Asumir responsabilidad operativa exclusiva del monitoreo de riesgos residuales",
+        "A. Proporcionar perspectivas, datos y retroalimentación que mejoren la calidad y aceptación de decisiones de riesgo"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022, sección 5.5 (Comunicación y Consulta), enfatiza que las partes interesadas participan aportando información, perspectivas y validación en todas las fases. Esta consulta bidireccional, alineada con ISO 31000:2018, mejora la legitimidad y efectividad del proceso de gestión de riesgos.",
+      "justification_wrong": "Las partes interesadas no poseen autoridad formal unilateral, no asumen responsabilidades operativas exclusivas, ni limitan su rol a validación de riesgos aceptados. Su participación es consultiva e informativa, no restrictiva ni exclusivamente supervisora."
+    },
+    {
+      "num": 16,
+      "text": "En el contexto de ISO 27005:2022, ¿cuál es la relación fundamental entre el apetito al riesgo organizacional y los criterios de riesgo establecidos durante la fase de establecimiento del contexto?",
+      "tag": "Contexto y Criterios de Riesgo",
+      "options": [
+        "A. El apetito al riesgo define directamente los criterios de riesgo y los umbrales de aceptabilidad que determinan qué riesgos requieren tratamiento",
+        "C. El apetito al riesgo solo aplica a riesgos estratégicos, mientras que los criterios técnicos son responsabilidad del departamento de TI",
+        "B. Los criterios de riesgo son independientes del apetito al riesgo y se basan exclusivamente en marcos regulatorios externos",
+        "D. Ambos conceptos son sinónimos y pueden utilizarse indistintamente en la documentación del proceso de gestión de riesgos"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 cláusula 6.2 establece que los criterios de riesgo deben alinearse con el apetito y tolerancia al riesgo organizacional. El apetito define el nivel de riesgo aceptable, determinando umbrales que guían decisiones de tratamiento. Esta integración es esencial para contextualizar la evaluación.",
+      "justification_wrong": "Opción B ignora la integración normativa; C fragmenta responsabilidades indebidamente; D es conceptualmente incorrecta. Los criterios operacionalizan el apetito, no son equivalentes. Confundir estos niveles compromete la gobernanza de riesgos según ISO 27005."
+    },
+    {
+      "num": 17,
+      "text": "Considerando ISO 27005:2022 y su alineación con ISO 31000, ¿cuál es el impacto de una evaluación inadecuada de vulnerabilidades en la determinación de la probabilidad del riesgo dentro del ciclo de vida de gestión de riesgos?",
+      "tag": "Evaluación de Vulnerabilidades y Probabilidad",
+      "options": [
+        "D. Las vulnerabilidades son responsabilidad exclusiva de controles técnicos y no deben considerarse en la evaluación de probabilidad organizacional",
+        "C. La probabilidad es un parámetro fijo determinado únicamente por la frecuencia histórica de incidentes, independientemente de vulnerabilidades actuales",
+        "A. Una evaluación deficiente de vulnerabilidades puede subestimar significativamente la probabilidad de materialización de amenazas, resultando en riesgos residuales no controlados",
+        "B. Las vulnerabilidades no influyen en la probabilidad; solo impactan la magnitud del daño potencial después de que el riesgo se materializa"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 cláusula 7.4 y 8.2 definen que vulnerabilidades son condiciones que incrementan la probabilidad de que una amenaza se materialice. Una evaluación incompleta omite factores críticos que aumentan la capacidad de explotación, resultando en subestimación de riesgos residuales.",
+      "justification_wrong": "B segrega incorrectamente; C ignora la evaluación dinámica de vulnerabilidades; D excluye perspectiva integral. ISO 31000 requiere evaluación holística donde vulnerabilidades son elementos esenciales de probabilidad, no solo impacto."
+    },
+    {
+      "num": 18,
+      "text": "En una organización con múltiples partes interesadas (stakeholders) con apetitos al riesgo divergentes, ¿cuál es el enfoque correcto según ISO 27005:2022 para integrar estas perspectivas en la comunicación y consulta durante la evaluación de riesgos?",
+      "tag": "Comunicación, Consulta y Partes Interesadas",
+      "options": [
+        "D. Aplicar cálculos de riesgo independientes para cada stakeholder sin integración, generando reportes paralelos según cada perspectiva",
+        "C. Evitar consultas extensivas para agilizar el proceso y reducir complejidad de múltiples opiniones en la evaluación de riesgos",
+        "A. Establecer un proceso iterativo de consulta que asegure transparencia en criterios, métodos y hallazgos, priorizando consenso informado sobre preferencias divergentes mediante documentación clara",
+        "B. Otorgar prevalencia absoluta al apetito de la alta dirección, subordinando perspectivas operacionales para mantener coherencia estratégica"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 cláusulas 5.3 y 6.1 enfatizan que comunicación y consulta iterativa con partes interesadas es fundamental. La cláusula 5.3 requiere transparencia metodológica y documentación clara. La integración coordinada de perspectivas divergentes mejora la robustez del proceso y la aceptación organizacional.",
+      "justification_wrong": "B es verticalista y reduce gobernanza compartida; C elimina validación crítica del proceso; D fragmenta la gestión integral. ISO 27005 requiere enfoque colaborativo donde la diversidad de perspectivas enriquece la evaluación."
+    },
+    {
+      "num": 19,
+      "text": "¿Cómo debe interpretarse la relación entre riesgo residual y riesgo inherente en ISO 27005:2022, y cuál es la implicación para la reiteración del ciclo de gestión de riesgos?",
+      "tag": "Riesgo Inherente y Riesgo Residual",
+      "options": [
+        "D. Los términos son intercambiables en ISO 27005; utilizarlos de manera diferenciada introduce complejidad innecesaria en la documentación",
+        "C. El riesgo inherente es irrelevante después de implementar controles; solo el residual debe monitorearse sin necesidad de evaluación comparativa",
+        "A. El riesgo residual resulta de aplicar controles al riesgo inherente; si permanece por encima de criterios, requiere tratamiento adicional o aceptación documentada, generando ciclos iterativos",
+        "B. El riesgo residual y inherente son valores estáticos que se calculan una única vez; no requieren reiteración si el cálculo inicial es correcto"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 cláusula 8 define riesgo inherente (sin controles) y residual (post-controles). Cláusulas 9 y 10 establecen que riesgo residual se compara con criterios; si excede, requiere tratamiento iterativo. Este ciclo continuo asegura mejora progresiva de la postura de riesgo.",
+      "justification_wrong": "B ignora la naturaleza dinámica de amenazas y vulnerabilidades; C elimina perspectiva comparativa crítica; D confunde conceptos con gravedad normativa. La diferenciación entre inherente y residual es esencial para demostrar efectividad de controles."
+    },
+    {
+      "num": 20,
+      "text": "En el contexto de integración entre ISO 27005:2022 e ISO 27001, ¿cuál es el rol del proceso de gestión de riesgos en la validación y justificación de los controles Anexo A de ISO 27001?",
+      "tag": "Integración ISO 27005-27001",
+      "options": [
+        "B. Los controles del Anexo A son predeterminados y su selección no requiere evaluación de riesgos; ISO 27005 solo aplica para documentación post-implementación",
+        "A. La evaluación de riesgos según ISO 27005 proporciona la base racional para seleccionar, implementar y justificar controles del Anexo A, demostrando alineación con requisitos del apartado 6.1 de ISO 27001",
+        "C. ISO 27005 y ISO 27001 son frameworks independientes; no existe integración normativa entre la evaluación de riesgos y la selección de controles",
+        "D. La gestión de riesgos según ISO 27005 solo justifica controles técnicos del Anexo A, no controles organizacionales ni de gobernanza"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022 cláusula 6.1 requiere que la organización determine controles mediante evaluación de riesgos de seguridad de información. ISO 27005 proporciona el marco metodológico (evaluación, tratamiento) que fundamenta la selección y alcance de controles del Anexo A, estableciendo trazabilidad normativa.",
+      "justification_wrong": "B fragmenta el enfoque integrado; C niega la dependencia explícita de ISO 27001 hacia evaluación de riesgos; D limita alcance sin fundamento. El estándar requiere evaluación holística para justificar todos los tipos de controles implementados."
+    },
+    {
+      "num": 21,
+      "text": "En el contexto de ISO 27005:2022, ¿cuál es la relación fundamental entre el apetito al riesgo organizacional y los criterios de riesgo establecidos en la fase de contextualización?",
+      "tag": "Criterios de Riesgo y Apetito al Riesgo",
+      "options": [
+        "A. El apetito al riesgo define directamente los criterios de riesgo, estableciendo umbrales de tolerancia que reflejan la estrategia de negocio y la capacidad financiera de la organización",
+        "D. Ambos conceptos son sinónimos en ISO 27005:2022 y pueden utilizarse indistintamente en la documentación de riesgos",
+        "B. Los criterios de riesgo son independientes del apetito al riesgo, ya que se basan exclusivamente en estándares internacionales obligatorios",
+        "C. El apetito al riesgo solo aplica a riesgos estratégicos, mientras que los criterios de riesgo se limitan a amenazas técnicas identificadas"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 Sección 5.4.1 establece que el apetito al riesgo es fundamental para definir criterios de riesgo que reflejen la posición estratégica organizacional. Los criterios proporcionan marcos cuantitativos y cualitativos alineados con la tolerancia de riesgo, permitiendo evaluaciones consistentes según el contexto empresarial.",
+      "justification_wrong": "Opción B ignora la integración estratégica requerida. Opción C fragmenta innecesariamente el enfoque. Opción D confunde conceptos distintos: apetito es disposición general; criterios son parámetros específicos de evaluación."
+    },
+    {
+      "num": 22,
+      "text": "Conforme a ISO 27005:2022 y su alineación con ISO 31000, ¿cómo debe estructurarse la comunicación de riesgo residual a partes interesadas cuando existen brechas significativas respecto al riesgo aceptable?",
+      "tag": "Riesgo Residual y Comunicación de Riesgos",
+      "options": [
+        "D. Delegar la comunicación exclusivamente al departamento de cumplimiento normativo, excluyendo participación de propietarios de activos",
+        "C. Omitir información sobre riesgos residuales superiores al nivel aceptable hasta que se implemente tratamiento adicional",
+        "B. Comunicar contexto, razonamiento de tratamiento aplicado, brechas identificadas, opciones de mitigación remanente y decisiones de gestión soportadas por análisis cuantitativo-cualitativo integrado",
+        "A. Reportar solo valores numéricos de riesgo residual sin contexto, para mantener objetividad técnica en la comunicación"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 Sección 6.5.6 y ISO 31000:2018 Sección 7.4 requieren comunicación transparente, bidireccional e integrada. Debe incluirse contexto, justificación técnica, análisis comparativo vs. criterios aceptables y opciones de tratamiento remanente, facilitando decisiones informadas de stakeholders.",
+      "justification_wrong": "Opción A viola principios de transparencia. Opción C incumple requerimientos de divulgación. Opción D fragmenta responsabilidades compartidas definidas en ISO 27001:2022 Sección 6.1."
+    },
+    {
+      "num": 23,
+      "text": "En la evaluación de riesgos según ISO 27005:2022, ¿cuál es el rol preciso de la vulnerabilidad en la construcción de la ecuación de riesgo integrada con probabilidad e impacto?",
+      "tag": "Conceptos Fundamentales: Vulnerabilidad y Riesgo",
+      "options": [
+        "B. La vulnerabilidad actúa como modificador de probabilidad y amplificador de impacto, donde su ausencia (control efectivo) reduce inherentemente tanto la exposición como las consecuencias potenciales",
+        "D. La vulnerabilidad sustituye el concepto de amenaza en ISO 27005:2022, siendo términos equivalentes",
+        "C. La vulnerabilidad solo es relevante en evaluaciones cualitativas, no en análisis cuantitativos de riesgo",
+        "A. La vulnerabilidad es un factor independiente que se suma linealmente a probabilidad e impacto en la ecuación de riesgo"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 Sección 5.5.2 define vulnerabilidad como debilidad que amplifica la probabilidad de que una amenaza se materialice y aumente el impacto. Los controles reducen vulnerabilidades, modificando la ecuación de riesgo: Riesgo = (Amenaza × Vulnerabilidad) × Impacto.",
+      "justification_wrong": "Opción A oversimplifica matemáticamente. Opción C contradice aplicabilidad universal de conceptos. Opción D confunde amenaza (agente externo) con vulnerabilidad (debilidad interna), como diferencia claramente en ISO 27005:2022 Sección 4."
+    },
+    {
+      "num": 24,
+      "text": "¿Cuál es la estrategia correcta para integrar los resultados de gestión de riesgos ISO 27005:2022 en el proceso de implementación de controles bajo ISO 27001:2022, considerando iteración y retroalimentación?",
+      "tag": "Integración ISO 27005 e ISO 27001",
+      "options": [
+        "D. Aplicar todos los controles del Anexo A sin discriminación, considerando que ISO 27005 y ISO 27001 operan en contextos separados",
+        "A. Ejecutar ISO 27005 de forma aislada, luego transferir resultados a ISO 27001 sin validación o ajustes posteriores",
+        "B. Implementar controles ISO 27001 independientemente del análisis de riesgos, priorizando solo por costo-beneficio operacional",
+        "C. Mapear riesgos identificados con Anexo A de ISO 27001, priorizar controles por criticidad de riesgo residual, iterar: validar efectividad, retroalimentar a gestión de riesgos, ajustar criterios y tratamientos según evaluaciones periódicas"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 Sección 6.1 y 8.1 requieren integración continua entre identificación de riesgos (ISO 27005) y selección/implementación de controles. Ciclo PDCA incluye validación periódica y retroalimentación que refina perfiles de riesgo residual, optimizando tratamientos.",
+      "justification_wrong": "Opción A ignora integración normativa. Opción B desacopla análisis de implementación. Opción D incumple principios de riesgos de ISO 27001:2022, generando ineficiencia de recursos y cobertura subóptima."
+    },
+    {
+      "num": 25,
+      "text": "En la fase de contextualización de ISO 27005:2022, ¿cómo deben identificarse y documentarse las partes interesadas clave para asegurar que sus perspectivas sobre riesgos se integren adecuadamente en criterios y decisiones de tratamiento?",
+      "tag": "Partes Interesadas y Consulta en Procesos de Riesgo",
+      "options": [
+        "B. Documentar stakeholders mediante matriz de influencia-interés, capturar expectativas de tolerancia de riesgo, perspectivas de amenazas-vulnerabilidades por dominio, y establecer canales de retroalimentación periódica en todo el ciclo de gestión",
+        "C. Consultar únicamente a especialistas en seguridad de información, excluyendo participación de usuarios finales y propietarios de negocio",
+        "A. Identificar solo a ejecutivos de nivel C-suite, ya que son responsables exclusivos de decisiones de riesgo empresarial",
+        "D. Realizar consulta única en la fase inicial, sin necesidad de revisión o actualización durante iteraciones posteriores de gestión de riesgos"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 Sección 5.3 e ISO 31000:2018 Sección 5.3 requieren identificación sistemática de stakeholders con matriz influencia-interés, captura de expectativas sobre riesgos, tolerancia y criterios de evaluación. La consulta es continua, bidireccional e integrada en todo el ciclo PDCA.",
+      "justification_wrong": "Opción A limita perspectivas esenciales. Opción C excluye actores críticos para identificación de vulnerabilidades operacionales. Opción D contradice principio iterativo y de mejora continua de ISO 31000:2018 y ISO 27005:2022."
+    },
+    {
+      "num": 26,
+      "text": "En el contexto de ISO 27005:2022, al establecer criterios de risco para una organización, ¿cuál es el principal propósito de definir explícitamente el apetito de risco antes de evaluar vulnerabilidades?",
+      "tag": "Criterios de Risco y Apetito de Risco",
+      "options": [
+        "A. Establecer el nivel máximo de risco que la organización está dispuesta a aceptar para alcanzar sus objetivos estratégicos",
+        "D. Clasificar los activos de información según su importancia relativa",
+        "B. Identificar todas las amenazas potenciales del entorno externo",
+        "C. Determinar el presupuesto de seguridad de la información requerido"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 (cláusula 6.4) establece que el apetito de risco define el nivel de risco que la organización acepta para cumplir objetivos, siendo fundamento para criterios de decisión posterior en evaluaciones.",
+      "justification_wrong": "Las opciones B, C y D corresponden a etapas posteriores del proceso de gestión de risco o actividades complementarias, no al propósito del apetito de risco."
+    },
+    {
+      "num": 27,
+      "text": "Durante la evaluación de risco en ISO 27005:2022, cuando se analiza la probabilidad de ocurrencia de una amenaza específica, ¿qué factor debe considerarse prioritariamente según la metodología de análisis cuantitativo?",
+      "tag": "Análisis de Probabilidad e Impacto",
+      "options": [
+        "B. La opinión del personal de seguridad sobre posibles incidentes futuros",
+        "C. El historial de incidentes similares y datos estadísticos disponibles de la organización",
+        "D. La clasificación de activos según su valor monetario en el balance",
+        "A. La capacidad actual de la vulnerabilidad para ser explotada por las amenazas identificadas"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 (cláusula 7.4.2) prescribe que el análisis cuantitativo debe basarse en datos históricos, frecuencias de incidentes y evidencia estadística para evaluar probabilidad con rigor.",
+      "justification_wrong": "Opciones A, B y D representan factores secundarios, subjetivos o no directamente correlacionados con probabilidad según la metodología cuantitativa normativa."
+    },
+    {
+      "num": 28,
+      "text": "En la integración entre ISO 27005:2022 e ISO 27001:2022, ¿cuál es la relación fundamental entre el proceso de gestión de risco y el establecimiento de controles de seguridad?",
+      "tag": "Integración ISO 27005 - ISO 27001",
+      "options": [
+        "D. ISO 27005 reemplaza la cláusula 6 de ISO 27001 eliminando la necesidad de evaluación formal",
+        "B. ISO 27001 define los controles que ISO 27005 debe implementar directamente sin evaluación previa",
+        "C. Ambas normas son independientes y solo deben coordinarse en auditorías externas",
+        "A. ISO 27005 proporciona la metodología para evaluar riesgos que fundamenta la selección de controles en ISO 27001"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 es complementaria a ISO 27001, proporcionando metodología detallada para evaluación de ricos que justifica la selección de controles (cláusula 6.2 ISO 27001) y tratamiento de riesgos.",
+      "justification_wrong": "Opciones B, C y D contradicen el modelo integrado definido en ambas normas, donde ISO 27005 informa decisiones de ISO 27001 de forma iterativa."
+    },
+    {
+      "num": 29,
+      "text": "Considerando la comunicación y consulta de risco en ISO 27005:2022, ¿a qué partes interesadas debe dirigirse específicamente la información sobre riesgos residuales después del tratamiento?",
+      "tag": "Comunicación, Consulta y Partes Interesadas",
+      "options": [
+        "A. Solo al comité de auditoría interna y personal de cumplimiento normativo",
+        "C. Exclusivamente al equipo de seguridad de la información sin divulgación externa",
+        "B. A la dirección ejecutiva, propietarios de procesos y responsables de controles para decisiones de aceptación",
+        "D. A todos los empleados sin discriminación mediante canales públicos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 (cláusula 8.5) establece que la comunicación sobre riesgos residuales debe dirigirse a decisores clave para evaluación de aceptabilidad, incluyendo dirección y propietarios de riesgos.",
+      "justification_wrong": "Opciones A, C y D limitan injustificadamente los destinatarios o crean riesgos de divulgación inadecuada según principios de comunicación estructurada."
+    },
+    {
+      "num": 30,
+      "text": "En un escenario donde un activo crítico presenta múltiples vulnerabilidades explotables por amenazas internas, según ISO 27005:2022, ¿cuál es el enfoque metodológico correcto para establecer la prioridad de tratamiento de riesgos?",
+      "tag": "Evaluación Avanzada de Riesgos y Tratamiento",
+      "options": [
+        "D. Implementación exclusiva de controles detectivos sin medidas preventivas",
+        "A. Tratamientos en paralelo de todas las vulnerabilidades sin jerarquización",
+        "B. Evaluación conjunta de probabilidad × impacto para cada par amenaza-vulnerabilidad, priorizando por risco residual esperado",
+        "C. Eliminación inmediata de todos los activos críticos afectados"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 (cláusula 7.5) requiere evaluación de risco basada en probabilidad e impacto combinados, priorizando tratamientos según magnitud de risco residual resultante.",
+      "justification_wrong": "Opciones A, C y D violan principios de gestión eficiente, análisis diferenciado y balance entre controles preventivos y detectivos."
+    },
+    {
+      "num": 31,
+      "text": "Una organización implementa ISO 27001 y necesita alinear su proceso de gestión de riesgos con ISO 27005:2022. ¿Cuál es la relación fundamental entre ambas normas en el contexto de la estructura de riesgo?",
+      "tag": "Integración ISO 27005 - ISO 27001",
+      "options": [
+        "B. ISO 27001 define únicamente los requisitos de auditoría interna, mientras que ISO 27005 gestiona exclusivamente amenazas externas",
+        "C. Ambas normas son independientes y no requieren integración en el proceso de gestión de riesgos organizacional",
+        "D. ISO 27005 reemplaza completamente el Anexo A de ISO 27001 en organizaciones certificadas",
+        "A. ISO 27005 proporciona el marco metodológico para identificar, analizar y evaluar riesgos de seguridad de información que alimentan la implementación de controles en ISO 27001"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 cláusula 4.1 establece que proporciona directrices para la gestión de riesgos de seguridad de información, siendo el fundamento metodológico para implementar ISO 27001 cláusula 6.1.2 (determinación del alcance). La relación es jerárquica-metodológica.",
+      "justification_wrong": "ISO 27001 no limita auditoría a interna, ISO 27005 no excluye amenazas internas, ambas se integran dinámicamente, e ISO 27005 complementa mas no reemplaza el Anexo A. Estas opciones contienen afirmaciones normativas incorrectas."
+    },
+    {
+      "num": 32,
+      "text": "Durante una sesión de comunicación y consulta de riesgos según ISO 27005:2022 cláusula 8.2, un stakeholder cuestiona por qué se asignó probabilidad 'Alta' a una amenaza con solo dos incidentes registrados en cinco años. ¿Cuál es la respuesta técnicamente fundamentada?",
+      "tag": "Probabilidad, Impacto y Criterios de Riesgo",
+      "options": [
+        "A. La probabilidad no depende únicamente de frecuencia histórica; incluye tendencias futuras, factores contextuales, capacidad de explotación de vulnerabilidades y opinión de expertos según ISO 27005:2022 cláusula 8.3.3",
+        "C. Solo amenazas con más de diez incidentes documentados pueden clasificarse como 'Alta' probabilidad",
+        "D. La probabilidad es subjetiva y no requiere justificación técnica en sesiones de comunicación",
+        "B. La probabilidad siempre se calcula como número de incidentes dividido por años de registro, independientemente del contexto"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 cláusula 8.3.3 especifica que la estimación de probabilidad considera múltiples factores: datos históricos, tendencias, capacidad de amenaza, vulnerabilidades disponibles y análisis prospectivo. La consulta de expertos es fundamental.",
+      "justification_wrong": "La fórmula simple (incidentes/años) ignora factores contextuales críticos. El umbral de 10 incidentes es arbitrario. La probabilidad requiere fundamentación técnica rigurosa basada en criterios organizacionales predefinidos (ISO 27005 cláusula 8.2.1)."
+    },
+    {
+      "num": 33,
+      "text": "Una organización define su 'apetite al riesgo' como aceptar riesgos residuales hasta nivel 'Moderado' para iniciativas de transformación digital. ¿Cómo se alinea este apetite con el concepto de riesgo residual en ISO 27005:2022?",
+      "tag": "Apetite al Riesgo y Riesgo Residual",
+      "options": [
+        "B. El riesgo residual y apetite al riesgo son sinónimos; ambos representan la aceptación incondicional de toda exposición",
+        "A. El riesgo residual es la exposición remanente después de implementar tratamientos (ISO 27005:2022 cláusula 8.4.1), y el apetite define el umbral máximo aceptable, funcionando como criterio de decisión para tratamientos adicionales",
+        "D. El riesgo residual no debe compararse con apetite al riesgo; son conceptos independientes del proceso de tratamiento",
+        "C. El apetite al riesgo solo aplica a amenazas externas, mientras que riesgo residual incluye vulnerabilidades internas únicamente"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 cláusula 8.4.1 define riesgo residual post-tratamiento. Cláusula 4.3 especifica que apetite al riesgo es el nivel de exposición aceptable. Su alineación permite decisiones informadas sobre tratamientos adicionales necesarios.",
+      "justification_wrong": "No son sinónimos; riesgo residual es medible, apetite es declarativo. Ambos aplican a amenazas internas y externas. La comparación es esencial para governance de riesgos según ISO 27005 cláusula 8.5 (evaluación de riesgos)."
+    },
+    {
+      "num": 34,
+      "text": "En el análisis de partes interesadas (cláusula 5.3 ISO 27005:2022), se identifica que desarrolladores, auditoría interna y dirección de seguridad tienen perspectivas conflictivas sobre la clasificación de impacto de un riesgo. ¿Cuál es el enfoque normativo correcto?",
+      "tag": "Partes Interesadas en el Proceso de Riesgo",
+      "options": [
+        "D. Clasificar el riesgo mediante votación democrática entre los tres grupos sin criterios técnicos predefinidos",
+        "A. Establecer criterios de impacto predefinidos y documentados, consultar cada perspectiva según su expertise, integrar múltiples dimensiones (disponibilidad, integridad, confidencialidad, legalidad) y fundamentar la decisión final con análisis comparativo",
+        "C. Usar la perspectiva que genere el impacto más bajo para minimizar costos de tratamiento",
+        "B. Priorizar la opinión de dirección de seguridad por jerarquía organizacional, descartando perspectivas de otros stakeholders"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 cláusula 5.3 exige identificar, analizar y comunicar con partes interesadas relevantes. Cláusula 8.2.2 especifica criterios multidimensionales de impacto. El conflicto se resuelve mediante proceso estructurado, documentado y transparente.",
+      "justification_wrong": "Ignorar stakeholders, usar votación sin criterios, o seleccionar impacto bajo viola principios de ISO 31000:2018 (base de ISO 27005) en gobernanza y consulta. La jerarquía no sustituye análisis técnico riguroso."
+    },
+    {
+      "num": 35,
+      "text": "Una organización implementa un sistema de información crítico y establece criterios de riesgo inaceptable como 'Riesgo Mayor × Probabilidad Alta'. Tras tratamientos iniciales, el riesgo residual alcanza 'Riesgo Mayor × Probabilidad Media'. ¿Cuál es la acción normativa requerida según ISO 27005:2022?",
+      "tag": "Criterios de Riesgo y Evaluación",
+      "options": [
+        "B. Considerar el tratamiento exitoso y cerrar el riesgo sin evaluación adicional",
+        "C. Rechazar el riesgo residual automáticamente porque aún contiene 'Mayor' en la clasificación de impacto",
+        "A. Evaluar si el riesgo residual supera los criterios de aceptación organizacional definidos. Si lo hace, implementar tratamientos adicionales o aceptar explícitamente el riesgo residual con aprobación de dirección según cláusula 8.5",
+        "D. Transferir completamente el riesgo mediante seguros, evitando toda responsabilidad organizacional"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 cláusula 8.5 (evaluación de riesgos) establece que riesgos residuales deben compararse contra criterios de aceptación. Si exceden umbrales, requieren tratamientos adicionales o aceptación documentada y autorizada (cláusula 8.6).",
+      "justification_wrong": "Cerrar sin evaluación omite gobernanza. Rechazar automáticamente ignora que criterio es 'Alta' no 'Media'. Transferencia solo mitigación parcial; responsabilidad organizacional persiste. La decisión requiere análisis formal según proceso normativo."
+    },
+    {
+      "num": 36,
+      "text": "En el contexto de ISO 27005:2022, al evaluar el riesgo residual post-tratamiento, ¿cuál es el aspecto crítico que diferencia este concepto del riesgo inherente según la integración con ISO 31000?",
+      "tag": "Conceptos Fundamentales - Riesgo Residual",
+      "options": [
+        "B. El riesgo residual elimina completamente las amenazas identificadas mediante la aplicación de vulnerabilidades residuales",
+        "C. El riesgo residual es equivalente al riesgo inherente cuando no se aplican controles preventivos",
+        "D. El riesgo residual depende exclusivamente del apetito al riesgo corporativo definido en la política",
+        "A. El riesgo residual es aquel que persiste después de aplicar controles de tratamiento, reflejando la efectividad real de las medidas implementadas según ISO 31000:2018 §5.5"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 §5.6.5 define riesgo residual como la magnitud del riesgo que permanece tras la implementación de controles. ISO 31000:2018 §5.5 establece que es resultado directo de la evaluación post-tratamiento, midiendo efectividad real.",
+      "justification_wrong": "Opciones B, C, D contravienen ISO 27005:2022 §5.1.3 y ISO 31000:2018. El riesgo residual nunca es nulo, depende de controles no de apetito, y diferencia del inherente precisamente por los tratamientos aplicados."
+    },
+    {
+      "num": 37,
+      "text": "Conforme a ISO 27005:2022 §6.2, en la fase de análisis de riesgo, ¿cómo debe integrarse la evaluación de probabilidad e impacto considerando criterios de riesgo heterogéneos según stakeholders?",
+      "tag": "Criterios de Riesgo - Análisis Integrado",
+      "options": [
+        "D. Aplicando apetito de riesgo como factor divisor directo de probabilidad e impacto calculados",
+        "A. Mediante matrices de riesgo cuantitativas uniformes que homogenicen todos los criterios de los stakeholders sin diferenciación",
+        "C. Utilizando exclusivamente métricas de probabilidad matemática sin considerar el impacto empresarial cualitativo",
+        "B. A través de criterios de riesgo definidos organizacionalmente en ISO 27005:2022 §5.2.2, permitiendo escalas diferenciadas por contexto, tolerancia y partes interesadas"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 §5.2.2 requiere establecer criterios de riesgo contextuales considerando partes interesadas (§5.3). ISO 31000:2018 §5.4.2 respalda integración de criterios heterogéneos con escalas adaptadas a tolerancia organizacional.",
+      "justification_wrong": "Opción A ignora heterogeneidad de stakeholders. Opción C viola ISO 27005:2022 §5.6.1 (análisis cualitativo-cuantitativo). Opción D confunde apetito con metodología de cálculo según §5.2.1."
+    },
+    {
+      "num": 38,
+      "text": "En la comunicación y consulta de riesgo conforme a ISO 27005:2022 §7, ¿cuál es el mecanismo normativo para asegurar que las partes interesadas internas (CISO, directores) y externas (proveedores, reguladores) reciben información diferenciada pero coherente?",
+      "tag": "Comunicación y Consulta - Stakeholders",
+      "options": [
+        "D. Realizar comunicación reactiva solo ante incidentes de seguridad detectados, sin planificación previa",
+        "B. Establecer planes de comunicación diferenciados (§7.2) según necesidades y roles de cada stakeholder, manteniendo coherencia narrativa mediante matriz RACI validada con ISO 31000:2018 §5.5.5",
+        "C. Comunicar únicamente a la dirección ejecutiva, delegando información a stakeholders externos mediante terceros no certificados",
+        "A. Implementar un único plan de comunicación estándar para todos los stakeholders sin distinción de roles ni responsabilidades"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 §7.2 especifica comunicación diferenciada por stakeholder. ISO 31000:2018 §5.5.5 requiere matriz de responsabilidades (RACI). La coherencia se asegura mediante gobernanza integrada documentada.",
+      "justification_wrong": "Opción A viola principio de consulta contextual. Opción C incumple gobernanza ISO 27005:2022 §4. Opción D contradice naturaleza continua de consulta en §7.1 (comunicación proactiva)."
+    },
+    {
+      "num": 39,
+      "text": "Según ISO 27005:2022 §5.5 integrada con ISO 27001:2022 Anexo A, ¿cómo se articula la selección de controles post-evaluación de riesgo considerando tanto opciones de tratamiento como la jerarquía normativa?",
+      "tag": "Integración ISO 27005-27001 - Tratamiento",
+      "options": [
+        "A. Seleccionar aleatoriamente controles del Anexo A de ISO 27001:2022 sin evaluar su pertinencia respecto al riesgo residual aceptable",
+        "D. Delegar la selección de controles exclusivamente al equipo técnico sin participación de stakeholders de negocio",
+        "B. Aplicar obligatoriamente todos los controles del Anexo A sin filtrado, considerando que ISO 27001:2022 establece universalidad de medidas",
+        "C. Evaluar opciones de tratamiento (mitigación, aceptación, eliminación, traslado) según ISO 27005:2022 §5.5.1-2, seleccionando controles del Anexo A ISO 27001:2022 que alineen riesgo residual con apetito definido en §5.2"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 §5.5 requiere evaluación de opciones de tratamiento. ISO 27001:2022 §6.2 confirma que controles del Anexo A se seleccionan tras análisis de riesgo. Integración en §5.2 valida apetito como criterio de aceptación.",
+      "justification_wrong": "Opción A infringe §5.5.2. Opción B contraviene principio de proporcionalidad (ISO 27001:2022 §6.1.1c). Opción D omite consulta requerida en ISO 27005:2022 §7."
+    },
+    {
+      "num": 40,
+      "text": "En un escenario de vulnerabilidad técnica en infraestructura cloud identificada en ISO 27005:2022, ¿cuál es el enfoque correcto para integrar análisis de amenaza-vulnerabilidad-impacto conforme a la estructura de riesgo normativa?",
+      "tag": "Análisis de Riesgo - Estructura AVAI",
+      "options": [
+        "C. Asumir que toda vulnerabilidad genera riesgo máximo sin contexto de amenaza plausible ni capacidad de atacante",
+        "D. Aplicar parche técnico inmediatamente sin análisis de riesgo, considerando que vulnerabilidad = riesgo automático",
+        "B. Evaluar triada Amenaza-Vulnerabilidad-Activos mediante ISO 27005:2022 §5.6.2-3: identificar amenaza concreta (ej. ataque exfiltración), validar explotabilidad de vulnerabilidad, cuantificar impacto en confidencialidad/disponibilidad de activos",
+        "A. Registrar solo la vulnerabilidad técnica en inventario sin relacionarla con amenazas externas específicas ni impacto en activos críticos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 §5.6.2 define riesgo = amenaza × vulnerabilidad × activo. §5.1.2 especifica que triada es esencial. Análisis correcto requiere: amenaza creíble, vulnerabilidad explorable, activo valorado según impacto.",
+      "justification_wrong": "Opción A omite amenaza (§5.1.1). Opción C viola principio de proporcionalidad. Opción D confunde gestión correctiva con análisis de riesgo sistemático requerido en §5.4-5.6."
+    },
+    {
+      "num": 41,
+      "text": "Según ISO 27005:2022, ¿cuál es la relación fundamental entre los conceptos de amenaza, vulnerabilidad y riesgo en el contexto de gestión de riesgos de seguridad de la información?",
+      "tag": "Conceptos fundamentales",
+      "options": [
+        "A. El riesgo es la combinación de amenaza y vulnerabilidad, donde la probabilidad de ocurrencia depende de ambas y el impacto se determina por la vulnerabilidad del activo",
+        "C. La vulnerabilidad determina completamente el riesgo, independientemente de la existencia de amenazas",
+        "B. La amenaza y vulnerabilidad son independientes; el riesgo solo considera la probabilidad de la amenaza",
+        "D. El riesgo es sinónimo de amenaza; vulnerabilidad es solo un factor secundario en su cálculo"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 define riesgo como efecto de incertidumbre sobre objetivos. El riesgo resulta de la interacción entre amenaza (causa potencial), vulnerabilidad (debilidad explotable) y activos de valor. La probabilidad depende de ambas, y el impacto del riesgo se relaciona con la criticidad del activo afectado.",
+      "justification_wrong": "Las alternativas B, C y D contradicen el enfoque integral de ISO 27005:2022. El estándar requiere análisis simultáneo de amenazas, vulnerabilidades y activos para determinar riesgos de manera holística y fundamentada."
+    },
+    {
+      "num": 42,
+      "text": "En el marco de ISO 27005:2022, ¿cómo se diferencia el concepto de 'riesgo residual' del 'riesgo original' durante el proceso de tratamiento del riesgo?",
+      "tag": "Gestión de riesgos residuales",
+      "options": [
+        "B. El riesgo residual es idéntico al riesgo original; solo cambia su nomenclatura según la fase del proyecto",
+        "D. El riesgo residual es mayor que el riesgo original debido a efectos acumulativos de controles",
+        "C. El riesgo original incluye solo amenazas externas; el riesgo residual incluye solo vulnerabilidades internas",
+        "A. El riesgo residual es el riesgo remanente después de aplicar medidas de tratamiento, mientras que el riesgo original es el riesgo antes de cualquier intervención"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 (Apartado 6.7) define riesgo residual como el riesgo que persiste después de implementar medidas de tratamiento. El riesgo original es el riesgo antes del tratamiento. Esta distinción es crítica para evaluar la efectividad de controles y determinar si el riesgo es aceptable.",
+      "justification_wrong": "Las opciones B, C y D son incorrectas conceptualmente. El estándar establece claramente la diferencia temporal y de magnitud entre riesgo original y residual, esencial para la toma de decisiones sobre aceptabilidad del riesgo."
+    },
+    {
+      "num": 43,
+      "text": "¿Cuál es el propósito principal de la 'comunicación y consulta de riesgo' según ISO 27005:2022 en relación con las partes interesadas?",
+      "tag": "Comunicación y consulta de riesgo",
+      "options": [
+        "C. Cumplir requisitos regulatorios mínimos sin necesidad de validar comprensión de las partes interesadas",
+        "D. Comunicar solo los riesgos aceptados y ocultar riesgos residuales para mantener confianza en la organización",
+        "A. Asegurar que todas las partes interesadas comprendan los riesgos, sus causas, consecuencias potenciales y las medidas de tratamiento implementadas, facilitando consenso en decisiones",
+        "B. Informar exclusivamente a la dirección ejecutiva sobre riesgos críticos para evitar confusiones en niveles operativos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 (Apartado 5.3) establece que comunicación y consulta deben ser continuas e iterativas, incluyendo todas las partes interesadas relevantes. El objetivo es construir comprensión común, obtener información valiosa, y facilitar decisiones compartidas sobre tratamiento de riesgos.",
+      "justification_wrong": "Las opciones B, C y D violan principios fundamentales de ISO 27005:2022. La norma requiere transparencia, inclusión de partes interesadas y comunicación integral, no selectiva ni manipulada, para legitimidad y efectividad del proceso."
+    },
+    {
+      "num": 44,
+      "text": "Conforme a ISO 27005:2022, ¿cómo se integra el proceso de gestión de riesgos de seguridad de la información con los requisitos de ISO 27001 en organizaciones que implementan ambas normas?",
+      "tag": "Integración ISO 27005-27001",
+      "options": [
+        "A. ISO 27005 proporciona el marco metodológico para la evaluación y tratamiento de riesgos, mientras ISO 27001 especifica requisitos de implementación y auditoría de controles identificados mediante riesgos",
+        "B. Son normas completamente independientes; una organización debe elegir implementar solo una de ellas para evitar redundancias",
+        "C. ISO 27001 es anterior a ISO 27005; por lo tanto, ISO 27005 es obsoleta y su implementación es opcional",
+        "D. ISO 27005 reemplaza todos los requisitos de auditoría y gestión de cambios establecidos en ISO 27001"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27005:2022 e ISO 27001:2022 están alineadas. ISO 27005 proporciona directrices detalladas para realizar evaluación y tratamiento de riesgos (Apartado 8 de ISO 27001). Los resultados del proceso ISO 27005 alimentan la declaración de aplicabilidad y selección de controles en ISO 27001.",
+      "justification_wrong": "Las opciones B, C y D malinterpret la relación entre normas. ISO 27005 es complementaria a ISO 27001, no opcional ni substitutiva. Ambas forman un sistema integrado donde ISO 27005 proporciona rigor metodológico a la gestión de riesgos requerida por ISO 27001."
+    },
+    {
+      "num": 45,
+      "text": "En el contexto de ISO 27005:2022, ¿cuál es la diferencia crítica entre 'apetito al riesgo' y 'criterios de aceptación del riesgo' en la toma de decisiones de tratamiento?",
+      "tag": "Apetito y aceptación del riesgo",
+      "options": [
+        "B. Apetito y criterios de aceptación son conceptos sinónimos; la diferencia es solo terminológica según el idioma",
+        "A. El apetito al riesgo es una declaración estratégica de la tolerancia global de la organización, mientras los criterios de aceptación son umbrales específicos definidos para categorías de riesgo y procesos particulares",
+        "C. El apetito al riesgo se aplica exclusivamente a riesgos externos; los criterios de aceptación se aplican solo a riesgos internos",
+        "D. Los criterios de aceptación son definidos por reguladores externos; el apetito al riesgo lo define únicamente la dirección sin consulta"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 (Apartado 5.4) diferencia apetito de riesgo como posición estratégica global sobre riesgo que la organización está dispuesta a asumir, de criterios de aceptación que son límites cuantitativos/cualitativos específicos para evaluar si riesgos residuales son aceptables.",
+      "justification_wrong": "Las opciones B, C y D desconocen la estructura jerárquica de ISO 27005:2022. El apetito informa criterios, pero son conceptos distintos operativamente. Ambos requieren consulta organizacional y consideran riesgos internos y externos integralmente."
+    },
+    {
+      "num": 46,
+      "text": "En el contexto de ISO 27005:2022, al integrar el proceso de gestión de riesgos con ISO 27001:2013, ¿cuál es la relación jerárquica correcta entre el apetito al riesgo organizacional y los criterios de riesgo establecidos?",
+      "tag": "Criterios de Riesgo e Integración ISO 27001",
+      "options": [
+        "C. El apetito al riesgo se calcula como resultado de aplicar los criterios de riesgo predeterminados",
+        "D. El apetito al riesgo y los criterios de riesgo son conceptos sinónimos en la gestión de riesgos de seguridad de información",
+        "B. Los criterios de riesgo son independientes del apetito al riesgo y se establecen únicamente basados en requisitos regulatorios",
+        "A. El apetito al riesgo define directamente los criterios de riesgo, que a su vez determinan el nivel de tolerancia del riesgo residual aceptable"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 establece que el apetito al riesgo es el nivel de riesgo que la organización está dispuesta a aceptar, fundamentando así la definición de criterios de riesgo (umbrales cualitativos/cuantitativos) para evaluación y priorización. ISO 31000:2018 refuerza esta jerarquía.",
+      "justification_wrong": "Las opciones B, C y D contradicen la arquitectura normativa de ISO 27005:2022, que establece claramente que criterios y apetito son interdependientes, no independientes, no sinónimos, y el apetito predecede la definición de criterios."
+    },
+    {
+      "num": 47,
+      "text": "Conforme a ISO 27005:2022, en la fase de análisis de riesgos, ¿cómo debe diferenciarse técnicamente entre vulnerabilidad y amenaza al evaluar un activo de información crítico?",
+      "tag": "Conceptos Fundamentales: Amenaza y Vulnerabilidad",
+      "options": [
+        "B. Amenaza y vulnerabilidad son sinónimos que describen cualquier deficiencia en controles de seguridad",
+        "D. Amenaza incluye vulnerabilidades; por tanto, identificar amenazas elimina la necesidad de identificar vulnerabilidades específicas",
+        "A. Vulnerabilidad es la debilidad intrínseca del activo; amenaza es el agente externo capaz de explotar esa debilidad. El riesgo existe solo si ambas coexisten",
+        "C. Vulnerabilidad es temporal mientras que amenaza es permanente en la infraestructura de TI"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 define vulnerabilidad como debilidad en activos/controles e amenaza como circunstancia/evento capaz de explotarla. Riesgo = f(amenaza, vulnerabilidad, impacto). Esta diferenciación es fundamental para análisis efectivo según ISO 31000:2018.",
+      "justification_wrong": "B confunde conceptos distintos; C introduce variable temporal incorrecta; D invierte la relación lógica. ISO 27005 requiere identificación independiente de ambas dimensiones para cálculo robusto de riesgo."
+    },
+    {
+      "num": 48,
+      "text": "En el marco de ISO 27005:2022, durante la comunicación y consulta con partes interesadas, ¿cuál es el propósito estratégico principal de establecer una estructura formal de consulta en cada fase del proceso de gestión de riesgos?",
+      "tag": "Comunicación, Consulta y Partes Interesadas",
+      "options": [
+        "D. Documentar decisiones para justificación post-hoc en caso de incidentes de seguridad",
+        "A. Asegurar que perspectivas diversas (técnicas, operacionales, gerenciales) se integren para mejorar calidad, aceptación y efectividad de decisiones de riesgo",
+        "B. Cumplir exclusivamente con requisitos regulatorios de auditoría externa en la organización",
+        "C. Reducir responsabilidad gerencial al distribuir opiniones entre múltiples consultores externos"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27005:2022 §5.7 enfatiza que comunicación/consulta continua con stakeholders en todas fases mejora contexto de riesgo, validación de criterios, aceptabilidad de decisiones y accountability. ISO 31000:2018 §4.3 respalda este principio.",
+      "justification_wrong": "B limita comunicación a cumplimiento; C transfiere responsabilidad inapropiadamente; D confunde comunicación con documentación defensiva. La norma requiere participación activa para mejorar proceso, no solo documentación."
+    },
+    {
+      "num": 49,
+      "text": "Según ISO 27005:2022, al determinar el riesgo residual post-tratamiento, ¿cuál es la relación técnica correcta entre el nivel de riesgo residual aceptable y la continuación del ciclo de gestión de riesgos?",
+      "tag": "Riesgo Residual y Ciclo de Gestión",
+      "options": [
+        "D. La aceptación del riesgo residual depende exclusivamente de recursos financieros disponibles, no de criterios de riesgo",
+        "B. El riesgo residual debe ser cero para considerarse exitoso el tratamiento de riesgos",
+        "A. Si riesgo residual ≤ umbral de apetito definido, se concluye el tratamiento; si > umbral, se requieren controles adicionales o se escalona la aceptación formal",
+        "C. El riesgo residual es irrelevante si se implementaron todos los controles planificados, independientemente de su efectividad"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27005:2022 §7.2 establece que riesgo residual debe compararse contra criterios de aceptabilidad (apetito). Si no cumple, iteración de tratamiento es obligatoria. ISO 27001:2013 vincula aceptabilidad formal mediante Anexo A y Plan de Tratamiento.",
+      "justification_wrong": "B es utópico (riesgo cero inexistente); C confunde implementación con efectividad; D subordina criterios técnicos a presupuesto. ISO 27005 requiere evaluación continua vs. criterios, no eliminación absoluta."
+    },
+    {
+      "num": 50,
+      "text": "En la estructura de ISO 27005:2022 basada en ISO 31000, ¿cómo se integra el contexto organizacional en la definición de criterios de riesgo para garantizar coherencia con objetivos de negocio y ambiente externo?",
+      "tag": "Contexto Organizacional e Integración ISO 31000",
+      "options": [
+        "D. La alineación con objetivos de negocio es responsabilidad exclusiva de auditoría interna, no de gestión de riesgos",
+        "B. Los criterios de riesgo se establecen exclusivamente mediante benchmarking con industria, sin considerar contexto específico de la organización",
+        "C. El contexto es una entrada única inicial; después, los criterios se mantienen estáticos durante toda la vida del programa de riesgos",
+        "A. El contexto externo (regulatorio, competitivo, amenazas) e interno (objetivos, capacidades, cultura) informan criterios cualitativos/cuantitativos que alinean gestión de riesgos con estrategia organizacional"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27005:2022 §4 y ISO 31000:2018 §4.2-4.3 establecen que contexto externo/interno determina criterios de riesgo. Esto asegura que decisiones de riesgo refleja realidad organizacional y estrategia, no estándares genéricos.",
+      "justification_wrong": "B ignora singularidad; C desconoce dinamismo del contexto; D fragmenta responsabilidad. Normas requieren integración continua contexto-criterios para relevancia y efectividad sostenida."
+    }
+  ]
+}

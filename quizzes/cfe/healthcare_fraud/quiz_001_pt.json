@@ -1,0 +1,762 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "healthcare_fraud",
+  "domain_code": "S1D16",
+  "quiz_num": 1,
+  "domain_name": "Health Care Fraud",
+  "cert_name": "Certified Fraud Examiner",
+  "section": "Fraud Schemes and Financial Crimes",
+  "lang": "pt",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Qual é a proibição primária estabelecida pelo federal Anti-Kickback Statute (42 USC 1320a-7b)?",
+      "tag": "anti_kickback_statute_basics",
+      "options": [
+        "A. Oferecer ou receber remuneração em troca de encaminhamentos de pacientes cobertos por programas federais de saúde",
+        "B. Encaminhar pacientes a entidades nas quais o médico tem interesse financeiro de propriedade",
+        "C. Faturar programas federais de saúde por serviços prestados por pessoal médico sem licença",
+        "D. Submeter reivindicações duplicadas a múltiplas seguradoras pelo mesmo serviço médico"
+      ],
+      "correct": 0,
+      "difficulty": "EASY",
+      "justification_correct": "O Anti-Kickback Statute (AKS) proíbe consciente e intencionalmente oferecer, pagar, solicitar ou receber qualquer remuneração (incluindo propinas, subornos ou descontos) para induzir ou recompensar encaminhamentos de itens ou serviços reembolsáveis por programas federais de saúde como Medicare e Medicaid. O estatuto visa prevenir que incentivos financeiros distorçam o julgamento médico e inflem os custos do programa. Violações podem resultar em penalidades criminais (até 5 anos de prisão e multas de $25.000 por violação), penalidades monetárias civis e exclusão de programas federais de saúde. Safe harbors existem para certos arranjos que atendem critérios específicos.",
+      "justification_wrong": "A opção B descreve violações da Stark Law (estatuto de auto-encaminhamento médico), que é um estatuto civil separado que trata de relacionamentos financeiros e encaminhamentos. A opção C relaciona-se a fraude de faturamento envolvendo violações de escopo de prática mas não é o foco do Anti-Kickback Statute. A opção D descreve fraude de faturamento duplicado, que viola o False Claims Act mas não é abordada pela proibição do Anti-Kickback Statute sobre remuneração por encaminhamentos."
+    },
+    {
+      "num": 2,
+      "text": "Qual é o papel principal do Office of Inspector General (OIG) na detecção e prevenção de fraude em saúde?",
+      "tag": "oig_role_healthcare",
+      "options": [
+        "A. Conduzir auditorias, investigações e avaliações para detectar e prevenir fraude, desperdício e abuso em programas HHS incluindo Medicare e Medicaid",
+        "B. Revisar e aprovar todos os novos medicamentos farmacêuticos antes que possam ser comercializados para profissionais de saúde",
+        "C. Estabelecer taxas de reembolso e tabelas de honorários para todos os procedimentos médicos cobertos por programas federais",
+        "D. Licenciar e credenciar médicos e outros profissionais de saúde autorizados a praticar medicina"
+      ],
+      "correct": 0,
+      "difficulty": "EASY",
+      "justification_correct": "O Office of Inspector General (OIG) do Departamento de Saúde e Serviços Humanos é a principal agência federal responsável por detectar, investigar e prevenir fraude, desperdício e abuso em programas HHS, incluindo Medicare e Medicaid. O OIG conduz auditorias, avaliações e investigações; emite orientações de conformidade e pareceres consultivos; mantém listas de exclusão de fornecedores sancionados; negocia Corporate Integrity Agreements (CIAs); e trabalha com o Departamento de Justiça em ações de aplicação criminal e civil. O OIG publica um Plano de Trabalho anual identificando áreas de risco prioritárias e emite Special Fraud Alerts e Compliance Program Guidance para ajudar fornecedores a evitar práticas fraudulentas.",
+      "justification_wrong": "A opção B descreve o papel da Food and Drug Administration (FDA), que revisa a segurança e eficácia de medicamentos para aprovação, não a missão de detecção de fraude do OIG. A opção C descreve funções do Centers for Medicare & Medicaid Services (CMS), que administra os programas e estabelece metodologias de pagamento, enquanto o OIG fornece supervisão. A opção D descreve funções de conselhos médicos estaduais e credenciamento profissional, que são separadas das responsabilidades federais de supervisão e investigação do OIG para prevenção de fraude."
+    },
+    {
+      "num": 3,
+      "text": "Qual das seguintes opções representa uma bandeira vermelha comum indicando potencial fraude de Medicare ou Medicaid?",
+      "tag": "medicare_medicaid_fraud_red_flags",
+      "options": [
+        "A. Padrões de cobrança mostrando um volume excepcionalmente alto de serviços comparado aos pares ou padrões de necessidade médica",
+        "B. Um provedor de saúde solicitando pré-autorização da seguradora antes de realizar procedimentos eletivos",
+        "C. Prontuários médicos documentando histórico detalhado do paciente e achados de exame físico",
+        "D. Um médico encaminhando pacientes a múltiplos especialistas com base em condições médicas diagnosticadas"
+      ],
+      "correct": 0,
+      "difficulty": "EASY",
+      "justification_correct": "Volumes de cobrança excepcionalmente altos comparados a provedores pares ou padrões de necessidade médica é uma bandeira vermelha significativa para potencial fraude identificada por OIG, CMS e algoritmos de detecção de fraude. Padrões de cobrança atípicos podem indicar codificação excessiva, serviços não prestados, serviços medicamente desnecessários ou outros esquemas fraudulentos. Outras bandeiras vermelhas comuns incluem cobrança duplicada, cobrança por serviços de provedores excluídos, desagrupamento, uso consistente de códigos de alta complexidade, padrões inconsistentes com dados demográficos ou diagnósticos de pacientes e cobrança para pacientes falecidos. Análise de dados, incluindo modelagem preditiva e análise de padrões, ajuda a identificar essas anomalias para investigação. Práticas legítimas de alto volume podem explicar seus padrões, mas outliers estatísticos merecem escrutínio.",
+      "justification_wrong": "A opção B descreve procedimentos adequados de pré-autorização, que demonstram conformidade com requisitos do pagador e gestão de utilização apropriada, o oposto de um indicador de fraude. A opção C descreve documentação completa apoiando necessidade médica, que é evidência de práticas de cobrança adequadas em vez de fraude. A opção D descreve padrões de encaminhamento medicamente apropriados baseados nas necessidades do paciente; encaminhamentos legítimos a especialistas são prática médica adequada e não indicativos de fraude, a menos que acoplados com relacionamentos financeiros impróprios violando Stark Law ou Anti-Kickback."
+    },
+    {
+      "num": 4,
+      "text": "Um CFE está investigando um consultório de cardiologia onde surge um padrão: consultas simples (CPT 99213) são consistentemente faturadas como exames abrangentes (CPT 99215), apesar dos prontuários médicos mostrarem complexidade mínima. A proporção de faturamento do consultório para códigos 99215 é de 78% comparado a uma média da especialidade de 12%. O que o CFE deve fazer primeiro para substanciar potencial upcoding?",
+      "tag": "upcoding_investigation_medical_practice",
+      "options": [
+        "A. Comparar a documentação nos prontuários médicos dos pacientes com os códigos de faturamento submetidos para verificar se os serviços correspondem ao nível de complexidade faturado",
+        "B. Entrevistar os médicos imediatamente para determinar sua intenção e conhecimento das discrepâncias de faturamento antes de revisar qualquer documentação",
+        "C. Calcular o impacto financeiro total do superfaturamento e reportar a perda monetária diretamente ao Medicare sem investigação adicional",
+        "D. Intimar todos os prontuários de pacientes e documentos de faturamento através de assessoria jurídica antes de conduzir qualquer análise preliminar dos padrões de codificação"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Em investigações de upcoding, o CFE deve estabelecer que os serviços faturados não correspondem aos serviços documentados. Comparar a documentação do prontuário médico com os códigos de faturamento submetidos é o passo fundamental para provar o elemento essencial da fraude de upcoding: que códigos de nível superior foram faturados do que o que foi realmente realizado ou documentado. Esta evidência documental forma a base para substanciar o esquema de fraude sob o False Claims Act e apoia o cálculo de danos.",
+      "justification_wrong": "A opção B é prematura porque entrevistar os investigados antes de garantir e revisar evidências documentais pode comprometer a investigação e alertar os investigados que podem destruir evidências. A opção C pula a fase crítica de substanciação; calcular danos sem provar a fraude subjacente através da comparação de documentação é procedimentalmente falho. A opção D é desnecessariamente agressiva e custosa; intimações geralmente não são o primeiro passo quando prontuários médicos e dados de faturamento podem ser obtidos através de procedimentos de auditoria de rotina ou solicitações administrativas."
+    },
+    {
+      "num": 5,
+      "text": "Um CFE descobre que um diretor de laboratório hospitalar recebe pagamentos mensais de $5.000 de uma empresa de testes diagnósticos, descritos em contratos como 'honorários de consultoria'. O diretor de laboratório encaminha todos os exames de sangue especializados para esta empresa, gerando $1,2 milhão anualmente. O diretor não fornece serviços de consultoria documentados. Qual elemento é mais crítico para estabelecer uma violação do Anti-Kickback Statute?",
+      "tag": "anti_kickback_statute_violation_identification",
+      "options": [
+        "A. Provar que um dos propósitos do pagamento era induzir ou recompensar encaminhamentos de negócios de programas federais de saúde",
+        "B. Demonstrar que o valor do pagamento excedeu o valor justo de mercado para serviços legítimos de consultoria em todas as circunstâncias",
+        "C. Estabelecer que o diretor de laboratório tinha autoridade direta de tomada de decisão sobre todos os aspectos do cuidado e tratamento do paciente",
+        "D. Mostrar que a empresa de testes diagnósticos tinha ações de fiscalização anteriores ou violações de regulamentações de saúde"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O Anti-Kickback Statute (42 USC 1320a-7b) proíbe oferecer, pagar, solicitar ou receber remuneração conscientemente e intencionalmente para induzir ou recompensar encaminhamentos de itens ou serviços reembolsáveis por programas federais de saúde. O elemento crítico é provar que um dos propósitos da remuneração era induzir ou recompensar encaminhamentos. A lei se aplica quando mesmo um propósito é gerar encaminhamentos, não necessariamente o único propósito. A ausência de trabalho de consultoria real combinada com encaminhamentos contínuos indica fortemente intenção proibida.",
+      "justification_wrong": "A opção B descreve evidência que apoia uma violação, mas não é o elemento legal em si; pagamentos podem violar o AKS mesmo se pelo valor justo de mercado se feitos para induzir encaminhamentos. A opção C está incorreta porque o AKS se aplica àqueles em posição de fazer ou influenciar encaminhamentos, não apenas aqueles com autoridade abrangente de cuidado ao paciente. A opção D é irrelevante para estabelecer a violação atual; violações anteriores do pagador podem ser fatores agravantes, mas não são elementos de prova do esquema atual de propina."
+    },
+    {
+      "num": 6,
+      "text": "Um CFE está investigando um médico que possui 40% de participação em um centro de imagem por ressonância magnética e encaminha pacientes do Medicare exclusivamente para aquela instalação. Os encaminhamentos do médico geraram $890.000 em faturamentos ao Medicare no ano passado. O médico alega que o acordo se enquadra em uma exceção da Stark Law. O que o CFE deve examinar primeiro para determinar se existe uma violação da Stark Law?",
+      "tag": "stark_law_physician_self_referral_investigation",
+      "options": [
+        "A. Se o acordo de propriedade e encaminhamento do médico atende a todos os requisitos de uma exceção legal ou regulatória específica à Stark Law",
+        "B. Se o médico divulgou o relacionamento financeiro verbalmente aos pacientes antes de fazer encaminhamentos ao centro de imagem",
+        "C. Se as taxas do centro de imagem estão abaixo da média regional para serviços comparáveis de ressonância magnética no mercado geográfico",
+        "D. Se outros médicos na comunidade também encaminham pacientes para o mesmo centro de imagem para diagnóstico por imagem"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A Stark Law (42 USC 1395nn) proíbe médicos de encaminhar pacientes do Medicare/Medicaid para serviços de saúde designados (DHS) a entidades com as quais eles têm relacionamento financeiro, a menos que uma exceção específica se aplique. A Stark Law é uma lei de responsabilidade objetiva; intenção é irrelevante. O CFE deve determinar se todos os elementos de uma exceção legal são atendidos (como serviços auxiliares no consultório, compensação pelo valor justo de mercado, ou outras exceções específicas). Se nenhuma exceção se aplica completamente, os encaminhamentos violam a Stark Law independentemente de outros fatores.",
+      "justification_wrong": "A opção B está incorreta porque a Stark Law não contém exceção de divulgação ao paciente; divulgação verbal não cura um relacionamento financeiro proibido. A opção C está errada porque precificação abaixo do mercado não cria exceção à Stark; precificação é relevante para exceções de valor justo de mercado, mas não isenta independentemente o acordo. A opção D é irrelevante porque padrões de encaminhamento de outros médicos não afetam se o relacionamento financeiro deste médico viola a Stark Law."
+    },
+    {
+      "num": 7,
+      "text": "Durante um exame de fraude, um CFE descobre que uma clínica de fisioterapia submeteu reclamações ao Medicare por 1.847 sessões de terapia ao longo de seis meses. No entanto, registros de agendamento mostram apenas 1.103 visitas de pacientes durante aquele período, e entrevistas com pacientes confirmam que eles não receberam serviços em muitas datas faturadas. Que tipo de esquema de fraude o CFE está muito provavelmente investigando?",
+      "tag": "billing_services_not_rendered_investigation",
+      "options": [
+        "A. Faturamento de serviços não prestados, evidenciado por reclamações submetidas para sessões que não ocorreram de acordo com registros da clínica e declarações de pacientes",
+        "B. Upcoding de serviços de terapia, onde tratamentos de menor intensidade foram faturados como sessões de reabilitação de maior complexidade",
+        "C. Unbundling de procedimentos de terapia, onde sessões de tratamento abrangentes foram divididas em múltiplos componentes faturáveis separadamente",
+        "D. Erros de faturamento duplicado, onde as mesmas sessões legítimas de terapia foram inadvertidamente submetidas múltiplas vezes ao Medicare"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A evidência indica claramente faturamento de serviços não prestados: reclamações submetidas (1.847) excedem agendamentos documentados (1.103), e pacientes confirmam que não receberam serviços nas datas faturadas. Este é um dos esquemas de fraude em saúde mais diretos, onde prestadores faturam por serviços que nunca ocorreram. A discrepância entre reclamações e tanto registros da clínica quanto testemunho de pacientes estabelece o padrão de faturamento fraudulento, criando responsabilidade sob o False Claims Act.",
+      "justification_wrong": "A opção B (upcoding) envolve faturar códigos de nível superior para serviços que foram realmente prestados em nível inferior; aqui, serviços não foram prestados de forma alguma. A opção C (unbundling) envolve separar serviços agrupados em códigos faturáveis individuais; o problema aqui são serviços inexistentes, não codificação imprópria. A opção D (faturamento duplicado) pode explicar alguma discrepância, mas não explica declarações de pacientes confirmando que não receberam serviços nas datas faturadas, indicando fabricação intencional em vez de erro administrativo."
+    },
+    {
+      "num": 8,
+      "text": "Um CFE reuniu evidências de que um fornecedor de equipamento médico durável (DME) faturou $2,3 milhões ao Medicare por cadeiras de rodas motorizadas prescritas por médicos que nunca examinaram os pacientes. Registros de entrega são fabricados, e beneficiários relatam nunca ter recebido equipamento. O CFE está preparando um encaminhamento ao Office of Inspector General (OIG). Qual documentação é mais essencial incluir?",
+      "tag": "dme_fraud_evidence_documentation_oig",
+      "options": [
+        "A. Declarações de beneficiários confirmando não recebimento de equipamento, registros de faturamento mostrando reclamações submetidas, e evidência de que os médicos prescritores não tiveram contato com o paciente",
+        "B. Uma análise financeira abrangente mostrando as margens de lucro do fornecedor de DME e comparação com padrões da indústria para equipamento similar",
+        "C. Investigações de antecedentes de todos os executivos da empresa incluindo históricos de crédito, emprego anterior e status de licenciamento profissional",
+        "D. Opiniões de especialistas de fabricantes de dispositivos médicos sobre os usos clínicos apropriados e precificação de cadeiras de rodas motorizadas"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Encaminhamentos ao OIG para fraude de DME requerem documentação estabelecendo os elementos centrais da fraude: que reclamações foram submetidas (registros de faturamento), que serviços/equipamento não foram fornecidos (declarações de beneficiários), e que documentação de necessidade médica era fraudulenta (médicos não tiveram contato com paciente para justificar prescrições). Este pacote de evidências demonstra faturamento de serviços não prestados e falta de necessidade médica, que são processáveis sob o False Claims Act e podem resultar em penalidades civis e criminais. Estes três elementos formam a fundação do esquema de fraude.",
+      "justification_wrong": "A opção B, embora potencialmente relevante para danos, não estabelece a fraude em si; margens de lucro não são essenciais para provar fraude de DME. A opção C fornece informações de antecedentes que podem apoiar processos, mas não são evidência essencial do esquema de fraude em si; investigadores do OIG podem desenvolver esta informação. A opção D sobre usos clínicos apropriados é desnecessária quando a questão fundamental é que equipamento nunca foi entregue e prescrições eram fraudulentas; análise de necessidade médica é secundária a provar não-entrega."
+    },
+    {
+      "num": 9,
+      "text": "Um CFE concluiu uma investigação mostrando que uma agência de assistência médica domiciliar intencionalmente apresentou 3.420 reclamações falsas ao Medicare ao longo de quatro anos, totalizando $4,8 milhões em cobranças fraudulentas. A agência recebeu pagamento de todas as reclamações. O Procurador dos EUA está considerando um caso civil sob o False Claims Act. Qual é a faixa potencial de penalidade civil sob o False Claims Act, excluindo danos triplos?",
+      "tag": "false_claims_act_application_healthcare",
+      "options": [
+        "A. Entre $13.946 e $27.894 por reclamação falsa, ajustado pela inflação, o que pode totalizar milhões apenas em penalidades civis",
+        "B. Um máximo de três vezes os danos reais sofridos pelo governo, sem penalidades adicionais por reclamação",
+        "C. Uma penalidade fixa de 15% calculada sobre o valor total das cobranças fraudulentas apresentadas ao programa Medicare",
+        "D. Entre $5.000 e $10.000 por reclamação falsa conforme originalmente promulgado, sem quaisquer ajustes pela inflação"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O False Claims Act (31 USC 3729) impõe penalidades civis por reclamação falsa apresentada, com valores ajustados regularmente pela inflação. A partir de 2024-2026, as penalidades variam de $13.946 a $27.894 por reclamação falsa. Essas penalidades por reclamação são adicionais aos danos triplos (três vezes). Com 3.420 reclamações falsas, as penalidades sozinhas podem variar de aproximadamente $47,7 milhões a $95,4 milhões, mais danos triplos de $14,4 milhões (3 × $4,8 milhões). A estrutura de penalidade por reclamação torna o FCA particularmente poderoso em processos de fraude na área da saúde envolvendo numerosas reclamações.",
+      "justification_wrong": "A Opção B descreve incorretamente apenas o componente de danos triplos e omite as penalidades civis obrigatórias por reclamação que são centrais para a aplicação do FCA. A Opção C é fictícia; o FCA não usa uma estrutura de penalidade baseada em porcentagem. A Opção D cita valores de penalidade desatualizados; a faixa original de $5.000-$10.000 foi aumentada através de múltiplos ajustes de inflação conforme exigido pelo Federal Civil Penalties Inflation Adjustment Act, tornando esses valores legalmente incorretos para casos atuais."
+    },
+    {
+      "num": 10,
+      "text": "Um CFE analisando dados de faturamento hospitalar nota que reclamações para códigos CPT 26010 (drenagem de abscesso de dedo, simples) e 26011 (drenagem de abscesso de dedo, complicada) são frequentemente faturadas juntas para o mesmo paciente na mesma data. Padrões da indústria indicam que estes representam diferentes níveis de complexidade do mesmo procedimento. A Correct Coding Initiative (CCI) do Medicare agrupa esses códigos. Qual esquema de fraude está indicado?",
+      "tag": "unbundling_fraud_detection_hospital_claims",
+      "options": [
+        "A. Fraude de desagregação, onde componentes de um único procedimento são inadequadamente faturados separadamente para aumentar o reembolso",
+        "B. Fraude de supercodificação, onde procedimentos simples são sistematicamente faturados como procedimentos mais complexos para obter pagamentos mais altos",
+        "C. Faturamento de serviços não prestados, onde um dos dois procedimentos faturados não foi realmente realizado no paciente",
+        "D. Faturamento duplicado, onde o mesmo procedimento é inadvertidamente submetido duas vezes usando números de código diferentes"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A desagregação (também chamada de fragmentação) ocorre quando prestadores faturam separadamente por componentes que deveriam ser faturados como um único procedimento abrangente. Quando os códigos 26010 e 26011 representam diferentes níveis de complexidade do mesmo procedimento e são faturados juntos para o mesmo atendimento, isso viola as edições da Correct Coding Initiative do Medicare. O prestador deveria faturar apenas o código de nível de complexidade apropriado, não ambos. A desagregação aumenta o reembolso inadequadamente porque os pagadores esperam que procedimentos abrangentes sejam faturados com um único código que reflita o serviço completo.",
+      "justification_wrong": "A Opção B (supercodificação) envolveria faturar apenas o código 26011 quando apenas 26010 foi realizado; aqui ambos os códigos são faturados juntos. A Opção C pressupõe que um procedimento não foi realizado, mas o cenário indica que ambos os códigos são para o mesmo procedimento em diferentes níveis de complexidade, não dois procedimentos separados. A Opção D (faturamento duplicado) envolveria submeter o mesmo código duas vezes; aqui códigos diferentes são usados, e o padrão é sistemático ao invés de inadvertido, indicando desagregação intencional ao invés de erro de faturamento."
+    },
+    {
+      "num": 11,
+      "text": "Um CFE investigando uma farmácia hospitalar descobre que um técnico de farmácia com acesso a substâncias controladas tem criado registros falsos de pacientes para obter oxicodona. O técnico fatura contas de pacientes legítimos por medicamentos, dispensa-os, mas então desvia os medicamentos para uso pessoal ou revenda. O que o CFE deveria priorizar ao documentar este esquema de desvio de medicamentos controlados?",
+      "tag": "prescription_drug_diversion_investigation",
+      "options": [
+        "A. Correlacionar registros de dispensação da farmácia com registros reais de administração ao paciente e reconciliações de inventário para identificar discrepâncias indicando desvio",
+        "B. Conduzir entrevistas imediatas com toda a equipe da farmácia para determinar quem tinha conhecimento do esquema de desvio e seu nível de envolvimento",
+        "C. Calcular o valor de mercado dos medicamentos desviados para estabelecer a magnitude financeira da fraude para fins de processo",
+        "D. Revisar os registros financeiros pessoais e extratos bancários do técnico para rastrear os produtos da venda de medicamentos desviados"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Documentar o desvio de medicamentos controlados requer estabelecer que substâncias controladas foram dispensadas de acordo com os registros mas nunca chegaram aos pacientes. O CFE deve comparar os registros de dispensação da farmácia (mostrando que medicamentos foram emitidos para pacientes específicos) com os registros de administração de medicamentos (mostrando o que os pacientes realmente receberam) e controles de inventário. Discrepâncias entre esses registros provam o desvio. Esta evidência documental estabelece o esquema de desvio, demonstra o método usado, quantifica o volume de medicamentos desviados e cria uma base para processos criminais e sanções administrativas incluindo violações da DEA.",
+      "justification_wrong": "A Opção B, embora eventualmente necessária, não deveria ser priorizada antes de garantir a evidência documental; entrevistas prematuras podem alertar os suspeitos e levar à destruição de evidências. A Opção C (cálculo de valor de mercado) é relevante para sentenciamento e impacto mas não estabelece o esquema de desvio em si; provar que o desvio ocorreu é a prioridade. A Opção D (registros financeiros) pode apoiar o processo mostrando o benefício financeiro do técnico, mas é secundária a provar o desvio real através dos registros da farmácia; evidência financeira é circunstancial enquanto discrepâncias nos registros de dispensação provam diretamente o desvio."
+    },
+    {
+      "num": 12,
+      "text": "Um CFE está usando análise de dados para detectar potencial faturamento fantasma em reclamações do Medicare apresentadas por múltiplas clínicas ambulatoriais. A análise deve identificar serviços faturados mas provavelmente nunca fornecidos. Qual padrão de dados indicaria mais fortemente faturamento fantasma requerendo investigação adicional?",
+      "tag": "phantom_billing_data_analytics_detection",
+      "options": [
+        "A. Clínicas faturando serviços em datas quando a instalação estava documentada como fechada, ou para pacientes que estavam hospitalizados em outro lugar nas datas de serviço alegadas",
+        "B. Clínicas mostrando taxas de faturamento acima da média para procedimentos complexos comparadas aos benchmarks regionais para instalações similares",
+        "C. Variações nos valores de faturamento para os mesmos códigos de procedimento entre diferentes clínicas dentro da mesma região geográfica",
+        "D. Clínicas com altos volumes de pacientes durante certos meses e volumes menores durante outros meses mostrando padrões sazonais"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O faturamento fantasma envolve faturar por serviços que não poderiam ter ocorrido. Dados mostrando reclamações apresentadas quando as instalações estavam fechadas ou pacientes estavam em outro lugar criam uma impossibilidade lógica provando que serviços não foram prestados. Este padrão fornece forte evidência prima facie de fraude porque as reclamações são fisicamente impossíveis: serviços não podem ser fornecidos em instalações fechadas, e pacientes não podem receber serviços de clínica ambulatorial enquanto hospitalizados em outro lugar. Esta abordagem analítica cruza dados de faturamento com dados operacionais da instalação e dados de localização do paciente para identificar cenários de faturamento impossíveis requerendo investigação.",
+      "justification_wrong": "A Opção B descreve potencial supercodificação ao invés de faturamento fantasma; taxas mais altas para procedimentos complexos sugerem codificação em níveis inadequados para serviços que foram fornecidos. A Opção C descreve variação normal de mercado em precificação e não indica faturamento fantasma; diferentes taxas de reembolso ou práticas de faturamento podem ser legítimas. A Opção D descreve padrões normais de negócio; variações sazonais no volume de pacientes são comuns e legítimas na área da saúde e não indicam faturamento fantasma ou fraude."
+    },
+    {
+      "num": 13,
+      "text": "Um CFE descobre que uma clínica médica faturou o Medicare por serviços supostamente fornecidos a 127 beneficiários, mas a investigação revela que esses indivíduos nunca visitaram a clínica e muitos desconheciam que seus números do Medicare foram usados. Funcionários da clínica recrutaram beneficiários e pagaram $50 para usar suas informações. Como este esquema é melhor caracterizado, e qual deveria ser o próximo passo investigativo do CFE?",
+      "tag": "ghost_patient_medicare_fraud_investigation",
+      "options": [
+        "A. Fraude de paciente fantasma; entrevistar beneficiários para documentar que não receberam serviços e foram pagos pelo uso de suas informações do Medicare",
+        "B. Fraude de roubo de identidade; encaminhar imediatamente às autoridades policiais sem conduzir entrevistas com beneficiários para preservar a integridade da investigação criminal",
+        "C. Esquema de propina; focar a investigação nos pagamentos feitos aos beneficiários como remuneração ilegal sob o Anti-Kickback Statute",
+        "D. Fraude de erro de faturamento; solicitar que a clínica voluntariamente reembolse os pagamentos e implemente planos de ação corretiva através de uma autodivulgação"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Esta é uma fraude de paciente fantasma, onde prestadores faturam por serviços a beneficiários reais do Medicare que nunca receberam serviços. O esquema envolve recrutar beneficiários e usar suas informações legítimas do Medicare para submeter reclamações fraudulentas. O próximo passo crítico do CFE é obter declarações juramentadas dos beneficiários confirmando que não receberam serviços e foram pagos por suas informações do Medicare. Essas declarações fornecem evidência direta provando que o faturamento foi fraudulento e estabelecem a natureza sistemática do esquema. Esta evidência é essencial para o processo sob o False Claims Act e apoia tanto a recuperação civil quanto acusações criminais.",
+      "justification_wrong": "A Opção B está incorreta porque investigações de CFE complementam ao invés de comprometer investigações criminais; entrevistas com beneficiários são evidência essencial que as autoridades policiais também precisarão, e encaminhamento imediato sem desenvolver o caso enfraquece o processo. A Opção C caracteriza erroneamente o esquema; embora pagamentos aos beneficiários possam violar outras leis, a fraude principal é faturar por serviços inexistentes (pacientes fantasmas), não o Anti-Kickback Statute que aborda induções para encaminhamentos legítimos. A Opção D é inadequada porque a evidência mostra fraude intencional e sistemática com recrutamento, não erros de faturamento; programas de reembolso voluntário são para erros inadvertidos, não esquemas deliberados envolvendo recrutamento de beneficiários."
+    },
+    {
+      "num": 14,
+      "text": "Um CFE está analisando dados de sinistros do Medicare Parte B para um grupo de 12 cardiologistas em uma área metropolitana. Durante seis meses, um cardiologista faturou 1.847 ecocardiogramas, enquanto os outros 11 registraram média de 412 ecocardiogramas cada. O médico atípico também possui uma porcentagem acima da média de códigos de avaliação complexa (99215) de 78% versus a média dos pares de 31%. Qual método analítico é mais apropriado para o CFE aplicar em seguida?",
+      "tag": "claims_pattern_analysis_detection",
+      "options": [
+        "A. Comparar os padrões de faturamento do médico com benchmarks nacionais e regionais para a especialidade, e analisar o faturamento dia a dia para identificar potenciais impossibilidades estatísticas",
+        "B. Encaminhar imediatamente o caso ao Office of Inspector General sem análise adicional, uma vez que a variação excede o desvio estatístico normal",
+        "C. Solicitar prontuários médicos de todos os 1.847 ecocardiogramas para verificar necessidade médica antes de conduzir qualquer comparação estatística",
+        "D. Entrevistar o médico diretamente para obter uma explicação para a variação antes de realizar análise adicional de dados ou comparações com pares"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A metodologia adequada de detecção de fraude requer comparar padrões de faturamento com benchmarks estabelecidos (tanto nacionais quanto regionais) e analisar impossibilidades estatísticas, como faturar mais procedimentos do que fisicamente possível em um dia. Esta abordagem baseada em dados fornece evidência objetiva antes de passar para etapas mais intensivas em recursos, como revisão de prontuários. A variação significativa tanto em volume (4,5x dos pares) quanto em complexidade de codificação (2,5x dos pares) sugere potencial upcoding e faturamento de serviços não prestados, o que justifica análise comparativa sistemática.",
+      "justification_wrong": "A opção B é prematura porque CFEs devem completar análise minuciosa e desenvolver fundamentação suficiente antes de encaminhamentos externos; o OIG espera análise preliminar. A opção C é ineficiente porque revisar 1.847 prontuários sem primeiro estabelecer impossibilidades estatísticas ou metodologia de amostragem desperdiça recursos; amostragem direcionada baseada em achados analíticos é mais apropriada. A opção D viola protocolo investigativo porque entrevistar suspeitos antes de completar análise objetiva pode comprometer a investigação, alertar o suspeito e permitir destruição de evidências."
+    },
+    {
+      "num": 15,
+      "text": "Um sistema hospitalar firmou um Corporate Integrity Agreement (CIA) com o Office of Inspector General após acordo sobre alegações do False Claims Act relacionadas a procedimentos espinhais medicamente desnecessários. O CIA requer revisões independentes anuais de sinistros e implementação de um programa abrangente de compliance. Dezoito meses após o início do CIA de cinco anos, o CFE atuando como oficial de compliance descobre que um neurocirurgião empregado tem sistematicamente realizado upcoding de injeções espinhais de rotina para procedimentos mais complexos. Qual é a obrigação principal do CFE sob o CIA?",
+      "tag": "corporate_integrity_agreement_compliance",
+      "options": [
+        "A. Reportar os pagamentos indevidos descobertos ao programa federal de saúde apropriado dentro de 60 dias e divulgar o assunto ao OIG conforme requerido pelas provisões de reporte do CIA",
+        "B. Rescindir o contrato de trabalho do neurocirurgião imediatamente e recuperar os pagamentos indevidos através de restituição interna para evitar violação do CIA",
+        "C. Aguardar até a próxima revisão independente anual programada para reportar os achados, de modo que o revisor independente possa verificar a questão de compliance",
+        "D. Conduzir uma investigação interna completa e autocorrigir os erros de faturamento sem reporte externo, uma vez que isso demonstra monitoramento efetivo de compliance"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "CIAs tipicamente incorporam a regra de reporte de pagamentos indevidos de 60 dias do Affordable Care Act e contêm provisões específicas exigindo reporte imediato de evidência crível de má conduta ao OIG. A descoberta pelo CFE de upcoding sistemático aciona tanto a obrigação de reportar e reembolsar pagamentos indevidos identificados dentro de 60 dias quanto de notificar o OIG sobre potenciais violações materiais. Falha em reportar conforme requerido pode resultar em violação material do CIA, levando à exclusão de programas federais de saúde—uma consequência potencialmente fatal para o hospital. Os requisitos de reporte do CIA superam tentativas de resolução interna.",
+      "justification_wrong": "A opção B aborda apenas parte da obrigação; embora ação de pessoal possa ser apropriada, não satisfaz os requisitos mandatórios de reporte às autoridades federais que CIAs impõem. A opção C está incorreta porque obrigações de reporte do CIA são acionadas pela descoberta, não pelo ciclo de revisão programado; aguardar poderia constituir violação material do CIA. A opção D não compreende os requisitos do CIA; embora autopoliciamento seja valorizado, CIAs explicitamente requerem divulgação de violações descobertas ao OIG, e falha em reportar constitui uma violação separada independentemente de ação corretiva interna."
+    },
+    {
+      "num": 16,
+      "text": "Um CFE está investigando uma alegação de fraude ao Medicaid contra um centro de saúde comunitário. A análise de registros de faturamento mostra que um enfermeiro praticante faturou 1.240 visitas de pacientes ao longo de três meses para beneficiários com idades entre 3-17 anos. A investigação de campo do CFE revela que 340 desses endereços de beneficiários alegados correspondem a lotes vagos, prédios condenados ou números de rua inexistentes. Quatorze beneficiários compartilham a mesma data de nascimento e nomes similares com pequenas variações de ortografia. Qual esquema de fraude é mais claramente indicado por esses achados?",
+      "tag": "phantom_billing_ghost_patients",
+      "options": [
+        "A. Faturamento fantasma usando identidades e endereços de pacientes fabricados para submeter sinistros de serviços nunca prestados a beneficiários inexistentes ou inelegíveis",
+        "B. Upcoding de visitas legítimas de pacientes combinado com faturamento duplicado sob nomes de pacientes similares para inflar valores de reembolso",
+        "C. Fraude de elegibilidade onde o prestador está auxiliando famílias inelegíveis a obter cobertura do Medicaid através de documentação falsa de endereço",
+        "D. Roubo de identidade onde informações de beneficiários foram roubadas e usadas sem o conhecimento de indivíduos reais elegíveis ao Medicaid"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O padrão de evidência indica fortemente faturamento fantasma ou fraude de pacientes fantasmas: sinistros submetidos para pacientes que não existem ou nunca receberam serviços. Os endereços inválidos (lotes vagos, números inexistentes) e registros implausíveis de pacientes (datas de nascimento idênticas com variações de nomes) são características de listas de pacientes fabricadas. Este esquema permite que prestadores faturem por serviços nunca prestados criando beneficiários fictícios. A natureza sistemática (340 endereços inválidos, 14 datas de nascimento duplicadas) indica fraude intencional em vez de erros de entrada de dados. Este é um esquema comum de fraude ao Medicaid porque prestadores exploram a dificuldade de verificar existência de beneficiários em grandes populações.",
+      "justification_wrong": "A opção B está incorreta porque upcoding envolve faturar códigos de serviço de nível mais alto para pacientes reais; os endereços inválidos indicam que os próprios pacientes são fictícios, não que serviços reais foram codificados incorretamente. A opção C identifica erroneamente o perpetrador e esquema; a evidência mostra o prestador fabricando pacientes, não famílias buscando benefícios, já que não há indicação de pessoas reais envolvidas. A opção D é improvável porque roubo de identidade em massa mostraria endereços válidos onde pessoas reais vivem, não lotes vagos e endereços inexistentes; este padrão indica fabricação completa em vez de identidades legítimas roubadas."
+    },
+    {
+      "num": 17,
+      "text": "Um CFE está revisando sinistros do Medicare Parte B para um laboratório clínico de propriedade de médicos. Os dados mostram que 89% dos pacientes referidos recebem painel metabólico abrangente, painel lipídico, hemograma completo, painel tireoidiano e teste de vitamina D independentemente de sintomas apresentados ou códigos de diagnóstico. Os médicos que fazem as referências têm interesses de investimento no laboratório. Muitos pacientes com diagnósticos como entorse de tornozelo ou alergias sazonais receberam todos os cinco testes. Qual esquema de fraude principal o CFE deve investigar?",
+      "tag": "unnecessary_lab_tests_kickbacks",
+      "options": [
+        "A. Solicitação de testes medicamente desnecessários para gerar receita da qual os médicos que fazem referências se beneficiam financeiramente através de seus interesses de propriedade, violando a Stark Law e potencialmente o Anti-Kickback Statute",
+        "B. Desagregação de serviços laboratoriais ao faturar códigos de testes separados que deveriam ser reportados como um único painel para maximizar reembolso do Medicare",
+        "C. Upcoding de níveis de complexidade de testes laboratoriais ao faturar painéis abrangentes quando apenas painéis metabólicos básicos eram medicamente necessários para os diagnósticos",
+        "D. Faturamento duplicado onde os mesmos testes laboratoriais estão sendo faturados múltiplas vezes sob códigos de teste diferentes para o mesmo atendimento do paciente"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O padrão de solicitar a mesma bateria de testes independentemente de necessidade médica, combinado com interesses de propriedade dos médicos no laboratório, indica violações tanto da Stark Law (proibição de autorreferência médica) quanto potencialmente do Anti-Kickback Statute. A Stark Law proíbe médicos de referirem pacientes do Medicare para serviços de saúde designados (incluindo serviços de laboratório clínico) a entidades nas quais eles têm interesses financeiros. A desnecessidade médica—solicitar painéis tireoidiano e lipídico para entorses de tornozelo—demonstra que testes estão sendo solicitados para gerar receita em vez de necessidade clínica. A propriedade médica cria um incentivo financeiro ilegal que é a força motriz por trás do padrão de utilização desnecessária.",
+      "justification_wrong": "A opção B descreve um esquema de fraude diferente; a questão não é como os testes são codificados, mas que estão sendo solicitados sem necessidade médica devido a conflitos financeiros. Os testes descritos são na verdade testes separados válidos, não componentes de um único painel sendo desagregados. A opção C está incorreta porque os testes foram realizados conforme faturados; a fraude é solicitá-los quando não medicamente necessários, não codificar incorretamente sua complexidade. A opção D não é suportada pelos fatos; não há indicação de que testes estejam sendo faturados múltiplas vezes, apenas que testes excessivos são solicitados rotineiramente independentemente do diagnóstico."
+    },
+    {
+      "num": 18,
+      "text": "Um sistema hospitalar está estabelecendo um arranjo de diretoria médica onde pagará a cardiologistas $5.000 mensais para servir como codiretores de sua nova linha de serviços cardiovasculares. Os cardiologistas fornecerão supervisão administrativa, revisão de qualidade e planejamento estratégico. Eles são fontes significativas de referências para cateterismos cardíacos e outros serviços hospitalares. O CFE do hospital é solicitado a avaliar se este arranjo cumpre com o Anti-Kickback Statute. Qual elemento é mais crítico para estabelecer proteção de safe harbor?",
+      "tag": "safe_harbor_personal_services_arrangements",
+      "options": [
+        "A. A compensação deve ser estabelecida antecipadamente em valor justo de mercado pelos serviços reais prestados, determinada sem considerar o volume ou valor de referências, e os serviços devem ser comercialmente razoáveis e realmente necessários",
+        "B. O arranjo deve ser divulgado a todos os pacientes que são referidos pelos cardiologistas para que os pacientes possam tomar decisões informadas sobre seus cuidados",
+        "C. A compensação deve ser menor que o valor agregado das referências geradas pelos cardiologistas para garantir nenhum benefício financeiro líquido do arranjo",
+        "D. O hospital deve demonstrar que os padrões de referência dos cardiologistas não mudam após entrar no arranjo comparado à sua linha de base histórica"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O safe harbor de serviços pessoais e contratos de gestão sob o Anti-Kickback Statute (42 CFR 1001.952(d)) requer vários elementos críticos: a compensação deve ser estabelecida antecipadamente, consistente com valor justo de mercado (FMV), não determinada de maneira que leve em conta o volume ou valor de referências, e os serviços devem ser comercialmente razoáveis e realmente necessários. O FMV deve ser determinado através de meios objetivos (avaliação independente) e deve refletir o que seria pago em uma transação em condições normais de mercado pelos mesmos serviços sem considerar volume de referências. Isso protege contra pagamentos disfarçados por referências. Todos os elementos do safe harbor devem ser atendidos para proteção; conformidade substancial é insuficiente.",
+      "justification_wrong": "A opção B não é um requisito do safe harbor de serviços pessoais; embora transparência possa ser eticamente desejável, divulgação ao paciente não é um elemento de proteção de safe harbor do Anti-Kickback Statute para arranjos de compensação. A opção C declara incorretamente o padrão; compensação de valor justo de mercado é permitida mesmo se igualar ou exceder valor de referências, desde que reflita serviços legítimos e não seja calculada com base em referências. O safe harbor não requer que a compensação seja menor que o valor de referências. A opção D não é um requisito de safe harbor; padrões de referência podem legitimamente mudar devido a melhoria de qualidade ou integração clínica; o fundamental é que a compensação não seja determinada por ou vinculada ao volume ou valor de referências."
+    },
+    {
+      "num": 19,
+      "text": "Um CFE analisando reclamações do Medicare Parte B para uma empresa de ambulância descobre que 73% dos transportes são faturados usando códigos ALS-1 Emergency (suporte avançado de vida), enquanto pares regionais têm média de 28% ALS-1 Emergency. A empresa transporta predominantemente pacientes de diálise e residentes de casas de repouso para consultas de rotina. A revisão de prontuários de 50 transportes codificados como ALS-1 Emergency mostra documentação de sinais vitais estáveis, transportes de rotina e nenhuma intervenção de emergência. Que esquema de fraude é mais claramente indicado?",
+      "tag": "ambulance_upcoding_emergency_transport",
+      "options": [
+        "A. Upcoding de transportes de rotina não emergenciais para códigos de suporte avançado de vida de emergência para obter taxas de reembolso mais altas do Medicare",
+        "B. Faturamento de transportes de ambulância medicamente desnecessários quando os pacientes poderiam ter usado métodos de transporte alternativos",
+        "C. Unbundling de serviços de ambulância ao faturar separadamente por suporte básico de vida e intervenções avançadas fornecidas durante o mesmo transporte",
+        "D. Violação do Anti-Kickback Statute ao fornecer transporte gratuito ou abaixo do custo para instalações de diálise em troca de referências de pacientes"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A evidência indica claramente upcoding: faturamento de códigos de serviço de nível superior (ALS-1 Emergency) por serviços que deveriam ser faturados em níveis inferiores (BLS não emergencial ou agendado). O Medicare paga significativamente mais por transportes ALS de emergência do que por transportes de suporte básico de vida de rotina. Os códigos ALS-1 Emergency requerem avaliação e tratamento por pessoal ALS e resposta de emergência, não meramente transporte de pacientes que por acaso requerem capacidade de nível ALS. A documentação clínica mostrando sinais vitais estáveis, transportes agendados de rotina e ausência de intervenções de emergência contradiz diretamente o faturamento ALS-1 Emergency. A variação dramática das normas de pares (73% vs. 28%) combinada com a população atendida (diálise, casa de repouso) indica upcoding sistemático de transportes de rotina.",
+      "justification_wrong": "A opção B aborda a necessidade médica de qualquer transporte de ambulância, mas os fatos indicam que os transportes ocorreram e podem ter sido medicamente necessários; a fraude está no nível de serviço faturado, não em se o transporte de ambulância era necessário. A opção C descreve unbundling, mas não há indicação de faturamento separado para componentes; a questão é faturar um código de nível superior para todo o transporte. A opção D aborda um esquema de fraude diferente; embora empresas de ambulância possam violar o Anti-Kickback Statute através de arranjos de referência, os fatos apresentados indicam uma fraude de faturamento (upcoding) em vez de um esquema de remuneração ilegal."
+    },
+    {
+      "num": 20,
+      "text": "Um hospital descobre que seu departamento de faturamento tem submetido reclamações do Medicare sem reportar saldos credores conhecidos de pagamentos excessivos anteriores. O hospital identificou $380.000 em pagamentos excessivos quatorze meses atrás, mas continuou submetendo novas reclamações sem compensar ou reportar esses valores, efetivamente retendo dinheiro que sabia que não tinha direito. O CFE está avaliando potencial responsabilidade sob o False Claims Act. Qual teoria de responsabilidade se aplica mais diretamente?",
+      "tag": "reverse_false_claims_overpayment_retention",
+      "options": [
+        "A. Responsabilidade por reverse false claims sob 31 USC 3729(a)(1)(G) por conscientemente ocultar ou evitar uma obrigação de pagar ou transmitir dinheiro ao governo",
+        "B. Responsabilidade tradicional por false claims sob 31 USC 3729(a)(1)(A) por conscientemente apresentar reclamações falsas porque as novas reclamações foram contaminadas pelo saldo credor não reportado",
+        "C. Conspiração para fraudar o governo sob 31 USC 3729(a)(1)(C) porque múltiplos funcionários do departamento de faturamento estavam cientes dos pagamentos excessivos",
+        "D. Causar apresentação de reclamações falsas sob 31 USC 3729(a)(1)(B) porque o software de faturamento causou a submissão de reclamações falsas ao Medicare"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A disposição de reverse false claims do False Claims Act (31 USC 3729(a)(1)(G)) cria responsabilidade por conscientemente ocultar ou conscientemente e impropriamente evitar ou diminuir uma obrigação de pagar ou transmitir dinheiro ou propriedade ao governo. A regra de pagamento excessivo de 60 dias (42 USC 1320a-7k(d)) cria uma obrigação de reportar e devolver pagamentos excessivos identificados dentro de 60 dias. Ao identificar pagamentos excessivos mas falhar em reportá-los e devolvê-los, o hospital conscientemente reteve dinheiro que era obrigado a devolver. Após o prazo de 60 dias, pagamentos excessivos retidos tornam-se 'obrigações' sob o False Claims Act. Esta teoria tem sido usada com sucesso em casos envolvendo retenção de pagamentos excessivos conhecidos.",
+      "justification_wrong": "A opção B não se adequa aos fatos porque as novas reclamações em si podem ser reclamações legítimas por serviços realmente fornecidos; a fraude está na retenção de pagamentos excessivos anteriores, não na submissão de novas reclamações. A opção C aplica incorretamente a disposição de conspiração, que requer um acordo para obter pagamento ou aprovação de reclamações falsas; consciência de pagamentos excessivos entre a equipe não constitui conspiração, e a violação primária aqui é retenção, não conspiração. A opção D é inaplicável porque não há indicação de que o software de faturamento causou reclamações falsas; as reclamações podem ter sido precisas, e a questão é a obrigação separada de reportar e devolver pagamentos excessivos conhecidos, não um problema com as reclamações em si."
+    },
+    {
+      "num": 21,
+      "text": "Um CFE está investigando alegações de que um fabricante farmacêutico forneceu software de gestão de consultório e sistemas de registros eletrônicos de saúde gratuitos avaliados em $40.000 por médico para oncologistas que prescrevem as drogas de quimioterapia da empresa. O software inclui protocolos de tratamento que têm como padrão os produtos do fabricante. O fabricante caracteriza isso como um programa de bolsas educacionais. Qual estatuto é mais diretamente violado por este arranjo?",
+      "tag": "pharma_kickbacks_remuneration_prescribers",
+      "options": [
+        "A. O Anti-Kickback Statute (42 USC 1320a-7b) porque fornecer itens valiosos a médicos que prescrevem drogas reembolsadas federalmente constitui remuneração ilegal destinada a induzir referências ou compras",
+        "B. O Stark Law porque os médicos têm uma relação financeira com o fabricante e estão referindo pacientes para serviços de saúde designados",
+        "C. O False Claims Act porque o software faz com que os médicos submetam reclamações falsas ao Medicare por drogas de quimioterapia que são medicamente desnecessárias",
+        "D. O Food Drug and Cosmetic Act porque fabricantes farmacêuticos são proibidos de comercializar drogas de prescrição diretamente aos médicos"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O Anti-Kickback Statute (42 USC 1320a-7b(b)) proíbe conscientemente e deliberadamente oferecer ou pagar qualquer remuneração para induzir referências ou compras de itens ou serviços cobertos por programas federais de saúde. 'Remuneração' inclui qualquer coisa de valor, incluindo bens ou serviços gratuitos como software de gestão de consultório. Fornecer $40.000 em software gratuito para médicos que prescrevem as drogas da empresa constitui remuneração. A intenção de induzir prescrição é evidenciada pelo direcionamento a prescritores e incorporação de protocolos que têm como padrão os produtos do fabricante. Este é um esquema clássico de kickback farmacêutico. A caracterização como 'bolsa educacional' é legalmente insuficiente; a substância do arranjo controla, e fornecer itens valiosos para influenciar prescrição viola o Anti-Kickback Statute.",
+      "justification_wrong": "A opção B está incorreta porque o Stark Law se aplica a auto-referência de médicos para serviços de saúde designados (como imagem, laboratório, DME), não à prescrição farmacêutica; médicos prescrevendo medicamentos não estão fazendo 'referências' dentro do significado do Stark Law. A opção C identifica incorretamente a violação primária; embora violações do Anti-Kickback Statute possam fornecer a base para responsabilidade sob o False Claims Act (teoria de certificação falsa), a violação direta é o kickback em si, e não há evidência de que as drogas são medicamente desnecessárias. A opção D representa incorretamente a lei; fabricantes farmacêuticos podem legalmente comercializar para médicos sujeito a regulamentações da FDA; a violação aqui é fornecer itens de valor como induzimentos (kickbacks), não atividades legais de marketing ou detalhamento."
+    },
+    {
+      "num": 22,
+      "text": "Um CFE está analisando dados de reclamações para beneficiários com dupla elegibilidade (Medicare e Medicaid). A investigação revela que um fornecedor de equipamento médico faturou o Medicare por cadeiras de rodas motorizadas e simultaneamente faturou o Medicaid pelos valores de compartilhamento de custos do paciente (franquias e cosseguro). Para os mesmos pacientes, registros do Medicaid mostram cobertura total do Medicaid sem obrigações de compartilhamento de custos do paciente. O fornecedor coletou $340.000 do Medicaid por compartilhamento de custos que os pacientes nunca deviam. Que esquema de fraude é indicado?",
+      "tag": "coordination_benefits_dual_eligible_fraud",
+      "options": [
+        "A. Fraude de coordenação de benefícios ao faturar o Medicaid por obrigações de compartilhamento de custos que não existem porque o Medicaid é o pagador de último recurso e cobre compartilhamento de custos para beneficiários com dupla elegibilidade",
+        "B. Fraude de faturamento duplicado ao submeter reclamações tanto ao Medicare quanto ao Medicaid pelo mesmo equipamento médico durável sem coordenação apropriada",
+        "C. Fraude de unbundling ao faturar separadamente por componentes que deveriam estar incluídos na taxa de reembolso da cadeira de rodas do Medicare",
+        "D. Fraude de induzimento de beneficiário ao dispensar obrigações de compartilhamento de custos do paciente em violação do Anti-Kickback Statute para atrair pacientes do Medicare"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Esta é fraude de coordenação de benefícios (COB) específica para beneficiários com dupla elegibilidade. Para indivíduos com Medicare e Medicaid (dupla elegibilidade), o Medicaid tipicamente cobre valores de compartilhamento de custos do Medicare (franquias, cosseguro) quando o Medicaid é o pagador secundário. Crucialmente, quando o Medicaid cobre esses valores, não há obrigação do paciente—o beneficiário não deve nada. Ao faturar o Medicaid por valores de compartilhamento de custos para pacientes cuja cobertura do Medicaid inclui compartilhamento de custos, o fornecedor obteve pagamento por valores que nunca foram devidos. Isso constitui reclamações falsas ao Medicaid porque o fornecedor certificou que havia uma obrigação do paciente quando nenhuma existia. Os $340.000 representam pagamentos por obrigações de compartilhamento de custos inexistentes.",
+      "justification_wrong": "A opção B está incorreta porque faturar ambos os programas é legítimo para dupla elegibilidade quando adequadamente coordenado (Medicare primário, Medicaid secundário para compartilhamento de custos); a fraude está em faturar por compartilhamento de custos que os pacientes não deviam, não em faturar ambos os programas. A opção C não se adequa aos fatos; não há indicação de que componentes da cadeira de rodas foram unbundled, e a fraude envolve o faturamento de compartilhamento de custos ao Medicaid, não a estrutura de faturamento do equipamento. A opção D inverte a situação; o fornecedor não dispensou compartilhamento de custos (o que poderia violar o Anti-Kickback Statute em alguns contextos), mas sim fraudulentamente faturou o Medicaid por compartilhamento de custos que os beneficiários nunca deviam porque sua cobertura do Medicaid incluía compartilhamento de custos."
+    },
+    {
+      "num": 23,
+      "text": "Um CFE é contratado por um sistema de saúde para priorizar áreas de risco de fraude para o próximo ano. O diretor de compliance fornece uma cópia do atual Office of Inspector General (OIG) Work Plan e pede ao CFE para identificar quais áreas justificam atenção imediata de auditoria interna com base nas prioridades de fiscalização do OIG. O que o CFE deve fazer primeiro?",
+      "tag": "oig_work_plan_application",
+      "options": [
+        "A. Revisar o Work Plan para identificar áreas onde o sistema de saúde possui operações que correspondam às prioridades declaradas de auditoria e investigação do OIG para o ano fiscal atual",
+        "B. Realizar entrevistas com todos os chefes de departamento para determinar quais áreas eles acreditam apresentar o maior risco de compliance, independentemente das prioridades do OIG",
+        "C. Implementar imediatamente análise de dados em todos os códigos de faturamento para identificar valores atípicos estatísticos em todo o ciclo de receita",
+        "D. Solicitar acordos históricos de liquidação do OIG envolvendo sistemas de saúde semelhantes para determinar quais esquemas de fraude resultaram nas maiores penalidades"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O OIG Work Plan é publicado anualmente e identifica áreas específicas que o OIG pretende auditar e investigar, representando prioridades atuais de fiscalização. Um CFE deve primeiro comparar as operações da organização com essas prioridades declaradas para identificar áreas relevantes de alto risco. Esta abordagem direcionada permite alocação eficiente de recursos de compliance para áreas sob fiscalização federal ativa, tornando-a o primeiro passo mais estratégico no planejamento de auditoria baseado em risco.",
+      "justification_wrong": "A opção B ignora a valiosa inteligência fornecida pelo OIG Work Plan, que reflete prioridades reais de fiscalização em vez de percepções internas subjetivas. A opção C é prematura e ineficiente sem primeiro identificar quais áreas específicas justificam escrutínio com base nas prioridades do OIG. A opção D foca em penalidades históricas em vez de prioridades atuais de fiscalização delineadas no Work Plan, e valores de acordos não necessariamente correlacionam com áreas de foco atual do OIG."
+    },
+    {
+      "num": 24,
+      "text": "Um CFE está investigando um psiquiatra que faturou ao Medicare por 18 sessões individuais de psicoterapia por dia, todos os dias úteis durante seis meses. Os registros médicos mostram consultas agendadas em blocos de 30 minutos das 8h às 18h com documentação mínima. Vários pacientes, quando entrevistados, relatam que participaram de sessões de terapia em grupo, não sessões individuais. Qual esquema de fraude está mais provavelmente ocorrendo?",
+      "tag": "mental_health_billing_fraud",
+      "options": [
+        "A. Upcoding ao faturar códigos de psicoterapia individual (90834) quando psicoterapia em grupo (90853) foi realmente fornecida para maximizar o reembolso",
+        "B. Faturamento fantasma por serviços não prestados a pacientes fantasmas que nunca foram atendidos pelo psiquiatra",
+        "C. Unbundling ao faturar separadamente códigos de psicoterapia e avaliação que deveriam ser reportados juntos sob um único código abrangente",
+        "D. Faturamento de serviços medicamente desnecessários ao fornecer psicoterapia a pacientes que não atendiam aos critérios clínicos para tratamento"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A evidência indica que o psiquiatra conduziu sessões de terapia em grupo mas as faturou como sessões de psicoterapia individual com reembolso mais alto. Códigos de psicoterapia individual (como 90834) pagam significativamente mais que códigos de psicoterapia em grupo (como 90853). Entrevistas com pacientes confirmando participação em grupo, combinadas com o padrão de agendamento e documentação mínima, indicam fortemente upcoding—faturar um código de serviço de nível mais alto do que o que foi realmente fornecido. Este é um esquema comum de fraude em saúde mental porque o diferencial de reembolso é substancial.",
+      "justification_wrong": "A opção B está incorreta porque pacientes confirmaram que realmente compareceram às sessões, eliminando faturamento fantasma. A opção C está incorreta porque não há indicação de faturamento separado para serviços que deveriam ser agrupados; a questão é a deturpação do tipo de serviço (grupo vs. individual). A opção D está incorreta porque não há evidência quanto a se os pacientes atendiam aos critérios clínicos; a fraude envolve deturpar o tipo de serviço fornecido, não sua necessidade."
+    },
+    {
+      "num": 25,
+      "text": "Durante verificação de inscrição para novos provedores Medicare, um CFE descobre que um médico submeteu uma solicitação alegando certificação de especialidade em cardiologia e listando privilégios hospitalares em três instalações. Quando o CFE contata o American Board of Internal Cardiology, nenhum registro existe para este médico. O National Practitioner Data Bank mostra dois julgamentos por má prática sob um nome semelhante com uma inicial do meio diferente. O que o CFE deve fazer a seguir?",
+      "tag": "fraudulent_credentialing_investigation",
+      "options": [
+        "A. Verificar a licença médica do médico junto ao conselho médico estadual, confirmar identidade através de verificação de fonte primária e checar se os privilégios hospitalares são autênticos",
+        "B. Notificar imediatamente as autoridades policiais e recomendar negação da solicitação de inscrição no Medicare com base na alegação falsa de certificação de especialidade",
+        "C. Presumir que o nome semelhante no National Practitioner Data Bank refere-se a um indivíduo diferente e prosseguir com a inscrição pendente esclarecimento da certificação de especialidade",
+        "D. Contatar os três hospitais para determinar se o médico tem privilégios de internação e usar essa confirmação como verificação suficiente de credenciais"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Verificação de fonte primária é o padrão para investigações de credenciamento. O CFE deve verificar sistematicamente as credenciais diretamente com fontes autorizadas: o conselho médico estadual para licenciamento, os hospitais para privilégios, e resolver a questão de identidade dados os achados do National Practitioner Data Bank. Múltiplas bandeiras vermelhas (certificação de especialidade falsa, discrepâncias de nome, histórico de má prática) requerem verificação completa antes de fazer recomendações. Esta abordagem metódica garante identificação precisa e previne tanto a inscrição de provedores fraudulentos quanto a negação equivocada de candidatos legítimos.",
+      "justification_wrong": "A opção B é prematura sem completar a verificação; embora a certificação falsa seja séria, o CFE deve confirmar identidade e outras credenciais antes de fazer recomendações finais. A opção C é negligente porque variações de nome com histórico de má prática requerem verificação definitiva de identidade, especialmente combinadas com a alegação falsa de certificação de especialidade. A opção D é insuficiente porque privilégios hospitalares isoladamente não verificam licenciamento médico, certificação de especialidade ou identidade, e hospitais podem ter sido enganados pelas mesmas credenciais fraudulentas."
+    },
+    {
+      "num": 26,
+      "text": "Um CFE revisando registros médicos para uma investigação de fraude do Medicare descobre que um cirurgião ortopédico realizou e faturou 45 procedimentos de artroscopia de joelho em um período de três meses. A documentação para cada procedimento indica 'dor no joelho' como indicação, com notas operatórias mostrando artroscopia diagnóstica de rotina sem achados significativos ou intervenção terapêutica em 40 dos 45 casos. Em qual elemento de fraude o CFE deve focar?",
+      "tag": "medical_necessity_standard_application",
+      "options": [
+        "A. Necessidade médica, porque o Medicare só cobre serviços que são razoáveis e necessários para diagnóstico ou tratamento, e artroscopia diagnóstica sem propósito terapêutico pode não atender a este padrão",
+        "B. Upcoding, porque o cirurgião provavelmente faturou por procedimentos terapêuticos de artroscopia quando apenas exames diagnósticos foram realizados",
+        "C. Unbundling, porque o cirurgião deveria ter faturado um código abrangente que inclui tanto os componentes diagnósticos quanto terapêuticos juntos",
+        "D. Violações de kickback, porque o alto volume de procedimentos desnecessários sugere que o cirurgião recebeu remuneração ilegal por encaminhamentos de pacientes"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Necessidade médica é um requisito fundamental de cobertura do Medicare sob 42 USC 1395y(a)(1)(A). Os serviços devem ser razoáveis e necessários para diagnóstico ou tratamento de doença ou lesão. Realizar artroscopia diagnóstica invasiva quando métodos diagnósticos menos invasivos (ressonância magnética, raio-X, exame físico) seriam suficientes, e não encontrar nada significativo em 89% dos casos, sugere procedimentos que podem não atender ao padrão de necessidade médica. O padrão de procedimentos de rotina com achados mínimos e sem benefício terapêutico é um indicador clássico de fraude de necessidade médica.",
+      "justification_wrong": "A opção B está incorreta porque as notas operatórias descrevem com precisão o que foi feito (artroscopia diagnóstica); não há evidência de que o cirurgião faturou por procedimentos terapêuticos mais complexos do que os realizados. A opção C está incorreta porque não há indicação de faturamento separado para componentes que deveriam ser agrupados; a questão é se os procedimentos deveriam ter sido realizados. A opção D não é suportada pelos fatos; alto volume de procedimentos potencialmente desnecessários isoladamente não indica kickbacks, que requerem evidência de remuneração ilegal por encaminhamentos."
+    },
+    {
+      "num": 27,
+      "text": "Um CFE está investigando um provedor de hospice cujo faturamento ao Medicare aumentou 300% em dois anos. Revisão de registros médicos de 50 pacientes revela que 32 pacientes tinham diagnósticos de câncer mas exames de imagem recentes mostrando condições estáveis ou melhoradas, 18 pacientes permaneceram em serviço por mais de dois anos, e 12 pacientes receberam alta para hospitais para tratamento curativo e depois foram re-inscritos no hospice. Qual é o principal esquema de fraude indicado?",
+      "tag": "hospice_fraud_ineligible_patients",
+      "options": [
+        "A. Faturamento por pacientes que não atendem aos requisitos de elegibilidade para hospice, especificamente a certificação de que pacientes têm expectativa de vida de seis meses ou menos se a doença seguir seu curso normal",
+        "B. Faturamento fantasma ao reivindicar serviços para pacientes que não estavam realmente recebendo cuidados de hospice nas instalações listadas nas reivindicações",
+        "C. Upcoding ao faturar níveis mais altos de cuidados de hospice do que eram medicamente necessários com base na acuidade do paciente e intensidade do serviço",
+        "D. Unbundling ao faturar separadamente por serviços que deveriam estar incluídos na taxa diária abrangente de hospice"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O benefício Medicare de hospice requer certificação de que pacientes têm doença terminal com expectativa de vida de seis meses ou menos se a doença seguir seu curso normal (42 CFR 418.22). A evidência mostra inscrição sistemática de pacientes inelegíveis: aqueles com condições estáveis/melhorando, períodos de permanência extremamente longos (mais de 2 anos), e pacientes buscando tratamento curativo (contradizendo o foco paliativo do hospice). Esses padrões indicam que o hospice está inscrevendo e faturando por pacientes que não atendem ao critério fundamental de elegibilidade, que é o esquema central de fraude impulsionando o aumento de faturamento.",
+      "justification_wrong": "A opção B está incorreta porque não há evidência de que pacientes eram inexistentes ou não estavam recebendo serviços; a questão é sua elegibilidade para hospice, não se os serviços ocorreram. A opção C está incorreta porque hospice tem quatro níveis de cuidado, mas a evidência não sugere faturamento por níveis de acuidade mais altos do que fornecidos; em vez disso, indica que pacientes não deveriam estar em hospice. A opção D está incorreta porque a questão não é faturamento separado inadequado por serviços incluídos, mas sim faturamento por pacientes inelegíveis."
+    },
+    {
+      "num": 28,
+      "text": "Após a emergência de saúde pública da COVID-19, um CFE está revisando o faturamento de telemedicina por um grupo médico multiestadual. A análise revela que um médico faturou o Medicare por 85 consultas de telemedicina em um único dia, com tempos de sessão documentados como 45-60 minutos cada. Os registros da plataforma de vídeo mostram tempo total de login de 6,5 horas naquele dia, com durações de sessões individuais com média de 8-12 minutos. Qual esquema de fraude é mais evidente?",
+      "tag": "telemedicine_fraud_detection",
+      "options": [
+        "A. Upcoding ao faturar códigos de avaliação e gestão de nível mais alto que exigem maior tempo ou complexidade do que os encontros de telemedicina reais justificavam",
+        "B. Unbundling ao faturar consultas de telemedicina e serviços de monitoramento remoto separadamente quando deveriam ser reportados sob um único código",
+        "C. Faturamento por serviços não prestados porque o médico não poderia ter fornecido 85 sessões de 45-60 minutos em um período de 6,5 horas",
+        "D. Violações da Stark Law ao faturar serviços de telemedicina prestados a pacientes encaminhados por médicos que têm relações financeiras com o grupo médico"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "A codificação de avaliação e gestão (E/M) baseada em tempo requer que o tempo documentado reflita razoavelmente a duração real do encontro. O médico documentou 45-60 minutos por consulta (sugerindo códigos como 99215 ou 99205), mas os registros da plataforma comprovam que as sessões duraram em média apenas 8-12 minutos. Isto é upcoding—faturar códigos de nível mais alto do que justificado pelo serviço prestado. A impossibilidade matemática (85 × 45 minutos = 3.825 minutos vs. 390 minutos reais) combinada com a verificação da plataforma torna isto claramente upcoding em vez de fabricação completa de serviços.",
+      "justification_wrong": "A opção C é tecnicamente imprecisa porque os serviços foram realmente prestados (os registros da plataforma confirmam 6,5 horas de sessões); a fraude está em deturpar seu nível/duração, não em fabricação completa. Embora grave, isto é upcoding em vez de faturamento fantasma. A opção B não tem suporte porque não há evidência de faturamento separado para serviços que deveriam ser agrupados. A opção D não tem suporte nos fatos; não há informação sobre relações financeiras de médicos ou padrões de encaminhamento, e a evidência aponta claramente para upcoding baseado em fraude na documentação de tempo."
+    },
+    {
+      "num": 29,
+      "text": "Um CFE está conduzindo due diligence de conformidade para um hospital que está adquirindo um consultório médico. Durante a triagem de fornecedores, o CFE descobre que um dos médicos part-time do consultório aparece na OIG List of Excluded Individuals and Entities (LEIE) devido a uma condenação há três anos. O consultório tem faturado o Medicare por serviços prestados por este médico. Quais são as implicações?",
+      "tag": "exclusion_screening_requirements",
+      "options": [
+        "A. O consultório submeteu reivindicações falsas ao Medicare porque indivíduos excluídos não podem participar de programas federais de saúde, e quaisquer reivindicações por seus serviços não são pagáveis, potencialmente acionando responsabilidade sob o False Claims Act",
+        "B. A exclusão apenas impede o médico individual de faturar diretamente o Medicare, mas não afeta a capacidade do consultório de faturar por serviços que o médico prestou sob o NPI do grupo",
+        "C. O hospital pode remediar a violação ao demitir imediatamente o médico e implementar triagem prospectiva, sem responsabilidade por reivindicações passadas se a demissão ocorrer antes do fechamento da aquisição",
+        "D. O consultório deve reembolsar apenas o componente profissional das reivindicações enquanto retém as taxas da instalação porque os serviços foram realmente prestados aos pacientes"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "Sob 42 USC 1320a-7(a), indivíduos excluídos não podem participar de programas federais de saúde em qualquer capacidade. Nenhum pagamento de programa federal de saúde pode ser feito por qualquer item ou serviço fornecido por um indivíduo excluído, independentemente de ser faturado sob o NPI do indivíduo ou o NPI do grupo. Faturar por serviços prestados por indivíduos excluídos constitui submissão de reivindicações falsas, expondo o consultório à responsabilidade sob o False Claims Act (danos triplos mais penalidades por reivindicação). É por isso que a triagem mensal da LEIE é uma função crítica de conformidade.",
+      "justification_wrong": "A opção B não compreende o escopo da exclusão; indivíduos excluídos não podem participar em qualquer capacidade, e faturar sob um NPI de grupo não contorna a proibição. A opção C está incorreta porque a responsabilidade do False Claims Act se aplica quando reivindicações falsas foram submetidas; ação corretiva prospectiva não elimina responsabilidade passada, embora possa ser considerada mitigação. O hospital adquirente também enfrenta potencial responsabilidade. A opção D está incorreta porque a reivindicação inteira (tanto componentes profissionais quanto da instalação) não é pagável quando fornecida por um indivíduo excluído; não há provisão para pagamento parcial."
+    },
+    {
+      "num": 30,
+      "text": "Um CFE investigando uma casa de repouso descobre que a instalação faturou o Medicare Part A por 95% dos residentes na classificação de case-mix mais alta (categoria RUG) para enfermagem especializada, indicando necessidades máximas de cuidado. Os registros de pessoal mostram proporções enfermeiro-paciente abaixo dos mínimos estaduais, e entrevistas com pacientes liberados revelam que muitos eram ambulatoriais e requeriam assistência mínima. Qual esquema de fraude é mais provável estar presente?",
+      "tag": "nursing_home_fraud_schemes",
+      "options": [
+        "A. Upcoding ao inflar classificações de acuidade do paciente para faturar taxas de Resource Utilization Group mais altas do que justificado pelas necessidades reais de cuidado e serviços prestados",
+        "B. Faturamento por serviços não prestados porque os níveis inadequados de pessoal tornaram impossível fornecer os serviços intensivos que foram faturados",
+        "C. Violações de kickback porque as altas taxas de faturamento sugerem que a instalação pagou remuneração ilegal a hospitais por encaminhamentos de pacientes",
+        "D. Unbundling ao faturar separadamente o Medicare por serviços de enfermagem e serviços auxiliares que deveriam estar incluídos na taxa per diem da instalação de enfermagem especializada"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O Medicare Part A paga instalações de enfermagem especializada sob o sistema RUG (Resource Utilization Group), onde as taxas de reembolso são baseadas na acuidade do paciente e necessidades de cuidado avaliadas através do MDS (Minimum Data Set). Quando 95% dos residentes são classificados no nível de acuidade mais alto apesar de evidências de que eram ambulatoriais com necessidades mínimas, isto indica upcoding sistemático—falsificar ou exagerar avaliações de pacientes para justificar categorias RUG e reembolso mais altos. Este é um dos esquemas de fraude mais comuns em casas de repouso e uma preocupação persistente do OIG.",
+      "justification_wrong": "A opção B, embora a falta de pessoal seja problemática e possa constituir questões de qualidade de cuidado, a fraude primária é a deturpação da acuidade do paciente para fins de faturamento (upcoding), não ausência completa de serviços. A opção C não tem suporte nos fatos; altas taxas de faturamento sozinhas não indicam kickbacks, que requerem evidência de remuneração ilegal. A evidência aponta para manipulação de RUG, não pagamentos por encaminhamento. A opção D está incorreta porque SNF Part A usa uma taxa per diem abrangente; a questão não é unbundling mas sim inflar a classificação de case-mix que determina a taxa per diem."
+    },
+    {
+      "num": 31,
+      "text": "Um CFE analisando padrões de faturamento em um centro cirúrgico ambulatorial nota que um gastroenterologista realizou colonoscopias em 22 pacientes em um único dia. Para 19 desses pacientes, as reivindicações incluem tanto um código de colonoscopia de triagem quanto um código de colonoscopia diagnóstica com polipectomia. A revisão de prontuários mostra que biópsias ou remoções de pólipos ocorreram em todos os 19 casos. O que o CFE deve investigar?",
+      "tag": "outpatient_surgical_center_fraud",
+      "options": [
+        "A. Unbundling, porque quando uma colonoscopia de triagem se torna diagnóstica devido a achados durante o procedimento, apenas o código diagnóstico com modificadores apropriados deve ser faturado, não ambos separadamente",
+        "B. Upcoding, porque o médico faturou por procedimentos complexos de polipectomia quando apenas biópsias simples foram realizadas durante triagens de rotina",
+        "C. Faturamento por serviços medicamente desnecessários porque realizar biópsias ou remover pólipos em 86% dos casos de triagem sugere que o médico está criando achados falsos",
+        "D. Faturamento fantasma, porque faturar tanto códigos de triagem quanto diagnósticos para o mesmo encontro indica faturamento duplicado por um único procedimento"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O Medicare e outros pagadores têm regras específicas para codificação de colonoscopia: quando uma colonoscopia de triagem resulta em achados que requerem intervenção diagnóstica (biópsia, polipectomia), a reivindicação deve refletir apenas o código de procedimento diagnóstico com modificador PT (se aplicável) para indicar que começou como triagem. Faturar tanto um código de triagem quanto um código diagnóstico separado para a mesma sessão de colonoscopia é unbundling—faturar separadamente componentes que devem ser reportados sob um único código abrangente. Este é um esquema de fraude comum em centros de endoscopia porque resulta em pagamento duplicado por um único procedimento.",
+      "justification_wrong": "A opção B está incorreta porque não há evidência de que os procedimentos foram deturpados como mais complexos do que realizados; a questão é faturar tanto códigos de triagem quanto diagnósticos por um procedimento. A opção C é infundada; encontrar pólipos ou anormalidades em 86% dos casos, embora alto, não é inerentemente impossível ou indicativo de fabricação sem evidência adicional como análise de relatório de patologia. A opção D caracteriza incorretamente o esquema; isto é unbundling (separar serviços agrupados), não faturamento fantasma (faturar por serviços ou encontros inexistentes)."
+    },
+    {
+      "num": 32,
+      "text": "Um oficial de conformidade hospitalar contata um CFE porque uma enfermeira relatou que médicos estão rotineiramente faturando por procedimentos que residentes realmente realizaram sem a presença do médico responsável. A enfermeira quer reportar isto às autoridades, mas teme retaliação e demissão. O que o CFE deve aconselhar quanto às proteções legais da enfermeira?",
+      "tag": "whistleblower_protections_healthcare",
+      "options": [
+        "A. A enfermeira está protegida sob as disposições anti-retaliação do False Claims Act (31 USC 3730(h)), que proíbem demissão ou discriminação contra funcionários que reportam suspeita de fraude contra programas federais de saúde",
+        "B. A enfermeira não tem proteção legal a menos que primeiro reporte a conduta através de canais internos de conformidade e permita ao hospital 90 dias para investigar antes de contatar autoridades",
+        "C. Proteções de whistleblower só se aplicam se a enfermeira apresentar uma ação qui tam sob sigilo; relatos informais à aplicação da lei ou OIG não acionam proteções anti-retaliação",
+        "D. A enfermeira deve consultar recursos humanos do hospital para determinar se o manual do funcionário fornece proteção de whistleblower, pois a lei federal não cobre relatos internos de fraude"
+      ],
+      "correct": 0,
+      "difficulty": "STANDARD",
+      "justification_correct": "O False Claims Act fornece proteção robusta anti-retaliação sob 31 USC 3730(h) para funcionários que se envolvem em atos lícitos em promoção de uma ação FCA ou esforços para parar violações. Esta proteção se aplica a funcionários que reportam suspeita de fraude envolvendo programas governamentais (incluindo Medicare/Medicaid), seja através de apresentação qui tam, relato a autoridades, ou relato interno. Indivíduos protegidos que experimentam retaliação têm direito a reintegração, pagamento retroativo em dobro, e outras compensações. Esta é proteção crítica para whistleblowers de saúde que reportam fraude.",
+      "justification_wrong": "A opção B está incorreta porque a proteção anti-retaliação do FCA não requer esgotamento de remédios internos; funcionários são protegidos por reportar suspeita de fraude independentemente de usarem canais internos primeiro. A opção C está incorreta porque a proteção anti-retaliação se estende além de relators qui tam a qualquer funcionário que tome ação lícita para parar violações do FCA, incluindo relato a agências governamentais. A opção D está incorreta porque a lei federal (FCA, entre outras) fornece proteção de whistleblower para reportar fraude em saúde; a proteção não depende apenas de políticas do empregador."
+    },
+    {
+      "num": 33,
+      "text": "Um CFE está investigando um cirurgião de coluna que detém uma participação acionária de 35% em uma distribuidora de dispositivos médicos que vende implantes ortopédicos. A distribuidora compra implantes de fabricantes a preços de atacado padrão e os vende para hospitais onde o cirurgião realiza procedimentos. O cirurgião recebe distribuições proporcionais aos lucros gerais da empresa, não vinculadas ao seu uso individual de implantes. A distribuidora também vende para instalações onde o cirurgião não possui privilégios. O reembolso hospitalar vem do Medicare. Qual fator cria a exposição MAIS significativa ao Anti-Kickback Statute neste arranjo?",
+      "tag": "kickback_physician_owned_distributorship",
+      "options": [
+        "A. A participação acionária do cirurgião na distribuidora cria um incentivo financeiro para escolher instalações com base em relacionamentos de compra de implantes em vez do melhor interesse do paciente",
+        "B. A margem de lucro da distribuidora sobre o preço de atacado gera remuneração que retorna ao médico na proporção de sua participação acionária",
+        "C. O cirurgião recebe distribuições de lucro que se correlacionam com o volume de implantes vendidos, mesmo que não explicitamente vinculadas aos seus próprios procedimentos",
+        "D. O arranjo carece de divulgação adequada ao Medicare e aos pacientes sobre o relacionamento financeiro do cirurgião com o fornecedor de implantes"
+      ],
+      "correct": 0,
+      "difficulty": "HARD",
+      "justification_correct": "Sob o Anti-Kickback Statute (42 USC 1320a-7b), a preocupação principal é que a remuneração crie um incentivo para tomar decisões de referência ou compra baseadas em ganho financeiro em vez do melhor interesse do paciente. O elemento mais perigoso aqui é que a participação acionária do cirurgião pode influenciar onde ele realiza procedimentos (a seleção de instalação constitui uma decisão de referência) com base em quais hospitais compram de sua distribuidora. Isso cria um ciclo fechado onde o cirurgião direciona casos para instalações que compram implantes gerando seus lucros, constituindo um incentivo ilegal para referências. Mesmo com distribuições proporcionais e vendas para outras instalações, a estrutura incentiva decisões de referência baseadas em retorno financeiro em vez de adequação clínica.",
+      "justification_wrong": "A Opção B identifica o mecanismo de fluxo de lucro, mas perde a violação central—o AKS proíbe remuneração que induza referências, não meramente a geração de lucro em si. Muitos arranjos comerciais legais envolvem margens de lucro e retornos para investidores. A Opção C foca na correlação de volume, mas a preocupação do estatuto é se a remuneração induz referências, não se a compensação se correlaciona com volume per se (o estatuto não exige pagamentos explícitos por procedimento). A Opção D aborda divulgação, mas o AKS é violado pelo arranjo subjacente que induz referências independentemente de divulgação; transparência não cura um esquema ilegal de kickback, embora possa ser relevante para análise de intenção e safe harbor."
+    },
+    {
+      "num": 34,
+      "text": "Um grupo de prática ortopédica está analisando potenciais violações da Stark Law envolvendo a Dra. Martinez, que refere pacientes para serviços de ressonância magnética. A Dra. Martinez tem três relacionamentos financeiros: (1) ela possui 8% de participação acionária no grupo de prática, que possui o centro de ressonância como subsidiária integral; (2) ela recebe bônus de produtividade calculados sobre suas cobranças individuais, incluindo serviços de avaliação e gerenciamento; (3) ela participa de um plano de participação nos lucros que distribui as receitas líquidas do centro de ressonância igualmente entre todos os 12 médicos-proprietários. No ano passado, suas referências de ressonância representaram 31% do volume do centro. Qual relacionamento cria a MAIOR preocupação de proibição da Stark Law?",
+      "tag": "stark_law_multiple_financial_relationships",
+      "options": [
+        "A. O arranjo de participação nos lucros que distribui receitas de ressonância igualmente, porque sua compensação varia com o volume de suas próprias referências para o serviço de saúde designado",
+        "B. A participação acionária no grupo de prática, porque constitui uma participação acionária indireta na subsidiária de ressonância que recebe suas referências",
+        "C. O bônus de produtividade baseado em cobranças individuais, porque cria um incentivo financeiro direto para aumentar serviços de avaliação que levam a referências de ressonância",
+        "D. O volume desproporcional de referências de 31% comparado à sua participação igual de 8,33%, porque demonstra que o relacionamento financeiro está influenciando padrões de referência"
+      ],
+      "correct": 0,
+      "difficulty": "HARD",
+      "justification_correct": "Sob a Stark Law (42 USC 1395nn), um médico não pode referir pacientes do Medicare para serviços de saúde designados (DHS) a entidades com as quais ela tem um relacionamento financeiro, a menos que uma exceção se aplique. O arranjo de participação nos lucros diretamente vinculado às receitas de ressonância é mais problemático porque sua compensação varia com o volume ou valor de suas próprias referências—uma estrutura explicitamente proibida a menos que atenda requisitos específicos de exceção. Embora a distribuição igual entre todos os proprietários possa parecer neutra, quando combinada com seu volume significativo de referências (31%), suas decisões individuais de referência afetam diretamente sua compensação. Isso falha no teste de 'volume ou valor' que desqualifica a maioria das exceções de compensação. O arranjo não se qualifica para a exceção de serviços auxiliares no consultório porque a compensação se relaciona especificamente às receitas de DHS em vez dos lucros gerais da prática.",
+      "justification_wrong": "A Opção B identifica uma participação acionária, mas a exceção de serviços auxiliares no consultório normalmente protege a propriedade de entidades DHS por grupos de prática se outros requisitos forem atendidos; propriedade indireta através de um grupo de prática é menos problemática do que vínculos diretos de compensação. A Opção C descreve bônus de produtividade sobre serviços de E&M, que geralmente satisfazem exceções da Stark desde que os bônus não se relacionem a referências de DHS; compensação pelos próprios serviços do médico é permitida. A Opção D foca em padrões de referência como evidência, mas Stark é um estatuto de responsabilidade objetiva violado pela própria estrutura do relacionamento financeiro, não por provar que o relacionamento realmente influenciou decisões; volume desproporcional pode evidenciar uma violação mas não é em si a proibição legal—a fórmula de compensação é."
+    },
+    {
+      "num": 35,
+      "text": "Um CFE descobriu upcoding sistemático em uma rede hospitalar onde o Diretor Financeiro implementou um programa de 'otimização de receita' que reclassificou códigos de avaliação e gerenciamento para níveis de complexidade mais altos em 23% dos atendimentos do Medicare ao longo de três anos, gerando $14,7 milhões em reembolso adicional. O CFO contou com consultores de faturamento externos que forneceram árvores de decisão que uma documentação agressiva poderia suportar os códigos mais altos. Revisões de prontuários médicos mostram que a maioria das reivindicações com upcoding carece de necessidade médica para o nível mais alto, mas algumas documentações são ambíguas. O CFO não revisou pessoalmente reivindicações individuais. Sob o False Claims Act, qual é a exposição de responsabilidade MAIS significativa do CFO?",
+      "tag": "false_claims_act_executive_liability",
+      "options": [
+        "A. Responsabilidade por ignorância deliberada por implementar um sistema com riscos óbvios de reivindicações falsas enquanto conscientemente evitava confirmação da precisão do faturamento",
+        "B. Responsabilidade vicária como executivo corporativo responsável por subordinados que executaram o upcoding sob sua diretiva de otimização de receita",
+        "C. Responsabilidade por conspiração por contratar consultores de faturamento que forneceram as metodologias que possibilitaram o esquema sistemático de upcoding",
+        "D. Responsabilidade direta de apresentação por causar a submissão de reivindicações falsas específicas através do programa de otimização de receita que ela projetou"
+      ],
+      "correct": 0,
+      "difficulty": "HARD",
+      "justification_correct": "Sob o False Claims Act (31 USC 3729), a responsabilidade se estende além do conhecimento real para incluir ignorância deliberada e desrespeito imprudente à verdade ou falsidade. A exposição mais significativa do CFO é ignorância deliberada (evitação consciente): implementar um sistema que reclassificou sistematicamente 23% das reivindicações para códigos de maior pagamento, gerando milhões em receita adicional, enquanto confiava em consultores em vez de verificar necessidade médica cria uma forte inferência de evitar conscientemente o conhecimento da falsidade. O enquadramento de 'otimização de receita', alta porcentagem de reclassificação e falha em validar precisão apesar de sinais de alerta óbvios demonstram o padrão de ignorância deliberada. A Suprema Corte em Universal Health Services v. Escobar enfatizou que scienter pode ser provado através de cegueira deliberada, e executivos que projetam sistemas com alto risco de fraude enquanto deliberadamente evitam confirmação enfrentam responsabilidade substancial.",
+      "justification_wrong": "A Opção B declara erroneamente a responsabilidade do FCA—não há responsabilidade vicária pura para executivos corporativos; executivos devem ter o scienter necessário (conhecimento, ignorância deliberada ou desrespeito imprudente), não meramente responsabilidade de supervisão. A Opção C exagera a responsabilidade por conspiração; embora contratar consultores que fornecem metodologias agressivas de faturamento possa apoiar uma alegação de conspiração, a exposição primária do CFO flui de implementar o sistema ela mesma com ignorância deliberada, não meramente do relacionamento com consultores. A Opção D descreve responsabilidade direta de apresentação, mas isso requer causar submissão de reivindicações específicas sabidamente falsas; embora o programa do CFO tenha causado reivindicações falsas, sua responsabilidade individual é mais forte sob ignorância deliberada porque ela não revisou pessoalmente reivindicações individuais—ela criou um sistema enquanto evitava conhecimento de sua falsidade."
+    },
+    {
+      "num": 36,
+      "text": "Um oficial de compliance está avaliando práticas de codificação de um grupo de medicina de emergência. O grupo estabeleceu protocolos onde os médicos documentam todos os elementos de avaliação possíveis durante atendimentos de pacientes e faturam o código de E&M mais alto suportável com base na completude da documentação em vez da necessidade médica. Prontuários mostram consistentemente revisões abrangentes de sistemas e exames detalhados mesmo para queixas menores. Médicos recebem treinamento enfatizando documentação completa para 'apoiar reembolso apropriado'. O nível médio de E&M do grupo está no 92º percentil nacionalmente, e a necessidade médica justifica o nível faturado em aproximadamente 68% dos casos após revisão externa. Qual achado MELHOR distingue isso de upcoding fraudulento?",
+      "tag": "distinguishing_aggressive_billing_from_fraud",
+      "options": [
+        "A. Os protocolos enfatizam completude de documentação em vez de explicitamente direcionar médicos a faturar códigos mais altos independentemente da adequação clínica",
+        "B. O limiar de necessidade médica de 68% demonstra que a maioria dos códigos faturados são clinicamente justificados, mesmo que uma minoria significativa seja questionável",
+        "C. O grupo fornece treinamento formal sobre requisitos de documentação em vez de médicos desenvolverem independentemente padrões inflados de faturamento",
+        "D. A documentação genuinamente reflete serviços realizados, mesmo que esses serviços excedam a necessidade clínica para as queixas apresentadas"
+      ],
+      "correct": 3,
+      "difficulty": "HARD",
+      "justification_correct": "A distinção crítica entre faturamento agressivo e fraude centra-se em se as reivindicações são objetivamente falsas. Sob os requisitos de faturamento de saúde e padrões do False Claims Act, o código apropriado reflete tanto documentação quanto necessidade médica. No entanto, quando serviços são realmente realizados e genuinamente documentados—mesmo que excedendo necessidade clínica estrita—a reivindicação é mais defensável do que documentação fabricada ou faturamento por serviços não prestados. O fato de que a documentação 'genuinamente reflete serviços realizados' significa que médicos realmente conduziram os exames e revisões documentados, em vez de fabricar ou copiar documentação. Isso cria uma defesa mais forte contra alegações de fraude, embora ainda possa violar requisitos de necessidade médica e criar obrigações de pagamento indevido. A prática permanece problemática e pode constituir desperdício ou abuso, mas provar intenção fraudulenta é mais difícil quando serviços foram verdadeiramente prestados versus upcoding puro de serviços não realizados.",
+      "justification_wrong": "A Opção A foca na linguagem do protocolo, mas fraude pode existir independentemente de instruções explicitamente dizerem 'fazer upcoding'—a substância de encorajar faturamento além da necessidade médica importa mais do que enquadramento semântico. O limiar de 68% da Opção B não cria um porto seguro; 32% de reivindicações medicamente desnecessárias representa faturamento falso substancial, e não há defesa de regra da maioria em casos de fraude. A Opção C sugere incorretamente que treinamento formal reduz risco de fraude, mas treinamento sistemático para realizar e documentar serviços desnecessários para justificar códigos mais altos pode evidenciar intenção institucional de fraudar em vez de mitigar responsabilidade. A distinção chave não é se o faturamento questionável é organizado ou individual, mas se os serviços faturados foram realmente realizados e se há intenção de submeter reivindicações falsas."
+    },
+    {
+      "num": 37,
+      "text": "O programa de compliance de um sistema hospitalar inclui treinamento anual de HIPAA, uma linha direta de compliance operada pelo RH, auditorias trimestrais de faturamento de 15 reivindicações selecionadas aleatoriamente por departamento, padrões escritos de conduta e um comitê de compliance presidido pelo Conselheiro Geral que se reúne semestralmente. O sistema emprega 2.400 funcionários e gera $890 milhões em receita anual, com 67% de programas federais de saúde. O Chief Compliance Officer reporta ao CFO e tem uma equipe de três pessoas. Um esquema significativo de fraude envolvendo faturamento de DME não foi detectado por 26 meses. Medido contra a orientação do programa de compliance do OIG, o que representa a deficiência estrutural MAIS significativa?",
+      "tag": "oig_compliance_program_adequacy",
+      "options": [
+        "A. A linha direta de compliance operada pelo RH em vez de terceiro independente compromete a confidencialidade e credibilidade necessárias para relatórios efetivos",
+        "B. O relacionamento de reporte do Chief Compliance Officer ao CFO cria um conflito estrutural que prejudica a independência em assuntos financeiros e de faturamento",
+        "C. A amostra de auditoria trimestral de 15 reivindicações por departamento é estatisticamente insuficiente para detectar irregularidades sistemáticas de faturamento em uma organização deste tamanho e complexidade",
+        "D. A frequência de reuniões semestrais do comitê de compliance é inadequada para supervisão oportuna de riscos de compliance em um grande sistema de saúde com receita significativa de programas governamentais"
+      ],
+      "correct": 1,
+      "difficulty": "HARD",
+      "justification_correct": "A orientação do programa de compliance do OIG enfatiza consistentemente que o Chief Compliance Officer deve ter independência e autoridade suficientes, incluindo reporte direto ao CEO ou conselho em vez de executivos financeiros. Ter o CCO reportando ao CFO cria um conflito estrutural inerente porque muitas questões de compliance envolvem faturamento, ciclo de receita e decisões financeiras onde o CFO tem responsabilidade operacional direta e incentivos financeiros. Esse relacionamento compromete a capacidade do CCO de investigar e reportar independentemente má conduta financeira—precisamente a área onde a fraude de DME ocorreu sem detecção. O OIG especificamente adverte contra essa estrutura de reporte em seus documentos de orientação, observando que prejudica a eficácia da função de compliance. Em uma organização com $890 milhões de receita e 67% de dependência de programas governamentais, essa falha estrutural é a deficiência mais crítica porque afeta a independência e credibilidade de todo o programa de compliance.",
+      "justification_wrong": "A Opção A identifica uma preocupação sobre linhas diretas operadas pelo RH potencialmente desencorajando relatórios, mas a orientação do OIG permite linhas diretas internas se adequadamente estruturadas com proteções de confidencialidade; operação por terceiros é recomendada mas não obrigatória para eficácia. A Opção C levanta preocupações válidas sobre tamanho de amostra de auditoria, mas a orientação do OIG enfatiza auditoria baseada em risco em vez de tamanhos de amostra específicos; 15 reivindicações por departamento trimestralmente pode ser insuficiente, mas a inadequação estatística é menos fundamentalmente problemática do que questões de independência estrutural. A Opção D nota frequência de reuniões, mas reuniões semestrais do comitê de compliance podem ser adequadas se complementadas por monitoramento contínuo e mecanismos de resposta rápida; o OIG não determina frequências específicas de reuniões, tornando isso menos crítico do que o relacionamento de reporte do CCO que afeta autoridade de tomada de decisão diária e independência nos assuntos mais sensíveis."
+    },
+    {
+      "num": 38,
+      "text": "A equipe de análise de dados de um plano Medicare Advantage identificou que certos grupos de prestadores consistentemente submetem códigos de diagnóstico para condições crônicas complexas durante consultas anuais de bem-estar, aumentando substancialmente os pagamentos de ajuste de risco. A investigação revela que os médicos documentam condições como doença vascular e diabetes com complicações baseados em achados clínicos limitados, mesmo quando os pacientes estão estáveis e registros anteriores não suportam a gravidade. A receita do plano aumentou $47 milhões ao longo de dois anos devido a pontuações de risco mais altas. Os diretores médicos sabiam dos padrões de codificação, mas os caracterizaram como 'documentação clínica aprimorada' que 'reflete melhor a complexidade do paciente'. Qual aspecto deste esquema apresenta a MAIOR exposição a responsabilidade por fraude?",
+      "tag": "medicare_advantage_risk_score_manipulation",
+      "options": [
+        "A. A submissão de códigos de diagnóstico não suportados por evidência clínica constitui alegações falsas que inflam pagamentos de capitação ajustados por risco do CMS",
+        "B. O conhecimento do plano sobre padrões de codificação não suportados sem correção cria responsabilidade institucional por reter intencionalmente pagamentos excessivos de pontuações de risco infladas",
+        "C. A caracterização dos diretores médicos de diagnósticos não suportados como documentação legítima demonstra ignorância deliberada das alegações falsas sendo submetidas",
+        "D. O padrão sistemático em múltiplos grupos de prestadores sugere um esquema organizado que constitui conspiração para fraudar o Medicare através de inflação coordenada de pontuação de risco"
+      ],
+      "correct": 1,
+      "difficulty": "HARD",
+      "justification_correct": "Sob o sistema de ajuste de risco do Medicare Advantage e o False Claims Act, a maior exposição do plano é a retenção intencional de pagamentos excessivos. Quando uma organização Medicare Advantage toma conhecimento de que recebeu pagamentos excessivos devido a códigos de diagnóstico não suportados, ela tem a obrigação sob a regra de pagamento excessivo de 60 dias (42 CFR 423.360) de investigar, quantificar e devolver o pagamento excessivo. A análise de dados do plano identificou os padrões, e os diretores médicos estavam cientes da codificação questionável, ainda assim o plano reteve os $47 milhões em pagamentos inflados. Isso cria responsabilidade por alegações falsas reversas sob 31 USC 3729(a)(1)(G) por ocultar intencionalmente ou evitar uma obrigação de devolver dinheiro ao governo. Esta responsabilidade é particularmente forte porque o plano tinha conhecimento real (não apenas ignorância deliberada) através de suas próprias análises e consciência do diretor médico, acionando o dever de investigar e reembolsar, que ele não cumpriu.",
+      "justification_wrong": "A opção A corretamente identifica alegações falsas através de códigos de diagnóstico não suportados, mas a responsabilidade recai principalmente sobre os prestadores que submeteram os códigos, não sobre o plano (a menos que o plano tenha direcionado a conduta). A opção C descreve ignorância deliberada pelos diretores médicos, o que poderia apoiar a intenção criminosa, mas sua consciência na verdade constitui conhecimento em vez de ignorância deliberada, e a responsabilidade mais significativa é a falha institucional do plano em devolver pagamentos excessivos conhecidos. A opção D sugere conspiração, que requer um acordo para fraudar; embora o padrão sistemático seja suspeito, os fatos descrevem o plano observando padrões de prestadores em vez de organizar um esquema coordenado entre prestadores—na ausência de evidência de que o plano orquestrou a conduta do prestador, a teoria da conspiração é mais fraca do que a retenção intencional de pagamentos excessivos que o plano identificou através de seus próprios sistemas."
+    },
+    {
+      "num": 39,
+      "text": "Um CFE está aconselhando um cliente de saúde enfrentando investigação civil paralela pelo OIG e investigação criminal pelo Escritório do Procurador dos EUA por alegada fraude de DME envolvendo $8,3 milhões em reivindicações questionáveis. O advogado de defesa solicita a assistência do CFE na preparação de um relatório de investigação interna abrangente para apresentar a ambas as agências governamentais para demonstrar cooperação e apoiar uma recusa ou resolução favorável. O relatório incluiria conclusões factuais, análise de causa raiz, identificação de indivíduos responsáveis e medidas corretivas. O que representa a consideração de risco MAIS crítica nesta abordagem?",
+      "tag": "parallel_criminal_civil_healthcare_investigations",
+      "options": [
+        "A. Divulgar o relatório de investigação interna às agências governamentais renuncia ao privilégio advogado-cliente e proteção de produto de trabalho para todos os materiais e comunicações da investigação",
+        "B. Informações identificando indivíduos culpados no relatório poderiam ser usadas para construir casos criminais contra esses indivíduos ou compelir seu testemunho contra a organização",
+        "C. Admissões factuais no relatório sobre conduta fraudulenta poderiam estabelecer elementos de responsabilidade tanto em litígio civil do False Claims Act quanto em processo criminal",
+        "D. Crédito de cooperação para fins de acordo civil pode não se traduzir em recusa criminal, potencialmente fornecendo evidência para processo sem eliminar exposição criminal"
+      ],
+      "correct": 3,
+      "difficulty": "HARD",
+      "justification_correct": "Em processos paralelos, o risco estratégico mais crítico é que a cooperação na investigação civil pode não alcançar o benefício pretendido de recusa criminal enquanto simultaneamente fornece evidência para processo. O DOJ avalia questões civis e criminais sob padrões diferentes e através de diferentes escritórios com diferentes prioridades. Casos civis de FCA focam em recuperação monetária e podem ser resolvidos com base em pagamento e compromissos de conformidade, enquanto o processo criminal de fraude em saúde depende de fatores incluindo conduta flagrante, intenção criminosa, culpabilidade individual e valor de dissuasão. Fornecer um relatório detalhado pode fortalecer o caso civil e apoiar conclusões de responsabilidade do False Claims Act enquanto o Escritório do Procurador dos EUA prossegue criminalmente usando a mesma evidência. Isso é particularmente problemático em casos de fraude em saúde onde a mesma conduta apoia tanto acusações civis de FCA quanto acusações criminais de fraude em saúde (18 USC 1347), significando que divulgações de cooperação destinadas a resolver exposição civil podem se tornar a base probatória para processo criminal sem qualquer garantia de recusa.",
+      "justification_wrong": "A opção A exagera o risco de renúncia de privilégio—doutrinas de renúncia seletiva e divulgações de propósito limitado podem às vezes preservar privilégio para materiais não divulgados, e este risco pode ser gerenciado através de negociações cuidadosas de divulgação, tornando-o menos crítico do que o descompasso de exposição estratégica. A opção B identifica uma preocupação real sobre exposição individual, mas em investigações organizacionais, identificar indivíduos responsáveis é frequentemente necessário para qualquer crédito de cooperação, e este risco é gerenciável através de coordenação com advogados individuais e negociações de imunidade. A opção C corretamente nota que admissões factuais estabelecem elementos de responsabilidade, mas organizações enfrentando evidência forte frequentemente devem fazer tais admissões para obter qualquer acordo ou crédito de cooperação; a questão não é se admissões criam responsabilidade (que provavelmente existe independentemente) mas se a cooperação alcança seu propósito pretendido—o descompasso estratégico entre resultados civis e criminais é a consideração crítica."
+    },
+    {
+      "num": 40,
+      "text": "Uma rede de laboratórios regional está negociando um acordo com o OIG por violações do Stark Law envolvendo joint ventures com médicos. O Corporate Integrity Agreement proposto inclui: (1) auditorias anuais de faturamento por terceiros com amostragem estatística de intervalo de confiança de 95%; (2) treinamento de conformidade para todos os funcionários; (3) retenção de um monitor de conformidade independente por cinco anos; (4) aprovação prévia do OIG para quaisquer relacionamentos financeiros com médicos; e (5) compensação executiva contingente a métricas de conformidade. O consultor jurídico de conformidade do laboratório argumenta que o requisito de aprovação prévia é desproporcional dado que as violações envolveram arranjos legados de uma aquisição, todos os quais foram rescindidos. Qual princípio MELHOR apoia o argumento de proporcionalidade?",
+      "tag": "corporate_integrity_agreement_proportionality",
+      "options": [
+        "A. CIAs devem ser adaptados para abordar os riscos específicos de conformidade demonstrados pela má conduta subjacente, em vez de impor restrições máximas independentemente das características da violação",
+        "B. Requisitos de aprovação prévia efetivamente exigem pré-autorização do OIG de decisões de negócios que não são inerentemente ilegais, excedendo a autoridade regulatória do OIG",
+        "C. A natureza legada das violações indica falta de culpabilidade da gestão atual, justificando supervisão contínua menos intrusiva do que violações intencionais justificariam",
+        "D. Monitoramento de cinco anos combinado com aprovação prévia cria supervisão duplicada onde o monitor independente poderia revisar arranjos em vez de exigir pré-autorização governamental"
+      ],
+      "correct": 0,
+      "difficulty": "HARD",
+      "justification_correct": "Corporate Integrity Agreements do OIG são instrumentos de acordo negociados que devem ser proporcionais aos riscos demonstrados pela conduta subjacente. O princípio fundamental é que os requisitos de CIA devem ser adaptados para abordar as vulnerabilidades específicas de conformidade que levaram à violação, com intensidade e intrusividade correspondendo à gravidade, intencionalidade e natureza sistêmica da má conduta. Embora o OIG tenha ampla discricionariedade nas negociações de CIA, a proporcionalidade requer que as restrições visem riscos demonstrados em vez de impor encargos máximos categoricamente. Se as violações decorreram de arranjos legados adquiridos que foram rescindidos uma vez identificados, isso sugere menos falha sistêmica de conformidade do que esquemas intencionais em curso, potencialmente justificando supervisão menos restritiva. O requisito de aprovação prévia está entre as disposições de CIA mais onerosas porque limita a autonomia de negócios para atividades legais; a análise de proporcionalidade perguntaria se os fatos específicos demonstram colapso de conformidade tão severo que a pré-autorização governamental de arranjos de negócios rotineiros é necessária, ou se medidas menos restritivas (monitoramento, políticas aprimoradas, treinamento) abordam adequadamente os riscos identificados.",
+      "justification_wrong": "A opção B exagera o argumento de autoridade—o OIG não reivindica autoridade regulatória para aprovar arranjos de negócios; em vez disso, a aprovação prévia é um termo de acordo voluntário que a organização aceita para resolver responsabilidade, então isso não é uma questão de excesso regulatório, mas uma questão de alavancagem de negociação. A opção C foca na culpabilidade, mas os termos de CIA abordam risco de conformidade e salvaguardas necessárias mais do que punição; mesmo violações legadas podem revelar fraquezas sistêmicas requerendo supervisão robusta, então a culpabilidade da gestão atual não é a principal consideração de proporcionalidade. A opção D levanta a preocupação de duplicação, mas monitoramento e aprovação prévia servem funções diferentes—monitores fornecem revisão retrospectiva enquanto aprovação prévia previne arranjos problemáticos—então não são necessariamente duplicativos; o argumento mais forte é se o risco demonstrado justifica o encargo de aprovação prévia, independentemente do monitoramento, tornando a adaptação de risco em vez de duplicação o melhor princípio de proporcionalidade."
+    },
+    {
+      "num": 41,
+      "text": "Um fabricante farmacêutico implementou um programa de palestrantes onde os médicos recebiam $3.500 por apresentação para discutir um medicamento cardíaco em programas de jantar para outros médicos. E-mails internos mostram que executivos de marketing selecionaram cardiologistas com altas prescrições como palestrantes, agendaram programas em restaurantes caros e rastrearam aumentos de prescrição após os programas. A empresa também financiou um registro de pesquisa que pagava aos médicos $750 por paciente inscrito para coletar dados de resultados, com inscrição de pacientes coincidindo com iniciação de medicação. Representantes de vendas promoveram o medicamento para prevenção de fibrilação atrial, embora a aprovação do FDA cobrisse apenas tratamento de arritmias existentes. O que cria a análise de responsabilidade MAIS COMPLEXA neste cenário?",
+      "tag": "pharmaceutical_fraud_kickbacks_offlabel",
+      "options": [
+        "A. O propósito educacional do programa de palestrantes e compensação de valor justo de mercado podem satisfazer os safe harbors do Anti-Kickback Statute apesar da correlação entre pagamentos e prescrições",
+        "B. Os pagamentos do registro criam exposição dupla tanto como potenciais kickbacks por prescrição quanto alegações falsas se a justificativa de pesquisa carece de valor científico legítimo",
+        "C. A promoção off-label viola regulamentos do FDA mas não causa diretamente alegações falsas a menos que solicitações de reembolsamento acompanhantes deturpem a indicação",
+        "D. A combinação de pagamentos de palestrantes, taxas de registro e promoção off-label cria remuneração agregada que individualmente poderia ser defensável mas coletivamente demonstra intenção de induzir prescrições"
+      ],
+      "correct": 1,
+      "difficulty": "HARD",
+      "justification_correct": "Os pagamentos do registro apresentam a análise de responsabilidade mais complexa porque implicam múltiplos estatutos com diferentes padrões legais e defesas. Primeiro, sob o Anti-Kickback Statute, pagamentos a médicos por inscrição de pacientes podem constituir remuneração ilegal se o registro carece de valor de pesquisa legítimo e serve principalmente como pretexto para induzir prescrições—mas distinguir pesquisa legítima de registros falsos requer análise complexa de design científico, utilização de dados e intenção de publicação. Segundo, esses pagamentos podem desencadear responsabilidade do False Claims Act se prescrições induzidas por pagamentos de registro levam a reivindicações de reembolso Medicare/Medicaid, criando certificação falsa de que serviços não foram manchados por kickbacks. Terceiro, a estrutura de pagamento por paciente vincula diretamente compensação a decisões de prescrição (inscrição requer iniciar o medicamento), criando evidência de indução mais forte do que taxas de palestrantes. A complexidade surge da avaliação da legitimidade científica do registro, se os pagamentos excedem o valor justo de mercado pelo encargo real da pesquisa, se o momento da inscrição de pacientes sugere que o recrutamento é pretextual, e como alocar responsabilidade entre induzir prescrições (AKS) e causar alegações falsas (FCA) quando a participação no registro coincide com prescrição.",
+      "justification_wrong": "A opção A descreve análise de safe harbor do programa de palestrantes, mas embora determinar valor justo de mercado e propósito legítimo envolva questões factuais, o quadro legal é bem estabelecido; selecionar prescritores altos e rastrear aumentos de prescrição cria forte evidência de intenção ilegal que derrota proteção de safe harbor, tornando esta análise mais direta do que a complexidade do registro. A opção C aborda promoção off-label, mas o princípio legal é claro: promoção off-label viola regras do FDA mas responsabilidade FCA requer alegações falsas para reembolso; a complexidade é factual (quais representações foram feitas aos pagadores) em vez de legal. A opção D descreve conduta agregada demonstrando intenção, que é uma abordagem processual padrão em casos de fraude em saúde; embora provar intenção geral de esquema envolva analisar múltiplos elementos, a teoria legal de usar evidência cumulativa para provar intenção é bem estabelecida e menos complexa do que analisar a natureza dual pesquisa/kickback de pagamentos de registro com suas questões únicas de intenção criminosa e causalidade."
+    },
+    {
+      "num": 42,
+      "text": "Um CFE está analisando indicadores de fraude em um sistema hospitalar de 12 instalações. Os dados mostram: o índice de complexidade de codificação da Instalação A aumentou 34% ao longo de dois anos com acuidade de paciente estável; os custos farmacêuticos da Instalação B são 28% abaixo de hospitais comparáveis enquanto os resultados dos pacientes permaneceram inalterados; a Instalação C tem propriedade médica em um centro de imagem recebendo 89% de seus encaminhamentos de médicos empregados; os pacientes Medicare Advantage da Instalação D têm 41% maior intensidade de codificação de diagnóstico do que pacientes comerciais com demografia similar; e o departamento de emergência da Instalação E tem 300% de rotatividade em equipe de codificação ao longo de 18 meses. A conformidade corporativa relata que todas as métricas estão 'dentro da variação da indústria'. Qual achado deve desencadear a investigação de fraude de MAIOR prioridade?",
+      "tag": "systemic_fraud_indicators_multisite_analysis",
+      "options": [
+        "A. A concentração de encaminhamentos do centro de imagem de propriedade médica da Instalação C, porque 89% de captura de encaminhamentos de médicos empregados sugere violações sistemáticas do Stark Law e Anti-Kickback",
+        "B. A intensidade diferencial de codificação de diagnóstico da Instalação D entre pacientes Medicare Advantage e comerciais, porque sugere manipulação intencional de pontuação de risco para pagamentos de capitação mais altos",
+        "C. O aumento de complexidade de codificação da Instalação A sem mudanças de acuidade, porque aumentos sustentados de 34% indicam fortemente upcoding sistemático gerando alegações Medicare falsas substanciais",
+        "D. A rotatividade de 300% da equipe de codificação da Instalação E, porque rotatividade extrema em funções de ciclo de receita frequentemente indica resistência da equipe a pressão de faturamento fraudulento ou preocupações éticas"
+      ],
+      "correct": 1,
+      "difficulty": "HARD",
+      "justification_correct": "A intensidade diferencial de codificação da Instalação D entre pacientes Medicare Advantage e comerciais para demografia similar apresenta a maior prioridade porque demonstra manipulação intencional de pontuação de risco para ganho financeiro. Quando a mesma população de pacientes recebe codificação de diagnóstico sistematicamente diferente baseada apenas no tipo de pagador, revela que diferenças de codificação não são impulsionadas por fatores clínicos, mas por incentivos financeiros—Medicare Advantage paga mais por pontuações de risco mais altas enquanto seguro comercial não. Este diferencial de intensidade de 41% é evidência direta de submissão deliberada de alegações falsas para inflar pagamentos governamentais. Isso tem prioridade sobre outros indicadores porque: (1) mostra intenção através de tratamento diferencial de situações clínicas idênticas baseado em incentivos de pagamento; (2) fraude de ajuste de risco do Medicare Advantage é uma prioridade de execução do DOJ com potencial substancial de danos; (3) o padrão é sistemático em uma população de pacientes em vez de isolado; e (4) este esquema impacta diretamente pagamentos governamentais atuais e alegações falsas em curso, requerendo intervenção imediata para parar violações contínuas e prevenir acúmulo de responsabilidade.",
+      "justification_wrong": "A opção A identifica concentração preocupante de encaminhamentos, mas altas porcentagens de encaminhamento para entidades de propriedade médica podem às vezes satisfazer exceções do Stark (serviços auxiliares no consultório, arranjos de emprego) se propriamente estruturados; investigação é justificada mas concentração sozinha não prova violações sem analisar estruturas de propriedade e arranjos de compensação. A opção C nota aumentos significativos de complexidade, mas mudanças de codificação podem resultar de melhorias de documentação, implementações de EMR ou mudanças legítimas de mix de pacientes; embora aumentos de 34% justifiquem investigação, são indicadores de fraude menos definitivos do que codificação diferencial por pagador. A rotatividade da opção D é uma bandeira vermelha cultural que pode indicar problemas, mas rotatividade tem múltiplas causas potenciais (compensação, gestão, carga de trabalho) não relacionadas a fraude; é um indicador mais brando requerendo investigação mas menos imediatamente acionável do que a evidência direta de codificação diferencial intencional que a Instalação D apresenta, que mostra intenção fraudulenta através da distinção sistemática baseada em pagador."
+    },
+    {
+      "num": 43,
+      "text": "Sob a Lei Federal de Reivindicações Falsas (False Claims Act), qual é a teoria jurídica principal que se aplica quando um prestador de serviços de saúde submete uma reivindicação ao Medicare que viola uma condição de pagamento?",
+      "tag": "false_claims_act_conditions_of_payment",
+      "options": [
+        "A. A reivindicação constitui uma certificação falsa expressa",
+        "B. A reivindicação constitui uma certificação falsa implícita",
+        "C. A reivindicação constitui uma reivindicação falsa reversa",
+        "D. A reivindicação constitui fraude construtiva"
+      ],
+      "correct": 1,
+      "difficulty": "EASY",
+      "justification_correct": "Sob a teoria de certificação falsa implícita, quando um prestador de serviços de saúde submete uma reivindicação de pagamento a um programa governamental, o prestador certifica implicitamente conformidade com todos os estatutos, regulamentos e requisitos do programa aplicáveis que são condições de pagamento. Violar uma condição de pagamento ao submeter uma reivindicação pode criar responsabilidade sob a False Claims Act sob esta teoria.",
+      "justification_wrong": "Certificação falsa expressa requer uma declaração ou representação explícita que seja falsa, não meramente submeter uma reivindicação que viole condições de pagamento. Uma reivindicação falsa reversa envolve reter indevidamente um pagamento excessivo em vez de submeter uma reivindicação de pagamento. Fraude construtiva não é uma teoria reconhecida sob a False Claims Act; a Lei requer conhecimento real, ignorância deliberada ou desconsideração imprudente da verdade."
+    },
+    {
+      "num": 44,
+      "text": "Qual é o período mínimo estatutário que a Lei Stark (Stark Law) exige que os médicos aguardem antes de receber remuneração sob um acordo de emprego de boa-fé com um hospital?",
+      "tag": "stark_law_employment_exception_basics",
+      "options": [
+        "A. Pelo menos seis meses",
+        "B. Pelo menos um ano",
+        "C. Pelo menos trinta dias",
+        "D. Nenhum período mínimo de espera é exigido"
+      ],
+      "correct": 3,
+      "difficulty": "EASY",
+      "justification_correct": "A exceção de emprego de boa-fé da Stark Law não impõe um período mínimo de espera antes que um médico possa receber remuneração. Os requisitos principais são que o emprego seja para serviços identificáveis, a remuneração seja consistente com o valor justo de mercado e a remuneração não seja determinada de maneira que leve em conta o volume ou valor de encaminhamentos.",
+      "justification_wrong": "Nenhum destes períodos de espera (seis meses, um ano ou trinta dias) são exigidos sob a exceção de emprego da Stark Law. Embora alguns portos seguros sob a Lei Anti-Propina (Anti-Kickback Statute) exijam prazos de um ano para certos acordos, a exceção de emprego da Stark Law não exige nenhum período específico de espera antes do início da remuneração, desde que outros requisitos da exceção sejam satisfeitos."
+    },
+    {
+      "num": 45,
+      "text": "Em investigações de fraude em saúde, a que se refere o termo 'unbundling'?",
+      "tag": "unbundling_billing_fraud_definition",
+      "options": [
+        "A. Faturar separadamente serviços que deveriam ser faturados juntos como um procedimento",
+        "B. Separar reivindicações legítimas de reivindicações fraudulentas durante uma auditoria",
+        "C. Dividir pagamentos de propina entre múltiplas partes",
+        "D. Dividir um único encontro com o paciente em múltiplas visitas"
+      ],
+      "correct": 0,
+      "difficulty": "EASY",
+      "justification_correct": "Unbundling é uma prática fraudulenta de faturamento onde um prestador fatura separadamente múltiplos códigos de procedimento que deveriam ser faturados juntos sob um único código abrangente. Isto resulta em reembolso mais alto do que apropriado porque a soma dos pagamentos de procedimentos individuais excede o que o procedimento agrupado pagaria.",
+      "justification_wrong": "Separar reivindicações legítimas de fraudulentas é parte do processo de auditoria ou investigação, não unbundling. Dividir pagamentos de propina entre partes se relaciona a esquemas de propina mas não é chamado de unbundling. Dividir um único encontro em múltiplas visitas seria uma forma de fragmentação de visita ou divisão, que é um tipo diferente de esquema de fraude do que unbundling de códigos de procedimento."
+    },
+    {
+      "num": 46,
+      "text": "O que é 'upcoding' no contexto de fraude em faturamento de saúde?",
+      "tag": "upcoding_definition_basics",
+      "options": [
+        "A. Faturar por um serviço mais caro do que o que foi realmente fornecido",
+        "B. Aumentar o número de unidades faturadas além do que foi fornecido",
+        "C. Codificar serviços para evitar requisitos de necessidade médica",
+        "D. Converter códigos de faturamento em papel para sistemas eletrônicos de faturamento"
+      ],
+      "correct": 0,
+      "difficulty": "EASY",
+      "justification_correct": "Upcoding ocorre quando um prestador de serviços de saúde fatura por um serviço ou diagnóstico mais complexo, grave ou caro do que foi realmente fornecido ou documentado. Isto infla o reembolso ao deturpar o nível de serviço prestado. Por exemplo, faturar por uma consulta médica abrangente quando apenas uma consulta breve ocorreu.",
+      "justification_wrong": "Aumentar unidades além do que foi fornecido é inflação de quantidade ou manipulação de unidades, não upcoding. Codificar para evitar requisitos de necessidade médica envolve codificação de diagnóstico inadequada mas não necessariamente envolve faturar por um serviço de nível mais alto. Converter para sistemas eletrônicos é um processo tecnológico não relacionado a práticas fraudulentas de faturamento."
+    },
+    {
+      "num": 47,
+      "text": "Sob os regulamentos do Medicare, o que é uma 'eleição de hospice' em relação ao cuidado de doença terminal?",
+      "tag": "hospice_election_medicare_basics",
+      "options": [
+        "A. Uma certificação do médico de que um paciente se qualifica para serviços de hospice",
+        "B. A escolha formal de um beneficiário de receber cuidados de hospice em vez de tratamento curativo",
+        "C. A decisão de uma instalação de fornecer serviços de cuidados de fim de vida",
+        "D. Uma autorização de um membro da família para inscrição em hospice"
+      ],
+      "correct": 1,
+      "difficulty": "EASY",
+      "justification_correct": "Uma eleição de hospice é a decisão formal do beneficiário do Medicare de eleger cuidados de hospice para sua doença terminal. Ao fazer esta eleição, o beneficiário renuncia ao direito de cobertura padrão do Medicare para tratamento curativo da condição terminal e em vez disso recebe serviços paliativos de hospice. Esta eleição deve ser feita voluntariamente pelo beneficiário.",
+      "justification_wrong": "Certificação médica de doença terminal é um requisito para elegibilidade de hospice mas não é em si a eleição; o paciente ainda deve escolher eleger hospice. A decisão da instalação de fornecer serviços não constitui a eleição do beneficiário. Membros da família não podem fazer a eleição de hospice em nome de um beneficiário competente; o beneficiário deve fazer esta escolha a menos que legalmente incapacitado com autoridade apropriada de tomada de decisão substituta estabelecida."
+    },
+    {
+      "num": 48,
+      "text": "O que significa o termo 'medical necessity' no contexto da cobertura do Medicare e Medicaid?",
+      "tag": "medical_necessity_definition_coverage",
+      "options": [
+        "A. Serviços que são razoáveis e necessários para diagnóstico ou tratamento de doença ou lesão",
+        "B. Qualquer serviço que um médico licenciado prescreve para um paciente",
+        "C. Serviços que atendem ao mais alto padrão de cuidado na prática médica",
+        "D. Serviços de emergência que são necessários para prevenir morte"
+      ],
+      "correct": 0,
+      "difficulty": "EASY",
+      "justification_correct": "Medical necessity sob a lei do Medicare significa que serviços ou itens são razoáveis e necessários para o diagnóstico ou tratamento de doença ou lesão, ou para melhorar o funcionamento de um membro do corpo malformado. Este padrão determina se o Medicare cobrirá e pagará por um serviço específico. O serviço deve ser consistente com os sintomas, diagnóstico e tratamento do paciente.",
+      "justification_wrong": "Nem todo serviço que um médico prescreve automaticamente atende ao padrão de medical necessity; o serviço ainda deve ser razoável e necessário para a condição do paciente. Medical necessity não exige o mais alto padrão de cuidado; exige serviços que sejam apropriados e razoáveis. Medical necessity não se limita a serviços de emergência ou situações de risco de vida; aplica-se a uma ampla gama de serviços diagnósticos e de tratamento para várias condições."
+    },
+    {
+      "num": 49,
+      "text": "Em esquemas de fraude em saúde, o que é faturamento de 'phantom patient'?",
+      "tag": "phantom_patient_billing_definition",
+      "options": [
+        "A. Faturamento de serviços para pacientes que não existem ou nunca foram tratados",
+        "B. Faturamento de pacientes que estão falecidos",
+        "C. Faturamento de pacientes que não possuem cobertura de seguro",
+        "D. Faturamento de pacientes sob identificação falsa"
+      ],
+      "correct": 0,
+      "difficulty": "EASY",
+      "justification_correct": "Faturamento de phantom patient é um esquema fraudulento onde prestadores submetem reivindicações por serviços supostamente prestados a pacientes que ou não existem de forma alguma ou que nunca foram realmente tratados por aquele prestador. Este é um esquema de fabricação pura onde nenhum serviço legítimo foi jamais prestado, e frequentemente as identidades dos pacientes são inteiramente fictícias ou roubadas.",
+      "justification_wrong": "Embora faturar pacientes falecidos seja fraudulento, é um subconjunto específico geralmente referido como 'faturamento de paciente falecido' em vez de faturamento de phantom patient. Faturar pacientes sem seguro não é necessariamente fraudulento e não define faturamento de phantom patient. Faturamento sob identificação falsa de paciente envolve roubo de identidade ou troca de identidade mas tipicamente envolve pacientes reais recebendo serviços, apenas sob identidades incorretas, o que difere da fabricação completa de esquemas de phantom patient."
+    },
+    {
+      "num": 50,
+      "text": "Em esquemas de fraude em saúde, o que é faturamento de 'paciente fantasma'?",
+      "tag": "phantom_patient_billing_definition",
+      "options": [
+        "A. Faturamento de serviços para pacientes que não existem ou nunca foram tratados",
+        "B. Faturamento de pacientes que estão falecidos",
+        "C. Faturamento de pacientes que não possuem cobertura de seguro",
+        "D. Faturamento de pacientes sob identificação falsa"
+      ],
+      "correct": 0,
+      "difficulty": "EASY",
+      "justification_correct": "Faturamento de paciente fantasma é um esquema fraudulento em que prestadores de serviços submetem reivindicações por serviços supostamente prestados a pacientes que ou não existem de forma alguma ou que nunca foram realmente tratados por aquele prestador. Este é um esquema de fabricação pura onde nenhum serviço legítimo foi jamais prestado, e frequentemente as identidades dos pacientes são inteiramente fictícias ou roubadas.",
+      "justification_wrong": "Embora o faturamento de pacientes falecidos seja fraudulento, é um subconjunto específico geralmente referido como 'faturamento de paciente falecido' em vez de faturamento de paciente fantasma. Faturamento de pacientes não segurados não é necessariamente fraudulento e não define faturamento de paciente fantasma. Faturamento sob identificação falsa de paciente envolve roubo de identidade ou troca de identidade, mas tipicamente envolve pacientes reais recebendo serviços, apenas sob identidades incorretas, o que difere da fabricação completa dos esquemas de paciente fantasma."
+    }
+  ]
+}

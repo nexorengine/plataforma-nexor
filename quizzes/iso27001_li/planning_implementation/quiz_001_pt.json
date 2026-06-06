@@ -1,0 +1,710 @@
+{
+  "cert_id": "iso27001_li",
+  "domain_id": "planning_implementation",
+  "quiz_num": 1,
+  "domain_name": "Planejamento e Implementação",
+  "cert_name": "ISO 27001 Lead Implementer",
+  "lang": "pt",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Durante a determinação do escopo do SGSI conforme ISO 27001:2022, cláusula 4.3, uma organização multinacional identificou que uma de suas subsidiárias opera sob legislação de proteção de dados conflitante com a matriz. Qual é a abordagem MAIS apropriada?",
+      "tag": "Escopo do SGSI",
+      "options": [
+        "D. Aplicar apenas os requisitos da matriz, pois a ISO 27001 prevalece sobre legislações locais",
+        "C. Criar dois SGSI independentes com escopos separados para evitar conflitos normativos",
+        "A. Documentar a exclusão da subsidiária no escopo com justificativa de inviabilidade legal e tratar como parte interessada externa",
+        "B. Incluir a subsidiária no escopo e documentar os requisitos legais conflitantes como questões externas relevantes, ajustando controles conforme necessário"
+      ],
+      "correct": 3,
+      "justification_correct": "Conforme 4.3, o escopo deve considerar questões externas (4.1) incluindo requisitos legais. A subsidiária deve ser incluída, documentando-se os requisitos conflitantes e adaptando controles do Anexo A conforme aplicável. Exclusões arbitrárias comprometem a integridade do SGSI e sua certificação.",
+      "justification_wrong": "Exclusões de unidades organizacionais exigem justificativas sólidas além de complexidade legal. A ISO 27001 não substitui legislações locais; pelo contrário, a cláusula 4.1 exige consideração de requisitos legais como questões externas. Múltiplos SGSI fragmentam a governança e aumentam custos desnecessariamente."
+    },
+    {
+      "num": 2,
+      "text": "Uma organização está elaborando sua política de segurança da informação conforme cláusula 5.2. O CEO questiona por que a política deve ser 'apropriada ao propósito da organização'. Qual justificativa técnica MELHOR fundamenta este requisito normativo?",
+      "tag": "Política de Segurança",
+      "options": [
+        "D. Atende requisito de auditoria de certificação que exige menção explícita do propósito nos documentos",
+        "B. Facilita a aprovação mais rápida pela alta direção ao usar linguagem corporativa conhecida",
+        "C. Permite copiar políticas de outras organizações do mesmo setor, economizando recursos de implementação",
+        "A. Garante alinhamento estratégico entre objetivos de segurança e objetivos de negócio, assegurando que controles suportem a missão organizacional"
+      ],
+      "correct": 3,
+      "justification_correct": "A cláusula 5.2 a) exige alinhamento ao propósito organizacional para garantir que o SGSI sustente os objetivos estratégicos. Segurança não é fim em si, mas meio para viabilizar negócios. Esse alinhamento, conectado à cláusula 4.1 (contexto), assegura relevância e suporte da liderança.",
+      "justification_wrong": "Aprovar rapidamente não é objetivo normativo; o requisito visa substância, não forma. Políticas copiadas ignoram contexto único (4.1) e riscos específicos (6.1), violando princípios fundamentais. Auditores verificam conformidade, mas o requisito tem fundamento estratégico na integração SGSI-negócio, não burocrático."
+    },
+    {
+      "num": 3,
+      "text": "Durante o processo de apreciação de riscos (6.1.2), identificou-se um risco de ransomware com probabilidade 'Média' e impacto 'Muito Alto'. Após aplicar controles, o risco residual permaneceu 'Médio'. A direção questiona se pode aceitar este risco sem documentação formal. Qual orientação está CORRETA?",
+      "tag": "Tratamento de Riscos",
+      "options": [
+        "D. A aceitação formal só é necessária quando se escolhe a opção 'aceitar o risco' sem aplicar controles",
+        "A. Riscos residuais médios podem ser tacitamente aceitos se controles razoáveis foram aplicados, sem necessidade de formalização",
+        "C. Somente riscos residuais 'Altos' ou 'Muito Altos' exigem aceitação formal; riscos 'Médios' são automaticamente aceitos",
+        "B. Qualquer aceitação de risco residual requer aprovação documentada dos proprietários dos riscos, independentemente do nível"
+      ],
+      "correct": 3,
+      "justification_correct": "A cláusula 6.1.3 e) exige explicitamente que proprietários dos riscos aprovem o plano de tratamento de riscos e aceitem os riscos residuais. A ISO 27001:2022 não estabelece exceções baseadas em níveis de risco; toda aceitação deve ser consciente, documentada e aprovada formalmente.",
+      "justification_wrong": "Aceitação tácita viola 6.1.3 e) e compromete accountability. A norma não cria limites automáticos para aceitação; cada organização define critérios (6.1.2 c)), mas a aprovação formal é sempre obrigatória. Mesmo riscos tratados resultam em riscos residuais que requerem aceitação documentada dos responsáveis."
+    },
+    {
+      "num": 4,
+      "text": "Uma organização possui 15 objetivos de segurança da informação documentados, mas durante auditoria interna identificou-se que 8 deles não possuem indicadores mensuráveis nem responsáveis definidos. Considerando a cláusula 6.2, qual NÃO-CONFORMIDADE está presente?",
+      "tag": "Objetivos de SI",
+      "options": [
+        "C. Quantidade excessiva de objetivos, violando princípio de simplicidade implícito na ISO 27001",
+        "B. Não-conformidade com 6.2 que exige objetivos mensuráveis e com 5.3 que exige atribuição de responsabilidades",
+        "D. Ausência de não-conformidade, pois objetivos são declarações estratégicas que não requerem métricas obrigatórias",
+        "A. Violação de 6.2 apenas quanto à ausência de indicadores, pois a norma não exige responsáveis para objetivos"
+      ],
+      "correct": 1,
+      "justification_correct": "A cláusula 6.2 b) exige explicitamente que objetivos sejam mensuráveis (quando exequível). A cláusula 5.3 determina que a alta direção assegure atribuição de responsabilidades. Objetivos sem indicadores e responsáveis violam ambos requisitos, comprometendo monitoramento (9.1) e accountability do SGSI.",
+      "justification_wrong": "A norma não limita quantidade de objetivos; exige qualidade. Objetivos sem métricas são declarações vazias que impedem avaliação de desempenho (9.1). A cláusula 5.3 é clara quanto à necessidade de responsabilidades definidas. Objetivos devem ser práticos, mensuráveis e atribuídos, não apenas aspiracionais."
+    },
+    {
+      "num": 5,
+      "text": "A Declaração de Aplicabilidade (SoA) de uma organização exclui o controle 5.7 'Inteligência de ameaças' do Anexo A com justificativa: 'Organização não possui recursos para implementar'. Durante auditoria de certificação, qual será a avaliação MAIS provável?",
+      "tag": "Declaração de Aplicabilidade",
+      "options": [
+        "A. Aceitável, pois a cláusula 6.1.3 d) permite exclusão de controles mediante justificativa documentada",
+        "B. Não-conformidade, pois ausência de recursos não é justificativa válida para exclusão de controles necessários",
+        "C. Aceitável se a organização demonstrar que implementou controles compensatórios equivalentes",
+        "D. Não-conformidade menor, resolvível com plano de ação para aquisição futura de recursos"
+      ],
+      "correct": 1,
+      "justification_correct": "A cláusula 6.1.3 d) exige justificativa para exclusões baseada em não-aplicabilidade ao contexto/riscos, não em limitações de recursos. Falta de recursos indica falha em prover recursos necessários (7.1), violando requisito mandatório. A SoA deve refletir necessidades reais de tratamento de riscos identificados.",
+      "justification_wrong": "Justificativas de exclusão devem basear-se em análise de riscos e contexto, não em conveniência. Controles compensatórios não eliminam a necessidade de justificativa válida. Planos futuros não remediam não-conformidades presentes. A cláusula 7.1 exige que a organização proveja recursos necessários; sua ausência é não-conformidade do SGSI."
+    },
+    {
+      "num": 6,
+      "text": "Uma organização multinacional opera em três países com legislações de proteção de dados distintas. Durante o estabelecimento do contexto organizacional conforme cláusula 4.1, qual abordagem demonstra conformidade adequada com a ISO 27001:2022?",
+      "tag": "Contexto Organizacional",
+      "options": [
+        "D. Estabelecer o contexto baseado unicamente nas expectativas das partes interessadas internas",
+        "C. Focar apenas nos requisitos do país sede, aplicando-os uniformemente a todas as operações internacionais",
+        "A. Documentar todas as questões externas e internas relevantes que afetem a capacidade de alcançar os resultados pretendidos do SGSI, incluindo requisitos legais de cada jurisdição",
+        "B. Priorizar exclusivamente as questões internas da organização, delegando questões externas para análise posterior"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 4.1 exige que a organização determine questões externas e internas relevantes ao propósito e que afetem sua capacidade de alcançar resultados pretendidos do SGSI. Requisitos legais de múltiplas jurisdições são questões externas críticas que devem ser documentadas e consideradas.",
+      "justification_wrong": "Abordagens que ignoram questões externas (B), desconsideram especificidades jurisdicionais (C) ou limitam análise a partes internas (D) violam o requisito 4.1 de compreensão abrangente do contexto organizacional."
+    },
+    {
+      "num": 7,
+      "text": "Ao definir o escopo do SGSI conforme cláusula 4.3, a organização identificou que seus sistemas legados não suportam controles de segurança modernos. Como Lead Implementer, qual ação está alinhada aos requisitos normativos?",
+      "tag": "Escopo do SGSI",
+      "options": [
+        "C. Manter os sistemas no escopo sem documentação específica até sua substituição",
+        "A. Excluir completamente os sistemas legados do escopo para evitar não conformidades",
+        "D. Criar um escopo paralelo específico para sistemas legados com requisitos reduzidos",
+        "B. Incluir os sistemas no escopo e documentar no SoA os controles não aplicáveis com justificativas aceitáveis"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 4.3 exige que o escopo considere questões referenciadas em 4.1 e requisitos de partes interessadas (4.2). A exclusão arbitrária de ativos críticos compromete a segurança. Cláusula 6.1.3(d) permite documentar no SoA controles não aplicáveis com justificativas, mantendo transparência.",
+      "justification_wrong": "Excluir ativos críticos arbitrariamente (A) viola a integridade do SGSI. Omitir documentação (C) ou criar escopos paralelos (D) contradiz os requisitos de escopo único e declaração de aplicabilidade obrigatória da cláusula 6.1.3."
+    },
+    {
+      "num": 8,
+      "text": "Durante auditoria interna, identificou-se que a alta direção delegou todas as decisões sobre o SGSI ao CISO, sem envolvimento direto. Considerando a cláusula 5.1, qual é a não conformidade principal?",
+      "tag": "Liderança e Comprometimento",
+      "options": [
+        "D. Ausência de comunicação adequada sobre a importância da segurança da informação",
+        "C. Falta de recursos suficientes alocados para o SGSI",
+        "A. Violação do requisito de responsabilização pessoal da alta direção pela eficácia do SGSI",
+        "B. Inadequação na estrutura de delegação de autoridades e responsabilidades"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 5.1 estabelece que a alta direção deve demonstrar liderança e comprometimento, sendo responsável pela eficácia do SGSI. A norma proíbe delegação total dessa responsabilidade, exigindo envolvimento direto em decisões estratégicas, mesmo com delegação operacional permitida.",
+      "justification_wrong": "Embora delegação (B), recursos (C) e comunicação (D) sejam aspectos da liderança, a não conformidade crítica é a tentativa de transferir responsabilidade final pela eficácia do SGSI, que permanece indelegável segundo 5.1."
+    },
+    {
+      "num": 9,
+      "text": "Uma organização está planejando seu processo de avaliação de riscos conforme cláusula 6.1.2. Qual elemento é mandatório segundo a norma ISO 27001:2022?",
+      "tag": "Avaliação de Riscos",
+      "options": [
+        "A. Utilização obrigatória da metodologia ISO 31000 para gestão de riscos",
+        "D. Reavaliação de riscos exclusivamente em intervalos anuais fixos",
+        "B. Estabelecimento de critérios de aceitação de riscos e critérios para realizar avaliações de riscos",
+        "C. Análise quantitativa de todos os riscos identificados com valores monetários"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 6.1.2(c) exige explicitamente que o processo de avaliação de riscos estabeleça critérios de aceitação de riscos e critérios para realizar avaliações. Estes critérios fundamentam decisões consistentes sobre tratamento de riscos e são requisitos normativos obrigatórios.",
+      "justification_wrong": "A norma não impõe metodologia específica como ISO 31000 (A), nem exige análise quantitativa universal (C). Quanto à periodicidade (D), a cláusula 6.1.2(g) requer reavaliações em intervalos planejados E quando mudanças significativas ocorrem, não apenas anualmente."
+    },
+    {
+      "num": 10,
+      "text": "Ao preparar a Declaração de Aplicabilidade (SoA) conforme cláusula 6.1.3(d), o Lead Implementer deve garantir que o documento contenha quais informações mandatórias?",
+      "tag": "Declaração de Aplicabilidade",
+      "options": [
+        "C. Lista completa dos 93 controles do Anexo A com status de implementação",
+        "B. Controles necessários (referência 6.1.3 a,b,c), controles do Anexo A incluídos ou não, e justificativas para inclusões/exclusões",
+        "A. Apenas os controles do Anexo A selecionados para implementação",
+        "D. Somente os controles já implementados com evidências de eficácia"
+      ],
+      "correct": 1,
+      "justification_correct": "Cláusula 6.1.3(d) determina que o SoA deve conter: controles necessários (determinados em 6.1.3 a, b, c), controles do Anexo A incluídos ou não, e justificativas para inclusões/exclusões. Este requisito garante rastreabilidade completa entre avaliação de riscos e seleção de controles.",
+      "justification_wrong": "Incluir apenas controles selecionados (A) ou implementados (D) omite a análise completa exigida. Listar todos os 93 controles sem conexão com avaliação de riscos (C) ignora o requisito de justificativas baseadas nos processos 6.1.3(a)(b)(c)."
+    },
+    {
+      "num": 11,
+      "text": "Uma organização multinacional está definindo o escopo do SGSI. A alta direção deseja excluir uma filial que processa dados de clientes porque utiliza sistemas legados. Segundo a ISO 27001:2022, cláusula 4.3, qual é a condição determinante para essa exclusão ser aceitável?",
+      "tag": "Escopo do SGSI",
+      "options": [
+        "A. A exclusão é aceitável se a filial representa menos de 10% do faturamento total da organização",
+        "C. A exclusão é válida desde que documentada na política de segurança da informação e aprovada pela alta direção",
+        "D. A exclusão pode ser justificada pela obsolescência tecnológica dos sistemas legados utilizados",
+        "B. A exclusão não é permitida se a filial processa informações que afetam a capacidade da organização de atender requisitos de SI"
+      ],
+      "correct": 3,
+      "justification_correct": "Conforme ISO 27001:2022, cláusula 4.3, o escopo não pode excluir arbitrariamente áreas que processam informações críticas. A norma exige que o escopo considere questões internas/externas, requisitos de partes interessadas e interfaces/dependências. Exclusões que comprometem a capacidade de atender objetivos de SI são inaceitáveis, independentemente de justificativas econômicas ou tecnológicas.",
+      "justification_wrong": "Critérios financeiros, aprovação isolada da alta direção ou justificativas técnicas não são fundamentos válidos segundo a cláusula 4.3. O escopo deve garantir que todos os processos relevantes para segurança da informação estejam incluídos, especialmente aqueles que processam dados sensíveis. Exclusões arbitrárias comprometem a eficácia e certificabilidade do SGSI."
+    },
+    {
+      "num": 12,
+      "text": "Durante auditoria interna, identifica-se que a organização possui objetivos de segurança da informação mensuráveis, mas não estabeleceu planos para alcançá-los conforme ISO 27001:2022, cláusula 6.2. Qual a não conformidade identificada?",
+      "tag": "Objetivos de SI e Planejamento",
+      "options": [
+        "B. Falta de definição de o quê será feito, recursos necessários, responsáveis, prazos e avaliação de resultados",
+        "A. Ausência de indicadores de desempenho (KPIs) associados aos objetivos estabelecidos",
+        "D. Inexistência de aprovação formal dos objetivos pela alta direção documentada",
+        "C. Não vinculação dos objetivos aos controles do Anexo A da norma"
+      ],
+      "correct": 0,
+      "justification_correct": "A ISO 27001:2022, cláusula 6.2.2, exige explicitamente que ao planejar como alcançar objetivos de SI, a organização determine: o que será feito, quais recursos serão necessários, quem será responsável, quando será concluído e como os resultados serão avaliados. A ausência desses elementos constitui não conformidade direta com os requisitos normativos de planejamento.",
+      "justification_wrong": "Embora KPIs, vinculação a controles e aprovação formal sejam boas práticas, a cláusula 6.2.2 especifica cinco elementos obrigatórios de planejamento. A não conformidade ocorre pela ausência desses elementos estruturais do plano, não pela falta de aspectos complementares. O requisito normativo é claro quanto aos componentes mínimos do planejamento."
+    },
+    {
+      "num": 13,
+      "text": "A organização está implementando processo de avaliação de riscos de SI. A metodologia proposta classifica riscos apenas como 'Alto' ou 'Baixo', sem critérios quantitativos. Considerando ISO 27001:2022, cláusula 6.1.2, essa abordagem é adequada?",
+      "tag": "Avaliação de Riscos",
+      "options": [
+        "C. Inadequada, pois a ISO 27001:2022 requer obrigatoriamente metodologia quantitativa baseada em valores monetários",
+        "B. Adequada, desde que os critérios para determinar 'Alto' e 'Baixo' sejam definidos e consistentemente aplicados",
+        "D. Adequada apenas para organizações de pequeno porte, sendo inadequada para médias e grandes empresas",
+        "A. Inadequada, pois a norma exige no mínimo três níveis de classificação de riscos (baixo, médio, alto)"
+      ],
+      "correct": 1,
+      "justification_correct": "A ISO 27001:2022, cláusula 6.1.2(c), exige que a organização defina critérios de risco, mas não prescreve metodologia específica (qualitativa, quantitativa ou mista). Uma abordagem binária é aceitável desde que: possua critérios definidos, seja aplicada consistentemente e produza resultados comparáveis e replicáveis. A norma prioriza a adequação ao contexto organizacional sobre padronização metodológica.",
+      "justification_wrong": "A norma não especifica número mínimo de níveis, não exige metodologia quantitativa nem diferencia requisitos por porte organizacional. A cláusula 6.1.2 enfatiza que o processo de avaliação deve produzir resultados consistentes, válidos e comparáveis. O fator crítico é a definição clara de critérios, não a complexidade ou tipo de metodologia escolhida."
+    },
+    {
+      "num": 14,
+      "text": "A alta direção delegou totalmente a responsabilidade pelo SGSI ao CISO. Durante auditoria de certificação, o auditor questiona essa estrutura. Qual cláusula da ISO 27001:2022 fundamenta a preocupação do auditor?",
+      "tag": "Liderança e Comprometimento",
+      "options": [
+        "D. Cláusula 4.1 - a estrutura organizacional permite delegação total se aprovada pelas partes interessadas relevantes",
+        "B. Cláusula 5.3 - papéis organizacionais podem ser totalmente delegados desde que documentados formalmente",
+        "A. Cláusula 5.1 - a alta direção deve demonstrar liderança e comprometimento pessoal, não podendo delegar totalmente suas responsabilidades",
+        "C. Cláusula 7.2 - a competência do CISO é suficiente para assumir integralmente as responsabilidades da alta direção"
+      ],
+      "correct": 2,
+      "justification_correct": "A ISO 27001:2022, cláusula 5.1, estabelece que a alta direção deve demonstrar liderança e comprometimento pessoal com o SGSI, incluindo assumir responsabilidade pela eficácia, estabelecer política, garantir integração, comunicar importância e promover melhoria contínua. Essas responsabilidades são indelegáveis, embora a alta direção possa atribuir autoridade para implementação específica conforme cláusula 5.3.",
+      "justification_wrong": "Embora a cláusula 5.3 permita atribuir papéis e autoridades, isso não exime a alta direção de suas responsabilidades fundamentais estabelecidas em 5.1. Competência técnica do CISO ou aprovação de partes interessadas não substituem o comprometimento pessoal exigido da alta direção. A norma distingue claramente responsabilidade (indelegável) de autoridade operacional (delegável)."
+    },
+    {
+      "num": 15,
+      "text": "Durante planejamento de mudanças no SGSI para integração de nova unidade de negócio, a organização deve considerar diversos aspectos. Qual elemento é mandatório segundo ISO 27001:2022, cláusula 6.3?",
+      "tag": "Planejamento de Mudanças",
+      "options": [
+        "B. Propósito das mudanças e suas potenciais consequências para o SGSI",
+        "D. Período mínimo de 90 dias para planejamento e implementação de mudanças estruturais",
+        "C. Aprovação do comitê de gestão de mudanças com registro de todas as deliberações",
+        "A. Análise de impacto nos negócios (BIA) completa antes de qualquer implementação de mudança"
+      ],
+      "correct": 0,
+      "justification_correct": "A ISO 27001:2022, cláusula 6.3, estabelece que quando a organização determina necessidade de mudanças no SGSI, essas devem ser realizadas de maneira planejada, considerando: o propósito das mudanças e suas potenciais consequências, a integridade do SGSI, disponibilidade de recursos e alocação/realocação de responsabilidades e autoridades. Esses elementos garantem mudanças controladas e eficazes.",
+      "justification_wrong": "BIA, comitê formal de mudanças e prazos específicos não são requisitos explícitos da cláusula 6.3. A norma foca em planejamento consciente considerando propósito, consequências, integridade do SGSI e recursos. A abordagem é baseada em risco e contexto organizacional, não em processos ou prazos prescritivos. Flexibilidade metodológica é permitida desde que atendidos os princípios fundamentais."
+    },
+    {
+      "num": 16,
+      "text": "Uma organização multinacional está definindo o escopo do SGSI conforme ISO 27001:2022, cláusula 4.3. Qual requisito é OBRIGATÓRIO para garantir a adequação do escopo?",
+      "tag": "Determinação do Escopo do SGSI",
+      "options": [
+        "C. Documentar apenas os ativos de informação críticos identificados na análise de riscos preliminar",
+        "B. Incluir obrigatoriamente todas as localizações físicas da organização sem exceções",
+        "D. Alinhar o escopo exclusivamente aos objetivos estratégicos da alta direção",
+        "A. Considerar as questões externas/internas (4.1), requisitos de partes interessadas (4.2), interfaces e dependências com atividades fora do escopo"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 4.3 exige que o escopo considere questões (4.1), requisitos (4.2), interfaces e dependências entre atividades realizadas pela organização e aquelas por terceiros. Esse trio de elementos garante que o escopo seja adequado, realista e aplicável ao contexto organizacional completo.",
+      "justification_wrong": "Opção B é incorreta pois o escopo pode excluir localizações justificadamente. C é inadequada porque o escopo precede a análise detalhada de riscos (cláusula 6.1.2). D ignora os requisitos normativos de contexto e partes interessadas como entrada obrigatória."
+    },
+    {
+      "num": 17,
+      "text": "Durante a fase de planejamento (cláusula 6.1.3), um Lead Implementer deve definir o tratamento de riscos. Qual abordagem está INCORRETA segundo a ISO 27001:2022?",
+      "tag": "Tratamento de Riscos de SI",
+      "options": [
+        "C. Implementar apenas controles do Anexo A, pois são suficientes para conformidade total",
+        "B. Aceitar riscos formalmente após aprovação documentada dos proprietários dos riscos",
+        "A. Selecionar controles do Anexo A e adicionar controles próprios necessários",
+        "D. Comparar controles selecionados com Anexo A e justificar exclusões na Declaração de Aplicabilidade"
+      ],
+      "correct": 0,
+      "justification_correct": "Cláusula 6.1.3(d) exige comparação com Anexo A mas não limita controles apenas ao anexo. Organizações devem implementar controles necessários independente da origem. A opção C viola esse princípio ao restringir artificialmente as opções de tratamento disponíveis conforme contexto específico.",
+      "justification_wrong": "A está correta (6.1.3.c permite controles adicionais). B segue 6.1.3.e sobre aceitação formal de riscos. D reflete corretamente 6.1.3.d sobre justificativa de exclusões. C impõe limitação inexistente na norma, contrariando o processo de tratamento baseado em risco."
+    },
+    {
+      "num": 18,
+      "text": "Sobre a Política de Segurança da Informação (cláusula 5.2), qual afirmação reflete CORRETAMENTE os requisitos da ISO 27001:2022?",
+      "tag": "Política de Segurança da Informação",
+      "options": [
+        "C. Deve ser comunicada apenas aos colaboradores internos para evitar exposição de vulnerabilidades",
+        "A. Deve incluir compromisso com requisitos aplicáveis, melhoria contínua, estar disponível para partes interessadas e ser apropriada ao propósito",
+        "B. Precisa detalhar todos os controles técnicos implementados e ser revisada exclusivamente pela auditoria interna",
+        "D. Necessita aprovação de todas as partes interessadas identificadas antes da implementação do SGSI"
+      ],
+      "correct": 1,
+      "justification_correct": "Cláusula 5.2 estabelece quatro requisitos obrigatórios: ser apropriada ao propósito organizacional, incluir compromisso com requisitos aplicáveis e melhoria contínua do SGSI, estar disponível a partes interessadas conforme apropriado. A opção A contempla precisamente todos esses elementos normativos.",
+      "justification_wrong": "B extrapola requisitos (política é estratégica, não operacional detalhada). C contradiz 5.2.c que exige disponibilização apropriada a partes interessadas relevantes, não apenas internos. D impõe requisito inexistente; a norma exige disponibilização, não aprovação de partes interessadas."
+    },
+    {
+      "num": 19,
+      "text": "Na implementação da cláusula 7.5 (Informação Documentada), uma organização deve garantir controle adequado. Qual atividade NÃO é requisito explícito da norma?",
+      "tag": "Controle de Informação Documentada",
+      "options": [
+        "D. Identificação e descrição (título, data, autor, número de referência) da informação",
+        "B. Armazenamento, preservação (incluindo legibilidade) e controle de alterações",
+        "C. Retenção, disposição e registro de aprovação por auditoria externa independente",
+        "A. Distribuição, acesso, recuperação e uso da informação documentada"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 7.5.3 lista atividades de controle: distribuição, acesso, recuperação, uso, armazenamento, preservação, legibilidade, controle de alterações, retenção e disposição. Aprovação por auditoria externa não é requisito normativo; a norma exige controle interno apropriado pela própria organização.",
+      "justification_wrong": "A, B e D descrevem requisitos explícitos de 7.5.3. Auditoria externa é mecanismo de verificação (cláusula 9), não componente obrigatório do sistema de controle documental. A organização define seus próprios processos de aprovação conforme 7.5.2."
+    },
+    {
+      "num": 20,
+      "text": "Um Lead Implementer está estabelecendo objetivos de SI (cláusula 6.2). Qual conjunto de características é OBRIGATÓRIO segundo a ISO 27001:2022?",
+      "tag": "Objetivos de Segurança da Informação",
+      "options": [
+        "C. Documentados em formato específico padronizado, auditados trimestralmente, vinculados diretamente a indicadores financeiros",
+        "A. Coerentes com política SI, mensuráveis, considerando requisitos SI e resultados de avaliação de riscos, comunicados, atualizados",
+        "D. Definidos apenas por especialistas técnicos, focados exclusivamente em controles preventivos de cibersegurança",
+        "B. Aprovados pela alta direção, alinhados exclusivamente a frameworks internacionais, com métricas quantitativas obrigatórias"
+      ],
+      "correct": 1,
+      "justification_correct": "Cláusula 6.2 estabelece que objetivos devem: ser coerentes com política SI, mensuráveis (quando praticável), considerar requisitos SI aplicáveis e resultados de avaliação/tratamento de riscos, ser comunicados, monitorados e atualizados conforme apropriado. A opção A reflete precisamente esses requisitos normativos.",
+      "justification_wrong": "B adiciona requisitos inexistentes (frameworks específicos, métricas exclusivamente quantitativas). C impõe formato e periodicidade não especificados pela norma, além de vincular incorretamente a indicadores financeiros. D restringe incorretamente participação e escopo dos objetivos ao técnico/preventivo."
+    },
+    {
+      "num": 21,
+      "text": "Uma organização multinacional está implementando ISO 27001:2022 e identificou que diferentes unidades de negócio possuem apetites de risco distintos. Segundo a cláusula 6.1.3, como a organização deve proceder na definição de critérios de aceitação de riscos no SGSI?",
+      "tag": "Planejamento - Avaliação de Riscos",
+      "options": [
+        "A. Estabelecer critérios únicos e uniformes para toda a organização, garantindo consistência na tomada de decisão",
+        "C. Adotar exclusivamente critérios quantitativos baseados em valores monetários para facilitar comparações",
+        "D. Utilizar apenas critérios qualitativos padronizados em escala baixo-médio-alto para simplificar o processo",
+        "B. Permitir que cada unidade defina seus próprios critérios, desde que documentados e aprovados pela alta direção considerando o contexto organizacional"
+      ],
+      "correct": 3,
+      "justification_correct": "A cláusula 6.1.3(c) exige que a organização defina critérios para aceitação de riscos considerando seu contexto (cláusula 4). Diferentes unidades podem ter contextos distintos, permitindo critérios diferenciados desde que alinhados aos objetivos organizacionais, documentados e aprovados pela alta direção conforme requisitos de governança da cláusula 5.1.",
+      "justification_wrong": "Critérios uniformes (A) podem não refletir realidades operacionais distintas. A norma não restringe a critérios apenas quantitativos (C) ou qualitativos (D), mas exige adequação ao contexto organizacional conforme cláusulas 4.1 e 4.2, permitindo flexibilidade metodológica apropriada."
+    },
+    {
+      "num": 22,
+      "text": "Durante auditoria interna, identificou-se que a Declaração de Aplicabilidade (SoA) foi atualizada após tratamento de riscos, mas não lista controles necessários implementados fora do Anexo A. Qual a não conformidade segundo ISO 27001:2022?",
+      "tag": "Documentação - Statement of Applicability",
+      "options": [
+        "A. Ausência de controles do Anexo A obrigatórios não pode ser compensada por controles adicionais",
+        "C. Violação da cláusula 6.1.3(d) que exige inclusão na SoA de controles necessários implementados, independente de estarem no Anexo A",
+        "D. Não há não conformidade se os controles adicionais estiverem documentados em análise crítica de riscos",
+        "B. A SoA deve incluir apenas controles do Anexo A, sendo controles adicionais documentados separadamente no plano de tratamento"
+      ],
+      "correct": 1,
+      "justification_correct": "A cláusula 6.1.3(d) especifica que a SoA deve incluir: controles necessários determinados pelo processo de avaliação e tratamento de riscos (referência ao Anexo A) E quaisquer controles adicionais implementados. A omissão de controles necessários fora do Anexo A constitui não conformidade com documentação obrigatória do SGSI.",
+      "justification_wrong": "Controles do Anexo A não são todos obrigatórios (A), apenas os necessários conforme avaliação. A SoA deve consolidar TODOS os controles implementados (B é incorreto). Documentação separada (D) não atende o requisito explícito da cláusula 6.1.3(d) sobre conteúdo da SoA."
+    },
+    {
+      "num": 23,
+      "text": "A alta direção delegou autoridade para aprovar o escopo do SGSI ao Comitê de Segurança da Informação. Durante certificação, o auditor questionou esta prática. Qual o posicionamento correto conforme cláusula 5.1 e 5.3?",
+      "tag": "Liderança - Responsabilidades da Alta Direção",
+      "options": [
+        "C. É aceitável se o Comitê reportar trimestralmente à alta direção sobre adequação do escopo",
+        "A. É permitido desde que o Comitê possua representantes da alta direção e a delegação esteja formalmente documentada",
+        "B. A cláusula 5.1 estabelece responsabilidades indelegáveis da alta direção, incluindo assegurar que escopo e política sejam estabelecidos, constituindo não conformidade",
+        "D. A delegação é válida para escopo mas não para política de SI, conforme separação de responsabilidades da norma"
+      ],
+      "correct": 2,
+      "justification_correct": "A cláusula 5.1(a) determina que a alta direção deve assegurar que política e objetivos de SI sejam estabelecidos e compatíveis com direção estratégica. A cláusula 5.3 reforça que papéis e responsabilidades relevantes sejam atribuídos, mas responsabilidades estratégicas da cláusula 5.1 são accountability indelegável da alta direção.",
+      "justification_wrong": "Embora a alta direção possa delegar autoridades operacionais (cláusula 5.3), as responsabilidades de assegurar (ensuring) listadas em 5.1 constituem accountability que permanece com a alta direção. Documentação (A), reportes (C) ou delegação parcial (D) não transferem esta responsabilidade fundamental."
+    },
+    {
+      "num": 24,
+      "text": "Uma organização definiu objetivo de SI: \"Reduzir incidentes de segurança em 30% em 12 meses\". O gestor de SI solicita recursos adicionais, mas a direção questiona o alinhamento estratégico. Qual requisito da cláusula 6.2 está sendo desafiado?",
+      "tag": "Planejamento - Objetivos de SI",
+      "options": [
+        "C. Objetivos operacionais de SI não necessitam alinhamento estratégico direto, apenas consistência com requisitos de partes interessadas",
+        "B. A cláusula 6.2(a) exige que objetivos sejam consistentes com política de SI, que por 5.2(c) deve ser apropriada ao propósito e contexto organizacional",
+        "A. Objetivos mensuráveis são suficientes; recursos devem ser providos conforme cláusula 7.1 independente de alinhamento",
+        "D. O questionamento é improcedente se o objetivo atender requisitos legais de proteção de dados"
+      ],
+      "correct": 1,
+      "justification_correct": "A cláusula 6.2(a) exige objetivos consistentes com a política de SI. A cláusula 5.2(c) determina que a política seja apropriada ao propósito e contexto da organização. Este encadeamento normativo estabelece que objetivos devem ter alinhamento estratégico demonstrável, conectando operação (6.2), governança (5.2) e contexto (4.1).",
+      "justification_wrong": "Recursos (A) devem ser providos para objetivos estabelecidos conforme 7.1, mas a questão antecede isto: validar se objetivo está adequadamente estabelecido. Objetivos devem considerar requisitos (C) mas principalmente direcionamento estratégico. Atendimento legal (D) é necessário mas insuficiente para justificar alinhamento estratégico."
+    },
+    {
+      "num": 25,
+      "text": "Durante implementação, identificou-se que um fornecedor crítico de nuvem processa informações no escopo do SGSI mas está fora dos limites organizacionais. Como a cláusula 4.3 orienta o tratamento desta situação na determinação do escopo?",
+      "tag": "Contexto - Determinação do Escopo",
+      "options": [
+        "A. O fornecedor deve ser excluído do escopo e tratado apenas via controles de relacionamento com fornecedores do Anexo A",
+        "C. Apenas ativos de informação sob controle direto podem estar no escopo; terceiros exigem escopo separado de SGSI",
+        "B. O escopo deve incluir referência às informações processadas, mesmo que o fornecedor esteja fora dos limites, aplicando controles apropriados e considerando dependências e interfaces",
+        "D. O fornecedor deve implementar ISO 27001 própria como pré-requisito para estar no escopo do SGSI da organização"
+      ],
+      "correct": 2,
+      "justification_correct": "A cláusula 4.3 permite que o escopo inclua interfaces e dependências com partes externas. O escopo define limites do SGSI, não necessariamente limites de controle direto. Informações no escopo processadas externamente devem ser protegidas via controles apropriados (Anexo A 5.19-5.23), mantendo responsabilidade organizacional pela segurança.",
+      "justification_wrong": "Exclusão (A) criaria lacuna de segurança para informações críticas. A cláusula 4.3 permite interfaces externas no escopo. Escopo separado (C) é desnecessário e ineficiente; a norma permite dependências externas. Certificação do fornecedor (D) pode ser controle aplicável mas não é pré-requisito normativo para definição de escopo."
+    },
+    {
+      "num": 26,
+      "text": "Uma organização multinacional opera em 15 países com legislações distintas de proteção de dados. Durante a definição do escopo do SGSI conforme cláusula 4.3, o Lead Implementer identifica que três subsidiárias possuem requisitos conflitantes. Qual abordagem está MAIS alinhada com ISO 27001:2022?",
+      "tag": "Escopo e Contexto Organizacional",
+      "options": [
+        "A. Estabelecer escopos separados por subsidiária, mantendo certificação única com anexos específicos documentando exclusões justificadas por jurisdição",
+        "C. Aplicar o princípio da legislação mais restritiva globalmente, ignorando especificidades locais",
+        "D. Criar SGSIs independentes para cada país, sem integração ou governança centralizada",
+        "B. Definir escopo global único excluindo as três subsidiárias conflitantes até harmonização regulatória"
+      ],
+      "correct": 0,
+      "justification_correct": "Cláusula 4.3 permite escopo flexível considerando questões internas/externas (4.1) e partes interessadas (4.2). A norma não proíbe exclusões justificadas desde que documentadas e não afetem capacidade/responsabilidade de prover segurança da informação. Anexos específicos mantêm governança unificada respeitando contextos locais, alinhado com 4.3 e Anexo A controles aplicáveis.",
+      "justification_wrong": "Opção B viola 4.3 ao excluir arbitrariamente partes da organização sem justificativa técnica adequada. Opção C ignora requisito 4.1 de compreender contexto específico. Opção D fragmenta o SGSI desnecessariamente, contrariando integração requerida em 4.4 e eficácia do sistema. Exclusões devem ser excepcionais, documentadas e tecnicamente justificadas conforme escopo definido."
+    },
+    {
+      "num": 27,
+      "text": "Durante auditoria interna, detecta-se que a Alta Direção delegou aprovação da política de SI (cláusula 5.2) ao Comitê de Segurança, retendo apenas conhecimento informativo. O CISO argumenta maior agilidade decisória. Qual o não-conformidade identificada?",
+      "tag": "Liderança e Política de SI",
+      "options": [
+        "B. Não-conformidade menor: falta evidência de que Alta Direção estabeleceu E aprovou a política conforme 5.2.c",
+        "A. Não há não-conformidade, pois 5.2.b permite delegação desde que o Comitê seja formalmente designado",
+        "C. Não-conformidade crítica: violação de 5.1 por ausência de liderança e comprometimento direto da Alta Direção",
+        "D. Conformidade parcial: delegação aceitável se política for revisada anualmente pela Alta Direção"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 5.2.c é explícita: Alta Direção DEVE estabelecer E aprovar a política de SI. Cláusula 5.1 requer demonstração de liderança e comprometimento através de ações diretas e intransferíveis. Delegação de aprovação elimina accountability requerida pela norma, constituindo não-conformidade crítica pois compromete fundamento do SGSI: comprometimento visível da liderança organizacional conforme 5.1.a-i.",
+      "justification_wrong": "Opção A/D interpretam erroneamente 5.2.c que não permite delegação de aprovação. Opção B subestima gravidade: não é menor, mas crítica, pois 5.1 estabelece responsabilidades intransferíveis. ISO 27001:2022 fortaleceu papel da Alta Direção. Delegação operacional é permitida (5.3), mas estabelecimento/aprovação de política são atos de liderança não-delegáveis conforme estrutura normativa."
+    },
+    {
+      "num": 28,
+      "text": "Na fase de planejamento (cláusula 6.1.3.c), a organização deve determinar como integrar e implementar ações de tratamento de riscos nos processos do SGSI. Qual elemento NÃO é obrigatório nesta determinação segundo ISO 27001:2022?",
+      "tag": "Planejamento e Tratamento de Riscos",
+      "options": [
+        "C. Recursos necessários para implementação das ações de tratamento de riscos",
+        "D. Forma de avaliar eficácia das ações após implementação",
+        "B. Cronograma detalhado com marcos de implementação para cada controle selecionado",
+        "A. Definição de responsáveis pela implementação de cada ação de tratamento identificada"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 6.1.3.c requer determinar 'como' integrar/implementar ações, mas não especifica cronograma detalhado como requisito obrigatório. Cláusula 7.1 requer recursos, 5.3 responsabilidades/autoridades, e 9.1 monitoramento/avaliação (eficácia). Cronograma é boa prática gerencial mas não mandatório na norma. Requisito é integração aos processos SGSI, não especificação temporal granular de implementação.",
+      "justification_wrong": "Opções A, C e D são requisitos explícitos: 5.3 exige atribuição de responsabilidades; 7.1 determina recursos necessários; 9.1 requer monitoramento e medição da eficácia. Cronograma detalhado (opção B), embora recomendável, não consta como requisito mandatório em 6.1.3. A norma foca em 'como integrar' sem prescrever ferramentas específicas de gestão de projetos."
+    },
+    {
+      "num": 29,
+      "text": "Uma organização possui 137 controles aplicáveis na Declaração de Aplicabilidade. Durante análise crítica, o Lead Implementer identifica que 12 controles marcados como 'implementados' carecem de evidências objetivas. Qual ação corretiva priorizada atende cláusula 6.1.3.d?",
+      "tag": "Declaração de Aplicabilidade",
+      "options": [
+        "C. Avaliar se controles estão operando efetivamente apesar de documentação insuficiente, regularizando registros",
+        "A. Reclassificar imediatamente os 12 controles como 'não implementados' e atualizar SoA conforme 6.1.3.d",
+        "B. Iniciar implementação emergencial dos 12 controles e documentar retrospectivamente evidências de conformidade",
+        "D. Conduzir análise de riscos residuais dos 12 controles e justificar formalmente aceitação de riscos no SoA"
+      ],
+      "correct": 0,
+      "justification_correct": "Cláusula 6.1.3.d requer SoA com controles necessários (6.1.3.b/c), status de implementação e justificativas. Ausência de evidências não confirma não-implementação. Prática sênior requer verificação in loco se controles operam efetivamente (9.1). Regularização documental mantém integridade do SGSI sem falsa declaração. Abordagem equilibra conformidade com 6.1.3.d, 7.5 (documentação) e 9.1 (verificação objetiva de eficácia).",
+      "justification_wrong": "Opção A presume não-implementação sem verificação, violando rigor técnico. Opção B cria documentação artificial, comprometendo integridade (7.5). Opção D aplica mecanismo inadequado: aceitação de risco (6.1.3.c) não substitui implementação requerida. Controles já foram determinados necessários; questão é status real. Verificação objetiva (9.1/9.2) precede qualquer decisão sobre SoA conforme hierarquia normativa."
+    },
+    {
+      "num": 30,
+      "text": "Conforme cláusula 7.5.1, a organização deve incluir informação documentada requerida pela norma e determinada como necessária para eficácia do SGSI. Qual situação caracteriza EXCESSO de documentação que pode comprometer o sistema?",
+      "tag": "Informação Documentada",
+      "options": [
+        "D. Registros de treinamento contendo assinaturas, avaliações de aprendizado e certificados para toda força de trabalho",
+        "C. Documentação de processo de análise crítica pela direção incluindo pautas, atas, listas de presença e planos de ação",
+        "A. Procedimentos operacionais detalhados para todos os 93 controles do Anexo A implementados pela organização",
+        "B. Política de SI com 47 páginas incluindo procedimentos técnicos, responsabilidades detalhadas e matrizes de controle"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 5.2 requer política 'apropriada ao propósito', tipicamente documento estratégico conciso. Política com 47 páginas mistura níveis documentais (política/procedimentos/registros), violando princípios de 7.5.1.b sobre formato/mídia apropriados. Documento híbrido compromete comunicação (7.4), dificulta manutenção e obscurece comprometimento da Alta Direção (5.2). Excesso caracterizado por inadequação de propósito, não volume documental per se.",
+      "justification_wrong": "Opção A: 7.5.1 permite documentação necessária para eficácia; procedimentos para controles complexos são legítimos. Opção C: cláusula 9.3 requer retenção de informação documentada da análise crítica, elementos listados são evidências apropriadas. Opção D: 7.2 requer competência com evidências; registros detalhados demonstram conformidade. Excesso não é quantidade absoluta, mas inadequação ao propósito conforme 7.5.1.a."
+    },
+    {
+      "num": 31,
+      "text": "Durante a análise de contexto organizacional (Cláusula 4.1), uma instituição financeira identificou a transformação digital como questão externa crítica. Qual abordagem demonstra aplicação adequada dos requisitos da ISO 27001:2022 para integrar essa questão ao SGSI?",
+      "tag": "Contexto Organizacional - Aplicação Prática",
+      "options": [
+        "C. Aguardar a conclusão completa da transformação digital para então revisar o escopo e os controles do SGSI",
+        "A. Mapear impactos da transformação digital em ativos de informação, avaliar riscos emergentes de tecnologias adotadas e ajustar controles do Anexo A pertinentes",
+        "B. Documentar a transformação digital apenas no relatório de gestão anual sem vincular ao processo de avaliação de riscos do SGSI",
+        "D. Criar política específica sobre transformação digital separada do SGSI, gerenciada exclusivamente pela área de TI"
+      ],
+      "correct": 1,
+      "justification_correct": "A Cláusula 4.1 exige que questões externas/internas sejam consideradas no SGSI. A abordagem correta integra a análise de contexto (4.1) com avaliação de riscos (6.1.2), identificando impactos em ativos e ajustando controles do Anexo A, conforme processo sistemático estabelecido nas Cláusulas 4-6.",
+      "justification_wrong": "Opções B, C e D falham ao não integrar a questão externa ao SGSI de forma sistemática. A ISO 27001:2022 exige que questões de contexto influenciem escopo (4.3), riscos (6.1) e controles (6.1.3/Anexo A) de forma contínua, não isolada ou postergada."
+    },
+    {
+      "num": 32,
+      "text": "Ao definir o escopo do SGSI (Cláusula 4.3), uma organização multinacional precisa excluir suas operações de manufatura por não processarem informações sensíveis. Qual critério da ISO 27001:2022 deve ser prioritariamente avaliado para validar essa exclusão?",
+      "tag": "Escopo do SGSI - Determinação",
+      "options": [
+        "C. Avaliar unicamente se existem controles físicos adequados nas instalações de manufatura para proteger equipamentos",
+        "B. Confirmar que a área de manufatura possui certificação ISO 9001, tornando redundante a inclusão no escopo do SGSI",
+        "D. Determinar se o custo de implementação do SGSI na manufatura excede 15% do orçamento total do projeto de certificação",
+        "A. Verificar se a exclusão compromete a capacidade da organização de alcançar os resultados pretendidos do SGSI ou reduz a confiança das partes interessadas"
+      ],
+      "correct": 3,
+      "justification_correct": "A Cláusula 4.3 estabelece que o escopo deve considerar questões 4.1, requisitos 4.2 e interfaces/dependências. Exclusões não podem comprometer resultados pretendidos do SGSI nem responsabilidades de SI. A validação prioritária verifica se a exclusão afeta capacidade de proteção e confiança das partes interessadas.",
+      "justification_wrong": "ISO 9001 não substitui requisitos de SI (B). Controles físicos isolados são insuficientes para validar exclusão de escopo (C). Critérios financeiros não são base normativa para definição de escopo segundo Cláusula 4.3 (D). O escopo deve basear-se em análise técnica de SI."
+    },
+    {
+      "num": 33,
+      "text": "Um CISO recém-nomeado precisa demonstrar liderança e comprometimento conforme Cláusula 5.1. Qual conjunto de ações evidencia adequadamente o atendimento aos requisitos normativos da ISO 27001:2022?",
+      "tag": "Liderança e Comprometimento - Evidências",
+      "options": [
+        "C. Implementar campanha de conscientização sobre segurança com brindes corporativos e estabelecer metas de participação em treinamentos",
+        "D. Contratar consultoria externa para gestão completa do SGSI e aprovar relatórios trimestrais apresentados pela equipe técnica",
+        "A. Assegurar integração dos requisitos do SGSI nos processos de negócio, disponibilizar recursos necessários e promover melhoria contínua com base em análise crítica",
+        "B. Delegar todas as responsabilidades do SGSI ao gerente de TI e participar apenas da reunião anual de análise crítica pela direção"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 5.1 exige que alta direção demonstre liderança através de: integração do SGSI aos processos (5.1.c), disponibilização de recursos (5.1.d), comunicação da importância (5.1.e) e promoção de melhoria contínua (5.1.h). A opção A evidencia comprometimento ativo e sistêmico conforme requisitos normativos.",
+      "justification_wrong": "Delegação total contraria o requisito de liderança pessoal da alta direção (B). Campanhas isoladas não demonstram integração aos processos de negócio (C). Terceirização completa da gestão não atende ao comprometimento pessoal exigido pela Cláusula 5.1 (D)."
+    },
+    {
+      "num": 34,
+      "text": "Durante o planejamento de riscos (Cláusula 6.1.2), uma organização identificou risco de ransomware com probabilidade 'Provável' e impacto 'Crítico'. Após implementar backups isolados e segmentação de rede, qual ação subsequente atende aos requisitos da ISO 27001:2022?",
+      "tag": "Tratamento de Riscos - Processo Completo",
+      "options": [
+        "D. Contratar seguro cibernético para transferir totalmente o risco e remover o ransomware do registro de riscos da organização",
+        "C. Comunicar a implementação dos controles ao CEO e considerar o processo de tratamento concluído até a próxima análise crítica anual",
+        "A. Reavaliar o risco residual considerando os controles implementados, documentar decisões no plano de tratamento e obter aprovação dos proprietários dos riscos",
+        "B. Registrar o risco como tratado no registro de riscos e aguardar a próxima auditoria interna para validar a eficácia dos controles"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 6.1.3 exige plano de tratamento documentado (6.1.3.e) e aprovação do plano/aceitação de riscos residuais pelos proprietários (6.1.3.f). A ISO 27001:2022 estabelece ciclo completo: implementar controles, reavaliar risco residual, documentar decisões e obter aprovação formal antes de considerar tratamento concluído.",
+      "justification_wrong": "Aguardar auditoria não atende ao requisito de aprovação pelos proprietários dos riscos (B). Comunicação ao CEO isolada não substitui processo formal de aceitação de riscos residuais (C). Seguro transfere consequências financeiras mas não elimina necessidade de tratamento técnico e aceitação de riscos residuais (D)."
+    },
+    {
+      "num": 35,
+      "text": "Uma organização está elaborando a Declaração de Aplicabilidade (SoA) conforme Cláusula 6.1.3.d. Qual estrutura atende integralmente aos requisitos da ISO 27001:2022 para este documento obrigatório?",
+      "tag": "Declaração de Aplicabilidade - Requisitos Documentais",
+      "options": [
+        "C. Planilha contendo apenas controles selecionados como aplicáveis, com descrição resumida de como cada controle foi implementado na organização",
+        "B. Matriz de controles aplicáveis organizados por categoria do Anexo A, com responsáveis designados e cronograma de implementação para próximos 12 meses",
+        "D. Documento listando controles do Anexo A organizados por nível de prioridade (alto/médio/baixo) baseado em análise de custo-benefício",
+        "A. Lista completa dos 93 controles do Anexo A, indicando status (aplicável/não aplicável), justificativa para cada decisão e referência aos controles implementados com suas descrições"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 6.1.3.d exige que a SoA contenha: controles necessários (6.1.3.b e c), se estão implementados e justificativa para inclusões/exclusões. A ISO 27001:2022 requer avaliação completa dos 93 controles do Anexo A (estrutura de 4 categorias), documentando decisões sobre aplicabilidade e status de implementação de cada controle.",
+      "justification_wrong": "Cronograma futuro não evidencia status atual de implementação exigido (B). Documentar apenas controles aplicáveis omite justificativa para exclusões, violando requisito de transparência da Cláusula 6.1.3.d (C). Priorização por custo-benefício não substitui análise baseada em riscos e requisitos normativos (D)."
+    },
+    {
+      "num": 36,
+      "text": "Uma organização multinacional opera em três jurisdições com requisitos regulatórios conflitantes sobre retenção de dados: União Europeia (GDPR - 6 meses), Brasil (LGPD - 12 meses) e EUA (SOX - 7 anos). Qual abordagem demonstra conformidade adequada com a cláusula 4.2 da ISO 27001:2022 ao definir requisitos de partes interessadas?",
+      "tag": "Contexto Organizacional - Requisitos de Partes Interessadas",
+      "options": [
+        "C. Adotar o período intermediário (12 meses LGPD) como compromisso equilibrado entre as três jurisdições",
+        "A. Aplicar o período de retenção mais restritivo (6 meses GDPR) globalmente para simplificar a gestão do SGSI",
+        "D. Declarar no escopo do SGSI que requisitos conflitantes impossibilitam conformidade total, aplicando apenas SOX",
+        "B. Implementar controles segmentados por jurisdição, aplicando o requisito legal específico em cada contexto operacional relevante"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 4.2 exige identificar e documentar requisitos de partes interessadas relevantes ao SGSI. A abordagem segmentada respeita requisitos legais estatutários específicos (4.2.b), aplicando controles adequados ao contexto organizacional (4.1). ISO 27001:2022 permite tratamento diferenciado por unidade/localização conforme contexto operacional.",
+      "justification_wrong": "Aplicar apenas um período globalmente (A, C) viola requisitos estatutários de outras jurisdições (4.2.b). Declarar não-conformidade (D) contradiz 4.2 que exige atender requisitos relevantes e compromisso com conformidade legal (cláusula 5.2.b). Segmentação contextual é mandatória quando requisitos diferem."
+    },
+    {
+      "num": 37,
+      "text": "Durante auditoria interna, identifica-se que a Declaração de Aplicabilidade (SoA) lista 25 controles do Anexo A como 'Não Aplicável', mas não há justificativas documentadas para 8 deles. A organização alega que são 'obviamente não relevantes'. Qual é a não-conformidade mais crítica segundo ISO 27001:2022?",
+      "tag": "Declaração de Aplicabilidade - Documentação",
+      "options": [
+        "D. Infração da cláusula 8.1 sobre planejamento operacional insuficiente dos controles aplicáveis",
+        "C. Descumprimento da cláusula 7.5.1.b sobre controle de informação documentada não aplicável a SoA",
+        "B. Não-conformidade com cláusula 6.1.3.c que requer justificativas para inclusões e exclusões de controles do Anexo A",
+        "A. Violação da cláusula 6.1.3.d que exige justificativas apenas para controles incluídos, não para exclusões"
+      ],
+      "correct": 2,
+      "justification_correct": "Cláusula 6.1.3.c estabelece que a SoA deve conter controles necessários (referência 6.1.3.b) e justificativa para inclusões E exclusões. A ausência de justificativas para controles 'não aplicáveis' representa não-conformidade direta. ISO 27001:2022 reforçou explicitamente este requisito para assegurar decisões fundamentadas sobre todos os controles.",
+      "justification_wrong": "Cláusula 6.1.3.d trata de determinação de controles necessários, não documentação (A). A 7.5.1.b refere-se a informação documentada requerida pela norma, mas não detalha especificidades da SoA (C). A 8.1 trata de operacionalização, não justificação na SoA (D). Justificativas de exclusão são mandatórias."
+    },
+    {
+      "num": 38,
+      "text": "A Alta Direção de uma organização certificada ISO 27001 delega ao CISO autoridade total para definir política de SI, aprovar orçamento de segurança e estabelecer objetivos estratégicos do SGSI, mantendo apenas supervisão trimestral. Qual cláusula está comprometida?",
+      "tag": "Liderança e Comprometimento - Responsabilidades",
+      "options": [
+        "D. Cláusula 9.3 sobre análise crítica pela direção, que pode ser realizada trimestralmente conforme conveniência",
+        "A. Cláusula 5.3 sobre papéis organizacionais, pois delegação de autoridade é permitida sem restrições",
+        "C. Cláusula 7.2 sobre competência, pois o CISO pode não ter qualificação para decisões estratégicas",
+        "B. Cláusula 5.1 sobre liderança e comprometimento, que exige envolvimento direto da Alta Direção em responsabilidades não delegáveis"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 5.1 estabelece responsabilidades não delegáveis da Alta Direção: assegurar política e objetivos compatíveis com direção estratégica (5.1.c), integração do SGSI (5.1.d) e recursos necessários (5.1.e). Delegar definição de política e objetivos estratégicos viola este comprometimento essencial, mesmo com supervisão. Responsabilidade final permanece sempre com Alta Direção.",
+      "justification_wrong": "Cláusula 5.3 permite atribuir responsabilidades operacionais, mas não transfere accountability estratégico da Alta Direção (A). Competência do CISO (7.2) é secundária ao problema de delegação indevida (C). Frequência trimestral de análise crítica (9.3) pode ser adequada, mas não resolve delegação imprópria de responsabilidades estratégicas (D)."
+    },
+    {
+      "num": 39,
+      "text": "Uma organização identifica risco de ransomware (probabilidade: alta; impacto: crítico) durante avaliação segundo 6.1.2. Após análise, decide: manter backups offline (reduz impacto), implementar EDR (reduz probabilidade), contratar seguro cyber (transfere impacto financeiro) e aceitar risco residual de 72h indisponibilidade. Qual requisito da ISO 27001:2022 está inadequado?",
+      "tag": "Planejamento - Tratamento de Riscos",
+      "options": [
+        "B. Descumprimento de 6.1.3.e que exige aprovação formal do plano de tratamento e aceitação de riscos residuais por proprietários",
+        "D. Infração de 6.2 pois objetivos de SI devem eliminar completamente riscos críticos, não apenas mitigá-los",
+        "C. Não-conformidade com 6.1.3.b porque foram aplicadas múltiplas opções simultaneamente para um mesmo risco",
+        "A. Violação de 6.1.3.a pois é proibido aceitar riscos residuais quando há opções de tratamento disponíveis"
+      ],
+      "correct": 0,
+      "justification_correct": "Cláusula 6.1.3.e estabelece que proprietários de risco devem aprovar formalmente o plano de tratamento e os riscos residuais. A questão não menciona esta aprovação essencial. ISO 27001:2022 enfatiza accountability com aprovação documentada por quem tem autoridade para aceitar consequências, especialmente para riscos críticos residuais.",
+      "justification_wrong": "Aceitar riscos residuais após tratamento é permitido (6.1.3.c.4), não proibido (A). Aplicar múltiplas opções (evitar, aceitar, transferir, mitigar) simultaneamente é prática recomendada, não violação (6.1.3.c) (C). ISO 27001 usa abordagem baseada em risco, não exige eliminação total de riscos (D). Aprovação formal é o requisito não demonstrado."
+    },
+    {
+      "num": 40,
+      "text": "Durante implementação da ISO 27001:2022, o gestor do projeto documenta: escopo (cláusula 4.3), política SI aprovada (5.2), objetivos mensuráveis (6.2), matriz de competências (7.2) e SoA (6.1.3). Na auditoria de certificação, qual informação documentada mandatória está faltando conforme cláusula 7.5?",
+      "tag": "Documentação - Informação Documentada Requerida",
+      "options": [
+        "D. Plano de continuidade de negócios conforme controle A.5.30 do Anexo A",
+        "A. Processo de avaliação de riscos e resultados da avaliação de riscos de SI (6.1.2.c e 6.1.2.d)",
+        "B. Procedimentos operacionais detalhados para todos os 93 controles do Anexo A aplicáveis",
+        "C. Organograma completo mostrando todas as responsabilidades e autoridades da organização"
+      ],
+      "correct": 1,
+      "justification_correct": "Cláusula 6.1.2.c exige manter informação documentada sobre processo de avaliação de riscos, e 6.1.2.d sobre resultados. Cláusula 7.5.1.b lista explicitamente informação documentada requerida pela norma. Processo e resultados de avaliação de riscos são mandatórios, não opcionais, fundamentais para demonstrar conformidade com abordagem baseada em risco.",
+      "justification_wrong": "ISO 27001 não exige procedimentos documentados para todos controles, apenas na extensão necessária (7.5.1.b) (B). Organograma completo não é mandatório; apenas papéis/responsabilidades relevantes ao SGSI (5.3) (C). PCN (A.5.30) é controle do Anexo A, cuja documentação depende da SoA e necessidade organizacional, não mandatória universalmente (D)."
+    },
+    {
+      "num": 41,
+      "text": "Durante a análise de contexto organizacional segundo ISO 27001:2022 cláusula 4.1, uma organização multinacional identificou requisitos conflitantes entre jurisdições (GDPR vs LGPD). Qual abordagem demonstra conformidade COMPLETA com a norma?",
+      "tag": "Contexto Organizacional - Cláusula 4.1",
+      "options": [
+        "C. Criar escopos SGSI separados por jurisdição, excluindo operações transfronteiriças do sistema",
+        "A. Documentar ambos requisitos como questões externas relevantes e aplicar controles mais restritivos onde houver operações simultâneas",
+        "D. Aplicar apenas requisitos da matriz corporativa, documentando conflitos como riscos residuais aceitos",
+        "B. Priorizar GDPR por ser mais abrangente e documentar LGPD apenas como referência informativa"
+      ],
+      "correct": 1,
+      "justification_correct": "Cláusula 4.1 exige determinação de questões externas relevantes ao propósito que afetem capacidade do SGSI. Requisitos legais conflitantes são questões externas críticas. A abordagem correta documenta ambos contextos e aplica princípio da proteção mais rigorosa (baseline de controles), atendendo 4.1 e suportando 4.2 (partes interessadas) e 6.1 (riscos).",
+      "justification_wrong": "Priorizar uma jurisdição ou criar escopos fragmentados viola requisito de contexto abrangente (4.1). Excluir operações transfronteiriças contradiz princípio de sistema integrado. Aceitar conflitos legais como risco residual sem tratamento adequado demonstra não-conformidade com requisitos legais obrigatórios (cláusula 4.1 + Anexo A 5.31)."
+    },
+    {
+      "num": 42,
+      "text": "Na definição do escopo SGSI conforme cláusula 4.3, uma organização de manufatura deseja excluir sistema SCADA de chão de fábrica alegando 'tecnologia legada incompatível'. Como Lead Implementer certificado, qual sua posição fundamentada?",
+      "tag": "Escopo do SGSI - Cláusula 4.3",
+      "options": [
+        "B. Rejeitar exclusão pois sistemas legados conectados à rede corporativa não podem ser excluídos por conveniência técnica",
+        "C. Permitir exclusão temporária com plano de modernização obrigatório em 12 meses conforme melhoria contínua",
+        "A. Aceitar exclusão mediante aprovação da Alta Direção e documentação de aceite formal de riscos associados",
+        "D. Aceitar mediante criação de zona desmilitarizada (DMZ) física segregando completamente o sistema SCADA"
+      ],
+      "correct": 0,
+      "justification_correct": "Cláusula 4.3 exige que escopo considere questões externas/internas (4.1), requisitos de partes interessadas (4.2) e interfaces/dependências. Sistemas SCADA conectados representam dependência crítica e vetor de ataque. Exclusões só são justificáveis quando não há interfaces ou impacto na segurança da informação. 'Incompatibilidade técnica' não atende critérios de exclusão da norma.",
+      "justification_wrong": "Aceitar exclusão por conveniência viola 4.3 - escopo deve refletir realidade de interfaces e dependências. Planos de modernização futura não justificam exclusão presente quando há conectividade. DMZ não elimina necessidade de incluir no escopo, apenas mitiga riscos. Cláusula 4.3 exige justificação com base em limites reais do SGSI."
+    },
+    {
+      "num": 43,
+      "text": "A Alta Direção delegou autoridade para aprovação de política de SI ao CISO, mantendo apenas função de 'validação final'. Qual implicação dessa estrutura perante cláusula 5.2 da ISO 27001:2022?",
+      "tag": "Liderança - Política SI - Cláusula 5.2",
+      "options": [
+        "D. Conformidade mediante registro de 'validação final' como aprovação efetiva em ata de reunião executiva",
+        "C. Conformidade condicional se organograma demonstrar CISO como membro estatutário da Alta Direção",
+        "A. Conformidade plena desde que CISO possua procuração formal com poderes específicos para atos de SI",
+        "B. Não-conformidade crítica: Alta Direção deve estabelecer e aprovar política SI, delegação não atende requisito normativo"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 5.2.a) é explícita: Alta Direção DEVE estabelecer política de segurança da informação. Requisito usa verbo modal 'shall' (deve), indicando obrigação não-delegável. Embora 5.3 permita delegar autoridades e responsabilidades operacionais, estabelecimento e aprovação da política SI são responsabilidades intransferíveis da liderança conforme estrutura normativa de accountability.",
+      "justification_wrong": "Procuração ou posição organizacional não transferem responsabilidade normativa de 'estabelecer' política. 'Validação final' como mera formalidade pós-decisão não caracteriza 'estabelecimento'. Mesmo CISO sendo Alta Direção, delegação prévia de aprovação contradiz requisito de envolvimento direto. Cláusula 5.2 exige protagonismo executivo, não homologação burocrática."
+    },
+    {
+      "num": 44,
+      "text": "Durante análise crítica de riscos (cláusula 6.1.2), identificou-se ativo crítico com vulnerabilidade conhecida, probabilidade alta e impacto severo, mas risco avaliado como 'aceitável' pela metodologia interna. Como auditor Lead Implementer, qual sua análise?",
+      "tag": "Planejamento - Avaliação Riscos - Cláusula 6.1.2",
+      "options": [
+        "C. Avaliar conformidade da metodologia com 6.1.2.c) (critérios de aceitação definidos) e coerência do resultado com critérios estabelecidos",
+        "D. Conformidade plena desde que tratamento residual garanta controles compensatórios mesmo sem reduzir nível de risco",
+        "A. Não-conformidade: combinação de probabilidade alta e impacto severo nunca pode resultar em risco aceitável",
+        "B. Conformidade condicional se Alta Direção ratificar aceite mediante análise documentada de custo-benefício"
+      ],
+      "correct": 0,
+      "justification_correct": "Cláusula 6.1.2.c) exige que organização estabeleça e aplique critérios de aceitação de risco, mas não prescreve valores. A norma permite que organização defina próprio apetite ao risco baseado em contexto (4.1). Auditoria deve verificar: (1) critérios documentados; (2) aplicação consistente; (3) decisão registrada e aprovada adequadamente, não impor julgamento sobre níveis aceitáveis.",
+      "justification_wrong": "ISO 27001 não proíbe aceitar riscos altos - é decisão organizacional baseada em apetite definido. Ratificação de Alta Direção não torna conforme metodologia inadequada. Controles compensatórios caracterizam tratamento (6.1.3), não aceitação pura. Questão central é conformidade metodológica com requisitos processuais de 6.1.2, não valores resultantes."
+    },
+    {
+      "num": 45,
+      "text": "Organização implementou 75 controles do Anexo A, mas Statement of Applicability (SoA) lista apenas 60 controles aplicáveis com justificativas de exclusão para 33. Qual análise correta quanto à cláusula 6.1.3.d)?",
+      "tag": "Planejamento - SoA - Cláusula 6.1.3.d",
+      "options": [
+        "B. Conformidade desde que 15 controles implementados além do SoA estejam documentados em plano de tratamento de riscos",
+        "C. Não-conformidade: total de aplicáveis (60) e excluídos (33) soma apenas 93, mas implementados são 75, indicando inconsistência documental",
+        "D. Conformidade se controles extras foram implementados voluntariamente como melhoria contínua além de avaliação de riscos",
+        "A. Não-conformidade grave: SoA deve incluir todos 93 controles com status de aplicabilidade individual"
+      ],
+      "correct": 3,
+      "justification_correct": "Cláusula 6.1.3.d) requer SoA contendo controles necessários (6.1.3.b+c) E justificativa para inclusões/exclusões. Anexo A 2022 possui 93 controles. SoA DEVE abordar todos, declarando aplicáveis ou não aplicáveis com justificativa. Somatório 60+33=93 está correto matematicamente; implementar 75 quando apenas 60 são aplicáveis indica controles desnecessários ou erro de classificação no SoA.",
+      "justification_wrong": "Inconsistência não está no total (93 correto), mas em implementar 75 quando SoA declara 60 necessários. Controles além do necessário por avaliação de riscos devem estar justificados no SoA como aplicáveis. 'Melhoria contínua voluntária' não dispensa inclusão no SoA. Documentar em plano separado não substitui requisito de SoA abrangente cobrindo todos 93 controles."
+    },
+    {
+      "num": 46,
+      "text": "Uma organização multinacional está implementando ISO 27001:2022 e identificou que diferentes unidades de negócio possuem apetites de risco distintos. Como Lead Implementer, qual abordagem MELHOR reconcilia esta situação mantendo a conformidade com a cláusula 6.1.2?",
+      "tag": "Planejamento - Avaliação de Riscos",
+      "options": [
+        "B. Padronizar um único apetite de risco corporativo para todas as unidades, garantindo uniformidade na aplicação dos controles do Anexo A",
+        "C. Permitir que cada unidade defina autonomamente seus critérios sem necessidade de aprovação centralizada, respeitando a descentralização operacional",
+        "D. Adotar os critérios de risco da unidade mais conservadora como referência corporativa para todas as demais unidades",
+        "A. Estabelecer critérios de aceitação de risco diferenciados por unidade, desde que alinhados aos objetivos estratégicos e aprovados pela alta direção conforme contexto organizacional da cláusula 4.1"
+      ],
+      "correct": 3,
+      "justification_correct": "A cláusula 6.1.2 exige que os critérios de risco considerem o contexto organizacional (4.1), mas permite diferenciação desde que alinhados estrategicamente e aprovados pela alta direção (5.1). A norma não impõe uniformidade absoluta, reconhecendo contextos distintos dentro da organização.",
+      "justification_wrong": "Alternativas B e D impõem uniformidade não requerida pela norma. C viola o requisito de governança da alta direção (5.1) sobre definição de critérios de risco. A norma exige alinhamento estratégico, não padronização forçada ou autonomia absoluta."
+    },
+    {
+      "num": 47,
+      "text": "Durante auditoria de certificação, identificou-se que a organização mantém documentação do SGSI em três idiomas diferentes devido operações globais. O auditor questiona a rastreabilidade de mudanças entre versões linguísticas. Qual requisito da cláusula 7.5 é CRÍTICO para esta situação?",
+      "tag": "Recursos - Informação Documentada",
+      "options": [
+        "C. Apenas a versão no idioma original da organização precisa atender aos requisitos de controle da cláusula 7.5.3",
+        "B. A norma permite documentação multilíngue sem requisitos específicos de controle de versão entre idiomas diferentes",
+        "A. A cláusula 7.5.3 exige controle de informação documentada garantindo identificação, formato e controle de alterações adequados, aplicável a todas as versões independente do idioma",
+        "D. O requisito 7.5.2 sobre criação suficiente, sendo as traduções consideradas cópias não controladas para fins práticos"
+      ],
+      "correct": 2,
+      "justification_correct": "A cláusula 7.5.3(b) exige que a informação documentada seja controlada adequadamente, incluindo controle de alterações e versões. Não há exceção para documentos multilíngues; todas as versões oficiais devem manter rastreabilidade e controle equivalentes para garantir integridade do SGSI.",
+      "justification_wrong": "B ignora requisitos explícitos de controle. C cria distinção não prevista pela norma que se aplica a toda informação documentada do SGSI. D confunde criação (7.5.2) com controle (7.5.3); traduções oficiais são informação documentada controlada, não cópias."
+    },
+    {
+      "num": 48,
+      "text": "Uma organização definiu seu escopo excluindo sistemas legados críticos sob argumento de obsolescência tecnológica planejada em 18 meses. Como Lead Implementer, qual análise da cláusula 4.3 é CORRETA sobre esta exclusão?",
+      "tag": "Escopo do SGSI",
+      "options": [
+        "D. A decisão sobre exclusão é prerrogativa da alta direção conforme cláusula 5.1, cabendo ao Lead Implementer apenas documentar a decisão",
+        "A. A exclusão é inválida; cláusula 4.3 exige que o escopo considere interfaces e dependências, e sistemas legados críticos impactam a segurança atual independente de obsolescência futura",
+        "B. A exclusão é válida se documentada no escopo como exceção temporária com prazo definido para descontinuação",
+        "C. Sistemas legados podem ser excluídos se a organização implementar controles compensatórios nos sistemas que os substituirão"
+      ],
+      "correct": 1,
+      "justification_correct": "A cláusula 4.3 determina que o escopo considere interfaces, dependências e requisitos relacionados à segurança da informação. Sistemas críticos em operação, independente de obsolescência planejada, impactam a segurança atual e não podem ser arbitrariamente excluídos. O escopo deve refletir a realidade operacional presente.",
+      "justification_wrong": "B e C criam exceções não previstas pela norma. Obsolescência futura não justifica exclusão de sistemas operacionais críticos. D ignora que o Lead Implementer deve assegurar conformidade normativa; a alta direção define escopo dentro dos limites da cláusula 4.3, não arbitrariamente."
+    },
+    {
+      "num": 49,
+      "text": "Durante análise de contexto (cláusula 4.2), identificaram-se requisitos contraditórios entre legislação local de proteção de dados e contratos com clientes internacionais. Qual abordagem na Declaração de Aplicabilidade (cláusula 6.1.3.d) MELHOR endereça esta situação?",
+      "tag": "Planejamento - Declaração de Aplicabilidade",
+      "options": [
+        "D. Documentar o conflito na SoA e implementar apenas controles do Anexo A que não apresentem contradição entre as partes",
+        "C. Criar duas SoAs distintas: uma para operações locais e outra para clientes internacionais, cada uma refletindo seus requisitos específicos",
+        "A. Implementar controles que atendam ao requisito mais restritivo, documentando na SoA a justificativa baseada em análise de requisitos legais e contratuais conforme 4.2",
+        "B. Priorizar legislação local sobre requisitos contratuais, excluindo da SoA controles conflitantes com base em supremacia legal"
+      ],
+      "correct": 2,
+      "justification_correct": "A cláusula 6.1.3(d) exige que a SoA reflita decisões sobre controles necessários e aplicáveis. A análise de partes interessadas (4.2) inclui requisitos legais e contratuais. A abordagem mais restritiva garante conformidade com ambos os conjuntos de requisitos, sendo tecnicamente defensável e auditável.",
+      "justification_wrong": "B ignora que contratos são requisitos vinculantes (4.2). C viola a unicidade do SGSI e SoA para o escopo definido. D representa falha em endereçar requisitos identificados; a norma exige resolução de requisitos aplicáveis, não sua omissão por complexidade."
+    },
+    {
+      "num": 50,
+      "text": "Uma organização estabeleceu objetivos de segurança da informação (cláusula 6.2) incluindo 'reduzir incidentes em 40% em 12 meses'. Após 6 meses, mudanças no contexto externo (4.1) tornaram este objetivo inatingível. Qual ação é MANDATÓRIA pela norma?",
+      "tag": "Planejamento - Objetivos de SI",
+      "options": [
+        "B. Manter o objetivo original até o prazo de 12 meses para permitir avaliação completa do ciclo, documentando desvios na análise crítica",
+        "A. Revisar e atualizar os objetivos conforme cláusula 6.2, assegurando alinhamento com novo contexto e mantendo monitoramento pela alta direção (5.1 e 9.3)",
+        "C. Substituir o objetivo quantitativo por objetivo qualitativo que não dependa de métricas específicas de prazo",
+        "D. Documentar a mudança de contexto como não conformidade, iniciando ação corretiva conforme cláusula 10.1 para ajustar o objetivo"
+      ],
+      "correct": 1,
+      "justification_correct": "A cláusula 6.2 exige que objetivos sejam consistentes com a política de SI, mensuráveis e atualizados quando apropriado. Mudanças no contexto (4.1) que inviabilizam objetivos constituem situação que requer atualização. A análise crítica (9.3) deve considerar mudanças no contexto, incluindo impacto nos objetivos estabelecidos.",
+      "justification_wrong": "B ignora requisito de atualização 'quando apropriado' da norma. C modifica inadequadamente sem justificativa; objetivos devem ser mensuráveis (6.2). D confunde mudança de contexto externo com não conformidade; ajuste de objetivos por mudança contextual é gestão normal do SGSI, não ação corretiva."
+    }
+  ]
+}

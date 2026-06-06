@@ -1,0 +1,710 @@
+{
+  "cert_id": "cism",
+  "domain_id": "incident_management",
+  "quiz_num": 2,
+  "domain_name": "Gestion de Incidentes",
+  "cert_name": "Certified Information Security Manager",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "¿Cuándo consulta un respondedor de incidentes un manual de respuesta a incidentes (playbook)?",
+      "tag": "playbook_usage_timing",
+      "options": [
+        "A. Antes de que ocurra un incidente, para prepararse para un incidente simulado",
+        "B. Durante un incidente, para comprender los pasos requeridos para responder a un tipo específico de incidente",
+        "C. Después de un incidente, para comprender cómo mejorar los procedimientos de respuesta a incidentes",
+        "D. Durante un incidente, para comprender a quién escalar el incidente"
+      ],
+      "correct": 1,
+      "justification_correct": "Un manual de respuesta a incidentes (playbook) contiene pasos técnicos específicos y detallados requeridos para responder a un tipo particular de incidente. Los respondedores de incidentes consultan el playbook durante un incidente activo para asegurar que se tomen todos los pasos necesarios.",
+      "justification_wrong": "A es incorrecta porque las simulaciones utilizan el IRP o documentos de escenarios, no playbooks. C es incorrecta porque la revisión posterior al incidente mejora el IRP, no el playbook en sí. D es incorrecta porque las rutas de escalamiento están definidas en el IRP, no en el playbook."
+    },
+    {
+      "num": 2,
+      "text": "Durante un incidente de ransomware que afecta sistemas críticos del negocio, el gerente de seguridad de la información debe decidir sobre la estrategia de contención. ¿Cuál debería ser el factor PRINCIPAL que guíe esta decisión?",
+      "tag": "ransomware_containment_decision_criteria",
+      "options": [
+        "A. Evaluación de impacto al negocio y objetivos de tiempo de recuperación para los sistemas afectados",
+        "B. Capacidades técnicas de los miembros del equipo de respuesta a incidentes",
+        "C. Herramientas forenses disponibles para análisis de malware",
+        "D. Arquitectura de segmentación de red actualmente implementada"
+      ],
+      "correct": 0,
+      "justification_correct": "El factor PRINCIPAL que debe guiar las decisiones de estrategia de contención durante un incidente de ransomware debería ser la evaluación de impacto al negocio y los objetivos de tiempo de recuperación (RTO). Como decisión a nivel gerencial, el gerente de seguridad de la información debe equilibrar la necesidad de contención con los requisitos de continuidad del negocio. Comprender qué sistemas son críticos, sus RTO y el impacto al negocio de diversos enfoques de contención (como aislamiento completo versus desconexión selectiva) permite al gerente tomar decisiones informadas que se alineen con las prioridades del negocio. Esto asegura que las acciones de contención apoyen, en lugar de interrumpir innecesariamente, las operaciones del negocio mientras se gestiona efectivamente el incidente.",
+      "justification_wrong": "La opción B se enfoca en las capacidades técnicas del equipo, lo cual es una consideración de implementación en lugar del factor estratégico principal para las decisiones de contención. La opción C se relaciona con capacidades forenses técnicas, lo cual es una preocupación táctica y no el impulsor principal para decisiones de estrategia de contención a nivel gerencial. La opción D describe la infraestructura técnica existente, la cual es una restricción a considerar pero no el factor principal - el impacto al negocio y los objetivos de recuperación deben impulsar la decisión, y el gerente puede necesitar tomar decisiones que funcionen dentro de las limitaciones técnicas existentes o las anulen según las necesidades del negocio."
+    },
+    {
+      "num": 3,
+      "text": "Después de una violación de datos confirmada que involucra información personal identificable (PII) de clientes, el equipo de respuesta a incidentes ha contenido exitosamente la amenaza. ¿Cuál debería ser la preocupación PRINCIPAL del gerente de seguridad de la información al determinar los siguientes pasos?",
+      "tag": "ir_breach_notification_regulatory_priority",
+      "options": [
+        "A. Asegurar el cumplimiento de los requisitos regulatorios de notificación y sus plazos",
+        "B. Realizar un análisis forense completo para identificar el vector de ataque",
+        "C. Implementar controles técnicos adicionales para prevenir la recurrencia",
+        "D. Actualizar el plan de respuesta a incidentes basándose en las lecciones aprendidas"
+      ],
+      "correct": 0,
+      "justification_correct": "A nivel gerencial, la preocupación PRINCIPAL después de contener una violación de PII es asegurar el cumplimiento de los requisitos regulatorios de notificación y sus plazos. La mayoría de las regulaciones de protección de datos (GDPR, CCPA, HIPAA, leyes estatales de notificación de violaciones) imponen plazos estrictos para notificar a los reguladores y a las personas afectadas, a menudo 72 horas o menos. El incumplimiento puede resultar en multas significativas, sanciones regulatorias y responsabilidad legal. El gerente de seguridad de la información debe evaluar inmediatamente las obligaciones de notificación, coordinar con el asesor legal y asegurar comunicaciones oportunas a reguladores, clientes y otras partes interesadas. Esta es una decisión crítica de gobernanza y gestión de riesgos que no puede ser delegada y tiene consecuencias directas de negocio y legales.",
+      "justification_wrong": "La opción B (análisis forense) es importante pero es una actividad técnica que puede proceder en paralelo y típicamente se delega al equipo de respuesta a incidentes o especialistas. La opción C (implementar controles técnicos) es una actividad de remediación que ocurre más tarde en el ciclo de vida del incidente después de cumplir las obligaciones regulatorias inmediatas. La opción D (actualizar el plan de respuesta a incidentes) es parte de la revisión post-incidente y ocurre después de que el incidente esté completamente resuelto, no inmediatamente después de la contención. Aunque todas las opciones son actividades valiosas, el cumplimiento regulatorio representa la decisión gerencial más sensible al tiempo con el mayor impacto legal y de negocio potencial."
+    },
+    {
+      "num": 4,
+      "text": "Durante la investigación de un incidente de seguridad, el equipo de TI solicita permiso para restaurar inmediatamente los sistemas afectados desde el respaldo para minimizar el tiempo de inactividad. ¿Cuál debería ser la preocupación PRINCIPAL del gerente de seguridad de la información antes de autorizar la restauración?",
+      "tag": "incident_evidence_preservation_decision",
+      "options": [
+        "A. Si se ha preservado suficiente evidencia para respaldar posibles procedimientos legales y análisis de causa raíz",
+        "B. Si los medios de respaldo utilizan estándares de cifrado apropiados",
+        "C. Si el proceso de restauración sigue los procedimientos técnicos documentados en el manual de procedimientos",
+        "D. Si el equipo de TI ha completado su documentación de traspaso de turno"
+      ],
+      "correct": 0,
+      "justification_correct": "El gerente de seguridad de la información debe equilibrar las necesidades de continuidad del negocio con los requisitos investigativos y legales. Antes de autorizar la restauración del sistema, el gerente debe asegurarse de que se haya preservado suficiente evidencia digital adecuadamente para respaldar posibles acciones legales, obligaciones de reporte regulatorio, reclamaciones de seguros y un análisis exhaustivo de causa raíz. Esta es una decisión estratégica que considera el riesgo organizacional, los requisitos de cumplimiento y la capacidad de prevenir futuros incidentes. Restaurar los sistemas prematuramente puede destruir evidencia crítica y comprometer la capacidad de la organización para emprender acciones legales o satisfacer los requisitos de investigación regulatoria. Esta decisión requiere juicio gerencial sobre prioridades competitivas e intereses organizacionales.",
+      "justification_wrong": "La opción B se enfoca en detalles técnicos de configuración del respaldo en lugar de la decisión gerencial sobre preservación de evidencia versus recuperación del negocio. La opción C aborda el cumplimiento de procedimientos técnicos, que es una preocupación operativa en lugar de la decisión estratégica que el gerente debe tomar. La opción D se relaciona con procesos administrativos que, si bien son importantes para las operaciones, no son la preocupación principal al tomar la decisión gerencial crítica sobre preservación de evidencia versus restauración del sistema. El rol del gerente es asegurar que los intereses organizacionales estén protegidos al preservar las capacidades investigativas antes de autorizar acciones que eliminarían la evidencia."
+    },
+    {
+      "num": 5,
+      "text": "¿Cuál es el objetivo principal de la fase de lecciones aprendidas de la respuesta a incidentes?",
+      "tag": "lessons_learned_phase_objective",
+      "options": [
+        "A. Asignar culpa a los individuos responsables del incidente",
+        "B. Calcular el costo financiero total del incidente",
+        "C. Identificar áreas de mejora en la postura de seguridad y las capacidades de respuesta a incidentes de la organización",
+        "D. Documentar el incidente para propósitos de aplicación de la ley"
+      ],
+      "correct": 2,
+      "justification_correct": "La fase de lecciones aprendidas revisa el incidente y la respuesta para identificar debilidades en controles, procesos y capacidades, impulsando la mejora continua para prevenir o responder mejor a futuros incidentes.",
+      "justification_wrong": "A es contraproducente y no es el propósito. B puede ocurrir pero no es el objetivo primario. D es una actividad legal y forense separada."
+    },
+    {
+      "num": 6,
+      "text": "Un gerente de seguridad de la información recibe una alerta de que se han detectado patrones de tráfico de red inusuales que indican una posible comunicación de comando y control desde un sistema interno. ¿Cuál debería ser la PRIMERA acción de gestión?",
+      "tag": "incident_escalation_c2_detection",
+      "options": [
+        "A. Activar el plan de respuesta a incidentes y convocar al equipo de respuesta a incidentes",
+        "B. Indicar al personal de TI que desconecte inmediatamente el sistema afectado de la red",
+        "C. Notificar a las autoridades policiales y regulatorias sobre la posible brecha de seguridad",
+        "D. Realizar un análisis forense completo para determinar el alcance del compromiso"
+      ],
+      "correct": 0,
+      "justification_correct": "Activar el plan de respuesta a incidentes y convocar al equipo de respuesta a incidentes es la primera acción de gestión apropiada. Esto asegura una respuesta coordinada y estructurada siguiendo procedimientos establecidos y reúne a las partes interesadas apropiadas para tomar decisiones informadas sobre contención, investigación, comunicación y escalamiento. El rol del gerente de seguridad de la información es gestionar el proceso de respuesta a incidentes, no tomar decisiones tácticas aisladas. El plan de respuesta a incidentes guiará las acciones subsecuentes incluyendo cuándo aislar sistemas, notificar a las autoridades y realizar análisis forense basándose en la evaluación de severidad e impacto al negocio.",
+      "justification_wrong": "La opción B es prematura y táctica - la desconexión inmediata puede estar justificada pero debe ser decidida por el equipo de respuesta a incidentes después de considerar el impacto al negocio, la preservación de evidencia y si monitorear la amenaza proporciona valor de inteligencia. La opción C es prematura - los requisitos de notificación regulatoria y la participación de autoridades policiales se determinan durante la fase de evaluación del incidente basándose en el impacto, tipos de datos afectados y requisitos legales, no automáticamente al detectar el incidente. La opción D prioriza el análisis antes de la activación de procedimientos de respuesta - el análisis forense es un componente de la respuesta a incidentes pero debe ocurrir dentro del marco del plan de respuesta a incidentes activado, no como una primera acción aislada."
+    },
+    {
+      "num": 7,
+      "text": "Durante una investigación forense de un incidente de seguridad, el gerente de seguridad de la información debe asegurar el manejo apropiado de la evidencia digital. ¿Cuál es el propósito PRINCIPAL de mantener una cadena de custodia documentada?",
+      "tag": "chain_of_custody_digital_evidence",
+      "options": [
+        "A. Preservar la admisibilidad legal e integridad de la evidencia documentando todos los custodios y transferencias",
+        "B. Crear una copia de respaldo de toda la evidencia digital para propósitos de recuperación ante desastres",
+        "C. Asegurar que la evidencia pueda ser reproducida en múltiples formatos para diferentes interesados",
+        "D. Proporcionar una línea de tiempo de cuándo fallaron los controles de seguridad durante el incidente"
+      ],
+      "correct": 0,
+      "justification_correct": "La opción A es correcta porque el propósito principal de la cadena de custodia es mantener un rastro documentado que pruebe que la evidencia no ha sido manipulada, alterada o contaminada. Esta documentación registra cada persona que manejó la evidencia, las fechas y horas de transferencia, y el propósito de cada transferencia. Esto es esencial para la admisibilidad legal en procedimientos judiciales y mantiene la integridad y credibilidad de la evidencia. Sin una cadena de custodia apropiada, la evidencia puede ser cuestionada o considerada inadmisible en procedimientos legales.",
+      "justification_wrong": "La opción B es incorrecta porque el respaldo y la recuperación ante desastres, aunque importantes para la continuidad del negocio, no son el propósito principal de la cadena de custodia, que se enfoca en la integridad legal en lugar de la preservación de datos. La opción C es incorrecta porque la cadena de custodia documenta el manejo y las transferencias, no las conversiones de formato o métodos de reproducción; los cambios de formato de evidencia deben documentarse pero no son el propósito primario. La opción D es incorrecta porque la cadena de custodia rastrea el manejo de evidencia después de la recolección, no la línea de tiempo del incidente en sí o las fallas de control; las líneas de tiempo de incidentes son requisitos de documentación separados."
+    },
+    {
+      "num": 8,
+      "text": "Un gerente de seguridad de la información está supervisando la recolección de datos volátiles de un servidor comprometido durante una respuesta activa a incidentes. Siguiendo el principio del orden de volatilidad, ¿qué secuencia debería priorizarse para la recolección de datos?",
+      "tag": "volatile_data_collection_order_of_volatility",
+      "options": [
+        "A. Contenido del disco duro, archivos swap/page, registros de red, registros y caché de CPU",
+        "B. Registros y caché de CPU, contenido de RAM, conexiones de red, procesos en ejecución, luego almacenamiento persistente",
+        "C. Cintas de respaldo, registros del sistema, contenido de RAM, luego capturas de paquetes de red",
+        "D. Capturas de tráfico de red, imágenes de disco, volcados de memoria, luego registro del sistema"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta ya que sigue el orden apropiado de volatilidad de más a menos volátil. Los registros y caché de CPU son los más volátiles y desaparecen casi instantáneamente cuando se pierde energía o cambia el estado del sistema. El contenido de RAM es el siguiente, conteniendo procesos en ejecución, conexiones de red y claves de cifrado. Las conexiones de red y procesos en ejecución deben capturarse antes de que terminen. El almacenamiento persistente (discos duros) es el menos volátil y puede recolectarse al final. Esta secuencia, establecida por RFC 3227 y las mejores prácticas forenses, asegura que la evidencia más transitoria y valiosa se preserve primero antes de que se pierda.",
+      "justification_wrong": "La opción A es incorrecta porque invierte el orden correcto, comenzando con lo menos volátil (disco duro) y terminando con lo más volátil (registros de CPU), lo que resultaría en la pérdida de datos volátiles críticos. La opción C es incorrecta porque las cintas de respaldo y los registros del sistema son almacenamiento persistente y deben recolectarse después de la memoria volátil; el orden no prioriza primero los datos más volátiles. La opción D es incorrecta porque no sigue el orden de volatilidad; el tráfico de red debe capturarse temprano, pero las imágenes de disco deben venir después de la recolección de memoria, y los datos del registro son relativamente persistentes comparados con RAM y procesos en ejecución."
+    },
+    {
+      "num": 9,
+      "text": "Un gerente de seguridad de la información está seleccionando herramientas forenses para investigaciones de respuesta a incidentes. ¿Cuál es el criterio MÁS importante al elegir herramientas forenses para recolectar y analizar evidencia digital?",
+      "tag": "forensic_tools_and_techniques",
+      "options": [
+        "A. Las herramientas deben ser de código abierto para permitir la validación de la comunidad y la revisión por pares",
+        "B. Las herramientas deben ser forenses sólidas, produciendo resultados repetibles sin alterar la evidencia original",
+        "C. Las herramientas deben ser la opción menos costosa disponible para optimizar la asignación del presupuesto",
+        "D. Las herramientas deben tener las capacidades de inteligencia artificial más avanzadas para análisis automatizado"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque la solidez forense es el requisito fundamental para cualquier herramienta forense. Las herramientas forenses sólidas no deben alterar la evidencia original (bloqueo de escritura), producir resultados repetibles y verificables, y mantener la integridad de la evidencia a lo largo del proceso de investigación. Esto es crítico para la admisibilidad legal, ya que los tribunales requieren prueba de que la evidencia no ha sido modificada y que los hallazgos pueden verificarse independientemente. Las herramientas deben usar metodologías validadas (como algoritmos de hashing verificados) y mantener documentación apropiada. Sin solidez forense, toda la evidencia recolectada podría ser cuestionada o rechazada en procedimientos legales, independientemente de otras características de la herramienta.",
+      "justification_wrong": "La opción A es incorrecta porque aunque las herramientas de código abierto pueden proporcionar transparencia, las herramientas comerciales propietarias también pueden ser forenses sólidas y legalmente aceptadas; la clave es la validación y aceptación por la comunidad forense, no el modelo de licenciamiento. La opción C es incorrecta porque el costo nunca debe ser el criterio primario para herramientas forenses; usar herramientas más baratas que no son forenses sólidas puede comprometer investigaciones y procedimientos legales, resultando en costos mucho mayores. La opción D es incorrecta porque aunque la IA y la automatización pueden mejorar la eficiencia, son secundarias a la solidez forense; las características avanzadas no tienen valor si la herramienta altera evidencia o produce resultados no repetibles que no pueden validarse."
+    },
+    {
+      "num": 10,
+      "text": "Un gerente de seguridad de la información está preparando evidencia digital para posibles procedimientos legales después de una investigación de brecha de datos. ¿Qué factor es MÁS crítico para asegurar la admisibilidad de la evidencia en el tribunal?",
+      "tag": "evidence_admissibility_legal_requirements",
+      "options": [
+        "A. La evidencia fue recolectada usando el software forense más nuevo disponible en el mercado",
+        "B. La evidencia demuestra relevancia directa al caso y fue obtenida legalmente con la autorización apropiada",
+        "C. La evidencia incluye múltiples copias distribuidas a todos los interesados para revisión",
+        "D. La evidencia fue recolectada por el miembro del personal técnico más senior de la organización"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque la admisibilidad de evidencia en procedimientos legales depende fundamentalmente de la relevancia, autenticidad, confiabilidad y adquisición legal. La evidencia debe ser directamente relevante al asunto en cuestión, obtenida a través de medios legales (autorización apropiada, órdenes judiciales donde se requieran, respetando las leyes de privacidad), y recolectada sin violar derechos o regulaciones. Los tribunales aplican reglas de evidencia que requieren prueba de que la evidencia es lo que afirma ser, fue obtenida legalmente y es material al caso. Sin autorización legal o si fue obtenida impropriamente (como a través de acceso no autorizado), la evidencia puede ser excluida independientemente de su calidad técnica o relevancia, potencialmente socavando todo el caso.",
+      "justification_wrong": "La opción A es incorrecta porque la antigüedad del software forense no es un criterio de admisibilidad legal; a los tribunales les importa la confiabilidad y aceptación de los métodos utilizados, no si el software es la versión más nueva. Las herramientas antiguas bien establecidas pueden ser más fácilmente aceptadas que las nuevas no probadas. La opción C es incorrecta porque distribuir múltiples copias a los interesados no asegura admisibilidad y puede comprometer la cadena de custodia; se requiere acceso controlado y manejo documentado, no distribución amplia. La opción D es incorrecta porque la antigüedad del recolector es irrelevante para la admisibilidad; lo que importa es la capacitación apropiada, seguir procedimientos correctos, mantener la cadena de custodia y autorización legal, independientemente de la jerarquía organizacional."
+    },
+    {
+      "num": 11,
+      "text": "Durante una respuesta a incidentes que involucra sospecha de malware avanzado, el gerente de seguridad de la información debe decidir si aislar los sistemas afectados inmediatamente o mantener la conectividad para recopilar evidencia. ¿Cuál debería ser el factor PRINCIPAL que impulse esta decisión?",
+      "tag": "incident_response_containment_decision",
+      "options": [
+        "A. El impacto potencial en el negocio del aislamiento del sistema versus el riesgo de mayor compromiso",
+        "B. Las capacidades técnicas del equipo forense para realizar análisis de sistemas en vivo",
+        "C. La disponibilidad de herramientas de adquisición de memoria y licencias de software forense",
+        "D. La completitud de los registros de tráfico de red y las reglas de correlación del SIEM"
+      ],
+      "correct": 0,
+      "justification_correct": "El factor principal para una decisión de contención a nivel gerencial es equilibrar el impacto en el negocio contra el riesgo de seguridad. El gerente de seguridad de la información debe evaluar si el aislamiento inmediato (que puede interrumpir operaciones críticas del negocio) supera el riesgo de compromiso continuo, exfiltración de datos o movimiento lateral. Esta decisión requiere comprender las prioridades del negocio, obligaciones regulatorias, escenarios potenciales de pérdida de datos y dependencias operacionales. Representa una decisión estratégica de gestión de riesgos que considera tanto los objetivos de seguridad como de continuidad del negocio, lo cual es la responsabilidad central de la gestión de seguridad de la información.",
+      "justification_wrong": "La opción B se enfoca en las capacidades técnicas del equipo en lugar del marco estratégico de decisión de riesgos. La opción C aborda la disponibilidad de herramientas técnicas, que es una preocupación operacional que debería resolverse durante la planificación de respuesta a incidentes, no un factor de decisión principal durante un incidente activo. La opción D concierne a mecanismos técnicos de recolección de evidencia en lugar de los criterios de decisión gerencial para acciones de contención. Si bien las capacidades técnicas y la evidencia son consideraciones importantes, están subordinadas al análisis fundamental de riesgo versus impacto que la gerencia debe realizar."
+    },
+    {
+      "num": 12,
+      "text": "Un responsable de seguridad de la información recibe reportes de múltiples empleados haciendo clic en enlaces en correos electrónicos que solicitan actualizaciones urgentes de contraseña. ¿Qué acción de respuesta debe ser la PRIMERA prioridad al confirmar un ataque de phishing?",
+      "tag": "phishing_attack_indicators_and_response",
+      "options": [
+        "A. Realizar una sesión integral de capacitación en concientización de seguridad para todos los empleados afectados",
+        "B. Contener inmediatamente la amenaza bloqueando las URL maliciosas, poniendo en cuarentena los correos relacionados y restableciendo las credenciales de los usuarios afectados",
+        "C. Documentar todos los detalles de los correos de phishing para el informe de revisión posterior al incidente",
+        "D. Notificar a las autoridades policiales y regulatorias sobre la campaña de phishing"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque la contención inmediata es la primera prioridad en la respuesta a incidentes para prevenir daños adicionales y limitar el alcance del compromiso. Al confirmar un ataque de phishing, el responsable de seguridad de la información debe actuar rápidamente para: bloquear URL/dominios maliciosos en el perímetro, poner en cuarentena o eliminar correos maliciosos de todos los buzones (incluyendo aquellos no abiertos aún), forzar el restablecimiento de contraseñas para usuarios afectados, deshabilitar cuentas comprometidas si es necesario y aislar sistemas potencialmente infectados. Esta contención rápida previene que usuarios adicionales sean víctimas, detiene la potencial ejecución de malware y limita el acceso del atacante a credenciales comprometidas. Siguiendo el ciclo de vida de respuesta a incidentes (Preparación, Detección, Contención, Erradicación, Recuperación, Lecciones Aprendidas), la contención siempre precede a las actividades de capacitación, documentación o notificación.",
+      "justification_wrong": "La opción A es incorrecta porque aunque la capacitación en concientización de seguridad es importante, es una medida preventiva para incidentes futuros y parte de las lecciones aprendidas posteriores al incidente, no una acción de respuesta inmediata. La contención debe ocurrir primero para detener el daño continuo. La opción C es incorrecta porque la documentación es importante y debe ocurrir durante todo el incidente, pero no es la primera prioridad; documentar mientras el ataque continúa permite que ocurra más daño. La contención debe suceder antes de la documentación integral. La opción D es incorrecta porque aunque la notificación puede ser requerida por regulaciones o políticas, sigue a la contención; permitir que el ataque continúe mientras se realizan notificaciones sería irresponsable y podría aumentar la responsabilidad legal y los daños."
+    },
+    {
+      "num": 13,
+      "text": "Un responsable de seguridad de la información está desarrollando capacidades de detección para amenazas internas. ¿Qué combinación de indicadores sería MÁS efectiva para identificar posible actividad maliciosa de un usuario interno?",
+      "tag": "insider_threat_detection_indicators",
+      "options": [
+        "A. Múltiples intentos fallidos de inicio de sesión desde direcciones IP externas durante horarios no laborales",
+        "B. Patrones anómalos de acceso a datos, horarios de trabajo inusuales, intentos de eludir controles de seguridad y descargas excesivas de datos a medios extraíbles",
+        "C. Acceso rutinario a sistemas dentro de las responsabilidades laborales asignadas durante horarios laborales normales",
+        "D. Participación en capacitación de concientización de seguridad y reporte de correos sospechosos"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque describe múltiples indicadores conductuales y técnicos que, cuando se combinan, sugieren posible actividad maliciosa interna. La detección efectiva de amenazas internas requiere correlación de múltiples comportamientos anómalos: acceder a datos fuera de las funciones laborales normales (especialmente datos sensibles), trabajar en horarios inusuales inconsistentes con patrones normales, intentar deshabilitar registros o eludir controles de seguridad, descargar grandes volúmenes de datos a unidades USB o almacenamiento en la nube personal, acceder a sistemas antes de la renuncia e intentos de escalamiento de privilegios. Ningún indicador único prueba definitivamente intención maliciosa, pero patrones de múltiples indicadores ameritan investigación. Los sistemas de Análisis de Comportamiento de Usuarios y Entidades (UEBA) monitorean estas desviaciones de las líneas base establecidas, reconociendo que los usuarios internos tienen acceso legítimo, haciendo que los controles puramente técnicos sean insuficientes.",
+      "justification_wrong": "La opción A es incorrecta porque los intentos fallidos de inicio de sesión externos típicamente indican intentos de ataque externo (como rociado de contraseñas o relleno de credenciales) en lugar de amenazas internas; los usuarios internos ya tienen credenciales legítimas y acceso interno. La opción C es incorrecta porque el acceso rutinario dentro de las responsabilidades laborales durante horarios normales representa comportamiento normal esperado, no indicadores de actividad maliciosa; esto es comportamiento de línea base, no actividad anómala que requiera investigación. La opción D es incorrecta porque participar en capacitación y reportar correos sospechosos son comportamientos de seguridad positivos que demuestran concientización de seguridad, no indicadores de actividad maliciosa interna; estas acciones deben fomentarse, no tratarse como sospechosas."
+    },
+    {
+      "num": 14,
+      "text": "Un responsable de seguridad de la información sospecha que la organización está siendo objetivo de un grupo de Amenaza Persistente Avanzada (APT). ¿Qué característica indicaría MÁS fuertemente actividad APT en lugar de ataques oportunistas?",
+      "tag": "advanced_persistent_threat_apt_characteristics",
+      "options": [
+        "A. Uso de herramientas automatizadas de escaneo de vulnerabilidades contra aplicaciones web públicas",
+        "B. Presencia sostenida y sigilosa con malware personalizado, movimiento lateral y exfiltración de datos dirigida enfocada en propiedad intelectual específica",
+        "C. Campañas masivas de phishing usando plantillas genéricas enviadas a miles de direcciones de correo",
+        "D. Despliegue de ransomware exigiendo pago inmediato en criptomonedas con un plazo corto"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque describe las características definitorias de las Amenazas Persistentes Avanzadas que las distinguen de los ataques oportunistas. Las APT se caracterizan por: capacidades avanzadas (malware personalizado, exploits de día cero), persistencia (mantener acceso a largo plazo, frecuentemente meses o años), objetivo específico (enfoque en datos particulares o propiedad intelectual), sigilo (usar técnicas para evitar detección, limpiar registros, tácticas de vivir de la tierra), múltiples etapas de ataque (compromiso inicial, escalamiento de privilegios, movimiento lateral, preparación de datos, exfiltración), y típicamente patrocinio de estados nacionales u organizaciones criminales altamente organizadas. Las APT invierten recursos significativos en permanecer sin detectar mientras persiguen sistemáticamente objetivos específicos, a diferencia de atacantes oportunistas que buscan ganancia financiera rápida de cualquier objetivo disponible.",
+      "justification_wrong": "La opción A es incorrecta porque el escaneo automatizado de vulnerabilidades es una característica de atacantes oportunistas que buscan objetivos fáciles entre muchas organizaciones, no el enfoque sofisticado y dirigido de las APT. Las APT usan reconocimiento pero son más deliberadas y sigilosas. La opción C es incorrecta porque las campañas masivas de phishing genérico representan ataques oportunistas no sofisticados que buscan cualquier víctima, mientras que las APT usan phishing dirigido altamente específico contra individuos particulares con mensajes cuidadosamente elaborados e investigados. La opción D es incorrecta porque el ransomware para ganancia financiera inmediata tipifica actividad cibercriminal oportunista; las APT se enfocan en espionaje a largo plazo y robo de datos en lugar de monetización inmediata, y evitan acciones como ransomware que revelarían su presencia."
+    },
+    {
+      "num": 15,
+      "text": "Un responsable de seguridad de la información descubre que una aplicación web ha sido comprometida mediante inyección SQL. ¿Cuál debe ser la prioridad de respuesta INMEDIATA?",
+      "tag": "sql_injection_attack_response",
+      "options": [
+        "A. Revisar todo el código fuente de la aplicación para identificar cada instancia de validación de entrada inadecuada",
+        "B. Aislar la aplicación afectada, evaluar el alcance del compromiso de datos y prevenir acceso adicional no autorizado a la base de datos",
+        "C. Implementar un Firewall de Aplicaciones Web con detección de firmas de inyección SQL",
+        "D. Realizar pruebas de penetración en todas las demás aplicaciones web en el entorno"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque la contención inmediata y la evaluación de impacto son las primeras prioridades al descubrir explotación activa. El responsable de seguridad de la información debe rápidamente: aislar o desconectar la aplicación comprometida para prevenir exfiltración o modificación continua de datos, evaluar qué datos han sido accedidos o robados (revisando registros de base de datos, registros de servidor web y patrones de consultas), identificar todos los sistemas y bases de datos afectados, preservar evidencia para análisis forense e implementar bloqueos o filtros inmediatos para prevenir ataques adicionales de inyección SQL. Esta respuesta rápida limita el daño y previene que los atacantes mantengan acceso. Una vez lograda la contención, el equipo puede proceder a la erradicación (parcheo de vulnerabilidades), recuperación (restauración de sistemas) y lecciones aprendidas (mejora de prácticas de codificación segura).",
+      "justification_wrong": "La opción A es incorrecta porque la revisión integral de código, aunque necesaria para remediación, toma tiempo significativo y debe ocurrir después de la contención inmediata; revisar código mientras el ataque continúa permite compromiso continuo de datos. La opción C es incorrecta porque aunque un WAF es un control compensatorio valioso, implementarlo no es la prioridad inmediata durante compromiso activo; primero contener el ataque, luego implementar capas adicionales de defensa. El despliegue de WAF requiere planificación y tiempo de configuración. La opción D es incorrecta porque probar otras aplicaciones es importante para identificar vulnerabilidades adicionales pero es una actividad posterior a la contención; la prioridad inmediata es detener el ataque activo y evaluar el daño al sistema comprometido, no probar sistemas no comprometidos."
+    },
+    {
+      "num": 16,
+      "text": "Un gerente de seguridad de la información recibe reportes de un potencial incidente de seguridad que involucra acceso no autorizado a datos de clientes. Antes de escalar a la alta gerencia, ¿cuál debería ser la PRIMERA prioridad?",
+      "tag": "incident_escalation_priority",
+      "options": [
+        "A. Verificar el alcance del incidente y evaluar el potencial impacto en el negocio",
+        "B. Notificar al departamento legal y preparar las presentaciones regulatorias",
+        "C. Contratar investigadores forenses externos para preservar la evidencia",
+        "D. Emitir una declaración pública para mantener la confianza de los clientes"
+      ],
+      "correct": 0,
+      "justification_correct": "Antes de escalar a la alta gerencia, el gerente de seguridad de la información debe primero verificar el alcance del incidente y evaluar el potencial impacto en el negocio. Esta evaluación inicial es crítica para la toma de decisiones informada y asegura que la gerencia reciba información precisa para determinar las acciones de respuesta apropiadas, la asignación de recursos y las estrategias de comunicación. Comprender el alcance previene la escalación prematura de falsos positivos mientras asegura que los incidentes genuinos sean adecuadamente caracterizados. Esta evaluación impulsa todas las decisiones gerenciales subsecuentes incluyendo si invocar planes de DR/BCP, qué obligaciones regulatorias existen y la estrategia de comunicación apropiada.",
+      "justification_wrong": "La opción B es prematura - la notificación legal y las presentaciones regulatorias dependen del alcance verificado y el impacto del incidente; no todos los incidentes requieren notificación regulatoria. La opción C puede ser necesaria pero es una decisión de respuesta táctica que viene después de comprender el alcance del incidente y el impacto en el negocio; contratar recursos externos es una decisión gerencial basada en la evaluación. La opción D es inapropiada y potencialmente dañina - las declaraciones públicas solo deben hacerse después de una evaluación apropiada, con coordinación entre áreas legal, comunicaciones y liderazgo ejecutivo; la divulgación pública prematura podría violar regulaciones o perjudicar la posición de la organización."
+    },
+    {
+      "num": 17,
+      "text": "Un responsable de seguridad de la información se entera de que una vulnerabilidad de día cero está siendo explotada activamente en una aplicación crítica para la cual no hay parche disponible actualmente. ¿Cuál debe ser la estrategia de respuesta inmediata MÁS apropiada?",
+      "tag": "zero_day_vulnerability_response",
+      "options": [
+        "A. Esperar a que el proveedor lance un parche oficial antes de tomar cualquier acción para asegurar la estabilidad del sistema",
+        "B. Implementar controles compensatorios como segmentación de red, monitoreo mejorado, parcheo virtual y restricción del acceso a la aplicación mientras se trabaja con el proveedor en soluciones",
+        "C. Descontinuar inmediatamente la aplicación vulnerable de forma permanente sin evaluar el impacto en el negocio",
+        "D. Realizar una prueba de penetración integral para identificar todas las vulnerabilidades potenciales en el entorno"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque al enfrentar explotación activa de una vulnerabilidad de día cero sin parches disponibles, el responsable de seguridad de la información debe implementar inmediatamente controles compensatorios de defensa en profundidad para reducir el riesgo mientras se esperan soluciones del proveedor. Las acciones inmediatas apropiadas incluyen: segmentación de red para aislar sistemas vulnerables y limitar movimiento lateral, monitoreo y registro mejorados para detectar intentos de explotación, implementar parcheo virtual mediante WAF o IPS con firmas personalizadas para patrones de explotación conocidos, restringir acceso a la aplicación vulnerable solo a usuarios/sistemas esenciales, deshabilitar funciones vulnerables si es posible y coordinar con proveedores para parches de emergencia o soluciones alternativas. Este enfoque basado en riesgos equilibra seguridad con continuidad del negocio, reconociendo que puede permanecer algún riesgo hasta que los parches estén disponibles pero reduciendo significativamente la exposición.",
+      "justification_wrong": "La opción A es incorrecta porque esperar sin implementar controles compensatorios deja a la organización expuesta a explotación activa; este enfoque pasivo es negligente cuando están ocurriendo ataques. Los responsables de seguridad de la información deben actuar inmediatamente para reducir el riesgo incluso sin soluciones perfectas. La opción C es incorrecta porque descontinuar inmediatamente aplicaciones críticas sin evaluación de impacto podría causar disrupción significativa del negocio; la gestión de riesgos requiere equilibrar necesidades de seguridad contra requerimientos de negocio, implementar controles compensatorios primero e involucrar a interesados del negocio en decisiones sobre disponibilidad del sistema. La opción D es incorrecta porque realizar pruebas de penetración integrales no es una respuesta inmediata a explotación activa; la prioridad es implementar controles protectores para detener ataques en curso, no probar para vulnerabilidades adicionales que pueden ocurrir después de la contención."
+    },
+    {
+      "num": 18,
+      "text": "Un responsable de seguridad de la información detecta múltiples intentos fallidos de inicio de sesión desde varias direcciones IP dirigidos a cuentas administrativas en las aplicaciones web de la organización. ¿Cuál de las siguientes debe ser la PRIMERA prioridad al responder a este potencial ataque de fuerza bruta?",
+      "tag": "brute_force_attack_detection_response",
+      "options": [
+        "A. Implementar políticas de bloqueo de cuenta y habilitar autenticación multifactor",
+        "B. Aislar los sistemas afectados e iniciar la recolección de evidencia forense",
+        "C. Bloquear las direcciones IP de origen en el firewall perimetral",
+        "D. Analizar registros de autenticación para evaluar el alcance y activar procedimientos de respuesta a incidentes"
+      ],
+      "correct": 3,
+      "justification_correct": "Según los principios CISM, la primera prioridad es evaluar la situación y activar los procedimientos apropiados de respuesta a incidentes. Analizar los registros proporciona información crítica sobre el alcance del ataque, cuentas objetivo, tasas de éxito/fallo y si alguna credencial fue comprometida. Esta evaluación impulsa todas las decisiones de respuesta subsecuentes y asegura que el equipo de respuesta a incidentes siga procedimientos establecidos con conciencia situacional precisa antes de tomar acciones de contención.",
+      "justification_wrong": "La opción A aborda la prevención pero debe ocurrir después de la evaluación y puede no ser inmediatamente implementable durante el ataque activo. La opción B asume que ha ocurrido compromiso sin verificación y la recolección forense es prematura sin entender el alcance. La opción C puede proporcionar alivio temporal pero podría bloquear tráfico legítimo, perder vectores de ataque y no aborda el incidente sistemáticamente. Todas estas acciones deben seguir la evaluación inicial y declaración formal del incidente."
+    },
+    {
+      "num": 19,
+      "text": "Durante la investigación de un incidente, el equipo de seguridad descubre que un empleado recibió una llamada telefónica de alguien que afirmaba ser del soporte de TI quien convenció al empleado de proporcionar sus credenciales e instalar software de acceso remoto. ¿Cuál debe ser la acción inmediata MÁS importante del responsable de seguridad de la información?",
+      "tag": "social_engineering_incident_handling",
+      "options": [
+        "A. Realizar capacitación de concientización de seguridad para todos los empleados",
+        "B. Deshabilitar la cuenta comprometida e investigar los sistemas accedidos por el software remoto",
+        "C. Reportar el incidente a las autoridades policiales",
+        "D. Revisar y actualizar el plan de respuesta a incidentes para incluir escenarios de ingeniería social"
+      ],
+      "correct": 1,
+      "justification_correct": "La prioridad inmediata en un compromiso confirmado de credenciales con acceso remoto no autorizado es la contención. Deshabilitar la cuenta comprometida previene acceso no autorizado adicional, e investigar los sistemas accedidos por el software remoto es crítico para determinar el alcance del compromiso, datos accedidos, movimiento lateral y posibles mecanismos de persistencia. Esto sigue los principios CISM de gestión de incidentes de contención y evaluación de alcance antes de pasar a las fases de erradicación y recuperación.",
+      "justification_wrong": "La opción A es importante para prevención a largo plazo pero no aborda el incidente de seguridad activo. La opción C puede ser necesaria más tarde dependiendo de la evaluación de impacto pero no es la prioridad técnica inmediata. La opción D es una actividad de lecciones aprendidas apropiada para la fase de revisión posterior al incidente. Ninguna de estas opciones aborda la amenaza inmediata de acceso no autorizado activo a sistemas y potencial actividad maliciosa en curso."
+    },
+    {
+      "num": 20,
+      "text": "Se ha detectado una infección de ransomware en múltiples estaciones de trabajo del departamento de finanzas. El responsable de seguridad de la información debe contener el incidente. ¿Qué estrategia de contención proporciona el MEJOR equilibrio entre limitar la propagación del malware y mantener las operaciones del negocio?",
+      "tag": "network_segmentation_containment_strategy",
+      "options": [
+        "A. Desconectar inmediatamente todos los sistemas del departamento de finanzas de la red",
+        "B. Aislar los sistemas infectados e implementar segmentación de red para restringir el movimiento lateral mientras se monitorean segmentos adyacentes",
+        "C. Apagar todos los switches de red que sirven al departamento de finanzas",
+        "D. Deshabilitar todas las cuentas de usuario en el departamento de finanzas hasta que los sistemas sean limpiados"
+      ],
+      "correct": 1,
+      "justification_correct": "La contención estratégica mediante el aislamiento de sistemas confirmados como infectados combinado con segmentación de red proporciona respuesta dirigida que limita la propagación del malware mientras preserva la funcionalidad de sistemas no afectados. Este enfoque permite operaciones de negocio continuas en sistemas limpios, proporciona capacidad de monitoreo para detectar propagación adicional y habilita investigación controlada. Esto se alinea con los principios CISM de respuesta proporcional y consideraciones de continuidad del negocio durante la gestión de incidentes.",
+      "justification_wrong": "La opción A es excesivamente amplia y puede interrumpir el negocio innecesariamente si no todos los sistemas están infectados, y previene trabajo legítimo. La opción C causa disrupción excesiva del negocio y afecta sistemas potencialmente limpios sin beneficio de contención dirigida. La opción D aborda la seguridad de cuentas pero no previene que el malware se propague mediante recursos compartidos de red, servicios o procesos automatizados, e impacta severamente las operaciones del negocio. Estos enfoques carecen de la precisión y equilibrio requeridos en la contención profesional de incidentes."
+    },
+    {
+      "num": 21,
+      "text": "Un gerente de seguridad de la información debe analizar un archivo ejecutable sospechoso descubierto en un servidor crítico. El archivo exhibe características que sugieren malware de amenaza persistente avanzada (APT). ¿Qué enfoque debe priorizarse para determinar de manera segura las capacidades del malware mientras se preserva la evidencia?",
+      "tag": "malware_analysis_static_dynamic",
+      "options": [
+        "A. Ejecutar el archivo en un entorno sandbox aislado con simulación de red completa y monitoreo de comportamiento",
+        "B. Realizar análisis estático incluyendo comparación de hash, extracción de cadenas y desensamblado de código antes de considerar el análisis dinámico",
+        "C. Enviar el archivo a servicios públicos de análisis de malware para escaneo automatizado",
+        "D. Implementar inmediatamente la firma del archivo en los sistemas de protección de endpoints en toda la organización"
+      ],
+      "correct": 1,
+      "justification_correct": "El análisis estático debe priorizarse primero ya que es no invasivo, preserva la integridad de la evidencia, no puede activar mecanismos anti-análisis y proporciona inteligencia inicial segura sin riesgo de ejecución del malware. La comparación de hash puede identificar amenazas conocidas inmediatamente, la extracción de cadenas revela IOCs y datos de configuración, y el desensamblado de código expone funcionalidad sin riesgos de ejecución. Esto sigue prácticas forenses sólidas y los requisitos de preservación de evidencia de CISM. El análisis dinámico en sandbox sigue solo después de que el análisis estático proporciona una comprensión base.",
+      "justification_wrong": "La opción A arriesga activar mecanismos de detección anti-sandbox y debe seguir al análisis estático. La opción C compromete la confidencialidad de inteligencia de amenazas organizacionales potencialmente sensible y puede alertar a actores de amenazas que monitorean tales servicios. La opción D es prematura sin análisis adecuado y puede crear falsos positivos o perder variantes. Todos estos enfoques comprometen la integridad de la investigación, omiten pasos críticos de análisis o toman acciones de respuesta sin comprensión adecuada de la amenaza."
+    },
+    {
+      "num": 22,
+      "text": "Durante una investigación de incidente de seguridad, el equipo de respuesta a incidentes sospecha que puede haber un rootkit presente en varios servidores basándose en comportamiento anómalo del sistema y procesos ocultos. ¿Cuál es el método MÁS confiable para detectar y confirmar la presencia de rootkit?",
+      "tag": "rootkit_detection_and_removal",
+      "options": [
+        "A. Ejecutar herramientas de detección de rootkit desde el sistema operativo potencialmente comprometido",
+        "B. Comparar el estado del sistema contra una línea base conocida como buena utilizando análisis offline de imágenes de disco",
+        "C. Monitorear el tráfico de red en busca de conexiones salientes inusuales",
+        "D. Revisar los registros del sistema en busca de intentos de acceso no autorizado"
+      ],
+      "correct": 1,
+      "justification_correct": "El análisis offline de imágenes de disco comparadas contra líneas base conocidas como buenas es más confiable porque los rootkits operan a niveles bajos del sistema y pueden ocultar su presencia de herramientas ejecutándose dentro del SO comprometido. Sacar el sistema offline y realizar análisis forense de imagen de disco desde un entorno confiable evita que el rootkit interfiera con la detección. Este método puede identificar modificaciones del kernel, archivos ocultos, procesos y cambios de registro que los rootkits ocultan del SO en ejecución. Este enfoque se alinea con las mejores prácticas de investigación forense de CISM.",
+      "justification_wrong": "La opción A no es confiable porque los rootkits específicamente subvierten las herramientas de detección a nivel de SO mediante el enganche de llamadas al sistema y ocultamiento de artefactos. La opción C puede identificar síntomas pero no confirma la presencia de rootkit y puede perder rootkits que no se comunican. La opción D es insuficiente ya que los rootkits típicamente ocultan sus entradas de registro o los registros pueden estar comprometidos. Estos métodos pueden proporcionar indicadores pero carecen de la confiabilidad del análisis forense offline para la detección definitiva de rootkit."
+    },
+    {
+      "num": 23,
+      "text": "Una organización descubre que las credenciales administrativas para múltiples servicios en la nube han sido comprometidas y publicadas en un repositorio de código público. ¿Cuál debe ser la PRIMERA acción de respuesta del gerente de seguridad de la información?",
+      "tag": "credential_compromise_response_steps",
+      "options": [
+        "A. Investigar cómo se expusieron las credenciales e identificar a los responsables",
+        "B. Rotar inmediatamente todas las credenciales comprometidas y revocar las sesiones activas",
+        "C. Realizar una evaluación de riesgos para determinar el impacto potencial en el negocio",
+        "D. Revisar los registros de acceso para identificar intentos de acceso no autorizado"
+      ],
+      "correct": 1,
+      "justification_correct": "La rotación inmediata de credenciales y la revocación de sesiones es la primera prioridad para detener el acceso no autorizado en curso. Una vez que las credenciales están públicamente expuestas, deben considerarse activamente comprometidas. Rotar las credenciales elimina el mecanismo de acceso del atacante, y revocar sesiones termina cualquier acceso no autorizado existente. Esta acción de contención debe ocurrir antes de las actividades de investigación o evaluación. Esto sigue los principios de respuesta a incidentes de CISM priorizando la contención de amenazas activas antes de pasar a las fases de investigación y recuperación.",
+      "justification_wrong": "La opción A es importante para el análisis de causa raíz pero debe esperar hasta que se logre la contención para prevenir daño continuo. La opción C proporciona información valiosa pero el riesgo ya se materializó con la exposición pública de credenciales requiriendo acción inmediata. La opción D es parte de la evaluación de impacto pero debe ocurrir después de detener la hemorragia rotando las credenciales. Todas estas actividades son secundarias al requisito de contención inmediato cuando las credenciales están públicamente comprometidas."
+    },
+    {
+      "num": 24,
+      "text": "Un gerente de seguridad de la información está investigando una posible exfiltración de datos después de detectar actividad de red inusual. ¿Qué combinación de indicadores proporcionaría la evidencia MÁS FUERTE de exfiltración de datos real en lugar de reconocimiento u otras fases de ataque?",
+      "tag": "data_exfiltration_detection_indicators",
+      "options": [
+        "A. Actividad de escaneo de puertos y múltiples intentos fallidos de autenticación",
+        "B. Grandes transferencias de datos salientes a destinos inusuales durante horarios no laborales combinadas con actividades de preparación de datos",
+        "C. Presencia de herramientas de acceso remoto e intentos de escalación de privilegios elevados",
+        "D. Consultas de túnel DNS y movimiento lateral entre segmentos de red"
+      ],
+      "correct": 1,
+      "justification_correct": "Grandes transferencias de datos salientes a destinos externos inusuales o no autorizados, especialmente durante horarios no laborales, combinadas con evidencia de preparación de datos (recolección y compresión de archivos) proporciona la indicación más fuerte de exfiltración real. Esto representa la etapa final donde los datos salen del control organizacional. La combinación de comportamiento de preparación y transferencias grandes anormales indica específicamente robo de datos en lugar de otras actividades de ataque. Esto se alinea con los requisitos de clasificación de incidentes de CISM para incidentes de violación de datos.",
+      "justification_wrong": "La opción A indica reconocimiento e intentos de acceso inicial, no exfiltración. La opción C sugiere compromiso y escalación de privilegios pero no necesariamente robo de datos. La opción D muestra establecimiento de comando y control y movimiento lateral que son actividades de ataque de etapa media. Si bien todos son eventos de seguridad preocupantes, ninguno demuestra específicamente que los datos están saliendo de la organización como las transferencias salientes grandes sostenidas de colecciones de datos preparados."
+    },
+    {
+      "num": 25,
+      "text": "Después de un ataque de ransomware que cifró sistemas comerciales críticos, la organización debe decidir sobre una estrategia de recuperación. Los atacantes exigen el pago dentro de 48 horas. ¿Qué debe recomendar el gerente de seguridad de la información como el factor PRINCIPAL para determinar el enfoque de recuperación?",
+      "tag": "ransomware_recovery_strategy",
+      "options": [
+        "A. El monto del rescate exigido comparado con los costos de restauración del sistema",
+        "B. Si existen copias de respaldo probadas y verificadas que puedan restaurar las operaciones dentro de plazos de recuperación aceptables",
+        "C. Las recomendaciones de las fuerzas del orden respecto al pago",
+        "D. La probabilidad de que los atacantes proporcionen claves de descifrado funcionales"
+      ],
+      "correct": 1,
+      "justification_correct": "La existencia, integridad y recuperabilidad de las copias de respaldo dentro de parámetros aceptables de RTO/RPO es el factor técnico principal que determina si la organización puede recuperarse independientemente sin pago de rescate. Las copias de respaldo probadas y verificadas que cumplan los objetivos de recuperación proporcionan un camino seguro hacia la restauración, mientras que el pago de rescate no ofrece garantías. Esto se alinea con los principios de continuidad del negocio de CISM y la toma de decisiones de recuperación de incidentes basada en capacidades organizacionales en lugar de demandas del atacante.",
+      "justification_wrong": "La opción A se enfoca en el costo en lugar de la capacidad de recuperación técnica y garantía de recuperación. La opción C, aunque importante para cumplimiento y orientación, no debe anular las capacidades técnicas de recuperación. La opción D no es confiable ya que muchos operadores de ransomware no proporcionan claves funcionales, proporcionan claves corruptas, o el proceso de descifrado no es confiable. Los principios de CISM priorizan la resiliencia organizacional y las capacidades de recuperación verificadas sobre negociaciones con actores de amenazas."
+    },
+    {
+      "num": 26,
+      "text": "Una organización descubre que un componente de software de terceros recientemente integrado contenía código malicioso que ha estado presente en sistemas de producción durante seis semanas. El proveedor confirma que fueron comprometidos. ¿Cuál debe ser la PRIMERA prioridad del gerente de seguridad de la información al responder a este ataque de cadena de suministro?",
+      "tag": "supply_chain_attack_response",
+      "options": [
+        "A. Terminar la relación con el proveedor y eliminar todos los productos del proveedor",
+        "B. Evaluar el alcance del compromiso identificando todos los sistemas que ejecutan el componente afectado y analizando sus registros de actividad",
+        "C. Implementar requisitos mejorados de seguridad del proveedor en los procesos de adquisición",
+        "D. Notificar a los clientes y partes interesadas sobre el compromiso potencial"
+      ],
+      "correct": 1,
+      "justification_correct": "La evaluación del alcance es la primera prioridad para comprender la extensión de la exposición organizacional y el compromiso potencial. Identificar todos los sistemas con el componente malicioso y analizar su actividad durante el período de seis semanas determina qué datos, sistemas o credenciales pueden estar comprometidos. Esta evaluación impulsa todas las decisiones de respuesta posteriores incluyendo contención, erradicación, obligaciones de notificación y prioridades de recuperación. Esto sigue la metodología de gestión de incidentes de CISM de evaluación antes de acción.",
+      "justification_wrong": "La opción A puede ser apropiada más tarde pero es prematura sin comprender el impacto y puede interrumpir el negocio innecesariamente. La opción C aborda la prevención futura pero no aborda el incidente activo. La opción D puede ser legalmente requerida pero debe basarse en una evaluación de impacto precisa primero para proporcionar notificación significativa. Tomar estas acciones antes de comprender el alcance arriesga respuesta inapropiada, remediación inadecuada o notificaciones prematuras sin información completa."
+    },
+    {
+      "num": 27,
+      "text": "Durante la respuesta a incidentes ante un ciberataque sofisticado, el gerente de seguridad de la información debe determinar si notificar a las fuerzas del orden. ¿Qué situación crea la obligación MÁS FUERTE de involucrar a las autoridades policiales?",
+      "tag": "law_enforcement_notification_criteria",
+      "options": [
+        "A. El ataque se originó desde direcciones IP en países extranjeros",
+        "B. La evidencia indica que el incidente involucra actividad criminal que afecta infraestructura crítica o intereses de seguridad nacional",
+        "C. La póliza de seguro cibernético de la organización requiere reporte a las fuerzas del orden",
+        "D. La alta gerencia solicita la participación de las fuerzas del orden para apoyar el enjuiciamiento"
+      ],
+      "correct": 1,
+      "justification_correct": "La actividad criminal que afecta infraestructura crítica o seguridad nacional crea obligaciones legales y requisitos de interés público para notificación a las fuerzas del orden en la mayoría de las jurisdicciones. Los ataques a infraestructura crítica pueden activar requisitos de reporte obligatorio bajo regulaciones como CISA o requisitos específicos del sector. Las implicaciones de seguridad nacional elevan los incidentes más allá de las preocupaciones organizacionales a asuntos de seguridad pública e interés nacional. Esto se alinea con los requisitos de gobernanza y cumplimiento regulatorio de CISM para que los gerentes de seguridad de la información comprendan las obligaciones de reporte obligatorio.",
+      "justification_wrong": "La opción A describe características comunes de ataque pero no crea obligaciones de reporte por sí sola. La opción C representa obligación contractual en lugar de legal y los requisitos de seguro varían. La opción D refleja preferencia pero no obligación. Si bien cualquiera de estos podría apoyar una decisión de involucrar a las fuerzas del orden, solo los incidentes que afectan infraestructura crítica o seguridad nacional típicamente crean obligaciones legales de reporte obligatorio que anulan la discreción organizacional."
+    },
+    {
+      "num": 28,
+      "text": "Una organización ha confirmado que la información de identificación personal (PII) de 5,000 clientes fue accedida por una parte no autorizada. Múltiples marcos regulatorios aplican a la organización. ¿Qué debe priorizar el gerente de seguridad de la información al determinar los requisitos de notificación?",
+      "tag": "regulatory_notification_requirements_breach",
+      "options": [
+        "A. La jurisdicción con el requisito de plazo de notificación más corto",
+        "B. Realizar una evaluación de riesgos integral para determinar si la notificación es realmente requerida",
+        "C. El marco regulatorio con las penalidades potenciales más altas por incumplimiento",
+        "D. Esperar los resultados completos de la investigación antes de tomar decisiones de notificación"
+      ],
+      "correct": 0,
+      "justification_correct": "Cuando múltiples marcos regulatorios aplican con acceso no autorizado confirmado a PII, la organización debe cumplir con todos los requisitos aplicables. La jurisdicción con el plazo de notificación más corto se convierte en el factor controlador porque cumplirlo asegura el cumplimiento con todos los demás plazos más largos. Esto previene violaciones regulatorias mientras la organización trabaja a través de los requisitos de notificación de todos los marcos aplicables. Esto sigue los principios de gestión de cumplimiento de CISM de cumplir con los requisitos más estrictos cuando múltiples marcos aplican.",
+      "justification_wrong": "La opción B es inapropiada ya que el acceso no autorizado a PII típicamente activa notificación obligatoria bajo la mayoría de las regulaciones de privacidad independientemente de las conclusiones de evaluación de riesgos. La opción C se enfoca en penalidades en lugar de plazos de cumplimiento y arriesga perder plazos de notificación. La opción D viola requisitos de notificación sensibles al tiempo; la mayoría de las regulaciones especifican plazos de notificación que no esperan investigaciones completas. Estos enfoques arriesgan incumplimiento regulatorio y penalidades adicionales por notificación retrasada."
+    },
+    {
+      "num": 29,
+      "text": "Un gerente de seguridad de la información descubre que un incidente de ransomware ha cifrado bases de datos de clientes que contienen información personal. ¿Cuál de las siguientes es la consideración MÁS importante al determinar el momento y contenido de las notificaciones a las partes afectadas?",
+      "tag": "affected_party_notification_best_practices",
+      "options": [
+        "A. La estrategia de relaciones públicas de la organización y el impacto en la reputación de la marca",
+        "B. Los requisitos legales y regulatorios de notificación aplicables y sus plazos",
+        "C. La finalización de la investigación forense completa y el análisis de causa raíz",
+        "D. La disponibilidad de soluciones de remediación y servicios de monitoreo de crédito"
+      ],
+      "correct": 1,
+      "justification_correct": "Los requisitos legales y regulatorios de notificación deben tener precedencia ya que ordenan plazos específicos (a menudo 72 horas bajo GDPR, variando por jurisdicción) y requisitos de contenido. El incumplimiento resulta en penalidades significativas y consecuencias legales. El gerente de seguridad de la información debe priorizar el cumplimiento con estas obligaciones independientemente de otras consideraciones organizacionales.",
+      "justification_wrong": "La estrategia de relaciones públicas (A) es importante pero secundaria a las obligaciones legales. Esperar la investigación forense completa (C) puede violar plazos de notificación obligatorios y típicamente no se requiere antes de la notificación inicial. Aunque ofrecer servicios de remediación (D) es buena práctica, no debe retrasar las notificaciones legalmente requeridas; estos pueden proporcionarse después de que se haga la notificación inicial."
+    },
+    {
+      "num": 30,
+      "text": "Durante un incidente de seguridad activo que involucra potencial exfiltración de datos, el equipo de respuesta a incidentes ha identificado el vector de ataque pero aún no ha contenido la amenaza. ¿Cuál debe ser el enfoque PRINCIPAL al comunicarse con las partes interesadas ejecutivas internas en esta etapa?",
+      "tag": "internal_stakeholder_communication_ir",
+      "options": [
+        "A. Análisis técnico detallado de la metodología de ataque y la vulnerabilidad explotada",
+        "B. Evaluación actual del impacto en el negocio, estado de contención y cronograma estimado de resolución",
+        "C. Identificación de las partes responsables y posibles acciones disciplinarias requeridas",
+        "D. Análisis de costos integral incluyendo gastos de remediación y responsabilidades potenciales"
+      ],
+      "correct": 1,
+      "justification_correct": "Las partes interesadas ejecutivas requieren inteligencia de negocios accionable durante incidentes activos: qué está afectado, qué se está haciendo y cuándo se reanudarán las operaciones normales. Esto les permite tomar decisiones informadas sobre continuidad del negocio, comunicaciones externas y asignación de recursos. El impacto en el negocio y el estado de contención apoyan directamente las responsabilidades de toma de decisiones ejecutivas durante la gestión de crisis.",
+      "justification_wrong": "Los detalles técnicos (A) son demasiado granulares para comunicación ejecutiva y no apoyan necesidades inmediatas de toma de decisiones. La atribución y acciones disciplinarias (C) son prematuras durante incidentes activos y distraen de las prioridades de contención. El análisis de costos integral (D) no puede determinarse con precisión durante incidentes activos y es más apropiado para reportes post-incidente; los ejecutivos necesitan primero el estado operacional."
+    },
+    {
+      "num": 31,
+      "text": "Después de una violación de datos que afectó información de tarjetas de pago de clientes, la organización ha completado la contención y se está preparando para la divulgación pública. ¿Qué factor debe determinar PRINCIPALMENTE el momento del anuncio público?",
+      "tag": "public_disclosure_timing_strategy",
+      "options": [
+        "A. Coordinación con las autoridades policiales para evitar comprometer investigaciones criminales en curso",
+        "B. Finalización de todas las actividades de remediación e implementación de controles de seguridad mejorados",
+        "C. Alineación con el anuncio de resultados trimestrales de la organización para minimizar el impacto en las acciones",
+        "D. Preparación de la infraestructura de soporte al cliente para manejar el volumen anticipado de consultas"
+      ],
+      "correct": 0,
+      "justification_correct": "La coordinación con las autoridades policiales es el factor principal ya que la divulgación prematura puede comprometer investigaciones, alertar a los perpetradores, destruir evidencia o permitir que los actores de amenaza cubran sus rastros. Muchas jurisdicciones tienen procesos formales que requieren que las organizaciones coordinen el momento de divulgación con las agencias investigadoras. Esto sirve tanto a los objetivos de interés público como de cumplimiento legal.",
+      "justification_wrong": "Esperar la remediación completa (B) retrasa innecesariamente la notificación y viola el principio de divulgación oportuna a las partes afectadas. Programar la divulgación según los resultados financieros (C) es éticamente cuestionable y puede violar las regulaciones de valores que requieren divulgación material inmediata. Si bien la preparación del soporte al cliente (D) es importante para la ejecución, no debe retrasar la divulgación requerida; la infraestructura de soporte debe prepararse en paralelo con la planificación de divulgación."
+    },
+    {
+      "num": 32,
+      "text": "Una organización está evaluando la efectividad de sus capacidades de monitoreo de seguridad. El Tiempo Medio de Detección (MTTD) para incidentes de seguridad ha aumentado de 8 horas a 72 horas durante el último trimestre. ¿Cuál es la causa raíz MÁS probable que el gerente de seguridad de la información debe investigar?",
+      "tag": "ir_metrics_mean_time_to_detect",
+      "options": [
+        "A. Niveles inadecuados de personal del equipo de respuesta a incidentes y deficiencias en capacitación",
+        "B. Efectividad degradada de las herramientas de monitoreo de seguridad y firmas de detección",
+        "C. Soporte ejecutivo insuficiente para el programa de seguridad de la información",
+        "D. Falta de integración entre la respuesta a incidentes y los planes de continuidad del negocio"
+      ],
+      "correct": 1,
+      "justification_correct": "El MTTD mide específicamente el tiempo desde que ocurre un incidente hasta que se detecta, lo cual está directamente influenciado por la efectividad de las herramientas de monitoreo, agregación de logs, reglas de SIEM, firmas de detección y mecanismos de alertamiento. Un aumento significativo en el MTTD indica que los eventos de seguridad no se están identificando oportunamente, sugiriendo degradación de capacidades de detección como firmas desactualizadas, alertas mal configuradas o brechas de cobertura.",
+      "justification_wrong": "El personal y capacitación (A) impactan principalmente el Tiempo Medio de Respuesta (MTTR), no el tiempo de detección, ya que afectan qué tan rápido reaccionan los equipos después de la detección. El soporte ejecutivo (C) es demasiado amplio e indirecto; la falta de soporte podría eventualmente degradar las capacidades de detección pero no es la causa más directa del aumento del MTTD. La integración con continuidad del negocio (D) afecta la coordinación de respuesta y recuperación, no la detección inicial de eventos de seguridad."
+    },
+    {
+      "num": 33,
+      "text": "Después de implementar un nuevo flujo de trabajo de respuesta a incidentes, la métrica de Tiempo Medio de Respuesta (MTTR) ha mejorado de 6 horas a 2 horas, mientras que el Tiempo Medio de Contención (MTTC) ha permanecido sin cambios en 18 horas. ¿Qué indica MÁS probablemente este patrón sobre el programa de respuesta a incidentes?",
+      "tag": "ir_metrics_mean_time_to_respond",
+      "options": [
+        "A. Los procedimientos de clasificación y escalamiento de incidentes se han vuelto más eficientes",
+        "B. Las capacidades y herramientas técnicas de contención requieren mejoras",
+        "C. Los mecanismos de detección de incidentes necesitan mejor ajuste para reducir falsos positivos",
+        "D. El proceso de revisión post-incidente no está generando mejoras accionables"
+      ],
+      "correct": 0,
+      "justification_correct": "El MTTR mide el tiempo desde la detección del incidente hasta las acciones de respuesta inicial (evaluación, clasificación, escalamiento, movilización del equipo). La mejora en MTTR mientras el MTTC permanece constante indica que los procesos de la fase de respuesta han mejorado—los equipos se están movilizando más rápido, los incidentes se están clasificando y escalando más eficientemente—pero esta eficiencia aún no se ha traducido en contención más rápida, lo cual requiere capacidades diferentes.",
+      "justification_wrong": "Las capacidades técnicas de contención (B) estarían indicadas por cambios en el MTTC, no mejoras en el MTTR. El ajuste de mecanismos de detección (C) afectaría el MTTD (Tiempo Medio de Detección), no el MTTR. La efectividad de la revisión post-incidente (D) mostraría mejora en múltiples métricas con el tiempo; el escenario muestra mejora focalizada en una fase específica, indicando optimización exitosa del flujo de trabajo en lugar de problemas sistémicos de revisión."
+    },
+    {
+      "num": 34,
+      "text": "El Tiempo Medio de Contención (MTTC) de una organización para incidentes de malware es consistentemente de 24-48 horas, significativamente más largo que el punto de referencia de la industria de 4-6 horas. ¿Cuál de las siguientes opciones reduciría MÁS efectivamente el MTTC?",
+      "tag": "ir_metrics_mean_time_to_contain",
+      "options": [
+        "A. Implementar capacidades de contención automatizada con playbooks de respuesta pre-aprobados",
+        "B. Mejorar los programas de capacitación en concientización de seguridad para todos los empleados",
+        "C. Realizar ejercicios de simulación más frecuentes con el equipo de respuesta a incidentes",
+        "D. Aumentar la frecuencia de evaluaciones de vulnerabilidades y pruebas de penetración"
+      ],
+      "correct": 0,
+      "justification_correct": "El MTTC mide el tiempo desde el inicio de la respuesta al incidente hasta la contención exitosa. Las capacidades de contención automatizada (como aislamiento automático de red, cuarentena de endpoints, deshabilitación de cuentas) con playbooks pre-aprobados reducen directamente este período al eliminar demoras en decisiones manuales y acelerar acciones de contención. La autoridad de pre-aprobación permite acción inmediata sin esperar autorización gerencial durante incidentes críticos.",
+      "justification_wrong": "La capacitación en concientización de seguridad (B) principalmente reduce la probabilidad de incidentes y puede mejorar la detección pero no acelera la contención una vez que ocurre un incidente. Los ejercicios de simulación (C) mejoran la preparación y coordinación del equipo pero tienen menor impacto directo que la automatización en la velocidad real de contención. Las evaluaciones de vulnerabilidades y pruebas de penetración (D) son controles preventivos que reducen la probabilidad de incidentes pero no mejoran la velocidad de contención para incidentes que sí ocurren."
+    },
+    {
+      "num": 35,
+      "text": "Al preparar un informe post-incidente para una violación de seguridad significativa, ¿a qué componente se le debe dar énfasis PRIMARIO para asegurar que el informe impulse mejoras organizacionales significativas?",
+      "tag": "post_incident_report_structure",
+      "options": [
+        "A. Línea de tiempo detallada de eventos con acciones específicas tomadas por cada miembro del equipo",
+        "B. Análisis de causa raíz con recomendaciones específicas para prevenir recurrencia",
+        "C. Análisis de costos exhaustivo incluyendo impactos financieros directos e indirectos",
+        "D. Hallazgos forenses técnicos documentando los vectores de ataque y metodologías"
+      ],
+      "correct": 1,
+      "justification_correct": "El propósito principal de un informe post-incidente es el aprendizaje y mejora organizacional. El análisis de causa raíz con recomendaciones accionables permite directamente a la organización abordar vulnerabilidades subyacentes, brechas de proceso y problemas sistémicos que permitieron que ocurriera el incidente. Este componente prospectivo transforma la respuesta a incidentes de reactiva a proactiva al prevenir incidentes similares. CISM enfatiza la mejora continua del programa de seguridad de la información.",
+      "justification_wrong": "Si bien una línea de tiempo (A) es importante para entender la progresión del incidente, es principalmente descriptiva en lugar de prescriptiva para mejora. El análisis de costos (C) apoya el desarrollo del caso de negocio pero no impulsa directamente mejoras de seguridad. Los hallazgos forenses técnicos (D) son valiosos para entender el incidente pero sin análisis de causa raíz y recomendaciones, no se traducen en acciones preventivas; describen qué sucedió, no cómo prevenir recurrencia."
+    },
+    {
+      "num": 36,
+      "text": "Una organización ha realizado revisiones post-incidente para todos los incidentes de seguridad mayores durante el último año, documentando lecciones aprendidas y recomendaciones. Sin embargo, incidentes similares continúan repitiéndose. ¿Cuál es el componente MÁS crítico que falta en el proceso de mejora continua del programa de respuesta a incidentes?",
+      "tag": "ir_program_continuous_improvement",
+      "options": [
+        "A. Integración de lecciones aprendidas en programas de capacitación en concientización de seguridad",
+        "B. Mecanismos formales de seguimiento y rendición de cuentas para implementar recomendaciones",
+        "C. Participación de consultores externos para validar hallazgos de respuesta a incidentes",
+        "D. Expansión del equipo de respuesta a incidentes con especialistas técnicos adicionales"
+      ],
+      "correct": 1,
+      "justification_correct": "La mejora continua requiere cerrar el ciclo entre la identificación de mejoras y su implementación. Sin seguimiento formal, asignación de responsabilidades, plazos y mecanismos de rendición de cuentas, las recomendaciones permanecen como ejercicios de documentación en lugar de impulsar cambios reales. Un enfoque sistemático para asegurar que las recomendaciones sean priorizadas, dotadas de recursos, implementadas y verificadas es esencial para romper el ciclo de incidentes recurrentes. Este es un fundamento de gestión de programas para CISM.",
+      "justification_wrong": "La integración en concientización de seguridad (A) aborda solo un área potencial de mejora y asume que los incidentes están relacionados con usuarios; los incidentes recurrentes pueden provenir de problemas técnicos, de proceso o arquitectónicos. La validación de consultores externos (C) puede proporcionar perspectivas adicionales pero no asegura que las recomendaciones se implementen. Los especialistas técnicos adicionales (D) pueden mejorar capacidades de respuesta pero no abordan por qué las mejoras documentadas no se están implementando; el problema es la ejecución, no la capacidad o experiencia."
+    },
+    {
+      "num": 37,
+      "text": "Durante una investigación de incidentes, la evidencia sugiere que un actor de amenaza externo obtuvo acceso no autorizado a sistemas protegidos explotando una vulnerabilidad de aplicación web. Bajo la Ley de Fraude y Abuso Informático de EE.UU. (CFAA), ¿qué acción del gerente de seguridad de la información es MÁS importante para apoyar un potencial enjuiciamiento criminal?",
+      "tag": "computer_crime_laws_cfaa",
+      "options": [
+        "A. Documentar las pérdidas financieras y calcular daños que excedan el umbral de $5,000",
+        "B. Establecer una clara cadena de custodia para toda la evidencia digital recolectada",
+        "C. Identificar la ubicación geográfica y jurisdicción del actor de amenaza",
+        "D. Demostrar que los sistemas afectados estaban debidamente parcheados y configurados"
+      ],
+      "correct": 1,
+      "justification_correct": "La cadena de custodia es fundamental para la admisibilidad de evidencia digital en procedimientos legales. Bajo CFAA y estándares probatorios generales, la evidencia debe ser adecuadamente recolectada, documentada, preservada y rastreada para demostrar que no ha sido manipulada o alterada. Sin una cadena de custodia adecuada, incluso evidencia técnica convincente puede ser inadmisible en corte, socavando el enjuiciamiento. Este es un requisito fundamental para cualquier investigación de crimen informático.",
+      "justification_wrong": "Si bien CFAA incluye umbrales de daños (A), establecer daños es secundario a asegurar la admisibilidad de la evidencia; el manejo inadecuado de evidencia invalida el caso independientemente de los cálculos de daños. La identificación del actor de amenaza y jurisdicción (C) son importantes para la estrategia de enjuiciamiento pero las autoridades policiales típicamente manejan la atribución; la responsabilidad principal de la organización es la preservación de evidencia. La postura de seguridad del sistema (D) puede afectar la responsabilidad civil pero no es requerida para establecer violaciones de CFAA, las cuales se centran en acceso no autorizado independientemente de la configuración de seguridad."
+    },
+    {
+      "num": 38,
+      "text": "Una organización de salud experimenta un incidente de ransomware que cifró sistemas que contenían información de salud protegida (PHI) pero no resultó en exfiltración de datos confirmada. ¿Cómo impacta MÁS significativamente el cumplimiento de regulaciones de privacidad el enfoque de respuesta a incidentes?",
+      "tag": "privacy_regulations_incident_impact",
+      "options": [
+        "A. La notificación obligatoria a individuos afectados debe ocurrir dentro de 60 días independientemente del daño real",
+        "B. La organización debe realizar una evaluación de riesgo para determinar si se requiere notificación",
+        "C. Las regulaciones de privacidad requieren divulgación pública inmediata a través de notificaciones en medios",
+        "D. El incidente debe reportarse a las autoridades policiales antes de que comiencen las actividades de contención"
+      ],
+      "correct": 1,
+      "justification_correct": "Bajo HIPAA y regulaciones de privacidad similares, las organizaciones deben realizar una evaluación de riesgo para determinar la probabilidad de que la PHI haya sido comprometida. Para incidentes de cifrado sin exfiltración confirmada, esta evaluación examina si ocurrió acceso o adquisición no autorizada. Los resultados determinan las obligaciones de notificación. Este enfoque basado en riesgo reconoce que el cifrado solo no activa automáticamente la notificación si no se comprometió la confidencialidad de datos. La evaluación debe documentarse e informa todas las acciones de cumplimiento subsecuentes.",
+      "justification_wrong": "Los requisitos de notificación de HIPAA (A) aplican solo cuando la PHI es realmente adquirida o accedida por partes no autorizadas; la evaluación de riesgo determina esto, y el cifrado solo puede no activar notificación. La notificación pública inmediata en medios (C) solo se requiere bajo HIPAA cuando las violaciones afectan a más de 500 individuos en una jurisdicción, y solo después de que la evaluación de riesgo confirme una violación reportable. El reporte a autoridades policiales antes de contención (D) no es un requisito de regulaciones de privacidad y comprometería la respuesta a incidentes; la contención debe priorizarse."
+    },
+    {
+      "num": 39,
+      "text": "Durante una investigación de incidentes, el equipo legal emite un aviso de retención por litigio relacionado con la violación de seguridad. ¿Cuál es la implicación MÁS importante para las actividades de respuesta a incidentes del gerente de seguridad de la información?",
+      "tag": "legal_hold_and_litigation_support",
+      "options": [
+        "A. Todas las actividades de respuesta a incidentes deben suspenderse hasta que el asesor legal proporcione autorización explícita",
+        "B. Los datos, logs y comunicaciones relevantes deben preservarse en su estado actual y protegerse de alteración",
+        "C. El equipo de respuesta a incidentes debe transferir todas las actividades de investigación a consultores forenses externos",
+        "D. Las políticas automatizadas de rotación y retención de logs deben deshabilitarse inmediatamente en todos los sistemas"
+      ],
+      "correct": 1,
+      "justification_correct": "Una retención por litigio obliga legalmente a la organización a preservar toda evidencia potencialmente relevante en anticipación de litigio. El gerente de seguridad de la información debe asegurar que datos, logs, imágenes de sistema, comunicaciones y otros materiales relacionados con el incidente sean identificados, preservados y protegidos de alteración o eliminación. Esto puede requerir suspender políticas normales de retención para datos afectados, implementar procedimientos de preservación y documentar todas las acciones. El deterioro (destrucción de evidencia) puede resultar en graves consecuencias legales incluyendo instrucciones de inferencia adversa.",
+      "justification_wrong": "Suspender todas las actividades de respuesta a incidentes (A) es incorrecto; la contención y recuperación deben continuar, pero con procedimientos adecuados de preservación de evidencia. La preservación de evidencia no requiere transferir toda la investigación a partes externas (C); los equipos internos pueden continuar con orientación y documentación adecuadas. Deshabilitar toda rotación de logs (D) es excesivamente amplio y operacionalmente disruptivo; la preservación aplica a sistemas y datos relevantes identificados en el alcance de retención por litigio, no necesariamente a todo el ambiente; la preservación focalizada con orientación legal es el enfoque apropiado."
+    },
+    {
+      "num": 40,
+      "text": "Durante un incidente de ransomware que afecta datos de clientes, el gerente de incidentes descubre que los plazos de notificación regulatoria se están acercando mientras la investigación forense aún está incompleta. ¿Cuál debe ser el curso de acción PRIMARIO del gerente de incidentes?",
+      "tag": "regulatory_compliance_during_incident",
+      "options": [
+        "A. Retrasar las notificaciones hasta que se determine el alcance completo de la violación a través del análisis forense completo",
+        "B. Notificar a reguladores y partes afectadas basándose en la información actualmente conocida dentro de los plazos requeridos",
+        "C. Solicitar una extensión de plazo a los reguladores citando la investigación en curso",
+        "D. Priorizar actividades de contención sobre requisitos de notificación para prevenir más daños"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque las obligaciones de cumplimiento regulatorio, incluyendo plazos obligatorios de notificación de violaciones, deben cumplirse incluso cuando las investigaciones están incompletas. Los principios CISM enfatizan que los gerentes de incidentes deben equilibrar las necesidades de investigación con los requisitos legales y regulatorios. Las notificaciones deben hacerse con la mejor información disponible en el momento, con actualizaciones proporcionadas a medida que progresa la investigación. El incumplimiento de plazos de notificación puede resultar en penalidades significativas y daño reputacional que excede los riesgos de notificar con información incompleta.",
+      "justification_wrong": "La opción A es incorrecta porque esperar el análisis forense completo frecuentemente excede las ventanas de notificación regulatoria (típicamente 72 horas bajo GDPR, variando por jurisdicción), resultando en penalidades por incumplimiento. La opción C es incorrecta porque la mayoría de regulaciones no proporcionan mecanismos para extensiones de plazos, y las autoridades regulatorias esperan que las organizaciones notifiquen dentro de períodos estatutarios independientemente del estado de investigación. La opción D es incorrecta porque aunque la contención es crítica, la notificación regulatoria es una obligación legal que no puede despriorizarse; ambas actividades deben proceder en paralelo con asignación apropiada de recursos."
+    },
+    {
+      "num": 41,
+      "text": "El equipo de respuesta a incidentes de una organización reporta que el 80% de las alertas de seguridad son falsos positivos, lo que requiere recursos significativos para investigar. ¿Cuál debería ser la PRIMERA prioridad del gerente de seguridad de la información para abordar este problema?",
+      "tag": "incident_detection_program_optimization",
+      "options": [
+        "A. Realizar un análisis de costo-beneficio para determinar el impacto en el negocio de los volúmenes actuales de alertas y priorizar los casos de uso de detección",
+        "B. Aumentar los niveles de personal en el centro de operaciones de seguridad para manejar el volumen actual de alertas",
+        "C. Implementar supresión automática de alertas para reducir el número de alertas que requieren investigación",
+        "D. Externalizar el triaje de alertas de nivel 1 a un proveedor de servicios de seguridad gestionados"
+      ],
+      "correct": 0,
+      "justification_correct": "Un análisis de costo-beneficio es la primera acción de gestión apropiada porque permite al gerente de seguridad de la información comprender el impacto en el negocio, la eficiencia en la asignación de recursos y el retorno de inversión del programa de detección actual. Este análisis proporciona el caso de negocio y la dirección estratégica para cualquier decisión posterior sobre personal, herramientas o mejoras de procesos. Alinea las operaciones de seguridad con las prioridades del negocio y permite al gerente tomar decisiones informadas sobre dónde invertir recursos para lograr la máxima reducción de riesgos. Esta es una responsabilidad fundamental de gestión que impulsa mejoras estratégicas del programa.",
+      "justification_wrong": "La opción B aborda síntomas en lugar de causas raíz y puede no ser costo-efectiva sin comprender qué alertas proporcionan valor. La opción C es una decisión táctica de implementación que podría suprimir incidentes legítimos si no se basa en un análisis estratégico de los requisitos de detección. La opción D es una decisión estratégica significativa que solo debería tomarse después de comprender el verdadero problema del negocio y evaluar si el problema está relacionado con procesos, tecnología o recursos. Todas estas opciones pueden ser soluciones válidas, pero solo después de que el gerente realice un análisis apropiado para determinar la dirección estratégica más adecuada."
+    },
+    {
+      "num": 42,
+      "text": "Tras la implementación de herramientas EDR en toda la empresa, el equipo de respuesta a incidentes recibe alertas conductuales que indican actividad potencialmente maliciosa en estaciones de trabajo de ejecutivos, pero estas alertas carecen de indicadores de compromiso definitivos. ¿Cuál debería ser la respuesta MÁS apropiada del gestor de incidentes?",
+      "tag": "edr_endpoint_detection_response_tools",
+      "options": [
+        "A. Aislar inmediatamente todas las estaciones de trabajo de ejecutivos marcadas de la red hasta que se confirme malware",
+        "B. Iniciar una investigación usando telemetría EDR para analizar comportamiento de procesos, conexiones de red y modificaciones de archivos",
+        "C. Descartar las alertas como falsos positivos ya que no se identificaron IoCs definitivos",
+        "D. Rehacer la imagen de las estaciones de trabajo afectadas como medida de precaución para asegurar sistemas limpios"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque las herramientas EDR proporcionan datos de telemetría ricos diseñados específicamente para investigar anomalías conductuales que pueden no coincidir con IoCs conocidos. Las amenazas modernas a menudo involucran malware sin archivos, técnicas de vivir de la tierra y exploits de día cero que el análisis conductual puede detectar. El gestor de incidentes debe aprovechar las capacidades EDR para examinar árboles de procesos, argumentos de línea de comandos, modificaciones de registro, artefactos de memoria, indicadores de movimiento lateral y análisis de línea de tiempo para determinar si ocurrió actividad maliciosa genuina. Este enfoque investigativo equilibra la continuidad del negocio con las necesidades de seguridad y se alinea con la metodología de respuesta a incidentes basada en riesgo de CISM.",
+      "justification_wrong": "La opción A es incorrecta porque el aislamiento inmediato de estaciones de trabajo de ejecutivos sin investigación podría impactar severamente las operaciones de negocio; las alertas conductuales requieren validación antes de acciones tan disruptivas. La opción C es incorrecta porque descartar alertas conductuales sin investigación es negligente; las amenazas avanzadas evaden específicamente la detección basada en firmas, haciendo que el análisis conductual sea crítico para la detección. La opción D es incorrecta porque rehacer la imagen destruye evidencia forense necesaria para la investigación, impide comprender el vector de ataque y puede ser innecesario si la alerta es un falso positivo o la amenaza puede remediarse quirúrgicamente."
+    },
+    {
+      "num": 43,
+      "text": "Durante un incidente de ciberseguridad, el gerente de respuesta a incidentes recibe inteligencia de amenazas de un proveedor externo confiable que indica que el grupo adversario que actualmente está atacando a la organización tiene un historial de escalamiento rápido y exfiltración de datos dentro de las 48 horas posteriores al compromiso inicial. ¿Cuál debería ser la PRIMERA prioridad del gerente de incidentes?",
+      "tag": "threat_intelligence_escalation_decision",
+      "options": [
+        "A. Solicitar detalles técnicos adicionales sobre las herramientas y técnicas del adversario al proveedor de inteligencia",
+        "B. Escalar el nivel de severidad del incidente y acelerar las actividades de respuesta basándose en la inteligencia",
+        "C. Dirigir al equipo técnico para implementar monitoreo adicional de intentos de exfiltración de datos",
+        "D. Programar una sesión informativa sobre amenazas con el equipo de operaciones de seguridad para revisar el reporte de inteligencia"
+      ],
+      "correct": 1,
+      "justification_correct": "Cuando la inteligencia de amenazas confiable indica una línea de tiempo de ataque comprimida con objetivos de alto impacto (exfiltración de datos dentro de 48 horas), el gerente de incidentes debe escalar inmediatamente el nivel de severidad del incidente y acelerar las actividades de respuesta. Esta es una decisión de gestión crítica que afecta la asignación de recursos, los plazos de notificación a las partes interesadas, la participación ejecutiva y la invocación de procedimientos de respuesta de emergencia. La inteligencia cambia fundamentalmente el perfil de riesgo del incidente y requiere un ajuste inmediato de la estrategia de respuesta, la cadencia de comunicación y las posibles medidas de continuidad del negocio. Esta decisión de escalamiento asegura que se apliquen la atención, los recursos y la autoridad de gestión apropiados antes de que el adversario logre sus objetivos.",
+      "justification_wrong": "La opción A retrasa la toma de decisiones críticas al buscar más detalles técnicos cuando existe inteligencia suficiente para actuar; el gerente de incidentes debe tomar decisiones estratégicas con la información disponible en lugar de buscar inteligencia perfecta. La opción C se enfoca en una tarea de implementación técnica en lugar de la decisión estratégica de escalamiento requerida a nivel de gestión; dirigir controles técnicos específicos es una acción secundaria después de que el incidente haya sido escalado apropiadamente. La opción D involucra programar actividades que consumen tiempo valioso durante un incidente sensible al tiempo; aunque las sesiones informativas sobre amenazas son valiosas, no deberían retrasar la decisión inmediata de escalamiento cuando la inteligencia indica actividad inminente de alto impacto."
+    },
+    {
+      "num": 44,
+      "text": "Durante una investigación de incidentes, el equipo de seguridad informa la detección de comunicaciones cifradas inusuales hacia direcciones IP externas previamente desconocidas. ¿Cuál debería ser la PRIMERA prioridad del gerente de seguridad de la información?",
+      "tag": "incident_escalation_decision",
+      "options": [
+        "A. Autorizar el bloqueo inmediato de todas las conexiones salientes hacia las direcciones IP identificadas",
+        "B. Evaluar el potencial impacto en el negocio y determinar los requisitos apropiados de escalamiento",
+        "C. Solicitar al equipo descifrar el tráfico para determinar si ha ocurrido exfiltración de datos",
+        "D. Iniciar el plan de recuperación ante desastres para restaurar los sistemas a un estado conocido como bueno"
+      ],
+      "correct": 1,
+      "justification_correct": "Como decisión a nivel gerencial, el gerente de seguridad de la información debe primero evaluar el potencial impacto en el negocio y determinar si el incidente requiere escalamiento hacia la alta dirección, el área legal u otras partes interesadas. Esta evaluación informa todas las decisiones subsecuentes incluyendo estrategias de contención, planes de comunicación y asignación de recursos. Comprender el alcance y el potencial impacto es esencial antes de tomar acciones que podrían interrumpir las operaciones del negocio o activar procedimientos formales de respuesta a incidentes. Esto se alinea con la responsabilidad del gerente de balancear la respuesta de seguridad con la continuidad del negocio y tomar decisiones informadas de escalamiento basadas en la tolerancia al riesgo organizacional y los umbrales de severidad del incidente.",
+      "justification_wrong": "La opción A es incorrecta porque bloquear conexiones sin evaluación de impacto podría interrumpir operaciones legítimas del negocio o alertar a los atacantes, y representa una decisión técnica de contención que debería seguir a la evaluación gerencial. La opción C se enfoca en métodos técnicos de investigación en lugar de prioridades gerenciales, y el descifrado puede no ser técnicamente factible o legalmente apropiado sin la debida autorización. La opción D es prematura ya que la recuperación ante desastres típicamente se reserva para eventos catastróficos donde los sistemas están comprometidos más allá del uso operacional, y esta determinación requiere primero una evaluación de impacto. Todas las acciones técnicas deberían seguir a la evaluación estratégica y decisión de escalamiento del gerente."
+    },
+    {
+      "num": 45,
+      "text": "Durante una revisión post-incidente, el gerente de seguridad de la información identifica que la evidencia forense crítica no pudo ser correlacionada entre sistemas debido a estándares de registro inadecuados. ¿Cuál debería ser la PRIMERA prioridad para abordar esta deficiencia?",
+      "tag": "logging_governance_standards",
+      "options": [
+        "A. Establecer estándares de registro y sincronización de tiempo a nivel empresarial en la política de seguridad",
+        "B. Implementar una solución centralizada de gestión de registros con capacidades de correlación automatizadas",
+        "C. Realizar capacitación para el personal de TI sobre procedimientos apropiados de configuración y mantenimiento de registros",
+        "D. Realizar una auditoría integral de todos los sistemas para documentar las configuraciones actuales de registro"
+      ],
+      "correct": 0,
+      "justification_correct": "A nivel gerencial, la PRIMERA prioridad es establecer la gobernanza a través de políticas y estándares. El gerente de seguridad de la información debe definir requisitos de registro a nivel empresarial, períodos de retención, estándares de sincronización de tiempo y requisitos de pista de auditoría que se alineen con las necesidades del negocio y obligaciones regulatorias. Esta base de políticas impulsa todas las implementaciones técnicas posteriores, decisiones de adquisición y procedimientos operativos. Sin estándares claros establecidos a nivel de gobernanza, cualquier solución técnica o capacitación carecerá de dirección consistente y puede no cumplir con los requisitos de investigación o cumplimiento. La política establece el 'qué' y 'por qué' que permite a la organización determinar el 'cómo' a través de controles técnicos apropiados.",
+      "justification_wrong": "La opción B es una decisión de implementación técnica que debería seguir al establecimiento de políticas. La opción C aborda la capacitación operativa pero sin estándares establecidos, el personal no tiene requisitos claros que seguir. La opción D es una actividad de evaluación que puede informar el desarrollo de políticas pero no aborda la brecha de gobernanza. En la perspectiva gerencial de CISM, el establecimiento de políticas y estándares siempre precede a la implementación técnica, capacitación o evaluaciones detalladas para asegurar la alineación con los objetivos del negocio y proporcionar un marco para la implementación consistente en toda la empresa."
+    },
+    {
+      "num": 46,
+      "text": "Una organización está estableciendo un equipo formal de respuesta a incidentes. ¿Qué estructura aseguraría MEJOR el manejo efectivo de incidentes manteniendo responsabilidad clara?",
+      "tag": "ir_team_structure_roles",
+      "options": [
+        "A. Equipo centralizado con personal de IR dedicado de tiempo completo reportando al CISO",
+        "B. Equipo distribuido con representantes de TI, seguridad, legal, comunicaciones y unidades de negocio con roles definidos y un gestor de incidentes",
+        "C. Equipo externalizado proporcionado completamente por un servicio de retención de respuesta a incidentes de terceros",
+        "D. Equipo virtual activado solo durante incidentes, compuesto por voluntarios de varios departamentos"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque la respuesta efectiva a incidentes requiere esfuerzos coordinados a través de múltiples funciones organizacionales, y una estructura de equipo distribuida asegura experiencia y autoridad apropiadas para todos los aspectos de la respuesta a incidentes. Este modelo incluye respondedores técnicos (seguridad, TI), tomadores de decisiones de negocio, asesoría legal para asuntos regulatorios y de litigio, comunicaciones para gestión de partes interesadas y representantes de unidades de negocio que entienden impactos operacionales. Tener roles definidos con un gestor de incidentes designado asegura responsabilidad y autoridad claras durante incidentes mientras mantiene la colaboración interfuncional esencial para la gestión integral de incidentes. Esto se alinea con el énfasis de CISM en integración organizacional y gobierno.",
+      "justification_wrong": "La opción A es incorrecta porque un equipo técnico puramente centralizado carece de la representación interfuncional necesaria para la respuesta integral a incidentes; las decisiones legales, de comunicaciones y de negocio requieren partes interesadas apropiadas más allá del personal de seguridad. La opción C es incorrecta porque externalizar completamente la IR elimina el conocimiento institucional, retrasa la respuesta debido a dependencias externas, crea desafíos con el acceso al sistema y contexto organizacional, y abdica la responsabilidad de gestión que no puede transferirse completamente. La opción D es incorrecta porque la activación basada en voluntarios crea disponibilidad inconsistente, falta de entrenamiento y preparación, autoridad poco clara y responsabilidad inadecuada durante incidentes críticos."
+    },
+    {
+      "num": 47,
+      "text": "La alta gerencia cuestiona por qué el programa de respuesta a incidentes requiere actualizaciones trimestrales de manuales de procedimientos y ejercicios de prueba anuales dadas las restricciones presupuestarias. ¿Cuál es la MEJOR justificación para mantener este marco de gobierno?",
+      "tag": "ir_program_governance_framework",
+      "options": [
+        "A. Los marcos de cumplimiento de la industria como ISO 27001 y NIST exigen pruebas y actualizaciones regulares de IR",
+        "B. El panorama de amenazas, cambios organizacionales y evolución tecnológica requieren adaptación continua del programa de IR para mantener la efectividad",
+        "C. Las pólizas de seguro cibernético típicamente requieren evidencia documentada de pruebas regulares de IR y mantenimiento del programa",
+        "D. Los auditores regulatorios esperan ver evidencia de actividades continuas del programa de IR durante evaluaciones de cumplimiento"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque aborda el fundamento fundamental de negocio y gestión de riesgos para el gobierno del programa de IR. El panorama de amenazas evoluciona continuamente con nuevos vectores de ataque y técnicas de adversarios; las organizaciones experimentan cambios en sistemas, personal, procesos y operaciones de negocio; y las infraestructuras tecnológicas cambian mediante adopción de nube, transformación digital y nuevas herramientas. Sin actualizaciones y pruebas regulares, las capacidades de IR se atrofian y se vuelven inefectivas cuando se necesitan. Esta justificación se enfoca en mantener efectividad operacional y mitigación de riesgos en lugar de mero cumplimiento, alineándose con el enfoque de gobierno basado en riesgo de CISM que enfatiza el valor de negocio y capacidad real en lugar de cumplimiento de casillas.",
+      "justification_wrong": "La opción A es incorrecta como la MEJOR justificación porque los argumentos impulsados por cumplimiento se enfocan en cumplir estándares mínimos en lugar de gestión efectiva de riesgos; los marcos proporcionan orientación pero el valor real es la capacidad mantenida. La opción C es incorrecta porque aunque los requisitos de seguro pueden existir, este es un beneficio secundario en lugar de la justificación primaria; el seguro debería seguir buenas prácticas, no impulsarlas. La opción D es incorrecta porque las expectativas de auditoría regulatoria están enfocadas en cumplimiento en lugar de abordar la necesidad fundamental de capacidades efectivas de respuesta a incidentes; este razonamiento no demuestra comprensión de requisitos operacionales reales."
+    },
+    {
+      "num": 48,
+      "text": "Durante un incidente de seguridad significativo, la organización descubre que un proveedor crítico de servicios en la nube de terceros fue el vector de compromiso inicial. ¿Cuál debería ser la prioridad PRINCIPAL de coordinación del gestor de incidentes con el tercero?",
+      "tag": "third_party_ir_coordination",
+      "options": [
+        "A. Terminar inmediatamente el acuerdo de servicio y migrar a un proveedor alternativo para eliminar el riesgo",
+        "B. Establecer canales de comunicación conjunta de respuesta a incidentes para compartir IoCs, coordinar la contención y comprender el alcance completo del compromiso",
+        "C. Iniciar acción legal contra el proveedor por incumplimiento de obligaciones de seguridad bajo el acuerdo de servicio",
+        "D. Conducir una auditoría de los controles de seguridad del proveedor para identificar la causa raíz del compromiso"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque la respuesta efectiva a incidentes que involucra terceros requiere coordinación operacional inmediata para contener la amenaza y comprender el impacto completo. Establecer canales de comunicación conjunta permite compartir indicadores de compromiso (IoCs), coordinar acciones de contención a través de ambos ambientes, entender qué datos pueden haberse expuesto, identificar otros clientes potencialmente afectados y prevenir mayor compromiso. Este enfoque colaborativo es esencial porque la organización no puede contener completamente o investigar un incidente que abarca infraestructura del proveedor sin la participación del proveedor. Los principios de CISM enfatizan que los incidentes de terceros requieren esfuerzos de respuesta cooperativa enfocándose primero en contención e investigación, no en asignación de culpa.",
+      "justification_wrong": "La opción A es incorrecta porque la terminación inmediata durante la respuesta activa a incidentes puede empeorar la situación eliminando visibilidad del ataque, interrumpiendo operaciones de negocio dependientes del servicio y previniendo esfuerzos de contención coordinados; las decisiones de terminación vienen después de la resolución del incidente. La opción C es incorrecta como prioridad PRINCIPAL porque la acción legal no aborda la amenaza de seguridad inmediata y desvía recursos de la respuesta a incidentes; las consideraciones legales son importantes pero secundarias a la contención y recuperación. La opción D es incorrecta como enfoque PRINCIPAL porque aunque el análisis de causa raíz es importante, no debe retrasar la coordinación inmediata para contención; las auditorías comprehensivas son actividades post-incidente."
+    },
+    {
+      "num": 49,
+      "text": "Tras un incidente de ransomware, la aseguradora de ciberseguridad de la organización indica que el reclamo puede denegarse debido a supuestas deficiencias de control. ¿Qué debería asegurar el gestor de incidentes que fue documentado para MEJOR apoyar el reclamo de seguro?",
+      "tag": "cyber_insurance_incident_implications",
+      "options": [
+        "A. Cálculos financieros detallados de todas las pérdidas de negocio, costos de recuperación e impactos operacionales",
+        "B. Evidencia de controles de seguridad razonables, acciones de respuesta a incidentes tomadas y cumplimiento con requisitos de notificación de la póliza",
+        "C. Reconocimiento ejecutivo de que el incidente fue imprevisible y no pudo haberse prevenido",
+        "D. Reportes forenses de terceros que identifiquen concluyentemente al actor de amenaza y metodología de ataque"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque los reclamos de seguro cibernético requieren demostrar que la organización mantuvo prácticas de seguridad razonables según lo requerido por la póliza, tomó acciones apropiadas durante el incidente y cumplió con los términos de la póliza incluyendo notificación oportuna. La documentación debe incluir evidencia de controles de seguridad que estaban en su lugar (incluso si fallaron), el proceso de respuesta a incidentes seguido, acciones de contención y recuperación tomadas, y adherencia a plazos de notificación especificados en la póliza. Las aseguradoras a menudo niegan reclamos basándose en cláusulas de 'falta de mantener seguridad razonable' o violaciones de póliza como notificación retrasada. Este enfoque de documentación se alinea con el énfasis de CISM en gobierno, documentación de procesos y demostración de debida diligencia.",
+      "justification_wrong": "La opción A es incorrecta como el MEJOR apoyo porque aunque la documentación financiera es necesaria para la valoración del reclamo, no aborda las preocupaciones de la aseguradora sobre deficiencias de control que podrían anular la cobertura por completo; la evidencia de controles es el desafío primario a abordar. La opción C es incorrecta porque intentar reclamar imprevisibilidad no aborda las preocupaciones de la aseguradora sobre deficiencias de control y puede realmente debilitar el reclamo sugiriendo falta de gestión de riesgos. La opción D es incorrecta porque aunque los reportes forenses son valiosos, principalmente establecen lo que sucedió en lugar de demostrar que la organización cumplió sus obligaciones de seguridad bajo la póliza; la atribución rara vez se requiere para cobertura."
+    },
+    {
+      "num": 50,
+      "text": "El CISO debe justificar un aumento del 40% en el presupuesto del programa de respuesta a incidentes ante la junta directiva. ¿Qué enfoque sería MÁS efectivo para asegurar la aprobación?",
+      "tag": "ir_budget_justification_risk_based",
+      "options": [
+        "A. Presentar datos de benchmarking de la industria mostrando que organizaciones competidoras gastan cantidades similares en capacidades de IR",
+        "B. Demostrar cómo las capacidades mejoradas de IR reducirán la probabilidad e impacto de incidentes basándose en evaluación de riesgos y escenarios de pérdida potencial",
+        "C. Destacar brechas de alto perfil recientes en la industria para enfatizar la importancia de la preparación en IR",
+        "D. Detallar las herramientas específicas, personal y programas de capacitación que el presupuesto aumentado financiaría"
+      ],
+      "correct": 1,
+      "justification_correct": "La opción B es correcta porque la justificación presupuestaria a nivel de junta directiva debe demostrar valor de negocio mediante reducción de riesgos y evitación de pérdidas potenciales. El enfoque más efectivo conecta las inversiones en IR con la evaluación de riesgos de la organización, mostrando cómo las capacidades mejoradas (detección más rápida, contención mejorada, mejor recuperación) reducen tanto la probabilidad como la magnitud de incidentes de seguridad, traducido en métricas de impacto financiero que la junta comprende (tiempo de inactividad reducido, menores penalidades regulatorias, costos de recuperación disminuidos, ingresos protegidos). Esta justificación basada en riesgo se alinea con los principios de CISM que enfatizan que las inversiones en seguridad deben impulsarse por riesgo de negocio y presentarse en términos de negocio, mostrando retorno sobre inversión en seguridad (ROSI) o valor de reducción de riesgo.",
+      "justification_wrong": "La opción A es incorrecta porque los datos de benchmarking muestran lo que otros gastan pero no demuestra por qué ese nivel de gasto es apropiado para el perfil de riesgo específico y contexto de negocio de esta organización; las juntas financian gestión de riesgos, no conformidad de la industria. La opción C es incorrecta porque las justificaciones basadas en miedo usando incidentes de otros pueden obtener atención pero no demuestran valor de negocio calculado o por qué este nivel específico de inversión es apropiado para los riesgos de la organización. La opción D es incorrecta como el enfoque MÁS efectivo porque listar ítems de línea presupuestaria explica cómo se gastará el dinero pero no por qué la inversión proporciona valor de negocio; las juntas necesitan entender reducción de riesgo e impacto de negocio, no detalles técnicos."
+    }
+  ]
+}

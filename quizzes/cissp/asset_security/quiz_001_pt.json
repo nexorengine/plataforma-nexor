@@ -1,0 +1,710 @@
+{
+  "cert_id": "cissp",
+  "domain_id": "asset_security",
+  "quiz_num": 1,
+  "domain_name": "Asset Security",
+  "cert_name": "CISSP",
+  "lang": "pt",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Em uma organização governamental que implementa classificação de informações segundo padrões federais, qual nível de classificação é apropriado para dados cuja divulgação não autorizada causaria dano excepcionalmente grave à segurança nacional?",
+      "tag": "Information Classification - Government",
+      "options": [
+        "A. Top Secret",
+        "B. Secret",
+        "C. Confidential",
+        "D. Restricted"
+      ],
+      "correct": 0,
+      "justification_correct": "Top Secret é o nível mais alto na classificação governamental (EO 13526 - EUA, Decreto 7.845/2012 - Brasil). Aplica-se quando divulgação não autorizada pode causar dano excepcionalmente grave à segurança nacional, exigindo controles máximos de segurança e compartimentação estrita.",
+      "justification_wrong": "Secret causa dano grave (não excepcionalmente grave). Confidential causa dano à segurança nacional em grau menor. Restricted não é categoria formal em sistemas governamentais padronizados. A gradação de impacto determina o nível correto de classificação."
+    },
+    {
+      "num": 2,
+      "text": "No contexto de papéis e responsabilidades em segurança de dados, qual função é primariamente responsável pela implementação técnica dos controles de segurança e pela manutenção operacional dos sistemas que armazenam dados classificados?",
+      "tag": "Data Ownership - Roles",
+      "options": [
+        "A. Data Owner",
+        "B. Data Custodian",
+        "C. Data Steward",
+        "D. Data User"
+      ],
+      "correct": 1,
+      "justification_correct": "Data Custodian (custodiante) é responsável pela implementação técnica e manutenção dos controles de segurança conforme NIST SP 800-18 e ISO/IEC 27001. Executa backups, aplica patches, gerencia acesso físico/lógico e garante disponibilidade operacional dos dados.",
+      "justification_wrong": "Data Owner define classificação e autoriza acesso (não implementa). Data Steward garante qualidade e conformidade dos dados. Data User apenas consome informações conforme privilégios. A responsabilidade técnica operacional é exclusiva do custodian segundo frameworks CISSP."
+    },
+    {
+      "num": 3,
+      "text": "Durante processo de scoping de controles de segurança segundo NIST SP 800-53, uma organização identifica que determinado controle não é aplicável devido às características operacionais específicas do sistema. Qual ação representa corretamente o processo de tailoring?",
+      "tag": "Scoping and Tailoring",
+      "options": [
+        "A. Remover o controle sem documentação adicional",
+        "B. Documentar justificativa técnica, obter aprovação do Authorizing Official e registrar no SSP",
+        "C. Substituir automaticamente por controle compensatório equivalente",
+        "D. Aplicar o controle parcialmente sem ajustes formais"
+      ],
+      "correct": 1,
+      "justification_correct": "Tailoring exige documentação formal da justificativa técnica, aprovação do Authorizing Official (AO) e registro no System Security Plan (SSP) conforme NIST SP 800-53 rev.5. Processo rigoroso garante que exclusões sejam rastreáveis, auditáveis e baseadas em análise de risco adequada.",
+      "justification_wrong": "Remover sem documentação viola requisitos de governança e auditoria. Substituição automática ignora análise de risco contextual. Aplicação parcial informal cria lacunas não controladas. Tailoring é processo formal que exige aprovação e rastreabilidade segundo padrões NIST e FISMA."
+    },
+    {
+      "num": 4,
+      "text": "Considerando requisitos de retenção de dados sob LGPD (Lei 13.709/2018), qual princípio determina que dados pessoais devem ser mantidos apenas pelo período necessário para cumprimento da finalidade específica do tratamento?",
+      "tag": "Asset Retention",
+      "options": [
+        "A. Princípio da Adequação",
+        "B. Princípio da Necessidade",
+        "C. Princípio da Finalidade",
+        "D. Princípio da Livre Acesso"
+      ],
+      "correct": 1,
+      "justification_correct": "Princípio da Necessidade (Art. 6º, III, LGPD) estabelece limitação do tratamento ao mínimo necessário, incluindo período de retenção. Dados devem ser eliminados após cumprimento da finalidade, salvo obrigações legais, regulatórias ou em processos de anonimização conforme Art. 16.",
+      "justification_wrong": "Adequação refere-se à compatibilidade com finalidades informadas. Finalidade trata da especificidade dos objetivos (não do período). Livre Acesso garante transparência ao titular. A temporalidade e minimização de retenção são especificamente regidas pelo princípio da necessidade segundo LGPD."
+    },
+    {
+      "num": 5,
+      "text": "Uma organização comercial está definindo níveis de classificação de informações. Qual estrutura representa corretamente uma taxonomia típica de classificação comercial em ordem decrescente de sensibilidade?",
+      "tag": "Information Classification - Commercial",
+      "options": [
+        "A. Public, Internal, Confidential, Restricted",
+        "B. Confidential, Private, Sensitive, Public",
+        "C. Restricted, Confidential, Internal, Public",
+        "D. Top Secret, Secret, Confidential, Unclassified"
+      ],
+      "correct": 2,
+      "justification_correct": "Classificação comercial típica: Restricted (impacto severo se divulgado), Confidential (impacto sério), Internal (uso interno apenas), Public (divulgação permitida). Estrutura alinhada com ISO/IEC 27001 Annex A.8.2 e práticas de mercado para ambientes corporativos não-governamentais.",
+      "justification_wrong": "Opção A inverte ordem (Public não é mais sensível). Opção B usa terminologia inconsistente sem gradação padrão. Opção D utiliza nomenclatura governamental (EO 13526), inadequada para ambiente comercial. Organizações comerciais adotam taxonomia distinta de classificações governamentais militares."
+    },
+    {
+      "num": 6,
+      "text": "Em uma organização governamental que utiliza classificação de informações conforme padrões federais, qual nível de classificação corresponde a informações cuja divulgação não autorizada poderia causar danos excepcionalmente graves à segurança nacional?",
+      "tag": "Information Classification - Government",
+      "options": [
+        "A. Top Secret",
+        "B. Secret",
+        "C. Confidential",
+        "D. Sensitive But Unclassified"
+      ],
+      "correct": 0,
+      "justification_correct": "Top Secret é o nível mais alto de classificação governamental, designado para informações cuja divulgação não autorizada poderia causar danos excepcionalmente graves à segurança nacional, conforme Executive Order 13526. Requer controles rigorosos de acesso e compartimentalização.",
+      "justification_wrong": "Secret causa danos graves (não excepcionalmente graves), Confidential causa danos à segurança nacional, e Sensitive But Unclassified não é classificação formal de segurança nacional. A hierarquia governamental estabelece Top Secret como nível máximo por Executive Order 13526."
+    },
+    {
+      "num": 7,
+      "text": "Qual papel na estrutura de propriedade de dados (data ownership) é responsável pela implementação técnica dos controles de segurança, backup e restauração dos dados, conforme determinado pelo proprietário?",
+      "tag": "Data Ownership Roles",
+      "options": [
+        "A. Data Owner",
+        "B. Data Custodian",
+        "C. Data Steward",
+        "D. Data User"
+      ],
+      "correct": 1,
+      "justification_correct": "O Data Custodian (custodiante) é responsável pela implementação técnica e operacional dos controles de segurança, incluindo backup, restauração e manutenção dos sistemas. Executa as determinações do Data Owner conforme frameworks NIST e ISO 27001.",
+      "justification_wrong": "Data Owner define políticas e classificação; Data Steward garante qualidade e conformidade dos dados; Data User apenas consome informações. O custodiante é quem implementa tecnicamente os controles determinados pelo proprietário segundo NIST SP 800-18."
+    },
+    {
+      "num": 8,
+      "text": "Durante o processo de scoping de controles de segurança segundo NIST SP 800-53, uma organização identifica que determinados controles não são aplicáveis devido à ausência de sistemas wireless. Qual atividade está sendo executada?",
+      "tag": "Scoping and Tailoring",
+      "options": [
+        "A. Tailoring de controles",
+        "B. Scoping de baseline",
+        "C. Compensating controls",
+        "D. Security overlay"
+      ],
+      "correct": 1,
+      "justification_correct": "Scoping é o processo de identificar e remover controles não aplicáveis ao escopo organizacional ou tecnológico específico, conforme NIST SP 800-53. A ausência de sistemas wireless justifica exclusão de controles relacionados através de scoping adequado da baseline.",
+      "justification_wrong": "Tailoring ajusta controles aplicáveis às necessidades específicas; Compensating controls substituem controles por alternativas; Security overlay adiciona controles específicos. Scoping remove controles não aplicáveis ao ambiente, conforme definido no NIST SP 800-53 Rev. 5."
+    },
+    {
+      "num": 9,
+      "text": "Conforme GDPR e LGPD, qual princípio de privacidade determina que dados pessoais devem ser mantidos apenas pelo tempo necessário para as finalidades para as quais foram coletados?",
+      "tag": "Privacy Protection and Asset Retention",
+      "options": [
+        "A. Minimização de dados",
+        "B. Limitação de finalidade",
+        "C. Limitação de armazenamento",
+        "D. Exatidão dos dados"
+      ],
+      "correct": 2,
+      "justification_correct": "Limitação de armazenamento (storage limitation) estabelece que dados pessoais devem ser mantidos apenas pelo tempo necessário para suas finalidades. Previsto no Art. 5(1)(e) do GDPR e Art. 6º, VI da LGPD, requer políticas de retenção definidas.",
+      "justification_wrong": "Minimização limita coleta ao necessário; Limitação de finalidade define propósitos específicos; Exatidão garante dados corretos. O princípio de limitação temporal de armazenamento é específico sobre retenção conforme GDPR Art. 5(1)(e) e LGPD Art. 6º."
+    },
+    {
+      "num": 10,
+      "text": "Uma empresa de consultoria classifica documentos estratégicos como 'Confidencial' em seu esquema comercial. Qual requisito de handling é mais apropriado para transmissão externa desses documentos?",
+      "tag": "Data Handling Requirements",
+      "options": [
+        "A. Transmissão sem restrições via e-mail corporativo",
+        "B. Criptografia em trânsito e autenticação do destinatário",
+        "C. Apenas controles administrativos e NDAs",
+        "D. Compartilhamento através de serviços públicos de nuvem"
+      ],
+      "correct": 1,
+      "justification_correct": "Dados classificados como Confidencial requerem criptografia em trânsito (TLS/VPN) e autenticação forte do destinatário, conforme ISO 27002:2022 controles 5.10 e 5.14. Protege confidencialidade e integridade durante transmissão externa mantendo trilhas de auditoria.",
+      "justification_wrong": "E-mail sem proteção expõe dados; apenas NDAs não protegem tecnicamente; serviços públicos sem controles violam requisitos. ISO 27002:2022 e NIST SP 800-171 exigem criptografia e autenticação para dados confidenciais em trânsito externo."
+    },
+    {
+      "num": 11,
+      "text": "Uma organização governamental está implementando classificação de informações sensíveis sobre segurança nacional. Qual classificação deve ser aplicada a informações cuja divulgação não autorizada causaria danos excepcionalmente graves à segurança nacional?",
+      "tag": "Information Classification - Government",
+      "options": [
+        "A. Top Secret",
+        "B. Secret",
+        "C. Confidential",
+        "D. Sensitive But Unclassified"
+      ],
+      "correct": 0,
+      "justification_correct": "Top Secret é a classificação mais elevada no esquema governamental (EO 13526 - EUA; Decreto 7.845/2012 - Brasil - Ultrassecreto), aplicada quando divulgação não autorizada pode causar danos excepcionalmente graves à segurança nacional, incluindo operações de inteligência críticas e informações sobre defesa estratégica.",
+      "justification_wrong": "Secret causa danos graves (não excepcionais); Confidential causa danos à segurança; Sensitive But Unclassified não é classificação formal de segurança nacional. Cada nível possui critérios específicos de dano potencial conforme Executive Order 13526 e legislação brasileira equivalente."
+    },
+    {
+      "num": 12,
+      "text": "Em um modelo de governança de dados, o Data Steward tem responsabilidades específicas. Qual atividade melhor representa a função primária do Data Steward em contraste com o Data Owner?",
+      "tag": "Data Ownership - Steward",
+      "options": [
+        "A. Aprovar orçamento para sistemas de proteção de dados",
+        "B. Definir requisitos de qualidade e implementar controles operacionais de dados",
+        "C. Determinar o nível de classificação dos ativos de informação",
+        "D. Realizar backup diário dos sistemas de produção"
+      ],
+      "correct": 1,
+      "justification_correct": "O Data Steward é responsável pela qualidade, padronização e implementação operacional das políticas de dados definidas pelo Owner. Conforme DAMA-DMBOK2, atua como intermediário entre aspectos técnicos e negociais, garantindo conformidade com metadados, qualidade e requisitos de governança estabelecidos.",
+      "justification_wrong": "Aprovar orçamento é responsabilidade do Data Owner (accountable); definir classificação também é do Owner; backup é função do Custodian (administrador técnico). O Steward foca em governança operacional, qualidade e conformidade, não em decisões estratégicas ou execução técnica."
+    },
+    {
+      "num": 13,
+      "text": "Uma empresa multinacional precisa implementar controles de privacidade para transferências internacionais de dados pessoais de cidadãos da UE. Qual mecanismo é considerado adequado pela GDPR para legitimar essas transferências para países sem decisão de adequação?",
+      "tag": "Privacy Protection",
+      "options": [
+        "A. Consent verbal dos titulares de dados",
+        "B. Standard Contractual Clauses (SCCs) aprovadas pela Comissão Europeia",
+        "C. Política interna de privacidade da empresa",
+        "D. Certificação ISO 27001 da organização receptora"
+      ],
+      "correct": 1,
+      "justification_correct": "Standard Contractual Clauses (Cláusulas Contratuais Padrão) são mecanismo explícito no Art. 46 da GDPR para transferências internacionais. As SCCs estabelecem obrigações contratuais vinculativas entre controlador/processador, garantindo nível adequado de proteção mesmo sem decisão de adequação do país destinatário (Decisão 2021/914 da Comissão).",
+      "justification_wrong": "Consentimento verbal não atende requisitos formais da GDPR (Art. 7); política interna não vincula terceiros internacionalmente; ISO 27001 não é mecanismo reconhecido pela GDPR para transferências. Art. 44-50 GDPR especificam mecanismos válidos: adequação, SCCs, BCRs, certificações específicas aprovadas."
+    },
+    {
+      "num": 14,
+      "text": "Durante o processo de scoping and tailoring de controles de segurança baseados no NIST SP 800-53, qual atividade melhor caracteriza o conceito de 'tailoring'?",
+      "tag": "Scoping and Tailoring",
+      "options": [
+        "A. Selecionar baseline de controles apropriada ao nível de impacto do sistema",
+        "B. Customizar controles da baseline mediante compensação, parametrização ou aplicação de overlays",
+        "C. Documentar todos os controles implementados no System Security Plan",
+        "D. Conduzir assessment de vulnerabilidades técnicas do ambiente"
+      ],
+      "correct": 1,
+      "justification_correct": "Tailoring (NIST SP 800-53 Rev. 5, Seção 3.3) é o processo de customizar baseline selecionada através de: aplicação de overlays específicos; ajuste de parâmetros; compensação de controles; especificação de implementação. Permite adequar controles ao contexto organizacional mantendo eficácia, diferentemente de scoping que elimina controles inaplicáveis.",
+      "justification_wrong": "Selecionar baseline é parte do 'scoping' inicial (baixo/moderado/alto impacto); documentar no SSP é fase posterior de implementação; assessment é atividade de verificação contínua. Tailoring especificamente refere-se à customização técnica e operacional dos controles após seleção da baseline conforme NIST."
+    },
+    {
+      "num": 15,
+      "text": "Uma organização do setor financeiro está definindo requisitos de retenção para registros de transações. Qual fator deve ter precedência na determinação do período mínimo de retenção desses dados?",
+      "tag": "Asset Retention",
+      "options": [
+        "A. Capacidade de armazenamento disponível na infraestrutura",
+        "B. Preferências do departamento de TI quanto a gestão de backups",
+        "C. Requisitos legais, regulatórios e contratuais aplicáveis",
+        "D. Média de períodos de retenção de concorrentes no setor"
+      ],
+      "correct": 2,
+      "justification_correct": "Requisitos legais, regulatórios e contratuais têm precedência obrigatória na definição de retenção (NIST SP 800-88, ISO 15489). No setor financeiro, regulamentações como Resolução CMN 4.658/2018 (Brasil), SOX, BACEN determinam períodos mínimos específicos. Não conformidade resulta em penalidades legais e regulatórias severas.",
+      "justification_wrong": "Capacidade de armazenamento é consideração operacional secundária; preferências de TI não podem sobrepor obrigações legais; práticas de mercado são referências, não determinantes. ISO 15489 e legislações setoriais estabelecem que compliance legal/regulatório é critério primário, seguido por necessidades operacionais e valor probatório."
+    },
+    {
+      "num": 16,
+      "text": "Uma organização governamental está classificando informações sobre um novo sistema de defesa cibernética. Segundo os padrões de classificação governamental dos EUA, qual nível de classificação é apropriado para informações cuja divulgação não autorizada causaria 'dano grave' à segurança nacional?",
+      "tag": "Information Classification - Government",
+      "options": [
+        "A. Confidential",
+        "B. Secret",
+        "C. Top Secret",
+        "D. Sensitive But Unclassified (SBU)"
+      ],
+      "correct": 1,
+      "justification_correct": "Segundo Executive Order 13526, a classificação 'Secret' aplica-se quando divulgação não autorizada causa 'dano grave' (serious damage) à segurança nacional. Top Secret causa 'dano excepcional grave', Confidential causa 'dano', e SBU não é classificação formal de segurança nacional.",
+      "justification_wrong": "Top Secret exige 'dano excepcional grave'. Confidential requer apenas 'dano'. SBU não é nível de classificação de segurança nacional formal sob EO 13526, sendo categoria administrativa para informações sensíveis não classificadas."
+    },
+    {
+      "num": 17,
+      "text": "Durante auditoria de governança de dados, identificou-se conflito entre Data Owner e Data Steward sobre aprovação de controles de acesso a dados de clientes. Segundo melhores práticas CISSP, qual papel tem autoridade final para determinar classificação e controles de acesso apropriados?",
+      "tag": "Data Ownership Roles",
+      "options": [
+        "A. Data Steward, pois gerencia qualidade e uso operacional dos dados",
+        "B. Data Owner, pois tem responsabilidade legal e accountability pelos dados",
+        "C. Data Custodian, pois implementa controles técnicos de segurança",
+        "D. Chief Data Officer, pois supervisiona toda governança de dados"
+      ],
+      "correct": 1,
+      "justification_correct": "O Data Owner possui accountability final e autoridade sobre classificação, controles de acesso e proteção de dados. Segundo NIST SP 800-18 e frameworks CISSP, é papel gerencial/executivo com responsabilidade legal pelos ativos de informação sob sua custódia.",
+      "justification_wrong": "Data Steward foca qualidade e conformidade operacional. Data Custodian implementa controles técnicos sob direção do Owner. CDO define políticas organizacionais mas não substitui accountability individual do Owner sobre ativos específicos de dados."
+    },
+    {
+      "num": 18,
+      "text": "Uma multinacional processa dados pessoais de cidadãos da UE e está implementando controles sob GDPR. Ao aplicar 'scoping and tailoring' de controles baseados em ISO/IEC 27002, qual fator é mais crítico para determinar aplicabilidade de controles específicos?",
+      "tag": "Scoping and Tailoring",
+      "options": [
+        "A. Custo de implementação versus benefício de segurança esperado",
+        "B. Contexto organizacional, requisitos legais e avaliação de riscos",
+        "C. Preferências do CISO e maturidade da equipe de segurança",
+        "D. Recomendações de auditores externos e consultores"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 6.1.3 e Anexo A exigem que seleção de controles baseie-se em: contexto organizacional, requisitos de partes interessadas (incluindo legais/regulatórios como GDPR), e resultados de avaliação de riscos, não apenas custo ou preferências.",
+      "justification_wrong": "Custo é consideração secundária após requisitos de conformidade. Preferências pessoais não são critério técnico válido. Recomendações externas informam mas não substituem análise formal de contexto, requisitos legais e riscos conforme ISO/IEC 27001."
+    },
+    {
+      "num": 19,
+      "text": "Empresa está definindo períodos de retenção para diferentes categorias de dados. Logs de acesso a sistemas críticos devem ser retidos por período que atenda simultaneamente SOX (Sarbanes-Oxley), PCI DSS e investigações forenses. Qual período mínimo atende aos três requisitos?",
+      "tag": "Asset Retention",
+      "options": [
+        "A. 90 dias conforme requisitos operacionais básicos",
+        "B. 1 ano para atender requisitos de auditoria financeira",
+        "C. 3 meses com backup de 1 ano para logs de auditoria",
+        "D. 7 anos para atender SOX e permitir investigações retrospectivas"
+      ],
+      "correct": 1,
+      "justification_correct": "PCI DSS Requirement 10.7 exige mínimo de 1 ano de logs de auditoria (3 meses online). SOX requer 7 anos para registros financeiros, mas logs de acesso têm interpretação de 1 ano. Período de 1 ano balanceia conformidade com PCI DSS e capacidade forense.",
+      "justification_wrong": "90 dias não atende PCI DSS Requirement 10.7. Três meses insuficiente para histórico de auditoria. Sete anos é para documentos financeiros SOX, não logs de sistema, sendo excessivo e oneroso para logs de acesso técnicos."
+    },
+    {
+      "num": 20,
+      "text": "Organização de saúde deve selecionar controles de criptografia para proteger PHI (Protected Health Information) em trânsito e repouso. Qual framework ou padrão fornece orientação mais específica e aplicável para seleção de algoritmos criptográficos?",
+      "tag": "Standards Selection - Data Security Controls",
+      "options": [
+        "A. HIPAA Security Rule 45 CFR § 164.312 sobre controles técnicos",
+        "B. NIST SP 800-52 e FIPS 140-2/140-3 para algoritmos aprovados",
+        "C. ISO/IEC 27018 para proteção de PII em nuvem pública",
+        "D. COBIT 2019 framework para governança de TI em saúde"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-52 (TLS), SP 800-175B (criptografia) e FIPS 140-2/3 especificam algoritmos, tamanhos de chave e implementações criptográficas aprovadas. HIPAA é technology-neutral, remetendo a padrões técnicos como NIST para implementação específica de criptografia.",
+      "justification_wrong": "HIPAA 164.312 é principled-based, não especifica algoritmos. ISO 27018 foca PII em nuvem mas não detalha algoritmos específicos. COBIT é framework de governança de alto nível, não fornece especificações técnicas de implementação criptográfica."
+    },
+    {
+      "num": 21,
+      "text": "Uma organização multinacional está implementando um programa de classificação de informações que deve atender simultaneamente requisitos governamentais de defesa (NIST SP 800-171) e comerciais (ISO 27001). Qual abordagem de harmonização é mais adequada para garantir conformidade dual sem criar silos de dados?",
+      "tag": "Information Classification",
+      "options": [
+        "A. Implementar matriz de mapeamento cruzado entre CUI (Controlled Unclassified Information) e níveis comerciais, aplicando o controle mais restritivo quando houver sobreposição",
+        "B. Manter sistemas separados com classificações independentes, replicando dados conforme necessário entre ambientes governamentais e comerciais",
+        "C. Adotar exclusivamente a taxonomia governamental FedRAMP para todos os ativos, aplicando exceções pontuais para dados comerciais",
+        "D. Criar três níveis genéricos (Público, Interno, Confidencial) que subsumam ambas as estruturas, delegando detalhamento aos custódiος"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-171 requer controles específicos para CUI, enquanto ISO 27001 demanda análise de risco contextual. Matriz de mapeamento cruzado (crosswalk) permite rastreabilidade bidirecional, aplicando princípio de defesa em profundidade ao escolher controle mais restritivo. Abordagem validada em ambientes FedRAMP Moderate + SOC 2 Type II.",
+      "justification_wrong": "Sistemas separados (B) violam princípios de single source of truth e aumentam risco de inconsistências. Taxonomia exclusivamente governamental (C) ignora requisitos comerciais legítimos como PII sob LGPD. Níveis genéricos (D) falham em atender especificidade mandatória do CUI conforme 32 CFR Part 2002."
+    },
+    {
+      "num": 22,
+      "text": "Durante auditoria forense, identificou-se que o Data Steward autorizou acesso de analistas a dataset contendo PII sem pseudonimização, alegando ser proprietário funcional dos dados. Qual princípio de data ownership foi violado?",
+      "tag": "Data Ownership",
+      "options": [
+        "A. Steward não possui autoridade decisória sobre controles de acesso; essa prerrogativa é exclusiva do Data Owner conforme accountability frameworks",
+        "B. Acesso a PII requer aprovação do DPO (Data Protection Officer), não do Steward, conforme Art. 37-39 GDPR e Art. 41 LGPD",
+        "C. Custodian deveria ter implementado controles técnicos de pseudonimização independente de autorização do Steward, conforme privacy by design",
+        "D. Data User tem responsabilidade de solicitar dados já anonimizados, não cabendo ao Steward fornecer dados brutos com PII"
+      ],
+      "correct": 0,
+      "justification_correct": "Data Owner detém accountability legal e autoridade decisória sobre classificação, acesso e uso dos dados (COBIT 2019, RACI model). Data Steward exerce stewardship (qualidade, metadados, ciclo de vida), mas não possui autoridade unilateral sobre access control decisions. Violação de segregação de funções crítica em frameworks ISO 27001 (A.9.2) e NIST SP 800-53 (AC-5).",
+      "justification_wrong": "DPO (B) tem função consultiva e fiscalizadora, não aprovatória sobre acessos operacionais individuais. Custodian (C) implementa controles determinados pelo Owner, não possui autoridade para sobrepor decisões. Data User (D) solicita conforme necessidade legítima; responsabilidade de proteção prévia é do Owner/Steward, não do consumidor downstream."
+    },
+    {
+      "num": 23,
+      "text": "Empresa de SaaS processa dados de saúde (HIPAA) e financeiros (PCI DSS) na mesma infraestrutura cloud. Qual técnica de scoping é mandatória para reduzir superfície de auditoria sem comprometer compliance?",
+      "tag": "Scoping and Tailoring",
+      "options": [
+        "A. Implementar network segmentation com VLANs dedicadas e aplicar compensating controls documentados para sistemas fora do escopo regulatório",
+        "B. Utilizar data tagging em nível de campo com DLP context-aware, definindo system boundaries lógicos via data flow diagrams auditáveis",
+        "C. Estabelecer ambientes fisicamente isolados (air-gapped) para cada domínio regulatório, eliminando shared services entre cardholder data environment e PHI",
+        "D. Aplicar encryption at rest uniformemente em toda infraestrutura, tratando todo ambiente como in-scope para ambos frameworks simultaneamente"
+      ],
+      "correct": 1,
+      "justification_correct": "PCI DSS v4.0 e HIPAA permitem scoping lógico baseado em data flows e system boundaries documentados. Data tagging granular com DLP context-aware (ISO 27001 A.8.2.3) permite identificar precisamente onde regulated data reside/transita, reduzindo escopo sem criar silos. Abordagem alinhada com NIST SP 800-37 boundary determination e conceito de authorization boundaries.",
+      "justification_wrong": "Network segmentation (A) é controle necessário mas insuficiente para scoping; VLAN não define boundary para PCI/HIPAA. Isolamento físico (C) é excessivo e impraticável em SaaS multi-tenant moderno, violando economia de escala. Encryption uniforme (D) não reduz escopo de auditoria; PCI DSS Requirement 12.5.2 exige scoping preciso independente de controles compensatórios."
+    },
+    {
+      "num": 24,
+      "text": "Organização deve reter registros financeiros por 7 anos (SOX) e logs de acesso por 1 ano (política interna). Backup incremental semanal retém tudo por 3 anos. Qual risk exposure esta estratégia apresenta?",
+      "tag": "Asset Retention",
+      "options": [
+        "A. Over-retention de logs de acesso viola princípios de minimização de dados (GDPR Art. 5.1.c), criando liability desnecessária em caso de breach",
+        "B. Under-retention de registros financeiros em caso de falha do sistema primário, pois backups não substituem archives para compliance legal",
+        "C. Conflito entre retention periods cria ambiguidade para Legal Hold em litígios, potencialmente resultando em spoliation sanctions",
+        "D. Ausência de backup diferencial impede recuperação granular, violando RTO/RPO definidos em BIA para registros SOX"
+      ],
+      "correct": 0,
+      "justification_correct": "GDPR Art. 5.1.c e LGPD Art. 6º III estabelecem princípio de minimização: dados não devem ser retidos além do necessário. Logs de acesso com PII retidos 3x além da necessidade operacional (3 anos vs. 1 ano) aumentam exposure em data breaches. ICO e ANPD consideram over-retention como falha de governance, sujeitando organização a multas mesmo sem incidente.",
+      "justification_wrong": "Backups (B) podem servir como archive se atenderem imutability, accessibility e auditability (SEC 17a-4). Retention dual (C) é comum; Legal Hold sobrepõe policies normais via litigation hold notices. Backup incremental vs. diferencial (D) é decisão técnica de RTO/RPO, não cria non-compliance SOX se recovery dentro de parâmetros aceitáveis."
+    },
+    {
+      "num": 25,
+      "text": "Ao selecionar standards para proteção de dados em pesquisa clínica internacional, qual framework oferece maior interoperabilidade entre GDPR (UE), HIPAA (EUA) e LGPD (Brasil)?",
+      "tag": "Standards Selection",
+      "options": [
+        "A. ISO 27701 (Privacy Information Management System) estendendo ISO 27001, com annexes específicos para PII controllers e processors",
+        "B. NIST Privacy Framework mapeado para HIPAA Security Rule, utilizando Binding Corporate Rules para transferências internacionais",
+        "C. SOC 2 Type II com TSC (Trust Services Criteria) customizado adicionando criterios adicionais de privacy baseados em AICPA/CICA GAPP",
+        "D. Common Criteria (ISO 15408) EAL4+ para sistemas de processamento, complementado por Standard Contractual Clauses da Comissão Europeia"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27701:2019 é extensão específica de privacy para ISO 27001, mapeando controles para requisitos GDPR (via Annex D/E), harmonizando com frameworks globais. Certificação ISO 27701 demonstra adequacy para LGPD Art. 50 e facilita HIPAA compliance via controles mapeáveis. Reconhecida por autoridades (EDPB, ANPD) como evidência de accountability cross-border.",
+      "justification_wrong": "NIST Privacy Framework (B) é excelente mas foca mercado US; BCRs limitam-se a transferências intra-corporativas UE. SOC 2 (C) é atestação de controles, não standard prescritivo; GAPP descontinuado desde 2017. Common Criteria (D) avalia produtos/sistemas específicos, não governança organizacional de privacy; SCCs são mecanismo legal de transferência, não framework de controles."
+    },
+    {
+      "num": 26,
+      "text": "Uma organização multinacional do setor financeiro precisa harmonizar classificações de informação entre subsidiárias em jurisdições com frameworks distintos (TLP, NIST SP 800-60, e Decreto 7.845/2012 brasileiro). Qual abordagem de tailoring atende melhor aos requisitos de interoperabilidade e conformidade regulatória?",
+      "tag": "Information Classification & Standards Selection",
+      "options": [
+        "A. Criar taxonomia unificada mapeando níveis equivalentes entre frameworks, com matriz de controles baseada no denominador comum mais restritivo e metadados para requisitos jurisdicionais específicos",
+        "B. Adotar exclusivamente o TLP como padrão corporativo global, realizando assessment de gaps regulatórios e implementando controles compensatórios documentados por jurisdição",
+        "C. Manter classificações paralelas por framework regional, estabelecendo data gateways com tradução automática de rótulos durante transferências internacionais",
+        "D. Implementar classificação baseada apenas em impacto CIA (Confidentiality, Integrity, Availability), desconsiderando frameworks prescritivos em favor de abordagem risk-based pura"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27002:2022 controle 5.12 e NIST SP 800-53 Rev.5 recomendam taxonomias harmonizadas com mapeamento entre frameworks. A matriz de controles pelo nível mais restritivo garante conformidade multi-jurisdicional, enquanto metadados preservam requisitos específicos. Atende princípios de interoperabilidade (ISO/IEC 27000:2018) e facilita DLP/CASB enforcement.",
+      "justification_wrong": "TLP isolado (B) não cobre requisitos setoriais financeiros (PCI-DSS, BACEN). Classificações paralelas (C) criam complexidade operacional e risco de erro humano. Abordagem puramente risk-based (D) ignora obrigações legais de rotulagem específica (LGPD Art.46, GDPR Art.32) e requisitos de auditoria regulatória."
+    },
+    {
+      "num": 27,
+      "text": "Durante auditoria forense, identifica-se que o Data Custodian de um sistema SCADA industrial aplicou sanitização por sobrescrita de 3 passes (DoD 5220.22-M) em mídia contendo logs críticos de segurança classificados como Confidencial. O Data Owner havia estabelecido retenção de 7 anos conforme ISO/IEC 27001 Anexo A.5.33. Qual falha de governança é primária?",
+      "tag": "Data Ownership & Asset Retention",
+      "options": [
+        "A. Ausência de segregation of duties entre funções de custódia e destruição, violando SOX Section 802 e permitindo sanitização prematura sem aprovação do Records Manager",
+        "B. Classificação inadequada dos logs SCADA, que deveriam ser Secret/Restrito conforme NIST SP 800-82r3 para infraestrutura crítica, exigindo degaussing ou destruição física certificada",
+        "C. Falta de Legal Hold notification integrada ao processo de sanitização, desconsiderando possíveis litígios ou investigações regulatórias que suspendem retention schedules",
+        "D. Aplicação de método NIST SP 800-88 Clear em vez de Purge, insuficiente para nível Confidencial segundo FIPS 199 e permitindo recuperação forense avançada dos dados"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 A.5.33 e NIST SP 800-88 Rev.1 exigem Legal Hold check antes de qualquer sanitização. FRCP Rule 37(e) e legislações como Sarbanes-Oxley impõem suspensão de destruction quando litígio/investigação é razoavelmente antecipável. Custodian executou procedimento tecnicamente correto, mas processo de governança falhou ao não verificar holds ativos.",
+      "justification_wrong": "DoD 5220.22-M é adequado para Confidencial em HDD (A é procedural, não técnica). Logs SCADA Confidencial não exigem automaticamente classificação superior (B) sem análise de impacto. Sobrescrita 3-pass é Clear suficiente para não-SCI (D); Confidencial não implica necessariamente Purge, conforme NIST SP 800-88 decision tree."
+    },
+    {
+      "num": 28,
+      "text": "Empresa SaaS processa dados de saúde (HIPAA) e PII financeiro (PCI-DSS) no mesmo cluster Kubernetes multi-tenant. Equipe de segurança propõe implementar data-centric security com ABAC (Attribute-Based Access Control) e FPE (Format-Preserving Encryption). Qual configuração de scoping atende requisitos de ambos frameworks?",
+      "tag": "Data Security Controls & Scoping",
+      "options": [
+        "A. Namespaces isolados por classificação com NetworkPolicies, FPE-FF1 (NIST SP 800-38G) em campos sensíveis, ABAC com atributos data-classification e regulatory-domain, audit logs segregados por tenant",
+        "B. Encrypting volumes com LUKS2, node isolation por taints/tolerations para workloads HIPAA/PCI, RBAC baseado em service accounts, tokenização irreversível (hash SHA-256) de PII/PHI",
+        "C. Service mesh com mTLS obrigatório, encryption in transit (TLS 1.3), segregação lógica via labels, pseudonimização com secret management (Vault) e DLP policies em API Gateway",
+        "D. Clusters dedicados por framework regulatório, criptografia AES-256-GCM em repouso e trânsito, DAC (Discretionary Access Control) gerenciado por Data Owners, backup air-gapped diário"
+      ],
+      "correct": 0,
+      "justification_correct": "HIPAA §164.312(a)(1), PCI-DSS 4.0 Req.3.5 e ISO/IEC 27001 A.8.24 exigem controles granulares data-centric. Namespaces Kubernetes com NetworkPolicies atendem segregação; FPE-FF1 preserva formato para aplicações legadas mantendo operabilidade analítica. ABAC com atributos regulatórios permite políticas dinâmicas. Audit trails segregados atendem accountability de ambos frameworks.",
+      "justification_wrong": "Tokenização irreversível (B) impede operações analíticas legítimas e recuperação em DR. mTLS/labels (C) protegem trânsito mas não dados em uso/repouso adequadamente. Clusters dedicados (D) eliminam economia multi-tenancy e DAC é insuficiente para ambientes regulados (PCI-DSS 4.0 exige MAC/RBAC principles)."
+    },
+    {
+      "num": 29,
+      "text": "Chief Privacy Officer identifica que aplicação de Machine Learning para credit scoring utiliza dados de treinamento contendo protected characteristics (raça, gênero). Equipe técnica argumenta que features estão hasheadas (SHA-256 salted). Sob perspectiva de privacy protection e GDPR Art.9, qual análise está correta?",
+      "tag": "Privacy Protection & Data Handling",
+      "options": [
+        "A. Hashing salted constitui pseudonimização adequada segundo GDPR Art.4(5), permitindo processamento se houver legitimate interest (Art.6(1)(f)) e safeguards técnicos adicionais conforme Art.9(2)(g)",
+        "B. Protected characteristics permanecem personal data mesmo hasheados pois modelo pode inferir atributos sensíveis via proxy variables, violando GDPR Art.9 e exigindo explicit consent ou anonimização segundo ISO/IEC 20889",
+        "C. Se salt é mantido separado e access controls restringem linkage a data subjects, atende differential privacy requirements e pode ser processado sob GDPR Art.9(2)(j) para public interest em prevenção de fraude",
+        "D. Machine learning constitui automated decision-making sob GDPR Art.22, exigindo DPIA (Art.35) independente de pseudonimização, mas protected characteristics podem ser processados se accuracy do modelo exigir conforme necessity principle"
+      ],
+      "correct": 1,
+      "justification_correct": "GDPR Art.9 proíbe processamento de special categories independente de pseudonimização. WP29 Guidelines on Automated Decision-Making (2018) confirmam que ML pode inferir atributos sensíveis via correlações (proxy discrimination). ISO/IEC 20889:2018 classifica hashing como pseudonimização, não anonimização. Art.9(2)(a) exige explicit consent ou exceções específicas; legitimate interest (Art.6) não se aplica a special categories.",
+      "justification_wrong": "Legitimate interest (A) não é base legal válida para Art.9 special categories. Differential privacy (C) requer ruído matemático (ε-privacy), não apenas segregação de salt. Necessity principle (D) não autoriza special categories sem base legal Art.9(2); accuracy não justifica violação per se conforme EDPB Guidelines 05/2020."
+    },
+    {
+      "num": 30,
+      "text": "Organização governamental classifica documento como Secreto (impacto alto em CIA) contendo PII de operação antiterrorismo. Após 15 anos, Comitê de Desclassificação aprova downgrade para Reservado, mas LGPD Art.16 garante direito de eliminação. Data Steward questiona procedimento correto. Qual abordagem resolve o conflito normativo?",
+      "tag": "Information Classification & Data Handling Requirements",
+      "options": [
+        "A. LGPD Art.4, II(a) exclui segurança pública de escopo; proceder desclassificação conforme Decreto 7.845/2012 Art.36 e manter dados indefinidamente sob novo nível, negando eliminação por prevalência de Lei 12.527/2011 (LAI)",
+        "B. Aplicar balancing test entre LGPD Art.16 e Lei 12.527/2011 Art.23: anonimizar PII segundo ISO/IEC 20889 mantendo informações agregadas para interesse público, destruindo dados granulares pessoa-específicos conforme LGPD Art.15, I",
+        "C. Desclassificar segmento de segurança nacional e submeter PII a regime LGPD integral após downgrade, permitindo eliminação mediante requerimento do titular exceto se Art.11, II(b) (defesa nacional) ainda aplicável",
+        "D. Manter classificação original Secreto até expiração de todos os direitos LGPD por prescrição (20 anos, CC Art.205), então desclassificar e transferir para arquivo histórico conforme Lei 8.159/1991 Art.10"
+      ],
+      "correct": 1,
+      "justification_correct": "LGPD Art.4, II(a) exclui segurança nacional durante operação ativa, mas após desclassificação parcial há reentrada no escopo LGPD. STF (ARE 1.037.396) e ANPD Guia Orientativo reconhecem necessidade de balanceamento com LAI. ISO/IEC 29100:2011 princípio 8 (proportionality) sustenta anonimização como meio-termo: preserva interesse histórico/público (LAI Art.7) enquanto protege direitos fundamentais (CF Art.5, X).",
+      "justification_wrong": "Exclusão integral LGPD (A) aplica-se apenas durante classificação ativa de segurança; downgrade altera regime. Eliminação sem análise (C) viola LAI Art.23 e interesse público documental. Prescrição 20 anos (D) não suspende direitos LGPD fundamentais (imprescritibilidade de direitos personalidade, STJ REsp 1.334.097); arquivo histórico não dispensa adequação."
+    },
+    {
+      "num": 31,
+      "text": "Uma organização governamental precisa classificar documentos sobre desenvolvimento de sistemas de defesa cibernética. Qual classificação deve ser aplicada a informações cuja divulgação não autorizada causaria dano grave à segurança nacional?",
+      "tag": "Information Classification - Government",
+      "options": [
+        "A. Confidential",
+        "B. Secret",
+        "C. Top Secret",
+        "D. Sensitive But Unclassified"
+      ],
+      "correct": 1,
+      "justification_correct": "Secret é a classificação governamental apropriada para informações cuja divulgação não autorizada causaria dano grave (serious damage) à segurança nacional, conforme Executive Order 13526. Top Secret aplica-se a dano excepcionalmente grave, enquanto Confidential refere-se a dano mensurável.",
+      "justification_wrong": "Top Secret destina-se a dano excepcionalmente grave; Confidential para dano mensurável; SBU não é classificação formal do sistema de três níveis (Confidential/Secret/Top Secret). A distinção entre níveis de dano é critério essencial para classificação governamental adequada."
+    },
+    {
+      "num": 32,
+      "text": "Durante auditoria de dados pessoais em conformidade com LGPD, identifica-se que o Data Custodian está tomando decisões sobre finalidades de processamento. Qual problema de governança isso representa?",
+      "tag": "Data Ownership Roles",
+      "options": [
+        "A. Violação de segregação de funções entre custodian e owner",
+        "B. Ausência de data steward para mediação",
+        "C. Conflito entre user privileges e custodian duties",
+        "D. Gap de responsabilidade do data processor"
+      ],
+      "correct": 0,
+      "justification_correct": "Data Custodian deve implementar controles técnicos, não definir finalidades de processamento - responsabilidade exclusiva do Data Owner. Esta violação de segregação compromete accountability e controles LGPD Art. 42, criando risco de uso indevido e não conformidade regulatória significativa.",
+      "justification_wrong": "Data Steward medeia qualidade/políticas, não finalidades; user privileges são irrelevantes para decisões de processamento; processor é papel LGPD distinto. O problema central é custodian exercendo autoridade decisória do owner, violando segregação fundamental de responsabilidades organizacionais."
+    },
+    {
+      "num": 33,
+      "text": "Uma empresa multinacional de saúde precisa implementar controles de privacidade para dados de pacientes europeus processados no Brasil. Qual abordagem melhor atende requisitos de privacy by design?",
+      "tag": "Privacy Protection",
+      "options": [
+        "A. Criptografia de dados em repouso e pseudonimização na coleta",
+        "B. Controles de acesso baseados em roles e logs de auditoria",
+        "C. Data loss prevention e geographic restrictions",
+        "D. Consent management e data retention policies"
+      ],
+      "correct": 0,
+      "justification_correct": "Privacy by design (GDPR Art. 25, LGPD Art. 46) exige controles técnicos proativos desde a concepção. Criptografia e pseudonimização são controles preventivos fundamentais que minimizam dados identificáveis, atendendo princípios de minimização e proteção desde o design, essenciais para conformidade transnacional.",
+      "justification_wrong": "Controles de acesso são reativos; DLP é detectivo; consent/retention são administrativos. Privacy by design requer medidas técnicas preventivas integradas ao sistema desde origem, não apenas controles compensatórios posteriores. Pseudonimização e criptografia são exemplos explícitos GDPR Recital 78."
+    },
+    {
+      "num": 34,
+      "text": "Ao aplicar scoping e tailoring de controles ISO/IEC 27002:2022 para ambiente cloud híbrido, qual critério técnico deve priorizar exclusões de controles?",
+      "tag": "Scoping and Tailoring",
+      "options": [
+        "A. Custo de implementação versus benefício de segurança",
+        "B. Análise de riscos residuais e aplicabilidade ao contexto",
+        "C. Preferências de arquitetura da equipe técnica",
+        "D. Benchmarking com práticas do setor"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 Anexo A e ISO 27003 estabelecem que tailoring deve basear-se em risk assessment formal e aplicabilidade ao escopo organizacional. Exclusões exigem justificativa documentada demonstrando controle não aplicável ou risco aceitável, não critérios financeiros ou subjetivos.",
+      "justification_wrong": "Custo não justifica exclusão de controles necessários; preferências técnicas são subjetivas; benchmarking ignora contexto específico. Decisões de tailoring devem fundamentar-se em avaliação de riscos objetiva e requisitos de compliance, garantindo Statement of Applicability (SoA) tecnicamente defensável."
+    },
+    {
+      "num": 35,
+      "text": "Uma instituição financeira precisa definir data retention para registros de transações considerando PCI DSS e regulamentações locais conflitantes. Qual princípio deve orientar a decisão?",
+      "tag": "Asset Retention",
+      "options": [
+        "A. Aplicar o período de retenção mais longo entre os requisitos",
+        "B. Priorizar PCI DSS por ser padrão internacional",
+        "C. Segmentar dados aplicando requisitos específicos a cada categoria",
+        "D. Adotar média ponderada dos períodos exigidos"
+      ],
+      "correct": 2,
+      "justification_correct": "Data retention deve aplicar princípio de minimização (LGPD Art. 16, GDPR Art. 5) segmentando dados por finalidade legal específica. PCI DSS Req. 3.1 exige retenção mínima necessária; regulamentações locais podem exigir períodos distintos. Segmentação permite conformidade simultânea otimizando exposição.",
+      "justification_wrong": "Retenção máxima viola minimização e aumenta risco desnecessariamente; priorizar PCI ignora obrigações legais locais; média ponderada não possui fundamentação regulatória. Abordagem correta mapeia cada categoria de dado aos requisitos aplicáveis, implementando períodos diferenciados tecnicamente justificados."
+    },
+    {
+      "num": 36,
+      "text": "Uma organização multinacional precisa harmonizar classificações de dados entre subsidiárias governamentais e comerciais. Dados classificados como CONFIDENTIAL (DoD 5200.1-R) em contratos militares dos EUA devem ser mapeados para qual classificação comercial equivalente, considerando requisitos de controle de acesso baseado em necessidade de conhecimento e proteção criptográfica em trânsito?",
+      "tag": "Information Classification",
+      "options": [
+        "A. Internal Use Only, pois ambos permitem compartilhamento interno sem criptografia obrigatória",
+        "B. Confidential, mantendo controles de acesso restrito e criptografia AES-256 para transmissão",
+        "C. Proprietary, aplicando apenas controles de DLP sem requisitos criptográficos",
+        "D. Restricted, exigindo compartimentação tipo SCI e autenticação multifator obrigatória"
+      ],
+      "correct": 1,
+      "justification_correct": "CONFIDENTIAL governamental (DoD 5200.1-R) mapeia para Confidential comercial, exigindo controles equivalentes: acesso restrito baseado em need-to-know, criptografia em trânsito (FIPS 140-2), e proteção contra divulgação não autorizada. ISO/IEC 27001:2022 Annex A.8.2 suporta equivalência de controles entre esquemas de classificação.",
+      "justification_wrong": "Internal Use permite controles menos rigorosos sem criptografia mandatória. Proprietary não é classificação padrão ISO. Restricted com compartimentação SCI excede requisitos de CONFIDENTIAL, aplicando-se a níveis SECRET/TOP SECRET governamentais, criando over-classification desnecessária e custos operacionais excessivos."
+    },
+    {
+      "num": 37,
+      "text": "Durante auditoria de conformidade com LGPD, identificou-se que o Data Steward modificou retenção de dados pessoais sensíveis de saúde de 5 para 10 anos sem aprovação formal. O Data Owner estava ausente e o Custodian implementou a mudança. Qual falha de governança de dados é mais crítica neste cenário?",
+      "tag": "Data Ownership",
+      "options": [
+        "A. Data Steward excedeu autoridade ao definir políticas de retenção sem delegação formal do Owner",
+        "B. Custodian violou segregação de funções ao implementar mudanças sem aprovação de segurança",
+        "C. Data Owner falhou em estabelecer procuração formal durante ausência para decisões críticas",
+        "D. Falta de comitê de governança de dados para aprovar mudanças em dados sensíveis de saúde"
+      ],
+      "correct": 0,
+      "justification_correct": "Data Steward possui autoridade sobre qualidade e uso de dados, mas não sobre políticas de retenção—prerrogativa exclusiva do Data Owner conforme ISO/IEC 27001:2022 cláusula 5.2. LGPD Art. 16 exige que retenção seja limitada ao mínimo necessário, decisão de governança que requer aprovação do Owner. Mudança unilateral viola accountability.",
+      "justification_wrong": "Custodian executa controles técnicos conforme direcionado—não aprova políticas. Ausência do Owner não transfere autoridade decisória automaticamente. Comitês são recomendados mas não obrigatórios; a falha primária é ultrapassagem de autoridade do Steward, violando princípios de governança de dados e segregação de responsabilidades definidas."
+    },
+    {
+      "num": 38,
+      "text": "Uma fintech implementa Privacy by Design para novo sistema de scoring de crédito com ML. Qual técnica atende simultaneamente LGPD Art. 46 (revisão de decisões automatizadas), minimização de dados e requisitos de explicabilidade, sem comprometer acurácia do modelo acima de 92%?",
+      "tag": "Privacy Protection",
+      "options": [
+        "A. Differential Privacy com ε=0.1 para proteger dados de treinamento e k-anonymity k=5 em datasets",
+        "B. Federated Learning com modelos locais e agregação segura via secure multi-party computation",
+        "C. LIME (Local Interpretable Model-agnostic Explanations) com feature importance e data minimization via PCA",
+        "D. Homomorphic Encryption para processar dados cifrados e blockchain para auditoria de decisões"
+      ],
+      "correct": 2,
+      "justification_correct": "LIME provê explicabilidade local exigida por LGPD Art. 20 e GDPR Art. 22, permitindo revisão de decisões individuais. PCA reduz dimensionalidade implementando minimização (LGPD Art. 6º III). Mantém acurácia >92% sem degradação significativa. ISO/IEC 27701:2019 cláusula 6.5.2.2 endossa explicabilidade técnica para decisões automatizadas.",
+      "justification_wrong": "Differential Privacy ε=0.1 causa perda severa de acurácia (trade-off privacidade-utilidade). Federated Learning não resolve explicabilidade individual de decisões. Homomorphic Encryption tem overhead computacional proibitivo para ML em produção e blockchain não provê explicabilidade de lógica decisória—apenas auditoria de logs, insuficiente para LGPD Art. 46."
+    },
+    {
+      "num": 39,
+      "text": "Após violação de dados, forense determinou que backups de fitas LTO-8 com retenção de 7 anos continham PII de clientes inativos há 4 anos, violando LGPD. A política de retenção especificava 2 anos pós-inatividade. Qual controle de Asset Retention teria prevenido esta não-conformidade?",
+      "tag": "Asset Retention",
+      "options": [
+        "A. Implementar WORM (Write Once Read Many) em fitas para garantir imutabilidade e conformidade legal",
+        "B. Data Loss Prevention (DLP) com varredura de fitas trimestralmente para identificar PII expirada",
+        "C. Records retention schedule automatizado com triggers de destruição baseados em metadata de inatividade",
+        "D. Criptografia de fitas com key rotation anual e destruição de chaves após período de retenção"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 15489-1:2016 (Records Management) requer retention schedule automatizado com triggers baseados em eventos (inatividade). Metadata-driven destruction garante eliminação pontual conforme LGPD Art. 16. NIST SP 800-88 Rev. 1 endossa destruição automatizada via policies, prevenindo retenção excessiva de dados pessoais além do necessário legalmente.",
+      "justification_wrong": "WORM garante imutabilidade mas não elimina dados expirados—agrava não-conformidade. DLP em fitas é tecnicamente ineficiente e não previne retenção, apenas detecta post-facto. Key destruction impede acesso mas não constitui eliminação de dados conforme LGPD Art. 16—dados permanecem fisicamente, violando minimização e requisitos de anonimização definitiva."
+    },
+    {
+      "num": 40,
+      "text": "Durante scoping de controles ISO/IEC 27001:2022 para ambiente multi-cloud (AWS GovCloud, Azure Gov), a organização precisa implementar tailoring de A.8.10 (Information deletion). Qual abordagem de tailoring é adequada considerando data sovereignty e requisitos de certificabilidade?",
+      "tag": "Scoping and Tailoring",
+      "options": [
+        "A. Excluir A.8.10 via statement of applicability justificando que CSPs garantem deleção por SLA",
+        "B. Implementar controle adicional exigindo crypto-shredding (destruição de chaves) como método primário",
+        "C. Tailoring de A.8.10 especificando verificação de deleção via attestation reports dos CSPs e logs",
+        "D. Substituir A.8.10 por controle compensatório de data masking permanente em todos os ambientes"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 6.1.3(c) permite tailoring mantendo objetivo do controle. A.8.10 exige verificação de deleção—attestation reports (SOC 2 Type II, FedRAMP) de CSPs governamentais provêem evidência auditável. Logs complementam rastreabilidade. Atende data sovereignty via jurisdição dos CSPs Gov e mantém certificabilidade sem exclusão do controle.",
+      "justification_wrong": "Excluir A.8.10 viola conformidade—deleção é controle mandatório para LGPD/GDPR. Crypto-shredding como método primário é inadequado para dados não-criptografados e backups legados. Masking não constitui deleção conforme ISO/IEC 27001:2022—dados originais persistem, violando LGPD Art. 16 e princípio de minimização. Controles compensatórios não substituem deleção efetiva."
+    },
+    {
+      "num": 41,
+      "text": "Uma organização multinacional precisa classificar dados que contêm informações sobre projetos de defesa nacional junto com dados comerciais sensíveis. Qual abordagem de classificação é mais apropriada considerando os requisitos de compliance e proteção adequada?",
+      "tag": "Information Classification",
+      "options": [
+        "A. Implementar sistema híbrido dual-track onde dados governamentais seguem CTPN/SIGSIG e comerciais seguem classificação proprietária independente",
+        "B. Adotar exclusivamente a classificação governamental para todos os dados da organização",
+        "C. Utilizar apenas classificação comercial com níveis equivalentes aos governamentais",
+        "D. Criar classificação única mesclando critérios governamentais e comerciais em taxonomia homogênea"
+      ],
+      "correct": 0,
+      "justification_correct": "A abordagem dual-track permite conformidade simultânea com requisitos mandatórios governamentais (Decreto 7.845/2012 - CTPN no Brasil, ou equivalentes internacionais) mantendo flexibilidade comercial. Sistemas híbridos segregados evitam over-classification de dados comerciais e garantem tratamento adequado conforme origem, autoridade classificadora e frameworks regulatórios aplicáveis (NIST SP 800-60, ISO/IEC 27001).",
+      "justification_wrong": "Abordagens exclusivas (B, C) falham em atender requisitos específicos de cada domínio. Classificação governamental é mandatória por lei para informações controladas, não opcional. Mesclagem homogênea (D) viola princípios de segregação regulatória, criando conflitos entre autoridades classificadoras e comprometendo auditabilidade e rastreabilidade exigidas por frameworks como NIST SP 800-171 e ISO 27002:2022."
+    },
+    {
+      "num": 42,
+      "text": "Durante implementação de GDPR/LGPD, surge conflito entre o Data Owner (executivo de negócio) exigindo retenção estendida para analytics e o DPO recomendando minimização. Quem tem autoridade final sobre período de retenção de dados pessoais?",
+      "tag": "Data Ownership",
+      "options": [
+        "A. DPO, pois GDPR Art. 39 e LGPD Art. 41 conferem autoridade vinculante sobre tratamento de dados pessoais",
+        "B. Data Owner, mantendo responsabilidade por decisões de negócio, com DPO exercendo função consultiva conforme GDPR Art. 38(1)",
+        "C. Data Custodian, responsável por implementação técnica dos controles de retenção",
+        "D. Comitê paritário entre Owner e DPO com votação para decisões conflitantes"
+      ],
+      "correct": 1,
+      "justification_correct": "GDPR Art. 38(1) e LGPD Art. 41 §2º estabelecem DPO como função consultiva e fiscalizadora, não decisória. Data Owner mantém accountability final (GDPR Art. 5(2), LGPD Art. 6º X), devendo considerar recomendações do DPO mas equilibrando necessidades legítimas de negócio. Responsabilidade recai sobre o controlador (Owner) conforme Art. 24 GDPR, com DPO assessorando conformidade.",
+      "justification_wrong": "DPO não possui autoridade decisória vinculante (A incorreto - Art. 38(1) GDPR é consultivo). Custodian (C) executa políticas sem autoridade estratégica. Estruturas de comitê paritário (D) diluem accountability individual exigida pelo princípio de responsabilização (GDPR Art. 5(2), ISO 27001:2022 cláusula 5.3), contrariando atribuição clara de papéis em frameworks de governança de dados."
+    },
+    {
+      "num": 43,
+      "text": "Uma empresa de saúde deve implementar controles de pseudonimização para dados de pesquisa clínica conforme GDPR Art. 89. Qual técnica atende aos requisitos de reversibilidade controlada mantendo utilidade analítica e segregação de funções?",
+      "tag": "Data Security Controls",
+      "options": [
+        "A. Hashing SHA-256 com salt único por registro armazenado em HSM separado",
+        "B. Tokenização com vault centralizado usando AES-256-GCM, acesso via dual-control e logging imutável",
+        "C. Criptografia determinística AES-256-ECB para preservar padrões analíticos",
+        "D. Format-Preserving Encryption (FPE) FF3-1 sem gestão separada de chaves"
+      ],
+      "correct": 1,
+      "justification_correct": "Tokenização com vault separado atende GDPR Art. 32(1)(a) e Art. 89 para pseudonimização reversível. AES-256-GCM provê confidencialidade e integridade (NIST SP 800-38D). Dual-control garante segregação de funções exigida pelo Art. 25 (privacy by design). Logging imutável permite auditoria conforme Art. 30 GDPR. Técnica mantém utilidade analítica sem expor identificadores diretos, permitindo re-identificação controlada quando necessário.",
+      "justification_wrong": "Hashing (A) é irreversível, violando requisitos de pesquisa que podem necessitar re-identificação controlada. AES-ECB (C) é vulnerável a análise de padrões (NIST desaprova), comprometendo confidencialidade. FPE sem segregação de chaves (D) falha em requisitos de Art. 32(1) sobre separação de componentes criptográficos e não atende segregação de funções do ISO 27001:2022 cláusula 5.3."
+    },
+    {
+      "num": 44,
+      "text": "Ao realizar scoping de controles ISO/IEC 27001:2022 Annex A para processamento de informações classificadas, qual critério técnico justifica adequadamente a exclusão de um controle do Statement of Applicability (SoA)?",
+      "tag": "Scoping and Tailoring",
+      "options": [
+        "A. Análise de risco demonstra ameaça associada com probabilidade inferior a 5% anualmente",
+        "B. Controle não aplicável pois requisito de segurança relacionado não existe no escopo certificado, documentado via risk assessment conforme cláusula 6.1.2",
+        "C. Implementação do controle excede orçamento aprovado para programa de segurança",
+        "D. Controle redundante pois organização implementa framework alternativo (NIST CSF) cobrindo mesmo objetivo"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 6.1.3(c) permite exclusão apenas quando controle não é aplicável ao escopo definido, baseado em análise de riscos formal (cláusula 6.1.2). Justificativa deve demonstrar ausência do requisito de segurança específico no contexto organizacional. SoA deve documentar razão técnica objetiva conforme cláusula 6.1.3(d), vinculada a escopo e risk assessment, não a decisões arbitrárias ou orçamentárias.",
+      "justification_wrong": "Probabilidade baixa (A) não justifica exclusão - risco residual pode ser inaceitável para ativos críticos. Restrições orçamentárias (C) violam cláusula 6.1.3 que exige justificativa técnica baseada em aplicabilidade. Frameworks alternativos (D) não substituem requisitos normativos - controles ISO 27001 são mandatórios quando aplicáveis ao escopo certificado, independente de outras implementações (cláusula 6.1.3, ISO 27003:2017)."
+    },
+    {
+      "num": 45,
+      "text": "Uma organização financeira deve selecionar padrão criptográfico para proteção de dados em repouso de transações classificadas como Secret/Confidencial com retenção de 10 anos. Qual seleção atende requisitos de conformidade e projeção de resistência criptográfica?",
+      "tag": "Standards Selection",
+      "options": [
+        "A. AES-256-GCM com chaves gerenciadas em HSM FIPS 140-3 Level 3, rotação anual, alinhado a NIST SP 800-57 Part 1 Rev. 5",
+        "B. RSA-2048 para encryption at rest com chaves em software protegido",
+        "C. AES-128-CBC com chaves derivadas de senhas via PBKDF2 10.000 iterações",
+        "D. ChaCha20-Poly1305 com gestão de chaves em cloud KMS padrão"
+      ],
+      "correct": 0,
+      "justification_correct": "AES-256 atende projeção de 10+ anos conforme NIST SP 800-57 Part 1 Rev. 5 (segurança além de 2030). GCM provê confidencialidade e autenticidade (SP 800-38D). HSM FIPS 140-3 Level 3 atende requisitos para informações classificadas (proteção física e lógica). Rotação anual mitiga comprometimento de chaves. Configuração alinhada a PCI-DSS 4.0, LGPD Art. 46 e requisitos para dados financeiros sensíveis.",
+      "justification_wrong": "RSA-2048 (B) inadequado para encryption at rest em volume (performance) e chaves software violam requisitos para classificação Secret. AES-128-CBC (C) com derivação de senha é fraco para dados sensíveis; PBKDF2 10k iterações insuficiente (OWASP recomenda 600k+). ChaCha20 (D) válido tecnicamente mas cloud KMS padrão pode não atender requisitos de soberania e classificação para dados Secret conforme NIST SP 800-144."
+    },
+    {
+      "num": 46,
+      "text": "Uma organização multinacional precisa harmonizar classificações de dados entre subsidiárias governamentais e comerciais. Qual abordagem melhor atende aos requisitos de interoperabilidade mantendo conformidade com FISMA e ISO/IEC 27001?",
+      "tag": "Information Classification Harmonization",
+      "options": [
+        "A. Implementar matriz de mapeamento bidirecional entre taxonomias governamentais (Top Secret/Secret/Confidential) e comerciais (Restricted/Confidential/Internal/Public) com controles equivalentes por nível",
+        "B. Adotar exclusivamente a classificação governamental em todas as subsidiárias para garantir o nível mais alto de proteção",
+        "C. Criar classificação híbrida única mesclando terminologias governamentais e comerciais em novos rótulos customizados",
+        "D. Manter sistemas de classificação paralelos sem integração, aplicando políticas distintas conforme jurisdição"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27001:2013 Anexo A.8.2 e NIST SP 800-60 recomendam mapeamento formal entre esquemas classificatórios mantendo integridade de cada taxonomia. Matrizes bidirecionais preservam requisitos regulatórios específicos (FISMA para governo) enquanto permitem interoperabilidade através de controles equivalentes baseados em impacto, conforme FIPS 199.",
+      "justification_wrong": "Opção B viola princípios de proporcionalidade e gera overhead desnecessário. Opção C cria ambiguidade terminológica incompatível com frameworks regulatórios estabelecidos. Opção D impede compartilhamento seguro de informações e colaboração inter-subsidiárias, violando requisitos de governança unificada."
+    },
+    {
+      "num": 47,
+      "text": "Durante auditoria de conformidade com LGPD, identificou-se conflito entre o Data Owner (diretor de marketing) e o Data Steward (DPO) sobre retenção de dados de clientes. Qual princípio resolve esta situação?",
+      "tag": "Data Ownership Roles",
+      "options": [
+        "A. O Data Owner tem autoridade final sobre decisões de negócio, incluindo períodos de retenção alinhados aos objetivos corporativos",
+        "B. O Data Steward (DPO) prevalece em questões de conformidade legal, limitando decisões do Owner conforme LGPD Art. 41 e princípio da necessidade",
+        "C. O Data Custodian (TI) deve implementar a solução tecnicamente mais viável independente de posicionamentos",
+        "D. Comitê executivo deve arbitrar caso a caso sem framework predefinido de resolução de conflitos"
+      ],
+      "correct": 1,
+      "justification_correct": "LGPD Art. 41 estabelece que o DPO (Data Protection Officer) atua como autoridade em conformidade legal, prevalecendo sobre interesses comerciais quando há conflito com princípios legais. ISO/IEC 27701:2019 seção 5.2.2 reforça que Data Stewards têm autoridade sobre adequação regulatória, incluindo retenção mínima necessária (Art. 6º, III LGPD).",
+      "justification_wrong": "Opção A ignora supremacia legal sobre interesses comerciais. Owners têm autoridade sobre objetivos de negócio dentro de limites legais, não absoluta. Opção C inverte hierarquia: Custodians implementam decisões, não as definem. Opção D gera inconsistência e ineficiência, contrariando governança estruturada exigida por ISO/IEC 38500."
+    },
+    {
+      "num": 48,
+      "text": "Ao implementar scoping para ISO/IEC 27001 em ambiente híbrido (nuvem pública/privada), qual critério determina CORRETAMENTE a exclusão de ativos do escopo de certificação?",
+      "tag": "Scoping and Tailoring",
+      "options": [
+        "A. Ativos gerenciados por CSPs (Cloud Service Providers) podem ser excluídos desde que cobertos por certificações ISO 27001 válidas do fornecedor",
+        "B. Ativos podem ser excluídos se não processam informações classificadas como confidenciais ou superiores, independente de interdependências",
+        "C. Exclusões só são válidas se o ativo não afeta a capacidade da organização de atender requisitos de segurança da informação dentro do escopo declarado",
+        "D. Sistemas legados em fase de descontinuação (sunset) com data definida para desativação podem ser automaticamente excluídos"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 cláusula 4.3 estabelece que escopo deve incluir todos os ativos que afetem capacidade de atender requisitos de SI. Exclusões arbitrárias baseadas apenas em localização (nuvem), classificação ou status operacional violam princípios de gestão de risco. Interdependências sistêmicas determinam inclusão obrigatória conforme ISO/IEC 27003:2017 seção 5.3.",
+      "justification_wrong": "Opção A cria gap de responsabilidade: modelo de responsabilidade compartilhada (ISO/IEC 27017) exige controles organizacionais mesmo com CSP certificado. Opção B ignora que dados públicos podem ter requisitos críticos de integridade/disponibilidade. Opção D desconsidera que sistemas legados frequentemente representam riscos elevados até descontinuação efetiva."
+    },
+    {
+      "num": 49,
+      "text": "Organização deve selecionar baseline de controles para sistema processando PHI (Protected Health Information) sob HIPAA e dados financeiros sob PCI DSS. Qual metodologia de standards selection é mais adequada?",
+      "tag": "Standards Selection",
+      "options": [
+        "A. Adotar NIST SP 800-53 como framework único, mapeando controles para requisitos específicos de HIPAA e PCI DSS via tailoring",
+        "B. Implementar separadamente requisitos HIPAA Security Rule e PCI DSS v4.0, mantendo dois conjuntos distintos de controles sem integração",
+        "C. Utilizar ISO/IEC 27002:2022 como baseline genérico, complementando com controles específicos de HIPAA e PCI onde houver gaps",
+        "D. Criar framework proprietário combinando apenas os controles mais rigorosos de cada regulação aplicável"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-53 rev.5 fornece catálogo abrangente com mapeamentos documentados para HIPAA (via NIST SP 800-66) e PCI DSS (via Appendix G). Permite tailoring sistemático conforme SP 800-53B, evitando redundâncias e garantindo cobertura completa. OMB Circular A-130 e FISMA reconhecem esta abordagem para ambientes multi-regulados.",
+      "justification_wrong": "Opção B gera duplicação, inconsistências e overhead operacional significativo. Opção C (ISO 27002) carece de mapeamentos normativos diretos para HIPAA/PCI, exigindo análise de gaps complexa e subjetiva. Opção D cria framework não-auditável sem rastreabilidade para requisitos regulatórios específicos, dificultando demonstração de conformidade."
+    },
+    {
+      "num": 50,
+      "text": "Em procedimento de data sanitization para dispositivos contendo informações classificadas como Secret (governo) e transitando para descarte, qual método atende simultaneamente NIST SP 800-88 e requisitos de cadeia de custódia forense?",
+      "tag": "Data Handling Requirements",
+      "options": [
+        "A. Sobrescrita criptográfica de 7 passes (DoD 5220.22-M) com verificação posterior e documentação em formulário SF-309",
+        "B. Degaussing certificado para mídia magnética seguido de destruição física, com certificado de destruição rastreável e testemunhas documentadas",
+        "C. Criptografia de disco completo (AES-256) seguida de destruição de chaves, mantendo mídia física intacta para auditoria",
+        "D. Formatação em nível de sistema operacional seguida de reinstalação de software base para reuso em ambiente de menor classificação"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-88 Rev.1 especifica que dados classificados como Secret requerem Purge ou Destroy. Degaussing (Purge) seguido de destruição física (Destroy) garante irrecuperabilidade. NIST SP 800-86 e Federal Rules of Evidence exigem cadeia de custódia documentada com testemunhas para admissibilidade forense. DoD 5220.22-M foi descontinuado em 2014.",
+      "justification_wrong": "Opção A referencia padrão obsoleto (DoD 5220.22-M) e sobrescrita não é recomendada para SSDs/mídia flash por wear-leveling. Opção C mantém mídia recuperável através de análise física (residual data). Opção D (Clear) é inadequada para Secret - permite apenas reuso em mesmo nível, não descarte, violando CNSS Policy 9."
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "cert_id": "cfe",
+  "domain_id": "payment_fraud",
+  "domain_code": "S1D11",
+  "domain_name": "S1D11 · Payment Fraud",
+  "lang": "es",
+  "total": 48,
+  "schema": "FractalFlashcard-v1",
+  "layers": {
+    "F1": "Definição",
+    "F2": "Distinção",
+    "F3": "Aplicação",
+    "F4": "Síntese"
+  },
+  "cards": [
+    {
+      "id": 1,
+      "layer": "F1",
+      "topic": "definicion_fraude_pago",
+      "front": {
+        "es": "¿Qué es el fraude de pagos y cuáles son sus componentes esenciales?"
+      },
+      "back": {
+        "es": "El fraude de pagos es la obtención ilícita de fondos mediante engaño o manipulación de sistemas de pago legítimos. Los componentes esenciales incluyen: intención fraudulenta, falsificación o alteración de instrumentos de pago, y aprovechamiento de vulnerabilidades en canales de transmisión. Es distinto del robo simple porque implica el uso de procesos financieros regulares para perpetrar el delito."
+      }
+    },
+    {
+      "id": 2,
+      "layer": "F1",
+      "topic": "definicion_clearing_fraud",
+      "front": {
+        "es": "¿Cómo se define el fraude de compensación (clearing fraud) en sistemas de pagos?"
+      },
+      "back": {
+        "es": "El fraude de compensación ocurre cuando un deudor autoriza un débito ACH pero posteriormente impugna la transacción sin causa legítima. Se diferencia del fraude no autorizado porque la transacción fue inicialmente consentida. Representa una forma de 'fraude amigable' donde el consumidor intenta recuperar fondos mediante disputa falsa, afectando la integridad del proceso de clearing."
+      }
+    },
+    {
+      "id": 3,
+      "layer": "F1",
+      "topic": "definicion_account_takeover",
+      "front": {
+        "es": "¿Qué se entiende por 'account takeover' (robo de cuenta) en el contexto de fraude de pagos?"
+      },
+      "back": {
+        "es": "Account takeover es el acceso no autorizado a una cuenta de banco o pago mediante la obtención de credenciales del titular legítimo. El defraudador utiliza esta cuenta comprometida para realizar transferencias o pagos sin consentimiento del propietario. Generalmente resulta de phishing, malware o compra de credenciales en mercados negros, permitiendo al atacante ejecutar transacciones que aparentan ser legítimas."
+      }
+    },
+    {
+      "id": 4,
+      "layer": "F1",
+      "topic": "definicion_triangulacion_fraude",
+      "front": {
+        "es": "¿Cuál es el significado de 'triangulación de fraude' en esquemas de pago?"
+      },
+      "back": {
+        "es": "La triangulación de fraude es un esquema que involucra a tres partes: el defraudador, la víctima legítima y un tercero inocente. El defraudador compra en línea usando datos de tarjeta robados, obtiene la mercancía, y luego vende los artículos en un sitio de subastas legítimo. El comprador en subastas desconoce que está adquiriendo bienes obtenidos fraudulentamente, creando una cadena de victimización."
+      }
+    },
+    {
+      "id": 5,
+      "layer": "F1",
+      "topic": "definicion_micro_transacciones",
+      "front": {
+        "es": "¿Qué son las micro-transacciones fraudulentas y cuál es su propósito?"
+      },
+      "back": {
+        "es": "Las micro-transacciones fraudulentas son débitos pequeños y repetidos (típicamente menos de $5) realizados sin autorización sobre cuentas bancarias o tarjetas de crédito. El objetivo es evadir detección automatizada al permanecer bajo los umbrales de monitoreo. Muchas víctimas no notan estas pequeñas cantidades, permitiendo al defraudador extraer miles de dólares antes de ser descubierto."
+      }
+    },
+    {
+      "id": 6,
+      "layer": "F1",
+      "topic": "definicion_fraude_velocidad",
+      "front": {
+        "es": "¿Qué se define como 'fraude de velocidad' en sistemas de pago modernos?"
+      },
+      "back": {
+        "es": "El fraude de velocidad ocurre cuando múltiples transacciones se lanzan rápidamente contra una cuenta comprometida antes de que se dispare una alerta de detección de fraude. Los sistemas RTP y pagos instantáneos son especialmente vulnerables porque no permiten pausas para validación. Un atacante puede iniciar 10+ transferencias en segundos desde una cuenta robada, agotando fondos antes que defensa alguna se active."
+      }
+    },
+    {
+      "id": 7,
+      "layer": "F1",
+      "topic": "definicion_fraude_reembolso",
+      "front": {
+        "es": "¿Cómo se define el 'fraude de reembolso' o 'refund fraud' en operaciones de pago?"
+      },
+      "back": {
+        "es": "El fraude de reembolso es el proceso de obtener un reembolso falso por una transacción nunca realizada o falsamente disputada. El defraudador contacta al comerciante o procesador reclamando que nunca recibió la mercancía o que el cargo fue duplicado. Luego, cuando recibe el reembolso, mantiene el dinero y la mercancía original, logrando una ganancia neta fraudulenta."
+      }
+    },
+    {
+      "id": 8,
+      "layer": "F1",
+      "topic": "definicion_fraude_cambio_direccion",
+      "front": {
+        "es": "¿Qué caracteriza al 'fraude de cambio de dirección' en sistemas de pago?"
+      },
+      "back": {
+        "es": "El fraude de cambio de dirección es una técnica donde el defraudador modifica la dirección de envío o facturación en una cuenta comprometida sin permiso. Realiza compras que se envían a una dirección controlada por el delincuente en lugar de la ubicación original del titular. Es frecuente en robo de identidad combinado con fraude de pagos, permitiendo al atacante recibir mercancía mientras carga los gastos a la víctima."
+      }
+    },
+    {
+      "id": 9,
+      "layer": "F1",
+      "topic": "definicion_fraude_identity_proofing",
+      "front": {
+        "es": "¿Qué se entiende por vulnerabilidades en 'identity proofing' respecto a fraude de pagos?"
+      },
+      "back": {
+        "es": "Identity proofing son los procesos de verificación diseñados para confirmar que una persona es quien afirma ser antes de procesar un pago. Las vulnerabilidades ocurren cuando estos sistemas aceptan documentación falsificada, datos robados u otro material fraudulento. Por ejemplo, un defraudador puede abrir una nueva cuenta bancaria usando documentos de identidad falsos, luego usar esa cuenta para realizar pagos defraudadores."
+      }
+    },
+    {
+      "id": 10,
+      "layer": "F1",
+      "topic": "definicion_fraude_malware_pago",
+      "front": {
+        "es": "¿Cómo se define el fraude de pagos originado por malware bancario?"
+      },
+      "back": {
+        "es": "El fraude de pagos por malware bancario es el robo de credenciales o manipulación de transacciones mediante software malicioso instalado en dispositivos del usuario. El malware intercepta credenciales de acceso, captura datos de transacciones o modifica instrucciones de pago en tiempo real. Un ejemplo es el malware Zeus que redirigía transferencias bancarias a cuentas de mulas antes de llegar al destino original."
+      }
+    },
+    {
+      "id": 11,
+      "layer": "F1",
+      "topic": "definicion_fraude_synthetic_identity",
+      "front": {
+        "es": "¿Qué es el fraude de identidad sintética en contexto de pagos y crédito?"
+      },
+      "back": {
+        "es": "El fraude de identidad sintética es la creación de una identidad ficticia combinando información real e inventada para abrir cuentas de pago y crédito. El defraudador crea un número de seguro social falso, pero usa nombre, dirección y teléfono reales existentes. Establece un historial de crédito durante meses con pagos pequeños, luego realiza transacciones de pago masivas antes de desaparecer."
+      }
+    },
+    {
+      "id": 12,
+      "layer": "F1",
+      "topic": "definicion_fraude_suplantacion_comerciante",
+      "front": {
+        "es": "¿Cuál es la definición de 'fraude de suplantación de comerciante' en sistemas de pago?"
+      },
+      "back": {
+        "es": "El fraude de suplantación de comerciante es cuando un defraudador se presenta falsamente como una entidad comercial legítima para procesador de pagos e instituciones financieras. Abre cuentas de comerciante usando documentos falsificados y realiza transacciones fraudulentas a través de esa cuenta. Luego desaparece antes de la reconciliación, dejando a la institución financiera absorbiendo las pérdidas de contracargos y fraude."
+      }
+    },
+    {
+      "id": 13,
+      "layer": "F2",
+      "topic": "diferencia_fraude_tarjeta_robada_vs_tarjeta_clonada",
+      "front": {
+        "es": "¿Cuál es la diferencia entre el fraude de tarjeta robada y el fraude de tarjeta clonada en transacciones de pago?"
+      },
+      "back": {
+        "es": "El fraude de tarjeta robada ocurre cuando se utiliza físicamente una tarjeta sustraída sin autorización, mientras que el fraude de tarjeta clonada implica la creación de una copia con datos duplicados de la tarjeta original. En el caso de robo, la tarjeta física desaparece y el titular puede reportarla inmediatamente. En la clonación, la tarjeta original sigue en poder del titular, permitiendo que el fraude pase desapercibido más tiempo. Un ejemplo de clonación es cuando un delincuente obtiene datos de la banda magnética en un restaurante y crea una tarjeta falsificada."
+      }
+    },
+    {
+      "id": 14,
+      "layer": "F2",
+      "topic": "distincion_fraude_presupresario_vs_contracargo",
+      "front": {
+        "es": "¿Cómo se distingue el fraude del prestatario del fraude de contracargo en pagos?"
+      },
+      "back": {
+        "es": "El fraude del prestatario ocurre cuando alguien solicita un préstamo proporcionando información falsa o intenciones fraudulentas de no pagar. El fraude de contracargo, por otro lado, involucra que el titular de tarjeta legítimo disputa una transacción válida alegando que nunca la autorizó. El fraude del prestatario es un engaño en la creación del crédito, mientras que el contracargo es una disputa posterior. Un ejemplo de fraude del prestatario es falsificar ingresos en una solicitud de préstamo personal; un ejemplo de contracargo es un cliente que recibe un servicio pero después niega la compra."
+      }
+    },
+    {
+      "id": 15,
+      "layer": "F2",
+      "topic": "diferencia_fraude_interno_externo_pagos",
+      "front": {
+        "es": "¿Qué diferencia existe entre el fraude de pagos interno y el fraude de pagos externo?"
+      },
+      "back": {
+        "es": "El fraude de pagos interno es perpetrado por empleados o personas con acceso autorizado a los sistemas de pago de una organización, mientras que el fraude externo es ejecutado por terceras partes sin acceso legítimo. El fraude interno tiende a ser más sofisticado y de mayor volumen debido al conocimiento de los sistemas, pero más detectable. El fraude externo es generalmente más frecuente pero con montos menores. Un ejemplo interno es un contador que desvía fondos a través de facturas falsas; un ejemplo externo es el robo de credenciales bancarias por phishing."
+      }
+    },
+    {
+      "id": 16,
+      "layer": "F2",
+      "topic": "distincion_intercepcion_transferencia_vs_redirección",
+      "front": {
+        "es": "¿Cuál es la diferencia entre la intercepción de transferencia electrónica y la redirección de pago en fraude BEC?"
+      },
+      "back": {
+        "es": "La intercepción de transferencia implica que el defraudador captura activamente una instrucción de transferencia legítima antes de su ejecución y la modifica o la redirige. La redirección de pago ocurre cuando el fraudtor instruye directamente al pagador a enviar fondos a una cuenta comprometida mediante comunicación fraudulenta. La intercepción requiere acceso a sistemas internos; la redirección requiere suplantación de identidad efectiva. En intercepción, el atacante podría obtener un email en tránsito de una transferencia legítima; en redirección, el atacante envía un email falso del proveedor pidiendo cambio de cuenta bancaria."
+      }
+    },
+    {
+      "id": 17,
+      "layer": "F2",
+      "topic": "diferencia_fraude_tarjeta_prepago_vs_tarjeta_credito",
+      "front": {
+        "es": "¿Cómo se diferencian los riesgos de fraude entre tarjetas prepago y tarjetas de crédito?"
+      },
+      "back": {
+        "es": "Las tarjetas prepago tienen fondos limitados al saldo cargado previamente, limitando el daño máximo por fraude, pero frecuentemente carecen de protecciones de diligencia debida robustas. Las tarjetas de crédito ofrecen protecciones legales más fuertes contra fraude no autorizado, pero permiten fraudes de mayor monto. Las tarjetas prepago son populares para esquemas de lavado de dinero por su anonimato relativo. El fraude en tarjetas prepago puede ser más difícil de investigar porque hay menos requisitos de verificación de identidad. Un ejemplo es usar tarjetas prepago para compras inmediatas de bienes; con crédito se pueden acumular cargos antes de ser detectados."
+      }
+    },
+    {
+      "id": 18,
+      "layer": "F2",
+      "topic": "distincion_phishing_vs_pharming_pagos",
+      "front": {
+        "es": "¿Cuál es la diferencia entre phishing y pharming en contexto de fraude de pagos?"
+      },
+      "back": {
+        "es": "El phishing es un ataque que engaña al usuario a proporcionar credenciales voluntariamente mediante comunicaciones fraudulentas (emails, mensajes). El pharming redirige al usuario a un sitio web falso mediante manipulación de DNS o redirección técnica sin su conocimiento consciente. El phishing requiere que la víctima abra un enlace malicioso o responda a un mensaje; pharming ocurre automáticamente cuando el usuario accede a lo que cree es el sitio legítimo. En phishing, se recibe un email solicitando actualizar datos bancarios; en pharming, escribir la dirección correcta del banco lo redirige a un sitio falso idéntico."
+      }
+    },
+    {
+      "id": 19,
+      "layer": "F2",
+      "topic": "diferencia_fraude_cambio_beneficiario_vs_payroll",
+      "front": {
+        "es": "¿Cómo se distingue el fraude de cambio de beneficiario del fraude de nómina en pagos corporativos?"
+      },
+      "back": {
+        "es": "El fraude de cambio de beneficiario implica modificar la información de cuenta bancaria de un proveedor o acreedor legítimo para redirigir pagos a una cuenta controlada por el defraudador. El fraude de nómina involve la adición de empleados ficticios o la modificación de información de pago de empleados existentes para desviar fondos. El primero afecta pagos a terceros; el segundo afecta pagos internos a empleados. En cambio de beneficiario, un atacante modifica los datos de un proveedor habitual en el sistema; en fraude de nómina, se crea un empleado fantasma o se redirige el depósito directo de un empleado real."
+      }
+    },
+    {
+      "id": 20,
+      "layer": "F2",
+      "topic": "distincion_fraude_venta_vs_fraude_compra",
+      "front": {
+        "es": "¿Cuál es la diferencia entre el fraude de pago en transacciones de venta versus transacciones de compra?"
+      },
+      "back": {
+        "es": "El fraude de pago en venta ocurre cuando el comprador efectúa un pago de manera fraudulenta (tarjeta robada, contracargo falso) por bienes o servicios recibidos. El fraude de pago en compra ocurre cuando el vendedor/empresa realiza pagos fraudulentos a proveedores falsos o cuenta incorrecta como parte de una estafa de facturación. El primero afecta los ingresos del vendedor; el segundo afecta los gastos del comprador. Un fraude de venta es un cliente que usa tarjeta robada para comprar electrónica; un fraude de compra es un empleado que crea facturas falsas de un proveedor y redirige los pagos."
+      }
+    },
+    {
+      "id": 21,
+      "layer": "F2",
+      "topic": "diferencia_fraude_micropagos_vs_macropagos",
+      "front": {
+        "es": "¿Cómo difieren los esquemas de fraude de micropagos y macropagos en volumen y detección?"
+      },
+      "back": {
+        "es": "El fraude de micropagos consiste en múltiples transacciones pequeñas que individualmente pasan desapercibidas bajo los umbrales de revisión, pero en conjunto representan un monto significativo. El fraude de macropagos implica transacciones grandes individuales que son más propensas a activar controles de detección. El fraude de micropagos es más frecuente pero requiere volumen; el fraude de macropagos requiere menos intentos pero es más fácil de detectar. Un ejemplo de micropagos es cargar pequeños montos repetidamente en una tarjeta de crédito; un ejemplo de macropago es una transferencia electrónica única de gran cuantía a una cuenta sospechosa."
+      }
+    },
+    {
+      "id": 22,
+      "layer": "F2",
+      "topic": "distincion_fraude_autorizacion_vs_fraude_captura",
+      "front": {
+        "es": "¿Cuál es la diferencia entre fraude de autorización y fraude de captura en procesamiento de pagos?"
+      },
+      "back": {
+        "es": "El fraude de autorización ocurre cuando se obtiene autorización de pago mediante engaño o credenciales falsas antes de que se procese la transacción. El fraude de captura ocurre cuando se modifica, duplica o se realiza una captura no autorizada de una transacción ya autorizada durante el liquidación. El primero es un problema de validación de identidad; el segundo es un problema de integridad de liquidación. Un ejemplo de autorización es usar datos de tarjeta robada para obtener aprobación; un ejemplo de captura es un comerciante que captura una transacción autorizada por un monto diferente al autorizado."
+      }
+    },
+    {
+      "id": 23,
+      "layer": "F2",
+      "topic": "diferencia_fraude_suplantacion_vs_fraude_credencial",
+      "front": {
+        "es": "¿Cómo se diferencia el fraude por suplantación de identidad del fraude de robo de credenciales en pagos?"
+      },
+      "back": {
+        "es": "El fraude por suplantación crea una identidad completamente falsa o se presenta como alguien más para autorizar pagos o abrir cuentas. El fraude de robo de credenciales utiliza credenciales auténticas robadas de una persona real para acceder a cuentas y realizar pagos no autorizados. La suplantación es un fraude de identidad sintética; el robo de credenciales es un fraude de identidad existente comprometida. En suplantación, alguien abre una cuenta bancaria con documentos falsificados; en robo de credenciales, un ciberdelincuente utiliza usuario y contraseña reales obtenidos de una violación de datos."
+      }
+    },
+    {
+      "id": 24,
+      "layer": "F2",
+      "topic": "distincion_fraude_movil_vs_desktop_pagos",
+      "front": {
+        "es": "¿Cuáles son las diferencias clave entre el fraude de pagos móvil y el fraude de pagos por computadora?"
+      },
+      "back": {
+        "es": "El fraude de pagos móvil explota vulnerabilidades específicas de dispositivos móviles como aplicaciones maliciosas, SMS spoofing y acceso físico al dispositivo. El fraude de pagos por computadora aprovecha vulnerabilidades de navegadores web, malware en computadoras de escritorio y phishing por email. El fraude móvil es más rápido de ejecutar debido a interfaces simplificadas; el fraude por computadora permite análisis más profundo de sistemas. El fraude móvil es creciente con aplicaciones bancarias falsas; el fraude por computadora es persistente con bots y keyloggers para capturar credenciales."
+      }
+    },
+    {
+      "id": 25,
+      "layer": "F3",
+      "topic": "deteccion_fraude_tarjeta_robada",
+      "front": {
+        "es": "¿Cuáles son los indicadores clave para detectar fraude con tarjeta robada en transacciones de pago?"
+      },
+      "back": {
+        "es": "El fraude con tarjeta robada se detecta observando patrones anómalos como múltiples transacciones en corto tiempo, ubicaciones geográficas dispersas, cambios súbitos en el comportamiento de compra o intentos de compra inmediatamente después de que se reporta la pérdida. Por ejemplo, una tarjeta reportada robada el lunes pero con transacciones en tres países diferentes el domingo indica claramente actividad fraudulenta. Los sistemas de detección monitorean velocidad de transacciones, monto inusual y categorías de comercio inconsistentes con el perfil del titular."
+      }
+    },
+    {
+      "id": 26,
+      "layer": "F3",
+      "topic": "prevencion_fraude_pagos_terceros",
+      "front": {
+        "es": "¿Cómo se previene el fraude de pagos a terceros en ambientes corporativos?"
+      },
+      "back": {
+        "es": "La prevención de fraude de pagos a terceros requiere implementar verificación de identidad del beneficiario, mantener registros actualizados de proveedores autorizados y establecer límites de autorización escalonados. Se deben comparar datos bancarios del beneficiario contra información previa registrada en sistemas. Un ejemplo práctico es requerir que cualquier cambio en datos bancarios de proveedores sea verificado mediante contacto directo previo, no a través de correo electrónico, evitando así interceptación fraudulenta de instrucciones de pago."
+      }
+    },
+    {
+      "id": 27,
+      "layer": "F3",
+      "topic": "deteccion_patrones_micropagos_fraude",
+      "front": {
+        "es": "¿Cuáles son las señales de alerta asociadas con esquemas de micropagos fraudulentos?"
+      },
+      "back": {
+        "es": "Los esquemas de micropagos fraudulentos se caracterizan por múltiples transacciones pequeñas, generalmente por debajo de los umbrales de revisión manual, que acumulan montos significativos en el tiempo. Las banderas rojas incluyen incrementos graduales en frecuencia, uso de múltiples cuentas o tarjetas, patrones repetitivos y acumulación rápida de volumen. Por ejemplo, un fraude detectado mediante 500 pagos de $9.99 cada uno en 30 días sugiere intención deliberada de evadir controles, ya que cada transacción individual aparece legítima pero el patrón agrupado revela fraude sistemático."
+      }
+    },
+    {
+      "id": 28,
+      "layer": "F3",
+      "topic": "aplicacion_tokenizacion_seguridad_pagos",
+      "front": {
+        "es": "¿Cómo se aplica la tokenización para reducir el riesgo de fraude en transacciones de pago?"
+      },
+      "back": {
+        "es": "La tokenización reemplaza datos de tarjeta sensibles con un token único, reduciendo la exposición de información de pago en sistemas vulnerables. El proceso genera un identificador aleatorio que se vincula a los datos reales almacenados en bóveda segura. En aplicación práctica, cuando un cliente realiza compras repetidas, solo el token se transmite, no los números de tarjeta completos, limitando el daño si una transacción individual es comprometida. Esto es especialmente efectivo en comercio electrónico y pagos móviles donde la seguridad de datos es crítica."
+      }
+    },
+    {
+      "id": 29,
+      "layer": "F3",
+      "topic": "red_flags_fraude_transacciones_internacionales",
+      "front": {
+        "es": "¿Cuáles son los principales red flags en transacciones de pago internacional que sugieren fraude?"
+      },
+      "back": {
+        "es": "Las transacciones internacionales fraudulentas presentan indicadores como cambios repentinos en destinos de pago habituales, múltiples transferencias a paraísos fiscales, conversiones de moneda anómalas, o pagos a jurisdicciones de alto riesgo. Otros red flags incluyen urgencia artificial, solicitantes que evitan canales de comunicación formales y desviaciones del flujo comercial normal. Un ejemplo típico es una empresa manufacturera que súbitamente comienza a transferir fondos a proveedores en jurisdicciones donde nunca ha operado, combinado con cambios en signatorios autorizados, indicando posible compromiso de credenciales o instrucciones fraudulentas."
+      }
+    },
+    {
+      "id": 30,
+      "layer": "F3",
+      "topic": "investigacion_fraude_carrusel_pagos",
+      "front": {
+        "es": "¿Cómo se investiga el fraude de carrusel de pagos en cadenas comerciales?"
+      },
+      "back": {
+        "es": "El fraude de carrusel de pagos (carousel fraud) implica investigar transacciones circulares donde fondos se mueven entre múltiples entidades legales o cuentas creando la ilusión de comercio legítimo. La investigación requiere rastrear flujo de fondos, identificar titularidad verdadera de cuentas intermediarias y documentar ausencia de valor comercial real. Se debe examinar documentación de transacciones, facturas y acuerdos comerciales. Por ejemplo, detectar que la Empresa A paga a la Empresa B por servicios ficticios, B paga a C por similar, y C retorna fondos a A (directa o indirectamente) revela esquema circular fraudulento frecuentemente utilizado para lavado de dinero o fraude de IVA."
+      }
+    },
+    {
+      "id": 31,
+      "layer": "F3",
+      "topic": "deteccion_fraude_devoluciones_abusivas",
+      "front": {
+        "es": "¿Cómo se detectan patrones de fraude mediante devoluciones o contracargos abusivos?"
+      },
+      "back": {
+        "es": "El fraude de devoluciones abusivas se identifica analizando tasas de rechazo anormales, patrones de contracargos repetitivos del mismo cliente, discrepancias entre reclamos de fraude y evidencia de entrega, y ciclos cortos entre compra y disputa. Indicadores incluyen múltiples contracargos de diferentes tarjetas, reclamaciones sin documentación de apoyo y rechazos de productos de alto valor. Un caso práctico incluye cliente que compra electrónica costosa, la recibe confirmada, pero luego disputa la transacción como no autorizada; si el patrón se repite con otros vendedores, indica fraude amigable organizado, no error legítimo."
+      }
+    },
+    {
+      "id": 32,
+      "layer": "F3",
+      "topic": "prevencion_fraude_cuentas_nomina",
+      "front": {
+        "es": "¿Cuáles son las mejores prácticas para prevenir fraude en sistemas de pagos de nómina?"
+      },
+      "back": {
+        "es": "La prevención de fraude en nómina requiere control de acceso estricto a sistemas de procesamiento, segregación de funciones (quién aprueba cambios bancarios versus quién procesa pagos), y auditoría regular de cambios de cuenta bancaria de empleados. Se deben implementar alertas para cambios de datos en períodos cercanos a procesamiento de nómina. Un ejemplo preventivo incluye requerir autorización del departamento de Recursos Humanos antes de procesar cualquier cambio en datos bancarios de empleado, combinado con verificación de llamada de retorno al empleado cuando se recibe solicitud de cambio de cuenta, evitando cambios fraudulentos inyectados por atacantes."
+      }
+    },
+    {
+      "id": 33,
+      "layer": "F3",
+      "topic": "analisis_fraude_patrones_velocidad_transacciones",
+      "front": {
+        "es": "¿Cómo se analiza la velocidad de transacciones para detectar fraude de pago?"
+      },
+      "back": {
+        "es": "El análisis de velocidad examina cantidad de transacciones ejecutadas en ventanas de tiempo específicas, comparando contra comportamiento histórico del usuario o normas de la industria. Velocidades anómalas incluyen múltiples pagos en minutos, acumulación rápida de montos totales o saltos repentinos en frecuencia. Los sistemas de detección establecen límites basados en riesgo: por ejemplo, un cliente que normalmente realiza 2-3 transacciones semanales pero ejecuta 15 pagos en una hora es automáticamente elevado para revisión. Este análisis es particularmente efectivo en detección de fraude de compromiso de cuenta donde atacantes intentan extraer fondos rápidamente antes de descubrimiento."
+      }
+    },
+    {
+      "id": 34,
+      "layer": "F3",
+      "topic": "investigacion_fraude_cambio_proveedor",
+      "front": {
+        "es": "¿Cómo se investiga fraude donde se ha falsificado el cambio de datos bancarios de un proveedor?"
+      },
+      "back": {
+        "es": "La investigación de cambios fraudulentos de proveedor requiere confirmar autenticidad de la solicitud contactando al proveedor por canales previamente confirmados, revisar cadena de comunicación original buscando señales de compromiso (dominios de correo similares pero falsos), y auditar quién procesó el cambio en el sistema. Se deben preservar logs de sistema, encabezados de correo y documentación de autorización. Un caso típico: empresa recibe solicitud por correo de cambio a nueva cuenta bancaria del Proveedor X, la procesa, y semanas después descubre que Proveedor X nunca hizo la solicitud; el atacante había comprometido correo corporativo de empleado o clonado dominio para redirigir pagos a cuenta controlada por ellos."
+      }
+    },
+    {
+      "id": 35,
+      "layer": "F3",
+      "topic": "aplicacion_soft_controls_moneda_digital",
+      "front": {
+        "es": "¿Cómo se aplican controles soft en sistemas de pago con monedas digitales para detectar fraude?"
+      },
+      "back": {
+        "es": "Los controles soft en monedas digitales incluyen monitoreo de patrones de transacción, análisis de direcciones de cartera (wallet), seguimiento de velocidad de movimiento de fondos y correlación con actores conocidos de fraude. Aunque las transacciones blockchain son inmutables, se pueden implementar alertas para comportamientos sospechosos como múltiples transferencias a direcciones nuevas o patrones de mezcla de fondos (mixing). Por ejemplo, detectar que una cartera corporativa autorizada para pagos operacionales súbitamente transfiere 80% de saldos a múltiples direcciones anónimas en horas, sugiere compromiso de credenciales o transferencia no autorizada, permitiendo congelación o bloqueo de otras operaciones pendientes."
+      }
+    },
+    {
+      "id": 36,
+      "layer": "F3",
+      "topic": "deteccion_fraude_pagos_moviles_SIM_swap",
+      "front": {
+        "es": "¿Cuáles son los indicadores para detectar fraude de pagos móviles mediante ataque SIM swap?"
+      },
+      "back": {
+        "es": "El fraude SIM swap se detecta observando cambios de dispositivo móvil registrado sin solicitud del usuario, códigos OTP solicitados múltiples veces sin transacciones autorizadas, alertas de operador sobre cambio de SIM de emergencia, y transacciones de pago que ocurren inmediatamente después de cambio de SIM. Se debe investigar si hay reportes de llamadas no autorizadas solicitando códigos de verificación o cambio de número. Un ejemplo detectado: usuario nota que mensajes de banco dejan de llegar, intenta usar app de banca móvil y descubre 3 transferencias internacionales ya procesadas; investigación revela que atacante convenció operador móvil de transferir su número a SIM fraudulenta, permitiendo interceptación de códigos OTP para autorizar pagos no autorizados."
+      }
+    },
+    {
+      "id": 37,
+      "layer": "F4",
+      "topic": "impacto_tokenizacion_fraude_tarjeta",
+      "front": {
+        "es": "¿Cómo impacta la tokenización en la reducción del fraude de pagos con tarjeta y por qué es crítica para comerciantes?"
+      },
+      "back": {
+        "es": "La tokenización reemplaza datos sensibles de tarjeta con identificadores únicos (tokens), eliminando la exposición de números de tarjeta en transacciones. Esto reduce significativamente el riesgo de fraude porque incluso si un delincuente intercepta el token, no puede utilizarlo fuera del contexto específico de la transacción. Los comerciantes que implementan tokenización ven disminuciones del 60-80% en fraude de CNP, como en plataformas de comercio electrónico que almacenan pagos recurrentes de forma segura."
+      }
+    },
+    {
+      "id": 38,
+      "layer": "F4",
+      "topic": "relacion_fraude_pagos_certificados_deposito",
+      "front": {
+        "es": "¿Cómo se relacionan los esquemas de fraude con depósitos de certificados (CDs) y transferencias electrónicas en instituciones financieras?"
+      },
+      "back": {
+        "es": "Los defraudadores explotan CDs ejecutando transferencias electrónicas no autorizadas desde cuentas de CD de víctimas desprevenidas, frecuentemente combinado con BEC o phishing para obtener credenciales. La conexión radica en que los CDs suelen tener saldos altos pero menos monitoreo que cuentas de cheques, convirtiéndolos en objetivos valiosos. Un ejemplo típico incluye un atacante que suplanta al ejecutivo de una empresa para autorizar la liquidación anticipada de un CD y transferir fondos mediante ACH."
+      }
+    },
+    {
+      "id": 39,
+      "layer": "F4",
+      "topic": "consecuencias_cambios_direccion_postal_pagos",
+      "front": {
+        "es": "¿Cuál es el impacto de los cambios de dirección postal no autorizados en esquemas de fraude de pagos y por qué se usa esta táctica?"
+      },
+      "back": {
+        "es": "Los cambios de dirección postal son una táctica de preparación crítica en fraude de pagos que redirige estados de cuenta, cheques cancelados y avisos de transacciones hacia los defraudadores. Esto permite que el fraude continúe sin detección durante períodos extendidos porque la víctima legítima no recibe alertas de actividad sospechosa. Un criminal puede cambiar la dirección de un cliente empresarial, luego ejecutar transferencias ACH no autorizadas o cambios de beneficiarios sin que el propietario verdadero se entere hasta semanas o meses después."
+      }
+    },
+    {
+      "id": 40,
+      "layer": "F4",
+      "topic": "vulnerabilidad_voz_biometrica_fraude_pago",
+      "front": {
+        "es": "¿Por qué la suplantación de voz mediante IA representa una amenaza emergente para los controles de verificación verbal en pagos bancarios?"
+      },
+      "back": {
+        "es": "La tecnología de síntesis de voz impulsada por IA puede replicar características vocales únicas con precisión creciente, eludiendo controles de llamadas de retorno y verificación verbal que han sido efectivos durante décadas. Esta vulnerabilidad es crítica porque muchas instituciones aún confían en reconocimiento de voz como factor de autenticación primario para autorizar transferencias electrónicas grandes. Un atacante podría registrar fragmentos de audio de un ejecutivo desde LinkedIn videos o grabaciones públicas, entrenar un modelo de IA y luego contactar a un banco para autorizar un pago fraudulento con la voz falsa."
+      }
+    },
+    {
+      "id": 41,
+      "layer": "F4",
+      "topic": "nexo_fraude_cartera_digital_transferencia_inmediata",
+      "front": {
+        "es": "¿Cómo se conectan las vulnerabilidades de billeteras digitales con esquemas de fraude de transferencias de dinero inmediato (IMT)?"
+      },
+      "back": {
+        "es": "Las billeteras digitales (Apple Pay, Google Pay, etc.) y los servicios IMT comparten la característica de transferencia rápida e irreversible, creando un ecosistema donde el fraude inicial en una plataforma puede facilitar fraude en otra. Un delincuente que compromete credenciales de email obtiene acceso a billeteras digitales enlazadas, permitiéndole transferir fondos mediante IMT sin pasos de verificación adicionales. Por ejemplo, un atacante accede a una cuenta bancaria, crea una billetera digital móvil, y luego transfiere fondos a una cuenta de tercero a través de IMT antes de que el titular verdadero pueda intervenir."
+      }
+    },
+    {
+      "id": 42,
+      "layer": "F4",
+      "topic": "impacto_fragmentacion_regulatoria_deteccion_fraude",
+      "front": {
+        "es": "¿Cómo impacta la fragmentación regulatoria entre jurisdicciones en la capacidad de las instituciones para detectar y prevenir fraude de pagos transfronterizos?"
+      },
+      "back": {
+        "es": "Diferentes regulaciones (PSD2 en Europa, normas de ACH en EE.UU., regulaciones locales en Asia) crean estándares inconsistentes de seguridad, autenticación y reportería que los defraudadores explotan para moverse fondos entre jurisdicciones sin detección consistente. Esta fragmentación debilita la coordinación entre instituciones y permite que el fraude prospere en brechas regulatorias. Un caso práctico incluye BEC internacional donde fondos fluyen de EE.UU. a banco en Europa a China, con cada jurisdicción siguiendo diferentes protocolos de investigación y diferentes plazos de reversión."
+      }
+    },
+    {
+      "id": 43,
+      "layer": "F4",
+      "topic": "relacion_datos_biometricos_fraude_identidad_pago",
+      "front": {
+        "es": "¿Cuál es la relación entre el robo de datos biométricos y el aumento de fraude de identidad sintética en sistemas de pago?"
+      },
+      "back": {
+        "es": "Los datos biométricos comprometidos (huellas dactilares, escaneos faciales) se combinan con información de crédito robada para crear identidades sintéticas que pasan verificaciones biométricas de nuevas aplicaciones de pagos y billeteras. Esta conexión es peligrosa porque los controles biométricos están diseñados para prevenir exactamente este tipo de fraude, pero datos biométricos robados les permiten a los atacantes eludir esos controles. Un delincuente roba datos biométricos de un cliente desde una violación de base de datos de pasaportes, combina con SSN robado, abre una billetera digital biométrica a nombre de la víctima, y transfiere fondos antes de detección."
+      }
+    },
+    {
+      "id": 44,
+      "layer": "F4",
+      "topic": "consecuencias_manipulacion_metadata_transferencia",
+      "front": {
+        "es": "¿Cuál es el impacto de la manipulación de metadatos de transacciones en esquemas de fraude de pagos y cómo afecta la auditoría forense?"
+      },
+      "back": {
+        "es": "Los metadatos de transacciones (direcciones IP, timestamps, información de dispositivo) pueden ser manipulados o falsificados por atacantes sofisticados para enmascarar el origen real del fraude y sembrar evidencia falsa que conduce investigaciones en direcciones equivocadas. Esta manipulación complica significativamente la auditoría forense porque invierte recursos en investigar falsos positivos mientras los verdaderos perpetradores permanecen sin identificar. Un ejemplo incluye modificación de logs de servidor para mostrar que una transferencia fue autorizada desde la oficina de la víctima cuando fue ejecutada desde el extranjero, retrasando identificación del defraudador."
+      }
+    },
+    {
+      "id": 45,
+      "layer": "F4",
+      "topic": "vinculacion_fraude_pago_lavado_dinero_estructurado",
+      "front": {
+        "es": "¿Cómo se relacionan los esquemas de fraude de pagos iniciales con estructuras de lavado de dinero subsecuentes y por qué esta conexión es crítica para detección?"
+      },
+      "back": {
+        "es": "El fraude de pagos generalmente produce fondos mal habidos que requieren lavado para convertirse en dinero aparentemente legítimo, llevando a estructuración: dividir transacciones en montos bajo límites de reporte para evadir regulaciones AML. Esta conexión es crítica porque patrones de estructuración revelan fraude anterior que puede haberse pasado desapercibido en sistemas de detección focalizados solo en pagos. Un criminal ejecuta BEC para obtener $500,000, luego realiza 50 transferencias de $9,900 a través de múltiples bancos, revelando el fraude original cuando analistas AML detectan el patrón de estructuración."
+      }
+    },
+    {
+      "id": 46,
+      "layer": "F4",
+      "topic": "impacto_fragmentacion_identificacion_beneficiario_fraude",
+      "front": {
+        "es": "¿Por qué la falta de estandarización en identificación de beneficiarios finales (Ultimate Beneficial Owner) facilita fraude de pagos en transacciones corporativas?"
+      },
+      "back": {
+        "es": "Sin identificación consistente del beneficiario final, es imposible para bancos correlacionar si múltiples transferencias son legitimidad o frau, permitiendo a defraudadores ocultar su identidad detrás de estructuras corporativas y entidades intermedias. Esta brecha regulatoria es explotada sistemáticamente en esquemas de BEC y fraude de transferencias electrónicas porque requeriría inspección profunda de cadenas corporativas para detectar. Un ejemplo incluye transferencias aparentemente legítimas a subsidiarias offshore que comparten dirección pero diferente UBO real, que cuando se investiga completamente, se descubre que todas eran redirigidas a cuenta personal del defraudador."
+      }
+    },
+    {
+      "id": 47,
+      "layer": "F4",
+      "topic": "relacion_fatiga_autenticacion_fraude_dispositivo_pagos",
+      "front": {
+        "es": "¿Cómo se relaciona el agotamiento por fatiga de autenticación (auth fatigue) con esquemas de fraude de pagos móviles y autorización de dispositivos?"
+      },
+      "back": {
+        "es": "La fatiga de autenticación ocurre cuando usuarios reciben tantas solicitudes de verificación que eventualmente aceptan sin revisar completamente, permitiendo atacantes que ejecutan múltiples transferencias móviles pequeñas para que víctimas autoricen por cansancio. Esta relación es particularmente relevante en pagos móviles donde notificaciones push de autenticación pueden ser enviadas rápidamente en sucesión. Un atacante accede a credenciales, inicia 10 transferencias ACH de $1,000 en rápida sucesión, el usuario recibe 10 notificaciones de aprobación en su teléfono, y autoriza varios por fatiga antes de reconocer que son fraudulentos."
+      }
+    },
+    {
+      "id": 48,
+      "layer": "F4",
+      "topic": "impacto_regulacion_moneda_digital_banco_central_fraude",
+      "front": {
+        "es": "¿Cuál será el impacto de la implementación de monedas digitales de bancos centrales (CBDCs) en la naturaleza y detección de fraude de pagos?"
+      },
+      "back": {
+        "es": "Las CBDCs prometen transacciones instantáneas, irreversibles e imposibles de rastrear en algunos diseños, lo que paradójicamente podría aumentar fraude de pagos porque la inmediatez elimina ventanas para detección y reversión manual. Sin embargo, el rastreo directo en blockchain puede mejorar auditoría forense si se implementan correctamente. La realidad será bifurcada: donde CBDCs ofrecen privacidad (soluciones tipo privacy coin), el fraude aumentará; donde ofrecen transparencia en cadena, la detección mejorará pero requerirá nuevas competencias forenses de analistas CFE."
+      }
+    }
+  ]
+}

@@ -1,0 +1,710 @@
+{
+  "cert_id": "cism",
+  "domain_id": "security_program",
+  "quiz_num": 3,
+  "domain_name": "Information Security Program Development & Management",
+  "cert_name": "CISM",
+  "lang": "es",
+  "questions": [
+    {
+      "num": 1,
+      "text": "¿Cuál es el propósito principal de un roadmap de programa de seguridad de la información alineado con la estrategia empresarial?",
+      "tag": "Security Program Roadmap",
+      "options": [
+        "C. Reemplazar la necesidad de un marco de control como NIST CSF o ISO 27001",
+        "A. Establecer objetivos medibles, hitos y recursos necesarios para evolucionar la postura de seguridad de forma sistemática y alineada con metas de negocio",
+        "B. Documentar exclusivamente los incidentes de seguridad históricos y sus remedios",
+        "D. Garantizar que todos los sistemas sean completamente invulnerables a cualquier ataque"
+      ],
+      "correct": 1,
+      "justification_correct": "Un roadmap efectivo (ISO 27001:2022 Cláusula 6.2, CISM Practice Questions) define trayectoria clara con objetivos, iniciativas, cronograma y asignación de recursos. Debe alinearse con estrategia empresarial para obtener patrocinio ejecutivo y justificar inversiones de seguridad iterativamente.",
+      "justification_wrong": "B es reactivo (no prospectivo). C confunde herramientas con planificación. D es inviable; roadmap gestiona riesgo aceptable, no garantiza impermeabilidad absoluta."
+    },
+    {
+      "num": 2,
+      "text": "En gestión de presupuesto para seguridad de la información, ¿qué enfoque es más efectivo para justificar inversiones ante la dirección ejecutiva?",
+      "tag": "Resource Management - Budget",
+      "options": [
+        "A. Vincular inversiones a reducción cuantificable de riesgo, costo de incidentes evitados y alineación con objetivos estratégicos del negocio",
+        "B. Solicitar el presupuesto máximo disponible sin análisis de ROI específico",
+        "D. Establecer presupuesto fijo anual idéntico al año anterior sin revisar cambios de amenazas",
+        "C. Destinar fondos únicamente a tecnología de última generación sin considerar controles administrativos"
+      ],
+      "correct": 0,
+      "justification_correct": "CISM exige justificación cuantitativa de inversiones (ISACA CISM Review Manual, Domain 3). Análisis de riesgo, costo-beneficio y ROI demuestran valor empresarial. NIST CSF refuerza conexión control-negocio para obtener apoyo ejecutivo sostenible.",
+      "justification_wrong": "B ignora gobernanza presupuestaria. C es ineficiente (tecnología sin procesos). D incumple revisión anual de cambios de amenazas y requisitos empresariales."
+    },
+    {
+      "num": 3,
+      "text": "¿Cuál es la relación correcta entre NIST Cybersecurity Framework (CSF), ISO/IEC 27001 e COBIT en un programa de seguridad integral?",
+      "tag": "Security Controls Frameworks",
+      "options": [
+        "A. NIST CSF proporciona estructura de funciones (Identificar, Proteger, Detectar, Responder, Recuperar); ISO 27001 especifica controles detallados; COBIT alinea gobernanza IT con negocio",
+        "C. COBIT y NIST CSF son idénticos y reemplazan completamente a ISO 27001",
+        "B. Son marcos mutuamente excluyentes y debe elegirse solo uno",
+        "D. ISO 27001 es únicamente para auditoría y no proporciona orientación operativa"
+      ],
+      "correct": 0,
+      "justification_correct": "Marcos complementarios (CISM Review Manual, ISACA guidance): NIST CSF ofrece categorización funcional; ISO 27001:2022 define controles específicos (Anexo A); COBIT 2019 gestiona gobernanza y valor IT. Integración maximiza cobertura y alineación estratégica.",
+      "justification_wrong": "B incorrecto; se integran. C confunde scope. D equivocado; ISO 27001 es norma operativa y requisito de certificación."
+    },
+    {
+      "num": 4,
+      "text": "Al establecer métricas y KPIs para un programa de seguridad, ¿cuál característica es fundamental para garantizar su efectividad de acuerdo con CISM?",
+      "tag": "Security Metrics and KPIs",
+      "options": [
+        "D. Cambiar métricas mensualmente para reflejar todas las variaciones operacionales",
+        "B. Recopilar el máximo número de métricas técnicas sin considerar relevancia empresarial",
+        "C. Utilizar solo indicadores de cumplimiento normativo sin evaluar reducción real de riesgo",
+        "A. Métricas vinculadas a objetivos de negocio, medibles objetivamente, con línea base y tendencia monitoreada regularmente para facilitar decisiones"
+      ],
+      "correct": 3,
+      "justification_correct": "CISM demanda métricas orientadas a negocio (ISACA, Domain 3). Deben ser SMART (Específicas, Medibles, Alcanzables, Relevantes, Temporales). Línea base, tendencia y análisis de desviación permiten demostrar ROI y ajustar inversiones.",
+      "justification_wrong": "B genera ruido sin insight. C es incompleto (compliance ≠ gestión de riesgo). D invalida análisis de tendencia."
+    },
+    {
+      "num": 5,
+      "text": "¿Qué proceso es esencial en la gestión de proveedores de seguridad para minimizar riesgos de terceros en el programa de información?",
+      "tag": "Vendor Management",
+      "options": [
+        "D. Realizar evaluación inicial única sin revisión posterior de cambios en ambiente del proveedor",
+        "B. Seleccionar proveedores exclusivamente por precio más bajo sin evaluar capacidades de seguridad",
+        "C. Confiar en representaciones verbales del proveedor sin solicitar evidencia documentada de controles",
+        "A. Evaluación previa basada en criterios de seguridad, contratos SLA con cláusulas de auditoría y monitoreo continuo del cumplimiento de controles"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 Cláusula 8.2 y CISM exigen due diligence de terceros: evaluación inicial, SLA con clausulas de seguridad/auditoría, monitoreo continuo y revisión periódica. Ciclo de vida completo reduce exposición a riesgos heredados.",
+      "justification_wrong": "B incumple gobernanza. C carece de evidencia verificable. D ignora cambios en riesgo de proveedor sobre tiempo."
+    },
+    {
+      "num": 6,
+      "text": "En el contexto del Marco de Ciberseguridad del NIST (NIST CSF), ¿cuál es el propósito principal de la función 'Identificar' dentro de la estructura de gobernanza de seguridad?",
+      "tag": "Security Controls Frameworks - NIST CSF",
+      "options": [
+        "A. Establecer los procesos y procedimientos para conocer la postura de riesgos y activos de la organizacion",
+        "C. Evaluar la efectividad de los controles existentes mediante auditorias internas",
+        "D. Capacitar al personal sobre practicas seguras de manejo de informacion",
+        "B. Implementar controles tecnicas para detectar y responder a incidentes de seguridad"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST CSF función 'Identify' establece: conocimiento de riesgos, activos, sistemas, procesos y dependencias. NIST SP 800-39 requiere inventario de activos y evaluacion inicial riesgos como fundamento gobernanza.",
+      "justification_wrong": "Detectar/responder (Detect), evaluar efectividad (Govern) e implementar capacitación son funciones secundarias o diferentes del marco NIST CSF."
+    },
+    {
+      "num": 7,
+      "text": "¿Cual es la relacion correcta entre COBIT 2019 y la gestion del programa de seguridad de informacion?",
+      "tag": "Security Controls Frameworks - COBIT",
+      "options": [
+        "A. COBIT proporciona procesos de gobernanza y gestion (APO, BAI, DSS, MEA) para alinear seguridad con objetivos de negocio",
+        "B. COBIT es exclusivamente una herramienta tecnica para implementacion de cortafuegos y encriptacion",
+        "C. COBIT reemplaza completamente la necesidad de ISO 27001 en organizaciones grandes",
+        "D. COBIT solo se aplica en industrias reguladas como banca y telecomunicaciones"
+      ],
+      "correct": 0,
+      "justification_correct": "COBIT 2019 dominio Governance (APO) y Management (DSS/MEA) proporciona marco integral para alineacion objetivos, estrategia seguridad, gestion riesgos y monitoreo KPIs. ISO/IEC 38500 enfatiza este enfoque.",
+      "justification_wrong": "COBIT es marco gobernanza (no solo herramienta tecnica), es complementario (no remplazo) ISO 27001, y aplicable universalmente mas alla regulaciones especificas."
+    },
+    {
+      "num": 8,
+      "text": "En el diseño de un roadmap de programa de seguridad, ¿cual debe ser el secuencia logica correcta segun CISM?",
+      "tag": "Security Program Roadmap",
+      "options": [
+        "A. Definir vision/objetivos → Evaluar estado actual → Identificar brechas → Priorizar iniciativas → Asignar recursos",
+        "D. Establecer politicas → Contratar personal → Certificar empleados → Auditar cumplimiento",
+        "C. Implementar controles inmediatamente → Medir KPIs → Comunicar resultados → Ajustar anualmente",
+        "B. Asignar presupuesto → Comprar tecnologia → Implementar soluciones → Evaluar resultados"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-39 y CISM establecen ciclo: vision estrategica → baseline/assessment → gap analysis → priorización riesgos → asignación recursos → implementación faseada → monitoreo continuo.",
+      "justification_wrong": "Secuencias alternativas carecen planificacion estrategica, evaluacion riesgos o priorizacion basada impacto. Enfoque reactivo genera ineficiencia presupuestal."
+    },
+    {
+      "num": 9,
+      "text": "Respecto a metricas y KPIs de seguridad, ¿cual caracteristica define correctamente un indicador clave de desempeño (KPI) valido?",
+      "tag": "Security Metrics and KPIs",
+      "options": [
+        "B. Deberia enfocarse unicamente en conteo de vulnerabilidades y cantidad de incidentes detectados",
+        "A. Debe ser medible, alineado con objetivos negocio, tener target definido, y permitir toma decisiones",
+        "C. Es optimo establecer KPIs sin baseline inicial para demostrar mejora constante",
+        "D. Los KPIs deben cambiar mensualmente para mantener relevancia en contexto dinamico"
+      ],
+      "correct": 1,
+      "justification_correct": "COBIT 2019 y ITIL definen KPI como metrica cuantificable alineada objetivos estrategicos, con baseline/target, frecuencia medicion consistente, e informacion que conduzca decisiones gobernanza.",
+      "justification_wrong": "KPI efectivos requieren contexto negocio (no solo tecnica), estabilidad temporal para tendencias, y baseline para comparacion significativa. Cambios frecuentes invalidan analisis."
+    },
+    {
+      "num": 10,
+      "text": "En gestion de proveedores de seguridad, ¿cual es la practica recomendada para evaluar y monitorear riesgo de terceros segun CISM?",
+      "tag": "Vendor Management",
+      "options": [
+        "D. Exigir que proveedores mantengan todos datos en servidores ubicados en pais domestico unicamente",
+        "A. Evaluar seguridad proveedor pre-contratacion, establecer SLAs/KPIs, auditar periodicamente, y mantener planes contingencia",
+        "B. Seleccionar proveedor con menor costo y confiar en certificaciones CMMI o ISO sin validacion adicional",
+        "C. Realizar evaluacion inicial y no requiere monitoreo posterior si proveedor es certificado"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-53 (CA-9) y ISO 27001:2022 (A.5.22) requieren: due diligence proveedor, contractualizacion requisitos seguridad/SLA, auditorias/assessments periodicos, y planes continuidad/salida.",
+      "justification_wrong": "Costo bajo no mitiga riesgos. Certificaciones requieren validacion. Riesgo proveedor es continuo. Requisitos ubicacion geografica son restrictivos (no universal practice)."
+    },
+    {
+      "num": 11,
+      "text": "Una organización implementa un programa de seguridad basado en NIST Cybersecurity Framework. ¿Cuál es el propósito principal de la función 'Identificar' en el contexto de la gestión de riesgos?",
+      "tag": "Security Controls Frameworks - NIST CSF",
+      "options": [
+        "D. Monitorear continuamente el cumplimiento normativo de la organización",
+        "B. Implementar controles técnicos para detectar incidentes en tiempo real",
+        "C. Recuperar sistemas después de un evento de seguridad",
+        "A. Establecer los activos, sistemas y procesos críticos para priorizar la protección"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST CSF función 'Identificar' enfatiza el mapeo de recursos, activos y riesgos organizacionales como base para decisiones de protección. NIST SP 800-39 respalda que la identificación es prerequisito para gestión de riesgos efectiva.",
+      "justification_wrong": "Detectar es función Proteger, recuperar es función Recuperar, monitoreo continuo aplica a Monitorear. Estas no son propósitos de Identificar según NIST CSF v1.1."
+    },
+    {
+      "num": 12,
+      "text": "Al evaluar la madurez del programa de seguridad mediante COBIT 5, ¿qué nivel de capacidad indica que los procesos están optimizados y se adaptan continuamente a cambios?",
+      "tag": "Program Maturity Assessment - COBIT",
+      "options": [
+        "B. Nivel 4 - Proceso Medido y Controlado",
+        "C. Nivel 5 - Proceso Optimizado",
+        "D. Nivel 2 - Proceso Repetible pero Intuitivo",
+        "A. Nivel 3 - Proceso Definido"
+      ],
+      "correct": 1,
+      "justification_correct": "COBIT 5 Nivel 5 (Optimizado) caracteriza procesos con mejora continua, adaptación a cambios del negocio e innovación. ISO/IEC 15504 define este nivel como excelencia operacional con capacidad predictiva.",
+      "justification_wrong": "Nivel 3 es definido, Nivel 4 es medido/controlado, Nivel 2 es repetible. Solo Nivel 5 incluye optimización y adaptación continua según COBIT 5."
+    },
+    {
+      "num": 13,
+      "text": "Una organización necesita seleccionar un marco de control para alineación con ISO 27001. ¿Cuál es la relación correcta entre ISO 27001 y el Anexo A?",
+      "tag": "Security Controls Frameworks - ISO 27001",
+      "options": [
+        "C. El Anexo A reemplaza completamente los requisitos de ISO 27001 en organizaciones grandes",
+        "D. ISO 27001 aplica solo a gobiernos; Anexo A aplica a sector privado",
+        "B. ISO 27001 define requisitos de Sistema de Gestión de Seguridad; Anexo A proporciona 114 controles de referencia para implementación",
+        "A. El Anexo A proporciona objetivos de control obligatorios mientras que ISO 27001 define requisitos opcionales"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 establece requisitos SGSI; Anexo A contiene 114 controles de referencia derivados de ISO/IEC 27002. Los controles del Anexo A son selectivos según evaluación de riesgos organizacional.",
+      "justification_wrong": "Controles de Anexo A no son obligatorios todos (son selectivos), ISO 27001 aplica a cualquier organización, Anexo A no reemplaza ISO 27001 sino la complementa."
+    },
+    {
+      "num": 14,
+      "text": "En la gestión de presupuesto de seguridad, ¿cuál es la métrica más apropiada para demostrar ROI de un programa de seguridad a la junta directiva?",
+      "tag": "Resource Management - Budget & Security Metrics",
+      "options": [
+        "C. Cantidad de políticas de seguridad documentadas y publicadas",
+        "A. Número total de vulnerabilidades identificadas en auditorías anuales",
+        "D. Cantidad de empleados capacitados en conciencia de seguridad",
+        "B. Costo de incidentes evitados versus inversión en controles preventivos"
+      ],
+      "correct": 3,
+      "justification_correct": "ROI en ciberseguridad se demuestra comparando costos de incidentes prevenidos contra inversión. NIST SP 800-55 Rev.1 recomienda métricas de efectividad basadas en riesgo mitigado y reducción de impacto.",
+      "justification_wrong": "Vulnerabilidades no demuestran ROI directo, políticas documentadas no son métrica de valor, capacitación es lagging indicator. Solo costo-beneficio financiero valida inversión ante junta."
+    },
+    {
+      "num": 15,
+      "text": "Una organización implementa un Security Operations Center (SOC). ¿Cuál es el principal desafío en la gestión de recursos de personal técnico según mejores prácticas de roadmap de programa?",
+      "tag": "Resource Management - Personnel & Security Architecture",
+      "options": [
+        "D. Implementar rotación forzada de personal cada 12 meses para evitar complacencia",
+        "C. Minimizar costos mediante outsourcing completo del SOC a terceros",
+        "A. Garantizar que solo se contraten analistas con certificación CISM",
+        "B. Desarrollar carrera técnica, retención y formación continua en detección de amenazas avanzadas"
+      ],
+      "correct": 3,
+      "justification_correct": "Retención de talento técnico especializado es crítico en SOC. SANS Institute y CIS Controls enfatizan inversión en desarrollo profesional continuo y carrera técnica como retención efectiva versus burnout.",
+      "justification_wrong": "CISM no es requisito para analistas SOC, outsourcing total reduce control, rotación forzada aumenta turnover. Desarrollo continuo y carrera son estrategias probadas de retención."
+    },
+    {
+      "num": 16,
+      "text": "Una organización implementa un programa de seguridad basado en NIST CSF. Durante la evaluación de madurez, se identifica que los controles están en nivel 2 (Repetible). ¿Cuál es la acción prioritaria según la evolución hacia nivel 3 (Definido)?",
+      "tag": "Program Maturity Assessment",
+      "options": [
+        "C. Aumentar el presupuesto de seguridad en un 50% para adquirir nuevas tecnologías",
+        "A. Documentar y estandarizar todos los procesos de seguridad con roles claramente asignados",
+        "B. Implementar inmediatamente herramientas de automatización para todos los controles",
+        "D. Realizar auditorías externas trimestrales para validar cumplimiento normativo"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST CSF nivel 3 requiere procesos documentados, comunicados y entrenados. ISO/IEC 27001:2022 enfatiza la estandarización de procesos antes de automatización. La documentación y asignación clara de roles es el fundamento para madurez.",
+      "justification_wrong": "Nivel 2 ya puede tener automatización parcial. Aumentar presupuesto sin procesos documentados es ineficiente. Auditorías externas no garantizan escalada de madurez sin mejora de procesos internos documentados."
+    },
+    {
+      "num": 17,
+      "text": "En la evaluación de un marco de control basado en COBIT 2019, se detecta que la función de Gestión de Cambios (APO02) no tiene métricas cuantitativas definidas. ¿Qué indicador KPI es más crítico para este dominio?",
+      "tag": "Security Metrics and KPIs",
+      "options": [
+        "A. Número total de cambios implementados por año",
+        "D. Tiempo promedio de implementación de cambios aprobados",
+        "B. Porcentaje de cambios no autorizados detectados versus cambios totales solicitados",
+        "C. Inversión presupuestaria en herramientas de gestión de cambios"
+      ],
+      "correct": 2,
+      "justification_correct": "COBIT 2019 APO02 enfatiza gestión de riesgos y conformidad. El KPI crítico es la detección de cambios no autorizados, indicador de efectividad del control y mitigación de riesgos. Relacionado con ISO 27001:2022 claúsula 8.5 (Control de cambios).",
+      "justification_wrong": "Solo cantidad de cambios no mide efectividad. Inversión presupuestaria es métrica financiera, no de control. Tiempo de implementación es eficiencia operativa, no vinculado al riesgo de cambios no autorizados."
+    },
+    {
+      "num": 18,
+      "text": "Una empresa aplica ISO/IEC 27001:2022 y debe establecer criterios de aceptación de riesgo. El CISO propone tres enfoques. ¿Cuál alinea mejor con los requisitos de la norma en claúsula 6.1.2?",
+      "tag": "Security Controls Framework",
+      "options": [
+        "C. Utilizar benchmarks de industria para determinar tolerancia de riesgo",
+        "D. Aceptar riesgos cuyo impacto esté por debajo del presupuesto anual de seguridad",
+        "B. Definir criterios cuantitativos y cualitativos documentados, aprobados por dirección, basados en contexto organizacional y partes interesadas",
+        "A. Aceptar riesgos cuya probabilidad sea menor al 20% anual"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 claúsula 6.1.2 exige criterios documentados, aprobados, considerando contexto organizacional y necesidades de partes interesadas. Requiere enfoque integral cuantitativo-cualitativo, no solo métricas porcentuales arbitrarias.",
+      "justification_wrong": "Umbral del 20% es arbitrario sin contexto. Benchmarks de industria ignoran contexto único organizacional. Vincular riesgo a presupuesto desvincula seguridad de objetivos estratégicos y partes interesadas."
+    },
+    {
+      "num": 19,
+      "text": "Durante la planificación de un roadmap de seguridad trienal, el CISO debe priorizar entre: (1) migración a cloud seguro, (2) programa de conciencia integral, (3) implementación de ZTA (Zero Trust Architecture). ¿Cuál criterio asegura mejor alineación con ISO 27001 y objetivos comerciales?",
+      "tag": "Security Program Roadmap",
+      "options": [
+        "B. Evaluación de brechas de control, dependencias de negocio y madurez actual versus estado deseado",
+        "A. Costo total de inversión (TCO) comparativo entre las tres iniciativas",
+        "C. Preferencia tecnológica del equipo de TI y disponibilidad de proveedores",
+        "D. Benchmarking competitivo para adoptar estándares de la industria"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO/IEC 27001:2022 cláusulas 4.1-4.4 requieren análisis de contexto, partes interesadas y brecha de controles. CISM enfatiza alineación de programa con estrategia comercial. Evaluación de dependencias asegura priorización estratégica versus operativa.",
+      "justification_wrong": "TCO sin análisis de riesgo es incompleto. Preferencia de TI ignora rigor de análisis de riesgos. Benchmarking competitivo no garantiza pertinencia al contexto específico organizacional y vulnerabilidades actuales."
+    },
+    {
+      "num": 20,
+      "text": "Una organización multinacional implementa programa de gestión de proveedores de seguridad (SVSC). Debe evaluar riesgos de terceros. Según NIST CSF y ISO/IEC 27001:2022, ¿cuál enfoque es más robusto?",
+      "tag": "Vendor Management",
+      "options": [
+        "C. Establecer cuestionarios de seguridad estandarizados anuales y puntaje mínimo de 80 puntos",
+        "A. Solicitar anualmente certificaciones ISO 27001 de todos los proveedores y validar mediante auditoría documental",
+        "B. Realizar evaluación continua de riesgos incluyendo: antecedentes contractuales, auditorías técnicas periódicas, métricas de incidentes, cumplimiento regulatorio y gestión de dependencias de datos",
+        "D. Implementar cláusulas contractuales penales sin auditorías técnicas, confiando en certificaciones terceras"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST CSF ID.BE-3 y ISO/IEC 27001:2022 cláusula 8.4 requieren evaluación continua multidimensional: técnica, legal, operativa. Incluye monitoreo de incidentes y cumplimiento. CISM exige gestión dinámica de riesgos de terceros, no solo puntuaciones estáticas.",
+      "justification_wrong": "Solo certificación documental es validación pasiva. Cuestionarios estandarizados no evalúan riesgos operativos actuales. Cláusulas penales sin auditoría no previenen incidentes. Confiar en terceros sin validación propia viola principio de responsabilidad del CISO."
+    },
+    {
+      "num": 21,
+      "text": "Una organización implementa un programa de seguridad basado en NIST Cybersecurity Framework (CSF) v1.1. El CISO necesita alinear las funciones de Govern con métricas de KPI para demostrar madurez progresiva. ¿Cuál es el enfoque más estratégico para establecer capacidades de medición en la función Govern?",
+      "tag": "Security Metrics & Program Maturity Assessment",
+      "options": [
+        "B. Establecer métricas de proceso (process metrics) enfocadas únicamente en cumplimiento normativo ISO 27001 sin correlación con riesgos empresariales",
+        "D. Aplicar benchmarking externo sin considerar el contexto de riesgo interno ni estrategia organizacional",
+        "A. Implementar métricas de resultado (outcome metrics) vinculadas a objetivos comerciales y riesgos estratégicos, con baseline inicial establecida en Nivel 1 de madurez del CSF",
+        "C. Utilizar indicadores técnicos de detección de amenazas como principal mecanismo de valoración de gobernanza"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST CSF v1.1 enfatiza que Govern debe establecer estrategia, políticas y procesos. Las outcome metrics alineadas a objetivos comerciales permiten demostrar progresión de madurez (Nivel 1-5) de forma mensurable. Esto alinea con COBIT 5 (gobernanza orientada a valor) e ISO 27014.",
+      "justification_wrong": "Las métricas de proceso solo sin outcome, métricas técnicas aisladas de gobernanza, o benchmarking descontextualizado no demuestran madurez del programa. CSF exige conexión entre gobernanza y objetivos de negocio."
+    },
+    {
+      "num": 22,
+      "text": "En el contexto de gestión de proveedores (vendor management), una organización contrata un proveedor cloud crítico. ISO 27001:2022 (Anexo A.14.2 - Supplier relationships) requiere evaluar y monitorear proveedores continuamente. ¿Cuál es el mecanismo MÁS efectivo para garantizar cumplimiento normativo y gestión de riesgos en toda la cadena de suministro?",
+      "tag": "Vendor Management & Supply Chain Security",
+      "options": [
+        "D. Aplicar el mismo nivel de escrutinio a todos los proveedores independientemente de su impacto en activos críticos",
+        "C. Delegar toda responsabilidad de cumplimiento al departamento legal sin involucramiento del equipo de seguridad",
+        "B. Establecer un ciclo integral de evaluación inicial, auditorías periódicas (on-site u online), métricas de desempeño (SLA, KPI) y planes de remediación basados en riesgo residual",
+        "A. Implementar un programa de evaluación inicial (due diligence) sin auditorías periódicas posteriores, asumiendo que el riesgo es estático"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 Anexo A.14.2 exige evaluación previa, monitoreo continuo y revisión de riesgos. NIST SP 800-53 (SA-3, SA-9) complementan con auditorías y SLAs. Un ciclo integral reduce riesgos de cadena de suministro conforme estándares internacionales.",
+      "justification_wrong": "Evaluación única es insuficiente (riesgos evolucionan); delegación sin participación de seguridad viola gobernanza; aplicar mismo nivel ignora principio de riesgo proporcional establecido en ISO 31000."
+    },
+    {
+      "num": 23,
+      "text": "Una organización en industria financiera (Basilea III, PCI-DSS 3.2.1) diseña su arquitectura de seguridad para datos sensibles. El CISO debe decidir entre aplicar defensa en profundidad (defense-in-depth) con múltiples controles superpuestos o un enfoque minimalista de control único. ¿Qué enfoque alinea con marcos normativos y buenas prácticas?",
+      "tag": "Security Architecture & Controls Framework",
+      "options": [
+        "D. Implementar controles sin priorización de criticidad, distribuyendo recursos uniformemente",
+        "B. Defensa en profundidad: múltiples capas (perimetral, aplicación, datos, acceso, monitoreo) según NIST CSF (Identify, Protect, Detect) e ISO 27001 Anexo A",
+        "C. Arquitectura basada únicamente en cifrado, asumiendo que elimina necesidad de otros controles",
+        "A. Arquitectura minimalista: un firewall perimetral como único control, reduciendo complejidad operativa"
+      ],
+      "correct": 1,
+      "justification_correct": "NIST SP 800-53 (SC-7 Boundary Protection) y PCI-DSS requieren múltiples capas. Defensa en profundidad alinea con ISO 27001 principios de controles compensatorios. Basilea III exige segregación de funciones y monitoreo continuo, incompatibles con enfoque único.",
+      "justification_wrong": "Control único es punto único de fallo. Solo cifrado sin autenticación, autorización y monitoreo es incompleto. Recursos sin priorización ignora principios NIST de gobernanza de riesgos y optimización presupuestaria."
+    },
+    {
+      "num": 24,
+      "text": "En contexto de presupuestación de programa de seguridad, un CISO debe justificar ante dirección financiera un incremento de 40% en el presupuesto anual de seguridad. ¿Cuál metodología de justificación presupuestaria está mejor alineada con marcos CISM y retorno sobre inversión (ROI)?",
+      "tag": "Resource Management (Budget) & Program Maturity",
+      "options": [
+        "A. Presentar solicitud basada únicamente en costo de licencias de software de seguridad sin análisis de riesgos",
+        "D. Incrementar presupuesto sin presupuesto base definido ni métricas de desempeño previas",
+        "C. Solicitar presupuesto equivalente al promedio de competencia del sector sin contexto organizacional",
+        "B. Realizar análisis de brecha (gap analysis) entre madurez actual (COBIT, CSF Nivel X) y estado objetivo, cuantificando riesgos residuales, costo de incidentes previos y retorno preventivo"
+      ],
+      "correct": 3,
+      "justification_correct": "COBIT 5 (APO1 - Plan IT Organization) exige análisis de inversión alineado a objetivos. Gap analysis cuantifica reducción de riesgo residual (ISO 31000). ROI demostrables (costo incidente evitado vs. inversión) justifican presupuesto ante stakeholders financieros según mejores prácticas.",
+      "justification_wrong": "Solo costo de herramientas es incompleto. Benchmarking sin contexto ignora singularidades de riesgo. Presupuesto sin base histórica ni métrica es indefendible. CISM requiere análisis de riesgo-beneficio explícito."
+    },
+    {
+      "num": 25,
+      "text": "Una organización implementa programa de awareness y entrenamiento en seguridad (CISM Domain 3). Tras 12 meses, la tasa de phishing simulado sigue en 15% (tasa de click en emails maliciosos), igual a baseline inicial. ¿Cuál es el análisis CRÍTICO de esta métrica y la acción correctiva más estratégica?",
+      "tag": "Awareness & Training Programs - Effectiveness Measurement",
+      "options": [
+        "A. Concluir que el programa fracasó y cancelarlo completamente; revertir a enfoque sin capacitación",
+        "B. Aceptar 15% como tasa normal sin ajustes, asumiendo que el comportamiento humano es inmodificable",
+        "D. Incrementar volumen de emails de phishing simulado sin cambiar metodología de capacitación",
+        "C. Realizar análisis de causa raíz: evaluar si la capacitación fue insuficiente, carente de refuerzo frecuente, o si falta correlación con política de consecuencias disciplinarias; rediseñar con métricas de impacto comportamental"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST CSF (PR.AT-1) y ISO 27001:2022 (Anexo A.6.2) exigen programas de awareness efectivos con métricas de cambio comportamental. Análisis de causa raíz identifica brechas: contenido, frecuencia, refuerzo, consecuencias. Rediseño evidencia-basado mejora resultados.",
+      "justification_wrong": "Cancelación prematura sin diagnosis es precipitada. Aceptación sin mejora incumple ISO 27001. Aumentar volumen sin rediseño pedagógico es contraproducente. CISM enfatiza medición continua de efectividad y mejora programática."
+    },
+    {
+      "num": 26,
+      "text": "Una organización implementa un programa de seguridad basado en NIST CSF. Durante la evaluación de madurez, identifica que sus controles están en nivel 2 (Repeatable). ¿Cuál es la acción prioritaria para avanzar hacia nivel 3 (Defined)?",
+      "tag": "Program Maturity Assessment",
+      "options": [
+        "C. Aumentar el presupuesto de seguridad en un 40%",
+        "D. Implementar controles preventivos adicionales sin documentación",
+        "B. Adquirir herramientas SIEM de última generación para automatización",
+        "A. Documentar y estandarizar todos los procesos de seguridad con políticas formales"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST CSF nivel 3 (Defined) requiere procesos documentados, estandarizados y comunicados. Según NIST SP 800-53, la madurez se alcanza mediante gobernanza formal, no solo herramientas. La estandarización precede a la automatización.",
+      "justification_wrong": "Las opciones B, C y D no abordan requisitos de madurez NIST CSF. Herramientas sin procesos documentados no mejoran madurez. Presupuesto sin estandarización es ineficaz. Controles sin documentación permanecen en nivel 2."
+    },
+    {
+      "num": 27,
+      "text": "En el contexto de ISO 27001:2022, durante la planificación del programa de seguridad, se debe determinar el alcance del SGSI. ¿Cuál factor es CRÍTICO para esta determinación según la norma?",
+      "tag": "Security Controls Frameworks",
+      "options": [
+        "C. El presupuesto anual asignado a TI",
+        "B. Los activos de información, procesos de negocio y partes interesadas relevantes",
+        "D. La ubicación geográfica de los servidores de datos",
+        "A. El número de empleados de la organización"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO 27001:2022, cláusula 4.3 establece que el alcance del SGSI debe considerar activos, procesos, dependencias y partes interesadas. Esta visión holística determina qué controles de ISO 27002 son aplicables y relevantes para la organización.",
+      "justification_wrong": "Empleados, presupuesto y ubicación son factores contextuales pero no definitorios del alcance formal. ISO 27001 requiere análisis de riesgos y activos críticos, no criterios administrativos simples. El alcance debe ser documentado y comunicado."
+    },
+    {
+      "num": 28,
+      "text": "Una organización establece KPIs de seguridad: 'Tiempo Medio de Detección (MTTD): <4 horas' y 'Cobertura de auditoría: 85%'. ¿Cuál es el riesgo principal en esta aproximación de métricas?",
+      "tag": "Security Metrics and KPIs",
+      "options": [
+        "C. La organización requiere herramientas adicionales para medirlas",
+        "B. Los valores objetivo son demasiado agresivos técnicamente",
+        "D. Las métricas no incluyen indicadores de cumplimiento normativo",
+        "A. Las métricas no están vinculadas a objetivos estratégicos de negocio"
+      ],
+      "correct": 3,
+      "justification_correct": "CISM requiere que KPIs se alineen con objetivos de negocio (COBIT 5 - Alineación de TI-Negocio). Métricas técnicas aisladas no demuestran valor empresarial. Sin vinculación a riesgos de negocio y objetivos estratégicos, las métricas son irrelevantes para decisiones ejecutivas.",
+      "justification_wrong": "Valores objetivo de 4h y 85% son realistas. Herramientas son medios, no riesgos. Cumplimiento normativo es importante pero secundario. El riesgo crítico es falta de alineación estratégica que impide ROI de seguridad."
+    },
+    {
+      "num": 29,
+      "text": "En la evaluación de riesgos de proveedores (vendor management), se identifica que un proveedor de servicios en la nube procesa datos clasificados. Según COBIT 2019, ¿cuál es el control PRIMARIO requerido?",
+      "tag": "Vendor Management",
+      "options": [
+        "D. Implementar encriptación end-to-end gestionada por la organización únicamente",
+        "C. Cambiar a proveedor interno para eliminar riesgos de terceros",
+        "A. Auditoría anual sin previo aviso al proveedor",
+        "B. Evaluación de riesgos documentada, acuerdos de seguridad (SLA/NDA) y derecho contractual de auditoría"
+      ],
+      "correct": 3,
+      "justification_correct": "COBIT APO10.04 y CISM requieren: evaluación inicial de riesgos, SLA con cláusulas de seguridad/auditoría, NDA, y derechos contractuales. ISO 27001:2022 cláusula 5.23 exige control sobre proveedores. Este enfoque gobernanza>herramientas.",
+      "justification_wrong": "Auditorías sin avisar violan relaciones contractuales. Proveedores internos no eliminan riesgos (insider threats). Encriptación usuario-única limita operabilidad y servicios. El control fundamental es gobernanza contractual y evaluación documentada."
+    },
+    {
+      "num": 30,
+      "text": "Una organización implementa un programa de awareness y training obligatorio anual (8 horas). Tras 18 meses, la tasa de violaciones de política sigue siendo 12%. ¿Qué enfoque correctivo alinea con mejores prácticas CISM?",
+      "tag": "Awareness and Training Programs",
+      "options": [
+        "B. Cambiar a entrenamientos trimestrales segmentados por rol, con métricas de comportamiento y refuerzo contextual",
+        "D. Usar gamificación exclusivamente en plataformas de e-learning",
+        "A. Aumentar a 40 horas anuales de capacitación para todos los empleados",
+        "C. Implementar sanciones disciplinarias severas para violaciones"
+      ],
+      "correct": 0,
+      "justification_correct": "CISM y NIST SP 800-50 establecen que efectividad requiere: frecuencia adecuada (trimestral>anual), segmentación por rol, métricas de comportamiento (no horas), refuerzo contextual. Cambio de conducta supera duración. Evaluación cuantificable es obligatoria.",
+      "justification_wrong": "Más horas sin segmentación no cambia conducta. Sanciones sin educación son reactivas (CISM enfatiza prevención). Gamificación sin métricas es cosmética. Enfoque debe ser medible, iterativo y alineado a indicadores de riesgo (phishing success rate, policy compliance)."
+    },
+    {
+      "num": 31,
+      "text": "Una organización implementa su roadmap de seguridad basado en NIST Cybersecurity Framework. En la fase inicial, identifica que su madurez actual es nivel 1 (Ad Hoc). ¿Cuál debe ser el enfoque prioritario para transicionar efectivamente al nivel 2 (Repetible)?",
+      "tag": "Security Program Roadmap & Maturity Assessment",
+      "options": [
+        "A. Establecer procesos documentados y repetibles para las funciones Core de Identificar, Proteger y Detectar",
+        "C. Contratar consultores externos para auditorías de cumplimiento normativo",
+        "B. Implementar herramientas tecnológicas avanzadas de inteligencia de amenazas",
+        "D. Crear comités de gobernanza con representación de todas las áreas"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST CSF enfatiza la estandarización de procesos en transición de madurez. Nivel 2 requiere procesos documentados, repetibles y comunicados según NIST SP 800-39. Las funciones Core deben operacionalizarse sistemáticamente antes de automatización tecnológica.",
+      "justification_wrong": "Opciones B, C y D son actividades secundarias. Herramientas sin procesos base generan ineficiencia. Cumplimiento y gobernanza siguen después de consolidar procesos repetibles en NIST CSF."
+    },
+    {
+      "num": 32,
+      "text": "Dentro de su presupuesto de seguridad, debe asignar recursos entre personal, tecnología y capacitación. La organización enfrenta vulnerabilidades críticas no parcheadas y déficit de competencias en análisis forense. ¿Cuál es la estrategia óptima de resource management según CISM?",
+      "tag": "Resource Management - Budget & Personnel",
+      "options": [
+        "A. Priorizar 60% tecnología (parches/herramientas), 30% personal especializado, 10% capacitación",
+        "B. Asignar 40% personal (hiring forense), 35% tecnología (SOAR), 25% programa de capacitación escalable",
+        "D. Destinar 100% presupuesto a consultoría externa para remediar ambas brechas",
+        "C. Invertir 80% en herramientas automatizadas de parching y reducir personal"
+      ],
+      "correct": 1,
+      "justification_correct": "CISM reconoce equilibrio crítico: personas ejecutan estrategia, tecnología amplifica. ISO 27001:2022 A.7.2 requiere competencia personal. Balance 40-35-25 permite contratar expertos, implementar herramientas modernas y crear programa escalable que mitigue dependencia externa.",
+      "justification_wrong": "Opción A infrautiliza capacitación. Opción C degrada capacidades. Opción D es insostenible financieramente y no construye capacidad interna según principios CISM de gobernanza."
+    },
+    {
+      "num": 33,
+      "text": "La organización evalúa adoptar ISO 27001 versus COBIT como framework primario. Actualmente operan en industria regulada (financiero) con énfasis en cumplimiento normativo, control interno y gestión de riesgos. ¿Cuál recomendación es más alineada con CISM?",
+      "tag": "Security Controls Frameworks - ISO 27001 vs COBIT",
+      "options": [
+        "B. COBIT como marco principal con ISO 27001 como controles operacionales complementarios",
+        "C. COBIT 2019 como núcleo, integrando ISO 27001 para diseño de controles de seguridad específicos",
+        "D. Ambos en paralelo sin integración formal para máxima cobertura",
+        "A. ISO 27001 exclusivamente; proporciona mapeo directo a requisitos de seguridad de información"
+      ],
+      "correct": 1,
+      "justification_correct": "CISM integra gobernanza (COBIT) con seguridad operacional (ISO 27001). COBIT 2019 gobierna riesgos TI y trazabilidad normativa; ISO 27001:2022 operacionaliza controles. Para entornos regulados, esta dualidad integrada (per CISM Domain 3) optimiza compliance y control.",
+      "justification_wrong": "Opción A carece gobernanza integral. Opción B invierte jerarquía. Opción D genera redundancia sin gobernanza coherente según estructuras CISM."
+    },
+    {
+      "num": 34,
+      "text": "Diseña un conjunto de KPIs para medir efectividad del programa de seguridad. Debe comunicar valor a C-suite con métricas de negocio, no técnicas. ¿Cuál combinación de KPIs mejor satisface este requisito según CISM?",
+      "tag": "Security Metrics and KPIs",
+      "options": [
+        "D. Velocidad de patch, logs analizados por día, alertas generadas por SIEM",
+        "B. Coste evitado por incidentes prevenidos, ROI de inversión en seguridad, reducción de exposición de riesgos cuantificados",
+        "C. Porcentaje de cobertura de controles, madurez del framework, número de políticas",
+        "A. Tiempo promedio de detección (MTTD), vulnerabilidades remediadas, incidentes resueltos"
+      ],
+      "correct": 1,
+      "justification_correct": "CISM Domain 3 enfatiza métricas vinculadas a objetivos de negocio. ISO 27014 requiere gobierno de seguridad con KPIs de negocio. Opción B alinea riesgo mitigado, financiero y exposición: métricas ejecutivas que demuestran valor económico versus gasto.",
+      "justification_wrong": "Opciones A, C y D son métricas técnicas/operacionales. Carecen de traducción a impacto comercial. CISM requiere puente entre operación técnica y gobernanza de negocio."
+    },
+    {
+      "num": 35,
+      "text": "Establece programa de awareness y capacitación. Detección muestra que 45% de incidentes inician por ingeniería social. ¿Cuál estrategia integral es más efectiva según CISM y NIST SP 800-50?",
+      "tag": "Awareness and Training Programs",
+      "options": [
+        "B. Programa segmentado por rol con capacitación especializada, simulaciones adaptativas trimestrales, métricas por cohorte, refuerzo basado en comportamiento",
+        "D. Automatización de recordatorios por email sobre políticas; sin simulaciones",
+        "C. Contratación de proveedor externo para impartir workshop ejecutivo anual",
+        "A. Simulación anual de phishing obligatoria; cursos e-learning genéricos sobre políticas"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST SP 800-50 prescribe roles diferenciados, periodicidad (trimestral vs anual), métricas comportamentales y refuerzo adaptativo. CISM reconoce segmentación por rol crítica. Simulaciones adaptativas miden cambio comportamental; refuerzo personalizado mitiga vulnerabilidad de ingeniería social sistémicamente.",
+      "justification_wrong": "Opción A: periodicidad insuficiente, genérica. Opción C: tercerizado sin métricas. Opción D: pasiva, sin evaluación. Ninguna aborda raíz de 45% de incidentes por ingeniería social con rigor CISM-NIST."
+    },
+    {
+      "num": 36,
+      "text": "Una organización implementa NIST Cybersecurity Framework (CSF) v1.1 como base para su programa de seguridad. Durante la evaluación de madurez, se identifica que los controles están dispersos sin alineación clara con objetivos empresariales. ¿Cuál es el enfoque más efectivo para remediar esta brecha según NIST CSF?",
+      "tag": "Security Program Roadmap & Frameworks",
+      "options": [
+        "C. Aumentar el presupuesto de seguridad en 40% para adquirir nuevas soluciones tecnológicas",
+        "B. Implementar inmediatamente ISO 27001 como reemplazo de NIST CSF para mayor estructura normativa",
+        "A. Mapear todos los controles existentes contra las 5 funciones (Identificar, Proteger, Detectar, Responder, Recuperar) y establecer perfiles objetivo alineados con tolerancia de riesgo empresarial",
+        "D. Transferir todas las responsabilidades de control a un tercero especializado mediante outsourcing total"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST CSF v1.1 establece que la alineación entre controles y objetivos empresariales requiere mapping explícito contra las 5 funciones y perfiles objetivo (target profile). Esto permite visibilidad de gaps y priorización basada en tolerancia de riesgo, fundamental en gobernanza de seguridad senior.",
+      "justification_wrong": "Opciones B, C y D representan decisiones reactivas. ISO 27001 es complementario no sustituto. Incremento presupuestario sin arquitectura es inefectivo. Outsourcing total no elimina responsabilidad de gobernanza institucional."
+    },
+    {
+      "num": 37,
+      "text": "En la gestión de presupuesto de seguridad, el Director de Seguridad debe justificar inversión en un Security Information and Event Management (SIEM) de USD 500K. Los stakeholders cuestionan ROI. ¿Cuál métrica KPI es más relevante para demostrar valor según COBIT 2019 APO12 (Gestión de Recursos)?",
+      "tag": "Resource Management - Budget & Metrics",
+      "options": [
+        "B. Cantidad total de eventos registrados por el SIEM mensualmente sin análisis de relevancia",
+        "C. Número de alertas generadas por el sistema independientemente de tasa de falsos positivos",
+        "A. Tiempo Promedio de Detección y Respuesta (MTTD/MTTR) reducido y Costo Evitado por Incidentes Prevenidos versus costo de inversión",
+        "D. Cumplimiento porcentual de auditorías internas sin relación con efectividad operacional"
+      ],
+      "correct": 2,
+      "justification_correct": "COBIT 2019 APO12.01 requiere métricas de valor de TI. Para SIEM, MTTD/MTTR y análisis de costo-beneficio (incidentes evitados vs. inversión) demuestran ROI tangible. Esto alinea con principios de gestión de recursos efectiva y accountability ejecutiva.",
+      "justification_wrong": "Opciones B y C miden volumen sin calidad. Opción D es vanity metric desconectada de operaciones. KPIs deben ser específicas, mensurables y vinculadas a reducción de riesgo/valor agregado."
+    },
+    {
+      "num": 38,
+      "text": "Una organización financiera bajo regulación PCI-DSS v3.2.1 requiere implementar un framework de seguridad integral. El CISO debe evaluar si extender ISO 27001:2022 como marco principal es suficiente o si necesita NIST CSF como complemento. ¿Cuál es la decisión óptima basada en gobernanza normativa?",
+      "tag": "Security Controls Frameworks & Compliance",
+      "options": [
+        "A. ISO 27001:2022 como marco principal con NIST CSF como complemento para gestión de riesgos y priorizaciones de negocio, dado que ambos son compatibles y NIST CSF proporciona dimensión de funciones empresariales",
+        "B. Utilizar exclusivamente PCI-DSS v3.2.1 sin frameworks adicionales porque es el único requisito normativo vinculante",
+        "C. Implementar solo NIST CSF descartando ISO 27001 por ser frameworks estadounidenses más modernos",
+        "D. Crear un framework propietario independiente evitando estándares internacionales"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001:2022 proporciona estructura de controles detallados; NIST CSF proporciona funciones de negocio (Identificar-Proteger-Detectar-Responder-Recuperar) y análisis de gaps. Combinados ofrecen cobertura integral alineada con PCI-DSS. ISO/IEC 27001:2022 Anexo A demuestra compatibilidad con NIST.",
+      "justification_wrong": "PCI-DSS solo cubre pagos, no es programa integral. Descartar ISO 27001 reduce rigor de controles. Framework propietario crea riesgo de governance y debilita comparabilidad con industria."
+    },
+    {
+      "num": 39,
+      "text": "En evaluación de madurez de programa de seguridad usando CMMC v2.0, una organización detectada en Nivel 3 (Documentado) requiere transitar a Nivel 5 (Optimizado). ¿Cuál iniciativa es crítica según estructura de madurez?",
+      "tag": "Program Maturity Assessment",
+      "options": [
+        "C. Realizar auditoría anual externa para validación de cumplimiento",
+        "A. Implementar procesos automatizados de cumplimiento continuo, análisis predictivo de riesgos y ciclos de mejora basados en inteligencia de amenazas integrada con gobernanza",
+        "B. Completar documentación de políticas sin automatización operacional",
+        "D. Aumentar número de personal de seguridad sin cambios en procesos"
+      ],
+      "correct": 1,
+      "justification_correct": "CMMC v2.0 Nivel 5 requiere: automatización de procesos, análisis predictivo, mejora continua integrada con inteligencia de amenazas. ISO/IEC 33004 confirma que madurez 5 implica optimización con feedback loops y adaptación proactiva.",
+      "justification_wrong": "Opciones B y C son máximo Nivel 2-3 (Documentado). Opción D agrega recursos sin cambios de proceso (no escala). Madurez requiere automatización y análisis, no solo volumen."
+    },
+    {
+      "num": 40,
+      "text": "Un CISO debe diseñar programa de Awareness & Training alineado con programa de arquitectura de seguridad. ¿Cuál estrategia integra efectivamente seguridad técnica y comportamental según NIST SP 800-50 Revision 2?",
+      "tag": "Awareness & Training Programs & Security Architecture",
+      "options": [
+        "B. Capacitación genérica anual única para toda la organización sin diferenciación de roles",
+        "D. Outsourcing total del programa a proveedor externo sin supervisión de contenido institucional",
+        "A. Segmentación de contenido por rol (desarrollador, administrador, usuario final) con métricas de retención vinculadas a cambios de comportamiento observable y validación técnica de controles implementados",
+        "C. Enfoque exclusivo en certificaciones técnicas sin considerar componente comportamental"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST SP 800-50 Rev2 establece que awareness efectivo requiere: segmentación por rol, alineación con controles técnicos, métricas de cambio comportamental (phishing clicks reducidos, reporte de incidentes mejorado), y validación técnica. Integración bidireccional seguridad técnica-comportamental.",
+      "justification_wrong": "Opción B es inefectiva. Opción C ignora dimensión comportamental crítica. Opción D abdicates responsabilidad de governance. NIST SP 800-50 enfatiza personalización y medición de efectividad."
+    },
+    {
+      "num": 41,
+      "text": "Una organización implementa un roadmap de programa de seguridad alineado con NIST CSF. ¿Cuál es el enfoque correcto para priorizar inversiones en controles de seguridad durante la fase de implementación inicial?",
+      "tag": "Security Program Roadmap",
+      "options": [
+        "A. Priorizar controles preventivos en las funciones Identificar y Proteger antes de expandir a Detectar y Responder",
+        "C. Enfocarse exclusivamente en controles de cumplimiento normativo sin considerar riesgos organizacionales",
+        "D. Asignar presupuesto equitativamente entre todas las categorías del CSF independientemente del perfil de riesgo",
+        "B. Implementar simultáneamente todas las funciones del NIST CSF sin diferenciación de fases"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST CSF establece un enfoque progresivo donde Identificar y Proteger proporcionan la base para madurez. ISO 31000 y COSO ERM recomiendan priorizar controles preventivos antes de detectivos, optimizando ROI y reduciendo exposición inicial.",
+      "justification_wrong": "Implementación simultánea sin estrategia carece de fundamento en marcos de referencia. NIST CSF define un modelo de madurez incremental donde integración prematura de todas funciones genera ineficiencia de recursos y desalineación estratégica."
+    },
+    {
+      "num": 42,
+      "text": "En la gestión de proveedores de seguridad, un CISO debe evaluar riesgos de terceros. ¿Cuál metodología de evaluación se alinea con ISO 27001:2022 y proporciona validación de controles de proveedores?",
+      "tag": "Vendor Management",
+      "options": [
+        "B. Revisar únicamente referencias comerciales del proveedor sin verificación formal de controles",
+        "C. Aceptar declaración de seguridad del proveedor sin validación independiente",
+        "D. Implementar auditoría interna anual sin participación de expertos externos",
+        "A. Auditoría de terceros con certificación ISO 27001 o SOC 2 Type II, complementada con evaluación de controles específicos del contrato"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 cláusula A.5.19 y A.5.23 requieren evaluación y monitoreo de proveedores. Certificación independiente (ISO 27001, SOC 2 Type II) proporciona evidencia de controles validados, reduciendo riesgo de dependencia y cumpliendo marcos COBIT 5 APO10.",
+      "justification_wrong": "Referencias comerciales no validan controles técnicos de seguridad. Declaraciones unilaterales carecen de tercera parte verificadora. Auditorías internas sin expertos externos generan conflicto de interés, violando principios de independencia en ISO 27001."
+    },
+    {
+      "num": 43,
+      "text": "Un programa de conciencia de seguridad debe medir efectividad. ¿Cuál KPI demuestra mejor la madurez del programa según NIST CSF y COBIT 5?",
+      "tag": "Security Metrics and KPIs",
+      "options": [
+        "B. Número total de empleados que completaron entrenamiento anual obligatorio",
+        "D. Cantidad de correos de phishing enviados en pruebas de seguridad",
+        "C. Presupuesto asignado al programa de conciencia como porcentaje del presupuesto de TI",
+        "A. Reducción en tasa de incidentes de origen humano correlacionada con métricas de comportamiento y evaluaciones de evaluación posterior al entrenamiento"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST CSF PR.AT-1 y COBIT 5 APO07 definen KPIs basados en cambio de comportamiento observable. Correlación entre entrenamiento e incidentes reducidos (phishing, ingeniería social) mide impacto real, no solo cumplimiento administrativo.",
+      "justification_wrong": "Completación de entrenamiento es métrica de ejecución, no efectividad. Presupuesto refleja inversión, no resultado. Cantidad de phishing sin contexto de tasa de clics/reportes no indica madurez comportamental del programa."
+    },
+    {
+      "num": 44,
+      "text": "En evaluación de madurez del programa de seguridad, un CISO utiliza ISO 27001 para benchmarking. ¿Cómo integra correctamente ISO 27001 y NIST CSF en modelo de madurez?",
+      "tag": "Program Maturity Assessment",
+      "options": [
+        "D. Usar nivel de certificación ISO 27001 como única métrica de madurez",
+        "B. Seleccionar únicamente uno de los marcos eliminando redundancias",
+        "C. Aplicar ISO 27001 solo para compliance y NIST CSF solo para gestión de riesgos",
+        "A. Mapear controles ISO 27001 (A.5-A.14) con funciones NIST CSF (Identificar-Responder), validando cobertura de controles y nivel de implementación"
+      ],
+      "correct": 3,
+      "justification_correct": "Mapeo de controles ISO 27001:2022 Anexo A con funciones NIST CSF proporciona validación integral. ISO 27001 define QMUÉ controlar; NIST CSF define CÓMO gestionar. COSO ERM valida esta integración para evaluación multi-dimensional.",
+      "justification_wrong": "Frameworks complementarios no son redundantes; cada proporciona perspectiva diferente. ISO 27001 y NIST CSF tienen propósitos distintos. Certificación ISO 27001 valida controles implementados, no madurez operacional ni integración estratégica del programa."
+    },
+    {
+      "num": 45,
+      "text": "Una organización debe definir arquitectura de seguridad alineada con gobernanza. ¿Cuál enfoque integra correctamente marcos NIST CSF, ISO 27001 y COBIT 5?",
+      "tag": "Security Architecture",
+      "options": [
+        "B. Crear arquitectura separada de gobernanza, aislando seguridad como función técnica independiente",
+        "D. Implementar arquitectura basada exclusivamente en requisitos de cumplimiento normativo actual",
+        "C. Priorizar solo controles de protección (NIST CSF Proteger) sin considerar detección y respuesta",
+        "A. Definir capas de seguridad (identidad, datos, aplicaciones, infraestructura) mapeadas a controles ISO 27001, funciones NIST CSF y procesos COBIT 5 (gobernanza, gestión, monitoreo)"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST Cybersecurity Framework Architecture (RMF) integra capas de seguridad. COBIT 5 EDM (Evaluate, Direct, Monitor) proporciona gobernanza. ISO 27001 define controles específicos. Integración matricial asegura cobertura completa y alineación estratégica con objetivos de negocio.",
+      "justification_wrong": "Aislamiento de seguridad viola principios de gobernanza integrada. Priorizar solo Proteger ignora ciclo completo NIST (Detectar-Responder-Recuperar). Cumplimiento normativo es objetivo derivado, no primario; arquitectura debe soportar riesgos estratégicos organizacionales."
+    },
+    {
+      "num": 46,
+      "text": "Una organización implementa un programa de seguridad de información alineado con NIST CSF. Durante la evaluación de madurez, se identifica que los controles de Identificar (Identify) están en nivel 2, mientras que Proteger (Protect) está en nivel 4. ¿Cuál es el riesgo principal de esta asimetría según la progresión recomendada del framework?",
+      "tag": "Program Maturity Assessment & NIST CSF",
+      "options": [
+        "D. Mejora automática de controles de Recuperación (Recover) sin necesidad de evaluación adicional",
+        "C. Cumplimiento normativo garantizado en funciones de mayor madurez independientemente del nivel de Identificación",
+        "B. Exceso de recursos asignados a controles técnicos sin justificación de necesidad empresarial",
+        "A. Incapacidad para detectar y responder efectivamente a incidentes debido a debilidad en la función de Identificación"
+      ],
+      "correct": 3,
+      "justification_correct": "NIST CSF requiere progresión equilibrada. Debileza en Identificar compromete visibilidad de activos, amenazas y riesgos, limitando efectividad de funciones posteriores (Detect, Respond, Recover). Proteger sin Identificar adecuado genera controles desalineados con riesgos reales (NIST SP 800-39).",
+      "justification_wrong": "Las opciones B, C y D contradicen principios de NIST CSF: no hay relación directa entre inversión y asimetría; cumplimiento no es automático; Recuperación requiere madurez en funciones previas para efectividad."
+    },
+    {
+      "num": 47,
+      "text": "En la evaluación de proveedores críticos de servicios de seguridad, el CISO debe establecer criterios de gestión de riesgos de terceros. Según ISO 27001:2022 Cláusula 8.4, ¿cuál es el elemento de control más crítico para evitar transferencia de riesgo no gestionada?",
+      "tag": "Vendor Management & ISO 27001",
+      "options": [
+        "D. Implementar monitoreo técnico automatizado sin participación del proveedor en el proceso",
+        "B. Delegar completamente la responsabilidad de seguridad al proveedor mediante contrato",
+        "A. Establecer criterios de evaluación previos basados en requisitos de seguridad y riesgo aceptable",
+        "C. Realizar auditorías anuales después de firma de contrato sin documentación previa"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 (Cláusula 8.4) exige evaluación de seguridad previa basada en criterios documentados y riesgo aceptable. Control preventivo evita seleccionar proveedores con capacidad insuficiente. Responsabilidad legal permanece en la organización; terceros son extensión del perímetro de seguridad.",
+      "justification_wrong": "B es ilusorio (responsabilidad no transferible); C es reactivo, no preventivo; D omite colaboración esencial en gestión de proveedores (ISO 27001 Anexo A 5.23)."
+    },
+    {
+      "num": 48,
+      "text": "Una organización fintech implementa arquitectura de seguridad con modelo de confianza cero (Zero Trust) integrado con COBIT 2019 (APO 13). El equipo debe alinear la gobernanza de acceso con definición de seguridad arquitectónica. ¿Cuál es la secuencia correcta de implementación según principios de gobernanza?",
+      "tag": "Security Architecture & COBIT Governance",
+      "options": [
+        "B. Implementar tecnología Zero Trust → Auditar accesos → Documentar excepciones → Revisar anualmente",
+        "C. Desplegar microsegmentación → Integrar con IAM existente → Capacitar personal → Medir KPIs",
+        "D. Definir amenazas → Seleccionar soluciones → Implementar sin paralización → Validar post-implementación",
+        "A. Establecer políticas de acceso → Diseñar arquitectura → Validar contra requisitos → Monitorear y ajustar"
+      ],
+      "correct": 3,
+      "justification_correct": "COBIT 2019 APO 13 (gestión de servicios y calidad) requiere ciclo: política → diseño → validación → operación. Zero Trust necesita gobernanza previa sobre principios (verificación continua, acceso mínimo). Validación contra requisitos asegura alineación empresarial y normativa antes de operación.",
+      "justification_wrong": "B es operacional sin gobernanza; C omite validación de requisitos; D carece de diseño arquitectónico previo. Todos violan secuencia COBIT: gobernanza antes de implementación técnica."
+    },
+    {
+      "num": 49,
+      "text": "El CISO evalúa métricas de seguridad para demostrar ROI del programa. Utiliza KPI híbrido: cobertura de control (técnica) + reducción de riesgo residual (negocio). Según CISM best practices, ¿cuál es el principal riesgo de esta combinación sin alineación explícita?",
+      "tag": "Security Metrics, KPIs & Program Assessment",
+      "options": [
+        "B. Automatización de reportes que elimina necesidad de análisis cualitativo del programa",
+        "A. Datos contradictorios donde cobertura técnica alta convive con riesgo residual alto, confundiendo stakeholders",
+        "D. Reducción de costos operativos que justifica eliminación de controles preventivos",
+        "C. Cumplimiento normativo garantizado por métricas técnicas sin validación independiente"
+      ],
+      "correct": 1,
+      "justification_correct": "Métricas desalineadas generan narrativa fracturada: 95% cobertura técnica pero 40% riesgo residual alto indica controles inefectivos o no direccionados a riesgos prioritarios. Requiere análisis de brecha explicita (ISO 27004: alineación métrica-objetivo). Confunde decisiones ejecutivas sobre inversión.",
+      "justification_wrong": "B exagera automatización (análisis cualitativo esencial); C asume cumplimiento (métricas son observables, no garantías); D introduce falacia de causalidad."
+    },
+    {
+      "num": 50,
+      "text": "Una organización en industria regulada (banca) rediseña su programa de conciencia de seguridad integrando indicadores de comportamiento (behavioral KPIs). Según frameworks de madurez, ¿cuál es el elemento crítico para garantizar sostenibilidad del programa sin regresión post-implementación?",
+      "tag": "Awareness & Training Programs, Program Sustainability",
+      "options": [
+        "A. Establecer ciclo de refuerzo continuo con métricas de cambio de comportamiento y consecuencias documentadas",
+        "C. Delegar responsabilidad de conciencia a departamento de Recursos Humanos reduciendo carga del CISO",
+        "D. Implementar gamificación de seguridad para maximizar engagement sin validación de impacto en reducción de incidentes",
+        "B. Ejecutar capacitación anual obligatoria con evaluación de retención inmediata post-sesión"
+      ],
+      "correct": 0,
+      "justification_correct": "CISM reconoce conciencia sostenible requiere: refuerzo periódico, métricas comportamentales (no solo asistencia), consecuencias escaladas, y alineación con cultura organizacional. Ciclo continuo previene regresión, crítico en entornos regulados donde responsabilidad legal es compartida. ISO 27001 Cláusula 7.3 exige evaluación permanente.",
+      "justification_wrong": "B es puntual (sin refuerzo); C fractura responsabilidad sin garantía de efectividad en seguridad; D asume engagement=reducción de riesgo sin evidencia causal."
+    }
+  ]
+}

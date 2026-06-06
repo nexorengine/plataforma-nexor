@@ -1,0 +1,710 @@
+{
+  "cert_id": "cism",
+  "domain_id": "info_security_governance",
+  "quiz_num": 1,
+  "domain_name": "Information Security Governance",
+  "cert_name": "CISM",
+  "lang": "pt",
+  "questions": [
+    {
+      "num": 1,
+      "text": "Qual é o principal objetivo de um framework de governança de segurança da informação alinhado com a estratégia de negócios?",
+      "tag": "Security Governance Framework",
+      "options": [
+        "C. Reduzir custos operacionais eliminando políticas de segurança",
+        "A. Garantir que os objetivos de segurança suportem e viabilizem os objetivos comerciais da organização",
+        "D. Transferir toda responsabilidade de segurança para fornecedores terceirizados",
+        "B. Implementar controles técnicos mais rigorosos que os concorrentes"
+      ],
+      "correct": 1,
+      "justification_correct": "Um framework eficaz deve alinhar objetivos de segurança com estratégia empresarial, conforme COBIT 2019 e ISO/IEC 27001. Isso garante que segurança seja um enablor estratégico, não um obstáculo. A governança integra risco, conformidade e negócio.",
+      "justification_wrong": "Alternativas B, C e D representam abordagens isoladas ou negligentes. Reduzir custos eliminando políticas (C) aumenta risco. Transferência total (D) não elimina responsabilidade organizacional. Competição por rigor técnico (B) desconsidera alinhamento estratégico e necessidades reais do negócio."
+    },
+    {
+      "num": 2,
+      "text": "Em uma estrutura de governança de segurança, qual é a responsabilidade primária do Comitê de Direcionamento de Segurança (Security Steering Committee)?",
+      "tag": "Security Steering Committee",
+      "options": [
+        "A. Implementar controles técnicos diariamente e monitorar firewalls",
+        "C. Executar testes de penetração e análises de vulnerabilidade mensalmente",
+        "D. Responsabilizar-se exclusivamente pelo cumprimento de regulamentações externas",
+        "B. Fornecer direcionamento estratégico, aprovar políticas e alocar recursos para iniciativas de segurança"
+      ],
+      "correct": 3,
+      "justification_correct": "Conforme CISM Body of Knowledge, o Steering Committee fornece governança estratégica, aprovação de políticas, alocação de orçamento e supervisão de programas. É órgão de direcionamento executivo, não operacional. Define prioridades e governança.",
+      "justification_wrong": "Alternativa A descreve função operacional de TI, não governança estratégica. C é atividade técnica específica. D limita escopo apenas a conformidade regulatória, ignorando gestão de risco e estratégia. Steering Committee transcende essas funções específicas."
+    },
+    {
+      "num": 3,
+      "text": "Qual é a hierarquia correta de documentos em uma estrutura de políticas de segurança da informação, conforme melhores práticas ISACA?",
+      "tag": "Security Policies Hierarchy",
+      "options": [
+        "A. Procedimentos → Políticas → Normas → Carta do Programa",
+        "C. Diretrizes → Procedimentos → Normas → Políticas",
+        "B. Carta do Programa → Políticas → Normas e Padrões → Procedimentos e Diretrizes",
+        "D. Normas → Políticas → Procedimentos → Diretrizes"
+      ],
+      "correct": 2,
+      "justification_correct": "A hierarquia apropriada parte do nível estratégico (Charter) descendo ao operacional. CISM estabelece: Charter (visão/objetivo) → Políticas (princípios) → Normas/Padrões (requisitos técnicos) → Procedimentos (como executar). Estrutura piramidal top-down.",
+      "justification_wrong": "Alternativas A, C e D invertem ou desordenam a sequência lógica de hierarquia. Uma estrutura invertida cria conflitos de autoridade, ambiguidade de direcionamento e dificulta cascata de objetivos. A coerência hierárquica é fundamental para governança efetiva."
+    },
+    {
+      "num": 4,
+      "text": "Um CISO está desenvolvendo métricas de governança de segurança para relatar ao conselho administrativo. Qual métrica melhor reflete o alcance dos objetivos estratégicos de segurança?",
+      "tag": "Governance Metrics and Reporting",
+      "options": [
+        "B. Percentual de riscos críticos e altos mitigados versus plano estratégico estabelecido",
+        "C. Quantidade de incidentes de segurança detectados e remediados",
+        "A. Número total de patches aplicados por mês em sistemas",
+        "D. Total de horas gastas em treinamento de conscientização anual"
+      ],
+      "correct": 0,
+      "justification_correct": "Métricas de governança devem medir resultado contra objetivos estratégicos e tolerância de risco. Opção B alinha redução de risco com plano aprovado, permitindo decisões executivas. CISM enfatiza métricas outcome-oriented que demonstram valor e alinhamento estratégico.",
+      "justification_wrong": "Alternativa A é métrica tática/operacional. C mede volume, não efetividade. D mede esforço, não resultado. Nenhuma conecta diretamente aos objetivos estratégicos de segurança nem fornece visibilidade sobre cumprimento do apetite de risco aprovado pelo conselho."
+    },
+    {
+      "num": 5,
+      "text": "Ao estabelecer uma governança de terceiros (fornecedores de serviços de segurança), qual é a responsabilidade primária da organização contratante?",
+      "tag": "Third-Party Governance",
+      "options": [
+        "C. Exigir que o fornecedor implemente exatamente os mesmos controles da organização",
+        "D. Realizar uma única auditoria inicial e depois confiar integralmente no fornecedor",
+        "A. Delegar completamente a responsabilidade de segurança ao fornecedor e não realizar auditorias",
+        "B. Manter responsabilidade contínua pela segurança dos dados, estabelecer SLAs, avaliar conformidade e cláusulas contratuais"
+      ],
+      "correct": 3,
+      "justification_correct": "Conforme ISO/IEC 27001 e CISM, responsabilidade de segurança é não-delegável. Organização deve: definir requisitos contratuais, incluir SLAs de segurança, avaliar risco continuamente e monitorar conformidade. Terceirização transfere operação, não responsabilidade.",
+      "justification_wrong": "Alternativa A abandona supervisão, violando princípios de governança. C é prescritivo demais e impraticável. D ignora natureza dinâmica do risco e mudanças operacionais. Nenhuma reconhece que organização contratante mantém responsabilidade fiduciária pelas informações sob custódia do terceiro."
+    },
+    {
+      "num": 6,
+      "text": "Uma organização está estabelecendo seu framework de governança de segurança da informação. O CISO deve garantir que este framework esteja alinhado com a estratégia de negócios e suportado pela alta direção. Qual documento fundamental deve ser desenvolvido primeiro para estabelecer autoridade, escopo e objetivos do programa de segurança?",
+      "tag": "security_program_charter",
+      "options": [
+        "B. Política de Segurança da Informação",
+        "D. Matriz de Responsabilidades RACI",
+        "A. Carta do Programa de Segurança (Security Program Charter)",
+        "C. Plano Estratégico de Segurança de 5 Anos"
+      ],
+      "correct": 2,
+      "justification_correct": "A Carta do Programa de Segurança é o documento fundacional que define autoridade, escopo, objetivos e governança do programa. Conforme ISACA CISM, estabelece a base para todo o programa de segurança e demonstra suporte executivo essencial.",
+      "justification_wrong": "Políticas são derivadas da carta; planos estratégicos implementam a charter; matrizes RACI detalham responsabilidades após estabelecimento da governança de alto nível."
+    },
+    {
+      "num": 7,
+      "text": "Um Comitê Diretor de Segurança (Security Steering Committee) foi recém-criado em uma empresa. Qual deve ser sua composição IDEAL para garantir efetividade na governança e tomada de decisão estratégica?",
+      "tag": "security_steering_committee",
+      "options": [
+        "B. CISO, executivos de negócios, representantes de áreas e patrocinador executivo (C-level)",
+        "C. Todos os gerentes de departamento da organização",
+        "A. Apenas profissionais de TI e segurança",
+        "D. Especialistas técnicos de segurança externa contratados"
+      ],
+      "correct": 0,
+      "justification_correct": "Composição ideal inclui CISO, executivos de negócios, representantes multi-funcionais e patrocinador C-level. Garante perspectiva estratégica, alinhamento com negócios e autoridade decisória, conforme melhores práticas ISACA.",
+      "justification_wrong": "Apenas TI limita visão de negócios; todos gerentes cria comitê ineficaz; consultores externos auxiliam mas não devem ser únicos decisores."
+    },
+    {
+      "num": 8,
+      "text": "Em relação à hierarquia de políticas de segurança, qual sequência representa CORRETAMENTE a estrutura de documentos de uma governança de segurança bem estabelecida?",
+      "tag": "security_policies_hierarchy",
+      "options": [
+        "A. Procedimentos → Políticas → Padrões → Diretrizes",
+        "B. Políticas → Padrões → Procedimentos → Diretrizes",
+        "D. Padrões → Procedimentos → Políticas → Diretrizes",
+        "C. Diretrizes → Políticas → Padrões → Procedimentos"
+      ],
+      "correct": 3,
+      "justification_correct": "Hierarquia correta: Diretrizes (princípios gerais) → Políticas (regras obrigatórias) → Padrões (especificações técnicas) → Procedimentos (passos operacionais). Sequência lógica de abstração para implementação conforme framework ISACA.",
+      "justification_wrong": "Outras sequências invertem relações de dependência; procedimentos não precedem políticas; hierarquia incorreta compromete clareza e compliance organizacional."
+    },
+    {
+      "num": 9,
+      "text": "Uma organização com múltiplos fornecedores terceirizados deve implementar governança de segurança para estes provedores. Qual é o PRINCIPAL objetivo desta governança de terceiros?",
+      "tag": "third_party_governance",
+      "options": [
+        "A. Reduzir custos de contratação de serviços de segurança",
+        "C. Eliminar completamente terceiros da cadeia de valor",
+        "D. Transferir total responsabilidade de segurança aos fornecedores",
+        "B. Garantir que riscos de segurança de terceiros sejam identificados, avaliados e gerenciados consistentemente"
+      ],
+      "correct": 3,
+      "justification_correct": "Objetivo principal é gerenciar riscos de terceiros através de identificação, avaliação e controle consistente. Organização mantém responsabilidade final. ISACA e frameworks regulatórios enfatizam governança contínua de fornecedores.",
+      "justification_wrong": "Redução de custos é benefício secundário; eliminar terceiros é impraticável; transferência total de responsabilidade é impossível e viola compliance."
+    },
+    {
+      "num": 10,
+      "text": "Para medir efetividade da governança de segurança, quais métricas devem ser reportadas ao conselho de administração e alta direção?",
+      "tag": "governance_metrics_reporting",
+      "options": [
+        "A. Apenas métricas técnicas (vulnerabilidades encontradas, patches aplicados)",
+        "C. Somente conformidade com políticas internas",
+        "B. Métricas de negócios, conformidade regulatória, risco residual e alinhamento estratégico",
+        "D. Número total de alertas de segurança gerados mensalmente"
+      ],
+      "correct": 2,
+      "justification_correct": "Conselho necessita métricas de negócio, conformidade regulatória, risco residual e alinhamento estratégico. Visão executiva, não técnica. ISACA CISM recomenda KPIs que conectem segurança aos objetivos organizacionais.",
+      "justification_wrong": "Métricas apenas técnicas não informam direção; políticas internas são operacionais; alertas puros carecem de contexto executivo e análise de impacto."
+    },
+    {
+      "num": 11,
+      "text": "Uma organização está estabelecendo seu framework de governança de segurança da informação. O CISO necessita alinhar os objetivos de segurança com a estratégia empresarial. Qual documento deve ser o primeiro a ser desenvolvido para formalizar esse alinhamento?",
+      "tag": "Security Governance Framework",
+      "options": [
+        "D. Plano de resposta a incidentes",
+        "A. Carta do Programa de Segurança (Security Program Charter)",
+        "C. Procedimentos técnicos de implementação",
+        "B. Políticas de segurança operacional"
+      ],
+      "correct": 1,
+      "justification_correct": "A Carta do Programa de Segurança estabelece missão, visão, objetivos e autoridade do programa, alinhando-se à estratégia corporativa conforme COBIT 5 e ITIL. É o documento fundador que guia todo o programa.",
+      "justification_wrong": "Políticas operacionais, procedimentos técnicos e planos de resposta são derivados da carta; implementam diretrizes já estabelecidas no alinhamento estratégico."
+    },
+    {
+      "num": 12,
+      "text": "A empresa implementou um comitê de direção de segurança (Security Steering Committee) composto por executivos de TI, negócios, compliance e operações. Qual deve ser a responsabilidade primária deste comitê segundo as melhores práticas de governança?",
+      "tag": "Security Steering Committee",
+      "options": [
+        "B. Validar riscos de segurança e aprovar decisões de investimento em segurança",
+        "C. Realizar testes técnicos de penetração e avaliações de vulnerabilidade",
+        "D. Desenvolver códigos de software seguro e ferramentas de detecção",
+        "A. Executar implementação técnica de controles de segurança"
+      ],
+      "correct": 0,
+      "justification_correct": "Conforme ISACA e NIST, o comitê de direção aprova estratégias, prioriza investimentos e valida riscos aceitáveis. Fornece governança executiva e alinhamento com objetivos empresariais.",
+      "justification_wrong": "Implementação técnica, testes de penetração e desenvolvimento de software são responsabilidades operacionais, não de comitê de direção estratégica."
+    },
+    {
+      "num": 13,
+      "text": "Uma organização implementa hierarquia de políticas: Política Corporativa de Segurança (nível 1), Políticas de Domínio (nível 2) e Procedimentos (nível 3). Uma política de nível 1 estabelece que 'todos os dados confidenciais devem ser criptografados em trânsito'. Qual deve ser o conteúdo correto do nível 2?",
+      "tag": "Security Policies Hierarchy",
+      "options": [
+        "A. Especificar o algoritmo AES-256 e portas TLS obrigatórias",
+        "B. Definir requisitos de criptografia para dados confidenciais por domínio (ex: finanças, RH)",
+        "C. Listar todos os servidores que devem ser configurados",
+        "D. Detalhar passos técnicos para instalação de certificados SSL"
+      ],
+      "correct": 1,
+      "justification_correct": "Políticas de nível 2 traduzem mandatos corporativos em requisitos específicos por domínio/função, mantendo flexibilidade técnica. ITIL e ISO 27001 recomendam esta estrutura piramidal.",
+      "justification_wrong": "Algoritmos específicos (A), servidores individuais (C) e passos técnicos (D) pertencem a níveis operacionais 3-4, não a políticas de nível 2."
+    },
+    {
+      "num": 14,
+      "text": "Uma organização multinacional deve cumprir GDPR, CCPA e regulações locais. Como o framework de governança de segurança deve abordar esses requisitos heterogêneos?",
+      "tag": "Regulatory Compliance",
+      "options": [
+        "B. Manter políticas corporativas base obrigatórias com adaptações regionais documentadas e rastreáveis",
+        "A. Implementar controles técnicos idênticos em todas as regiões",
+        "D. Realizar auditoria anual única em nível global para validar conformidade",
+        "C. Permitir que cada região desenvolva suas próprias políticas independentemente"
+      ],
+      "correct": 0,
+      "justification_correct": "ISACA recomenda políticas base corporativas com exceções regionais documentadas. ISO 27001 aceita aplicações contextualizadas. Isso assegura conformidade simultânea e eficiência operacional.",
+      "justification_wrong": "Controles idênticos (A) ignoram contextos legais; independência total (C) cria fragmentação; auditoria única anual (D) é insuficiente para governança contínua."
+    },
+    {
+      "num": 15,
+      "text": "O CISO propõe implementar métricas de governança de segurança para reportar ao conselho (board). Qual métrica melhor reflete a eficácia da governança em nível executivo?",
+      "tag": "Governance Metrics and Reporting",
+      "options": [
+        "D. Tempo médio para resolver tickets de help desk de segurança",
+        "B. Percentual de riscos identificados com planos de mitigação aprovados e prazos executivos",
+        "C. Número de alertas gerados pelo SIEM diariamente",
+        "A. Quantidade de patches aplicados por mês em todos os servidores"
+      ],
+      "correct": 1,
+      "justification_correct": "Métricas de governança (nível board) devem refletir decisões de risco e conformidade, não atividades operacionais. ISACA CISM exige KPIs focados em alinhamento estratégico e aceitação de risco.",
+      "justification_wrong": "Patches (A), alertas SIEM (C) e tickets (D) são métricas operacionais/táticas, não indicadores de eficácia de governança para executivos."
+    },
+    {
+      "num": 16,
+      "text": "Uma organização está implementando um framework de governança de segurança alinhado à estratégia de negócio. O CISO deve garantir que a estrutura de governança estabeleça claramente as responsabilidades entre a administração, executivos e o comitê de direcionamento de segurança. Qual é o principal objetivo de definir essa hierarquia de responsabilidades conforme COBIT 2019 e NIST CSF?",
+      "tag": "Papéis e Responsabilidades - CISO, Board, Executivos",
+      "options": [
+        "D. Eliminar a necessidade de políticas de segurança detalhadas através da delegação de autoridade",
+        "C. Estabelecer um único responsável pela implementação de todos os controles de segurança",
+        "A. Criar accountability clara, garantindo que decisões críticas de segurança sejam tomadas no nível apropriado e auditáveis",
+        "B. Reduzir custos operacionais ao distribuir responsabilidades entre múltiplos stakeholders"
+      ],
+      "correct": 2,
+      "justification_correct": "Conforme COBIT 2019 (Princípio 1) e NIST CSF, a clareza de responsabilidades garante accountability, rastreabilidade de decisões e efetividade de governança. Cada nível decisório (board, C-level, comitês) deve ter responsabilidades distintas e mensuráveis.",
+      "justification_wrong": "Reduzir custos não é o objetivo primário. Um único responsável viola princípios de segregação de deveres. Políticas continuam essenciais independente da delegação."
+    },
+    {
+      "num": 17,
+      "text": "Uma organização multinacional enfrenta pressões regulatórias diferentes em cada jurisdição (GDPR na Europa, CCPA nos EUA, LGPD no Brasil). Ao estruturar a hierarquia de políticas de segurança, como o programa de governança deve balancear conformidade regulatória com flexibilidade operacional?",
+      "tag": "Hierarquia de Políticas de Segurança e Conformidade Regulatória",
+      "options": [
+        "B. Manter políticas separadas por jurisdição sem qualquer padrão comum, permitindo máxima flexibilidade local",
+        "D. Implementar apenas as políticas exigidas pelo órgão regulador mais permissivo para reduzir burden compliance",
+        "C. Delegar a conformidade regulatória totalmente para consultores externos, eliminando responsabilidade interna",
+        "A. Estabelecer uma política global única que atenda aos requisitos mais rigorosos, criando padrões mínimos que se aplicam a todas as regiões"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 e COBIT 2019 recomendam política guarda-chuva com padrões mínimos globais combinada com apêndices regionais. Isso garante compliance regulatória mantendo eficiência operacional e reduzindo inconsistências críticas.",
+      "justification_wrong": "Políticas separadas criam fragmentação e gaps. Delegar compliance não elimina responsabilidade legal. Usar padrão mais permissivo viola conformidade obrigatória em jurisdições."
+    },
+    {
+      "num": 18,
+      "text": "O comitê de direcionamento de segurança de uma instituição financeira deve apresentar métricas de governança ao board trimestralmente. Qual conjunto de métricas melhor reflete a efetividade da governança conforme NIST CSF e COSO Internal Control Framework?",
+      "tag": "Governança - Métricas e Relatórios",
+      "options": [
+        "C. Exclusivamente ROI de ferramentas de segurança e redução de despesas operacionais",
+        "D. Número absoluto de políticas escritas e quantidade de usuários treinados em security awareness",
+        "B. Indicadores de resultado (maturity dos processos, conformidade regulatória, incidentes críticos) combinados com indicadores de processo (investimento em treinamento, cobertura de auditorias)",
+        "A. Apenas contagem de vulnerabilidades encontradas e tempo médio de remediação por sistema"
+      ],
+      "correct": 2,
+      "justification_correct": "NIST CSF e COSO recomendam balanced scorecard com métricas outcome (maturidade, conformidade) e processo (investimentos, auditoria). Isso alinha segurança com objetivos negócio e estratégia enterprise-wide, permitindo decisões informadas ao board.",
+      "justification_wrong": "Vulnerabilidades são tática. Apenas ROI ignora conformidade e risco. Contagem de políticas e treinados não indicam efetividade real ou alinhamento estratégico."
+    },
+    {
+      "num": 19,
+      "text": "Uma organização identifica que fornecedores críticos (cloud providers, integradores de sistemas) possuem práticas de segurança inconsistentes com o framework de governança. Como o programa de governança deve estruturar a governança de terceiros para reduzir risco de supply chain conforme ISO 27001:2022?",
+      "tag": "Governança de Terceiros",
+      "options": [
+        "C. Permitir que fornecedores mantenham seus próprios frameworks de segurança sem imposição de padrões mínimos",
+        "A. Solicitar atestados SOC 2 Type II apenas uma vez durante onboarding, sem monitoramento contínuo",
+        "B. Estabelecer critérios de seleção, contratos com cláusulas de segurança, auditorias periódicas e KPIs de segurança incluindo breach notification",
+        "D. Implementar VPN mandatória como único controle de segurança para acesso de terceiros"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO 27001:2022 (cláusulas A.5.19 e A.5.20) exigem governance de terceiros estruturado: avaliação prévia, contratos com requisitos segurança, monitoramento contínuo e KPIs mensuráveis, garantindo compliance e resiliência supply chain.",
+      "justification_wrong": "Atestados únicos sem monitoramento não garantem conformidade contínua. Permitir frameworks divergentes cria exposição. VPN isolada não substitui governance integrada."
+    },
+    {
+      "num": 20,
+      "text": "O charter do programa de segurança de uma organização deve estabelecer mandato, autoridade e recursos. Qual elemento é crítico incluir no charter para assegurar que o programa de segurança mantenha independência e neutralidade em conflitos entre segurança e negócio?",
+      "tag": "Security Program Charter",
+      "options": [
+        "B. Disposição explícita de reporte direto do CISO ao CEO/Board, independência orçamentária e direito de escalar exceções de risco sem retaliação",
+        "A. Declaração de que o programa reporta ao CFO para garantir controle financeiro das despesas de segurança",
+        "D. Transferência completa de responsabilidade de segurança para o departamento de TI/Infraestrutura",
+        "C. Limitação de escopo apenas a controles técnicos, excluindo questões organizacionais e processuais"
+      ],
+      "correct": 0,
+      "justification_correct": "COBIT 2019 e SEC guidance (para empresas reguladas) exigem charter com reporte C-level direto, independência orçamentária e proteção contra retaliação. Isso garante que decisões de risco sejam tomadas sem viés comercial imediato.",
+      "justification_wrong": "Reporte ao CFO cria viés financeiro. Escopo técnico ignora governance. TI sob TI elimina independência necessária para desafiar decisões inadequadas de risco."
+    },
+    {
+      "num": 21,
+      "text": "Uma organização implementa um framework de governança de segurança alinhado à estratégia de negócio. O CISO identifica que a atual estrutura de tomada de decisão não permite escalação rápida de riscos críticos ao board. Qual abordagem MELHOR atende aos princípios de governança estabelecidos pelo COBIT 2019 e CISM?",
+      "tag": "Security Governance Framework & Board Escalation",
+      "options": [
+        "D. Manter a estrutura atual e aumentar frequência de relatórios ao board sem formalizar comitês",
+        "C. Criar um grupo de work ad-hoc sempre que surge risco crítico, sem estrutura permanente",
+        "A. Estabelecer um comitê de segurança estratégico com representantes do board, executivos e CISO para decisões críticas e escalação estruturada",
+        "B. Delegar todas as decisões de risco ao CISO, eliminando intermediários para acelerar respostas"
+      ],
+      "correct": 2,
+      "justification_correct": "COBIT 2019 e CISM exigem estrutura formal de governança com segregação de responsabilidades. Um comitê estratégico permanente com representação do board garante alinhamento entre segurança e objetivos de negócio, escalação estruturada e decisões colegiadas em riscos críticos.",
+      "justification_wrong": "B ignora necessidade de supervisão do board; C compromete consistência decisória; D mantém gap de governança sem resolver falta de escalação formal e estruturada."
+    },
+    {
+      "num": 22,
+      "text": "Uma organização regulada por múltiplas jurisdições (LGPD, GDPR, PCI-DSS) está revendo sua hierarquia de políticas de segurança. O framework atual apresenta conflitos entre políticas corporativas e requisitos locais. Conforme ISO 27001:2022 e CISM, qual estrutura é MAIS apropriada?",
+      "tag": "Security Policies Hierarchy & Regulatory Compliance",
+      "options": [
+        "C. Manter políticas separadas por jurisdição sem integração, evitando complexidade de alinhamento",
+        "A. Criar políticas genéricas corporativas que cobrem menor denominador comum, deixando exceções para cada jurisdição conforme necessário",
+        "D. Subordinar todas as políticas corporativas aos requisitos PCI-DSS por ser mais restritivo",
+        "B. Implementar hierarquia com política-corporativa-base + políticas específicas por jurisdição/regulação, com matriz de rastreabilidade de requisitos"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 seção 5.2 e CISM exigem documentação estruturada de políticas com rastreabilidade a requisitos. Hierarquia clara com camada corporativa + políticas específicas por contexto regulatório garante cobertura completa, auditoria eficiente e conformidade integrada.",
+      "justification_wrong": "A não garante conformidade específica por jurisdição; C impossibilita auditoria consolidada; D cria restrições desnecessárias onde outras regulações são menos rigorosas."
+    },
+    {
+      "num": 23,
+      "text": "O CISO necessita demonstrar o ROI do programa de segurança ao board trimestral. Qual conjunto de KPIs e métricas MELHOR se alinha com CISM Domain 1 e representa maturidade de governança?",
+      "tag": "Governance Metrics & Reporting",
+      "options": [
+        "D. Score de satisfação dos usuários com políticas de segurança e número de campanhas de awareness",
+        "A. Quantidade total de incidentes detectados, custo de ferramentas de segurança e número de treinamentos realizados",
+        "B. Percentual de risco mitigado vs. apetite de risco definido, tempo médio para remediar vulnerabilidades críticas, conformidade regulatória (%), cobertura de controles vs. plano estratégico",
+        "C. Apenas métricas técnicas: % de vulnerabilidades críticas corrigidas, tempo de detecção/resposta, throughput de logs"
+      ],
+      "correct": 2,
+      "justification_correct": "CISM enfatiza métricas que conectam segurança a objetivos de negócio. KPIs em B refletem maturidade: alinhamento com apetite de risco, eficiência operacional, conformidade regulatória e cobertura estratégica—essenciais para board reporting.",
+      "justification_wrong": "A mistura atividades com resultados de negócio; C focado apenas em tática sem visão estratégica; D não mensura efetividade de controles contra objetivos."
+    },
+    {
+      "num": 24,
+      "text": "Uma organização implementa programa de governança de terceiros com 150+ fornecedores. O CISO precisa definir critérios de classificação de risco e escopo de avaliação diferenciado. Segundo CISM e ISO 27001:2022 Apêndice A.15, qual abordagem é MAIS apropriada?",
+      "tag": "Third-Party Governance & Risk Management",
+      "options": [
+        "A. Aplicar mesmo nível de avaliação e contratos a todos os fornecedores, independente de acesso a ativos críticos",
+        "D. Transferir toda responsabilidade de conformidade ao fornecedor via cláusula contratual genérica",
+        "C. Realizar avaliações rigorosas apenas para fornecedores de TI, negligenciando demais categorias",
+        "B. Classificar terceiros por: (1) tipo de acesso/dados manipulados, (2) criticidade para continuidade, (3) perfil de risco; aplicar avaliações proporcionais"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO 27001:2022 Apêndice A.15 e CISM exigem avaliação de risco proporcional de terceiros. Classificação por criticidade, acesso a dados/sistemas e perfil permite focar recursos em fornecedores de maior risco enquanto mantém governança eficiente.",
+      "justification_wrong": "A é ineficiente e expõe riscos; C ignora terceiros não-TI que manipulam dados sensíveis; D não estabelece accountability clara."
+    },
+    {
+      "num": 25,
+      "text": "O programa de segurança enfrenta baixa aderência a políticas (50% em controles críticos). O CISO analisa que a causa raiz é desconexão entre mensagem de segurança e cultura organizacional. Qual iniciativa de governança MELHOR aborda cultura de segurança conforme CISM Domain 1?",
+      "tag": "Security Culture & Awareness Governance",
+      "options": [
+        "C. Publicar política de segurança em intranet e considerar tarefa concluída",
+        "B. Solicitar ao board que endosse publicamente segurança como valor corporativo; integrar segurança em avaliações de desempenho; reconhecer comportamentos seguros; envolver lideranças em storytelling de risco",
+        "D. Terceirizar programa de awareness para consultor externo especializado",
+        "A. Intensificar campanhas de treinamento obrigatório trimestral com testes punitivos para usuários"
+      ],
+      "correct": 1,
+      "justification_correct": "CISM enfatiza que cultura de segurança requer engajamento da liderança e alinhamento com objetivos corporativos. Endosso do board, integração em avaliações e reconhecimento transformam segurança de custo em valor—mudança comportamental sustentável.",
+      "justification_wrong": "A gera fadiga de treinamento sem mudança cultural; C é passivo; D transfere responsabilidade que deve ser interna à governança."
+    },
+    {
+      "num": 26,
+      "text": "Uma organização multinacional implementa um modelo de governança de segurança descentralizado, onde cada região geográfica possui autonomia na definição de políticas. O CISO identifica inconsistências nas abordagens de tratamento de risco entre regiões. Qual ação melhor alinha governança com estratégia empresarial?",
+      "tag": "security governance framework & alignment",
+      "options": [
+        "D. Transferir responsabilidade de governança para cada CIO regional",
+        "C. Implementar auditorias trimestrais sem modificar estrutura existente",
+        "A. Estabelecer framework centralizado com diretrizes obrigatórias baseadas em COBIT 5, permitindo customização local dentro de parâmetros aprovados",
+        "B. Permitir total autonomia regional mantendo apenas conformidade regulatória local"
+      ],
+      "correct": 2,
+      "justification_correct": "COBIT 5 recomenda estrutura de governança integrada com cascata de objetivos. Framework centralizado com flexibilidade local balanceia risco corporativo com necessidades regionais, assegurando alinhamento estratégico e consistência de controles conforme ISO/IEC 27014.",
+      "justification_wrong": "Autonomia total gera inconsistência de risco. Auditorias sem ação corretiva não resolvem raiz. Transferência para CIO desvincula segurança da estratégia de negócio e da cadeia de accountability do CISO."
+    },
+    {
+      "num": 27,
+      "text": "O security steering committee de uma instituição financeira deve validar trade-offs entre implementação de autenticação multifator (MFA) obrigatória versus redução de fricção de UX para sistemas críticos. Qual abordagem reflete melhor governança de risco?",
+      "tag": "security steering committee & roles/responsibilities",
+      "options": [
+        "B. Comitê aprova MFA; CRO valida apetite de risco; Negócio aceita impacto operacional; decisão documentada com critérios de desempenho",
+        "C. Board decide baseado em conformidade normativa exclusivamente",
+        "D. Usuários finais votam sobre adoção de MFA",
+        "A. Security aprova MFA; TI/Operações implementa sem envolver negócio"
+      ],
+      "correct": 0,
+      "justification_correct": "Governança efetiva exige participação multifuncional: security (técnico), CRO (risco), negócio (impacto). COSO II e ISO 31000 exigem documentação de decisões com métricas. Critérios mensuráveis permitem revisão periódica conforme ISACA guidance.",
+      "justification_wrong": "Decisão unilateral de security ignora governança. Board sem dados técnicos cria decisões desalinhadas. Votação de usuários não é governance modelo. Conformidade isolada não endereça risco."
+    },
+    {
+      "num": 28,
+      "text": "Uma organização estrutura sua política de segurança em camadas: nível estratégico, nível tático e nível operacional. Uma filial questiona por que norma operacional (nível 3) contradiz diretriz tática (nível 2) em requisito de senha. Como o CISO deve resolver alinhamento?",
+      "tag": "security policies hierarchy",
+      "options": [
+        "D. Remover política tática por ser muito restritiva",
+        "C. Manter ambas políticas e deixar filial escolher qual seguir",
+        "B. Auditar cadeia de aprovação; validar se exceção está aprovada por governance; harmonizar ou documentar waiver formal com risco aceitável",
+        "A. Revogar política operacional e impor diretriz tática globalmente sem exceções"
+      ],
+      "correct": 2,
+      "justification_correct": "ISO/IEC 27001:2022 e ISACA exigem hierarquia clara e consistência. Contradições indicam falha de governance. Auditoria de aprovação valida autoridade. Waivers formais (risk acceptance) documentam decisões conscientes, mantendo integridade de framework conforme NIST CSF.",
+      "justification_wrong": "Imposição unilateral sem análise desconsidera contexto. Manter contradição viabiliza non-compliance seletivo. Remover nível tático elimina controle necessário. Nenhuma destas mantém governance integrity."
+    },
+    {
+      "num": 29,
+      "text": "Ao implementar governança de terceiros críticos (outsourcing de datacenters), qual mecanismo melhor assegura alinhamento contínuo com estratégia de segurança?",
+      "tag": "third-party governance",
+      "options": [
+        "D. Implementar monitoramento técnico exclusivo via SIEM do terceiro",
+        "A. Auditoria SOC 2 Type II anual com relatório aceito como evidência suficiente de conformidade",
+        "B. Incluir no contrato: KPIs de segurança alinhados a objetivos corporativos, revisão bienal de risco, cláusulas de auditoria ativa, métricas compartilhadas em steering committee",
+        "C. Assumir conformidade após aprovação inicial de segurança"
+      ],
+      "correct": 2,
+      "justification_correct": "ISACA GTAG (Guidance for IT-related Third-party Risk Management) e ISO 27001:2022 exigem governança ativa contínua. KPIs mensuráveis, revisão periódica e escalação estruturada garantem accountability. Steering committee oversight mantém alinhamento estratégico dinâmico.",
+      "justification_wrong": "SOC 2 é snapshot, não governance contínua. Aprovação inicial não garante risco permanente. SIEM sem governança contratual não vincula terceiro a objetivos. Nenhuma substitui mecanismo de governance estruturado."
+    },
+    {
+      "num": 30,
+      "text": "Uma organização define métricas de governança de segurança. Qual conjunto de KPIs melhor evidencia efetividade de governança segundo modelos normativos?",
+      "tag": "governance metrics and reporting",
+      "options": [
+        "C. Quantidade de patches aplicados; volume de logs coletados; número de credenciais gerenciadas",
+        "B. Tempo de resolução médio de riscos; % de políticas atualizadas conforme ciclo aprovado; aderência a decisões de steering committee; custo de incidents vs. investimento preventivo",
+        "A. Número de vulnerabilidades encontradas; investimento em segurança; horas de treinamento",
+        "D. Satisfação de auditores externos; conformidade normativa apenas (% checklist)"
+      ],
+      "correct": 1,
+      "justification_correct": "COBIT 5, ISACA Metrics e COSO exigem KPIs orientados a resultados governance (efetividade vs. atividade). Métricas de governança medem: velocidade de decisão, cumprimento de diretrizes, ROI preventivo e accountability. Indicadores balanceados refletem saúde executiva.",
+      "justification_wrong": "Atividades (A, C) não medem governança efetiva. Satisfação externa sem métricas internas (D) é reativa. Combinação de lagging (incidents) e leading (políticas, steering compliance) é exigida por framework normativo para demonstrar controle."
+    },
+    {
+      "num": 31,
+      "text": "Uma organização está implementando um framework de governança de segurança da informação alinhado à estratégia de negócios. O CISO deve estabelecer métricas para demonstrar o valor da segurança aos stakeholders executivos. Qual abordagem é MAIS efetiva para garantir alinhamento estratégico contínuo?",
+      "tag": "Alinhamento com Estratégia de Negócios",
+      "options": [
+        "A. Implementar balanced scorecard com KPIs de segurança ligados aos objetivos de negócio, revisados trimestralmente pelo comitê de direção",
+        "B. Reportar mensalmente o número de vulnerabilidades corrigidas e incidentes detectados ao board",
+        "D. Realizar avaliações de risco ad hoc sempre que novos projetos tecnológicos forem iniciados",
+        "C. Conduzir auditorias anuais de conformidade regulatória e documentar os resultados"
+      ],
+      "correct": 0,
+      "justification_correct": "ISACA CISM recomenda métricas de governança vinculadas a objetivos estratégicos, revisadas periodicamente por comitês executivos. Balanced scorecard alinha segurança aos resultados de negócio, demonstrando ROI e justificando investimentos em segurança.",
+      "justification_wrong": "Abordagens reativas (B, D) não demonstram alinhamento estratégico contínuo. Compliance isolado (C) não garante suporte executivo nem evidencia contribuição ao negócio."
+    },
+    {
+      "num": 32,
+      "text": "O comitê de direção de segurança (steering committee) de uma organização multinacional necessita estabelecer responsabilidades claras entre CISO, CRO, CFO e board. Conforme o framework CISM, qual responsabilidade é EXCLUSIVAMENTE do CISO?",
+      "tag": "Papéis e Responsabilidades (CISO, Board, Executivos)",
+      "options": [
+        "C. Definição da apetência ao risco de segurança e ratificação de políticas de segurança críticas",
+        "A. Aprovação orçamentária anual para programas de segurança e decisão de aceitação de risco corporativo",
+        "B. Desenvolvimento, implementação e manutenção da estratégia e programa de segurança da informação",
+        "D. Supervisão do cumprimento regulatório e comunicação de violações a órgãos reguladores"
+      ],
+      "correct": 2,
+      "justification_correct": "ISACA CISM estabelece que o CISO é responsável pela concepção, implementação e operacionalização do programa de segurança. Board aprova estratégia; CISO executa. CFO aloca recursos; CISO as utiliza conforme plano aprovado.",
+      "justification_wrong": "Aprovação orçamentária (A) é do board/CFO. Definição de apetência ao risco (C) é do board. Comunicação com reguladores (D) é responsabilidade compartilhada, com coordenação do compliance/legal."
+    },
+    {
+      "num": 33,
+      "text": "Uma organização está estruturando sua hierarquia de políticas de segurança. A política corporativa estabelece 'todos os dados devem ser criptografados em repouso'. Qual documento deve detalhar os padrões técnicos, algoritmos específicos e procedimentos de implementação desta exigência?",
+      "tag": "Hierarquia de Políticas de Segurança",
+      "options": [
+        "D. Registro de Conformidade Regulatória (Compliance Registry)",
+        "B. Padrão de Segurança (Security Standard) ou Guideline técnico",
+        "A. Política de Segurança Executiva (Executive Security Policy)",
+        "C. Plano de Tratamento de Risco (Risk Treatment Plan)"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001 e ISACA CISM definem Standards como documentos que especificam requisitos técnicos e procedimentais para implementar políticas. Guidelines fornecem orientações práticas. Políticas são princípios estratégicos; standards são operacionais.",
+      "justification_wrong": "Política Executiva (A) é nível estratégico, não técnico. Risk Treatment Plan (C) aborda mitigação de riscos específicos. Compliance Registry (D) documenta conformidade, não implementação técnica."
+    },
+    {
+      "num": 34,
+      "text": "O programa de segurança de uma organização financeira deve incluir governança de terceiros (suppliers, provedores cloud, consultores). Conforme CISM, qual é a responsabilidade PRIMÁRIA da organização em relação à segurança implementada por terceiros?",
+      "tag": "Governança de Terceiros",
+      "options": [
+        "A. Responsabilidade exclusiva do terceiro sobre todos os controles de segurança, com auditoria anual",
+        "B. Responsabilidade compartilhada: estabelecer requisitos, monitorar conformidade contínua e manter accountability da organização",
+        "D. Implementar redundância de terceiros para cada serviço crítico e migrar dados anualmente",
+        "C. Terceirizar completamente a gestão de segurança e confiar em certificações (ISO 27001, SOC 2)"
+      ],
+      "correct": 1,
+      "justification_correct": "ISACA CISM e ISO/IEC 27001 (Anexo A.15) estabelecem que organizações mantêm responsabilidade final pela segurança, mesmo com terceiros. Exigem due diligence, contratos SLAs de segurança e monitoramento contínuo. Certificações não eliminam accountability.",
+      "justification_wrong": "Responsabilidade exclusiva (A) viola princípio de accountability. Terceirização completa (C) não elimina risco da organização. Redundância/migração anual (D) é operacional, não estratégico de governança."
+    },
+    {
+      "num": 35,
+      "text": "Uma organização implementa programa de segurança e consciência (awareness and culture). Para que a iniciativa seja efetiva do ponto de vista de governança, qual indicador MELHOR reflete mudança sustentável na cultura de segurança?",
+      "tag": "Cultura de Segurança e Awareness",
+      "options": [
+        "C. Publicação de newsletter mensal de segurança e realização de simulados de phishing trimestrais",
+        "B. Redução de 50% em incidentes de segurança causados por erro humano e aumento de reportes voluntários de vulnerabilidades",
+        "A. Aumento de 90% na taxa de conclusão de treinamento obrigatório de segurança anualmente",
+        "D. Certificação de 80% dos colaboradores em cursos online de segurança da informação"
+      ],
+      "correct": 1,
+      "justification_correct": "ISACA CISM enfatiza que cultura sustentável se mede por comportamento (menos erros, reportes voluntários) não atividades. Redução de incidentes e participação voluntária evidenciam internalização de valores de segurança pela organização.",
+      "justification_wrong": "Conclusão de treinamento (A) mede compliance, não mudança comportamental. Newsletter/simulados (C) são atividades, não resultados. Certificações (D) indicam conhecimento teórico, não aplicação prática na cultura."
+    },
+    {
+      "num": 36,
+      "text": "Uma organização multinacional implementa um framework de governança de segurança alinhado à estratégia corporativa. O CISO identifica que as políticas de segurança em diferentes regiões não estão harmonizadas com os objetivos globais de negócio. Qual deve ser a abordagem PRIMARY para resolver esta desconexão?",
+      "tag": "Security Governance Framework e Business Alignment",
+      "options": [
+        "A. Estabelecer um comitê de direcionamento de segurança que integre stakeholders de negócio e TI para revisar e alinhar políticas com estratégia corporativa",
+        "D. Delegar responsabilidade aos gestores locais para definirem suas próprias políticas",
+        "C. Manter políticas regionais independentes e aceitar as diferenças como variações aceitáveis",
+        "B. Implementar ferramentas de compliance automatizadas em todas as regiões sem modificações"
+      ],
+      "correct": 0,
+      "justification_correct": "ISACA CISM recomenda um comitê de direcionamento de segurança (steering committee) para alinhar governança com estratégia de negócio. Este comitê integra liderança executiva, negócio e TI, garantindo que políticas suportem objetivos corporativos em contexto multinacional.",
+      "justification_wrong": "Automação sem contexto estratégico, políticas isoladas e delegação sem oversight executivo violam princípios de governança centralizada e alinhamento, conforme ISO/IEC 27001:2022 e ISACA frameworks."
+    },
+    {
+      "num": 37,
+      "text": "Durante a revisão de um programa de segurança, o board solicita ao CISO métricas que demonstrem o valor da governança de segurança para a organização. Qual combinação de métricas MELHOR reflete ROI de governança e suporta decisões estratégicas?",
+      "tag": "Governance Metrics and Reporting",
+      "options": [
+        "B. Redução de riscos de negócio (valor mitigado), custo de incidentes evitados, conformidade regulatória e alinhamento com objetivos corporativos",
+        "C. Número total de políticas documentadas, conformidade de treinamento em porcentagem e tempo médio de detecção",
+        "D. Gastos em segurança, quantidade de tecnologias implementadas e número de vulnerabilidades encontradas",
+        "A. Quantidade de patches aplicados, número de logs gerados e volume de tráfego de rede bloqueado"
+      ],
+      "correct": 0,
+      "justification_correct": "ISACA CISM enfatiza métricas orientadas a negócio: redução de risco, valor economizado, conformidade e alinhamento estratégico. Estas demonstram ROI tangível e suportam decisões executivas, conforme CobiT 2019 e NIST CSF.",
+      "justification_wrong": "Métricas técnicas operacionais (patches, logs, políticas) não demonstram valor estratégico ou ROI. Métricas de atividade não correlacionam com redução de risco ou impacto de negócio para decisões executivas."
+    },
+    {
+      "num": 38,
+      "text": "Uma organização experimenta resistência cultural à implementação de novas políticas de segurança. O CISO reconhece que a cultura de segurança deficiente afeta a eficácia do programa. Qual SEQUÊNCIA de ações MELHOR constrói uma cultura de segurança madura?",
+      "tag": "Security Culture and Awareness",
+      "options": [
+        "D. Focar apenas em treinamento técnico de TI, ignorando aspectos comportamentais e culturais",
+        "C. Distribuir políticas por email e esperar que funcionários as leiam e sigam automaticamente",
+        "A. Implementar campanhas obrigatórias de treinamento, aumentar auditorias e impor punições para não conformidade",
+        "B. Comunicar a visão de segurança da liderança, integrar segurança nos valores corporativos, reconhecer comportamentos positivos e reforçar continuamente através de narrativa consistente"
+      ],
+      "correct": 3,
+      "justification_correct": "ISACA CISM reconhece que cultura de segurança requer engajamento executivo, comunicação estratégica, reconhecimento positivo e reforço contínuo. Alinhado com NIST SSVC e ISO 27001:2022 em gestão de cultura.",
+      "justification_wrong": "Abordagem punitiva causa resistência. Email passivo é ineficaz. Focar apenas TI ignora que 90% de incidentes envolvem fator humano. Cultura requer liderança visível e reforço comportamental."
+    },
+    {
+      "num": 39,
+      "text": "Ao estabelecer uma Charter do Programa de Segurança, o CISO deve garantir que ela articule claramente autoridade, responsabilidades e escopo. Qual elemento CRÍTICO deve estar explicitamente definido na Charter para garantir efetividade?",
+      "tag": "Security Program Charter e Roles and Responsibilities",
+      "options": [
+        "B. Autoridade delegada ao CISO para tomar decisões de segurança, accountability pelo programa, orçamento dedicado e escalação para o board",
+        "A. Lista detalhada de todas as vulnerabilidades conhecidas na organização",
+        "D. Nomes específicos de todos os funcionários responsáveis por cada tarefa de TI",
+        "C. Apenas descrição de políticas técnicas e procedimentos operacionais"
+      ],
+      "correct": 0,
+      "justification_correct": "ISACA CISM exige que Charter defina autoridade executiva, accountability clara, recursos financeiros e escalação para board. Isto confere legitimidade e suporte executivo necessários, conforme CobiT 2019 e ISO 27001:2022.",
+      "justification_wrong": "Vulnerabilidades mudam constantemente. Procedimentos operacionais não definem governança. Nomes específicos criam inflexibilidade. Charter deve estabelecer estrutura de autoridade permanente e suporte executivo."
+    },
+    {
+      "num": 40,
+      "text": "Uma organização adquire terceirizadores (vendors) que processam dados críticos. O framework de governança deve estabelecer controles para garantir conformidade destes terceiros com políticas de segurança. Qual abordagem INTEGRA MELHOR governança de terceiros ao programa de segurança?",
+      "tag": "Third-Party Governance",
+      "options": [
+        "C. Permitir que terceiros definam seus próprios padrões de segurança sem interferência",
+        "B. Integrar avaliação de risco de terceiros, contratos com cláusulas de segurança, auditorias periódicas e direito de inspeção; alinhar com política de terceiros da organização",
+        "D. Realizar avaliação inicial e depois ignorar monitoramento contínuo",
+        "A. Confiar na certificação ISO 27001 do vendor e não realizar avaliações adicionais"
+      ],
+      "correct": 1,
+      "justification_correct": "ISACA CISM e ISO 27001:2022 exigem governança contínua de terceiros: avaliação de risco, contratos vinculantes, auditorias periódicas e direito de inspeção. Certificação inicial não elimina responsabilidade organizacional contínua.",
+      "justification_wrong": "Certificação isolada é insuficiente. Permitir autonomia elimina accountability. Avaliação única não detecta degradação ou mudanças. Governança de terceiros é processo contínuo, não atividade pontual."
+    },
+    {
+      "num": 41,
+      "text": "Uma organização implementa um framework de governança de segurança alinhado à ISO 27001 e COBIT 2019. O CISO precisa estabelecer métricas de governança que demonstrem o valor da segurança ao conselho. Qual abordagem MELHOR equilibra conformidade regulatória com objetivos de negócio?",
+      "tag": "Governance Framework e Alignment com Estratégia de Negócio",
+      "options": [
+        "A. Implementar balanced scorecard com KPIs alinhados a objetivos estratégicos, combinando métricas de conformidade, risco e value-at-risk",
+        "B. Focar exclusivamente em métricas de conformidade com reguladores para atender requisitos legais",
+        "C. Utilizar apenas indicadores de incidentes de segurança para demonstrar efetividade",
+        "D. Estabelecer métricas isoladas por departamento sem conexão com strategy executiva"
+      ],
+      "correct": 0,
+      "justification_correct": "COBIT 2019 e ISO 27001 prescrevem alinhamento entre governança de segurança e estratégia corporativa. Balanced scorecard com KPIs multi-dimensionais (conformidade, risco operacional, value) demonstra ROI de segurança ao board, conforme ITGI governance framework e NIST Cybersecurity Framework.",
+      "justification_wrong": "Métricas isoladas não demonstram impacto estratégico. Foco exclusivo em conformidade ignora value creation. Indicadores apenas de incidentes são reativos, não prospectivos como exigem frameworks modernos de governança executiva."
+    },
+    {
+      "num": 42,
+      "text": "O comitê de direcionamento de segurança (Security Steering Committee) de uma instituição financeira inclui: CISO, CRO, CFO, VP de Operações e board sponsor. Qual responsabilidade PRIMÁRIA deste comitê, segundo CISM governance best practices?",
+      "tag": "Security Steering Committee e Roles/Responsibilities",
+      "options": [
+        "C. Gerenciar dia-a-dia operações de SOC e resposta a incidentes",
+        "D. Substituir o CIO nas decisões de arquitetura de TI e infraestrutura",
+        "B. Alinhar investimentos em segurança com apetite de risco corporativo e prioridades estratégicas",
+        "A. Executar testes técnicos de penetração e validação de controles de segurança"
+      ],
+      "correct": 2,
+      "justification_correct": "Steering committees de segurança (per ISACA CISM guidance) estabelecem governança executiva, alinhando portfolio de segurança com risk appetite, alocando recursos estratégicos e definindo direcionamento. Responsabilidade fiduciária do board exige oversight de risco material, não execução operacional.",
+      "justification_wrong": "Testes técnicos e SOC são funções operacionais do CISO/equipes. Substituição de CIO viola segregação de responsabilidades e governance principles. Essas atividades não são accountability primária de steering committees executivos."
+    },
+    {
+      "num": 43,
+      "text": "Uma multinacional define sua hierarquia de políticas de segurança conforme ISO 27001:2022 e COBIT framework. A estrutura inclui: Security Charter, Information Security Policy, Standard e Procedures. Qual sequência CORRETA de autoridade e escopo?",
+      "tag": "Security Policies Hierarchy e Program Charter",
+      "options": [
+        "A. Charter (visão 10 anos) → Policy (direcionamento multi-anual) → Standards (requisitos técnicos) → Procedures (execução operacional)",
+        "C. Standards (marcos técnicos mandatórios) → Policy (conformidade) → Charter (aprovação board) → Procedures (guias)",
+        "D. Procedures (operacionais) → Standards (técnicos) → Policy (legal) → Charter (estratégico futuro)",
+        "B. Policy (requisitos obrigatórios) → Charter (visão geral) → Standards (orientações) → Procedures (documentação opcional)"
+      ],
+      "correct": 0,
+      "justification_correct": "ISO 27001 e ISACA governance prescrevem: Charter (aprovação executiva, direcionamento plurianual) → Policy (mandatos de segurança info) → Standards (implementação técnica obrigatória) → Procedures (workflows operacionais). Hierarquia respeta autoridade, escopo e temporalidade conforme CISM framework.",
+      "justification_wrong": "Ordem inversa ou paralela viola princípios de governança hierárquica. Procedures como base nega visão estratégica. Charter após Policy inverte accountability executiva. Procedures opcionais contradizem ISO 27001 exigência de conformidade programática."
+    },
+    {
+      "num": 44,
+      "text": "Uma empresa implementa programa de third-party risk governance para fornecedores críticos (cloud, payment processors, consultores). Qual abordagem MELHOR atende CISM e ISO 27001 requisitos de terceirização segura?",
+      "tag": "Third-Party Governance e Supply Chain Risk",
+      "options": [
+        "D. Realizar auditorias anuais genéricas sem documentação de achados ou planos de remediação",
+        "B. Implementar due diligence inicial, contratos SLA com cláusulas de segurança, auditorias periódicas e KRIs de terceiros",
+        "C. Repassar responsabilidade integral de conformidade ao fornecedor via outsourcing contrato",
+        "A. Confiar em certificações ISO 27001 do fornecedor, dispensando auditorias internas"
+      ],
+      "correct": 1,
+      "justification_correct": "CISM e ISO 27001:2022 (A.15 - Supplier Relationships) exigem: avaliação inicial (due diligence), contratos com SLAs/cláusulas segurança, monitoring contínuo (KRIs), auditorias. Responsabilidade de segurança permanece com organização mesmo com terceiros (non-transferable accountability).",
+      "justification_wrong": "Certificações externas não dispensam oversight. Full passthrough responsabilidade viola governance principles. Auditorias sem documentação são inefetivas. Nenhuma alternativa atende required governance rigor para terceiros críticos."
+    },
+    {
+      "num": 45,
+      "text": "O CISO de uma instituição regulada (LGPD, regulação bancária) deve reportar status de governança de segurança ao conselho. Qual componente é OBRIGATÓRIO conforme CISM governance framework e NIST Cybersecurity Framework governance?",
+      "tag": "Governance Metrics, Reporting e Regulatory Compliance",
+      "options": [
+        "C. Listagem de todos os incidentes operacionais sem análise de impacto ou trend",
+        "A. Relatório técnico mensal de patches aplicados e logs de firewall",
+        "B. Dashboard executivo com risk posture, compliance status, capital de segurança alocado e tendências de maturity",
+        "D. Comunicado anual pós-auditoria externa apenas se houver achados críticos"
+      ],
+      "correct": 2,
+      "justification_correct": "CISM, NIST e regulação (LGPD art. 5; resoluções bancárias) exigem reporting executivo periódico (risco, conformidade, investimento, maturity). Dashboard alinha board decision-making, demonstra governance accountability e conformidade com duty of care. Frequência mínima: trimestral.",
+      "justification_wrong": "Relatórios técnicos são operacionais, não governance. Incidentes sem análise não informam risk posture. Reportagem apenas pós-achados violam governance transparency e controles preventivos. Estas alternativas não atendem oversight fiduciário exigido por frameworks e reguladores."
+    },
+    {
+      "num": 46,
+      "text": "Uma organização está implementando um framework de governança de segurança alinhado com sua estratégia de negócios. O CISO deve estabelecer métricas de governança que demonstrem valor ao conselho. Qual abordagem MELHOR integra objetivos de negócio com indicadores de segurança?",
+      "tag": "Métricas de Governança e Alinhamento Estratégico",
+      "options": [
+        "C. Adotar KPIs baseados apenas em conformidade regulatória e auditorias externas",
+        "D. Estabelecer métricas de segurança independentes da estratégia corporativa para evitar conflitos",
+        "B. Implementar exclusivamente métricas técnicas de incidentes e vulnerabilidades reportadas mensalmente ao board",
+        "A. Utilizar Balanced Scorecard com perspectivas financeira, cliente, processos internos e aprendizado, mapeando riscos de segurança a objetivos estratégicos conforme COBIT 2019"
+      ],
+      "correct": 3,
+      "justification_correct": "Balanced Scorecard (COBIT 2019) integra perspectivas múltiplas alinhando segurança à estratégia. Mapeia riscos a objetivos corporativos, fornecendo visibilidade ao conselho sobre valor de segurança. Referência: ISACA COBIT 2019 Framework e CISM exam content outline.",
+      "justification_wrong": "Opção B ignora alinhamento estratégico; C reduz governança a compliance; D desconecta segurança de negócio, violando princípio fundamental de governança de segurança integrada."
+    },
+    {
+      "num": 47,
+      "text": "O conselho de administração questiona a estrutura do comitê de direção de segurança (Security Steering Committee). O CISO precisa justificar composição que garanta decisões alinhadas ao apetite de risco. Qual estrutura MELHOR atende governança efetiva?",
+      "tag": "Comitê de Direção de Segurança e Estrutura de Governança",
+      "options": [
+        "C. Comitê exclusivamente de executivos C-level sem participação de áreas técnicas",
+        "A. CISO, CFO, CRO, proprietários de negócio principais e representante de TI, com mandato formal e cadência trimestral mínima, conforme ISO/IEC 27014",
+        "D. Equipe de segurança operacional reportando diretamente ao board semanalmente",
+        "B. Apenas CISO e diretor de TI reunindo-se mensalmente para resolver incidentes"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27014 prescreve composição multidisciplinar (CISO, finanças, risco, negócio, TI) com mandato formal e periodicidade definida. Equilibra perspectivas de risco, negócio e técnica. Garante decisões alinhadas ao apetite de risco corporativo.",
+      "justification_wrong": "B reduz escopo e visão estratégica; C exclui expertise técnica necessária; D desestrutura governança e sobrecarrega board com operacional."
+    },
+    {
+      "num": 48,
+      "text": "Uma organização multinacional enfrenta desafios de governança de segurança com fornecedores terceirizados em múltiplas jurisdições. O programa de segurança deve incluir mecanismo de governança para terceiros. Qual abordagem MELHOR reduz risco de conformidade integrada?",
+      "tag": "Governança de Terceiros e Conformidade Regulatória",
+      "options": [
+        "C. Estabelecer requisitos de segurança idênticos para todos os fornecedores independentemente de risco",
+        "B. Confiar em certificações ISO 27001 de terceiros sem avaliação adicional",
+        "D. Permitir fornecedores autodeclarem conformidade sem validação",
+        "A. Implementar modelo de avaliação de risco terceiro (TPRM) com matriz de classificação, SLAs contratuais, auditorias periódicas e cláusulas de remediação conforme ISO/IEC 27036"
+      ],
+      "correct": 3,
+      "justification_correct": "ISO/IEC 27036 estabelece TPRM estruturado: classificação de risco, avaliação, monitoramento contínuo, SLAs contratuais e cláusulas de remediação. Abordagem diferenciada por criticidade reduz risco operacional e regulatório em múltiplas jurisdições.",
+      "justification_wrong": "B assume certificações suficientes; C ineficiente custo-benefício; D falha em diligência devida e controle, violando princípios de governança de risco."
+    },
+    {
+      "num": 49,
+      "text": "O CISO deve estabelecer hierarquia de políticas de segurança que suporte conformidade com regulamentações diversas (LGPD, SOX, HIPAA) mantendo coerência. Qual estrutura hierárquica MELHOR garante governança integrada?",
+      "tag": "Hierarquia de Políticas e Compliance Regulatório",
+      "options": [
+        "D. Políticas apenas para áreas críticas, ignorando controles compensatórios",
+        "A. Política de Segurança Corporativa → Políticas Domínio-Específicas → Procedimentos/Diretrizes → Padrões Técnicos, com mapeamento explícito a requisitos regulatórios conforme ISO/IEC 27001:2022",
+        "B. Uma única política genérica aplicada uniformemente a todos os departamentos",
+        "C. Políticas separadas por regulamentação sem integração, criando redundância"
+      ],
+      "correct": 1,
+      "justification_correct": "ISO/IEC 27001:2022 seção 5.2 prescreve hierarquia estruturada: corporativa (visão geral), domínio-específica (segmentação), procedimentos (implementação), padrões (técnicos). Mapeamento explícito a regulamentações evita lacunas e redundâncias.",
+      "justification_wrong": "B ignora especificidades regulatórias; C cria inconsistência e overhead administrativo; D deixa descobertas de risco e falha em auditoria."
+    },
+    {
+      "num": 50,
+      "text": "Uma organização implementa programa de conscientização de segurança como elemento de governança. O CISO precisa demonstrar que cultura de segurança reduz risco comportamental. Qual métrica de governança MELHOR evidencia impacto cultural?",
+      "tag": "Cultura de Segurança e Métricas de Governança",
+      "options": [
+        "A. Indicadores comportamentais integrados: taxa de reporte de incidentes, percentual de conclusão de treinamento + avaliação cultural semestral + redução de incidentes relacionados a erro humano, conforme NIST Cybersecurity Culture Framework",
+        "B. Apenas percentual de conclusão de treinamento obrigatório anual",
+        "D. Pesquisa de satisfação com programa de conscientização",
+        "C. Número absoluto de emails de phishing reportados sem contexto de redução"
+      ],
+      "correct": 0,
+      "justification_correct": "NIST Cybersecurity Culture Framework integra comportamento (reporte voluntário), educação (conclusão/avaliação) e resultados (redução de incidentes). Métricas compostas evidenciam mudança cultural efetiva. Conecta consciência a outcomes de risco.",
+      "justification_wrong": "B mede apenas exposição, não internalização; C sem baseline não evidencia impacto; D avalia satisfação, não comportamento de segurança nem redução de risco."
+    }
+  ]
+}
