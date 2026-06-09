@@ -2,7 +2,7 @@
   "cert_id": "cfe",
   "domain_id": "cash_receipts_fraud",
   "domain_code": "S1D03",
-  "domain_name": "S1D03 · Asset Misappropriation — Cash Receipts",
+  "domain_name": "S1D03 · Cash Receipts Fraud",
   "lang": "pt",
   "total": 48,
   "schema": "FractalFlashcard-v1",
@@ -16,529 +16,529 @@
     {
       "id": 1,
       "layer": "F1",
-      "topic": "definicao_manipulacao_recibos",
+      "topic": "cash_receipts_fraud_definition",
       "front": {
-        "pt": "O que é manipulação de recibos no contexto de fraude de recebimentos de caixa?"
+        "pt": "O que é Cash Receipts Fraud?"
       },
       "back": {
-        "pt": "Manipulação de recibos é a alteração, falsificação ou destruição de documentos de recebimento para ocultar o desvio de dinheiro. O fraudador modifica valores, datas ou nomes de clientes nos recibos para que o dinheiro recebido não seja contabilizado corretamente. Exemplo: um vendedor altera um recibo de R$ 500 para R$ 300, mantendo os R$ 200 para si mesmo."
+        "pt": "Apropriação indébita de numerário recebido pela organização antes do registro contábil ou reconhecimento oficial."
       }
     },
     {
       "id": 2,
       "layer": "F1",
-      "topic": "definicao_registro_duplo",
+      "topic": "skimming_definition",
       "front": {
-        "pt": "Como se define o esquema de registro duplo em fraudes de caixa?"
+        "pt": "Defina skimming em fraude de recebimentos."
       },
       "back": {
-        "pt": "Registro duplo é quando uma mesma transação de recebimento é contabilizada duas vezes no sistema, geralmente com valores ou datas diferentes, para criar discrepâncias que mascarem o desvio de fundos. O fraudador explora a falta de reconciliação entre sistemas para que o dinheiro real não coincida com o registrado. É frequente em organizações com múltiplos pontos de venda ou caixas descentralizados."
+        "pt": "Remoção de dinheiro das receitas antes do registro contábil inicial, ocultando transações legítimas."
       }
     },
     {
       "id": 3,
       "layer": "F1",
-      "topic": "definicao_caixa_falsa",
+      "topic": "lapping_definition",
       "front": {
-        "pt": "Qual é o significado de 'caixa falsa' como esquema de apropriação indébita?"
+        "pt": "O que caracteriza lapping em receitas?"
       },
       "back": {
-        "pt": "Caixa falsa é um esquema em que o fraudador cria registros de recebimentos fictícios ou infla valores de vendas genuínas para transferir dinheiro de outro fundo ou cliente para justificar um saldo que não existe. O fraudador registra vendas que nunca ocorreram ou aumenta valores reais para criar aparência de recebimentos legítimos. Exemplo: registrar uma venda de R$ 1.000 quando apenas R$ 600 foram realmente recebidos."
+        "pt": "Aplicação de pagamento de cliente subsequente para cobrir desvio anterior, criando ciclo contínuo de ocultação."
       }
     },
     {
       "id": 4,
       "layer": "F1",
-      "topic": "definicao_remessa_superfaturada",
+      "topic": "cash_register_fraud",
       "front": {
-        "pt": "O que significa remessa superfaturada no contexto de fraude de recebimentos?"
+        "pt": "O que é fraude de caixa registradora?"
       },
       "back": {
-        "pt": "Remessa superfaturada ocorre quando o fraudador registra uma venda por um valor superior ao realmente cobrado do cliente, desviando a diferença para si. É um esquema onde documentação de venda é alterada para refletir montante maior que o efetivamente recebido. Exemplo: um cliente pagou R$ 800 por mercadorias, mas o fraudador registra R$ 1.000, desviando R$ 200."
+        "pt": "Registro de transação inferior ao valor real recebido, com apropriação da diferença pelo operador."
       }
     },
     {
       "id": 5,
       "layer": "F1",
-      "topic": "definicao_criacao_credito_falso",
+      "topic": "fictitious_refunds",
       "front": {
-        "pt": "Como se define a criação de créditos falsos em contas de clientes?"
+        "pt": "Defina reembolsos fictícios em receitas."
       },
       "back": {
-        "pt": "Criação de créditos falsos é quando o fraudador emite notas de crédito fictícias ou indevidas em favor de certos clientes (frequentemente amigos ou familiares) para justificar redução de suas contas a receber ou para ocultar desvios de caixa. Essas notas reduzem o saldo cobrado sem haver devolução real de mercadoria ou compensação legítima. Exemplo: emitir crédito de R$ 300 a um cliente sem justificativa documental válida."
+        "pt": "Registro de devoluções não ocorridas para justificar redução de recebimentos e apropriação de caixa."
       }
     },
     {
       "id": 6,
       "layer": "F1",
-      "topic": "definicao_divertimento_recebimento",
+      "topic": "side_pocket_schemes",
       "front": {
-        "pt": "Qual o significado de desvio intencional de recebimento para conta pessoal?"
+        "pt": "O que são side pocket schemes?"
       },
       "back": {
-        "pt": "Desvio intencional de recebimento para conta pessoal é quando o fraudador redireciona dinheiro recebido de clientes legítimos para sua própria conta bancária pessoal, em vez de depositá-lo na conta da empresa. O fraudador mantém registros que indicam recebimento pelas contas a receber da empresa, criando discrepância entre registros contábeis e realidade de caixa. É diferente do skimming porque aqui há depósito em conta pessoal identificável."
+        "pt": "Manutenção de caixa paralelo com receitas desviadas, separado dos registros oficiais."
       }
     },
     {
       "id": 7,
       "layer": "F1",
-      "topic": "definicao_postagem_atrasada",
+      "topic": "window_dressing_receipts",
       "front": {
-        "pt": "O que é postagem atrasada de recebimentos intencional no contexto de fraude?"
+        "pt": "O que é window dressing em receitas?"
       },
       "back": {
-        "pt": "Postagem atrasada intencional é quando o fraudador retém recebimentos legítimos de clientes por período determinado antes de registrá-los no sistema contábil, utilizando o dinheiro em espécie para fins pessoais durante esse período. Diferencia-se do atraso administrativo normal pelo propósito fraudulento e retenção deliberada. Exemplo: receber dinheiro na segunda-feira mas apenas registrar na quinta-feira para usar o numerário durante esse período."
+        "pt": "Manipulação de timing de depósitos para criar aparência de receitas maiores em períodos específicos."
       }
     },
     {
       "id": 8,
       "layer": "F1",
-      "topic": "definicao_desconto_nao_autorizado",
+      "topic": "account_receivable_manipulation",
       "front": {
-        "pt": "Como se define a concessão de descontos não autorizados como método de apropriação indébita?"
+        "pt": "Como se caracteriza manipulação de contas a receber?"
       },
       "back": {
-        "pt": "Concessão de descontos não autorizados é quando o fraudador oferece descontos fictícios ou percentuais acima do permitido a clientes (frequentemente cúmplices) sem autorização gerencial, desviando a diferença para si mesmo. Documentação de venda é alterada para refletir desconto inexistente ou indevido. Exemplo: cliente deve pagar R$ 1.000, fraudador registra desconto de 20% sem autorização e transfere R$ 200 para conta pessoal."
+        "pt": "Alteração de dados de clientes ou valores para mascarar desvios de caixa ou duplicar receitas."
       }
     },
     {
       "id": 9,
       "layer": "F1",
-      "topic": "definicao_omissao_transacao",
+      "topic": "false_credits",
       "front": {
-        "pt": "O que significa omissão deliberada de transações no registro de recebimentos?"
+        "pt": "O que são créditos falsos em receitas?"
       },
       "back": {
-        "pt": "Omissão deliberada de transações é quando o fraudador simplesmente não registra um recebimento no sistema contábil, desviando completamente o dinheiro recebido. Diferencia-se do skimming porque há intencionalidade absoluta de não registrar nada, criando falha na documentação. Exemplo: cliente paga R$ 500 em caixa, fraudador não emite recibo e não registra no sistema, mantendo o dinheiro."
+        "pt": "Registro de abatimentos ou créditos não autorizados para reduzir receita registrada e desviar caixa."
       }
     },
     {
       "id": 10,
       "layer": "F1",
-      "topic": "definicao_destruicao_documentos",
+      "topic": "cash_receipt_journal",
       "front": {
-        "pt": "Qual é o significado de destruição proposital de documentos de recebimento?"
+        "pt": "Defina registro de receita de caixa."
       },
       "back": {
-        "pt": "Destruição proposital de documentos de recebimento é a eliminação intencional de recibos, faturas, comprovantes de depósito ou outros registros que evidenciem recebimento de numerário, para ocultar trilha de auditoria e facilitar apropriação indébita. Fraudador elimina prova documental para impedir rastreamento de fundos. Exemplo: destruir recibos de cartório ou recibos em papel para que não haja registro de recebimentos específicos."
+        "pt": "Livro-razão que documenta todas as entradas de caixa com datas, valores e classificação contábil."
       }
     },
     {
       "id": 11,
       "layer": "F1",
-      "topic": "definicao_confusao_contas_clientes",
+      "topic": "remittance_advice",
       "front": {
-        "pt": "O que é apropriação de recebimentos através de confusão entre contas de clientes?"
+        "pt": "O que é aviso de remessa?"
       },
       "back": {
-        "pt": "Apropriação através de confusão entre contas é quando o fraudador registra propositalmente um recebimento de um cliente na conta de outro cliente diferente, criando desajustes que permitem ocultar desvio de numerário. Confusão intencional difere de erro administrativo pelo propósito fraudulento sistemático. Exemplo: recebimento de R$ 2.000 do cliente A registrado na conta do cliente B, permitindo desvio subsequente do saldo real."
+        "pt": "Documento do cliente indicando qual fatura está sendo paga, essencial para reconciliação de receitas."
       }
     },
     {
       "id": 12,
       "layer": "F1",
-      "topic": "definicao_inflacao_devoluções",
+      "topic": "deposit_in_transit",
       "front": {
-        "pt": "Como se define a inflação fraudulenta de devoluções e ajustes de vendas?"
+        "pt": "Defina depósito em trânsito."
       },
       "back": {
-        "pt": "Inflação fraudulenta de devoluções e ajustes é quando o fraudador registra devoluções de mercadoria ou ajustes de preço fictícios ou superiores ao realmente devolvido/ajustado, para justificar redução do recebimento esperado e desviar a diferença. Documentação de devolução é falsificada ou valores são aumentados deliberadamente. Exemplo: cliente devolveu mercadoria de R$ 300, fraudador registra devolução de R$ 500 para desviar R$ 200."
+        "pt": "Caixa recebido registrado mas ainda não depositado no banco, período vulnerável a desvios."
       }
     },
     {
       "id": 13,
       "layer": "F2",
-      "topic": "distincao_skimming_vs_furto_direto",
+      "topic": "skimming_vs_lapping",
       "front": {
-        "pt": "Qual a diferença fundamental entre skimming e furto direto de caixa em termos de registro contábil?"
+        "pt": "Qual diferença entre skimming e lapping?"
       },
       "back": {
-        "pt": "Skimming remove dinheiro antes do registro contábil (fraude pré-registro), enquanto furto direto remove dinheiro já registrado nos livros (fraude pós-registro). No skimming, as vendas nunca aparecem nos registros; no furto direto, a venda é registrada mas o numerário desaparece. Exemplo: um funcionário escondem uma venda de R$ 500 (skimming) versus registrar a venda mas roubar o dinheiro depois (furto direto)."
+        "pt": "Skimming desvia sem compensação; lapping cobre com receitas posteriores, criando cadeia de fraude."
       }
     },
     {
       "id": 14,
       "layer": "F2",
-      "topic": "distincao_lapping_vs_skimming_recebimentos",
+      "topic": "over_ring_under_ring",
       "front": {
-        "pt": "Como distinguir lapping de skimming quando ambos envolvem recebimentos de clientes?"
+        "pt": "Diferença entre over-ring e under-ring?"
       },
       "back": {
-        "pt": "Lapping é uma série de desvios onde pagamentos de cliente A são creditados à conta de cliente B para ocultar o roubo anterior, criando um esquema em cascata. Skimming é simplesmente não registrar a receita desde o início. Lapping exige manipulação contínua de múltiplas contas; skimming é um evento isolado. Exemplo: lapping cria uma corrente de créditos falsos entre contas; skimming elimina a transação integralmente."
+        "pt": "Over-ring registra valor maior; under-ring registra menor. Apenas under-ring gera desvio de caixa."
       }
     },
     {
       "id": 15,
       "layer": "F2",
-      "topic": "distincao_baixa_fraudulenta_vs_lapping",
+      "topic": "fictitious_refund_vs_legitimate",
       "front": {
-        "pt": "Qual é a diferença entre baixa fraudulenta e lapping em contas a receber?"
+        "pt": "Como diferenciar reembolso fictício de legítimo?"
       },
       "back": {
-        "pt": "Baixa fraudulenta é registrar uma redução fictícia do saldo devedor (desconto, devolução, perda ou crédito falso) sem receber o dinheiro. Lapping usa recebimentos reais de outros clientes para cobrir o roubo, mantendo contas ativas. Baixa fraudulenta encerra artificialmente a conta devida; lapping mantém a conta viva com créditos cruzados. Exemplo: baixa fraudulenta marca como 'devedora em dificuldades' uma venda de R$ 1.000 nunca recebida; lapping usa o pagamento do cliente B para cobrir o roubo do cliente A."
+        "pt": "Fictício carece de documentação de devolução original, aviso de crédito não autorizado ou duplicado."
       }
     },
     {
       "id": 16,
       "layer": "F2",
-      "topic": "distincao_skimming_completo_vs_parcial",
+      "topic": "lapping_vs_kiting",
       "front": {
-        "pt": "Como se diferencia skimming completo de skimming parcial em vendas no ponto de venda?"
+        "pt": "Qual diferença entre lapping e kiting?"
       },
       "back": {
-        "pt": "Skimming completo remove toda a venda do registro sem qualquer documentação ou nota fiscal emitida. Skimming parcial registra a venda por valor inferior ao real, emitindo recibo reduzido. Skimming completo deixa lacunas no sequenciamento de vendas; skimming parcial cria inconsistências entre preço, quantidade e total. Exemplo: skimming completo oculta uma venda de R$ 200 completamente; skimming parcial registra como R$ 50 e embolsa R$ 150."
+        "pt": "Lapping cobre desvios com receitas de clientes; kiting manipula transferências bancárias entre contas."
       }
     },
     {
       "id": 17,
       "layer": "F2",
-      "topic": "distincao_cheque_substituido_vs_cheque_falsificado",
+      "topic": "write_off_vs_deduction",
       "front": {
-        "pt": "Qual a diferença entre substituição de cheque por numerário e falsificação de cheque em fraude de recebimentos?"
+        "pt": "Diferença entre write-off fraudulento e deducção legítima?"
       },
       "back": {
-        "pt": "Substituição é quando um funcionário recebe um cheque legítimo do cliente e o substitui por numerário pessoal, desviando o cheque. Falsificação envolve criar ou alterar um cheque inexistente ou de terceiros fraudulentamente. Substituição mantém a transação válida mas desvia o instrumento original; falsificação cria um instrumento fraudulento. Exemplo: substituição é receber cheque de R$ 500 e entregar R$ 500 em dinheiro falso; falsificação é criar um cheque falso em nome do cliente."
+        "pt": "Write-off falso não tem autorização; deducção legítima tem documentação completa e aprovação gerencial."
       }
     },
     {
       "id": 18,
       "layer": "F2",
-      "topic": "distincao_skimming_versus_desvio_sistema_pdv",
+      "topic": "cash_vs_check_fraud",
       "front": {
-        "pt": "Como diferenciar skimming de caixa de um desvio fraudulento via manipulação do sistema POS?"
+        "pt": "Como fraude em numerário difere de cheques?"
       },
       "back": {
-        "pt": "Skimming envolve físicamente remover dinheiro antes do registro no caixa registrador ou sistema. Manipulação de POS envolve alterar ou anular transações digitalmente para justificar falta de dinheiro. Skimming deixa discrepâncias entre vendas esperadas e recebidas; manipulação de POS cria consistência artificial nos registros. Exemplo: skimming pega R$ 100 em caixa (falta no total); manipulação de POS cancela a venda de R$ 100 nos registros para esconder a falta."
+        "pt": "Numerário é imediato, sem rastro; cheque deixa registros bancários facilitando detecção."
       }
     },
     {
       "id": 19,
       "layer": "F2",
-      "topic": "distincao_devolucao_falsa_vs_desconto_fraudulento",
+      "topic": "early_recording_late_recording",
       "front": {
-        "pt": "Qual a diferença entre uma devolução falsa e um desconto fraudulento como métodos de ocultar skimming?"
+        "pt": "Diferença entre antecipação e atraso de registro?"
       },
       "back": {
-        "pt": "Devolução falsa registra um retorno de mercadoria que nunca ocorreu, reduzindo a receita esperada. Desconto fraudulento aplica descontos não autorizados ou exagerados para justificar falta de dinheiro. Devolução falsa impacta tanto receita quanto estoque; desconto fraudulento afeta apenas margem. Exemplo: devolução falsa registra uma venda de R$ 500 como devolvida (afeta recebível e estoque); desconto fraudulento aplica 50% de desconto não autorizado em uma venda."
+        "pt": "Antecipação infla período atual; atraso suprime período. Apenas atraso tipicamente facilita desvio."
       }
     },
     {
       "id": 20,
       "layer": "F2",
-      "topic": "distincao_lacuna_sequencia_vs_duplicacao_recibo",
+      "topic": "cash_handling_fraud_types",
       "front": {
-        "pt": "Como distinguir uma lacuna no sequenciamento de recibos de uma duplicação de número de recibo em fraude?"
+        "pt": "Como fraude direta de caixa difere de contábil?"
       },
       "back": {
-        "pt": "Lacuna indica falta de recibos consecutivos (ex: 001, 002, 004, 005), sugerindo documentação destruída ou skimming de venda completa. Duplicação mostra dois ou mais recibos com o mesmo número, indicando manipulação de registros ou reutilização fraudulenta. Lacuna é subtração (falta); duplicação é adição (excesso ou reutilização). Exemplo: sequência faltando números sugere venda omitida; dois recibos #105 sugerem tentativa de encobrir roubo com documento falso."
+        "pt": "Direta: desvio puro; contábil: manipulação de registros para compensar. Contábil deixa pista em contas."
       }
     },
     {
       "id": 21,
       "layer": "F2",
-      "topic": "distincao_skimming_vendedor_vs_caixa",
+      "topic": "authorization_vs_documentation",
       "front": {
-        "pt": "Qual a diferença entre skimming realizado por vendedor versus por operador de caixa?"
+        "pt": "Diferença entre falta de autorização e documentação?"
       },
       "back": {
-        "pt": "Skimming por vendedor ocorre no ponto de venda, omitindo a transação inteiramente do sistema antes do caixa. Skimming por operador de caixa ocorre durante o processamento do dinheiro, removendo numerário já registrado. Vendedor controla o início; caixa controla o fim do processo. Exemplo: vendedor não registra uma venda (nunca entra no caixa); operador de caixa registra a venda mas remove R$ 100 do total recolhido."
+        "pt": "Sem autorização: ninguém aprovou; sem documentação: aprovado mas sem suporte comprobatório."
       }
     },
     {
       "id": 22,
       "layer": "F2",
-      "topic": "distincao_reembolso_falso_vs_despesa_fraudulenta",
+      "topic": "deposit_accountability",
       "front": {
-        "pt": "Como diferenciar um reembolso falso de caixa de uma despesa de caixa fraudulenta?"
+        "pt": "Como depósito bancário difere de caixa local?"
       },
       "back": {
-        "pt": "Reembolso falso pretende devolver dinheiro a um cliente que nunca havia pagado ou reduzi-lo retroativamente. Despesa fraudulenta registra uma saída de caixa por um item falso (fornecedor, serviço ou bem inexistente). Reembolso afeta contas a receber; despesa afeta custos operacionais. Exemplo: reembolso falso devolve R$ 200 a cliente que já recebeu serviço; despesa fraudulenta registra pagamento de R$ 500 a fornecedor fictício."
+        "pt": "Depósito gera confirmação externa; caixa local tem apenas controle interno, mais vulnerável."
       }
     },
     {
       "id": 23,
       "layer": "F2",
-      "topic": "distincao_furto_numerario_vs_furto_cheque",
+      "topic": "customer_refund_vs_employee",
       "front": {
-        "pt": "Qual a diferença entre furto de numerário e furto de cheques em processamento de recebimentos?"
+        "pt": "Diferença entre reembolso a cliente e a funcionário?"
       },
       "back": {
-        "pt": "Furto de numerário remove dinheiro em espécie, criando imediata discrepância no caixa. Furto de cheque remove cheque legítimo, deixando receita registrada mas sem o instrumento para compensação. Furto de numerário é detectable instantaneamente no encerramento de caixa; furto de cheque pode ser descoberto dias depois durante a reconciliação bancária. Exemplo: furto de numerário deixa R$ 100 faltando no final do dia; furto de cheque mantém vendas normais mas um cheque de R$ 500 nunca é depositado."
+        "pt": "Cliente: fatura e devolução rastreável; funcionário: alegação pessoal, requer validação rigorosa adicional."
       }
     },
     {
       "id": 24,
       "layer": "F2",
-      "topic": "distincao_clientes_fantasma_vs_devedor_corrupto",
+      "topic": "currency_vs_noncurrency",
       "front": {
-        "pt": "Como distinguir fraude com clientes fantasma de conluio com devedor corrupto em recebimentos?"
+        "pt": "Como fraude em moeda difere de equivalentes?"
       },
       "back": {
-        "pt": "Cliente fantasma é fictício, criado inteiramente para gerar vendas falsas e desviar numerário. Devedor corrupto é real mas conluido com funcionário para simular não-pagamento ou remissão fraudulenta. Cliente fantasma não existe em documentação válida; devedor corrupto existe mas com registros manipulados. Exemplo: cliente fantasma 'ABC Ltda.' nunca existiu e a 'venda' foi puro roubo; devedor corrupto 'XYZ Corp' existe mas acordou com gerente para 'perder' a dívida de R$ 5.000."
+        "pt": "Moeda: apropriação pura; equivalentes: conversão complexa com possível perda em câmbio facilitando ocultação."
       }
     },
     {
       "id": 25,
       "layer": "F3",
-      "topic": "deteccao_discrepancias_fluxo_caixa",
+      "topic": "identify_skimming_scenario",
       "front": {
-        "pt": "Como detectar discrepâncias entre o fluxo de caixa registrado e o fluxo real em esquemas de apropriação indébita?"
+        "pt": "Você encontra caixa consistentemente menor que recebimentos. Como classificar?"
       },
       "back": {
-        "pt": "A detecção ocorre mediante a reconciliação periódica dos registros contábeis com os extratos bancários e depósitos físicos. Red flags incluem atrasos inexplicáveis nas compensações de cheques, diferenças recorrentes em dias específicos ou após períodos de folga de funcionários. Exemplo: um caixa que regularmente causa discrepâncias nos depósitos de segunda-feira, coincidindo com finais de semana, pode estar desviando numerário."
+        "pt": "Indicativo de skimming se registros de receita correspondem aos documentos de origem antes do depósito."
       }
     },
     {
       "id": 26,
       "layer": "F3",
-      "topic": "analise_registros_caixa_registradora",
+      "topic": "detect_lapping_pattern",
       "front": {
-        "pt": "Quais técnicas de auditoria detectam manipulação de registros em caixas registradoras para ocultar apropriação de recebimentos?"
+        "pt": "Qual padrão sugere lapping em contas a receber?"
       },
       "back": {
-        "pt": "A análise deve incluir revisão de fitas de caixa registradora, logs eletrônicos de transações e comparação com vendas reportadas. Técnicas incluem teste de transações aleatórias, análise de padrões de devolução anormais e verificação de anulações. Exemplo: descobrir múltiplas anulações de vendas de alto valor pelo mesmo operador, principalmente perto do final do turno, sugere possível desvio."
+        "pt": "Pagamentos de cliente A aplicados conta de cliente B, com pagamento posterior compensando. Ciclo repetido."
       }
     },
     {
       "id": 27,
       "layer": "F3",
-      "topic": "red_flags_devolucoes_fictícias",
+      "topic": "apply_aging_analysis",
       "front": {
-        "pt": "Quais são os sinais de alerta indicando devoluções fictícias como mecanismo para apropriação de caixa?"
+        "pt": "Como envelhecimento de saldo detecta fraude de receita?"
       },
       "back": {
-        "pt": "Devoluções fictícias permitem registrar créditos sem remessa de mercadoria, liberando numerário para desvio. Red flags incluem: devoluções sem documentação de recepção física, devoluções do mesmo cliente repetidamente, ausência de mercadoria no estoque correlato e devoluções após horas ou em períodos sem supervisão. Exemplo: um funcionário registra devolução de mercadoria, credita a conta do cliente e desvia o numerário que deveria ser devolvido."
+        "pt": "Contas envelhecidas com pagamentos registrados mas não aplicados indicam lapping ou desvio."
       }
     },
     {
       "id": 28,
       "layer": "F3",
-      "topic": "prevencao_falsificacao_recibos",
+      "topic": "analyze_daily_reconciliation",
       "front": {
-        "pt": "Como se aplica o controle de prevenção de falsificação de recibos para proteger recebimentos em caixa?"
+        "pt": "O que investigar em reconciliação diária de caixa?"
       },
       "back": {
-        "pt": "O controle envolve numeração sequencial obrigatória de recibos, segregação de emissão entre diferentes funcionários e reconciliação diária de todos os números emitidos versus recebimentos. Registros duplicados devem ser controlados e destruídos supervisionados. Exemplo: implementar sistema informatizado que impede a emissão de recibos não-sequenciais e gera relatório diário de lacunas ou duplicatas para investigação imediata."
+        "pt": "Diferenças consistentes, variações sazonais anormais, depósitos atrasados, documentação faltante."
       }
     },
     {
       "id": 29,
       "layer": "F3",
-      "topic": "deteccao_clientes_fantasma",
+      "topic": "review_cash_register_logs",
       "front": {
-        "pt": "Como detectar esquemas envolvendo clientes fictícios ou 'fantasma' em apropriação de recebimentos?"
+        "pt": "Como registros de caixa registradora revelam fraude?"
       },
       "back": {
-        "pt": "Clientes fictícios permitem gerar vendas sem remessa real, liberando caixa para desvio. Detecção inclui: verificação de endereço e contato dos clientes, análise de padrão de compras versus histórico usual, reconciliação com banco de dados de clientes validados e confirmação direta. Exemplo: identificar um cliente que fez múltiplas compras mas nunca forneceu endereço completo, não recebeu mercadoria e não consta em bases comerciais."
+        "pt": "Discrepâncias entre fita e código de auditoria, voids sem documentação, reembolsos em horários anormais."
       }
     },
     {
       "id": 30,
       "layer": "F3",
-      "topic": "auditoria_contas_especiais",
+      "topic": "examine_deposit_tickets",
       "front": {
-        "pt": "Como auditar contas contábeis especiais (descontos, abatimentos, créditos) para detectar apropriação disfarçada?"
+        "pt": "O que procurar em comprovantes de depósito?"
       },
       "back": {
-        "pt": "Essas contas são frequentemente usadas para ocultar desvios de caixa, registrando lançamentos fictícios. A auditoria deve incluir teste de documentação suporte para todas as transações, análise de padrão histórico versus período sob suspeita e aprovação de autoridades. Exemplo: descobrir lançamentos repetidos de 'abatimento por devoluções' sem documentação correlata de recebimento de mercadoria, sugerindo apropriação disfarçada de caixa."
+        "pt": "Valores inconsistentes com registros contábeis, atrasos entre recebimento e depósito, cheques faltando."
       }
     },
     {
       "id": 31,
       "layer": "F3",
-      "topic": "verificacao_datas_depositos",
+      "topic": "verify_customer_confirmations",
       "front": {
-        "pt": "Quais anomalias nas datas de depósito em banco indicam possível apropriação de recebimentos?"
+        "pt": "Como confirmação do cliente detecta fraude?"
       },
       "back": {
-        "pt": "A análise de timing entre recebimento e depósito revela oportunidades de desvio. Anomalias incluem: depósitos realizados dias após o recebimento, ausência de depósitos em dias específicos, depósitos de valores reduzidos quando recebimentos foram altos e depósitos concentrados em períodos com menos supervisão. Exemplo: auditar datas de recebimento versus datas de depósito para identificar padrão sistemático de atraso de 3-5 dias, criando janela para apropriação."
+        "pt": "Cliente confirma nenhum pagamento ou valor diferente, indicando discrepância entre registro e recebimento real."
       }
     },
     {
       "id": 32,
       "layer": "F3",
-      "topic": "segregacao_funcoes_recebimento",
+      "topic": "trace_collection_process",
       "front": {
-        "pt": "Como a falta de segregação adequada de funções no recebimento de caixa facilita apropriação indébita?"
+        "pt": "Como rastrear processo de cobrança detecta gaps?"
       },
       "back": {
-        "pt": "Quando um único funcionário controla recebimento, registro e depósito, elimina-se a compensação de controles. Isso permite registrar valor menor que o recebido, desviando a diferença sem detecção. Prevenção envolve separar: quem recebe, quem registra, quem deposita e quem reconcilia. Exemplo: implementar sistema onde caixa recebe e emite recibo, supervisor registra em sistema, e gerente realiza depósito e reconciliação posterior."
+        "pt": "Verificar segregação de funções: quem coleta, registra, reconcilia. Gaps indicam oportunidade de fraude."
       }
     },
     {
       "id": 33,
       "layer": "F3",
-      "topic": "analise_compensacoes_indevidas",
+      "topic": "analyze_credit_memos",
       "front": {
-        "pt": "Como detectar compensações indevidas de recebimentos entre contas de clientes diferentes em esquemas de apropriação?"
+        "pt": "Quando investigar profundamente memorandos de crédito?"
       },
       "back": {
-        "pt": "Compensações indevidas (aplicar pagamento de um cliente em conta de outro) mascaram apropriação ao manter registros de contas a receber equilibrados. Detecção inclui: confirmação direta com clientes sobre saldos, análise de antiguidade de saldos versus padrão histórico e rastreamento de depósitos específicos. Exemplo: cliente A paga R$ 5.000, mas funcionário registra na conta de cliente B; cliente A fica com saldo devedor fictício enquanto R$ 5.000 é desviado."
+        "pt": "Se emitidos sem documentação de devolução, por funcionário com acesso a caixa, ou para clientes incomuns."
       }
     },
     {
       "id": 34,
       "layer": "F3",
-      "topic": "monitoramento_transacoes_anomalas",
+      "topic": "evaluate_cash_discount",
       "front": {
-        "pt": "Quais procedimentos de monitoramento contínuo detectam transações anômalas em recebimentos de caixa?"
+        "pt": "Como descontos de caixa indicam potencial fraude?"
       },
       "back": {
-        "pt": "Monitoramento envolve alertas automáticos para padrões incomuns: transações fora do horário, valores significativamente acima ou abaixo da média, operações de mesma pessoa em contas diferentes e sucessivas compensações. Sistemas informatizados devem flagear e reportar para análise. Exemplo: estabelecer limite diário por funcionário de R$ 50.000; qualquer transação acima dispara revisão, detectando comportamento anômalo de um caixa que começou a processar valores excessivos."
+        "pt": "Descontos aplicados sem suporte, concedidos para clientes sem histórico, ou registrados retroativamente."
       }
     },
     {
       "id": 35,
       "layer": "F3",
-      "topic": "validacao_meios_pagamento",
+      "topic": "assess_refund_authorization",
       "front": {
-        "pt": "Como detectar fraudes em meios de pagamento (cheques alterados, cartões clonados) dentro de esquemas de apropriação de recebimentos?"
+        "pt": "Como determinar se reembolso foi autorizado?"
       },
       "back": {
-        "pt": "Validação inclui verificação de autenticidade de cheques (numeração, assinatura, MICR), reconciliação com contas bancárias originantes e análise de depósitos versus registros de vendas. Para cartões, verificar se transações foram autorizadas e se comprador coincide com vendedor. Exemplo: auditor detecta cheque depositado com valor alterado (R$ 1.000 para R$ 10.000), comparando cópia entregue pelo cliente com imagem bancária, revelando apropriação disfarçada."
+        "pt": "Verificar aprovação gerencial documentada, comparar com política estabelecida, confirmar necessidade com cliente."
       }
     },
     {
       "id": 36,
       "layer": "F3",
-      "topic": "investigacao_ciclos_recebimento",
+      "topic": "identify_control_weakness",
       "front": {
-        "pt": "Como investigar ciclos completos de recebimento para rastrear apropriação de caixa até sua origem?"
+        "pt": "Qual fraqueza de controle favorece cash receipt fraud?"
       },
       "back": {
-        "pt": "Rastreamento deve seguir a transação desde a venda inicial, passando por recebimento, registro, depósito e reconciliação, identificando onde valor foi desviado. Documento chave inclui: nota fiscal, recibo, comprovante de depósito e lançamento contábil. Exemplo: descobrir que venda registrada como R$ 10.000 resultou em depósito de R$ 8.000; investigação revela que caixa recebeu R$ 10.000 mas registrou como R$ 8.000, desviando R$ 2.000 antes do depósito."
+        "pt": "Falta segregação de funções, ausência reconciliação diária, caixa não depositado imediatamente."
       }
     },
     {
       "id": 37,
       "layer": "F4",
-      "topic": "impacto_skimming_controles_internos",
+      "topic": "segregation_requirement",
       "front": {
-        "pt": "Por que o skimming de recebimentos em caixa é particularmente difícil de detectar comparado a outros tipos de apropriação indevida de ativos?"
+        "pt": "Qual segregação de função é crítica em receitas?"
       },
       "back": {
-        "pt": "O skimming é difícil de detectar porque a venda nunca é registrada nos sistemas contábeis, deixando zero rastro documental entre receita registrada e caixa real. Diferentemente do desvio de numerário após registro, o skimming ocorre antes de qualquer lançamento contábil. Os controles baseados em reconciliação de caixa com vendas registradas não conseguem captar esse esquema, pois ambos os números são manipulados pelo fraudador. Exemplo: um caixa recebe R$ 100 em dinheiro vivo, não registra a venda no PDV e embolsa o valor, deixando vendas registradas iguais a zero para aquela transação."
+        "pt": "Coleta, registro, reconciliação devem ser funções separadas. Mesmo indivíduo não faz duas destas."
       }
     },
     {
       "id": 38,
       "layer": "F4",
-      "topic": "relacao_lapping_oportunidade_fraude",
+      "topic": "daily_deposit_rule",
       "front": {
-        "pt": "Como o lapping em contas a receber se relaciona com a oportunidade estrutural de fraude em recebimentos?"
+        "pt": "Por que depósito diário é regra crítica de controle?"
       },
       "back": {
-        "pt": "O lapping explora o intervalo de tempo entre o recebimento de múltiplos clientes, permitindo que o fraudador use numerário de um cliente para cobrir o desvio anterior, criando um esquema em cascata. Essa oportunidade surge quando uma pessoa tem controle simultâneo sobre recebimentos, registros de contas a receber e acesso físico ao caixa sem supervisão apropriada. A fraude só se perpetua enquanto novos recebimentos continuam chegando; qualquer interrupção no fluxo compromete o esquema. Exemplo: recebimento de Cliente A é desviado, então recebimento de Cliente B cobre aquele furo, mantendo os saldos balanceados artificialmente."
+        "pt": "Reduz tempo caixa em posse de funcionário, limita oportunidade skimming, gera prova externa imediata."
       }
     },
     {
       "id": 39,
       "layer": "F4",
-      "topic": "impacto_baixas_fraudulentas_reconciliacao",
+      "topic": "exception_to_daily_deposit",
       "front": {
-        "pt": "Qual o impacto das baixas fraudulentas de recebíveis sobre a efetividade das reconciliações contábeis tradicionais?"
+        "pt": "Qual exceção válida a depósito diário?"
       },
       "back": {
-        "pt": "As baixas fraudulentas permitem que o fraudador neutralize o mecanismo de reconciliação ao reduzir simultaneamente o saldo de contas a receber e o caixa pela mesma quantia, criando uma falsa harmonia contábil. Enquanto reconciliações convencionais verificam se caixa + recebíveis = total de vendas, elas não conseguem identificar quando uma baixa foi indevida sem análise substantiva de documentação de suporte. Isso torna insuficientes os controles baseados apenas em reconciliação automática. Exemplo: devedor é marcado como baixado por motivo fictício (cliente falecido, empresa encerrada) quando na verdade o numerário foi roubado."
+        "pt": "Feriados bancários ou bancos fechados. Mesmo assim, caixa deve ser asegurado e documentado diariamente."
       }
     },
     {
       "id": 40,
       "layer": "F4",
-      "topic": "relacao_segregacao_deveres_recebimentos",
+      "topic": "customer_confirmation_control",
       "front": {
-        "pt": "Como a falta de segregação de deveres entre recepção, registro e custódia de caixa facilita esquemas de apropriação indevida em recebimentos?"
+        "pt": "Por que confirmação direta de cliente é controle crítico?"
       },
       "back": {
-        "pt": "Quando uma única pessoa controla as três fases (recebimento físico, entrada contábil, custódia do numerário), ela pode coordenar a não-documentação de transações, eliminando evidências que confrontariam as discrepâncias. A segregação de deveres funciona porque força o fraudador a envolver múltiplos cúmplices ou deixar rastros documentais visíveis. Exemplo: caixa que também autoriza baixas em contas a receber pode receber dinheiro, não registrá-lo no PDV, baixar o cliente como pagante, e ninguém questiona a discrepância porque a mesma pessoa criou todos os registros."
+        "pt": "Valida se pagamento foi recebido, previne lapping, confirma valores. Deve ser independente e não telegrafado."
       }
     },
     {
       "id": 41,
       "layer": "F4",
-      "topic": "impacto_frequencia_depositos_deteccao_skimming",
+      "topic": "remittance_matching",
       "front": {
-        "pt": "Por que a frequência de depósitos bancários é crítica para detectar skimming de vendas em operações de caixa?"
+        "pt": "Por que aviso de remessa deve corresponder ao depósito?"
       },
       "back": {
-        "pt": "A frequência de depósitos cria janelas de tempo nas quais vendas registradas devem corresponder aos depósitos bancários; quanto maior a janela, maior a oportunidade de skimming passar despercebido. Depósitos diários tornam quase impossível separar vários pequenos skimmings sem que a discrepância ressalte imediatamente. Auditorias focam em períodos onde depósitos são menos frequentes (semanais ou mensais), pois esses permitem maiores desvios sem detecção. Exemplo: uma loja que deposita caixa semanalmente pode permitir até R$ 500/dia em skimming sem que discrepâncias diárias apareçam, totalizando R$ 3.500 não detectados."
+        "pt": "Diferenças indicam desvio, lapping ou erro. Divergência requer investigação imediata antes conclusão."
       }
     },
     {
       "id": 42,
       "layer": "F4",
-      "topic": "relacao_vendas_subavaliadas_intencionalidade",
+      "topic": "supporting_documentation",
       "front": {
-        "pt": "Como as vendas propositalmente subavaliadas se relacionam com a intencionalidade e premeditação no skimming de recebimentos?"
+        "pt": "Qual documentação comprobatória é não-negociável?"
       },
       "back": {
-        "pt": "Vendas subavaliadas indicam que o fraudador não apenas retém numerário (passivo), mas planeja ativamente reduzir o valor registrado (ativo), demonstrando premeditação deliberada e sofisticação. Esse padrão contrasta com erros ocasionais ou desvios impulsivos, indicando envolvimento de indivíduos com conhecimento do sistema contábil e acesso a múltiplos pontos de controle. A detecção dessa prática requer análise comparativa de preços históricos e verificação de origem das discrepâncias. Exemplo: um vendedor registra uma venda de R$ 1.000 como R$ 600, embolsa R$ 400 em dinheiro, mantendo o registro contábil sincronizado com um depósito menor."
+        "pt": "Cada crédito requer: aviso de remessa, fatura original, comunicação do cliente, autorização aprovada."
       }
     },
     {
       "id": 43,
       "layer": "F4",
-      "topic": "impacto_documentacao_suportes_fraude_recebimentos",
+      "topic": "access_restriction_rule",
       "front": {
-        "pt": "Qual o impacto da qualidade e retenção de documentos de suporte sobre a sustentabilidade de fraudes em recebimentos de caixa?"
+        "pt": "Quem não pode ter acesso a caixa recebido?"
       },
       "back": {
-        "pt": "A fraude em recebimentos depende criticamente de controlar, destruir ou falsificar documentos de suporte (recibos, faturas, comprovantes de depósito); onde esses documentos são retidos intactos e auditados, a fraude torna-se insustentável. Auditorias que rastreiam montante registrado até o comprovante de depósito original conseguem identificar skimming, enquanto aquelas que apenas revisam registros contábeis podem ser enganadas. A destrução deliberada de documentos é sinalizador de fraude e seu padrão revela quando começou e com que magnitude. Exemplo: caixa que deveria manter comprovantes de cada depósito começa a descartá-los ou altera a sequência numérica, evitando reconciliação com o sistema de caixa."
+        "pt": "Contador, auditor interno, gerente de contas a receber. Separação absoluta entre custódia e registro."
       }
     },
     {
       "id": 44,
       "layer": "F4",
-      "topic": "relacao_ambiente_ocupacional_pressao_fraude_recebimentos",
+      "topic": "unusual_credit_red_flag",
       "front": {
-        "pt": "Como pressões ocupacionais e oportunidades estruturais se conectam para criar o contexto propício para fraudes em recebimentos?"
+        "pt": "Qual crédito sempre requer investigação?"
       },
       "back": {
-        "pt": "Fraudes em recebimentos ocorrem na intersecção entre motivação (pressão financeira), oportunidade (controle simultâneo de múltiplas funções) e racionalização (cultura organizacional frouxo de integridade). Um funcionário sob pressão financeira, sem segregação de deveres e em ambiente onde infrações menores são toleradas, tem todos os elementos para escalação para fraude maior. Exemplo: caixa com dificuldades financeiras pessoais que trabalha em loja sem supervisão direta, onde gerência não faz reconciliações de caixa mensais, é candidato de risco significativamente elevado."
+        "pt": "Crédito sem documentação, processado por indivíduo novo, para conta antiga, ou fora padrão cliente."
       }
     },
     {
       "id": 45,
       "layer": "F4",
-      "topic": "impacto_tecnologia_pdv_modernos_skimming",
+      "topic": "bank_reconciliation_timing",
       "front": {
-        "pt": "Como a adoção de sistemas de PDV modernos com logs eletrônicos impacta a evolução das técnicas de skimming em recebimentos?"
+        "pt": "Quando reconciliação bancária deve ser feita?"
       },
       "back": {
-        "pt": "Sistemas de PDV com trilhas de auditoria forçam fraudadores a evoluir de simples não-registro para técnicas sofisticadas como anulações fraudulentas, devoluções fictícias ou manipulação de descontos, que deixam registros mas com justificativa aparente. Tecnologia não elimina fraude, apenas muda sua forma; fraudadores com acesso a credenciais administrativas podem manipular logs ou explorar brechas de segurança do sistema. Auditorias nesses ambientes devem focar em exceções e anomalias nos registros (muitas devoluções de um caixa específico) ao invés de ausência de registros. Exemplo: ao invés de não registrar venda de R$ 100, fraudador registra como venda de R$ 50 e depois anula metade como erro de registro."
+        "pt": "Mensalmente, dentro 5 dias do fechamento. Atraso permite ocultar desvios em períodos subsequentes."
       }
     },
     {
       "id": 46,
       "layer": "F4",
-      "topic": "relacao_ciclo_receita_integridade_dados_financeiros",
+      "topic": "surprise_audit_frequency",
       "front": {
-        "pt": "Por que o ciclo de receita é considerado crítico para a integridade geral dos dados financeiros em entidades com múltiplos pontos de caixa?"
+        "pt": "Qual frequência mínima para auditoria surpresa de caixa?"
       },
       "back": {
-        "pt": "O ciclo de receita alimenta diretamente as principais contas do balanço (caixa, contas a receber, receita); fraudes nesse ciclo contaminam simultaneamente diferentes demonstrações financeiras e métricas operacionais. Uma fraude de R$ 100.000 em recebimentos afeta caixa, receita, margem bruta, rotatividade de recebíveis e até análises de tendências históricas usadas para projeções. Integridade deficiente nesse ciclo compromete a confiabilidade de todo o relatório financeiro. Exemplo: skimming de R$ 500.000 em caixa registrado falseia receita para cima, caixa para baixo, distorcendo índices de liquidez e rentabilidade."
+        "pt": "Trimestral ou aleatória. Deve incluir contagem física, reconciliação, confirmação independente cliente."
       }
     },
     {
       "id": 47,
       "layer": "F4",
-      "topic": "impacto_comportamento_funcionario_indicadores_fraude",
+      "topic": "system_edit_control",
       "front": {
-        "pt": "Como padrões de comportamento e atitudes de funcionários servem como indicadores antecedentes de risco de fraude em operações de recebimentos?"
+        "pt": "Qual controle sistema crítico para cash receipts?"
       },
       "back": {
-        "pt": "Funcionários que resistem a férias obrigatórias, rejeitam rodízio de funções, exibem desconforto com supervisão ou mostram mudanças abruptas no estilo de vida frequentemente escondem atividades fraudulentas que se desmoronariam sob escrutínio. Esses indicadores comportamentais são especialmente relevantes em recebimentos, pois a fraude exige vigilância contínua do fraudador. A ausência do funcionário durante auditorias ou seu conhecimento incomum sobre procedimentos de auditoria são bandeiras vermelhas. Exemplo: caixa que trabalha consistentemente sem tirar férias de dois anos é substituído por colega durante férias forçadas, que imediatamente identifica discrepâncias que foram mascaradas."
+        "pt": "Edição não pode alterar receita registrada sem criar log de auditoria. Cancelamento requer autorização documentada."
       }
     },
     {
       "id": 48,
       "layer": "F4",
-      "topic": "relacao_tamanho_valor_transacao_deteccao_pratico",
+      "topic": "management_override_indicator",
       "front": {
-        "pt": "Como o tamanho relativo das transações de recebimento impacta a praticidade de detecção de esquemas de fraude em caixa?"
+        "pt": "Como management override manifesta em receitas?"
       },
       "back": {
-        "pt": "Fraudes em ambientes de alto volume e baixo valor individual (varejo) são mais fáceis de perpetuar porque desvios pequenos (R$ 10-50) por transação acumulam sem gerar discrepâncias visíveis em reconciliações de curto prazo. Contraste com ambientes de baixo volume e alto valor (vendas B2B) onde cada desvio é proporcional e imediatamente evidente. Estratégia de auditoria deve adaptar-se: ambientes de alto volume requerem amostragem estatística e análise de tendências; ambientes de baixo volume permitem revisão de 100% das transações. Exemplo: varejo pode ocultar R$ 100/dia (R$ 3.000/mês) em múltiplas pequenas transações, enquanto escritório de vendas teria R$ 100.000 desviado obviamente detectável em uma única transação."
+        "pt": "Autorização manual de créditos extraordinários, bypass de aprovadores normais, pressão por fechamento mensal."
       }
     }
   ]

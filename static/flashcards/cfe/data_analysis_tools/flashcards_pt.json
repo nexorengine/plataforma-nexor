@@ -2,7 +2,7 @@
   "cert_id": "cfe",
   "domain_id": "data_analysis_tools",
   "domain_code": "S2D11",
-  "domain_name": "S2D11 · Data Analysis & Reporting Tools",
+  "domain_name": "S2D11 · Data Analysis Tools",
   "lang": "pt",
   "total": 48,
   "schema": "FractalFlashcard-v1",
@@ -16,529 +16,529 @@
     {
       "id": 1,
       "layer": "F1",
-      "topic": "definicao_analise_de_dados",
+      "topic": "data_analysis_fundamentals",
       "front": {
-        "pt": "Como se define análise de dados no contexto da detecção de fraudes?"
+        "pt": "O que é análise de dados no contexto de investigação de fraude?"
       },
       "back": {
-        "pt": "Análise de dados é o processo sistemático de examinar grandes volumes de informações para identificar padrões, anomalias e inconsistências que possam indicar atividade fraudulenta. Na detecção de fraudes, envolve aplicar técnicas estatísticas e computacionais aos dados transacionais para revelar comportamentos suspeitos que seriam invisíveis à inspeção manual. Por exemplo, um examinador pode analisar transações de vendas para detectar valores incomuns ou sequências numéricas que sugiram manipulação."
+        "pt": "Processo sistemático de examinar grandes volumes de dados para identificar padrões, anomalias e evidências de atividade fraudulenta."
       }
     },
     {
       "id": 2,
       "layer": "F1",
-      "topic": "significado_software_acl",
+      "topic": "data_analysis_fundamentals",
       "front": {
-        "pt": "O que é o software ACL e qual sua definição na análise de dados forense?"
+        "pt": "Defina validação de dados em análise forense."
       },
       "back": {
-        "pt": "ACL (Audit Command Language) é um software especializado de análise de dados que permite aos examinadores de fraude importar, analisar e validar grandes conjuntos de dados de forma automatizada. Fornece ferramentas para testes de completude, validação de campos e identificação de registros duplicados ou outliers. O ACL é frequentemente utilizado em auditorias forenses para extrair dados de sistemas ERP e realizar análises detalhadas sem alterar os dados originais."
+        "pt": "Processo de verificar integridade, completude e precisão dos dados antes da análise, garantindo confiabilidade das conclusões."
       }
     },
     {
       "id": 3,
       "layer": "F1",
-      "topic": "conceito_software_idea",
+      "topic": "data_analysis_fundamentals",
       "front": {
-        "pt": "Qual é a definição e o propósito do software IDEA na investigação de fraudes?"
+        "pt": "O que significa amostragem em análise de dados forense?"
       },
       "back": {
-        "pt": "IDEA (Interactive Data Extraction and Analysis) é uma ferramenta de software que permite aos investigadores importar, processar e analisar dados de múltiplas fontes para detectar fraudes e anomalias. Oferece capacidades de análise estatística, testes de conformidade e visualização de dados para revelar padrões fraudulentos. Por exemplo, pode ser usado para analisar folhas de pagamento em busca de duplicações de funcionários ou salários anormalmente elevados."
+        "pt": "Seleção de subconjunto representativo de dados para análise quando o volume total é impraticável investigar completamente."
       }
     },
     {
       "id": 4,
       "layer": "F1",
-      "topic": "definicao_amostragem_descoberta",
+      "topic": "data_analysis_fundamentals",
       "front": {
-        "pt": "O que significa amostragem de descoberta e como ela se define na detecção de fraudes?"
+        "pt": "Defina benford's law e sua aplicação em fraude."
       },
       "back": {
-        "pt": "Amostragem de descoberta é uma técnica estatística não-paramétrica usada para localizar pelo menos um item que possua uma característica específica dentro de uma população. Define-se como a abordagem que determina o tamanho da amostra necessário para ter razoável certeza de encontrar pelo menos uma transação fraudulenta se ela existir. É particularmente útil quando o investigador não sabe a frequência exata da fraude, como em casos de desvio de fundos de baixa frequência."
+        "pt": "Lei estatística que analisa frequência de dígitos iniciais em conjuntos naturais de números; desvios indicam possível manipulação."
       }
     },
     {
       "id": 5,
       "layer": "F1",
-      "topic": "conceito_normalizacao_dados",
+      "topic": "data_analysis_tools",
       "front": {
-        "pt": "O que é normalização de dados e qual sua importância na análise forense?"
+        "pt": "O que é ACL (Audit Command Language)?"
       },
       "back": {
-        "pt": "Normalização de dados é o processo de padronizar informações em diferentes formatos, estruturas ou unidades para torná-las consistentes e comparáveis. Na análise de fraudes, envolve converter dados variados (como datas em diferentes formatos, moedas diferentes ou nomes de fornecedores com variações) em um padrão único. Por exemplo, converter todas as datas para o formato DD/MM/AAAA e todos os valores monetários para uma única moeda permite análises mais precisas e reduz falsos positivos."
+        "pt": "Software especializado para análise de dados contábeis que identifica anomalias, duplicatas e transações suspeitas automaticamente."
       }
     },
     {
       "id": 6,
       "layer": "F1",
-      "topic": "definicao_validacao_dados",
+      "topic": "data_analysis_tools",
       "front": {
-        "pt": "Como se define validação de dados no contexto de exame de fraudes?"
+        "pt": "Defina IDEA (Interactive Data Extraction and Analysis)."
       },
       "back": {
-        "pt": "Validação de dados é o processo de verificar se os dados estão completos, precisos e em conformidade com regras e padrões esperados antes de análise forense. Envolve confirmar que campos obrigatórios foram preenchidos, que valores numéricos estão dentro de intervalos aceitáveis e que as estruturas de dados são consistentes. Um exemplo é validar que todos os números de funcionário contêm exatamente 6 dígitos e que todas as datas de transação são anteriores à data atual."
+        "pt": "Ferramenta de análise de dados que permite auditores e investigadores examinar registros eletrônicos e identificar fraudes."
       }
     },
     {
       "id": 7,
       "layer": "F1",
-      "topic": "significado_teste_razaoabilidade",
+      "topic": "data_analysis_tools",
       "front": {
-        "pt": "O que é teste de razoabilidade e qual sua definição na análise de dados?"
+        "pt": "O que é análise de relatórios de exceção?"
       },
       "back": {
-        "pt": "Teste de razoabilidade é uma técnica de validação que verifica se valores em um conjunto de dados estão dentro de intervalos lógicos e esperados para aquele tipo de informação. Define-se como a aplicação de parâmetros de limite superior e inferior para identificar valores que destoam significativamente do padrão histórico ou da norma da indústria. Por exemplo, testar se salários de funcionários estão entre um mínimo e máximo razoáveis para cada posição, sinalizando valores anormalmente altos ou baixos como potencialmente fraudulentos."
+        "pt": "Técnica que gera listas de transações atípicas que desviam de padrões normais estabelecidos em bases de dados."
       }
     },
     {
       "id": 8,
       "layer": "F1",
-      "topic": "conceito_analise_duplicatas",
+      "topic": "data_analysis_tools",
       "front": {
-        "pt": "O que define a análise de duplicatas na detecção de fraudes?"
+        "pt": "Defina análise de tendências em contexto forense."
       },
       "back": {
-        "pt": "Análise de duplicatas é a técnica de identificação de registros idênticos ou substancialmente semelhantes em um conjunto de dados que não deveriam ser duplicados. Define-se como o exame comparativo de campos-chave (como números de fatura, IDs de funcionário ou informações de fornecedor) para revelar transações processadas múltiplas vezes. Por exemplo, detectar a mesma fatura paga duas vezes ou o mesmo depósito em folha de pagamento creditado em duas datas diferentes indica possível fraude."
+        "pt": "Exame de padrões históricos de dados para identificar mudanças anormais que sugerem manipulação ou fraude."
       }
     },
     {
       "id": 9,
       "layer": "F1",
-      "topic": "definicao_analise_tendencia",
+      "topic": "data_analysis_techniques",
       "front": {
-        "pt": "Como se define análise de tendência no contexto de investigação de fraudes?"
+        "pt": "O que é reconciliação de dados em análise forense?"
       },
       "back": {
-        "pt": "Análise de tendência é a técnica de examinar mudanças em valores ou padrões ao longo do tempo para identificar desvios significativos que possam indicar fraude. Define-se como a observação sistemática de comportamento histórico para estabelecer normais esperados e detectar quando os dados desviam dramaticamente dessa expectativa. Por exemplo, se as devoluções de clientes tipicamente representam 2% das vendas, uma súbita elevação para 10% em um período específico pode indicar fraude no processamento de devoluções."
+        "pt": "Processo de comparação de registros entre sistemas diferentes para identificar discrepâncias, omissões ou transações duplicadas."
       }
     },
     {
       "id": 10,
       "layer": "F1",
-      "topic": "significado_outliers_dados",
+      "topic": "data_analysis_techniques",
       "front": {
-        "pt": "O que são outliers e como se definem na análise de dados para detecção de fraudes?"
+        "pt": "Defina clustering de dados."
       },
       "back": {
-        "pt": "Outliers são valores extremos ou anômalos em um conjunto de dados que se desviam significativamente da distribuição normal ou esperada da população. Definem-se como observações que caem fora dos limites estatísticos estabelecidos, frequentemente indicando erros, dados corrompidos ou atividade fraudulenta. Um exemplo é uma transação de vendas de R$ 5.000.000 em uma base de dados onde o valor médio de transação é R$ 50.000, sinalizando uma possível venda fictícia ou manipulação de dados."
+        "pt": "Técnica que agrupa registros similares para identificar padrões de comportamento ou anomalias em grandes conjuntos de dados."
       }
     },
     {
       "id": 11,
       "layer": "F1",
-      "topic": "conceito_matriz_correlacao",
+      "topic": "data_analysis_techniques",
       "front": {
-        "pt": "O que é matriz de correlação e qual sua definição na análise de fraudes?"
+        "pt": "O que significa análise de duplicatas em fraude?"
       },
       "back": {
-        "pt": "Matriz de correlação é uma tabela estatística que mostra o grau de relacionamento entre diferentes variáveis ou campos em um conjunto de dados. Define-se como a representação visual e numérica das associações entre pares de variáveis, ajudando a identificar relacionamentos inesperados ou suspeitos. Por exemplo, uma correlação forte entre o valor de transação e o gerente responsável pode sugerir que um gerente específico autoriza consistentemente transações maiores, potencialmente indicando conluio ou má gestão."
+        "pt": "Identificação de registros idênticos ou similares que podem indicar transações fraudulentas ou manipulação de dados."
       }
     },
     {
       "id": 12,
       "layer": "F1",
-      "topic": "definicao_relatorio_analise",
+      "topic": "data_analysis_techniques",
       "front": {
-        "pt": "O que define um relatório de análise de dados no exame de fraudes?"
+        "pt": "Defina análise de relacionamentos entre dados."
       },
       "back": {
-        "pt": "Relatório de análise de dados é o documento que apresenta os achados, conclusões e recomendações resultantes da aplicação de técnicas analíticas a um conjunto de dados investigado. Define-se como a comunicação estruturada de padrões identificados, anomalias descobertas e evidências potenciais de fraude de forma clara e profissional para stakeholders. Um relatório deve incluir metodologia utilizada, dados analisados, resultados quantificáveis e descrição de transações suspeitas com valores específicos que requerem investigação adicional."
+        "pt": "Exame de conexões entre registros, contas ou entidades para descobrir padrões fraudulentos ou redes de conspiração."
       }
     },
     {
       "id": 13,
       "layer": "F2",
-      "topic": "benford_vs_chi_quadrado",
+      "topic": "data_analysis_fundamentals",
       "front": {
-        "pt": "Qual a diferença entre aplicar a Lei de Benford e o teste Qui-Quadrado na análise de fraude de dados?"
+        "pt": "Qual a diferença entre amostragem estatística e amostragem dirigida?"
       },
       "back": {
-        "pt": "A Lei de Benford testa se dígitos seguem uma distribuição natural esperada em dados legítimos, focando em padrões de frequência. O teste Qui-Quadrado é um teste estatístico que mede o ajuste entre distribuições observadas e esperadas com rigor matemático. Benford é mais intuitivo e rápido para screening inicial, enquanto Qui-Quadrado fornece significância estatística. Exemplo: ao analisar faturas, Benford identifica rapidamente primeiros dígitos anormais; Qui-Quadrado valida se esse desvio é estatisticamente relevante."
+        "pt": "Estatística é randômica e generalizável; dirigida seleciona itens específicos de risco baseada em critérios predefinidos."
       }
     },
     {
       "id": 14,
       "layer": "F2",
-      "topic": "amostragem_julgamento_vs_aleatoria",
+      "topic": "data_analysis_fundamentals",
       "front": {
-        "pt": "Como distinguir quando usar amostragem por julgamento em vez de amostragem aleatória em investigações de fraude?"
+        "pt": "Diferencie análise descritiva de análise preditiva."
       },
       "back": {
-        "pt": "Amostragem por julgamento usa conhecimento do investigador para selecionar casos de alto risco, enquanto amostragem aleatória garante imparcialidade estatística sem viés. Julgamento é superior quando há suspeitas específicas ou padrões conhecidos de fraude, enquanto aleatória é preferida para gerar evidências defensáveis legalmente. Exemplo: em suspeita de desvio de vendas por um gerente específico, use julgamento; para auditoria geral de conformidade, use aleatória."
+        "pt": "Descritiva examina dados passados para entender o que ocorreu; preditiva usa padrões para antecipar fraudes futuras."
       }
     },
     {
       "id": 15,
       "layer": "F2",
-      "topic": "correcao_fluxo_caixa_vs_balance_sheet",
+      "topic": "data_analysis_tools",
       "front": {
-        "pt": "Qual a diferença entre análise de fluxo de caixa e análise de balanço para detectar manipulação de resultados?"
+        "pt": "Qual a diferença entre ACL e IDEA em funcionalidades?"
       },
       "back": {
-        "pt": "Análise de fluxo de caixa rastreia entradas e saídas reais de dinheiro, revelando inconsistências com lucros reportados. Análise de balanço examina ativos, passivos e patrimônio em um momento específico, detectando contas anormais ou suavizadas. O fluxo de caixa é mais difícil de manipular porque envolve transações reais, enquanto o balanço pode ser distorcido via ajustes contábeis. Exemplo: empresa reporta lucro alto mas fluxo de caixa negativo sinaliza possível fraude de receita."
+        "pt": "ACL especializa em análise contábil e auditoria; IDEA oferece abordagem mais genérica para múltiplos tipos de dados."
       }
     },
     {
       "id": 16,
       "layer": "F2",
-      "topic": "clustering_vs_classificacao",
+      "topic": "data_analysis_tools",
       "front": {
-        "pt": "Como distinguir entre análise de clustering e classificação supervisionada em ferramentas de detecção de fraude?"
+        "pt": "Diferencie análise de exceção de análise de conformidade."
       },
       "back": {
-        "pt": "Clustering agrupa dados similares sem rótulos predefinidos, descobrindo padrões desconhecidos de fraude. Classificação supervisionada treina modelos com exemplos rotulados de fraude/não-fraude para prever novos casos. Clustering é exploratório e descobre fraudes novas; classificação é preditiva e eficaz para fraudes conhecidas. Exemplo: clustering pode descobrir um novo padrão de conluio entre fornecedores; classificação detecta fornecedores fictícios usando histórico conhecido."
+        "pt": "Exceção identifica transações atípicas; conformidade verifica se dados atendem políticas e padrões estabelecidos."
       }
     },
     {
       "id": 17,
       "layer": "F2",
-      "topic": "analise_horizontal_vs_vertical",
+      "topic": "data_analysis_techniques",
       "front": {
-        "pt": "Qual a diferença entre análise horizontal e análise vertical de demonstrações financeiras para fraude?"
+        "pt": "Qual a diferença entre reconciliação transacional e reconciliação contábil?"
       },
       "back": {
-        "pt": "Análise horizontal compara valores ao longo do tempo para identificar mudanças anormais em contas, detectando crescimento/queda atípicos. Análise vertical expressa cada conta como percentual do total (ex: receita), revelando estruturas desproporcionais. Horizontal é excelente para fraudes contínuas ou progressivas; vertical destaca anomalias estruturais. Exemplo: análise horizontal mostra crescimento de 300% em despesas de viagem em um ano; vertical revela que despesas administrativas saltaram de 5% para 15% da receita."
+        "pt": "Transacional compara registros individuais; contábil verifica se totais agregados coincidem entre sistemas."
       }
     },
     {
       "id": 18,
       "layer": "F2",
-      "topic": "acl_vs_idea_funcionalidades",
+      "topic": "data_analysis_techniques",
       "front": {
-        "pt": "Qual a diferença nas capacidades de análise entre os softwares ACL e IDEA para exame de dados?"
+        "pt": "Diferencie detecção de duplicatas perfeitas de duplicatas parciais."
       },
       "back": {
-        "pt": "ACL (Audit Command Language) é mais focado em auditoria e análise de conformidade com interface visual intuitiva. IDEA (Interactive Data Extraction and Analysis) oferece engine de análise mais potente com melhor performance em volumes gigantescos de dados. ACL é preferido para auditoria geral; IDEA para análise forense pesada e alta complexidade. Ambos usam linguagem própria, mas IDEA integra melhor com Python e R para machine learning avançado."
+        "pt": "Perfeitas são registros idênticos; parciais compartilham alguns campos iguais, indicando fraude sofisticada."
       }
     },
     {
       "id": 19,
       "layer": "F2",
-      "topic": "pivot_tables_vs_vlookup",
+      "topic": "benford_law",
       "front": {
-        "pt": "Como distinguir quando usar tabelas dinâmicas versus VLOOKUP/correspondência de dados para encontrar fraudes?"
+        "pt": "Como benford's law difere de distribuição uniforme?"
       },
       "back": {
-        "pt": "Tabelas dinâmicas resumem e agregar grandes volumes rapidamente, revelando padrões anormais de subtotais. VLOOKUP/correspondência busca valores específicos entre conjuntos para encontrar divergências e transações duplicadas. Dinâmicas são para análise exploratória; correspondência é para validação e reconciliação específica. Exemplo: use dinâmica para ver qual departamento tem maior volume anormal de despesas; use correspondência para encontrar fornecedores que aparecem com nomes diferentes."
+        "pt": "Benford segue logarítmica com dígitos iniciais variáveis; uniforme distribui todos dígitos igualmente com probabilidade."
       }
     },
     {
       "id": 20,
       "layer": "F2",
-      "topic": "graficos_scatter_vs_linhas",
+      "topic": "benford_law",
       "front": {
-        "pt": "Qual a diferença entre gráficos de dispersão (scatter) e gráficos de linha para visualizar fraude em dados?"
+        "pt": "Qual a diferença entre teste de primeiro e segundo dígito?"
       },
       "back": {
-        "pt": "Gráficos de dispersão mostram relações entre duas variáveis, revelando outliers e correlações anormais. Gráficos de linha rastreiam mudanças ao longo do tempo, expondo tendências quebradas e saltos atípicos. Scatter é excelente para detectar fraude entre variáveis (ex: volume vs valor); linha é ideal para fraude temporal. Exemplo: scatter de itens vs valor unitário pode revelar preços anormalmente altos; linha de emissões por período expõe um pico suspeito."
+        "pt": "Primeiro dígito identifica anomalias gerais; segundo dígito é mais sensível, detecta fraudes sofisticadas refinadas."
       }
     },
     {
       "id": 21,
       "layer": "F2",
-      "topic": "duplos_vs_similares",
+      "topic": "data_visualization",
       "front": {
-        "pt": "Como distinguir entre busca de registros duplicados exatos e detecção de registros similares (quase-duplicados) na fraude?"
+        "pt": "Diferencie gráficos de dispersão de gráficos de linha em análise."
       },
       "back": {
-        "pt": "Duplicados exatos utilizam correspondência de 100% em campos chave para encontrar transações idênticas ou repetidas. Similares usam fuzzy matching ou distância de edição para capturar variações intencionais (ex: nomes com erros ou abreviaturas diferentes). Exatos detectam descuido ou fraude óbvia; similares revelam fraude sofisticada disfarçada. Exemplo: duplicado exato encontra mesmo CPF duas vezes; similar encontra 'João Silva' vs 'Joao S.' como mesmo fornecedor."
+        "pt": "Dispersão mostra relacionamentos entre variáveis; linha revela tendências e padrões ao longo do tempo."
       }
     },
     {
       "id": 22,
       "layer": "F2",
-      "topic": "filtro_simples_vs_query_complexa",
+      "topic": "data_visualization",
       "front": {
-        "pt": "Qual a diferença entre usar filtros simples e consultas SQL complexas na análise de fraude?"
+        "pt": "Qual a diferença entre histograma e distribuição de frequência?"
       },
       "back": {
-        "pt": "Filtros simples isolam registros rapidamente por um ou poucos critérios, úteis para screening inicial. Consultas SQL complexas combinam múltiplas condições, junções e agregações para encontrar padrões sofisticados. Filtros são rápidos e visuais; SQL é poderoso e preciso. Exemplo: filtro simples encontra todas as compras acima de R$50k; SQL encontra compras acima de R$50k de fornecedores sem CNPJ válido que foram aprovados por um único gestor."
+        "pt": "Histograma é representação visual de intervalos; frequência é contagem de ocorrências em cada intervalo."
       }
     },
     {
       "id": 23,
       "layer": "F2",
-      "topic": "matrix_correlacao_vs_dependencia",
+      "topic": "data_quality",
       "front": {
-        "pt": "Como distinguir entre matriz de correlação e teste de dependência estatística na análise de padrões fraudulentos?"
+        "pt": "Diferencie limpeza de dados de normalização de dados."
       },
       "back": {
-        "pt": "Matriz de correlação mede força linear entre variáveis numericamente, revelando relações entre quantidades. Testes de dependência (como Qui-Quadrado) avaliam se variáveis categóricas são independentes ou relacionadas. Correlação é para variáveis contínuas; dependência é para categóricas. Exemplo: correlação entre horas trabalhadas e despesas de viagem pode revelar manipulação; teste de dependência revela se aprovador e fornecedor estão relacionados anormalmente."
+        "pt": "Limpeza remove erros e inconsistências; normalização padroniza formato e estrutura para comparação consistente."
       }
     },
     {
       "id": 24,
       "layer": "F2",
-      "topic": "auditoria_continua_vs_post_hoc",
+      "topic": "data_quality",
       "front": {
-        "pt": "Qual a diferença fundamental entre auditoria contínua e análise forense após descoberta de fraude?"
+        "pt": "Qual a diferença entre dados faltantes e dados nulos?"
       },
       "back": {
-        "pt": "Auditoria contínua monitora transações em tempo real ou próximo dele com regras automáticas, prevenindo fraudes. Análise forense é retrospectiva, examinando dados históricos após suspeita ou descoberta para provar fraude. Contínua é preventiva e proativa; forense é investigativa e reativa. Exemplo: auditoria contínua bloqueia aprovação de compra sem requisição antes que ocorra; forense examina 2 anos de dados para quantificar fraude já realizada por ex-gerente."
+        "pt": "Faltantes são campos que deveriam existir mas não constam; nulos são campos vazios intencionalmente registrados."
       }
     },
     {
       "id": 25,
       "layer": "F3",
-      "topic": "deteccao_duplicatas_dados",
+      "topic": "data_analysis_fundamentals",
       "front": {
-        "pt": "Como detectar pagamentos duplicados usando ferramentas de análise de dados?"
+        "pt": "Em qual situação usar amostragem estatística versus dirigida?"
       },
       "back": {
-        "pt": "A detecção de duplicatas envolve usar funções de hash e análise comparativa para identificar registros idênticos ou muito similares em bases de dados. Ferramentas como ACL e IDEA possuem funcionalidades específicas para encontrar registros duplicados por campo chave (número de fornecedor, invoice, CPF). Um exemplo prático é identificar dois pagamentos com mesmo valor, mesma data e mesmo beneficiário, indicando fraude de processamento duplo."
+        "pt": "Estatística quando população é grande e homogênea; dirigida quando existem indicadores de risco específicos conhecidos."
       }
     },
     {
       "id": 26,
       "layer": "F3",
-      "topic": "analise_outliers_transacoes",
+      "topic": "data_analysis_tools",
       "front": {
-        "pt": "Quais são os red flags ao analisar outliers em dados transacionais?"
+        "pt": "Como classificar análises apropriadas para ACL em investigação?"
       },
       "back": {
-        "pt": "Outliers são transações significativamente diferentes do padrão normal e podem indicar fraude, erro ou atividade suspeita. Red flags incluem: transações com valores extremamente altos ou baixos fora do padrão histórico, transações em horários incomuns, operações com fornecedores novos com grandes volumes, ou padrões de compra radicalmente diferentes do usual. A análise estatística de desvio padrão e quartis ajuda a identificar esses casos de forma automatizada."
+        "pt": "Análises contábeis: reconciliação, detecção duplicata, exceções, conformidade de transações e segregação de deveres."
       }
     },
     {
       "id": 27,
       "layer": "F3",
-      "topic": "validacao_integridade_dados",
+      "topic": "data_analysis_tools",
       "front": {
-        "pt": "Como aplicar testes de validação de integridade de dados para detectar manipulação?"
+        "pt": "Em qual etapa da investigação aplicar benford's law?"
       },
       "back": {
-        "pt": "A validação de integridade verifica se os dados mantêm características matemáticas e lógicas esperadas após processamento ou transmissão. Técnicas incluem: verificar se campos obrigatórios estão preenchidos, validar formatos de datas e números, confirmar sequências numéricas contínuas, e analisar checksum ou hash values. Exemplo: detectar alteração de registros comparando hashes antes e depois, ou identificar ausência de números de documento sequenciais que indique exclusão de registros."
+        "pt": "Estágio inicial para identificar rapidamente dados potencialmente manipulados antes de análise detalhada."
       }
     },
     {
       "id": 28,
       "layer": "F3",
-      "topic": "estratificacao_dados_fraude",
+      "topic": "data_analysis_techniques",
       "front": {
-        "pt": "Como a estratificação de dados auxilia na investigação de fraudes?"
+        "pt": "Como se classifica transação suspeita em análise de relacionamentos?"
       },
       "back": {
-        "pt": "Estratificação divide um conjunto grande de dados em subgrupos homogêneos para análise mais focada e eficiente. Ao segmentar por departamento, período, faixa de valor ou tipo de transação, o investigador reduz volume de dados a examinar e aumenta a probabilidade de detectar anomalias específicas. Exemplo: estratificar despesas de viagem por departamento pode revelar que um setor tem percentual anormalmente alto de reembolsos noturnos, apontando possível fraude sistêmica naquela unidade."
+        "pt": "Por análise de conexões entre múltiplas contas, entidades ou períodos que formam padrão conspirativo coerente."
       }
     },
     {
       "id": 29,
       "layer": "F3",
-      "topic": "analise_tendencias_temporais",
+      "topic": "data_analysis_techniques",
       "front": {
-        "pt": "Como usar análise de tendências temporais para identificar fraude contínua?"
+        "pt": "Em qual situação clustering identifica fraude melhor que exceção?"
       },
       "back": {
-        "pt": "Análise temporal examina padrões de dados ao longo do tempo para detectar mudanças significativas ou comportamentos sistemáticos suspeitos. Técnicas incluem gráficos de série temporal, análise sazonal e detecção de pontos de inflexão. Um fraudador que desvia valores constantemente gera padrão crescente ou consistente diferente de flutuações normais. Exemplo: um gerente de estoque que furta pequenas quantidades mensalmente criará linha de inventário em declínio constante, detectável via análise de tendência de 12 meses."
+        "pt": "Quando padrão de fraude ocorre em múltiplas transações similares não individualmente óbvias como exceções."
       }
     },
     {
       "id": 30,
       "layer": "F3",
-      "topic": "teste_completude_dados",
+      "topic": "benford_law",
       "front": {
-        "pt": "Qual é a importância do teste de completude em análise forense de dados?"
+        "pt": "Como aplicar benford's law a dados de despesas operacionais?"
       },
       "back": {
-        "pt": "Teste de completude verifica se todos os registros esperados estão presentes no conjunto de dados analisado, identificando registros faltantes ou deletados intencionalmente. A ausência de dados é um red flag importante pois fraudadores frequentemente deletam evidências. Procedimento: verificar se sequências de números de documento são contínuas, comparar registros em sistemas diferentes, e confirmar se totalizadores batem. Exemplo: encontrar gap em números de nota fiscal consecutivos indica possível deleção para esconder transação fraudulenta."
+        "pt": "Analisar distribuição de dígitos iniciais em montantes; desvios significativos sugerem manipulação ou falsificação."
       }
     },
     {
       "id": 31,
       "layer": "F3",
-      "topic": "linkage_dados_multiplos_sistemas",
+      "topic": "data_visualization",
       "front": {
-        "pt": "Como usar linkage de dados de múltiplos sistemas para expor inconsistências fraudulentas?"
+        "pt": "Qual gráfico escolher para demonstrar padrão de fraude temporal?"
       },
       "back": {
-        "pt": "Linkage integra dados de diferentes sistemas (contas a pagar, contas a receber, folha de pagamento, inventário) para validar consistência e detectar manipulações. Comparar dados entre sistemas identifica discrepâncias que indicam fraude ou erro. Exemplo: comparar relatório de fornecedores no sistema de compras com fornecedores no sistema de pagamento pode revelar pagamentos a entidades fantasma não registradas como fornecedores válidos, expondo esquema de desvio de recursos."
+        "pt": "Gráfico de linha ou série temporal mostra claramente anomalias e mudanças abruptas em padrões esperados."
       }
     },
     {
       "id": 32,
       "layer": "F3",
-      "topic": "analise_perfil_comportamental",
+      "topic": "data_visualization",
       "front": {
-        "pt": "Como estabelecer e monitorar perfis comportamentais de usuários para detectar fraude?"
+        "pt": "Como se classifica visualização apropriada para relacionamentos complexos?"
       },
       "back": {
-        "pt": "Análise de perfil comportamental cria modelo de padrão normal de atividade do usuário (frequência de acesso, tipo de transações, horários, valores) e identifica desvios significativos indicativos de fraude. Técnicas usam machine learning para aprender padrão baseline e alertar sobre anomalias. Exemplo: se um contador que normalmente processa 10 despesas/dia e máximo de R$ 5.000 subitamente processa 50 despesas/dia com valores até R$ 50.000, isso é desvio significativo que merece investigação imediata."
+        "pt": "Gráficos de rede ou diagramas de fluxo mostram conexões entre múltiplas entidades e padrões de conspiração."
       }
     },
     {
       "id": 33,
       "layer": "F3",
-      "topic": "validacao_relacionamentos_dados",
+      "topic": "data_quality",
       "front": {
-        "pt": "Como usar validação de relacionamentos entre dados para detectar fraude de referência cruzada?"
+        "pt": "Em qual sequência executar limpeza antes de análise forense?"
       },
       "back": {
-        "pt": "Validação de relacionamentos confirma se registros relacionados em diferentes tabelas ou arquivos mantêm integridade referencial esperada e lógica comercial. Verifica se toda venda tem cliente válido, todo pagamento tem invoice correspondente, toda devolução tem compra de origem. Fraude de referência cruzada cria registros órfãos ou relacionamentos inválidos. Exemplo: detectar pagamentos a fornecedores já inativados ou compras de produtos descontinuados que jamais deveriam aparecer após data de descontinuação."
+        "pt": "Identificar faltantes, remover duplicatas, padronizar formatos, validar referências cruzadas, normalizar valores."
       }
     },
     {
       "id": 34,
       "layer": "F3",
-      "topic": "segmentacao_risco_transacoes",
+      "topic": "data_quality",
       "front": {
-        "pt": "Como aplicar segmentação de risco para priorizar investigação de fraudes?"
+        "pt": "Como se classifica dados confiáveis para análise forense?"
       },
       "back": {
-        "pt": "Segmentação de risco classifica transações ou usuários em categorias (alto, médio, baixo risco) baseado em múltiplos critérios, permitindo priorização eficiente de investigações. Critérios incluem: valores acima de threshold, transações com fornecedores novos, alterações frequentes de dados de pagamento, exceções de política. Recursos limitados devem focar em casos de alto risco primeiro. Exemplo: priorizar investigação de despesas de viagem acima de R$ 10.000 com pagamento direto a pessoa física ao invés de revisar todas as despesas indiscriminadamente."
+        "pt": "Dados validados em origem, com integridade verificada, rastreabilidade completa e sem modificações não documentadas."
       }
     },
     {
       "id": 35,
       "layer": "F3",
-      "topic": "deteccao_padroes_colusao",
+      "topic": "reconciliation",
       "front": {
-        "pt": "Quais padrões de dados revelam possível colusão em esquemas de fraude?"
+        "pt": "Em qual situação reconciliação de dados revela fraude efetivamente?"
       },
       "back": {
-        "pt": "Padrões de colusão mostram coordenação anormal entre múltiplos usuários, fornecedores ou transações que não deveriam estar conectados. Red flags incluem: mesmos fornecedores sendo pagos por múltiplos centros de custo simultaneamente, valores redondos repetidos frequentemente, transações ocorrendo em sequência rápida, ou mesmas datas/horários para atividades de usuários diferentes. Análise de rede e correlação temporal revelam essas conexões. Exemplo: dois gerentes aprovando pagamentos para mesmo fornecedor fantasma em datas alternadas pode indicar colusão para evitar detecção por sistema de limite de aprovação individual."
+        "pt": "Quando transações omitidas, registros duplicados ou valores alterados não coincidem entre sistemas de origem."
       }
     },
     {
       "id": 36,
       "layer": "F3",
-      "topic": "reconciliacao_dados_auditoria",
+      "topic": "exception_analysis",
       "front": {
-        "pt": "Como executar reconciliação de dados para detectar manipulação em registros auditados?"
+        "pt": "Como se classifica transação como exceção em ambiente bancário?"
       },
       "back": {
-        "pt": "Reconciliação compara dados em múltiplas fontes (registros originais, logs de auditoria, backups, relatórios extratos) para identificar discrepâncias indicativas de alteração não autorizada. Verifica se valores em livro razão batem com documentação, se mudanças registradas em auditoria correspondem a alterações visíveis, se sequências de ID são contínuas. Exemplo: reconciliar total de despesas de viagem no sistema com total em relatório mensal ao financeiro pode revelar que valores foram removidos do banco de dados original mas ainda aparecem em relatório antigo, provando manipulação intencional e cobertura inadequada."
+        "pt": "Por critérios de valor anormal, frequência inusitada, relacionamento atípico ou desvio de padrão histórico."
       }
     },
     {
       "id": 37,
       "layer": "F4",
-      "topic": "impacto_visualizacao_dados_detectacao_fraude",
+      "topic": "data_analysis_fundamentals",
       "front": {
-        "pt": "Por que a visualização de dados é crucial para identificar padrões de fraude que análises numéricas podem não revelar?"
+        "pt": "Qual regra crítica sobre tamanho de amostra em fraude?"
       },
       "back": {
-        "pt": "A visualização transforma dados complexos em representações gráficas que permitem ao examinador identificar anomalias, tendências e padrões rapidamente. Enquanto tabelas numéricas podem ocultar outliers ou correlações suspeitas, gráficos de dispersão, histogramas e heatmaps expõem visualmente atividades fraudulentas. Por exemplo, um gráfico de linha mostrando despesas por departamento pode revelar um pico anormal que indicaria possível peculato ou despesa fictícia."
+        "pt": "Amostra mínima deve ser suficientemente grande para detectar fraude com confiança estatística apropriada, evitando conclusões prematuras."
       }
     },
     {
       "id": 38,
       "layer": "F4",
-      "topic": "relacao_amostragem_estatistica_eficiencia_auditoria",
+      "topic": "data_analysis_tools",
       "front": {
-        "pt": "Como a amostragem estatística se relaciona com a eficiência operacional em investigações de fraude em grandes conjuntos de dados?"
+        "pt": "Qual red flag ao usar benford's law em análise?"
       },
       "back": {
-        "pt": "A amostragem estatística permite examinar uma fração representativa de dados em vez da população inteira, reduzindo tempo e custos sem sacrificar confiabilidade. Essa relação dirета afeta a eficiência: amostras bem dimensionadas usando cálculos estatísticos apropriados detectam fraudes com níveis de confiança definidos (95% ou 99%). Em uma empresa com 500.000 transações mensais, uma amostra bem calculada de 350 transações pode ser suficiente para conclusões válidas."
+        "pt": "Não aplicar a dados com limites fixos, distribuições artificiais ou conjuntos muito pequenos; invalida estatisticamente."
       }
     },
     {
       "id": 39,
       "layer": "F4",
-      "topic": "conexao_teste_duplicatas_identificacao_fraude_ocupacional",
+      "topic": "data_analysis_techniques",
       "front": {
-        "pt": "Como o teste de duplicatas se conecta à detecção de fraudes ocupacionais como duplicação de pagamentos e faturas fictícias?"
+        "pt": "Qual exceção crítica ao interpretar duplicatas perfeitas?"
       },
       "back": {
-        "pt": "O teste de duplicatas identifica registros idênticos ou muito similares que não deveriam existir em um banco de dados legítimo, revelando esquemas fraudulentos repetidos. Essa técnica detecta especificamente fraudes ocupacionais onde o perpetrador processa a mesma transação múltiplas vezes para extrair valor. Por exemplo, um fornecedor fraudulento pode submeter a mesma fatura três vezes com números de série ligeiramente diferentes, e o teste de duplicatas com tolerância de variação exporia esse padrão."
+        "pt": "Duplicatas podem ser legítimas em processamento legítimo de back-up ou sincronização de sistemas; investigar contexto."
       }
     },
     {
       "id": 40,
       "layer": "F4",
-      "topic": "impacto_automacao_analise_dados_reducao_tempo_investigacao",
+      "topic": "data_analysis_techniques",
       "front": {
-        "pt": "Qual o impacto da automação de análises de dados sobre a redução do tempo total de investigação de fraudes?"
+        "pt": "Qual regra crítica sobre análise de relacionamentos?"
       },
       "back": {
-        "pt": "A automação elimina processos manuais demorados, permitindo análise de milhões de registros em horas em vez de semanas. Esse impacto direto reduz o ciclo investigativo e aumenta a probabilidade de recuperação de ativos antes de movimentações adicionais. Softwares como ACL e IDEA processam dados continuamente, alertando sobre anomalias em tempo real. Uma organização que automatiza testes de lacunas em contas a pagar pode identificar fraudes de fornecedor em dias ao invés de meses."
+        "pt": "Correlação entre entidades não prova conspiração; deve haver evidência adicional de intenção fraudulenta e conhecimento."
       }
     },
     {
       "id": 41,
       "layer": "F4",
-      "topic": "relacao_limpeza_dados_validade_conclusoes_analise",
+      "topic": "benford_law",
       "front": {
-        "pt": "Como a limpeza e padronização de dados se relacionam com a validade das conclusões tiradas de análises de fraude?"
+        "pt": "Qual exceção sobre precisão de benford's law?"
       },
       "back": {
-        "pt": "A limpeza de dados remove erros, duplicatas, valores ausentes e inconsistências que comprometem a integridade das análises. Essa relação é fundamental: dados sujos geram conclusões imprecisas ou falsas, levando a investigações misdirecionadas e falsos positivos. A padronização garante que campos como datas, nomes de fornecedor e código de conta estejam em formatos uniformes antes de correspondência de dados ou análise de regressão. Dados sem limpeza prévia em um teste de Lei de Benford geram listas de suspeitos imprecisas."
+        "pt": "Teste é indicador inicial, não prova definitiva; falhas podem haver em população pequena ou com valores restritos."
       }
     },
     {
       "id": 42,
       "layer": "F4",
-      "topic": "impacto_benchmarking_dados_identificacao_anomalias_fraude",
+      "topic": "data_visualization",
       "front": {
-        "pt": "Qual o impacto da comparação de dados com benchmarks da indústria na identificação de anomalias potencialmente fraudulentas?"
+        "pt": "Qual red flag ao apresentar gráficos em investigação forense?"
       },
       "back": {
-        "pt": "O benchmarking estabelece expectativas normais baseadas em padrões industriais, permitindo identificar desvios significativos que indicam fraude. Esse impacto é mensurável: empresas que comparam métricas como dias de pagamento a fornecedores, taxa de devolução de vendas ou percentual de desconto com benchmarks detêm fraudes mais rapidamente. Por exemplo, se o setor mostra devolução média de 2% e uma divisão apresenta 8%, análise focada dessa divisão pode revelar o esquema de fraude com clientes conluiados."
+        "pt": "Manipulação de escala, omissão de dados ou seleção enviesada pode enganar; sempre mostrar dados completos e contexto."
       }
     },
     {
       "id": 43,
       "layer": "F4",
-      "topic": "conexao_segmentacao_dados_direcionamento_investigacao",
+      "topic": "data_quality",
       "front": {
-        "pt": "Como a segmentação de dados por características específicas se conecta ao direcionamento mais eficaz de investigações de fraude?"
+        "pt": "Qual regra crítica sobre integridade de dados forense?"
       },
       "back": {
-        "pt": "A segmentação divide dados em grupos homogêneos com base em atributos como departamento, localização geográfica, faixa de valor ou tipo de transação, permitindo análises mais precisas e focadas. Essa conexão melhora a investigação: testes aplicados a um segmento específico detectam fraudes que se perderiam em análises globais. Um examinador que segmenta transações de vendas por representante pode identificar um vendedor específico com taxa anormalmente alta de devoluções, indicando possível conluio com clientes."
+        "pt": "Documentar cadeia de custódia completa; qualquer alteração, mesmo limpeza, deve ser rastreada e justificada judicialmente."
       }
     },
     {
       "id": 44,
       "layer": "F4",
-      "topic": "impacto_documentacao_metodologia_analise_aceitacao_corte_legal",
+      "topic": "data_quality",
       "front": {
-        "pt": "Por que a documentação detalhada da metodologia de análise de dados é importante para a aceitabilidade das descobertas em procedimentos legais?"
+        "pt": "Qual exceção ao descartar dados nulos em análise?"
       },
       "back": {
-        "pt": "A documentação rigorosa demonstra que a análise foi conduzida com metodologia científica, permitindo defesa em tribunal e credibilidade perante julgadores e jurados. Esse impacto é crítico: análises sem documentação clara podem ser descartadas como especulativas ou tendenciosas. A defesa pode questionar validade estatística, tamanho de amostra, critérios de seleção e vieses se não houver registro detalhado. Uma análise de correspondência de dados com documentação clara dos algoritmos usados, critérios de correspondência e testes de validação tem muito maior probabilidade de sustentação legal."
+        "pt": "Nulos podem ser evidência de fraude; ausência intencional de registros é red flag e deve ser investigada separadamente."
       }
     },
     {
       "id": 45,
       "layer": "F4",
-      "topic": "relacao_anomalias_estatisticas_risco_fraude_prioridade_investigacao",
+      "topic": "reconciliation",
       "front": {
-        "pt": "Como as anomalias estatísticas se relacionam com níveis de risco de fraude e priorização de investigações?"
+        "pt": "Qual red flag ao não encontrar discrepâncias em reconciliação?"
       },
       "back": {
-        "pt": "Anomalias estatísticas significativas (valores fora de 2-3 desvios padrão) indicam maior probabilidade de atividade fraudulenta e devem ser priorizadas. Essa relação permite alocação eficiente de recursos: anomalias com suporte de múltiplos testes analíticos apresentam risco mais alto. Uma transação 5 desvios padrão acima da média de pagamento a fornecedor, combinada com teste de limite excedido, merece investigação imediata antes de uma transação 1,5 desvios acima da média."
+        "pt": "Ausência de discrepâncias em ambiente com histórico de fraude sugere que registros podem ter sido manipulados uniformemente."
       }
     },
     {
       "id": 46,
       "layer": "F4",
-      "topic": "impacto_frequencia_atualizacao_dados_inteligencia_fraude_tempo_real",
+      "topic": "exception_analysis",
       "front": {
-        "pt": "Qual o impacto da frequência de atualização de dados na capacidade de detecção de fraude em tempo real versus tempo diferido?"
+        "pt": "Qual regra crítica sobre limites de exceção em análise?"
       },
       "back": {
-        "pt": "Dados atualizados frequentemente (diária ou em tempo real) permitem detecção imediata de fraudes, interrompendo esquemas antes de escalação de perdas. Atualizações mensais ou trimestrais resultam em detecção tardia quando danos já foram significativos. Monitoramento contínuo com atualização diária de dados de contas a pagar pode detectar um padrão de faturas fictícias dentro de 24 horas, enquanto revisão mensal detectaria apenas após acúmulo de múltiplos pagamentos fraudulentos."
+        "pt": "Limites muito altos perdem fraudes pequenas; muito baixos geram falsos positivos; calibrar baseado em risco real."
       }
     },
     {
       "id": 47,
       "layer": "F4",
-      "topic": "relacao_validacao_cruzada_multiplas_fontes_dados_confiabilidade_conclusoes",
+      "topic": "statistical_testing",
       "front": {
-        "pt": "Como a validação cruzada de descobertas usando múltiplas fontes de dados se relaciona com a confiabilidade de conclusões em investigações de fraude?"
+        "pt": "Qual exceção importante sobre significância estatística?"
       },
       "back": {
-        "pt": "A validação cruzada confirma achados através de diferentes perspectivas de dados, eliminando falsas descobertas e aumentando confiança nas conclusões. Essa relação é fundamental para credibilidade: uma descoberta apoiada por apenas uma fonte pode ser coincidência ou erro de dados. Por exemplo, se análise de contas a pagar identifica fornecedor suspeito, validação cruzada com registros de recebimento, correspondência de banco e relatórios de compras confirma se a fraude é genuína ou um falso positivo baseado em dados corrompidos."
+        "pt": "Resultados estatisticamente significantes não provam fraude; requerem corroboração por evidência substantiva adicional."
       }
     },
     {
       "id": 48,
       "layer": "F4",
-      "topic": "impacto_escolha_ferramenta_analise_complexidade_esquemas_detectaveis",
+      "topic": "evidence_standards",
       "front": {
-        "pt": "Por que a escolha apropriada de ferramenta de análise impacta diretamente a complexidade de esquemas de fraude que podem ser detectados?"
+        "pt": "Qual regra crítica sobre análise de dados como evidência?"
       },
       "back": {
-        "pt": "Diferentes ferramentas possuem capacidades distintas: softwares tradicionais (ACL, IDEA) excelem em testes determinísticos enquanto machine learning detecta padrões não lineares complexos. Essa escolha determina quais esquemas fraudulentos são acessíveis: testes de limite e lacunas detectam fraudes estruturadas simples, mas algoritmos de aprendizado de máquina identificam conspiração sofisticada entre múltiplos atores. Uma organização usando apenas testes manuais em Excel pode detectar faturas duplicadas óbvias, mas perder um esquema complexo de cartel de fornecedores que exige análise de redes ou clustering."
+        "pt": "Análises devem ser reproduzíveis, metodologia documentada e conclusões suportadas por especialista qualificado em tribunal."
       }
     }
   ]

@@ -7,538 +7,538 @@
   "total": 48,
   "schema": "FractalFlashcard-v1",
   "layers": {
-    "F1": "Definição",
-    "F2": "Distinção",
-    "F3": "Aplicação",
-    "F4": "Síntese"
+    "F1": "Definition",
+    "F2": "Distinction",
+    "F3": "Application",
+    "F4": "Synthesis"
   },
   "cards": [
     {
       "id": 1,
       "layer": "F1",
-      "topic": "wire_transfer_definition",
+      "topic": "payment_fraud_definition",
       "front": {
-        "en": "What is a wire transfer and how is it defined in the context of payment fraud?"
+        "en": "What is payment fraud?"
       },
       "back": {
-        "en": "A wire transfer is an electronic movement of funds between bank accounts, typically initiated through SWIFT, FedWire, or CHIPS systems. It is characterized by speed, irreversibility, and high-value transactions, making it a prime target for fraud schemes. For example, a fraudster may impersonate a company executive to authorize a wire transfer of company funds to a compromised account abroad."
+        "en": "Unauthorized use of payment methods or accounts to obtain goods, services, or funds without legitimate authorization."
       }
     },
     {
       "id": 2,
       "layer": "F1",
-      "topic": "account_takeover_fraud",
+      "topic": "card_present_fraud",
       "front": {
-        "en": "What is Account Takeover (ATO) fraud and what defines it?"
+        "en": "Define card-present fraud."
       },
       "back": {
-        "en": "Account Takeover fraud occurs when a fraudster gains unauthorized access to a legitimate customer's payment account or financial account through stolen credentials or phishing. The fraudster then uses the compromised account to make unauthorized transactions or transfer funds. This differs from identity theft as it exploits an existing account rather than creating new fraudulent accounts."
+        "en": "Fraudulent transaction where physical card or valid card data is present during transaction at merchant location."
       }
     },
     {
       "id": 3,
       "layer": "F1",
-      "topic": "synthetic_identity_fraud",
+      "topic": "card_not_present_fraud",
       "front": {
-        "en": "How is synthetic identity fraud defined in payment systems?"
+        "en": "Define card-not-present fraud."
       },
       "back": {
-        "en": "Synthetic identity fraud is a type of fraud where the perpetrator creates a fictitious identity by combining real and fabricated personal information, such as using a real Social Security Number with a fake name and address. This identity is then used to establish payment accounts, obtain credit, and commit fraud while remaining difficult to trace. It is particularly prevalent in e-commerce and payment processing environments."
+        "en": "Fraudulent transaction occurring without physical card presence, typically via telephone, mail, internet, or other remote channels."
       }
     },
     {
       "id": 4,
       "layer": "F1",
-      "topic": "payment_redirect_fraud",
+      "topic": "identity_theft_payment",
       "front": {
-        "en": "What is payment redirect fraud and how does it operate?"
+        "en": "What is identity theft in payment context?"
       },
       "back": {
-        "en": "Payment redirect fraud occurs when fraudsters intercept or alter legitimate payment instructions to redirect funds to unauthorized accounts. This is typically accomplished through email compromise, malware, or social engineering that modifies payment details before processing. For instance, a vendor invoice might be intercepted and the bank account details changed to a fraudster's account without the knowledge of the paying party."
+        "en": "Assuming another person's identity to obtain credit, open accounts, or make unauthorized transactions using victim's credentials."
       }
     },
     {
       "id": 5,
       "layer": "F1",
-      "topic": "refund_fraud_definition",
+      "topic": "counterfeit_card",
       "front": {
-        "en": "What defines refund fraud in payment processing?"
+        "en": "Define counterfeit card fraud."
       },
       "back": {
-        "en": "Refund fraud is a scheme where an individual purchases goods or services, receives the delivery, and then falsely claims non-receipt, non-delivery, or product defect to obtain a refund while retaining the merchandise. The fraudster may also file a chargeback simultaneously to receive double reimbursement. This is common in e-commerce environments and exploits merchant refund policies."
+        "en": "Creating unauthorized duplicate payment cards with stolen or fabricated card data to conduct fraudulent transactions."
       }
     },
     {
       "id": 6,
       "layer": "F1",
-      "topic": "triangulation_fraud",
+      "topic": "account_takeover",
       "front": {
-        "en": "What is triangulation fraud in the context of e-commerce payments?"
+        "en": "What is account takeover fraud?"
       },
       "back": {
-        "en": "Triangulation fraud is a three-party scheme involving a fraudster, a legitimate e-commerce seller, and an unsuspecting buyer. The fraudster purchases items from the legitimate seller using stolen card information, intercepts the shipment, and resells the items to the buyer using a fraudulent storefront. The legitimate seller eventually faces a chargeback when the cardholder disputes the unauthorized transaction."
+        "en": "Gaining unauthorized access to legitimate payment account through credentials theft, then conducting fraudulent transactions or transfers."
       }
     },
     {
       "id": 7,
       "layer": "F1",
-      "topic": "intercepted_payment_fraud",
+      "topic": "friendly_fraud",
       "front": {
-        "en": "How is intercepted payment fraud defined?"
+        "en": "Define friendly fraud or chargeback fraud."
       },
       "back": {
-        "en": "Intercepted payment fraud occurs when a fraudster intercepts a payment in transit before it reaches its intended recipient, typically through email compromise or system access. The fraudster diverts the funds to an unauthorized account while the transaction appears legitimate in the sender's records initially. This scheme frequently targets high-value transactions, such as invoice payments between businesses or account transfers."
+        "en": "Cardholder disputes legitimate purchase claiming non-receipt or non-authorization to reverse transaction and retain goods or funds."
       }
     },
     {
       "id": 8,
       "layer": "F1",
-      "topic": "card_present_fraud_definition",
+      "topic": "synthetic_identity_fraud",
       "front": {
-        "en": "What is the formal definition of card-present fraud?"
+        "en": "What is synthetic identity fraud?"
       },
       "back": {
-        "en": "Card-present fraud is fraudulent activity that occurs when a physical payment card is present at the point of sale during the transaction, such as in-store purchases or at ATMs. It includes scenarios where a stolen card is used in-person, or where counterfeit cards are swiped at merchant terminals. This fraud type has lower chargeback rates compared to card-not-present fraud because the card's presence provides some verification."
+        "en": "Combining real and fabricated personal information to create fictitious identity for opening accounts and conducting fraud."
       }
     },
     {
       "id": 9,
       "layer": "F1",
-      "topic": "velocity_fraud",
+      "topic": "check_fraud",
       "front": {
-        "en": "What is velocity fraud and how is it characterized?"
+        "en": "Define check fraud."
       },
       "back": {
-        "en": "Velocity fraud is defined as multiple fraudulent transactions occurring in rapid succession using the same payment method, account, or identity across multiple merchants or payment channels. The fraudster attempts to conduct as many unauthorized transactions as possible before detection systems flag the activity. Common detection thresholds include multiple transactions within minutes across geographically dispersed locations."
+        "en": "Unauthorized use of checking account, forgery, alteration, or creation of fraudulent checks to obtain funds or merchandise."
       }
     },
     {
       "id": 10,
       "layer": "F1",
-      "topic": "layering_payment_fraud",
+      "topic": "wire_transfer_fraud",
       "front": {
-        "en": "What is layering in the context of payment fraud schemes?"
+        "en": "What is wire transfer fraud?"
       },
       "back": {
-        "en": "Layering in payment fraud refers to the practice of conducting multiple sequential transactions or transfers to obscure the origin and destination of illicit funds, making the fraud pattern difficult to trace. This technique is often used in money laundering schemes involving payment systems. For example, funds might be transferred between multiple accounts, jurisdictions, or business entities before reaching the final fraudster destination."
+        "en": "Unauthorized or deceptive electronic fund transfer using legitimate banking channels to move money to fraudster-controlled accounts."
       }
     },
     {
       "id": 11,
       "layer": "F1",
-      "topic": "phantom_withdrawal_fraud",
+      "topic": "ach_fraud",
       "front": {
-        "en": "What defines phantom withdrawal fraud?"
+        "en": "Define ACH fraud."
       },
       "back": {
-        "en": "Phantom withdrawal fraud is a scheme where a customer falsely claims that funds were withdrawn or transferred from their account without authorization, when in fact the transactions were legitimate. The customer disputes valid transactions hoping to receive a refund while retaining the funds. This exploits financial institutions' chargeback and dispute resolution processes and is a form of friendly fraud."
+        "en": "Unauthorized Automated Clearing House transactions initiated fraudulently using legitimate account numbers and routing information without authorization."
       }
     },
     {
       "id": 12,
       "layer": "F1",
-      "topic": "money_mule_payment_fraud",
+      "topic": "payment_app_fraud",
       "front": {
-        "en": "How is a money mule defined in payment fraud contexts?"
+        "en": "What is mobile payment application fraud?"
       },
       "back": {
-        "en": "A money mule is an individual who receives illicit funds through legitimate payment channels (wire transfers, ACH, checks) and subsequently transfers those funds to another account, often unwittingly or under coercion. Money mules serve as intermediaries in fraud schemes to obscure the true source and destination of criminal proceeds. They may be recruited through job advertisements or social engineering and are often unaware they are facilitating fraud."
+        "en": "Fraudulent transactions using digital wallets, peer-to-peer apps, or payment platforms through unauthorized account access or credential compromise."
       }
     },
     {
       "id": 13,
       "layer": "F2",
-      "topic": "wire_transfer_vs_ach_fraud_differences",
+      "topic": "cnp_vs_cp_fraud",
       "front": {
-        "en": "How does wire transfer fraud differ from ACH fraud in terms of reversibility and recovery timeframes?"
+        "en": "Difference between card-not-present and card-present fraud?"
       },
       "back": {
-        "en": "Wire transfer fraud is generally irreversible once sent, with funds typically unrecoverable within hours, whereas ACH fraud allows a return window of up to 60 days for unauthorized debits under NACHA rules. Wire transfers move funds immediately through FEDWIRE or SWIFT systems without built-in dispute mechanisms, while ACH transactions can be challenged and reversed if proper documentation is provided. This fundamental difference makes wire transfer fraud significantly more damaging to organizations."
+        "en": "CNP: no physical card required, higher risk. CP: physical card present, merchant verification stronger, lower fraud risk typically."
       }
     },
     {
       "id": 14,
       "layer": "F2",
-      "topic": "payment_token_vs_card_number_fraud",
+      "topic": "identity_theft_vs_account_takeover",
       "front": {
-        "en": "What is the distinction between tokenization-based fraud and traditional card number theft fraud?"
+        "en": "Distinguish identity theft from account takeover fraud."
       },
       "back": {
-        "en": "Tokenization replaces sensitive card data with unique tokens specific to each merchant or transaction, making stolen tokens useless if breached at one merchant, whereas traditional card number theft exposes the actual card data that works across all merchants. Tokenized payments reduce fraud risk because intercepted tokens cannot be replayed at other merchants due to their single-use or merchant-specific nature. For example, a stolen payment token from an online retailer cannot be used at a gas station, but a stolen card number can be used anywhere."
+        "en": "Identity theft: creates new accounts using victim's info. Account takeover: compromises existing legitimate account without creating new identity."
       }
     },
     {
       "id": 15,
       "layer": "F2",
-      "topic": "synthetic_identity_vs_account_takeover",
+      "topic": "counterfeit_vs_lost_stolen",
       "front": {
-        "en": "How do synthetic identity fraud and account takeover fraud differ in their approach and target?"
+        "en": "Difference between counterfeit card and lost/stolen card?"
       },
       "back": {
-        "en": "Synthetic identity fraud creates entirely fictitious identities with fabricated documentation to open new accounts, while account takeover involves stealing credentials to gain access to existing legitimate accounts. Synthetic fraud typically targets new account openings and credit lines, whereas account takeover targets established accounts with existing payment methods and funds. An example of synthetic fraud is creating a fake person with a stolen Social Security number to open credit cards, while account takeover is compromising a customer's username and password to make unauthorized transactions."
+        "en": "Counterfeit: duplicate card fabricated fraudulently. Lost/stolen: legitimate card accessed without authorization by unauthorized possessor."
       }
     },
     {
       "id": 16,
       "layer": "F2",
-      "topic": "receipt_manipulation_vs_invoice_fraud",
+      "topic": "friendly_fraud_vs_unauthorized",
       "front": {
-        "en": "What distinguishes receipt manipulation fraud from invoice fraud in payment schemes?"
+        "en": "Distinguish friendly fraud from unauthorized transaction?"
       },
       "back": {
-        "en": "Receipt manipulation involves altering or fabricating sales receipts to justify legitimate payments or hide unauthorized charges, whereas invoice fraud creates completely fictitious invoices from non-existent vendors to divert company funds. Receipt manipulation typically occurs after a transaction and focuses on concealment, while invoice fraud is premeditated and designed to create the appearance of legitimate business expenses. For example, receipt manipulation might involve raising amounts on a legitimate restaurant receipt by $50, while invoice fraud would involve creating a fake vendor invoice for consulting services never rendered."
+        "en": "Friendly fraud: legitimate cardholder disputes valid transaction falsely. Unauthorized: transaction conducted without cardholder knowledge or consent."
       }
     },
     {
       "id": 17,
       "layer": "F2",
-      "topic": "card_present_fraud_methods",
+      "topic": "synthetic_vs_identity_theft",
       "front": {
-        "en": "How does EMV chip technology distinguish between counterfeit card fraud and lost/stolen card fraud?"
+        "en": "How does synthetic identity differ from identity theft?"
       },
       "back": {
-        "en": "EMV chip technology creates dynamic data that changes with each transaction, making it extremely difficult to create counterfeit cards, whereas lost or stolen cards can still be used with the physical chip intact until the issuer is notified and the card is deactivated. Counterfeit fraud requires sophisticated equipment to clone the EMV chip, but lost/stolen fraud is opportunistic and exploits the time gap before cardholders report the loss. Modern EMV protection has significantly reduced counterfeit fraud at point-of-sale terminals, but organized retail crime still uses stolen physical cards for in-store purchases."
+        "en": "Synthetic: blends real and fabricated data creating new identity. Identity theft: uses entirely genuine victim's existing information."
       }
     },
     {
       "id": 18,
       "layer": "F2",
-      "topic": "triangulation_fraud_vs_reshipping_fraud",
+      "topic": "check_forgery_vs_alteration",
       "front": {
-        "en": "What is the difference between triangulation fraud and reshipping fraud in e-commerce schemes?"
+        "en": "Distinguish check forgery from check alteration."
       },
       "back": {
-        "en": "Triangulation fraud involves the fraudster purchasing items with stolen payment card data from legitimate retailers, then reselling those items to unsuspecting victims who pay via legitimate methods, whereas reshipping fraud uses recruits or employees to receive and forward merchandise purchased with stolen cards to the fraudster's location. Triangulation creates a three-party scheme (fraudster, retailer, victim), while reshipping typically involves two parties (fraudster and reshipping agent). In triangulation, the victim receives the item but payment comes from stolen cards; in reshipping, the victim may unknowingly ship items they believe are legitimate sales."
+        "en": "Forgery: unauthorized signature or entire check creation. Alteration: modification of legitimate check amounts, payee, or other information."
       }
     },
     {
       "id": 19,
       "layer": "F2",
-      "topic": "pre_authorization_vs_authorization_hold",
+      "topic": "wire_vs_ach_fraud",
       "front": {
-        "en": "How do pre-authorization holds differ from standard authorization holds in payment card transactions?"
+        "en": "Key differences between wire and ACH fraud methods?"
       },
       "back": {
-        "en": "Pre-authorization is a tentative approval for a specific amount that can be modified before final settlement (common in hospitality and rentals), whereas a standard authorization hold locks the exact amount and cannot be adjusted without new approval. Pre-authorizations are typically held for 3-7 days and the final charge may differ from the approved amount, creating opportunities for fraud if adjusted upward after the hold expires, while authorization holds create fixed liability from approval to settlement. For example, a hotel may pre-authorize $150 for a room but final charge is $185 with incidentals, whereas a gas station authorization for $75 must match the final fuel purchase amount."
+        "en": "Wire: immediate, irreversible, higher amounts. ACH: batch processing, reversible within timeframe, typically lower individual amounts."
       }
     },
     {
       "id": 20,
       "layer": "F2",
-      "topic": "cross_border_vs_domestic_card_fraud",
+      "topic": "skimming_vs_phishing",
       "front": {
-        "en": "What makes cross-border card fraud fundamentally different from domestic payment fraud in terms of detection and regulation?"
+        "en": "Difference between skimming and phishing in payment fraud?"
       },
       "back": {
-        "en": "Cross-border fraud involves multiple jurisdictions with different regulatory frameworks, currency conversions, and longer processing times that complicate investigation and recovery, whereas domestic fraud operates within single regulatory jurisdiction with standardized processes. Cross-border fraud is harder to detect due to time zone delays and cultural variations in transaction patterns, making velocity checks less effective, while domestic fraud benefits from centralized reporting and standardized chargeback procedures. An international fraudster making purchases in different countries faces fewer velocity detection triggers because the transactions don't appear clustered in the issuer's home country."
+        "en": "Skimming: physical device captures card data. Phishing: social engineering deceives victim into revealing credentials electronically."
       }
     },
     {
       "id": 21,
       "layer": "F2",
-      "topic": "payment_gateway_compromise_vs_merchant_account_compromise",
+      "topic": "keying_vs_cloning",
       "front": {
-        "en": "How does compromising a payment gateway differ from compromising a merchant's acquiring bank account?"
+        "en": "Distinguish keying from cloning in fraud context."
       },
       "back": {
-        "en": "Payment gateway compromise affects multiple merchants using that platform and exposes transaction data in transit, whereas merchant account compromise targets a single organization's banking relationship and direct fund access. Gateway breaches can affect hundreds of merchants simultaneously, creating industry-wide fraud exposure, while merchant account compromise is more targeted and allows direct diversion of settled funds. For example, a breached payment gateway exposes card data across 500 online retailers, while a compromised merchant account allows a fraudster to redirect daily settlement deposits to fraudster-controlled accounts."
+        "en": "Keying: manually entering stolen card data. Cloning: copying card's magnetic stripe or chip data to create duplicate card."
       }
     },
     {
       "id": 22,
       "layer": "F2",
-      "topic": "factoring_fraud_vs_ponzi_payment_scheme",
+      "topic": "authorization_vs_settlement",
       "front": {
-        "en": "What distinguishes invoice factoring fraud from Ponzi-style payment schemes in business payment fraud?"
+        "en": "Difference between authorization fraud and settlement fraud?"
       },
       "back": {
-        "en": "Invoice factoring fraud involves selling legitimate or fabricated invoices to factoring companies at discounts to obtain immediate cash, whereas Ponzi payment schemes promise unrealistic returns on investments or transactions and pay early investors with later investors' funds. Factoring fraud can involve semi-legitimate transactions with inflated amounts or completely fictitious invoices, while Ponzi schemes are inherently unsustainable and collapse when new investor funding dries up. In factoring fraud, a company might sell a $50,000 legitimate invoice for $40,000 cash immediately; in a Ponzi scheme, investors are promised 30% monthly returns that cannot be sustained by actual business operations."
+        "en": "Authorization: fraudulent approval at point-of-sale. Settlement: fraudulent processing after authorization, modifying transaction before clearance."
       }
     },
     {
       "id": 23,
-      "layer": "F2",
-      "topic": "intercept_fraud_vs_redirect_fraud",
+      "layer": "F3",
+      "topic": "detect_counterfeit_card",
       "front": {
-        "en": "How do payment intercept schemes differ from payment redirect schemes in terms of attacker positioning?"
+        "en": "How is counterfeit card fraud detected in operations?"
       },
       "back": {
-        "en": "Intercept fraud involves capturing payment information during transmission between payer and payee, whereas redirect fraud convinces one party to send payment to fraudster-controlled accounts instead of legitimate beneficiaries. Intercept fraud requires technical capability to monitor or man-in-the-middle the payment channel, while redirect fraud relies on social engineering or compromised email accounts to change payment instructions. An example of intercept fraud is capturing API credentials to intercept ACH transactions in flight; redirect fraud is a fraudster using compromised vendor email to send fake invoices directing payment to fraudster's bank account."
+        "en": "Multiple rapid transactions in different locations, card details inconsistencies, failed address verification, rapid velocity spike alerts."
       }
     },
     {
       "id": 24,
-      "layer": "F2",
-      "topic": "velocity_fraud_vs_anomaly_detection",
+      "layer": "F3",
+      "topic": "identify_account_takeover_indicators",
       "front": {
-        "en": "What is the key distinction between velocity-based fraud detection and anomaly-based fraud detection in payment monitoring?"
+        "en": "What indicators suggest account takeover has occurred?"
       },
       "back": {
-        "en": "Velocity-based detection identifies fraud through unusual frequency or volume of transactions in a short timeframe (e.g., multiple transactions in minutes), whereas anomaly detection identifies deviations from an individual's normal behavioral patterns regardless of speed. Velocity fraud detection is effective for rapid-fire fraud but misses slower, distributed fraud schemes, while anomaly detection can identify a single fraudulent transaction that differs significantly from normal behavior but may miss patterns if baseline behavior is established with fraud already present. For example, velocity detection catches someone making 10 purchases in 5 minutes, but anomaly detection catches someone making their first international purchase when they never travel, even if it's a single transaction."
+        "en": "Unusual login locations, changed contact information, unfamiliar transactions, sudden delivery address changes, atypical purchase patterns."
       }
     },
     {
       "id": 25,
       "layer": "F3",
-      "topic": "wire_transfer_fraud_detection",
+      "topic": "classify_check_fraud_risk",
       "front": {
-        "en": "How can you detect wire transfer fraud schemes in real-time before funds are irretrievably transferred?"
+        "en": "How would you classify check fraud risk in organization?"
       },
       "back": {
-        "en": "Wire transfer fraud detection relies on velocity analysis, threshold monitoring, and behavioral anomalies compared to historical transaction patterns. Implement real-time alerts for unusual wire destinations, large round-dollar amounts sent to new vendors, or requests deviating from established procedures. For example, if an employee who typically sends $50,000 monthly suddenly initiates a $500,000 wire to an unfamiliar offshore account, this velocity spike and anomaly warrant immediate verification through callback to the requestor using a known phone number."
+        "en": "Assess control gaps: signature verification, amount limits, dual authorization, reconciliation timeliness, depositor authentication processes."
       }
     },
     {
       "id": 26,
       "layer": "F3",
-      "topic": "vendor_payment_fraud_red_flags",
+      "topic": "detect_wire_fraud_scenario",
       "front": {
-        "en": "What are the most critical red flags indicating vendor payment fraud or invoice manipulation schemes?"
+        "en": "In what situation is wire fraud transfer most likely?"
       },
       "back": {
-        "en": "Key indicators include newly established vendors with minimal vetting, invoices lacking standard details (PO numbers, proper formatting), requests for unusual payment methods (wire transfers instead of standard terms), minor account number changes from known vendors, and invoices with urgent language bypassing normal approval workflows. A classic example is a fraudster registering a company nearly identical to a legitimate vendor (e.g., 'ABC Supplies Inc.' vs. 'ABC Supplie$ Inc.') and submitting invoices with payment redirected to a new bank account while claiming address updates."
+        "en": "Payment to new vendor without prior history, urgent requests bypassing approval, account changes mid-transaction, unfamiliar instructions."
       }
     },
     {
       "id": 27,
       "layer": "F3",
-      "topic": "ach_fraud_detection_patterns",
+      "topic": "identify_friendly_fraud_patterns",
       "front": {
-        "en": "How do you identify ACH fraud patterns that differ from typical business-to-business transactions?"
+        "en": "How do you identify friendly fraud chargeback patterns?"
       },
       "back": {
-        "en": "ACH fraud detection focuses on anomalous originating bank changes, weekend or holiday submission timing, recurring debits to consumer accounts from businesses that shouldn't be debiting payroll, and batches processed outside normal business hours. Analyze transaction frequency, amount deviations from historical baselines, and mismatches between the originating company and the debit entry class. For instance, detecting multiple small ACH debits ($100-$500) to personal accounts labeled as 'Payroll' when the company never had automated payroll previously is a strong fraud indicator."
+        "en": "Repeat chargebacks from same cardholder, disputes on high-value items, high chargeback-to-transaction ratio, pattern timing irregularities."
       }
     },
     {
       "id": 28,
       "layer": "F3",
-      "topic": "card_data_breach_investigation",
+      "topic": "recognize_synthetic_identity_red_flags",
       "front": {
-        "en": "What investigative steps should you take when detecting a card data breach affecting multiple cardholders?"
+        "en": "What red flags indicate synthetic identity fraud activity?"
       },
       "back": {
-        "en": "Begin by identifying the breach point of entry (POS system, payment processor, online portal), analyzing transaction timelines to pinpoint when unauthorized access occurred, and correlating compromised card numbers with specific merchant locations or timeframes. Engage forensic IT specialists to review system logs, preserve evidence, and determine the scope of exposure. For example, if 150 cardholders making purchases at a retail location within a two-week period experience identical fraud patterns (e.g., gas station charges in different states within hours), this indicates a likely POS compromise at that specific merchant location requiring immediate investigation."
+        "en": "Newly created identities with immediate credit activity, mismatches in SSN age verification, inconsistent personal data, rapid account maturation."
       }
     },
     {
       "id": 29,
       "layer": "F3",
-      "topic": "three_party_payment_scheme",
+      "topic": "detect_cnp_fraud_investigation",
       "front": {
-        "en": "How do three-party payment schemes differ from standard fraud schemes, and what detection methods apply?"
+        "en": "During CNP fraud investigation, what first assessment?"
       },
       "back": {
-        "en": "Three-party schemes involve a fraudster, a willing accomplice (often the payment requestor or employee), and the victim organization, making detection harder because legitimate employees participate knowingly or unknowingly. Detection requires monitoring for collusion indicators such as employees approving payments to related parties, unusual vendor selection without competitive bidding, and personal financial connections between approvers and vendors. An example is an accounts payable employee directing company payments to a shell company owned by a relative, with invoices for non-existent services approved by a complicit manager—detected through vendor background checks and relationship analysis."
+        "en": "Verify transaction legitimacy, confirm cardholder authorization status, trace payment routing, obtain merchant transaction records and logs."
       }
     },
     {
       "id": 30,
       "layer": "F3",
-      "topic": "counterfeit_check_indicators",
+      "topic": "assess_payment_app_compromise",
       "front": {
-        "en": "What are the specific physical and transaction indicators of counterfeit checks that examiners should identify?"
+        "en": "How to assess if payment app account is compromised?"
       },
       "back": {
-        "en": "Counterfeit checks display poor print quality, incorrect MICR (magnetic ink character recognition) line formatting, misaligned security features, inconsistent routing or account numbers compared to legitimate samples, and unusual paper texture or thickness. Transaction red flags include checks deposited remotely (mobile/online) at high volume, funds withdrawn immediately before check clears, deposits followed by rapid account drains, and checks cashed at different branches or third-party check cashers. For instance, discovering 20 counterfeit checks on the same routing number deposited via mobile banking over five days, each for $5,000, with funds immediately transferred out, indicates organized counterfeiting rather than isolated fraud."
+        "en": "Review login history, verify transaction recipients, confirm device usage, check linked payment methods, assess account security settings."
       }
     },
     {
       "id": 31,
       "layer": "F3",
-      "topic": "international_wire_fraud_investigation",
+      "topic": "evaluate_merchant_collusion",
       "front": {
-        "en": "How do you investigate international wire transfer fraud involving cross-border payment channels?"
+        "en": "In payment fraud, when should merchant collusion be suspected?"
       },
       "back": {
-        "en": "Investigation requires coordinating with SWIFT networks, correspondent banks, and law enforcement in receiving countries to trace funds movement and identify layering schemes used to obscure fund origins. Analyze beneficiary bank details, intermediary institutions, and fund routing patterns to detect structuring or multiple transfers designed to obscure the money trail. Subpoena banking records from all involved institutions, examine OFAC (Office of Foreign Assets Control) compliance, and assess whether receiving jurisdictions are high-risk for money laundering. For example, tracing a $2M wire that originated from a U.S. company, flowed through banks in three countries, and ultimately landed in an entity in a jurisdiction known for financial opacity requires coordinated multi-country investigation to recover funds and identify perpetrators."
+        "en": "Consistent patterns with specific merchant, inflated transaction values, void-and-rebate cycles, unusual approval despite fraud indicators."
       }
     },
     {
       "id": 32,
       "layer": "F3",
-      "topic": "mobile_payment_fraud_risks",
+      "topic": "assess_ach_fraud_vulnerability",
       "front": {
-        "en": "What fraud risks are specific to mobile payment and digital wallet transactions, and how should you detect them?"
+        "en": "What ACH fraud scenario indicates organizational vulnerability?"
       },
       "back": {
-        "en": "Mobile payment fraud includes SIM swap attacks (where fraudsters hijack phone numbers to access mobile wallets), app-based payment authorization compromises, and account takeover through credential theft targeting mobile banking. Detection involves monitoring for unauthorized device registrations, payment requests from new locations or devices inconsistent with cardholder patterns, and multiple failed authentication attempts preceding successful transactions. A practical example is detecting a customer's account accessed from a new smartphone in a foreign country within hours of their local usage, with large digital wallet transfers initiated, followed by account lockdown—indicating SIM swap fraud where the perpetrator assumed control of the victim's phone number through social engineering."
+        "en": "Compromised employee credentials, weak authentication on ACH authorization, inadequate transaction monitoring, limited dual-approval implementation."
       }
     },
     {
       "id": 33,
       "layer": "F3",
-      "topic": "supplier_invoice_fraud_prevention",
+      "topic": "identify_skimming_location",
       "front": {
-        "en": "What preventive controls and detection methods specifically address supplier invoice fraud and account manipulation?"
+        "en": "Which payment processing location is most vulnerable to skimming?"
       },
       "back": {
-        "en": "Implement three-way matching (PO, receipt, invoice), require dual approval for payments exceeding thresholds, maintain updated vendor master file with periodic reconciliation against independent sources, and conduct surprise audits of vendor files. Detect fraud by identifying invoices missing supporting documentation, payments to vendors with no recent purchase orders, duplicate invoice numbers or amounts, and discrepancies between vendor file address and payment destination. For example, discovering that payments totaling $250,000 were sent to a vendor's 'new bank account' after an email from someone claiming to be the vendor, combined with the vendor's denial of any account changes, indicates invoice fraud requiring investigation of email source and account compromise."
+        "en": "ATMs in remote locations, unattended payment terminals, self-checkout systems, fuel pump dispensers, card readers with poor surveillance."
       }
     },
     {
       "id": 34,
-      "layer": "F3",
-      "topic": "payroll_payment_fraud_schemes",
+      "layer": "F4",
+      "topic": "cfe_exam_liability_rule",
       "front": {
-        "en": "How do you detect payroll payment fraud schemes such as ghost employees, salary inflation, or fraudulent direct deposit changes?"
+        "en": "What liability rule applies to card issuer in CNP fraud?"
       },
       "back": {
-        "en": "Detection focuses on comparing payroll records to personnel files, analyzing employee benefits enrollments, examining direct deposit change requests for authorization anomalies, and reviewing termination procedures to ensure payroll removal. Use data analytics to identify employees hired but never appearing in systems, salary increases not documented in HR records, and direct deposit accounts in employee names but controlled by third parties. For instance, uncovering a terminated employee still receiving paychecks deposited into a fraudster's account (accessed through a fraudulent direct deposit change), combined with no separation documentation in HR files, indicates payroll fraud requiring investigation of who authorized the change and whether other terminated employees were similarly victimized."
+        "en": "Issuer typically bears CNP fraud loss unless cardholder was grossly negligent; merchant liability varies by card network rules."
       }
     },
     {
       "id": 35,
-      "layer": "F3",
-      "topic": "payment_authorization_override_fraud",
+      "layer": "F4",
+      "topic": "chargeback_timeframe_critical",
       "front": {
-        "en": "What are the red flags and investigation techniques for detecting fraudulent overrides or bypasses of payment authorization controls?"
+        "en": "Critical rule: what chargeback filing timeframe must fraud examiner know?"
       },
       "back": {
-        "en": "Red flags include payments processed outside normal workflows, missing approval signatures or digital authorizations, control overrides documented as 'emergency' without supporting justification, and transactions approved by individuals without authority for that amount or vendor. Investigation requires reviewing system logs to identify who disabled controls, analyzing exception reporting to find unauthorized access, and conducting interviews with approvers regarding disputed authorizations. For example, discovering that a financial manager processed a $500,000 payment by disabling the dual-approval requirement, claiming system error, followed by fund transfers to personal accounts, indicates fraudulent override—requiring analysis of system logs showing deliberate control deactivation, not technical failure."
+        "en": "Cardholder typically has 60-120 days from statement to dispute; varies by card network and transaction type regulations."
       }
     },
     {
       "id": 36,
-      "layer": "F3",
-      "topic": "cryptocurrency_payment_fraud_investigation",
+      "layer": "F4",
+      "topic": "pci_dss_payment_examination",
       "front": {
-        "en": "How do you investigate payment fraud involving cryptocurrency ransom demands or unauthorized crypto transactions?"
+        "en": "Why is PCI DSS critical in payment fraud investigation?"
       },
       "back": {
-        "en": "Investigation requires understanding blockchain transaction immutability, tracing wallet addresses across multiple exchanges to identify perpetrator identity, coordinating with cryptocurrency platforms for transaction records, and assessing ransomware attack vectors. Challenges include cryptocurrency's pseudonymous nature, rapid fund movement through multiple wallets, and exchange conversion to fiat currency. An illustrative case involves a company receiving a ransom demand via email referencing a data breach, with instructions to send Bitcoin to a specific wallet address; investigation traces the wallet's transaction history across exchanges, identifies pattern matches to known ransomware groups, recovers some transaction metadata from exchanges, and documents evidence linking the perpetrator to previous attacks."
+        "en": "Determines if merchant met security standards; non-compliance strengthens fraud case and increases liability; affects evidence admissibility."
       }
     },
     {
       "id": 37,
       "layer": "F4",
-      "topic": "wire_transfer_fraud_prevention_mechanisms",
+      "topic": "wire_fraud_irreversibility_exception",
       "front": {
-        "en": "How do callback verification and dual authorization controls work together to mitigate wire transfer fraud risks?"
+        "en": "Critical exception: can wire fraud transfers always be reversed?"
       },
       "back": {
-        "en": "Callback verification requires the initiator to call back using a known number to confirm wire instructions, while dual authorization mandates two independent approvers for high-value transfers. Together, these controls create layered verification that prevents fraudsters from executing unauthorized transfers through email spoofing or system compromise. For example, a $500,000 wire request requires both a callback confirmation to the CFO and approval from two authorized officers, making it extremely difficult for a BEC attacker to proceed undetected."
+        "en": "No. Wire transfers irreversible after funds reach destination; recovery requires cooperation from receiving bank and potentially legal action."
       }
     },
     {
       "id": 38,
       "layer": "F4",
-      "topic": "ach_fraud_detection_timing",
+      "topic": "synthetic_fraud_detection_rule",
       "front": {
-        "en": "Why is the NACHA return timeframe critical for detecting and preventing ACH debit fraud schemes?"
+        "en": "Key rule: why synthetic fraud detection is exceptionally difficult?"
       },
       "back": {
-        "en": "NACHA rules allow for unauthorized ACH debits to be returned within specific timeframes (typically 45-90 days depending on the debit type), creating a detection window for organizations to identify and respond to fraudulent activity. Fraudsters exploit this window by initiating multiple small debits before larger thefts, knowing there is a limited period for the victim to discover and reverse the transactions. Understanding this timeline helps fraud examiners identify patterns of escalating unauthorized debits and implement preventive controls like ACH blocks and filters before significant losses accumulate."
+        "en": "No legitimate victim reports fraud; credit bureau data incomplete; builds credit history legitimately before large fraud; slow fraud progression."
       }
     },
     {
       "id": 39,
       "layer": "F4",
-      "topic": "payment_fraud_vulnerability_assessment",
+      "topic": "authorization_vs_liability_rule",
       "front": {
-        "en": "What is the relationship between payment system architecture and the vulnerability to different fraud types?"
+        "en": "Critical rule: who bears loss when payment authorized but fraudulent?"
       },
       "back": {
-        "en": "Traditional ACH and check systems offer delayed settlement and verification opportunities, making them susceptible to authorization fraud and alteration schemes; conversely, real-time payment systems eliminate these delays but increase vulnerability to social engineering and account compromise. A bank processing 10,000 daily checks can implement Positive Pay to match submitted checks against a register, but RTP systems must rely on pre-transaction authentication since reversals are difficult post-settlement. The shift toward faster payments creates a trade-off where fraud examiners must emphasize stronger authentication mechanisms rather than post-transaction detection."
+        "en": "Typically merchant bears loss if authorization obtained fraudulently; issuer investigates authorization validity; cardholder protected under regulations."
       }
     },
     {
       "id": 40,
       "layer": "F4",
-      "topic": "bec_payment_method_selection",
+      "topic": "account_takeover_burden_of_proof",
       "front": {
-        "en": "How does the choice of payment method (wire, ACH, check) in a BEC scheme reflect the perpetrator's sophistication and risk tolerance?"
+        "en": "In account takeover investigation, what must be proven?"
       },
       "back": {
-        "en": "Wire transfers are favored by sophisticated BEC actors because they are fast, difficult to reverse, and ideal for high-value thefts; ACH fraud requires patience but allows testing with small amounts; check fraud demands physical access and carries higher apprehension risk. A mature BEC operation targeting multinational corporations typically initiates wire requests for amounts just below approval thresholds, whereas less sophisticated actors may attempt crude check alteration or mass ACH debits. This method selection serves as an investigative indicator of the perpetrator's experience level and is crucial for determining appropriate preventive countermeasures."
+        "en": "Unauthorized access occurred; victim did not authorize transactions; perpetrator's identity or method; no customer negligence contributed."
       }
     },
     {
       "id": 41,
       "layer": "F4",
-      "topic": "card_fraud_environment_risk",
+      "topic": "check_forgery_legal_definition",
       "front": {
-        "en": "Why does the cardholder-present environment present fundamentally different fraud risks compared to card-not-present transactions?"
+        "en": "Legal rule: what constitutes check forgery criminally?"
       },
       "back": {
-        "en": "Card-present fraud relies on stolen physical cards or counterfeit cards (skimming, shimming) and carries lower fraud rates due to EMV chip technology and in-person authentication; card-not-present fraud exploits the absence of physical verification and card security features, enabling fraudsters to use stolen card data remotely without possession. A criminal with a cloned card at a gas pump faces EMV rejection, but the same card data used online for a $2,000 purchase succeeds because no chip verification occurs. This distinction shapes fraud prevention strategy: merchants emphasize EMV and tokenization for physical transactions, while e-commerce platforms require CVV, AVS, and 3D Secure protocols."
+        "en": "Falsifying endorsement or issuer signature with intent to defraud; forgery of another's name on check is felony offense."
       }
     },
     {
       "id": 42,
       "layer": "F4",
-      "topic": "friendly_fraud_impact_chain",
+      "topic": "friendly_fraud_prosecution_challenge",
       "front": {
-        "en": "How does friendly fraud (chargeback fraud) damage merchant-acquirer relationships and incentivize system-level fraud prevention?"
+        "en": "Critical challenge: why friendly fraud hard to prosecute?"
       },
       "back": {
-        "en": "Friendly fraud occurs when legitimate cardholders dispute valid transactions as unauthorized, forcing merchants to absorb chargeback fees, lost merchandise, and processing delays; repeated friendly fraud elevates a merchant's chargeback ratio and can result in loss of processing privileges or increased reserve requirements. A merchant experiencing 2% chargeback rates may be placed on probation or required to maintain cash reserves, effectively punishing legitimate business operations. This systemic pressure incentivizes merchants to implement stronger transaction documentation, customer verification, and dispute resolution processes, creating industry-wide improvements in payment authentication standards."
+        "en": "Cardholder initiated legitimate transaction; must prove intent to defraud; requires evidence of premeditated false dispute claim."
       }
     },
     {
       "id": 43,
       "layer": "F4",
-      "topic": "check_washing_vs_alteration_sophistication",
+      "topic": "identity_verification_standard",
       "front": {
-        "en": "What distinguishes check washing from other check fraud methods in terms of perpetrator skill level and detection difficulty?"
+        "en": "What identity verification standard reduces payment fraud liability?"
       },
       "back": {
-        "en": "Check washing uses chemical solvents to erase payee and amount information from legitimate checks, allowing reuse of authentic routing and account numbers; this is more sophisticated than simple alteration because it preserves the check's authenticity markers and requires chemical expertise. A fraudster using check washing may target business checks with premium paper and security features, while a novice alters amounts with a pen or marker—detection is far easier for the latter through handwriting analysis and chemical residue testing. Check washing represents medium-to-high perpetrator sophistication and requires forensic examination to detect, making it particularly valuable in fraud investigations."
+        "en": "Stronger authentication (2FA, biometric, tokenization) shifts liability; reduces fraud risk; strengthens merchant or issuer defense in disputes."
       }
     },
     {
       "id": 44,
       "layer": "F4",
-      "topic": "positive_pay_behavioral_deterrent",
+      "topic": "velocity_fraud_detection_rule",
       "front": {
-        "en": "Beyond technical prevention, how does implementing Positive Pay influence organizational fraud awareness and internal control culture?"
+        "en": "Critical indicator: what velocity pattern signals payment fraud?"
       },
       "back": {
-        "en": "Positive Pay signals to employees and external parties that the organization actively validates check authenticity, creating a deterrent effect that discourages both external and internal check fraud attempts. Employees processing check register data become more careful about accuracy, and external fraudsters recognize that submitted checks will be matched against an official register, reducing the attractiveness of check fraud as a target. Organizations that implement Positive Pay often observe a cascading improvement in other payment controls, as staff awareness of fraud vulnerability increases and management commitment to security becomes visible through systemic controls."
+        "en": "Multiple transactions in impossible timeframe across geographic locations; rapid sequential approvals; purchases exceeding typical customer behavior."
       }
     },
     {
       "id": 45,
       "layer": "F4",
-      "topic": "rtp_reversibility_fraud_implication",
+      "topic": "evidence_retention_requirement",
       "front": {
-        "en": "Why does the irreversibility of real-time payments (RTP) fundamentally change the risk calculus for both perpetrators and victims compared to traditional ACH?"
+        "en": "How long must payment fraud evidence be retained for litigation?"
       },
       "back": {
-        "en": "RTP transactions settle in seconds and are generally irreversible once executed, removing the victim's opportunity to detect and stop the transaction in transit; traditional ACH allows 1-3 business days for detection and reversal. This shift moves fraud prevention from post-transaction detection to pre-transaction authentication, making social engineering and account compromise far more damaging in RTP environments. A fraudster cannot wait 45 days for a victim to discover an unauthorized RTP debit; however, victim recovery becomes nearly impossible if the funds are immediately withdrawn, creating urgency in RTP authentication and requiring stronger multi-factor authentication at the point of transaction initiation."
+        "en": "Minimum seven years for federal compliance; state statutes vary; transaction records, authorizations, disputes must be preserved."
       }
     },
     {
       "id": 46,
       "layer": "F4",
-      "topic": "nacha_controls_ecosystem_perspective",
+      "topic": "international_payment_jurisdiction",
       "front": {
-        "en": "How do ACH debit blocks, filters, and return timeframes function as an integrated fraud prevention ecosystem rather than isolated controls?"
+        "en": "Critical rule: payment fraud across borders involves which jurisdiction?"
       },
       "back": {
-        "en": "NACHA rules establish blocks (preventing unauthorized debits from specific sources), filters (flagging suspicious patterns), and return windows (allowing disputes and reversals) as complementary layers that collectively reduce ACH fraud exposure. Debit blocks prevent known fraudsters from targeting a specific company's account; filters detect emerging threats like unusual frequency or amounts; and return timeframes ensure victims can recover losses if blocks and filters fail. Organizations that leverage all three components effectively reduce ACH fraud losses by 85-95%, whereas those relying on any single component remain vulnerable to sophisticated multi-faceted attacks."
+        "en": "Issuer bank jurisdiction typically controls; merchant location matters; wire fraud involves federal jurisdiction; international treaties apply."
       }
     },
     {
       "id": 47,
       "layer": "F4",
-      "topic": "bec_social_engineering_payment_urgency",
+      "topic": "merchant_fraud_collusion_liability",
       "front": {
-        "en": "How does the psychological exploitation of urgency in BEC schemes relate to the target's payment approval processes and control weaknesses?"
+        "en": "Critical liability rule: can merchant escape fraud loss through collusion?"
       },
       "back": {
-        "en": "BEC fraudsters create artificial time pressure (e.g., urgent CEO directive, imminent deal deadline) to bypass normal verification procedures and exploit the target's desire to appear responsive and competent. Organizations with weak segregation of duties, absent callback verification, or email-only approval processes are most vulnerable because the fraudster controls all information the approver receives. A CFO receiving an urgent email from the 'CEO' requesting a wire transfer faces pressure to approve quickly; if callback verification is absent and the email appears authentic, authorization occurs before verification, resulting in fraud losses averaging $75,000-$300,000 per incident."
+        "en": "No. Collusion is fraud; merchant becomes liable; criminal liability possible; card networks impose fines and merchant account termination."
       }
     },
     {
       "id": 48,
       "layer": "F4",
-      "topic": "card_data_compromise_attack_vector_evolution",
+      "topic": "redress_notification_requirement",
       "front": {
-        "en": "Why have card skimming and shimming techniques evolved in response to EMV adoption, and what does this reveal about payment fraud adaptation?"
+        "en": "What notification requirement applies after payment fraud discovery?"
       },
       "back": {
-        "en": "Skimming captures magnetic stripe data from the card exterior before EMV technology; shimming inserts a thin device between the card and reader to capture chip data during legitimate transactions, adapting to EMV's increased security. Fraudsters continuously evolve tactics in response to preventive controls—as magnetic stripe protections improved, skimmers targeted ATMs and gas pumps; as EMV chips became standard, shimming emerged to exploit the transition period. This evolutionary dynamic indicates that fraudsters view security controls as challenges to overcome rather than insurmountable barriers, requiring organizations to anticipate next-generation attacks and implement layered defenses beyond any single technology."
+        "en": "Victim notification required within reasonable timeframe; consumer protection laws mandate disclosure; GLBA, state laws specify requirements."
       }
     }
   ]

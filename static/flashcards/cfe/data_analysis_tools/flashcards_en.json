@@ -2,543 +2,543 @@
   "cert_id": "cfe",
   "domain_id": "data_analysis_tools",
   "domain_code": "S2D11",
-  "domain_name": "S2D11 · Data Analysis & Reporting Tools",
+  "domain_name": "S2D11 · Data Analysis Tools",
   "lang": "en",
   "total": 48,
   "schema": "FractalFlashcard-v1",
   "layers": {
-    "F1": "Definição",
-    "F2": "Distinção",
-    "F3": "Aplicação",
-    "F4": "Síntese"
+    "F1": "Definition",
+    "F2": "Distinction",
+    "F3": "Application",
+    "F4": "Synthesis"
   },
   "cards": [
     {
       "id": 1,
       "layer": "F1",
-      "topic": "data_analytics_definition",
+      "topic": "data_analysis_fundamentals",
       "front": {
-        "en": "What is data analytics in the context of fraud examination?"
+        "en": "What is data analysis in fraud examination?"
       },
       "back": {
-        "en": "Data analytics is the systematic examination of large volumes of data to identify patterns, anomalies, and relationships that may indicate fraudulent activity. It involves applying statistical and computational techniques to structured and unstructured data to uncover hidden fraud risks. For example, a fraud examiner might use data analytics to identify unusual employee expense reimbursements that deviate significantly from normal patterns."
+        "en": "Systematic examination of data to identify patterns, anomalies, and relationships indicating fraudulent activity."
       }
     },
     {
       "id": 2,
       "layer": "F1",
-      "topic": "data_visualization_meaning",
+      "topic": "data_analysis_fundamentals",
       "front": {
-        "en": "How is data visualization defined in fraud detection reporting?"
+        "en": "Define benford's law in fraud context."
       },
       "back": {
-        "en": "Data visualization is the graphical representation of data through charts, graphs, heat maps, and dashboards to communicate complex findings in an easily understandable format. It transforms raw numerical data into visual formats that facilitate pattern recognition and fraud identification. A fraud examiner might use a heat map to visualize transaction concentrations across departments, making suspicious clustering immediately apparent to stakeholders."
+        "en": "Mathematical principle that first digits of naturally occurring numbers follow predictable distribution; deviation suggests manipulation."
       }
     },
     {
       "id": 3,
       "layer": "F1",
-      "topic": "anomaly_detection_concept",
+      "topic": "statistical_techniques",
       "front": {
-        "en": "What is anomaly detection and what does it identify in financial data?"
+        "en": "What is stratified sampling in data analysis?"
       },
       "back": {
-        "en": "Anomaly detection is the process of identifying data points, events, or observations that deviate significantly from normal expected behavior or statistical norms within a dataset. It flags outliers and unusual transactions that warrant investigation as potential fraud indicators. For instance, detecting a suddenly inflated invoice amount from a normally consistent vendor could indicate unauthorized price manipulation or collusion."
+        "en": "Dividing population into subgroups, then selecting samples proportionally from each stratum for analysis."
       }
     },
     {
       "id": 4,
       "layer": "F1",
-      "topic": "data_stratification_definition",
+      "topic": "statistical_techniques",
       "front": {
-        "en": "What is data stratification and how is it applied in fraud examination?"
+        "en": "Define standard deviation in fraud analysis."
       },
       "back": {
-        "en": "Data stratification is the process of dividing a dataset into distinct, homogeneous subgroups or layers based on specified characteristics such as transaction amount, department, or time period. This technique allows examiners to analyze similar transactions separately and identify patterns more effectively within each stratum. For example, stratifying invoices by vendor size helps identify whether fraudulent payments concentrate within specific vendor categories."
+        "en": "Measure of data dispersion from mean; larger deviation indicates greater variability in transaction patterns."
       }
     },
     {
       "id": 5,
       "layer": "F1",
-      "topic": "pivot_table_functionality",
+      "topic": "database_tools",
       "front": {
-        "en": "What is a pivot table and what analysis purpose does it serve in fraud detection?"
+        "en": "What is SQL in fraud examination?"
       },
       "back": {
-        "en": "A pivot table is a data summarization tool that automatically reorganizes and aggregates large datasets to display totals, averages, and counts across multiple dimensions in a cross-tabulated format. It enables rapid identification of patterns and outliers by allowing examiners to view data from different perspectives without manual recalculation. A fraud examiner might use a pivot table to quickly summarize total transactions by employee, vendor, and month to identify concentrated payment patterns."
+        "en": "Structured Query Language; programming language for retrieving, filtering, and analyzing data from databases."
       }
     },
     {
       "id": 6,
       "layer": "F1",
-      "topic": "data_linkage_definition",
+      "topic": "database_tools",
       "front": {
-        "en": "What is data linkage and why is it important in fraud investigation?"
+        "en": "Define join in database queries."
       },
       "back": {
-        "en": "Data linkage is the process of connecting and merging records from multiple databases or data sources using common identifiers to create a comprehensive dataset for analysis. This technique reveals relationships and connections that would not be visible when examining individual databases in isolation. For example, linking employee records with vendor master files might reveal that a purchasing employee has family relationships with preferred vendors, indicating a potential conflict of interest."
+        "en": "Operation combining records from multiple tables based on common field; inner, outer, left, right types exist."
       }
     },
     {
       "id": 7,
       "layer": "F1",
-      "topic": "exception_reporting_concept",
+      "topic": "visualization_tools",
       "front": {
-        "en": "What is exception reporting and how does it function in fraud prevention systems?"
+        "en": "What is data visualization in fraud context?"
       },
       "back": {
-        "en": "Exception reporting is the automated identification and flagging of transactions or records that fall outside predefined parameters, thresholds, or business rules established as normal operations. This mechanism generates alerts for review when deviations from expected behavior occur, enabling proactive fraud detection. For instance, an exception report might flag all purchase orders exceeding approval authority limits or checks signed outside normal business hours."
+        "en": "Graphical representation of data enabling rapid pattern recognition, anomaly identification, and trend analysis."
       }
     },
     {
       "id": 8,
       "layer": "F1",
-      "topic": "data_mining_definition",
+      "topic": "visualization_tools",
       "front": {
-        "en": "How is data mining defined and what does it accomplish in fraud examination?"
+        "en": "Define heat mapping as analytical technique."
       },
       "back": {
-        "en": "Data mining is the computational process of discovering hidden patterns, relationships, and trends within large datasets through automated algorithms and statistical analysis techniques. It extracts actionable intelligence from massive volumes of data that would be impossible to analyze manually. A data mining operation might identify that employees who process their own expense reimbursals have significantly higher approval rates than the organizational average, suggesting potential fraud."
+        "en": "Color-coded visual representation highlighting data density; warmer colors indicate higher concentration or risk areas."
       }
     },
     {
       "id": 9,
       "layer": "F1",
-      "topic": "statistical_sampling_meaning",
+      "topic": "analytics_software",
       "front": {
-        "en": "What is statistical sampling and how does it differ from examining entire populations in data analysis?"
+        "en": "What is ACL Analytics in fraud examination?"
       },
       "back": {
-        "en": "Statistical sampling is the selection of a mathematically determined subset of data items from a larger population to make inferences about the entire population with calculated precision and confidence levels. Unlike examining all records, statistical sampling provides cost-effective analysis with measurable statistical reliability. A fraud examiner might sample 95 invoices from a population of 10,000 with 95% confidence to project fraud characteristics across the entire payment cycle."
+        "en": "Specialized audit analytics software enabling data extraction, analysis, and testing of large datasets for irregularities."
       }
     },
     {
       "id": 10,
       "layer": "F1",
-      "topic": "data_quality_assessment",
+      "topic": "analytics_software",
       "front": {
-        "en": "What is data quality assessment and why is it critical before fraud analysis?"
+        "en": "Define IDEA software in data analysis."
       },
       "back": {
-        "en": "Data quality assessment is the evaluation process determining whether data is accurate, complete, consistent, and reliable for analytical purposes before conducting fraud examinations. Poor quality data can lead to incorrect conclusions and unreliable fraud detection results. A fraud examiner must verify that payment dates, amounts, and vendor codes are properly formatted and contain no missing critical fields that would compromise subsequent analysis validity."
+        "en": "Interactive Data Extraction and Analysis tool; analyzes complete datasets identifying high-risk transactions and patterns."
       }
     },
     {
       "id": 11,
       "layer": "F1",
-      "topic": "filtering_sorting_techniques",
+      "topic": "data_quality",
       "front": {
-        "en": "What do filtering and sorting functions accomplish in fraud detection analysis?"
+        "en": "What is data integrity in analysis?"
       },
       "back": {
-        "en": "Filtering is the process of displaying only data records that meet specific criteria, while sorting arranges records in ascending or descending order based on selected fields. These fundamental techniques narrow large datasets to focus on suspicious transactions and organize information logically for pattern identification. For example, filtering to show only expenses over $5,000 and sorting by employee reveals which staff members concentrate large personal expense claims."
+        "en": "Assurance that data is complete, accurate, consistent, and unaltered; critical for reliable fraud detection."
       }
     },
     {
       "id": 12,
       "layer": "F1",
-      "topic": "audit_trail_documentation",
+      "topic": "data_quality",
       "front": {
-        "en": "What is an audit trail and how is it defined in digital fraud examination contexts?"
+        "en": "Define outliers in data analysis."
       },
       "back": {
-        "en": "An audit trail is a chronological record documenting all system access, data modifications, and transaction processing activities with timestamps, user identifications, and specific changes made. It provides accountability and enables investigators to reconstruct events and identify unauthorized or suspicious system activities. For instance, an audit trail showing that a payroll clerk accessed terminated employee records minutes before processing a final paycheck could indicate potential fraudulent payment processing."
+        "en": "Data points significantly deviating from expected pattern; may indicate errors, anomalies, or fraudulent transactions."
       }
     },
     {
       "id": 13,
       "layer": "F2",
-      "topic": "benford_law_vs_chi_square_test",
+      "topic": "analytical_methods",
       "front": {
-        "en": "What is the difference between applying Benford's Law and using a chi-square test for detecting anomalies in financial data?"
+        "en": "Distinguish between descriptive and predictive analytics."
       },
       "back": {
-        "en": "Benford's Law examines whether the distribution of first digits in a dataset follows expected natural patterns, while chi-square testing compares observed versus expected frequencies across all digit positions. Benford's Law is faster for initial screening of large datasets and requires no predetermined expectation, whereas chi-square requires a baseline for comparison. For example, Benford's Law quickly identifies unusual invoice amounts, while chi-square formally tests whether expense categories deviate significantly from historical norms."
+        "en": "Descriptive analyzes past data; predictive forecasts future patterns. Both identify fraud but different applications."
       }
     },
     {
       "id": 14,
       "layer": "F2",
-      "topic": "pivot_tables_vs_data_stratification",
+      "topic": "analytical_methods",
       "front": {
-        "en": "How do pivot tables differ from data stratification in organizing data for fraud analysis?"
+        "en": "Difference between variance and standard deviation?"
       },
       "back": {
-        "en": "Pivot tables reorganize and summarize data by multiple dimensions to reveal patterns and outliers through cross-tabulation, while stratification divides data into homogeneous subgroups based on specific characteristics for separate analysis. Pivot tables are visual exploration tools that show relationships quickly, whereas stratification is a sampling technique ensuring representative analysis of distinct populations. For example, a pivot table shows invoice amounts by vendor and date, while stratification separates invoices into risk categories (high-value vs. routine) before sampling each stratum separately."
+        "en": "Variance is squared deviations from mean; standard deviation is square root. Standard deviation uses original units."
       }
     },
     {
       "id": 15,
       "layer": "F2",
-      "topic": "clustering_analysis_vs_outlier_detection",
+      "topic": "database_operations",
       "front": {
-        "en": "What distinguishes clustering analysis from outlier detection in identifying fraudulent patterns?"
+        "en": "What differentiates INNER JOIN from LEFT JOIN?"
       },
       "back": {
-        "en": "Clustering analysis groups similar records together to identify normal behavioral patterns and segments, while outlier detection specifically isolates records that deviate significantly from the majority. Clustering assumes most data is legitimate and organizes it by similarities, whereas outlier detection assumes deviance indicates fraud. For example, clustering might group employees into normal expense categories, while outlier detection flags the single employee whose travel expenses are three standard deviations above the cluster mean."
+        "en": "INNER JOIN returns matching records only; LEFT JOIN returns all left table records plus matches from right."
       }
     },
     {
       "id": 16,
       "layer": "F2",
-      "topic": "link_analysis_vs_social_network_analysis",
+      "topic": "database_operations",
       "front": {
-        "en": "How does link analysis differ from social network analysis in examining fraud connections?"
+        "en": "Distinguish between WHERE and HAVING clauses."
       },
       "back": {
-        "en": "Link analysis identifies direct relationships and transactions between two entities (person-to-person, company-to-company), while social network analysis maps entire ecosystems of relationships including indirect connections and group patterns. Link analysis focuses on bilateral connections and is simpler to execute, whereas social network analysis reveals hidden conspiracies, influence patterns, and community structures. For example, link analysis shows that Employee A transferred funds to Company B, while social network analysis reveals that Employee A, B, C, and Company D form a coordinated fraud ring through multiple interconnected transactions."
+        "en": "WHERE filters rows before grouping; HAVING filters grouped results. HAVING used with aggregate functions."
       }
     },
     {
       "id": 17,
       "layer": "F2",
-      "topic": "horizontal_analysis_vs_vertical_analysis",
+      "topic": "analytical_techniques",
       "front": {
-        "en": "What is the difference between horizontal analysis and vertical analysis when examining financial statements for fraud?"
+        "en": "Difference between ratio analysis and trend analysis?"
       },
       "back": {
-        "en": "Horizontal analysis compares financial data across multiple time periods to identify trends and anomalies in changes over time, while vertical analysis examines the composition of a single period by expressing each line item as a percentage of a base amount. Horizontal analysis detects fraud schemes that gradually increase or sudden unusual spikes, whereas vertical analysis reveals unusual proportions within a single period. For example, horizontal analysis identifies that accounts payable increased 300% year-over-year (potential shell company scheme), while vertical analysis shows accounts payable unexpectedly comprise 45% of total liabilities (unusual for the industry)."
+        "en": "Ratio analysis compares relationships between accounts; trend analysis examines changes over time periods."
       }
     },
     {
       "id": 18,
       "layer": "F2",
-      "topic": "frequency_distribution_vs_exception_reporting",
+      "topic": "statistical_concepts",
       "front": {
-        "en": "How do frequency distributions differ from exception reporting in organizing analytical results?"
+        "en": "Distinguish between population and sample."
       },
       "back": {
-        "en": "Frequency distributions organize data by the number of times values or ranges occur, showing the shape and concentration of data across categories, while exception reporting highlights only records meeting specific predefined criteria that fall outside normal parameters. Frequency distributions provide comprehensive visibility into data patterns, whereas exception reporting delivers actionable results filtered to likely fraud indicators. For example, a frequency distribution shows that 87% of invoices are $0-$10,000 and 10% are $10,000-$50,000 (revealing a gap), while exception reporting directly lists the 15 invoices exceeding the $50,000 threshold for immediate investigation."
+        "en": "Population is entire group; sample is subset. Analysis uses samples due to cost, time constraints."
       }
     },
     {
       "id": 19,
       "layer": "F2",
-      "topic": "duration_analysis_vs_trend_analysis",
+      "topic": "visualization_types",
       "front": {
-        "en": "What distinguishes duration analysis from trend analysis in detecting sequential fraud patterns?"
+        "en": "Difference between bar chart and scatter plot?"
       },
       "back": {
-        "en": "Duration analysis examines the time elapsed between events or the length of time a condition exists, while trend analysis tracks the direction and rate of change in values or frequency over time. Duration analysis answers 'how long,' whereas trend analysis answers 'which direction and how fast.' For example, duration analysis identifies that the average time between an employee's expense submissions decreased from 30 days to 2 days (suggesting accelerated fraud activity), while trend analysis shows that reimbursement amounts consistently increased 5% per month (indicating a systematic inflation scheme)."
+        "en": "Bar chart displays categorical comparisons; scatter plot shows relationships between two continuous variables."
       }
     },
     {
       "id": 20,
       "layer": "F2",
-      "topic": "join_operations_vs_merge_operations",
+      "topic": "data_tools",
       "front": {
-        "en": "How do join operations differ from merge operations when combining datasets in fraud analysis software?"
+        "en": "Distinguish between ACL and IDEA software."
       },
       "back": {
-        "en": "Join operations combine records from two files based on matching key fields, creating a single output containing fields from both files where matches occur, while merge operations combine two files sequentially, typically stacking records vertically when keys match. Joins create cross-referenced records showing relationships, while merges consolidate related data into a single comprehensive file. For example, a join matches employee names between a payroll file and an accounts payable file to identify employees creating vendor invoices, while a merge combines two periods of expense reports into one file for period-over-period comparison."
+        "en": "ACL emphasizes compliance testing and audit; IDEA focuses on data analytics and extraction capabilities."
       }
     },
     {
       "id": 21,
       "layer": "F2",
-      "topic": "stratified_sampling_vs_cluster_sampling",
+      "topic": "statistical_measures",
       "front": {
-        "en": "What is the difference between stratified sampling and cluster sampling in selecting records for fraud testing?"
+        "en": "Difference between mean and median analysis?"
       },
       "back": {
-        "en": "Stratified sampling divides the population into homogeneous groups (strata) and randomly samples from each stratum to ensure representation from all segments, while cluster sampling divides the population into clusters and randomly selects entire clusters for testing. Stratified sampling provides balanced representation across risk categories, whereas cluster sampling is more efficient for geographically or organizationally dispersed populations. For example, stratified sampling ensures testing includes low, medium, and high-value transactions, while cluster sampling tests all transactions from randomly selected branches or departments."
+        "en": "Mean is average; median is middle value. Median resists outlier influence; mean affected by extremes."
       }
     },
     {
       "id": 22,
       "layer": "F2",
-      "topic": "ratio_analysis_vs_reasonableness_testing",
+      "topic": "data_concepts",
       "front": {
-        "en": "How does ratio analysis differ from reasonableness testing in validating financial data accuracy?"
+        "en": "Distinguish between data mining and data analysis."
       },
       "back": {
-        "en": "Ratio analysis compares two related financial metrics to assess relationships and deviations from expected proportions, while reasonableness testing evaluates whether specific values fall within logically expected ranges based on business operations or historical norms. Ratio analysis focuses on interdependencies between accounts, whereas reasonableness testing focuses on individual transaction validity. For example, ratio analysis compares accounts receivable to revenue to detect unusual collection patterns, while reasonableness testing verifies that an expense reimbursement of $5,000 for a one-day conference is unreasonable and warrants investigation."
+        "en": "Data mining discovers patterns in large datasets; data analysis examines specific data answering defined questions."
       }
     },
     {
       "id": 23,
-      "layer": "F2",
-      "topic": "deduplication_vs_duplicate_detection",
+      "layer": "F3",
+      "topic": "benford_application",
       "front": {
-        "en": "What is the difference between deduplication and duplicate detection in data cleaning for analysis?"
+        "en": "When should Benford's Law be applied in testing?"
       },
       "back": {
-        "en": "Duplicate detection identifies and reports records that appear multiple times in a dataset, highlighting the problem without modifying data, while deduplication automatically removes redundant records, keeping only one instance of each unique record. Duplicate detection preserves the original dataset for investigation, whereas deduplication modifies data and reduces file size. For example, duplicate detection flags that Invoice #INV-001 appears 3 times in the vendor file (requiring investigation of why), while deduplication removes the redundant copies and retains only one occurrence for clean analysis."
+        "en": "Applied to naturally occurring numbers in datasets: invoice amounts, expense reports, journal entries, account balances."
       }
     },
     {
       "id": 24,
-      "layer": "F2",
-      "topic": "control_testing_vs_substantive_testing",
+      "layer": "F3",
+      "topic": "benford_application",
       "front": {
-        "en": "How do control testing and substantive testing differ in data analysis for fraud examination?"
+        "en": "How is Benford's Law applied to detect manipulation?"
       },
       "back": {
-        "en": "Control testing analyzes whether internal controls and processes functioned effectively to prevent or detect fraud, examining system rules and approval workflows, while substantive testing directly examines transaction details and account balances to identify misstatements or irregularities. Control testing assesses preventive mechanisms, whereas substantive testing detects actual fraud that may have occurred. For example, control testing verifies that the approval workflow required three authorization signatures on all invoices over $50,000, while substantive testing examines whether unapproved invoices over $50,000 were actually processed and paid."
+        "en": "Compare actual first-digit distribution to expected distribution; significant deviation indicates potential data manipulation."
       }
     },
     {
       "id": 25,
       "layer": "F3",
-      "topic": "benford_law_application_detection",
+      "topic": "sampling_application",
       "front": {
-        "en": "How do you detect fraudulent invoice amounts using Benford's Law analysis?"
+        "en": "In which situation is stratified sampling preferred?"
       },
       "back": {
-        "en": "Benford's Law states that in naturally occurring datasets, the first digit 1 appears about 30% of the time, while 9 appears only 5%. To detect fraud, extract the first digit of invoice amounts and compare the distribution against expected frequencies. Significant deviations suggest manipulation. For example, if invoices show 15% of amounts starting with 1 (vs. expected 30%), this indicates potential manipulation or fictitious entries created by fraudsters."
+        "en": "When population contains distinct subgroups requiring proportional representation; ensures each stratum adequately represented in sample."
       }
     },
     {
       "id": 26,
       "layer": "F3",
-      "topic": "discovery_sampling_fraud_detection",
+      "topic": "database_application",
       "front": {
-        "en": "How is discovery sampling applied when you suspect high-value fraud but have large transaction volumes?"
+        "en": "How would you identify duplicate transactions using SQL?"
       },
       "back": {
-        "en": "Discovery sampling is designed to find at least one exception in a population, making it ideal for high-risk fraud suspicions. You set a confidence level (e.g., 95%) and sample size based on expected fraud rate, then examine each item sequentially until an exception is found. For instance, if investigating potential bribery in procurement where you suspect 1-2 fraudulent payments among 10,000 transactions, discovery sampling efficiently identifies the first fraudulent payment without reviewing the entire population."
+        "en": "Use GROUP BY with HAVING COUNT to find repeated values; JOIN tables to cross-reference duplicate entries."
       }
     },
     {
       "id": 27,
       "layer": "F3",
-      "topic": "attribute_sampling_control_testing",
+      "topic": "analysis_application",
       "front": {
-        "en": "What are the red flags when attribute sampling reveals control deviations in authorization processes?"
+        "en": "How is ratio analysis applied detecting payroll fraud?"
       },
       "back": {
-        "en": "Attribute sampling tests whether controls operate as designed by counting deviations. Red flags include: approvals missing signatures, amounts exceeding authorized limits, or transactions processed without required supporting documentation. When deviations exceed your tolerable rate (e.g., 3%), it indicates control failure and increased fraud risk. For example, if 8% of expense reports lack manager approval versus a tolerable 3%, this suggests inadequate segregation of duties and creates opportunity for unauthorized spending or fictitious claims."
+        "en": "Compare ratios: payroll to sales, headcount to payroll; unusual ratios indicate ghost employees or inflated compensation."
       }
     },
     {
       "id": 28,
       "layer": "F3",
-      "topic": "variance_analysis_anomaly_detection",
+      "topic": "visualization_application",
       "front": {
-        "en": "How do you use variance analysis to detect unusual patterns in operational expenses?"
+        "en": "When would heat mapping be most effective?"
       },
       "back": {
-        "en": "Variance analysis compares actual expenses to expected amounts based on historical trends or budgets, isolating unusual deviations for investigation. Calculate variance percentages and flag items exceeding thresholds (e.g., 20% above forecast). This technique reveals both fraudulent inflation and suspicious cost reductions. For example, if utilities typically cost $5,000 monthly but suddenly jump to $8,500 (70% increase) with no operational changes, this warrants investigation for potential vendor fraud or unauthorized charges."
+        "en": "Analyzing transaction volumes by geography, department, or time period; quickly identifies concentration or suspicious patterns."
       }
     },
     {
       "id": 29,
       "layer": "F3",
-      "topic": "ratio_analysis_financial_statement_fraud",
+      "topic": "outlier_detection",
       "front": {
-        "en": "What financial ratios should you monitor to detect potential revenue or asset fraud?"
+        "en": "How do you identify outliers indicating fraud risk?"
       },
       "back": {
-        "en": "Key ratios include: Days Sales Outstanding (DSO) for fictitious sales detection, Gross Profit Margin trends for revenue inflation, and Asset Turnover for possible asset overstatement. Sudden, unexplained ratio changes signal fraud. For example, if DSO increases from 35 to 65 days without corresponding business changes, this suggests fictitious sales where invoices aren't collected because they're not legitimate. Similarly, declining Asset Turnover combined with increasing assets indicates possible asset capitalization fraud."
+        "en": "Apply statistical methods: z-score, interquartile range; investigate transactions exceeding thresholds or deviating significantly."
       }
     },
     {
       "id": 30,
       "layer": "F3",
-      "topic": "duplicate_detection_payment_fraud",
+      "topic": "software_application",
       "front": {
-        "en": "How do you systematically identify duplicate and near-duplicate payments that mask embezzlement schemes?"
+        "en": "How is ACL Analytics used in expense audits?"
       },
       "back": {
-        "en": "Use data matching to identify exact duplicate transactions (same vendor, amount, date) and fuzzy matching for near-duplicates (similar amounts, dates within days, matching vendor patterns). Hash matching or digital fingerprinting accelerates detection in large datasets. For example, analyzing AP data reveals two payments of $4,950 to 'John Smith Consulting' on the same day—likely a duplicate payment fraud where the perpetrator submitted the invoice twice knowing the second payment would be processed before reconciliation occurred."
+        "en": "Extract all expenses, test for duplicates, apply Benford's Law, identify high-value transactions for detailed review."
       }
     },
     {
       "id": 31,
       "layer": "F3",
-      "topic": "outlier_detection_expense_fraud",
+      "topic": "trend_analysis",
       "front": {
-        "en": "What methods detect outliers in expense categories to identify potential kickback schemes?"
+        "en": "How is trend analysis applied detecting inventory fraud?"
       },
       "back": {
-        "en": "Use statistical methods like z-score analysis or interquartile range (IQR) to identify transactions beyond normal distribution. Flag items >2 or 3 standard deviations from the mean. Visual analysis through scatter plots and histograms also reveals suspicious patterns. For instance, if travel expenses normally range $500-$2,000 but one employee has a $15,000 charge, or if meals average $75 but one person has $2,000 in meal expenses over a month, these outliers suggest potential personal expenses disguised as business or kickback arrangements with vendors providing inflated invoices."
+        "en": "Compare inventory levels, turnover rates, shrinkage over time; unexplained declines indicate potential theft or misstatement."
       }
     },
     {
       "id": 32,
       "layer": "F3",
-      "topic": "sequence_gap_testing_inventory",
+      "topic": "correlation_analysis",
       "front": {
-        "en": "How does sequence gap testing expose inventory shrinkage or theft in warehouse operations?"
+        "en": "How would correlation analysis detect collusion?"
       },
       "back": {
-        "en": "Sequence gap testing examines sequential numbering (invoice numbers, receipt numbers, check numbers) to identify missing or deleted records. Gaps indicate potential deletion of fraudulent transactions or unrecorded removals. For example, analyzing receiving reports shows sequence 5001, 5003, 5004, 5008—the missing numbers 5002, 5005, 5006, 5007 suggest deleted receipts. An investigation reveals warehouse staff deleted receipt records for inventory they removed, allowing theft without documentation trails."
+        "en": "Examine relationships between employee actions, transaction timing, amounts; strong correlation patterns suggest coordinated activity."
       }
     },
     {
       "id": 33,
-      "layer": "F3",
-      "topic": "threshold_testing_limit_abuse",
+      "layer": "F4",
+      "topic": "benford_exceptions",
       "front": {
-        "en": "How does threshold testing reveal patterns where fraudsters manipulate transaction amounts to avoid detection?"
+        "en": "When is Benford's Law NOT applicable?"
       },
       "back": {
-        "en": "Threshold testing examines transaction amounts relative to approval limits or policy thresholds, revealing patterns where amounts stay just below triggers (e.g., $9,999 vs. $10,000 limit). Analyze the distribution of transactions at specific price points. For example, expense policy requires VP approval for purchases over $5,000, but analysis reveals 47 purchases at $4,999.99 versus normal distribution of $2,000-$4,500. This 'just below threshold' clustering indicates collusion between procurement and vendors to split or manipulate invoices, avoiding required approvals."
+        "en": "Assigned numbers, controlled values, sequential data, small datasets lack natural distribution; law assumes large random datasets."
       }
     },
     {
       "id": 34,
-      "layer": "F3",
-      "topic": "recurrence_pattern_analysis_payroll",
+      "layer": "F4",
+      "topic": "data_quality_red_flags",
       "front": {
-        "en": "What recurrence patterns in payroll data indicate ghost employee or timesheet fraud?"
+        "en": "What indicates compromised data integrity in analysis?"
       },
       "back": {
-        "en": "Analyze employee pay patterns for unusual consistency: identical hours every period, zero absences, missing overtime variability, or systematic rounding (e.g., always 40.0 hours). Compare actual hours submitted to system records. For example, discovering Employee X submitted 40.00 hours for 52 consecutive weeks with perfect attendance while peer timesheets show normal variation (37-42 hours) and typical absences suggests fabricated time entries. Cross-referencing against badge access records confirms the employee wasn't present for many shifts claimed, indicating timesheet fraud by supervisor."
+        "en": "Missing values, duplicates, inconsistent formats, logical impossibilities, unexplained gaps; all require investigation before analysis."
       }
     },
     {
       "id": 35,
-      "layer": "F3",
-      "topic": "peer_group_comparison_anomalies",
+      "layer": "F4",
+      "topic": "sampling_risks",
       "front": {
-        "en": "How do you use peer group benchmarking to detect individual instances of fraud within departments?"
+        "en": "What is critical limitation of sampling in fraud detection?"
       },
       "back": {
-        "en": "Compare individual metrics (sales per representative, expense ratios, transaction processing times, error rates) against peer averages to identify statistical outliers. Calculate percentile rankings and flag performers >2 standard deviations from group mean. For example, in a sales division where average commission is $4,500 monthly, one representative consistently reports $18,000 commissions. Investigation reveals fictitious customer accounts and side agreements with a vendor to process fake orders, while peers have legitimate account bases and growth patterns."
+        "en": "Sampling may miss fraud occurring outside selected sample; universe testing preferred for high-risk transaction categories."
       }
     },
     {
       "id": 36,
-      "layer": "F3",
-      "topic": "data_completeness_validation_fraud",
+      "layer": "F4",
+      "topic": "statistical_pitfalls",
       "front": {
-        "en": "What missing data patterns in transaction records indicate potential fraud concealment or system manipulation?"
+        "en": "What false positive risk exists in statistical testing?"
       },
       "back": {
-        "en": "Monitor fields with mandatory requirements (descriptions, cost codes, approval fields, supporting documents) and flag transactions with missing or generic entries like 'miscellaneous' or 'various.' High null-value percentages indicate careless fraud or system compromise. For example, analyzing expense submissions shows 12% lack cost center codes versus 0.5% in prior years; 8% have generic descriptions like 'office supplies' versus specific items. Investigation reveals a rogue accounts payable clerk created a macro bypassing validation controls, allowing fraudulent vendor invoices without proper coding for audit trail concealment."
+        "en": "Statistical anomalies may indicate errors rather than fraud; investigative follow-up required; probability of false alarm increases with tests."
       }
     },
     {
       "id": 37,
       "layer": "F4",
-      "topic": "benford_law_multiple_datasets",
+      "topic": "database_risks",
       "front": {
-        "en": "Why is applying Benford's Law across multiple datasets simultaneously more effective than analyzing a single dataset in fraud detection?"
+        "en": "What critical error occurs with incomplete SQL WHERE clauses?"
       },
       "back": {
-        "en": "Benford's Law becomes more powerful when applied to comparative analysis because anomalies stand out more clearly when one dataset deviates significantly from the natural distribution while others conform. This approach strengthens the fraud examiner's ability to isolate suspicious transactions and reduce false positives. For example, comparing expense reports across departments may reveal that one department's first-digit distribution dramatically differs from others, indicating potential manipulation or fabrication in that specific area."
+        "en": "Missing filters returns unintended data; accidentally excluding fraud indicators; always verify query logic and record counts."
       }
     },
     {
       "id": 38,
       "layer": "F4",
-      "topic": "sampling_strategy_integration",
+      "topic": "visualization_limitations",
       "front": {
-        "en": "How do judgmental and statistical sampling work together to optimize fraud investigation resources?"
+        "en": "What critical limitation exists in data visualization?"
       },
       "back": {
-        "en": "Judgmental sampling identifies high-risk areas based on examiner expertise and prior fraud indicators, while statistical sampling ensures representative coverage of lower-risk populations. This combination maximizes investigation efficiency by focusing intensive review on suspicious areas while maintaining statistical defensibility across the entire population. A fraud examiner might use judgmental sampling to select high-value vendors for detailed review, then apply statistical sampling to verify the remaining vendor population, creating a comprehensive audit trail."
+        "en": "Visual representations can manipulate perception; scale choices, omitted data, color selection bias analysis conclusions."
       }
     },
     {
       "id": 39,
       "layer": "F4",
-      "topic": "regression_outlier_identification",
+      "topic": "analytical_bias",
       "front": {
-        "en": "How does regression analysis help identify fraud when combined with outlier detection techniques?"
+        "en": "What is confirmation bias risk in data analysis?"
       },
       "back": {
-        "en": "Regression analysis establishes expected relationships between variables, and deviations from the predicted regression line highlight transactions that don't follow normal patterns. When combined with outlier detection, these anomalies become priority targets for investigation. For instance, a regression model might predict sales commissions based on revenue generated; transactions where actual commissions significantly exceed predictions could indicate fraudulent expense claims or unauthorized payments."
+        "en": "Analyst interprets data supporting preexisting hypothesis; ignores contrary evidence; requires objective hypothesis testing procedures."
       }
     },
     {
       "id": 40,
       "layer": "F4",
-      "topic": "data_matching_entity_resolution",
+      "topic": "data_selection_bias",
       "front": {
-        "en": "What role does entity resolution play in making data matching techniques more effective for detecting cross-system fraud?"
+        "en": "What critical error is selection bias in testing?"
       },
       "back": {
-        "en": "Entity resolution ensures that the same individual, vendor, or entity is correctly identified across different systems and databases, preventing false negatives where fraudsters use name variations or aliases. Without proper resolution, data matching may fail to connect fraudulent activities spanning multiple platforms or company records. A sophisticated fraudster might create variations like 'J. Smith,' 'John Smith,' and 'J Smith' to evade detection; proper entity resolution consolidates these into a single profile, revealing the complete fraud pattern."
+        "en": "Selecting data supporting fraud theory; excluding contradictory data; compromises analysis validity; requires predetermined selection criteria."
       }
     },
     {
       "id": 41,
       "layer": "F4",
-      "topic": "software_tool_complementarity",
+      "topic": "correlation_causation",
       "front": {
-        "en": "Why is using both ACL and IDEA software within the same investigation framework more advantageous than relying on a single tool?"
+        "en": "What common analytical error confuses correlation and causation?"
       },
       "back": {
-        "en": "ACL and IDEA have different strengths—ACL excels in data extraction and testing procedures, while IDEA is particularly strong in statistical analysis and continuous monitoring. Using both tools creates comprehensive coverage where each tool's limitations are offset by the other's capabilities. An examiner might use ACL to extract and initially analyze transaction records, then import findings into IDEA for advanced statistical testing and trend analysis, creating a more robust investigative conclusion."
+        "en": "Correlation indicates relationship; causation proves one variable causes another; fraudsters exploit correlation to appear legitimate."
       }
     },
     {
       "id": 42,
       "layer": "F4",
-      "topic": "ml_vs_rules_detection_gaps",
+      "topic": "software_limitations",
       "front": {
-        "en": "How does machine learning's adaptability address the limitation that rule-based systems become outdated as fraudsters evolve their schemes?"
+        "en": "What limitation exists in automated analytics software?"
       },
       "back": {
-        "en": "Rule-based systems detect only known fraud patterns defined by explicit rules, while machine learning models continuously adapt by learning from new data and identifying previously unseen anomalies. As fraudsters develop novel schemes, rule-based systems fail to detect them, but ML models can recognize subtle deviations from learned behavior patterns. For example, a rule-based system might miss a new type of invoice fraud that combines previously unrelated transaction characteristics in an unusual way, whereas an ML model trained on legitimate patterns would flag this deviation."
+        "en": "Software identifies anomalies requiring human judgment; cannot determine intent; false positives require investigation; tools supplement investigation."
       }
     },
     {
       "id": 43,
       "layer": "F4",
-      "topic": "network_analysis_shell_companies",
+      "topic": "statistical_significance",
       "front": {
-        "en": "How does network analysis reveal complex multi-party fraud schemes that individual transaction analysis would miss?"
+        "en": "What determines acceptable statistical significance threshold?"
       },
       "back": {
-        "en": "Network analysis visualizes relationships between entities (people, companies, accounts) and exposes hidden connections and patterns of repeated interactions that indicate coordinated fraud. Individual transaction analysis examines each transaction in isolation, missing the larger scheme architecture. For example, network analysis might reveal that multiple shell companies controlled by the same individual are engaging in circular payments, kickback schemes, or collusion—patterns invisible when reviewing transactions separately."
+        "en": "Risk tolerance, materiality, data characteristics; typical 5% alpha; lower threshold increases investigation burden; higher increases fraud risk."
       }
     },
     {
       "id": 44,
       "layer": "F4",
-      "topic": "continuous_monitoring_preventive_impact",
+      "topic": "data_preservation",
       "front": {
-        "en": "Why does continuous monitoring shift fraud investigation from reactive to preventive, and what is the impact on overall organizational fraud risk?"
+        "en": "What critical requirement exists for analyzed data?"
       },
       "back": {
-        "en": "Continuous monitoring detects anomalies in real-time or near-real-time, allowing prevention of fraud in progress rather than only discovering completed frauds during audits. This significantly reduces the fraud loss exposure and creates a deterrent effect as potential fraudsters know their activities are under constant scrutiny. The organizational impact includes lower fraud losses, faster remediation, and reduced investigation costs. For example, continuous monitoring might detect unauthorized access to the accounts payable system within hours, preventing processing of fraudulent invoices rather than discovering them weeks later."
+        "en": "Maintain original data integrity; preserve unmodified copies; document all transformations; ensure admissibility in legal proceedings."
       }
     },
     {
       "id": 45,
       "layer": "F4",
-      "topic": "gap_testing_authorization_controls",
+      "topic": "analytical_documentation",
       "front": {
-        "en": "What connection exists between gap testing findings and the strength of an organization's authorization control framework?"
+        "en": "What essential documentation supports data analysis conclusions?"
       },
       "back": {
-        "en": "Gap testing identifies periods where transactions occurred outside normal processing windows or without required approvals, directly exposing weaknesses in authorization controls. Large or frequent gaps suggest that authorization controls are either ineffective, poorly monitored, or intentionally bypassed. When a gap testing analysis reveals that payment authorizations were consistently exceeded during month-end closing periods, it indicates both a control weakness and a vulnerable window where fraud could occur with reduced detection risk."
+        "en": "Methodology, data sources, queries executed, assumptions made, limitations identified, results verified; supports reproducibility and defensibility."
       }
     },
     {
       "id": 46,
       "layer": "F4",
-      "topic": "boundary_testing_system_manipulation",
+      "topic": "materiality_application",
       "front": {
-        "en": "How does boundary testing reveal both accidental system configuration errors and intentional fraud in authorization limits?"
+        "en": "How does materiality affect data analysis scope?"
       },
       "back": {
-        "en": "Boundary testing examines transactions at critical system thresholds (just above/below approval limits) to identify whether controls function correctly at decision points. Legitimate boundary testing failures suggest system bugs, while patterns of transactions deliberately staying just below limits indicate intentional circumvention. For example, if purchase orders consistently appear just below the $50,000 approval threshold (e.g., $49,999.99), this pattern suggests deliberate structuring to avoid higher-level review, distinguishing intentional fraud from random variation."
+        "en": "Immaterial transactions may be excluded; testing focused on significant amounts; risk-based approach allocates resources efficiently."
       }
     },
     {
       "id": 47,
       "layer": "F4",
-      "topic": "stratified_sampling_fraud_concentration",
+      "topic": "continuous_monitoring",
       "front": {
-        "en": "How does stratified sampling improve fraud detection when fraud losses are concentrated in specific transaction populations rather than distributed evenly?"
+        "en": "What critical advantage exists in continuous data analysis?"
       },
       "back": {
-        "en": "Stratified sampling divides the population into homogeneous subgroups and applies different sampling rates to each stratum, allowing higher sampling intensity in high-risk or high-value groups where fraud is more likely concentrated. This approach dramatically increases fraud detection rates compared to simple random sampling when fraud is not uniformly distributed. In a vendor payment system where 80% of fraud losses occur in international vendor payments (10% of transactions), stratified sampling allocates more resources to international vendors, dramatically increasing detection probability within the same sample size."
+        "en": "Detects real-time anomalies versus periodic testing; enables rapid response; automated testing extends coverage reducing fraud dwell time."
       }
     },
     {
       "id": 48,
       "layer": "F4",
-      "topic": "data_analysis_reporting_compliance",
+      "topic": "analytical_independence",
       "front": {
-        "en": "How do the selection and documentation of data analysis tools and methodologies impact the admissibility of fraud investigation findings in legal proceedings?"
+        "en": "Why must fraud examiners maintain analytical independence?"
       },
       "back": {
-        "en": "The choice of data analysis tools and methodologies must be defensible, repeatable, and well-documented because opposing counsel will challenge the reliability and relevance of investigative findings. Tools and methods that lack industry acceptance or lack clear documentation of their application weakens the evidentiary value of conclusions. A fraud examiner who uses IDEA for statistical testing must document the exact version, parameters, sample size calculations, and statistical confidence levels used; failure to do so may render findings inadmissible, even if technically sound."
+        "en": "Prevents bias; ensures objective findings; separates investigator from suspect subjects; required for credibility and investigative integrity."
       }
     }
   ]

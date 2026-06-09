@@ -2,7 +2,7 @@
   "cert_id": "cfe",
   "domain_id": "inventory_fraud",
   "domain_code": "S1D05",
-  "domain_name": "S1D05 · Asset Misappropriation — Inventory & Assets",
+  "domain_name": "S1D05 · Inventory Fraud",
   "lang": "pt",
   "total": 48,
   "schema": "FractalFlashcard-v1",
@@ -16,529 +16,529 @@
     {
       "id": 1,
       "layer": "F1",
-      "topic": "definicao_apropriacao_indevida_estoque",
+      "topic": "inventory_fraud_definition",
       "front": {
-        "pt": "Como se define apropriação indevida de estoque?"
+        "pt": "O que é inventory fraud?"
       },
       "back": {
-        "pt": "Apropriação indevida de estoque é o roubo não autorizado de inventário da empresa por funcionários, parceiros ou terceiros. Ocorre quando bens destinados à empresa são desviados para uso pessoal ou venda ilegal. Um exemplo clássico é um funcionário de armazém que remove produtos para revenda em mercado paralelo sem documentação ou autorização."
+        "pt": "Esquema deliberado para distorcer registros de estoque, manipulando quantidade, qualidade ou valor de bens."
       }
     },
     {
       "id": 2,
       "layer": "F1",
-      "topic": "definicao_ativos_nao_estoque",
+      "topic": "shrinkage_definition",
       "front": {
-        "pt": "Qual é a definição de ativos não-estoque no contexto de fraude?"
+        "pt": "Defina shrinkage no contexto de fraude."
       },
       "back": {
-        "pt": "Ativos não-estoque são bens e recursos corporativos distintos do inventário de produtos, incluindo equipamentos, ferramentas, materiais de escritório, mobiliário e propriedades fixas. A apropriação indevida desses ativos envolve o desvio unauthorized de tais itens para benefício pessoal. Exemplo: um gerente que leva um computador corporativo para casa sem documentação ou autorização."
+        "pt": "Redução não-documentada de inventário entre contagem física e registros contábeis do sistema."
       }
     },
     {
       "id": 3,
       "layer": "F1",
-      "topic": "definicao_ciclo_vida_estoque",
+      "topic": "ghost_inventory",
       "front": {
-        "pt": "O que é o ciclo de vida do estoque e por que é importante para detecção de fraude?"
+        "pt": "O que caracteriza ghost inventory?"
       },
       "back": {
-        "pt": "O ciclo de vida do estoque compreende as etapas de aquisição, recebimento, armazenamento, movimento, venda e descarte de inventário. Compreender este ciclo é essencial para identificar onde ocorrem fraudes, pois cada etapa possui vulnerabilidades específicas. Fraudes podem ocorrer em qualquer ponto, desde documentação falsificada no recebimento até roubo durante o armazenamento."
+        "pt": "Bens registrados no sistema que não existem fisicamente no estoque ou armazém."
       }
     },
     {
       "id": 4,
       "layer": "F1",
-      "topic": "definicao_discrepancia_estoque",
+      "topic": "inventory_obsolescence",
       "front": {
-        "pt": "Como se define discrepância de estoque?"
+        "pt": "Como obsolescência de estoque difere de perda legítima?"
       },
       "back": {
-        "pt": "Discrepância de estoque é a diferença entre a quantidade de inventário registrada nos sistemas contábeis e a quantidade física realmente presente no armazém ou local de armazenamento. Pode resultar de erros administrativos, danos, roubo ou fraude. Uma discrepância significativa entre registros e contagem física é uma bandeira vermelha importante para investigações de fraude."
+        "pt": "Obsolescência: desgaste natural; fraude: manipulação intencional de registros de depreciação."
       }
     },
     {
       "id": 5,
       "layer": "F1",
-      "topic": "definicao_fraude_recebimento",
+      "topic": "stock_out_scheme",
       "front": {
-        "pt": "Qual é a definição de fraude de recebimento de ativos?"
+        "pt": "Defina stock-out fraud scheme."
       },
       "back": {
-        "pt": "Fraude de recebimento refere-se à não-documentação, falsificação ou omissão de registros quando bens são recebidos pela empresa. O perpetrador falha em registrar a entrada de mercadorias ou registra quantidades menores que as efetivamente recebidas. Exemplo: um recebedor que aceita 100 unidades mas registra apenas 50, desviando as outras 50 para venda pessoal."
+        "pt": "Remoção não-autorizada de inventário com documentação falsa de venda ou devolução."
       }
     },
     {
       "id": 6,
       "layer": "F1",
-      "topic": "definicao_diversao_estoque",
+      "topic": "count_manipulation",
       "front": {
-        "pt": "O que significa diversão de estoque em esquemas de fraude?"
+        "pt": "O que é manipulação de contagem física?"
       },
       "back": {
-        "pt": "Diversão de estoque é o desvio de inventário de sua destinação legítima dentro da organização para fins não autorizados, como roubo ou venda não autorizada. Ocorre quando funcionários redirecionam produtos já registrados no sistema para seus próprios ganhos. Um vendedor que transfere mercadoria de alta demanda para cliente pessoal sem registro de venda é exemplo de diversão de estoque."
+        "pt": "Falsificação intencional de registros durante contagem cíclica ou inventário completo."
       }
     },
     {
       "id": 7,
       "layer": "F1",
-      "topic": "definicao_manipulacao_recebimento",
+      "topic": "bill_and_hold",
       "front": {
-        "pt": "Como se define manipulação de documentos de recebimento?"
+        "pt": "Defina bill-and-hold scheme."
       },
       "back": {
-        "pt": "Manipulação de documentos de recebimento é a alteração ou falsificação intencional de registros de entrada de mercadorias para criar evidência de recebimento que não ocorreu ou de quantidades incorretas. O perpetrador modifica datas, quantidades ou descrições de itens em documentos oficiais. Exemplo: um supervisor que altera recibos para refletir 200 unidades quando apenas 150 foram realmente recebidas."
+        "pt": "Faturamento de bens sem transferência de posse ou controle ao cliente."
       }
     },
     {
       "id": 8,
       "layer": "F1",
-      "topic": "definicao_conluio_estoque",
+      "topic": "channel_stuffing",
       "front": {
-        "pt": "Qual é o significado de conluio em esquemas de apropriação indevida de estoque?"
+        "pt": "O que caracteriza channel stuffing?"
       },
       "back": {
-        "pt": "Conluio em fraude de estoque ocorre quando dois ou mais funcionários conspiram para roubar, deslocar ou desviar inventário, compartilhando responsabilidades para burlar controles internos. O conluio dificulta a detecção, pois divide a atividade fraudulenta entre múltiplos atores. Exemplo: um recebedor que falha em registrar mercadoria e um armazenista que a remove do local para divisão dos ganhos."
+        "pt": "Venda forçada de quantidade excessiva de produtos a distribuidores para inflar receita."
       }
     },
     {
       "id": 9,
       "layer": "F1",
-      "topic": "definicao_descarte_fraudulento",
+      "topic": "inventory_valuation_fraud",
       "front": {
-        "pt": "O que é descarte fraudulento de ativos?"
+        "pt": "Defina fraude de valorização de inventário."
       },
       "back": {
-        "pt": "Descarte fraudulento é o desvio ou apropriação indevida de ativos corporativos durante o processo de sucata, descarte ou eliminação de bens obsoletos. O perpetrador registra itens como descartados ou destruídos, mas na realidade retém-os para venda ou uso pessoal. Exemplo: um gerente de almoxarifado que marca equipamento como 'sucata irrecuperável' mas o vende posteriormente no mercado negro."
+        "pt": "Supervalorização de estoque para aumentar ativos ou subestimar custo de mercadorias vendidas."
       }
     },
     {
       "id": 10,
       "layer": "F1",
-      "topic": "definicao_roubo_direto_estoque",
+      "topic": "cutoff_errors",
       "front": {
-        "pt": "Como se define roubo direto de estoque?"
+        "pt": "O que são erros de cutoff em inventário?"
       },
       "back": {
-        "pt": "Roubo direto de estoque é o furto não autorizado de inventário da empresa sem manipulação de documentos ou registros, caracterizando-se pela simples remoção física de bens do local de armazenamento. É o método mais evidente, mas às vezes menos detectado em curto prazo devido a controles deficientes. Um funcionário que coloca mercadoria em sua bolsa e sai do estabelecimento comete roubo direto."
+        "pt": "Registros de transações em período contábil incorreto, afetando quantidade ou valor de estoque."
       }
     },
     {
       "id": 11,
       "layer": "F1",
-      "topic": "definicao_controle_interno_estoque",
+      "topic": "consignment_fraud",
       "front": {
-        "pt": "Qual é a definição de controle interno eficaz em estoque e ativos?"
+        "pt": "Defina fraude de consignação."
       },
       "back": {
-        "pt": "Controle interno eficaz em estoque e ativos são os procedimentos, políticas e segregação de funções implementados para proteger inventário e bens contra roubo, fraude e apropriação indevida. Incluem verificações de autorização, documentação, segregação de deveres e contagens periódicas. A presença de controles internos inadequados é indicador de vulnerabilidade aumentada para fraude de estoque."
+        "pt": "Reconhecimento incorreto de bens consignados como propriedade, inflando ativo e receita."
       }
     },
     {
       "id": 12,
       "layer": "F1",
-      "topic": "definicao_analise_variacoes_estoque",
+      "topic": "obsolete_inventory_write_off",
       "front": {
-        "pt": "O que é análise de variações de estoque no contexto de detecção de fraude?"
+        "pt": "O que é manipulação de write-off de estoque obsoleto?"
       },
       "back": {
-        "pt": "Análise de variações de estoque é a técnica de examinar diferenças entre registros de inventário esperados e resultados de contagens físicas reais para identificar anomalias suspeitas. Variações significativas podem indicar roubo, erro ou fraude sistemática. Um auditor que identifica perda anual de 15% em uma linha de produtos de alto valor pode estar diante de fraude de estoque."
+        "pt": "Registro falso ou atrasado de baixa de bens para ocultar desperdício ou roubo."
       }
     },
     {
       "id": 13,
       "layer": "F2",
-      "topic": "distincao_roubo_direto_vs_manipulacao_registros",
+      "topic": "shrinkage_vs_ghost_inventory",
       "front": {
-        "pt": "Qual a diferença entre roubo direto de inventário e manipulação de registros de estoque?"
+        "pt": "Qual a diferença entre shrinkage e ghost inventory?"
       },
       "back": {
-        "pt": "Roubo direto é a apropriação física imediata de bens sem autorização, enquanto manipulação de registros envolve alterar documentação para mascarar a falta de ativos. O roubo direto deixa discrepâncias evidentes entre estoque físico e registros, enquanto a manipulação tenta manter aparência de concordância. Um exemplo de roubo direto é um funcionário levar mercadoria do almoxarifado; já manipulação seria registrar uma saída fictícia para justificar a falta."
+        "pt": "Shrinkage: diferença real não-documentada; ghost: bens registrados que nunca existiram fisicamente."
       }
     },
     {
       "id": 14,
       "layer": "F2",
-      "topic": "distincao_descarte_autorizado_vs_fraude_sucata",
+      "topic": "bill_and_hold_vs_channel_stuffing",
       "front": {
-        "pt": "Como distinguir um descarte autorizado de ativos de um esquema fraudulento de sucata e salvados?"
+        "pt": "Distinga bill-and-hold de channel stuffing."
       },
       "back": {
-        "pt": "Descartes autorizados possuem documentação completa, aprovação gerencial e ajustes contábeis apropriados, enquanto fraude de sucata envolve documentação falsificada ou inexistente e valores nunca registrados. Em um descarte legítimo, o bem é baixado dos registros contábeis com apropriação correta do prejuízo; na fraude, o perpetrador lucra pessoalmente vendendo ativos que permanecem nos livros como ativos da empresa. Um exemplo fraudulento seria um supervisor declarar equipamento como sucata para venda pessoal sem registrar o descarte."
+        "pt": "Bill-and-hold: faturamento sem transferência; channel: sobrevenda forçada com intenção de devolução."
       }
     },
     {
       "id": 15,
       "layer": "F2",
-      "topic": "distincao_devolucao_legitima_vs_fraude_devolucao",
+      "topic": "obsolescence_vs_obsolete_fraud",
       "front": {
-        "pt": "Qual a diferença entre uma devolução legítima de compra e um esquema fraudulento de devolução?"
+        "pt": "Como diferenciar obsolescência legítima de fraude deliberada?"
       },
       "back": {
-        "pt": "Devoluções legítimas têm notas fiscais correspondentes, documentação de transporte, inspeção qualitativa registrada e creditação adequada na contabilidade, enquanto devoluções fraudulentas carecem de compra original ou têm documentação falsificada. Em fraude, o perpetrador documenta devoluções fictícias para obter crédito indevido ou caixa, sem que o produto tenha realmente deixado o fornecedor. Um exemplo é um funcionário criar notas de devolução de mercadoria nunca comprada para receber reembolso."
+        "pt": "Legítima: documentação técnica, análise comercial; fraude: ausência de registros suportivos, timing suspeito."
       }
     },
     {
       "id": 16,
       "layer": "F2",
-      "topic": "distincao_ajuste_estoque_legítimo_vs_fraude",
+      "topic": "inventory_theft_vs_shrinkage",
       "front": {
-        "pt": "Como distinguir um ajuste de estoque legítimo de um ajuste fraudulento para ocultar apropriação indevida?"
+        "pt": "Qual a diferença entre roubo de inventário e shrinkage?"
       },
       "back": {
-        "pt": "Ajustes legítimos são suportados por análises de diferenças justificadas, documentação de danos ou perdas comprovadas, e aprovação de supervisores independentes, enquanto ajustes fraudulentos carecem de suporte documentado e são processados por pessoas com acesso direto aos sistemas. Ajustes legítimos refletem realidade operacional; fraudulentos tentam criar concordância artificial entre registros e ativos roubados. Um exemplo fraudulento é um funcionário de almoxarifado ajustar downward registros de estoque para corresponder à quantidade reduzida após furto pessoal."
+        "pt": "Roubo: crime específico; shrinkage: termo contábil incluindo roubo, desperdício e erro."
       }
     },
     {
       "id": 17,
       "layer": "F2",
-      "topic": "distincao_transacao_legítima_vs_sobrefaturamento",
+      "topic": "cutoff_error_vs_fraud",
       "front": {
-        "pt": "Qual a diferença entre uma compra legítima e um esquema de sobrefaturamento para desvio de ativos?"
+        "pt": "Como diferenciar erro de cutoff de fraude proposital?"
       },
       "back": {
-        "pt": "Compras legítimas têm quantidades e preços consistentes com cotações de mercado, entrega física verificada, e conformidade com política de aprovação, enquanto sobrefaturamento envolve preços inflados, quantidades fictícias ou não entregues, e aprovações fraudulentas. Em sobrefaturamento, o valor pago excede significativamente o mercado, com conivência entre comprador e fornecedor (frequentemente colusório). Um exemplo é um funcionário de compras aprovar fatura de fornecedor com preços 50% acima do mercado, dividindo o lucro com o vendedor."
+        "pt": "Erro: aleatório, bidirecional; fraude: padrão consistente favorecendo perpetrador, documentação falsa."
       }
     },
     {
       "id": 18,
       "layer": "F2",
-      "topic": "distincao_erro_sistema_vs_manipulacao_proposital",
+      "topic": "consignment_vs_sale",
       "front": {
-        "pt": "Como distinguir um erro de sistema em contagem de estoque de uma manipulação proposital para dissimular roubo?"
+        "pt": "Distinga bens consignados de vendas normais em registros."
       },
       "back": {
-        "pt": "Erros de sistema são aleatórios, afetam múltiplos itens distribuídos naturalmente e deixam trilhas de auditoria visíveis, enquanto manipulações propositais targetam itens específicos, ocorrem consistentemente no mesmo padrão e têm trilhas deletadas ou alteradas. Erros tendem a se compensarem ao longo do tempo; manipulações mostram tendência consistente de redução de itens valiosos. Um erro seria discrepância aleatória em cinco SKUs diferentes; manipulação seria redução consistente apenas de eletrônicos de alto valor."
+        "pt": "Consignado: consignante retém propriedade; venda normal: transferência imediata de propriedade."
       }
     },
     {
       "id": 19,
       "layer": "F2",
-      "topic": "distincao_ineficiencia_operacional_vs_fraude_intencional",
+      "topic": "stock_out_vs_legitimate_sale",
       "front": {
-        "pt": "Qual a diferença entre quebra de estoque por ineficiência operacional e por fraude intencional?"
+        "pt": "Como diferenciar stock-out fraud de venda legítima?"
       },
       "back": {
-        "pt": "Ineficiência operacional causa perdas aleatórias dispersas, documentadas parcialmente e sem benefício direito ao perpetrador, enquanto fraude intencional mostra padrão concentrado, não documentado e com proveito pessoal claro. Ineficiência pode ser reduzida com controles operacionais; fraude requer investigação criminal. Quebras por má armazenagem afetam vários itens aleatoriamente; roubo intencional de eletrônicos por funcionário segue padrão específico e concentrado em produtos de revenda fácil."
+        "pt": "Fraud: documentação falsa, bens não entregues; legítimo: confirmação cliente, rastreamento completo."
       }
     },
     {
       "id": 20,
       "layer": "F2",
-      "topic": "distincao_procedimento_auditoria_vs_procedimento_investigacao",
+      "topic": "manipulation_vs_miscount",
       "front": {
-        "pt": "Como distinguir um procedimento de auditoria de estoque de um procedimento investigativo para suspeita de fraude?"
+        "pt": "Qual a diferença entre manipulação de contagem e má contagem?"
       },
       "back": {
-        "pt": "Auditoria é processo planejado, contínuo, focado em conformidade e acurácia de registros, enquanto investigação é direcionada, forense e focada em provar ato fraudulento específico. Auditoria testa controles existentes; investigação busca evidência de quebra de controles. Uma auditoria examina processos de recebimento em geral; uma investigação examina recebimentos de um fornecedor específico suspeito com análise detalhada de lançamentos."
+        "pt": "Manipulação: intencional, documentação falsa; má contagem: acidental, descoberta em revisão."
       }
     },
     {
       "id": 21,
       "layer": "F2",
-      "topic": "distincao_roubo_pequena_escala_vs_esquema_organizado",
+      "topic": "valuation_fraud_vs_estimation",
       "front": {
-        "pt": "Qual a diferença entre roubo de estoque em pequena escala e um esquema organizado de appropriation indevida?"
+        "pt": "Distinga fraude de valorização de estimativa conservadora."
       },
       "back": {
-        "pt": "Roubo pequena escala envolve itens ocasionais, sem padrão planejado e frequentemente sem suporte de documentação falsa, enquanto esquema organizado é sistemático, com múltiplos perpetradores, documentação elaborada e ciclos de fraude repetitivos. Pequena escala é reativa e oportunista; esquema organizado é pré-planejado com papéis definidos. Funcionário ocasionalmente levando ferramentas é pequena escala; rede de funcionários e fornecedores sistematicamente roubando estoque com notas falsas é esquema organizado."
+        "pt": "Fraude: subestimar custos ou superestimar preço, sem base técnica; estimativa: documentada, razoável."
       }
     },
     {
       "id": 22,
       "layer": "F2",
-      "topic": "distincao_asset_misappropriation_vs_revenue_fraud",
+      "topic": "write_off_fraud_vs_legitimate",
       "front": {
-        "pt": "Como distinguir apropriação indevida de ativos (asset misappropriation) de fraude em receita (revenue fraud)?"
+        "pt": "Como diferenciar write-off fraudulento de baixa legítima?"
       },
       "back": {
-        "pt": "Apropriação indevida de ativos envolve roubo direto de propriedade tangível da empresa como estoque e equipamentos, enquanto fraude em receita manipula registros de vendas para inflar ganhos. Apropriação reduz ativos reais; fraude inflaciona registros sem esgotamento necessário de ativos. Um exemplo de apropriação é roubo de inventário; fraude em receita seria registrar venda não realizada de estoque."
+        "pt": "Fraudulento: sem documentação suportiva, timing estratégico; legítimo: análise técnica, aprovação adequada."
       }
     },
     {
       "id": 23,
       "layer": "F2",
-      "topic": "distincao_falta_estoque_causada_vs_intencional",
+      "topic": "physical_theft_vs_accounting_manipulation",
       "front": {
-        "pt": "Qual a diferença entre falta de estoque causada por perda operacional e por apropriação indevida?"
+        "pt": "Qual a diferença entre roubo físico e manipulação contábil?"
       },
       "back": {
-        "pt": "Perdas operacionais resultam de danos, obsolescência, vencimento, roubo não-interno ou desvios inerentes ao processo, documentadas em relatórios de anomalias, enquanto apropriação indevida é retirada deliberada por funcionário com intenção de lucro pessoal, frequentemente ocultada. Perdas operacionais ocorrem naturalmente e distribuem-se aleatoriamente; apropriação segue padrão intencional focado em itens de alto valor ou fácil revenda. Perda operacional seria mercadoria danificada em armazém; apropriação seria funcionário sistematicamente retirar smartphones do inventário."
+        "pt": "Roubo: bens removidos fisicamente; manipulação: registros alterados, bens ainda presentes ou não."
       }
     },
     {
       "id": 24,
       "layer": "F2",
-      "topic": "distincao_controle_preventivo_vs_detectivo_estoque",
+      "topic": "adjustment_vs_fraud",
       "front": {
-        "pt": "Como distinguir um controle preventivo de um controle detectivo em fraude de estoque?"
+        "pt": "Como distinguir ajuste legítimo de fraude de inventário?"
       },
       "back": {
-        "pt": "Controles preventivos impedem fraude antes de ocorrer através de segregação de funções, autorização prévia e acesso restrito, enquanto controles detectivos identificam fraude após ocorrência através de reconciliações, contagens físicas e análises de variações. Preventivos são proativos; detectivos são reativos. Segregação de funções entre recebimento e autorização de estoque é preventivo; auditoria surpresa de contagem física é detectivo."
+        "pt": "Legítimo: documentação suportiva, aprovação; fraude: sem justificativa, favorece perpetrador sistematicamente."
       }
     },
     {
       "id": 25,
       "layer": "F3",
-      "topic": "deteccao_discrepancias_ciclo_compras",
+      "topic": "detection_through_variance_analysis",
       "front": {
-        "pt": "Como detectar discrepâncias entre ordens de compra, recebimentos e faturas para identificar fraude em ciclo de compras?"
+        "pt": "Como variância entre contagem física e sistema detecta fraude?"
       },
       "back": {
-        "pt": "A análise de três vias (three-way match) compara ordens de compra, recebimentos e faturas para identificar inconsistências. Red flags incluem quantidades não coincidentes, preços alterados ou datas suspeitas entre documentos. Exemplo: uma fatura registra 100 unidades, mas o relatório de recebimento mostra apenas 80, enquanto a PO originava 100—isso sugere desvio ou fraude no recebimento."
+        "pt": "Comparação recorrente; padrões consistentes, extremos ou sazonais anormais indicam manipulação sistemática."
       }
     },
     {
       "id": 26,
       "layer": "F3",
-      "topic": "investigacao_movimentacao_ativos_sem_autorizacao",
+      "topic": "fraud_classification_shrinkage",
       "front": {
-        "pt": "Quais procedimentos investigativos devem ser aplicados quando há evidência de movimentação de ativos sem autorização apropriada?"
+        "pt": "Como se classifica fraude quando shrinkage aparece em período específico?"
       },
       "back": {
-        "pt": "Deve-se rastrear documentação de autorização (aprovações, assinaturas), verificar registros de acesso físico, revisar logs de sistemas e entrevistar supervisores. A investigação inclui identificar quem tinha acesso, quando o ativo saiu e para onde foi direcionado. Exemplo: um funcionário transferiu equipamento de TI para sua casa; a investigação revelou falta de assinatura do gerente na requisição de saída."
+        "pt": "Analisar contexto: transições de pessoal, mudanças de procedimento, acesso restrito suspeito."
       }
     },
     {
       "id": 27,
       "layer": "F3",
-      "topic": "analise_padroes_devolucoes_anormais",
+      "topic": "detection_through_journal_entries",
       "front": {
-        "pt": "Como analisar padrões anormais de devoluções de estoque para detectar fraude?"
+        "pt": "Como detectar inventory fraud através de journal entries?"
       },
       "back": {
-        "pt": "Examine frequência, volume, funcionários envolvidos e razões documentadas de devoluções, comparando com padrões históricos. Red flags incluem devoluções frequentes sem documentação adequada, sempre do mesmo funcionário ou após seu turno. Exemplo: um recepcionista processa 15 devoluções por mês enquanto colegas processam 2-3, sugerindo possível conspiratividade ou prática fraudulenta de ajuste de estoque."
+        "pt": "Procurar ajustes sem documentação, lançamentos tarde à noite, reversões próximas ao fechamento."
       }
     },
     {
       "id": 28,
       "layer": "F3",
-      "topic": "red_flags_sistemas_estoque_desatualizado",
+      "topic": "application_bill_and_hold_detection",
       "front": {
-        "pt": "Quais são os principais red flags quando sistemas de estoque não estão sendo atualizados regularmente?"
+        "pt": "Em qual situação bill-and-hold se classifica como fraude?"
       },
       "back": {
-        "pt": "Sinais críticos incluem registros de saída não lançados, diferenças crescentes entre contagens físicas e registros, atrasos consistentes nas atualizações e falta de trilha de auditoria. Esses cenários permitem que perpetradores removam ativos sem detecção imediata. Exemplo: um gerente de depósito evita atualizar o sistema por dias após saídas, permitindo que realize vendas não autorizadas do mesmo estoque."
+        "pt": "Sem acordo escrito cliente, bens sob controle vendedor, retorno não-documentado ou atraso indefinido."
       }
     },
     {
       "id": 29,
       "layer": "F3",
-      "topic": "deteccao_vendas_nao_registradas_estoque",
+      "topic": "detection_obsolete_inventory",
       "front": {
-        "pt": "Como detectar vendas não registradas ou desvios de estoque para venda pessoal?"
+        "pt": "Como se identifica fraude de estoque obsoleto?"
       },
       "back": {
-        "pt": "Compare estoque contado fisicamente com registros do sistema, revise documentação de vendas e receitas, e analise discrepâncias por produto e período. Investigue se estoque foi vendido mas não lançado no sistema de vendas. Exemplo: durante auditoria, descobriu-se que 500 unidades de um produto estavam faltando; investigação revelou que um vendedor estava vendendo para clientes pessoais e mantendo o dinheiro."
+        "pt": "Comparar data de última movimentação, análise de demanda, ausência de revisão técnica periódica."
       }
     },
     {
       "id": 30,
       "layer": "F3",
-      "topic": "procedimentos_preventivos_acesso_almoxarifado",
+      "topic": "detection_channel_stuffing",
       "front": {
-        "pt": "Quais procedimentos preventivos são mais efetivos para controlar acesso ao almoxarifado e detectar apropriação indevida?"
+        "pt": "Como detectar channel stuffing em auditoria?"
       },
       "back": {
-        "pt": "Implemente sistemas de badge de acesso controlado, logs eletrônicos de entrada/saída, segregação de funções entre recebimento e despacho, e contagens cíclicas frequentes. Restrinja acesso apenas a pessoal autorizado e exija aprovação documentada para cada movimentação. Exemplo: empresa que introduziu sistema de RFID em ativos de alto valor reduziu roubos em 78% em seis meses."
+        "pt": "Analisar devoluções posteriores ao período, pressão de vendas anormal, acordos de retorno não-documentados."
       }
     },
     {
       "id": 31,
       "layer": "F3",
-      "topic": "analise_comportamento_perpetrador_estoque",
+      "topic": "detection_consignment_fraud",
       "front": {
-        "pt": "Quais indicadores comportamentais e padrões de trabalho sugerem possível fraude de estoque por funcionário?"
+        "pt": "Como se identifica fraude de consignação em registros?"
       },
       "back": {
-        "pt": "Observe funcionários que trabalham em horários anormais, evitam férias, resistem a auditoria interna, controlam exclusivamente certos processos e mostram estilo de vida inconsistente com salário. Padrões suspeitos incluem sempre processar as mesmas transações ou preferir turnos noturnos. Exemplo: gerente de almoxarifado recusava-se a tirar férias há 3 anos e era encontrado trabalhando sozinho à noite; investigação descobriu fraude de R$ 250 mil."
+        "pt": "Verificar termos de contrato, retenção de título legal, falta de aprovação de pagamento por consignante."
       }
     },
     {
       "id": 32,
       "layer": "F3",
-      "topic": "investigacao_discrepancias_contagem_ciclica",
+      "topic": "detection_valuation_fraud",
       "front": {
-        "pt": "Como investigar discrepâncias encontradas durante contagens cíclicas de inventário?"
+        "pt": "Em qual situação valorização de inventário se classifica como fraude?"
       },
       "back": {
-        "pt": "Documente as discrepâncias por item, quantidade, funcionário responsável e localização. Revise o histórico de movimentação para esse item, entreviste pessoas envolvidas e compare com período anterior. Procure padrões (se sempre faltam itens caros ou de fácil revenda). Exemplo: contagem cíclica revelou falta consistente de componentes eletrônicos; rastreamento mostrou que técnico de manutenção estava removendo peças para reparo de equipamento pessoal."
+        "pt": "Usar preço acima de mercado, obsolescência não-registrada, custos de produção inflados sem suporte."
       }
     },
     {
       "id": 33,
       "layer": "F3",
-      "topic": "deteccao_fraude_valor_residual_ativos",
+      "topic": "detection_cutoff_fraud",
       "front": {
-        "pt": "Como detectar fraude relacionada à avaliação inflada ou manipulação de valor residual de ativos descartados?"
+        "pt": "Como se identifica fraude de cutoff em transações?"
       },
       "back": {
-        "pt": "Compare avaliações de sucata com cotações de mercado atuais, revise documentação de descarte, e verifique se itens 'descartados' reaparecem no estoque ou são vendidos pessoalmente. Investigue quem aprovou o descarte e se havia conflito de interesse. Exemplo: equipamento de TI foi 'descartado' por R$ 500 de valor residual, mas depois descobriu-se que foi vendido por R$ 5 mil para empresa do primo do supervisor."
+        "pt": "Comparar data de faturamento com entrega, documentação de recebimento, registros de transportadora."
       }
     },
     {
       "id": 34,
       "layer": "F3",
-      "topic": "aplicacao_tecnicas_forensics_ativos",
+      "topic": "detection_ghost_inventory",
       "front": {
-        "pt": "Como aplicar técnicas forenses digitais em investigação de fraude de ativos registrados em sistemas?"
+        "pt": "Como se classifica bens como ghost inventory em auditoria?"
       },
       "back": {
-        "pt": "Preserve logs de auditoria de sistemas ERP, analise histórico de alterações em registros de estoque, rastreie quem acessou e modificou dados, e revise metadados de documentos. Use ferramentas de análise de dados para identificar padrões anormais de lançamentos. Exemplo: análise forense revelou que supervisor alterava quantidades de estoque 30 minutos após seu turno regularmente; logs mostraram deleção de entrada de saída."
+        "pt": "Confirmação física em local registrado, verificação de transferências, rastreamento de movimento."
       }
     },
     {
       "id": 35,
       "layer": "F3",
-      "topic": "red_flags_compras_nao_requisicionadas",
+      "topic": "detection_stock_out_scheme",
       "front": {
-        "pt": "Quais são os red flags para detectar compras não requisicionadas ou em excesso visando apropriação indevida?"
+        "pt": "Em qual situação stock-out se classifica como fraude?"
       },
       "back": {
-        "pt": "Procure por ordens de compra sem requisição correspondente, quantidades excessivas em relação ao consumo histórico, fornecedores com múltiplas transações pequenas, e falta de aprovações apropriadas. Verifique se o comprador tem relacionamento pessoal com fornecedor. Exemplo: departamento comprava ferramentas em quantidade 10x maior que o consumo normal; investigação descobriu que comprador era sócio oculto do fornecedor."
+        "pt": "Documentação de saída sem entrada correspondente, cliente nega recebimento, movimentação sem rastreamento."
       }
     },
     {
       "id": 36,
       "layer": "F3",
-      "topic": "procedimentos_investigacao_colusion_estoque",
+      "topic": "detection_count_manipulation",
       "front": {
-        "pt": "Quais procedimentos investigativos são específicos para detectar conluio entre múltiplos funcionários em fraude de estoque?"
+        "pt": "Como se identifica manipulação de contagem em auditoria?"
       },
       "back": {
-        "pt": "Mapeie relacionamentos entre funcionários, analise transações que envolvem múltiplos departamentos, busque comunicação suspeita (emails, mensagens), e compare mudanças de padrão após demissões. Procure por 'brechas' no sistema que apenas funcionários em conluio poderiam explorar. Exemplo: investigação de roubo de estoque revelou que recebedor, armazenista e vendedor conspiram há 2 anos; análise de padrão mostrou que roubos ocorriam sempre quando três trabalhavam simultaneamente."
+        "pt": "Observar processo, verificar documentação de contadores, comparar com contagens anteriores de mesmo pessoal."
       }
     },
     {
       "id": 37,
       "layer": "F4",
-      "topic": "impacto_controle_interno_apropriacao_estoque",
+      "topic": "red_flag_recurring_shrinkage",
       "front": {
-        "pt": "Como a falta de segregação entre contagem física, registro e autorização de ajustes de estoque facilita a apropriação indevida?"
+        "pt": "Qual red flag indica shrinkage fraudulento recorrente?"
       },
       "back": {
-        "pt": "A segregação de funções é essencial porque impede que uma única pessoa registre, autorize e execute transações de estoque simultaneamente. Quando um funcionário controla múltiplas etapas, pode registrar saídas fictícias sem verificação. Por exemplo, um almoxarife pode autorizar sua própria requisição de 100 unidades de material de alto valor, ajustar o sistema e remover o estoque sem supervisão, tornando a fraude praticamente invisível até auditoria externa."
+        "pt": "Padrão consistente de ajuste ao final de período, correlação com pessoal específico, ausência de investigação."
       }
     },
     {
       "id": 38,
       "layer": "F4",
-      "topic": "relacao_obsolescencia_estoque_fraude",
+      "topic": "red_flag_absence_of_controls",
       "front": {
-        "pt": "Como perpetradores exploram estoque obsoleto ou de lenta movimentação para encobrir roubo?"
+        "pt": "Qual red flag de controles indica risco de inventory fraud?"
       },
       "back": {
-        "pt": "Estoque obsoleto tem menos visibilidade operacional e frequentemente baixa rotatividade de auditoria, oferecendo oportunidade ideal para apropriação. Fraudadores identificam itens que não são contados regularmente ou que têm valor contábil depreciado, removem-nos e manipulam registros de obsolescência para justificar a perda. Um exemplo é alegar descarte de componentes eletrônicos obsoletos quando na verdade foram vendidos no mercado secundário, mascarando o roubo como despesa legítima."
+        "pt": "Ausência de contagem cíclica, sem segregação de funções, acesso irrestrito a ajustes contábeis."
       }
     },
     {
       "id": 39,
       "layer": "F4",
-      "topic": "conexao_ciclo_compra_venda_apropriacao",
+      "topic": "red_flag_documentation",
       "front": {
-        "pt": "Por que vulnerabilidades no ciclo de compra-recebimento-estoque-venda criam oportunidades proporcionais de fraude?"
+        "pt": "Qual red flag em documentação sugere inventory fraud?"
       },
       "back": {
-        "pt": "Cada etapa do ciclo oferece um ponto de manipulação: compras podem incluir bens fictícios, recebimento pode registrar quantidades infladas, estoque pode ser removido sem documento, e vendas podem omitir saídas. Quando controles internos não integram essas etapas com verificação cruzada, o fraudador explora gaps entre sistemas. Uma empresa sem matching tripartite (PO-recebimento-fatura) permite que um fornecedor cúmplice entregue menos estoque que o registrado, com ambos lucrandocom a diferença."
+        "pt": "Suporte em falta, documentos datilografados em lugar de manuscritos originais, assinaturas não-autenticadas."
       }
     },
     {
       "id": 40,
       "layer": "F4",
-      "topic": "analise_discrepancia_estoque_sistemas",
+      "topic": "red_flag_system_override",
       "front": {
-        "pt": "Como discrepâncias entre contagem física e registros de sistema revelam padrões de apropriação indevida?"
+        "pt": "Qual red flag de sistema indica fraude de inventário?"
       },
       "back": {
-        "pt": "Discrepâncias consistentes indicam fraude sistemática, enquanto variações aleatórias sugerem erro operacional. Quando a mesma categoria de produtos apresenta falta recorrente, especialmente em turnos ou localizações específicas, aponta apropriação intencional. A análise de tendências—como falta concentrada em itens de alto valor durante períodos de pouca supervisão—auxilia na identificação do perpetrador e do método. Exemplo: falta de 5-10% em ferramentas de alto custo sempre entre sextas e segundas indica roubo para revenda no fim de semana."
+        "pt": "Acesso direto a banco de dados sem log, ajustes manuais frequentes, bypass de validações automáticas."
       }
     },
     {
       "id": 41,
       "layer": "F4",
-      "topic": "impacto_falta_rastreamento_ativos_fixos",
+      "topic": "red_flag_valuation_anomaly",
       "front": {
-        "pt": "Qual o impacto da ausência de sistema de rastreamento de ativos fixos na vulnerabilidade a apropriação indevida?"
+        "pt": "Qual red flag em valorização sugere fraude?"
       },
       "back": {
-        "pt": "Sem registro detalhado de localização, número de série e custódia, ativos fixos tornam-se praticamente impossíveis de monitorar, facilitando roubo e fraude contábil. Empresas sem inventário de TI, máquinas ou equipamentos não conseguem detectar quando um computador, ferramenta ou equipamento sai do ativo. Fraudadores exploram essa lacuna removendo equipamentos de valor e registrando baixas fictícias ou mantendo ativos já descartados nos livros contábeis para justificar despesas futuras inexistentes."
+        "pt": "Preços inconsistentes com mercado, ajustes grandes sem análise, obsolescência não-registrada permanentemente."
       }
     },
     {
       "id": 42,
       "layer": "F4",
-      "topic": "relacao_pressao_desempenho_apropriacao_estoque",
+      "topic": "red_flag_timing_patterns",
       "front": {
-        "pt": "Como metas de desempenho agressivas e pressão financeira se conectam com apropriação indevida de estoque?"
+        "pt": "Qual red flag de timing indica inventory fraud?"
       },
       "back": {
-        "pt": "Pressão para atingir metas de rentabilidade ou redução de custos incentiva alguns funcionários a apropriarem estoque para venda pessoal e compensar deficiências orçamentárias. Gerentes podem autorizar 'saídas de sucata' fictícias ou 'devoluções' inexistentes para simular redução de inventário e aparentar melhor eficiência. Um gestor de armazém com meta agressiva de redução de espaço pode registrar destruição de estoque que na verdade foi roubado e revendido por ele, apresentando economia fictícia."
+        "pt": "Ajustes concentrados em fim de período, próximos a auditoria, correlação com ausência de supervisores."
       }
     },
     {
       "id": 43,
       "layer": "F4",
-      "topic": "interacao_tecnologia_fraude_estoque",
+      "topic": "red_flag_customer_discrepancy",
       "front": {
-        "pt": "Como sistemas ERP mal configurados ou com permissões excessivas aumentam o risco de apropriação de estoque?"
+        "pt": "Qual red flag em confirmação de cliente indica fraude?"
       },
       "back": {
-        "pt": "Sistemas ERP centralizados simplificam operações, mas permissões inadequadas permitem que usuários façam ajustes, exclusões ou transferências sem aprovação. Funcionários técnicos ou com acesso administrativo podem criar movimentações de estoque não autorizadas, deletar registros ou fazer backdoor transfers entre centros de custo. Exemplo: um usuário com acesso ao módulo de estoque cria uma 'transferência de sucata' para uma localização fantasma, depois registra a saída final sem que ninguém revise os intermediários."
+        "pt": "Cliente nega recebimento de bens faturados, quantidades diferentes do registrado, datas inconsistentes."
       }
     },
     {
       "id": 44,
       "layer": "F4",
-      "topic": "bandeira_vermelha_combinada_apropriacao",
+      "topic": "red_flag_return_patterns",
       "front": {
-        "pt": "Por que uma combinação de múltiplas bandeiras vermelhas simultaneamente é mais indicativa de fraude que sinais isolados?"
+        "pt": "Qual red flag em devoluções sugere channel stuffing?"
       },
       "back": {
-        "pt": "Bandeiras isoladas podem ter explicações legítimas (erro humano, demora logística), mas padrões convergentes indicam intenção fraudulenta. Quando há simultaneamente falta de estoque, ausência de documentação de saída, acesso único a determinada área e histórico de comportamento questionável do funcionário, a probabilidade de fraude aumenta exponencialmente. Uma auditoria que identifica que o mesmo almoxarife autoriza suas próprias requisições, há falta em categorias que ele controla, e ele rejeita contagens físicas surpresa representa múltiplos sinais alinhados."
+        "pt": "Devoluções altas após período de vendas, clientes sem solicitação de retorno, reversões tardias."
       }
     },
     {
       "id": 45,
       "layer": "F4",
-      "topic": "impacto_culture_tone_top_deteccao_fraude",
+      "topic": "red_flag_access_and_motivation",
       "front": {
-        "pt": "Como a cultura de compliance e 'tone at the top' influencia a prevenção e detecção de apropriação indevida de ativos?"
+        "pt": "Qual red flag de acesso e motivação indica fraude de inventário?"
       },
       "back": {
-        "pt": "Organizações onde liderança enfatiza integridade, punem fraude severamente e valorizam denúncias têm taxa significativamente menor de apropriação indevida. Quando executivos ignoram pequenos furtos, toleram esquemas de sucata duvidosos ou não investigam discrepâncias, funcionários percebem que a fraude é aceitável. Empresas com hotlines anônimas de denúncia, investigações transparentes e demissões por fraude detectam apropriações mais cedo. Contraste: empresa onde gerente desvia material e continua promovido sinaliza que fraude é tolerada, incentivando outros roubos."
+        "pt": "Acesso irrestrito a estoque, pressão de metas não-realistas, histórico de dificuldades financeiras."
       }
     },
     {
       "id": 46,
       "layer": "F4",
-      "topic": "conexao_ciclos_estoque_consumo_fraude",
+      "topic": "critical_rule_segregation",
       "front": {
-        "pt": "Como a análise de ciclos de consumo e sazonalidade ajuda a diferenciar perdas legítimas de apropriação indevida?"
+        "pt": "Qual regra crítica de controle previne inventory fraud?"
       },
       "back": {
-        "pt": "Padrões legítimos de consumo seguem sazonalidade e operações previsíveis; apropriação indevida frequentemente quebra esses padrões ou ocorre em períodos de baixa supervisão. Comparando consumo histórico com atual, auditores identificam que falta de material não corresponde a vendas ou produção relatadas. Se matéria-prima para verão tipicamente reduz em inverno, mas registros mostram redução anômala em maio, sugere roubo. Análise longitudinal de 12 meses revela fraude camuflada como variação normal melhor que análise mensal isolada."
+        "pt": "Segregação obrigatória: quem registra não pode contar, custódia física separada de registros."
       }
     },
     {
       "id": 47,
       "layer": "F4",
-      "topic": "impacto_terceirizacao_estoque_risco",
+      "topic": "critical_rule_exception_approval",
       "front": {
-        "pt": "Como a terceirização de armazenagem e logística altera a superfície de risco para apropriação indevida e qual é o impacto nas técnicas de detecção?"
+        "pt": "Qual regra crítica em exceções previne fraude de inventário?"
       },
       "back": {
-        "pt": "Terceirizados reduzem controle direto da empresa sobre inventário, criando lacunas entre registros internos e realidade física do armazém. Prestadores podem colaborar com fraudadores internos da empresa ou executar esquemas próprios, enquanto a responsabilidade fica ambígua. Detecção exige auditorias independentes no terceirizado, reconciliação mais frequente e rastreamento de documentação entre entidades. Uma empresa que descobre que quantidade registrada como 'em trânsito' com terceirizado permanece em trânsito indefinidamente pode estar sendo vítima de roubo facilitado pela distância operacional."
+        "pt": "Todas as saídas não-documentadas devem ser aprovadas por nível independente com suporte obrigatório."
       }
     },
     {
       "id": 48,
       "layer": "F4",
-      "topic": "relacao_frequencia_auditoria_taxa_fraude",
+      "topic": "critical_rule_periodic_reconciliation",
       "front": {
-        "pt": "Qual a relação entre frequência e natureza das auditorias (anunciadas vs surpresa) e a redução de apropriação indevida?"
+        "pt": "Qual regra crítica de reconciliação é essencial contra fraude?"
       },
       "back": {
-        "pt": "Auditorias anunciadas permitem que fraudadores prepararem registros falsos e movimentem estoque roubado antes da verificação; auditorias surpresa capturam esquemas em andamento e aumentam risco percebido. Organizações com contagens físicas regulares e não programadas detectam fraude 40% mais rapidamente que aquelas com contagens anuais ou semestrais. Exemplo: empresa que implementou contagens rotativas mensárias por localização (sem anúncio prévio) versus concorrente com contagem anual descobre que fraudador havia acumulado roubos de R$500k, detectado na primeira contagem surpresa ao descobrir documentação falsa."
+        "pt": "Contagem cíclica periódica com investigação imediata de variâncias acima de tolerância."
       }
     }
   ]
