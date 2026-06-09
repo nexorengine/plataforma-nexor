@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#92400E">
+<title>Quiz · SD06</title>
+<link rel="stylesheet" href="assets/nx.css">
+</head>
+<body>
+<div class="nx-header">
+  <a href="c3-sd06.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <div class="nx-wordmark">nexor_<span>cert</span></div>
+  <div class="nx-lang"><a href="#" class="active">PT</a><a href="#">EN</a></div>
+</div>
+<div class="nx-user-bar">
+  <div class="nx-user-left">
+    <div class="nx-avatar">AA</div>
+    <span class="nx-user-name">Alexandre Andrade</span>
+  </div>
+  <div class="nx-user-right">
+    <span class="nx-plan-badge">plano anual</span>
+    <a href="#" class="nx-logout"><i class="ti ti-logout"></i>sair</a>
+  </div>
+</div>
+<div class="nx-body">
+  <div class="nx-meta">
+    <span class="nx-meta-label">CFE · S1 · SD06 · <span id="quiz-label">Quiz 001</span></span>
+    <span class="nx-quiz-badge" id="quiz-badge">Q001</span>
+  </div>
+  <div class="nx-prog-row">
+    <div class="nx-prog-bar-bg"><div class="nx-prog-bar-fill" id="prog-fill" style="width:2%;"></div></div>
+    <span class="nx-prog-count" id="prog-count">1 / 50</span>
+  </div>
+  <div style="background:#111;border:1px solid #2a2a2a;border-radius:8px;padding:20px;margin-bottom:14px;">
+    <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#444;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;" id="q-label">questão 01</div>
+    <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#F5F5F5;line-height:1.35;" id="q-text"></div>
+  </div>
+  <div class="nx-options" id="options"></div>
+  <button class="nx-btn-primary" id="btn-confirm" onclick="confirm_answer()" disabled>
+    <i class="ti ti-check"></i>CONFIRMAR
+  </button>
+  <div class="nx-feedback" id="feedback">
+    <span class="nx-fb-label" id="fb-label"></span>
+    <span id="fb-text"></span>
+  </div>
+  <button class="nx-btn-next hidden" id="btn-next" onclick="nextQ()">
+    PRÓXIMA <i class="ti ti-arrow-right"></i>
+  </button>
+  <div class="nx-stats-row">
+    <div class="nx-stat"><div class="nx-stat-val" id="sr" style="color:#4ade80;">0</div><div class="nx-stat-lbl">acertos</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sw" style="color:#f87171;">0</div><div class="nx-stat-lbl">erros</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sp" style="color:#D97706;">—</div><div class="nx-stat-lbl">aproveitamento</div></div>
+  </div>
+</div>
+<div class="nx-footer">
+  <span>nexor_ · Certification Readiness Engine · Powered by FractalLearning™</span>
+</div>
+<script>
+const params=new URLSearchParams(window.location.search);
+const qn=params.get('n')||'1';
+document.getElementById('quiz-label').textContent='Quiz 00'+qn;
+document.getElementById('quiz-badge').textContent='Q00'+qn;
+
+const questions=[
+  {q:"Qual dos seguintes elementos é essencial para caracterizar corrupção segundo o CFE?",opts:["Valor financeiro acima de USD 10.000","Abuso de posição de confiança para obter vantagem indevida","Envolvimento obrigatório de funcionário público","Registro contábil falsificado"],c:1,exp:"Corrupção exige abuso de posição de confiança. Os demais elementos podem estar presentes, mas não são determinantes."},
+  {q:"Um gerente de compras recebe pagamentos mensais de um fornecedor para garantir contratos. Esse esquema é classificado como:",opts:["Bid rigging","Skimming","Kickback","Shell company fraud"],c:2,exp:"Kickback é o pagamento secreto feito a agente de compras para favorecer fornecedor específico."},
+  {q:"Segundo o FCPA, facilitação de pagamentos são:",opts:["Sempre ilegais independentemente do valor","Permitidos para agilizar ações rotineiras de funcionários públicos","Equivalentes a suborno com mesma penalidade","Legais apenas em países sem legislação anticorrupção"],c:1,exp:"O FCPA possui exceção para pequenos pagamentos destinados a agilizar ações rotineiras já obrigatórias por lei."},
+  {q:"Duas empresas concorrentes combinam previamente quem vai vencer uma licitação. Isso configura:",opts:["Conflict of Interest","Bid rigging","Invoice fraud","Asset misappropriation"],c:1,exp:"Bid rigging é o acordo entre concorrentes para manipular resultado de licitação."},
+  {q:"Qual é o principal red flag de Conflict of Interest (COI) em processo de compras?",opts:["Fornecedor com menor preço vence contrato","Colaborador aprova contratos com empresa de familiar sem disclosure","Compras realizadas fora do horário comercial","Volume de compras acima da média histórica"],c:1,exp:"Aprovação de contratos com empresa vinculada a familiar sem declaração formal é o red flag clássico de COI."},
+];
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function shuffleQ(q){const idx=q.opts.map((o,i)=>({t:o,i}));shuffle(idx);return{q:q.q,opts:idx.map(x=>x.t),c:idx.findIndex(x=>x.i===q.c),exp:q.exp};}
+shuffle(questions);
+const sq=questions.map(shuffleQ);
+let cur=0,sel=-1,confirmed=false,rights=0,wrongs=0;
+const TOTAL=50,keys=['A','B','C','D'];
+function render(){
+  sel=-1;confirmed=false;
+  const q=sq[cur];
+  document.getElementById('q-label').textContent='questão '+String(cur+1).padStart(2,'0');
+  document.getElementById('q-text').textContent=q.q;
+  const opts=document.getElementById('options');
+  opts.innerHTML='';
+  q.opts.forEach((o,i)=>{
+    const d=document.createElement('div');
+    d.className='nx-option';
+    d.innerHTML=`<span class="nx-opt-key">${keys[i]}</span><span class="nx-opt-text">${o}</span>`;
+    d.onclick=()=>selectOpt(i);
+    opts.appendChild(d);
+  });
+  document.getElementById('btn-confirm').disabled=true;
+  document.getElementById('btn-confirm').className='nx-btn-primary';
+  document.getElementById('feedback').className='nx-feedback';
+  document.getElementById('btn-next').className='nx-btn-next hidden';
+  document.getElementById('prog-fill').style.width=Math.max(2,Math.round(cur/TOTAL*100))+'%';
+  document.getElementById('prog-count').textContent=(cur+1)+' / '+TOTAL;
+}
+function selectOpt(i){
+  if(confirmed)return;
+  sel=i;
+  document.querySelectorAll('.nx-option').forEach((el,idx)=>el.className='nx-option'+(idx===i?' selected':''));
+  document.getElementById('btn-confirm').disabled=false;
+}
+function confirm_answer(){
+  if(sel<0||confirmed)return;
+  confirmed=true;
+  const q=sq[cur];
+  const ok=sel===q.c;
+  if(ok)rights++;else wrongs++;
+  document.querySelectorAll('.nx-option').forEach((el,idx)=>{
+    if(idx===q.c)el.className='nx-option correct';
+    else if(idx===sel&&!ok)el.className='nx-option wrong';
+    else el.className='nx-option dimmed';
+  });
+  const fb=document.getElementById('feedback');
+  fb.className='nx-feedback '+(ok?'correct':'wrong');
+  document.getElementById('fb-label').textContent=ok?'✓ correto':'✗ incorreto';
+  document.getElementById('fb-text').textContent=q.exp;
+  document.getElementById('btn-confirm').className='nx-btn-primary hidden';
+  document.getElementById('btn-next').className='nx-btn-next';
+  const tot=rights+wrongs;
+  document.getElementById('sr').textContent=rights;
+  document.getElementById('sw').textContent=wrongs;
+  document.getElementById('sp').textContent=Math.round(rights/tot*100)+'%';
+}
+function nextQ(){
+  cur++;
+  if(cur>=sq.length){
+    document.getElementById('q-text').textContent='Demonstração concluída. Acertos: '+rights+' / '+wrongs+' erros.';
+    document.getElementById('options').innerHTML='';
+    document.getElementById('btn-confirm').className='nx-btn-primary hidden';
+    document.getElementById('btn-next').className='nx-btn-next hidden';
+    document.getElementById('feedback').className='nx-feedback';
+    document.getElementById('prog-fill').style.width='100%';
+    document.getElementById('prog-count').textContent=TOTAL+' / '+TOTAL;
+    return;
+  }
+  render();
+}
+render();
+</script>
+</body>
+</html>

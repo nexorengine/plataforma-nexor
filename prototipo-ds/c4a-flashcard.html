@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#92400E">
+<title>Flashcards · SD06</title>
+<link rel="stylesheet" href="assets/nx.css">
+</head>
+<body>
+<div class="nx-header">
+  <a href="c3-sd06.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <div class="nx-wordmark">nexor_<span>cert</span></div>
+  <div class="nx-lang"><a href="#" class="active">PT</a><a href="#">EN</a></div>
+</div>
+<div class="nx-user-bar">
+  <div class="nx-user-left">
+    <div class="nx-avatar">AA</div>
+    <span class="nx-user-name">Alexandre Andrade</span>
+  </div>
+  <div class="nx-user-right">
+    <span class="nx-plan-badge">plano anual</span>
+    <a href="#" class="nx-logout"><i class="ti ti-logout"></i>sair</a>
+  </div>
+</div>
+<div class="nx-body">
+  <div class="nx-meta">
+    <span class="nx-meta-label">CFE · S1 · SD06 · Flashcards</span>
+    <span class="nx-layer-badge" id="layer-badge">F1</span>
+  </div>
+  <div class="nx-prog-row">
+    <div class="nx-prog-bar-bg"><div class="nx-prog-bar-fill" id="prog-fill" style="width:2%;"></div></div>
+    <span class="nx-prog-count" id="prog-count">1 / 48</span>
+  </div>
+  <div class="nx-card" id="nx-card">
+    <div class="nx-card-face" id="card-face">frente</div>
+    <div class="nx-card-text" id="card-text"></div>
+  </div>
+  <button class="nx-btn-primary" id="btn-flip" onclick="flipCard()">
+    <i class="ti ti-rotate-2"></i>VIRAR CARD
+  </button>
+  <div class="nx-actions hidden" id="actions">
+    <button class="nx-btn-wrong" onclick="answer(false)"><i class="ti ti-x"></i>ERREI</button>
+    <button class="nx-btn-right" onclick="answer(true)"><i class="ti ti-check"></i>ACERTEI</button>
+  </div>
+  <div class="nx-stats-row" style="margin-top:8px;">
+    <div class="nx-stat"><div class="nx-stat-val" id="sr" style="color:#4ade80;">0</div><div class="nx-stat-lbl">acertos</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sw" style="color:#f87171;">0</div><div class="nx-stat-lbl">erros</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sl" style="color:#D97706;">48</div><div class="nx-stat-lbl">restantes</div></div>
+  </div>
+</div>
+<div class="nx-footer">
+  <span>nexor_ · Certification Readiness Engine · Powered by FractalLearning™</span>
+</div>
+<script>
+const cards=[
+  {f:"Qual elemento diferencia corrupção de suborno segundo o CFE?",v:"Corrupção envolve abuso de posição de confiança; suborno é pagamento para influenciar decisão específica.",l:"F1"},
+  {f:"Defina Conflict of Interest (COI) no contexto corporativo.",v:"Situação em que interesse pessoal do colaborador interfere nos interesses da organização.",l:"F1"},
+  {f:"O que caracteriza um esquema de kickback?",v:"Pagamento secreto a agente de compras em troca de favorecer fornecedor específico em contratos.",l:"F2"},
+  {f:"Cite dois red flags de corrupção em licitações públicas.",v:"Fornecedores sem histórico comprovado + propostas com preço idêntico ao orçamento estimado.",l:"F2"},
+  {f:"Como o CFE classifica bid rigging?",v:"Esquema onde concorrentes combinam propostas para garantir vencedor pré-determinado.",l:"F3"},
+  {f:"O que é shell company no contexto de esquemas de corrupção?",v:"Empresa fictícia usada para ocultar pagamentos ilícitos e dissimular beneficiários reais.",l:"F3"},
+  {f:"Defina facilitação de pagamentos segundo o FCPA.",v:"Pequenos pagamentos a funcionários públicos para agilizar ações rotineiras já obrigatórias por lei.",l:"F4"},
+];
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+shuffle(cards);
+let cur=0,flipped=false,rights=0,wrongs=0;
+const TOTAL=48;
+function render(){
+  flipped=false;
+  const c=cards[cur];
+  document.getElementById('card-face').textContent='frente';
+  document.getElementById('card-text').textContent=c.f;
+  document.getElementById('nx-card').className='nx-card';
+  document.getElementById('layer-badge').textContent=c.l;
+  document.getElementById('btn-flip').className='nx-btn-primary';
+  document.getElementById('actions').className='nx-actions hidden';
+  document.getElementById('prog-fill').style.width=Math.max(2,Math.round(cur/TOTAL*100))+'%';
+  document.getElementById('prog-count').textContent=(cur+1)+' / '+TOTAL;
+  document.getElementById('sr').textContent=rights;
+  document.getElementById('sw').textContent=wrongs;
+  document.getElementById('sl').textContent=TOTAL-cur;
+}
+function flipCard(){
+  if(flipped)return;
+  flipped=true;
+  const c=cards[cur];
+  document.getElementById('card-face').textContent='verso';
+  document.getElementById('card-text').textContent=c.v;
+  document.getElementById('nx-card').className='nx-card flipped';
+  document.getElementById('btn-flip').className='nx-btn-primary hidden';
+  document.getElementById('actions').className='nx-actions';
+}
+function answer(ok){
+  if(ok)rights++;else wrongs++;
+  cur++;
+  if(cur>=cards.length){
+    document.getElementById('card-face').textContent='sessão concluída';
+    document.getElementById('card-text').textContent='Acertos: '+rights+' · Erros: '+wrongs;
+    document.getElementById('nx-card').className='nx-card';
+    document.getElementById('btn-flip').className='nx-btn-primary hidden';
+    document.getElementById('actions').className='nx-actions hidden';
+    document.getElementById('prog-fill').style.width='100%';
+    document.getElementById('prog-count').textContent=TOTAL+' / '+TOTAL;
+    document.getElementById('sr').textContent=rights;
+    document.getElementById('sw').textContent=wrongs;
+    document.getElementById('sl').textContent=0;
+    return;
+  }
+  render();
+}
+render();
+</script>
+</body>
+</html>
