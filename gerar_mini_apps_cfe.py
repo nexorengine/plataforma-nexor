@@ -930,6 +930,7 @@ def main():
         else:
             badge_fname = f"CFE_{dom_code}.png"
 
+        badge_b64 = ""
         badge_path = badges_dir / badge_fname
         if not badge_path.exists():
             # Tenta nome alternativo
@@ -968,25 +969,19 @@ def main():
 
 
 if __name__ == "__main__":
-    import sys
+    import sys, copy as _cp
     lote_num = None
     if "--lote" in sys.argv:
-        idx = sys.argv.index("--lote")
-        lote_num = int(sys.argv[idx + 1])
-
+        i = sys.argv.index("--lote")
+        lote_num = int(sys.argv[i + 1])
+    todos = _cp.deepcopy(DOMAINS)
     LOTE_SIZE = 10
     if lote_num is not None:
         inicio = (lote_num - 1) * LOTE_SIZE
-        fim    = inicio + LOTE_SIZE
-        dominios_rodar = DOMAINS[inicio:fim]
-        print(f"LOTE {lote_num}: dominios {inicio+1}-{min(fim, len(DOMAINS))} de {len(DOMAINS)}")
+        fim = inicio + LOTE_SIZE
+        subset = todos[inicio:fim]
     else:
-        dominios_rodar = DOMAINS
-
-    # Sobrescreve DOMAINS temporariamente para main() usar o subset
-    _orig = DOMAINS[:]
-    DOMAINS.clear()
-    DOMAINS.extend(dominios_rodar)
+        subset = todos
+    del DOMAINS[:]
+    DOMAINS.extend(subset)
     main()
-    DOMAINS.clear()
-    DOMAINS.extend(_orig)
