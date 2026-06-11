@@ -14,13 +14,15 @@
   <div class="nx-lang"><a href="#" class="active">PT</a><a href="#">EN</a></div>
   <a href="#" class="nx-avatar-btn">AA</a>
 </div>
-  <div class="nx-lang"><a href="#" class="active">PT</a><a href="#">EN</a></div>
-</div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div class="nx-meta">
-    <span class="nx-meta-label">CFE · S1 · SD06 · <span id="quiz-label">Quiz 001</span></span>
-    <span class="nx-quiz-badge" id="quiz-badge">Q001</span>
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#111;border:1px solid #222;border-radius:6px;padding:12px 14px;">
+    <div class="nx-icon-slot-text" style="width:40px;height:40px;font-size:12px;flex-shrink:0;">CFE</div>
+    <div>
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#D97706;margin-bottom:2px;">CFE · S1 · SD06</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F5F5F5;line-height:1.1;">Corruption, Bribery & COI</div>
+      <div style="font-size:11px;color:#777;font-weight:300;margin-top:1px;" id="quiz-sub">Quiz 001 · 50 questões</div>
+    </div>
   </div>
   <div class="nx-prog-row">
     <div class="nx-prog-bar-bg"><div class="nx-prog-bar-fill" id="prog-fill" style="width:2%;"></div></div>
@@ -48,14 +50,11 @@
   </div>
 </div>
 </div>
-</div>
-</div>
+<div class="nx-footer"><span>nexor_ · Certification Readiness Engine · Powered by FractalLearning™</span></div>
 <script>
 const params=new URLSearchParams(window.location.search);
 const qn=params.get('n')||'1';
-document.getElementById('quiz-label').textContent='Quiz 00'+qn;
-document.getElementById('quiz-badge').textContent='Q00'+qn;
-
+document.getElementById('quiz-sub').textContent='Quiz 00'+qn+' · 50 questões';
 const questions=[
   {q:"Qual dos seguintes elementos é essencial para caracterizar corrupção segundo o CFE?",opts:["Valor financeiro acima de USD 10.000","Abuso de posição de confiança para obter vantagem indevida","Envolvimento obrigatório de funcionário público","Registro contábil falsificado"],c:1,exp:"Corrupção exige abuso de posição de confiança. Os demais elementos podem estar presentes, mas não são determinantes."},
   {q:"Um gerente de compras recebe pagamentos mensais de um fornecedor para garantir contratos. Esse esquema é classificado como:",opts:["Bid rigging","Skimming","Kickback","Shell company fraud"],c:2,exp:"Kickback é o pagamento secreto feito a agente de compras para favorecer fornecedor específico."},
@@ -121,7 +120,7 @@ function confirm_answer(){
 function nextQ(){
   cur++;
   if(cur>=sq.length){
-    document.getElementById('q-text').textContent='Demonstração concluída. Acertos: '+rights+' / '+wrongs+' erros.';
+    document.getElementById('q-text').textContent='Demonstração concluída. Acertos: '+rights+' / Erros: '+wrongs;
     document.getElementById('options').innerHTML='';
     document.getElementById('btn-confirm').className='nx-btn-primary hidden';
     document.getElementById('btn-next').className='nx-btn-next hidden';
@@ -134,9 +133,5 @@ function nextQ(){
 }
 render();
 </script>
-</div>
-</div>
-
-<div class="nx-footer"><span>nexor_ · Certification Readiness Engine · Powered by FractalLearning™</span></div>
 </body>
 </html>
