@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#16263B">
+<title>Scorecard · nexor_med</title>
+<link rel="stylesheet" href="assets/nx.css">
+</head>
+<body>
+<div class="nx-header">
+  <a href="c3-med.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <div class="nx-wordmark">nexor_<span>med</span></div>
+  <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
+  <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
+</div>
+<div class="nx-scroll">
+<div class="nx-body">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
+    <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;"><i class="ti ti-cut" style="font-size:18px;"></i></div>
+    <div>
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#9FCBEB;margin-bottom:2px;">Cirurgia Geral · CG_D01</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;">Abdome Agudo</div>
+      <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">Scorecard · histórico completo</div>
+    </div>
+  </div>
+
+  <div class="nx-section-label">quiz 001 · prática livre</div>
+  <div class="nx-quiz-block">
+    <div class="nx-quiz-header">
+      <div>
+        <div class="nx-quiz-title-sc">Quiz 001</div>
+        <div class="nx-quiz-sub-sc">50 questões · 3 tentativas</div>
+      </div>
+      <span class="nx-status-badge" style="background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.4);">SATISFATÓRIO</span>
+    </div>
+    <div class="nx-attempts">
+      <div class="nx-attempts-label">histórico de tentativas</div>
+      <div class="nx-attempt-row">
+        <span class="nx-attempt-n">1</span>
+        <div class="nx-attempt-bar-bg"><div class="nx-attempt-bar" style="width:68%;background:#FCA311;"></div></div>
+        <span class="nx-attempt-pct" style="color:#FCA311;">68%</span>
+              </div>
+      <div class="nx-attempt-row">
+        <span class="nx-attempt-n">2</span>
+        <div class="nx-attempt-bar-bg"><div class="nx-attempt-bar" style="width:80%;background:#4ade80;"></div></div>
+        <span class="nx-attempt-pct" style="color:#4ade80;">80%</span>
+              </div>
+      <div class="nx-attempt-row">
+        <span class="nx-attempt-n">3</span>
+        <div class="nx-attempt-bar-bg"><div class="nx-attempt-bar" style="width:92%;background:#4ade80;"></div></div>
+        <span class="nx-attempt-pct" style="color:#4ade80;">92%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="nx-section-label">quiz 002 · certificação</div>
+  <div class="nx-quiz-block">
+    <div class="nx-quiz-header">
+      <div>
+        <div class="nx-quiz-title-sc">Quiz 002</div>
+        <div class="nx-quiz-sub-sc">50 questões · aprovação ≥ 80%</div>
+      </div>
+      <span class="nx-status-badge" style="background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.4);">SATISFATÓRIO</span>
+    </div>
+    <div class="nx-attempts">
+      <div class="nx-attempts-label">histórico de tentativas</div>
+      <div class="nx-attempt-row">
+        <span class="nx-attempt-n">1</span>
+        <div class="nx-attempt-bar-bg"><div class="nx-attempt-bar" style="width:72%;background:#FCA311;"></div></div>
+        <span class="nx-attempt-pct" style="color:#FCA311;">72%</span>
+              </div>
+      <div class="nx-attempt-row">
+        <span class="nx-attempt-n">2</span>
+        <div class="nx-attempt-bar-bg"><div class="nx-attempt-bar" style="width:88%;background:#4ade80;"></div></div>
+        <span class="nx-attempt-pct" style="color:#4ade80;">88%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="nx-section-label">critérios de conclusão</div>
+  <div class="nx-summary-block">
+    <div class="nx-summary-row">
+      <span class="nx-summary-key">flashcards</span>
+      <span style="display:flex;align-items:center;gap:6px;">
+        <span style="font-size:11px;color:#AAA;">48 / 48</span>
+        <span class="nx-status-badge" style="background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.4);">SATISFATÓRIO</span>
+      </span>
+    </div>
+    <div class="nx-summary-row">
+      <span class="nx-summary-key">quiz 001</span>
+      <span style="display:flex;align-items:center;gap:6px;">
+        <span style="font-size:11px;color:#AAA;">92%</span>
+        <span class="nx-status-badge" style="background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.4);">SATISFATÓRIO</span>
+      </span>
+    </div>
+    <div class="nx-summary-row">
+      <span class="nx-summary-key">quiz 002</span>
+      <span style="display:flex;align-items:center;gap:6px;">
+        <span style="font-size:11px;color:#AAA;">88%</span>
+        <span class="nx-status-badge" style="background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.4);">SATISFATÓRIO</span>
+      </span>
+    </div>
+    <div class="nx-summary-row" style="margin-top:4px;padding-top:10px;border-top:1px solid #1d3452;">
+      <span class="nx-summary-key" style="font-weight:600;color:#F0F6FB;">DOMÍNIO CONCLUÍDO</span>
+      <span class="nx-summary-val" style="color:#4ade80;">SIM</span>
+    </div>
+  </div>
+
+  <div class="nx-alert" style="background:rgba(74,222,128,0.06);border:1px solid rgba(74,222,128,0.2);">
+    <i class="ti ti-circle-check" style="color:#4ade80;font-size:16px;margin-top:1px;flex-shrink:0;"></i>
+    <div class="nx-alert-text" style="color:#4ade80;">Domínio CG_D01 concluído com sucesso. Avance para o próximo domínio: Trauma e Urgência Cirúrgica.</div>
+  </div>
+</div>
+</div>
+<div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
+<script src="assets/notif.js"></script>
+<script src="assets/profile.js"></script>
+</body>
+</html>
