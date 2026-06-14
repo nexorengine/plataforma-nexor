@@ -161,19 +161,48 @@ Gere o resumo analítico conforme as instruções do sistema."""
 
     resp = client.messages.create(
         model=MODEL,
-        max_tokens=700,
+        max_tokens=2000,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_msg}],
     )
 
     raw = resp.content[0].text.strip()
-    if raw.startswith("```"):
+
+    # Remove markdown code fences se presentes
+    if "```" in raw:
         parts = raw.split("```")
-        raw = parts[1] if len(parts) > 1 else raw
-        if raw.startswith("json"):
-            raw = raw[4:]
-    raw = raw.strip().rstrip("`").strip()
-    return json.loads(raw)
+        for part in parts:
+            part = part.strip()
+            if part.startswith("json"):
+                part = part[4:].strip()
+            if part.startswith("{"):
+                raw = part
+                break
+
+    raw = raw.strip()
+
+    # Tenta parse direto
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        pass
+
+    # Tenta extrair o JSON via regex (fallback para respostas com texto extra)
+    import re
+    m = re.search(r'\{[\s\S]*"texto"[\s\S]*"fonte"[\s\S]*\}', raw)
+    if m:
+        try:
+            return json.loads(m.group(0))
+        except json.JSONDecodeError:
+            pass
+
+    # Último recurso: extrai texto e fonte separadamente
+    m_texto = re.search(r'"texto"\s*:\s*"([\s\S]*?)",\s*"fonte"', raw)
+    m_fonte = re.search(r'"fonte"\s*:\s*"([\s\S]*?)"[\s\}]', raw)
+    if m_texto and m_fonte:
+        return {"texto": m_texto.group(1), "fonte": m_fonte.group(1)}
+
+    raise ValueError(f"Não foi possível extrair JSON da resposta:\n{raw[:300]}")
 
 # ---------------------------------------------------------------------------
 # Main

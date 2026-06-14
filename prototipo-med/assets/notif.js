@@ -4,14 +4,14 @@ const NOTIFS = [
     items: [
       {
         id: 1, unread: true, color: "red",
-        icon: "ti ti-flame", iconColor: "#ef4444",
+        icon: "ti ti-flame", iconColor: "rgba(240,246,251,0.4)",
         text: "<strong>Sequência em risco.</strong> Você não estuda há 2 dias — não perca seu ritmo agora.",
         time: "há 1h",
         link: "c2-med.html"
       },
       {
         id: 2, unread: true, color: "gold",
-        icon: "ti ti-target", iconColor: "#FCA311",
+        icon: "ti ti-target", iconColor: "rgba(240,246,251,0.4)",
         text: "<strong>Você está a 12 pts de aprovar CG_D06.</strong> Tente o Quiz 002 de Intestino Delgado novamente.",
         time: "há 3h",
         link: "c3-med.html"
@@ -23,21 +23,21 @@ const NOTIFS = [
     items: [
       {
         id: 3, unread: true, color: "green",
-        icon: "ti ti-trophy", iconColor: "#22c55e",
+        icon: "ti ti-trophy", iconColor: "rgba(240,246,251,0.4)",
         text: "<strong>CG_D01 Abdome Agudo concluído!</strong> Próximo domínio disponível: Trauma e Urgência Cirúrgica.",
         time: "ontem",
         link: "c3-med.html"
       },
       {
         id: 4, unread: false, color: "gold",
-        icon: "ti ti-chart-bar", iconColor: "#FCA311",
+        icon: "ti ti-chart-bar", iconColor: "rgba(240,246,251,0.3)",
         text: "<strong>Progresso atualizado.</strong> Cirurgia Geral subiu de 65% → 72%. Continue assim.",
         time: "2 dias atrás",
         link: "c2-med.html"
       },
       {
         id: 5, unread: false, color: "blue",
-        icon: "ti ti-bell", iconColor: "#60a5fa",
+        icon: "ti ti-bell", iconColor: "rgba(240,246,251,0.3)",
         text: "<strong>Clínica Médica chegando em breve.</strong> Você será notificado assim que o conteúdo estiver disponível.",
         time: "3 dias atrás",
         link: null
@@ -49,14 +49,14 @@ const NOTIFS = [
     items: [
       {
         id: 6, unread: false, color: "red",
-        icon: "ti ti-credit-card", iconColor: "#f87171",
+        icon: "ti ti-credit-card", iconColor: "rgba(240,246,251,0.3)",
         text: "<strong>Seu plano vence em 7 dias.</strong> Renove agora para não perder o acesso.",
         time: "há 5 dias",
         link: "index.html"
       },
       {
         id: 7, unread: false, color: "green",
-        icon: "ti ti-cards", iconColor: "#4ade80",
+        icon: "ti ti-cards", iconColor: "rgba(240,246,251,0.3)",
         text: "<strong>Meta diária atingida!</strong> 20 flashcards revisados em CG_D01.",
         time: "há 6 dias",
         link: null
@@ -75,7 +75,7 @@ function buildSheet() {
   let html = `
     <div class="nx-notif-handle"></div>
     <div class="nx-notif-header">
-      <div class="nx-notif-title">Notificações <span style="font-size:11px;color:#ef4444;font-family:'Barlow',sans-serif;font-weight:400;margin-left:4px;">${UNREAD_COUNT} novas</span></div>
+      <div class="nx-notif-title">Notificações <span style="font-size:11px;color:rgba(240,246,251,0.35);font-family:'Barlow',sans-serif;font-weight:300;margin-left:4px;">${UNREAD_COUNT} novas</span></div>
       <span class="nx-notif-mark" onclick="markAllRead()">marcar todas como lidas</span>
     </div>
     <div class="nx-notif-list" id="nx-notif-list">`;
