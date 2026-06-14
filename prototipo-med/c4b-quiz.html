@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="theme-color" content="#14213D">
+<meta name="theme-color" content="#16263B">
 <title>Quiz · nexor_med</title>
 <link rel="stylesheet" href="assets/nx.css">
 </head>
@@ -16,14 +16,14 @@
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#0E1726;border:1px solid #1E2D44;border-radius:6px;padding:12px 14px;">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
     <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;"><i class="ti ti-cut" style="font-size:18px;"></i></div>
     <div style="flex:1;min-width:0;">
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;">Cirurgia Geral · CG_D01</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F5F5F5;line-height:1.1;">Abdome Agudo</div>
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#9FCBEB;margin-bottom:2px;">Cirurgia Geral · CG_D01</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;">Abdome Agudo</div>
       <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;" id="quiz-sub">Quiz 001 · 50 questões</div>
     </div>
-    <div id="timer-display" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#FCA311;letter-spacing:0.04em;flex-shrink:0;">60:00</div>
+    <div id="timer-display" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#9FCBEB;letter-spacing:0.04em;flex-shrink:0;">60:00</div>
   </div>
 
   <div class="nx-prog-row">
@@ -31,23 +31,23 @@
     <span class="nx-prog-count" id="prog-count">1 / 50</span>
   </div>
 
-  <div style="background:#0E1726;border:1px solid #1E2D44;border-radius:8px;padding:20px;margin-bottom:14px;">
+  <div style="background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:20px;margin-bottom:14px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
       <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#555;letter-spacing:0.08em;text-transform:uppercase;" id="q-label">questão 01</div>
       <button class="tts-btn" id="tts-q-btn" onclick="ttsQuestao(this)" title="Ouvir em voz alta"><i class="ti ti-volume"></i></button>
     </div>
-    <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#F5F5F5;line-height:1.35;" id="q-text"></div>
+    <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#F0F6FB;line-height:1.35;" id="q-text"></div>
   </div>
 
   <div class="nx-options" id="options"></div>
 
   <button class="nx-btn-primary" id="btn-confirm" onclick="confirm_answer()" disabled>
-    <i class="ti ti-check"></i>CONFIRMAR
+    CONFIRMAR
   </button>
   <div class="nx-feedback" id="feedback">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-      <span class="nx-fb-label" id="fb-label" style="margin-bottom:0;"></span>
-      <button class="tts-btn" id="tts-fb-btn" onclick="ttsFeedback(this)" title="Ouvir explicação"><i class="ti ti-volume"></i></button>
+    <div style="position:relative;display:flex;align-items:center;justify-content:center;margin-bottom:6px;">
+      <span class="nx-fb-label" id="fb-label" style="margin-bottom:0;text-align:center;"></span>
+      <button class="tts-btn" id="tts-fb-btn" onclick="ttsFeedback(this)" title="Ouvir explicação" style="position:absolute;right:0;"><i class="ti ti-volume"></i></button>
     </div>
     <span id="fb-text"></span>
   </div>
@@ -62,16 +62,16 @@
   <div id="nx-aula-overlay" style="position:fixed;inset:0;z-index:299;background:rgba(0,0,0,0.6);opacity:0;pointer-events:none;transition:opacity 0.3s;" onclick="closeAula()"></div>
   <div id="nx-aula-sheet" class="nx-aula-sheet">
     <div class="nx-sheet-handle"></div>
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 12px;border-bottom:1px solid #1E2D44;">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 12px;border-bottom:1px solid #1d3452;">
       <div style="display:flex;align-items:center;gap:8px;">
-        <i class="ti ti-school" style="font-size:18px;color:#FCA311;"></i>
-        <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F5F5F5;">Mini-aula</span>
+        <i class="ti ti-school" style="font-size:18px;color:#9FCBEB;"></i>
+        <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F0F6FB;">Mini-aula</span>
       </div>
       <button class="tts-btn" id="tts-aula-btn" onclick="ttsAula(this)" title="Ouvir em voz alta"><i class="ti ti-volume"></i></button>
     </div>
     <div style="padding:20px 20px 8px;" id="aula-text"></div>
-    <div style="margin:0 20px;padding:12px 14px;background:#060e1a;border:1px solid #1E2D44;border-radius:6px;">
-      <div style="font-size:10px;color:#FCA311;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Fonte</div>
+    <div style="margin:0 20px;padding:12px 14px;background:#070A0E;border:1px solid #1d3452;border-radius:6px;">
+      <div style="font-size:10px;color:#9FCBEB;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Fonte</div>
       <div style="font-size:12px;color:#888;font-family:'Barlow',sans-serif;font-weight:300;line-height:1.5;" id="aula-fonte"></div>
     </div>
     <div style="height:16px;"></div>
@@ -80,7 +80,7 @@
   <div class="nx-stats-row">
     <div class="nx-stat"><div class="nx-stat-val" id="sr" style="color:#4ade80;">0</div><div class="nx-stat-lbl">acertos</div></div>
     <div class="nx-stat"><div class="nx-stat-val" id="sw" style="color:#f87171;">0</div><div class="nx-stat-lbl">erros</div></div>
-    <div class="nx-stat"><div class="nx-stat-val" id="sp" style="color:#FCA311;">—</div><div class="nx-stat-lbl">aproveitamento</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sp" style="color:#9FCBEB;">—</div><div class="nx-stat-lbl">aproveitamento</div></div>
   </div>
 </div>
 </div>
@@ -131,10 +131,10 @@ function updateTimerDisplay(){
     el.style.color = '#ef4444';
     el.style.animation = 'nx-pulse 1s ease-in-out infinite';
   } else if(timerSec <= 600){
-    el.style.color = '#FCA311';
+    el.style.color = '#9FCBEB';
     el.style.animation = '';
   } else {
-    el.style.color = '#FCA311';
+    el.style.color = '#9FCBEB';
     el.style.animation = '';
   }
 }
@@ -212,7 +212,7 @@ function confirm_answer(){
   });
   const fb=document.getElementById('feedback');
   fb.className='nx-feedback '+(ok?'correct':'wrong');
-  document.getElementById('fb-label').textContent=ok?'✓ correto':'✗ incorreto';
+  document.getElementById('fb-label').textContent=ok?'CORRETO':'INCORRETO';
   document.getElementById('fb-text').textContent=q.exp;
   document.getElementById('btn-confirm').className='nx-btn-primary hidden';
   document.getElementById('btn-next').className='nx-btn-next';

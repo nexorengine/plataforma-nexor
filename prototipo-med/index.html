@@ -3,39 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="theme-color" content="#14213D">
+<meta name="theme-color" content="#16263B">
 <title>nexor_med · Residência Médica</title>
 <link rel="stylesheet" href="assets/nx.css">
 <style>
 .c0-plan-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
-.c0-plan{background:#0E1726;border:1px solid #1E2D44;border-radius:8px;padding:16px;}
-.c0-plan.featured{border-color:#FCA311;background:#0D1929;}
-.c0-plan-tag{font-size:9px;font-family:'Barlow',sans-serif;font-weight:400;color:#FCA311;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
-.c0-plan-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F5F5F5;margin-bottom:4px;}
-.c0-plan-price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;color:#FCA311;line-height:1;}
+.c0-plan{background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:16px;}
+.c0-plan.featured{border-color:#9FCBEB;background:#1a2e44;}
+.c0-plan-tag{font-size:9px;font-family:'Barlow',sans-serif;font-weight:400;color:#9FCBEB;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+.c0-plan-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F0F6FB;margin-bottom:4px;}
+.c0-plan-price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;color:#9FCBEB;line-height:1;}
 .c0-plan-price span{font-size:13px;font-weight:300;font-family:'Barlow',sans-serif;color:#AAA;margin-left:4px;}
 .c0-plan-equiv{font-size:10px;color:#AAA;font-weight:300;margin-top:3px;}
-.c0-plan-save{display:inline-block;font-size:9px;background:rgba(252,163,17,0.12);color:#FCA311;border:1px solid rgba(252,163,17,0.25);border-radius:3px;padding:2px 7px;margin-top:6px;}
-.c0-divider{height:1px;background:#1E2D44;margin:6px 0 10px;}
+.c0-plan-save{display:inline-block;font-size:9px;background:rgba(159,203,235,0.12);color:#9FCBEB;border:1px solid rgba(159,203,235,0.25);border-radius:3px;padding:2px 7px;margin-top:6px;}
+.c0-divider{height:1px;background:#1d3452;margin:6px 0 10px;}
 .c0-feature{display:flex;align-items:center;gap:8px;font-size:11px;color:#AAA;font-weight:300;margin-bottom:5px;}
-.c0-feature i{color:#FCA311;font-size:13px;flex-shrink:0;}
-.c0-magic{background:#0E1726;border:1px solid #1E2D44;border-radius:8px;padding:18px;margin-bottom:24px;}
+.c0-feature i{color:#9FCBEB;font-size:13px;flex-shrink:0;}
+.c0-magic{background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:18px;margin-bottom:24px;}
 .c0-magic-label{font-size:11px;color:#AAA;font-weight:300;margin-bottom:10px;}
-.c0-input{width:100%;height:44px;background:#060e1a;border:1px solid #1E2D44;border-radius:6px;color:#F5F5F5;font-family:'Barlow',sans-serif;font-size:14px;padding:0 14px;outline:none;margin-bottom:10px;}
+.c0-input{width:100%;height:44px;background:#070A0E;border:1px solid #1d3452;border-radius:6px;color:#F0F6FB;font-family:'Barlow',sans-serif;font-size:14px;padding:0 14px;outline:none;margin-bottom:10px;}
 .c0-input::placeholder{color:#555;}
-.c0-input:focus{border-color:#FCA311;}
+.c0-input:focus{border-color:#9FCBEB;}
 .c0-features-row{display:flex;flex-direction:column;gap:8px;margin-bottom:24px;}
-.c0-feat-item{display:flex;align-items:flex-start;gap:12px;background:#0E1726;border:1px solid #1E2D44;border-radius:6px;padding:12px 14px;}
-.c0-feat-icon{width:34px;height:34px;background:#060e1a;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.c0-feat-icon i{font-size:17px;color:#FCA311;}
-.c0-feat-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;color:#F5F5F5;margin-bottom:2px;}
+.c0-feat-item{display:flex;align-items:flex-start;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;}
+.c0-feat-icon{width:34px;height:34px;background:#070A0E;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.c0-feat-icon i{font-size:17px;color:#9FCBEB;}
+.c0-feat-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;color:#F0F6FB;margin-bottom:2px;}
 .c0-feat-sub{font-size:11px;color:#AAA;font-weight:300;line-height:1.4;}
 </style>
 </head>
 <body>
 <div class="nx-header">
   <div class="nx-wordmark-left">nexor_<span>med</span></div>
-  <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
 <div class="nx-scroll">
@@ -75,45 +74,45 @@
 
   <div class="nx-section-label">especialidades disponíveis</div>
   <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
-    <div style="display:flex;align-items:center;gap:12px;background:#0E1726;border:1px solid #1E2D44;border-radius:8px;padding:12px 14px;">
-      <i class="ti ti-cut" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+    <div style="display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;">
+      <i class="ti ti-cut" style="color:#9FCBEB;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F5F5F5;">Cirurgia Geral</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Cirurgia Geral</div>
         <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
       </div>
       <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
     </div>
-    <div style="display:flex;align-items:center;gap:12px;background:#0E1726;border:1px solid #1E2D44;border-radius:8px;padding:12px 14px;">
-      <i class="ti ti-baby-carriage" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+    <div style="display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;">
+      <i class="ti ti-baby-carriage" style="color:#9FCBEB;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F5F5F5;">Ginecologia & Obstetrícia</div>
-        <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">em breve · conteúdo em produção</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Ginecologia & Obstetrícia</div>
+        <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">8 domínios · 384 flashcards · 800 questões</div>
       </div>
-      <span style="font-size:9px;background:#060e1a;color:#888;border:1px solid #1E2D44;border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">em breve</span>
+      <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
     </div>
-    <div style="display:flex;align-items:center;gap:12px;background:#0E1726;border:1px solid #1E2D44;border-radius:8px;padding:12px 14px;">
-      <i class="ti ti-heart-rate-monitor" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+    <div style="display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;">
+      <i class="ti ti-heart-rate-monitor" style="color:#9FCBEB;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F5F5F5;">Clínica Médica</div>
-        <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">em breve · conteúdo em produção</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Clínica Médica</div>
+        <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">10 domínios · 480 flashcards · 1.000 questões</div>
       </div>
-      <span style="font-size:9px;background:#060e1a;color:#888;border:1px solid #1E2D44;border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">em breve</span>
+      <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
     </div>
-    <div style="display:flex;align-items:center;gap:12px;background:#0E1726;border:1px solid #1E2D44;border-radius:8px;padding:12px 14px;">
-      <i class="ti ti-baby" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+    <div style="display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;">
+      <i class="ti ti-heart" style="color:#9FCBEB;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F5F5F5;">Pediatria</div>
-        <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">em breve · conteúdo em produção</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Pediatria</div>
+        <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
       </div>
-      <span style="font-size:9px;background:#060e1a;color:#888;border:1px solid #1E2D44;border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">em breve</span>
+      <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
     </div>
-    <div style="display:flex;align-items:center;gap:12px;background:#0E1726;border:1px solid #1E2D44;border-radius:8px;padding:12px 14px;">
-      <i class="ti ti-vaccine" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+    <div style="display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;">
+      <i class="ti ti-vaccine" style="color:#9FCBEB;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F5F5F5;">Medicina Preventiva</div>
-        <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">em breve · conteúdo em produção</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Medicina Preventiva</div>
+        <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">7 domínios · 336 flashcards · 700 questões</div>
       </div>
-      <span style="font-size:9px;background:#060e1a;color:#888;border:1px solid #1E2D44;border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">em breve</span>
+      <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
     </div>
   </div>
 
@@ -162,7 +161,7 @@
   </div>
 
   <div style="text-align:center;margin-bottom:8px;">
-    <a href="c1-med.html" style="font-size:12px;color:#FCA311;text-decoration:none;">já tenho acesso → entrar</a>
+    <a href="c1-med.html" style="font-size:12px;color:#9FCBEB;text-decoration:none;">já tenho acesso → entrar</a>
   </div>
 
 </div>
