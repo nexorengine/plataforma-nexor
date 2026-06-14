@@ -63,16 +63,15 @@
   <div id="nx-aula-sheet" class="nx-aula-sheet">
     <div class="nx-sheet-handle"></div>
     <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 12px;border-bottom:1px solid #1d3452;">
-      <div style="display:flex;align-items:center;gap:8px;">
-        <i class="ti ti-school" style="font-size:18px;color:#FCA311;"></i>
-        <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F0F6FB;">Mini-aula</span>
+      <div style="flex:1;text-align:center;">
+        <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F0F6FB;letter-spacing:0.05em;">RESUMO ANALÍTICO</span>
       </div>
       <button class="tts-btn" id="tts-aula-btn" onclick="ttsAula(this)" title="Ouvir em voz alta"><i class="ti ti-volume"></i></button>
     </div>
     <div style="padding:20px 20px 8px;" id="aula-text"></div>
-    <div style="margin:0 20px;padding:12px 14px;background:#070A0E;border:1px solid #1d3452;border-radius:6px;">
+    <div style="margin:0 20px;padding:12px 14px;background:#070A0E;border:1px solid rgba(255,255,255,0.35);border-radius:6px;">
       <div style="font-size:10px;color:#FCA311;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Fonte</div>
-      <div style="font-size:12px;color:#888;font-family:'Barlow',sans-serif;font-weight:300;line-height:1.5;" id="aula-fonte"></div>
+      <div style="font-size:12px;color:#F0F6FB;font-family:'Barlow',sans-serif;font-weight:300;line-height:1.5;" id="aula-fonte"></div>
     </div>
     <div style="height:16px;"></div>
   </div>
@@ -246,7 +245,7 @@ startTimer();
 
 /* ── MINI-AULA ── */
 const aulaDemo = {
-  texto: `Quando uma víscera oca — estômago, intestino delgado ou cólon — se perfura, o ar contido em sua luz escapa para a cavidade peritoneal. Esse ar livre, mais leve que os tecidos ao redor, sobe imediatamente e se acumula abaixo do diafragma. Na radiografia de tórax ou abdome em posição ortostática, esse ar aparece como imagem hipertransparente em forma de meia-lua abaixo do hemidiafragma direito — o chamado pneumoperitônio subdiafragmático.\n\nPatognomônico significa exclusivo de uma condição. O pneumoperitônio é justamente isso: ar livre na cavidade abdominal em contexto de abdome agudo equivale a perfuração até prova em contrário — indicação direta de cirurgia.\n\nAs demais alternativas são inespecíficas: níveis hidroaéreos sugerem obstrução intestinal; íleo paralítico ocorre em diversas condições inflamatórias e metabólicas; calcificações pancreáticas são achado crônico de pancreatite alcoólica.\n\nMacete: "Ar livre sobe, diagnóstico desce — direto para cirurgia."`,
+  texto: `Quando uma víscera oca — estômago, intestino delgado ou cólon — se perfura, o ar contido em sua luz escapa para a cavidade peritoneal. Esse ar livre, mais leve que os tecidos ao redor, sobe imediatamente e se acumula abaixo do diafragma. Na radiografia de tórax ou abdome em posição ortostática, esse ar aparece como imagem hipertransparente em forma de meia-lua abaixo do hemidiafragma direito — o chamado pneumoperitônio subdiafragmático.\n\nPatognomônico significa exclusivo de uma condição. O pneumoperitônio é justamente isso: ar livre na cavidade abdominal em contexto de abdome agudo equivale a perfuração até prova em contrário — indicação direta de cirurgia.\n\nAs demais alternativas são inespecíficas: níveis hidroaéreos sugerem obstrução intestinal; íleo paralítico ocorre em diversas condições inflamatórias e metabólicas; calcificações pancreáticas são achado crônico de pancreatite alcoólica.`,
   fonte: `Townsend CM Jr. et al. — Sabiston Textbook of Surgery, 21ª ed. Cap. 45 — Acute Abdomen. Elsevier, 2022.`
 };
 
