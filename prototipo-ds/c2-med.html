@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#14213D">
+<title>Cirurgia Geral · nexor_med</title>
+<link rel="stylesheet" href="assets/nx.css">
+</head>
+<body>
+<div class="nx-header">
+  <a href="c1-med.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <div class="nx-wordmark">nexor_<span>med</span></div>
+  <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
+  <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
+</div>
+<div class="nx-scroll">
+<div class="nx-body">
+  <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;">
+    <div class="nx-icon-slot" style="width:52px;height:52px;flex-shrink:0;"><i class="ti ti-cut" style="font-size:24px;"></i></div>
+    <div>
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px;">nexor_med · Especialidade</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;color:#F5F5F5;line-height:1.1;">Cirurgia Geral</div>
+      <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:2px;">9 domínios · 432 flashcards · 900 questões</div>
+    </div>
+  </div>
+
+  <div class="nx-stats-row">
+    <div class="nx-stat"><div class="nx-stat-val" style="color:#4ade80;">5</div><div class="nx-stat-lbl">concluídos</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" style="color:#FCA311;">78%</div><div class="nx-stat-lbl">melhor nota</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" style="color:#AAA;">4</div><div class="nx-stat-lbl">pendentes</div></div>
+  </div>
+
+  <div class="nx-progress-block">
+    <div class="nx-progress-label"><span>progresso geral</span><span>72%</span></div>
+    <div class="nx-bar-bg"><div class="nx-bar-fill" style="width:72%;"></div></div>
+  </div>
+
+  <div style="display:flex;justify-content:space-between;margin-bottom:16px;background:#0E1726;border:1px solid #1E2D44;border-radius:6px;padding:10px 14px;">
+    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#AAA;font-weight:300;"><i class="ti ti-circle-check" style="color:#22c55e;font-size:14px;"></i>aprovado ≥70%</div>
+    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#AAA;font-weight:300;"><i class="ti ti-ban" style="color:#ef4444;font-size:14px;"></i>reprovado</div>
+    <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#AAA;font-weight:300;"><i class="ti ti-alert-triangle" style="color:#FCA311;font-size:14px;"></i>em andamento</div>
+  </div>
+
+  <div class="nx-section-header">
+    <div class="nx-section-title">Domínios · Cirurgia Geral</div>
+    <div class="nx-section-meta-txt">9 domínios</div>
+  </div>
+
+  <a href="c3-med.html" class="nx-domain-row">
+    <div class="nx-dot passed"></div>
+    <span class="nx-domain-code-txt">CG_D01</span>
+    <span class="nx-domain-name-txt">Abdome Agudo</span>
+    <span class="nx-domain-score" style="color:#22c55e;">88%</span>
+    <div class="nx-status-icon"><i class="ti ti-circle-check" style="color:#22c55e;font-size:16px;"></i></div>
+  </a>
+  <a href="c3-med.html" class="nx-domain-row">
+    <div class="nx-dot passed"></div>
+    <span class="nx-domain-code-txt">CG_D02</span>
+    <span class="nx-domain-name-txt">Trauma e Urgência Cirúrgica</span>
+    <span class="nx-domain-score" style="color:#22c55e;">82%</span>
+    <div class="nx-status-icon"><i class="ti ti-circle-check" style="color:#22c55e;font-size:16px;"></i></div>
+  </a>
+  <a href="c3-med.html" class="nx-domain-row">
+    <div class="nx-dot passed"></div>
+    <span class="nx-domain-code-txt">CG_D03</span>
+    <span class="nx-domain-name-txt">Hérnias da Parede Abdominal</span>
+    <span class="nx-domain-score" style="color:#22c55e;">76%</span>
+    <div class="nx-status-icon"><i class="ti ti-circle-check" style="color:#22c55e;font-size:16px;"></i></div>
+  </a>
+  <a href="c3-med.html" class="nx-domain-row">
+    <div class="nx-dot passed"></div>
+    <span class="nx-domain-code-txt">CG_D04</span>
+    <span class="nx-domain-name-txt">Doenças do Esôfago</span>
+    <span class="nx-domain-score" style="color:#22c55e;">71%</span>
+    <div class="nx-status-icon"><i class="ti ti-circle-check" style="color:#22c55e;font-size:16px;"></i></div>
+  </a>
+  <a href="c3-med.html" class="nx-domain-row">
+    <div class="nx-dot passed"></div>
+    <span class="nx-domain-code-txt">CG_D05</span>
+    <span class="nx-domain-name-txt">Doenças do Estômago e Duodeno</span>
+    <span class="nx-domain-score" style="color:#22c55e;">78%</span>
+    <div class="nx-status-icon"><i class="ti ti-circle-check" style="color:#22c55e;font-size:16px;"></i></div>
+  </a>
+  <a href="c3-med.html" class="nx-domain-row">
+    <div class="nx-dot failed"></div>
+    <span class="nx-domain-code-txt">CG_D06</span>
+    <span class="nx-domain-name-txt">Doenças do Intestino Delgado</span>
+    <span class="nx-domain-score" style="color:#f87171;">55%</span>
+    <div class="nx-status-icon"><i class="ti ti-ban" style="color:#ef4444;font-size:16px;"></i></div>
+  </a>
+  <a href="c3-med.html" class="nx-domain-row">
+    <div class="nx-dot started"></div>
+    <span class="nx-domain-code-txt">CG_D07</span>
+    <span class="nx-domain-name-txt">Doenças do Cólon e Reto</span>
+    <span class="nx-domain-score">38%</span>
+    <div class="nx-status-icon"><i class="ti ti-alert-triangle" style="color:#FCA311;font-size:16px;"></i></div>
+  </a>
+  <a href="c3-med.html" class="nx-domain-row">
+    <div class="nx-dot locked"></div>
+    <span class="nx-domain-code-txt">CG_D08</span>
+    <span class="nx-domain-name-txt">Doenças Hepatobiliares e Pâncreas</span>
+    <span class="nx-domain-score" style="color:#555;">—</span>
+    <div class="nx-status-icon"><i class="ti ti-circle-dashed" style="color:#555;font-size:16px;"></i></div>
+  </a>
+  <a href="c3-med.html" class="nx-domain-row">
+    <div class="nx-dot locked"></div>
+    <span class="nx-domain-code-txt">CG_D09</span>
+    <span class="nx-domain-name-txt">Oncologia Cirúrgica</span>
+    <span class="nx-domain-score" style="color:#555;">—</span>
+    <div class="nx-status-icon"><i class="ti ti-circle-dashed" style="color:#555;font-size:16px;"></i></div>
+  </a>
+</div>
+</div>
+<div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
+<script src="assets/notif.js"></script>
+<script src="assets/profile.js"></script>
+</body>
+</html>

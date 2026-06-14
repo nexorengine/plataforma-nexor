@@ -3,71 +3,171 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="theme-color" content="#92400E">
-<title>Quiz · SD06</title>
+<meta name="theme-color" content="#14213D">
+<title>Quiz · nexor_med</title>
 <link rel="stylesheet" href="assets/nx.css">
 </head>
 <body>
 <div class="nx-header">
-  <a href="c3-sd06.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
-  <div class="nx-wordmark">nexor_<span>cert</span></div>
-  <div class="nx-lang"><a href="#" class="active">PT</a><a href="#">EN</a></div>
-  <a href="#" class="nx-avatar-btn">AA</a>
+  <a href="c3-med.html" class="nx-back-btn" id="btn-back"><i class="ti ti-arrow-left"></i>voltar</a>
+  <div class="nx-wordmark">nexor_<span>med</span></div>
+  <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
+  <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#111;border:1px solid #222;border-radius:6px;padding:12px 14px;">
-    <div class="nx-icon-slot-text" style="width:40px;height:40px;font-size:12px;flex-shrink:0;">CFE</div>
-    <div>
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#D97706;margin-bottom:2px;">CFE · S1 · SD06</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F5F5F5;line-height:1.1;">Corruption, Bribery & COI</div>
-      <div style="font-size:11px;color:#777;font-weight:300;margin-top:1px;" id="quiz-sub">Quiz 001 · 50 questões</div>
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#0E1726;border:1px solid #1E2D44;border-radius:6px;padding:12px 14px;">
+    <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;"><i class="ti ti-cut" style="font-size:18px;"></i></div>
+    <div style="flex:1;min-width:0;">
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;">Cirurgia Geral · CG_D01</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F5F5F5;line-height:1.1;">Abdome Agudo</div>
+      <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;" id="quiz-sub">Quiz 001 · 50 questões</div>
     </div>
+    <div id="timer-display" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#FCA311;letter-spacing:0.04em;flex-shrink:0;">60:00</div>
   </div>
+
   <div class="nx-prog-row">
     <div class="nx-prog-bar-bg"><div class="nx-prog-bar-fill" id="prog-fill" style="width:2%;"></div></div>
     <span class="nx-prog-count" id="prog-count">1 / 50</span>
   </div>
-  <div style="background:#111;border:1px solid #2a2a2a;border-radius:8px;padding:20px;margin-bottom:14px;">
-    <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#444;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;" id="q-label">questão 01</div>
+
+  <div style="background:#0E1726;border:1px solid #1E2D44;border-radius:8px;padding:20px;margin-bottom:14px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#555;letter-spacing:0.08em;text-transform:uppercase;" id="q-label">questão 01</div>
+      <button class="tts-btn" id="tts-q-btn" onclick="ttsQuestao(this)" title="Ouvir em voz alta"><i class="ti ti-volume"></i></button>
+    </div>
     <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#F5F5F5;line-height:1.35;" id="q-text"></div>
   </div>
+
   <div class="nx-options" id="options"></div>
+
   <button class="nx-btn-primary" id="btn-confirm" onclick="confirm_answer()" disabled>
     <i class="ti ti-check"></i>CONFIRMAR
   </button>
   <div class="nx-feedback" id="feedback">
-    <span class="nx-fb-label" id="fb-label"></span>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+      <span class="nx-fb-label" id="fb-label" style="margin-bottom:0;"></span>
+      <button class="tts-btn" id="tts-fb-btn" onclick="ttsFeedback(this)" title="Ouvir explicação"><i class="ti ti-volume"></i></button>
+    </div>
     <span id="fb-text"></span>
   </div>
-  <button class="nx-btn-next hidden" id="btn-next" onclick="nextQ()">
-    PRÓXIMA <i class="ti ti-arrow-right"></i>
+  <button class="nx-btn-aula hidden" id="btn-aula" onclick="openAula()">
+    RESUMO ANALÍTICO
   </button>
+  <button class="nx-btn-next hidden" id="btn-next" onclick="nextQ()">
+    PRÓXIMA
+  </button>
+
+  <!-- BOTTOM SHEET: MINI-AULA -->
+  <div id="nx-aula-overlay" style="position:fixed;inset:0;z-index:299;background:rgba(0,0,0,0.6);opacity:0;pointer-events:none;transition:opacity 0.3s;" onclick="closeAula()"></div>
+  <div id="nx-aula-sheet" class="nx-aula-sheet">
+    <div class="nx-sheet-handle"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 12px;border-bottom:1px solid #1E2D44;">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <i class="ti ti-school" style="font-size:18px;color:#FCA311;"></i>
+        <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F5F5F5;">Mini-aula</span>
+      </div>
+      <button class="tts-btn" id="tts-aula-btn" onclick="ttsAula(this)" title="Ouvir em voz alta"><i class="ti ti-volume"></i></button>
+    </div>
+    <div style="padding:20px 20px 8px;" id="aula-text"></div>
+    <div style="margin:0 20px;padding:12px 14px;background:#060e1a;border:1px solid #1E2D44;border-radius:6px;">
+      <div style="font-size:10px;color:#FCA311;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Fonte</div>
+      <div style="font-size:12px;color:#888;font-family:'Barlow',sans-serif;font-weight:300;line-height:1.5;" id="aula-fonte"></div>
+    </div>
+    <div style="height:16px;"></div>
+  </div>
+
   <div class="nx-stats-row">
     <div class="nx-stat"><div class="nx-stat-val" id="sr" style="color:#4ade80;">0</div><div class="nx-stat-lbl">acertos</div></div>
     <div class="nx-stat"><div class="nx-stat-val" id="sw" style="color:#f87171;">0</div><div class="nx-stat-lbl">erros</div></div>
-    <div class="nx-stat"><div class="nx-stat-val" id="sp" style="color:#D97706;">—</div><div class="nx-stat-lbl">aproveitamento</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sp" style="color:#FCA311;">—</div><div class="nx-stat-lbl">aproveitamento</div></div>
   </div>
 </div>
 </div>
-<div class="nx-footer"><span>nexor_ · Certification Readiness Engine · Powered by FractalLearning™</span></div>
+<div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
+<script src="assets/notif.js"></script>
+<script src="assets/profile.js"></script>
+<script src="assets/tts.js"></script>
 <script>
 const params=new URLSearchParams(window.location.search);
 const qn=params.get('n')||'1';
 document.getElementById('quiz-sub').textContent='Quiz 00'+qn+' · 50 questões';
+
 const questions=[
-  {q:"Qual dos seguintes elementos é essencial para caracterizar corrupção segundo o CFE?",opts:["Valor financeiro acima de USD 10.000","Abuso de posição de confiança para obter vantagem indevida","Envolvimento obrigatório de funcionário público","Registro contábil falsificado"],c:1,exp:"Corrupção exige abuso de posição de confiança. Os demais elementos podem estar presentes, mas não são determinantes."},
-  {q:"Um gerente de compras recebe pagamentos mensais de um fornecedor para garantir contratos. Esse esquema é classificado como:",opts:["Bid rigging","Skimming","Kickback","Shell company fraud"],c:2,exp:"Kickback é o pagamento secreto feito a agente de compras para favorecer fornecedor específico."},
-  {q:"Segundo o FCPA, facilitação de pagamentos são:",opts:["Sempre ilegais independentemente do valor","Permitidos para agilizar ações rotineiras de funcionários públicos","Equivalentes a suborno com mesma penalidade","Legais apenas em países sem legislação anticorrupção"],c:1,exp:"O FCPA possui exceção para pequenos pagamentos destinados a agilizar ações rotineiras já obrigatórias por lei."},
-  {q:"Duas empresas concorrentes combinam previamente quem vai vencer uma licitação. Isso configura:",opts:["Conflict of Interest","Bid rigging","Invoice fraud","Asset misappropriation"],c:1,exp:"Bid rigging é o acordo entre concorrentes para manipular resultado de licitação."},
-  {q:"Qual é o principal red flag de Conflict of Interest (COI) em processo de compras?",opts:["Fornecedor com menor preço vence contrato","Colaborador aprova contratos com empresa de familiar sem disclosure","Compras realizadas fora do horário comercial","Volume de compras acima da média histórica"],c:1,exp:"Aprovação de contratos com empresa vinculada a familiar sem declaração formal é o red flag clássico de COI."},
+  {q:"Qual é a causa mais comum de abdome agudo cirúrgico em adultos jovens?",opts:["Colecistite aguda","Apendicite aguda","Pancreatite aguda","Obstrução intestinal por brida"],c:1,exp:"Apendicite aguda é a causa mais frequente de abdome agudo cirúrgico, especialmente em adultos entre 10–30 anos."},
+  {q:"O sinal de Murphy positivo é sugestivo de qual patologia?",opts:["Apendicite aguda","Pancreatite aguda","Colecistite aguda","Perfuração gástrica"],c:2,exp:"O sinal de Murphy (interrupção da inspiração à palpação do hipocôndrio direito) é clássico de colecistite aguda."},
+  {q:"Qual achado radiológico é patognomônico de perfuração de víscera oca?",opts:["Níveis hidroaéreos","Pneumoperitônio subdiafragmático","Calcificações pancreáticas","Íleo paralítico"],c:1,exp:"Pneumoperitônio (ar livre subdiafragmático) na radiografia em posição ortostática indica perfuração de víscera oca."},
+  {q:"A tríade de Charcot (febre, icterícia e dor em HCD) é característica de:",opts:["Colecistite aguda","Coledocolitíase","Colangite aguda","Pancreatite biliar"],c:2,exp:"A tríade de Charcot é patognomônica de colangite aguda. A pêntade de Reynolds acrescenta hipotensão e confusão mental."},
+  {q:"Paciente com dor súbita em epigástrio irradiando para dorso, náuseas e amilase 5x o normal. Diagnóstico:",opts:["Úlcera perfurada","Pancreatite aguda","Colecistite aguda","Isquemia mesentérica"],c:1,exp:"Pancreatite aguda: dor epigástrica irradiando para dorso + elevação de amilase/lipase > 3x o valor de referência."},
 ];
+
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function shuffleQ(q){const idx=q.opts.map((o,i)=>({t:o,i}));shuffle(idx);return{q:q.q,opts:idx.map(x=>x.t),c:idx.findIndex(x=>x.i===q.c),exp:q.exp};}
 shuffle(questions);
 const sq=questions.map(shuffleQ);
 let cur=0,sel=-1,confirmed=false,rights=0,wrongs=0;
 const TOTAL=50,keys=['A','B','C','D'];
+
+/* ── TIMER ── */
+const TIMER_TOTAL = 60 * 60; // 60 minutos em segundos
+let timerSec = TIMER_TOTAL;
+let timerInterval = null;
+let quizEnded = false;
+
+function startTimer(){
+  timerInterval = setInterval(() => {
+    timerSec--;
+    updateTimerDisplay();
+    if(timerSec <= 0){ clearInterval(timerInterval); timeUp(); }
+  }, 1000);
+}
+
+function updateTimerDisplay(){
+  const el = document.getElementById('timer-display');
+  const m = Math.floor(timerSec / 60);
+  const s = timerSec % 60;
+  el.textContent = String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+  if(timerSec <= 180){
+    el.style.color = '#ef4444';
+    el.style.animation = 'nx-pulse 1s ease-in-out infinite';
+  } else if(timerSec <= 600){
+    el.style.color = '#FCA311';
+    el.style.animation = '';
+  } else {
+    el.style.color = '#FCA311';
+    el.style.animation = '';
+  }
+}
+
+function stopTimer(){
+  clearInterval(timerInterval);
+  timerInterval = null;
+}
+
+function timeUp(){
+  if(quizEnded) return;
+  quizEnded = true;
+  TTS.stop && TTS.stop();
+  document.getElementById('q-label').textContent = 'tempo esgotado';
+  document.getElementById('q-text').textContent = 'O tempo da prova encerrou. Acertos: ' + rights + ' · Erros: ' + wrongs;
+  document.getElementById('options').innerHTML = '';
+  document.getElementById('btn-confirm').className = 'nx-btn-primary hidden';
+  document.getElementById('btn-next').className = 'nx-btn-next hidden';
+  document.getElementById('feedback').className = 'nx-feedback wrong';
+  document.getElementById('fb-label').textContent = '✗ tempo esgotado';
+  document.getElementById('fb-text').textContent = 'Você respondeu ' + (rights+wrongs) + ' de ' + TOTAL + ' questões. Aproveitamento: ' + (rights+wrongs > 0 ? Math.round(rights/(rights+wrongs)*100) : 0) + '%.';
+  document.getElementById('prog-fill').style.width = Math.round((rights+wrongs)/TOTAL*100) + '%';
+  const timerEl = document.getElementById('timer-display');
+  timerEl.textContent = '00:00';
+  timerEl.style.color = '#ef4444';
+}
+
+// Ao clicar em voltar: para timer, NÃO conta como tentativa
+document.getElementById('btn-back').addEventListener('click', () => {
+  stopTimer();
+});
+
+/* ── QUIZ ── */
 function render(){
   sel=-1;confirmed=false;
   const q=sq[cur];
@@ -86,15 +186,19 @@ function render(){
   document.getElementById('btn-confirm').className='nx-btn-primary';
   document.getElementById('feedback').className='nx-feedback';
   document.getElementById('btn-next').className='nx-btn-next hidden';
+  document.getElementById('btn-aula').className='nx-btn-aula hidden';
+  closeAula();
   document.getElementById('prog-fill').style.width=Math.max(2,Math.round(cur/TOTAL*100))+'%';
   document.getElementById('prog-count').textContent=(cur+1)+' / '+TOTAL;
 }
+
 function selectOpt(i){
   if(confirmed)return;
   sel=i;
   document.querySelectorAll('.nx-option').forEach((el,idx)=>el.className='nx-option'+(idx===i?' selected':''));
   document.getElementById('btn-confirm').disabled=false;
 }
+
 function confirm_answer(){
   if(sel<0||confirmed)return;
   confirmed=true;
@@ -112,15 +216,20 @@ function confirm_answer(){
   document.getElementById('fb-text').textContent=q.exp;
   document.getElementById('btn-confirm').className='nx-btn-primary hidden';
   document.getElementById('btn-next').className='nx-btn-next';
+  document.getElementById('btn-aula').className='nx-btn-aula';
   const tot=rights+wrongs;
   document.getElementById('sr').textContent=rights;
   document.getElementById('sw').textContent=wrongs;
   document.getElementById('sp').textContent=Math.round(rights/tot*100)+'%';
 }
+
 function nextQ(){
   cur++;
   if(cur>=sq.length){
-    document.getElementById('q-text').textContent='Demonstração concluída. Acertos: '+rights+' / Erros: '+wrongs;
+    stopTimer();
+    quizEnded=true;
+    document.getElementById('q-label').textContent='quiz concluído';
+    document.getElementById('q-text').textContent='Parabéns! Acertos: '+rights+' · Erros: '+wrongs;
     document.getElementById('options').innerHTML='';
     document.getElementById('btn-confirm').className='nx-btn-primary hidden';
     document.getElementById('btn-next').className='nx-btn-next hidden';
@@ -131,7 +240,56 @@ function nextQ(){
   }
   render();
 }
+
 render();
+startTimer();
+
+/* ── MINI-AULA ── */
+const aulaDemo = {
+  texto: `Quando uma víscera oca — estômago, intestino delgado ou cólon — se perfura, o ar contido em sua luz escapa para a cavidade peritoneal. Esse ar livre, mais leve que os tecidos ao redor, sobe imediatamente e se acumula abaixo do diafragma. Na radiografia de tórax ou abdome em posição ortostática, esse ar aparece como imagem hipertransparente em forma de meia-lua abaixo do hemidiafragma direito — o chamado pneumoperitônio subdiafragmático.\n\nPatognomônico significa exclusivo de uma condição. O pneumoperitônio é justamente isso: ar livre na cavidade abdominal em contexto de abdome agudo equivale a perfuração até prova em contrário — indicação direta de cirurgia.\n\nAs demais alternativas são inespecíficas: níveis hidroaéreos sugerem obstrução intestinal; íleo paralítico ocorre em diversas condições inflamatórias e metabólicas; calcificações pancreáticas são achado crônico de pancreatite alcoólica.\n\nMacete: "Ar livre sobe, diagnóstico desce — direto para cirurgia."`,
+  fonte: `Townsend CM Jr. et al. — Sabiston Textbook of Surgery, 21ª ed. Cap. 45 — Acute Abdomen. Elsevier, 2022.`
+};
+
+function openAula(){
+  const q = sq[cur];
+  // Em produção: buscar do Supabase por q.id — aqui usamos demo
+  document.getElementById('aula-text').innerHTML = aulaDemo.texto.split('\n\n').map(p =>
+    `<p style="font-size:14px;font-family:'Barlow',sans-serif;font-weight:300;color:#E0E0E0;line-height:1.65;margin-bottom:14px;">${p}</p>`
+  ).join('');
+  document.getElementById('aula-fonte').textContent = aulaDemo.fonte;
+  const sheet = document.getElementById('nx-aula-sheet');
+  const overlay = document.getElementById('nx-aula-overlay');
+  sheet.classList.add('open');
+  overlay.style.opacity = '1';
+  overlay.style.pointerEvents = 'auto';
+}
+
+function closeAula(){
+  const sheet = document.getElementById('nx-aula-sheet');
+  const overlay = document.getElementById('nx-aula-overlay');
+  if(!sheet) return;
+  sheet.classList.remove('open');
+  overlay.style.opacity = '0';
+  overlay.style.pointerEvents = 'none';
+}
+
+function ttsAula(btn){
+  const texto = document.getElementById('aula-text').innerText + '. Fonte: ' + document.getElementById('aula-fonte').textContent;
+  TTS.speak(texto, btn);
+}
+
+function ttsQuestao(btn){
+  const q=sq[cur];
+  const opts=['A','B','C','D'];
+  const texto=q.q+'. '+q.opts.map((o,i)=>opts[i]+': '+o).join('. ');
+  TTS.speak(texto, btn);
+}
+function ttsFeedback(btn){
+  TTS.speak(document.getElementById('fb-text').textContent, btn);
+}
 </script>
+<style>
+@keyframes nx-pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+</style>
 </body>
 </html>

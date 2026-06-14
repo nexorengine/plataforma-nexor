@@ -3,53 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="theme-color" content="#92400E">
-<title>nexor_med</title>
+<meta name="theme-color" content="#14213D">
+<title>nexor_med · Especialidades</title>
 <link rel="stylesheet" href="assets/nx.css">
 </head>
 <body>
 <div class="nx-header">
-  <a href="index.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <a href="index.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>início</a>
   <div class="nx-wordmark">nexor_<span>med</span></div>
-  <div class="nx-lang"><a href="#" class="active">PT</a><a href="#">EN</a></div>
-  <a href="#" class="nx-avatar-btn">AA</a>
+  <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
+  <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
   <div class="nx-hero">
-    <div class="nx-hero-tag">Residência Médica · 5 áreas</div>
+    <div class="nx-hero-tag">Residência Médica · 5 especialidades</div>
     <div class="nx-hero-title">Suas especialidades</div>
-    <div class="nx-hero-sub">Áreas assinadas aparecem no topo, ordenadas por progresso.</div>
+    <div class="nx-hero-sub">Especialidades assinadas aparecem no topo, ordenadas por progresso.</div>
   </div>
+
   <div class="nx-section-label">assinadas · em andamento</div>
-  <a href="#" class="nx-capsule active">
+  <a href="c2-med.html" class="nx-capsule active">
     <div class="nx-icon-slot"><i class="ti ti-cut"></i></div>
-    <div class="nx-cap-body"><div class="nx-cap-title">Cirurgia Geral</div><div class="nx-cap-org">9 domínios · 432 flashcards</div></div>
+    <div class="nx-cap-body">
+      <div class="nx-cap-title">Cirurgia Geral</div>
+      <div class="nx-cap-org">9 domínios · 432 flashcards · 900 questões</div>
+    </div>
     <div class="nx-pill pct">72%</div>
   </a>
+
   <div class="nx-section-label">disponíveis · não assinadas</div>
   <div class="nx-capsule unsigned">
     <div class="nx-icon-slot inactive"><i class="ti ti-baby-carriage"></i></div>
-    <div class="nx-cap-body"><div class="nx-cap-title">Ginecologia & Obstetrícia</div><div class="nx-cap-org">Em breve</div></div>
-    <div class="nx-pill soon">assinar</div>
+    <div class="nx-cap-body">
+      <div class="nx-cap-title">Ginecologia & Obstetrícia</div>
+      <div class="nx-cap-org">Em breve</div>
+    </div>
+    <div class="nx-pill soon">em breve</div>
   </div>
   <div class="nx-capsule unsigned">
     <div class="nx-icon-slot inactive"><i class="ti ti-heart-rate-monitor"></i></div>
-    <div class="nx-cap-body"><div class="nx-cap-title">Clínica Médica</div><div class="nx-cap-org">Em breve</div></div>
-    <div class="nx-pill soon">assinar</div>
+    <div class="nx-cap-body">
+      <div class="nx-cap-title">Clínica Médica</div>
+      <div class="nx-cap-org">Em breve</div>
+    </div>
+    <div class="nx-pill soon">em breve</div>
   </div>
   <div class="nx-capsule unsigned">
-    <div class="nx-icon-slot inactive"><i class="ti ti-baby"></i></div>
-    <div class="nx-cap-body"><div class="nx-cap-title">Pediatria</div><div class="nx-cap-org">Em breve</div></div>
-    <div class="nx-pill soon">assinar</div>
+    <div class="nx-icon-slot inactive"><i class="ti ti-heart"></i></div>
+    <div class="nx-cap-body">
+      <div class="nx-cap-title">Pediatria</div>
+      <div class="nx-cap-org">Em breve</div>
+    </div>
+    <div class="nx-pill soon">em breve</div>
   </div>
   <div class="nx-capsule unsigned">
     <div class="nx-icon-slot inactive"><i class="ti ti-vaccine"></i></div>
-    <div class="nx-cap-body"><div class="nx-cap-title">Medicina Preventiva</div><div class="nx-cap-org">Em breve</div></div>
-    <div class="nx-pill soon">assinar</div>
+    <div class="nx-cap-body">
+      <div class="nx-cap-title">Medicina Preventiva</div>
+      <div class="nx-cap-org">Em breve</div>
+    </div>
+    <div class="nx-pill soon">em breve</div>
   </div>
 </div>
 </div>
-<div class="nx-footer"><span>nexor_ · Certification Readiness Engine · Powered by FractalLearning™</span></div>
+<div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
+<script src="assets/notif.js"></script>
+<script src="assets/profile.js"></script>
 </body>
 </html>

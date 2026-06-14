@@ -3,27 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="theme-color" content="#92400E">
-<title>Flashcards · SD06</title>
+<meta name="theme-color" content="#14213D">
+<title>Flashcards · nexor_med</title>
 <link rel="stylesheet" href="assets/nx.css">
 </head>
 <body>
 <div class="nx-header">
-  <a href="c3-sd06.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
-  <div class="nx-wordmark">nexor_<span>cert</span></div>
-  <div class="nx-lang"><a href="#" class="active">PT</a><a href="#">EN</a></div>
-  <a href="#" class="nx-avatar-btn">AA</a>
+  <a href="c3-med.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <div class="nx-wordmark">nexor_<span>med</span></div>
+  <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
+  <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#111;border:1px solid #222;border-radius:6px;padding:12px 14px;">
-    <div class="nx-icon-slot-text" style="width:40px;height:40px;font-size:12px;flex-shrink:0;">CFE</div>
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#0E1726;border:1px solid #1E2D44;border-radius:6px;padding:12px 14px;">
+    <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;"><i class="ti ti-cut" style="font-size:18px;"></i></div>
     <div>
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#D97706;margin-bottom:2px;">CFE · S1 · SD06</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F5F5F5;line-height:1.1;">Corruption, Bribery & COI</div>
-      <div style="font-size:11px;color:#777;font-weight:300;margin-top:1px;">Flashcards · 48 cards</div>
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;">Cirurgia Geral · CG_D01</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F5F5F5;line-height:1.1;">Abdome Agudo</div>
+      <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">Flashcards · 48 cards</div>
     </div>
   </div>
+
   <div class="nx-meta">
     <span class="nx-meta-label">progresso da sessão</span>
     <span class="nx-layer-badge" id="layer-badge">F1</span>
@@ -32,34 +33,43 @@
     <div class="nx-prog-bar-bg"><div class="nx-prog-bar-fill" id="prog-fill" style="width:2%;"></div></div>
     <span class="nx-prog-count" id="prog-count">1 / 48</span>
   </div>
-  <div class="nx-card" id="nx-card">
-    <div class="nx-card-face" id="card-face">frente</div>
+
+  <div class="nx-card" id="nx-card" style="position:relative;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+      <div class="nx-card-face" id="card-face" style="margin-bottom:0;">frente</div>
+      <button class="tts-btn" id="tts-card-btn" onclick="ttsCard(this)" title="Ouvir em voz alta" style="position:absolute;top:14px;right:14px;"><i class="ti ti-volume"></i></button>
+    </div>
     <div class="nx-card-text" id="card-text"></div>
   </div>
+
   <button class="nx-btn-primary" id="btn-flip" onclick="flipCard()">
-    <i class="ti ti-rotate-2"></i>VIRAR CARD
+    VIRAR
   </button>
   <div class="nx-actions hidden" id="actions">
     <button class="nx-btn-wrong" onclick="answer(false)"><i class="ti ti-x"></i>ERREI</button>
     <button class="nx-btn-right" onclick="answer(true)"><i class="ti ti-check"></i>ACERTEI</button>
   </div>
+
   <div class="nx-stats-row" style="margin-top:8px;">
     <div class="nx-stat"><div class="nx-stat-val" id="sr" style="color:#4ade80;">0</div><div class="nx-stat-lbl">acertos</div></div>
     <div class="nx-stat"><div class="nx-stat-val" id="sw" style="color:#f87171;">0</div><div class="nx-stat-lbl">erros</div></div>
-    <div class="nx-stat"><div class="nx-stat-val" id="sl" style="color:#D97706;">48</div><div class="nx-stat-lbl">restantes</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sl" style="color:#FCA311;">48</div><div class="nx-stat-lbl">restantes</div></div>
   </div>
 </div>
 </div>
-<div class="nx-footer"><span>nexor_ · Certification Readiness Engine · Powered by FractalLearning™</span></div>
+<div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
+<script src="assets/notif.js"></script>
+<script src="assets/profile.js"></script>
+<script src="assets/tts.js"></script>
 <script>
 const cards=[
-  {f:"Qual elemento diferencia corrupção de suborno segundo o CFE?",v:"Corrupção envolve abuso de posição de confiança; suborno é pagamento para influenciar decisão específica.",l:"F1"},
-  {f:"Defina Conflict of Interest (COI) no contexto corporativo.",v:"Situação em que interesse pessoal do colaborador interfere nos interesses da organização.",l:"F1"},
-  {f:"O que caracteriza um esquema de kickback?",v:"Pagamento secreto a agente de compras em troca de favorecer fornecedor específico em contratos.",l:"F2"},
-  {f:"Cite dois red flags de corrupção em licitações públicas.",v:"Fornecedores sem histórico comprovado + propostas com preço idêntico ao orçamento estimado.",l:"F2"},
-  {f:"Como o CFE classifica bid rigging?",v:"Esquema onde concorrentes combinam propostas para garantir vencedor pré-determinado.",l:"F3"},
-  {f:"O que é shell company no contexto de esquemas de corrupção?",v:"Empresa fictícia usada para ocultar pagamentos ilícitos e dissimular beneficiários reais.",l:"F3"},
-  {f:"Defina facilitação de pagamentos segundo o FCPA.",v:"Pequenos pagamentos a funcionários públicos para agilizar ações rotineiras já obrigatórias por lei.",l:"F4"},
+  {f:"Quais são as quatro causas clássicas de abdome agudo inflamatório?",v:"Apendicite aguda, colecistite aguda, pancreatite aguda e diverticulite aguda — as mais cobradas em provas de residência.",l:"F1"},
+  {f:"Defina abdome agudo obstrutivo e cite o sinal radiológico característico.",v:"Obstrução mecânica do trânsito intestinal. Sinal radiológico: níveis hidroaéreos em escada na radiografia simples de abdome.",l:"F1"},
+  {f:"Qual é o sinal de Blumberg e o que ele indica?",v:"Dor à descompressão brusca do abdome — indica irritação peritoneal (peritonismo). Sugestivo de peritonite.",l:"F2"},
+  {f:"Diferencie abdome agudo perfurativo de obstrutivo quanto ao início da dor.",v:"Perfurativo: dor súbita, intensa, 'em facada'. Obstrutivo: dor em cólica, progressiva, associada a distensão abdominal.",l:"F2"},
+  {f:"Caso clínico: homem 28a com dor em FID há 12h, náuseas, febre 38°C, Blumberg +. Diagnóstico mais provável?",v:"Apendicite aguda. Conduta: apendicectomia laparoscópica de urgência após avaliação cirúrgica.",l:"F3"},
+  {f:"Qual achado no pneumoperitônio confirma perfuração de víscera oca?",v:"Ar livre subdiafragmático na radiografia de tórax em posição ortostática — sinal patognomônico de perfuração.",l:"F3"},
+  {f:"Síntese: qual a tríade de Charcot e em qual condição é clássica?",v:"Febre + icterícia + dor em hipocôndrio direito — clássica de colangite aguda. Pêntade de Reynolds adiciona hipotensão e confusão mental.",l:"F4"},
 ];
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 shuffle(cards);
@@ -109,6 +119,7 @@ function answer(ok){
   render();
 }
 render();
+function ttsCard(btn){ TTS.speak(document.getElementById('card-text').textContent, btn); }
 </script>
 </body>
 </html>
