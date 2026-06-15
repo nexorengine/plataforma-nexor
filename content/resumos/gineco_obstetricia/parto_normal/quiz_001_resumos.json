@@ -1,60 +1,260 @@
-{
-  "area": "gineco_obstetricia",
-  "dominio": "parto_normal",
-  "titulo": "GO D02 — Parto Normal",
-  "quiz": "001",
-  "modelo": "claude-sonnet-4-6",
-  "total": 50,
-  "resumos": [
-    {"num": 1, "texto": "Trabalho de parto estabelecido requer contrações uterinas regulares (≥2 em 10 minutos), progressivas, associadas a apagamento e dilatação cervical progressiva documentada. Contrações irregulares, rotura de membranas isolada ou dilatação sem dinâmica adequada não configuram o diagnóstico. A fase latente precede a fase ativa, que se inicia com ≥6 cm de dilatação conforme consenso ACOG/MS.", "fonte": "GO_D02_Q1_001"},
-    {"num": 2, "texto": "Os quatro períodos do parto em ordem obrigatória: 1º dilatação (fase latente + fase ativa), 2º expulsivo, 3º dequitação (saída da placenta) e 4º período de Greenberg (1–2h de vigilância pós-parto imediato). A inversão da ordem é erro grave em provas — especialmente confundir dequitação com Greenberg.", "fonte": "GO_D02_Q1_002"},
-    {"num": 3, "texto": "A fase ativa inicia com ≥6 cm de dilatação, conforme consenso ACOG/SMFM adotado pelo Ministério da Saúde. O marco antigo de 4 cm foi abandonado para reduzir cesarianas desnecessárias por 'distocia' na fase latente. Dilatações menores caracterizam fase latente, que pode ser prolongada sem ser patológica.", "fonte": "GO_D02_Q1_003"},
-    {"num": 4, "texto": "O Bishop avalia cinco parâmetros cervicais: dilatação (0–3 pontos), apagamento (0–3), consistência (0–2), posição do colo (0–2) e altura da apresentação (0–3). Total ≥6 indica colo favorável para indução — não há necessidade de maturação cervical prévia. Escore <6 indica colo desfavorável e requer maturação.", "fonte": "GO_D02_Q1_004"},
-    {"num": 5, "texto": "Plano 0 = apresentação fetal ao nível das espinhas isquiáticas. Valores negativos (–1, –2, –3) indicam apresentação acima das espinhas (não encaixada). Valores positivos (+1, +2, +3) indicam descida progressiva em direção ao períneo. Insinuação (encaixamento) corresponde ao plano 0 em nulíparas.", "fonte": "GO_D02_Q1_005"},
-    {"num": 6, "texto": "McRoberts (hiperflexão máxima das coxas sobre o abdome) + pressão suprapúbica é a primeira e obrigatória manobra na distocia de ombro — resolve >50% dos casos sem manobras internas. A episiotomia não resolve a distocia óssea. Zavanelli é manobra de último recurso. Kristeller é absolutamente contraindicado.", "fonte": "GO_D02_Q1_006"},
-    {"num": 7, "texto": "No Apgar, a frequência cardíaca pontua: 0 = ausente; 1 = <100 bpm; 2 = ≥100 bpm. Os cinco parâmetros do Apgar são: frequência cardíaca, esforço respiratório, tônus muscular, irritabilidade reflexa e cor. Apgar ≤3 indica depressão grave; 4–6 moderada; 7–10 normal.", "fonte": "GO_D02_Q1_007"},
-    {"num": 8, "texto": "Schultze: placenta se desprende pelo centro, face fetal emerge primeiro — mais comum e com menor sangramento. Duncan: face materna emerge primeiro, inserção lateral, maior sangramento. Brandt-Andrews e Credé são manobras de auxílio à dequitação, não mecanismos espontâneos.", "fonte": "GO_D02_Q1_008"},
-    {"num": 9, "texto": "Ocitocina 10 UI IM imediatamente após o nascimento é o uterotônico de primeira linha no manejo ativo do 3º período pela OMS — reduz hemorragia pós-parto (HPP) em 60%. Misoprostol é alternativa quando ocitocina não está disponível. Metilergometrina é contraindicada em hipertensas.", "fonte": "GO_D02_Q1_009"},
-    {"num": 10, "texto": "HPP primária: perda sanguínea ≥500 mL nas primeiras 24h após parto vaginal, ou ≥1.000 mL após cesariana. HPP grave: ≥1.000 mL após parto vaginal com sinais de instabilidade hemodinâmica. Os 4T orientam diagnóstico diferencial: Tônus (atonia — mais comum), Trauma (lacerações), Tecido (retenção placentária), Trombina (coagulopatia).", "fonte": "GO_D02_Q1_010"},
-    {"num": 11, "texto": "Fase ativa estacionada com contrações adequadas (≥3 em 10 min de boa qualidade) por ≥4h sem progressão cervical é critério para cesariana. Com contrações inadequadas: amniotomia + ocitocina por até 6h antes de indicar cesariana. A mera ausência de progressão por 2h não é suficiente para a indicação cirúrgica.", "fonte": "GO_D02_Q1_011"},
-    {"num": 12, "texto": "CTG categoria I (tranquilizadora): FCF basal 110–160 bpm, variabilidade 6–25 bpm, acelerações presentes, sem desacelerações tardias ou variáveis significativas. Conduta: monitoramento habitual. Categoria II: indeterminada, requer vigilância aumentada. Categoria III (sinistro): variabilidade ausente + desacelerações tardias/bradicardia — resolução imediata.", "fonte": "GO_D02_Q1_012"},
-    {"num": 13, "texto": "Bishop ≥6 indica colo favorável — não há necessidade de maturação cervical prévia. A conduta direta é amniotomia + ocitocina IV em bomba de infusão contínua. Misoprostol em colo favorável é desnecessário e aumenta risco de taquissistolia. Aguardar parto espontâneo com indicação de indução é conduta incorreta.", "fonte": "GO_D02_Q1_013"},
-    {"num": 14, "texto": "Expulsivo prolongado em nulípara: >2h sem analgesia peridural ou >3h com peridural. Em multípara: >1h sem peridural ou >2h com peridural. Esses limites orientam a indicação de parto instrumentado (fórceps ou vácuo) ou reavaliação para cesariana conforme condições maternas e fetais.", "fonte": "GO_D02_Q1_014"},
-    {"num": 15, "texto": "Desacelerações variáveis recorrentes (categoria II) requerem ressuscitação intrauterina antes de indicar cesariana: reposicionamento lateral, O₂ por máscara, hidratação IV e suspensão da ocitocina. Parto instrumentado se no expulsivo avançado e sem melhora. Cesariana se evolução para categoria III ou sem resposta às medidas.", "fonte": "GO_D02_Q1_015"},
-    {"num": 16, "texto": "Corioamnionite: febre materna ≥38°C + pelo menos 1 critério (taquicardia fetal >160 bpm, útero doloroso à palpação, líquido amniótico fétido, leucocitose >15.000). Tratamento: ampicilina + gentamicina IV imediatos e resolução do parto independentemente da via — vaginal ou cesariana conforme condições obstétricas.", "fonte": "GO_D02_Q1_016"},
-    {"num": 17, "texto": "Cicatriz uterina prévia (cesariana, miomectomia com entrada na cavidade) é contraindicação absoluta ao misoprostol — risco de ruptura uterina. Ocitocina em doses baixas com vigilância intensiva pode ser considerada. Para maturação cervical com cicatriz: balão de Foley intracervical ou dinoprostona (PGE2) são alternativas seguras.", "fonte": "GO_D02_Q1_017"},
-    {"num": 18, "texto": "Em multípara: expulsivo >1h sem peridural ou >2h com peridural é considerado prolongado e indica avaliação para parto instrumentado ou cesariana. Em nulípara: limites são >2h sem peridural e >3h com peridural. O excesso de tempo no expulsivo associa-se a sofrimento fetal e lesão do assoalho pélvico materno.", "fonte": "GO_D02_Q1_018"},
-    {"num": 19, "texto": "Fórceps de alívio exige: dilatação cervical completa (10 cm), membranas rotas, apresentação cefálica encaixada (plano ≥+2), posição fetal conhecida, pelve clinicamente adequada e operador treinado. A ausência de qualquer desses critérios contraindica o procedimento. Vácuo tem pré-requisitos semelhantes.", "fonte": "GO_D02_Q1_019"},
-    {"num": 20, "texto": "Útero bem contraído com sangramento vaginal ativo aponta para laceração de canal (colo, vagina ou períneo) — não para atonia. Atonia é a causa mais comum de HPP (Tônus), mas sempre com útero hipotônico/amolecido. Os 4T (Tônus, Trauma, Tecido, Trombina) orientam o diagnóstico diferencial sistemático da HPP.", "fonte": "GO_D02_Q1_020"},
-    {"num": 21, "texto": "Prolapso de cordão: posição genupeitoral ou Trendelenburg acentuado + elevação manual da apresentação fetal para aliviar compressão do cordão até cesariana de emergência. Não reintroduzir o cordão na vagina — manter úmido e quente. O₂ materno. Não tentar parto vaginal salvo expulsivo avançado com operador experiente.", "fonte": "GO_D02_Q1_021"},
-    {"num": 22, "texto": "Ácido tranexâmico 1 g IV em 10 minutos no diagnóstico de HPP; pode ser repetido após 30 min se sangramento persistir. Estudo WOMAN demonstrou redução de mortalidade por HPP quando administrado precocemente (≤3h do início do sangramento). Após 3h, o benefício é reduzido. Antifibrinolítico — não substitui uterotônicos.", "fonte": "GO_D02_Q1_022"},
-    {"num": 23, "texto": "Taquissistolia espontânea (>5 contrações em 10 min) com desacelerações fetais: tocolítico de ação rápida (terbutalina 0,25 mg SC ou 0,125 mg IV) + ressuscitação intrauterina (reposicionamento, O₂, hidratação). Cesariana se padrão não melhorar ou evoluir para categoria III. Aumentar ocitocina é conduta oposta e contraindicada.", "fonte": "GO_D02_Q1_023"},
-    {"num": 24, "texto": "Variabilidade ausente: 0–2 bpm (categoria III isolada — alto risco). Variabilidade mínima: 3–5 bpm (categoria II). Variabilidade normal: 6–25 bpm (categoria I). Variabilidade marcada: >25 bpm (pode indicar hipóxia inicial). Variabilidade reduzida + desacelerações tardias recorrentes = padrão de alto risco, exige resolução imediata.", "fonte": "GO_D02_Q1_024"},
-    {"num": 25, "texto": "Ruptura uterina em PVAC: dor abdominal súbita intensa, cessação das contrações, bradicardia fetal grave ou perda do sinal fetal, taquicardia materna e evolução para choque. Emergência cirúrgica com laparotomia imediata — não há tempo para ressuscitação intrauterina. Distinção de desaceleração variável simples é crítica.", "fonte": "GO_D02_Q1_025"},
-    {"num": 26, "texto": "A rotação interna leva o occipital à posição anterior (occipitopúbica / OP) na grande maioria dos partos normais, alinhando o maior diâmetro cefálico com o maior diâmetro pélvico. Posição occipitossacra (OS / posterior) dificulta o parto e associa-se a expulsivo prolongado e maior taxa de instrumentação.", "fonte": "GO_D02_Q1_026"},
-    {"num": 27, "texto": "Líquido meconial não é indicação isolada de cesariana. Conduta: CTG contínua durante o trabalho de parto. Ao nascimento: se RN vigoroso (choro presente, tônus adequado, FC >100 bpm), não aspirar rotineiramente — cuidados neonatais padrão. Aspiração nasofaríngea intraparto foi abandonada por não reduzir síndrome de aspiração meconial.", "fonte": "GO_D02_Q1_027"},
-    {"num": 28, "texto": "Ocitocina para condução: 1–2 mUI/min em bomba de infusão contínua, com incrementos de 1–2 mUI/min a cada 30–40 min até dinâmica adequada (3–5 contrações em 10 min de boa qualidade). Dose máxima habitual: 20–40 mUI/min. Bolus IV é contraindicado — risco de hipotensão materna e taquissistolia.", "fonte": "GO_D02_Q1_028"},
-    {"num": 29, "texto": "Sequência obrigatória em apresentação cefálica fletida: insinuação (encaixamento) → descida → flexão (reduz diâmetro suboccipitobregmático) → rotação interna (occipital para anterior) → extensão (saída da cabeça sob a sínfise) → rotação externa / restituição → expulsão total. Inversão da ordem é erro de prova.", "fonte": "GO_D02_Q1_029"},
-    {"num": 30, "texto": "Atonia refratária à ocitocina (20 UI IV + massagem uterina sem resposta): próximas medidas farmacológicas são misoprostol 800 mcg retal + ácido tranexâmico 1 g IV. Metilergometrina 0,2 mg IM pode ser associada (se sem hipertensão). Balão de Bakri, suturas de compressão (B-Lynch) e ligaduras vasculares são opções cirúrgicas subsequentes.", "fonte": "GO_D02_Q1_030"},
-    {"num": 31, "texto": "Ruptura uterina em PVAC com bradicardia fetal grave + cessação das contrações + dor abdominal = cesariana de emergência imediata + laparotomia para avaliação e reparo da cicatriz ou histerectomia conforme extensão. Fórceps com 8 cm de dilatação é contraindicado. Ocitocina para retomar contrações é absolutamente contraindicada.", "fonte": "GO_D02_Q1_031"},
-    {"num": 32, "texto": "Categoria III persistente após ≥20 min de ressuscitação intrauterina exige resolução imediata da gestação. Não há indicação de microssanguíneo fetal — não há tempo. Via de resolução: fórceps se expulsivo avançado com condições ideais; cesariana nas demais situações. Continuar medidas conservadoras aumenta risco de acidose fetal grave e óbito.", "fonte": "GO_D02_Q1_032"},
-    {"num": 33, "texto": "Após falha de McRoberts + pressão suprapúbica: manobras internas — Rubin II (pressão na face posterior do ombro anterior para adução e redução do diâmetro biacromial) ou Woods (pressão na face anterior do ombro posterior, rotação em saca-rolha). Gaskin (quatro apoios) e Zavanelli (reintrodução cefálica) são últimos recursos.", "fonte": "GO_D02_Q1_033"},
-    {"num": 34, "texto": "Cicatriz uterina contraindica misoprostol (risco de ruptura). Opções seguras para maturação cervical com cicatriz: balão de Foley intracervical (mecânico, sem risco farmacológico) ou dinoprostona / PGE2 em gel ou insert com monitoramento rigoroso. Ocitocina em baixas doses após maturação adequada.", "fonte": "GO_D02_Q1_034"},
-    {"num": 35, "texto": "Sequência cirúrgica na atonia refratária a todos os uterotônicos: tamponamento intrauterino (balão de Bakri) → suturas de compressão uterina (B-Lynch, Hayman) → ligadura das artérias uterinas → ligadura das artérias hipogástricas (ilíacas internas) → histerectomia puerperal. Embolização de artérias uterinas é alternativa em centros com radiologia intervencionista disponível.", "fonte": "GO_D02_Q1_035"},
-    {"num": 36, "texto": "Inversão uterina grau II: suspender ocitocina imediatamente, tocolítico IV (terbutalina 0,25 mg SC ou MgSO₄) para relaxar o útero e o colo, reposição manual imediata pela manobra de Johnson (pressão progressiva do fundo invertido de volta à cavidade uterina) antes da contração do colo. Após reposição: ocitocina para contração uterina.", "fonte": "GO_D02_Q1_036"},
-    {"num": 37, "texto": "ELA: colapso cardiovascular súbito (hipotensão + choque distributivo), hipóxia grave (dispneia, cianose), CIVD com sangramento maciço e alteração do nível de consciência. Mortalidade >60%. Tratamento: RCP imediata, ventilação mecânica, hemoderivados em protocolo de transfusão maciça, vasopressores. Não há antídoto específico.", "fonte": "GO_D02_Q1_037"},
-    {"num": 38, "texto": "Apresentação pélvica a termo: versão cefálica externa (VCE) entre 36–37 semanas tem taxa de sucesso de 50–60% e reduz cesarianas. Se VCE falhar ou for contraindicada: parto pélvico vaginal pode ser oferecido por operador treinado em centros experientes. Cesariana eletiva é alternativa segura. VCE após 40 semanas tem menor taxa de sucesso.", "fonte": "GO_D02_Q1_038"},
-    {"num": 39, "texto": "RCIU seletivo grave em monocoriônica com diástole reversa no Doppler umbilical: internação hospitalar, corticoterapia (betametasona 12 mg IM 2 doses / 24h) para maturidade pulmonar e antecipação do parto com 32–34 semanas. Laser fetoscópico é tratamento da síndrome de transfusão feto-fetal (STFF) — não do RCIU seletivo.", "fonte": "GO_D02_Q1_039"},
-    {"num": 40, "texto": "FC <60 bpm após 30s de VPP adequada: iniciar compressões torácicas 3:1 (3 compressões : 1 ventilação) + intubação orotraqueal. Se FC permanecer <60 após 60s de compressões + VPP: adrenalina 0,01–0,03 mg/kg IV pela veia umbilical (ou 0,05–0,1 mg/kg intratraqueal). Nunca suspender VPP antes dos 30s iniciais.", "fonte": "GO_D02_Q1_040"},
-    {"num": 41, "texto": "PFE >4.500g em diabética ou >5.000g em não diabética: considerar cesariana eletiva pela ACOG. Entre 4.000–5.000g: manejo individualizado, equipe preparada para distocia de ombro, nunca Kristeller. Indução antes de 37 semanas não previne macrossomia e aumenta morbidade. O erro de estimativa do PFE por USG é ±15–20%.", "fonte": "GO_D02_Q1_041"},
-    {"num": 42, "texto": "Placenta prévia total com sangramento a 36 semanas: internação, acesso venoso, tipagem sanguínea, corticoterapia se <37 semanas completas, estabilização hemodinâmica e cesariana (eletiva se controlado, emergencial se instabilidade). Toque vaginal é absolutamente contraindicado — pode desencadear hemorragia maciça. Parto vaginal é contraindicado.", "fonte": "GO_D02_Q1_042"},
-    {"num": 43, "texto": "DPP: dor abdominal intensa, útero hipertônico (lenhoso, em 'madeira'), sangramento pode ser oculto (retroplacentário), sofrimento fetal precoce. Placenta prévia: sangramento vermelho vivo indolor, externo, recorrente, sem hipertonia uterina. O útero hipertônico é o sinal-chave que diferencia DPP de placenta prévia.", "fonte": "GO_D02_Q1_043"},
-    {"num": 44, "texto": "Evidências (ARRIVE trial, Cochrane) demonstram que indução do parto a partir de 41 semanas reduz mortalidade perinatal e taxa de cesariana comparada à conduta expectante. Bishop desfavorável (<6) indica maturação cervical prévia com balão de Foley ou dinoprostona. A conduta expectante além de 41 semanas aumenta risco de natimorto.", "fonte": "GO_D02_Q1_044"},
-    {"num": 45, "texto": "CIVD obstétrica (pós-DPP grave, ELA, sepse): protocolo de transfusão maciça com razão 1:1:1 (concentrado de hemácias : plasma fresco congelado : plaquetas). Crioprecipitado quando fibrinogênio <200 mg/dL (alvo ≥200 mg/dL na gestante). Ácido tranexâmico precoce. Vitamina K não tem papel na CIVD por consumo de fatores de coagulação.", "fonte": "GO_D02_Q1_045"},
-    {"num": 46, "texto": "Hipotensão pós-raquianestesia (vasoplegia simpática): decúbito lateral esquerdo (descompressão da veia cava e aorta), vasopressor IV (efedrina 5–10 mg ou fenilefrina 50–100 mcg), expansão volêmica cristaloide e O₂ materno. A hipotensão causa bradicardia fetal por hipoperfusão uteroplacentária — tratamento imediato é obrigatório.", "fonte": "GO_D02_Q1_046"},
-    {"num": 47, "texto": "Vácuo extrator: maior risco de cefalohematoma, hematoma subgaleal (raro mas potencialmente grave com perda volêmica significativa) e icterícia neonatal. Fórceps: maior risco de paralisia facial neonatal transitória (lesão do nervo facial) e lacerações maternas mais extensas. Ambos são ferramentas complementares com indicações específicas.", "fonte": "GO_D02_Q1_047"},
-    {"num": 48, "texto": "Síndrome de Eisenmenger tem mortalidade materna de 30–50% na gestação. Decisão multidisciplinar (cardiologia, obstetrícia, anestesia, neonatologia). Parto entre 37–38 semanas. Parto vaginal com peridural reduz esforço expulsivo e é preferível em casos estáveis. Cesariana em instabilidade hemodinâmica. Evitar hipotensão, taquicardia e hipervolemia.", "fonte": "GO_D02_Q1_048"},
-    {"num": 49, "texto": "A decisão entre rafia e histerectomia na ruptura uterina depende da extensão e localização da ruptura, comprometimento vascular (vasos uterinos e paramétrios), capacidade de hemostasia adequada e estabilidade hemodinâmica. Roturas simples da cicatriz anterior podem ser rafadas. Roturas extensas com sangramento incontrolável indicam histerectomia puerperal.", "fonte": "GO_D02_Q1_049"},
-    {"num": 50, "texto": "A analgesia peridural causa bloqueio motor parcial reduzindo a eficácia do puxo voluntário, podendo prolongar o expulsivo. Com manejo ativo (puxo tardio — 'delayed pushing', ajuste de ocitocina, limites de tempo expandidos), a taxa de cesariana não aumenta. O puxo tardio com peridural reduz partos instrumentados sem aumentar morbidade materna ou fetal.", "fonte": "GO_D02_Q1_050"}
-  ]
+﻿{
+    "area":  "gineco_obstetricia",
+    "dominio":  "parto_normal",
+    "titulo":  "GO D02 â€” Parto Normal",
+    "quiz":  "001",
+    "modelo":  "claude-opus-4-8",
+    "total":  50,
+    "resumos":  [
+                    {
+                        "num":  1,
+                        "texto":  "Trabalho de parto estabelecido requer contraÃ§Ãµes uterinas regulares (â‰¥2 em 10 minutos), progressivas, associadas a apagamento e dilataÃ§Ã£o cervical progressiva documentada. ContraÃ§Ãµes irregulares, rotura de membranas isolada ou dilataÃ§Ã£o sem dinÃ¢mica adequada nÃ£o configuram o diagnÃ³stico. A fase latente precede a fase ativa, que se inicia com â‰¥6 cm de dilataÃ§Ã£o conforme consenso ACOG/MS.",
+                        "fonte":  "GO_D02_Q1_001"
+                    },
+                    {
+                        "num":  2,
+                        "texto":  "Os quatro perÃ­odos do parto em ordem obrigatÃ³ria: 1Âº dilataÃ§Ã£o (fase latente + fase ativa), 2Âº expulsivo, 3Âº dequitaÃ§Ã£o (saÃ­da da placenta) e 4Âº perÃ­odo de Greenberg (1â€“2h de vigilÃ¢ncia pÃ³s-parto imediato). A inversÃ£o da ordem Ã© erro grave em provas â€” especialmente confundir dequitaÃ§Ã£o com Greenberg.",
+                        "fonte":  "GO_D02_Q1_002"
+                    },
+                    {
+                        "num":  3,
+                        "texto":  "A fase ativa inicia com â‰¥6 cm de dilataÃ§Ã£o, conforme consenso ACOG/SMFM adotado pelo MinistÃ©rio da SaÃºde. O marco antigo de 4 cm foi abandonado para reduzir cesarianas desnecessÃ¡rias por \u0027distocia\u0027 na fase latente. DilataÃ§Ãµes menores caracterizam fase latente, que pode ser prolongada sem ser patolÃ³gica.",
+                        "fonte":  "GO_D02_Q1_003"
+                    },
+                    {
+                        "num":  4,
+                        "texto":  "O Bishop avalia cinco parÃ¢metros cervicais: dilataÃ§Ã£o (0â€“3 pontos), apagamento (0â€“3), consistÃªncia (0â€“2), posiÃ§Ã£o do colo (0â€“2) e altura da apresentaÃ§Ã£o (0â€“3). Total â‰¥6 indica colo favorÃ¡vel para induÃ§Ã£o â€” nÃ£o hÃ¡ necessidade de maturaÃ§Ã£o cervical prÃ©via. Escore \u003c6 indica colo desfavorÃ¡vel e requer maturaÃ§Ã£o.",
+                        "fonte":  "GO_D02_Q1_004"
+                    },
+                    {
+                        "num":  5,
+                        "texto":  "Plano 0 = apresentaÃ§Ã£o fetal ao nÃ­vel das espinhas isquiÃ¡ticas. Valores negativos (â€“1, â€“2, â€“3) indicam apresentaÃ§Ã£o acima das espinhas (nÃ£o encaixada). Valores positivos (+1, +2, +3) indicam descida progressiva em direÃ§Ã£o ao perÃ­neo. InsinuaÃ§Ã£o (encaixamento) corresponde ao plano 0 em nulÃ­paras.",
+                        "fonte":  "GO_D02_Q1_005"
+                    },
+                    {
+                        "num":  6,
+                        "texto":  "McRoberts (hiperflexÃ£o mÃ¡xima das coxas sobre o abdome) + pressÃ£o suprapÃºbica Ã© a primeira e obrigatÃ³ria manobra na distocia de ombro â€” resolve \u003e50% dos casos sem manobras internas. A episiotomia nÃ£o resolve a distocia Ã³ssea. Zavanelli Ã© manobra de Ãºltimo recurso. Kristeller Ã© absolutamente contraindicado.",
+                        "fonte":  "GO_D02_Q1_006"
+                    },
+                    {
+                        "num":  7,
+                        "texto":  "No Apgar, a frequÃªncia cardÃ­aca pontua: 0 = ausente; 1 = \u003c100 bpm; 2 = â‰¥100 bpm. Os cinco parÃ¢metros do Apgar sÃ£o: frequÃªncia cardÃ­aca, esforÃ§o respiratÃ³rio, tÃ´nus muscular, irritabilidade reflexa e cor. Apgar â‰¤3 indica depressÃ£o grave; 4â€“6 moderada; 7â€“10 normal.",
+                        "fonte":  "GO_D02_Q1_007"
+                    },
+                    {
+                        "num":  8,
+                        "texto":  "Schultze: placenta se desprende pelo centro, face fetal emerge primeiro â€” mais comum e com menor sangramento. Duncan: face materna emerge primeiro, inserÃ§Ã£o lateral, maior sangramento. Brandt-Andrews e CredÃ© sÃ£o manobras de auxÃ­lio Ã  dequitaÃ§Ã£o, nÃ£o mecanismos espontÃ¢neos.",
+                        "fonte":  "GO_D02_Q1_008"
+                    },
+                    {
+                        "num":  9,
+                        "texto":  "Ocitocina 10 UI IM imediatamente apÃ³s o nascimento Ã© o uterotÃ´nico de primeira linha no manejo ativo do 3Âº perÃ­odo pela OMS â€” reduz hemorragia pÃ³s-parto (HPP) em 60%. Misoprostol Ã© alternativa quando ocitocina nÃ£o estÃ¡ disponÃ­vel. Metilergometrina Ã© contraindicada em hipertensas.",
+                        "fonte":  "GO_D02_Q1_009"
+                    },
+                    {
+                        "num":  10,
+                        "texto":  "HPP primÃ¡ria: perda sanguÃ­nea â‰¥500 mL nas primeiras 24h apÃ³s parto vaginal, ou â‰¥1.000 mL apÃ³s cesariana. HPP grave: â‰¥1.000 mL apÃ³s parto vaginal com sinais de instabilidade hemodinÃ¢mica. Os 4T orientam diagnÃ³stico diferencial: TÃ´nus (atonia â€” mais comum), Trauma (laceraÃ§Ãµes), Tecido (retenÃ§Ã£o placentÃ¡ria), Trombina (coagulopatia).",
+                        "fonte":  "GO_D02_Q1_010"
+                    },
+                    {
+                        "num":  11,
+                        "texto":  "Fase ativa estacionada com contraÃ§Ãµes adequadas (â‰¥3 em 10 min de boa qualidade) por â‰¥4h sem progressÃ£o cervical Ã© critÃ©rio para cesariana. Com contraÃ§Ãµes inadequadas: amniotomia + ocitocina por atÃ© 6h antes de indicar cesariana. A mera ausÃªncia de progressÃ£o por 2h nÃ£o Ã© suficiente para a indicaÃ§Ã£o cirÃºrgica.",
+                        "fonte":  "GO_D02_Q1_011"
+                    },
+                    {
+                        "num":  12,
+                        "texto":  "CTG categoria I (tranquilizadora): FCF basal 110â€“160 bpm, variabilidade 6â€“25 bpm, aceleraÃ§Ãµes presentes, sem desaceleraÃ§Ãµes tardias ou variÃ¡veis significativas. Conduta: monitoramento habitual. Categoria II: indeterminada, requer vigilÃ¢ncia aumentada. Categoria III (sinistro): variabilidade ausente + desaceleraÃ§Ãµes tardias/bradicardia â€” resoluÃ§Ã£o imediata.",
+                        "fonte":  "GO_D02_Q1_012"
+                    },
+                    {
+                        "num":  13,
+                        "texto":  "Bishop â‰¥6 indica colo favorÃ¡vel â€” nÃ£o hÃ¡ necessidade de maturaÃ§Ã£o cervical prÃ©via. A conduta direta Ã© amniotomia + ocitocina IV em bomba de infusÃ£o contÃ­nua. Misoprostol em colo favorÃ¡vel Ã© desnecessÃ¡rio e aumenta risco de taquissistolia. Aguardar parto espontÃ¢neo com indicaÃ§Ã£o de induÃ§Ã£o Ã© conduta incorreta.",
+                        "fonte":  "GO_D02_Q1_013"
+                    },
+                    {
+                        "num":  14,
+                        "texto":  "Expulsivo prolongado em nulÃ­para: \u003e2h sem analgesia peridural ou \u003e3h com peridural. Em multÃ­para: \u003e1h sem peridural ou \u003e2h com peridural. Esses limites orientam a indicaÃ§Ã£o de parto instrumentado (fÃ³rceps ou vÃ¡cuo) ou reavaliaÃ§Ã£o para cesariana conforme condiÃ§Ãµes maternas e fetais.",
+                        "fonte":  "GO_D02_Q1_014"
+                    },
+                    {
+                        "num":  15,
+                        "texto":  "DesaceleraÃ§Ãµes variÃ¡veis recorrentes (categoria II) requerem ressuscitaÃ§Ã£o intrauterina antes de indicar cesariana: reposicionamento lateral, Oâ‚‚ por mÃ¡scara, hidrataÃ§Ã£o IV e suspensÃ£o da ocitocina. Parto instrumentado se no expulsivo avanÃ§ado e sem melhora. Cesariana se evoluÃ§Ã£o para categoria III ou sem resposta Ã s medidas.",
+                        "fonte":  "GO_D02_Q1_015"
+                    },
+                    {
+                        "num":  16,
+                        "texto":  "Corioamnionite: febre materna â‰¥38Â°C + pelo menos 1 critÃ©rio (taquicardia fetal \u003e160 bpm, Ãºtero doloroso Ã  palpaÃ§Ã£o, lÃ­quido amniÃ³tico fÃ©tido, leucocitose \u003e15.000). Tratamento: ampicilina + gentamicina IV imediatos e resoluÃ§Ã£o do parto independentemente da via â€” vaginal ou cesariana conforme condiÃ§Ãµes obstÃ©tricas.",
+                        "fonte":  "GO_D02_Q1_016"
+                    },
+                    {
+                        "num":  17,
+                        "texto":  "Cicatriz uterina prÃ©via (cesariana, miomectomia com entrada na cavidade) Ã© contraindicaÃ§Ã£o absoluta ao misoprostol â€” risco de ruptura uterina. Ocitocina em doses baixas com vigilÃ¢ncia intensiva pode ser considerada. Para maturaÃ§Ã£o cervical com cicatriz: balÃ£o de Foley intracervical ou dinoprostona (PGE2) sÃ£o alternativas seguras.",
+                        "fonte":  "GO_D02_Q1_017"
+                    },
+                    {
+                        "num":  18,
+                        "texto":  "Em multÃ­para: expulsivo \u003e1h sem peridural ou \u003e2h com peridural Ã© considerado prolongado e indica avaliaÃ§Ã£o para parto instrumentado ou cesariana. Em nulÃ­para: limites sÃ£o \u003e2h sem peridural e \u003e3h com peridural. O excesso de tempo no expulsivo associa-se a sofrimento fetal e lesÃ£o do assoalho pÃ©lvico materno.",
+                        "fonte":  "GO_D02_Q1_018"
+                    },
+                    {
+                        "num":  19,
+                        "texto":  "FÃ³rceps de alÃ­vio exige: dilataÃ§Ã£o cervical completa (10 cm), membranas rotas, apresentaÃ§Ã£o cefÃ¡lica encaixada (plano â‰¥+2), posiÃ§Ã£o fetal conhecida, pelve clinicamente adequada e operador treinado. A ausÃªncia de qualquer desses critÃ©rios contraindica o procedimento. VÃ¡cuo tem prÃ©-requisitos semelhantes.",
+                        "fonte":  "GO_D02_Q1_019"
+                    },
+                    {
+                        "num":  20,
+                        "texto":  "Ãštero bem contraÃ­do com sangramento vaginal ativo aponta para laceraÃ§Ã£o de canal (colo, vagina ou perÃ­neo) â€” nÃ£o para atonia. Atonia Ã© a causa mais comum de HPP (TÃ´nus), mas sempre com Ãºtero hipotÃ´nico/amolecido. Os 4T (TÃ´nus, Trauma, Tecido, Trombina) orientam o diagnÃ³stico diferencial sistemÃ¡tico da HPP.",
+                        "fonte":  "GO_D02_Q1_020"
+                    },
+                    {
+                        "num":  21,
+                        "texto":  "Prolapso de cordÃ£o: posiÃ§Ã£o genupeitoral ou Trendelenburg acentuado + elevaÃ§Ã£o manual da apresentaÃ§Ã£o fetal para aliviar compressÃ£o do cordÃ£o atÃ© cesariana de emergÃªncia. NÃ£o reintroduzir o cordÃ£o na vagina â€” manter Ãºmido e quente. Oâ‚‚ materno. NÃ£o tentar parto vaginal salvo expulsivo avanÃ§ado com operador experiente.",
+                        "fonte":  "GO_D02_Q1_021"
+                    },
+                    {
+                        "num":  22,
+                        "texto":  "Ãcido tranexÃ¢mico 1 g IV em 10 minutos no diagnÃ³stico de HPP; pode ser repetido apÃ³s 30 min se sangramento persistir. Estudo WOMAN demonstrou reduÃ§Ã£o de mortalidade por HPP quando administrado precocemente (â‰¤3h do inÃ­cio do sangramento). ApÃ³s 3h, o benefÃ­cio Ã© reduzido. AntifibrinolÃ­tico â€” nÃ£o substitui uterotÃ´nicos.",
+                        "fonte":  "GO_D02_Q1_022"
+                    },
+                    {
+                        "num":  23,
+                        "texto":  "Taquissistolia espontÃ¢nea (\u003e5 contraÃ§Ãµes em 10 min) com desaceleraÃ§Ãµes fetais: tocolÃ­tico de aÃ§Ã£o rÃ¡pida (terbutalina 0,25 mg SC ou 0,125 mg IV) + ressuscitaÃ§Ã£o intrauterina (reposicionamento, Oâ‚‚, hidrataÃ§Ã£o). Cesariana se padrÃ£o nÃ£o melhorar ou evoluir para categoria III. Aumentar ocitocina Ã© conduta oposta e contraindicada.",
+                        "fonte":  "GO_D02_Q1_023"
+                    },
+                    {
+                        "num":  24,
+                        "texto":  "Variabilidade ausente: 0â€“2 bpm (categoria III isolada â€” alto risco). Variabilidade mÃ­nima: 3â€“5 bpm (categoria II). Variabilidade normal: 6â€“25 bpm (categoria I). Variabilidade marcada: \u003e25 bpm (pode indicar hipÃ³xia inicial). Variabilidade reduzida + desaceleraÃ§Ãµes tardias recorrentes = padrÃ£o de alto risco, exige resoluÃ§Ã£o imediata.",
+                        "fonte":  "GO_D02_Q1_024"
+                    },
+                    {
+                        "num":  25,
+                        "texto":  "Ruptura uterina em PVAC: dor abdominal sÃºbita intensa, cessaÃ§Ã£o das contraÃ§Ãµes, bradicardia fetal grave ou perda do sinal fetal, taquicardia materna e evoluÃ§Ã£o para choque. EmergÃªncia cirÃºrgica com laparotomia imediata â€” nÃ£o hÃ¡ tempo para ressuscitaÃ§Ã£o intrauterina. DistinÃ§Ã£o de desaceleraÃ§Ã£o variÃ¡vel simples Ã© crÃ­tica.",
+                        "fonte":  "GO_D02_Q1_025"
+                    },
+                    {
+                        "num":  26,
+                        "texto":  "A rotaÃ§Ã£o interna leva o occipital Ã  posiÃ§Ã£o anterior (occipitopÃºbica / OP) na grande maioria dos partos normais, alinhando o maior diÃ¢metro cefÃ¡lico com o maior diÃ¢metro pÃ©lvico. PosiÃ§Ã£o occipitossacra (OS / posterior) dificulta o parto e associa-se a expulsivo prolongado e maior taxa de instrumentaÃ§Ã£o.",
+                        "fonte":  "GO_D02_Q1_026"
+                    },
+                    {
+                        "num":  27,
+                        "texto":  "LÃ­quido meconial nÃ£o Ã© indicaÃ§Ã£o isolada de cesariana. Conduta: CTG contÃ­nua durante o trabalho de parto. Ao nascimento: se RN vigoroso (choro presente, tÃ´nus adequado, FC \u003e100 bpm), nÃ£o aspirar rotineiramente â€” cuidados neonatais padrÃ£o. AspiraÃ§Ã£o nasofarÃ­ngea intraparto foi abandonada por nÃ£o reduzir sÃ­ndrome de aspiraÃ§Ã£o meconial.",
+                        "fonte":  "GO_D02_Q1_027"
+                    },
+                    {
+                        "num":  28,
+                        "texto":  "Ocitocina para conduÃ§Ã£o: 1â€“2 mUI/min em bomba de infusÃ£o contÃ­nua, com incrementos de 1â€“2 mUI/min a cada 30â€“40 min atÃ© dinÃ¢mica adequada (3â€“5 contraÃ§Ãµes em 10 min de boa qualidade). Dose mÃ¡xima habitual: 20â€“40 mUI/min. Bolus IV Ã© contraindicado â€” risco de hipotensÃ£o materna e taquissistolia.",
+                        "fonte":  "GO_D02_Q1_028"
+                    },
+                    {
+                        "num":  29,
+                        "texto":  "SequÃªncia obrigatÃ³ria em apresentaÃ§Ã£o cefÃ¡lica fletida: insinuaÃ§Ã£o (encaixamento) â†’ descida â†’ flexÃ£o (reduz diÃ¢metro suboccipitobregmÃ¡tico) â†’ rotaÃ§Ã£o interna (occipital para anterior) â†’ extensÃ£o (saÃ­da da cabeÃ§a sob a sÃ­nfise) â†’ rotaÃ§Ã£o externa / restituiÃ§Ã£o â†’ expulsÃ£o total. InversÃ£o da ordem Ã© erro de prova.",
+                        "fonte":  "GO_D02_Q1_029"
+                    },
+                    {
+                        "num":  30,
+                        "texto":  "Atonia refratÃ¡ria Ã  ocitocina (20 UI IV + massagem uterina sem resposta): prÃ³ximas medidas farmacolÃ³gicas sÃ£o misoprostol 800 mcg retal + Ã¡cido tranexÃ¢mico 1 g IV. Metilergometrina 0,2 mg IM pode ser associada (se sem hipertensÃ£o). BalÃ£o de Bakri, suturas de compressÃ£o (B-Lynch) e ligaduras vasculares sÃ£o opÃ§Ãµes cirÃºrgicas subsequentes.",
+                        "fonte":  "GO_D02_Q1_030"
+                    },
+                    {
+                        "num":  31,
+                        "texto":  "Ruptura uterina em PVAC com bradicardia fetal grave + cessaÃ§Ã£o das contraÃ§Ãµes + dor abdominal = cesariana de emergÃªncia imediata + laparotomia para avaliaÃ§Ã£o e reparo da cicatriz ou histerectomia conforme extensÃ£o. FÃ³rceps com 8 cm de dilataÃ§Ã£o Ã© contraindicado. Ocitocina para retomar contraÃ§Ãµes Ã© absolutamente contraindicada.",
+                        "fonte":  "GO_D02_Q1_031"
+                    },
+                    {
+                        "num":  32,
+                        "texto":  "Categoria III persistente apÃ³s â‰¥20 min de ressuscitaÃ§Ã£o intrauterina exige resoluÃ§Ã£o imediata da gestaÃ§Ã£o. NÃ£o hÃ¡ indicaÃ§Ã£o de microssanguÃ­neo fetal â€” nÃ£o hÃ¡ tempo. Via de resoluÃ§Ã£o: fÃ³rceps se expulsivo avanÃ§ado com condiÃ§Ãµes ideais; cesariana nas demais situaÃ§Ãµes. Continuar medidas conservadoras aumenta risco de acidose fetal grave e Ã³bito.",
+                        "fonte":  "GO_D02_Q1_032"
+                    },
+                    {
+                        "num":  33,
+                        "texto":  "ApÃ³s falha de McRoberts + pressÃ£o suprapÃºbica: manobras internas â€” Rubin II (pressÃ£o na face posterior do ombro anterior para aduÃ§Ã£o e reduÃ§Ã£o do diÃ¢metro biacromial) ou Woods (pressÃ£o na face anterior do ombro posterior, rotaÃ§Ã£o em saca-rolha). Gaskin (quatro apoios) e Zavanelli (reintroduÃ§Ã£o cefÃ¡lica) sÃ£o Ãºltimos recursos.",
+                        "fonte":  "GO_D02_Q1_033"
+                    },
+                    {
+                        "num":  34,
+                        "texto":  "Cicatriz uterina contraindica misoprostol (risco de ruptura). OpÃ§Ãµes seguras para maturaÃ§Ã£o cervical com cicatriz: balÃ£o de Foley intracervical (mecÃ¢nico, sem risco farmacolÃ³gico) ou dinoprostona / PGE2 em gel ou insert com monitoramento rigoroso. Ocitocina em baixas doses apÃ³s maturaÃ§Ã£o adequada.",
+                        "fonte":  "GO_D02_Q1_034"
+                    },
+                    {
+                        "num":  35,
+                        "texto":  "SequÃªncia cirÃºrgica na atonia refratÃ¡ria a todos os uterotÃ´nicos: tamponamento intrauterino (balÃ£o de Bakri) â†’ suturas de compressÃ£o uterina (B-Lynch, Hayman) â†’ ligadura das artÃ©rias uterinas â†’ ligadura das artÃ©rias hipogÃ¡stricas (ilÃ­acas internas) â†’ histerectomia puerperal. EmbolizaÃ§Ã£o de artÃ©rias uterinas Ã© alternativa em centros com radiologia intervencionista disponÃ­vel.",
+                        "fonte":  "GO_D02_Q1_035"
+                    },
+                    {
+                        "num":  36,
+                        "texto":  "InversÃ£o uterina grau II: suspender ocitocina imediatamente, tocolÃ­tico IV (terbutalina 0,25 mg SC ou MgSOâ‚„) para relaxar o Ãºtero e o colo, reposiÃ§Ã£o manual imediata pela manobra de Johnson (pressÃ£o progressiva do fundo invertido de volta Ã  cavidade uterina) antes da contraÃ§Ã£o do colo. ApÃ³s reposiÃ§Ã£o: ocitocina para contraÃ§Ã£o uterina.",
+                        "fonte":  "GO_D02_Q1_036"
+                    },
+                    {
+                        "num":  37,
+                        "texto":  "ELA: colapso cardiovascular sÃºbito (hipotensÃ£o + choque distributivo), hipÃ³xia grave (dispneia, cianose), CIVD com sangramento maciÃ§o e alteraÃ§Ã£o do nÃ­vel de consciÃªncia. Mortalidade \u003e60%. Tratamento: RCP imediata, ventilaÃ§Ã£o mecÃ¢nica, hemoderivados em protocolo de transfusÃ£o maciÃ§a, vasopressores. NÃ£o hÃ¡ antÃ­doto especÃ­fico.",
+                        "fonte":  "GO_D02_Q1_037"
+                    },
+                    {
+                        "num":  38,
+                        "texto":  "ApresentaÃ§Ã£o pÃ©lvica a termo: versÃ£o cefÃ¡lica externa (VCE) entre 36â€“37 semanas tem taxa de sucesso de 50â€“60% e reduz cesarianas. Se VCE falhar ou for contraindicada: parto pÃ©lvico vaginal pode ser oferecido por operador treinado em centros experientes. Cesariana eletiva Ã© alternativa segura. VCE apÃ³s 40 semanas tem menor taxa de sucesso.",
+                        "fonte":  "GO_D02_Q1_038"
+                    },
+                    {
+                        "num":  39,
+                        "texto":  "RCIU seletivo grave em monocoriÃ´nica com diÃ¡stole reversa no Doppler umbilical: internaÃ§Ã£o hospitalar, corticoterapia (betametasona 12 mg IM 2 doses / 24h) para maturidade pulmonar e antecipaÃ§Ã£o do parto com 32â€“34 semanas. Laser fetoscÃ³pico Ã© tratamento da sÃ­ndrome de transfusÃ£o feto-fetal (STFF) â€” nÃ£o do RCIU seletivo.",
+                        "fonte":  "GO_D02_Q1_039"
+                    },
+                    {
+                        "num":  40,
+                        "texto":  "FC \u003c60 bpm apÃ³s 30s de VPP adequada: iniciar compressÃµes torÃ¡cicas 3:1 (3 compressÃµes : 1 ventilaÃ§Ã£o) + intubaÃ§Ã£o orotraqueal. Se FC permanecer \u003c60 apÃ³s 60s de compressÃµes + VPP: adrenalina 0,01â€“0,03 mg/kg IV pela veia umbilical (ou 0,05â€“0,1 mg/kg intratraqueal). Nunca suspender VPP antes dos 30s iniciais.",
+                        "fonte":  "GO_D02_Q1_040"
+                    },
+                    {
+                        "num":  41,
+                        "texto":  "PFE \u003e4.500g em diabÃ©tica ou \u003e5.000g em nÃ£o diabÃ©tica: considerar cesariana eletiva pela ACOG. Entre 4.000â€“5.000g: manejo individualizado, equipe preparada para distocia de ombro, nunca Kristeller. InduÃ§Ã£o antes de 37 semanas nÃ£o previne macrossomia e aumenta morbidade. O erro de estimativa do PFE por USG Ã© Â±15â€“20%.",
+                        "fonte":  "GO_D02_Q1_041"
+                    },
+                    {
+                        "num":  42,
+                        "texto":  "Placenta prÃ©via total com sangramento a 36 semanas: internaÃ§Ã£o, acesso venoso, tipagem sanguÃ­nea, corticoterapia se \u003c37 semanas completas, estabilizaÃ§Ã£o hemodinÃ¢mica e cesariana (eletiva se controlado, emergencial se instabilidade). Toque vaginal Ã© absolutamente contraindicado â€” pode desencadear hemorragia maciÃ§a. Parto vaginal Ã© contraindicado.",
+                        "fonte":  "GO_D02_Q1_042"
+                    },
+                    {
+                        "num":  43,
+                        "texto":  "DPP: dor abdominal intensa, Ãºtero hipertÃ´nico (lenhoso, em \u0027madeira\u0027), sangramento pode ser oculto (retroplacentÃ¡rio), sofrimento fetal precoce. Placenta prÃ©via: sangramento vermelho vivo indolor, externo, recorrente, sem hipertonia uterina. O Ãºtero hipertÃ´nico Ã© o sinal-chave que diferencia DPP de placenta prÃ©via.",
+                        "fonte":  "GO_D02_Q1_043"
+                    },
+                    {
+                        "num":  44,
+                        "texto":  "EvidÃªncias (ARRIVE trial, Cochrane) demonstram que induÃ§Ã£o do parto a partir de 41 semanas reduz mortalidade perinatal e taxa de cesariana comparada Ã  conduta expectante. Bishop desfavorÃ¡vel (\u003c6) indica maturaÃ§Ã£o cervical prÃ©via com balÃ£o de Foley ou dinoprostona. A conduta expectante alÃ©m de 41 semanas aumenta risco de natimorto.",
+                        "fonte":  "GO_D02_Q1_044"
+                    },
+                    {
+                        "num":  45,
+                        "texto":  "CIVD obstÃ©trica (pÃ³s-DPP grave, ELA, sepse): protocolo de transfusÃ£o maciÃ§a com razÃ£o 1:1:1 (concentrado de hemÃ¡cias : plasma fresco congelado : plaquetas). Crioprecipitado quando fibrinogÃªnio \u003c200 mg/dL (alvo â‰¥200 mg/dL na gestante). Ãcido tranexÃ¢mico precoce. Vitamina K nÃ£o tem papel na CIVD por consumo de fatores de coagulaÃ§Ã£o.",
+                        "fonte":  "GO_D02_Q1_045"
+                    },
+                    {
+                        "num":  46,
+                        "texto":  "HipotensÃ£o pÃ³s-raquianestesia (vasoplegia simpÃ¡tica): decÃºbito lateral esquerdo (descompressÃ£o da veia cava e aorta), vasopressor IV (efedrina 5â€“10 mg ou fenilefrina 50â€“100 mcg), expansÃ£o volÃªmica cristaloide e Oâ‚‚ materno. A hipotensÃ£o causa bradicardia fetal por hipoperfusÃ£o uteroplacentÃ¡ria â€” tratamento imediato Ã© obrigatÃ³rio.",
+                        "fonte":  "GO_D02_Q1_046"
+                    },
+                    {
+                        "num":  47,
+                        "texto":  "VÃ¡cuo extrator: maior risco de cefalohematoma, hematoma subgaleal (raro mas potencialmente grave com perda volÃªmica significativa) e icterÃ­cia neonatal. FÃ³rceps: maior risco de paralisia facial neonatal transitÃ³ria (lesÃ£o do nervo facial) e laceraÃ§Ãµes maternas mais extensas. Ambos sÃ£o ferramentas complementares com indicaÃ§Ãµes especÃ­ficas.",
+                        "fonte":  "GO_D02_Q1_047"
+                    },
+                    {
+                        "num":  48,
+                        "texto":  "SÃ­ndrome de Eisenmenger tem mortalidade materna de 30â€“50% na gestaÃ§Ã£o. DecisÃ£o multidisciplinar (cardiologia, obstetrÃ­cia, anestesia, neonatologia). Parto entre 37â€“38 semanas. Parto vaginal com peridural reduz esforÃ§o expulsivo e Ã© preferÃ­vel em casos estÃ¡veis. Cesariana em instabilidade hemodinÃ¢mica. Evitar hipotensÃ£o, taquicardia e hipervolemia.",
+                        "fonte":  "GO_D02_Q1_048"
+                    },
+                    {
+                        "num":  49,
+                        "texto":  "A decisÃ£o entre rafia e histerectomia na ruptura uterina depende da extensÃ£o e localizaÃ§Ã£o da ruptura, comprometimento vascular (vasos uterinos e paramÃ©trios), capacidade de hemostasia adequada e estabilidade hemodinÃ¢mica. Roturas simples da cicatriz anterior podem ser rafadas. Roturas extensas com sangramento incontrolÃ¡vel indicam histerectomia puerperal.",
+                        "fonte":  "GO_D02_Q1_049"
+                    },
+                    {
+                        "num":  50,
+                        "texto":  "A analgesia peridural causa bloqueio motor parcial reduzindo a eficÃ¡cia do puxo voluntÃ¡rio, podendo prolongar o expulsivo. Com manejo ativo (puxo tardio â€” \u0027delayed pushing\u0027, ajuste de ocitocina, limites de tempo expandidos), a taxa de cesariana nÃ£o aumenta. O puxo tardio com peridural reduz partos instrumentados sem aumentar morbidade materna ou fetal.",
+                        "fonte":  "GO_D02_Q1_050"
+                    }
+                ]
 }
