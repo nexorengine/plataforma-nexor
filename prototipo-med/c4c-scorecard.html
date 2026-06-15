@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="nx-header">
-  <a href="c3-med.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <a id="btn-back" href="c3-med.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
   <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
@@ -17,10 +17,10 @@
 <div class="nx-scroll">
 <div class="nx-body">
   <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
-    <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;"><i class="ti ti-cut" style="font-size:18px;"></i></div>
+    <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="sc-icon"><i class="ti ti-cut" style="font-size:18px;"></i></div>
     <div>
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;">Cirurgia Geral · CG_D01</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;">Abdome Agudo</div>
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;" id="sc-area">Cirurgia Geral · CG_D01</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;" id="sc-nome">Abdome Agudo</div>
       <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">Scorecard · histórico completo</div>
     </div>
   </div>
@@ -116,5 +116,21 @@
 <div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
 <script src="assets/notif.js"></script>
 <script src="assets/profile.js"></script>
+<script src="assets/catalog.js"></script>
+<script>
+(function(){
+  const p = new URLSearchParams(window.location.search);
+  const areaSlug = p.get('area') || 'cirurgia_geral';
+  const dominioSlug = p.get('dominio') || 'abdome_agudo';
+  const area = CATALOG[areaSlug];
+  const dominio = area && area.dominios.find(d => d.slug === dominioSlug);
+  if (!area || !dominio) return;
+  document.getElementById('btn-back').href = 'c3-med.html?area=' + areaSlug + '&dominio=' + dominioSlug;
+  document.getElementById('sc-icon').innerHTML = '<i class="ti ' + area.icon + '" style="font-size:18px;"></i>';
+  document.getElementById('sc-area').textContent = area.label + ' · ' + dominio.code;
+  document.getElementById('sc-nome').textContent = dominio.nome;
+  document.title = dominio.nome + ' · Scorecard · nexor_med';
+})();
+</script>
 </body>
 </html>
