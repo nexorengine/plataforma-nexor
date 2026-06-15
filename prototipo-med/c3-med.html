@@ -4,78 +4,86 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#16263B">
-<title>Abdome Agudo · nexor_med</title>
+<title>nexor_med · Domínio</title>
 <link rel="stylesheet" href="assets/nx.css">
 </head>
 <body>
 <div class="nx-header">
-  <a href="c2-med.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <a id="btn-back" href="c2-med.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
   <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;">
-    <div class="nx-icon-slot" style="width:52px;height:52px;flex-shrink:0;"><i class="ti ti-cut" style="font-size:22px;"></i></div>
-    <div>
-      <div style="font-size:11px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:3px;">Cirurgia Geral · CG_D01</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#F0F6FB;line-height:1.1;">Abdome Agudo</div>
-      <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:2px;">Cirurgia Geral — Domínio 01</div>
-    </div>
-  </div>
-
-  <div class="nx-progress-block">
-    <div class="nx-progress-label"><span>progresso do domínio</span><span style="color:#4ade80;">88%</span></div>
-    <div class="nx-bar-bg"><div class="nx-bar-fill" style="width:88%;background:#4ade80;"></div></div>
-    <div class="nx-stats-inner">
-      <div class="nx-stat"><div class="nx-stat-val">48</div><div class="nx-stat-lbl">flashcards</div></div>
-      <div class="nx-stat"><div class="nx-stat-val">44/50</div><div class="nx-stat-lbl">questões</div></div>
-      <div class="nx-stat"><div class="nx-stat-val" style="color:#4ade80;">88%</div><div class="nx-stat-lbl">melhor nota</div></div>
-    </div>
-  </div>
-
+  <div id="dominio-header"></div>
   <div class="nx-section-label">módulos</div>
-
-  <a href="c4a-flashcard.html?area=cirurgia_geral&dominio=abdome_agudo" class="nx-capsule active">
-    <div class="nx-icon-slot sm"><i class="ti ti-cards"></i></div>
-    <div class="nx-cap-body">
-      <div class="nx-cap-title">Flashcards</div>
-      <div class="nx-cap-sub">48 cards · F1–F4 FractalLearning™</div>
-    </div>
-    <div class="nx-pill available">REVISAR</div>
-  </a>
-
-  <a href="c4b-quiz.html?area=cirurgia_geral&dominio=abdome_agudo&n=1" class="nx-capsule active">
-    <div class="nx-icon-slot sm"><i class="ti ti-clipboard-check"></i></div>
-    <div class="nx-cap-body">
-      <div class="nx-cap-title">Quiz 001</div>
-      <div class="nx-cap-sub">50 questões · prática livre</div>
-    </div>
-    <div class="nx-pill" style="background:rgba(252,163,17,0.1);color:#FCA311;border:1px solid rgba(252,163,17,0.4);">MEDIANO</div>
-  </a>
-
-  <a href="c4b-quiz.html?area=cirurgia_geral&dominio=abdome_agudo&n=2" class="nx-capsule active">
-    <div class="nx-icon-slot sm"><i class="ti ti-clipboard-check"></i></div>
-    <div class="nx-cap-body">
-      <div class="nx-cap-title">Quiz 002</div>
-      <div class="nx-cap-sub">50 questões · aprovação ≥ 80%</div>
-    </div>
-    <div class="nx-pill" style="background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.4);">SATISFATÓRIO</div>
-  </a>
-
-  <a href="c4c-scorecard.html" class="nx-capsule active">
-    <div class="nx-icon-slot sm"><i class="ti ti-chart-bar"></i></div>
-    <div class="nx-cap-body">
-      <div class="nx-cap-title">Scorecard</div>
-      <div class="nx-cap-sub">Melhor tentativa: 88%</div>
-    </div>
-    <div class="nx-pill available">VER</div>
-  </a>
+  <div id="lista-modulos"></div>
 </div>
 </div>
 <div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
 <script src="assets/notif.js"></script>
 <script src="assets/profile.js"></script>
+<script src="assets/catalog.js"></script>
+<script>
+const params = new URLSearchParams(window.location.search);
+const areaSlug = params.get('area') || 'cirurgia_geral';
+const dominioSlug = params.get('dominio') || 'abdome_agudo';
+const area = CATALOG[areaSlug];
+const dominio = area && area.dominios.find(d => d.slug === dominioSlug);
+
+document.getElementById('btn-back').href = 'c2-med.html?area=' + areaSlug;
+
+if (!dominio) {
+  document.getElementById('dominio-header').innerHTML = '<p style="color:#ef4444;padding:20px;">Domínio não encontrado.</p>';
+} else {
+  document.title = dominio.nome + ' · nexor_med';
+
+  document.getElementById('dominio-header').innerHTML = `
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;">
+      <div class="nx-icon-slot" style="width:52px;height:52px;flex-shrink:0;"><i class="ti ${area.icon}" style="font-size:22px;"></i></div>
+      <div>
+        <div style="font-size:11px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:3px;">${area.label} · ${dominio.code}</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#F0F6FB;line-height:1.1;">${dominio.nome}</div>
+        <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:2px;">${area.label} — ${dominio.code}</div>
+      </div>
+    </div>`;
+
+  const p = `area=${areaSlug}&dominio=${dominioSlug}`;
+  document.getElementById('lista-modulos').innerHTML = `
+    <a href="c4a-flashcard.html?${p}" class="nx-capsule active">
+      <div class="nx-icon-slot sm"><i class="ti ti-cards"></i></div>
+      <div class="nx-cap-body">
+        <div class="nx-cap-title">Flashcards</div>
+        <div class="nx-cap-sub">48 cards · F1–F4 FractalLearning™</div>
+      </div>
+      <div class="nx-pill available">ESTUDAR</div>
+    </a>
+    <a href="c4b-quiz.html?${p}&n=1" class="nx-capsule active">
+      <div class="nx-icon-slot sm"><i class="ti ti-clipboard-check"></i></div>
+      <div class="nx-cap-body">
+        <div class="nx-cap-title">Quiz 001</div>
+        <div class="nx-cap-sub">50 questões · prática livre</div>
+      </div>
+      <div class="nx-pill available">INICIAR</div>
+    </a>
+    <a href="c4b-quiz.html?${p}&n=2" class="nx-capsule active">
+      <div class="nx-icon-slot sm"><i class="ti ti-clipboard-check"></i></div>
+      <div class="nx-cap-body">
+        <div class="nx-cap-title">Quiz 002</div>
+        <div class="nx-cap-sub">50 questões · prática livre</div>
+      </div>
+      <div class="nx-pill available">INICIAR</div>
+    </a>
+    <a href="c4c-scorecard.html?${p}" class="nx-capsule active">
+      <div class="nx-icon-slot sm"><i class="ti ti-chart-bar"></i></div>
+      <div class="nx-cap-body">
+        <div class="nx-cap-title">Scorecard</div>
+        <div class="nx-cap-sub">Histórico de tentativas</div>
+      </div>
+      <div class="nx-pill available">VER</div>
+    </a>`;
+}
+</script>
 </body>
 </html>
