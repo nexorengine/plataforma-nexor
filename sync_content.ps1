@@ -207,7 +207,8 @@ function SyncGO {
     SyncQuiz "gineco_obstetricia" $slug 1 $q1 ${Function:ConvertQuizGO}
     SyncQuiz "gineco_obstetricia" $slug 2 $q2 ${Function:ConvertQuizGO}
 
-    $flash = GitShow $flashCommit "flashcards/med/gineco_obstetricia/$slug/flashcards_pt.json"
+    $flash = GitShow "HEAD" "flashcards/med/gineco_obstetricia/$slug/flashcards_pt.json"
+    if (-not $flash) { $flash = GitShow $flashCommit "flashcards/med/gineco_obstetricia/$slug/flashcards_pt.json" }
     SyncFlash "gineco_obstetricia" $slug $flash ${Function:ConvertFlashCards}
   }
 }
@@ -242,7 +243,8 @@ function SyncCM {
     SyncQuiz "clinica_medica" $m.slug 1 $q1 ${Function:ConvertQuizQuestoes}
     SyncQuiz "clinica_medica" $m.slug 2 $q2 ${Function:ConvertQuizQuestoes}
 
-    $flash = GitShow $flashCommit "flashcards/med/clinica_medica/$($m.slug)/$($m.prefix)_flashcards_pt.json"
+    $flash = GitShow "HEAD" "flashcards/med/clinica_medica/$($m.slug)/flashcards_pt.json"
+    if (-not $flash) { $flash = GitShow $flashCommit "flashcards/med/clinica_medica/$($m.slug)/$($m.prefix)_flashcards_pt.json" }
     SyncFlash "clinica_medica" $m.slug $flash ${Function:ConvertFlashCards}
   }
 }
@@ -274,7 +276,8 @@ function SyncPREV {
     SyncQuiz "medicina_preventiva" $m.slug 1 $q1 ${Function:ConvertQuizQuestoes}
     SyncQuiz "medicina_preventiva" $m.slug 2 $q2 ${Function:ConvertQuizQuestoes}
 
-    $flash = GitShow "HEAD" "flashcards/med/medicina_preventiva/$($m.slug)/$($m.prefix)_flashcards_pt.json"
+    $flash = GitShow "HEAD" "flashcards/med/medicina_preventiva/$($m.slug)/flashcards_pt.json"
+    if (-not $flash) { $flash = GitShow "HEAD" "flashcards/med/medicina_preventiva/$($m.slug)/$($m.prefix)_flashcards_pt.json" }
     SyncFlash "medicina_preventiva" $m.slug $flash ${Function:ConvertFlashCards}
   }
 }
