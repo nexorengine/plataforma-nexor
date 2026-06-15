@@ -19,56 +19,29 @@
   <div class="nx-hero">
     <div class="nx-hero-tag">Residência Médica · 5 especialidades</div>
     <div class="nx-hero-title">Suas especialidades</div>
-    <div class="nx-hero-sub">Especialidades assinadas aparecem no topo, ordenadas por progresso.</div>
+    <div class="nx-hero-sub">Selecione uma especialidade para estudar.</div>
   </div>
-
-  <div class="nx-section-label">assinadas · em andamento</div>
-  <a href="c2-med.html" class="nx-capsule active">
-    <div class="nx-icon-slot"><i class="ti ti-cut"></i></div>
-    <div class="nx-cap-body">
-      <div class="nx-cap-title">Cirurgia Geral</div>
-      <div class="nx-cap-org">9 domínios · 432 flashcards · 900 questões</div>
-    </div>
-    <div class="nx-pill pct" style="color:#FCA311;">72%</div>
-  </a>
-
-  <div class="nx-section-label">disponíveis · assine para acessar</div>
-  <a href="#" class="nx-capsule">
-    <div class="nx-icon-slot"><i class="ti ti-baby-carriage"></i></div>
-    <div class="nx-cap-body">
-      <div class="nx-cap-title">Ginecologia & Obstetrícia</div>
-      <div class="nx-cap-org">8 domínios · 384 flashcards · 800 questões</div>
-    </div>
-    <div class="nx-pill available">INICIAR</div>
-  </a>
-  <a href="#" class="nx-capsule">
-    <div class="nx-icon-slot"><i class="ti ti-heart-rate-monitor"></i></div>
-    <div class="nx-cap-body">
-      <div class="nx-cap-title">Clínica Médica</div>
-      <div class="nx-cap-org">10 domínios · 480 flashcards · 1.000 questões</div>
-    </div>
-    <div class="nx-pill available">INICIAR</div>
-  </a>
-  <a href="#" class="nx-capsule">
-    <div class="nx-icon-slot"><i class="ti ti-heart"></i></div>
-    <div class="nx-cap-body">
-      <div class="nx-cap-title">Pediatria</div>
-      <div class="nx-cap-org">9 domínios · 432 flashcards · 900 questões</div>
-    </div>
-    <div class="nx-pill available">INICIAR</div>
-  </a>
-  <a href="#" class="nx-capsule">
-    <div class="nx-icon-slot"><i class="ti ti-vaccine"></i></div>
-    <div class="nx-cap-body">
-      <div class="nx-cap-title">Medicina Preventiva</div>
-      <div class="nx-cap-org">7 domínios · 336 flashcards · 700 questões</div>
-    </div>
-    <div class="nx-pill available">INICIAR</div>
-  </a>
+  <div id="lista-areas"></div>
 </div>
 </div>
 <div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
 <script src="assets/notif.js"></script>
 <script src="assets/profile.js"></script>
+<script src="assets/catalog.js"></script>
+<script>
+const el = document.getElementById('lista-areas');
+el.innerHTML = AREA_ORDER.map(slug => {
+  const a = CATALOG[slug];
+  const n = a.dominios.length;
+  return `<a href="c2-med.html?area=${slug}" class="nx-capsule active">
+    <div class="nx-icon-slot"><i class="ti ${a.icon}"></i></div>
+    <div class="nx-cap-body">
+      <div class="nx-cap-title">${a.label}</div>
+      <div class="nx-cap-org">${n} domínios · ${n*48} flashcards · ${n*100} questões</div>
+    </div>
+    <div class="nx-pill available">ACESSAR</div>
+  </a>`;
+}).join('');
+</script>
 </body>
 </html>
