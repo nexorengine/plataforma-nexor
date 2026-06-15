@@ -50,7 +50,7 @@ const CATALOG = {
   pediatria: {
     label: 'Pediatria',
     code: 'PED',
-    icon: 'ti-baby',
+    icon: 'ti-heart',
     dominios: [
       { slug: 'neonatologia',         code: 'PED_D01', nome: 'Neonatologia' },
       { slug: 'puericultura',         code: 'PED_D02', nome: 'Puericultura' },
