@@ -90,22 +90,37 @@
 <script>
 const params=new URLSearchParams(window.location.search);
 const qn=params.get('n')||'1';
-document.getElementById('quiz-sub').textContent='Quiz 00'+qn+' · 50 questões';
-
-const questions=[
-  {q:"Qual é a causa mais comum de abdome agudo cirúrgico em adultos jovens?",opts:["Colecistite aguda","Apendicite aguda","Pancreatite aguda","Obstrução intestinal por brida"],c:1,exp:"Apendicite aguda é a causa mais frequente de abdome agudo cirúrgico, especialmente em adultos entre 10–30 anos."},
-  {q:"O sinal de Murphy positivo é sugestivo de qual patologia?",opts:["Apendicite aguda","Pancreatite aguda","Colecistite aguda","Perfuração gástrica"],c:2,exp:"O sinal de Murphy (interrupção da inspiração à palpação do hipocôndrio direito) é clássico de colecistite aguda."},
-  {q:"Qual achado radiológico é patognomônico de perfuração de víscera oca?",opts:["Níveis hidroaéreos","Pneumoperitônio subdiafragmático","Calcificações pancreáticas","Íleo paralítico"],c:1,exp:"Pneumoperitônio (ar livre subdiafragmático) na radiografia em posição ortostática indica perfuração de víscera oca."},
-  {q:"A tríade de Charcot (febre, icterícia e dor em HCD) é característica de:",opts:["Colecistite aguda","Coledocolitíase","Colangite aguda","Pancreatite biliar"],c:2,exp:"A tríade de Charcot é patognomônica de colangite aguda. A pêntade de Reynolds acrescenta hipotensão e confusão mental."},
-  {q:"Paciente com dor súbita em epigástrio irradiando para dorso, náuseas e amilase 5x o normal. Diagnóstico:",opts:["Úlcera perfurada","Pancreatite aguda","Colecistite aguda","Isquemia mesentérica"],c:1,exp:"Pancreatite aguda: dor epigástrica irradiando para dorso + elevação de amilase/lipase > 3x o valor de referência."},
-];
+const area=params.get('area')||'cirurgia_geral';
+const dominio=params.get('dominio')||'abdome_agudo';
+document.getElementById('quiz-sub').textContent='Quiz 00'+qn+' · carregando...';
 
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function shuffleQ(q){const idx=q.opts.map((o,i)=>({t:o,i}));shuffle(idx);return{q:q.q,opts:idx.map(x=>x.t),c:idx.findIndex(x=>x.i===q.c),exp:q.exp};}
-shuffle(questions);
-const sq=questions.map(shuffleQ);
-let cur=0,sel=-1,confirmed=false,rights=0,wrongs=0;
-const TOTAL=50,keys=['A','B','C','D'];
+
+let sq=[],cur=0,sel=-1,confirmed=false,rights=0,wrongs=0;
+let TOTAL=50;
+const keys=['A','B','C','D'];
+
+async function loadQuiz(){
+  const pad=qn.padStart(3,'0');
+  const url=`content/quizzes/${area}/${dominio}/quiz_${pad}.json`;
+  try{
+    const res=await fetch(url);
+    if(!res.ok) throw new Error('not found');
+    const data=await res.json();
+    TOTAL=data.total||data.questions.length;
+    document.getElementById('quiz-sub').textContent='Quiz 00'+qn+' · '+TOTAL+' questões';
+    const questions=data.questions;
+    shuffle(questions);
+    sq=questions.map(shuffleQ);
+    startTimer();
+    render();
+  }catch(e){
+    document.getElementById('q-text').textContent='Erro ao carregar o quiz. Verifique o caminho: '+url;
+    document.getElementById('q-label').textContent='erro';
+  }
+}
+loadQuiz();
 
 /* ── TIMER ── */
 const TIMER_TOTAL = 60 * 60; // 60 minutos em segundos
@@ -240,22 +255,38 @@ function nextQ(){
   render();
 }
 
-render();
-startTimer();
+/* render() e startTimer() são chamados dentro de loadQuiz() após o fetch */
 
 /* ── MINI-AULA ── */
-const aulaDemo = {
-  texto: `Quando uma víscera oca — estômago, intestino delgado ou cólon — se perfura, o ar contido em sua luz escapa para a cavidade peritoneal. Esse ar livre, mais leve que os tecidos ao redor, sobe imediatamente e se acumula abaixo do diafragma. Na radiografia de tórax ou abdome em posição ortostática, esse ar aparece como imagem hipertransparente em forma de meia-lua abaixo do hemidiafragma direito — o chamado pneumoperitônio subdiafragmático.\n\nPatognomônico significa exclusivo de uma condição. O pneumoperitônio é justamente isso: ar livre na cavidade abdominal em contexto de abdome agudo equivale a perfuração até prova em contrário — indicação direta de cirurgia.\n\nAs demais alternativas são inespecíficas: níveis hidroaéreos sugerem obstrução intestinal; íleo paralítico ocorre em diversas condições inflamatórias e metabólicas; calcificações pancreáticas são achado crônico de pancreatite alcoólica.`,
-  fonte: `Townsend CM Jr. et al. — Sabiston Textbook of Surgery, 21ª ed. Cap. 45 — Acute Abdomen. Elsevier, 2022.`
-};
+let resumosData = null;
+
+async function loadResumos(){
+  const pad = qn.padStart(3,'0');
+  const url = `content/resumos/${area}/${dominio}/quiz_${pad}_resumos.json`;
+  try {
+    const res = await fetch(url);
+    if(res.ok) resumosData = await res.json();
+  } catch(e) { /* sem resumos disponíveis */ }
+}
+loadResumos();
 
 function openAula(){
-  const q = sq[cur];
-  // Em produção: buscar do Supabase por q.id — aqui usamos demo
-  document.getElementById('aula-text').innerHTML = aulaDemo.texto.split('\n\n').map(p =>
+  const idx = cur; // índice 0-based da questão atual
+  let texto = '';
+  let fonte = '';
+  if(resumosData && resumosData.resumos && resumosData.resumos[idx]){
+    const r = resumosData.resumos[idx];
+    texto = r.texto;
+    fonte = r.fonte || '';
+  } else {
+    const q = sq[cur];
+    texto = q.exp;
+    fonte = 'Explicação do gabarito';
+  }
+  document.getElementById('aula-text').innerHTML = texto.split('\n\n').map(p =>
     `<p style="font-size:14px;font-family:'Barlow',sans-serif;font-weight:300;color:#E0E0E0;line-height:1.65;margin-bottom:14px;">${p}</p>`
   ).join('');
-  document.getElementById('aula-fonte').textContent = aulaDemo.fonte;
+  document.getElementById('aula-fonte').textContent = fonte;
   const sheet = document.getElementById('nx-aula-sheet');
   const overlay = document.getElementById('nx-aula-overlay');
   sheet.classList.add('open');
