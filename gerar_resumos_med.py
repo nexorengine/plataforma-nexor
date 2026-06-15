@@ -41,12 +41,12 @@ CG_DOMINIOS = {
     1: "abdome_agudo",
     2: "hepatobiliar_pancreas",
     3: "trauma_urgencia",
-    4: "parede_abdominal_hernias",
-    5: "esofago_estomago",
-    6: "intestino_delgado_colon",
-    7: "doencas_anorretais",
-    8: "oncologia_cirurgica",
-    9: "cirurgia_minimamente_invasiva",
+    4: "perioperatorio",
+    5: "hernias_parede_abdominal",
+    6: "trato_digestivo_superior",
+    7: "trato_digestivo_inferior_coloproctologia",
+    8: "cirurgia_vascular",
+    9: "queimaduras",
 }
 
 # Fontes bibliográficas por área
