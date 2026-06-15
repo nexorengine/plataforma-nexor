@@ -62,19 +62,33 @@
 <script src="assets/profile.js"></script>
 <script src="assets/tts.js"></script>
 <script>
-const cards=[
-  {f:"Quais são as quatro causas clássicas de abdome agudo inflamatório?",v:"Apendicite aguda, colecistite aguda, pancreatite aguda e diverticulite aguda — as mais cobradas em provas de residência.",l:"F1"},
-  {f:"Defina abdome agudo obstrutivo e cite o sinal radiológico característico.",v:"Obstrução mecânica do trânsito intestinal. Sinal radiológico: níveis hidroaéreos em escada na radiografia simples de abdome.",l:"F1"},
-  {f:"Qual é o sinal de Blumberg e o que ele indica?",v:"Dor à descompressão brusca do abdome — indica irritação peritoneal (peritonismo). Sugestivo de peritonite.",l:"F2"},
-  {f:"Diferencie abdome agudo perfurativo de obstrutivo quanto ao início da dor.",v:"Perfurativo: dor súbita, intensa, 'em facada'. Obstrutivo: dor em cólica, progressiva, associada a distensão abdominal.",l:"F2"},
-  {f:"Caso clínico: homem 28a com dor em FID há 12h, náuseas, febre 38°C, Blumberg +. Diagnóstico mais provável?",v:"Apendicite aguda. Conduta: apendicectomia laparoscópica de urgência após avaliação cirúrgica.",l:"F3"},
-  {f:"Qual achado no pneumoperitônio confirma perfuração de víscera oca?",v:"Ar livre subdiafragmático na radiografia de tórax em posição ortostática — sinal patognomônico de perfuração.",l:"F3"},
-  {f:"Síntese: qual a tríade de Charcot e em qual condição é clássica?",v:"Febre + icterícia + dor em hipocôndrio direito — clássica de colangite aguda. Pêntade de Reynolds adiciona hipotensão e confusão mental.",l:"F4"},
-];
+const params=new URLSearchParams(window.location.search);
+const area=params.get('area')||'cirurgia_geral';
+const dominio=params.get('dominio')||'abdome_agudo';
+
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-shuffle(cards);
-let cur=0,flipped=false,rights=0,wrongs=0;
-const TOTAL=48;
+
+let cards=[],cur=0,flipped=false,rights=0,wrongs=0,TOTAL=48;
+
+async function loadFlashcards(){
+  const url=`content/flashcards/${area}/${dominio}/flashcards.json`;
+  try{
+    const res=await fetch(url);
+    if(!res.ok) throw new Error('not found');
+    const data=await res.json();
+    TOTAL=data.total||data.cards.length;
+    cards=data.cards.slice();
+    shuffle(cards);
+    document.getElementById('sl').textContent=TOTAL;
+    document.getElementById('prog-count').textContent='1 / '+TOTAL;
+    render();
+  }catch(e){
+    document.getElementById('card-face').textContent='erro';
+    document.getElementById('card-text').textContent='Não foi possível carregar: '+url;
+  }
+}
+loadFlashcards();
+
 function render(){
   flipped=false;
   const c=cards[cur];
@@ -118,7 +132,6 @@ function answer(ok){
   }
   render();
 }
-render();
 function ttsCard(btn){ TTS.speak(document.getElementById('card-text').textContent, btn); }
 </script>
 </body>

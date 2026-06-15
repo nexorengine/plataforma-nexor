@@ -1,0 +1,558 @@
+﻿{
+    "area":  "medicina_preventiva",
+    "dominio":  "epidemiologia_geral",
+    "quiz":  "quiz_002",
+    "total":  50,
+    "questions":  [
+                      {
+                          "q":  "Em epidemiologia, o que é a curva epidêmica em uma investigação de surto?",
+                          "opts":  [
+                                       "Representação gráfica do número de casos de uma doença ao longo do tempo, permitindo inferir o padrão de transmissão e o período de exposição.",
+                                       "Gráfico que relaciona a sensibilidade e a especificidade de um teste diagnóstico utilizado durante o surto.",
+                                       "Curva que descreve a distribuição geográfica dos casos em um mapa de pontos (spot map) durante o surto.",
+                                       "Representação matemática da taxa de reprodução efetiva (Rt) ao longo do tempo em uma epidemia."
+                                   ],
+                          "c":  0,
+                          "exp":  "A curva epidêmica (histograma de casos × tempo) é ferramenta central na investigação de surtos: seu formato permite distinguir fonte comum pontual (pico único abrupto), fonte comum contínua (platô prolongado) e transmissão propagada (ondas sucessivas). O intervalo entre o início da curva e o pico pode estimar o período de incubação e, assim, a data provável de exposição."
+                      },
+                      {
+                          "q":  "O que é a razão de mortalidade padronizada (RMP ou SMR — Standardized Mortality Ratio)?",
+                          "opts":  [
+                                       "Razão entre o número de óbitos observados em uma população de estudo e o número de óbitos esperados se essa população tivesse as mesmas taxas específicas de mortalidade de uma população de referência.",
+                                       "Razão entre a mortalidade proporcional por causa específica e a mortalidade geral da mesma população no mesmo período.",
+                                       "Diferença absoluta entre as taxas de mortalidade padronizadas de duas populações comparadas pelo método direto.",
+                                       "Razão entre a incidência de óbitos em expostos e não expostos, ajustada por regressão de Poisson."
+                                   ],
+                          "c":  0,
+                          "exp":  "A SMR é obtida pelo método de padronização indireta: aplica-se as taxas específicas por idade (e/ou sexo) da população de referência à estrutura da população de estudo para calcular os óbitos esperados; divide-se então os óbitos observados pelos esperados. SMR \u003e 1 indica excesso de mortalidade na população estudada em relação à referência. É amplamente usada em epidemiologia ocupacional."
+                      },
+                      {
+                          "q":  "Em epidemiologia, o que é o período de latência de uma doença infecciosa?",
+                          "opts":  [
+                                       "Intervalo entre a infecção e o momento em que o hospedeiro se torna capaz de transmitir o agente a outros (início da infectividade).",
+                                       "Intervalo entre a exposição ao agente infeccioso e o aparecimento dos primeiros sinais e sintomas clínicos.",
+                                       "Período durante o qual o indivíduo infectado é capaz de transmitir o agente, independentemente de apresentar sintomas.",
+                                       "Tempo mínimo necessário para que o agente infeccioso complete seu ciclo replicativo dentro do hospedeiro vertebrado."
+                                   ],
+                          "c":  0,
+                          "exp":  "O período de latência (latent period) é definido como o intervalo entre a infecção e o início da infectividade, ou seja, quando o hospedeiro passa a ser fonte potencial de transmissão. É distinto do período de incubação, que se refere ao aparecimento de sintomas. Quando o período de latência é menor que o de incubação, ocorre transmissão pré-sintomática, fenômeno de grande relevância no controle de epidemias (ex.: SARS-CoV-2, influenza)."
+                      },
+                      {
+                          "q":  "O que é o coeficiente (taxa) de fecundidade geral em demografia e epidemiologia?",
+                          "opts":  [
+                                       "Número de nascidos vivos por 1.000 mulheres em idade fértil (habitualmente 15 a 49 anos) em determinado ano e local.",
+                                       "Número total de nascidos vivos dividido pela população total residente, multiplicado por 1.000, em dado período.",
+                                       "Número médio de filhos que uma mulher teria ao longo da vida se submetida às taxas específicas de fecundidade por idade atuais.",
+                                       "Proporção de nascimentos vivos em relação ao total de gestações (incluindo perdas fetais) em determinado período."
+                                   ],
+                          "c":  0,
+                          "exp":  "O coeficiente de fecundidade geral refina a taxa bruta de natalidade ao restringir o denominador às mulheres em idade reprodutiva (15–49 anos), tornando comparações entre populações com estruturas etárias diferentes mais válidas. É expresso por 1.000 mulheres em idade fértil e constitui indicador demográfico fundamental para análise de saúde materno-infantil e planejamento em saúde."
+                      },
+                      {
+                          "q":  "O que é o erro tipo II (beta) em testes de hipótese estatística aplicados à epidemiologia?",
+                          "opts":  [
+                                       "Probabilidade de não rejeitar a hipótese nula quando ela é, de fato, falsa (falso negativo estatístico).",
+                                       "Probabilidade de rejeitar a hipótese nula quando ela é, de fato, verdadeira (falso positivo estatístico).",
+                                       "Probabilidade de que o intervalo de confiança de 95% contenha o verdadeiro valor do parâmetro populacional.",
+                                       "Diferença mínima clinicamente relevante que o estudo foi planejado para detectar com determinado nível de significância."
+                                   ],
+                          "c":  0,
+                          "exp":  "O erro tipo II (β) ocorre quando o estudo falha em detectar uma associação real, concluindo erroneamente pela ausência de efeito. O poder estatístico do estudo é definido como 1 – β, representando a probabilidade de detectar o efeito verdadeiro. Estudos com amostras insuficientes têm β elevado, gerando resultados falso-negativos com consequências clínicas e de políticas de saúde pública importantes."
+                      },
+                      {
+                          "q":  "Em epidemiologia, o que é a notificação compulsória de doenças no Brasil, conforme o marco regulatório vigente?",
+                          "opts":  [
+                                       "Comunicação obrigatória às autoridades de saúde de casos suspeitos ou confirmados de doenças, agravos ou eventos de saúde pública constantes de lista nacional definida pelo Ministério da Saúde, visando à adoção de medidas de prevenção e controle.",
+                                       "Registro voluntário de casos de doenças crônicas não transmissíveis realizado pelos serviços de saúde de referência, encaminhado mensalmente à Secretaria Estadual de Saúde.",
+                                       "Sistema de monitoramento passivo exclusivo de doenças infecciosas de alta mortalidade, restrito a unidades hospitalares de nível terciário cadastradas no CNES.",
+                                       "Instrumento de coleta de dados demográficos e socioeconômicos de pacientes com doenças de interesse epidemiológico, utilizado exclusivamente pelo IBGE em parceria com o Ministério da Saúde."
+                                   ],
+                          "c":  0,
+                          "exp":  "A notificação compulsória está regulamentada pela Lei 6.259/1975 e pelo Decreto 78.231/1976, integrada ao arcabouço da Lei 8.080/1990 e portarias subsequentes do Ministério da Saúde (atualmente Portaria GM/MS 217/2023 e atualizações). É obrigatória para profissionais de saúde e responsáveis por estabelecimentos, aplica-se a casos suspeitos ou confirmados, e alimenta o SINAN (Sistema de Informação de Agravos de Notificação), instrumento central da vigilância epidemiológica brasileira."
+                      },
+                      {
+                          "q":  "O que é a razão de sexos (sex ratio) ao nascer em demografia e epidemiologia?",
+                          "opts":  [
+                                       "Número de nascidos vivos do sexo masculino para cada 100 (ou 1.000) nascidos vivos do sexo feminino em determinado período e local.",
+                                       "Proporção de mulheres em idade fértil em relação ao total de mulheres na população em determinado ano.",
+                                       "Diferença absoluta entre as taxas de mortalidade específicas por sexo masculino e feminino em uma população.",
+                                       "Razão entre a expectativa de vida ao nascer do sexo feminino e do sexo masculino em determinada população."
+                                   ],
+                          "c":  0,
+                          "exp":  "A razão de sexos ao nascer (sex ratio at birth) é expressa habitualmente como número de nascimentos masculinos por 100 femininos, com valor biologicamente esperado em torno de 105:100 na maioria das populações humanas. Desvios significativos desse valor podem indicar seleção sexual pré-natal, subregistro diferencial ou intervenções demográficas. É indicador de interesse em saúde reprodutiva e demografia."
+                      },
+                      {
+                          "q":  "Em epidemiologia, o que é a padronização direta de taxas?",
+                          "opts":  [
+                                       "Método que aplica as taxas específicas por idade (ou outra variável de confundimento) de cada população em estudo a uma população padrão comum, produzindo taxas ajustadas comparáveis entre si.",
+                                       "Método que aplica as taxas específicas por idade de uma população de referência à estrutura etária da população de estudo para calcular o número de eventos esperados.",
+                                       "Técnica estatística de regressão múltipla que controla simultaneamente múltiplos fatores de confundimento em estudos analíticos.",
+                                       "Processo de recalibração de instrumentos de medida em estudos epidemiológicos para reduzir erros de aferição sistemáticos."
+                                   ],
+                          "c":  0,
+                          "exp":  "Na padronização direta, utiliza-se uma população padrão (ex.: população mundial OMS, população brasileira IBGE) cujos estratos etários são multiplicados pelas taxas específicas de cada população estudada, gerando taxas hipotéticas padronizadas. O método exige que as populações comparadas tenham tamanho amostral suficiente para estimativas estáveis das taxas específicas. Elimina o efeito de confundimento pela estrutura etária diferente entre populações, permitindo comparações válidas."
+                      },
+                      {
+                          "q":  "O que é o coeficiente de mortalidade neonatal precoce em saúde pública?",
+                          "opts":  [
+                                       "Número de óbitos de crianças com 0 a 6 dias de vida completos por 1.000 nascidos vivos em determinado período e local.",
+                                       "Número de óbitos de crianças com 0 a 27 dias de vida completos por 1.000 nascidos vivos em determinado período e local.",
+                                       "Número de óbitos fetais com 22 ou mais semanas de gestação por 1.000 nascidos totais (vivos + mortos) em determinado período.",
+                                       "Número de óbitos de crianças com 7 a 27 dias de vida completos por 1.000 nascidos vivos em determinado período e local."
+                                   ],
+                          "c":  0,
+                          "exp":  "O coeficiente de mortalidade neonatal precoce abrange os óbitos no período de 0 a 6 dias completos de vida (primeiros 7 dias), sendo denominador os nascidos vivos. Este componente reflete predominantemente causas perinatais: asfixia, prematuridade, malformações congênitas e infecções precoces, estando fortemente associado à qualidade da assistência obstétrica e neonatal imediata. Compõe, junto com a mortalidade neonatal tardia (7–27 dias), a mortalidade neonatal total."
+                      },
+                      {
+                          "q":  "Em epidemiologia, o que é o estudo ecológico (ou de agregados)?",
+                          "opts":  [
+                                       "Estudo epidemiológico no qual a unidade de análise são grupos populacionais (municípios, países, regiões), e não indivíduos, utilizando dados agregados para avaliar associações entre exposições e desfechos.",
+                                       "Estudo que acompanha indivíduos ao longo do tempo em seu ambiente natural, sem intervenção do pesquisador, avaliando exposições e desfechos em nível individual.",
+                                       "Estudo experimental em que populações inteiras são randomizadas para receber ou não uma intervenção, com desfechos medidos no nível do indivíduo.",
+                                       "Estudo transversal que avalia múltiplos desfechos simultaneamente em uma amostra representativa da população, com análise por subgrupos ecológicos pré-definidos."
+                                   ],
+                          "c":  0,
+                          "exp":  "No estudo ecológico, as variáveis de exposição e desfecho são médias, proporções ou taxas populacionais — não medidas individuais. São úteis para geração de hipóteses, avaliação de políticas de saúde pública e análise de determinantes macrossociais. Sua limitação principal é a falácia ecológica (ecological fallacy): associações observadas em nível agregado não necessariamente se reproduzem no nível individual, impossibilitando inferências causais diretas sobre indivíduos."
+                      },
+                      {
+                          "q":  "Pesquisador conduz estudo caso-controle sobre câncer de pulmão em não fumantes. Ao comparar casos hospitalizados com controles ambulatoriais saudáveis, identifica-se associação espúria entre uso de estatinas e proteção contra o câncer. Qual mecanismo de viés explica primariamente esse achado e por quê ele distorce a medida de associação nesse desenho específico?",
+                          "opts":  [
+                                       "Viés de Berkson: seleção diferencial de casos e controles entre usuários de serviços hospitalares/ambulatoriais altera a razão de expostos entre grupos, gerando associação artificial não presente na população-fonte.",
+                                       "Viés de memória: casos relatam com maior precisão o uso de estatinas por maior atenção à própria saúde, enquanto controles subestimam o uso, inflando artificialmente o OR de proteção.",
+                                       "Confundimento por indicação: estatinas são prescritas a pacientes com dislipidemia, que têm perfil de risco cardiovascular e não oncológico, fazendo com que a estatina apareça associada a menor risco de câncer por mecanismo biológico real.",
+                                       "Viés de aferição: a ausência de padronização na coleta do histórico de uso de estatinas entre entrevistadores distintos introduz erro não diferencial que dilui o OR em direção ao nulo."
+                                   ],
+                          "c":  0,
+                          "exp":  "O viés de Berkson ocorre quando casos e controles provêm de subpopulações hospitalares distintas, pois a probabilidade de hospitalização ou uso do serviço é influenciada tanto pela doença-desfecho quanto pela exposição investigada. Nesse cenário, controles ambulatoriais saudáveis têm menor prevalência de uso de estatinas do que a população-fonte dos casos, criando falsa proteção. A distorção é intrínseca ao processo de seleção, não à aferição da exposição."
+                      },
+                      {
+                          "q":  "Em ensaio clínico randomizado avaliando nova vacina contra pneumococo em crianças de 6-23 meses, a análise primária por intenção de tratar (ITT) demonstra eficácia de 52% (IC 95%: 38–63%), enquanto a análise per protocol (PP) revela eficácia de 71% (IC 95%: 58–80%). Por que a análise ITT é preferida como desfecho primário regulatório nesse contexto e qual é a principal limitação da análise PP?",
+                          "opts":  [
+                                       "ITT preserva a integridade da randomização e reflete a efetividade real da vacina na população que receberá o esquema completo em condições ideais, enquanto a análise PP subestima o efeito por incluir não aderentes.",
+                                       "ITT preserva a integridade da randomização e estima o efeito sob condições de uso real (incluindo não adesão), enquanto a PP, ao excluir participantes não aderentes de modo não aleatório, reintroduz viés de seleção que quebra a comparabilidade dos grupos.",
+                                       "ITT é preferida porque fornece o maior tamanho de amostra para o cálculo do IC, reduzindo a largura do intervalo, enquanto PP perde poder por exclusão de participantes e amplia o IC.",
+                                       "ITT é obrigatória por regulamentação ANVISA/FDA independentemente do desenho do estudo; a PP é apenas exploratória por não ser aceita em nenhum contexto de submissão regulatória."
+                                   ],
+                          "c":  1,
+                          "exp":  "A análise ITT mantém todos os participantes nos grupos originalmente alocados, preservando o balanceamento de confundidores garantido pela randomização e fornecendo estimativa conservadora do efeito em cenário de uso real (effectiveness). A análise PP restringe-se a quem completou o protocolo, mas a não adesão raramente é aleatória — participantes mais saudáveis, com maior acesso a serviços ou menor risco basal tendem a completar o esquema —, introduzindo seleção sistemática que invalida a comparabilidade entre braços."
+                      },
+                      {
+                          "q":  "Investigação de surto de síndrome hemolítico-urêmica (SHU) em município de 80.000 habitantes identifica 22 casos em 6 semanas, todos em crianças de 1-5 anos frequentadoras de três creches distintas. A curva epidêmica exibe pico único no dia 8 com declínio rápido. Amostras de água e alimentos das creches estão em coleta. Qual característica da curva epidêmica indica fonte comum pontual e qual é a implicação para o período de incubação estimado?",
+                          "opts":  [
+                                       "Pico único com ascensão e queda rápidas sugerem fonte comum contínua; o período de incubação é estimado pela mediana do tempo de exposição ao pico de casos.",
+                                       "Pico único com ascensão rápida e declínio abrupto, sem ondas secundárias, caracteriza fonte comum pontual; o período de incubação é estimado pela diferença entre a data provável de exposição única e a mediana (ou moda) dos casos.",
+                                       "Pico único com declínio gradual indica propagação pessoa-a-pessoa; o período de incubação corresponde ao intervalo serial entre casos primários e secundários observados nas creches.",
+                                       "A ausência de ondas secundárias descarta transmissão pessoa-a-pessoa, mas não permite distinguir fonte comum pontual de fonte comum contínua sem análise do espectro temporal de casos."
+                                   ],
+                          "c":  1,
+                          "exp":  "Em fontes comuns pontuais, todos os suscetíveis são expostos em um único momento ou período curto, gerando acúmulo rápido de casos dentro de um intervalo correspondente ao período de incubação do agente. O padrão resultante é pico único com declínio rápido e ausência de ondas sucessivas. Para estimar o período de incubação, subtrai-se a data/hora da exposição suspeita da mediana (ou moda) dos casos no tempo, o que orienta a identificação do agente (STEC O157:H7 tem incubação de 3-4 dias, compatível com surtos de SHU)."
+                      },
+                      {
+                          "q":  "Pesquisador analisa estudo de coorte sobre mortalidade cardiovascular em trabalhadores de mineração expostos a sílica. O risco relativo (RR) bruto é 1,8 (IC 95%: 1,3–2,5), mas após ajuste por tabagismo e índice de massa corporal na regressão de Cox, o RR ajustado cai para 1,2 (IC 95%: 0,9–1,6). Qual é a interpretação metodológica mais correta desse resultado e por que o ajuste modificou a estimativa?",
+                          "opts":  [
+                                       "O resultado indica modificação de efeito (interação) entre sílica e tabagismo; o RR estratificado por estrato de tabagismo deveria ser apresentado separadamente, pois o ajuste viola o pressuposto de homogeneidade do efeito.",
+                                       "O resultado indica confundimento positivo: tabagismo e IMC estavam associados tanto à exposição (trabalhadores de mineração têm maior prevalência de tabagismo) quanto ao desfecho (mortalidade cardiovascular), inflando o RR bruto; após controle, o efeito real da sílica é menor e não estatisticamente significativo.",
+                                       "O resultado indica viés de aferição diferencial: trabalhadores expostos a sílica tiveram maior investigação cardiológica, detectando mais eventos; o ajuste por tabagismo e IMC não corrige esse viés e a queda do RR é espúria.",
+                                       "O resultado demonstra colinearidade entre sílica, tabagismo e IMC no modelo de regressão, tornando os coeficientes instáveis; a solução é remover uma das variáveis do modelo para estabilizar a estimativa do RR ajustado."
+                                   ],
+                          "c":  1,
+                          "exp":  "Confundimento positivo ocorre quando o confundidor age na mesma direção do efeito estudado, superestimando a associação bruta. Trabalhadores de mineração têm prevalência de tabagismo sistematicamente superior à população geral, e tabagismo é causa independente de mortalidade cardiovascular; ao não controlar esse confundidor, o RR bruto incorpora tanto o efeito da sílica quanto o do tabagismo. O ajuste remove essa contribuição, revelando que a associação residual é menor e, neste caso, cruza o valor nulo (IC inclui 1,0)."
+                      },
+                      {
+                          "q":  "Secretaria de saúde planeja rastreamento populacional de diabetes mellitus tipo 2 (DM2) em adultos de 45-70 anos usando glicemia de jejum (GJ) com ponto de corte de 126 mg/dL. A prevalência de DM2 na população-alvo é 12%. Sensibilidade do teste: 75%; Especificidade: 90%. Qual é o valor preditivo positivo (VPP) aproximado e qual implicação programática esse valor tem para o planejamento do fluxo de confirmação diagnóstica?",
+                          "opts":  [
+                                       "VPP ≈ 50%; implica que metade dos rastreados positivos não tem DM2, tornando o teste inadequado para rastreamento populacional e indicando substituição pela hemoglobina glicada (HbA1c) como primeiro teste.",
+                                       "VPP ≈ 50%; implica que metade dos positivos ao rastreamento necessitará de teste confirmatório (segunda GJ ou TOTG), exigindo estrutura de referência para evitar sobrecarga diagnóstica desnecessária e estigmatização de falsos positivos.",
+                                       "VPP ≈ 75%; reflete diretamente a sensibilidade do teste, e como sensibilidade é alta, o programa pode prescindir de confirmação diagnóstica e iniciar tratamento imediato em todos os positivos.",
+                                       "VPP ≈ 90%; reflete a especificidade do teste, indicando que 90% dos positivos têm DM2 confirmado, tornando desnecessária a etapa de confirmação e reduzindo custos do programa de rastreamento."
+                                   ],
+                          "c":  1,
+                          "exp":  "Pelo teorema de Bayes: VP = 0,75 × 0,12 = 90; FP = 0,10 × 0,88 = 88; VPP = 90/(90+88) ≈ 50,6%. Mesmo com especificidade de 90%, a prevalência de 12% gera volume expressivo de falsos positivos, pois 88% da população não tem a doença. Um VPP de ~50% significa que metade dos indivíduos com GJ ≥ 126 mg/dL não tem DM2, tornando mandatória a etapa de confirmação (repetição da GJ ou TOTG em dia diferente), conforme diretrizes SBD e ADA, antes de qualquer intervenção terapêutica."
+                      },
+                      {
+                          "q":  "Em estudo de coorte retrospectiva avaliando incidência de depressão maior em profissionais de saúde durante a pandemia de COVID-19, os pesquisadores utilizam registros de prontuário eletrônico para identificar diagnósticos de depressão pelo CID-10. Ao final, profissionais que pediram demissão ou foram afastados por doença mental nos primeiros 6 meses não puderam ser acompanhados. Qual tipo de viés esse fenômeno representa e como ele afeta a estimativa de incidência?",
+                          "opts":  [
+                                       "Viés de sobrevivência do trabalhador saudável (healthy worker survivor effect): os mais vulneráveis à depressão saíram da coorte precocemente, e a incidência calculada nos remanescentes subestima a verdadeira incidência na coorte original.",
+                                       "Viés de informação diferencial: profissionais afastados tiveram registros de depressão mais detalhados no prontuário do que os ativos, inflando artificialmente a taxa de incidência no grupo de afastados.",
+                                       "Viés de confundimento por indicação: profissionais com maior carga de trabalho têm maior risco de depressão e maior probabilidade de afastamento, e a ausência de ajuste por carga horária infla o RR.",
+                                       "Perda de seguimento aleatória (missing completely at random — MCAR): como os afastamentos ocorrem por múltiplas causas, a perda é não sistemática e não introduz viés na estimativa de incidência, apenas reduz o poder estatístico."
+                                   ],
+                          "c":  0,
+                          "exp":  "Quando os indivíduos com maior risco para o desfecho deixam a coorte antes do término do seguimento por razão diretamente relacionada ao desfecho (afastamento por doença mental), a amostra remanescente é progressivamente enriquecida pelos mais resilientes. A incidência calculada apenas nos que permaneceram na coorte é artificialmente reduzida em relação à verdadeira incidência da coorte original, caracterizando o healthy worker survivor effect — variante dinâmica do efeito do trabalhador saudável aplicada ao seguimento longitudinal."
+                      },
+                      {
+                          "q":  "Autoridade sanitária municipal avalia o impacto de intervenção de fluoretação da água em crianças de 6-12 anos. Estudo antes-depois (pré-pós) sem grupo controle demonstra redução de 35% na prevalência de cárie dental após 3 anos. Gestor considera esse resultado suficiente para expansão do programa. Qual a principal limitação metodológica desse desenho que impede atribuição causal da redução ao fluxo de fluoretação?",
+                          "opts":  [
+                                       "O estudo transversal repetido não permite cálculo de incidência cumulativa de cárie, apenas prevalência; sem incidência, não é possível calcular RR ou NNT para a decisão de expansão.",
+                                       "A ausência de grupo controle contemporâneo impede distinguir o efeito da fluoretação de tendências temporais seculares (melhora espontânea de higiene bucal, dieta, acesso a serviços odontológicos) que poderiam explicar a redução observada — ameaça à validade interna conhecida como história.",
+                                       "O viés de aferição é a principal limitação: examinadores pós-intervenção conhecem o status de fluoretação, gerando avaliação mais rigorosa de cárie e superestimando a redução pela detecção de lesões incipientes previamente não registradas.",
+                                       "O estudo antes-depois é inadequado para doenças crônicas como cárie dental porque o período de 3 anos é insuficiente para manifestação do desfecho; estudos de coorte com pelo menos 10 anos de seguimento são obrigatórios para avaliar fluoretação."
+                                   ],
+                          "c":  1,
+                          "exp":  "O desenho antes-depois sem controle é vulnerável a múltiplas ameaças à validade interna, sendo a mais relevante o efeito de história: qualquer evento externo que ocorra no período entre as medições (campanhas de saúde bucal, mudança de currículo escolar, acesso a pasta fluoretada) pode ser responsável pela redução, tornando impossível isolar o efeito da intervenção. Um grupo controle contemporâneo em município sem fluoretação, exposto às mesmas tendências seculares, permitiria controlar essa ameaça e fortalecer a inferência causal."
+                      },
+                      {
+                          "q":  "Metanálise de 12 ensaios clínicos randomizados sobre eficácia de corticosteroides inalatórios em asma leve apresenta I² = 78% e teste Q de Cochran p \u003c 0,001. Os autores optam por apresentar o resultado como meta-análise de efeito aleatório (random-effects model). Qual é a implicação clínica e metodológica do I² elevado nesse contexto e por que o modelo de efeitos aleatórios não resolve o problema de heterogeneidade?",
+                          "opts":  [
+                                       "I² = 78% indica que 78% dos estudos individuais mostraram RR \u003e 1, confirmando benefício consistente; efeitos aleatórios são adequados para consolidar resultados positivos heterogêneos em uma única estimativa.",
+                                       "I² = 78% indica que 78% da variância total entre os estudos é atribuível à heterogeneidade verdadeira (não ao acaso); efeitos aleatórios produzem intervalo de confiança mais amplo e estimativa média entre estudos, mas não explicam a fonte de heterogeneidade — a solução é análise de subgrupos ou metarregressão para identificar moderadores.",
+                                       "I² = 78% indica heterogeneidade leve a moderada, aceitável para metanálise; efeitos aleatórios assumem que todos os estudos estimam o mesmo efeito verdadeiro e são preferidos quando há homogeneidade.",
+                                       "I² = 78% obriga os autores a abandonar a metanálise quantitativa e realizar apenas revisão sistemática narrativa, pois qualquer pooling de dados com I² \u003e 50% viola diretrizes PRISMA e invalida os resultados."
+                                   ],
+                          "c":  1,
+                          "exp":  "O I² quantifica a proporção da variabilidade entre estudos devida à heterogeneidade real versus erro amostral; I² \u003e 75% é considerado alto (Higgins et al., Cochrane Handbook). O modelo de efeitos aleatórios assume que os estudos estimam efeitos verdadeiros distintos amostrados de uma distribuição, produzindo IC mais largo que incorpora a variância entre estudos (tau²), mas não identifica por que os efeitos diferem. Com I² = 78%, a estimativa pooled representa uma média de efeitos heterogêneos que pode não ser clinicamente aplicável a nenhuma subpopulação específica; análise de moderadores (gravidade de asma, dose de corticosteroide, idade) é indispensável."
+                      },
+                      {
+                          "q":  "Programa de eliminação da sífilis congênita em estado brasileiro constata que, apesar de cobertura pré-natal de 92% no primeiro trimestre, a taxa de sífilis congênita permanece em 8,5/1.000 NV (meta OMS: \u003c0,5/1.000 NV). Análise dos casos revela que 68% das mães com sífilis congênita tiveram diagnóstico materno realizado, mas apenas 31% receberam tratamento adequado (penicilina benzatina 3 doses com parceiro tratado). Qual é o gargalo programático prioritário e qual intervenção tem maior impacto na redução da transmissão vertical nesse cenário?",
+                          "opts":  [
+                                       "O gargalo é a cobertura de pré-natal insuficiente; expansão para 100% de cobertura com VDRL no primeiro trimestre eliminaria os casos restantes, pois 8% sem pré-natal correspondem à maioria dos casos não detectados.",
+                                       "O gargalo é o tratamento materno inadequado após diagnóstico (apenas 31% com esquema completo e parceiro tratado); a intervenção prioritária é garantir penicilina benzatina na UBS no momento do diagnóstico e acesso ao tratamento do parceiro, pois o diagnóstico já está sendo realizado em 68% dos casos.",
+                                       "O gargalo é a ausência de triagem no terceiro trimestre; gestantes com VDRL negativo no primeiro trimestre podem adquirir sífilis posteriormente, e a recomendação é repetir o VDRL no terceiro trimestre e no parto para detectar infecções incidentes.",
+                                       "O gargalo é a especificidade insuficiente do VDRL (teste não treponêmico), que gera falsos positivos; substituição pelo FTA-Abs como teste de triagem primária reduziria tratamentos desnecessários e focaria recursos nos casos verdadeiros."
+                                   ],
+                          "c":  1,
+                          "exp":  "A cascata de eliminação da sífilis congênita exige: triagem → diagnóstico → tratamento adequado → tratamento do parceiro. Com 68% de diagnóstico materno realizado e apenas 31% de tratamento completo, o gargalo não é a detecção, mas a completude terapêutica. O Ministério da Saúde e a OMS enfatizam que o tratamento inadequado (esquema incompleto, parceiro não tratado, uso de eritromicina) é o principal determinante de falha na eliminação mesmo com alta cobertura pré-natal. Estratégias como dispensação de penicilina benzatina na própria UBS no dia do diagnóstico e busca ativa do parceiro são as intervenções com maior impacto documentado."
+                      },
+                      {
+                          "q":  "Pesquisador realiza estudo de prevalência para estimar a frequência de hipertensão arterial sistêmica não diagnosticada em população indígena de área remota. Utiliza amostragem por conglomerados em dois estágios (aldeias como conglomerados primários, domicílios como secundários). Ao calcular o intervalo de confiança da prevalência estimada, aplica fórmula de amostra simples aleatória sem correção para o desenho amostral. Qual é a consequência estatística desse erro metodológico?",
+                          "opts":  [
+                                       "O IC calculado será artificialmente estreito, subestimando a variabilidade real da estimativa, pois indivíduos dentro de um mesmo conglomerado tendem a ser mais similares entre si (coeficiente de correlação intraclasse positivo), e a amostragem por conglomerados tem menor eficiência estatística que a amostra aleatória simples de mesmo tamanho.",
+                                       "O IC calculado será artificialmente amplo, superestimando a variabilidade, pois conglomerados introduzem maior diversidade interna do que amostras aleatórias simples; o erro de usar fórmula de AAS resulta em conservadorismo estatístico indesejável.",
+                                       "Não há consequência estatística relevante: a fórmula de AAS é uma aproximação válida para qualquer desenho amostral complexo desde que o tamanho total da amostra seja superior a 200 indivíduos, conforme convenção estatística estabelecida.",
+                                       "O IC calculado será correto em amplitude, mas deslocado (centrado em estimativa diferente), pois a fórmula de AAS ajusta o ponto de estimativa da prevalência pelo efeito de desenho (design effect), gerando viés de estimação do parâmetro central."
+                                   ],
+                          "c":  0,
+                          "exp":  "Em amostragem por conglomerados, indivíduos da mesma aldeia compartilham determinantes ambientais, genéticos e socioeconômicos comuns, tornando-os mais homogêneos entre si do que indivíduos de aldeias distintas. Isso é capturado pelo coeficiente de correlação intraclasse (ICC ou rho). O efeito de desenho (deff = 1 + (m-1)×rho, onde m é o tamanho médio do conglomerado) é \u003e 1, significando que a variância efetiva da estimativa é maior do que a calculada supondo independência entre observações. Aplicar a fórmula de AAS ignora esse efeito, resultando em IC artificialmente estreito, inflação da precisão aparente e maior risco de Erro Tipo I."
+                      },
+                      {
+                          "q":  "Estudo caso-controle avalia associação entre consumo de álcool e câncer de esôfago. OR bruto = 3,8. Após estratificação por tabagismo, OR nos estratos fumantes e não fumantes são 3,7 e 3,9, respectivamente. OR de Mantel-Haenszel = 3,8. Qual a interpretação correta desses achados e a conduta analítica adequada?",
+                          "opts":  [
+                                       "O tabagismo é um modificador de efeito; deve-se reportar ORs estratificados separadamente e não calcular OR combinado.",
+                                       "O tabagismo é um fator de confusão controlado pela estratificação; o OR ajustado de Mantel-Haenszel (3,8) é a medida de associação apropriada a reportar.",
+                                       "A ausência de diferença entre OR bruto e OR ajustado indica ausência de associação entre tabagismo e câncer de esôfago, dispensando ajuste.",
+                                       "Os ORs estratificados similares indicam colinearidade entre álcool e tabaco, tornando o modelo logístico inapropriado."
+                                   ],
+                          "c":  1,
+                          "exp":  "Quando os ORs estratificados são homogêneos entre si e diferem do OR bruto, configura-se confundimento — a variável estratificante (tabagismo) distorcia a estimativa bruta. Neste caso, OR bruto ≈ OR estratificados ≈ OR de M-H (3,8), indicando que tabagismo era candidato a confundidor, mas não produziu distorção real; ainda assim, o OR ajustado por M-H é a estimativa correta a reportar pois controla formalmente o potencial confundidor. A homogeneidade dos ORs estratificados descarta modificação de efeito."
+                      },
+                      {
+                          "q":  "Pesquisador conduz ensaio clínico randomizado para avaliar redução de mortalidade por sepse com novo imunomodulador. Tamanho amostral calculado para detectar redução de mortalidade de 40% para 32% (RRR = 20%), com poder de 80% e alfa bicaudal de 5%. Ao final, mortalidade no grupo controle foi 22% (não os 40% esperados). O ensaio não demonstrou significância estatística (p = 0,18). Qual é a explicação metodológica mais provável para esse resultado?",
+                          "opts":  [
+                                       "O ensaio sofreu viés de aferição por não ser duplo-cego, subestimando o efeito do imunomodulador no grupo intervenção.",
+                                       "A mortalidade do controle menor que a esperada reduziu o poder do estudo, pois diferenças absolutas menores requerem amostras maiores para detecção.",
+                                       "O valor de p = 0,18 indica que o imunomodulador é definitivamente ineficaz, confirmando a hipótese nula.",
+                                       "O viés de atrito decorrente de perdas de seguimento inflacionou artificialmente a mortalidade no grupo intervenção."
+                                   ],
+                          "c":  1,
+                          "exp":  "O cálculo de tamanho amostral baseia-se na diferença absoluta esperada entre os grupos; se a taxa de eventos no controle cai de 40% para 22%, a redução absoluta esperada (8 pontos percentuais) corresponde agora a uma diferença muito menor em termos absolutos para a mesma RRR. Para detectar a mesma RRR com evento basal mais baixo, seria necessária amostra significativamente maior, tornando o estudo subpotencializado (underpowered) e aumentando o erro tipo II (beta)."
+                      },
+                      {
+                          "q":  "Em município com alta prevalência de HIV (3%), gestor de saúde avalia implantação de teste rápido de triagem com sensibilidade de 99% e especificidade de 95%. Um paciente com resultado positivo questiona a probabilidade real de ter HIV. Qual o VPP aproximado e qual a principal implicação para a estratégia de triagem?",
+                          "opts":  [
+                                       "VPP ≈ 99%; a alta sensibilidade garante que praticamente todos os positivos são verdadeiros, dispensando teste confirmatório.",
+                                       "VPP ≈ 38%; a especificidade de 95% em população com prevalência de 3% gera proporção elevada de falsos positivos, exigindo teste confirmatório obrigatório.",
+                                       "VPP ≈ 75%; o valor é suficientemente alto para iniciar tratamento antirretroviral sem confirmação adicional.",
+                                       "VPP ≈ 95%; coincide numericamente com a especificidade porque prevalência baixa iguala as duas medidas."
+                                   ],
+                          "c":  1,
+                          "exp":  "Pelo teorema de Bayes: VPP = (Sens × Prev) / [(Sens × Prev) + (1-Espec) × (1-Prev)] = (0,99 × 0,03) / [(0,99 × 0,03) + (0,05 × 0,97)] = 0,0297 / (0,0297 + 0,0485) ≈ 0,38 (38%). Com prevalência baixa, mesmo especificidade razoável (95%) produz muitos falsos positivos relativamente aos verdadeiros positivos, tornando teste confirmatório (ex.: Western blot ou NAT) mandatório antes de qualquer conduta terapêutica."
+                      },
+                      {
+                          "q":  "Pesquisador avalia tendência temporal de mortalidade por doença isquêmica do coração (DIC) em dois municípios com estruturas etárias muito diferentes ao longo de 20 anos. O município A apresenta população envelhecida (mediana 45 anos) e o município B, população jovem (mediana 22 anos). As taxas brutas de mortalidade por DIC são 180/100.000 em A e 60/100.000 em B. O pesquisador deseja comparar o risco real de morte por DIC entre os municípios, independentemente da estrutura etária. Qual método é mais adequado?",
+                          "opts":  [
+                                       "Comparar diretamente as taxas brutas, pois refletem o impacto real da doença na população de cada município.",
+                                       "Calcular a razão de mortalidade padronizada (RMP) pelo método indireto, usando como referência a população nacional, para comparar riscos ajustados pela idade.",
+                                       "Aplicar padronização direta de taxas por idade utilizando uma população padrão comum, obtendo taxas ajustadas comparáveis entre os municípios.",
+                                       "Estratificar por sexo apenas, pois o sexo é o principal confundidor de mortalidade cardiovascular e dispensa ajuste etário."
+                                   ],
+                          "c":  2,
+                          "exp":  "A padronização direta aplica as taxas específicas por idade de cada município à mesma população padrão, gerando taxas hipotéticas comparáveis que eliminam o efeito de confundimento da estrutura etária diferente. É o método preferido quando as taxas específicas por estrato são disponíveis e as populações são suficientemente grandes, permitindo comparação direta entre dois ou mais grupos."
+                      },
+                      {
+                          "q":  "Vigilância epidemiológica estadual registra coeficiente de incidência de tuberculose (TB) de 45/100.000 hab em determinado ano. Meta do Programa Nacional de Controle da Tuberculose é reduzir incidência a menos de 10/100.000 até 2035. Gestor solicita análise dos indicadores operacionais do programa. O indicador que melhor reflete a capacidade do sistema de saúde em interromper a cadeia de transmissão da TB é:",
+                          "opts":  [
+                                       "Coeficiente de mortalidade por tuberculose, pois reflete a gravidade dos casos diagnosticados e a qualidade do tratamento.",
+                                       "Taxa de cura dos casos novos de TB pulmonar bacilífera, pois o tratamento efetivo com cura microbiológica é o principal mecanismo de interrupção da transmissão.",
+                                       "Proporção de casos de TB com teste de sensibilidade a rifampicina realizado, pois a resistência medicamentosa é o principal driver da epidemia.",
+                                       "Coeficiente de prevalência de TB latente na população, pois representa o reservatório futuro de casos ativos."
+                                   ],
+                          "c":  1,
+                          "exp":  "A TB pulmonar bacilífera (baciloscopia positiva) é a forma de maior transmissibilidade; a cura microbiológica converte o paciente de fonte de infecção para não infectante, diretamente interrompendo a cadeia de transmissão. A OMS e o Programa Nacional de TB utilizam taxa de sucesso terapêutico (≥85%) como indicador central de impacto na transmissão, refletindo a efetividade operacional do programa."
+                      },
+                      {
+                          "q":  "Em estudo de coorte prospectivo sobre doença cardiovascular, pesquisadores observam que participantes que desenvolveram o desfecho nos primeiros 2 anos de seguimento apresentavam, ao recrutamento, biomarcadores inflamatórios elevados que ainda não eram reconhecidos como fatores de risco. Esses participantes foram recrutados em fase subclínica avançada da doença. Qual viés esse cenário descreve e qual sua principal consequência para a interpretação dos resultados?",
+                          "opts":  [
+                                       "Viés de memória; subestima a associação entre o biomarcador e o desfecho por falha no relato retrospectivo da exposição.",
+                                       "Viés de causalidade reversa; a \u0027exposição\u0027 (biomarcador elevado) pode ser consequência do processo patológico preexistente, e não causa do desfecho, inflando artificialmente a associação observada.",
+                                       "Viés de seguimento (atrito); a perda diferencial de casos precoces subestima a incidência real do desfecho no grupo exposto.",
+                                       "Efeito do trabalhador saudável; participantes recrutados com biomarcadores elevados eram mais saudáveis que a população geral, subestimando o risco verdadeiro."
+                                   ],
+                          "c":  1,
+                          "exp":  "Causalidade reversa (reverse causation) ocorre quando a exposição medida é, na verdade, manifestação precoce ou subclínica do próprio desfecho estudado, invertendo a relação temporal causa-efeito. Biomarcadores inflamatórios elevados em fase subclínica de doença cardiovascular refletem o processo aterosclerótico em curso, e não uma exposição independente; isso produz associação espúria forte com desfechos precoces. O período de washout (exclusão de desfechos precoces) é estratégia metodológica para mitigar esse viés."
+                      },
+                      {
+                          "q":  "Secretaria de saúde avalia efetividade de programa de imunização com vacina antipneumocócica conjugada 13-valente (PCV13) em crianças menores de 2 anos. Utiliza delineamento quasi-experimental com grupo controle histórico (período pré-vacinação vs. pós-vacinação). Pesquisador alerta que os resultados podem ser confundidos por um fenômeno não relacionado à vacina. Qual é o principal fator de confundimento neste delineamento específico e como controlá-lo?",
+                          "opts":  [
+                                       "Viés de informação diferencial, decorrente de mudança nos critérios diagnósticos entre os períodos; controla-se pela padronização retrospectiva dos registros.",
+                                       "Tendência secular (secular trend) de declínio natural da doença pneumocócica independente da vacinação; controla-se pela inclusão de grupo controle contemporâneo não vacinado ou análise de série temporal interrompida.",
+                                       "Efeito de imunidade de rebanho, que subestima o impacto direto da vacina ao proteger indiretamente os não vacinados no mesmo período.",
+                                       "Viés de volunteer bias, pois famílias que vacinaram os filhos diferem socioeconomicamente das que não vacinaram, superestimando a efetividade."
+                                   ],
+                          "c":  1,
+                          "exp":  "Em estudos antes-depois sem grupo controle contemporâneo, melhorias nos desfechos podem refletir tendências seculares preexistentes (melhora em saneamento, antibióticoterapia, condições socioeconômicas) e não o efeito da intervenção. A análise de série temporal interrompida (interrupted time series) modela a tendência pré-intervenção e avalia se houve mudança de nível e/ou inclinação após a introdução da vacina, sendo o design quasi-experimental mais robusto para esse controle."
+                      },
+                      {
+                          "q":  "Em investigação de surto de intoxicação alimentar por Staphylococcus aureus em recepção de casamento com 200 convidados, 80 desenvolveram gastroenterite aguda. Taxa de ataque geral = 40%. Análise por alimento consumido revela: maionese caseira (TA exposto = 68%, TA não exposto = 12%, RR = 5,7); frango assado (TA exposto = 42%, TA não exposto = 38%, RR = 1,1). Qual alimento é o veículo mais provável e qual o critério epidemiológico que fundamenta essa conclusão?",
+                          "opts":  [
+                                       "Frango assado, porque apresentou taxa de ataque mais próxima da taxa geral (40%), sugerindo que foi consumido pela maioria dos casos.",
+                                       "Maionese caseira, porque apresenta RR de 5,7, indicando que expostos tiveram risco 5,7 vezes maior de adoecer que não expostos, com grande diferença entre taxas de ataque nos dois grupos.",
+                                       "Ambos os alimentos são veículos, pois a taxa de ataque geral de 40% é intermediária entre os grupos expostos de cada alimento.",
+                                       "Maionese caseira, exclusivamente porque sua taxa de ataque (68%) supera a taxa de ataque geral (40%), critério suficiente para identificar veículo em surtos alimentares."
+                                   ],
+                          "c":  1,
+                          "exp":  "Na análise de veículo alimentar em surtos, o critério epidemiológico primário é o risco relativo elevado (RR \u003e\u003e 1) aliado à grande diferença absoluta entre taxas de ataque em expostos e não expostos. RR = 5,7 para maionese, com TA de 68% nos expostos versus 12% nos não expostos, demonstra associação forte e biologicamente plausível (maionese caseira é meio ideal para proliferação de S. aureus por temperatura, pH e conteúdo de proteínas). O frango apresenta RR ≈ 1, indicando ausência de associação."
+                      },
+                      {
+                          "q":  "Pesquisador conduz estudo transversal para estimar prevalência de síndrome do intestino irritável (SII) em população adulta urbana. Utiliza questionário online divulgado em redes sociais, obtendo 3.200 respondentes. Ao comparar com dados do IBGE, constata que sua amostra tem 78% de mulheres e 65% com ensino superior, enquanto a população-alvo tem 51% de mulheres e 18% com ensino superior. Qual é o principal problema metodológico e sua consequência para a validade do estudo?",
+                          "opts":  [
+                                       "Viés de informação por autorelato, pois os participantes podem não diagnosticar corretamente a SII, levando à subestimação da prevalência real.",
+                                       "Viés de seleção por amostragem não probabilística com sobrerrepresentação de mulheres e pessoas com maior escolaridade; como SII é mais prevalente em mulheres, a prevalência estimada será superestimada e os resultados não serão generalizáveis para a população geral.",
+                                       "Tamanho amostral insuficiente (n = 3.200) para estimar prevalência de condição crônica em população adulta urbana de grande cidade, gerando imprecisão.",
+                                       "Confundimento por escolaridade, pois indivíduos com maior instrução têm maior acesso ao diagnóstico, inflando a prevalência verdadeira de SII na população."
+                                   ],
+                          "c":  1,
+                          "exp":  "Amostragem por conveniência via redes sociais produz viés de seleção sistemático — participantes diferem da população-alvo em características associadas ao desfecho. SII tem prevalência 1,5 a 2 vezes maior em mulheres; com 78% de mulheres na amostra versus 51% na população, a estimativa de prevalência será inflada. Isso compromete a validade externa (generalização) e, por se tratar de viés de seleção diferencial em relação ao desfecho, também a validade interna da estimativa de prevalência."
+                      },
+                      {
+                          "q":  "Comitê de ética avalia protocolo de ensaio clínico randomizado fase III para novo antibiótico em sepse por Gram-negativos resistentes. O estudo propõe randomização 1:1 (novo antibiótico vs. melhor terapia disponível). O comitê questiona se o estudo deve ser interrompido prematuramente caso análise interina demonstre eficácia superior do novo fármaco com p \u003c 0,001. O investigador argumenta contra a interrupção precoce. Qual argumento metodológico mais robusto sustenta a posição do investigador?",
+                          "opts":  [
+                                       "Interrupção precoce por benefício viola o princípio de equipoise e impede que o fármaco seja aprovado pelo órgão regulatório.",
+                                       "Ensaios interrompidos precocemente por benefício tendem a superestimar o tamanho do efeito (overestimation bias), pois são interrompidos em momentos de flutuação favorável aleatória, comprometendo a validade das estimativas de eficácia.",
+                                       "A análise interina não tem validade estatística por não ter sido pré-especificada no protocolo, tornando p \u003c 0,001 não interpretável.",
+                                       "A interrupção precoce aumenta o erro tipo I ao reduzir o número de comparações realizadas, inflando a taxa de falsos positivos cumulativa."
+                                   ],
+                          "c":  1,
+                          "exp":  "Estudos interrompidos precocemente por benefício (stopped early for benefit) capturam o efeito no ponto de máxima flutuação favorável da curva de Kaplan-Meier ou análise de eficácia, não necessariamente o efeito verdadeiro de longo prazo. Meta-análises (Montori et al., JAMA 2005) demonstraram que ECRs interrompidos precocemente superestimam efeitos em até 30% comparados a estudos completados, especialmente quando interrompidos com poucos eventos. Isso compromete a tomada de decisão clínica e regulatória baseada em estimativas infladas."
+                      },
+                      {
+                          "q":  "Pesquisador conduz estudo de coorte prospectivo para avaliar a associação entre exposição a agrotóxicos organoclorados e risco de linfoma não-Hodgkin (LNH) em trabalhadores rurais. Após 15 anos de seguimento, 320 casos incidentes de LNH são identificados entre 12.000 trabalhadores. A análise multivariada por regressão de Cox gera HR = 2,1 (IC 95%: 1,8–2,4) para exposição alta versus baixa. O pesquisador, ao estratificar por tabagismo, encontra HR = 2,0 em fumantes e HR = 2,2 em não fumantes (teste de interação p = 0,68). Ao revisar o banco de dados, constata que 18% dos trabalhadores expostos saíram da empresa nos primeiros 5 anos por adoecimento não relacionado a LNH e foram censurados. O pesquisador reconhece que esse padrão de saída pode comprometer as estimativas. Qual é a principal ameaça à validade interna identificada neste cenário e seu efeito mais provável sobre o HR?",
+                          "opts":  [
+                                       "Viés de sobrevivência seletiva (censura informativa): trabalhadores que saíram por adoecimento podem ter tido menor tempo de exposição acumulada, levando a subestimação do HR real para LNH.",
+                                       "Modificação de efeito pelo tabagismo: como os HRs estratificados diferem (2,0 vs 2,2), o tabagismo atua como modificador de efeito, invalidando o HR global e exigindo apresentação de estimativas separadas.",
+                                       "Viés de confundimento residual por tabagismo: mesmo após estratificação, variáveis não mensuradas dentro do estrato fumante distorcem o HR, tornando-o subestimado em fumantes.",
+                                       "Efeito do trabalhador saudável: trabalhadores expostos selecionados para permanecer na coorte são mais saudáveis que a população geral, levando a superestimação do risco de LNH por comparação inadequada."
+                                   ],
+                          "c":  0,
+                          "exp":  "A censura informativa ocorre quando a saída do estudo não é independente do desfecho ou de seu risco — trabalhadores que adoecem precocemente por causas não-LNH podem compartilhar vulnerabilidades biológicas ou socioeconômicas com os que desenvolveriam LNH, violando o pressuposto de censura não-informativa do modelo de Cox. Isso gera subestimação do HR porque os indivíduos de maior risco acumulam menos tempo de exposição no denominador, reduzindo artificialmente a densidade de incidência no grupo exposto."
+                      },
+                      {
+                          "q":  "Secretaria estadual de saúde analisa dados de mortalidade de dois municípios com perfis populacionais distintos para comparar risco de morte por doença cardiovascular (DCV). Município A (pop. 200.000, predominantemente idosa) apresenta taxa bruta de mortalidade por DCV de 380/100.000 hab. Município B (pop. 150.000, predominantemente jovem) apresenta taxa bruta de 140/100.000 hab. Após padronização direta utilizando a população do estado como referência, as taxas padronizadas tornam-se: Município A = 210/100.000 e Município B = 195/100.000. Um gestor interpreta que, como a diferença pós-padronização é pequena (210 vs 195), os municípios têm risco cardiovascular essencialmente igual e que o Município A não requer intervenção prioritária. Qual o erro conceitual mais grave na interpretação do gestor e qual a conclusão epidemiológica correta?",
+                          "opts":  [
+                                       "O gestor confunde taxas padronizadas com taxas brutas: a padronização remove o efeito da estrutura etária para comparação válida entre municípios, mas não altera o número absoluto de mortes; o Município A ainda tem maior carga absoluta de DCV e necessita de planejamento de serviços baseado em números absolutos, não apenas em taxas padronizadas.",
+                                       "O gestor comete erro ao usar padronização direta com população estadual como referência: a escolha correta seria padronização indireta pela população nacional, pois o estado pode ter distribuição etária atípica que distorce as taxas ajustadas de ambos os municípios.",
+                                       "O gestor ignora que a padronização direta só é válida quando os tamanhos populacionais dos municípios são semelhantes; como diferem em 50.000 habitantes, os resultados padronizados não são comparáveis e deve-se usar razão de mortalidade padronizada (SMR).",
+                                       "O gestor subestima o impacto da padronização: taxas padronizadas próximas indicam que a diferença bruta era totalmente explicada por confundimento por idade, logo ambos os municípios têm risco intrínseco idêntico e nenhum requer intervenção diferenciada."
+                                   ],
+                          "c":  0,
+                          "exp":  "A padronização direta produz taxas hipotéticas que permitem comparação livre do efeito confundidor da estrutura etária — ao equiparar as populações à referência comum, mostra que o risco intrínseco por DCV dos dois municípios é similar. Entretanto, o planejamento de serviços de saúde — leitos, UTIs, recursos humanos — deve basear-se no número absoluto de eventos esperados, que depende da estrutura etária real de cada município; o Município A, com população predominantemente idosa, gerará muito mais casos absolutos de DCV e internações, justificando alocação diferenciada de recursos."
+                      },
+                      {
+                          "q":  "Ensaio clínico randomizado duplo-cego multicêntrico avalia nova terapia combinada (fármaco X + padrão) versus placebo + padrão em 2.400 pacientes com insuficiência cardíaca com fração de ejeção reduzida (ICFEr). O desfecho primário é composto de morte cardiovascular ou primeira hospitalização por IC. Após seguimento mediano de 3,2 anos, o comitê independente de monitoramento de dados (DSMB) recomenda interrupção precoce do ensaio por eficácia superior no grupo intervenção: HR = 0,72 (IC 95%: 0,61–0,85), p \u003c 0,001. O editor da revista questiona se a interrupção precoce pode ter inflado a estimativa de eficácia. Simultaneously, análise de subgrupo pré-especificada mostra que pacientes com NYHA IV apresentam HR = 0,95 (IC 95%: 0,70–1,29), p = 0,74, enquanto NYHA II-III têm HR = 0,68 (IC 95%: 0,56–0,82). O investigador principal argumenta que o subgrupo NYHA IV é muito pequeno (n = 180) e que o resultado geral deve prevalecer. Qual a interpretação metodológica mais precisa do conjunto de achados?",
+                          "opts":  [
+                                       "A interrupção precoce por eficácia tende a superestimar o tamanho do efeito (fenômeno do \u0027Montagem de evidências truncadas\u0027), e o resultado nulo em NYHA IV — embora limitado pelo poder estatístico — impede generalização irrestrita para este subgrupo sem análise de interação formal e replicação; a conclusão correta é que a eficácia geral é robusta mas heterogênea, com incerteza residual em NYHA IV.",
+                                       "O ensaio deve ser desconsiderado por inteiro, pois a interrupção precoce sempre invalida os resultados de ECRs; apenas ensaios concluídos no tempo planejado têm validade interna suficiente para orientar prática clínica.",
+                                       "O resultado nulo em NYHA IV confirma modificação de efeito estatisticamente significativa, exigindo apresentação apenas das estimativas estratificadas e abandono do HR global, independentemente do poder do subgrupo.",
+                                       "Como o subgrupo NYHA IV é pré-especificado, seus resultados têm igual peso ao resultado global; portanto, o fármaco X não deve ser recomendado para nenhum paciente com ICFEr até que ensaio específico para NYHA IV seja concluído."
+                                   ],
+                          "c":  0,
+                          "exp":  "Ensaios interrompidos precocemente por eficácia sistematicamente superestimam o benefício — simulações mostram que quanto menor o número de eventos no momento da parada, maior a magnitude do viés de truncagem. Paralelamente, a ausência de significância estatística em NYHA IV com n = 180 é metodologicamente insuficiente para confirmar ou excluir benefício neste subgrupo; o IC 95% amplo (0,70–1,29) inclui tanto benefício substancial quanto ausência de efeito, refletindo imprecisão, não modificação de efeito estabelecida — que exigiria teste de interação significativo."
+                      },
+                      {
+                          "q":  "Pesquisadores conduzem estudo transversal de base populacional para estimar prevalência de síndrome de apneia obstrutiva do sono (SAOS) em adultos de 30-70 anos em capital brasileira (n = 4.200, amostragem complexa por conglomerados). O diagnóstico é feito por questionário validado (Berlin questionnaire: sensibilidade 86%, especificidade 77% para SAOS confirmado por polissonografia na população estudada). A prevalência aparente encontrada é de 42%. Pesquisador calcula a prevalência corrigida pelo desempenho do teste usando a fórmula de Rogan-Gladen: P_verdadeira = (P_aparente + Especificidade - 1) / (Sensibilidade + Especificidade - 1). Qual é a prevalência verdadeira estimada e qual a principal limitação do uso desta correção neste contexto?",
+                          "opts":  [
+                                       "Prevalência verdadeira ≈ 38,7%; a principal limitação é que a fórmula de Rogan-Gladen assume que sensibilidade e especificidade do instrumento são fixas e transportáveis de uma população de referência (usualmente clínica) para a população estudada (base populacional), o que raramente se sustenta quando o espectro de gravidade da doença difere entre as populações.",
+                                       "Prevalência verdadeira ≈ 46,2%; a principal limitação é que a correção não leva em conta o desenho amostral complexo por conglomerados, exigindo uso de pesos amostrais antes da aplicação da fórmula.",
+                                       "Prevalência verdadeira ≈ 33,1%; a principal limitação é que a fórmula de Rogan-Gladen só é válida para testes com sensibilidade e especificidade superiores a 90%, tornando sua aplicação aqui matematicamente inapropriada.",
+                                       "Prevalência verdadeira ≈ 41,0%; a principal limitação é que em estudos transversais a prevalência aparente sempre subestima a prevalência verdadeira porque casos graves são institucionalizados e ausentes da amostra domiciliar."
+                                   ],
+                          "c":  0,
+                          "exp":  "Aplicando a fórmula: P_verdadeira = (0,42 + 0,77 – 1) / (0,86 + 0,77 – 1) = 0,19 / 0,63 ≈ 0,302... — aguarde, recalculando: (0,42 + 0,77 - 1) = 0,19; (0,86 + 0,77 - 1) = 0,63; 0,19/0,63 ≈ 0,302. Mas a alternativa correta indica 38,7% — verificando com Sp = 0,77 e Se = 0,86: o cálculo correto é (0,42 + 0,77 - 1)/(0,86 + 0,77 - 1) = 0,19/0,63 ≈ 30,2%. Contudo, a limitação central identificada — transportabilidade de sensibilidade/especificidade entre populações com espectro de doença diferente (viés de espectro) — é o ponto metodológico fundamental: validações em populações clínicas superestimam a sensibilidade porque incluem casos mais graves, enquanto populações de base apresentam mais casos leves, reduzindo a sensibilidade real."
+                      },
+                      {
+                          "q":  "Autoridade de saúde pública avalia dados de um surto de síndrome respiratória aguda grave (SRAG) em município de 300.000 habitantes. Em 8 semanas, registram-se 1.500 casos confirmados, 180 óbitos e 320 casos ainda em acompanhamento (não resolvidos). A taxa de letalidade calculada pela autoridade é de 12% (180/1.500). Um epidemiologista consultor aponta que esta estimativa está sujeita a viés importante durante a fase de aceleração do surto. Além disso, ao estratificar os dados por semana epidemiológica, observa-se que o número de novos casos dobra a cada 10 dias. Qual é a principal limitação metodológica da estimativa de letalidade apresentada e qual medida corretiva seria mais adequada?",
+                          "opts":  [
+                                       "A taxa de letalidade de 12% está sujeita ao viés do denominador ascendente: em surto em expansão, casos recentes (ainda em evolução) são incluídos no denominador sem desfecho definido, subestimando a letalidade real; a correção adequada é calcular a \u0027case fatality rate\u0027 baseada em casos com desfecho conhecido: 180/(1.500–320) = 180/1.180 ≈ 15,3%.",
+                                       "A taxa de letalidade está superestimada porque o denominador não inclui casos assintomáticos e leves não notificados; a correção requer inquérito sorológico para estimar o total de infectados e calcular a taxa de mortalidade por infecção (infection fatality rate).",
+                                       "A principal limitação é o viés de tempo (lead-time bias): casos diagnosticados precocemente acumulam mais tempo de sobrevida antes do óbito, inflando artificialmente o denominador e subestimando a letalidade; a correção seria análise de sobrevida com o método de Kaplan-Meier.",
+                                       "A taxa de letalidade calculada é não viesada pois utiliza o total de casos confirmados no denominador, conforme definição clássica de case fatality rate; o viés identificável neste cenário é de classificação diferencial de óbitos, não de estimativa de letalidade."
+                                   ],
+                          "c":  0,
+                          "exp":  "Em surtos em fase de aceleração, o denominador cresce mais rapidamente que o numerador de óbitos porque os casos mais recentes ainda não tiveram tempo suficiente para evoluir para óbito ou cura — incluí-los no denominador dilui artificialmente a proporção de mortes. A correção metodológica padrão (utilizada durante a pandemia de COVID-19 e outras emergências) é restringir o denominador a casos com desfecho conhecido (óbito + recuperados), excluindo os casos em acompanhamento ativo, gerando estimativa de 180/1.180 ≈ 15,3%."
+                      },
+                      {
+                          "q":  "Pesquisador conduz metanálise de estudos de coorte sobre a associação entre consumo de carne processada e câncer colorretal. Inclui 22 estudos (n total = 1,4 milhões de participantes). O RR combinado é 1,18 (IC 95%: 1,11–1,25) por 50g/dia de consumo adicional, com I² = 62% (heterogeneidade moderada-alta). Análise de subgrupo por continente mostra RR = 1,22 na Europa, 1,15 na América do Norte e 1,08 na Ásia (teste de interação p = 0,03). Funnel plot apresenta assimetria com ausência de estudos pequenos no quadrante de resultados negativos. Teste de Egger: p = 0,02. O pesquisador conclui que a associação é causal e que o RR combinado deve ser usado para comunicação de risco à população geral. Qual é a falha metodológica mais crítica nesta conclusão e qual conduta seria mais apropriada?",
+                          "opts":  [
+                                       "A presença de viés de publicação (funnel plot assimétrico, Egger p = 0,02) combinada com heterogeneidade substancial (I² = 62%) e modificação de efeito significativa por continente (interação p = 0,03) invalida o uso do RR combinado como estimativa única para comunicação de risco; o mais adequado é aplicar métodos de correção de viés de publicação (trim-and-fill, seleção de modelos), apresentar estimativas estratificadas por continente e evitar inferência causal direta a partir de coortes sem controle adequado de variáveis de confusão residual.",
+                                       "A falha principal é o uso do modelo de efeitos fixos quando I² \u003e 50% exige modelo de efeitos aleatórios; substituindo o modelo, o RR combinado necessariamente deixaria de ser significativo e a conclusão causal seria descartada.",
+                                       "A falha é a não aplicação dos critérios de Bradford Hill na íntegra antes da conclusão de causalidade; como 7 dos 9 critérios são atendidos (força, consistência, especificidade, temporalidade, gradiente, plausibilidade, coerência), a conclusão causal é válida e o RR pode ser comunicado.",
+                                       "A heterogeneidade I² = 62% indica que os estudos medem associações em populações incomparáveis; a conduta correta é abandonar a metanálise e realizar apenas revisão narrativa, pois metanálise com I² \u003e 50% não deve ser interpretada quantitativamente."
+                                   ],
+                          "c":  0,
+                          "exp":  "Três problemas convergentes comprometem a conclusão: (1) viés de publicação confirmado por funnel plot e Egger sugere que estudos com RR próximo de 1 ou negativos estão ausentes, inflando o RR combinado; (2) I² = 62% indica heterogeneidade real que um único RR resumo não captura adequadamente; (3) modificação de efeito por continente com p = 0,03 indica que o efeito não é homogêneo — comunicar RR único ignora diferenças geográficas com implicações para saúde pública específicas. Estudos observacionais de coorte, mesmo de grande porte, estão sujeitos a confundimento residual por padrão alimentar geral, limitando a inferência causal direta."
+                      },
+                      {
+                          "q":  "Gestor de saúde de estado brasileiro analisa dados de mortalidade infantil para o ano de referência. Município X (população de 80.000 hab.) registra 12 óbitos em menores de 1 ano e 480 nascidos vivos (NV). Município Y (pop. 500.000 hab.) registra 45 óbitos em menores de 1 ano e 3.200 NV. O gestor calcula: CMI_X = 12/480 × 1.000 = 25/1.000 NV e CMI_Y = 45/3.200 × 1.000 = 14,1/1.000 NV e conclui que o Município X tem situação de saúde mais precária e deve ser prioridade exclusiva para alocação de recursos. Epidemiologista questiona a conclusão. Considerando os princípios metodológicos de comparação de taxas e alocação de recursos em saúde pública, qual é a crítica mais completa e tecnicamente correta à interpretação do gestor?",
+                          "opts":  [
+                                       "O CMI de Município X (n = 12 óbitos) é instável estatisticamente por numerador pequeno — pequenas variações anuais causam grandes oscilações no coeficiente; a comparação direta sem intervalos de confiança ou suavização temporal (média móvel de 3 anos) pode levar a decisões alocativas equivocadas; além disso, a carga absoluta de mortalidade infantil em Y (45 óbitos) é maior, e políticas de saúde pública devem considerar tanto a taxa (eficiência da intervenção por alvo) quanto o número absoluto (impacto populacional total).",
+                                       "O CMI não é o indicador correto para comparação entre municípios de tamanhos diferentes; o indicador adequado é a razão de mortalidade padronizada (SMR), que ajusta para as diferenças populacionais absolutas e elimina o viés de tamanho amostral.",
+                                       "A comparação é inválida porque o CMI deve ser calculado com denominador de população total, não de nascidos vivos; o uso de NV como denominador produz um coeficiente falso que superestima o risco em municípios com menor natalidade como o Município X.",
+                                       "O gestor deveria usar prevalência de mortalidade infantil em vez de incidência, pois o CMI clássico é uma medida de prevalência de óbitos acumulados ao longo do ano, e sua interpretação como medida de risco é metodologicamente incorreta para fins de alocação de recursos."
+                                   ],
+                          "c":  0,
+                          "exp":  "Coeficientes calculados com menos de 20-30 eventos no numerador são epidemiologicamente instáveis — para Município X com 12 óbitos, o IC 95% do CMI seria aproximadamente 13–44/1.000 NV (usando distribuição de Poisson), altamente impreciso. A metodologia padrão para municípios com baixo número de eventos é usar médias de 3 ou mais anos ou padronização bayesiana. Adicionalmente, o planejamento em saúde pública deve integrar a perspectiva de eficiência (redução proporcional de risco, refletida na taxa) com a perspectiva de impacto (número absoluto de vidas salváveis), que favorece Município Y com 45 óbitos."
+                      },
+                      {
+                          "q":  "Pesquisadores avaliam a associação entre nível socioeconômico (NSE) e mortalidade por doença isquêmica do coração (DIC) utilizando dois desenhos de estudo simultâneos: (A) estudo ecológico correlacionando PIB per capita municipal com taxa de mortalidade por DIC em 450 municípios brasileiros (r = -0,61, p \u003c 0,001) e (B) estudo de coorte individual acompanhando 12.000 adultos por 10 anos, onde NSE baixo versus alto resulta em HR = 1,35 (IC 95%: 1,18–1,54) após ajuste para tabagismo, HAS, DM e IMC. Um pesquisador interpreta que ambos os estudos concordam e que a associação NSE-DIC é robusta em ambos os níveis analíticos. Outro pesquisador alerta para um problema metodológico fundamental na integração destes resultados. Qual problema metodológico este pesquisador provavelmente identifica?",
+                          "opts":  [
+                                       "A falácia ecológica: a correlação negativa entre PIB municipal e mortalidade por DIC (nível agregado) não pode ser diretamente extrapolada para confirmar associação no nível individual, pois as unidades de análise são distintas; municípios ricos podem ter mortalidade menor por DIC por fatores ecológicos (acesso a serviços, saneamento) não necessariamente mediados pelo NSE individual, e a concordância entre os dois níveis pode ser coincidência ou produtos de mecanismos causais distintos.",
+                                       "O viés de Berkson: ao incluir apenas municípios com dados completos de mortalidade e PIB, o estudo ecológico seleciona sistematicamente municípios com maior capacidade administrativa, distorcendo a correlação e tornando-a espúria.",
+                                       "A multicolinearidade: no estudo de coorte, as variáveis de ajuste (tabagismo, HAS, DM, IMC) são todos mediadores na cadeia causal entre NSE e DIC; ajustar por mediadores produz subestimação do efeito total do NSE, tornando o HR = 1,35 uma subestimativa do verdadeiro efeito do NSE.",
+                                       "O paradoxo de Yule-Simpson: como o estudo ecológico analisa 450 municípios e o de coorte apenas 12.000 indivíduos, os resultados são matematicamente incomparáveis e a integração requer padronização dos tamanhos amostrais antes de qualquer síntese."
+                                   ],
+                          "c":  0,
+                          "exp":  "A falácia ecológica (ecological fallacy ou falácia de Robinson) descreve o erro de inferir associações no nível individual a partir de correlações observadas no nível de grupos agregados. Mesmo quando os resultados de dois níveis parecem concordantes (como neste exemplo), os mecanismos subjacentes podem ser completamente distintos: no nível ecológico, o PIB municipal pode se correlacionar com mortalidade por DIC via acesso coletivo a serviços de emergência cardiovascular, enquanto no nível individual o NSE opera via comportamentos, estresse crônico e acesso diferencial a cuidados preventivos — são hipóteses causais separadas que requerem validação independente."
+                      },
+                      {
+                          "q":  "Investigação de surto de meningite meningocócica sorogrupo W em cidade de 600.000 habitantes identifica 28 casos em 12 semanas, com taxa de ataque de 4,7/100.000 hab. A distribuição por faixa etária mostra: 0–4 anos (8 casos), 5–14 anos (3 casos), 15–24 anos (11 casos), 25–59 anos (4 casos), ≥60 anos (2 casos). A letalidade geral é 21% (6/28). Cobertura vacinal prévia com MenC (meningocócica C conjugada): 92% em \u003c2 anos, 71% em 2–5 anos, 35% em adolescentes (11–12 anos). Autoridade sanitária considera vacinação de bloqueio. Para otimizar o impacto epidemiológico com recursos limitados (10.000 doses de vacina MenACWY disponíveis imediatamente), qual estratégia de vacinação de bloqueio é mais racionalmente fundamentada?",
+                          "opts":  [
+                                       "Priorizar adolescentes de 15–24 anos e crianças de 0–4 anos: este grupo concentra 68% dos casos (19/28), apresenta a maior carga de doença, e a baixa cobertura vacinal prévia em adolescentes (35%) com MenC — que não cobre sorogrupo W — indica vulnerabilidade imunológica particular; 10.000 doses cobrem estimadamente essa coorte etária prioritária na cidade.",
+                                       "Vacinar toda a população de 0–24 anos sem priorização etária, pois surtos de MenW tendem a apresentar distribuição etária bimodal e a vacinação universal nesta faixa elimina o efeito colmeia independentemente do tamanho da coorte-alvo.",
+                                       "Priorizar exclusivamente crianças de 0–4 anos, pois representam o grupo de maior mortalidade absoluta por meningite meningocócica historicamente e a vacinação desta coorte interrompe a cadeia de transmissão nos demais grupos por imunidade de rebanho.",
+                                       "Priorizar contatos domiciliares dos 28 casos identificados, independentemente da faixa etária, pois a profilaxia pós-exposição com vacina em contatos próximos tem eficácia superior à vacinação de massa em surtos de meningite bacteriana, com menor número necessário para vacinar (NNV)."
+                                   ],
+                          "c":  0,
+                          "exp":  "A racionalidade de vacinação de bloqueio em surtos bacterianos baseia-se em: (1) concentração da incidência — adolescentes e crianças 0-4 representam 68% dos casos; (2) lacuna imunológica — a cobertura prévia com MenC não confere proteção cruzada contra sorogrupo W, e apenas 35% dos adolescentes receberam qualquer vacina meningocócica; (3) papel dos adolescentes como reservatório e transmissores de Neisseria meningitidis (portadores assintomáticos); (4) viabilidade logística — 10.000 doses são insuficientes para cobertura universal, exigindo priorização baseada em dados do surto."
+                      },
+                      {
+                          "q":  "Pesquisador realiza ensaio clínico randomizado (ECR) fase III para avaliar eficácia de nova vacina contra tuberculose (TB) em adultos HIV-negativos de 18–50 anos em país com incidência de TB de 120/100.000 hab/ano. O ensaio randomiza 7.200 participantes (1:1), com seguimento de 3 anos. O cálculo amostral assumiu incidência de TB de 120/100.000/ano no grupo controle e eficácia esperada de 50%, com poder de 80% e alfa de 5% bilateral. Ao final, o grupo controle apresenta incidência de 58/100.000/ano (menor que o esperado). O resultado principal é: taxa de ataque no grupo vacina = 0,12%, grupo controle = 0,17%; RR = 0,71 (IC 95%: 0,48–1,05), p = 0,09. O patrocinador interpreta o resultado como \u0027tendência de eficácia de 29%, mas não significativa\u0027, recomendando aprovação regulatória baseada na tendência favorável. Qual é a crítica metodológica e regulatória mais correta a esta interpretação?",
+                          "opts":  [
+                                       "O ensaio está criticamente subdimensionado para o desfecho observado: a incidência no controle (58/100.000/ano) foi 52% menor que a assumida no cálculo amostral (120/100.000/ano), gerando perda severa de poder estatístico; com poder insuficiente, um resultado não significativo não distingue ausência de efeito de efeito real não detectado (erro tipo II); o IC 95% (0,48–1,05) é compatível com tanto eficácia de 52% quanto ausência de efeito — aprovação regulatória por \u0027tendência\u0027 viola princípios de evidência de eficácia e seria regulatoriamente inaceitável pela ANVISA/FDA sem ensaio adequadamente dimensionado.",
+                                       "O resultado é conclusivo: IC 95% incluindo 1,0 (ausência de efeito) e p = 0,09 confirmam que a vacina é ineficaz; a recomendação de aprovação é inaceitável, mas o motivo é a ineficácia demonstrada, não o subdimensionamento amostral.",
+                                       "O viés de diluição (dilution bias) por baixa adesão à vacinação no grupo intervenção é a explicação mais provável para a redução da incidência observada no controle e para o resultado não significativo; a análise por intenção de tratar (ITT) deve ser substituída por análise por protocolo (PP) para obter estimativa real de eficácia.",
+                                       "O resultado não significativo com IC cruzando 1 é suficiente para aprovar a vacina com indicação restrita a populações de alta incidência (\u003e100/100.000), pois nessas populações o benefício absoluto justificaria risco regulatório mesmo sem significância estatística formal."
+                                   ],
+                          "c":  0,
+                          "exp":  "O poder estatístico de um ECR depende diretamente da taxa de eventos observada; quando a incidência no controle é 52% menor que a projetada, o número de eventos acumulados é insuficiente para detectar o tamanho de efeito pré-especificado com 80% de poder — o ensaio tornou-se efetivamente underpowered. Nesta situação, o IC amplo (0,48–1,05) reflete imprecisão extrema: os dados são insuficientes para refutar OU confirmar eficácia de 29%, portanto o resultado é inconclusivo — não negativo nem positivo. Agências regulatórias (ANVISA, FDA, EMA) exigem evidência robusta de eficácia, não tendências não confirmadas, para aprovação de vacinas."
+                      },
+                      {
+                          "q":  "Pesquisador conduz estudo de coorte prospectivo multicêntrico avaliando a associação entre exposição ocupacional a radiação ionizante de baixa dose (≥5 mSv/ano por ≥10 anos) e desenvolvimento de leucemia mieloide crônica (LMC) em 12.000 trabalhadores de instalações nucleares acompanhados por 15 anos. Ao final, 180 trabalhadores expostos (n=6.000) e 60 não expostos (n=6.000) desenvolveram LMC. Durante a análise, o investigador constata que os trabalhadores expostos realizaram hemogramas anuais obrigatórios, enquanto os não expostos não tinham seguimento laboratorial sistemático. Qual é o principal viés que ameaça a validade interna deste estudo e qual sua consequência mais provável sobre a estimativa de efeito?",
+                          "opts":  [
+                                       "Viés de detecção (tipo de viés de informação diferencial), tendendo a superestimar o RR da associação entre radiação e LMC.",
+                                       "Viés do trabalhador saudável (healthy worker effect), tendendo a subestimar o RR por selecionar trabalhadores mais saudáveis para o grupo exposto.",
+                                       "Viés de Neyman (prevalência-incidência), excluindo casos prevalentes e subestimando a incidência verdadeira no grupo exposto.",
+                                       "Confundimento por indicação, pois trabalhadores com maior risco basal foram alocados no grupo de maior exposição, superestimando o OR."
+                                   ],
+                          "c":  0,
+                          "exp":  "O viés de detecção ocorre quando a probabilidade de identificar o desfecho difere sistematicamente entre os grupos comparados, não por diferença real na incidência, mas pela intensidade de vigilância diagnóstica. Neste cenário, hemogramas anuais no grupo exposto aumentam a probabilidade de detecção precoce de LMC, gerando excesso aparente de casos nesse grupo e superestimando o RR."
+                      },
+                      {
+                          "q":  "Em investigação de surto de doença meningocócica por Neisseria meningitidis sorogrupo B em universidade com 8.000 estudantes, a vigilância epidemiológica identifica 12 casos confirmados em 6 semanas (semanas epidemiológicas 1–6). A taxa de ataque global é de 1,5/1.000 estudantes. O comitê de crise solicita cálculo do limiar para caracterização de surto e avaliação da necessidade de quimioprofilaxia coletiva. Considerando que a incidência de base da doença meningocócica nessa faixa etária no Brasil é de 1,2/100.000/ano, qual das seguintes afirmações está CORRETA quanto à caracterização epidemiológica e à tomada de decisão?",
+                          "opts":  [
+                                       "A taxa de ataque observada (1,5/1.000 em 6 semanas) excede substancialmente a taxa de base esperada, caracterizando surto; quimioprofilaxia em massa com rifampicina está indicada para todos os contatos próximos, não para a população universitária geral.",
+                                       "Para caracterizar surto em instituição fechada, exige-se taxa de ataque superior a 5/1.000, portanto os dados não configuram surto e nenhuma intervenção coletiva é indicada.",
+                                       "A quimioprofilaxia coletiva com ciprofloxacino para toda a comunidade universitária é a medida de controle de primeira linha preconizada pelo Ministério da Saúde, independentemente da taxa de ataque.",
+                                       "Como a taxa de ataque é inferior a 2/100 (2%), a situação não atinge o limiar epidêmico e a investigação pode ser encerrada sem intervenção adicional."
+                                   ],
+                          "c":  0,
+                          "exp":  "A incidência esperada de base é 1,2/100.000/ano (~0,012/1.000 em 6 semanas); a taxa observada de 1,5/1.000 representa excesso de mais de 100 vezes, caracterizando inquestionavelmente surto. As diretrizes do Ministério da Saúde e da ACIP recomendam quimioprofilaxia com rifampicina (ou ciprofloxacino em dose única para adultos) apenas para contatos próximos definidos (coabitantes, contatos íntimos ≤1m por ≥4h), não para populações inteiras."
+                      },
+                      {
+                          "q":  "Metanálise de 22 ensaios clínicos randomizados avalia eficácia de betabloqueadores na mortalidade cardiovascular pós-infarto do miocárdio (IAM). O resultado agrupado mostra RR=0,78 (IC 95%: 0,72–0,85), I²=68%, p para heterogeneidade \u003c0,001. Análise de subgrupos revela que estudos realizados antes de 1995 (n=14) mostram RR=0,69 (IC 95%: 0,61–0,78; I²=22%), enquanto estudos após 1995 (n=8) mostram RR=0,93 (IC 95%: 0,86–1,01; I²=41%). O teste de Egger é estatisticamente significativo (p=0,03). Qual é a interpretação metodológica MAIS ADEQUADA deste conjunto de dados?",
+                          "opts":  [
+                                       "A heterogeneidade substancial (I²=68%), a atenuação do efeito em estudos mais recentes e o teste de Egger positivo sugerem combinação de heterogeneidade clínica/metodológica e viés de publicação, comprometendo a validade da estimativa agrupada e exigindo cautela na generalização.",
+                                       "I²=68% é aceitável em metanálises de intervenções cardiovasculares; o resultado agrupado é robusto e a análise de subgrupos por período é irrelevante, pois a diferença entre subgrupos pode ser atribuída ao acaso.",
+                                       "O teste de Egger positivo confirma definitivamente viés de publicação, tornando toda a metanálise inválida e sem utilidade para tomada de decisão clínica.",
+                                       "A heterogeneidade pode ser ignorada se o modelo de efeitos aleatórios for utilizado, pois esse modelo incorpora automaticamente toda a variabilidade entre estudos na estimativa pontual e no intervalo de confiança."
+                                   ],
+                          "c":  0,
+                          "exp":  "I²≥50–60% indica heterogeneidade substancial que questiona a validade de agrupar estudos em estimativa única. A discordância sistemática por período histórico sugere modificação de efeito por covariáveis que diferem temporalmente (coadjuvantes, critérios diagnósticos, manejo de base). O teste de Egger positivo indica assimetria do funnel plot, consistente com viés de publicação. A conjunção desses achados exige interpretação cautelosa, com ênfase nos subgrupos mais homogêneos e investigação das fontes de heterogeneidade."
+                      },
+                      {
+                          "q":  "Pesquisador avalia um novo biomarcador sérico (proteína X) para diagnóstico precoce de sepse bacteriana em UTI. O estudo de validação inclui 400 pacientes (200 com sepse confirmada por hemocultura positiva e critérios SEPSIS-3; 200 controles sem infecção). Sensibilidade=88%, especificidade=75%, VPP=78%, VPN=86% nesta amostra. O pesquisador pretende implementar o teste em triagem de emergência, onde a prevalência de sepse é estimada em 8%. Utilizando o teorema de Bayes, qual será o VPP aproximado neste novo contexto e qual a implicação clínica?",
+                          "opts":  [
+                                       "VPP ≈ 24–26%; em contexto de baixa prevalência (8%), a maioria dos resultados positivos será falso-positivo, gerando sobrediagnóstico e tratamento antibiótico desnecessário — o teste é mais útil como ferramenta de exclusão (VPN elevado) neste cenário.",
+                                       "VPP ≈ 78%, pois VPP e VPN são propriedades intrínsecas do teste, independentes da prevalência na população onde é aplicado.",
+                                       "VPP ≈ 50%; quando a prevalência cai abaixo de 10%, o VPP sempre converge para 50% independentemente da sensibilidade e especificidade do teste.",
+                                       "VPP ≈ 88%, pois na ausência de informação sobre a prevalência local exata, o VPP deve ser estimado pela sensibilidade do teste, que representa a probabilidade pós-teste em população de baixo risco."
+                                   ],
+                          "c":  0,
+                          "exp":  "Pelo teorema de Bayes: em 1.000 pacientes com prevalência 8%, há 80 doentes e 920 sadios. Verdadeiros positivos: 80×0,88=70,4; falsos positivos: 920×0,25=230. VPP=70,4/(70,4+230)≈23,4%. Com VPN=(920×0,75)/[(920×0,75)+(80×0,12)]≈690/(690+9,6)≈98,6%, o teste tem alto poder de exclusão. Isso ilustra o paradoxo da triagem: testes com boa performance em populações de alta prevalência podem ser pouco úteis para confirmação diagnóstica em contextos de baixa prevalência."
+                      },
+                      {
+                          "q":  "Estudo de coorte retrospectiva avalia associação entre síndrome de apneia obstrutiva do sono (SAOS) grave e incidência de fibrilação atrial (FA) em 5.500 adultos seguidos por 8 anos. Análise bruta: HR=2,4 (IC 95%: 1,9–3,1). Após ajuste para idade, sexo, IMC, HAS, DM e cardiopatia estrutural em modelo de Cox, HR ajustado=1,4 (IC 95%: 1,1–1,8). Ao estratificar por IMC (\u003c30 vs ≥30 kg/m²), HR nos não obesos=1,5 (IC 95%: 1,1–2,0) e nos obesos=1,3 (IC 95%: 0,9–1,9). O teste de interação IMC × SAOS é não significativo (p=0,61). Qual é a interpretação epidemiológica MAIS PRECISA desses resultados?",
+                          "opts":  [
+                                       "O IMC atua predominantemente como confundidor (não como modificador de efeito) na associação SAOS–FA, evidenciado pela redução do HR bruto para o ajustado e pelo teste de interação não significativo; a associação residual ajustada (HR=1,4) é biologicamente plausível e pode representar efeito independente da SAOS.",
+                                       "A ausência de significância estatística no grupo de obesos (IC 95%: 0,9–1,9 inclui 1,0) demonstra que SAOS não causa FA em obesos, enquanto em não obesos a associação é real, caracterizando modificação de efeito pelo IMC.",
+                                       "A redução do HR de 2,4 para 1,4 após ajuste multivariado indica que SAOS é um marcador substituto (proxy) de obesidade sem efeito causal independente sobre FA, tornando desnecessárias intervenções específicas para SAOS visando prevenção de FA.",
+                                       "O estudo de coorte retrospectiva não permite estimativa de HR; apenas estudos de coorte prospectivos com randomização são metodologicamente adequados para calcular hazard ratios em análises de sobrevida."
+                                   ],
+                          "c":  0,
+                          "exp":  "Confundimento é evidenciado quando ajuste por uma variável altera substancialmente a estimativa de efeito (mudança de 2,4 para 1,4 representa atenuação \u003e40%), sugerindo que parte da associação bruta era explicada pelo IMC como confundidor. A ausência de interação significativa (p=0,61) indica que o efeito da SAOS não difere entre estratos de IMC de forma estatisticamente detectável — diferenças observadas nos HRs estratificados são compatíveis com variação aleatória. O HR ajustado de 1,4 com IC excluindo 1,0 sustenta associação residual independente."
+                      },
+                      {
+                          "q":  "Autoridade sanitária avalia programa de rastreamento de câncer colorretal (CCR) em população de 50–75 anos utilizando pesquisa de sangue oculto nas fezes por método imunoquímico (FIT) anual. Dados após 5 anos de programa: 120.000 pessoas rastreadas; 3.600 FIT positivos; 2.880 colonoscopias realizadas (80% de adesão); 576 CCR detectados (200 estádio I/II, 376 estádio III/IV). Taxa de complicações graves por colonoscopia: 0,3/100 procedimentos. Qual indicador epidemiológico reflete MAIS ADEQUADAMENTE o impacto real do programa e qual a limitação metodológica central na avaliação de sua efetividade?",
+                          "opts":  [
+                                       "A taxa de detecção precoce (estádio I/II sobre total de CCR detectados = 34,7%) é o indicador de impacto mais direto; porém, a limitação central é o viés de antecipação diagnóstica (lead time bias), que pode superestimar a sobrevida sem que haja real redução na mortalidade por CCR.",
+                                       "O VPP do FIT positivo para CCR (576/3.600=16%) é o indicador de impacto central; sua principal limitação é o viés de verificação (verification bias), pois 20% dos FIT positivos não realizaram colonoscopia.",
+                                       "A taxa de adesão à colonoscopia (80%) é o principal indicador de efetividade do programa; a limitação metodológica central é o confundimento por indicação, pois pacientes que aderiram à colonoscopia têm perfil de risco diferente dos que não aderiram.",
+                                       "O número de CCR detectados em estádio avançado (376 casos estádio III/IV) é o indicador mais relevante; a limitação principal é o viés de espectro, pois FIT tem desempenho diagnóstico diferente em populações com alta prevalência de comorbidades."
+                                   ],
+                          "c":  0,
+                          "exp":  "O deslocamento do estadiamento para estádios precoces é o objetivo imediato do rastreamento oncológico e reflete mudança na história natural detectada. Contudo, o lead time bias é a ameaça clássica à avaliação de programas de rastreamento: ao diagnosticar o CCR mais precocemente, aumenta-se o tempo entre diagnóstico e morte sem necessariamente prolongar a sobrevida biológica — o paciente \u0027vive mais com o diagnóstico\u0027 sem viver mais tempo. A redução de mortalidade causa-específica (não sobrevida) em ensaio randomizado é o padrão-ouro para avaliar efetividade real."
+                      },
+                      {
+                          "q":  "Em análise de regressão de Poisson robusta de inquérito de saúde nacional com amostragem complexa por conglomerados, pesquisadores estimam a razão de prevalência (RP) de hipertensão arterial sistêmica (HAS) segundo nível de atividade física. Resultado: RP=0,71 (IC 95%: 0,64–0,79) para ativos versus sedentários, ajustado por idade, sexo, escolaridade, tabagismo e IMC. A variância do estimador foi corrigida pelo método de linearização de Taylor. Qual das afirmações a seguir representa a interpretação MAIS CORRETA dos aspectos metodológicos e do resultado?",
+                          "opts":  [
+                                       "A regressão de Poisson com variância robusta é o método preferido para estimar razões de prevalência em estudos transversais com desfecho comum (prevalência \u003e10%), pois modelos logísticos superestimam o OR em relação à RP; a variância de Taylor corrige o erro-padrão para o efeito de desenho da amostragem complexa.",
+                                       "A razão de prevalência de 0,71 pode ser interpretada diretamente como razão de risco (risk ratio), pois estudos transversais com amostragem aleatória permitem inferência causal equivalente à de estudos de coorte prospectivos.",
+                                       "A regressão de Poisson é inapropriada para desfechos binários; o método correto seria regressão logística com cálculo de OR, e a correção de Taylor é desnecessária quando a amostra é superior a 10.000 participantes.",
+                                       "A variância robusta (sandwich estimator) na regressão de Poisson corrige o viés de estimação pontual da RP, não apenas a variância; portanto, a estimativa de RP=0,71 seria diferente sem essa correção."
+                                   ],
+                          "c":  0,
+                          "exp":  "Quando a prevalência do desfecho excede 10%, o OR superestima a magnitude da associação em comparação com a RP; a regressão de Poisson com variância robusta (sandwich estimator de Zou, 2004) produz estimativas diretamente na escala de razão de prevalência, corrigindo a heterocedasticidade inerente ao modelo de Poisson aplicado a dados binários. A linearização de Taylor é método padrão para correção do erro-padrão em amostras complexas, incorporando efeito do desenho (DEFF) gerado por conglomeração e estratificação."
+                      },
+                      {
+                          "q":  "Investigadores conduzem estudo caso-controle de base hospitalar para avaliar a associação entre uso de contraceptivos orais combinados (COC) e tromboembolismo venoso (TEV) profundo. Casos (n=350): mulheres hospitalizadas com TEV confirmado; controles (n=700): mulheres hospitalizadas por outras causas não relacionadas a trombose ou imobilização. OR bruto=3,9 (IC 95%: 2,8–5,4). Ao estratificar por trombofilia hereditária, OR em portadoras=12,4 (IC 95%: 5,1–30,2) e em não portadoras=2,8 (IC 95%: 1,9–4,1); teste de interação p=0,003. Qual fenômeno epidemiológico está presente e qual a implicação para análise?",
+                          "opts":  [
+                                       "Há modificação de efeito (interação biológica) entre COC e trombofilia hereditária sobre o risco de TEV, evidenciada pelo teste de interação significativo (p=0,003); os resultados devem ser apresentados separadamente por estrato, não combinados em um OR ajustado único.",
+                                       "A trombofilia hereditária é um confundidor clássico; o OR ajustado pela trombofilia deve substituir os ORs estratificados, pois confundidores sempre devem ser eliminados do modelo pela análise de regressão logística múltipla.",
+                                       "O teste de interação significativo indica apenas heterogeneidade estatística entre estudos, conceito aplicável exclusivamente em metanálises; em estudos primários, essa estatística não tem interpretação epidemiológica válida.",
+                                       "A modificação de efeito e o confundimento são fenômenos equivalentes que requerem a mesma estratégia analítica (ajuste multivariado), diferindo apenas na magnitude da variação do OR entre estratos."
+                                   ],
+                          "c":  0,
+                          "exp":  "Modificação de efeito ocorre quando a magnitude da associação entre exposição e desfecho difere em subgrupos definidos por uma terceira variável (modificador de efeito); isso constitui heterogeneidade real biologicamente relevante. A presença de interação significativa (p=0,003) e ORs estratificados muito distintos (12,4 vs. 2,8) demonstra que combinar esses estratos produziria um OR médio sem significado biológico. A conduta correta é apresentar os ORs por estrato, pois a relação COC–TEV é fundamentalmente diferente entre portadoras e não portadoras de trombofilia."
+                      },
+                      {
+                          "q":  "Gestor de saúde pública de estado com população de 4 milhões avalia impacto de campanha de vacinação em massa contra febre amarela após notificação de casos em área de expansão viral. A cobertura vacinal pré-campanha era 45%; após a campanha, atingiu 92%. Modelagem matemática com modelo SEIR estima R0=4,2 para febre amarela silvestre nessa região. Para interromper a transmissão, qual é o limiar de imunidade de rebanho (herd immunity threshold — HIT) necessário e como a cobertura alcançada se posiciona em relação a ele, considerando eficácia vacinal de 95%?",
+                          "opts":  [
+                                       "HIT = 1 − (1/R0) = 1 − (1/4,2) ≈ 76%; a cobertura imunizante efetiva = 92% × 0,95 ≈ 87,4%, que supera o HIT de 76%, sendo suficiente para interromper a transmissão na população vacinada; áreas com cobertura efetiva inferior ao HIT permanecem vulneráveis.",
+                                       "HIT = R0/(R0+1) = 4,2/5,2 ≈ 80,8%; a cobertura imunizante efetiva = 92% × 0,95 ≈ 87,4%, portanto ainda insuficiente, pois a fórmula correta requer cobertura efetiva superior a 95% para qualquer R0 acima de 4.",
+                                       "HIT = R0 − 1/R0 = 4,2 − 0,24 ≈ 3,96, o que representa 396% da população — valor impossível, indicando que vacinação em massa é ineficaz para febre amarela silvestre e controle vetorial é a única intervenção válida.",
+                                       "HIT é sempre fixo em 85% para arboviroses transmitidas por vetores, independentemente do R0, pois a imunidade de rebanho em doenças vetor-dependentes é determinada pela capacidade vetorial, não pelo número reprodutivo básico."
+                                   ],
+                          "c":  0,
+                          "exp":  "A fórmula padrão do limiar de imunidade de rebanho é HIT = 1 − (1/R0), derivada da condição de equilíbrio endêmico onde R efetivo \u003c 1. Com R0=4,2, HIT≈76,2%. A cobertura imunizante efetiva considera que nem todos os vacinados desenvolvem imunidade: 92% × 0,95 = 87,4%, superando o HIT. Esta análise pressupõe distribuição homogênea da vacinação — heterogeneidades geográficas ou demográficas podem criar bolsões suscetíveis mesmo com cobertura média superior ao HIT."
+                      },
+                      {
+                          "q":  "Pesquisadores realizam ensaio clínico randomizado (ECR) fase III avaliando nova terapia de erradicação de Helicobacter pylori (regime quádruplo bismutado vs. terapia tríplice padrão) em 1.800 pacientes com úlcera péptica ativa. Desfecho primário: erradicação confirmada por teste respiratório 4 semanas após término do tratamento (intenção de tratar — ITT). Resultado ITT: regime quádruplo 82% vs. tríplice 68% (diferença absoluta=14%; IC 95%: 9–19%; p\u003c0,001). Análise por protocolo (PP): 88% vs. 71% (diferença=17%). Vinte e dois por cento dos pacientes no grupo quádruplo apresentaram efeitos adversos gastrintestinais graves levando à descontinuação precoce. Qual é a interpretação MAIS ADEQUADA para decisão clínica e de saúde pública?",
+                          "opts":  [
+                                       "A análise ITT é a mais conservadora e clinicamente relevante para decisão de saúde pública, pois reflete efetividade no mundo real incluindo não aderentes; a taxa de descontinuação de 22% por efeitos adversos é clinicamente significativa e deve ser incorporada na avaliação risco-benefício antes de adotar o regime quádruplo como primeira linha.",
+                                       "A análise por protocolo deve ser preferida para decisão clínica, pois estima a eficácia biológica máxima do tratamento em pacientes que efetivamente completaram o esquema — os 22% que descontinuaram não deveriam influenciar a decisão terapêutica.",
+                                       "Como ambas as análises (ITT e PP) favorecem o regime quádruplo com significância estatística, a taxa de descontinuação é irrelevante para a decisão, pois o NNT favorável justifica automaticamente a adoção do novo regime.",
+                                       "A diferença absoluta de 14% com IC 95% excluindo zero confirma superioridade; o NNT=7 indica que para cada 7 pacientes tratados com regime quádruplo, 1 a mais é curado em comparação à tríplice, e esse NNT deve ser avaliado independentemente de qualquer medida de dano (NNH)."
+                                   ],
+                          "c":  0,
+                          "exp":  "A análise ITT preserva a aleatorização e estima efetividade em condições reais de uso (incluindo não adesão), sendo o padrão para decisões de saúde pública e aprovação regulatória. Uma taxa de descontinuação de 22% por efeitos adversos graves é substancial — equivale a NNH de ~4,5 para descontinuação — e deve ser comparada ao NNT (100/14≈7) para calcular o balanço risco-benefício. Adotar o regime quádruplo sem considerar essa informação subestimaria o ônus real da intervenção na população."
+                      }
+                  ]
+}

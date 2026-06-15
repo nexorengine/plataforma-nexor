@@ -1,0 +1,558 @@
+﻿{
+    "area":  "medicina_preventiva",
+    "dominio":  "bioestatistica",
+    "quiz":  "quiz_001",
+    "total":  50,
+    "questions":  [
+                      {
+                          "q":  "O que é valor preditivo negativo (VPN) de um teste diagnóstico?",
+                          "opts":  [
+                                       "Proporção de indivíduos com resultado negativo que realmente não têm a doença.",
+                                       "Proporção de indivíduos doentes que apresentam resultado negativo no teste.",
+                                       "Proporção de indivíduos sem a doença que apresentam resultado positivo no teste.",
+                                       "Probabilidade de o teste ser negativo em toda a população testada."
+                                   ],
+                          "c":  0,
+                          "exp":  "O VPN expressa, entre todos os que tiveram resultado negativo, qual fração é verdadeiramente livre da doença (verdadeiros negativos / total de negativos). É fortemente influenciado pela prevalência: quanto maior a prevalência, menor o VPN para um mesmo teste."
+                      },
+                      {
+                          "q":  "Qual é a definição de prevalência em epidemiologia?",
+                          "opts":  [
+                                       "Proporção de indivíduos em uma população que apresentam determinada condição em um ponto ou período específico de tempo.",
+                                       "Número de casos novos de uma doença que surgem em uma população por unidade de tempo.",
+                                       "Probabilidade de um indivíduo saudável desenvolver a doença ao longo da vida.",
+                                       "Razão entre o número de óbitos por uma doença e o total de casos diagnosticados."
+                                   ],
+                          "c":  0,
+                          "exp":  "Prevalência mede a carga existente de uma doença (casos antigos + novos) na população em um instante (puntual) ou intervalo definido. É adimensional quando expressa como proporção e reflete tanto a incidência quanto a duração da doença."
+                      },
+                      {
+                          "q":  "O que é incidência cumulativa em epidemiologia?",
+                          "opts":  [
+                                       "Proporção de indivíduos em risco que desenvolve o desfecho durante um período de observação definido.",
+                                       "Número de casos novos por unidade de tempo-pessoa de observação.",
+                                       "Total de casos existentes (novos e antigos) em uma população em dado momento.",
+                                       "Razão entre casos incidentes e casos prevalentes ao final do estudo."
+                                   ],
+                          "c":  0,
+                          "exp":  "A incidência cumulativa (risco cumulativo) é calculada dividindo o número de casos novos pelo número de indivíduos em risco no início do período, assumindo acompanhamento completo ou mínimo de perdas. Seu valor varia de 0 a 1 e é interpretado como probabilidade de ocorrência do evento."
+                      },
+                      {
+                          "q":  "Na análise de sobrevida, o que representa a função de sobrevivência S(t)?",
+                          "opts":  [
+                                       "Probabilidade de o indivíduo não ter apresentado o desfecho até o tempo t.",
+                                       "Probabilidade de o indivíduo apresentar o desfecho exatamente no tempo t.",
+                                       "Número acumulado de eventos ocorridos até o instante t.",
+                                       "Taxa instantânea de ocorrência do evento no tempo t."
+                                   ],
+                          "c":  0,
+                          "exp":  "S(t) = P(T \u003e t), ou seja, a fração da coorte que permanece livre do desfecho além do tempo t. Inicia em 1 e decresce monotonicamente; é estimada pelo método de Kaplan-Meier, que lida adequadamente com censuras."
+                      },
+                      {
+                          "q":  "O que é o teste qui-quadrado (χ²) de Pearson em bioestatística?",
+                          "opts":  [
+                                       "Teste não paramétrico que avalia se há associação estatística entre duas variáveis categóricas pela comparação de frequências observadas e esperadas.",
+                                       "Teste paramétrico que compara médias de duas amostras independentes com distribuição normal.",
+                                       "Método para calcular o coeficiente de correlação entre duas variáveis contínuas.",
+                                       "Procedimento para estimar o intervalo de confiança de uma proporção amostral."
+                                   ],
+                          "c":  0,
+                          "exp":  "O χ² de Pearson quantifica o desvio entre as frequências observadas em uma tabela de contingência e as frequências esperadas sob a hipótese nula de independência. A estatística segue distribuição qui-quadrado com (r−1)(c−1) graus de liberdade, permitindo inferir sobre associação entre variáveis nominais ou ordinais."
+                      },
+                      {
+                          "q":  "O que define um estudo de coorte em epidemiologia analítica?",
+                          "opts":  [
+                                       "Estudo observacional no qual grupos definidos pela exposição são acompanhados prospectiva ou retrospectivamente para verificar a ocorrência do desfecho.",
+                                       "Estudo no qual casos com o desfecho são comparados a controles sem o desfecho quanto à exposição prévia.",
+                                       "Estudo transversal que mede exposição e desfecho simultaneamente em uma amostra populacional.",
+                                       "Estudo experimental em que indivíduos são randomizados para exposição ou controle."
+                                   ],
+                          "c":  0,
+                          "exp":  "Na coorte, o ponto de partida é a exposição: expostos e não expostos (ou diferentes níveis de exposição) são seguidos no tempo até o surgimento do desfecho. Permite calcular incidência, risco relativo e densidade de incidência diretamente, sendo o desenho observacional com maior capacidade de estabelecer temporalidade."
+                      },
+                      {
+                          "q":  "O que é o coeficiente de correlação de Pearson (r)?",
+                          "opts":  [
+                                       "Medida da força e direção da associação linear entre duas variáveis contínuas, variando de −1 a +1.",
+                                       "Proporção da variância do desfecho explicada pela variável independente em regressão logística.",
+                                       "Estatística que avalia concordância entre dois métodos de medição da mesma variável.",
+                                       "Índice que quantifica a heterogeneidade entre estudos em uma metanálise."
+                                   ],
+                          "c":  0,
+                          "exp":  "O r de Pearson mede o grau de linearidade entre duas variáveis contínuas com distribuição aproximadamente normal. Valores próximos de ±1 indicam correlação forte; próximos de 0, ausência de correlação linear. Seu quadrado (r²) representa o coeficiente de determinação, proporção da variância compartilhada."
+                      },
+                      {
+                          "q":  "O que é o valor-p em testes de hipótese estatística?",
+                          "opts":  [
+                                       "Probabilidade de obter um resultado tão extremo quanto o observado (ou mais extremo), assumindo que a hipótese nula é verdadeira.",
+                                       "Probabilidade de a hipótese nula ser verdadeira, dado o resultado observado.",
+                                       "Probabilidade de cometer erro tipo II no teste realizado.",
+                                       "Probabilidade de que o efeito verdadeiro esteja dentro do intervalo de confiança calculado."
+                                   ],
+                          "c":  0,
+                          "exp":  "O valor-p é P(dados | H₀), não P(H₀ | dados). Representa a compatibilidade dos dados com a hipótese nula: valores pequenos (convencionalmente \u003c 0,05) indicam que os dados são improváveis sob H₀, levando à sua rejeição. Não quantifica a magnitude ou relevância clínica do efeito."
+                      },
+                      {
+                          "q":  "O que é randomização em ensaios clínicos?",
+                          "opts":  [
+                                       "Alocação dos participantes aos grupos de intervenção e controle por processo probabilístico, garantindo que cada indivíduo tenha igual chance de receber qualquer tratamento.",
+                                       "Seleção aleatória de participantes na população para compor a amostra do estudo.",
+                                       "Distribuição equitativa de características basais entre os grupos por pareamento manual do pesquisador.",
+                                       "Ocultação do tratamento alocado ao participante e ao avaliador de desfechos."
+                                   ],
+                          "c":  0,
+                          "exp":  "A randomização controla vieses de seleção e distribui variáveis de confundimento conhecidas e desconhecidas de forma equilibrada entre os grupos, tornando-os comparáveis no baseline. É o mecanismo que confere ao ECR o mais alto nível de evidência para causalidade em intervenções."
+                      },
+                      {
+                          "q":  "O que é a curva ROC (Receiver Operating Characteristic) em bioestatística diagnóstica?",
+                          "opts":  [
+                                       "Representação gráfica da relação entre sensibilidade e (1 − especificidade) para todos os pontos de corte possíveis de um teste quantitativo.",
+                                       "Gráfico que plota o valor preditivo positivo versus o valor preditivo negativo ao longo dos diferentes pontos de corte.",
+                                       "Curva que representa a distribuição acumulada dos resultados do teste em doentes e não doentes separadamente.",
+                                       "Representação da probabilidade de sobrevivência em função do tempo para grupos com diferentes resultados de teste."
+                                   ],
+                          "c":  0,
+                          "exp":  "A curva ROC plota sensibilidade (eixo y) versus 1 − especificidade (taxa de falsos-positivos, eixo x) para cada possível limiar de positividade. A área sob a curva (AUC) varia de 0,5 (teste sem discriminação) a 1,0 (discriminação perfeita) e é a medida global de desempenho diagnóstico independente de prevalência."
+                      },
+                      {
+                          "q":  "Pesquisadores conduzem estudo de coorte prospectivo com 5.000 participantes para avaliar associação entre sedentarismo e diabetes mellitus tipo 2. Ao final de 10 anos, 200 sedentários (n=2.000) e 80 ativos (n=3.000) desenvolveram DM2. Calcule a densidade de incidência (por 100 pessoas-ano) no grupo sedentário, considerando que cada participante contribuiu em média 8 anos-pessoa de seguimento, e interprete o significado epidemiológico correto dessa medida.",
+                          "opts":  [
+                                       "Densidade de incidência de 1,25/100 pessoas-ano; expressa a velocidade instantânea de surgimento de casos em relação ao tempo de seguimento acumulado, sendo a medida mais adequada quando o tempo de permanência no estudo varia entre participantes.",
+                                       "Densidade de incidência de 4,0/100 pessoas-ano; expressa a proporção total de indivíduos que desenvolveram a doença durante o período, sendo equivalente à incidência cumulativa quando o seguimento é completo.",
+                                       "Densidade de incidência de 10,0/100 pessoas-ano; representa o risco absoluto médio de desenvolver DM2 ao longo dos 10 anos, independente das perdas de seguimento registradas.",
+                                       "Densidade de incidência de 0,25/100 pessoas-ano; mede a prevalência instantânea do DM2 no grupo sedentário em cada ponto do tempo de observação do estudo."
+                                   ],
+                          "c":  0,
+                          "exp":  "Densidade de incidência = eventos / pessoas-ano: 200 casos / (2.000 participantes × 8 anos) = 200/16.000 = 0,0125 por pessoa-ano = 1,25/100 pessoas-ano. Ao contrário da incidência cumulativa (que pressupõe seguimento uniforme), a densidade de incidência incorpora a variabilidade no tempo de observação de cada indivíduo, sendo a medida correta quando há perdas de seguimento, mortes competidoras ou entradas escalonadas no estudo."
+                      },
+                      {
+                          "q":  "Ensaio clínico randomizado duplo-cego avalia eficácia de novo anticoagulante oral versus varfarina na prevenção de AVC em fibrilação atrial. Com 2.000 pacientes por grupo (seguimento médio 2 anos), ocorreram 60 AVCs no grupo intervenção e 90 no grupo controle. Os pesquisadores relatam RRR=33%, RAR=1,5% e NNT=67. Um editor critica que o NNT é \u0027clinicamente irrelevante\u0027. Qual argumento epidemiológico melhor refuta essa crítica, considerando o contexto da doença?",
+                          "opts":  [
+                                       "O NNT deve ser interpretado junto à gravidade do desfecho evitado e ao horizonte temporal: evitar 1 AVC incapacitante a cada 67 pacientes tratados por 2 anos representa impacto substancial em anos de vida ajustados por incapacidade (DALY), especialmente dado que AVC é causa líder de incapacidade funcional permanente.",
+                                       "O NNT de 67 é irrelevante porque a RRR de 33% já demonstra superioridade clínica inequívoca; a magnitude da redução relativa é o parâmetro primário de relevância clínica em doenças cardiovasculares graves.",
+                                       "O NNT só tem significado quando calculado sobre desfechos substitutos (surrogate endpoints); como AVC é desfecho clínico primário, o parâmetro relevante é o hazard ratio ajustado pelo modelo de Cox, não o NNT.",
+                                       "O NNT de 67 seria clinicamente relevante apenas se o intervalo de confiança 95% do NNT não incluísse o valor infinito, independentemente da gravidade do desfecho ou do custo do tratamento."
+                                   ],
+                          "c":  0,
+                          "exp":  "O NNT isolado é um número sem contexto clínico. A interpretação correta exige ponderar: (1) gravidade e irreversibilidade do desfecho — AVC causa 50% de incapacidade permanente nos sobreviventes; (2) horizonte temporal — NNT=67 em 2 anos equivale a NNT≈34 em 4 anos; (3) custo-efetividade — prevenir um AVC evita custos hospitalares, reabilitação e perdas de produtividade. NNTs considerados \u0027excelentes\u0027 em oncologia (p.ex., NNT=50 para quimioterapia) são análogos."
+                      },
+                      {
+                          "q":  "Estudo de caso-controle aninhado em coorte investiga associação entre uso de inibidores de bomba de prótons (IBP) e risco de pneumonia adquirida na comunidade. Casos (n=450) e controles (n=900) são selecionados da mesma coorte. OR bruta=2,1 (IC 95%: 1,6-2,7). Após ajuste por idade, comorbidades e tabagismo, OR ajustada=1,3 (IC 95%: 0,9-1,8). Qual mecanismo explica melhor a diferença entre OR bruta e ajustada, e qual implicação metodológica decorre?",
+                          "opts":  [
+                                       "A diferença indica confundimento positivo: as variáveis ajustadas (especialmente comorbidades) estavam associadas tanto ao uso de IBP quanto ao risco de pneumonia, inflando artificialmente a OR bruta. A implicação é que estudos observacionais sobre IBP e pneumonia devem controlar rigorosamente indicação de uso (confundimento por indicação) para evitar superestimação do risco.",
+                                       "A diferença indica modificação de efeito: as variáveis de ajuste alteram a direção da associação em subgrupos específicos, e a OR ajustada representa uma média ponderada não interpretável clinicamente. A análise estratificada seria mais adequada que o ajuste multivariado.",
+                                       "A diferença reflete viés de seleção introduzido pela definição de casos: ao aninharem o estudo em coorte, os pesquisadores selecionaram preferencialmente casos graves, superestimando a OR bruta. O ajuste elimina esse viés de seleção pela correção multivariada.",
+                                       "A diferença indica que o estudo tem baixo poder estatístico para detectar a associação verdadeira após ajuste: a perda de significância estatística na OR ajustada demonstra que a amostra de 450 casos é insuficiente para análise multivariada com múltiplos confundidores."
+                                   ],
+                          "c":  0,
+                          "exp":  "Confundimento positivo ocorre quando a variável de confundimento (aqui, comorbidades como DPOC, insuficiência cardíaca) aumenta artificialmente a medida de associação. Pacientes doentes usam mais IBP (indicação clínica) e têm maior risco basal de pneumonia, criando associação espúria. O fenômeno \u0027confundimento por indicação\u0027 é particularmente crítico em estudos de IBP: a droga é prescrita justamente para pacientes com maior carga de doença. A OR ajustada cruzando o valor nulo (IC inclui 1,0) sugere que a associação bruta era principalmente confundida."
+                      },
+                      {
+                          "q":  "Autoridade sanitária avalia implementar triagem universal neonatal para doença falciforme com teste HPLC (cromatografia líquida de alta performance): sensibilidade 99,5%, especificidade 99,8%, prevalência estimada de 1:1.000 nascidos vivos. Em estado com 100.000 nascimentos/ano, qual será o VPP esperado e qual implicação ética-assistencial decorre do resultado?",
+                          "opts":  [
+                                       "VPP≈33%: dois terços dos bebês com HPLC positivo não terão a doença. A implicação é que o programa deve incluir protocolo obrigatório de confirmação diagnóstica (eletroforese de hemoglobina) antes de comunicar diagnóstico aos pais, evitando dano psicossocial por falso-positivo em famílias de recém-nascidos saudáveis.",
+                                       "VPP≈99%: a alta sensibilidade e especificidade garantem que praticamente todos os positivos terão a doença. A implicação é que o diagnóstico definitivo pode ser comunicado imediatamente com base no HPLC, sem necessidade de reteste confirmatório.",
+                                       "VPP≈50%: com prevalência de 1:1.000, um teste com ambos os parâmetros acima de 99% sempre resulta em VPP de 50% por definição estatística do teorema de Bayes.",
+                                       "VPP≈90%: a combinação de sensibilidade 99,5% e especificidade 99,8% supera o limiar de 99% total, garantindo VPP superior a 90% independentemente da prevalência da doença na população-alvo."
+                                   ],
+                          "c":  0,
+                          "exp":  "Aplicando Teorema de Bayes: em 100.000 nascimentos com prevalência 1:1.000 = 100 doentes e 99.900 sadios. Verdadeiros positivos = 100 × 0,995 = 99,5≈100. Falsos positivos = 99.900 × (1-0,998) = 99.900 × 0,002 = 199,8≈200. VPP = 100/(100+200) = 100/300 ≈ 33%. Mesmo com teste excelente, baixa prevalência gera VPP modesto — princípio fundamental do rastreamento. Confirmação pré-comunicação é mandatória ética e clinicamente."
+                      },
+                      {
+                          "q":  "Metanálise em rede (network meta-analysis) compara 5 classes de anti-hipertensivos para prevenção de AVC em hipertensos com diabetes. A análise de consistência mostra evidência de inconsistência (p=0,03) entre as comparações diretas e indiretas para o par \u0027IECA vs. bloqueador de canal de cálcio\u0027. Qual é a principal implicação metodológica dessa inconsistência e como ela compromete a validade das conclusões?",
+                          "opts":  [
+                                       "Inconsistência indica que as evidências diretas e indiretas sobre o par IECA vs. BCC são discordantes, provavelmente porque os estudos que compõem as comparações indiretas diferem em características dos pacientes ou desfechos avaliados. Isso viola o pressuposto de homogeneidade transitiva da metanálise em rede, tornando as estimativas de efeito relativo entre esses dois agentes não confiáveis para orientar decisão clínica.",
+                                       "Inconsistência em metanálise em rede equivale a heterogeneidade estatística (I²) em metanálise par a par, indicando apenas variabilidade entre estudos individuais. A solução padrão é utilizar modelo de efeitos aleatórios, que acomoda a inconsistência e mantém a validade das comparações indiretas.",
+                                       "Inconsistência entre comparações diretas e indiretas é esperada e aceitável quando I²\u003c50%, pois reflete diferenças metodológicas menores entre estudos. O par IECA vs. BCC pode ser interpretado normalmente se a heterogeneidade global da rede for baixa.",
+                                       "Inconsistência na comparação IECA vs. BCC invalida toda a metanálise em rede, exigindo que todas as 10 comparações possíveis entre as 5 classes sejam descartadas e substituídas por revisões sistemáticas par a par independentes para cada combinação."
+                                   ],
+                          "c":  0,
+                          "exp":  "A metanálise em rede pressupõe transitividade: pacientes nos estudos A vs. B e B vs. C devem ser suficientemente similares para que a comparação indireta A vs. C seja válida. Inconsistência (discordância entre direto e indireto) sinaliza violação desse pressuposto — geralmente por heterogeneidade clínica nos modificadores de efeito (mix de populações, doses, desfechos). O par inconsistente deve ter suas estimativas interpretadas com cautela extrema, e análise de sensibilidade por subgrupos/meta-regressão é necessária para identificar a fonte de inconsistência."
+                      },
+                      {
+                          "q":  "Estudo transversal de base populacional avalia associação entre consumo de álcool e hipertensão arterial sistêmica em 10.000 adultos. Análise de regressão logística multivariada retorna OR=1,8 (IC 95%: 1,5-2,2) para bebedores pesados vs. abstinentes, ajustada por sexo, IMC e tabagismo. Pesquisadores propõem inferência causal com base nesse resultado. Qual limitação ESTRUTURAL do delineamento transversal impede essa inferência, mesmo após ajuste multivariado adequado?",
+                          "opts":  [
+                                       "O estudo transversal mede exposição e desfecho simultaneamente no mesmo ponto do tempo, tornando impossível estabelecer temporalidade causal: não se sabe se o consumo de álcool precedeu a hipertensão ou se hipertensos em tratamento reduziram o consumo (causalidade reversa). O ajuste multivariado controla confundimento, mas não resolve a ausência de sequência temporal.",
+                                       "O estudo transversal não permite calcular odds ratio, apenas prevalência e razão de prevalências; a aplicação de regressão logística e interpretação de OR em estudo transversal é metodologicamente inválida, independentemente do tamanho amostral ou ajuste realizado.",
+                                       "A limitação principal é o viés de informação: em estudos transversais, participantes com hipertensão conhecida tendem a superestimar consumo de álcool por recall bias, inflando artificialmente a OR. Esse viés não é corrigível por ajuste multivariado.",
+                                       "Estudos transversais são válidos para inferência causal quando OR\u003e1,5 e IC 95% não inclui 1,0; com OR=1,8 e IC 95%: 1,5-2,2, os critérios de Bradford Hill de força e consistência são atendidos, tornando a causalidade provável mesmo sem temporalidade demonstrada."
+                                   ],
+                          "c":  0,
+                          "exp":  "Temporalidade (causa precede efeito) é critério sine qua non de causalidade (Hill, 1965) e constitui a limitação estrutural irremediável do delineamento transversal. A causalidade reversa é particularmente plausível aqui: pacientes diagnosticados com HAS frequentemente recebem orientação para reduzir álcool, gerando associação inversa na prevalência atual. Nenhum método estatístico, incluindo ajuste multivariado, regressão ou pareamento, pode criar temporalidade retrospectivamente a partir de dados coletados num único ponto do tempo."
+                      },
+                      {
+                          "q":  "Investigação de surto de salmonellose em evento corporativo com 300 participantes identifica que 85 adoeceram. Análise epidemiológica por tabela 2×2 compara expostos e não expostos a cada alimento servido. Para o item \u0027maionese caseira\u0027: expostos=150 (60 doentes), não expostos=150 (25 doentes). Calcule o risco relativo e interprete sua implicação para identificação da fonte do surto.",
+                          "opts":  [
+                                       "RR=2,4: participantes que consumiram maionese tiveram 2,4 vezes mais risco de adoecer que os não expostos. Esse RR, combinado com a fração atribuível populacional elevada, aponta a maionese como veículo plausível do surto, justificando coleta de amostra para microbiologia e interdição imediata do produto.",
+                                       "RR=1,4: a diferença absoluta de risco entre expostos (40%) e não expostos (16,7%) é modesta e o RR\u003c2,0 indica associação fraca, insuficiente para identificar a maionese como fonte do surto sem confirmação laboratorial prévia.",
+                                       "RR=0,42: como expostos apresentaram menor proporção de adoecimento em relação ao total do evento, o risco relativo indica fator protetor, excluindo a maionese como fonte e direcionando investigação para outros alimentos.",
+                                       "RR=2,4, mas esse valor não pode fundamentar ação de saúde pública sem cálculo prévio do qui-quadrado e p\u003c0,05; em investigações de surto, apenas associações estatisticamente significativas justificam intervenção imediata."
+                                   ],
+                          "c":  0,
+                          "exp":  "Risco nos expostos = 60/150 = 0,40 (40%); risco nos não expostos = 25/150 = 0,167 (16,7%); RR = 0,40/0,167 = 2,4. Em epidemiologia de surtos, ação imediata não aguarda confirmação estatística formal — o princípio da precaução e o potencial de dano continuado justificam intervenção com base em RR elevado e plausibilidade biológica (maionese caseira com ovo cru = veículo clássico de Salmonella). A fração atribuível = (RR-1)/RR = 58% reforça o peso etiológico."
+                      },
+                      {
+                          "q":  "Ensaio clínico randomizado com análise de intenção de tratar (ITT) avalia cirurgia bariátrica vs. tratamento clínico intensivo para DM2 em obesos (IMC 30-40). Após 5 anos, 40% do grupo cirurgia vs. 15% do grupo clínico atingiram remissão do DM2 (OR=3,8, IC 95%: 2,7-5,3, p\u003c0,001). Entretanto, 12% dos randomizados para cirurgia recusaram o procedimento e foram tratados clinicamente. Por que a análise ITT é o padrão metodológico nesse cenário, e qual viés ela previne?",
+                          "opts":  [
+                                       "A análise ITT mantém todos os participantes no grupo para o qual foram randomizados, independentemente de adesão. Isso preserva a comparabilidade criada pela randomização entre os grupos, prevenindo viés de seleção pós-randomização: os 12% que recusaram cirurgia provavelmente diferem sistematicamente dos que aceitaram (maior medo, maior comorbidade), e realocar ou excluir esses pacientes quebraria o balanceamento de características prognósticas garantido pela alocação aleatória.",
+                                       "A análise ITT é preferida porque exclui os 12% não aderentes, tornando os grupos mais homogêneos e a estimativa de efeito mais conservadora. Ao remover não aderentes, evita-se diluição do efeito da cirurgia, produzindo estimate of efficacy mais preciso e clinicamente relevante.",
+                                       "A análise ITT previne principalmente viés de informação: ao analisar todos os randomizados independentemente de adesão, garante-se que os avaliadores de desfecho permaneçam cegos à alocação original, o que não seria possível na análise por protocolo onde a adesão é conhecida.",
+                                       "A análise ITT é padrão porque estima o efeito biológico máximo da intervenção (efficacy), enquanto a análise por protocolo estima o efeito em condições reais (effectiveness). Para decisões de política de saúde pública, o efeito biológico máximo da cirurgia bariátrica é o parâmetro de interesse."
+                                   ],
+                          "c":  0,
+                          "exp":  "A randomização distribui igualmente fatores prognósticos conhecidos e desconhecidos entre os grupos — essa é sua virtude cardinal. A análise ITT protege essa distribuição ao analisar os grupos como originalmente formados. Não aderentes raramente são uma amostra aleatória dos randomizados: recusa de cirurgia correlaciona-se com perfil de risco, preferências e comorbidades que também predizem o desfecho. ITT estima effectiveness (efeito na prática real com não-adesão), que é o parâmetro relevante para políticas de saúde."
+                      },
+                      {
+                          "q":  "Estudo de coorte retrospectivo avalia mortalidade em 10 anos por câncer de pulmão em fumantes (n=500) e não fumantes (n=500). Durante o seguimento, 80 fumantes e 10 não fumantes morreram de câncer de pulmão. Pesquisadores calculam risco atribuível (RA) e fração atribuível (FA) para quantificar o impacto do tabagismo. Qual a interpretação correta dessas medidas e sua relevância para políticas de saúde?",
+                          "opts":  [
+                                       "RA=14% (risco em fumantes 16% menos risco em não fumantes 2%): estima o excesso absoluto de mortalidade atribuível ao tabagismo. FA=(RR-1)/RR=87,5%: estima que 87,5% das mortes por câncer de pulmão em fumantes seriam evitáveis pela cessação tabágica. Essas medidas fundamentam metas de redução de mortalidade em programas de controle do tabaco.",
+                                       "RA=8,0 (RR de fumantes vs. não fumantes): expressa que fumantes têm 8 vezes mais mortalidade por câncer de pulmão. FA=87,5% confirma que o tabagismo é o fator causador em 87,5% dos fumantes afetados. Ambas as medidas são derivadas do risco relativo.",
+                                       "RA=14% indica que 14% dos fumantes desenvolveram câncer exclusivamente por causa do tabaco, excluindo contribuições de outros fatores. FA=87,5% representa a proporção da população total (fumantes + não fumantes) que seria beneficiada pela eliminação do tabagismo.",
+                                       "RA e FA são medidas intercambiáveis que expressam o mesmo fenômeno em escalas diferentes: RA em escala absoluta e FA em escala relativa. Ambas estimam o mesmo parâmetro — fração de casos causados pelo fator de risco — e têm idêntica aplicabilidade para políticas de saúde."
+                                   ],
+                          "c":  0,
+                          "exp":  "Risco em fumantes = 80/500 = 16%; risco em não fumantes = 10/500 = 2%; RA = 16%-2% = 14%; RR = 16%/2% = 8,0; FA = (8-1)/8 = 87,5%. O risco atribuível expressa o excesso de risco absoluto associado à exposição — relevante para dimensionar carga evitável. A fração atribuível (fração etiológica no exposto) estima a proporção de casos entre expostos que teoricamente seria eliminada removendo a exposição, assumindo causalidade — fundamental para calcular vidas salváveis por intervenção."
+                      },
+                      {
+                          "q":  "Revisão sistemática com metanálise avalia eficácia de estatinas na prevenção primária de eventos cardiovasculares maiores (ECVM). Inclui 15 ECRs, n=75.000 participantes. Forest plot mostra RR combinado=0,75 (IC 95%: 0,70-0,80), I²=62%, p-heterogeneidade=0,002. Meta-regressão indica que a heterogeneidade é explicada pelo risco cardiovascular basal dos participantes (R²=71%). Como a meta-regressão modifica a interpretação da heterogeneidade e quais implicações para a aplicabilidade clínica dos resultados?",
+                          "opts":  [
+                                       "Meta-regressão identificou o risco cardiovascular basal como modificador de efeito que explica 71% da variância entre estudos: estatinas são mais eficazes em pacientes de maior risco basal. Isso transforma heterogeneidade \u0027problemática\u0027 em informação clínica: a estimativa global RR=0,75 subestima o benefício em alto risco e superestima em baixo risco, exigindo que guidelines calibrem recomendações por estratificação de risco cardiovascular.",
+                                       "Meta-regressão com R²=71% indica que o modelo explicou suficientemente a heterogeneidade, validando o RR combinado=0,75 como estimativa homogênea e universalmente aplicável. I²=62% pode ser ignorado quando meta-regressão identifica a fonte, pois a heterogeneidade residual (29%) é clinicamente negligenciável.",
+                                       "Meta-regressão em metanálise é equivalente à análise de subgrupos pré-especificada em ECR individual; R²=71% indica que 71% dos pacientes se beneficiam de estatinas em prevenção primária, com os 29% restantes não responsivos ao tratamento.",
+                                       "Heterogeneidade I²=62% com p=0,002 contraindica a síntese quantitativa dos 15 estudos; a meta-regressão, por ser análise observacional sobre dados agregados (ecological fallacy), não pode ser usada para explicar heterogeneidade nem para guiar aplicação clínica dos resultados."
+                                   ],
+                          "c":  0,
+                          "exp":  "Meta-regressão testa se covariáveis em nível de estudo (aqui, risco basal médio dos participantes) explicam variância nos efeitos entre estudos. R²=71% indica que risco basal é forte modificador de efeito — o que biologicamente faz sentido (benefício absoluto maior quando risco basal é maior, mesmo com RR similar). Assim, I²=62% não é \u0027ruído estatístico\u0027 a ser descartado, mas sinal de heterogeneidade clinicamente relevante que exige interpretação condicional. Esta é a base para guidelines como ACC/AHA estratificarem estatinas por risco calculado (Pooled Cohort Equations)."
+                      },
+                      {
+                          "q":  "Estudo de coorte prospectivo avalia o efeito de dieta mediterrânea sobre incidência de infarto agudo do miocárdio (IAM) em 8.000 adultos seguidos por 7 anos. Após ajuste multivariável, o hazard ratio (HR) foi 0,72 (IC 95%: 0,65–0,80). Pesquisadores desejam comparar esse resultado com o de um ensaio clínico randomizado publicado anteriormente que reportou RR=0,75. Por que o HR, neste contexto de seguimento prolongado com perdas diferenciais, é a medida de associação preferível ao risco relativo simples?",
+                          "opts":  [
+                                       "O HR incorpora o tempo até o evento e censura as observações de participantes que saíram do estudo, permitindo análise de sobrevida que o RR simples não realiza, tornando-o mais preciso em coortes com follow-up variável.",
+                                       "O HR é preferível porque sempre produz estimativas mais conservadoras que o RR, reduzindo o risco de erro tipo I em estudos observacionais de longa duração.",
+                                       "O HR elimina automaticamente o confundimento residual presente em estudos de coorte, diferentemente do RR, que exige estratificação manual para controle de variáveis de confusão.",
+                                       "O HR é calculado a partir de tabelas de contingência 2×2, sendo matematicamente equivalente ao OR em estudos de coorte, mas superior ao RR por considerar a variância do tempo de exposição."
+                                   ],
+                          "c":  0,
+                          "exp":  "O hazard ratio, derivado do modelo de Cox, compara taxas instantâneas de ocorrência do evento entre grupos ao longo do tempo, incorporando censura informativa e variação no tempo de seguimento. Em coortes longas com perdas diferenciais, ignorar o tempo até o evento gera estimativas de RR imprecisas pois trata todos os participantes como tendo seguimento completo, subestimando ou superestimando a associação real."
+                      },
+                      {
+                          "q":  "Em programa de rastreamento para hipertensão arterial em unidade básica de saúde, utiliza-se esfigmomanômetro com tendência a superestimar a pressão arterial sistólica em 8 mmHg de forma consistente em todos os participantes. Esse erro sistemático afeta igualmente expostos e não expostos ao fator de risco investigado (sedentarismo). Qual o efeito mais provável desse viés de aferição não diferencial sobre a medida de associação entre sedentarismo e hipertensão?",
+                          "opts":  [
+                                       "Viés não diferencial tende a atenuar a medida de associação (RR ou OR) em direção ao nulo, reduzindo a magnitude real da associação entre sedentarismo e hipertensão.",
+                                       "Viés não diferencial superestima sistematicamente a medida de associação porque aumenta a prevalência de hipertensão em ambos os grupos, amplificando o contraste entre expostos e não expostos.",
+                                       "Viés não diferencial não altera a medida de associação pois erros sistemáticos equivalentes em ambos os grupos se cancelam algebricamente na razão entre taxas de expostos e não expostos.",
+                                       "Viés não diferencial inverte a direção da associação (OR\u003c1), uma vez que a superestimação uniforme da pressão reclassifica preferencialmente não expostos como hipertensos, criando falsa proteção do sedentarismo."
+                                   ],
+                          "c":  0,
+                          "exp":  "O viés de aferição não diferencial (misclassification não diferencial) ocorre quando o erro de medição é independente do status de exposição ou desfecho. A teoria estatística demonstra que, para variáveis dicotômicas, essa misclassification aleatória desloca as estimativas de RR e OR em direção a 1,0 (nulo), subestimando a verdadeira magnitude da associação e aumentando o risco de erro tipo II."
+                      },
+                      {
+                          "q":  "Ensaio clínico randomizado avalia novo hipoglicemiante em 1.200 pacientes com DM tipo 2. O desfecho primário é redução de HbA1c ≥1% em 6 meses. Resultado: 54% no grupo intervenção vs. 42% no grupo controle alcançaram o desfecho (p=0,003; IC 95% para diferença: 4,8%–19,2%). O comitê regulatório solicita o NNT. Qual o NNT correto e sua interpretação clínica neste contexto?",
+                          "opts":  [
+                                       "NNT=8,3, significando que aproximadamente 8 pacientes precisam ser tratados com o novo hipoglicemiante para que 1 adicional alcance redução de HbA1c ≥1% comparado ao controle, em 6 meses.",
+                                       "NNT=12, calculado como inverso da redução relativa do risco (1/RRR), indicando quantos pacientes devem ser tratados para prevenir um evento adverso no período estudado.",
+                                       "NNT=1,86, obtido dividindo 54% por 42%, representando a razão entre as taxas de sucesso dos dois grupos e indicando superioridade absoluta do novo fármaco.",
+                                       "NNT=100, pois a redução absoluta do risco de 12% deve ser convertida para base 100 antes de calcular o inverso, normalizando a métrica para comparação entre estudos."
+                                   ],
+                          "c":  0,
+                          "exp":  "O NNT é calculado como 1/RAR, onde RAR (redução absoluta do risco) = 54% − 42% = 12% = 0,12. Logo NNT = 1/0,12 ≈ 8,3. Isso significa que, em média, 8 a 9 pacientes precisam receber o tratamento para que um paciente adicional, além dos que responderiam ao controle, alcance o desfecho desejado no período de 6 meses — medida clinicamente interpretável e sensível ao risco basal."
+                      },
+                      {
+                          "q":  "Pesquisadores realizam revisão sistemática com metanálise sobre corticosteroides no tratamento de sepse. Identificam 12 ensaios clínicos com 8.500 pacientes. O forest plot demonstra que todos os intervalos de confiança individuais se sobrepõem, mas o diamante da estimativa combinada está à esquerda do nulo (OR=0,82; IC 95%: 0,74–0,91). O I²=22% e o teste de Egger apresenta p=0,04. Qual a interpretação mais adequada desse conjunto de resultados?",
+                          "opts":  [
+                                       "A heterogeneidade estatística é baixa (I²=22%), sustentando a validade do modelo de efeitos fixos; entretanto, o teste de Egger com p=0,04 sugere assimetria no funnel plot compatível com viés de publicação, o que pode superestimar o benefício observado.",
+                                       "O I²=22% indica heterogeneidade moderada exigindo modelo de efeitos aleatórios obrigatório, e o p=0,04 do teste de Egger confirma que os estudos são clinicamente homogêneos e o resultado é robusto.",
+                                       "O resultado da metanálise é conclusivo para benefício dos corticosteroides pois todos os ICs individuais se sobrepõem ao diamante combinado, e o teste de Egger com p=0,04 indica adequada distribuição simétrica dos estudos.",
+                                       "O I²=22% significa que 22% dos pacientes incluídos nos estudos responderam ao tratamento, e o p=0,04 do teste de Egger demonstra significância estatística do efeito do corticosteroide sobre mortalidade."
+                                   ],
+                          "c":  0,
+                          "exp":  "O I² de 22% situa-se abaixo do limiar convencional de 25–50% para heterogeneidade moderada, indicando que a variabilidade entre estudos é predominantemente atribuível ao acaso — compatível com modelo de efeitos fixos. O teste de Egger com p\u003c0,05 indica assimetria estatisticamente significativa no funnel plot, o que é interpretado como evidência de potencial viés de publicação (estudos negativos pequenos não publicados), sugerindo que o efeito benéfico dos corticosteroides pode estar superestimado."
+                      },
+                      {
+                          "q":  "Vigilância epidemiológica monitora taxa de mortalidade infantil (TMI) em dois municípios com populações distintas. Município A (100.000 hab.): 18 óbitos em menores de 1 ano / 2.000 nascidos vivos. Município B (500.000 hab.): 60 óbitos em menores de 1 ano / 6.000 nascidos vivos. O gestor afirma que o Município B tem situação mais grave porque registrou maior número absoluto de óbitos. Por que essa conclusão é epidemiologicamente equivocada?",
+                          "opts":  [
+                                       "A TMI é calculada por nascidos vivos, não por população total; Município A apresenta TMI=9/1.000 NV versus Município B com TMI=10/1.000 NV, sendo as taxas praticamente equivalentes — o maior número absoluto de óbitos no B reflete sua maior natalidade, não pior condição de saúde proporcional.",
+                                       "A comparação entre municípios exige padronização direta pelo método de idade-padrão antes de qualquer conclusão; sem esse ajuste, qualquer análise de mortalidade infantil é metodologicamente inválida e não pode ser interpretada.",
+                                       "O número absoluto de óbitos é a única medida válida para alocação de recursos, pois reflete a carga absoluta de doença; a taxa por nascidos vivos subestima o impacto real em municípios maiores e deve ser usada apenas para comparações internacionais.",
+                                       "Município A tem situação mais grave porque sua população menor gera denominador menor na TMI, inflando artificialmente a taxa e demonstrando risco sistemático maior em comunidades de pequeno porte."
+                                   ],
+                          "c":  0,
+                          "exp":  "A taxa de mortalidade infantil = (óbitos em \u003c1 ano / nascidos vivos) × 1.000. Para A: (18/2.000)×1.000 = 9/1.000 NV; para B: (60/6.000)×1.000 = 10/1.000 NV. Municípios com maior população geram mais óbitos absolutos simplesmente por terem mais nascimentos; a comparação por número absoluto ignora o denominador e confunde magnitude com risco, sendo o erro clássico de confundir contagem com taxa."
+                      },
+                      {
+                          "q":  "Estudo caso-controle avalia associação entre uso de contraceptivos orais combinados (COC) e tromboembolismo venoso (TEV). São recrutados 200 casos (TEV confirmado) e 400 controles (sem TEV). Uso de COC: 80 casos (40%) e 80 controles (20%). OR calculado = 2,67. Ao estratificar por tabagismo, o OR em fumantes é 2,65 e em não fumantes é 2,69. O que essa estratificação demonstra e qual sua implicação analítica?",
+                          "opts":  [
+                                       "Os OR estratificados (2,65 e 2,69) são praticamente iguais ao OR bruto (2,67), indicando ausência de confundimento por tabagismo e ausência de modificação de efeito — tabagismo não é confundidor nem modificador de efeito nessa associação.",
+                                       "A similaridade dos OR estratificados com o OR bruto confirma que tabagismo é confundidor clássico da associação COC-TEV e deve ser removido da análise multivariável para obter estimativa não viesada.",
+                                       "Os OR estratificados similares indicam modificação de efeito por tabagismo, exigindo apresentação separada dos resultados para fumantes e não fumantes em vez de estimativa combinada pelo método de Mantel-Haenszel.",
+                                       "A estratificação com OR similares demonstra que tabagismo é variável intermediária (mediador) na cadeia causal entre COC e TEV, contraindicando seu ajuste no modelo logístico por risco de supercontrole."
+                                   ],
+                          "c":  0,
+                          "exp":  "Confundimento é identificado quando o OR ajustado (ou estratificado) difere substancialmente do OR bruto (convencionalmente ≥10% de diferença). Modificação de efeito (interação) é identificada quando os OR nos estratos diferem entre si de forma relevante. Neste caso, OR bruto=2,67, OR em fumantes=2,65 e em não fumantes=2,69 — todos praticamente idênticos. Isso significa que tabagismo não altera a estimativa (sem confundimento) e não modifica o efeito do COC sobre o TEV de forma diferencial entre estratos."
+                      },
+                      {
+                          "q":  "Pesquisadores planejam ensaio clínico para avaliar novo antifúngico versus fluconazol em candidemia. Estimam mortalidade de 30% no grupo controle e desejam detectar redução absoluta de 10% (mortalidade 20% no grupo intervenção), com poder de 80% e α bicaudal de 5%. Calculam n=294 por grupo. Devido a restrições orçamentárias, recrutam apenas 180 por grupo. Qual a consequência estatística mais direta dessa redução amostral?",
+                          "opts":  [
+                                       "O poder estatístico diminui abaixo de 80%, aumentando a probabilidade de erro tipo II (falso negativo) — o estudo pode concluir ausência de diferença entre os fármacos mesmo que o novo antifúngico seja genuinamente superior.",
+                                       "O tamanho amostral reduzido aumenta o erro tipo I (alfa), elevando a probabilidade de o estudo encontrar diferença estatisticamente significativa onde nenhuma diferença clínica real existe.",
+                                       "A redução amostral aumenta o intervalo de confiança 95% do OR, mas não afeta o poder estatístico, pois este é determinado exclusivamente pelo alfa estabelecido no protocolo.",
+                                       "Com n=180 por grupo, o estudo perde validade externa mas mantém validade interna intacta, pois o poder afeta apenas a generalização dos resultados para outras populações."
+                                   ],
+                          "c":  0,
+                          "exp":  "O poder estatístico (1−β) é diretamente proporcional ao tamanho amostral: reduzir n de 294 para 180 por grupo (redução de ~39%) resulta em queda do poder abaixo do mínimo de 80% planejado. Isso significa que a probabilidade de erro tipo II aumenta — o estudo tem maior chance de não detectar uma diferença real de 10% na mortalidade, concluindo falsamente pela não inferioridade do novo fármaco quando este poderia de fato ser superior."
+                      },
+                      {
+                          "q":  "Inquérito nacional de saúde aplica questionário sobre consumo de bebidas alcoólicas. Participantes são entrevistados por pesquisadores presencialmente e tendem a subestimar o consumo real por desejabilidade social. Esse erro ocorre igualmente em todos os grupos socioeconômicos estudados. Ao analisar a associação entre consumo de álcool e hipertensão arterial, qual o efeito esperado desse viés sobre a estimativa de associação?",
+                          "opts":  [
+                                       "Como a subestimação é não diferencial (igual em todos os grupos), haverá misclassification da exposição em direção ao nulo, atenuando o OR/RR estimado e potencialmente fazendo com que a associação real seja mais forte do que a observada.",
+                                       "A subestimação uniforme do consumo produz viés diferencial que superestima a associação entre álcool e hipertensão, pois hipertensos tendem a negar mais o consumo do que normotensos em qualquer contexto.",
+                                       "O viés por desejabilidade social é um viés de seleção que compromete a representatividade da amostra, mas não afeta a estimativa interna de associação entre exposição e desfecho.",
+                                       "A subestimação sistemática uniforme do consumo não gera viés de associação, pois desloca ambos os grupos (hipertensos e normotensos) na mesma direção, preservando a diferença entre os grupos intacta."
+                                   ],
+                          "c":  0,
+                          "exp":  "Misclassification não diferencial da exposição — onde o erro de medição é independente do status do desfecho — tende a diluir a associação verdadeira em direção ao nulo. Indivíduos que realmente consomem álcool em quantidade moderada/alta são classificados como baixo consumo tanto no grupo de hipertensos quanto no de normotensos, reduzindo o contraste entre expostos e não expostos e atenuando o OR observado abaixo do valor real."
+                      },
+                      {
+                          "q":  "Análise de regressão logística em estudo sobre fatores de risco para pré-eclâmpsia inclui as variáveis: IMC, idade, paridade e diabetes gestacional. O modelo apresenta área sob a curva ROC (AUC)=0,82. Ao adicionar biomarcador sérico (sFlt-1/PlGF), a AUC sobe para 0,91 (p para diferença=0,001). O que a diferença entre as AUCs quantifica nesse contexto e qual sua implicação clínica?",
+                          "opts":  [
+                                       "A diferença de AUC (0,09) quantifica o incremento na capacidade discriminatória do modelo ao incluir o biomarcador; AUC=0,91 indica excelente discriminação, significando que em 91% dos pares aleatórios (caso-controle), o modelo com sFlt-1/PlGF classifica corretamente o caso como de maior risco que o controle.",
+                                       "A diferença de AUC representa a redução do número necessário para rastrear (NNR) ao adicionar o biomarcador; AUC=0,91 indica que 91% das pacientes rastreadas com o modelo completo evitarão pré-eclâmpsia grave.",
+                                       "A AUC de 0,91 equivale a sensibilidade de 91% e especificidade de 91% simultaneamente para qualquer ponto de corte escolhido, e a diferença de 0,09 representa a melhora absoluta nessas duas métricas combinadas.",
+                                       "A diferença entre AUCs deve ser ignorada pois modelos com AUC\u003e0,80 já são considerados equivalentes para uso clínico; a adição do biomarcador é estatisticamente significativa mas clinicamente irrelevante por ser incremental."
+                                   ],
+                          "c":  0,
+                          "exp":  "A AUC-ROC representa a probabilidade de que, dado um par aleatório de um caso (pré-eclâmpsia) e um controle (sem pré-eclâmpsia), o modelo atribua maior probabilidade ao caso. AUC=0,82 indica boa discriminação; AUC=0,91 indica excelente discriminação. A diferença de 0,09 com p=0,001 (teste de DeLong ou equivalente) demonstra que o biomarcador agrega poder discriminatório estatisticamente significativo e clinicamente relevante ao modelo clínico basal, justificando potencial incorporação no rastreamento."
+                      },
+                      {
+                          "q":  "Secretaria de saúde estadual compara duas intervenções para redução da mortalidade por dengue grave em diferentes regiões. Região X (alta endemicidade): mortalidade cai de 8% para 4% com a intervenção A (RRR=50%; RAR=4%; NNT=25). Região Y (baixa endemicidade): mortalidade cai de 2% para 1% com intervenção B (RRR=50%; RAR=1%; NNT=100). O gestor afirma que as duas intervenções têm eficácia idêntica pois apresentam a mesma RRR. Por que essa conclusão é inadequada para orientar alocação de recursos?",
+                          "opts":  [
+                                       "A RRR idêntica (50%) mascara diferenças cruciais na eficácia absoluta: a intervenção A produz RAR quatro vezes maior (4% vs. 1%) e NNT quatro vezes menor (25 vs. 100), significando que na Região X é necessário tratar muito menos pacientes para evitar um óbito — a alocação deve priorizar contextos de maior risco basal.",
+                                       "A RRR é a medida correta para comparação de eficácia entre populações com riscos basais distintos precisamente porque ela padroniza o efeito pelo risco inicial; o gestor está correto e as intervenções devem receber recursos equivalentes independentemente da endemicidade.",
+                                       "O NNT é irrelevante para alocação de recursos em saúde pública, pois se aplica apenas a ensaios clínicos individuais; a decisão alocativa deve basear-se exclusivamente na RRR combinada com o custo unitário de cada intervenção.",
+                                       "A conclusão seria adequada se as duas regiões tivessem populações iguais; a diferença no NNT decorre unicamente do tamanho populacional, e a padronização demográfica tornaria as RARs idênticas entre as regiões."
+                                   ],
+                          "c":  0,
+                          "exp":  "A RRR é função exclusiva da eficácia relativa e permanece constante mesmo quando o risco basal varia; ela não captura o impacto absoluto da intervenção na população. A RAR e o NNT, por incorporarem o risco basal, refletem o benefício absoluto por paciente tratado. Intervenções com mesma RRR em populações de risco basal distinto produzem benefício absoluto proporcional ao risco basal — onde a doença é mais prevalente/grave, o mesmo percentual de redução relativa evita mais eventos por pessoa tratada, justificando priorização com base em RAR e NNT."
+                      },
+                      {
+                          "q":  "Ensaio clínico randomizado multicêntrico avalia novo antiagregante plaquetário versus AAS em 8.400 pacientes com síndrome coronariana aguda sem supradesnivelamento de ST. O desfecho primário composto (morte cardiovascular + IAM não fatal + AVC) ocorreu em 9,8% no grupo intervenção e 11,7% no grupo controle (HR=0,82; IC 95%: 0,74–0,91; p\u003c0,001). Um subgrupo pré-especificado de pacientes diabéticos (n=2.100) apresentou HR=0,98 (IC 95%: 0,81–1,18; p=0,84), enquanto não diabéticos (n=6.300) mostraram HR=0,76 (IC 95%: 0,67–0,86). O teste de interação entre diabéticos e não diabéticos forneceu p=0,03. Considerando esses achados, qual é a interpretação bioestatística mais rigorosa e a conduta analítica adequada?",
+                          "opts":  [
+                                       "O resultado global é válido e deve ser aplicado uniformemente; diferenças de subgrupo refletem variação aleatória, pois o IC do subgrupo diabético ainda inclui benefício marginal.",
+                                       "Há evidência estatística de modificação de efeito pelo status de diabetes (p interação=0,03 em análise pré-especificada), tornando inadequada a aplicação indiscriminada do efeito global; o benefício não se estende de forma consistente ao subgrupo diabético, exigindo análise separada e interpretação clínica cautelosa.",
+                                       "O subgrupo diabético deve ser desconsiderado porque o n=2.100 confere poder insuficiente, configurando erro tipo II; o efeito global permanece aplicável a todos.",
+                                       "A heterogeneidade entre subgrupos invalida o ensaio, tornando os resultados globais não publicáveis sem reanalálise por modelo de efeitos aleatórios estratificado."
+                                   ],
+                          "c":  1,
+                          "exp":  "Modificação de efeito (interação) ocorre quando o efeito da intervenção difere quantitativa ou qualitativamente entre estratos de uma terceira variável; quando o teste de interação é pré-especificado e apresenta p\u003c0,05, a heterogeneidade de efeito é estatisticamente suportada, não sendo meramente variação aleatória. O HR do subgrupo diabético (0,98; IC incluindo 1,0) é consistente com ausência de benefício, e a divergência em relação aos não diabéticos (HR=0,76) é suficientemente grande para ter implicações clínicas, impondo cautela na extrapolação do efeito médio."
+                      },
+                      {
+                          "q":  "Programa estadual de rastreamento de câncer de mama utiliza mamografia digital com sensibilidade de 85% e especificidade de 92% em mulheres de 50–69 anos. A prevalência real de câncer de mama nessa faixa etária é de 4 por 1.000. Após reconfiguração do programa, passa-se a rastrear também mulheres de 40–49 anos, onde a prevalência é de 1,2 por 1.000 e a densidade mamária elevada reduz a sensibilidade para 78% e a especificidade para 87%. Considerando uma coorte hipotética de 100.000 mulheres em cada faixa etária, qual afirmativa descreve com maior precisão o impacto bioestatístico da extensão do rastreamento?",
+                          "opts":  [
+                                       "O VPP na faixa 40–49 anos cairá de aproximadamente 4,1% para 0,73%, com expressivo aumento proporcional de falsos-positivos por verdadeiro positivo detectado, amplificando danos potenciais do rastreamento nessa faixa.",
+                                       "A redução de sensibilidade de 85% para 78% na faixa 40–49 anos é o principal determinante do impacto negativo, pois aumenta os falsos-negativos de forma clinicamente relevante sem alterar significativamente o VPP.",
+                                       "O VPN permanece praticamente inalterado em ambas as faixas etárias, pois prevalências baixas garantem alto VPN independentemente da especificidade, tornando o rastreamento igualmente válido nos dois grupos.",
+                                       "Como o VPP depende exclusivamente da especificidade do teste, a queda de 92% para 87% representa a única variável determinante da piora do desempenho preditivo na faixa mais jovem."
+                                   ],
+                          "c":  0,
+                          "exp":  "O VPP é função conjunta de sensibilidade, especificidade e prevalência (teorema de Bayes). Na faixa 50–69 anos: VP=340, FP=7.968, VPP≈340/8.308≈4,1%. Na faixa 40–49 anos: VP=94, FP=12.988, VPP≈94/13.082≈0,72%. A queda simultânea da prevalência (4→1,2/1.000), da sensibilidade (85→78%) e da especificidade (92→87%) converge para redução drástica do VPP e aumento desproporcional de falsos-positivos por câncer detectado, com implicações diretas em biópsias desnecessárias, ansiedade e custos."
+                      },
+                      {
+                          "q":  "Pesquisadores conduzem análise de regressão de Cox em coorte prospectiva de 12 anos (n=18.500) avaliando associação entre polimorfismo genético MTHFR C677T e incidência de tromboembolismo venoso (TEV). O modelo ajustado para idade, sexo, IMC, uso de anticoncepcional oral (ACO) e tabagismo fornece HR=1,42 (IC 95%: 1,18–1,71) para homozigotos TT versus CC. Análise estratificada revela: usuárias de ACO com genótipo TT: HR=4,8 (IC 95%: 3,2–7,1); não usuárias de ACO com genótipo TT: HR=1,19 (IC 95%: 0,94–1,50); teste de interação multiplicativa p\u003c0,001. Qual é o erro analítico mais grave que seria cometido ao basear a comunicação de risco exclusivamente no HR global ajustado de 1,42?",
+                          "opts":  [
+                                       "Superestimaria o risco em não usuárias de ACO com genótipo TT, pois o HR global é inflacionado pelo efeito de confundimento residual do uso de ACO não controlado adequadamente pelo modelo multivariável.",
+                                       "Mascararia modificação de efeito biologicamente plausível e estatisticamente robusta (p interação \u003c0,001): o HR global de 1,42 é média ponderada que subestima substancialmente o risco em usuárias de ACO-TT (HR real≈4,8) e superestima marginalmente em não usuárias-TT (HR real≈1,19), comprometendo decisão clínica individualizada sobre prescrição de ACO.",
+                                       "Violaria o pressuposto de riscos proporcionais (proporcionalidade de Schoenfeld) da regressão de Cox, invalidando todos os HRs calculados e exigindo modelo paramétrico alternativo.",
+                                       "Geraria viés de tempo-dependente ao não considerar que o uso de ACO pode variar ao longo dos 12 anos de seguimento, tornando o HR global não interpretável sem análise de variável dependente do tempo."
+                                   ],
+                          "c":  1,
+                          "exp":  "Quando há modificação de efeito com teste de interação significativo (p\u003c0,001), o efeito médio global é uma estimativa estatisticamente inadequada para subgrupos específicos. O HR de 4,8 em usuárias de ACO-TT versus 1,19 em não usuárias-TT representa diferença clinicamente crítica: a combinação ACO + homozigose TT configura risco multiplicativo de TEV com implicações diretas na contraindicação à prescrição de ACO nesse subgrupo, decisão que seria incorretamente guiada por um HR global de 1,42."
+                      },
+                      {
+                          "q":  "Metanálise de rede (network meta-analysis) compara cinco esquemas de profilaxia antifúngica em receptores de transplante alogênico de células-tronco hematopoéticas: fluconazol, itraconazol, voriconazol, posaconazol e micafungina. Dos 22 ensaios incluídos, 14 são indiretos (comparações por nó comum). A estatística de inconsistência global (design-by-treatment interaction test) apresenta p=0,04. O I² das comparações diretas disponíveis varia entre 0% e 18%. Qual é a implicação metodológica mais crítica desse cenário e a conduta analítica apropriada?",
+                          "opts":  [
+                                       "A inconsistência global (p=0,04) é clinicamente irrelevante porque o I² das comparações diretas é baixo (\u003c25%), indicando que a heterogeneidade estatística não compromete as estimativas indiretas da rede.",
+                                       "A inconsistência significativa (p=0,04) indica que a suposição de similaridade transitiva está violada: as comparações indiretas não são permutáveis com as diretas, potencialmente por diferenças nos pacientes, definições de desfecho ou doses entre os elos da rede; a conduta adequada inclui investigar fontes de inconsistência por análise nó-a-nó e interpretar comparações indiretas com cautela, possivelmente priorizando evidências diretas.",
+                                       "A inconsistência indica confundimento sistemático não controlado em todos os 22 ensaios, exigindo exclusão dos ensaios indiretos e reanalálise apenas com os 8 ensaios com comparações diretas disponíveis.",
+                                       "O valor-p de 0,04 está marginal e dentro da variabilidade esperada em metanálises de rede; a solução adequada é aumentar o alfa de significância para 0,10 em testes de inconsistência, conforme recomendação do PRISMA-NMA 2020."
+                                   ],
+                          "c":  1,
+                          "exp":  "A validade da metanálise de rede fundamenta-se na premissa de transitividade (similaridade): estudos conectados indiretamente devem ser comparáveis quanto a modificadores de efeito. O teste de design-by-treatment interaction detecta inconsistência entre evidências diretas e indiretas na rede; p=0,04 indica violação estatisticamente significativa dessa premissa. O I² baixo nas comparações diretas é irrelevante para esse problema — ele mede heterogeneidade intra-loop, não inconsistência entre loops diretos e indiretos."
+                      },
+                      {
+                          "q":  "Ensaio clínico randomizado adaptativo de fase III avalia novo imunobiológico versus metotrexato em artrite reumatoide ativa (critérios ACR/EULAR 2010). Análise interina pré-planejada ao atingir 50% dos eventos ocorre no mês 18: o desfecho primário (ACR50 na semana 52) mostra OR=2,1 (IC 95%: 1,6–2,8; p=0,00012) no grupo biológico. O comitê de monitoramento de dados utiliza o limite de O\u0027Brien-Fleming para parada por eficácia: α gasto acumulado até a análise interina = 0,0025. O desfecho de segurança cardiovascular (MACE) apresenta RR=1,34 (IC 95%: 0,89–2,01; p=0,16) no grupo intervenção. Qual é a decisão analítica mais tecnicamente adequada para o comitê?",
+                          "opts":  [
+                                       "Encerrar o estudo imediatamente por eficácia superior demonstrada: o p=0,00012 está abaixo do alfa gasto de 0,0025 pela regra de O\u0027Brien-Fleming, satisfazendo o critério formal de parada.",
+                                       "Não encerrar o estudo prematuramente: embora p=0,00012 satisfaça o limite de O\u0027Brien-Fleming para eficácia, o sinal de segurança cardiovascular (RR=1,34; IC incluindo dano plausível clinicamente) com poder insuficiente para exclusão de dano exige seguimento completo para caracterizar adequadamente o perfil risco-benefício antes de qualquer recomendação regulatória.",
+                                       "Encerrar o estudo e recomendar aprovação condicional com monitoramento pós-mercado de MACE, pois o IC 95% do RR cardiovascular (0,89–2,01) inclui 1,0, demonstrando ausência de dano estatisticamente significativo.",
+                                       "Rejeitar a análise interina como inválida porque desenhos adaptativos não permitem parada por eficácia sem reajuste do alfa total do estudo para 0,025, invalidando o limite de O\u0027Brien-Fleming aplicado."
+                                   ],
+                          "c":  1,
+                          "exp":  "Critérios de parada por eficácia são necessários mas não suficientes para encerramento de um ensaio; o comitê deve considerar simultaneamente os desfechos de segurança. O RR=1,34 para MACE com IC 95% de 0,89–2,01 indica que com 50% dos eventos o estudo está subpotencializado para excluir aumento clinicamente relevante de risco cardiovascular — o limite superior do IC (2,01) representa potencial dobro do risco, inaceitável sem dado completo. A decisão de encerramento precoce por eficácia sem segurança cardiovascular adequadamente caracterizada é contrária às diretrizes ICH E9(R1) e recomendações de comitês de monitoramento como DAMOCLES."
+                      },
+                      {
+                          "q":  "Estudo de coorte retrospectivo examina associação entre hipercolesterolemia e doença de Alzheimer usando dados de prontuário eletrônico de 95.000 pacientes com seguimento médio de 8,3 anos. A análise bruta mostra HR=0,76 (IC 95%: 0,68–0,85) para Alzheimer em pacientes com hipercolesterolemia diagnosticada. Após ajuste para idade, escolaridade, diabetes e tabagismo, o HR muda para 0,81 (IC 95%: 0,72–0,91). Os pesquisadores cogitam que usuários de estatinas (74% dos hipercolesterolêmicos) possam explicar o achado protetor. Adicionalmente, pacientes com doença hepática grave foram excluídos por contraindicação a estatinas. Qual ameaça à validade do estudo é mais determinante para a interpretação do HR ajustado?",
+                          "opts":  [
+                                       "Confundimento por indicação: estatinas são prescritas preferencialmente a pacientes com hipercolesterolemia, e há evidências emergentes de efeito neuroprotetor das estatinas independentemente do colesterol, tornando impossível separar o efeito da hipercolesterolemia per se do efeito das estatinas sem análise mediacional ou análise de variável instrumental.",
+                                       "Viés de sobrevivência seletiva: pacientes com hipercolesterolemia grave faleceram precocemente por eventos cardiovasculares antes de desenvolver Alzheimer, reduzindo artificialmente a incidência de demência nesse grupo.",
+                                       "Viés de detecção: pacientes hipercolesterolêmicos têm mais contato médico e, portanto, diagnóstico mais precoce de Alzheimer, o que paradoxalmente reduziria o HR aparente por aumentar o denominador de tempo-pessoa em risco.",
+                                       "Viés de tempo-imortal: o período entre o diagnóstico de hipercolesterolemia e o início do seguimento para Alzheimer classifica incorretamente tempo sem evento como exposição, superestimando o efeito protetor."
+                                   ],
+                          "c":  0,
+                          "exp":  "Confundimento por indicação (confounding by indication) ocorre quando a exposição (hipercolesterolemia) está ligada ao tratamento (estatina), e o tratamento tem efeito independente sobre o desfecho. Com 74% dos hipercolesterolêmicos em uso de estatinas e evidências crescentes de efeitos pleiotrópicos neuroprotetores das estatinas, o HR \u0027protetor\u0027 de 0,81 pode refletir o efeito das estatinas, não da hipercolesterolemia. O ajuste multivariável não resolve esse problema sem incluir estatina como covariável ou usar análise de mediação/variável instrumental."
+                      },
+                      {
+                          "q":  "Autoridade sanitária conduz estudo ecológico para avaliar correlação entre cobertura vacinal contra sarampo (% municípios) e taxa de incidência de sarampo por 100.000 habitantes em 412 municípios de um estado. O coeficiente de correlação de Pearson é r=−0,71 (p\u003c0,001). Análise de regressão linear simples mostra que cada aumento de 10 pontos percentuais na cobertura vacinal está associado a redução de 4,3 casos/100.000 (β=−0,43; IC 95%: −0,51 a −0,35). O R² é 0,50. Gestores propõem usar a equação para prever que municípios com cobertura ≥95% terão incidência próxima de zero. Qual limitação bioestatística é mais crítica para essa extrapolação?",
+                          "opts":  [
+                                       "O coeficiente de determinação R²=0,50 indica que 50% da variabilidade da incidência não é explicada pela cobertura vacinal, refletindo variáveis não mensuradas (densidade demográfica, imunidade de rebanho histórica, qualidade do registro); extrapolação para cobertura ≥95% é matematicamente possível mas biologicamente limitada pela falácia ecológica: associações agregadas (municipal) não são transponíveis a indivíduos nem a municípios com perfis distintos dos observados na amostra.",
+                                       "O valor r=−0,71 indica correlação moderada-forte, mas como r² = 0,50 e não 1,0, a regressão linear é estatisticamente inválida para qualquer tipo de predição, exigindo substituição por modelo de regressão de Poisson.",
+                                       "A principal limitação é o viés de informação decorrente de subnotificação diferencial de sarampo em municípios com baixa cobertura vacinal, o que inflaciona artificialmente o coeficiente de correlação negativa.",
+                                       "Como se trata de estudo ecológico com unidade de análise municipal, o teorema central do limite não se aplica, invalidando o valor-p e os intervalos de confiança calculados pela regressão linear paramétrica."
+                                   ],
+                          "c":  0,
+                          "exp":  "A falácia ecológica (ecological fallacy) é o erro de inferir que associações observadas em nível agregado refletem associações causais no nível individual. Adicionalmente, extrapolação fora do intervalo de cobertura observado (extrapolar para ≥95% quando poucos municípios atingem esse valor) é tecnicamente problemática na regressão linear. O R²=0,50 confirma variabilidade residual substancial que torna a predição de incidência próxima de zero para qualquer cobertura clinicamente imprecisa."
+                      },
+                      {
+                          "q":  "Estudo de coorte prospectiva avalia desenvolvimento de diabetes tipo 2 em 22.000 adultos saudáveis ao longo de 15 anos. Análise de Kaplan-Meier mostra separação significativa das curvas de sobrevivência (livre de DM) entre quartis de atividade física (log-rank p\u003c0,001). Ao testar o pressuposto de riscos proporcionais pelo resíduo de Schoenfeld, o quartil mais ativo apresenta p=0,008 (violação significativa). Os pesquisadores decidem aplicar o modelo de Cox estratificado por quartil de atividade física ao invés do padrão. Qual é a consequência estatística correta dessa decisão e o trade-off envolvido?",
+                          "opts":  [
+                                       "O modelo estratificado resolve a violação de proporcionalidade ao permitir baseline hazards distintas por estrato, mas impede a estimativa de um HR global único para atividade física como covariável — os HRs de outras covariáveis são estimados em pooling dos estratos, preservando o ajuste para confundidores.",
+                                       "O modelo estratificado por quartil de atividade física é desnecessário pois a violação de proporcionalidade em apenas um quartil não afeta os HRs dos outros estratos nem do modelo global; a solução adequada seria exclusão do quartil violador.",
+                                       "A violação do pressuposto de Schoenfeld invalida toda a análise de Kaplan-Meier precedente, exigindo reanalálise por método paramétrico de Weibull antes de qualquer modelo de regressão de sobrevivência.",
+                                       "O modelo de Cox estratificado é equivalente ao modelo com termo de interação tempo-covariável para atividade física, gerando HRs idênticos e portanto não oferece vantagem metodológica sobre o modelo padrão com interação."
+                                   ],
+                          "c":  0,
+                          "exp":  "No modelo de Cox estratificado, a variável de estratificação deixa de ser incluída como covariável e passa a definir grupos com funções de risco de base independentes, relaxando o pressuposto de proporcionalidade para essa variável. O custo é a impossibilidade de estimar um HR único para atividade física; o benefício é que os HRs das demais covariáveis (confundidores) são estimados de forma válida dentro de cada estrato e combinados por verossimilhança parcial estratificada."
+                      },
+                      {
+                          "q":  "Secretaria municipal de saúde avalia dois programas de controle de tuberculose ao longo de 3 anos. Programa A (tratamento diretamente observado intensificado + busca ativa): taxa de incidência inicial 82/100.000, final 54/100.000. Programa B (estratégia convencional): taxa inicial 78/100.000, final 61/100.000. A análise de regressão de Poisson com dados de contagem mensal ajustada por tendência secular fornece IRR (taxa ratio) = 0,79 (IC 95%: 0,68–0,92; p=0,002) para Programa A versus B. Gestores concluem que o Programa A foi 21% mais efetivo. Qual viés mais provavelmente compromete essa conclusão comparativa e como deveria ser mitigado?",
+                          "opts":  [
+                                       "Viés de regressão à média: ambos os programas partiram de taxas de incidência diferentes (82 vs. 78/100.000); o programa A, ao iniciar com taxa mais elevada, tende a reduzir mais simplesmente por regressão natural à média da população, inflando artificialmente a redução aparente.",
+                                       "Confundimento ecológico por características socioeconômicas das populações atendidas: se o Programa A foi implementado em regiões com maior densidade habitacional, menor renda e piores condições sanitárias basais — fatores associados a maior TB e maior resposta potencial à intervenção intensiva — a comparação entre programas confunde o efeito da intervenção com o efeito da composição populacional diferente entre os dois grupos.",
+                                       "Viés de detecção diferencial: o Programa A, por incluir busca ativa, detecta mais casos de TB que existiam subnotificados, aumentando artificialmente a taxa registrada e mascarando a efetividade real ao ampliar artificialmente o denominador de controle da doença.",
+                                       "Viés de informação recall: pacientes do Programa A relatam com maior precisão sintomas de TB durante entrevistas de busca ativa, elevando a sensibilidade do diagnóstico clínico e tornando as taxas de incidência dos dois programas não comparáveis por diferença sistemática de diagnóstico."
+                                   ],
+                          "c":  1,
+                          "exp":  "Em estudos de intervenção ecológica não randomizados, a alocação dos programas raramente é aleatória — programas intensivos frequentemente são implementados em populações de maior risco, criando confundimento por composição. A regressão de Poisson ajustada por tendência secular não controla para diferenças basais na composição socioeconômica das populações, e a diferença de IRR=0,79 pode refletir maior potencial de redução na população de maior risco basal (Programa A) independentemente da efetividade do programa. A solução exigiria dados individuais ou, no mínimo, ajuste por índices socioeconômicos municipais."
+                      },
+                      {
+                          "q":  "Pesquisadores realizam análise de curva ROC para selecionar o ponto de corte ótimo de procalcitonina (PCT) para diagnóstico de sepse bacteriana em UTI (n=850; 340 com sepse confirmada por hemocultura positiva). A AUC obtida é 0,87 (IC 95%: 0,84–0,90). São avaliados três pontos de corte: PCT≥0,5 ng/mL (Se=94%, Sp=61%); PCT≥2,0 ng/mL (Se=79%, Sp=83%); PCT≥10,0 ng/mL (Se=58%, Sp=96%). A prevalência de sepse bacteriana na UTI é 40%. O médico intensivista deseja minimizar tratamento antibiótico desnecessário. Qual ponto de corte é bioestatisticamente mais adequado para esse objetivo e por quê?",
+                          "opts":  [
+                                       "PCT≥0,5 ng/mL, pois maximiza sensibilidade (94%), garantindo que nenhum caso verdadeiro de sepse seja perdido, o que é prioritário em UTI independentemente do objetivo declarado de minimizar antibiótico.",
+                                       "PCT≥10,0 ng/mL é o ponto de corte mais adequado: maior especificidade (96%) minimiza falsos-positivos (pacientes sem sepse que receberiam antibiótico desnecessariamente). Com prevalência de 40%, calcular VPP: VP=197, FP=20, VPP≈197/217≈90,8%; VPN: VN=490, FN=143, VPN≈490/633≈77,4%. A alta especificidade com VPP de ~91% apoia fortemente o diagnóstico positivo, mas o VPN de 77% indica risco não desprezível de falsos-negativos em população de alta prevalência.",
+                                       "PCT≥2,0 ng/mL oferece o melhor equilíbrio para o objetivo declarado: especificidade de 83% reduz substancialmente falsos-positivos (antibiótico desnecessário) sem comprometer excessivamente a sensibilidade (79%). Com prevalência de 40%: VPP≈268/268+86≈76%; VPN≈414/414+71≈85%. A razão de verossimilhança negativa (RV−=0,25) confirma redução adequada de probabilidade pós-teste negativo.",
+                                       "A decisão de ponto de corte não pode ser baseada em ROC com AUC=0,87 porque a curva deve atingir AUC≥0,90 para ser clinicamente válida em contexto de UTI; o teste de PCT deve ser substituído por biomarcador com maior área sob a curva."
+                                   ],
+                          "c":  1,
+                          "exp":  "Para minimizar tratamento antibiótico desnecessário, o objetivo é minimizar falsos-positivos, o que requer maximizar especificidade. PCT≥10,0 ng/mL com Sp=96% gera apenas 4% de falsos-positivos entre os não sépticos (0,04×510≈20 FP), em contraste com PCT≥0,5 (Sp=61%: ~199 FP). O VPP de ~91% confirma que teste positivo acima desse limiar tem alta probabilidade de sepse verdadeira, justificando o antibiótico. O custo (VPN 77%) é um trade-off aceitável para o objetivo declarado, e deve ser contextualizado por monitoramento clínico contínuo."
+                      },
+                      {
+                          "q":  "Ensaio clínico randomizado de superioridade avalia novo fibrinolítico versus alteplase em AVC isquêmico agudo (janela 3-4,5h). Resultado primário: desfecho funcional favorável (mRS 0-2) em 90 dias. Novo fármaco: 48,2%; alteplase: 45,1%; OR=1,13 (IC 95%: 0,98-1,30); p=0,089. O comitê de monitoramento de dados (DSMB) havia pré-especificado margem de não inferioridade de OR≥0,85. O patrocinador argumenta que o estudo é, na prática, um ensaio de não inferioridade. Pesquisadores calculam pós-hoc que o poder para detectar OR=1,20 era 62%. Qual a conclusão metodologicamente mais rigorosa?",
+                          "opts":  [
+                                       "O estudo falhou em demonstrar superioridade; a reconversão post-hoc para teste de não inferioridade é inválida metodologicamente, pois altera o enquadramento após conhecimento dos resultados, inflacionando erro tipo I; o poder insuficiente (62%) aumenta a probabilidade de erro tipo II, não permitindo afirmar equivalência.",
+                                       "Como OR=1,13 está acima de 1 e o IC 95% não exclui benefício clinicamente relevante (limite superior 1,30), o novo fármaco deve ser considerado superior com base em análise bayesiana implícita, independentemente do p-value convencional.",
+                                       "A margem de não inferioridade pré-especificada pelo DSMB (OR≥0,85) valida retroativamente a reanálise; como o IC 95% inferior (0,98) está acima de 0,85, a não inferioridade é formalmente demonstrada e o fármaco pode ser aprovado.",
+                                       "O p=0,089 representa tendência estatística suficiente para aprovação regulatória em condições de necessidade médica não atendida, especialmente com NNT calculado de 32 pacientes para desfecho funcional favorável adicional."
+                                   ],
+                          "c":  0,
+                          "exp":  "Ensaios de superioridade e não inferioridade possuem hipóteses nulas opostas, margens pré-especificadas e cálculos amostrais distintos; a reconversão post-hoc após insucesso primário constitui HARKing (Hypothesizing After Results are Known), violando o controle do erro tipo I. Poder de 62% implica probabilidade de 38% de erro tipo II, tornando o resultado negativo não conclusivo sobre equivalência — ausência de evidência não é evidência de ausência."
+                      },
+                      {
+                          "q":  "Estudo de coorte prospectivo (n=24.000, seguimento 8 anos) avalia associação entre uso crônico de IBP e desenvolvimento de demência. Após ajuste multivariado por regressão de Cox: HR=1,44 (IC 95%: 1,18-1,76). Análise estratificada por indicação de uso revela: usuários de IBP por DRGE não complicada HR=1,51 (IC 95%: 1,22-1,87); usuários por úlcera péptica ou esofagite erosiva HR=1,09 (IC 95%: 0,81-1,47). Teste de interação p=0,03. Pesquisadores investigam confundimento por indicação (confounding by indication). Qual interpretação é mais adequada?",
+                          "opts":  [
+                                       "O teste de interação significativo (p=0,03) indica modificação de efeito pela indicação clínica; a associação não é homogênea entre subgrupos, sendo metodologicamente incorreto reportar apenas o HR global; confundimento por indicação permanece plausível no subgrupo DRGE, onde pacientes com perfil de risco diferenciado para demência podem sistematicamente receber IBP.",
+                                       "A ausência de associação no subgrupo úlcera/esofagite (HR=1,09; IC cruzando 1) demonstra que o efeito global é inteiramente explicado por confundimento por indicação, portanto o HR=1,44 deve ser descartado como artefato metodológico e IBP considerado seguro para demência.",
+                                       "O teste de interação p=0,03 é insuficiente para modificação de efeito dado que análises de subgrupo requerem p\u003c0,01 para validade; o HR global ajustado de 1,44 representa a estimativa definitiva e o achado deve ser interpretado como causalidade estabelecida.",
+                                       "Confundimento por indicação é eliminado quando se realiza ajuste multivariado por regressão de Cox com covariáveis medidas; portanto, o HR=1,44 está livre de viés e confirma associação causal entre IBP e demência independentemente da indicação."
+                                   ],
+                          "c":  0,
+                          "exp":  "Modificação de efeito é uma propriedade biológica/epidemiológica real quando o efeito da exposição varia por subgrupo (evidenciada por teste de interação significativo); reportar apenas o HR global mascara heterogeneidade clinicamente relevante. Confundimento por indicação persiste porque pacientes com DRGE não complicada podem ter características (estilo de vida sedentário, obesidade, uso concomitante de outros fármacos, menor escolaridade) não completamente capturadas pelas covariáveis do modelo, associadas tanto ao uso de IBP quanto ao risco de demência."
+                      },
+                      {
+                          "q":  "Revisão sistemática com metanálise em rede avalia redução de mortalidade cardiovascular por 6 classes de hipoglicemiantes em DM tipo 2 (45 ECRs, n=232.000). SGLT2i versus placebo: RR=0,87 (IC 95%: 0,79-0,95); GLP-1Ra versus placebo: RR=0,88 (IC 95%: 0,80-0,96); SGLT2i versus GLP-1Ra (comparação indireta): RR=0,99 (IC 95%: 0,88-1,11). Inconsistência da rede (loop inconsistency): p=0,43. I² global=62%. A análise de metarregressão identifica que estudos com maior proporção de pacientes com insuficiência cardíaca prévia mostram maior benefício dos SGLT2i (coeficiente β=-0,08; p=0,02). Qual afirmação melhor integra esses achados?",
+                          "opts":  [
+                                       "SGLT2i e GLP-1Ra apresentam eficácia equivalente para mortalidade CV na comparação indireta (RR=0,99; IC inclui 1); a inconsistência não significativa valida a premissa de coerência da rede; heterogeneidade moderada (I²=62%) é parcialmente explicada pela proporção de IC prévia, sugerindo que SGLT2i podem ter vantagem preferencial nessa subpopulação, o que deve orientar decisão clínica individualizada.",
+                                       "A comparação direta de SGLT2i versus GLP-1Ra com RR=0,99 demonstra que ambos são estatisticamente idênticos e intercambiáveis em todas as populações; I²=62% não compromete as conclusões pois está abaixo do limiar de 75% estabelecido pelo manual Cochrane.",
+                                       "Inconsistência p=0,43 indica que a rede é incoerente e as estimativas de comparação indireta não são confiáveis; portanto, apenas comparações diretas disponíveis devem ser utilizadas para orientar diretrizes, tornando a metanálise em rede clinicamente inutilizável.",
+                                       "I²=62% com metarregressão significativa (p=0,02) comprova que a proporção de IC prévia é a única fonte de heterogeneidade; ao estratificar por essa variável, toda a variabilidade é explicada e os efeitos pooled tornam-se precisos para cada subgrupo sem necessidade de cautela adicional."
+                                   ],
+                          "c":  0,
+                          "exp":  "Na metanálise em rede, a premissa central é a coerência (consistency) entre evidências diretas e indiretas; p=0,43 para inconsistência indica que essa premissa não é violada, conferindo credibilidade às comparações indiretas. RR=0,99 com IC incluindo 1 indica equivalência estatística entre as classes. A metarregressão significativa por proporção de IC prévia indica heterogeneidade explicada clinicamente, alinhando-se com evidências dos ensaios EMPA-REG, DAPA-HF e EMPEROR que mostram benefício cardioprotector superior de SGLT2i em IC."
+                      },
+                      {
+                          "q":  "Pesquisadores avaliam implementação de rastreamento para aneurisma de aorta abdominal (AAA) em homens de 65-74 anos em município brasileiro. Prevalência local estimada: 1,8%. Ultrassonografia abdominal: sensibilidade 98%, especificidade 99%. Custo por exame: R$180. Mortalidade operatória eletiva: 2,5%. Mortalidade por ruptura: 85%. Taxa de ruptura anual em AAA não diagnosticado: 1,2%/ano. Análise de custo-efetividade comparada ao programa britânico MASS trial mostra NNT=500 para prevenir uma morte por ruptura em 10 anos. Ao calcular o VPP na prevalência local, qual combinação de achados e decisão programática é mais consistente?",
+                          "opts":  [
+                                       "VPP = (0,98×0,018)/[(0,98×0,018)+(0,01×0,982)] = 0,01764/0,02746 ≈ 64,2%; apesar de VPP moderado, a assimetria de desfechos (mortalidade operatória 2,5% vs. ruptura 85%) e a taxa de ruptura de 1,2%/ano justificam implementação, desde que seja estruturada uma cadeia assistencial para cirurgia vascular de alta qualidade, pois o benefício do rastreamento depende criticamente da mortalidade operatória real do serviço.",
+                                       "VPP≈64% indica que 36% dos detectados são falsos positivos; como a mortalidade operatória eletiva (2,5%) supera a taxa de ruptura anual (1,2%), o rastreamento causa mais dano do que benefício e não deve ser implementado.",
+                                       "VPP≈64% é suficientemente alto para implementar rastreamento irrestrito, pois qualquer VPP\u003e50% justifica intervenção preventiva; o NNT=500 em 10 anos é aceitável por qualquer padrão de custo-efetividade em saúde pública brasileira.",
+                                       "Como prevalência (1,8%) é baixa, o VPP será inevitavelmente baixo independentemente da especificidade; o teste com especificidade de 99% é insuficiente para rastreamento em qualquer prevalência abaixo de 5%, tornando o programa inviável tecnicamente."
+                                   ],
+                          "c":  0,
+                          "exp":  "O cálculo correto pelo teorema de Bayes fornece VPP≈64%, indicando que 36% dos positivos serão falsos positivos — aceitável dado que aneurismas confirmados por imagem adicional evitam cirurgia desnecessária. A decisão de implementar rastreamento não se baseia apenas no VPP, mas na análise de risco-benefício: mortalidade operatória de 2,5% é pequena comparada à mortalidade por ruptura de 85%, e a taxa anual de ruptura de 1,2% acumula risco substancial ao longo do tempo. O MASS trial britânico demonstrou redução de 42% na mortalidade relacionada a AAA em 13 anos de seguimento."
+                      },
+                      {
+                          "q":  "Ensaio clínico randomizado de fase III (n=3.200) avalia novo anticorpo monoclonal anti-IL-6 versus metotrexato em artrite reumatoide. Desfecho primário composto: remissão clínica (DAS28\u003c2,6) OU resposta ACR70 em 24 semanas. Novo fármaco: 58,4%; MTX: 43,1%; RR=1,35 (IC 95%: 1,21-1,51); p\u003c0,001. Análise de subgrupo pré-especificada por anti-CCP: positivos (n=2.400) RR=1,42; negativos (n=800) RR=1,08 (IC 95%: 0,87-1,34); teste de interação p=0,04. Evento adverso grave (infecção oportunista): novo fármaco 4,1% vs. MTX 1,8%; OR=2,34 (IC 95%: 1,52-3,60). Como integrar eficácia e segurança para decisão clínica?",
+                          "opts":  [
+                                       "Eficácia superior é demonstrada globalmente, porém a modificação de efeito por anti-CCP (interação p=0,04) sugere benefício clínico relevante apenas em soropositivos (n=2.400); em soronegativos (IC cruzando 1), o risco de infecção oportunista adicional (OR=2,34; NNH calculável) pode superar o benefício marginal, justificando uso preferencial em anti-CCP positivos com avaliação individualizada de risco infeccioso.",
+                                       "O resultado primário composto positivo (p\u003c0,001) com RR=1,35 é suficiente para recomendar o novo fármaco em todos os pacientes com AR, independentemente do status anti-CCP; análises de subgrupo, mesmo pré-especificadas, não devem modificar recomendações baseadas no desfecho primário.",
+                                       "OR=2,34 para infecção oportunista representa risco inaceitável que contraindicaria o uso do fármaco em qualquer cenário; a regra farmacológica é que qualquer OR\u003e2 para evento adverso grave invalida aprovação, independentemente da magnitude do benefício.",
+                                       "A análise de subgrupo por anti-CCP com n=800 negativos tem poder estatístico adequado para confirmar ausência de efeito; portanto, o fármaco deve ser aprovado apenas para soronegativos onde não há risco de efeito paradoxal, enquanto soropositivos devem continuar com MTX."
+                                   ],
+                          "c":  0,
+                          "exp":  "A integração de eficácia e segurança requer cálculo do número necessário para causar dano (NNH) e sua comparação com o NNT em cada subgrupo. Em soronegativos, com benefício marginal (RR=1,08 não significativo) e risco infeccioso adicional documentado (OR=2,34), o balanço risco-benefício é desfavorável. A modificação de efeito pré-especificada por marcador biológico (anti-CCP) é biologicamente plausível — anti-CCP indica fisiopatologia mediada por células T/B com maior dependência de IL-6 — e deve orientar decisão de uso personalizado."
+                      },
+                      {
+                          "q":  "Secretaria de saúde estadual utiliza regressão de Poisson com variância robusta para analisar incidência de tuberculose em 248 municípios, ajustando para IDH, cobertura de atenção básica, taxa de encarceramento e proporção de população indígena. Resultado para taxa de encarceramento: RR=1,08 por 10 presos/100.000 hab (IC 95%: 1,05-1,11); p\u003c0,001; R² do modelo=0,41. Análise de resíduos de Pearson identifica 12 municípios com resíduo padronizado \u003e3 (outliers). Ao interpretar o modelo para policy-making, qual afirmação é mais rigorosa?",
+                          "opts":  [
+                                       "R²=0,41 indica que 59% da variância na incidência de TB não é explicada pelo modelo; a associação entre encarceramento e TB (RR=1,08) pode refletir confundimento residual por variáveis não incluídas (ex: densidade habitacional, cobertura DOTS, migração); os 12 outliers devem ser investigados como heterogeneidade real (diferenças estruturais municipais) antes de remoção, pois influenciam substantivamente os coeficientes em dados ecológicos.",
+                                       "RR=1,08 com IC estreito (1,05-1,11) e p\u003c0,001 confirma causalidade da taxa de encarceramento sobre incidência de TB; R²=0,41 é adequado para dados ecológicos; outliers devem ser removidos automaticamente por protocolo estatístico pois comprometem a normalidade dos resíduos necessária para regressão de Poisson.",
+                                       "Regressão de Poisson com variância robusta é inapropriada para dados ecológicos de contagem agregada por município; o método correto seria regressão binomial negativa, e todos os coeficientes obtidos são inválidos e não devem ser usados para política pública.",
+                                       "Como a unidade de análise são municípios (dados ecológicos), o RR=1,08 pode ser diretamente extrapolado para o nível individual, quantificando o risco pessoal adicional de desenvolver TB para cada pessoa encarcerada, o que fundamenta intervenção individual de rastreamento prisional."
+                                   ],
+                          "c":  0,
+                          "exp":  "R² baixo em modelos ecológicos é comum mas indica limitação explanatória real; confundimento residual em estudos ecológicos é estruturalmente mais difícil de controlar que em estudos individuais. Outliers em análise ecológica frequentemente representam municípios com características estruturais genuinamente distintas (presídios federais, aldeias indígenas com alta TB, municípios de mineração) e sua remoção sem investigação pode enviesar os coeficientes. A falácia ecológica impede extrapolação individual direta."
+                      },
+                      {
+                          "q":  "Análise de sobrevida em coorte de 15.000 pacientes com ICC (fração de ejeção ≤40%) avalia tempo até morte ou hospitalização por ICC (desfecho composto). Curvas de Kaplan-Meier dos grupos IECA vs. BRA divergem precocemente e se reaproximam após 24 meses. Teste log-rank global: p=0,21. Teste de Wilcoxon (Breslow): p=0,03. HR pelo modelo de Cox: 0,88 (IC 95%: 0,79-0,98) com pressuposto de proporcionalidade dos riscos violado (teste de Schoenfeld: p=0,008). Qual a interpretação metodologicamente correta?",
+                          "opts":  [
+                                       "A violação do pressuposto de proporcionalidade dos riscos (teste de Schoenfeld p=0,008) invalida a interpretação do HR global de Cox como medida de efeito sumária; as curvas que divergem precocemente e se reaproximam indicam efeito temporal variável; devem ser empregados modelos com HR dependente do tempo ou análise de risco restrito por período, e a discordância entre log-rank e Wilcoxon reflete sensibilidade diferencial a desvios precoces versus tardios.",
+                                       "O teste log-rank é sempre preferível ao de Wilcoxon em análises de sobrevida oncológica e cardiovascular; p=0,21 do log-rank é o resultado definitivo; HR=0,88 com IC não incluindo 1 confirma benefício de IECA; a violação de Schoenfeld é estatisticamente irrelevante para amostras grandes (n\u003e10.000).",
+                                       "A discordância entre log-rank (p=0,21) e Wilcoxon (p=0,03) indica erro sistemático no banco de dados; resultados contraditórios de dois testes sobre os mesmos dados invalidam toda a análise de sobrevida e exigem recoleta de dados antes de qualquer interpretação.",
+                                       "Quando o pressuposto de proporcionalidade é violado, o modelo de Cox deve ser substituído obrigatoriamente por regressão paramétrica Weibull; qualquer outra alternativa metodológica para lidar com não proporcionalidade é considerada inapropriada pelos critérios do CONSORT."
+                                   ],
+                          "c":  0,
+                          "exp":  "O modelo de Cox assume que a razão de riscos entre grupos é constante ao longo do tempo (proporcionalidade); quando violada, o HR global é uma média ponderada de efeitos temporalmente variáveis, potencialmente enganosa. A divergência precoce seguida de reaproximação das curvas K-M é padrão clássico de não proporcionalidade. O teste log-rank atribui pesos iguais a todos os tempos de falha, enquanto o Wilcoxon pondera mais eventos precoces — a discordância é esperada e metodologicamente informativa quando o efeito é temporalmente heterogêneo."
+                      },
+                      {
+                          "q":  "Ensaio clínico de equivalência avalia genérico de imunossupressor (tacrolimus) versus referência pós-transplante renal. Margem de equivalência pré-especificada: diferença absoluta ≤15% na taxa de rejeição aguda em 12 meses. Resultado: genérico 18,2% vs. referência 19,8%; diferença -1,6% (IC 90%: -5,8% a +2,6%). Protocolo utilizou IC 90% conforme FDA guidance para estudos de equivalência. Porém, o comitê de ética questiona se a margem de 15% é clinicamente justificável para imunossupressão em transplante. Qual análise é mais completa?",
+                          "opts":  [
+                                       "O IC 90% [-5,8%; +2,6%] está inteiramente contido dentro da margem bilateral [-15%; +15%], demonstrando equivalência estatística formalmente; contudo, a margem de 15% em rejeição aguda pós-transplante pode não preservar fração suficiente do efeito do referência (putative placebo effect), e a justificativa clínica da margem deve ser explícita no protocolo — margens excessivamente amplas podem aprovar produtos inferiores ao referência.",
+                                       "IC 90% é inapropriado para estudos de equivalência; deveria ser IC 95%; como a análise está incorreta metodologicamente, o estudo é inválido e equivalência não pode ser declarada independentemente dos valores observados.",
+                                       "A diferença de -1,6% e IC 90% contido na margem confirmam equivalência plena e intercambiabilidade farmacológica total; questionamentos sobre a margem clínica não são pertinentes após aprovação regulatória da margem no protocolo, e o comitê de ética excede sua competência ao questionar parâmetros bioestatísticos.",
+                                       "Para declarar equivalência em imunossupressores, é obrigatório demonstrar equivalência farmacocinética (AUC e Cmax) além do desfecho clínico; como apenas desfecho clínico foi avaliado, o estudo não pode ser classificado como de equivalência e deve ser redezeinhado como estudo de não inferioridade."
+                                   ],
+                          "c":  0,
+                          "exp":  "Em estudos de equivalência, a FDA guidance aceita IC 90% com análise bilateral — o IC 90% bilateral corresponde ao IC 95% unilateral em cada direção, controlando o erro tipo I a 5% para cada teste unilateral. A margem de equivalência deve ser clinicamente justificada com base na preservação de pelo menos 50% (ou mais) do efeito do referência versus placebo (M1 e M2 do FDA) — para imunossupressores em transplante, margens amplas são problemáticas porque rejeição aguda tem impacto direto na sobrevida do enxerto a longo prazo."
+                      },
+                      {
+                          "q":  "Estudo de acurácia diagnóstica avalia ferritina sérica para diagnóstico de anemia ferropriva em crianças de 6-24 meses com inflamação concomitante (PCR \u003e10mg/L em 40% da amostra). Ponto de corte ferritina \u003c12 μg/L: sensibilidade 72%, especificidade 88%. Ponto de corte \u003c30 μg/L: sensibilidade 92%, especificidade 68%. Razão de verossimilhança positiva (RVP) para \u003c12: 6,0; para \u003c30: 2,9. Razão de verossimilhança negativa (RVN) para \u003c12: 0,32; para \u003c30: 0,12. Prevalência de anemia ferropriva no serviço: 35%. Qual estratégia diagnóstica é mais fundamentada para triagem versus confirmação nesse contexto?",
+                          "opts":  [
+                                       "Para triagem (minimizar falsos negativos), ferritina \u003c30 μg/L é preferível: RVN=0,12 reduz probabilidade pós-teste negativa para ≈6% (vs. ≈15% com \u003c12 μg/L), aceitando mais falsos positivos; para confirmação em positivos triados, ferritina \u003c12 μg/L com RVP=6,0 eleva probabilidade pós-teste positiva para ≈76%; a inflamação desloca ferritina para cima, reduzindo sensibilidade de ambos os pontos de corte e justificando uso de ferritina corrigida por PCR ou índice ferritina/PCR em contexto inflamatório.",
+                                       "RVP=6,0 do ponto de corte \u003c12 μg/L é superior ao RVP=2,9 de \u003c30 μg/L; portanto, ferritina \u003c12 μg/L deve ser usada tanto para triagem quanto confirmação; RVN não é relevante para decisões de triagem em Pediatria.",
+                                       "Com prevalência de 35%, ambos os pontos de corte geram VPP acima de 50%, tornando-os clinicamente equivalentes; a escolha deve basear-se exclusivamente no custo do exame e não nas características operacionais do teste, pois a prevalência elevada neutraliza diferenças em sensibilidade e especificidade.",
+                                       "A presença de inflamação em 40% da amostra invalida completamente o uso de ferritina como marcador diagnóstico; o padrão-ouro alternativo (aspirado de medula óssea) deve ser utilizado em todas as crianças do serviço antes de qualquer decisão terapêutica."
+                                   ],
+                          "c":  0,
+                          "exp":  "A aplicação do teorema de Bayes via nomograma de Fagan com prevalência pré-teste de 35%: para \u003c30 μg/L com RVN=0,12, probabilidade pós-teste negativa ≈35%×0,12/(35%×0,12+65%×1)≈6,1%, tornando resultado negativo clinicamente útil para excluir. Para confirmação, RVP=6,0 eleva probabilidade de 35% para ≈76%. A inflamação é proteína de fase aguda que eleva ferritina independentemente dos estoques de ferro, reduzindo sensibilidade dos limiares clássicos — a OMS reconhece essa limitação e recomenda ajuste por PCR/AGP."
+                      },
+                      {
+                          "q":  "Programa de controle de hipertensão arterial em atenção básica implementa intervenção de telemedicina (telemonitoramento + teleconsulta) em 18 UBS de um município. Delineamento: antes-depois com grupo controle histórico (12 meses pré vs. 12 meses pós-intervenção). Resultado: proporção de hipertensos com PA\u003c140/90 mmHg aumentou de 38% para 52% (p\u003c0,001; OR=1,80). Gestor conclui que a intervenção foi eficaz e planeja expansão estadual. Epidemiologista questiona a validade dos achados. Qual é a ameaça mais grave à validade interna deste estudo e sua implicação para a decisão expansão?",
+                          "opts":  [
+                                       "O delineamento antes-depois com controle histórico é vulnerável a múltiplas ameaças à validade interna simultâneas: maturação (melhora espontânea ao longo do tempo), efeito de instrumentação (mudança nos equipamentos/protocolos de medição entre períodos), regressão à média (pacientes selecionados por PA elevada tendem a melhorar independentemente) e eventos históricos concomitantes (campanhas nacionais, mudanças no sistema de abastecimento de anti-hipertensivos); a expansão estadual baseada nesse delineamento tem risco elevado de investir em intervenção de eficácia não demonstrada.",
+                                       "A única ameaça relevante é o viés de seleção por healthworker effect: profissionais mais motivados implementam melhor a telemedicina; isso é controlado por análise de intenção de tratar, e como p\u003c0,001, a significância estatística supera qualquer limitação metodológica do delineamento.",
+                                       "O principal problema é o tamanho amostral insuficiente de 18 UBS; com n adequado, o delineamento antes-depois é tão robusto quanto um ECR para avaliação de intervenções em saúde pública; recomenda-se expandir para 50 UBS antes de conclusões.",
+                                       "O delineamento é adequado para esta pergunta; a ameaça mais grave é o viés de memória dos pacientes ao reportar adesão medicamentosa; para corrigi-lo, basta adicionar um questionário validado de adesão na próxima fase e os resultados já obtidos são válidos para expansão imediata."
+                                   ],
+                          "c":  0,
+                          "exp":  "Estudos antes-depois sem grupo controle contemporâneo não permitem isolar o efeito da intervenção de mudanças temporais independentes. A regressão à média é particularmente relevante em hipertensão: pacientes incluídos com PA elevada em uma medição apresentam tendência natural a valores menores em medições subsequentes por variabilidade biológica. Eventos históricos no período (ex: expansão do Farmácia Popular, campanhas do Dia Nacional de Prevenção e Controle da HAS) não são controláveis sem grupo controle contemporâneo. OR=1,80 com p\u003c0,001 apenas confirma que a melhora ocorreu, não que foi causada pela intervenção."
+                      }
+                  ]
+}
