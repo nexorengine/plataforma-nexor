@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="nx-header">
-  <a href="c1-med.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <a href="c1-med" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
   <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
@@ -29,8 +29,8 @@
 <script src="assets/profile.js"></script>
 <script src="assets/catalog.js"></script>
 <script>
-const params = new URLSearchParams(window.location.search);
-const areaSlug = params.get('area') || 'cirurgia_geral';
+const hash = Object.fromEntries(window.location.hash.replace('#','').split('&').map(p=>p.split('=')));
+const areaSlug = hash.area || new URLSearchParams(window.location.search).get('area') || 'cirurgia_geral';
 const area = CATALOG[areaSlug];
 
 if (!area) {
@@ -58,7 +58,7 @@ if (!area) {
   document.getElementById('sec-meta').textContent = n + ' domínios';
 
   document.getElementById('lista-dominios').innerHTML = area.dominios.map(d => `
-    <a href="c3-med.html?area=${areaSlug}&dominio=${d.slug}" class="nx-domain-row">
+    <a href="c3-med#area=${areaSlug}&dominio=${d.slug}" class="nx-domain-row">
       <div class="nx-dot"></div>
       <span class="nx-domain-code-txt">${d.code}</span>
       <span class="nx-domain-name-txt">${d.nome}</span>
