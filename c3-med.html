@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="nx-header">
-  <a id="btn-back" href="c2-med.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <a id="btn-back" href="c2-med" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
   <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
@@ -26,13 +26,14 @@
 <script src="assets/profile.js"></script>
 <script src="assets/catalog.js"></script>
 <script>
-const params = new URLSearchParams(window.location.search);
-const areaSlug = params.get('area') || 'cirurgia_geral';
-const dominioSlug = params.get('dominio') || 'abdome_agudo';
+const hash = Object.fromEntries(window.location.hash.replace('#','').split('&').map(p=>p.split('=')));
+const sp = new URLSearchParams(window.location.search);
+const areaSlug = hash.area || sp.get('area') || 'cirurgia_geral';
+const dominioSlug = hash.dominio || sp.get('dominio') || 'abdome_agudo';
 const area = CATALOG[areaSlug];
 const dominio = area && area.dominios.find(d => d.slug === dominioSlug);
 
-document.getElementById('btn-back').href = 'c2-med.html?area=' + areaSlug;
+document.getElementById('btn-back').href = 'c2-med#area=' + areaSlug;
 
 if (!dominio) {
   document.getElementById('dominio-header').innerHTML = '<p style="color:#ef4444;padding:20px;">Domínio não encontrado.</p>';
@@ -51,7 +52,7 @@ if (!dominio) {
 
   const p = `area=${areaSlug}&dominio=${dominioSlug}`;
   document.getElementById('lista-modulos').innerHTML = `
-    <a href="c4a-flashcard.html?${p}" class="nx-capsule active">
+    <a href="c4a-flashcard#${p}" class="nx-capsule active">
       <div class="nx-icon-slot sm"><i class="ti ti-cards"></i></div>
       <div class="nx-cap-body">
         <div class="nx-cap-title">Flashcards</div>
@@ -59,7 +60,7 @@ if (!dominio) {
       </div>
       <div class="nx-pill available">ESTUDAR</div>
     </a>
-    <a href="c4b-quiz.html?${p}&n=1" class="nx-capsule active">
+    <a href="c4b-quiz#${p}&n=1" class="nx-capsule active">
       <div class="nx-icon-slot sm"><i class="ti ti-clipboard-check"></i></div>
       <div class="nx-cap-body">
         <div class="nx-cap-title">Quiz 001</div>
@@ -67,7 +68,7 @@ if (!dominio) {
       </div>
       <div class="nx-pill available">INICIAR</div>
     </a>
-    <a href="c4b-quiz.html?${p}&n=2" class="nx-capsule active">
+    <a href="c4b-quiz#${p}&n=2" class="nx-capsule active">
       <div class="nx-icon-slot sm"><i class="ti ti-clipboard-check"></i></div>
       <div class="nx-cap-body">
         <div class="nx-cap-title">Quiz 002</div>
@@ -75,7 +76,7 @@ if (!dominio) {
       </div>
       <div class="nx-pill available">INICIAR</div>
     </a>
-    <a href="c4c-scorecard.html?${p}" class="nx-capsule active">
+    <a href="c4c-scorecard#${p}" class="nx-capsule active">
       <div class="nx-icon-slot sm"><i class="ti ti-chart-bar"></i></div>
       <div class="nx-cap-body">
         <div class="nx-cap-title">Scorecard</div>
