@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="nx-header">
-  <a href="index.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>início</a>
+  <a href="index" class="nx-back-btn"><i class="ti ti-arrow-left"></i>início</a>
   <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
@@ -33,7 +33,7 @@ const el = document.getElementById('lista-areas');
 el.innerHTML = AREA_ORDER.map(slug => {
   const a = CATALOG[slug];
   const n = a.dominios.length;
-  return `<a href="c2-med.html?area=${slug}" class="nx-capsule active">
+  return `<a href="c2-med#area=${slug}" class="nx-capsule active">
     <div class="nx-icon-slot"><i class="ti ${a.icon}"></i></div>
     <div class="nx-cap-body">
       <div class="nx-cap-title">${a.label}</div>
