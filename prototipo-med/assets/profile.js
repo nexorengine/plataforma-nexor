@@ -1,11 +1,11 @@
 const PROFILE = {
-  name: "Alexandre Andrade",
-  email: "alexandre@nexormed.com.br",
-  initials: "AA",
+  name: "Residente",
+  email: "seu@email.com.br",
+  initials: "R",
   plan: "Plano Anual",
   planStatus: "ativo",
-  memberSince: "jan 2025",
-  stats: { progress: "72%", streak: 12, domains: 5 }
+  memberSince: "—",
+  stats: { progress: "0%", streak: 0, domains: 0 }
 };
 
 // Configurações persistidas em localStorage
@@ -136,6 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(overlay);
   document.body.appendChild(sheet);
   document.body.appendChild(cfgSheet);
+
+  // Atualiza avatar no header
+  const avatarBtn = document.querySelector('.nx-avatar-btn');
+  if (avatarBtn) avatarBtn.textContent = PROFILE.initials;
 
   // Restaura configurações salvas
   const cfg = loadConfig();

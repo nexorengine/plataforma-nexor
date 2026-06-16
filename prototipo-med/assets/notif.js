@@ -1,71 +1,6 @@
-const NOTIFS = [
-  {
-    group: "HOJE",
-    items: [
-      {
-        id: 1, unread: true, color: "red",
-        icon: "ti ti-flame", iconColor: "rgba(240,246,251,0.4)",
-        text: "<strong>Sequência em risco.</strong> Você não estuda há 2 dias — não perca seu ritmo agora.",
-        time: "há 1h",
-        link: "c2-med.html"
-      },
-      {
-        id: 2, unread: true, color: "gold",
-        icon: "ti ti-target", iconColor: "rgba(240,246,251,0.4)",
-        text: "<strong>Você está a 12 pts de aprovar CG_D06.</strong> Tente o Quiz 002 de Intestino Delgado novamente.",
-        time: "há 3h",
-        link: "c3-med.html"
-      },
-    ]
-  },
-  {
-    group: "ESTA SEMANA",
-    items: [
-      {
-        id: 3, unread: true, color: "green",
-        icon: "ti ti-trophy", iconColor: "rgba(240,246,251,0.4)",
-        text: "<strong>CG_D01 Abdome Agudo concluído!</strong> Próximo domínio disponível: Trauma e Urgência Cirúrgica.",
-        time: "ontem",
-        link: "c3-med.html"
-      },
-      {
-        id: 4, unread: false, color: "gold",
-        icon: "ti ti-chart-bar", iconColor: "rgba(240,246,251,0.3)",
-        text: "<strong>Progresso atualizado.</strong> Cirurgia Geral subiu de 65% → 72%. Continue assim.",
-        time: "2 dias atrás",
-        link: "c2-med.html"
-      },
-      {
-        id: 5, unread: false, color: "blue",
-        icon: "ti ti-bell", iconColor: "rgba(240,246,251,0.3)",
-        text: "<strong>Clínica Médica chegando em breve.</strong> Você será notificado assim que o conteúdo estiver disponível.",
-        time: "3 dias atrás",
-        link: null
-      },
-    ]
-  },
-  {
-    group: "ESTE MÊS",
-    items: [
-      {
-        id: 6, unread: false, color: "red",
-        icon: "ti ti-credit-card", iconColor: "rgba(240,246,251,0.3)",
-        text: "<strong>Seu plano vence em 7 dias.</strong> Renove agora para não perder o acesso.",
-        time: "há 5 dias",
-        link: "index.html"
-      },
-      {
-        id: 7, unread: false, color: "green",
-        icon: "ti ti-cards", iconColor: "rgba(240,246,251,0.3)",
-        text: "<strong>Meta diária atingida!</strong> 20 flashcards revisados em CG_D01.",
-        time: "há 6 dias",
-        link: null
-      },
-    ]
-  }
-];
+const NOTIFS = [];
 
-const UNREAD_COUNT = NOTIFS.flatMap(g => g.items).filter(n => n.unread).length;
+const UNREAD_COUNT = 0;
 
 function buildSheet() {
   const sheet = document.createElement('div');
@@ -80,22 +15,26 @@ function buildSheet() {
     </div>
     <div class="nx-notif-list" id="nx-notif-list">`;
 
-  NOTIFS.forEach(group => {
-    html += `<div class="nx-notif-group">${group.group}</div>`;
-    group.items.forEach(n => {
-      const cls = n.unread
-        ? (n.color === 'red' ? 'nx-notif-item unread-red' : n.color === 'green' ? 'nx-notif-item unread-green' : 'nx-notif-item unread')
-        : 'nx-notif-item';
-      html += `
-        <div class="${cls}" id="notif-${n.id}" onclick="handleNotif(${n.id}, '${n.link || ''}')">
-          <div class="nx-notif-icon ${n.color}"><i class="${n.icon}" style="color:${n.iconColor};"></i></div>
-          <div class="nx-notif-body">
-            <div class="nx-notif-text">${n.text}</div>
-            <div class="nx-notif-time">${n.time}</div>
-          </div>
-        </div>`;
+  if (NOTIFS.length === 0) {
+    html += `<div style="text-align:center;padding:40px 20px;color:#555;font-size:13px;font-family:'Barlow',sans-serif;font-weight:300;">Nenhuma notificação por enquanto.<br><span style="font-size:11px;color:#444;">Comece a estudar para receber atualizações.</span></div>`;
+  } else {
+    NOTIFS.forEach(group => {
+      html += `<div class="nx-notif-group">${group.group}</div>`;
+      group.items.forEach(n => {
+        const cls = n.unread
+          ? (n.color === 'red' ? 'nx-notif-item unread-red' : n.color === 'green' ? 'nx-notif-item unread-green' : 'nx-notif-item unread')
+          : 'nx-notif-item';
+        html += `
+          <div class="${cls}" id="notif-${n.id}" onclick="handleNotif(${n.id}, '${n.link || ''}')">
+            <div class="nx-notif-icon ${n.color}"><i class="${n.icon}" style="color:${n.iconColor};"></i></div>
+            <div class="nx-notif-body">
+              <div class="nx-notif-text">${n.text}</div>
+              <div class="nx-notif-time">${n.time}</div>
+            </div>
+          </div>`;
+      });
     });
-  });
+  }
 
   html += `</div>`;
   sheet.innerHTML = html;

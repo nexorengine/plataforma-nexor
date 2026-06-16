@@ -9,18 +9,18 @@
 </head>
 <body>
 <div class="nx-header">
-  <a href="c3-med.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
+  <a href="c3-med" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
   <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
-    <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;"><i class="ti ti-cut" style="font-size:18px;"></i></div>
+  <div id="c4a-header" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
+    <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="c4a-icon"><i class="ti ti-cards" style="font-size:18px;"></i></div>
     <div>
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;">Cirurgia Geral · CG_D01</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;">Abdome Agudo</div>
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;" id="c4a-label">—</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;" id="c4a-nome">—</div>
       <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">Flashcards · 48 cards</div>
     </div>
   </div>
@@ -60,11 +60,24 @@
 <div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
 <script src="assets/notif.js"></script>
 <script src="assets/profile.js"></script>
+<script src="assets/catalog.js"></script>
 <script src="assets/tts.js"></script>
 <script>
-const params=new URLSearchParams(window.location.search);
-const area=params.get('area')||'cirurgia_geral';
-const dominio=params.get('dominio')||'abdome_agudo';
+const _hash=Object.fromEntries(window.location.hash.replace('#','').split('&').map(p=>p.split('=')));
+const _sp=new URLSearchParams(window.location.search);
+const area=_hash.area||_sp.get('area')||'cirurgia_geral';
+const dominio=_hash.dominio||_sp.get('dominio')||'abdome_agudo';
+document.querySelector('.nx-back-btn').href=`c3-med#area=${area}&dominio=${dominio}`;
+(function(){
+  const cat=typeof CATALOG!=='undefined'?CATALOG:null;
+  if(!cat)return;
+  const a=cat[area]; const d=a&&a.dominios.find(x=>x.slug===dominio);
+  if(!a||!d)return;
+  document.getElementById('c4a-icon').innerHTML=`<i class="ti ${a.icon}" style="font-size:18px;"></i>`;
+  document.getElementById('c4a-label').textContent=a.label+' · '+d.code;
+  document.getElementById('c4a-nome').textContent=d.nome;
+  document.title=d.nome+' · Flashcards · nexor_med';
+})();
 
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 
@@ -83,8 +96,9 @@ async function loadFlashcards(){
     document.getElementById('prog-count').textContent='1 / '+TOTAL;
     render();
   }catch(e){
-    document.getElementById('card-face').textContent='erro';
-    document.getElementById('card-text').textContent='Não foi possível carregar: '+url;
+    document.getElementById('card-face').textContent='conteúdo indisponível';
+    document.getElementById('card-text').textContent='Não foi possível carregar os flashcards. Tente novamente mais tarde.';
+    document.getElementById('btn-flip').className='nx-btn-primary hidden';
   }
 }
 loadFlashcards();
@@ -118,8 +132,9 @@ function answer(ok){
   if(ok)rights++;else wrongs++;
   cur++;
   if(cur>=cards.length){
+    const pct=Math.round(rights/TOTAL*100);
     document.getElementById('card-face').textContent='sessão concluída';
-    document.getElementById('card-text').textContent='Acertos: '+rights+' · Erros: '+wrongs;
+    document.getElementById('card-text').textContent='Aproveitamento: '+pct+'% · Acertos: '+rights+' · Erros: '+wrongs;
     document.getElementById('nx-card').className='nx-card';
     document.getElementById('btn-flip').className='nx-btn-primary hidden';
     document.getElementById('actions').className='nx-actions hidden';
@@ -128,6 +143,12 @@ function answer(ok){
     document.getElementById('sr').textContent=rights;
     document.getElementById('sw').textContent=wrongs;
     document.getElementById('sl').textContent=0;
+    const btnQuiz=document.createElement('a');
+    btnQuiz.href='c4b-quiz#area='+area+'&dominio='+dominio+'&n=1';
+    btnQuiz.className='nx-btn-primary';
+    btnQuiz.style.cssText='display:block;text-align:center;text-decoration:none;margin-top:12px;';
+    btnQuiz.textContent='IR PARA O QUIZ';
+    document.getElementById('actions').insertAdjacentElement('afterend', btnQuiz);
     return;
   }
   render();
