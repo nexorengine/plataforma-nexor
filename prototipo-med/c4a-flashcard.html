@@ -7,6 +7,10 @@
 <title>Flashcards · nexor_med</title>
 <link rel="stylesheet" href="assets/nx.css">
 <style>
+.hero-reveal{opacity:0;transform:translateY(20px);filter:blur(6px);transition:opacity 700ms cubic-bezier(0.16,1,0.3,1),transform 700ms cubic-bezier(0.16,1,0.3,1),filter 700ms cubic-bezier(0.16,1,0.3,1);}
+.hero-reveal.visible{opacity:1;transform:translateY(0);filter:blur(0);}
+.sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
+.sr.visible{opacity:1;transform:translateY(0);}
 #nx-card{transition:opacity 250ms cubic-bezier(0.16,1,0.3,1),transform 250ms cubic-bezier(0.16,1,0.3,1);}
 .card-fade-out{opacity:0!important;transform:scale(0.97)!important;}
 .nx-btn-primary{transition:transform 120ms cubic-bezier(0.16,1,0.3,1),box-shadow 200ms ease;}
@@ -26,7 +30,7 @@
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div id="c4a-header" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
+  <div id="c4a-header" class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
     <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="c4a-icon"><i class="ti ti-cards" style="font-size:18px;"></i></div>
     <div>
       <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;" id="c4a-label">—</div>
@@ -35,16 +39,16 @@
     </div>
   </div>
 
-  <div class="nx-meta">
+  <div class="nx-meta sr" style="transition-delay:80ms">
     <span class="nx-meta-label">progresso da sessão</span>
     <span class="nx-layer-badge" id="layer-badge">F1</span>
   </div>
-  <div class="nx-prog-row">
+  <div class="nx-prog-row sr" style="transition-delay:120ms">
     <div class="nx-prog-bar-bg"><div class="nx-prog-bar-fill" id="prog-fill" style="width:2%;"></div></div>
     <span class="nx-prog-count" id="prog-count">1 / 48</span>
   </div>
 
-  <div class="nx-card" id="nx-card" style="position:relative;">
+  <div class="nx-card sr" id="nx-card" style="position:relative;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
       <div class="nx-card-face" id="card-face" style="margin-bottom:0;">frente</div>
       <button class="tts-btn" id="tts-card-btn" onclick="ttsCard(this)" title="Ouvir em voz alta" style="position:absolute;top:14px;right:14px;"><i class="ti ti-volume"></i></button>
@@ -173,6 +177,22 @@ function answer(ok){
   render();
 }
 function ttsCard(btn){ TTS.speak(document.getElementById('card-text').textContent, btn); }
+
+// motion init
+(function(){
+  const scrollEl = document.querySelector('.nx-scroll');
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.hero-reveal').forEach(el => el.classList.add('visible'));
+    });
+  });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
+    });
+  }, { root: scrollEl, threshold: 0.08 });
+  document.querySelectorAll('.sr').forEach(el => io.observe(el));
+})();
 </script>
 </body>
 </html>
