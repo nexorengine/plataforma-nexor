@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -6,6 +6,16 @@
 <meta name="theme-color" content="#16263B">
 <title>Flashcards · nexor_med</title>
 <link rel="stylesheet" href="assets/nx.css">
+<style>
+#nx-card{transition:opacity 250ms cubic-bezier(0.16,1,0.3,1),transform 250ms cubic-bezier(0.16,1,0.3,1);}
+.card-fade-out{opacity:0!important;transform:scale(0.97)!important;}
+.nx-btn-primary{transition:transform 120ms cubic-bezier(0.16,1,0.3,1),box-shadow 200ms ease;}
+.nx-btn-primary:active{transform:scale(0.97)!important;}
+.nx-btn-wrong,.nx-btn-right{transition:transform 150ms cubic-bezier(0.16,1,0.3,1);}
+.nx-btn-wrong:active{transform:scale(0.92);}
+.nx-btn-right:active{transform:scale(0.92);}
+@media(prefers-reduced-motion:reduce){#nx-card{transition:none!important;}}
+</style>
 </head>
 <body>
 <div class="nx-header">
@@ -103,7 +113,7 @@ async function loadFlashcards(){
 }
 loadFlashcards();
 
-function render(){
+function _doRender(){
   flipped=false;
   const c=cards[cur];
   document.getElementById('card-face').textContent='frente';
@@ -117,6 +127,15 @@ function render(){
   document.getElementById('sr').textContent=rights;
   document.getElementById('sw').textContent=wrongs;
   document.getElementById('sl').textContent=TOTAL-cur;
+}
+function render(){
+  if(cur===0){ _doRender(); return; }
+  const card=document.getElementById('nx-card');
+  card.classList.add('card-fade-out');
+  setTimeout(()=>{
+    card.classList.remove('card-fade-out');
+    _doRender();
+  }, 160);
 }
 function flipCard(){
   if(flipped)return;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -202,7 +202,7 @@ document.getElementById('btn-back').addEventListener('click', () => {
 });
 
 /* ── QUIZ ── */
-function render(){
+function _doRender(){
   sel=-1;confirmed=false;
   const q=sq[cur];
   document.getElementById('q-label').textContent='questão '+String(cur+1).padStart(2,'0');
@@ -212,7 +212,7 @@ function render(){
   q.opts.forEach((o,i)=>{
     const d=document.createElement('div');
     d.className='nx-option';
-    d.innerHTML=`<span class="nx-opt-key">${keys[i]}</span><span class="nx-opt-text">${o}</span>`;
+    d.innerHTML='<span class="nx-opt-key">'+keys[i]+'</span><span class="nx-opt-text">'+o+'</span>';
     d.onclick=()=>selectOpt(i);
     opts.appendChild(d);
   });
@@ -224,6 +224,30 @@ function render(){
   closeAula();
   document.getElementById('prog-fill').style.width=Math.max(2,Math.round(cur/TOTAL*100))+'%';
   document.getElementById('prog-count').textContent=(cur+1)+' / '+TOTAL;
+  // enter animation
+  const qtEl=document.getElementById('q-text');
+  const opEl=document.getElementById('options');
+  qtEl.classList.add('q-enter');
+  opEl.classList.add('q-enter');
+  requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{
+      qtEl.classList.remove('q-enter');
+      opEl.classList.remove('q-enter');
+    });
+  });
+}
+function render(){
+  if(cur===0){ _doRender(); return; }
+  // exit animation then render
+  const qtEl=document.getElementById('q-text');
+  const opEl=document.getElementById('options');
+  qtEl.classList.add('q-exit');
+  opEl.classList.add('q-exit');
+  setTimeout(()=>{
+    qtEl.classList.remove('q-exit');
+    opEl.classList.remove('q-exit');
+    _doRender();
+  }, 180);
 }
 
 function selectOpt(i){
@@ -347,7 +371,16 @@ function ttsQuestao(btn){
 
 </script>
 <style>
+/* Quiz motion */
+#q-text,#options{transition:opacity 280ms cubic-bezier(0.16,1,0.3,1),transform 280ms cubic-bezier(0.16,1,0.3,1);}
+.q-exit{opacity:0!important;transform:translateY(-10px)!important;}
+.q-enter{opacity:0;transform:translateY(12px);}
+.nx-feedback{transform:translateY(8px);opacity:0;transition:opacity 320ms cubic-bezier(0.16,1,0.3,1),transform 320ms cubic-bezier(0.16,1,0.3,1);}
+.nx-feedback.correct,.nx-feedback.wrong{opacity:1;transform:translateY(0);}
+.nx-btn-primary{transition:transform 120ms cubic-bezier(0.16,1,0.3,1),box-shadow 200ms ease,background 150ms ease;}
+.nx-btn-primary:active{transform:scale(0.97)!important;}
 @keyframes nx-pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+@media(prefers-reduced-motion:reduce){#q-text,#options,.nx-feedback{transition:none!important;opacity:1!important;transform:none!important;}}
 </style>
 </body>
 </html>
