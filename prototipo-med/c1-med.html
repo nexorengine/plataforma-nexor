@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -6,10 +6,19 @@
 <meta name="theme-color" content="#16263B">
 <title>nexor_med · Especialidades</title>
 <link rel="stylesheet" href="assets/nx.css">
+<style>
+.hero-reveal{opacity:0;transform:translateY(20px);filter:blur(6px);transition:opacity 700ms cubic-bezier(0.16,1,0.3,1),transform 700ms cubic-bezier(0.16,1,0.3,1),filter 700ms cubic-bezier(0.16,1,0.3,1);}
+.hero-reveal.visible{opacity:1;transform:translateY(0);filter:blur(0);}
+.sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
+.sr.visible{opacity:1;transform:translateY(0);}
+.nx-capsule{transition:transform 250ms cubic-bezier(0.16,1,0.3,1),box-shadow 250ms cubic-bezier(0.16,1,0.3,1),border-color 250ms ease;}
+.nx-capsule:hover{transform:translateY(-3px) scale(1.012)!important;box-shadow:0 8px 24px rgba(0,0,0,0.35)!important;border-color:rgba(159,203,235,0.3)!important;}
+@media(prefers-reduced-motion:reduce){.hero-reveal,.sr{opacity:1!important;transform:none!important;filter:none!important;}}
+</style>
 </head>
 <body>
 <div class="nx-header">
-  <a href="index.html" class="nx-back-btn"><i class="ti ti-arrow-left"></i>início</a>
+  <a href="index" class="nx-back-btn"><i class="ti ti-arrow-left"></i>início</a>
   <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
@@ -17,9 +26,9 @@
 <div class="nx-scroll">
 <div class="nx-body">
   <div class="nx-hero">
-    <div class="nx-hero-tag">Residência Médica · 5 especialidades</div>
-    <div class="nx-hero-title">Suas especialidades</div>
-    <div class="nx-hero-sub">Selecione uma especialidade para estudar.</div>
+    <div class="nx-hero-tag hero-reveal" style="transition-delay:0ms">Residência Médica · 5 especialidades</div>
+    <div class="nx-hero-title hero-reveal" style="transition-delay:100ms">Suas especialidades</div>
+    <div class="nx-hero-sub hero-reveal" style="transition-delay:200ms">Selecione uma especialidade para estudar.</div>
   </div>
   <div id="lista-areas"></div>
 </div>
@@ -30,18 +39,33 @@
 <script src="assets/catalog.js"></script>
 <script>
 const el = document.getElementById('lista-areas');
-el.innerHTML = AREA_ORDER.map(slug => {
+el.innerHTML = AREA_ORDER.map((slug, i) => {
   const a = CATALOG[slug];
   const n = a.dominios.length;
-  return `<a href="c2-med.html?area=${slug}" class="nx-capsule active">
-    <div class="nx-icon-slot"><i class="ti ${a.icon}"></i></div>
+  return `<a href="c2-med#area=${slug}" class="nx-capsule active sr" style="transition-delay:${i*60}ms">
+    <i class="ti ${a.icon}" style="color:#FCA311;font-size:22px;width:24px;text-align:center;flex-shrink:0;"></i>
     <div class="nx-cap-body">
       <div class="nx-cap-title">${a.label}</div>
-      <div class="nx-cap-org">${n} domínios · ${n*48} flashcards · ${n*100} questões</div>
+      <div class="nx-cap-org">${n} dom · ${n*48} cards · ${n*100} q</div>
     </div>
     <div class="nx-pill available">ACESSAR</div>
   </a>`;
 }).join('');
+
+(function(){
+  const scrollEl = document.querySelector('.nx-scroll');
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.hero-reveal').forEach(el => el.classList.add('visible'));
+    });
+  });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
+    });
+  }, { root: scrollEl, threshold: 0.08 });
+  document.querySelectorAll('.sr').forEach(el => io.observe(el));
+})();
 </script>
 </body>
 </html>

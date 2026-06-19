@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -9,46 +9,43 @@
 </head>
 <body>
 <div class="nx-header">
-  <a href="c3-med.html" class="nx-back-btn" id="btn-back"><i class="ti ti-arrow-left"></i>voltar</a>
+  <a href="c3-med" class="nx-back-btn" id="btn-back"><i class="ti ti-arrow-left"></i>voltar</a>
   <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
-    <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;"><i class="ti ti-cut" style="font-size:18px;"></i></div>
+  <div class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
+    <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="c4b-icon"><i class="ti ti-clipboard-check" style="font-size:18px;"></i></div>
     <div style="flex:1;min-width:0;">
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;">Cirurgia Geral · CG_D01</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;">Abdome Agudo</div>
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;" id="c4b-label">—</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;" id="c4b-nome">—</div>
       <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;" id="quiz-sub">Quiz 001 · 50 questões</div>
     </div>
     <div id="timer-display" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#FCA311;letter-spacing:0.04em;flex-shrink:0;">60:00</div>
   </div>
 
-  <div class="nx-prog-row">
+  <div class="nx-prog-row sr" style="transition-delay:100ms">
     <div class="nx-prog-bar-bg"><div class="nx-prog-bar-fill" id="prog-fill" style="width:2%;"></div></div>
     <span class="nx-prog-count" id="prog-count">1 / 50</span>
   </div>
 
-  <div style="background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:20px;margin-bottom:14px;">
+  <div class="sr" style="transition-delay:160ms;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:20px;margin-bottom:14px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#555;letter-spacing:0.08em;text-transform:uppercase;" id="q-label">questão 01</div>
+      <div style="font-size:12px;font-family:'Barlow',sans-serif;font-weight:400;color:#888;letter-spacing:0.08em;text-transform:uppercase;" id="q-label">questão 01</div>
       <button class="tts-btn" id="tts-q-btn" onclick="ttsQuestao(this)" title="Ouvir em voz alta"><i class="ti ti-volume"></i></button>
     </div>
-    <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#F0F6FB;line-height:1.35;" id="q-text"></div>
+    <div style="font-family:'Barlow',sans-serif;font-weight:400;font-size:16px;color:#F0F6FB;line-height:1.5;" id="q-text"></div>
   </div>
 
-  <div class="nx-options" id="options"></div>
+  <div class="nx-options sr" id="options" style="transition-delay:220ms"></div>
 
-  <button class="nx-btn-primary" id="btn-confirm" onclick="confirm_answer()" disabled>
+  <button class="nx-btn-primary nx-btn-confirm" id="btn-confirm" onclick="confirm_answer()" disabled>
     CONFIRMAR
   </button>
   <div class="nx-feedback" id="feedback">
-    <div style="position:relative;display:flex;align-items:center;justify-content:center;margin-bottom:6px;">
-      <span class="nx-fb-label" id="fb-label" style="margin-bottom:0;text-align:center;"></span>
-      <button class="tts-btn" id="tts-fb-btn" onclick="ttsFeedback(this)" title="Ouvir explicação" style="position:absolute;right:0;"><i class="ti ti-volume"></i></button>
-    </div>
+    <span class="nx-fb-label" id="fb-label" style="text-align:center;"></span>
     <span id="fb-text"></span>
   </div>
   <button class="nx-btn-aula hidden" id="btn-aula" onclick="openAula()">
@@ -86,12 +83,23 @@
 <div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
 <script src="assets/notif.js"></script>
 <script src="assets/profile.js"></script>
+<script src="assets/catalog.js"></script>
 <script src="assets/tts.js"></script>
 <script>
-const params=new URLSearchParams(window.location.search);
-const qn=params.get('n')||'1';
-const area=params.get('area')||'cirurgia_geral';
-const dominio=params.get('dominio')||'abdome_agudo';
+const _hash=Object.fromEntries(window.location.hash.replace('#','').split('&').map(p=>p.split('=')));
+const _sp=new URLSearchParams(window.location.search);
+const qn=_hash.n||_sp.get('n')||'1';
+const area=_hash.area||_sp.get('area')||'cirurgia_geral';
+const dominio=_hash.dominio||_sp.get('dominio')||'abdome_agudo';
+document.getElementById('btn-back').href=`c3-med#area=${area}&dominio=${dominio}`;
+(function(){
+  const a=CATALOG[area]; const d=a&&a.dominios.find(x=>x.slug===dominio);
+  if(!a||!d)return;
+  document.getElementById('c4b-icon').innerHTML=`<i class="ti ${a.icon}" style="font-size:18px;"></i>`;
+  document.getElementById('c4b-label').textContent=a.label+' · '+d.code;
+  document.getElementById('c4b-nome').textContent=d.nome;
+  document.title=d.nome+' · Quiz · nexor_med';
+})();
 document.getElementById('quiz-sub').textContent='Quiz 00'+qn+' · carregando...';
 
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
@@ -116,8 +124,10 @@ async function loadQuiz(){
     startTimer();
     render();
   }catch(e){
-    document.getElementById('q-text').textContent='Erro ao carregar o quiz. Verifique o caminho: '+url;
-    document.getElementById('q-label').textContent='erro';
+    document.getElementById('q-label').textContent='conteúdo indisponível';
+    document.getElementById('q-text').textContent='Não foi possível carregar este quiz no momento. Tente novamente mais tarde.';
+    document.getElementById('btn-confirm').className='nx-btn-primary nx-btn-confirm hidden';
+    document.getElementById('timer-display').textContent='—';
   }
 }
 loadQuiz();
@@ -131,8 +141,8 @@ let quizEnded = false;
 function startTimer(){
   timerInterval = setInterval(() => {
     timerSec--;
+    if(timerSec <= 0){ clearInterval(timerInterval); timerSec=0; updateTimerDisplay(); timeUp(); return; }
     updateTimerDisplay();
-    if(timerSec <= 0){ clearInterval(timerInterval); timeUp(); }
   }, 1000);
 }
 
@@ -165,15 +175,25 @@ function timeUp(){
   document.getElementById('q-label').textContent = 'tempo esgotado';
   document.getElementById('q-text').textContent = 'O tempo da prova encerrou. Acertos: ' + rights + ' · Erros: ' + wrongs;
   document.getElementById('options').innerHTML = '';
-  document.getElementById('btn-confirm').className = 'nx-btn-primary hidden';
+  document.getElementById('btn-confirm').className = 'nx-btn-primary nx-btn-confirm hidden';
   document.getElementById('btn-next').className = 'nx-btn-next hidden';
   document.getElementById('feedback').className = 'nx-feedback wrong';
-  document.getElementById('fb-label').textContent = '✗ tempo esgotado';
+  document.getElementById('fb-label').textContent = 'TEMPO ESGOTADO';
   document.getElementById('fb-text').textContent = 'Você respondeu ' + (rights+wrongs) + ' de ' + TOTAL + ' questões. Aproveitamento: ' + (rights+wrongs > 0 ? Math.round(rights/(rights+wrongs)*100) : 0) + '%.';
   document.getElementById('prog-fill').style.width = Math.round((rights+wrongs)/TOTAL*100) + '%';
+  document.getElementById('sr').textContent = rights;
+  document.getElementById('sw').textContent = wrongs;
+  document.getElementById('sp').textContent = (rights+wrongs > 0 ? Math.round(rights/(rights+wrongs)*100) : 0) + '%';
   const timerEl = document.getElementById('timer-display');
   timerEl.textContent = '00:00';
   timerEl.style.color = '#ef4444';
+  timerEl.style.animation = '';
+  const btnVer2=document.createElement('a');
+  btnVer2.href='c4c-scorecard#area='+area+'&dominio='+dominio;
+  btnVer2.className='nx-btn-primary';
+  btnVer2.style.cssText='text-decoration:none;margin-top:12px;';
+  btnVer2.textContent='VER SCORECARD';
+  document.getElementById('btn-next').insertAdjacentElement('afterend', btnVer2);
 }
 
 // Ao clicar em voltar: para timer, NÃO conta como tentativa
@@ -182,7 +202,7 @@ document.getElementById('btn-back').addEventListener('click', () => {
 });
 
 /* ── QUIZ ── */
-function render(){
+function _doRender(){
   sel=-1;confirmed=false;
   const q=sq[cur];
   document.getElementById('q-label').textContent='questão '+String(cur+1).padStart(2,'0');
@@ -192,18 +212,42 @@ function render(){
   q.opts.forEach((o,i)=>{
     const d=document.createElement('div');
     d.className='nx-option';
-    d.innerHTML=`<span class="nx-opt-key">${keys[i]}</span><span class="nx-opt-text">${o}</span>`;
+    d.innerHTML='<span class="nx-opt-key">'+keys[i]+'</span><span class="nx-opt-text">'+o+'</span>';
     d.onclick=()=>selectOpt(i);
     opts.appendChild(d);
   });
   document.getElementById('btn-confirm').disabled=true;
-  document.getElementById('btn-confirm').className='nx-btn-primary';
+  document.getElementById('btn-confirm').className='nx-btn-primary nx-btn-confirm';
   document.getElementById('feedback').className='nx-feedback';
   document.getElementById('btn-next').className='nx-btn-next hidden';
   document.getElementById('btn-aula').className='nx-btn-aula hidden';
   closeAula();
   document.getElementById('prog-fill').style.width=Math.max(2,Math.round(cur/TOTAL*100))+'%';
   document.getElementById('prog-count').textContent=(cur+1)+' / '+TOTAL;
+  // enter animation
+  const qtEl=document.getElementById('q-text');
+  const opEl=document.getElementById('options');
+  qtEl.classList.add('q-enter');
+  opEl.classList.add('q-enter');
+  requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{
+      qtEl.classList.remove('q-enter');
+      opEl.classList.remove('q-enter');
+    });
+  });
+}
+function render(){
+  if(cur===0){ _doRender(); return; }
+  // exit animation then render
+  const qtEl=document.getElementById('q-text');
+  const opEl=document.getElementById('options');
+  qtEl.classList.add('q-exit');
+  opEl.classList.add('q-exit');
+  setTimeout(()=>{
+    qtEl.classList.remove('q-exit');
+    opEl.classList.remove('q-exit');
+    _doRender();
+  }, 180);
 }
 
 function selectOpt(i){
@@ -227,8 +271,7 @@ function confirm_answer(){
   const fb=document.getElementById('feedback');
   fb.className='nx-feedback '+(ok?'correct':'wrong');
   document.getElementById('fb-label').textContent=ok?'CORRETO':'INCORRETO';
-  document.getElementById('fb-text').textContent=q.exp;
-  document.getElementById('btn-confirm').className='nx-btn-primary hidden';
+  document.getElementById('btn-confirm').className='nx-btn-primary nx-btn-confirm hidden';
   document.getElementById('btn-next').className='nx-btn-next';
   document.getElementById('btn-aula').className='nx-btn-aula';
   const tot=rights+wrongs;
@@ -242,14 +285,26 @@ function nextQ(){
   if(cur>=sq.length){
     stopTimer();
     quizEnded=true;
+    const pct=Math.round(rights/TOTAL*100);
+    try{ localStorage.setItem('nexor_score_'+area+'_'+dominio+'_q'+qn, JSON.stringify({pct,ts:Date.now()})); }catch(e){}
     document.getElementById('q-label').textContent='quiz concluído';
-    document.getElementById('q-text').textContent='Parabéns! Acertos: '+rights+' · Erros: '+wrongs;
+    document.getElementById('q-text').textContent='Aproveitamento: '+pct+'% · Acertos: '+rights+' · Erros: '+wrongs;
     document.getElementById('options').innerHTML='';
-    document.getElementById('btn-confirm').className='nx-btn-primary hidden';
+    document.getElementById('btn-confirm').className='nx-btn-primary nx-btn-confirm hidden';
     document.getElementById('btn-next').className='nx-btn-next hidden';
+    document.getElementById('btn-aula').className='nx-btn-aula hidden';
     document.getElementById('feedback').className='nx-feedback';
     document.getElementById('prog-fill').style.width='100%';
     document.getElementById('prog-count').textContent=TOTAL+' / '+TOTAL;
+    document.getElementById('sr').textContent=rights;
+    document.getElementById('sw').textContent=wrongs;
+    document.getElementById('sp').textContent=pct+'%';
+    const btnVer=document.createElement('a');
+    btnVer.href='c4c-scorecard#area='+area+'&dominio='+dominio;
+    btnVer.className='nx-btn-primary';
+    btnVer.style.cssText='text-decoration:none;margin-top:12px;';
+    btnVer.textContent='VER SCORECARD';
+    document.getElementById('btn-next').insertAdjacentElement('afterend', btnVer);
     return;
   }
   render();
@@ -314,12 +369,39 @@ function ttsQuestao(btn){
   const texto=q.q+'. '+q.opts.map((o,i)=>opts[i]+': '+o).join('. ');
   TTS.speak(texto, btn);
 }
-function ttsFeedback(btn){
-  TTS.speak(document.getElementById('fb-text').textContent, btn);
-}
+
+
+// motion init
+(function(){
+  const scrollEl = document.querySelector('.nx-scroll');
+  requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{
+      document.querySelectorAll('.hero-reveal').forEach(el=>el.classList.add('visible'));
+    });
+  });
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add('visible');io.unobserve(entry.target);}
+    });
+  },{root:scrollEl,threshold:0.08});
+  document.querySelectorAll('.sr').forEach(el=>io.observe(el));
+})();
 </script>
 <style>
+.hero-reveal{opacity:0;transform:translateY(20px);filter:blur(6px);transition:opacity 700ms cubic-bezier(0.16,1,0.3,1),transform 700ms cubic-bezier(0.16,1,0.3,1),filter 700ms cubic-bezier(0.16,1,0.3,1);}
+.hero-reveal.visible{opacity:1;transform:translateY(0);filter:blur(0);}
+.sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
+.sr.visible{opacity:1;transform:translateY(0);}
+/* Quiz motion */
+#q-text,#options{transition:opacity 280ms cubic-bezier(0.16,1,0.3,1),transform 280ms cubic-bezier(0.16,1,0.3,1);}
+.q-exit{opacity:0!important;transform:translateY(-10px)!important;}
+.q-enter{opacity:0;transform:translateY(12px);}
+.nx-feedback{transform:translateY(8px);opacity:0;transition:opacity 320ms cubic-bezier(0.16,1,0.3,1),transform 320ms cubic-bezier(0.16,1,0.3,1);}
+.nx-feedback.correct,.nx-feedback.wrong{opacity:1;transform:translateY(0);}
+.nx-btn-primary{transition:transform 120ms cubic-bezier(0.16,1,0.3,1),box-shadow 200ms ease,background 150ms ease;}
+.nx-btn-primary:active{transform:scale(0.97)!important;}
 @keyframes nx-pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+@media(prefers-reduced-motion:reduce){#q-text,#options,.nx-feedback{transition:none!important;opacity:1!important;transform:none!important;}}
 </style>
 </body>
 </html>

@@ -50,7 +50,7 @@ const CATALOG = {
   pediatria: {
     label: 'Pediatria',
     code: 'PED',
-    icon: 'ti-baby',
+    icon: 'ti-heart',
     dominios: [
       { slug: 'neonatologia',         code: 'PED_D01', nome: 'Neonatologia' },
       { slug: 'puericultura',         code: 'PED_D02', nome: 'Puericultura' },
@@ -66,7 +66,7 @@ const CATALOG = {
   medicina_preventiva: {
     label: 'Medicina Preventiva',
     code: 'PREV',
-    icon: 'ti-shield-check',
+    icon: 'ti-vaccine',
     dominios: [
       { slug: 'epidemiologia_geral',          code: 'PREV_D01', nome: 'Epidemiologia Geral' },
       { slug: 'vigilancia_epidemiologica',    code: 'PREV_D02', nome: 'Vigilância Epidemiológica' },

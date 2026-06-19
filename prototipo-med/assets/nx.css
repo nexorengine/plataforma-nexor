@@ -8,10 +8,10 @@ body{background:#070A0E;color:#F0F6FB;font-family:'Barlow',sans-serif;min-height
 /* GADGET MODE — desktop: app fica em janela 390px centralizada */
 @media(min-width:600px){
   html{display:flex;justify-content:center;align-items:flex-start;min-height:100vh;background:radial-gradient(ellipse at center,#0d1a2e 0%,#070A0E 70%);}
-  body{width:390px;height:100vh;flex-shrink:0;position:relative;overflow:hidden;box-shadow:0 0 0 1px #1d3452,0 8px 80px rgba(0,0,0,0.8),0 0 40px rgba(159,203,235,0.06);}
+  body{width:390px;height:100dvh;flex-shrink:0;position:relative;overflow:hidden;box-shadow:0 0 0 1px #1d3452,0 8px 80px rgba(0,0,0,0.8),0 0 40px rgba(159,203,235,0.06);}
   .nx-header{position:absolute !important;left:0 !important;right:0 !important;}
   .nx-footer{position:absolute !important;left:0 !important;right:0 !important;}
-  .nx-scroll{height:100vh;overflow-y:auto;}
+  .nx-scroll{height:100dvh;overflow-y:auto;}
   .nx-notif-sheet,.nx-profile-sheet{position:absolute !important;left:0 !important;right:0 !important;}
   #nx-notif-overlay,#nx-profile-overlay{position:absolute !important;}
 }
@@ -106,7 +106,8 @@ body{background:#070A0E;color:#F0F6FB;font-family:'Barlow',sans-serif;min-height
 .nx-btn-primary{width:100%;height:52px;border-radius:6px;border:2px solid #FCA311;background:transparent;color:#FCA311;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:12px;transition:background 0.15s;}
 .nx-btn-primary:hover{background:rgba(159,203,235,0.08);}
 .nx-btn-primary:disabled{border-color:#333;color:#444;cursor:default;}
-.nx-btn-next{width:100%;height:52px;border-radius:6px;border:2px solid #F0F6FB;background:transparent;color:#F0F6FB;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:12px;}
+.nx-btn-confirm{width:auto;display:block;margin:0 auto 12px;height:44px;padding:0 36px;font-size:13px;}
+.nx-btn-next{width:auto;display:block;margin:0 auto 12px;height:44px;padding:0 36px;border-radius:6px;border:2px solid #F0F6FB;background:transparent;color:#F0F6FB;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;}
 .nx-btn-wrong{height:52px;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;background:#3a1a1a;color:#f87171;border:1px solid #4a2a2a;}
 .nx-btn-right{height:52px;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;background:#1a3a1a;color:#4ade80;border:1px solid #2a4a2a;}
 .nx-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px;}
@@ -116,27 +117,27 @@ body{background:#070A0E;color:#F0F6FB;font-family:'Barlow',sans-serif;min-height
 .nx-card.flipped{background:#1a2e44;border-color:#FCA311;}
 .nx-card-face{font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#888;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;}
 .nx-card.flipped .nx-card-face{color:#FCA311;}
-.nx-card-text{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;color:#F0F6FB;line-height:1.35;}
+.nx-card-text{font-family:'Barlow',sans-serif;font-weight:400;font-size:18px;color:#F0F6FB;line-height:1.45;}
 .nx-card.flipped .nx-card-text{color:#cde8f7;font-size:16px;font-family:'Barlow',sans-serif;font-weight:400;line-height:1.6;}
 
 /* QUIZ OPTIONS */
 .nx-options{display:flex;flex-direction:column;gap:8px;margin-bottom:14px;}
-.nx-option{display:flex;align-items:flex-start;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:14px 16px;cursor:pointer;transition:border-color 0.15s;}
-.nx-option:hover{border-color:#FCA311;}
+.nx-option{display:flex;align-items:flex-start;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 16px;cursor:pointer;transition:border-color 0.15s,background 0.15s;}
+.nx-option:hover{border-color:rgba(252,163,17,0.4);}
 .nx-option.selected{border-color:#FCA311;background:#1a2e44;}
 .nx-option.correct{border:2px solid #22c55e;background:#071a0e;}
-.nx-option.correct .nx-opt-key{color:#22c55e;}
+.nx-option.correct .nx-opt-key{background:rgba(34,197,94,0.15);border-color:rgba(34,197,94,0.4);color:#22c55e;}
 .nx-option.correct .nx-opt-text{color:#4ade80;}
 .nx-option.wrong{border:2px solid #ef4444;background:#1a0707;}
-.nx-option.wrong .nx-opt-key{color:#ef4444;}
+.nx-option.wrong .nx-opt-key{background:rgba(239,68,68,0.15);border-color:rgba(239,68,68,0.4);color:#ef4444;}
 .nx-option.wrong .nx-opt-text{color:#f87171;}
-.nx-option.dimmed{opacity:0.35;cursor:default;}
-.nx-opt-key{font-family:'Barlow',sans-serif;font-weight:400;font-size:12px;color:#888;width:18px;flex-shrink:0;padding-top:1px;}
-.nx-option.selected .nx-opt-key{color:#FCA311;}
+.nx-option.dimmed{opacity:0.3;cursor:default;}
+.nx-opt-key{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;color:#FCA311;background:rgba(252,163,17,0.1);border:1px solid rgba(252,163,17,0.25);border-radius:4px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.nx-option.selected .nx-opt-key{background:rgba(252,163,17,0.2);border-color:#FCA311;}
 .nx-opt-text{font-size:14px;color:#F0F6FB;line-height:1.4;font-weight:300;}
 
 /* FEEDBACK */
-.nx-feedback{border-radius:6px;padding:14px 16px;margin-bottom:12px;font-size:13px;line-height:1.6;font-weight:300;display:none;}
+.nx-feedback{border-radius:6px;padding:12px 16px;margin:0 auto 12px;font-size:13px;line-height:1.6;font-weight:300;display:none;max-width:360px;}
 .nx-feedback.correct{background:#071a0e;border:1px solid #1a4a2a;color:#86efac;display:block;}
 .nx-feedback.wrong{background:#1a0707;border:1px solid #4a1a1a;color:#fca5a5;display:block;}
 .nx-fb-label{font-family:'Barlow',sans-serif;font-weight:400;font-size:11px;display:block;margin-bottom:6px;letter-spacing:0.06em;text-transform:uppercase;}
@@ -163,7 +164,7 @@ body{background:#070A0E;color:#F0F6FB;font-family:'Barlow',sans-serif;min-height
 .nx-dot.failed{background:#ef4444;}
 .nx-dot.passed{background:#22c55e;}
 
-.nx-domain-code-txt{font-size:11px;font-family:'Barlow',sans-serif;font-weight:300;color:#888;width:40px;flex-shrink:0;}
+.nx-domain-code-txt{font-size:11px;font-family:'Barlow',sans-serif;font-weight:300;color:#888;min-width:60px;flex-shrink:0;white-space:nowrap;}
 .nx-domain-name-txt{flex:1;font-size:13px;font-family:'Barlow',sans-serif;font-weight:400;color:#F0F6FB;}
 .nx-domain-score{font-size:12px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;width:34px;text-align:right;flex-shrink:0;}
 .nx-domain-badge-slot{width:20px;height:20px;border-radius:3px;background:#070A0E;border:1px solid #1d3452;flex-shrink:0;}
@@ -223,8 +224,8 @@ body{background:#070A0E;color:#F0F6FB;font-family:'Barlow',sans-serif;min-height
 .nx-notif-overlay.open{opacity:1;pointer-events:all;}
 
 /* BOTTOM SHEET */
-.nx-notif-sheet{position:fixed;bottom:48px;left:0;right:0;z-index:201;background:#16263B;border-top:1px solid #1d3452;border-radius:16px 16px 0 0;max-height:calc(82vh - 48px);display:flex;flex-direction:column;transform:translateY(calc(100% + 48px));transition:transform 0.3s cubic-bezier(0.32,0.72,0,1);padding-bottom:16px;}
-.nx-notif-sheet.open{transform:translateY(0);}
+.nx-notif-sheet{position:fixed;bottom:48px;left:0;right:0;z-index:201;background:#16263B;border-top:1px solid #1d3452;border-radius:16px 16px 0 0;max-height:calc(82vh - 48px);display:flex;flex-direction:column;transform:translateY(calc(100% + 48px));transition:transform 0.3s cubic-bezier(0.32,0.72,0,1);padding-bottom:16px;visibility:hidden;}
+.nx-notif-sheet.open{transform:translateY(0);visibility:visible;}
 .nx-notif-handle{width:36px;height:4px;background:#1d3452;border-radius:2px;margin:12px auto 0;}
 .nx-notif-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px 10px;}
 .nx-notif-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F0F6FB;}
@@ -247,8 +248,8 @@ body{background:#070A0E;color:#F0F6FB;font-family:'Barlow',sans-serif;min-height
 .nx-notif-time{font-size:10px;color:#444;margin-top:3px;font-family:'Barlow',sans-serif;}
 
 /* PROFILE SHEET */
-.nx-profile-sheet{position:fixed;bottom:48px;left:0;right:0;z-index:300;background:#16263B;border-radius:16px 16px 0 0;max-height:calc(88vh - 48px);overflow-y:auto;transform:translateY(calc(100% + 48px));transition:transform 0.3s cubic-bezier(0.32,0.72,0,1);padding-bottom:16px;}
-.nx-profile-sheet.open{transform:translateY(0);}
+.nx-profile-sheet{position:fixed;bottom:48px;left:0;right:0;z-index:300;background:#16263B;border-radius:16px 16px 0 0;max-height:calc(88vh - 48px);overflow-y:auto;transform:translateY(calc(100% + 48px));transition:transform 0.3s cubic-bezier(0.32,0.72,0,1);padding-bottom:16px;visibility:hidden;}
+.nx-profile-sheet.open{transform:translateY(0);visibility:visible;}
 .nx-profile-item{display:flex;align-items:center;gap:12px;padding:13px 20px;font-size:14px;font-family:'Barlow',sans-serif;font-weight:300;color:#F0F6FB;cursor:pointer;transition:background .15s;}
 .nx-profile-item:hover{background:rgba(159,203,235,0.05);}
 .nx-profile-item i{font-size:18px;flex-shrink:0;}
@@ -268,7 +269,7 @@ body{background:#070A0E;color:#F0F6FB;font-family:'Barlow',sans-serif;min-height
 .nx-speed-btn.active{background:rgba(159,203,235,0.1);border-color:#FCA311;color:#FCA311;font-weight:700;}
 
 /* BOTÃO AULA */
-.nx-btn-aula{width:100%;height:52px;border-radius:6px;border:2px solid #FCA311;background:transparent;color:#FCA311;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:12px;transition:background .15s;}
+.nx-btn-aula{width:auto;display:block;margin:0 auto 12px;height:44px;padding:0 36px;border-radius:6px;border:2px solid #FCA311;background:transparent;color:#FCA311;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background .15s;}
 .nx-btn-aula:hover{background:rgba(159,203,235,0.08);}
 .nx-btn-aula i{font-size:17px;}
 
