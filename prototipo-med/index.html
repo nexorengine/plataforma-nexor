@@ -9,36 +9,36 @@
 <style>
 .c0-plan-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
 .c0-plan{background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:14px 16px;display:flex;gap:0;}
-.c0-plan.featured{border-color:#FCA311;background:#1a2e44;}
+.c0-plan.featured{border-color:#0EA5E9;background:#1a2e44;}
 .c0-plan-left{flex:0 0 auto;width:52%;padding-right:14px;border-right:1px solid #1d3452;display:flex;flex-direction:column;justify-content:center;}
 .c0-plan-right{flex:1;padding-left:14px;display:flex;flex-direction:column;justify-content:center;}
-.c0-plan-tag{font-size:9px;font-family:'Barlow',sans-serif;font-weight:400;color:#FCA311;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.c0-plan-tag{font-size:9px;font-family:'Barlow',sans-serif;font-weight:400;color:#0EA5E9;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
 .c0-plan-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;margin-bottom:4px;}
-.c0-plan-price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;color:#FCA311;line-height:1;}
+.c0-plan-price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;color:#0EA5E9;line-height:1;}
 .c0-plan-price span{font-size:12px;font-weight:300;font-family:'Barlow',sans-serif;color:#AAA;margin-left:3px;}
 .c0-plan-equiv{font-size:10px;color:#AAA;font-weight:300;margin-top:3px;}
-.c0-plan-save{display:inline-block;font-size:9px;background:rgba(252,163,17,0.12);color:#FCA311;border:1px solid rgba(252,163,17,0.25);border-radius:3px;padding:2px 7px;margin-top:6px;align-self:flex-start;}
+.c0-plan-save{display:inline-block;font-size:9px;background:rgba(14,165,233,0.12);color:#0EA5E9;border:1px solid rgba(14,165,233,0.25);border-radius:3px;padding:2px 7px;margin-top:6px;align-self:flex-start;}
 .c0-divider{display:none;}
 .c0-feature{display:flex;align-items:flex-start;gap:7px;font-size:11px;color:#AAA;font-weight:300;margin-bottom:6px;line-height:1.35;}
 .c0-feature:last-child{margin-bottom:0;}
-.c0-feature i{color:#FCA311;font-size:12px;flex-shrink:0;margin-top:1px;}
+.c0-feature i{color:#0EA5E9;font-size:12px;flex-shrink:0;margin-top:1px;}
 .c0-magic{background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:18px;margin-bottom:24px;}
 .c0-magic-label{font-size:11px;color:#AAA;font-weight:300;margin-bottom:10px;}
 .c0-input{width:100%;height:44px;background:#070A0E;border:1px solid #1d3452;border-radius:6px;color:#F0F6FB;font-family:'Barlow',sans-serif;font-size:14px;padding:0 14px;outline:none;margin-bottom:10px;}
 .c0-input::placeholder{color:#555;}
-.c0-input:focus{border-color:#FCA311;}
+.c0-input:focus{border-color:#0EA5E9;}
 .c0-features-row{display:flex;flex-direction:column;gap:8px;margin-bottom:24px;}
 .c0-feat-item{display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;transition:transform 300ms cubic-bezier(0.16,1,0.3,1),box-shadow 300ms cubic-bezier(0.16,1,0.3,1),border-color 300ms ease;}
 .c0-feat-item:hover{transform:translateY(-3px) scale(1.015);box-shadow:0 8px 24px rgba(0,0,0,0.35);border-color:rgba(159,203,235,0.25);}
 .c0-feat-icon{width:34px;height:34px;background:#070A0E;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.c0-feat-icon i{font-size:17px;color:#FCA311;}
+.c0-feat-icon i{font-size:17px;color:#0EA5E9;}
 .c0-feat-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;color:#F0F6FB;margin-bottom:2px;}
 .c0-feat-sub{font-size:11px;color:#AAA;font-weight:300;line-height:1.4;}
 
 /* ── MOTION SYSTEM ── */
 /* Gradient drift ambiental no hero */
 .nx-hero{position:relative;overflow:visible;}
-.nx-hero::before{content:'';position:absolute;inset:-40px -60px;background:radial-gradient(ellipse 70% 50% at 60% 40%,rgba(252,163,17,0.06) 0%,transparent 70%),radial-gradient(ellipse 50% 60% at 20% 70%,rgba(159,203,235,0.04) 0%,transparent 70%);pointer-events:none;animation:driftGrad 38s ease-in-out infinite alternate;will-change:transform;}
+.nx-hero::before{content:'';position:absolute;inset:-40px -60px;background:radial-gradient(ellipse 70% 50% at 60% 40%,rgba(14,165,233,0.06) 0%,transparent 70%),radial-gradient(ellipse 50% 60% at 20% 70%,rgba(159,203,235,0.04) 0%,transparent 70%);pointer-events:none;animation:driftGrad 38s ease-in-out infinite alternate;will-change:transform;}
 @keyframes driftGrad{0%{transform:translate(0,0) scale(1);}50%{transform:translate(12px,-8px) scale(1.02);}100%{transform:translate(-8px,6px) scale(0.98);}}
 
 /* Hero reveal — estado inicial */
@@ -57,7 +57,7 @@
 
 /* Botões */
 .nx-btn-primary{transition:transform 250ms cubic-bezier(0.16,1,0.3,1),box-shadow 250ms ease!important;}
-.nx-btn-primary:hover{transform:translateY(-2px)!important;box-shadow:0 6px 20px rgba(252,163,17,0.25)!important;}
+.nx-btn-primary:hover{transform:translateY(-2px)!important;box-shadow:0 6px 20px rgba(14,165,233,0.25)!important;}
 .nx-btn-primary:active{transform:scale(0.98)!important;transition-duration:100ms!important;}
 
 /* prefers-reduced-motion */
@@ -71,10 +71,10 @@
 <body>
 <div class="nx-header">
   <div class="nx-wordmark-left">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FCA311" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;" aria-hidden="true">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;" aria-hidden="true">
       <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/>
       <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/>
-      <circle cx="20" cy="10" r="2" fill="#FCA311" stroke="none"/>
+      <circle cx="20" cy="10" r="2" fill="#0EA5E9" stroke="none"/>
     </svg>
     nexor_<span>med</span>
   </div>
@@ -87,14 +87,14 @@
     <div class="nx-hero-tag hero-reveal">Residência Médica · Preparação Inteligente</div>
     <div class="nx-hero-title hero-reveal" style="transition-delay:120ms;">Treinamento por domínio.<br><span>Evolução por métricas.<br>Aprovação por mérito.</span></div>
     <div class="nx-hero-sub hero-reveal" style="transition-delay:240ms;">Flashcards e simulados organizados por especialidade, com método FractalLearning™ para máxima retenção em menos tempo.</div>
-    <a href="#cadastro" onclick="event.preventDefault();document.getElementById('cadastro').scrollIntoView({behavior:'smooth',block:'start'});document.querySelector('.c0-input').focus();" class="hero-reveal" style="transition-delay:360ms;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:20px;margin-bottom:16px;height:48px;padding:0 28px;width:fit-content;margin-left:auto;margin-right:auto;border-radius:6px;border:2px solid #FCA311;background:transparent;color:#FCA311;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.06em;text-decoration:none;transition:background 0.15s;">COMEÇAR AGORA</a>
+    <a href="#cadastro" onclick="event.preventDefault();document.getElementById('cadastro').scrollIntoView({behavior:'smooth',block:'start'});document.querySelector('.c0-input').focus();" class="hero-reveal" style="transition-delay:360ms;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:20px;margin-bottom:16px;height:48px;padding:0 28px;width:fit-content;margin-left:auto;margin-right:auto;border-radius:6px;border:2px solid #0EA5E9;background:transparent;color:#0EA5E9;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.06em;text-decoration:none;transition:background 0.15s;">COMEÇAR AGORA</a>
     <div class="nx-powered hero-reveal" style="transition-delay:480ms;">Powered by <span>FractalLearning™</span></div>
   </div>
 
   <div class="nx-section-label sr">como funciona</div>
   <div class="c0-features-row sr">
     <div class="c0-feat-item" onclick="openInfo(0)" style="cursor:pointer;">
-      <i class="ti ti-cards" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+      <i class="ti ti-cards" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
         <div class="c0-feat-title">Flashcards em 4 camadas</div>
         <div class="c0-feat-sub">F1 definição → F2 distinções → F3 caso clínico → F4 síntese. Progresso salvo automaticamente.</div>
@@ -102,7 +102,7 @@
       <i class="ti ti-chevron-right" style="color:#555;font-size:14px;flex-shrink:0;margin-top:2px;"></i>
     </div>
     <div class="c0-feat-item" onclick="openInfo(1)" style="cursor:pointer;">
-      <i class="ti ti-clipboard-check" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+      <i class="ti ti-clipboard-check" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
         <div class="c0-feat-title">2 quizzes por domínio</div>
         <div class="c0-feat-sub">100 questões por domínio · 4.500 questões no total da Residência Médica.</div>
@@ -110,7 +110,7 @@
       <i class="ti ti-chevron-right" style="color:#555;font-size:14px;flex-shrink:0;margin-top:2px;"></i>
     </div>
     <div class="c0-feat-item" onclick="openInfo(2)" style="cursor:pointer;">
-      <i class="ti ti-file-text" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+      <i class="ti ti-file-text" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
         <div class="c0-feat-title">Resumos analíticos</div>
         <div class="c0-feat-sub">Cada questão acompanha um resumo analítico com fonte bibliográfica. Aprenda o porquê de cada resposta.</div>
@@ -118,7 +118,7 @@
       <i class="ti ti-chevron-right" style="color:#555;font-size:14px;flex-shrink:0;margin-top:2px;"></i>
     </div>
     <div class="c0-feat-item" onclick="openInfo(3)" style="cursor:pointer;">
-      <i class="ti ti-chart-bar" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+      <i class="ti ti-chart-bar" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
         <div class="c0-feat-title">Scorecard detalhado</div>
         <div class="c0-feat-sub">Histórico de todas as tentativas, melhor nota e gap para aprovação por domínio.</div>
@@ -141,7 +141,7 @@
   <div class="nx-section-label sr">especialidades disponíveis</div>
   <div class="sr" style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;transition-delay:80ms;">
     <div style="display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;">
-      <i class="ti ti-cut" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+      <i class="ti ti-cut" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Cirurgia Geral</div>
         <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
@@ -149,7 +149,7 @@
       <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
     </div>
     <div style="display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;">
-      <i class="ti ti-baby-carriage" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+      <i class="ti ti-baby-carriage" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Ginecologia & Obstetrícia</div>
         <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
@@ -157,7 +157,7 @@
       <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
     </div>
     <div style="display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;">
-      <i class="ti ti-heart-rate-monitor" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+      <i class="ti ti-heart-rate-monitor" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Clínica Médica</div>
         <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
@@ -165,7 +165,7 @@
       <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
     </div>
     <div style="display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;">
-      <i class="ti ti-heart" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+      <i class="ti ti-heart" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Pediatria</div>
         <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
@@ -173,7 +173,7 @@
       <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
     </div>
     <div style="display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;">
-      <i class="ti ti-vaccine" style="color:#FCA311;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
+      <i class="ti ti-vaccine" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Medicina Preventiva</div>
         <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
@@ -236,7 +236,7 @@
   </div>
 
   <div style="text-align:center;margin-bottom:8px;">
-    <a href="c1-med" style="font-size:12px;color:#FCA311;text-decoration:none;">já tenho acesso → entrar</a>
+    <a href="c1-med" style="font-size:12px;color:#0EA5E9;text-decoration:none;">já tenho acesso → entrar</a>
   </div>
 
 </div>

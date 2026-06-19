@@ -1,11 +1,11 @@
 const PROFILE = {
-  name: "Alexandre Andrade",
-  email: "alexandre@nexormed.com.br",
-  initials: "AA",
+  name: "Residente",
+  email: "seu@email.com.br",
+  initials: "R",
   plan: "Plano Anual",
   planStatus: "ativo",
-  memberSince: "jan 2025",
-  stats: { progress: "72%", streak: 12, domains: 5 }
+  memberSince: "—",
+  stats: { progress: "0%", streak: 0, domains: 0 }
 };
 
 // Configurações persistidas em localStorage
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="nx-sheet-handle"></div>
 
     <div style="display:flex;align-items:center;gap:14px;padding:20px 20px 16px;">
-      <div style="width:52px;height:52px;border-radius:50%;background:#14213D;border:2px solid #FCA311;display:flex;align-items:center;justify-content:center;font-family:'Barlow',sans-serif;font-weight:700;font-size:18px;color:#FCA311;flex-shrink:0;">${PROFILE.initials}</div>
+      <div style="width:52px;height:52px;border-radius:50%;background:#14213D;border:2px solid #0EA5E9;display:flex;align-items:center;justify-content:center;font-family:'Barlow',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;flex-shrink:0;">${PROFILE.initials}</div>
       <div>
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F5F5F5;line-height:1.2;">${PROFILE.name}</div>
         <div style="font-size:11px;color:#888;margin-top:2px;">${PROFILE.email}</div>
@@ -43,17 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:0 16px 16px;background:#060e1a;border:1px solid #1E2D44;border-radius:8px;padding:12px 8px;">
       <div style="text-align:center;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#FCA311;">${PROFILE.stats.progress}</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;">${PROFILE.stats.progress}</div>
         <div style="font-size:10px;color:#888;margin-top:2px;">progresso</div>
       </div>
       <div style="text-align:center;border-left:1px solid #1E2D44;border-right:1px solid #1E2D44;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#FCA311;display:flex;align-items:center;justify-content:center;gap:3px;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;display:flex;align-items:center;justify-content:center;gap:3px;">
           <i class="ti ti-flame" style="font-size:16px;color:#f97316;"></i>${PROFILE.stats.streak}
         </div>
         <div style="font-size:10px;color:#888;margin-top:2px;">dias seguidos</div>
       </div>
       <div style="text-align:center;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#FCA311;">${PROFILE.stats.domains}</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;">${PROFILE.stats.domains}</div>
         <div style="font-size:10px;color:#888;margin-top:2px;">domínios</div>
       </div>
     </div>
@@ -70,12 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <span style="margin-left:auto;font-size:9px;font-family:'Barlow',sans-serif;background:#1E2D44;color:#555;padding:2px 6px;border-radius:3px;">em breve</span>
       </div>
       <div class="nx-profile-item" onclick="openConfig()">
-        <i class="ti ti-settings" style="color:#FCA311;"></i>
+        <i class="ti ti-settings" style="color:#0EA5E9;"></i>
         <span>Configurações</span>
         <i class="ti ti-chevron-right" style="margin-left:auto;color:#555;"></i>
       </div>
       <div class="nx-profile-item" onclick="openSupport()">
-        <i class="ti ti-help-circle" style="color:#FCA311;"></i>
+        <i class="ti ti-help-circle" style="color:#0EA5E9;"></i>
         <span>Suporte</span>
         <i class="ti ti-chevron-right" style="margin-left:auto;color:#555;"></i>
       </div>
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <div style="padding:16px 20px;border-bottom:1px solid #1E2D44;">
-      <div style="font-size:10px;color:#FCA311;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">Notificações</div>
+      <div style="font-size:10px;color:#0EA5E9;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">Notificações</div>
       <div style="display:flex;justify-content:space-between;align-items:center;">
         <div>
           <div style="font-size:14px;color:#F5F5F5;font-family:'Barlow',sans-serif;">Alertas de estudo</div>
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <div style="padding:16px 20px;">
-      <div style="font-size:10px;color:#FCA311;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">Voz (TTS)</div>
+      <div style="font-size:10px;color:#0EA5E9;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">Voz (TTS)</div>
       <div style="font-size:13px;color:#888;font-family:'Barlow',sans-serif;margin-bottom:10px;">Velocidade da leitura em voz alta</div>
       <div style="display:flex;gap:8px;" id="cfg-speed-btns">
         <button class="nx-speed-btn" data-speed="0.8" onclick="setSpeed(this)">0.8×</button>
@@ -136,6 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(overlay);
   document.body.appendChild(sheet);
   document.body.appendChild(cfgSheet);
+
+  // Atualiza avatar no header
+  const avatarBtn = document.querySelector('.nx-avatar-btn');
+  if (avatarBtn) avatarBtn.textContent = PROFILE.initials;
 
   // Restaura configurações salvas
   const cfg = loadConfig();
