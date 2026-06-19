@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -6,6 +6,15 @@
 <meta name="theme-color" content="#16263B">
 <title>nexor_med · Domínios</title>
 <link rel="stylesheet" href="assets/nx.css">
+<style>
+.hero-reveal{opacity:0;transform:translateY(20px);filter:blur(6px);transition:opacity 700ms cubic-bezier(0.16,1,0.3,1),transform 700ms cubic-bezier(0.16,1,0.3,1),filter 700ms cubic-bezier(0.16,1,0.3,1);}
+.hero-reveal.visible{opacity:1;transform:translateY(0);filter:blur(0);}
+.sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
+.sr.visible{opacity:1;transform:translateY(0);}
+.nx-domain-row{transition:transform 250ms cubic-bezier(0.16,1,0.3,1),box-shadow 250ms ease,background 200ms ease;}
+.nx-domain-row:hover{transform:translateX(4px);background:rgba(252,163,17,0.06)!important;}
+@media(prefers-reduced-motion:reduce){.hero-reveal,.sr{opacity:1!important;transform:none!important;filter:none!important;}}
+</style>
 </head>
 <body>
 <div class="nx-header">
@@ -57,14 +66,35 @@ if (!area) {
   document.getElementById('sec-title').textContent = 'Domínios · ' + area.label;
   document.getElementById('sec-meta').textContent = n + ' domínios';
 
-  document.getElementById('lista-dominios').innerHTML = area.dominios.map(d => `
-    <a href="c3-med#area=${areaSlug}&dominio=${d.slug}" class="nx-domain-row">
+  document.getElementById('lista-dominios').innerHTML = area.dominios.map((d, i) => `
+    <a href="c3-med#area=${areaSlug}&dominio=${d.slug}" class="nx-domain-row sr" style="transition-delay:${i*50}ms">
       <div class="nx-dot"></div>
       <span class="nx-domain-code-txt">${d.code}</span>
       <span class="nx-domain-name-txt">${d.nome}</span>
       <span class="nx-domain-score" style="color:#555;">—</span>
       <div class="nx-status-icon"><i class="ti ti-circle-dashed" style="color:#555;font-size:16px;"></i></div>
     </a>`).join('');
+
+  (function(){
+    const scrollEl = document.querySelector('.nx-scroll');
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        ['area-header','sec-title','sec-meta'].forEach((id, i) => {
+          const el = document.getElementById(id);
+          if (!el) return;
+          el.classList.add('hero-reveal');
+          el.style.transitionDelay = (i * 80) + 'ms';
+          el.classList.add('visible');
+        });
+      });
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
+      });
+    }, { root: scrollEl, threshold: 0.08 });
+    document.querySelectorAll('.sr').forEach(el => io.observe(el));
+  })();
 }
 </script>
 </body>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -6,6 +6,13 @@
 <meta name="theme-color" content="#16263B">
 <title>Scorecard · nexor_med</title>
 <link rel="stylesheet" href="assets/nx.css">
+<style>
+.hero-reveal{opacity:0;transform:translateY(20px);filter:blur(6px);transition:opacity 700ms cubic-bezier(0.16,1,0.3,1),transform 700ms cubic-bezier(0.16,1,0.3,1),filter 700ms cubic-bezier(0.16,1,0.3,1);}
+.hero-reveal.visible{opacity:1;transform:translateY(0);filter:blur(0);}
+.sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
+.sr.visible{opacity:1;transform:translateY(0);}
+@media(prefers-reduced-motion:reduce){.hero-reveal,.sr{opacity:1!important;transform:none!important;filter:none!important;}}
+</style>
 </head>
 <body>
 <div class="nx-header">
@@ -16,7 +23,7 @@
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
+  <div class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
     <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="sc-icon"><i class="ti ti-cut" style="font-size:18px;"></i></div>
     <div>
       <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;" id="sc-area">Cirurgia Geral · CG_D01</div>
@@ -25,8 +32,8 @@
     </div>
   </div>
 
-  <div class="nx-section-label">quiz 001 · prática livre</div>
-  <div class="nx-quiz-block">
+  <div class="nx-section-label sr" style="transition-delay:60ms">quiz 001 · prática livre</div>
+  <div class="nx-quiz-block sr" style="transition-delay:120ms">
     <div class="nx-quiz-header">
       <div>
         <div class="nx-quiz-title-sc">Quiz 001</div>
@@ -40,8 +47,8 @@
     </div>
   </div>
 
-  <div class="nx-section-label">quiz 002 · prática livre</div>
-  <div class="nx-quiz-block">
+  <div class="nx-section-label sr" style="transition-delay:180ms">quiz 002 · prática livre</div>
+  <div class="nx-quiz-block sr" style="transition-delay:240ms">
     <div class="nx-quiz-header">
       <div>
         <div class="nx-quiz-title-sc">Quiz 002</div>
@@ -55,8 +62,8 @@
     </div>
   </div>
 
-  <div class="nx-section-label">critérios de conclusão</div>
-  <div class="nx-summary-block">
+  <div class="nx-section-label sr" style="transition-delay:300ms">critérios de conclusão</div>
+  <div class="nx-summary-block sr" style="transition-delay:360ms">
     <div class="nx-summary-row">
       <span class="nx-summary-key">flashcards</span>
       <span style="display:flex;align-items:center;gap:6px;">
@@ -67,14 +74,14 @@
     <div class="nx-summary-row">
       <span class="nx-summary-key">quiz 001</span>
       <span style="display:flex;align-items:center;gap:6px;">
-        <span style="font-size:11px;color:#555;">—</span>
+        <span style="font-size:11px;color:#555;">-</span>
         <span class="nx-status-badge" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
       </span>
     </div>
     <div class="nx-summary-row">
       <span class="nx-summary-key">quiz 002</span>
       <span style="display:flex;align-items:center;gap:6px;">
-        <span style="font-size:11px;color:#555;">—</span>
+        <span style="font-size:11px;color:#555;">-</span>
         <span class="nx-status-badge" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
       </span>
     </div>
@@ -84,7 +91,7 @@
     </div>
   </div>
 
-  <div class="nx-alert" style="background:rgba(252,163,17,0.05);border:1px solid rgba(252,163,17,0.15);">
+  <div class="nx-alert sr" style="background:rgba(252,163,17,0.05);border:1px solid rgba(252,163,17,0.15);transition-delay:400ms">
     <i class="ti ti-info-circle" style="color:#FCA311;font-size:16px;margin-top:1px;flex-shrink:0;"></i>
     <div class="nx-alert-text" style="color:#AAA;">Complete os flashcards e os dois quizzes para registrar seu progresso neste domínio.</div>
   </div>
@@ -107,7 +114,20 @@
   document.getElementById('sc-icon').innerHTML = '<i class="ti ' + area.icon + '" style="font-size:18px;"></i>';
   document.getElementById('sc-area').textContent = area.label + ' · ' + dominio.code;
   document.getElementById('sc-nome').textContent = dominio.nome;
-  document.title = dominio.nome + ' · Scorecard · nexor_med';
+  document.title = dominio.nome + '  · Scorecard · nexor_med';
+  // motion
+  const scrollEl = document.querySelector('.nx-scroll');
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      document.querySelector('.hero-reveal').classList.add('visible');
+    });
+  });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
+    });
+  }, { root: scrollEl, threshold: 0.08 });
+  document.querySelectorAll('.sr').forEach(el => io.observe(el));
 })();
 </script>
 </body>
