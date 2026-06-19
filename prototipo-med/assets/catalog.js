@@ -66,7 +66,7 @@ const CATALOG = {
   medicina_preventiva: {
     label: 'Medicina Preventiva',
     code: 'PREV',
-    icon: 'ti-shield-check',
+    icon: 'ti-vaccine',
     dominios: [
       { slug: 'epidemiologia_geral',          code: 'PREV_D01', nome: 'Epidemiologia Geral' },
       { slug: 'vigilancia_epidemiologica',    code: 'PREV_D02', nome: 'Vigilância Epidemiológica' },
