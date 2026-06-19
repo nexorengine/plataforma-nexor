@@ -56,7 +56,7 @@
     <div class="nx-card-text" id="card-text"></div>
   </div>
 
-  <button class="nx-btn-primary" id="btn-flip" onclick="flipCard()">
+  <button class="nx-btn-primary nx-btn-confirm" id="btn-flip" onclick="flipCard()">
     VIRAR
   </button>
   <div class="nx-actions hidden" id="actions">
@@ -112,7 +112,7 @@ async function loadFlashcards(){
   }catch(e){
     document.getElementById('card-face').textContent='conteúdo indisponível';
     document.getElementById('card-text').textContent='Não foi possível carregar os flashcards. Tente novamente mais tarde.';
-    document.getElementById('btn-flip').className='nx-btn-primary hidden';
+    document.getElementById('btn-flip').className='nx-btn-primary nx-btn-confirm hidden';
   }
 }
 loadFlashcards();
@@ -124,7 +124,7 @@ function _doRender(){
   document.getElementById('card-text').textContent=c.f;
   document.getElementById('nx-card').className='nx-card';
   document.getElementById('layer-badge').textContent=c.l;
-  document.getElementById('btn-flip').className='nx-btn-primary';
+  document.getElementById('btn-flip').className='nx-btn-primary nx-btn-confirm';
   document.getElementById('actions').className='nx-actions hidden';
   document.getElementById('prog-fill').style.width=Math.max(2,Math.round(cur/TOTAL*100))+'%';
   document.getElementById('prog-count').textContent=(cur+1)+' / '+TOTAL;
@@ -148,7 +148,7 @@ function flipCard(){
   document.getElementById('card-face').textContent='verso';
   document.getElementById('card-text').textContent=c.v;
   document.getElementById('nx-card').className='nx-card flipped';
-  document.getElementById('btn-flip').className='nx-btn-primary hidden';
+  document.getElementById('btn-flip').className='nx-btn-primary nx-btn-confirm hidden';
   document.getElementById('actions').className='nx-actions';
 }
 function answer(ok){
@@ -159,7 +159,7 @@ function answer(ok){
     document.getElementById('card-face').textContent='sessão concluída';
     document.getElementById('card-text').textContent='Aproveitamento: '+pct+'% · Acertos: '+rights+' · Erros: '+wrongs;
     document.getElementById('nx-card').className='nx-card';
-    document.getElementById('btn-flip').className='nx-btn-primary hidden';
+    document.getElementById('btn-flip').className='nx-btn-primary nx-btn-confirm hidden';
     document.getElementById('actions').className='nx-actions hidden';
     document.getElementById('prog-fill').style.width='100%';
     document.getElementById('prog-count').textContent=TOTAL+' / '+TOTAL;
