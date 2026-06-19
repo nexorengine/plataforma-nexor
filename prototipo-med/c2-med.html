@@ -25,10 +25,10 @@
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div id="area-header"></div>
+  <div id="area-header" class="hero-reveal" style="transition-delay:0ms"></div>
   <div class="nx-section-header">
-    <div class="nx-section-title" id="sec-title">Domínios</div>
-    <div class="nx-section-meta-txt" id="sec-meta"></div>
+    <div class="nx-section-title hero-reveal" id="sec-title" style="transition-delay:80ms">Domínios</div>
+    <div class="nx-section-meta-txt hero-reveal" id="sec-meta" style="transition-delay:160ms"></div>
   </div>
   <div id="lista-dominios"></div>
 </div>
@@ -79,13 +79,7 @@ if (!area) {
     const scrollEl = document.querySelector('.nx-scroll');
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        ['area-header','sec-title','sec-meta'].forEach((id, i) => {
-          const el = document.getElementById(id);
-          if (!el) return;
-          el.classList.add('hero-reveal');
-          el.style.transitionDelay = (i * 80) + 'ms';
-          el.classList.add('visible');
-        });
+        document.querySelectorAll('.hero-reveal').forEach(el => el.classList.add('visible'));
       });
     });
     const io = new IntersectionObserver((entries) => {
