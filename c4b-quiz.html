@@ -16,7 +16,7 @@
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
+  <div class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
     <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="c4b-icon"><i class="ti ti-clipboard-check" style="font-size:18px;"></i></div>
     <div style="flex:1;min-width:0;">
       <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;" id="c4b-label">—</div>
@@ -369,6 +369,15 @@ function ttsQuestao(btn){
   TTS.speak(texto, btn);
 }
 
+
+// hero reveal
+(function(){
+  requestAnimationFrame(()=>{
+    requestAnimationFrame(()=>{
+      document.querySelectorAll('.hero-reveal').forEach(el=>el.classList.add('visible'));
+    });
+  });
+})();
 </script>
 <style>
 /* Quiz motion */
