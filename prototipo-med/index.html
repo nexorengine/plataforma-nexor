@@ -283,7 +283,7 @@ const INFO = [
         io.unobserve(entry.target);
       }
     });
-  }, { root: scrollEl, threshold: 0.08 });
+  }, { root: null, threshold: 0.08 });
 
   document.querySelectorAll('.sr').forEach(el => io.observe(el));
 })();
