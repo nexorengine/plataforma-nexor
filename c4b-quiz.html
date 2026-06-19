@@ -26,12 +26,12 @@
     <div id="timer-display" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#FCA311;letter-spacing:0.04em;flex-shrink:0;">60:00</div>
   </div>
 
-  <div class="nx-prog-row">
+  <div class="nx-prog-row sr" style="transition-delay:100ms">
     <div class="nx-prog-bar-bg"><div class="nx-prog-bar-fill" id="prog-fill" style="width:2%;"></div></div>
     <span class="nx-prog-count" id="prog-count">1 / 50</span>
   </div>
 
-  <div style="background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:20px;margin-bottom:14px;">
+  <div class="sr" style="transition-delay:160ms;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:20px;margin-bottom:14px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
       <div style="font-size:12px;font-family:'Barlow',sans-serif;font-weight:400;color:#888;letter-spacing:0.08em;text-transform:uppercase;" id="q-label">questão 01</div>
       <button class="tts-btn" id="tts-q-btn" onclick="ttsQuestao(this)" title="Ouvir em voz alta"><i class="ti ti-volume"></i></button>
@@ -39,7 +39,7 @@
     <div style="font-family:'Barlow',sans-serif;font-weight:400;font-size:16px;color:#F0F6FB;line-height:1.5;" id="q-text"></div>
   </div>
 
-  <div class="nx-options" id="options"></div>
+  <div class="nx-options sr" id="options" style="transition-delay:220ms"></div>
 
   <button class="nx-btn-primary" id="btn-confirm" onclick="confirm_answer()" disabled>
     CONFIRMAR
@@ -370,16 +370,27 @@ function ttsQuestao(btn){
 }
 
 
-// hero reveal
+// motion init
 (function(){
+  const scrollEl = document.querySelector('.nx-scroll');
   requestAnimationFrame(()=>{
     requestAnimationFrame(()=>{
       document.querySelectorAll('.hero-reveal').forEach(el=>el.classList.add('visible'));
     });
   });
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add('visible');io.unobserve(entry.target);}
+    });
+  },{root:scrollEl,threshold:0.08});
+  document.querySelectorAll('.sr').forEach(el=>io.observe(el));
 })();
 </script>
 <style>
+.hero-reveal{opacity:0;transform:translateY(20px);filter:blur(6px);transition:opacity 700ms cubic-bezier(0.16,1,0.3,1),transform 700ms cubic-bezier(0.16,1,0.3,1),filter 700ms cubic-bezier(0.16,1,0.3,1);}
+.hero-reveal.visible{opacity:1;transform:translateY(0);filter:blur(0);}
+.sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
+.sr.visible{opacity:1;transform:translateY(0);}
 /* Quiz motion */
 #q-text,#options{transition:opacity 280ms cubic-bezier(0.16,1,0.3,1),transform 280ms cubic-bezier(0.16,1,0.3,1);}
 .q-exit{opacity:0!important;transform:translateY(-10px)!important;}
