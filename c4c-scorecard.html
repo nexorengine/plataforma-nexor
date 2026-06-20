@@ -120,6 +120,7 @@
   const scAcertos=parseInt(_h.acertos||_sp.get('acertos')||'0');
   const scTotal=parseInt(_h.total||_sp.get('total')||'0');
   const scModulo=_h.modulo||_sp.get('modulo')||'quiz_1';
+  const scScore=_h.score!=null?parseInt(_h.score):(_sp.get('score')!=null?parseInt(_sp.get('score')):(scTotal>0?Math.round(scAcertos/scTotal*100):0));
   // Salva sessão no Supabase — evita duplicidade checando últimos 5 minutos
   if(scTotal>0){
     (async()=>{
@@ -133,12 +134,14 @@
           .eq('modulo',scModulo).eq('acertos',scAcertos).eq('total',scTotal)
           .gte('created_at',since).limit(1);
         if(existing&&existing.length>0)return;
-        await _sb.from('study_sessions').insert({
+        const {error:insErr}=await _sb.from('study_sessions').insert({
           user_id:session.user.id,
           area:areaSlug,dominio:dominioSlug,
           modulo:scModulo,tipo:'quiz',
-          total:scTotal,acertos:scAcertos
+          total:scTotal,acertos:scAcertos,
+          score:scScore
         });
+        if(insErr)console.error('Erro insert study_sessions:',insErr);
       }catch(e){console.warn('Erro ao salvar sessão:',e);}
     })();
   }

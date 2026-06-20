@@ -199,7 +199,8 @@ function timeUp(){
   timerEl.style.color = '#ef4444';
   timerEl.style.animation = '';
   const btnVer2=document.createElement('a');
-  btnVer2.href='c4c-scorecard#area='+area+'&dominio='+dominio+'&acertos='+rights+'&total='+(rights+wrongs)+'&modulo=quiz_'+qn;
+  const pctTU=Math.round(rights/TOTAL*100);
+  btnVer2.href='c4c-scorecard#area='+area+'&dominio='+dominio+'&acertos='+rights+'&total='+TOTAL+'&score='+pctTU+'&modulo=quiz_'+qn;
   btnVer2.className='nx-btn-primary';
   btnVer2.style.cssText='text-decoration:none;margin-top:12px;';
   btnVer2.textContent='VER SCORECARD';
@@ -309,7 +310,7 @@ function nextQ(){
     document.getElementById('sw').textContent=wrongs;
     document.getElementById('sp').textContent=pct+'%';
     const btnVer=document.createElement('a');
-    btnVer.href='c4c-scorecard#area='+area+'&dominio='+dominio+'&acertos='+rights+'&total='+(rights+wrongs)+'&modulo=quiz_'+qn;
+    btnVer.href='c4c-scorecard#area='+area+'&dominio='+dominio+'&acertos='+rights+'&total='+TOTAL+'&score='+pct+'&modulo=quiz_'+qn;
     btnVer.className='nx-btn-primary';
     btnVer.style.cssText='text-decoration:none;margin-top:12px;';
     btnVer.textContent='VER SCORECARD';
