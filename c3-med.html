@@ -149,7 +149,7 @@ if (!dominio) {
         applyPill('pill-q1', pillScore(b1));
         const sub = document.getElementById('sub-q1');
         const st = pillStatus(b1);
-        if (sub) sub.innerHTML = `50 questões · <span style="color:${st.color};font-weight:600;">${st.label}</span>`;
+        if (sub) sub.textContent = '50 questões';
       }
 
       // Quiz 002
@@ -157,8 +157,7 @@ if (!dominio) {
       if (b2 !== null) {
         applyPill('pill-q2', pillScore(b2));
         const sub = document.getElementById('sub-q2');
-        const st = pillStatus(b2);
-        if (sub) sub.innerHTML = `50 questões · <span style="color:${st.color};font-weight:600;">${st.label}</span>`;
+        if (sub) sub.textContent = '50 questões';
       }
 
       // Scorecard — melhor score geral entre todos os quizzes
