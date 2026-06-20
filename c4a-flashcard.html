@@ -176,6 +176,25 @@ function answer(ok){
     document.getElementById('sr').textContent=rights;
     document.getElementById('sw').textContent=wrongs;
     document.getElementById('sl').textContent=0;
+    // Salva sessão de flashcard no Supabase
+    (async()=>{
+      try{
+        const {data:{session}}=await _sb.auth.getSession();
+        if(!session)return;
+        const since=new Date(Date.now()-5*60*1000).toISOString();
+        const {data:existing}=await _sb.from('study_sessions')
+          .select('id').eq('user_id',session.user.id)
+          .eq('area',area).eq('dominio',dominio)
+          .eq('modulo','flashcard').eq('tipo','flashcard')
+          .gte('created_at',since).limit(1);
+        if(existing&&existing.length>0)return;
+        await _sb.from('study_sessions').insert({
+          user_id:session.user.id,
+          area,dominio,modulo:'flashcard',
+          tipo:'flashcard',total:TOTAL,acertos:rights
+        });
+      }catch(e){console.warn('Erro ao salvar flashcard:',e);}
+    })();
     const btnQuiz=document.createElement('a');
     btnQuiz.href='c4b-quiz#area='+area+'&dominio='+dominio+'&n=1';
     btnQuiz.className='nx-btn-primary';

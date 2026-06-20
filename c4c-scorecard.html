@@ -219,6 +219,17 @@
         sumBadgeEl.textContent=best>=80?'SATISFATÓRIO':best>=50?'MEDIANO':'INSUFICIENTE';
       });
 
+      // Flashcards
+      const fcSessions=(rows||[]).filter(r=>r.modulo==='flashcard');
+      const fcCount=fcSessions.length;
+      const fcEl=document.querySelector('.nx-summary-row span[style*="0 / 48"]');
+      if(fcEl) fcEl.textContent=fcCount>0?`${fcCount} sessão${fcCount>1?'es':''} completa${fcCount>1?'s':''}` :'0 / 48';
+      const fcBadge=fcEl&&fcEl.nextElementSibling;
+      if(fcBadge&&fcCount>0){
+        fcBadge.style.cssText='background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.3);padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;letter-spacing:0.06em;';
+        fcBadge.textContent='CONCLUÍDO';
+      }
+
       // Domínio concluído?
       const q1ok=(rows||[]).some(r=>r.modulo==='quiz_1'&&r.score>=50);
       const q2ok=(rows||[]).some(r=>r.modulo==='quiz_2'&&r.score>=50);
