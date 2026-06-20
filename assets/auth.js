@@ -35,7 +35,7 @@ const Auth = {
   async loginGoogle() {
     await _sb.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: window.location.origin + '/prototipo-med/index.html' }
+      options: { redirectTo: 'https://nexorengine.github.io/plataforma-nexor/c1-med.html' }
     });
   },
 
