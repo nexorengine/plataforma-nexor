@@ -48,12 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <div style="text-align:center;border-left:1px solid #1E2D44;border-right:1px solid #1E2D44;">
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;display:flex;align-items:center;justify-content:center;gap:3px;">
-          <i class="ti ti-flame" style="font-size:16px;color:#f97316;"></i>${PROFILE.stats.streak}
+          <i class="ti ti-flame" style="font-size:16px;color:#f97316;"></i><span id="nx-stat-streak">${PROFILE.stats.streak}</span>
         </div>
         <div style="font-size:10px;color:#888;margin-top:2px;">dias seguidos</div>
       </div>
       <div style="text-align:center;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;">${PROFILE.stats.domains}</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;" id="nx-stat-doms">${PROFILE.stats.domains}</div>
         <div style="font-size:10px;color:#888;margin-top:2px;">domínios</div>
       </div>
     </div>
@@ -150,6 +150,59 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+function _calcStreak(dates) {
+  // dates = array de strings 'YYYY-MM-DD' únicas, qualquer ordem
+  if (!dates.length) return 0;
+  const set = new Set(dates);
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  // Grace period: começa de hoje ou ontem
+  let cursor = new Date(today);
+  const toKey = d => d.toISOString().slice(0,10);
+  if (!set.has(toKey(cursor))) {
+    cursor.setDate(cursor.getDate() - 1);
+    if (!set.has(toKey(cursor))) return 0;
+  }
+  let streak = 0;
+  while (set.has(toKey(cursor))) {
+    streak++;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  return streak;
+}
+
+async function _loadProfileStats() {
+  try {
+    const {data:{session}} = await _sb.auth.getSession();
+    if (!session) return;
+    const {data:rows} = await _sb.from('study_sessions')
+      .select('created_at,dominio,tipo,score')
+      .eq('user_id', session.user.id);
+    if (!rows || !rows.length) return;
+
+    // Streak
+    const dates = [...new Set(rows.map(r => new Date(r.created_at).toLocaleDateString('sv-SE')))];
+    const streak = _calcStreak(dates);
+
+    // Domínios concluídos (quiz_1 + quiz_2 ≥ 50% cada)
+    const byDom = {};
+    rows.forEach(r => {
+      if (r.tipo !== 'quiz') return;
+      if (!byDom[r.dominio]) byDom[r.dominio] = {};
+      const best = byDom[r.dominio][r.modulo] || 0;
+      byDom[r.dominio][r.modulo] = Math.max(best, parseFloat(r.score) || 0);
+    });
+    const dominiosConcluidos = Object.values(byDom)
+      .filter(m => (m.quiz_1 >= 50) && (m.quiz_2 >= 50)).length;
+
+    // Atualiza DOM
+    const streakEl = document.getElementById('nx-stat-streak');
+    const domsEl   = document.getElementById('nx-stat-doms');
+    if (streakEl) streakEl.textContent = streak;
+    if (domsEl)   domsEl.textContent   = dominiosConcluidos;
+  } catch(e) { console.warn('Erro ao carregar stats do perfil:', e); }
+}
+
 function toggleProfile() {
   const sheet = document.getElementById('nx-profile-sheet');
   const overlay = document.getElementById('nx-profile-overlay');
@@ -160,6 +213,7 @@ function toggleProfile() {
     sheet.classList.add('open');
     overlay.style.opacity = '1';
     overlay.style.pointerEvents = 'auto';
+    _loadProfileStats();
   }
 }
 
