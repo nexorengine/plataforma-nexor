@@ -117,6 +117,27 @@
   const _sp=new URLSearchParams(window.location.search);
   const areaSlug=_h.area||_sp.get('area')||'cirurgia_geral';
   const dominioSlug=_h.dominio||_sp.get('dominio')||'abdome_agudo';
+  const scAcertos=parseInt(_h.acertos||_sp.get('acertos')||'0');
+  const scTotal=parseInt(_h.total||_sp.get('total')||'0');
+  const scModulo=_h.modulo||_sp.get('modulo')||'quiz_1';
+  // Salva sessão no Supabase se tiver dados reais
+  if(scTotal>0){
+    (async()=>{
+      try{
+        const {data:{session}}=await _sb.auth.getSession();
+        if(!session)return;
+        await _sb.from('study_sessions').insert({
+          user_id:session.user.id,
+          area:areaSlug,
+          dominio:dominioSlug,
+          modulo:scModulo,
+          tipo:'quiz',
+          total:scTotal,
+          acertos:scAcertos
+        });
+      }catch(e){console.warn('Erro ao salvar sessão:',e);}
+    })();
+  }
   const area = CATALOG[areaSlug];
   const dominio = area && area.dominios.find(d => d.slug === dominioSlug);
   if (!area || !dominio) return;

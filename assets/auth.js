@@ -4,6 +4,7 @@ const SUPABASE_URL  = 'https://bprpbfqxrlthjeymhkec.supabase.co';
 const SUPABASE_ANON = 'sb_publishable_gVQsQqPn0nCPJapEXBXNJQ_nkXR80r7';
 
 const _sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+window._sb = _sb;
 
 const Auth = {
   // Retorna sessão atual (null se não logado)
