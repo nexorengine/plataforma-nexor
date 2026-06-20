@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:0 16px 16px;background:#060e1a;border:1px solid #1E2D44;border-radius:8px;padding:12px 8px;">
       <div style="text-align:center;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;">${PROFILE.stats.progress}</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;" id="nx-stat-prog">${PROFILE.stats.progress}</div>
         <div style="font-size:10px;color:#888;margin-top:2px;">progresso</div>
       </div>
       <div style="text-align:center;border-left:1px solid #1E2D44;border-right:1px solid #1E2D44;">
@@ -195,11 +195,21 @@ async function _loadProfileStats() {
     const dominiosConcluidos = Object.values(byDom)
       .filter(m => (m.quiz_1 >= 50) && (m.quiz_2 >= 50)).length;
 
+    // Progresso global = domínios concluídos / total do catálogo
+    const totalDominios = typeof CATALOG !== 'undefined'
+      ? Object.values(CATALOG).reduce((acc, a) => acc + a.dominios.length, 0)
+      : 0;
+    const progresso = totalDominios > 0
+      ? Math.round(dominiosConcluidos / totalDominios * 100)
+      : 0;
+
     // Atualiza DOM
-    const streakEl = document.getElementById('nx-stat-streak');
-    const domsEl   = document.getElementById('nx-stat-doms');
+    const streakEl   = document.getElementById('nx-stat-streak');
+    const domsEl     = document.getElementById('nx-stat-doms');
+    const progEl     = document.getElementById('nx-stat-prog');
     if (streakEl) streakEl.textContent = streak;
     if (domsEl)   domsEl.textContent   = dominiosConcluidos;
+    if (progEl)   progEl.textContent   = progresso + '%';
   } catch(e) { console.warn('Erro ao carregar stats do perfil:', e); }
 }
 
