@@ -179,7 +179,7 @@ function answer(ok){
     const btnQuiz=document.createElement('a');
     btnQuiz.href='c4b-quiz#area='+area+'&dominio='+dominio+'&n=1';
     btnQuiz.className='nx-btn-primary';
-    btnQuiz.style.cssText='display:block;text-align:center;text-decoration:none;margin-top:12px;';
+    btnQuiz.style.cssText='display:flex;align-items:center;justify-content:center;text-decoration:none;margin-top:12px;';
     btnQuiz.textContent='IR PARA O QUIZ';
     document.getElementById('actions').insertAdjacentElement('afterend', btnQuiz);
     return;
