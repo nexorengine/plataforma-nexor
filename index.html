@@ -330,10 +330,7 @@ function ttsInfo(btn) {
   await Auth.fillHeader();
   const s = await Auth.session();
   if (s) {
-    // Atualiza botões para mostrar "ACESSAR" em vez de cadastro
-    document.querySelectorAll('.nx-btn-primary[href="login.html"], .nx-btn-primary[onclick*="login"]').forEach(el => {
-      el.textContent = 'ACESSAR PLATAFORMA';
-    });
+    window.location.href = 'c1-med.html';
   }
 })();
 </script>
