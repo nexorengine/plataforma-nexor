@@ -77,13 +77,52 @@ if (!area) {
   document.getElementById('sec-meta').textContent = n + ' domínios';
 
   document.getElementById('lista-dominios').innerHTML = area.dominios.map((d, i) => `
-    <a href="c3-med#area=${areaSlug}&dominio=${d.slug}" class="nx-domain-row sr" style="transition-delay:${i*50}ms">
+    <a href="c3-med#area=${areaSlug}&dominio=${d.slug}" class="nx-domain-row sr" data-slug="${d.slug}" style="transition-delay:${i*50}ms">
       <div class="nx-dot"></div>
       <span class="nx-domain-code-txt">${d.code}</span>
       <span class="nx-domain-name-txt">${d.nome}</span>
       <span class="nx-domain-score" style="color:#555;">—</span>
       <div class="nx-status-icon"><i class="ti ti-circle-dashed" style="color:#555;font-size:16px;"></i></div>
     </a>`).join('');
+
+  // Carrega badges de progresso do Supabase
+  (async () => {
+    try {
+      const {data:{session}} = await _sb.auth.getSession();
+      if (!session) return;
+      const {data:sessions} = await _sb.from('study_sessions')
+        .select('dominio,tipo,score')
+        .eq('user_id', session.user.id)
+        .eq('area', areaSlug);
+      if (!sessions || sessions.length === 0) return;
+      area.dominios.forEach(d => {
+        const ds = sessions.filter(s => s.dominio === d.slug);
+        if (!ds.length) return;
+        const row = document.querySelector(`.nx-domain-row[data-slug="${d.slug}"]`);
+        if (!row) return;
+        const dotEl  = row.querySelector('.nx-dot');
+        const scoreEl = row.querySelector('.nx-domain-score');
+        const iconEl  = row.querySelector('.nx-status-icon');
+        const quizS = ds.filter(s => s.tipo === 'quiz');
+        const fcS   = ds.filter(s => s.tipo === 'flashcard');
+        if (quizS.length > 0) {
+          const best = Math.max(...quizS.map(s => parseFloat(s.score) || 0));
+          const cor  = best >= 80 ? '#4ade80' : best >= 50 ? '#FCA311' : '#ef4444';
+          const ico  = best >= 80 ? 'ti-circle-check' : best >= 50 ? 'ti-circle-half-2' : 'ti-circle-x';
+          dotEl.style.background = cor;
+          scoreEl.textContent = best + '%';
+          scoreEl.style.color = cor;
+          iconEl.innerHTML = `<i class="ti ${ico}" style="color:${cor};font-size:16px;"></i>`;
+        } else if (fcS.length > 0) {
+          dotEl.style.background = '#0EA5E9';
+          dotEl.style.opacity = '0.5';
+          scoreEl.textContent = 'FC';
+          scoreEl.style.color = '#0EA5E9';
+          iconEl.innerHTML = `<i class="ti ti-cards" style="color:#0EA5E9;opacity:0.6;font-size:16px;"></i>`;
+        }
+      });
+    } catch(e) { console.warn('Erro ao carregar progresso C2:', e); }
+  })();
 
   (function(){
     const scrollEl = document.querySelector('.nx-scroll');
