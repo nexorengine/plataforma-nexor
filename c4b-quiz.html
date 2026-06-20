@@ -113,7 +113,7 @@ document.getElementById('btn-back').href=`c3-med#area=${area}&dominio=${dominio}
 document.getElementById('quiz-sub').textContent='Quiz 00'+qn+' · carregando...';
 
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-function shuffleQ(q){const idx=q.opts.map((o,i)=>({t:o,i}));shuffle(idx);return{q:q.q,opts:idx.map(x=>x.t),c:idx.findIndex(x=>x.i===q.c),exp:q.exp};}
+function shuffleQ(q){const idx=q.opts.map((o,i)=>({t:o,i}));shuffle(idx);return{q:q.q,opts:idx.map(x=>x.t),c:idx.findIndex(x=>x.i===q.c),exp:q.exp,_orig:q._orig};}
 
 let sq=[],cur=0,sel=-1,confirmed=false,rights=0,wrongs=0;
 let TOTAL=50;
@@ -129,6 +129,7 @@ async function loadQuiz(){
     TOTAL=data.total||data.questions.length;
     document.getElementById('quiz-sub').textContent='Quiz 00'+qn+' · '+TOTAL+' questões';
     const questions=data.questions;
+    questions.forEach((q,i)=>q._orig=i); // preserva índice original antes do shuffle
     shuffle(questions);
     sq=questions.map(shuffleQ);
     startTimer();
@@ -336,7 +337,7 @@ async function loadResumos(){
 loadResumos();
 
 function openAula(){
-  const idx = cur; // índice 0-based da questão atual
+  const idx = sq[cur]._orig; // índice original da questão (antes do shuffle)
   let texto = '';
   let fonte = '';
   if(resumosData && resumosData.resumos && resumosData.resumos[idx]){
