@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#16263B">
+<title>Entrar · nexor_med</title>
+<link rel="stylesheet" href="assets/nx.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth.js"></script>
+<style>
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100dvh;background:#070A0E;padding:24px;}
+.login-card{width:100%;max-width:360px;background:#0D1B2A;border:1px solid #1d3452;border-radius:12px;padding:32px 28px;}
+.login-logo{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:28px;}
+.login-logo .nx-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#F0F6FB;letter-spacing:0.04em;}
+.login-logo .nx-wordmark span{color:#0EA5E9;}
+.login-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;color:#F0F6FB;text-align:center;margin-bottom:6px;}
+.login-sub{font-size:13px;color:#6b7280;text-align:center;margin-bottom:28px;font-weight:300;}
+.login-label{font-size:11px;color:#9ca3af;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;display:block;}
+.login-input{width:100%;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;font-size:15px;color:#F0F6FB;font-family:'Barlow',sans-serif;outline:none;transition:border-color 200ms;box-sizing:border-box;}
+.login-input:focus{border-color:#0EA5E9;}
+.login-input::placeholder{color:#374151;}
+.login-btn{width:100%;margin-top:16px;padding:13px;background:#0EA5E9;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.08em;color:#fff;cursor:pointer;transition:transform 120ms,box-shadow 200ms,background 150ms;}
+.login-btn:hover{background:#38bdf8;transform:translateY(-1px);box-shadow:0 4px 16px rgba(14,165,233,0.3);}
+.login-btn:active{transform:scale(0.97);}
+.login-btn:disabled{background:#1d3452;color:#374151;cursor:not-allowed;transform:none;box-shadow:none;}
+.login-divider{display:flex;align-items:center;gap:12px;margin:20px 0;}
+.login-divider::before,.login-divider::after{content:'';flex:1;height:1px;background:#1d3452;}
+.login-divider span{font-size:11px;color:#374151;white-space:nowrap;}
+.login-google{width:100%;padding:12px;background:transparent;border:1px solid #1d3452;border-radius:6px;font-family:'Barlow',sans-serif;font-size:14px;color:#9ca3af;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:border-color 200ms,color 200ms;}
+.login-google:hover{border-color:#0EA5E9;color:#F0F6FB;}
+.login-msg{margin-top:16px;padding:12px 14px;border-radius:6px;font-size:13px;text-align:center;display:none;}
+.login-msg.success{background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.2);color:#4ade80;display:block;}
+.login-msg.error{background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.2);color:#ef4444;display:block;}
+.login-footer{margin-top:24px;text-align:center;font-size:12px;color:#374151;}
+.login-footer a{color:#0EA5E9;text-decoration:none;}
+
+/* hero reveal */
+.login-card{opacity:0;transform:translateY(24px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
+.login-card.visible{opacity:1;transform:translateY(0);}
+@media(prefers-reduced-motion:reduce){.login-card{opacity:1!important;transform:none!important;}}
+</style>
+</head>
+<body>
+<div class="login-card" id="login-card">
+  <div class="login-logo">
+    <div class="nx-wordmark">nexor_<span>med</span></div>
+  </div>
+  <div class="login-title">Bem-vindo de volta</div>
+  <div class="login-sub">Insira seu e-mail para receber o link de acesso</div>
+
+  <label class="login-label" for="email-input">e-mail</label>
+  <input class="login-input" id="email-input" type="email" placeholder="seu@email.com" autocomplete="email" inputmode="email">
+
+  <button class="login-btn" id="btn-magic" onclick="handleMagicLink()">
+    ENVIAR LINK DE ACESSO
+  </button>
+
+  <div class="login-divider"><span>ou continue com</span></div>
+
+  <button class="login-google" onclick="Auth.loginGoogle()">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z" fill="#4285F4"/>
+      <path d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 009 18z" fill="#34A853"/>
+      <path d="M3.964 10.707A5.41 5.41 0 013.682 9c0-.593.102-1.17.282-1.707V4.961H.957A8.996 8.996 0 000 9c0 1.452.348 2.827.957 4.039l3.007-2.332z" fill="#FBBC05"/>
+      <path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 00.957 4.961L3.964 6.293C4.672 4.166 6.656 3.58 9 3.58z" fill="#EA4335"/>
+    </svg>
+    Continuar com Google
+  </button>
+
+  <div class="login-msg" id="login-msg"></div>
+
+  <div class="login-footer">
+    Não tem conta? O cadastro é automático na primeira vez.<br>
+    <a href="index.html">← Voltar para o início</a>
+  </div>
+</div>
+
+<script>
+// Verifica se já está logado
+(async () => {
+  const s = await Auth.session();
+  if (s) {
+    const next = new URLSearchParams(window.location.search).get('next') || 'index.html';
+    window.location.href = next;
+    return;
+  }
+  // hero reveal
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      document.getElementById('login-card').classList.add('visible');
+    });
+  });
+})();
+
+// Enter no input dispara o magic link
+document.getElementById('email-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') handleMagicLink();
+});
+
+async function handleMagicLink() {
+  const email = document.getElementById('email-input').value.trim();
+  const msg = document.getElementById('login-msg');
+  const btn = document.getElementById('btn-magic');
+
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    msg.className = 'login-msg error';
+    msg.textContent = 'Insira um e-mail válido.';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'ENVIANDO...';
+  msg.className = 'login-msg';
+
+  const error = await Auth.sendMagicLink(email);
+
+  if (error) {
+    msg.className = 'login-msg error';
+    msg.textContent = 'Erro ao enviar. Tente novamente.';
+    btn.disabled = false;
+    btn.textContent = 'ENVIAR LINK DE ACESSO';
+  } else {
+    msg.className = 'login-msg success';
+    msg.textContent = 'Link enviado! Verifique sua caixa de entrada.';
+    btn.textContent = 'LINK ENVIADO ✓';
+  }
+}
+</script>
+</body>
+</html>

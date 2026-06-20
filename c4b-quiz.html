@@ -6,6 +6,8 @@
 <meta name="theme-color" content="#16263B">
 <title>Quiz · nexor_med</title>
 <link rel="stylesheet" href="assets/nx.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth.js"></script>
 </head>
 <body>
 <div class="nx-header">
@@ -84,6 +86,14 @@
 <script src="assets/notif.js"></script>
 <script src="assets/profile.js"></script>
 <script src="assets/catalog.js"></script>
+<script>
+// Protege a rota — redireciona para login se não autenticado
+(async () => {
+  const s = await Auth.requireAuth();
+  if (!s) return;
+  await Auth.fillHeader();
+})();
+</script>
 <script src="assets/tts.js"></script>
 <script>
 const _hash=Object.fromEntries(window.location.hash.replace('#','').split('&').map(p=>p.split('=')));

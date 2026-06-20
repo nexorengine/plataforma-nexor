@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -6,6 +6,8 @@
 <meta name="theme-color" content="#16263B">
 <title>nexor_med · Residência Médica</title>
 <link rel="stylesheet" href="assets/nx.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth.js"></script>
 <style>
 .c0-plan-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
 .c0-plan{background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:14px 16px;display:flex;gap:0;}
@@ -320,5 +322,18 @@ function ttsInfo(btn) {
   speechSynthesis.speak(utt);
 }
 </script>
-</body>
+
+<script>
+// Processa retorno do magic link e redireciona se já logado
+(async () => {
+  await Auth.fillHeader();
+  const s = await Auth.session();
+  if (s) {
+    // Atualiza botões para mostrar "ACESSAR" em vez de cadastro
+    document.querySelectorAll('.nx-btn-primary[href="login.html"], .nx-btn-primary[onclick*="login"]').forEach(el => {
+      el.textContent = 'ACESSAR PLATAFORMA';
+    });
+  }
+})();
+</script></body>
 </html>
