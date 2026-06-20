@@ -199,9 +199,15 @@
         histEl.innerHTML=sessions.map(s=>{
           const d=new Date(s.created_at);
           const dt=d.toLocaleDateString('pt-BR')+' '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
-          return `<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #1d3452;">
-            <span style="font-size:12px;color:#6b7280;">${dt}</span>
-            <span style="font-size:13px;font-weight:600;color:${scoreColor(s.score)};">${s.acertos}/${s.total} · ${s.score}%</span>
+          const cor=scoreColor(s.score);
+          return `<div style="padding:10px 0;border-bottom:1px solid #1d3452;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+              <span style="font-size:12px;color:#6b7280;">${dt}</span>
+              <span style="font-size:13px;font-weight:600;color:${cor};">${s.acertos}/${s.total} · ${s.score}%</span>
+            </div>
+            <div style="height:4px;border-radius:2px;background:#1d3452;overflow:hidden;">
+              <div style="height:100%;width:${s.score}%;background:${cor};border-radius:2px;transition:width 600ms cubic-bezier(0.16,1,0.3,1);"></div>
+            </div>
           </div>`;
         }).join('');
 
