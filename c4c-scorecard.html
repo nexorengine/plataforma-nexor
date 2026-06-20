@@ -69,8 +69,8 @@
     <div class="nx-summary-row">
       <span class="nx-summary-key">flashcards</span>
       <span style="display:flex;align-items:center;gap:6px;">
-        <span style="font-size:11px;color:#555;">0 / 48</span>
-        <span class="nx-status-badge" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
+        <span style="font-size:11px;color:#555;" id="sum-fc">0 sessões</span>
+        <span class="nx-status-badge" id="sum-badge-fc" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
       </span>
     </div>
     <div class="nx-summary-row">
@@ -187,7 +187,7 @@
           return;
         }
 
-        const best=Math.max(...sessions.map(s=>s.score));
+        const best=Math.max(...sessions.map(s=>parseFloat(s.score)||0));
         metaEl.textContent=`50 questões · ${sessions.length} tentativa${sessions.length>1?'s':''}`;
         badgeEl.setAttribute('style',`nx-status-badge" style="${badgeHtml(best)}`);
         badgeEl.textContent=best>=80?'SATISFATÓRIO':best>=50?'MEDIANO':'INSUFICIENTE';
@@ -222,9 +222,9 @@
       // Flashcards
       const fcSessions=(rows||[]).filter(r=>r.modulo==='flashcard');
       const fcCount=fcSessions.length;
-      const fcEl=document.querySelector('.nx-summary-row span[style*="0 / 48"]');
-      if(fcEl) fcEl.textContent=fcCount>0?`${fcCount} sessão${fcCount>1?'es':''} completa${fcCount>1?'s':''}` :'0 / 48';
-      const fcBadge=fcEl&&fcEl.nextElementSibling;
+      const fcEl=document.getElementById('sum-fc');
+      const fcBadge=document.getElementById('sum-badge-fc');
+      if(fcEl) fcEl.textContent=fcCount>0?`${fcCount} sessão${fcCount>1?'ões':''}` :'0 sessões';
       if(fcBadge&&fcCount>0){
         fcBadge.style.cssText='background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.3);padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;letter-spacing:0.06em;';
         fcBadge.textContent='CONCLUÍDO';
