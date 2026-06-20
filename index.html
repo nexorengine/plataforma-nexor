@@ -223,14 +223,15 @@
   <div class="nx-section-label sr">acesso · sem senha</div>
   <div class="c0-magic sr" style="transition-delay:80ms;">
     <div class="c0-magic-label">Digite seu e-mail para receber o link de acesso instantâneo:</div>
-    <input class="c0-input" type="email" placeholder="seu@email.com">
-    <button class="nx-btn-primary" style="margin-bottom:0;">
-      RECEBER LINK DE ACESSO
+    <input class="c0-input" id="c0-email" type="email" placeholder="seu@email.com" autocomplete="email">
+    <button class="nx-btn-primary" id="c0-btn" onclick="c0SendLink()" style="margin-bottom:0;">
+      TESTAR 7 DIAS GRÁTIS
     </button>
+    <div id="c0-msg" style="font-size:12px;text-align:center;margin-top:8px;min-height:18px;color:#4ade80;"></div>
   </div>
 
   <div style="text-align:center;margin-bottom:8px;">
-    <a href="c1-med" style="font-size:12px;color:#FCA311;text-decoration:none;">já tenho acesso → entrar</a>
+    <a href="login.html" style="font-size:12px;color:#FCA311;text-decoration:none;">já tenho acesso → entrar</a>
   </div>
 
 </div>
@@ -335,5 +336,34 @@ function ttsInfo(btn) {
     });
   }
 })();
+</script>
+<script>
+async function c0SendLink() {
+  const email = document.getElementById('c0-email').value.trim();
+  const btn = document.getElementById('c0-btn');
+  const msg = document.getElementById('c0-msg');
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    msg.style.color = '#ef4444';
+    msg.textContent = 'Insira um e-mail válido.';
+    return;
+  }
+  btn.disabled = true;
+  btn.textContent = 'ENVIANDO...';
+  const error = await Auth.sendMagicLink(email);
+  if (error) {
+    msg.style.color = '#ef4444';
+    msg.textContent = 'Erro ao enviar. Tente novamente.';
+    btn.disabled = false;
+    btn.textContent = 'TESTAR 7 DIAS GRÁTIS';
+  } else {
+    msg.style.color = '#4ade80';
+    msg.textContent = 'Link enviado! Verifique sua caixa de entrada.';
+    btn.textContent = 'LINK ENVIADO ✓';
+  }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('c0-email');
+  if (input) input.addEventListener('keydown', e => { if (e.key === 'Enter') c0SendLink(); });
+});
 </script></body>
 </html>
