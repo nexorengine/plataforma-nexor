@@ -120,8 +120,10 @@
   const scAcertos=parseInt(_h.acertos||_sp.get('acertos')||'0');
   const scTotal=parseInt(_h.total||_sp.get('total')||'0');
   const scModulo=_h.modulo||_sp.get('modulo')||'quiz_1';
-  // Salva sessão no Supabase se tiver dados reais
-  if(scTotal>0){
+  // Salva sessão no Supabase (uma única vez por sessão)
+  const _saveKey='sc_saved_'+areaSlug+'_'+dominioSlug+'_'+scModulo;
+  if(scTotal>0 && !sessionStorage.getItem(_saveKey)){
+    sessionStorage.setItem(_saveKey,'1');
     (async()=>{
       try{
         const {data:{session}}=await _sb.auth.getSession();
