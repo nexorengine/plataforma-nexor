@@ -163,7 +163,6 @@
         .eq('user_id',session.user.id)
         .eq('area',areaSlug)
         .eq('dominio',dominioSlug)
-        .eq('tipo','quiz')
         .order('created_at',{ascending:false});
 
       function badgeHtml(score){

@@ -188,11 +188,13 @@ function answer(ok){
           .eq('modulo','flashcard').eq('tipo','flashcard')
           .gte('created_at',since).limit(1);
         if(existing&&existing.length>0)return;
-        await _sb.from('study_sessions').insert({
+        const {error:insErr}=await _sb.from('study_sessions').insert({
           user_id:session.user.id,
           area,dominio,modulo:'flashcard',
-          tipo:'flashcard',total:TOTAL,acertos:rights
+          tipo:'flashcard',total:TOTAL,acertos:rights,
+          score:Math.round(rights/TOTAL*100)
         });
+        if(insErr)console.error('Erro insert flashcard:',insErr);
       }catch(e){console.warn('Erro ao salvar flashcard:',e);}
     })();
     const btnQuiz=document.createElement('a');
