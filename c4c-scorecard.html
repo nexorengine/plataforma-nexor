@@ -120,22 +120,24 @@
   const scAcertos=parseInt(_h.acertos||_sp.get('acertos')||'0');
   const scTotal=parseInt(_h.total||_sp.get('total')||'0');
   const scModulo=_h.modulo||_sp.get('modulo')||'quiz_1';
-  // Salva sessão no Supabase (uma única vez por sessão)
-  const _saveKey='sc_saved_'+areaSlug+'_'+dominioSlug+'_'+scModulo;
-  if(scTotal>0 && !sessionStorage.getItem(_saveKey)){
-    sessionStorage.setItem(_saveKey,'1');
+  // Salva sessão no Supabase — evita duplicidade checando últimos 5 minutos
+  if(scTotal>0){
     (async()=>{
       try{
         const {data:{session}}=await _sb.auth.getSession();
         if(!session)return;
+        const since=new Date(Date.now()-5*60*1000).toISOString();
+        const {data:existing}=await _sb.from('study_sessions')
+          .select('id').eq('user_id',session.user.id)
+          .eq('area',areaSlug).eq('dominio',dominioSlug)
+          .eq('modulo',scModulo).eq('acertos',scAcertos).eq('total',scTotal)
+          .gte('created_at',since).limit(1);
+        if(existing&&existing.length>0)return;
         await _sb.from('study_sessions').insert({
           user_id:session.user.id,
-          area:areaSlug,
-          dominio:dominioSlug,
-          modulo:scModulo,
-          tipo:'quiz',
-          total:scTotal,
-          acertos:scAcertos
+          area:areaSlug,dominio:dominioSlug,
+          modulo:scModulo,tipo:'quiz',
+          total:scTotal,acertos:scAcertos
         });
       }catch(e){console.warn('Erro ao salvar sessão:',e);}
     })();
