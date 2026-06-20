@@ -26,7 +26,7 @@ const Auth = {
   async sendMagicLink(email) {
     const { error } = await _sb.auth.signInWithOtp({
       email,
-      options: { emailRedirectTo: window.location.origin + '/plataforma-nexor/index.html' }
+      options: { emailRedirectTo: 'https://nexorengine.github.io/plataforma-nexor/' }
     });
     return error;
   },
