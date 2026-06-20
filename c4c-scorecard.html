@@ -35,32 +35,32 @@
   </div>
 
   <div class="nx-section-label sr" style="transition-delay:60ms">quiz 001 · prática livre</div>
-  <div class="nx-quiz-block sr" style="transition-delay:120ms">
+  <div class="nx-quiz-block sr" id="block-q1" style="transition-delay:120ms">
     <div class="nx-quiz-header">
       <div>
         <div class="nx-quiz-title-sc">Quiz 001</div>
-        <div class="nx-quiz-sub-sc">50 questões · nenhuma tentativa</div>
+        <div class="nx-quiz-sub-sc" id="meta-q1">50 questões · carregando...</div>
       </div>
-      <span class="nx-status-badge" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
+      <span class="nx-status-badge" id="badge-q1" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">—</span>
     </div>
     <div class="nx-attempts">
       <div class="nx-attempts-label">histórico de tentativas</div>
-      <div style="text-align:center;padding:18px 0;color:#555;font-size:12px;font-weight:300;">Nenhuma tentativa registrada.</div>
+      <div id="history-q1" style="text-align:center;padding:18px 0;color:#555;font-size:12px;font-weight:300;">Carregando...</div>
     </div>
   </div>
 
   <div class="nx-section-label sr" style="transition-delay:180ms">quiz 002 · prática livre</div>
-  <div class="nx-quiz-block sr" style="transition-delay:240ms">
+  <div class="nx-quiz-block sr" id="block-q2" style="transition-delay:240ms">
     <div class="nx-quiz-header">
       <div>
         <div class="nx-quiz-title-sc">Quiz 002</div>
-        <div class="nx-quiz-sub-sc">50 questões · nenhuma tentativa</div>
+        <div class="nx-quiz-sub-sc" id="meta-q2">50 questões · carregando...</div>
       </div>
-      <span class="nx-status-badge" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
+      <span class="nx-status-badge" id="badge-q2" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">—</span>
     </div>
     <div class="nx-attempts">
       <div class="nx-attempts-label">histórico de tentativas</div>
-      <div style="text-align:center;padding:18px 0;color:#555;font-size:12px;font-weight:300;">Nenhuma tentativa registrada.</div>
+      <div id="history-q2" style="text-align:center;padding:18px 0;color:#555;font-size:12px;font-weight:300;">Carregando...</div>
     </div>
   </div>
 
@@ -76,26 +76,26 @@
     <div class="nx-summary-row">
       <span class="nx-summary-key">quiz 001</span>
       <span style="display:flex;align-items:center;gap:6px;">
-        <span style="font-size:11px;color:#555;">-</span>
-        <span class="nx-status-badge" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
+        <span style="font-size:11px;color:#555;" id="sum-q1">-</span>
+        <span class="nx-status-badge" id="sum-badge-q1" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
       </span>
     </div>
     <div class="nx-summary-row">
       <span class="nx-summary-key">quiz 002</span>
       <span style="display:flex;align-items:center;gap:6px;">
-        <span style="font-size:11px;color:#555;">-</span>
-        <span class="nx-status-badge" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
+        <span style="font-size:11px;color:#555;" id="sum-q2">-</span>
+        <span class="nx-status-badge" id="sum-badge-q2" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
       </span>
     </div>
     <div class="nx-summary-row" style="margin-top:4px;padding-top:10px;border-top:1px solid #1d3452;">
       <span class="nx-summary-key" style="font-weight:600;color:#F0F6FB;">DOMÍNIO CONCLUÍDO</span>
-      <span class="nx-summary-val" style="color:#555;">NÃO</span>
+      <span class="nx-summary-val" id="sum-concluido" style="color:#555;">NÃO</span>
     </div>
   </div>
 
-  <div class="nx-alert sr" style="background:rgba(252,163,17,0.05);border:1px solid rgba(252,163,17,0.15);transition-delay:400ms">
+  <div class="nx-alert sr" id="sc-alert" style="background:rgba(252,163,17,0.05);border:1px solid rgba(252,163,17,0.15);transition-delay:400ms">
     <i class="ti ti-info-circle" style="color:#FCA311;font-size:16px;margin-top:1px;flex-shrink:0;"></i>
-    <div class="nx-alert-text" style="color:#AAA;">Complete os flashcards e os dois quizzes para registrar seu progresso neste domínio.</div>
+    <div class="nx-alert-text" id="sc-alert-txt" style="color:#AAA;">Complete os flashcards e os dois quizzes para registrar seu progresso neste domínio.</div>
   </div>
 </div>
 </div>
@@ -148,6 +148,83 @@
   document.getElementById('sc-area').textContent = area.label + ' · ' + dominio.code;
   document.getElementById('sc-nome').textContent = dominio.nome;
   document.title = dominio.nome + '  · Scorecard · nexor_med';
+  // Carrega histórico do Supabase
+  (async()=>{
+    try{
+      const {data:{session}}=await _sb.auth.getSession();
+      if(!session)return;
+      const {data:rows}=await _sb.from('study_sessions')
+        .select('modulo,acertos,total,score,created_at')
+        .eq('user_id',session.user.id)
+        .eq('area',areaSlug)
+        .eq('dominio',dominioSlug)
+        .eq('tipo','quiz')
+        .order('created_at',{ascending:false});
+
+      function badgeHtml(score){
+        if(score>=80) return 'background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.3);" >SATISFATÓRIO';
+        if(score>=50) return 'background:rgba(252,163,17,0.1);color:#FCA311;border:1px solid rgba(252,163,17,0.3);" >MEDIANO';
+        return 'background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.3);" >INSUFICIENTE';
+      }
+      function scoreColor(s){ return s>=80?'#4ade80':s>=50?'#FCA311':'#ef4444'; }
+
+      ['quiz_1','quiz_2'].forEach((mod,idx)=>{
+        const n=idx+1;
+        const sessions=(rows||[]).filter(r=>r.modulo===mod);
+        const metaEl=document.getElementById('meta-q'+n);
+        const badgeEl=document.getElementById('badge-q'+n);
+        const histEl=document.getElementById('history-q'+n);
+        const sumEl=document.getElementById('sum-q'+n);
+        const sumBadgeEl=document.getElementById('sum-badge-q'+n);
+
+        if(sessions.length===0){
+          metaEl.textContent='50 questões · nenhuma tentativa';
+          badgeEl.style.cssText='background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;';
+          badgeEl.textContent='PENDENTE';
+          histEl.innerHTML='<div style="text-align:center;padding:18px 0;color:#555;font-size:12px;font-weight:300;">Nenhuma tentativa registrada.</div>';
+          return;
+        }
+
+        const best=Math.max(...sessions.map(s=>s.score));
+        metaEl.textContent=`50 questões · ${sessions.length} tentativa${sessions.length>1?'s':''}`;
+        badgeEl.setAttribute('style',`nx-status-badge" style="${badgeHtml(best)}`);
+        badgeEl.textContent=best>=80?'SATISFATÓRIO':best>=50?'MEDIANO':'INSUFICIENTE';
+        badgeEl.style.cssText=best>=80?'background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.3);padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;letter-spacing:0.06em;':
+          best>=50?'background:rgba(252,163,17,0.1);color:#FCA311;border:1px solid rgba(252,163,17,0.3);padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;letter-spacing:0.06em;':
+          'background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.3);padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;letter-spacing:0.06em;';
+        badgeEl.textContent=best>=80?'SATISFATÓRIO':best>=50?'MEDIANO':'INSUFICIENTE';
+
+        histEl.innerHTML=sessions.map(s=>{
+          const d=new Date(s.created_at);
+          const dt=d.toLocaleDateString('pt-BR')+' '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+          return `<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #1d3452;">
+            <span style="font-size:12px;color:#6b7280;">${dt}</span>
+            <span style="font-size:13px;font-weight:600;color:${scoreColor(s.score)};">${s.acertos}/${s.total} · ${s.score}%</span>
+          </div>`;
+        }).join('');
+
+        sumEl.textContent=`melhor: ${best}%`;
+        sumEl.style.color=scoreColor(best);
+        sumBadgeEl.style.cssText=best>=80?'background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.3);padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;letter-spacing:0.06em;':
+          best>=50?'background:rgba(252,163,17,0.1);color:#FCA311;border:1px solid rgba(252,163,17,0.3);padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;letter-spacing:0.06em;':
+          'background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.3);padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;letter-spacing:0.06em;';
+        sumBadgeEl.textContent=best>=80?'SATISFATÓRIO':best>=50?'MEDIANO':'INSUFICIENTE';
+      });
+
+      // Domínio concluído?
+      const q1ok=(rows||[]).some(r=>r.modulo==='quiz_1'&&r.score>=50);
+      const q2ok=(rows||[]).some(r=>r.modulo==='quiz_2'&&r.score>=50);
+      if(q1ok&&q2ok){
+        document.getElementById('sum-concluido').textContent='SIM';
+        document.getElementById('sum-concluido').style.color='#4ade80';
+        document.getElementById('sc-alert').style.background='rgba(74,222,128,0.05)';
+        document.getElementById('sc-alert').style.border='1px solid rgba(74,222,128,0.15)';
+        document.getElementById('sc-alert').querySelector('i').style.color='#4ade80';
+        document.getElementById('sc-alert-txt').textContent='Parabéns! Você completou os dois quizzes deste domínio com aproveitamento satisfatório.';
+      }
+    }catch(e){console.warn('Erro ao carregar histórico:',e);}
+  })();
+
   // motion
   const scrollEl = document.querySelector('.nx-scroll');
   requestAnimationFrame(() => {
