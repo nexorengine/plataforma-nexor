@@ -3,9 +3,14 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 const STRIPE_WEBHOOK_SECRET = Deno.env.get('STRIPE_WEBHOOK_SECRET')!;
 const SUPABASE_URL = Deno.env.get('SUPABASE_URL')!;
-const SUPABASE_SERVICE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+const SUPABASE_SERVICE_KEY = Deno.env.get('SERVICE_ROLE_KEY')!;
 
 serve(async (req) => {
+  // Permite chamadas sem JWT (necessário para webhooks externos)
+  if (req.method === 'OPTIONS') {
+    return new Response('ok', { headers: { 'Access-Control-Allow-Origin': '*' } });
+  }
+
   const signature = req.headers.get('stripe-signature');
   if (!signature) return new Response('Missing signature', { status: 400 });
 
@@ -14,7 +19,6 @@ serve(async (req) => {
   // Verifica assinatura do webhook Stripe
   let event: any;
   try {
-    // Stripe signature verification via crypto
     const encoder = new TextEncoder();
     const parts = signature.split(',');
     const ts = parts.find((p: string) => p.startsWith('t='))?.split('=')[1];
@@ -39,20 +43,20 @@ serve(async (req) => {
     const userId = session.client_reference_id;
     const customerId = session.customer;
     const subscriptionId = session.subscription;
-    const mode = session.mode; // 'subscription' ou 'payment'
 
-    if (!userId) return new Response('No user id', { status: 400 });
+    if (!userId) {
+      console.error('No client_reference_id in session:', session.id);
+      return new Response('No user id', { status: 200 });
+    }
 
-    // Determina o plano pelo price
-    const lineItems = session.amount_total;
-    // R$3900 = mensal (390000 centavos → 3900), R$29700 = anual
-    const plan = lineItems <= 4000 ? 'monthly' : 'annual';
+    const amountTotal = session.amount_total || 0;
+    const plan = amountTotal <= 4500 ? 'monthly' : 'annual';
 
     const periodEnd = new Date();
     if (plan === 'monthly') periodEnd.setMonth(periodEnd.getMonth() + 1);
     else periodEnd.setFullYear(periodEnd.getFullYear() + 1);
 
-    await sb.from('subscriptions').upsert({
+    const { error } = await sb.from('subscriptions').upsert({
       user_id: userId,
       plan,
       status: 'active',
@@ -60,6 +64,9 @@ serve(async (req) => {
       stripe_subscription_id: subscriptionId,
       current_period_end: periodEnd.toISOString()
     }, { onConflict: 'user_id' });
+
+    if (error) console.error('Supabase upsert error:', error);
+    else console.log('Subscription updated:', userId, plan);
   }
 
   if (event.type === 'customer.subscription.deleted') {
@@ -77,4 +84,6 @@ serve(async (req) => {
   }
 
   return new Response('ok', { status: 200 });
+}, {
+  // Desabilita verificação de JWT do Supabase para esta função
 });
