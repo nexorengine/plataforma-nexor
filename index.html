@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#16263B">
+<meta name="description" content="nexor_med — Prepare-se para a Residência Médica com 4.500+ questões comentadas, flashcards FractalLearning™ e scorecard por domínio. 7 dias grátis.">
 <title>nexor_med · Residência Médica</title>
 <link rel="stylesheet" href="assets/nx.css">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -20,6 +21,20 @@
 .c0-plan-price span{font-size:12px;font-weight:300;font-family:'Barlow',sans-serif;color:#AAA;margin-left:3px;}
 .c0-plan-equiv{font-size:10px;color:#AAA;font-weight:300;margin-top:3px;}
 .c0-plan-save{display:inline-block;font-size:9px;background:rgba(14,165,233,0.12);color:#0EA5E9;border:1px solid rgba(14,165,233,0.25);border-radius:3px;padding:2px 7px;margin-top:6px;align-self:flex-start;}
+/* ── STAT BAR ── */
+.c0-stats{display:flex;gap:0;margin-bottom:28px;background:#16263B;border:1px solid #1d3452;border-radius:10px;overflow:hidden;}
+.c0-stat{flex:1;padding:14px 8px;text-align:center;border-right:1px solid #1d3452;}
+.c0-stat:last-child{border-right:none;}
+.c0-stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;line-height:1;}
+.c0-stat-label{font-size:9px;color:#667;font-weight:300;margin-top:3px;letter-spacing:0.04em;text-transform:uppercase;}
+/* ── GUARANTEE ── */
+.c0-guarantee{display:flex;align-items:center;gap:10px;padding:14px 16px;background:rgba(74,222,128,0.05);border:1px solid rgba(74,222,128,0.15);border-radius:8px;margin-bottom:24px;}
+.c0-guarantee i{color:#4ade80;font-size:20px;flex-shrink:0;}
+.c0-guarantee-text{font-size:12px;color:#8ab;line-height:1.45;}
+.c0-guarantee-text strong{color:#F0F6FB;font-weight:600;}
+/* ── MAGIC LINK UPGRADE ── */
+.c0-magic-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:#F0F6FB;margin-bottom:6px;}
+.c0-magic-sub{font-size:12px;color:#7a8fa8;font-weight:300;margin-bottom:14px;line-height:1.5;}
 .c0-divider{display:none;}
 .c0-feature{display:flex;align-items:flex-start;gap:7px;font-size:11px;color:#AAA;font-weight:300;margin-bottom:6px;line-height:1.35;}
 .c0-feature:last-child{margin-bottom:0;}
@@ -80,9 +95,17 @@
 
   <div class="nx-hero">
     <div class="nx-hero-tag hero-reveal">Residência Médica · Preparação Inteligente</div>
-    <div class="nx-hero-title hero-reveal" style="transition-delay:120ms;">Treinamento por domínio.<br><span>Evolução por métricas.<br>Aprovação por mérito.</span></div>
-    <div class="nx-hero-sub hero-reveal" style="transition-delay:240ms;">Flashcards e simulados organizados por especialidade, com método FractalLearning™ para máxima retenção em menos tempo.</div>
+    <div class="nx-hero-title hero-reveal" style="transition-delay:120ms;">Estude menos.<br><span>Aprenda mais.<br>Passe na prova.</span></div>
+    <div class="nx-hero-sub hero-reveal" style="transition-delay:240ms;">4.500+ questões comentadas, flashcards em 4 camadas e scorecard por domínio. Método FractalLearning™ para máxima retenção com mínimo esforço.</div>
     <div class="nx-powered hero-reveal" style="transition-delay:340ms;">Powered by <span>FractalLearning™</span></div>
+  </div>
+
+  <!-- STAT BAR -->
+  <div class="c0-stats sr" style="transition-delay:60ms;">
+    <div class="c0-stat"><div class="c0-stat-num">4.500+</div><div class="c0-stat-label">questões</div></div>
+    <div class="c0-stat"><div class="c0-stat-num">5</div><div class="c0-stat-label">especialidades</div></div>
+    <div class="c0-stat"><div class="c0-stat-num">45</div><div class="c0-stat-label">domínios</div></div>
+    <div class="c0-stat"><div class="c0-stat-num">7 dias</div><div class="c0-stat-label">grátis</div></div>
   </div>
 
   <div class="nx-section-label sr">como funciona</div>
@@ -177,61 +200,57 @@
   </div>
 
   <div class="nx-section-label sr">escolha seu plano</div>
-  <div class="c0-plan-grid sr" style="transition-delay:80ms;">
-    <div class="c0-plan">
-      <div class="c0-plan-left">
-        <div class="c0-plan-tag">mensal</div>
-        <div class="c0-plan-name">Plano Mensal</div>
-        <div class="c0-plan-price">R$&nbsp;39,90<span>/mês</span></div>
-      </div>
-      <div class="c0-plan-right">
-        <div class="c0-feature"><i class="ti ti-check"></i>Acesso completo à especialidade contratada</div>
-        <div class="c0-feature"><i class="ti ti-check"></i>Flashcards + Quiz + Scorecard</div>
-        <div class="c0-feature"><i class="ti ti-check"></i>7 dias grátis para testar</div>
-      </div>
+  <div class="c0-plan-grid sr" style="transition-delay:80ms;display:flex;flex-direction:column;gap:12px;margin-bottom:28px;">
+    <!-- Anual — destaque -->
+    <div class="c0-plan featured" style="border-color:#FCA311;background:#17233a;border-radius:10px;padding:20px;position:relative;">
+      <div class="c0-plan-tag" style="display:inline-block;background:#FCA311;color:#070A0E;font-size:9px;font-weight:700;padding:3px 14px;border-radius:20px;letter-spacing:0.07em;margin-bottom:10px;">MELHOR VALOR · 37% OFF</div>
+      <div class="c0-plan-name">Plano Anual</div>
+      <div class="c0-plan-price">R$297<span style="font-size:13px;font-weight:400;color:#667;font-family:'Barlow',sans-serif;">/ano</span></div>
+      <div style="font-size:10px;color:#7a8fa8;margin-top:4px;margin-bottom:14px;">equivale a R$24,75/mês · economia de R$171</div>
+      <div class="c0-feature"><i class="ti ti-check"></i>Todas as 5 especialidades</div>
+      <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões comentadas</div>
+      <div class="c0-feature"><i class="ti ti-check"></i>Flashcards FractalLearning™</div>
+      <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos por questão</div>
+      <div class="c0-feature"><i class="ti ti-check"></i>Scorecard com histórico completo</div>
+      <div class="c0-feature" style="margin-bottom:16px;"><i class="ti ti-check"></i>7 dias grátis para testar</div>
+      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:block;width:100%;padding:13px;background:#FCA311;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.05em;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR GRÁTIS POR 7 DIAS</a>
     </div>
-    <div class="c0-plan featured">
-      <div class="c0-plan-left">
-        <div class="c0-plan-tag">semestral · mais popular</div>
-        <div class="c0-plan-name">Plano Semestral</div>
-        <div class="c0-plan-price">R$&nbsp;179,40<span>/ 6 meses</span></div>
-        <div class="c0-plan-equiv">equivale a R$ 29,90/mês</div>
-        <div class="c0-plan-save">economia de 25%</div>
-      </div>
-      <div class="c0-plan-right">
-        <div class="c0-feature"><i class="ti ti-check"></i>Tudo do plano mensal</div>
-        <div class="c0-feature"><i class="ti ti-check"></i>Cobertura completa de um ciclo de provas</div>
-        <div class="c0-feature"><i class="ti ti-check"></i>7 dias grátis para testar</div>
-      </div>
-    </div>
-    <div class="c0-plan">
-      <div class="c0-plan-left">
-        <div class="c0-plan-tag">anual</div>
-        <div class="c0-plan-name">Plano Anual</div>
-        <div class="c0-plan-price">R$&nbsp;298,80<span>/ano</span></div>
-        <div class="c0-plan-equiv">equivale a R$ 24,90/mês</div>
-        <div class="c0-plan-save">economia de 37%</div>
-      </div>
-      <div class="c0-plan-right">
-        <div class="c0-feature"><i class="ti ti-check"></i>Tudo do plano semestral</div>
-        <div class="c0-feature"><i class="ti ti-check"></i>Melhor custo-benefício</div>
-        <div class="c0-feature"><i class="ti ti-check"></i>7 dias grátis para testar</div>
-      </div>
+    <!-- Mensal -->
+    <div class="c0-plan" style="border-radius:10px;padding:20px;">
+      <div class="c0-plan-name">Plano Mensal</div>
+      <div class="c0-plan-price">R$39<span style="font-size:13px;font-weight:400;color:#667;font-family:'Barlow',sans-serif;">/mês</span></div>
+      <div style="font-size:10px;color:#7a8fa8;margin-top:4px;margin-bottom:14px;">cancele quando quiser</div>
+      <div class="c0-feature"><i class="ti ti-check"></i>Todas as 5 especialidades</div>
+      <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões comentadas</div>
+      <div class="c0-feature"><i class="ti ti-check"></i>Flashcards FractalLearning™</div>
+      <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos por questão</div>
+      <div class="c0-feature"><i class="ti ti-check"></i>Scorecard com histórico completo</div>
+      <div class="c0-feature" style="margin-bottom:16px;"><i class="ti ti-check"></i>7 dias grátis para testar</div>
+      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:block;width:100%;padding:13px;background:#0EA5E9;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.05em;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">COMEÇAR COM 7 DIAS GRÁTIS</a>
     </div>
   </div>
 
-  <div class="nx-section-label sr">acesso · sem senha</div>
-  <div class="c0-magic sr" style="transition-delay:80ms;">
-    <div class="c0-magic-label">Digite seu e-mail para receber o link de acesso instantâneo:</div>
-    <input class="c0-input" id="c0-email" type="email" placeholder="seu@email.com" autocomplete="email">
+  <!-- GARANTIA -->
+  <div class="c0-guarantee sr" style="transition-delay:80ms;">
+    <i class="ti ti-shield-check"></i>
+    <div class="c0-guarantee-text"><strong>Sem risco.</strong> Teste por 7 dias sem cartão de crédito. Se decidir assinar, cancele a qualquer momento. Pagamento seguro via Stripe.</div>
+  </div>
+
+  <div class="c0-magic sr" id="c0-magic-section" style="transition-delay:100ms;">
+    <div class="c0-magic-title">Acesso instantâneo · sem senha</div>
+    <div class="c0-magic-sub">Digite seu e-mail e receba o link de acesso. Nenhuma senha para lembrar.</div>
+    <input class="c0-input" id="c0-email" type="email" placeholder="seu@email.com" autocomplete="email" aria-label="E-mail">
     <button class="nx-btn-primary" id="c0-btn" onclick="c0SendLink()" style="margin-bottom:0;">
       TESTAR 7 DIAS GRÁTIS
     </button>
-    <div id="c0-msg" style="font-size:12px;text-align:center;margin-top:8px;min-height:18px;color:#4ade80;"></div>
+    <div id="c0-msg" style="font-size:12px;text-align:center;margin-top:8px;min-height:18px;color:#4ade80;" aria-live="polite"></div>
   </div>
 
-  <div style="text-align:center;margin-bottom:8px;">
+  <div style="text-align:center;margin-bottom:12px;">
     <a href="login.html" style="font-size:12px;color:#0EA5E9;text-decoration:none;">já tenho acesso → entrar</a>
+  </div>
+  <div style="text-align:center;margin-bottom:4px;font-size:10px;color:#445;padding:0 8px;">
+    Dúvidas? <a href="#" onclick="openSupport();return false;" style="color:#0EA5E9;text-decoration:none;">Fale com o suporte</a>
   </div>
 
 </div>
@@ -282,6 +301,11 @@ const INFO = [
 
   document.querySelectorAll('.sr').forEach(el => io.observe(el));
 })();
+
+function focusEmail() {
+  const el = document.getElementById('c0-email');
+  if (el) { el.focus(); el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+}
 
 function openInfo(idx) {
   const d = INFO[idx];
