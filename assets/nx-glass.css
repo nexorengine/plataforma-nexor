@@ -1,0 +1,294 @@
+/*
+ * nx-glass.css — Glass System Global
+ * Glassmorphism dark luxury · nexor_med
+ * Importar APÓS nx.css em todas as páginas
+ */
+
+/* ══════════════════════════════════════════════
+   1. CAMADA ATMOSFÉRICA
+   Gradientes fixos que dão profundidade ao glass
+   ══════════════════════════════════════════════ */
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse 75% 55% at 8%  12%, rgba(14,165,233,0.11) 0%,transparent 55%),
+    radial-gradient(ellipse 60% 50% at 94% 42%, rgba(252,163,17,0.07)  0%,transparent 55%),
+    radial-gradient(ellipse 50% 70% at 42% 90%, rgba(14,165,233,0.07)  0%,transparent 55%),
+    radial-gradient(ellipse 35% 35% at 72% 18%, rgba(159,203,235,0.04) 0%,transparent 50%);
+  animation:nxAtmosphereDrift 52s ease-in-out infinite alternate;
+  will-change:transform;
+}
+@keyframes nxAtmosphereDrift{
+  0%  {transform:scale(1)    translate(0,0);}
+  33% {transform:scale(1.04) translate(8px,-5px);}
+  66% {transform:scale(0.97) translate(-6px,8px);}
+  100%{transform:scale(1.02) translate(4px,-3px);}
+}
+
+/* ══════════════════════════════════════════════
+   2. HEADER — Frosted Glass sempre ativo
+   ══════════════════════════════════════════════ */
+.nx-header{
+  background:rgba(7,10,14,0.72)!important;
+  backdrop-filter:blur(20px) saturate(160%)!important;
+  -webkit-backdrop-filter:blur(20px) saturate(160%)!important;
+  border-bottom:1px solid rgba(14,165,233,0.10)!important;
+}
+.nx-header.nx-scrolled{
+  background:rgba(7,10,14,0.85)!important;
+  border-bottom-color:rgba(14,165,233,0.18)!important;
+}
+
+/* ══════════════════════════════════════════════
+   3. FOOTER — Glass sutil
+   ══════════════════════════════════════════════ */
+.nx-footer{
+  background:rgba(7,10,14,0.80)!important;
+  backdrop-filter:blur(16px)!important;
+  -webkit-backdrop-filter:blur(16px)!important;
+  border-top:1px solid rgba(14,165,233,0.08)!important;
+}
+
+/* ══════════════════════════════════════════════
+   4. CAPSULES — C1, C2, C3
+   ══════════════════════════════════════════════ */
+.nx-capsule{
+  background:rgba(14,30,54,0.45)!important;
+  backdrop-filter:blur(12px) saturate(130%)!important;
+  -webkit-backdrop-filter:blur(12px) saturate(130%)!important;
+  border-color:rgba(14,165,233,0.12)!important;
+  position:relative;
+  overflow:hidden;
+}
+.nx-capsule::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),transparent);
+  pointer-events:none;
+}
+.nx-capsule:hover{
+  background:rgba(14,165,233,0.07)!important;
+  border-color:rgba(14,165,233,0.32)!important;
+  box-shadow:0 4px 20px rgba(14,165,233,0.08),inset 0 1px 0 rgba(255,255,255,0.05)!important;
+}
+.nx-capsule.active{
+  border-left-color:#0EA5E9!important;
+  background:rgba(14,165,233,0.06)!important;
+}
+
+/* ══════════════════════════════════════════════
+   5. ICON SLOTS — dentro das capsules e cards
+   ══════════════════════════════════════════════ */
+.nx-icon-slot{
+  background:rgba(7,10,14,0.60)!important;
+  border-color:rgba(14,165,233,0.15)!important;
+}
+.nx-icon-slot-text{
+  background:rgba(7,10,14,0.60)!important;
+  border-color:rgba(14,165,233,0.15)!important;
+}
+
+/* ══════════════════════════════════════════════
+   6. FLASHCARD — C4a
+   ══════════════════════════════════════════════ */
+.nx-card{
+  background:rgba(14,30,54,0.50)!important;
+  backdrop-filter:blur(14px) saturate(140%)!important;
+  -webkit-backdrop-filter:blur(14px) saturate(140%)!important;
+  border-color:rgba(14,165,233,0.14)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.04),0 4px 24px rgba(0,0,0,0.30)!important;
+}
+.nx-card.flipped{
+  background:rgba(14,165,233,0.08)!important;
+  border-color:rgba(14,165,233,0.35)!important;
+  box-shadow:inset 0 1px 0 rgba(14,165,233,0.08),0 4px 24px rgba(14,165,233,0.08)!important;
+}
+
+/* ══════════════════════════════════════════════
+   7. QUIZ OPTIONS — C4b
+   ══════════════════════════════════════════════ */
+.nx-option{
+  background:rgba(14,30,54,0.45)!important;
+  backdrop-filter:blur(8px)!important;
+  -webkit-backdrop-filter:blur(8px)!important;
+  border-color:rgba(14,165,233,0.10)!important;
+}
+.nx-option:hover{
+  background:rgba(14,165,233,0.06)!important;
+  border-color:rgba(14,165,233,0.35)!important;
+}
+.nx-option.selected{
+  background:rgba(14,165,233,0.10)!important;
+  border-color:rgba(14,165,233,0.55)!important;
+}
+.nx-option.correct{
+  background:rgba(7,26,14,0.75)!important;
+  border-color:rgba(34,197,94,0.50)!important;
+}
+.nx-option.wrong{
+  background:rgba(26,7,7,0.75)!important;
+  border-color:rgba(239,68,68,0.50)!important;
+}
+.nx-option.dimmed{
+  background:rgba(14,30,54,0.25)!important;
+}
+
+/* ══════════════════════════════════════════════
+   8. STATS — C4a, C4b
+   ══════════════════════════════════════════════ */
+.nx-stat{
+  background:rgba(7,10,14,0.60)!important;
+  border:1px solid rgba(14,165,233,0.10)!important;
+  backdrop-filter:blur(8px)!important;
+  -webkit-backdrop-filter:blur(8px)!important;
+}
+
+/* ══════════════════════════════════════════════
+   9. DOMAIN ROWS — C2
+   ══════════════════════════════════════════════ */
+.nx-domain-row{
+  background:rgba(14,30,54,0.45)!important;
+  backdrop-filter:blur(10px)!important;
+  -webkit-backdrop-filter:blur(10px)!important;
+  border-color:rgba(14,165,233,0.10)!important;
+}
+.nx-domain-row:hover{
+  background:rgba(14,165,233,0.07)!important;
+  border-color:rgba(14,165,233,0.32)!important;
+}
+
+/* ══════════════════════════════════════════════
+   10. PROGRESS BLOCK — C1, C2
+   ══════════════════════════════════════════════ */
+.nx-progress-block{
+  background:rgba(14,30,54,0.45)!important;
+  backdrop-filter:blur(10px)!important;
+  -webkit-backdrop-filter:blur(10px)!important;
+  border-color:rgba(14,165,233,0.12)!important;
+}
+
+/* ══════════════════════════════════════════════
+   11. SCORECARD — C4c
+   ══════════════════════════════════════════════ */
+.nx-quiz-block{
+  background:rgba(14,30,54,0.50)!important;
+  backdrop-filter:blur(12px) saturate(130%)!important;
+  -webkit-backdrop-filter:blur(12px) saturate(130%)!important;
+  border-color:rgba(14,165,233,0.14)!important;
+}
+.nx-quiz-header{
+  border-bottom-color:rgba(14,165,233,0.08)!important;
+}
+.nx-best-row{
+  border-bottom-color:rgba(14,165,233,0.06)!important;
+}
+.nx-attempt-bar-bg{
+  background:rgba(7,10,14,0.70)!important;
+}
+.nx-summary-block{
+  background:rgba(14,30,54,0.50)!important;
+  backdrop-filter:blur(12px)!important;
+  -webkit-backdrop-filter:blur(12px)!important;
+  border-color:rgba(14,165,233,0.14)!important;
+}
+.nx-summary-row{
+  border-bottom-color:rgba(14,165,233,0.06)!important;
+}
+.nx-alert{
+  background:rgba(14,165,233,0.06)!important;
+  border-color:rgba(14,165,233,0.18)!important;
+  backdrop-filter:blur(8px)!important;
+  -webkit-backdrop-filter:blur(8px)!important;
+}
+
+/* ══════════════════════════════════════════════
+   12. BOTTOM SHEETS (notif, profile, aula)
+   ══════════════════════════════════════════════ */
+.nx-notif-sheet,
+.nx-profile-sheet,
+.nx-aula-sheet{
+  background:rgba(5,10,18,0.90)!important;
+  backdrop-filter:blur(28px) saturate(160%)!important;
+  -webkit-backdrop-filter:blur(28px) saturate(160%)!important;
+  border-top:1px solid rgba(14,165,233,0.14)!important;
+}
+.nx-notif-item{
+  background:rgba(14,30,54,0.40)!important;
+  backdrop-filter:blur(8px)!important;
+  -webkit-backdrop-filter:blur(8px)!important;
+  border-color:rgba(255,255,255,0.06)!important;
+}
+.nx-notif-item:hover{
+  background:rgba(14,165,233,0.07)!important;
+  border-color:rgba(14,165,233,0.18)!important;
+}
+.nx-notif-handle{
+  background:rgba(14,165,233,0.20)!important;
+}
+.nx-profile-item:hover{
+  background:rgba(14,165,233,0.07)!important;
+}
+
+/* ══════════════════════════════════════════════
+   13. PILLS — glass sutil
+   ══════════════════════════════════════════════ */
+.nx-pill.available{
+  background:rgba(14,165,233,0.10)!important;
+  border-color:rgba(14,165,233,0.28)!important;
+}
+.nx-pill.soon{
+  background:rgba(7,10,14,0.50)!important;
+}
+.nx-pill.done{
+  background:rgba(26,58,26,0.70)!important;
+}
+
+/* ══════════════════════════════════════════════
+   14. LOCK ROW & DIVIDER
+   ══════════════════════════════════════════════ */
+.nx-lock-row{
+  border-color:rgba(14,165,233,0.06)!important;
+  background:rgba(7,10,14,0.30)!important;
+}
+.nx-divider{
+  background:rgba(14,165,233,0.08)!important;
+}
+
+/* ══════════════════════════════════════════════
+   15. TTS BUTTON
+   ══════════════════════════════════════════════ */
+.tts-btn{
+  background:rgba(7,10,14,0.50)!important;
+  border-color:rgba(14,165,233,0.12)!important;
+}
+
+/* ══════════════════════════════════════════════
+   16. BELL BUTTON
+   ══════════════════════════════════════════════ */
+.nx-bell-btn{
+  background:rgba(7,10,14,0.40)!important;
+  border-color:rgba(255,255,255,0.12)!important;
+}
+
+/* ══════════════════════════════════════════════
+   17. PREFERS-REDUCED-MOTION
+   Remove backdrop-filter para usuários sensíveis
+   ══════════════════════════════════════════════ */
+@media(prefers-reduced-motion:reduce){
+  body::before{animation:none!important;}
+  .nx-header,.nx-footer,
+  .nx-capsule,.nx-card,.nx-option,
+  .nx-stat,.nx-domain-row,.nx-progress-block,
+  .nx-quiz-block,.nx-summary-block,.nx-alert,
+  .nx-notif-sheet,.nx-profile-sheet,.nx-aula-sheet,
+  .nx-notif-item{
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+  }
+}
