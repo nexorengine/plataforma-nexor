@@ -2,8 +2,9 @@ import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 const STRIPE_WEBHOOK_SECRET = Deno.env.get('STRIPE_WEBHOOK_SECRET')!;
-const SUPABASE_URL = Deno.env.get('SUPABASE_URL')!;
-const SUPABASE_SERVICE_KEY = Deno.env.get('SERVICE_ROLE_KEY')!;
+const SUPABASE_URL          = Deno.env.get('SUPABASE_URL')!;
+const SUPABASE_SERVICE_KEY  = Deno.env.get('SERVICE_ROLE_KEY')!;
+const SEND_EMAIL_URL        = `${SUPABASE_URL}/functions/v1/send-email`;
 
 serve(async (req) => {
   // Permite chamadas sem JWT (necessário para webhooks externos)
@@ -65,8 +66,24 @@ serve(async (req) => {
       current_period_end: periodEnd.toISOString()
     }, { onConflict: 'user_id' });
 
-    if (error) console.error('Supabase upsert error:', error);
-    else console.log('Subscription updated:', userId, plan);
+    if (error) {
+      console.error('Supabase upsert error:', error);
+    } else {
+      console.log('Subscription updated:', userId, plan);
+      // Envia email de confirmação de plano
+      const { data: userData } = await sb.auth.admin.getUserById(userId);
+      if (userData?.user) {
+        const email = userData.user.email!;
+        const nome = userData.user.user_metadata?.full_name
+          || userData.user.user_metadata?.name
+          || email.split('@')[0];
+        await fetch(SEND_EMAIL_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ type: 'plano_ativo', to: email, nome, plano: plan }),
+        });
+      }
+    }
   }
 
   if (event.type === 'customer.subscription.deleted') {

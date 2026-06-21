@@ -67,7 +67,7 @@ const Auth = {
     }
   },
 
-  // Garante registro de trial ao primeiro acesso
+  // Garante registro de trial ao primeiro acesso e dispara email de boas-vindas
   async ensureTrial(userId) {
     const { data } = await _sb.from('subscriptions').select('id').eq('user_id', userId).maybeSingle();
     if (!data) {
@@ -79,6 +79,20 @@ const Auth = {
         status: 'active',
         trial_ends_at: trialEnd.toISOString()
       });
+      // Primeiro acesso — dispara email de boas-vindas
+      try {
+        const { data: { session } } = await _sb.auth.getSession();
+        if (session?.user?.email) {
+          const nome = session.user.user_metadata?.full_name
+            || session.user.user_metadata?.name
+            || session.user.email.split('@')[0];
+          fetch('https://bprpbfqxrlthjeymhkec.supabase.co/functions/v1/send-email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ type: 'boas_vindas', to: session.user.email, nome }),
+          });
+        }
+      } catch(e) { console.warn('Email boas-vindas falhou:', e); }
     }
   },
 
