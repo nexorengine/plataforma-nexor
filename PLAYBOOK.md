@@ -232,14 +232,57 @@ Criar branch main → editar → commit main → merge para gh-pages → push
 
 ## 9. Pendências Técnicas
 
-| # | Item | Prioridade |
-|---|------|-----------|
-| P1 | Retrofit dos resumos analíticos — rodar Sonnet no restante das áreas | Alta |
-| P2 | Stripe: trocar links TEST por links LIVE | Alta (pré-lançamento) |
-| P3 | WhatsApp: substituir número pessoal por número de suporte | Média |
-| P4 | `assets/nexor.css` — não deletar (reservado para nexor_cert) | — |
-| P5 | E-mail transacional: boas-vindas ao cadastrar | Fase futura |
-| P6 | E-mail transacional: aviso "faltam 2 dias no trial" (dia 5) | Fase futura |
-| P7 | E-mail transacional: "seu trial expirou — continue de onde parou" (dia 7) | Fase futura |
-| P8 | E-mail transacional: confirmação de plano após assinatura | Fase futura |
-| P9 | Infra de e-mail: Supabase Edge Function + provedor Resend ou SendGrid | Pré P5-P8 |
+### ✅ Concluído nesta sessão
+| Item | Detalhe |
+|------|---------|
+| Glass system C0 + todas as páginas | nx-glass.css aplicado em 9 páginas |
+| Plan cards horizontal compacto | C0 e upgrade.html |
+| Guarantee text | Texto corrigido na cápsula verde C0 |
+| Trial warning system | Banner ≤2 dias em C1 + banner expirado em upgrade.html |
+| iOS hover/active fix | :active states + touchstart listener |
+| Contraste textos secundários | #AAA→#C0C0C0, #888→#A8A8A8 etc. em nx.css |
+| Perfil: dados reais do Supabase | Nome, email, iniciais, plano via _loadProfileUser() |
+| Suporte via e-mail | admin@nexorengine.com no sheet de perfil |
+| **P2** Stripe links LIVE | Mensal + Anual em produção em upgrade.html |
+
+---
+
+### 🔄 Em andamento
+| # | Item | Status |
+|---|------|--------|
+| P1 | Retrofit resumos — 2ª passagem Sonnet nos 1.463 acima de 900 chars | ⏳ Rodando em background |
+
+---
+
+### 📋 Próximas fases em ordem
+
+**FASE A — PWA (próxima sessão)**
+| # | Item | Detalhe |
+|---|------|---------|
+| A1 | Design do ícone | SVG minimalista — fundo #070A0E + símbolo nexor_med |
+| A2 | Exportar PNGs | 512×512, 192×192, 180×180 (Apple Touch) + maskable |
+| A3 | manifest.json | name, short_name, theme_color, icons, display:standalone |
+| A4 | service-worker.js | Cache offline básico |
+| A5 | Registrar SW em todas as páginas | Script de registro no head |
+
+**FASE B — E-mails transacionais**
+| # | Item | Detalhe |
+|---|------|---------|
+| P9 | Infra: Supabase Edge Function + Resend | Pré-requisito de P5-P8 |
+| P5 | E-mail boas-vindas ao cadastrar | Trigger: novo usuário |
+| P6 | E-mail "faltam 2 dias no trial" | Trigger: dia 5 do trial |
+| P7 | E-mail "trial expirou" | Trigger: dia 7 |
+| P8 | E-mail confirmação de plano | Trigger: webhook Stripe |
+
+**FASE C — Operacional**
+| # | Item | Detalhe |
+|---|------|---------|
+| P3 | WhatsApp número dedicado | Substituir 47-992544143 em profile.js linha 295 |
+| P4 | nexor.css — NÃO DELETAR | Reservado para nexor_cert (produto futuro) |
+
+**FASE D — Crescimento (pós-lançamento)**
+| # | Item | Detalhe |
+|---|------|---------|
+| D1 | Retrofit resumos — validação final | Conferir qualidade dos comprimidos |
+| D2 | Modo claro (opcional) | Refatorar nx.css para CSS Custom Properties primeiro |
+| D3 | nexor_cert | Novo produto da família NEXOR |
