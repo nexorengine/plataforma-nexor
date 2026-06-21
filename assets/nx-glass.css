@@ -277,7 +277,65 @@ body::before{
 }
 
 /* ══════════════════════════════════════════════
-   17. PREFERS-REDUCED-MOTION
+   17. iOS TOUCH FIX
+   iOS Safari não dispara :hover — usar :active
+   ══════════════════════════════════════════════ */
+
+/* Remove tap flash padrão do iOS em todos os elementos */
+*{-webkit-tap-highlight-color:transparent;}
+
+/* Capsules — efeito de press em toque */
+.nx-capsule:active{
+  transform:scale(0.97) !important;
+  border-color:rgba(14,165,233,0.45) !important;
+  box-shadow:0 2px 12px rgba(14,165,233,0.12) !important;
+  transition:transform 80ms ease, border-color 80ms ease !important;
+}
+
+/* Domain rows — C2 */
+.nx-domain-row:active{
+  transform:scale(0.97) !important;
+  border-color:rgba(14,165,233,0.45) !important;
+  transition:transform 80ms ease !important;
+}
+
+/* Quiz options — C4b */
+.nx-option:active{
+  transform:scale(0.98) !important;
+  border-color:rgba(14,165,233,0.50) !important;
+  background:rgba(14,165,233,0.10) !important;
+  transition:transform 80ms ease !important;
+}
+
+/* Plan cards — C0 e upgrade */
+.c0-plan:active,
+.plan-card:active{
+  transform:scale(0.98) !important;
+  transition:transform 80ms ease !important;
+}
+
+/* Feature cards e specialty cards — C0 */
+.c0-feat-item:active,
+.nx-hover-card:active{
+  transform:scale(0.97) !important;
+  border-color:rgba(14,165,233,0.35) !important;
+  transition:transform 80ms ease !important;
+}
+
+/* Notif items */
+.nx-notif-item:active{
+  transform:scale(0.98) !important;
+  transition:transform 80ms ease !important;
+}
+
+/* Botões primários */
+.nx-btn-primary:active{
+  transform:scale(0.96) !important;
+  transition:transform 80ms ease !important;
+}
+
+/* ══════════════════════════════════════════════
+   18. PREFERS-REDUCED-MOTION
    Remove backdrop-filter para usuários sensíveis
    ══════════════════════════════════════════════ */
 @media(prefers-reduced-motion:reduce){

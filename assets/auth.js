@@ -6,6 +6,9 @@ const SUPABASE_ANON = 'sb_publishable_gVQsQqPn0nCPJapEXBXNJQ_nkXR80r7';
 const _sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
 window._sb = _sb;
 
+// iOS Safari: ativa :active em elementos <div> sem precisar de <a>/<button>
+document.addEventListener('touchstart', function(){}, {passive:true});
+
 const Auth = {
   // Retorna sessão atual (null se não logado)
   async session() {
