@@ -15,24 +15,32 @@
 .sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
 .sr.visible{opacity:1;transform:translateY(0);}
 
-.plan-card{background:rgba(14,30,54,0.50);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border:1px solid rgba(14,165,233,0.14);border-radius:10px;padding:24px 20px;margin-bottom:12px;position:relative;overflow:hidden;transition:border-color 250ms ease,transform 250ms ease,box-shadow 250ms ease;}
+/* ── PLAN CARD — layout horizontal compacto ── */
+.plan-card{background:rgba(14,30,54,0.50);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border:1px solid rgba(14,165,233,0.14);border-radius:10px;padding:14px 16px;margin-bottom:10px;position:relative;overflow:hidden;transition:border-color 250ms ease,transform 250ms ease,box-shadow 250ms ease;}
 .plan-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(14,165,233,0.14),transparent);pointer-events:none;}
 .plan-card:hover{border-color:rgba(14,165,233,0.38);transform:translateY(-2px);box-shadow:0 8px 32px rgba(14,165,233,0.10);}
-.plan-card.featured{border-color:rgba(252,163,17,0.40);background:rgba(252,163,17,0.07);box-shadow:inset 0 0 40px rgba(252,163,17,0.07),0 4px 32px rgba(0,0,0,0.35);}
+.plan-card.featured{border-color:rgba(252,163,17,0.42);background:rgba(252,163,17,0.07);box-shadow:inset 0 0 40px rgba(252,163,17,0.07),0 4px 32px rgba(0,0,0,0.35);}
 .plan-card.featured::before{background:linear-gradient(90deg,transparent,rgba(252,163,17,0.14),transparent);}
-.plan-card.featured:hover{border-color:rgba(252,163,17,0.60);box-shadow:inset 0 0 60px rgba(252,163,17,0.10),0 8px 40px rgba(252,163,17,0.10);}
-.plan-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:#FCA311;color:#070A0E;font-size:10px;font-family:'Barlow',sans-serif;font-weight:700;padding:3px 12px;border-radius:20px;letter-spacing:0.06em;white-space:nowrap;}
-.plan-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;color:#F0F6FB;margin-bottom:4px;}
-.plan-price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:36px;color:#0EA5E9;line-height:1;}
-.plan-price span{font-size:16px;font-weight:400;color:#888;font-family:'Barlow',sans-serif;}
-.plan-desc{font-size:12px;color:#888;margin-top:6px;margin-bottom:16px;}
-.plan-features{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:7px;}
-.plan-features li{display:flex;align-items:center;gap:8px;font-size:13px;color:#AAA;}
-.plan-features li i{color:#4ade80;font-size:15px;flex-shrink:0;}
-.btn-assinar{display:block;width:100%;padding:13px;border:none;border-radius:6px;font-family:'Barlow',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.04em;cursor:pointer;text-align:center;text-decoration:none;transition:opacity 200ms ease;}
+.plan-card.featured:hover{border-color:rgba(252,163,17,0.62);box-shadow:inset 0 0 60px rgba(252,163,17,0.10),0 8px 40px rgba(252,163,17,0.10);}
+
+/* linha superior: tag + preço lado a lado */
+.plan-inner{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px;}
+.plan-left{flex:0 0 auto;min-width:0;}
+.plan-tag{font-size:9px;font-family:'Barlow',sans-serif;font-weight:700;color:#0EA5E9;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:3px;opacity:0.75;}
+.plan-card.featured .plan-tag{color:#FCA311;}
+.plan-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:#F0F6FB;line-height:1.1;margin-bottom:4px;}
+.plan-price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;color:#0EA5E9;line-height:1;}
+.plan-price span{font-size:13px;font-weight:400;color:#888;font-family:'Barlow',sans-serif;}
+.plan-desc{font-size:10px;color:#666;margin-top:4px;}
+.plan-right{flex:1;display:flex;flex-direction:column;gap:5px;padding-top:2px;}
+.plan-feat{display:flex;align-items:center;gap:6px;font-size:11px;color:#AAA;font-family:'Barlow',sans-serif;font-weight:300;}
+.plan-feat i{color:#4ade80;font-size:13px;flex-shrink:0;}
+
+.plan-badge{display:inline-block;background:#FCA311;color:#070A0E;font-size:9px;font-family:'Barlow',sans-serif;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:0.06em;margin-bottom:4px;}
+.btn-assinar{display:block;width:100%;padding:10px;border:none;border-radius:6px;font-family:'Barlow',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.04em;cursor:pointer;text-align:center;text-decoration:none;transition:opacity 200ms ease,transform 120ms ease;}
 .btn-assinar.primary{background:#FCA311;color:#070A0E;}
-.btn-assinar.secondary{background:#0EA5E9;color:#070A0E;}
-.btn-assinar:hover{opacity:0.88;}
+.btn-assinar.secondary{background:rgba(14,165,233,0.15);color:#0EA5E9;border:1px solid rgba(14,165,233,0.30);}
+.btn-assinar:hover{opacity:0.88;transform:translateY(-1px);}
 .trial-banner{background:rgba(14,165,233,0.08);border:1px solid rgba(14,165,233,0.2);border-radius:8px;padding:14px 16px;margin-bottom:20px;display:flex;align-items:center;gap:10px;}
 </style>
 </head>
@@ -61,32 +69,39 @@
 
   <!-- Plano Mensal -->
   <div class="plan-card sr" style="transition-delay:60ms">
-    <div class="plan-name">Mensal</div>
-    <div class="plan-price">R$39<span>/mês</span></div>
-    <div class="plan-desc">Cancele quando quiser</div>
-    <ul class="plan-features">
-      <li><i class="ti ti-check"></i>Todas as 5 especialidades</li>
-      <li><i class="ti ti-check"></i>4.500+ questões comentadas</li>
-      <li><i class="ti ti-check"></i>Flashcards FractalLearning™</li>
-      <li><i class="ti ti-check"></i>Resumos analíticos por questão</li>
-      <li><i class="ti ti-check"></i>Scorecard com histórico completo</li>
-    </ul>
+    <div class="plan-inner">
+      <div class="plan-left">
+        <div class="plan-tag">MENSAL</div>
+        <div class="plan-name">Plano Mensal</div>
+        <div class="plan-price">R$39<span>/mês</span></div>
+        <div class="plan-desc">Cancele quando quiser</div>
+      </div>
+      <div class="plan-right">
+        <div class="plan-feat"><i class="ti ti-check"></i>5 especialidades</div>
+        <div class="plan-feat"><i class="ti ti-check"></i>4.500+ questões</div>
+        <div class="plan-feat"><i class="ti ti-check"></i>Flashcards</div>
+        <div class="plan-feat"><i class="ti ti-check"></i>Resumos analíticos</div>
+      </div>
+    </div>
     <a id="btn-monthly" href="#" class="btn-assinar secondary">ASSINAR MENSAL</a>
   </div>
 
   <!-- Plano Anual -->
   <div class="plan-card featured sr" style="transition-delay:120ms">
-    <div class="plan-badge">MELHOR VALOR · 37% OFF</div>
-    <div class="plan-name">Anual</div>
-    <div class="plan-price">R$297<span>/ano</span></div>
-    <div class="plan-desc">Equivale a R$24,75/mês · economia de R$171</div>
-    <ul class="plan-features">
-      <li><i class="ti ti-check"></i>Todas as 5 especialidades</li>
-      <li><i class="ti ti-check"></i>4.500+ questões comentadas</li>
-      <li><i class="ti ti-check"></i>Flashcards FractalLearning™</li>
-      <li><i class="ti ti-check"></i>Resumos analíticos por questão</li>
-      <li><i class="ti ti-check"></i>Scorecard com histórico completo</li>
-    </ul>
+    <div class="plan-inner">
+      <div class="plan-left">
+        <div class="plan-badge">37% OFF</div>
+        <div class="plan-name">Plano Anual</div>
+        <div class="plan-price">R$297<span>/ano</span></div>
+        <div class="plan-desc">R$24,75/mês · economia de R$171</div>
+      </div>
+      <div class="plan-right">
+        <div class="plan-feat"><i class="ti ti-check"></i>5 especialidades</div>
+        <div class="plan-feat"><i class="ti ti-check"></i>4.500+ questões</div>
+        <div class="plan-feat"><i class="ti ti-check"></i>Flashcards</div>
+        <div class="plan-feat"><i class="ti ti-check"></i>Resumos analíticos</div>
+      </div>
+    </div>
     <a id="btn-annual" href="#" class="btn-assinar primary">ASSINAR ANUAL</a>
   </div>
 
