@@ -234,8 +234,12 @@ Criar branch main → editar → commit main → merge para gh-pages → push
 
 | # | Item | Prioridade |
 |---|------|-----------|
-| P1 | Retrofit dos resumos analíticos (2.711 via Sonnet) | Alta |
+| P1 | Retrofit dos resumos analíticos — rodar Sonnet no restante das áreas | Alta |
 | P2 | Stripe: trocar links TEST por links LIVE | Alta (pré-lançamento) |
 | P3 | WhatsApp: substituir número pessoal por número de suporte | Média |
-| P4 | `assets/nexor.css` — verificar se ainda é usado ou pode ser deletado | Baixa |
-| P5 | E-mail transacional (boas-vindas + confirmação de plano) | Fase futura |
+| P4 | `assets/nexor.css` — não deletar (reservado para nexor_cert) | — |
+| P5 | E-mail transacional: boas-vindas ao cadastrar | Fase futura |
+| P6 | E-mail transacional: aviso "faltam 2 dias no trial" (dia 5) | Fase futura |
+| P7 | E-mail transacional: "seu trial expirou — continue de onde parou" (dia 7) | Fase futura |
+| P8 | E-mail transacional: confirmação de plano após assinatura | Fase futura |
+| P9 | Infra de e-mail: Supabase Edge Function + provedor Resend ou SendGrid | Pré P5-P8 |
