@@ -60,10 +60,21 @@
   </div>
 
   <div id="trial-info" class="trial-banner hero-reveal" style="transition-delay:280ms;display:none;">
-    <i class="ti ti-clock" style="color:#0EA5E9;font-size:20px;flex-shrink:0;"></i>
+    <i class="ti ti-clock" id="trial-icon" style="color:#0EA5E9;font-size:20px;flex-shrink:0;"></i>
     <div>
       <div style="font-size:13px;color:#F0F6FB;font-weight:600;" id="trial-text">Seu período gratuito está ativo</div>
       <div style="font-size:11px;color:#888;margin-top:2px;" id="trial-sub">Assine agora para continuar após o trial</div>
+    </div>
+  </div>
+
+  <!-- Banner de expirado — aparece quando trial acabou -->
+  <div id="expired-info" style="display:none;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.30);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:10px;padding:16px 18px;margin-bottom:20px;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+      <i class="ti ti-lock" style="color:#f87171;font-size:20px;flex-shrink:0;"></i>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#f87171;">Seu trial de 7 dias expirou</div>
+    </div>
+    <div style="font-size:12px;color:#c87070;line-height:1.6;">
+      Seu acesso gratuito chegou ao fim. Assine um plano abaixo para voltar a estudar de onde parou — todo seu progresso está salvo.
     </div>
   </div>
 
@@ -129,25 +140,17 @@ const STRIPE_ANNUAL  = 'https://buy.stripe.com/test_7sY14p9mEgEfc999xn2Fa01';
   // Exibe info do trial se ainda ativo
   const sub = await Auth.subscription();
   if (sub && sub.plan === 'trial' && sub.trial_ends_at) {
-    const end = new Date(sub.trial_ends_at);
-    const now = new Date();
-    const diasRestantes = Math.ceil((end - now) / (1000 * 60 * 60 * 24));
-    const trialEl = document.getElementById('trial-info');
-    const trialText = document.getElementById('trial-text');
-    const trialSub = document.getElementById('trial-sub');
-    if (diasRestantes > 0) {
+    const dias = Math.ceil((new Date(sub.trial_ends_at) - new Date()) / 86400000);
+    if (dias > 0) {
+      const trialEl = document.getElementById('trial-info');
       trialEl.style.display = 'flex';
-      trialText.textContent = diasRestantes === 1
+      document.getElementById('trial-text').textContent = dias === 1
         ? 'Último dia do seu período gratuito!'
-        : `${diasRestantes} dias restantes no seu período gratuito`;
-      trialSub.textContent = 'Assine agora para garantir acesso contínuo';
+        : `${dias} dias restantes no seu período gratuito`;
+      document.getElementById('trial-sub').textContent = 'Assine agora para garantir acesso contínuo';
     } else {
-      trialEl.style.display = 'flex';
-      trialEl.style.borderColor = 'rgba(239,68,68,0.3)';
-      trialEl.style.background = 'rgba(239,68,68,0.06)';
-      trialEl.querySelector('i').style.color = '#ef4444';
-      trialText.textContent = 'Seu período gratuito expirou';
-      trialSub.textContent = 'Assine para continuar acessando o conteúdo';
+      // Trial expirado — mostra banner explicativo
+      document.getElementById('expired-info').style.display = 'block';
     }
   }
 
