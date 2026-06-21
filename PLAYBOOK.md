@@ -53,7 +53,7 @@ success.html                 → confirmação pós-pagamento
 | `auth.js` | Supabase Auth — magic link, Google OAuth, session guard, subscription check |
 | `catalog.js` | Objeto `CATALOG` — mapa de todas as especialidades e domínios |
 | `nx.css` | Stylesheet principal — tokens, layout, componentes |
-| `nexor.css` | Estilos legados (verificar se ainda usado) |
+| `nexor.css` | CSS base do **nexor_cert** (projeto futuro) — NÃO DELETAR |
 | `nexor-med-instagram.svg` | Logotipo SVG para redes sociais |
 | `notif.js` | Push notifications (badge, alertas) |
 | `profile.js` | Sheet de perfil lateral — stats, configurações, suporte WhatsApp |
