@@ -292,5 +292,5 @@ async function doLogout() {
 
 function openSupport() {
   closeProfile();
-  window.open('https://wa.me/5511999999999?text=Ol%C3%A1%2C+preciso+de+suporte+com+o+nexor_med', '_blank');
+  window.open('https://wa.me/5547992544143?text=Ol%C3%A1%2C+preciso+de+suporte+com+o+nexor_med', '_blank');
 }
