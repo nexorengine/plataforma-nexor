@@ -142,8 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(sheet);
   document.body.appendChild(cfgSheet);
 
-  // Carrega dados reais do usuário (iniciais no header + perfil completo)
-  _loadProfileUser();
+  // Iniciais no header são preenchidas por Auth.fillHeader() em cada página.
+  // _loadProfileUser() roda ao abrir o sheet, quando a sessão já está ativa.
 
   // Restaura configurações salvas
   const cfg = loadConfig();
