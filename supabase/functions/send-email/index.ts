@@ -1,7 +1,10 @@
 import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
 
 const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')!;
-const FROM = 'nexor_med <noreply@nexorengine.com>';
+const DOMAIN_VERIFIED = Deno.env.get('DOMAIN_VERIFIED') === 'true';
+const FROM = DOMAIN_VERIFIED
+  ? 'nexor_med <noreply@nexorengine.com>'
+  : 'nexor_med <onboarding@resend.dev>';
 
 // ── Templates ──────────────────────────────────────────────────────────────
 
