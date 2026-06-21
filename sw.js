@@ -1,4 +1,4 @@
-const CACHE = 'nexor-med-v1';
+const CACHE = 'nexor-med-v2';
 const ASSETS = [
   '/',
   '/index.html',
