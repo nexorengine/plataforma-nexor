@@ -10,17 +10,14 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/auth.js"></script>
 <style>
-.c0-plan-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
-.c0-plan{background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:14px 16px;display:flex;gap:0;}
-.c0-plan.featured{border-color:#0EA5E9;background:#1a2e44;}
-.c0-plan-left{flex:0 0 auto;width:52%;padding-right:14px;border-right:1px solid #1d3452;display:flex;flex-direction:column;justify-content:center;}
-.c0-plan-right{flex:1;padding-left:14px;display:flex;flex-direction:column;justify-content:center;}
-.c0-plan-tag{font-size:9px;font-family:'Barlow',sans-serif;font-weight:400;color:#0EA5E9;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
-.c0-plan-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;margin-bottom:4px;}
-.c0-plan-price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;color:#0EA5E9;line-height:1;}
-.c0-plan-price span{font-size:12px;font-weight:300;font-family:'Barlow',sans-serif;color:#AAA;margin-left:3px;}
-.c0-plan-equiv{font-size:10px;color:#AAA;font-weight:300;margin-top:3px;}
-.c0-plan-save{display:inline-block;font-size:9px;background:rgba(14,165,233,0.12);color:#0EA5E9;border:1px solid rgba(14,165,233,0.25);border-radius:3px;padding:2px 7px;margin-top:6px;align-self:flex-start;}
+.c0-plan-grid{display:flex;flex-direction:column;gap:12px;margin-bottom:28px;}
+.c0-plan{background:#16263B;border:1px solid #1d3452;border-radius:10px;padding:20px;display:block;}
+.c0-plan.featured{border-color:#FCA311;background:#17233a;}
+.c0-plan-tag{display:inline-block;background:#FCA311;color:#070A0E;font-size:9px;font-weight:700;padding:3px 14px;border-radius:20px;letter-spacing:0.07em;margin-bottom:10px;}
+.c0-plan-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:#F0F6FB;margin-bottom:2px;}
+.c0-plan-price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:32px;color:#0EA5E9;line-height:1;}
+.c0-plan-price span{font-size:13px;font-weight:400;font-family:'Barlow',sans-serif;color:#667;}
+.c0-plan-sub{font-size:10px;color:#7a8fa8;margin-top:4px;margin-bottom:14px;}
 /* ── STAT BAR ── */
 .c0-stats{display:flex;gap:0;margin-bottom:28px;background:#16263B;border:1px solid #1d3452;border-radius:10px;overflow:hidden;}
 .c0-stat{flex:1;padding:14px 8px;text-align:center;border-right:1px solid #1d3452;}
@@ -36,9 +33,13 @@
 .c0-magic-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:#F0F6FB;margin-bottom:6px;}
 .c0-magic-sub{font-size:12px;color:#7a8fa8;font-weight:300;margin-bottom:14px;line-height:1.5;}
 .c0-divider{display:none;}
-.c0-feature{display:flex;align-items:flex-start;gap:7px;font-size:11px;color:#AAA;font-weight:300;margin-bottom:6px;line-height:1.35;}
+.c0-feature{display:flex;align-items:center;gap:7px;font-size:12px;color:#9ab;font-weight:300;margin-bottom:6px;line-height:1.35;}
 .c0-feature:last-child{margin-bottom:0;}
-.c0-feature i{color:#0EA5E9;font-size:12px;flex-shrink:0;margin-top:1px;}
+.c0-feature i{color:#4ade80;font-size:13px;flex-shrink:0;}
+/* ── GOOGLE BTN ── */
+.c0-btn-google{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;background:transparent;border:1px solid #1d3452;border-radius:6px;color:#D0DCE8;font-family:'Barlow',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.03em;cursor:pointer;transition:border-color 200ms ease,background 200ms ease;box-sizing:border-box;margin-top:8px;}
+.c0-btn-google:hover{border-color:#4285F4;background:rgba(66,133,244,0.06);}
+.c0-btn-google svg{flex-shrink:0;}
 .c0-magic{background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:18px;margin-bottom:24px;}
 .c0-magic-label{font-size:11px;color:#AAA;font-weight:300;margin-bottom:10px;}
 .c0-input{width:100%;height:44px;background:#070A0E;border:1px solid #1d3452;border-radius:6px;color:#F0F6FB;font-family:'Barlow',sans-serif;font-size:14px;padding:0 14px;outline:none;margin-bottom:10px;}
@@ -69,8 +70,8 @@
 /* Cards hover — capsulas de especialidade e planos */
 .nx-capsule{transition:transform 300ms cubic-bezier(0.16,1,0.3,1),box-shadow 300ms cubic-bezier(0.16,1,0.3,1),border-color 300ms ease!important;}
 .nx-capsule:hover{transform:translateY(-3px) scale(1.012)!important;box-shadow:0 8px 24px rgba(0,0,0,0.35)!important;border-color:rgba(159,203,235,0.3)!important;}
-.c0-plan{transition:transform 300ms cubic-bezier(0.16,1,0.3,1),box-shadow 300ms cubic-bezier(0.16,1,0.3,1);}
-.c0-plan:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.3);}
+.c0-plan{transition:border-color 250ms ease,transform 250ms ease;}
+.c0-plan:hover{border-color:#0EA5E9;transform:translateY(-2px);}
 
 /* Botões */
 .nx-btn-primary{transition:transform 250ms cubic-bezier(0.16,1,0.3,1),box-shadow 250ms ease!important;}
@@ -244,6 +245,20 @@
       TESTAR 7 DIAS GRÁTIS
     </button>
     <div id="c0-msg" style="font-size:12px;text-align:center;margin-top:8px;min-height:18px;color:#4ade80;" aria-live="polite"></div>
+    <div style="display:flex;align-items:center;gap:8px;margin:10px 0 2px;">
+      <div style="flex:1;height:1px;background:#1d3452;"></div>
+      <span style="font-size:10px;color:#445;white-space:nowrap;">ou entre com</span>
+      <div style="flex:1;height:1px;background:#1d3452;"></div>
+    </div>
+    <button class="c0-btn-google" onclick="Auth.loginGoogle()">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.875 2.684-6.615z" fill="#4285F4"/>
+        <path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z" fill="#34A853"/>
+        <path d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z" fill="#FBBC05"/>
+        <path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 6.29C4.672 4.163 6.656 3.58 9 3.58z" fill="#EA4335"/>
+      </svg>
+      Continuar com Google
+    </button>
   </div>
 
   <div style="text-align:center;margin-bottom:12px;">
