@@ -74,9 +74,14 @@ document.addEventListener('DOMContentLoaded', () => {
         <span>Configurações</span>
         <i class="ti ti-chevron-right" style="margin-left:auto;color:#555;"></i>
       </div>
-      <div class="nx-profile-item" onclick="openSupport()">
-        <i class="ti ti-help-circle" style="color:#0EA5E9;"></i>
-        <span>Suporte</span>
+      <div class="nx-profile-item" onclick="openSupportWhatsApp()">
+        <i class="ti ti-brand-whatsapp" style="color:#4ade80;"></i>
+        <span>Suporte via WhatsApp</span>
+        <i class="ti ti-chevron-right" style="margin-left:auto;color:#555;"></i>
+      </div>
+      <div class="nx-profile-item" onclick="openSupportEmail()">
+        <i class="ti ti-mail" style="color:#0EA5E9;"></i>
+        <span>Suporte via E-mail</span>
         <i class="ti ti-chevron-right" style="margin-left:auto;color:#555;"></i>
       </div>
     </div>
@@ -362,7 +367,12 @@ async function doLogout() {
   await Auth.logout();
 }
 
-function openSupport() {
+function openSupportWhatsApp() {
   closeProfile();
   window.open('https://wa.me/5547992544143?text=Ol%C3%A1%2C+preciso+de+suporte+com+o+nexor_med', '_blank');
+}
+
+function openSupportEmail() {
+  closeProfile();
+  window.location.href = 'mailto:admin@nexorengine.com?subject=Suporte%20nexor_med&body=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20o%20nexor_med.';
 }
