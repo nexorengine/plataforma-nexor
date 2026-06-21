@@ -62,5 +62,61 @@ const Auth = {
         .split(' ').map(w => w[0]).join('').toUpperCase().slice(0,2);
       avatarEl.textContent = initials;
     }
+  },
+
+  // Garante registro de trial ao primeiro acesso
+  async ensureTrial(userId) {
+    const { data } = await _sb.from('subscriptions').select('id').eq('user_id', userId).maybeSingle();
+    if (!data) {
+      const trialEnd = new Date();
+      trialEnd.setDate(trialEnd.getDate() + 7);
+      await _sb.from('subscriptions').insert({
+        user_id: userId,
+        plan: 'trial',
+        status: 'active',
+        trial_ends_at: trialEnd.toISOString()
+      });
+    }
+  },
+
+  // Verifica se o usuário tem acesso ativo (trial válido ou plano pago)
+  async checkAccess() {
+    const s = await this.session();
+    if (!s) return false;
+    await this.ensureTrial(s.user.id);
+    const { data } = await _sb.from('subscriptions')
+      .select('plan,status,trial_ends_at,current_period_end')
+      .eq('user_id', s.user.id)
+      .maybeSingle();
+    if (!data) return false;
+    if (data.status !== 'active') return false;
+    if (data.plan === 'trial') {
+      return data.trial_ends_at ? new Date(data.trial_ends_at) > new Date() : false;
+    }
+    if (data.plan === 'monthly' || data.plan === 'annual') {
+      return data.current_period_end ? new Date(data.current_period_end) > new Date() : true;
+    }
+    return false;
+  },
+
+  // Redireciona para upgrade se sem acesso
+  async requireAccess() {
+    const ok = await this.checkAccess();
+    if (!ok) {
+      window.location.href = 'upgrade.html';
+      return false;
+    }
+    return true;
+  },
+
+  // Retorna dados da assinatura atual
+  async subscription() {
+    const s = await this.session();
+    if (!s) return null;
+    const { data } = await _sb.from('subscriptions')
+      .select('*')
+      .eq('user_id', s.user.id)
+      .maybeSingle();
+    return data;
   }
 };

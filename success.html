@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#16263B">
+<title>nexor_med · Assinatura Confirmada</title>
+<link rel="stylesheet" href="assets/nx.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth.js"></script>
+<style>
+.hero-reveal{opacity:0;transform:translateY(20px);filter:blur(6px);transition:opacity 700ms cubic-bezier(0.16,1,0.3,1),transform 700ms cubic-bezier(0.16,1,0.3,1),filter 700ms cubic-bezier(0.16,1,0.3,1);}
+.hero-reveal.visible{opacity:1;transform:translateY(0);filter:blur(0);}
+.sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
+.sr.visible{opacity:1;transform:translateY(0);}
+.success-icon{width:80px;height:80px;border-radius:50%;background:rgba(74,222,128,0.12);border:2px solid rgba(74,222,128,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;}
+.feature-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #1d3452;}
+.feature-row:last-child{border-bottom:none;}
+</style>
+</head>
+<body>
+<div class="nx-header">
+  <div style="width:60px;"></div>
+  <div class="nx-wordmark"><i class="ti ti-medical-cross" style="font-size:15px;color:#0EA5E9;margin-right:5px;vertical-align:-1px;" aria-hidden="true"></i>nexor_<span>med</span></div>
+  <div style="width:60px;"></div>
+</div>
+<div class="nx-scroll">
+<div class="nx-body" style="text-align:center;">
+
+  <div style="padding:32px 0 20px;">
+    <div class="success-icon hero-reveal" style="transition-delay:0ms">
+      <i class="ti ti-circle-check" style="font-size:40px;color:#4ade80;"></i>
+    </div>
+    <div class="hero-reveal" style="transition-delay:100ms;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;color:#F0F6FB;margin-bottom:6px;">
+      Assinatura confirmada!
+    </div>
+    <div class="hero-reveal" style="transition-delay:180ms;font-size:13px;color:#888;">
+      Bem-vindo ao nexor_med. Seu acesso está ativo.
+    </div>
+  </div>
+
+  <div class="sr" style="transition-delay:60ms;background:#16263B;border:1px solid #1d3452;border-radius:10px;padding:16px 20px;margin-bottom:20px;text-align:left;">
+    <div class="feature-row">
+      <i class="ti ti-clipboard-check" style="color:#0EA5E9;font-size:18px;flex-shrink:0;"></i>
+      <div style="font-size:13px;color:#F0F6FB;">4.500+ questões comentadas</div>
+    </div>
+    <div class="feature-row">
+      <i class="ti ti-cards" style="color:#0EA5E9;font-size:18px;flex-shrink:0;"></i>
+      <div style="font-size:13px;color:#F0F6FB;">Flashcards FractalLearning™</div>
+    </div>
+    <div class="feature-row">
+      <i class="ti ti-chart-bar" style="color:#0EA5E9;font-size:18px;flex-shrink:0;"></i>
+      <div style="font-size:13px;color:#F0F6FB;">Scorecard com histórico completo</div>
+    </div>
+    <div class="feature-row">
+      <i class="ti ti-file-text" style="color:#0EA5E9;font-size:18px;flex-shrink:0;"></i>
+      <div style="font-size:13px;color:#F0F6FB;">Resumos analíticos por questão</div>
+    </div>
+  </div>
+
+  <a href="c1-med.html" class="sr" style="transition-delay:120ms;display:block;width:100%;padding:14px;background:#FCA311;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.04em;cursor:pointer;text-decoration:none;box-sizing:border-box;">
+    COMEÇAR A ESTUDAR
+  </a>
+
+  <div class="sr" style="transition-delay:180ms;margin-top:16px;font-size:11px;color:#555;font-family:'Barlow',sans-serif;">
+    Dúvidas? <a href="#" onclick="openSupport();return false;" style="color:#0EA5E9;text-decoration:none;">Fale com o suporte</a>
+  </div>
+
+</div>
+</div>
+<div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
+<script src="assets/notif.js"></script>
+<script src="assets/profile.js"></script>
+<script>
+(async () => {
+  await Auth.requireAuth();
+})();
+
+(function(){
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    document.querySelectorAll('.hero-reveal').forEach(el => el.classList.add('visible'));
+  }));
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { root: document.querySelector('.nx-scroll'), threshold: 0.08 });
+  document.querySelectorAll('.sr').forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>

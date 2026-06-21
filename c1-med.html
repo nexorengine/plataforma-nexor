@@ -40,10 +40,11 @@
 <script src="assets/profile.js"></script>
 <script src="assets/catalog.js"></script>
 <script>
-// Protege a rota — redireciona para login se não autenticado
+// Protege a rota — redireciona para login se não autenticado, para upgrade se sem plano
 (async () => {
   const s = await Auth.requireAuth();
   if (!s) return;
+  await Auth.requireAccess();
   await Auth.fillHeader();
 })();
 </script>
