@@ -332,6 +332,24 @@ body::before{
 </style>
 </head>
 <body>
+<div id="nx-splash" style="display:none;position:fixed;inset:0;z-index:9999;background:#070A0E;align-items:center;justify-content:center;opacity:1;transition:opacity 400ms ease;">
+  <span style="font-family:'Arial Black',Arial,sans-serif;font-weight:900;font-size:64px;color:#0EA5E9;opacity:0;transition:opacity 300ms ease;" id="nx-splash-logo">n_</span>
+</div>
+<script>
+(function(){
+  if(!window.matchMedia('(display-mode:standalone)').matches&&!navigator.standalone)return;
+  var s=document.getElementById('nx-splash');
+  var l=document.getElementById('nx-splash-logo');
+  s.style.display='flex';
+  requestAnimationFrame(function(){requestAnimationFrame(function(){
+    l.style.opacity='1';
+    setTimeout(function(){
+      s.style.opacity='0';
+      setTimeout(function(){s.style.display='none';},400);
+    },600);
+  });});
+})();
+</script>
 <div class="nx-header">
   <div class="nx-wordmark-left"><i class="ti ti-medical-cross" style="font-size:15px;color:#0EA5E9;margin-right:5px;vertical-align:-1px;" aria-hidden="true"></i>nexor_<span>med</span></div>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
@@ -447,7 +465,7 @@ body::before{
           <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
         </div>
       </div>
-      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:block;width:100%;padding:11px;background:#FCA311;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.05em;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR GRÁTIS POR 7 DIAS</a>
+      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:52px;background:#FCA311;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
     </div>
     <!-- Mensal -->
     <div class="c0-plan" style="border-radius:10px;padding:14px 16px;">
@@ -464,7 +482,7 @@ body::before{
           <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
         </div>
       </div>
-      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:block;width:100%;padding:11px;background:#0EA5E9;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.05em;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">COMEÇAR COM 7 DIAS GRÁTIS</a>
+      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:52px;background:#0EA5E9;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
     </div>
   </div>
 

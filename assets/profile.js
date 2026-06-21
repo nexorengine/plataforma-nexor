@@ -176,31 +176,42 @@ function _calcStreak(dates) {
 }
 
 async function _loadProfileUser() {
+  // Fase 1: nome, email e avatar — independente do plano
+  let session;
   try {
-    const { data: { session } } = await _sb.auth.getSession();
-    if (!session) return;
-    const u = session.user;
+    const { data } = await _sb.auth.getSession();
+    session = data?.session;
+  } catch(e) { console.warn('getSession falhou:', e); return; }
+  if (!session) return;
 
-    // Nome: full_name do Google OAuth, ou parte antes do @ no email
-    const fullName = u.user_metadata?.full_name || u.user_metadata?.name || '';
-    const displayName = fullName || u.email.split('@')[0];
+  const u = session.user;
+  const fullName = u.user_metadata?.full_name || u.user_metadata?.name || '';
+  const displayName = fullName || u.email.split('@')[0];
+  const initials = fullName
+    ? fullName.split(' ').filter(Boolean).map(w => w[0]).join('').toUpperCase().slice(0, 2)
+    : displayName.slice(0, 2).toUpperCase();
+  const since = u.created_at
+    ? new Date(u.created_at).toLocaleDateString('pt-BR', { month: 'short', year: 'numeric' })
+    : '—';
 
-    // Iniciais: até 2 letras do nome completo, ou 2 primeiras do email slug
-    const initials = fullName
-      ? fullName.split(' ').filter(Boolean).map(w => w[0]).join('').toUpperCase().slice(0, 2)
-      : displayName.slice(0, 2).toUpperCase();
+  const avatarEl = document.getElementById('nx-prof-avatar');
+  if (avatarEl) avatarEl.textContent = initials;
+  const nameEl = document.getElementById('nx-prof-name');
+  if (nameEl) nameEl.textContent = displayName;
+  const emailEl = document.getElementById('nx-prof-email');
+  if (emailEl) emailEl.textContent = u.email;
+  const sinceEl = document.getElementById('nx-prof-since');
+  if (sinceEl) sinceEl.textContent = `membro desde ${since} · nexor_med v1.0`;
+  const headerAvatar = document.querySelector('.nx-avatar-btn');
+  if (headerAvatar) headerAvatar.textContent = initials;
 
-    // Membro desde
-    const since = u.created_at
-      ? new Date(u.created_at).toLocaleDateString('pt-BR', { month: 'short', year: 'numeric' })
-      : '—';
-
-    // Plano
-    let planTxt = 'Trial ativo';
-    let planColor = '#0EA5E9';
-    let planBg = 'rgba(14,165,233,0.10)';
-    let planBorder = 'rgba(14,165,233,0.25)';
-    let planIcon = 'ti-clock';
+  // Fase 2: plano — separado para não bloquear fase 1
+  let planTxt = 'Trial ativo';
+  let planColor = '#0EA5E9';
+  let planBg = 'rgba(14,165,233,0.10)';
+  let planBorder = 'rgba(14,165,233,0.25)';
+  let planIcon = 'ti-clock';
+  try {
     if (typeof Auth !== 'undefined') {
       const sub = await Auth.subscription();
       if (sub) {
@@ -216,35 +227,17 @@ async function _loadProfileUser() {
         }
       }
     }
+  } catch(e) { console.warn('Erro ao carregar plano:', e); }
 
-    // Atualiza DOM
-    const avatarEl = document.getElementById('nx-prof-avatar');
-    if (avatarEl) avatarEl.textContent = initials;
-
-    const nameEl = document.getElementById('nx-prof-name');
-    if (nameEl) nameEl.textContent = displayName;
-
-    const emailEl = document.getElementById('nx-prof-email');
-    if (emailEl) emailEl.textContent = u.email;
-
-    const badgeEl = document.getElementById('nx-prof-plan-badge');
-    if (badgeEl) {
-      badgeEl.style.background = planBg;
-      badgeEl.style.borderColor = planBorder;
-      badgeEl.querySelector('i').className = `ti ${planIcon}`;
-      badgeEl.querySelector('i').style.color = planColor;
-    }
-    const planTxtEl = document.getElementById('nx-prof-plan-txt');
-    if (planTxtEl) { planTxtEl.textContent = planTxt; planTxtEl.style.color = planColor; }
-
-    const sinceEl = document.getElementById('nx-prof-since');
-    if (sinceEl) sinceEl.textContent = `membro desde ${since} · nexor_med v1.0`;
-
-    // Atualiza também o avatar no header
-    const headerAvatar = document.querySelector('.nx-avatar-btn');
-    if (headerAvatar) headerAvatar.textContent = initials;
-
-  } catch(e) { console.warn('Erro ao carregar perfil do usuário:', e); }
+  const badgeEl = document.getElementById('nx-prof-plan-badge');
+  if (badgeEl) {
+    badgeEl.style.background = planBg;
+    badgeEl.style.borderColor = planBorder;
+    badgeEl.querySelector('i').className = `ti ${planIcon}`;
+    badgeEl.querySelector('i').style.color = planColor;
+  }
+  const planTxtEl = document.getElementById('nx-prof-plan-txt');
+  if (planTxtEl) { planTxtEl.textContent = planTxt; planTxtEl.style.color = planColor; }
 }
 
 async function _loadProfileStats() {
