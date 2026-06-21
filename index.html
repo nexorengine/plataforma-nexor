@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#16263B">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="nexor_med">
 <meta name="description" content="nexor_med — Prepare-se para a Residência Médica com 4.500+ questões comentadas, flashcards FractalLearning™ e scorecard por domínio. 7 dias grátis.">
 <title>nexor_med · Residência Médica</title>
 <link rel="stylesheet" href="assets/nx.css">
@@ -632,6 +638,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('c0-email');
   if (input) input.addEventListener('keydown', e => { if (e.key === 'Enter') c0SendLink(); });
 });
-</script></body>
+</script><script>if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js");</script>
+</body>
 </html>
 

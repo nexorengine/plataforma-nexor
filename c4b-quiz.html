@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="nexor_med">
 <meta name="theme-color" content="#16263B">
 <title>Quiz · nexor_med</title>
 <link rel="stylesheet" href="assets/nx.css">
@@ -415,5 +421,6 @@ function ttsQuestao(btn){
 @keyframes nx-pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
 @media(prefers-reduced-motion:reduce){#q-text,#options,.nx-feedback{transition:none!important;opacity:1!important;transform:none!important;}}
 </style>
+<script>if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js");</script>
 </body>
 </html>
