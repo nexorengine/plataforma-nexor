@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="nx-sheet-handle"></div>
 
     <div style="display:flex;align-items:center;gap:14px;padding:20px 20px 16px;">
-      <div style="width:52px;height:52px;border-radius:50%;background:#14213D;border:2px solid #0EA5E9;display:flex;align-items:center;justify-content:center;font-family:'Barlow',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;flex-shrink:0;">${PROFILE.initials}</div>
+      <div id="nx-prof-avatar" style="width:52px;height:52px;border-radius:50%;background:#14213D;border:2px solid #0EA5E9;display:flex;align-items:center;justify-content:center;font-family:'Barlow',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;flex-shrink:0;">—</div>
       <div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F5F5F5;line-height:1.2;">${PROFILE.name}</div>
-        <div style="font-size:11px;color:#888;margin-top:2px;">${PROFILE.email}</div>
-        <div style="display:inline-flex;align-items:center;gap:4px;margin-top:5px;background:rgba(74,222,128,0.1);border:1px solid rgba(74,222,128,0.25);border-radius:4px;padding:2px 8px;">
+        <div id="nx-prof-name" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F5F5F5;line-height:1.2;">Carregando…</div>
+        <div id="nx-prof-email" style="font-size:11px;color:#A8A8A8;margin-top:2px;"></div>
+        <div id="nx-prof-plan-badge" style="display:inline-flex;align-items:center;gap:4px;margin-top:5px;background:rgba(74,222,128,0.1);border:1px solid rgba(74,222,128,0.25);border-radius:4px;padding:2px 8px;">
           <i class="ti ti-circle-check" style="font-size:11px;color:#4ade80;"></i>
-          <span style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:400;color:#4ade80;">${PROFILE.plan} · ${PROFILE.planStatus}</span>
+          <span id="nx-prof-plan-txt" style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:400;color:#4ade80;">—</span>
         </div>
       </div>
     </div>
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <div style="padding:12px 20px;text-align:center;">
-      <span style="font-size:10px;color:#444;font-family:'Barlow',sans-serif;">membro desde ${PROFILE.memberSince} · nexor_med v1.0</span>
+      <span id="nx-prof-since" style="font-size:10px;color:#707070;font-family:'Barlow',sans-serif;">nexor_med v1.0</span>
     </div>
   `;
 
@@ -137,9 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(sheet);
   document.body.appendChild(cfgSheet);
 
-  // Atualiza avatar no header
-  const avatarBtn = document.querySelector('.nx-avatar-btn');
-  if (avatarBtn) avatarBtn.textContent = PROFILE.initials;
+  // Carrega dados reais do usuário (iniciais no header + perfil completo)
+  _loadProfileUser();
 
   // Restaura configurações salvas
   const cfg = loadConfig();
@@ -169,6 +168,78 @@ function _calcStreak(dates) {
     cursor.setDate(cursor.getDate() - 1);
   }
   return streak;
+}
+
+async function _loadProfileUser() {
+  try {
+    const { data: { session } } = await _sb.auth.getSession();
+    if (!session) return;
+    const u = session.user;
+
+    // Nome: full_name do Google OAuth, ou parte antes do @ no email
+    const fullName = u.user_metadata?.full_name || u.user_metadata?.name || '';
+    const displayName = fullName || u.email.split('@')[0];
+
+    // Iniciais: até 2 letras do nome completo, ou 2 primeiras do email slug
+    const initials = fullName
+      ? fullName.split(' ').filter(Boolean).map(w => w[0]).join('').toUpperCase().slice(0, 2)
+      : displayName.slice(0, 2).toUpperCase();
+
+    // Membro desde
+    const since = u.created_at
+      ? new Date(u.created_at).toLocaleDateString('pt-BR', { month: 'short', year: 'numeric' })
+      : '—';
+
+    // Plano
+    let planTxt = 'Trial ativo';
+    let planColor = '#0EA5E9';
+    let planBg = 'rgba(14,165,233,0.10)';
+    let planBorder = 'rgba(14,165,233,0.25)';
+    let planIcon = 'ti-clock';
+    if (typeof Auth !== 'undefined') {
+      const sub = await Auth.subscription();
+      if (sub) {
+        if (sub.plan === 'annual') { planTxt = 'Plano Anual · ativo'; }
+        else if (sub.plan === 'monthly') { planTxt = 'Plano Mensal · ativo'; }
+        else if (sub.plan === 'trial') {
+          const dias = Math.ceil((new Date(sub.trial_ends_at) - new Date()) / 86400000);
+          planTxt = dias > 0 ? `Trial · ${dias}d restante${dias > 1 ? 's' : ''}` : 'Trial expirado';
+          if (dias <= 0) { planColor = '#f87171'; planBg = 'rgba(239,68,68,0.08)'; planBorder = 'rgba(239,68,68,0.25)'; planIcon = 'ti-lock'; }
+        }
+        if (sub.plan !== 'trial') {
+          planColor = '#4ade80'; planBg = 'rgba(74,222,128,0.1)'; planBorder = 'rgba(74,222,128,0.25)'; planIcon = 'ti-circle-check';
+        }
+      }
+    }
+
+    // Atualiza DOM
+    const avatarEl = document.getElementById('nx-prof-avatar');
+    if (avatarEl) avatarEl.textContent = initials;
+
+    const nameEl = document.getElementById('nx-prof-name');
+    if (nameEl) nameEl.textContent = displayName;
+
+    const emailEl = document.getElementById('nx-prof-email');
+    if (emailEl) emailEl.textContent = u.email;
+
+    const badgeEl = document.getElementById('nx-prof-plan-badge');
+    if (badgeEl) {
+      badgeEl.style.background = planBg;
+      badgeEl.style.borderColor = planBorder;
+      badgeEl.querySelector('i').className = `ti ${planIcon}`;
+      badgeEl.querySelector('i').style.color = planColor;
+    }
+    const planTxtEl = document.getElementById('nx-prof-plan-txt');
+    if (planTxtEl) { planTxtEl.textContent = planTxt; planTxtEl.style.color = planColor; }
+
+    const sinceEl = document.getElementById('nx-prof-since');
+    if (sinceEl) sinceEl.textContent = `membro desde ${since} · nexor_med v1.0`;
+
+    // Atualiza também o avatar no header
+    const headerAvatar = document.querySelector('.nx-avatar-btn');
+    if (headerAvatar) headerAvatar.textContent = initials;
+
+  } catch(e) { console.warn('Erro ao carregar perfil do usuário:', e); }
 }
 
 async function _loadProfileStats() {
@@ -223,6 +294,7 @@ function toggleProfile() {
     sheet.classList.add('open');
     overlay.style.opacity = '1';
     overlay.style.pointerEvents = 'auto';
+    _loadProfileUser();
     _loadProfileStats();
   }
 }
