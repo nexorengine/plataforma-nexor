@@ -24,13 +24,13 @@
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
 <div class="nx-scroll">
-<div class="nx-body">
+<div class="nx-body" id="quiz-root" data-quiz-state="loading">
   <div class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
     <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="c4b-icon"><i class="ti ti-clipboard-check" style="font-size:18px;"></i></div>
     <div style="flex:1;min-width:0;">
       <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#0EA5E9;margin-bottom:2px;" id="c4b-label">—</div>
       <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;" id="c4b-nome">—</div>
-      <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;" id="quiz-sub">Quiz 001 · 50 questões</div>
+      <div style="font-size:11px;color:#B0BEC5;font-weight:300;margin-top:1px;" id="quiz-sub">Quiz 001 · 50 questões</div>
     </div>
     <div id="timer-display" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#0EA5E9;letter-spacing:0.04em;flex-shrink:0;">60:00</div>
   </div>
@@ -42,7 +42,7 @@
 
   <div class="sr" style="transition-delay:160ms;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:20px;margin-bottom:14px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-      <div style="font-size:12px;font-family:'Barlow',sans-serif;font-weight:400;color:#888;letter-spacing:0.08em;text-transform:uppercase;" id="q-label">questão 01</div>
+      <div style="font-size:12px;font-family:'Barlow',sans-serif;font-weight:400;color:#B0BEC5;letter-spacing:0.08em;text-transform:uppercase;" id="q-label">questão 01</div>
       <button class="tts-btn" id="tts-q-btn" onclick="ttsQuestao(this)" title="Ouvir em voz alta"><i class="ti ti-volume"></i></button>
     </div>
     <div style="font-family:'Barlow',sans-serif;font-weight:400;font-size:16px;color:#F0F6FB;line-height:1.5;" id="q-text"></div>
@@ -94,10 +94,13 @@
 <script src="assets/profile.js"></script>
 <script src="assets/catalog.js"></script>
 <script>
-// Protege a rota — redireciona para login se não autenticado
+// Mod 1: DEMO MODE — bypass de autenticação quando ?demo=true
+const _DEMO_AUTH = new URLSearchParams(location.search).has('demo');
 (async () => {
-  const s = await Auth.requireAuth();
-  if (!s) return;
+  if (!_DEMO_AUTH) {
+    const s = await Auth.requireAuth();
+    if (!s) return;
+  }
   await Auth.fillHeader();
 })();
 </script>
@@ -108,6 +111,21 @@ const _sp=new URLSearchParams(window.location.search);
 const qn=_hash.n||_sp.get('n')||'1';
 const area=_hash.area||_sp.get('area')||'cirurgia_geral';
 const dominio=_hash.dominio||_sp.get('dominio')||'abdome_agudo';
+
+// Mod 1 & 2: flags de modo (ativadas APENAS via query string, invisíveis para usuários reais)
+const DEMO_MODE = _sp.has('demo');
+const RECORD_MODE = _sp.has('record');
+
+// Mod 3: timings reais das animações CSS, expostos para o Playwright
+document.fonts.ready.then(() => {
+  window.__NX_TIMING = {
+    feedbackTransition: 320,
+    questionExit:       180,
+    aulaOpen:           300,
+    aulaDelay:          800,
+  };
+  document.getElementById('quiz-root').dataset.quizState = 'ready';
+});
 document.getElementById('btn-back').href=`c3-med#area=${area}&dominio=${dominio}`;
 (function(){
   const a=CATALOG[area]; const d=a&&a.dominios.find(x=>x.slug===dominio);
@@ -139,7 +157,13 @@ async function loadQuiz(){
     questions.forEach((q,i)=>q._orig=i); // preserva índice original antes do shuffle
     shuffle(questions);
     sq=questions.map(shuffleQ);
-    startTimer();
+    // Mod 2: RECORD_MODE — oculta timer e barra de progresso, não inicia countdown
+    if (RECORD_MODE) {
+      document.getElementById('timer-display').style.display = 'none';
+      document.querySelector('.nx-prog-row').style.display = 'none';
+    } else {
+      startTimer();
+    }
     render();
   }catch(e){
     document.getElementById('q-label').textContent='conteúdo indisponível';
@@ -293,6 +317,10 @@ function confirm_answer(){
   document.getElementById('btn-confirm').className='nx-btn-primary hidden';
   document.getElementById('btn-next').className='nx-btn-next';
   document.getElementById('btn-aula').className='nx-btn-aula';
+  // Mod 4: sinaliza estado "answered" para o Playwright
+  document.getElementById('quiz-root').dataset.quizState = 'answered';
+  // Mod 2: em RECORD_MODE abre a aula automaticamente após 800ms
+  if (RECORD_MODE) setTimeout(openAula, 800);
   const tot=rights+wrongs;
   document.getElementById('sr').textContent=rights;
   document.getElementById('sw').textContent=wrongs;
@@ -365,6 +393,10 @@ function openAula(){
   sheet.classList.add('open');
   overlay.style.opacity = '1';
   overlay.style.pointerEvents = 'auto';
+  // Mod 4: sinaliza estado "aula-open" após a animação de 300ms terminar
+  setTimeout(() => {
+    document.getElementById('quiz-root').dataset.quizState = 'aula-open';
+  }, 300);
 }
 
 function closeAula(){

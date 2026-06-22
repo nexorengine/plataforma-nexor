@@ -71,13 +71,13 @@ if (!area) {
       <div>
         <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#0EA5E9;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px;">nexor_med · Especialidade</div>
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;color:#F0F6FB;line-height:1.1;">${area.label}</div>
-        <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:2px;">${n} domínios · ${n*48} flashcards · ${n*100} questões</div>
+        <div style="font-size:12px;color:#B0BEC5;font-weight:300;margin-top:2px;">${n} domínios · ${n*48} flashcards · ${n*100} questões</div>
       </div>
     </div>
     <div style="display:flex;justify-content:space-between;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:10px 14px;">
-      <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#AAA;font-weight:300;"><i class="ti ti-circle-check" style="color:#4ade80;font-size:14px;"></i>satisfatório ≥80%</div>
-      <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#AAA;font-weight:300;"><i class="ti ti-circle-check" style="color:#FCA311;font-size:14px;"></i>mediano 50-79%</div>
-      <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#AAA;font-weight:300;"><i class="ti ti-ban" style="color:#ef4444;font-size:14px;"></i>insuficiente</div>
+      <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#B0BEC5;font-weight:300;"><i class="ti ti-circle-check" style="color:#4ade80;font-size:14px;"></i>satisfatório ≥80%</div>
+      <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#B0BEC5;font-weight:300;"><i class="ti ti-circle-check" style="color:#FCA311;font-size:14px;"></i>mediano 50-79%</div>
+      <div style="display:flex;align-items:center;gap:5px;font-size:10px;color:#B0BEC5;font-weight:300;"><i class="ti ti-ban" style="color:#ef4444;font-size:14px;"></i>insuficiente</div>
     </div>`;
 
   document.getElementById('sec-title').textContent = 'Domínios · ' + area.label;
@@ -88,8 +88,8 @@ if (!area) {
       <div class="nx-dot"></div>
       <span class="nx-domain-code-txt">${d.code}</span>
       <span class="nx-domain-name-txt">${d.nome}</span>
-      <span class="nx-domain-score" style="color:#555;">—</span>
-      <div class="nx-status-icon"><i class="ti ti-circle-dashed" style="color:#555;font-size:16px;"></i></div>
+      <span class="nx-domain-score" style="color:#9CA3AF;">—</span>
+      <div class="nx-status-icon"><i class="ti ti-circle-dashed" style="color:#9CA3AF;font-size:16px;"></i></div>
     </a>`).join('');
 
   // Carrega badges de progresso do Supabase
