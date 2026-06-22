@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <div style="padding:12px 20px;text-align:center;">
-      <span id="nx-prof-since" style="font-size:10px;color:#707070;font-family:'Barlow',sans-serif;">nexor_med v1.0</span>
+      <span id="nx-prof-since" style="font-size:10px;color:#9CA3AF;font-family:'Barlow',sans-serif;">nexor_med v1.0</span>
     </div>
   `;
 
