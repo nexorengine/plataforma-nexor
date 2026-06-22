@@ -52,4 +52,6 @@ const TTS = (() => {
 })();
 
 // Espera vozes carregarem (necessário em alguns browsers)
-window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+if (window.speechSynthesis) {
+  window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+}

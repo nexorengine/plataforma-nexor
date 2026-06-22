@@ -73,12 +73,17 @@ const Auth = {
     if (!data) {
       const trialEnd = new Date();
       trialEnd.setDate(trialEnd.getDate() + 7);
-      await _sb.from('subscriptions').insert({
+      const { error: insErr } = await _sb.from('subscriptions').insert({
         user_id: userId,
         plan: 'trial',
         status: 'active',
         trial_ends_at: trialEnd.toISOString()
       });
+      // Ignora conflito de unicidade (race condition de duas abas simultâneas)
+      if (insErr && !insErr.code?.includes('23505')) {
+        console.warn('ensureTrial insert falhou:', insErr);
+        return;
+      }
       // Primeiro acesso — dispara email de boas-vindas
       try {
         const { data: { session } } = await _sb.auth.getSession();

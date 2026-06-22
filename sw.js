@@ -1,23 +1,8 @@
-const CACHE = 'nexor-med-v2';
-const ASSETS = [
-  '/',
-  '/index.html',
-  '/login.html',
-  '/c1-med.html',
-  '/c2-med.html',
-  '/c3-med.html',
-  '/c4a-flashcard.html',
-  '/c4b-quiz.html',
-  '/c4c-scorecard.html',
-  '/upgrade.html',
-  '/success.html',
+// Atualize esta versão a cada deploy para forçar renovação do cache
+const CACHE = 'nexor-med-v3-20260622';
+const STATIC_ASSETS = [
   '/assets/nx.css',
   '/assets/nx-glass.css',
-  '/assets/auth.js',
-  '/assets/catalog.js',
-  '/assets/notif.js',
-  '/assets/profile.js',
-  '/assets/tts.js',
   '/assets/icon-192.png',
   '/assets/icon-512.png',
   '/manifest.json'
@@ -25,7 +10,7 @@ const ASSETS = [
 
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting())
+    caches.open(CACHE).then(c => c.addAll(STATIC_ASSETS)).then(() => self.skipWaiting())
   );
 });
 
@@ -38,9 +23,27 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-  // Supabase e Stripe — sempre online, nunca cache
-  if (e.request.url.includes('supabase.co') || e.request.url.includes('stripe.com')) return;
+  const url = e.request.url;
 
+  // Supabase e Stripe — sempre online, nunca cache
+  if (url.includes('supabase.co') || url.includes('stripe.com')) return;
+
+  // HTML e JS — network first: sempre busca versão mais recente
+  // Se offline, cai no cache como fallback
+  if (e.request.destination === 'document' || url.endsWith('.js')) {
+    e.respondWith(
+      fetch(e.request)
+        .then(res => {
+          const clone = res.clone();
+          caches.open(CACHE).then(c => c.put(e.request, clone));
+          return res;
+        })
+        .catch(() => caches.match(e.request))
+    );
+    return;
+  }
+
+  // CSS e imagens — cache first (mudam raramente)
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request))
   );
