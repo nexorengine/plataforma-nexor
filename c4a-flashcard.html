@@ -198,8 +198,7 @@ function answer(ok){
         const {error:insErr}=await _sb.from('study_sessions').insert({
           user_id:session.user.id,
           area,dominio,modulo:'flashcard',
-          tipo:'flashcard',total:TOTAL,acertos:rights,
-          score:Math.round(rights/TOTAL*100)
+          tipo:'flashcard',total:TOTAL,acertos:rights
         });
         if(insErr)console.error('Erro insert flashcard:',insErr);
       }catch(e){console.warn('Erro ao salvar flashcard:',e);}

@@ -115,6 +115,7 @@
 (async () => {
   const s = await Auth.requireAuth();
   if (!s) return;
+  if (!await Auth.requireAccess()) return;
   await Auth.fillHeader();
 })();
 </script>

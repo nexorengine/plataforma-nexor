@@ -100,6 +100,7 @@ const _DEMO_AUTH = new URLSearchParams(location.search).has('demo');
   if (!_DEMO_AUTH) {
     const s = await Auth.requireAuth();
     if (!s) return;
+    if (!await Auth.requireAccess()) return;
   }
   await Auth.fillHeader();
 })();
@@ -142,7 +143,7 @@ function shuffleQ(q){const idx=q.opts.map((o,i)=>({t:o,i}));shuffle(idx);return{
 
 let sq=[],cur=0,sel=-1,confirmed=false,rights=0,wrongs=0;
 let TOTAL=50;
-const keys=['A','B','C','D'];
+const keys=['A','B','C','D','E'];
 
 async function loadQuiz(){
   const pad=qn.padStart(3,'0');
@@ -384,7 +385,8 @@ function openAula(){
     texto = q.exp;
     fonte = 'Explicação do gabarito';
   }
-  document.getElementById('aula-text').innerHTML = texto.split('\n\n').map(p =>
+  const textoFinal = texto || 'Explicação não disponível para esta questão.';
+  document.getElementById('aula-text').innerHTML = textoFinal.split('\n\n').map(p =>
     `<p style="font-size:14px;font-family:'Barlow',sans-serif;font-weight:300;color:#E0E0E0;line-height:1.65;margin-bottom:14px;">${p}</p>`
   ).join('');
   document.getElementById('aula-fonte').textContent = fonte;
