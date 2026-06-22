@@ -44,45 +44,35 @@ document.addEventListener('DOMContentLoaded', () => {
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:0 16px 16px;background:#060e1a;border:1px solid #1E2D44;border-radius:8px;padding:12px 8px;">
       <div style="text-align:center;">
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;" id="nx-stat-prog">${PROFILE.stats.progress}</div>
-        <div style="font-size:10px;color:#888;margin-top:2px;">progresso</div>
+        <div style="font-size:10px;color:#9CA3AF;margin-top:2px;">progresso</div>
       </div>
       <div style="text-align:center;border-left:1px solid #1E2D44;border-right:1px solid #1E2D44;">
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;display:flex;align-items:center;justify-content:center;gap:3px;">
           <i class="ti ti-flame" style="font-size:16px;color:#f97316;"></i><span id="nx-stat-streak">${PROFILE.stats.streak}</span>
         </div>
-        <div style="font-size:10px;color:#888;margin-top:2px;">dias seguidos</div>
+        <div style="font-size:10px;color:#9CA3AF;margin-top:2px;">dias seguidos</div>
       </div>
       <div style="text-align:center;">
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#0EA5E9;" id="nx-stat-doms">${PROFILE.stats.domains}</div>
-        <div style="font-size:10px;color:#888;margin-top:2px;">domínios</div>
+        <div style="font-size:10px;color:#9CA3AF;margin-top:2px;">domínios</div>
       </div>
     </div>
 
     <div style="border-top:1px solid #1E2D44;padding:8px 0;">
-      <div class="nx-profile-item nx-profile-soon" onclick="profileComingSoon()">
-        <i class="ti ti-chart-bar" style="color:#555;"></i>
-        <span style="color:#555;">Meu Progresso</span>
-        <span style="margin-left:auto;font-size:9px;font-family:'Barlow',sans-serif;background:#1E2D44;color:#555;padding:2px 6px;border-radius:3px;">em breve</span>
-      </div>
-      <div class="nx-profile-item nx-profile-soon" onclick="profileComingSoon()">
-        <i class="ti ti-trophy" style="color:#555;"></i>
-        <span style="color:#555;">Conquistas</span>
-        <span style="margin-left:auto;font-size:9px;font-family:'Barlow',sans-serif;background:#1E2D44;color:#555;padding:2px 6px;border-radius:3px;">em breve</span>
-      </div>
       <div class="nx-profile-item" onclick="openConfig()">
         <i class="ti ti-settings" style="color:#0EA5E9;"></i>
         <span>Configurações</span>
-        <i class="ti ti-chevron-right" style="margin-left:auto;color:#555;"></i>
+        <i class="ti ti-chevron-right" style="margin-left:auto;color:#9CA3AF;"></i>
       </div>
       <div class="nx-profile-item" onclick="openSupportWhatsApp()">
         <i class="ti ti-brand-whatsapp" style="color:#4ade80;"></i>
         <span>Suporte via WhatsApp</span>
-        <i class="ti ti-chevron-right" style="margin-left:auto;color:#555;"></i>
+        <i class="ti ti-chevron-right" style="margin-left:auto;color:#9CA3AF;"></i>
       </div>
       <div class="nx-profile-item" onclick="openSupportEmail()">
         <i class="ti ti-mail" style="color:#0EA5E9;"></i>
         <span>Suporte via E-mail</span>
-        <i class="ti ti-chevron-right" style="margin-left:auto;color:#555;"></i>
+        <i class="ti ti-chevron-right" style="margin-left:auto;color:#9CA3AF;"></i>
       </div>
     </div>
 
@@ -245,7 +235,7 @@ async function _loadProfileStats() {
     const {data:{session}} = await _sb.auth.getSession();
     if (!session) return;
     const {data:rows} = await _sb.from('study_sessions')
-      .select('created_at,dominio,tipo,score')
+      .select('created_at,dominio,modulo,tipo,score')
       .eq('user_id', session.user.id);
     if (!rows || !rows.length) return;
 
@@ -253,7 +243,7 @@ async function _loadProfileStats() {
     const dates = [...new Set(rows.map(r => new Date(r.created_at).toLocaleDateString('sv-SE')))];
     const streak = _calcStreak(dates);
 
-    // Domínios concluídos (quiz_1 + quiz_2 ≥ 50% cada)
+    // Melhor nota por domínio × módulo
     const byDom = {};
     rows.forEach(r => {
       if (r.tipo !== 'quiz') return;
@@ -261,23 +251,27 @@ async function _loadProfileStats() {
       const best = byDom[r.dominio][r.modulo] || 0;
       byDom[r.dominio][r.modulo] = Math.max(best, parseFloat(r.score) || 0);
     });
-    const dominiosConcluidos = Object.values(byDom)
-      .filter(m => (m.quiz_1 >= 50) && (m.quiz_2 >= 50)).length;
 
-    // Progresso global = domínios concluídos / total do catálogo
-    const totalDominios = typeof CATALOG !== 'undefined'
-      ? Object.values(CATALOG).reduce((acc, a) => acc + a.dominios.length, 0)
-      : 0;
-    const progresso = totalDominios > 0
-      ? Math.round(dominiosConcluidos / totalDominios * 100)
-      : 0;
+    // Domínios tocados (pelo menos um quiz feito)
+    const dominiosTocados = Object.keys(byDom).length;
+
+    // Progresso real = média de (best_q1 + best_q2)/2 em TODOS os 45 domínios
+    // Domínios não tocados contribuem 0
+    const TOTAL_DOMINIOS = 45;
+    let somaProgresso = 0;
+    Object.values(byDom).forEach(m => {
+      const q1 = m.quiz_1 || 0;
+      const q2 = m.quiz_2 || 0;
+      somaProgresso += (q1 + q2) / 2;
+    });
+    const progresso = Math.round(somaProgresso / TOTAL_DOMINIOS);
 
     // Atualiza DOM
     const streakEl   = document.getElementById('nx-stat-streak');
     const domsEl     = document.getElementById('nx-stat-doms');
     const progEl     = document.getElementById('nx-stat-prog');
     if (streakEl) streakEl.textContent = streak;
-    if (domsEl)   domsEl.textContent   = dominiosConcluidos;
+    if (domsEl)   domsEl.textContent   = dominiosTocados;
     if (progEl)   progEl.textContent   = progresso + '%';
   } catch(e) { console.warn('Erro ao carregar stats do perfil:', e); }
 }
