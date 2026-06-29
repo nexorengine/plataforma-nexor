@@ -765,7 +765,7 @@ const INFO = [
   function animateCounter(el) {
     const target = parseInt(el.dataset.counter, 10);
     const suffix = el.dataset.suffix || '';
-    const duration = 1400;
+    const duration = el.dataset.suffix === '%' ? 2200 : 1400;
     const start = performance.now();
     const update = (now) => {
       const p = Math.min((now - start) / duration, 1);
