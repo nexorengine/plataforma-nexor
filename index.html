@@ -459,11 +459,14 @@ body::before{
 <script>
 (function(){
   if(!window.matchMedia('(display-mode:standalone)').matches&&!navigator.standalone)return;
+  window.__nxSplashShowing=true;
   var s=document.getElementById('nx-splash');
   var v=document.getElementById('nx-splash-video');
   s.style.display='flex';
   function dismiss(){
     s.style.opacity='0';
+    window.__nxSplashShowing=false;
+    document.dispatchEvent(new Event('nxSplashDone'));
     setTimeout(function(){s.style.display='none';},400);
   }
   var fallback=setTimeout(dismiss,5000);
@@ -817,7 +820,14 @@ const INFO = [
       }
     });
   }, { root: scrollEl, threshold: 0.5 });
-  document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observe(el));
+  function startCounters(){
+    document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observe(el));
+  }
+  if (window.__nxSplashShowing) {
+    document.addEventListener('nxSplashDone', startCounters, { once: true });
+  } else {
+    startCounters();
+  }
 })();
 
 function focusEmail() {
