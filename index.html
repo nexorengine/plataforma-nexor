@@ -427,6 +427,29 @@ body::before{
     -webkit-backdrop-filter:none!important;
   }
 }
+
+/* ── IMAGENS DE FUNDO ESMAECIDAS — hero + CTA principal ── */
+.nx-hero{z-index:0;}
+.nx-hero::after{
+  content:'';position:absolute;left:-24px;right:-24px;top:-20px;bottom:-40px;z-index:-1;pointer-events:none;
+  background-image:url('assets/bg-hero.jpg');
+  background-size:cover;background-position:center 22%;
+  filter:grayscale(100%) contrast(1.2) brightness(0.9);
+  opacity:0.14;
+  mix-blend-mode:luminosity;
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 55%,transparent 95%);
+  mask-image:linear-gradient(to bottom,#000 0%,#000 55%,transparent 95%);
+}
+.c0-magic{position:relative;}
+.c0-magic::after{
+  content:'';position:absolute;inset:0;z-index:0;pointer-events:none;border-radius:8px;overflow:hidden;
+  background-image:url('assets/bg-cta.jpg');
+  background-size:cover;background-position:center 25%;
+  filter:grayscale(100%) contrast(1.15) brightness(0.8);
+  opacity:0.16;
+  mix-blend-mode:luminosity;
+}
+.c0-magic>*{position:relative;z-index:1;}
 </style>
 </head>
 <body>
