@@ -1,5 +1,5 @@
 // Atualize esta versão a cada deploy para forçar renovação do cache
-const CACHE = 'nexor-med-v3-20260622';
+const CACHE = 'nexor-med-v4-20260707';
 const STATIC_ASSETS = [
   '/assets/nx.css',
   '/assets/nx-glass.css',
