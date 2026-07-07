@@ -436,6 +436,105 @@ body::before{
   }
 }
 
+/* ══════════════════════════════════════════════
+   RESPONSIVE — Tablet (≥768px) e Desktop (≥1024px)
+   ══════════════════════════════════════════════ */
+
+/* Tablet: aumenta max-width e adiciona respiro */
+@media(min-width:768px){
+  .nx-body{
+    max-width:900px!important;
+    margin:0 auto!important;
+    padding:0 32px 48px!important;
+  }
+  .nx-header{padding:0 32px!important;}
+  .nx-scroll{display:flex;flex-direction:column;align-items:center;}
+
+  /* Features em 2 colunas */
+  .c0-features-row{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:12px!important;
+  }
+
+  /* Especialidades em 2 colunas */
+  .c0-specialties-grid{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:8px!important;
+  }
+
+  /* Testimonials em 2 colunas */
+  .c0-testimonials{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:10px!important;
+  }
+
+  /* Planos lado a lado */
+  .c0-plan-grid{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:12px!important;
+  }
+
+  /* Hero título maior */
+  .nx-hero-title{font-size:48px!important;}
+
+  /* Mockup com max-width */
+  .c0-mockup-wrap{max-width:580px;margin-left:auto;margin-right:auto;}
+}
+
+/* Desktop: layout 2 colunas com CTA sticky */
+@media(min-width:1024px){
+  body{width:100%!important;}
+  .nx-scroll{width:100%!important;align-items:stretch;}
+  .nx-body{
+    width:100%!important;
+    max-width:1140px!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) 380px!important;
+    grid-template-rows:auto!important;
+    column-gap:40px!important;
+    align-items:start!important;
+    padding:0 48px 64px!important;
+  }
+
+  /* Coluna esquerda — todo o conteúdo principal */
+  .c0-left{grid-column:1;min-width:0;}
+
+  /* Coluna direita — CTA sticky */
+  .c0-right{
+    grid-column:2;
+    position:sticky;
+    top:80px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+
+  /* Hero título editorial grande */
+  .nx-hero-title{font-size:58px!important;}
+
+  /* Features em 2 colunas */
+  .c0-features-row{grid-template-columns:1fr 1fr!important;}
+
+  /* Especialidades em 2 colunas */
+  .c0-specialties-grid{grid-template-columns:1fr 1fr!important;}
+
+  /* Testimonials em 3 colunas se couber, senão 2 */
+  .c0-testimonials{grid-template-columns:1fr 1fr!important;}
+
+  /* Planos lado a lado */
+  .c0-plan-grid{grid-template-columns:1fr 1fr!important;}
+
+  /* Mockup full width na coluna */
+  .c0-mockup-wrap{max-width:100%;}
+
+  /* Garantia dentro da coluna direita fica melhor */
+  .c0-right .c0-guarantee{margin-bottom:0;}
+}
+
 /* ── IMAGENS DE FUNDO ESMAECIDAS — hero + CTA principal ── */
 .nx-hero{z-index:0;}
 .nx-hero::after{
@@ -489,7 +588,7 @@ body::before{
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-
+<div class="c0-left">
   <div class="nx-hero">
     <div class="nx-hero-tag hero-reveal">4.500 questões · 5 especialidades · 7 dias grátis</div>
     <div class="nx-hero-title hero-reveal" style="transition-delay:120ms;">A prova<br>não cobra<br>o que você leu.<span>Cobra o que<br>você fixou.</span></div>
@@ -590,7 +689,7 @@ body::before{
   </div>
 
   <div class="nx-section-label sr">especialidades disponíveis</div>
-  <div class="sr" style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;transition-delay:80ms;">
+  <div class="c0-specialties-grid sr" style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;transition-delay:80ms;">
     <div class="nx-hover-card">
       <i class="ti ti-cut" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
       <div style="flex:1;">
@@ -725,6 +824,9 @@ body::before{
     <div class="c0-guarantee-text"><strong>Sem risco.</strong> 7 dias grátis sem cartão de crédito. Após o trial, sem fidelidade — cancele quando quiser. Pagamento seguro via Stripe.</div>
   </div>
 
+</div><!-- /c0-left -->
+<div class="c0-right">
+
   <div class="c0-magic sr" id="c0-magic-section" style="transition-delay:100ms;">
     <div class="c0-magic-title">Acesso instantâneo · sem senha</div>
     <div class="c0-magic-sub">Digite seu e-mail e receba o link de acesso. Nenhuma senha para lembrar.</div>
@@ -756,8 +858,9 @@ body::before{
     Dúvidas? <a href="https://wa.me/5547992544143?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20o%20nexor_med" target="_blank" rel="noopener" style="color:#0EA5E9;text-decoration:none;">Fale com o suporte</a>
   </div>
 
-</div>
-</div>
+</div><!-- /c0-right -->
+</div><!-- /nx-body -->
+</div><!-- /nx-scroll -->
 <div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
 <script src="assets/notif.js"></script>
 <script src="assets/profile.js"></script>
