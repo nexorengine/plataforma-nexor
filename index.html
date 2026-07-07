@@ -653,45 +653,92 @@ body::before{
     </div>
   </div>
 
-  <!-- P7: PRODUCT MOCKUP -->
-  <div class="nx-section-label sr">veja o produto em ação</div>
+  <!-- P7: PRODUCT MOCKUP INTERATIVO -->
+  <div class="nx-section-label sr">experimente agora</div>
   <div class="c0-mockup-wrap sr" style="transition-delay:80ms;">
-    <div class="c0-mockup-device">
+    <div class="c0-mockup-device" id="demo-device">
       <div class="c0-mockup-topbar">
         <span class="c0-mockup-badge-sm">Cirurgia Geral · Abdome Agudo</span>
-        <span class="c0-mockup-layer">F3 · Caso Clínico</span>
+        <span class="c0-mockup-layer">Quiz · Caso Clínico</span>
       </div>
       <div class="c0-mockup-body">
-        <div class="c0-mockup-face">Questão 14 de 50</div>
+        <div class="c0-mockup-face" id="demo-label">clique na alternativa correta</div>
         <div class="c0-mockup-q">Homem, 45 anos, dor em FID há 12h, febre 38,2°C e sinal de Blumberg positivo. Qual a conduta imediata?</div>
-        <div class="c0-mockup-opts">
-          <div class="c0-mockup-opt correct">
+        <div class="c0-mockup-opts" id="demo-opts">
+          <div class="c0-mockup-opt" data-idx="0" onclick="demoAnswer(0)" style="cursor:pointer;">
             <span class="c0-mockup-key">A</span>
             <span class="c0-mockup-optxt">Apendicectomia de urgência</span>
           </div>
-          <div class="c0-mockup-opt dimmed">
+          <div class="c0-mockup-opt" data-idx="1" onclick="demoAnswer(1)" style="cursor:pointer;">
             <span class="c0-mockup-key">B</span>
             <span class="c0-mockup-optxt">TC de abdome sem contraste</span>
           </div>
-          <div class="c0-mockup-opt dimmed">
+          <div class="c0-mockup-opt" data-idx="2" onclick="demoAnswer(2)" style="cursor:pointer;">
             <span class="c0-mockup-key">C</span>
             <span class="c0-mockup-optxt">Antibioticoterapia IV empírica</span>
           </div>
-          <div class="c0-mockup-opt dimmed">
+          <div class="c0-mockup-opt" data-idx="3" onclick="demoAnswer(3)" style="cursor:pointer;">
             <span class="c0-mockup-key">D</span>
             <span class="c0-mockup-optxt">Internação e observação clínica</span>
           </div>
         </div>
       </div>
-      <div class="c0-mockup-footer">
-        <span class="c0-mockup-correct-label">Correto — Blumberg = irritação peritoneal</span>
-        <div class="c0-mockup-prog">
-          <div class="c0-mockup-prog-bar"><div class="c0-mockup-prog-fill"></div></div>
-          <span class="c0-mockup-prog-txt">29/50</span>
-        </div>
+      <div class="c0-mockup-footer" id="demo-footer" style="display:none;">
+        <span class="c0-mockup-correct-label" id="demo-feedback"></span>
+        <button onclick="demoReset()" style="background:none;border:1px solid #1d3452;border-radius:4px;color:#9CA3AF;font-size:10px;font-family:'Barlow',sans-serif;padding:3px 10px;cursor:pointer;white-space:nowrap;">tentar novamente</button>
       </div>
     </div>
   </div>
+<style>
+.c0-mockup-opt{transition:background 200ms ease,border-color 200ms ease,opacity 200ms ease;}
+.c0-mockup-opt:hover:not(.correct):not(.wrong):not(.dimmed){background:rgba(14,165,233,0.08);border-color:rgba(14,165,233,0.3);}
+.c0-mockup-opt.wrong{background:#1a0707;border:2px solid #ef4444;}
+.c0-mockup-opt.wrong .c0-mockup-key{background:rgba(239,68,68,0.15);border-color:rgba(239,68,68,0.4);color:#ef4444;}
+.c0-mockup-opt.wrong .c0-mockup-optxt{color:#f87171;}
+</style>
+<script>
+function demoAnswer(idx){
+  if(document.getElementById('demo-opts').dataset.answered) return;
+  document.getElementById('demo-opts').dataset.answered = '1';
+  const correct = 0; // opção A é a correta
+  const opts = document.querySelectorAll('#demo-opts .c0-mockup-opt');
+  opts.forEach((el, i) => {
+    el.style.cursor = 'default';
+    el.onclick = null;
+    if(i === correct) el.classList.add('correct');
+    else if(i === idx && idx !== correct) el.classList.add('wrong');
+    else el.classList.add('dimmed');
+  });
+  const footer = document.getElementById('demo-footer');
+  const feedback = document.getElementById('demo-feedback');
+  const label = document.getElementById('demo-label');
+  if(idx === correct){
+    feedback.textContent = '✓ Correto — Blumberg positivo = irritação peritoneal → cirurgia imediata.';
+    feedback.style.color = '#4ade80';
+    label.textContent = 'você acertou!';
+    label.style.color = '#4ade80';
+  } else {
+    feedback.textContent = '✗ Incorreto — o gabarito é A. Blumberg indica peritonite: a TC atrasa a conduta e piora o prognóstico.';
+    feedback.style.color = '#f87171';
+    label.textContent = 'resposta incorreta';
+    label.style.color = '#f87171';
+  }
+  footer.style.display = 'flex';
+}
+function demoReset(){
+  const opts = document.querySelectorAll('#demo-opts .c0-mockup-opt');
+  opts.forEach((el, i) => {
+    el.className = 'c0-mockup-opt';
+    el.style.cursor = 'pointer';
+    el.onclick = () => demoAnswer(i);
+  });
+  delete document.getElementById('demo-opts').dataset.answered;
+  document.getElementById('demo-footer').style.display = 'none';
+  const label = document.getElementById('demo-label');
+  label.textContent = 'clique na alternativa correta';
+  label.style.color = '';
+}
+</script>
 
   <div class="nx-section-label sr">especialidades disponíveis</div>
   <div class="c0-specialties-grid sr" style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;transition-delay:80ms;">
