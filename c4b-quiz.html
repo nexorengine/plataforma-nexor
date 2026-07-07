@@ -1,6 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18306279891"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18306279891');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="manifest" href="manifest.json">
@@ -454,6 +462,22 @@ function ttsQuestao(btn){
 .nx-btn-primary:active{transform:scale(0.97)!important;}
 @keyframes nx-pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
 @media(prefers-reduced-motion:reduce){#q-text,#options,.nx-feedback{transition:none!important;opacity:1!important;transform:none!important;}}
+
+/* ── Tablet/Desktop ── */
+@media(min-width:768px){
+  body{width:100%!important;}
+  .nx-scroll{width:100%!important;}
+  .nx-body{width:100%!important;max-width:760px!important;margin:0 auto!important;padding:0 32px 48px!important;}
+  .nx-header{padding:0 32px!important;}
+  #q-text{font-size:17px!important;line-height:1.6!important;}
+  .nx-option{padding:14px 16px!important;}
+  .nx-opt-text{font-size:15px!important;}
+}
+@media(min-width:1024px){
+  body{width:100%!important;}
+  .nx-body{max-width:800px!important;padding:0 48px 64px!important;}
+  #q-text{font-size:18px!important;}
+}
 </style>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js");</script>
 </body>
