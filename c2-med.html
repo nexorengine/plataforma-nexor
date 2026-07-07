@@ -31,6 +31,20 @@
 .nx-domain-row{transition:transform 250ms cubic-bezier(0.16,1,0.3,1),box-shadow 250ms ease,background 200ms ease;}
 .nx-domain-row:hover{transform:translateX(4px);background:rgba(14,165,233,0.06)!important;}
 @media(prefers-reduced-motion:reduce){.hero-reveal,.sr{opacity:1!important;transform:none!important;filter:none!important;}}
+
+/* ── Tablet/Desktop ── */
+@media(min-width:768px){
+  body{width:100%!important;}
+  .nx-scroll{width:100%!important;}
+  .nx-body{width:100%!important;max-width:900px!important;margin:0 auto!important;padding:0 32px 48px!important;}
+  .nx-header{padding:0 32px!important;}
+  #lista-dominios{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important;}
+  .nx-domain-row:hover{transform:translateY(-2px) translateX(0)!important;}
+}
+@media(min-width:1024px){
+  body{width:100%!important;}
+  .nx-body{max-width:1100px!important;padding:0 48px 64px!important;}
+}
 </style>
 </head>
 <body>
