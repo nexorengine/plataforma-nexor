@@ -7,13 +7,15 @@ body{background:#070A0E;color:#F0F6FB;font-family:'Barlow',sans-serif;min-height
 
 /* GADGET MODE — desktop: app fica em janela 390px centralizada */
 @media(min-width:600px){
-  html{display:flex;justify-content:center;align-items:flex-start;min-height:100vh;background:radial-gradient(ellipse at center,#0d1a2e 0%,#070A0E 70%);}
-  body{width:390px;height:100dvh;flex-shrink:0;position:relative;overflow:hidden;box-shadow:0 0 0 1px #1d3452,0 8px 80px rgba(0,0,0,0.8),0 0 40px rgba(159,203,235,0.06);}
+  html{display:flex;justify-content:center;align-items:center;min-height:100vh;background:radial-gradient(circle,rgba(159,203,235,0.04) 1px,transparent 1px),radial-gradient(ellipse at center,#0d1a2e 0%,#070A0E 70%);background-size:24px 24px,100% 100%;}
+  body{width:390px;height:100dvh;max-height:900px;flex-shrink:0;position:relative;overflow:hidden;box-shadow:0 0 0 1px #1d3452,0 8px 80px rgba(0,0,0,0.8),0 0 60px rgba(159,203,235,0.12),0 0 0 1px rgba(252,163,17,0.08);}
   .nx-header{position:absolute !important;left:0 !important;right:0 !important;}
   .nx-footer{position:absolute !important;left:0 !important;right:0 !important;}
-  .nx-scroll{height:100dvh;overflow-y:auto;}
+  .nx-scroll{height:100%;overflow-y:auto;}
   .nx-notif-sheet,.nx-profile-sheet{position:absolute !important;left:0 !important;right:0 !important;}
-  #nx-notif-overlay,#nx-profile-overlay{position:absolute !important;}
+  #nx-notif-overlay,#nx-profile-overlay,#nx-aula-overlay{position:absolute !important;}
+  .nx-aula-sheet{position:absolute !important;left:0 !important;right:0 !important;max-height:calc(100% - 48px);}
+  #pwa-banner{left:calc(50% - 195px)!important;right:auto!important;width:390px!important;}
 }
 
 /* LAYOUT FIXO: header topo + footer base + body scroll */
@@ -42,12 +44,12 @@ body{background:#070A0E;color:#F0F6FB;font-family:'Barlow',sans-serif;min-height
 .nx-body{padding:20px;max-width:480px;margin:0 auto;}
 
 /* HERO */
-.nx-hero{margin-bottom:32px;}
-.nx-hero-tag{font-size:11px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;}
-.nx-hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;color:#F0F6FB;line-height:1.1;margin-bottom:12px;}
+.nx-hero{margin-bottom:18px;}
+.nx-hero-tag{font-size:9px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+.nx-hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F0F6FB;line-height:1.1;margin-bottom:7px;}
 .nx-hero-title span{color:#FCA311;}
-.nx-hero-sub{font-size:13px;font-weight:300;color:#AAA;line-height:1.6;margin-bottom:14px;}
-.nx-powered{font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#777;letter-spacing:0.06em;}
+.nx-hero-sub{font-size:11px;font-weight:300;color:#AAA;line-height:1.6;margin-bottom:8px;}
+.nx-powered{font-size:9px;font-family:'Barlow',sans-serif;font-weight:300;color:#777;letter-spacing:0.06em;}
 .nx-powered span{color:#FCA311;}
 
 /* SECTION LABEL */
@@ -275,6 +277,3 @@ body{background:#070A0E;color:#F0F6FB;font-family:'Barlow',sans-serif;min-height
 /* AULA SHEET */
 .nx-aula-sheet{position:fixed;bottom:48px;left:0;right:0;z-index:300;background:#16263B;border-top:1px solid #1d3452;border-radius:16px 16px 0 0;max-height:calc(88vh - 48px);overflow-y:auto;transform:translateY(calc(100% + 48px));transition:transform 0.3s cubic-bezier(0.32,0.72,0,1);padding-bottom:16px;}
 .nx-aula-sheet.open{transform:translateY(0);}
-@media(min-width:600px){
-  .nx-aula-sheet{position:absolute !important;left:0 !important;right:0 !important;}
-}
