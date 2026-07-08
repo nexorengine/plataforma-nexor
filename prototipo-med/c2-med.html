@@ -12,15 +12,14 @@
 .sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
 .sr.visible{opacity:1;transform:translateY(0);}
 .nx-domain-row{transition:transform 250ms cubic-bezier(0.16,1,0.3,1),box-shadow 250ms ease,background 200ms ease;}
-.nx-domain-row:hover{transform:translateX(4px);background:rgba(14,165,233,0.06)!important;}
+.nx-domain-row:hover{transform:translateX(4px);background:rgba(252,163,17,0.06)!important;}
 @media(prefers-reduced-motion:reduce){.hero-reveal,.sr{opacity:1!important;transform:none!important;filter:none!important;}}
 </style>
 </head>
 <body>
 <div class="nx-header">
   <a href="c1-med" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
-  <div class="nx-wordmark"><i class="ti ti-medical-cross" style="font-size:16px;color:#0EA5E9;flex-shrink:0;margin-right:6px;"></i>
-exor_<span>med</span></div>
+  <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
@@ -53,7 +52,7 @@ if (!area) {
     <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;">
       <div class="nx-icon-slot" style="width:52px;height:52px;flex-shrink:0;"><i class="ti ${area.icon}" style="font-size:24px;"></i></div>
       <div>
-        <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#0EA5E9;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px;">nexor_med · Especialidade</div>
+        <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px;">nexor_med · Especialidade</div>
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;color:#F0F6FB;line-height:1.1;">${area.label}</div>
         <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:2px;">${n} domínios · ${n*48} flashcards · ${n*100} questões</div>
       </div>
@@ -67,34 +66,14 @@ if (!area) {
   document.getElementById('sec-title').textContent = 'Domínios · ' + area.label;
   document.getElementById('sec-meta').textContent = n + ' domínios';
 
-  function getScore(slug) {
-    try {
-      const s1 = JSON.parse(localStorage.getItem('nexor_score_'+areaSlug+'_'+slug+'_q1') || 'null');
-      const s2 = JSON.parse(localStorage.getItem('nexor_score_'+areaSlug+'_'+slug+'_q2') || 'null');
-      const scores = [s1,s2].filter(Boolean).map(s=>s.pct);
-      return scores.length ? Math.max(...scores) : null;
-    } catch(e){ return null; }
-  }
-
-  document.getElementById('lista-dominios').innerHTML = area.dominios.map((d, i) => {
-    const best = getScore(d.slug);
-    const dotCls = best === null ? 'locked' : best >= 80 ? 'passed' : best >= 50 ? 'started' : 'failed';
-    const scoreColor = best === null ? '#555' : best >= 80 ? '#4ade80' : best >= 50 ? '#FCA311' : '#ef4444';
-    const scoreTxt = best !== null ? best+'%' : '—';
-    const iconCls = best === null ? 'ti-circle-dashed' : best >= 80 ? 'ti-circle-check' : best >= 50 ? 'ti-circle-half-2' : 'ti-circle-x';
-    const iconColor = best === null ? '#555' : best >= 80 ? '#4ade80' : best >= 50 ? '#FCA311' : '#ef4444';
-    const barW = best !== null ? best : 0;
-    return `<a href="c3-med#area=${areaSlug}&dominio=${d.slug}" class="nx-domain-row sr" style="transition-delay:${i*50}ms">
-      <div class="nx-dot ${dotCls}"></div>
+  document.getElementById('lista-dominios').innerHTML = area.dominios.map((d, i) => `
+    <a href="c3-med#area=${areaSlug}&dominio=${d.slug}" class="nx-domain-row sr" style="transition-delay:${i*50}ms">
+      <div class="nx-dot"></div>
       <span class="nx-domain-code-txt">${d.code}</span>
-      <div style="flex:1;min-width:0;">
-        <div class="nx-domain-name-txt">${d.nome}</div>
-        <div style="margin-top:5px;height:3px;background:#101c2c;border-radius:2px;"><div style="width:${barW}%;height:100%;background:${scoreColor};border-radius:2px;transition:width 0.6s ease;"></div></div>
-      </div>
-      <span class="nx-domain-score" style="color:${scoreColor};">${scoreTxt}</span>
-      <div class="nx-status-icon"><i class="ti ${iconCls}" style="color:${iconColor};font-size:16px;"></i></div>
-    </a>`;
-  }).join('');
+      <span class="nx-domain-name-txt">${d.nome}</span>
+      <span class="nx-domain-score" style="color:#555;">—</span>
+      <div class="nx-status-icon"><i class="ti ti-circle-dashed" style="color:#555;font-size:16px;"></i></div>
+    </a>`).join('');
 
   (function(){
     const scrollEl = document.querySelector('.nx-scroll');
@@ -107,7 +86,7 @@ if (!area) {
       entries.forEach(entry => {
         if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
       });
-    }, { root: null, threshold: 0.08 });
+    }, { root: scrollEl, threshold: 0.08 });
     document.querySelectorAll('.sr').forEach(el => io.observe(el));
   })();
 }

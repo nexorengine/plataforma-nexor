@@ -10,8 +10,7 @@
 <body>
 <div class="nx-header">
   <a href="c3-med" class="nx-back-btn" id="btn-back"><i class="ti ti-arrow-left"></i>voltar</a>
-  <div class="nx-wordmark"><i class="ti ti-medical-cross" style="font-size:16px;color:#0EA5E9;flex-shrink:0;margin-right:6px;"></i>
-exor_<span>med</span></div>
+  <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
@@ -20,11 +19,11 @@ exor_<span>med</span></div>
   <div class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
     <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="c4b-icon"><i class="ti ti-clipboard-check" style="font-size:18px;"></i></div>
     <div style="flex:1;min-width:0;">
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#0EA5E9;margin-bottom:2px;" id="c4b-label">—</div>
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;" id="c4b-label">—</div>
       <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;" id="c4b-nome">—</div>
       <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;" id="quiz-sub">Quiz 001 · 50 questões</div>
     </div>
-    <div id="timer-display" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#0EA5E9;letter-spacing:0.04em;flex-shrink:0;">60:00</div>
+    <div id="timer-display" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#FCA311;letter-spacing:0.04em;flex-shrink:0;">60:00</div>
   </div>
 
   <div class="nx-prog-row sr" style="transition-delay:100ms">
@@ -42,7 +41,7 @@ exor_<span>med</span></div>
 
   <div class="nx-options sr" id="options" style="transition-delay:220ms"></div>
 
-  <button class="nx-btn-primary nx-btn-confirm" id="btn-confirm" onclick="confirm_answer()" disabled>
+  <button class="nx-btn-primary" id="btn-confirm" onclick="confirm_answer()" disabled>
     CONFIRMAR
   </button>
   <div class="nx-feedback" id="feedback">
@@ -68,7 +67,7 @@ exor_<span>med</span></div>
     </div>
     <div style="padding:20px 20px 8px;" id="aula-text"></div>
     <div style="margin:0 20px;padding:12px 14px;background:#070A0E;border:1px solid rgba(255,255,255,0.35);border-radius:6px;">
-      <div style="font-size:10px;color:#0EA5E9;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Fonte</div>
+      <div style="font-size:10px;color:#FCA311;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Fonte</div>
       <div style="font-size:12px;color:#F0F6FB;font-family:'Barlow',sans-serif;font-weight:300;line-height:1.5;" id="aula-fonte"></div>
     </div>
     <div style="height:16px;"></div>
@@ -77,7 +76,7 @@ exor_<span>med</span></div>
   <div class="nx-stats-row">
     <div class="nx-stat"><div class="nx-stat-val" id="sr" style="color:#4ade80;">0</div><div class="nx-stat-lbl">acertos</div></div>
     <div class="nx-stat"><div class="nx-stat-val" id="sw" style="color:#f87171;">0</div><div class="nx-stat-lbl">erros</div></div>
-    <div class="nx-stat"><div class="nx-stat-val" id="sp" style="color:#0EA5E9;">—</div><div class="nx-stat-lbl">aproveitamento</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sp" style="color:#FCA311;">—</div><div class="nx-stat-lbl">aproveitamento</div></div>
   </div>
 </div>
 </div>
@@ -127,7 +126,7 @@ async function loadQuiz(){
   }catch(e){
     document.getElementById('q-label').textContent='conteúdo indisponível';
     document.getElementById('q-text').textContent='Não foi possível carregar este quiz no momento. Tente novamente mais tarde.';
-    document.getElementById('btn-confirm').className='nx-btn-primary nx-btn-confirm hidden';
+    document.getElementById('btn-confirm').className='nx-btn-primary hidden';
     document.getElementById('timer-display').textContent='—';
   }
 }
@@ -156,10 +155,10 @@ function updateTimerDisplay(){
     el.style.color = '#ef4444';
     el.style.animation = 'nx-pulse 1s ease-in-out infinite';
   } else if(timerSec <= 600){
-    el.style.color = '#0EA5E9';
+    el.style.color = '#FCA311';
     el.style.animation = '';
   } else {
-    el.style.color = '#0EA5E9';
+    el.style.color = '#FCA311';
     el.style.animation = '';
   }
 }
@@ -176,7 +175,7 @@ function timeUp(){
   document.getElementById('q-label').textContent = 'tempo esgotado';
   document.getElementById('q-text').textContent = 'O tempo da prova encerrou. Acertos: ' + rights + ' · Erros: ' + wrongs;
   document.getElementById('options').innerHTML = '';
-  document.getElementById('btn-confirm').className = 'nx-btn-primary nx-btn-confirm hidden';
+  document.getElementById('btn-confirm').className = 'nx-btn-primary hidden';
   document.getElementById('btn-next').className = 'nx-btn-next hidden';
   document.getElementById('feedback').className = 'nx-feedback wrong';
   document.getElementById('fb-label').textContent = 'TEMPO ESGOTADO';
@@ -218,7 +217,7 @@ function _doRender(){
     opts.appendChild(d);
   });
   document.getElementById('btn-confirm').disabled=true;
-  document.getElementById('btn-confirm').className='nx-btn-primary nx-btn-confirm';
+  document.getElementById('btn-confirm').className='nx-btn-primary';
   document.getElementById('feedback').className='nx-feedback';
   document.getElementById('btn-next').className='nx-btn-next hidden';
   document.getElementById('btn-aula').className='nx-btn-aula hidden';
@@ -272,7 +271,7 @@ function confirm_answer(){
   const fb=document.getElementById('feedback');
   fb.className='nx-feedback '+(ok?'correct':'wrong');
   document.getElementById('fb-label').textContent=ok?'CORRETO':'INCORRETO';
-  document.getElementById('btn-confirm').className='nx-btn-primary nx-btn-confirm hidden';
+  document.getElementById('btn-confirm').className='nx-btn-primary hidden';
   document.getElementById('btn-next').className='nx-btn-next';
   document.getElementById('btn-aula').className='nx-btn-aula';
   const tot=rights+wrongs;
@@ -287,11 +286,10 @@ function nextQ(){
     stopTimer();
     quizEnded=true;
     const pct=Math.round(rights/TOTAL*100);
-    try{ localStorage.setItem('nexor_score_'+area+'_'+dominio+'_q'+qn, JSON.stringify({pct,ts:Date.now()})); }catch(e){}
     document.getElementById('q-label').textContent='quiz concluído';
     document.getElementById('q-text').textContent='Aproveitamento: '+pct+'% · Acertos: '+rights+' · Erros: '+wrongs;
     document.getElementById('options').innerHTML='';
-    document.getElementById('btn-confirm').className='nx-btn-primary nx-btn-confirm hidden';
+    document.getElementById('btn-confirm').className='nx-btn-primary hidden';
     document.getElementById('btn-next').className='nx-btn-next hidden';
     document.getElementById('btn-aula').className='nx-btn-aula hidden';
     document.getElementById('feedback').className='nx-feedback';

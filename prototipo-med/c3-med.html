@@ -19,8 +19,7 @@
 <body>
 <div class="nx-header">
   <a id="btn-back" href="c2-med" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
-  <div class="nx-wordmark"><i class="ti ti-medical-cross" style="font-size:16px;color:#0EA5E9;flex-shrink:0;margin-right:6px;"></i>
-exor_<span>med</span></div>
+  <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
@@ -54,7 +53,7 @@ if (!dominio) {
     <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;">
       <div class="nx-icon-slot" style="width:52px;height:52px;flex-shrink:0;"><i class="ti ${area.icon}" style="font-size:22px;"></i></div>
       <div>
-        <div style="font-size:11px;font-family:'Barlow',sans-serif;font-weight:300;color:#0EA5E9;margin-bottom:3px;">${area.label} · ${dominio.code}</div>
+        <div style="font-size:11px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:3px;">${area.label} · ${dominio.code}</div>
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;color:#F0F6FB;line-height:1.1;">${dominio.nome}</div>
         <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:2px;">${area.label} — ${dominio.code}</div>
       </div>
@@ -107,7 +106,7 @@ if (!dominio) {
       entries.forEach(entry => {
         if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
       });
-    }, { root: null, threshold: 0.08 });
+    }, { root: scrollEl, threshold: 0.08 });
     document.querySelectorAll('.sr').forEach(el => io.observe(el));
   })();
 }

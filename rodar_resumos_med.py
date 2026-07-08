@@ -1,166 +1,185 @@
-#!/usr/bin/env python3
-"""
-Orquestrador de Resumos Analíticos — nexor_med
-Roda gerar_resumos_med.py domínio a domínio, pausando para confirmação entre cada um.
+﻿"""
+rodar_resumos_med.py -- Orquestrador automatico de Resumos Analiticos
+Roda gerar_resumos_med.py para todos os 90 arquivos (5 areas x 9 dominios x 2 quizzes).
+Pula automaticamente os que ja tem 50 resumos. Retoma os incompletos.
 
-Uso: python rodar_resumos_med.py
+Uso:
+    python rodar_resumos_med.py           # tudo
+    python rodar_resumos_med.py --area go # so GO
+    python rodar_resumos_med.py --status  # so mostra o que falta, sem rodar
 """
 
 import subprocess
 import sys
+import json
+import argparse
 from pathlib import Path
 
-SCRIPT = Path(__file__).parent / "gerar_resumos_med.py"
-PYTHON = sys.executable
+SCRIPT     = Path(__file__).parent / "gerar_resumos_med.py"
+PYTHON     = sys.executable
+RESUMOS    = Path(__file__).parent / "prototipo-med" / "content" / "resumos"
+META_TOTAL = 50
 
-# Sequência completa: CG → GO → CM → PED → PREV
-# Cada entrada: (label, args_do_script)
-SEQUENCIA = [
-    # ── CIRURGIA GERAL ──────────────────────────────────────────────────────
-    ("CG D1 · Abdome Agudo               — quiz 001", ["--area","cirurgia_geral","--cg-dominio","1","--quiz","001"]),
-    ("CG D1 · Abdome Agudo               — quiz 002", ["--area","cirurgia_geral","--cg-dominio","1","--quiz","002"]),
-    ("CG D2 · Hepatobiliar e Pâncreas    — quiz 001", ["--area","cirurgia_geral","--cg-dominio","2","--quiz","001"]),
-    ("CG D2 · Hepatobiliar e Pâncreas    — quiz 002", ["--area","cirurgia_geral","--cg-dominio","2","--quiz","002"]),
-    ("CG D3 · Trauma e Urgência          — quiz 001", ["--area","cirurgia_geral","--cg-dominio","3","--quiz","001"]),
-    ("CG D3 · Trauma e Urgência          — quiz 002", ["--area","cirurgia_geral","--cg-dominio","3","--quiz","002"]),
-    ("CG D4 · Parede Abdominal e Hérnias — quiz 001", ["--area","cirurgia_geral","--cg-dominio","4","--quiz","001"]),
-    ("CG D4 · Parede Abdominal e Hérnias — quiz 002", ["--area","cirurgia_geral","--cg-dominio","4","--quiz","002"]),
-    ("CG D5 · Esôfago e Estômago         — quiz 001", ["--area","cirurgia_geral","--cg-dominio","5","--quiz","001"]),
-    ("CG D5 · Esôfago e Estômago         — quiz 002", ["--area","cirurgia_geral","--cg-dominio","5","--quiz","002"]),
-    ("CG D6 · Intestino Delgado e Cólon  — quiz 001", ["--area","cirurgia_geral","--cg-dominio","6","--quiz","001"]),
-    ("CG D6 · Intestino Delgado e Cólon  — quiz 002", ["--area","cirurgia_geral","--cg-dominio","6","--quiz","002"]),
-    ("CG D7 · Doenças Anorretais         — quiz 001", ["--area","cirurgia_geral","--cg-dominio","7","--quiz","001"]),
-    ("CG D7 · Doenças Anorretais         — quiz 002", ["--area","cirurgia_geral","--cg-dominio","7","--quiz","002"]),
-    ("CG D8 · Oncologia Cirúrgica        — quiz 001", ["--area","cirurgia_geral","--cg-dominio","8","--quiz","001"]),
-    ("CG D8 · Oncologia Cirúrgica        — quiz 002", ["--area","cirurgia_geral","--cg-dominio","8","--quiz","002"]),
-    ("CG D9 · Cirurgia Minimamente Inv.  — quiz 001", ["--area","cirurgia_geral","--cg-dominio","9","--quiz","001"]),
-    ("CG D9 · Cirurgia Minimamente Inv.  — quiz 002", ["--area","cirurgia_geral","--cg-dominio","9","--quiz","002"]),
-
-    # ── GINECOLOGIA & OBSTETRÍCIA ────────────────────────────────────────────
-    ("GO · Pré-Natal                     — quiz 001", ["--area","gineco_obstetricia","--dominio","pre_natal","--quiz","001"]),
-    ("GO · Pré-Natal                     — quiz 002", ["--area","gineco_obstetricia","--dominio","pre_natal","--quiz","002"]),
-    ("GO · Parto Normal                  — quiz 001", ["--area","gineco_obstetricia","--dominio","parto_normal","--quiz","001"]),
-    ("GO · Parto Normal                  — quiz 002", ["--area","gineco_obstetricia","--dominio","parto_normal","--quiz","002"]),
-    ("GO · Complicações Obstétricas      — quiz 001", ["--area","gineco_obstetricia","--dominio","complicacoes_obstetricas","--quiz","001"]),
-    ("GO · Complicações Obstétricas      — quiz 002", ["--area","gineco_obstetricia","--dominio","complicacoes_obstetricas","--quiz","002"]),
-    ("GO · Puerpério e Aleitamento       — quiz 001", ["--area","gineco_obstetricia","--dominio","puerperio_aleitamento","--quiz","001"]),
-    ("GO · Puerpério e Aleitamento       — quiz 002", ["--area","gineco_obstetricia","--dominio","puerperio_aleitamento","--quiz","002"]),
-    ("GO · Ginecologia Geral             — quiz 001", ["--area","gineco_obstetricia","--dominio","ginecologia_geral","--quiz","001"]),
-    ("GO · Ginecologia Geral             — quiz 002", ["--area","gineco_obstetricia","--dominio","ginecologia_geral","--quiz","002"]),
-    ("GO · Infecções Genitais e DSTs     — quiz 001", ["--area","gineco_obstetricia","--dominio","infeccoes_genitais_dsts","--quiz","001"]),
-    ("GO · Infecções Genitais e DSTs     — quiz 002", ["--area","gineco_obstetricia","--dominio","infeccoes_genitais_dsts","--quiz","002"]),
-    ("GO · Doenças Uterinas e Anexiais   — quiz 001", ["--area","gineco_obstetricia","--dominio","doencas_uterinas_anexiais","--quiz","001"]),
-    ("GO · Doenças Uterinas e Anexiais   — quiz 002", ["--area","gineco_obstetricia","--dominio","doencas_uterinas_anexiais","--quiz","002"]),
-    ("GO · Câncer Ginecológico           — quiz 001", ["--area","gineco_obstetricia","--dominio","cancer_ginecologico","--quiz","001"]),
-    ("GO · Câncer Ginecológico           — quiz 002", ["--area","gineco_obstetricia","--dominio","cancer_ginecologico","--quiz","002"]),
-    ("GO · Uroginecologia e Piso Pélvico — quiz 001", ["--area","gineco_obstetricia","--dominio","uroginecologia_piso_pelvico","--quiz","001"]),
-    ("GO · Uroginecologia e Piso Pélvico — quiz 002", ["--area","gineco_obstetricia","--dominio","uroginecologia_piso_pelvico","--quiz","002"]),
-
-    # ── CLÍNICA MÉDICA ───────────────────────────────────────────────────────
-    ("CM · Cardiologia                   — quiz 001", ["--area","clinica_medica","--dominio","cardiologia","--quiz","001"]),
-    ("CM · Cardiologia                   — quiz 002", ["--area","clinica_medica","--dominio","cardiologia","--quiz","002"]),
-    ("CM · Pneumologia                   — quiz 001", ["--area","clinica_medica","--dominio","pneumologia","--quiz","001"]),
-    ("CM · Pneumologia                   — quiz 002", ["--area","clinica_medica","--dominio","pneumologia","--quiz","002"]),
-    ("CM · Gastroenterologia             — quiz 001", ["--area","clinica_medica","--dominio","gastroenterologia","--quiz","001"]),
-    ("CM · Gastroenterologia             — quiz 002", ["--area","clinica_medica","--dominio","gastroenterologia","--quiz","002"]),
-    ("CM · Nefrologia                    — quiz 001", ["--area","clinica_medica","--dominio","nefrologia","--quiz","001"]),
-    ("CM · Nefrologia                    — quiz 002", ["--area","clinica_medica","--dominio","nefrologia","--quiz","002"]),
-    ("CM · Endocrinologia                — quiz 001", ["--area","clinica_medica","--dominio","endocrinologia","--quiz","001"]),
-    ("CM · Endocrinologia                — quiz 002", ["--area","clinica_medica","--dominio","endocrinologia","--quiz","002"]),
-    ("CM · Hematologia                   — quiz 001", ["--area","clinica_medica","--dominio","hematologia","--quiz","001"]),
-    ("CM · Hematologia                   — quiz 002", ["--area","clinica_medica","--dominio","hematologia","--quiz","002"]),
-    ("CM · Reumatologia                  — quiz 001", ["--area","clinica_medica","--dominio","reumatologia","--quiz","001"]),
-    ("CM · Reumatologia                  — quiz 002", ["--area","clinica_medica","--dominio","reumatologia","--quiz","002"]),
-    ("CM · Infectologia                  — quiz 001", ["--area","clinica_medica","--dominio","infectologia","--quiz","001"]),
-    ("CM · Infectologia                  — quiz 002", ["--area","clinica_medica","--dominio","infectologia","--quiz","002"]),
-    ("CM · Neurologia                    — quiz 001", ["--area","clinica_medica","--dominio","neurologia","--quiz","001"]),
-    ("CM · Neurologia                    — quiz 002", ["--area","clinica_medica","--dominio","neurologia","--quiz","002"]),
-
-    # ── PEDIATRIA ────────────────────────────────────────────────────────────
-    ("PED · Neonatologia                 — quiz 001", ["--area","pediatria","--dominio","neonatologia","--quiz","001"]),
-    ("PED · Neonatologia                 — quiz 002", ["--area","pediatria","--dominio","neonatologia","--quiz","002"]),
-    ("PED · Puericultura                 — quiz 001", ["--area","pediatria","--dominio","puericultura","--quiz","001"]),
-    ("PED · Puericultura                 — quiz 002", ["--area","pediatria","--dominio","puericultura","--quiz","002"]),
-    ("PED · Pneumologia Pediátrica       — quiz 001", ["--area","pediatria","--dominio","pneumologia_ped","--quiz","001"]),
-    ("PED · Pneumologia Pediátrica       — quiz 002", ["--area","pediatria","--dominio","pneumologia_ped","--quiz","002"]),
-    ("PED · Cardiologia Pediátrica       — quiz 001", ["--area","pediatria","--dominio","cardio_ped","--quiz","001"]),
-    ("PED · Cardiologia Pediátrica       — quiz 002", ["--area","pediatria","--dominio","cardio_ped","--quiz","002"]),
-    ("PED · Gastroenterologia Pediátrica — quiz 001", ["--area","pediatria","--dominio","gastro_ped","--quiz","001"]),
-    ("PED · Gastroenterologia Pediátrica — quiz 002", ["--area","pediatria","--dominio","gastro_ped","--quiz","002"]),
-    ("PED · Infectologia Pediátrica      — quiz 001", ["--area","pediatria","--dominio","infectologia_ped","--quiz","001"]),
-    ("PED · Infectologia Pediátrica      — quiz 002", ["--area","pediatria","--dominio","infectologia_ped","--quiz","002"]),
-    ("PED · Endocrinologia Pediátrica    — quiz 001", ["--area","pediatria","--dominio","endocrinologia_ped","--quiz","001"]),
-    ("PED · Endocrinologia Pediátrica    — quiz 002", ["--area","pediatria","--dominio","endocrinologia_ped","--quiz","002"]),
-    ("PED · Hematologia e Oncologia Ped  — quiz 001", ["--area","pediatria","--dominio","hematologia_onco_ped","--quiz","001"]),
-    ("PED · Hematologia e Oncologia Ped  — quiz 002", ["--area","pediatria","--dominio","hematologia_onco_ped","--quiz","002"]),
-    ("PED · Emergências Pediátricas      — quiz 001", ["--area","pediatria","--dominio","emergencias_ped","--quiz","001"]),
-    ("PED · Emergências Pediátricas      — quiz 002", ["--area","pediatria","--dominio","emergencias_ped","--quiz","002"]),
-
-    # ── MEDICINA PREVENTIVA ──────────────────────────────────────────────────
-    ("PREV · Epidemiologia Geral         — quiz 001", ["--area","medicina_preventiva","--dominio","epidemiologia_geral","--quiz","001"]),
-    ("PREV · Epidemiologia Geral         — quiz 002", ["--area","medicina_preventiva","--dominio","epidemiologia_geral","--quiz","002"]),
-    ("PREV · Vigilância Epidemiológica   — quiz 001", ["--area","medicina_preventiva","--dominio","vigilancia_epidemiologica","--quiz","001"]),
-    ("PREV · Vigilância Epidemiológica   — quiz 002", ["--area","medicina_preventiva","--dominio","vigilancia_epidemiologica","--quiz","002"]),
-    ("PREV · Imunização e PNI            — quiz 001", ["--area","medicina_preventiva","--dominio","imunizacao_pni","--quiz","001"]),
-    ("PREV · Imunização e PNI            — quiz 002", ["--area","medicina_preventiva","--dominio","imunizacao_pni","--quiz","002"]),
-    ("PREV · Bioestatística              — quiz 001", ["--area","medicina_preventiva","--dominio","bioestatistica","--quiz","001"]),
-    ("PREV · Bioestatística              — quiz 002", ["--area","medicina_preventiva","--dominio","bioestatistica","--quiz","002"]),
-    ("PREV · Saúde da Família e APS      — quiz 001", ["--area","medicina_preventiva","--dominio","saude_familia_aps","--quiz","001"]),
-    ("PREV · Saúde da Família e APS      — quiz 002", ["--area","medicina_preventiva","--dominio","saude_familia_aps","--quiz","002"]),
-    ("PREV · Política Nacional e SUS     — quiz 001", ["--area","medicina_preventiva","--dominio","politica_nacional_sus","--quiz","001"]),
-    ("PREV · Política Nacional e SUS     — quiz 002", ["--area","medicina_preventiva","--dominio","politica_nacional_sus","--quiz","002"]),
-    ("PREV · Saúde Ambiental e Ocup.     — quiz 001", ["--area","medicina_preventiva","--dominio","saude_ambiental_ocupacional","--quiz","001"]),
-    ("PREV · Saúde Ambiental e Ocup.     — quiz 002", ["--area","medicina_preventiva","--dominio","saude_ambiental_ocupacional","--quiz","002"]),
-    ("PREV · DCNT e Promoção da Saúde    — quiz 001", ["--area","medicina_preventiva","--dominio","dcnt_promocao_saude","--quiz","001"]),
-    ("PREV · DCNT e Promoção da Saúde    — quiz 002", ["--area","medicina_preventiva","--dominio","dcnt_promocao_saude","--quiz","002"]),
-    ("PREV · Bioética e Ética Médica     — quiz 001", ["--area","medicina_preventiva","--dominio","bioetica_etica_medica","--quiz","001"]),
-    ("PREV · Bioética e Ética Médica     — quiz 002", ["--area","medicina_preventiva","--dominio","bioetica_etica_medica","--quiz","002"]),
+FILA = [
+    ("cirurgia_geral", None, 1, "001", "CG D1 Abdome Agudo q001"),
+    ("cirurgia_geral", None, 1, "002", "CG D1 Abdome Agudo q002"),
+    ("cirurgia_geral", None, 2, "001", "CG D2 Hepatobiliar q001"),
+    ("cirurgia_geral", None, 2, "002", "CG D2 Hepatobiliar q002"),
+    ("cirurgia_geral", None, 3, "001", "CG D3 Trauma q001"),
+    ("cirurgia_geral", None, 3, "002", "CG D3 Trauma q002"),
+    ("cirurgia_geral", None, 4, "001", "CG D4 Perioperatorio q001"),
+    ("cirurgia_geral", None, 4, "002", "CG D4 Perioperatorio q002"),
+    ("cirurgia_geral", None, 5, "001", "CG D5 Hernias q001"),
+    ("cirurgia_geral", None, 5, "002", "CG D5 Hernias q002"),
+    ("cirurgia_geral", None, 6, "001", "CG D6 TGI Superior q001"),
+    ("cirurgia_geral", None, 6, "002", "CG D6 TGI Superior q002"),
+    ("cirurgia_geral", None, 7, "001", "CG D7 TGI Inferior q001"),
+    ("cirurgia_geral", None, 7, "002", "CG D7 TGI Inferior q002"),
+    ("cirurgia_geral", None, 8, "001", "CG D8 Cirurgia Vascular q001"),
+    ("cirurgia_geral", None, 8, "002", "CG D8 Cirurgia Vascular q002"),
+    ("cirurgia_geral", None, 9, "001", "CG D9 Queimaduras q001"),
+    ("cirurgia_geral", None, 9, "002", "CG D9 Queimaduras q002"),
+    ("gineco_obstetricia", "pre_natal",                   None, "001", "GO pre_natal q001"),
+    ("gineco_obstetricia", "pre_natal",                   None, "002", "GO pre_natal q002"),
+    ("gineco_obstetricia", "parto_normal",                None, "001", "GO parto_normal q001"),
+    ("gineco_obstetricia", "parto_normal",                None, "002", "GO parto_normal q002"),
+    ("gineco_obstetricia", "puerperio_aleitamento",       None, "001", "GO puerperio q001"),
+    ("gineco_obstetricia", "puerperio_aleitamento",       None, "002", "GO puerperio q002"),
+    ("gineco_obstetricia", "complicacoes_obstetricas",    None, "001", "GO complicacoes q001"),
+    ("gineco_obstetricia", "complicacoes_obstetricas",    None, "002", "GO complicacoes q002"),
+    ("gineco_obstetricia", "ginecologia_geral",           None, "001", "GO ginecologia q001"),
+    ("gineco_obstetricia", "ginecologia_geral",           None, "002", "GO ginecologia q002"),
+    ("gineco_obstetricia", "doencas_uterinas_anexiais",   None, "001", "GO doencas_uterinas q001"),
+    ("gineco_obstetricia", "doencas_uterinas_anexiais",   None, "002", "GO doencas_uterinas q002"),
+    ("gineco_obstetricia", "infeccoes_genitais_dsts",     None, "001", "GO infeccoes q001"),
+    ("gineco_obstetricia", "infeccoes_genitais_dsts",     None, "002", "GO infeccoes q002"),
+    ("gineco_obstetricia", "cancer_ginecologico",         None, "001", "GO cancer q001"),
+    ("gineco_obstetricia", "cancer_ginecologico",         None, "002", "GO cancer q002"),
+    ("gineco_obstetricia", "uroginecologia_piso_pelvico", None, "001", "GO uroginecologia q001"),
+    ("gineco_obstetricia", "uroginecologia_piso_pelvico", None, "002", "GO uroginecologia q002"),
+    ("clinica_medica", "cardiologia",       None, "001", "CM cardiologia q001"),
+    ("clinica_medica", "cardiologia",       None, "002", "CM cardiologia q002"),
+    ("clinica_medica", "pneumologia",       None, "001", "CM pneumologia q001"),
+    ("clinica_medica", "pneumologia",       None, "002", "CM pneumologia q002"),
+    ("clinica_medica", "gastroenterologia", None, "001", "CM gastroenterologia q001"),
+    ("clinica_medica", "gastroenterologia", None, "002", "CM gastroenterologia q002"),
+    ("clinica_medica", "nefrologia",        None, "001", "CM nefrologia q001"),
+    ("clinica_medica", "nefrologia",        None, "002", "CM nefrologia q002"),
+    ("clinica_medica", "endocrinologia",    None, "001", "CM endocrinologia q001"),
+    ("clinica_medica", "endocrinologia",    None, "002", "CM endocrinologia q002"),
+    ("clinica_medica", "hematologia",       None, "001", "CM hematologia q001"),
+    ("clinica_medica", "hematologia",       None, "002", "CM hematologia q002"),
+    ("clinica_medica", "reumatologia",      None, "001", "CM reumatologia q001"),
+    ("clinica_medica", "reumatologia",      None, "002", "CM reumatologia q002"),
+    ("clinica_medica", "infectologia",      None, "001", "CM infectologia q001"),
+    ("clinica_medica", "infectologia",      None, "002", "CM infectologia q002"),
+    ("clinica_medica", "neurologia",        None, "001", "CM neurologia q001"),
+    ("clinica_medica", "neurologia",        None, "002", "CM neurologia q002"),
+    ("pediatria", "neonatologia",          None, "001", "PED neonatologia q001"),
+    ("pediatria", "neonatologia",          None, "002", "PED neonatologia q002"),
+    ("pediatria", "puericultura",          None, "001", "PED puericultura q001"),
+    ("pediatria", "puericultura",          None, "002", "PED puericultura q002"),
+    ("pediatria", "pneumologia_ped",       None, "001", "PED pneumologia q001"),
+    ("pediatria", "pneumologia_ped",       None, "002", "PED pneumologia q002"),
+    ("pediatria", "gastro_ped",            None, "001", "PED gastro q001"),
+    ("pediatria", "gastro_ped",            None, "002", "PED gastro q002"),
+    ("pediatria", "infectologia_ped",      None, "001", "PED infectologia q001"),
+    ("pediatria", "infectologia_ped",      None, "002", "PED infectologia q002"),
+    ("pediatria", "cardio_ped",            None, "001", "PED cardio q001"),
+    ("pediatria", "cardio_ped",            None, "002", "PED cardio q002"),
+    ("pediatria", "endocrinologia_ped",    None, "001", "PED endocrinologia q001"),
+    ("pediatria", "endocrinologia_ped",    None, "002", "PED endocrinologia q002"),
+    ("pediatria", "hematologia_onco_ped",  None, "001", "PED hematologia q001"),
+    ("pediatria", "hematologia_onco_ped",  None, "002", "PED hematologia q002"),
+    ("pediatria", "emergencias_ped",       None, "001", "PED emergencias q001"),
+    ("pediatria", "emergencias_ped",       None, "002", "PED emergencias q002"),
+    ("medicina_preventiva", "epidemiologia_geral",         None, "001", "PREV epidemiologia q001"),
+    ("medicina_preventiva", "epidemiologia_geral",         None, "002", "PREV epidemiologia q002"),
+    ("medicina_preventiva", "vigilancia_epidemiologica",   None, "001", "PREV vigilancia q001"),
+    ("medicina_preventiva", "vigilancia_epidemiologica",   None, "002", "PREV vigilancia q002"),
+    ("medicina_preventiva", "imunizacao_pni",              None, "001", "PREV imunizacao q001"),
+    ("medicina_preventiva", "imunizacao_pni",              None, "002", "PREV imunizacao q002"),
+    ("medicina_preventiva", "bioestatistica",              None, "001", "PREV bioestatistica q001"),
+    ("medicina_preventiva", "bioestatistica",              None, "002", "PREV bioestatistica q002"),
+    ("medicina_preventiva", "saude_familia_aps",           None, "001", "PREV saude_familia q001"),
+    ("medicina_preventiva", "saude_familia_aps",           None, "002", "PREV saude_familia q002"),
+    ("medicina_preventiva", "politica_nacional_sus",       None, "001", "PREV politica_sus q001"),
+    ("medicina_preventiva", "politica_nacional_sus",       None, "002", "PREV politica_sus q002"),
+    ("medicina_preventiva", "saude_ambiental_ocupacional", None, "001", "PREV saude_ambiental q001"),
+    ("medicina_preventiva", "saude_ambiental_ocupacional", None, "002", "PREV saude_ambiental q002"),
+    ("medicina_preventiva", "dcnt_promocao_saude",         None, "001", "PREV dcnt q001"),
+    ("medicina_preventiva", "dcnt_promocao_saude",         None, "002", "PREV dcnt q002"),
+    ("medicina_preventiva", "bioetica_etica_medica",       None, "001", "PREV bioetica q001"),
+    ("medicina_preventiva", "bioetica_etica_medica",       None, "002", "PREV bioetica q002"),
 ]
 
-TOTAL = len(SEQUENCIA)
+CG_SLUGS = {
+    1: "abdome_agudo", 2: "hepatobiliar_pancreas", 3: "trauma_urgencia",
+    4: "perioperatorio", 5: "hernias_parede_abdominal", 6: "trato_digestivo_superior",
+    7: "trato_digestivo_inferior_coloproctologia", 8: "cirurgia_vascular", 9: "queimaduras",
+}
 
-def separador(label, idx):
-    print(f"\n{'─'*64}")
-    print(f"  [{idx:02d}/{TOTAL}]  {label}")
-    print(f"{'─'*64}")
+def slug_de(area, dominio, cg_idx):
+    return CG_SLUGS.get(cg_idx, f"d{cg_idx}") if area == "cirurgia_geral" else dominio
 
-def perguntar(proximo_label, idx):
-    print(f"\n  Próximo: [{idx+1:02d}/{TOTAL}]  {proximo_label}")
-    while True:
-        resp = input("  Continuar? (s = sim / n = parar agora): ").strip().lower()
-        if resp in ("s", "sim", "y", "yes", ""):
-            return True
-        if resp in ("n", "nao", "não", "no"):
-            return False
+def count_resumos(area, slug, quiz):
+    path = RESUMOS / area / slug / f"quiz_{quiz}_resumos.json"
+    if not path.exists():
+        return 0
+    try:
+        return len(json.loads(path.read_text(encoding="utf-8")).get("resumos", []))
+    except:
+        return 0
+
+def rodar(area, dominio, cg_idx, quiz):
+    cmd = [PYTHON, str(SCRIPT), "--area", area, "--quiz", quiz]
+    cmd += ["--cg-dominio", str(cg_idx)] if area == "cirurgia_geral" else ["--dominio", dominio]
+    return subprocess.run(cmd, cwd=str(SCRIPT.parent)).returncode
 
 def main():
-    print(f"\n{'='*64}")
-    print(f"  nexor_med — Orquestrador de Resumos Analíticos")
-    print(f"  Total de lotes: {TOTAL}")
-    print(f"{'='*64}")
-    print(f"\n  Pressione ENTER para iniciar o primeiro domínio.")
-    input("  >> ")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--area", default="all", help="all | cg | go | cm | ped | prev")
+    parser.add_argument("--status", action="store_true", help="So mostra status, nao roda")
+    args = parser.parse_args()
 
-    for i, (label, args) in enumerate(SEQUENCIA, 1):
-        separador(label, i)
-        cmd = [PYTHON, str(SCRIPT)] + args
-        result = subprocess.run(cmd, cwd=str(SCRIPT.parent))
+    mapa = {"cg":"cirurgia_geral","go":"gineco_obstetricia",
+            "cm":"clinica_medica","ped":"pediatria","prev":"medicina_preventiva"}
+    area_filtro = mapa.get(args.area.lower())
+    fila = [(a,d,ci,q,l) for a,d,ci,q,l in FILA
+            if args.area.lower() == "all" or a == area_filtro]
 
-        if result.returncode != 0:
-            print(f"\n  AVISO: o script retornou código {result.returncode}.")
+    counts = [(count_resumos(a, slug_de(a,d,ci), q), l) for a,d,ci,q,l in fila]
+    completos = sum(1 for n,_ in counts if n >= META_TOTAL)
 
-        if i < TOTAL:
-            proxima_label = SEQUENCIA[i][0]
-            if not perguntar(proxima_label, i):
-                print(f"\n  Interrompido após [{i:02d}/{TOTAL}] {label}")
-                print(f"  Para retomar, rode novamente — o progresso está salvo.\n")
-                break
+    print(f"\n{'='*60}")
+    print(f"  nexor_med -- Resumos Analiticos (Opus)")
+    print(f"  Total: {len(fila)} | Completos: {completos} | Pendentes: {len(fila)-completos}")
+    print(f"{'='*60}\n")
+
+    if args.status:
+        for (a,d,ci,q,label),(n,_) in zip(fila, counts):
+            print(f"  {'OK' if n>=META_TOTAL else f'{n:2d}/50':>5}  {label}")
+        return
+
+    rodados = erros = 0
+    for i, (a,d,ci,q,label) in enumerate(fila, 1):
+        slug = slug_de(a,d,ci)
+        n = count_resumos(a, slug, q)
+        if n >= META_TOTAL:
+            print(f"  [{i:02d}/{len(fila)}] SKIP  {label}")
+            continue
+        sufixo = f" (retomando {n}/50)" if n > 0 else ""
+        print(f"\n  [{i:02d}/{len(fila)}] START {label}{sufixo}")
+        rc = rodar(a, d, ci, q)
+        if rc != 0:
+            print(f"  ERRO exit={rc}")
+            erros += 1
         else:
-            print(f"\n{'='*64}")
-            print(f"  TODOS OS {TOTAL} DOMÍNIOS CONCLUÍDOS!")
-            print(f"  Resumos em: prototipo-med/content/resumos/")
-            print(f"{'='*64}\n")
+            rodados += 1
 
+    print(f"\n{'='*60}")
+    print(f"  Pronto! Rodados: {rodados} | Erros: {erros} | Ja prontos: {completos}")
+    print(f"{'='*60}\n")
 
 if __name__ == "__main__":
     main()

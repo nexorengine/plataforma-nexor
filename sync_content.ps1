@@ -207,7 +207,8 @@ function SyncGO {
     SyncQuiz "gineco_obstetricia" $slug 1 $q1 ${Function:ConvertQuizGO}
     SyncQuiz "gineco_obstetricia" $slug 2 $q2 ${Function:ConvertQuizGO}
 
-    $flash = GitShow $flashCommit "flashcards/med/gineco_obstetricia/$slug/flashcards_pt.json"
+    $flash = GitShow "HEAD" "flashcards/med/gineco_obstetricia/$slug/flashcards_pt.json"
+    if (-not $flash) { $flash = GitShow $flashCommit "flashcards/med/gineco_obstetricia/$slug/flashcards_pt.json" }
     SyncFlash "gineco_obstetricia" $slug $flash ${Function:ConvertFlashCards}
   }
 }
@@ -242,7 +243,8 @@ function SyncCM {
     SyncQuiz "clinica_medica" $m.slug 1 $q1 ${Function:ConvertQuizQuestoes}
     SyncQuiz "clinica_medica" $m.slug 2 $q2 ${Function:ConvertQuizQuestoes}
 
-    $flash = GitShow $flashCommit "flashcards/med/clinica_medica/$($m.slug)/$($m.prefix)_flashcards_pt.json"
+    $flash = GitShow "HEAD" "flashcards/med/clinica_medica/$($m.slug)/flashcards_pt.json"
+    if (-not $flash) { $flash = GitShow $flashCommit "flashcards/med/clinica_medica/$($m.slug)/$($m.prefix)_flashcards_pt.json" }
     SyncFlash "clinica_medica" $m.slug $flash ${Function:ConvertFlashCards}
   }
 }
@@ -274,8 +276,41 @@ function SyncPREV {
     SyncQuiz "medicina_preventiva" $m.slug 1 $q1 ${Function:ConvertQuizQuestoes}
     SyncQuiz "medicina_preventiva" $m.slug 2 $q2 ${Function:ConvertQuizQuestoes}
 
-    $flash = GitShow "HEAD" "flashcards/med/medicina_preventiva/$($m.slug)/$($m.prefix)_flashcards_pt.json"
+    $flash = GitShow "HEAD" "flashcards/med/medicina_preventiva/$($m.slug)/flashcards_pt.json"
+    if (-not $flash) { $flash = GitShow "HEAD" "flashcards/med/medicina_preventiva/$($m.slug)/$($m.prefix)_flashcards_pt.json" }
     SyncFlash "medicina_preventiva" $m.slug $flash ${Function:ConvertFlashCards}
+  }
+}
+
+# ─── PEDIATRIA ────────────────────────────────────────────────────────────────
+
+function SyncPED {
+  Write-Host "`n=== PEDIATRIA ==="
+
+  $pedMap = @(
+    [ordered]@{ slug="neonatologia";         prefix="PED_D01" },
+    [ordered]@{ slug="puericultura";         prefix="PED_D02" },
+    [ordered]@{ slug="pneumologia_ped";      prefix="PED_D03" },
+    [ordered]@{ slug="gastro_ped";           prefix="PED_D04" },
+    [ordered]@{ slug="infectologia_ped";     prefix="PED_D05" },
+    [ordered]@{ slug="cardio_ped";           prefix="PED_D06" },
+    [ordered]@{ slug="endocrinologia_ped";   prefix="PED_D07" },
+    [ordered]@{ slug="hematologia_onco_ped"; prefix="PED_D08" },
+    [ordered]@{ slug="emergencias_ped";      prefix="PED_D09" }
+  )
+
+  foreach ($m in $pedMap) {
+    $base = "quizzes/med/pediatria/$($m.slug)"
+    $q1 = GitShow "HEAD" "$base/quiz_001_pt.json"
+    $q2 = GitShow "HEAD" "$base/quiz_002_pt.json"
+    if (-not $q1 -and -not $q2) { continue }
+
+    Write-Host "  $($m.slug)"
+    SyncQuiz "pediatria" $m.slug 1 $q1 ${Function:ConvertQuizGO}
+    SyncQuiz "pediatria" $m.slug 2 $q2 ${Function:ConvertQuizGO}
+
+    $flash = GitShow "HEAD" "flashcards/med/pediatria/$($m.slug)/flashcards_pt.json"
+    SyncFlash "pediatria" $m.slug $flash ${Function:ConvertFlashCards}
   }
 }
 
@@ -290,7 +325,8 @@ switch ($Area.ToLower()) {
   "go"   { SyncGO }
   "cm"   { SyncCM }
   "prev" { SyncPREV }
-  "all"  { SyncCG; SyncGO; SyncCM; SyncPREV }
+  "ped"  { SyncPED }
+  "all"  { SyncCG; SyncGO; SyncCM; SyncPREV; SyncPED }
   default { Write-Host "Area invalida. Use: cg, go, cm, prev, all" }
 }
 

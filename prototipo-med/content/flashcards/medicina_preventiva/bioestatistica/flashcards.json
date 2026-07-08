@@ -1,0 +1,247 @@
+﻿{
+    "area":  "medicina_preventiva",
+    "dominio":  "bioestatistica",
+    "total":  48,
+    "cards":  [
+                  {
+                      "l":  "F1",
+                      "f":  "O que é prevalência?",
+                      "v":  "É a proporção de casos existentes (novos e antigos) de uma doença em uma população, em um determinado momento (prevalência pontual) ou período (prevalência de período). Mede o estoque de doença."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "O que é incidência cumulativa?",
+                      "v":  "É a proporção de novos casos de uma doença que surgem em uma população inicialmente sadia (sob risco), durante um período de tempo determinado. Mede o risco de adoecer."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "Defina sensibilidade de um teste diagnóstico.",
+                      "v":  "É a capacidade do teste de identificar corretamente os indivíduos que TÊM a doença, ou seja, a proporção de verdadeiros positivos entre os doentes. Sensibilidade = VP / (VP + FN)."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "Defina especificidade de um teste diagnóstico.",
+                      "v":  "É a capacidade do teste de identificar corretamente os indivíduos que NÃO têm a doença, ou seja, a proporção de verdadeiros negativos entre os sadios. Especificidade = VN / (VN + FP)."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "O que é o valor preditivo positivo (VPP)?",
+                      "v":  "É a probabilidade de o indivíduo realmente ter a doença, dado que o teste foi positivo. VPP = VP / (VP + FP). Depende da prevalência da doença."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "O que é risco relativo (RR)?",
+                      "v":  "É a razão entre a incidência da doença nos expostos e a incidência nos não expostos. Mede a força de associação. É calculado em estudos de coorte. RR = Ie / Inae."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "O que é odds ratio (razão de chances - OR)?",
+                      "v":  "É a razão entre as chances (odds) de exposição entre doentes e não doentes. É a medida de associação utilizada em estudos caso-controle, pois neles não se pode calcular a incidência."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "Defina erro tipo I (alfa) em testes de hipótese.",
+                      "v":  "É o erro de rejeitar a hipótese nula (H0) quando ela é verdadeira (falso positivo). Sua probabilidade é o nível de significância (alfa), convencionalmente fixado em 0,05 (5%)."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "Defina erro tipo II (beta) e poder do estudo.",
+                      "v":  "Erro tipo II é não rejeitar a hipótese nula quando ela é falsa (falso negativo). O poder do estudo é a capacidade de detectar uma diferença real, sendo igual a 1 - beta."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "O que é o valor de p (p-valor)?",
+                      "v":  "É a probabilidade de obter um resultado igual ou mais extremo que o observado, assumindo que a hipótese nula é verdadeira. P \u003c 0,05 indica significância estatística (rejeita H0)."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "O que mede o intervalo de confiança (IC) de 95%?",
+                      "v":  "É a faixa de valores na qual, com 95% de confiança, está contido o verdadeiro valor do parâmetro na população. Para RR ou OR, se o IC95% incluir o valor 1, não há significância estatística."
+                  },
+                  {
+                      "l":  "F1",
+                      "f":  "Qual a diferença entre média, mediana e moda?",
+                      "v":  "Média é a soma dos valores dividida pelo número de observações; mediana é o valor central que divide a distribuição em duas metades (percentil 50); moda é o valor mais frequente do conjunto de dados."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Qual a diferença entre incidência e prevalência?",
+                      "v":  "Incidência mede CASOS NOVOS em um período (mede risco, é dinâmica). Prevalência mede TODOS os casos existentes em um momento (mede carga da doença, é estática). Prevalência ≈ incidência × duração da doença."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Como distinguir sensibilidade de especificidade?",
+                      "v":  "Sensibilidade = capacidade de detectar os DOENTES (verdadeiros positivos / total de doentes) — bom para RASTREIO. Especificidade = capacidade de identificar os SADIOS (verdadeiros negativos / total de sãos) — bom para CONFIRMAR diagnóstico. Mnemônica: SnNout (Sensível Negativo descarta), SpPin (Específico Positivo confirma)."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Qual a diferença entre risco relativo (RR) e odds ratio (OR)?",
+                      "v":  "RR = razão de incidências, usado em estudos de COORTE e ensaios clínicos (medida de risco direta). OR = razão de chances (odds), usado em estudos CASO-CONTROLE (não permite calcular incidência). Em doenças raras, OR ≈ RR."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Quando usar média, mediana ou moda como medida de tendência central?",
+                      "v":  "Média: distribuições simétricas/normais (sensível a outliers). Mediana: distribuições assimétricas ou com outliers (resistente a valores extremos). Moda: variáveis qualitativas/nominais ou para identificar o valor mais frequente."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Qual a diferença entre erro tipo I (alfa) e erro tipo II (beta)?",
+                      "v":  "Erro tipo I (alfa): rejeitar H0 quando ela é VERDADEIRA (falso positivo) — afirmar diferença que não existe. Erro tipo II (beta): NÃO rejeitar H0 quando ela é FALSA (falso negativo) — não detectar diferença que existe. Poder do teste = 1 - beta."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Como distinguir VPP de VPN?",
+                      "v":  "VPP (valor preditivo positivo): probabilidade de estar doente dado teste POSITIVO. VPN (valor preditivo negativo): probabilidade de estar sadio dado teste NEGATIVO. Ambos DEPENDEM da prevalência (diferente de S e E). Prevalência alta → VPP alto; prevalência baixa → VPN alto."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Qual a diferença entre estudo de coorte e caso-controle?",
+                      "v":  "Coorte: parte da EXPOSIÇÃO para o desfecho (prospectivo), calcula incidência e RR, bom para exposições raras. Caso-controle: parte do DESFECHO (doença) para a exposição (retrospectivo), calcula OR, bom para doenças raras e barato/rápido."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Quando usar teste t de Student vs ANOVA?",
+                      "v":  "Teste t: comparação de MÉDIAS entre DOIS grupos (variável quantitativa, distribuição normal). ANOVA: comparação de médias entre TRÊS ou MAIS grupos. Usar ANOVA evita inflação do erro tipo I por múltiplas comparações."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Qual a diferença entre viés de seleção e viés de aferição (informação)?",
+                      "v":  "Viés de seleção: ocorre na ESCOLHA/recrutamento dos participantes (ex: viés de Berkson, perda de seguimento). Viés de aferição/informação: ocorre na COLETA/MEDIÇÃO dos dados (ex: viés de memória, viés do observador)."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Como distinguir variável de confusão de modificador de efeito?",
+                      "v":  "Confusão: variável associada à exposição e ao desfecho que DISTORCE a associação (deve ser controlada/ajustada). Modificador de efeito (interação): variável que ALTERA a magnitude do efeito em diferentes estratos (deve ser estratificado e relatado, não ajustado)."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Qual a diferença entre testes paramétricos e não paramétricos?",
+                      "v":  "Paramétricos (t, ANOVA, Pearson): pressupõem distribuição NORMAL e variável quantitativa. Não paramétricos (Mann-Whitney, Wilcoxon, Kruskal-Wallis, Spearman): usados quando dados NÃO são normais, são ordinais ou amostras pequenas. Têm menor poder estatístico."
+                  },
+                  {
+                      "l":  "F2",
+                      "f":  "Como distinguir redução de risco absoluto (RRA) de redução de risco relativo (RRR)?",
+                      "v":  "RRA = diferença absoluta entre incidências (risco controle - risco tratado); base para calcular o NNT (1/RRA). RRR = redução proporcional do risco (RRA/risco do controle). A RRR pode parecer impressionante mesmo com RRA pequena, sendo a RRA mais informativa clinicamente."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Qual teste estatístico utilizar para comparar a média de uma variável contínua entre dois grupos independentes com distribuição normal?",
+                      "v":  "Teste t de Student para amostras independentes. Se a distribuição não for normal, usar o teste de Mann-Whitney (não paramétrico)."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Qual teste estatístico é indicado para comparar proporções/frequências entre dois ou mais grupos (variáveis categóricas)?",
+                      "v":  "Teste do qui-quadrado (χ²). Quando as frequências esperadas são menores que 5, usar o teste exato de Fisher."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Como interpretar um valor de p = 0,03 em um estudo com nível de significância de 5%?",
+                      "v":  "Como p \u003c 0,05, rejeita-se a hipótese nula: o resultado é estatisticamente significativo. Há 3% de probabilidade de o achado ter ocorrido por acaso (erro tipo I)."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Qual medida de associação deve ser calculada e interpretada em um estudo de coorte?",
+                      "v":  "Risco Relativo (RR) = incidência nos expostos / incidência nos não expostos. RR \u003e 1 indica fator de risco; RR \u003c 1 indica fator de proteção; RR = 1 ausência de associação."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Qual medida de associação é utilizada em estudos caso-controle e por quê?",
+                      "v":  "Odds Ratio (razão de chances), pois nesse desenho não é possível calcular incidência diretamente. O OR estima o RR, especialmente em doenças raras."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Como interpretar um intervalo de confiança de 95% para um Risco Relativo que vai de 0,8 a 1,5?",
+                      "v":  "O resultado NÃO é estatisticamente significativo, pois o intervalo contém o valor 1 (nulidade). Não se pode afirmar que há associação entre exposição e desfecho."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Qual exame/teste estatístico usar para comparar médias de três ou mais grupos independentes?",
+                      "v":  "ANOVA (análise de variância) para dados paramétricos. Se não paramétrico, usar Kruskal-Wallis."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Como decidir o teste para comparar uma variável contínua em medidas repetidas (mesmo indivíduo antes e depois)?",
+                      "v":  "Teste t pareado (dados paramétricos) ou teste de Wilcoxon (não paramétrico). Para 3+ medidas: ANOVA de medidas repetidas ou teste de Friedman."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Qual a conduta para escolher entre sensibilidade e especificidade ao avaliar um teste de rastreamento (screening)?",
+                      "v":  "Priorizar testes com ALTA SENSIBILIDADE para rastreamento, pois o objetivo é não deixar passar doentes (poucos falso-negativos). A confirmação posterior usa testes de alta especificidade."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Como interpretar uma razão de verossimilhança positiva (LR+) de 10 em um teste diagnóstico?",
+                      "v":  "LR+ \u003e 10 indica que o teste positivo aumenta substancialmente a probabilidade de doença. Quanto maior o LR+, melhor para confirmar o diagnóstico (regra de ouro: LR+ \u003e10 e LR- \u003c0,1 são muito úteis)."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Qual a conduta ao avaliar a relação entre duas variáveis contínuas (ex.: idade e pressão arterial)?",
+                      "v":  "Calcular correlação de Pearson (dados normais/lineares) ou Spearman (não paramétrico/ordinal). Para predizer uma variável a partir da outra, usar regressão linear."
+                  },
+                  {
+                      "l":  "F3",
+                      "f":  "Como reduzir o efeito de fatores de confusão (confundimento) na análise de um estudo?",
+                      "v":  "Na fase de planejamento: randomização, restrição ou pareamento. Na fase de análise: estratificação, padronização e modelos de regressão multivariada (ajuste estatístico)."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Por que a prevalência de uma doença afeta diretamente o valor preditivo positivo (VPP) de um teste, mesmo mantendo sensibilidade e especificidade constantes?",
+                      "v":  "Sensibilidade e especificidade são propriedades intrínsecas do teste. Já o VPP depende da probabilidade pré-teste (prevalência): em populações com baixa prevalência, há mais verdadeiros negativos e, proporcionalmente, mais falsos-positivos, reduzindo o VPP. Em alta prevalência ocorre o inverso, aumentando o VPP. Por isso testes de rastreio aplicados em populações de baixo risco geram muitos falsos-positivos, justificando a confirmação diagnóstica antes de intervenções."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Como diferenciar e integrar os conceitos de viés de confusão e modificação de efeito (interação) na análise de um estudo epidemiológico?",
+                      "v":  "Confusão é uma distorção do efeito real causada por uma variável associada à exposição e ao desfecho, sem estar na cadeia causal — deve ser controlada (estratificação, ajuste multivariado, randomização). Modificação de efeito ocorre quando a magnitude da associação varia conforme os níveis de uma terceira variável (ex: efeito de droga diferente por idade) — é um fenômeno biológico real que deve ser descrito, não corrigido. Na estratificação: se as medidas estratificadas diferem da bruta mas são semelhantes entre si = confusão; se diferem entre si = modificação de efeito."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Por que o risco relativo (RR) não pode ser calculado em estudos caso-controle, e como o odds ratio (OR) supre essa limitação?",
+                      "v":  "No caso-controle, parte-se do desfecho (casos e controles) e o investigador escolhe a proporção de cada grupo, impossibilitando estimar a incidência real da doença — base do RR. O OR (razão de chances) não depende da incidência, sendo calculável pela tabela 2x2 (ad/bc). Quando a doença é rara (\u003c10%), o OR aproxima-se do RR (rare disease assumption), permitindo inferência causal aproximada."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Integre os conceitos de erro tipo I, erro tipo II e poder estatístico na interpretação de um estudo com resultado não significativo.",
+                      "v":  "Erro tipo I (alfa) é rejeitar H0 verdadeira (falso-positivo); erro tipo II (beta) é não rejeitar H0 falsa (falso-negativo). Poder = 1-beta = probabilidade de detectar efeito existente. Um resultado não significativo pode refletir ausência real de efeito OU baixo poder (amostra pequena), gerando erro tipo II. Por isso \u0027ausência de evidência não é evidência de ausência\u0027: deve-se avaliar tamanho amostral, intervalo de confiança e poder antes de concluir pela ausência de associação."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Como o tamanho amostral, a variabilidade dos dados e o nível de confiança se relacionam na amplitude de um intervalo de confiança (IC)?",
+                      "v":  "A amplitude do IC é diretamente proporcional ao desvio-padrão e ao nível de confiança escolhido, e inversamente proporcional à raiz quadrada do tamanho amostral. Maior n → IC mais estreito (mais preciso); maior variabilidade → IC mais largo; maior confiança (99% vs 95%) → IC mais largo. Um IC estreito indica estimativa precisa; se o IC do RR/OR cruza 1 (ou 0 para diferenças), o resultado não é estatisticamente significativo."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Por que análises de subgrupo em ensaios clínicos randomizados devem ser interpretadas com cautela, mesmo apresentando p \u003c 0,05?",
+                      "v":  "Múltiplas comparações aumentam a chance de achados significativos por acaso (inflação do erro tipo I) — fenômeno de comparações múltiplas. Subgrupos têm menor poder estatístico (n menor), favorecem resultados espúrios e podem refletir data dredging. São considerados geradores de hipóteses, não confirmatórios, especialmente se não pré-especificados, sem teste de interação significativo ou plausibilidade biológica. A randomização não garante balanceamento dentro de subgrupos."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Integre os conceitos de razão de verossimilhança (likelihood ratio) com a probabilidade pré e pós-teste no raciocínio diagnóstico bayesiano.",
+                      "v":  "A razão de verossimilhança (LR) integra sensibilidade e especificidade: LR+ = sens/(1-espec); LR- = (1-sens)/espec. Ela quantifica quanto um resultado modifica a probabilidade da doença: a probabilidade pré-teste é convertida em odds, multiplicada pela LR e reconvertida em probabilidade pós-teste (teorema de Bayes). LR+ \u003e10 ou LR- \u003c0,1 alteram substancialmente a probabilidade. Vantagem sobre VPP/VPN: independem da prevalência, sendo aplicáveis a cada paciente conforme sua probabilidade pré-teste individual."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Como diferenciar viés de aferição, viés de seleção e viés de memória, e qual o impacto de cada um sobre a validade interna de um estudo?",
+                      "v":  "Viés de seleção: erro na forma de escolher/manter participantes (ex: perda de seguimento diferencial, controles não representativos) — distorce a associação. Viés de aferição (informação): erro na medida da exposição/desfecho (ex: instrumento descalibrado, observador não cego). Viés de memória: subtipo de aferição, comum em caso-controle, onde doentes recordam exposições com mais detalhe que controles. Todos comprometem a validade interna, podendo super ou subestimar a associação, diferente do confundimento que é controlável estatisticamente."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Por que a mediana é preferível à média como medida de tendência central em distribuições assimétricas, e como isso orienta a escolha de testes estatísticos?",
+                      "v":  "Em distribuições assimétricas (presença de outliers ou cauda longa, ex: salários, tempo de internação), a média é puxada pelos valores extremos, deixando de representar o centro real; a mediana é robusta a outliers. Distribuições não-normais exigem testes não-paramétricos (Mann-Whitney, Wilcoxon, Kruskal-Wallis), que trabalham com postos/medianas. Distribuições normais permitem testes paramétricos (teste t, ANOVA), baseados em médias e desvios-padrão. A escolha errada do teste compromete a validade das conclusões."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Integre os conceitos de incidência, prevalência e duração da doença, explicando por que doenças crônicas tendem a ter prevalência alta mesmo com incidência baixa.",
+                      "v":  "Prevalência ≈ incidência × duração média da doença (em estado estável). Doenças crônicas (ex: diabetes, hipertensão) têm longa duração; mesmo com poucos casos novos por ano (baixa incidência), o acúmulo de casos prevalentes ao longo do tempo eleva a prevalência. Avanços terapêuticos que prolongam a sobrevida sem cura aumentam a prevalência sem alterar a incidência. Já doenças agudas de curta duração (cura ou óbito rápido) têm prevalência baixa apesar de alta incidência."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Como o fenômeno de regressão à média pode gerar conclusões equivocadas em estudos sem grupo controle, e qual delineamento o neutraliza?",
+                      "v":  "Regressão à média: valores extremos em uma primeira medição tendem a se aproximar da média em medições subsequentes por flutuação aleatória, independentemente de qualquer intervenção. Em estudos pré-pós sem controle (ex: tratar pacientes com PA muito alta), a melhora pode ser parcialmente artefato estatístico, não efeito do tratamento. O ensaio clínico randomizado com grupo controle neutraliza esse fenômeno, pois ambos os grupos sofrem igual regressão à média, isolando o efeito real da intervenção."
+                  },
+                  {
+                      "l":  "F4",
+                      "f":  "Integre os conceitos de NNT (número necessário para tratar), redução de risco relativo e absoluto na avaliação da relevância clínica de uma intervenção.",
+                      "v":  "A redução de risco relativo (RRR) pode parecer impressionante mas é enganosa sem o risco basal. A redução de risco absoluto (RRA) = risco no controle − risco no tratado, reflete o benefício real na população. O NNT = 1/RRA indica quantos pacientes tratar para evitar um desfecho. Exemplo: RRR de 50% com risco basal de 2% → RRA de 1% → NNT 100; mesma RRR com risco basal de 40% → RRA de 20% → NNT 5. Logo, em populações de baixo risco, grandes RRR podem ter benefício absoluto pequeno (NNT alto), o que orienta decisões de custo-efetividade."
+                  }
+              ]
+}

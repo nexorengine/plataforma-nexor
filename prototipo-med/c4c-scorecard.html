@@ -17,8 +17,7 @@
 <body>
 <div class="nx-header">
   <a id="btn-back" href="c3-med" class="nx-back-btn"><i class="ti ti-arrow-left"></i>voltar</a>
-  <div class="nx-wordmark"><i class="ti ti-medical-cross" style="font-size:16px;color:#0EA5E9;flex-shrink:0;margin-right:6px;"></i>
-exor_<span>med</span></div>
+  <div class="nx-wordmark">nexor_<span>med</span></div>
   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
 </div>
@@ -27,7 +26,7 @@ exor_<span>med</span></div>
   <div class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
     <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="sc-icon"><i class="ti ti-cut" style="font-size:18px;"></i></div>
     <div>
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#0EA5E9;margin-bottom:2px;" id="sc-area">Cirurgia Geral · CG_D01</div>
+      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#FCA311;margin-bottom:2px;" id="sc-area">Cirurgia Geral · CG_D01</div>
       <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;" id="sc-nome">Abdome Agudo</div>
       <div style="font-size:11px;color:#AAA;font-weight:300;margin-top:1px;">Scorecard · histórico completo</div>
     </div>
@@ -44,10 +43,7 @@ exor_<span>med</span></div>
     </div>
     <div class="nx-attempts">
       <div class="nx-attempts-label">histórico de tentativas</div>
-      <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:16px 0;">
-        <div style="color:#555;font-size:12px;font-weight:300;">Nenhuma tentativa registrada.</div>
-        <a id="cta-quiz1" href="c4b-quiz.html" class="nx-btn-primary" style="font-size:12px;height:36px;padding:0 20px;width:auto;letter-spacing:0.06em;">INICIAR QUIZ 001</a>
-      </div>
+      <div style="text-align:center;padding:18px 0;color:#555;font-size:12px;font-weight:300;">Nenhuma tentativa registrada.</div>
     </div>
   </div>
 
@@ -62,26 +58,18 @@ exor_<span>med</span></div>
     </div>
     <div class="nx-attempts">
       <div class="nx-attempts-label">histórico de tentativas</div>
-      <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:16px 0;">
-        <div style="color:#555;font-size:12px;font-weight:300;">Nenhuma tentativa registrada.</div>
-        <a id="cta-quiz2" href="c4b-quiz.html" class="nx-btn-primary" style="font-size:12px;height:36px;padding:0 20px;width:auto;letter-spacing:0.06em;">INICIAR QUIZ 002</a>
-      </div>
+      <div style="text-align:center;padding:18px 0;color:#555;font-size:12px;font-weight:300;">Nenhuma tentativa registrada.</div>
     </div>
   </div>
 
   <div class="nx-section-label sr" style="transition-delay:300ms">critérios de conclusão</div>
   <div class="nx-summary-block sr" style="transition-delay:360ms">
-    <div class="nx-summary-row" style="flex-direction:column;align-items:flex-start;gap:6px;">
-      <div style="display:flex;justify-content:space-between;width:100%;">
-        <span class="nx-summary-key">flashcards</span>
-        <span style="display:flex;align-items:center;gap:6px;">
-          <span style="font-size:11px;color:#555;">0 / 48</span>
-          <span class="nx-status-badge" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
-        </span>
-      </div>
-      <div style="width:100%;height:3px;background:#101c2c;border-radius:2px;">
-        <div style="width:0%;height:100%;background:#0EA5E9;border-radius:2px;transition:width 0.6s ease;"></div>
-      </div>
+    <div class="nx-summary-row">
+      <span class="nx-summary-key">flashcards</span>
+      <span style="display:flex;align-items:center;gap:6px;">
+        <span style="font-size:11px;color:#555;">0 / 48</span>
+        <span class="nx-status-badge" style="background:rgba(255,255,255,0.05);color:#555;border:1px solid #333;">PENDENTE</span>
+      </span>
     </div>
     <div class="nx-summary-row">
       <span class="nx-summary-key">quiz 001</span>
@@ -104,7 +92,7 @@ exor_<span>med</span></div>
   </div>
 
   <div class="nx-alert sr" style="background:rgba(252,163,17,0.05);border:1px solid rgba(252,163,17,0.15);transition-delay:400ms">
-    <i class="ti ti-info-circle" style="color:#0EA5E9;font-size:16px;margin-top:1px;flex-shrink:0;"></i>
+    <i class="ti ti-info-circle" style="color:#FCA311;font-size:16px;margin-top:1px;flex-shrink:0;"></i>
     <div class="nx-alert-text" style="color:#AAA;">Complete os flashcards e os dois quizzes para registrar seu progresso neste domínio.</div>
   </div>
 </div>
@@ -126,9 +114,6 @@ exor_<span>med</span></div>
   document.getElementById('sc-icon').innerHTML = '<i class="ti ' + area.icon + '" style="font-size:18px;"></i>';
   document.getElementById('sc-area').textContent = area.label + ' · ' + dominio.code;
   document.getElementById('sc-nome').textContent = dominio.nome;
-  const qBase = 'c4b-quiz.html?area=' + areaSlug + '&dominio=' + dominioSlug;
-  document.getElementById('cta-quiz1').href = qBase + '&quiz=001';
-  document.getElementById('cta-quiz2').href = qBase + '&quiz=002';
   document.title = dominio.nome + '  · Scorecard · nexor_med';
   // motion
   const scrollEl = document.querySelector('.nx-scroll');
@@ -141,7 +126,7 @@ exor_<span>med</span></div>
     entries.forEach(entry => {
       if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
     });
-  }, { root: null, threshold: 0.08 });
+  }, { root: scrollEl, threshold: 0.08 });
   document.querySelectorAll('.sr').forEach(el => io.observe(el));
 })();
 </script>
