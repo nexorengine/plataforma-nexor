@@ -320,5 +320,38 @@ function ttsInfo(btn) {
   speechSynthesis.speak(utt);
 }
 </script>
+
+<!-- ── PWA iOS Install Banner ── -->
+<style>
+#ios-install-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#16263B;border-top:1px solid rgba(14,165,233,0.3);padding:14px 16px 20px;display:flex;align-items:center;gap:12px;transform:translateY(100%);transition:transform 0.4s cubic-bezier(0.16,1,0.3,1);}
+#ios-install-banner.show{transform:translateY(0);}
+#ios-install-banner img{width:44px;height:44px;border-radius:10px;flex-shrink:0;}
+#ios-install-banner .ios-text{flex:1;font-family:'Barlow',sans-serif;}
+#ios-install-banner .ios-title{font-size:13px;font-weight:600;color:#F0F6FB;margin-bottom:2px;}
+#ios-install-banner .ios-sub{font-size:11px;color:#8BA4C0;line-height:1.4;}
+#ios-install-banner .ios-sub svg{vertical-align:middle;display:inline;}
+#ios-install-banner button{background:none;border:none;color:#8BA4C0;font-size:20px;line-height:1;padding:4px;cursor:pointer;flex-shrink:0;}
+</style>
+<div id="ios-install-banner" role="banner" aria-label="Instalar app">
+  <img src="assets/icon-180.png" alt="nexor_med">
+  <div class="ios-text">
+    <div class="ios-title">Adicionar à Tela de Início</div>
+    <div class="ios-sub">Toque em <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg> e depois <strong style="color:#F0F6FB">Adicionar à Tela de Início</strong></div>
+  </div>
+  <button onclick="document.getElementById('ios-install-banner').remove()" aria-label="Fechar">×</button>
+</div>
+<script>
+(function(){
+  var isIos=/iphone|ipad|ipod/i.test(navigator.userAgent);
+  var isSafari=/safari/i.test(navigator.userAgent)&&!/crios|fxios/i.test(navigator.userAgent);
+  var isStandalone=window.navigator.standalone===true;
+  if(isIos&&isSafari&&!isStandalone&&!sessionStorage.getItem('ios-banner-dismissed')){
+    setTimeout(function(){
+      var b=document.getElementById('ios-install-banner');
+      if(b){b.classList.add('show');b.querySelector('button').addEventListener('click',function(){sessionStorage.setItem('ios-banner-dismissed','1');});}
+    },2500);
+  }
+})();
+</script>
 </body>
 </html>
