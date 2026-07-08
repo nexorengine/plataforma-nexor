@@ -1115,6 +1115,7 @@ async function c0SendLink() {
     msg.style.color = '#4ade80';
     msg.textContent = 'Link enviado! Verifique sua caixa de entrada.';
     btn.textContent = 'LINK ENVIADO ✓';
+    if(typeof fbq!=='undefined') fbq('track', 'Lead');
   }
 }
 document.addEventListener('DOMContentLoaded', () => {
