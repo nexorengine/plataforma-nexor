@@ -1,1 +1,163 @@
-﻿<!DOCTYPE html> <html lang="pt-BR"> <head> <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18306279891"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'AW-18306279891'); </script> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width,initial-scale=1.0"> <link rel="manifest" href="manifest.json"> <link rel="apple-touch-icon" href="assets/icon-180.png"> <meta name="mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <meta name="apple-mobile-web-app-title" content="nexor_med"> <meta name="theme-color" content="#16263B"> <title>nexor_med · Especialidades</title> <link rel="stylesheet" href="assets/nx.css"> <link rel="stylesheet" href="assets/nx-glass.css"> <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> <script src="assets/auth.js"></script> <style> .hero-reveal{opacity:0;transform:translateY(20px);filter:blur(6px);transition:opacity 700ms cubic-bezier(0.16,1,0.3,1),transform 700ms cubic-bezier(0.16,1,0.3,1),filter 700ms cubic-bezier(0.16,1,0.3,1);} .hero-reveal.visible{opacity:1;transform:translateY(0);filter:blur(0);} .sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);} .sr.visible{opacity:1;transform:translateY(0);} .nx-capsule{transition:transform 250ms cubic-bezier(0.16,1,0.3,1),box-shadow 250ms cubic-bezier(0.16,1,0.3,1),border-color 250ms ease;} @media(hover:hover){.nx-capsule:hover{transform:translateY(-3px) scale(1.012)!important;box-shadow:0 8px 24px rgba(0,0,0,0.35)!important;border-color:rgba(159,203,235,0.3)!important;}} @media(prefers-reduced-motion:reduce){.hero-reveal,.sr{opacity:1!important;transform:none!important;filter:none!important;}}  /* ── Tablet/Desktop ── */ @media(min-width:768px){   body{width:100%!important;}   .nx-scroll{width:100%!important;}   .nx-body{width:100%!important;max-width:900px!important;margin:0 auto!important;padding:32px 32px 48px!important;}   .nx-header{padding:0 32px!important;}   #lista-areas{display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px!important;}   .nx-hero-title{font-size:36px!important;} } @media(min-width:1024px){   body{width:100%!important;}   .nx-body{max-width:1000px!important;padding:36px 48px 64px!important;}   #lista-areas{grid-template-columns:1fr 1fr 1fr!important;}   .nx-hero-title{font-size:44px!important;} }  /* Trial warning banner */ .trial-warn{display:none;align-items:center;gap:12px;padding:12px 16px;border-radius:8px;margin-bottom:16px;cursor:pointer;text-decoration:none;} .trial-warn.urgente{background:rgba(252,163,17,0.10);border:1px solid rgba(252,163,17,0.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);} .trial-warn.critico{background:rgba(239,68,68,0.10);border:1px solid rgba(239,68,68,0.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:pulseBorder 2s ease-in-out infinite;} @keyframes pulseBorder{0%,100%{border-color:rgba(239,68,68,0.35);}50%{border-color:rgba(239,68,68,0.70);}} .trial-warn-icon{font-size:20px;flex-shrink:0;} .trial-warn-body{flex:1;} .trial-warn-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;margin-bottom:2px;} .trial-warn-sub{font-size:11px;font-weight:300;opacity:0.80;} .trial-warn-cta{font-size:11px;font-weight:700;font-family:'Barlow',sans-serif;white-space:nowrap;padding:5px 12px;border-radius:4px;flex-shrink:0;} .trial-warn.urgente .trial-warn-title{color:#FCA311;} .trial-warn.urgente .trial-warn-sub{color:#c8a060;} .trial-warn.urgente .trial-warn-cta{background:#FCA311;color:#070A0E;} .trial-warn.critico .trial-warn-title{color:#f87171;} .trial-warn.critico .trial-warn-sub{color:#c87070;} .trial-warn.critico .trial-warn-cta{background:#ef4444;color:#fff;} </style> </head> <body> <div class="nx-header">   <a href="index" class="nx-back-btn"><i class="ti ti-arrow-left"></i>início</a>   <div class="nx-wordmark">nexor_<span>med</span></div>   <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>   <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a> </div> <div class="nx-scroll"> <div class="nx-body">   <!-- Trial warning — visível só quando faltam ≤2 dias -->   <a id="trial-warn-banner" class="trial-warn" href="upgrade.html">     <span class="trial-warn-icon ti ti-clock-exclamation"></span>     <div class="trial-warn-body">       <div class="trial-warn-title" id="trial-warn-title"></div>       <div class="trial-warn-sub" id="trial-warn-sub"></div>     </div>     <span class="trial-warn-cta">ASSINAR</span>   </a>    <div class="nx-hero">     <div class="nx-hero-tag hero-reveal" style="transition-delay:0ms">Residência Médica · 5 especialidades</div>     <div class="nx-hero-title hero-reveal" style="transition-delay:100ms">Suas especialidades</div>     <div class="nx-hero-sub hero-reveal" style="transition-delay:200ms">Selecione uma especialidade para estudar.</div>   </div>   <div id="lista-areas"></div> </div> </div> <div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div> <script src="assets/notif.js"></script> <script src="assets/profile.js"></script> <script src="assets/catalog.js"></script> <script> // Protege a rota — redireciona para login se não autenticado, para upgrade se sem plano (async () => {   const s = await Auth.requireAuth();   if (!s) return;   await Auth.requireAccess();   await Auth.fillHeader();    // Exibe aviso de trial quando faltam ≤2 dias   const sub = await Auth.subscription();   if (sub && sub.plan === 'trial' && sub.trial_ends_at) {     const dias = Math.ceil((new Date(sub.trial_ends_at) - new Date()) / 86400000);     const banner = document.getElementById('trial-warn-banner');     const titulo = document.getElementById('trial-warn-title');     const sub_txt = document.getElementById('trial-warn-sub');     if (dias <= 0) {       // não deve chegar aqui (requireAccess redireciona), mas por segurança     } else if (dias === 1) {       banner.classList.add('critico');       titulo.textContent = 'Último dia do seu trial!';       sub_txt.textContent = 'Assine agora para não perder seu progresso.';       banner.style.display = 'flex';     } else if (dias === 2) {       banner.classList.add('urgente');       titulo.textContent = 'Faltam 2 dias no seu trial';       sub_txt.textContent = 'Garanta seu acesso antes de expirar.';       banner.style.display = 'flex';     }   } })(); </script> <script> const el = document.getElementById('lista-areas'); el.innerHTML = AREA_ORDER.map((slug, i) => {   const a = CATALOG[slug];   const n = a.dominios.length;   return `<a href="c2-med#area=${slug}" class="nx-capsule active sr" style="transition-delay:${i*60}ms">     <i class="ti ${a.icon}" style="color:#0EA5E9;font-size:22px;width:24px;text-align:center;flex-shrink:0;"></i>     <div class="nx-cap-body">       <div class="nx-cap-title">${a.label}</div>       <div class="nx-cap-org">${n} domínios · ${n*48} flashcards · ${n*100} questões</div>     </div>     <div class="nx-pill available">ACESSAR</div>   </a>`; }).join('');  (function(){   const scrollEl = document.querySelector('.nx-scroll');   requestAnimationFrame(() => {     requestAnimationFrame(() => {       document.querySelectorAll('.hero-reveal').forEach(el => el.classList.add('visible'));     });   });   const io = new IntersectionObserver((entries) => {     entries.forEach(entry => {       if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }     });   }, { root: scrollEl, threshold: 0.08 });   document.querySelectorAll('.sr').forEach(el => io.observe(el)); })(); </script> <script>if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js");</script> </body> </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18306279891"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18306279891');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="nexor_med">
+<meta name="theme-color" content="#16263B">
+<title>nexor_med · Especialidades</title>
+<link rel="stylesheet" href="assets/nx.css">
+<link rel="stylesheet" href="assets/nx-glass.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/auth.js"></script>
+<style>
+.hero-reveal{opacity:0;transform:translateY(20px);filter:blur(6px);transition:opacity 700ms cubic-bezier(0.16,1,0.3,1),transform 700ms cubic-bezier(0.16,1,0.3,1),filter 700ms cubic-bezier(0.16,1,0.3,1);}
+.hero-reveal.visible{opacity:1;transform:translateY(0);filter:blur(0);}
+.sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
+.sr.visible{opacity:1;transform:translateY(0);}
+.nx-capsule{transition:transform 250ms cubic-bezier(0.16,1,0.3,1),box-shadow 250ms cubic-bezier(0.16,1,0.3,1),border-color 250ms ease;}
+@media(hover:hover){.nx-capsule:hover{transform:translateY(-3px) scale(1.012)!important;box-shadow:0 8px 24px rgba(0,0,0,0.35)!important;border-color:rgba(159,203,235,0.3)!important;}}
+@media(prefers-reduced-motion:reduce){.hero-reveal,.sr{opacity:1!important;transform:none!important;filter:none!important;}}
+
+/* ── Tablet/Desktop ── */
+@media(min-width:768px){
+  body{width:100%!important;}
+  .nx-scroll{width:100%!important;}
+  .nx-body{width:100%!important;max-width:900px!important;margin:0 auto!important;padding:0 32px 48px!important;}
+  .nx-header{padding:0 32px!important;}
+  #lista-areas{display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px!important;}
+  .nx-hero-title{font-size:36px!important;}
+}
+@media(min-width:1024px){
+  body{width:100%!important;}
+  .nx-body{max-width:1000px!important;padding:0 48px 64px!important;}
+  #lista-areas{grid-template-columns:1fr 1fr 1fr!important;}
+  .nx-hero-title{font-size:44px!important;}
+}
+
+/* Trial warning banner */
+.trial-warn{display:none;align-items:center;gap:12px;padding:12px 16px;border-radius:8px;margin-bottom:16px;cursor:pointer;text-decoration:none;}
+.trial-warn.urgente{background:rgba(252,163,17,0.10);border:1px solid rgba(252,163,17,0.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);}
+.trial-warn.critico{background:rgba(239,68,68,0.10);border:1px solid rgba(239,68,68,0.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:pulseBorder 2s ease-in-out infinite;}
+@keyframes pulseBorder{0%,100%{border-color:rgba(239,68,68,0.35);}50%{border-color:rgba(239,68,68,0.70);}}
+.trial-warn-icon{font-size:20px;flex-shrink:0;}
+.trial-warn-body{flex:1;}
+.trial-warn-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;margin-bottom:2px;}
+.trial-warn-sub{font-size:11px;font-weight:300;opacity:0.80;}
+.trial-warn-cta{font-size:11px;font-weight:700;font-family:'Barlow',sans-serif;white-space:nowrap;padding:5px 12px;border-radius:4px;flex-shrink:0;}
+.trial-warn.urgente .trial-warn-title{color:#FCA311;}
+.trial-warn.urgente .trial-warn-sub{color:#c8a060;}
+.trial-warn.urgente .trial-warn-cta{background:#FCA311;color:#070A0E;}
+.trial-warn.critico .trial-warn-title{color:#f87171;}
+.trial-warn.critico .trial-warn-sub{color:#c87070;}
+.trial-warn.critico .trial-warn-cta{background:#ef4444;color:#fff;}
+</style>
+</head>
+<body>
+<div class="nx-header">
+  <a href="index" class="nx-back-btn"><i class="ti ti-arrow-left"></i>início</a>
+  <div class="nx-wordmark">nexor_<span>med</span></div>
+  <button class="nx-bell-btn" id="nx-bell-btn" onclick="toggleNotif()"><i class="ti ti-bell"></i></button>
+  <a href="#" class="nx-avatar-btn" onclick="toggleProfile();return false;">AA</a>
+</div>
+<div class="nx-scroll">
+<div class="nx-body">
+  <!-- Trial warning — visível só quando faltam ≤2 dias -->
+  <a id="trial-warn-banner" class="trial-warn" href="upgrade.html">
+    <span class="trial-warn-icon ti ti-clock-exclamation"></span>
+    <div class="trial-warn-body">
+      <div class="trial-warn-title" id="trial-warn-title"></div>
+      <div class="trial-warn-sub" id="trial-warn-sub"></div>
+    </div>
+    <span class="trial-warn-cta">ASSINAR</span>
+  </a>
+
+  <div class="nx-hero">
+    <div class="nx-hero-tag hero-reveal" style="transition-delay:0ms">Residência Médica · 5 especialidades</div>
+    <div class="nx-hero-title hero-reveal" style="transition-delay:100ms">Suas especialidades</div>
+    <div class="nx-hero-sub hero-reveal" style="transition-delay:200ms">Selecione uma especialidade para estudar.</div>
+  </div>
+  <div id="lista-areas"></div>
+</div>
+</div>
+<div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
+<script src="assets/notif.js"></script>
+<script src="assets/profile.js"></script>
+<script src="assets/catalog.js"></script>
+<script>
+// Protege a rota — redireciona para login se não autenticado, para upgrade se sem plano
+(async () => {
+  const s = await Auth.requireAuth();
+  if (!s) return;
+  await Auth.requireAccess();
+  await Auth.fillHeader();
+
+  // Exibe aviso de trial quando faltam ≤2 dias
+  const sub = await Auth.subscription();
+  if (sub && sub.plan === 'trial' && sub.trial_ends_at) {
+    const dias = Math.ceil((new Date(sub.trial_ends_at) - new Date()) / 86400000);
+    const banner = document.getElementById('trial-warn-banner');
+    const titulo = document.getElementById('trial-warn-title');
+    const sub_txt = document.getElementById('trial-warn-sub');
+    if (dias <= 0) {
+      // não deve chegar aqui (requireAccess redireciona), mas por segurança
+    } else if (dias === 1) {
+      banner.classList.add('critico');
+      titulo.textContent = 'Último dia do seu trial!';
+      sub_txt.textContent = 'Assine agora para não perder seu progresso.';
+      banner.style.display = 'flex';
+    } else if (dias === 2) {
+      banner.classList.add('urgente');
+      titulo.textContent = 'Faltam 2 dias no seu trial';
+      sub_txt.textContent = 'Garanta seu acesso antes de expirar.';
+      banner.style.display = 'flex';
+    }
+  }
+})();
+</script>
+<script>
+const el = document.getElementById('lista-areas');
+el.innerHTML = AREA_ORDER.map((slug, i) => {
+  const a = CATALOG[slug];
+  const n = a.dominios.length;
+  return `<a href="c2-med#area=${slug}" class="nx-capsule active sr" style="transition-delay:${i*60}ms">
+    <i class="ti ${a.icon}" style="color:#0EA5E9;font-size:22px;width:24px;text-align:center;flex-shrink:0;"></i>
+    <div class="nx-cap-body">
+      <div class="nx-cap-title">${a.label}</div>
+      <div class="nx-cap-org">${n} domínios · ${n*48} flashcards · ${n*100} questões</div>
+    </div>
+    <div class="nx-pill available">ACESSAR</div>
+  </a>`;
+}).join('');
+
+(function(){
+  const scrollEl = document.querySelector('.nx-scroll');
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.hero-reveal').forEach(el => el.classList.add('visible'));
+    });
+  });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
+    });
+  }, { root: scrollEl, threshold: 0.08 });
+  document.querySelectorAll('.sr').forEach(el => io.observe(el));
+})();
+</script>
+<script>if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js");</script>
+</body>
+</html>
