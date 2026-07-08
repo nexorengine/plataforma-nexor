@@ -1038,6 +1038,7 @@ const INFO = [
 })();
 
 function focusEmail() {
+  if(typeof fbq!=='undefined') fbq('track', 'InitiateCheckout');
   const el = document.getElementById('c0-email');
   if (el) { el.focus(); el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
 }
