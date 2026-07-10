@@ -1,6 +1,6 @@
 # nexor_med — Playbook Arquitetônico
 > Fonte da verdade para localização de todos os artefatos, bancos de dados e serviços.
-> Atualizado: 2026-06-21
+> Atualizado: 2026-07-10
 
 ---
 
@@ -20,16 +20,17 @@
 | Remote | `https://github.com/nexorengine/plataforma-nexor.git` |
 | Branch de produção | `gh-pages` — o que está no ar |
 | Branch de desenvolvimento | `main` |
-| Diretório local | `C:\ARAGORN\plataforma-nexor\` |
+| Diretório local | `C:\NEXOR_MED\plataforma-nexor\` |
 
 > **Regra**: todo trabalho novo vai em `main`, depois merge para `gh-pages` para publicar.
 > O diretório local está atualmente na branch `gh-pages`.
+> **Fonte da verdade é o GitHub, não o diretório local.** Este arquivo documenta o caminho local como referência, mas em caso de divergência o repositório remoto prevalece.
 
 ---
 
 ## 3. Mapa de Arquivos Locais
 
-### 3.1 Raiz do Projeto `C:\ARAGORN\plataforma-nexor\`
+### 3.1 Raiz do Projeto `C:\NEXOR_MED\plataforma-nexor\`
 
 ```
 CNAME                        → domínio personalizado (nexorengine.com)
@@ -46,7 +47,7 @@ upgrade.html                 → página de planos e assinatura (Stripe)
 success.html                 → confirmação pós-pagamento
 ```
 
-### 3.2 Assets `C:\ARAGORN\plataforma-nexor\assets\`
+### 3.2 Assets `C:\NEXOR_MED\plataforma-nexor\assets\`
 
 | Arquivo | Função |
 |---------|--------|
@@ -59,7 +60,7 @@ success.html                 → confirmação pós-pagamento
 | `profile.js` | Sheet de perfil lateral — stats, configurações, suporte WhatsApp |
 | `tts.js` | Text-to-speech dos resumos analíticos |
 
-### 3.3 Conteúdo `C:\ARAGORN\plataforma-nexor\content\`
+### 3.3 Conteúdo `C:\NEXOR_MED\plataforma-nexor\content\`
 
 #### Quizzes (90 arquivos · 4.500 questões)
 ```
@@ -130,13 +131,13 @@ medicina_preventiva    → 9 domínios
 pediatria              → 9 domínios
 ```
 
-### 3.4 Scripts `C:\ARAGORN\plataforma-nexor\scripts\`
+### 3.4 Scripts `C:\NEXOR_MED\plataforma-nexor\scripts\`
 ```
 scripts/retrofit/patch_resumos.py   → aplica patches pontuais em resumos específicos
 scripts/retrofit/regen_resumos.py   → regenera resumos individuais via API Anthropic
 ```
 
-### 3.5 Supabase Functions `C:\ARAGORN\plataforma-nexor\supabase\`
+### 3.5 Supabase Functions `C:\NEXOR_MED\plataforma-nexor\supabase\`
 ```
 supabase/functions/stripe-webhook/index.ts     → webhook Stripe (checkout + cancel + falha)
 supabase/functions/stripe-webhook/config.toml  → verify_jwt: false (webhook externo)
@@ -181,16 +182,16 @@ supabase/migrations/001_subscriptions.sql      → schema da tabela subscription
 | Item | Valor |
 |------|-------|
 | Painel | https://dashboard.stripe.com |
-| Modo atual | **TEST** (mudar para live quando pronto) |
-| Webhook endpoint | `https://bprpbfqxrlthjeymhkec.supabase.co/functions/v1/stripe-webhook` |
+| Modo atual | **LIVE** (produção) |
+| Webhook endpoint | `https://bprpbfqxrlthjeymhkec.supabase.co/functions/v1/stripe-webhook` — configurado no Stripe Dashboard (destino ativo, eventos: checkout.session.completed, customer.subscription.updated, customer.subscription.deleted), signing secret sincronizado com `STRIPE_WEBHOOK_SECRET` no Supabase. Testado via requisição sintética assinada — retorno `ok`. |
 
-### Payment Links (TEST — substituir por links LIVE antes do lançamento)
+### Payment Links (LIVE — em produção em `upgrade.html`)
 | Plano | Link |
 |-------|------|
-| Mensal R$39/mês | `https://buy.stripe.com/test_dRm8wR8iA2Np1uvcJz2Fa00` |
-| Anual R$297/ano | `https://buy.stripe.com/test_7sY14p9mEgEfc999xn2Fa01` |
+| Mensal R$39/mês | `https://buy.stripe.com/00wfZi9Q48ZcqB9BeQM00` |
+| Anual R$297/ano | `https://buy.stripe.com/fZu8wQd2P0WN8950CheQM01` |
 
-> Os links ficam em `upgrade.html` — atualizar para links LIVE antes de lançar.
+> Injeção de `client_reference_id` e `prefilled_email` feita via JS em `upgrade.html` no momento do clique.
 
 ---
 
