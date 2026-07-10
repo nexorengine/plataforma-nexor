@@ -51,7 +51,26 @@ serve(async (req) => {
     }
 
     const amountTotal = session.amount_total || 0;
-    const plan = amountTotal <= 4500 ? 'monthly' : 'annual';
+
+    // Preços atuais (centavos) — atualizar aqui se o Stripe mudar de valor.
+    // Comparação por valor exato (não por faixa/limiar) para evitar classificação
+    // silenciosa errada caso um preço mude e passe a colidir com o outro plano.
+    const PRICE_MONTHLY_CENTS = 3900;  // R$39/mês
+    const PRICE_ANNUAL_CENTS  = 29700; // R$297/ano
+
+    let plan: string;
+    if (amountTotal === PRICE_MONTHLY_CENTS) {
+      plan = 'monthly';
+    } else if (amountTotal === PRICE_ANNUAL_CENTS) {
+      plan = 'annual';
+    } else {
+      console.error(
+        `Valor de checkout não reconhecido: ${amountTotal} centavos (session ${session.id}). ` +
+        `Esperado mensal=${PRICE_MONTHLY_CENTS} ou anual=${PRICE_ANNUAL_CENTS}. ` +
+        `Assinatura NÃO registrada — requer revisão manual e atualização destas constantes.`
+      );
+      return new Response('Unrecognized amount - manual review required', { status: 200 });
+    }
 
     const periodEnd = new Date();
     if (plan === 'monthly') periodEnd.setMonth(periodEnd.getMonth() + 1);
