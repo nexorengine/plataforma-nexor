@@ -137,8 +137,8 @@ def main():
     parser.add_argument("--area", default=None, help="Roda apenas uma area especifica")
     args = parser.parse_args()
 
-    BASE_RESUMOS = r"C:\ARAGORN\plataforma-nexor\content\resumos"
-    BASE_QUIZZES = r"C:\ARAGORN\plataforma-nexor\content\quizzes"
+    BASE_RESUMOS = r"C:\NEXOR_MED\plataforma-nexor\content\resumos"
+    BASE_QUIZZES = r"C:\NEXOR_MED\plataforma-nexor\content\quizzes"
 
     arquivos = sorted(glob.glob(os.path.join(BASE_RESUMOS, "**", "*.json"), recursive=True))
 

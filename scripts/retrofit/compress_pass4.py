@@ -83,7 +83,7 @@ def processar_arquivo(caminho_resumo):
 
 
 def main():
-    BASE = r"C:\ARAGORN\plataforma-nexor\content\resumos"
+    BASE = r"C:\NEXOR_MED\plataforma-nexor\content\resumos"
     arquivos = sorted(glob.glob(os.path.join(BASE, "**", "*.json"), recursive=True))
 
     total_tarefas = total_ok = 0

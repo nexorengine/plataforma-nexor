@@ -27,7 +27,7 @@ Retorne APENAS o texto do resumo, sem cabeçalho, sem marcadores, sem markdown."
 
 CASOS = [
     {
-        "arquivo": r"C:\ARAGORN\plataforma-nexor\content\resumos\medicina_preventiva\dcnt_promocao_saude\quiz_001_resumos.json",
+        "arquivo": r"C:\NEXOR_MED\plataforma-nexor\content\resumos\medicina_preventiva\dcnt_promocao_saude\quiz_001_resumos.json",
         "num": 25,
         "questao": "Pesquisador avalia o impacto de uma intervenção anti-tabagismo em uma coorte de 10.000 adultos fumantes. Após 5 anos, a incidência de infarto agudo do miocárdio (IAM) no grupo intervenção (cessação tabágica confirmada) foi de 1,2%, versus 3,6% no grupo controle (fumantes contínuos). Qual é a redução do risco relativo (RRR) e o número necessário para tratar (NNT) calculados corretamente?",
         "opts": [
@@ -39,7 +39,7 @@ CASOS = [
         "correta": "A"
     },
     {
-        "arquivo": r"C:\ARAGORN\plataforma-nexor\content\resumos\medicina_preventiva\vigilancia_epidemiologica\quiz_002_resumos.json",
+        "arquivo": r"C:\NEXOR_MED\plataforma-nexor\content\resumos\medicina_preventiva\vigilancia_epidemiologica\quiz_002_resumos.json",
         "num": 41,
         "questao": "Secretaria estadual de saúde investiga surto de coqueluche em município com cobertura vacinal de DTP/DTPa historicamente superior a 95%. Em 14 semanas, confirmam-se 43 casos: 61% em lactentes menores de 6 meses, 28% em adolescentes de 11-14 anos e 11% em adultos com esquema primário completo. A investigação genômica identifica circulação de Bordetella pertussis com mutação no gene ptxP3. Qual é a principal limitação estrutural do programa de imunização e a intervenção mais adequada para redução da mortalidade?",
         "opts": [

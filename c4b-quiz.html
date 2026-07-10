@@ -425,7 +425,7 @@ function ttsAula(btn){
 
 function ttsQuestao(btn){
   const q=sq[cur];
-  const opts=['A','B','C','D'];
+  const opts=['A','B','C','D','E']; // corrigido: ate 5 alternativas (ver keys na linha ~154)
   const texto=q.q+'. '+q.opts.map((o,i)=>opts[i]+': '+o).join('. ');
   TTS.speak(texto, btn);
 }

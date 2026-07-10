@@ -12,7 +12,11 @@ const sb = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY, {
 async function sendEmail(type: string, to: string, nome: string, extra?: object) {
   await fetch(SEND_EMAIL_URL, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      // Correcao 2026-07-10: send-email agora exige JWT valido (verify_jwt=true).
+      'Authorization': 'Bearer ' + SUPABASE_SERVICE_KEY,
+    },
     body: JSON.stringify({ type, to, nome, ...extra }),
   });
 }

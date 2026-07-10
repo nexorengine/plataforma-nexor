@@ -93,7 +93,11 @@ const Auth = {
             || session.user.email.split('@')[0];
           fetch('https://bprpbfqxrlthjeymhkec.supabase.co/functions/v1/send-email', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+              'Content-Type': 'application/json',
+              // Correcao 2026-07-10: send-email agora exige JWT valido (verify_jwt=true).
+              'Authorization': 'Bearer ' + session.access_token,
+            },
             body: JSON.stringify({ type: 'boas_vindas', to: session.user.email, nome }),
           });
         }

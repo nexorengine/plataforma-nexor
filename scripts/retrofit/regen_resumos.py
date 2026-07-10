@@ -4,7 +4,7 @@ client = anthropic.Anthropic()
 
 QUESTOES = [
     {
-        "arquivo": "C:/ARAGORN/plataforma-nexor/content/resumos/cirurgia_geral/trauma_urgencia/quiz_001_resumos.json",
+        "arquivo": "C:/NEXOR_MED/plataforma-nexor/content/resumos/cirurgia_geral/trauma_urgencia/quiz_001_resumos.json",
         "num": 12,
         "questao": "Mulher, 28 anos, ferimento penetrante em tórax anterior direito (5 cm abaixo do mamilho). Hemodinamicamente estável, sem dispneia. Qual investigação é mais sensível para descartar lesão cardíaca neste cenário?",
         "opcoes": "A) Radiografia de tórax simples | B) Tomografia computadorizada com contraste | C) Observação clínica por 24 horas | D) Ecocardiografia/ultrassom pericárdico (POCUS)",
@@ -12,7 +12,7 @@ QUESTOES = [
         "exp": "POCUS detecta fluido pericárdico com alta sensibilidade (92-100%) em ferimentos penetrantes. Realizado à beira do leito, orientado à decisão."
     },
     {
-        "arquivo": "C:/ARAGORN/plataforma-nexor/content/resumos/medicina_preventiva/vigilancia_epidemiologica/quiz_001_resumos.json",
+        "arquivo": "C:/NEXOR_MED/plataforma-nexor/content/resumos/medicina_preventiva/vigilancia_epidemiologica/quiz_001_resumos.json",
         "num": 12,
         "questao": "Município com cobertura vacinal de poliomielite caída para 68% nos últimos dois anos notifica um caso de paralisia flácida aguda confirmado como poliovírus vacinal derivado tipo 2 (VDPV2). O comitê técnico decide iniciar campanha de vacinação em massa com VOP bivalente. Por que a queda da cobertura vacinal abaixo do limiar crítico favorece especificamente a emergência de VDPV circulante?",
         "opcoes": "A) Cobertura insuficiente aumenta a proporção de suscetíveis, permitindo que o vírus vacinal atenuado circule em comunidade e acumule mutações de reversão de neurovirulência ao longo de múltiplas replicações | B) A queda da cobertura reduz a imunidade de mucosa intestinal em vacinados, impedindo que a VOP induza resposta secretória de IgA eficaz | C) Coberturas abaixo de 70% permitem recombinação entre poliovírus selvagem e vacinal no intestino de crianças vacinadas, gerando VDPV independentemente da circulação comunitária | D) A VOP perde estabilidade genética quando administrada em populações com baixa cobertura porque há menor competição viral no ambiente intestinal dos vacinados",
@@ -20,7 +20,7 @@ QUESTOES = [
         "exp": "O VDPV circulante emerge quando o poliovírus vacinal atenuado se propaga em cadeia entre indivíduos suscetíveis, pois cada ciclo replicativo em novo hospedeiro seleciona reversões nas posições críticas de atenuação. Coberturas abaixo do limiar de imunidade de rebanho (~80-85% para poliomielite) mantêm massa suscetível suficiente para sustentar essa circulação prolongada."
     },
     {
-        "arquivo": "C:/ARAGORN/plataforma-nexor/content/resumos/medicina_preventiva/vigilancia_epidemiologica/quiz_002_resumos.json",
+        "arquivo": "C:/NEXOR_MED/plataforma-nexor/content/resumos/medicina_preventiva/vigilancia_epidemiologica/quiz_002_resumos.json",
         "num": 41,
         "questao": "Secretaria estadual de saúde investiga surto de coqueluche em município com cobertura vacinal de DTP/DTPa historicamente superior a 95%. Em 14 semanas, confirmam-se 43 casos: 61% em lactentes menores de 6 meses, 28% em adolescentes de 11-14 anos e 11% em adultos com esquema primário completo. A investigação genômica identifica circulação de Bordetella pertussis com mutação no gene codificador do antígeno ptxP3, associada à maior produção de toxina pertussis e à evasão da imunidade induzida pela vacina acelular. Qual é a principal limitação estrutural do programa de imunização evidenciada por este surto e a intervenção mais adequada para redução da mortalidade no grupo de maior risco?",
         "opcoes": "A) Falha primária vacinal por cobertura insuficiente em adolescentes; solução: reforço de DTPa em adolescentes de 11-14 anos como estratégia de cocoon | B) Waning immunity da vacina acelular em adolescentes e adultos com perda de proteção 5-7 anos após a última dose, criando reservatório de transmissão para lactentes vulneráveis; solução prioritária: vacinação de gestantes com dTpa no terceiro trimestre para transferência de anticorpos maternos | C) Escape imunológico por variante ptxP3 tornando a vacina ineficaz em todas as faixas etárias; solução: suspensão do esquema atual | D) Subnotificação laboratorial mascarando casos em adultos imunocompetentes",

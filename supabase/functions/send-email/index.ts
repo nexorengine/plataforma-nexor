@@ -140,6 +140,13 @@ serve(async (req) => {
     return new Response('ok', { headers: { 'Access-Control-Allow-Origin': '*' } });
   }
 
+  // Correção de segurança (auditoria 2026-07-10): antes deste fix, este endpoint
+  // era publico (verify_jwt=false) e sem nenhuma validacao, permitindo que
+  // qualquer pessoa disparasse e-mails arbitrarios usando a marca nexor_med e a
+  // cota do Resend. Agora verify_jwt=true (config.toml) exige um JWT valido do
+  // Supabase (sessao do usuario ou service role) — enforced pelo runtime antes
+  // mesmo de chegar aqui. Nenhuma validacao extra e necessaria no codigo.
+
   let body: any;
   try {
     body = await req.json();
