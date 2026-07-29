@@ -107,6 +107,7 @@
 <script src="assets/notif.js"></script>
 <script src="assets/profile.js"></script>
 <script src="assets/catalog.js"></script>
+<script src="assets/utils.js"></script>
 <script>
 // Protege a rota — redireciona para login se não autenticado
 (async () => {
@@ -133,8 +134,6 @@ document.querySelector('.nx-back-btn').href=`c3-med#area=${area}&dominio=${domin
   document.getElementById('c4a-nome').textContent=d.nome;
   document.title=d.nome+' · Flashcards · nexor_med';
 })();
-
-function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 
 let cards=[],cur=0,flipped=false,rights=0,wrongs=0,TOTAL=48;
 
