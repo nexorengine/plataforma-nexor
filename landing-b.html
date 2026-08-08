@@ -602,9 +602,11 @@ body::before{
 .nx-back-btn               { font-size: 17px !important; }
 .nx-powered                { font-size: 15px !important; }
 
-/* Stats bar */
+/* Stats bar — só escala em tela maior */
+@media(min-width:480px){
 .c0-stat-num               { font-size: 27px !important; }
 .c0-stat-label             { font-size: 14px !important; }
+}
 
 /* Section labels */
 .nx-section-label          { font-size: 15px !important; }
