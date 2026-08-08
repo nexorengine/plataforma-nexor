@@ -581,6 +581,111 @@ body::before{
 }
 .c0-magic>*{position:relative;z-index:1;}
 </style>
+<style>
+/* ── LANDING-B: ESCALA DE LEGIBILIDADE +50% ── */
+.hb-terminal               { font-size: 15px !important; }
+.hb-headline               { font-size: clamp(57px,12vw,108px) !important; }
+.hb-sub                    { font-size: 20px !important; }
+.hb-quiz-spec              { font-size: 14px !important; }
+.hb-quiz-badge             { font-size: 14px !important; }
+.hb-quiz-label             { font-size: 14px !important; }
+.hb-quiz-q                 { font-size: 20px !important; }
+.hb-optxt                  { font-size: 18px !important; }
+.hb-key                    { font-size: 18px !important; width:30px !important; height:30px !important; }
+.hb-result-msg             { font-size: 18px !important; }
+.hb-result-cta             { font-size: 22px !important; }
+.hb-result-reset           { font-size: 15px !important; }
+
+/* Navbar */
+.nx-wordmark               { font-size: 27px !important; }
+.nx-wordmark-left          { font-size: 30px !important; }
+.nx-back-btn               { font-size: 17px !important; }
+.nx-powered                { font-size: 15px !important; }
+
+/* Stats bar */
+.c0-stat-num               { font-size: 27px !important; }
+.c0-stat-label             { font-size: 14px !important; }
+
+/* Section labels */
+.nx-section-label          { font-size: 15px !important; }
+
+/* Features */
+.c0-feat-title             { font-size: 20px !important; }
+.c0-feat-sub               { font-size: 18px !important; }
+.c0-feat-icon i            { font-size: 26px !important; }
+
+/* Narrative */
+.c0-narrative-pct          { font-size: 108px !important; }
+.c0-narrative-claim        { font-size: 21px !important; }
+.c0-narrative-resolve      { font-size: 27px !important; }
+
+/* Mockup quiz */
+.c0-mockup-q               { font-size: 21px !important; }
+.c0-mockup-optxt           { font-size: 18px !important; }
+.c0-mockup-key             { font-size: 18px !important; }
+.c0-mockup-face            { font-size: 14px !important; }
+.c0-mockup-correct-label   { font-size: 15px !important; }
+.c0-anchor-txt             { font-size: 18px !important; }
+
+/* Quiz demo */
+.nx-opt-text               { font-size: 21px !important; }
+.nx-opt-key                { font-size: 20px !important; }
+.nx-feedback               { font-size: 20px !important; }
+.nx-card-text              { font-size: 27px !important; }
+
+/* Especialidades */
+.nx-cap-title              { font-size: 26px !important; }
+.nx-cap-sub                { font-size: 18px !important; }
+
+/* Testimonials */
+.c0-testi-quote            { font-size: 18px !important; }
+.c0-testi-author           { font-size: 17px !important; }
+.c0-testi-role             { font-size: 15px !important; }
+.c0-concorrencia           { font-size: 15px !important; }
+
+/* Pricing */
+.c0-plan-tag               { font-size: 14px !important; }
+.c0-plan-name              { font-size: 26px !important; }
+.c0-plan-price             { font-size: 48px !important; }
+.c0-plan-price span        { font-size: 20px !important; }
+.c0-plan-sub               { font-size: 15px !important; }
+
+/* Guarantee */
+.c0-guarantee-text         { font-size: 18px !important; }
+.c0-guarantee i            { font-size: 30px !important; }
+
+/* Auth form */
+.c0-magic-title            { font-size: 26px !important; }
+.c0-magic-sub              { font-size: 18px !important; }
+.c0-magic-label            { font-size: 17px !important; }
+.c0-feature                { font-size: 18px !important; }
+.c0-input                  { font-size: 21px !important; }
+.c0-btn-google             { font-size: 20px !important; }
+.nx-btn-primary            { font-size: 24px !important; }
+
+/* Footer */
+.nx-footer span            { font-size: 18px !important; }
+
+/* ── HERO B: bg-hero.jpg (igual landing-c) ── */
+.hb-photo-wrap{
+  position:relative;
+  margin:-32px -24px 0;
+  padding:48px 24px 32px;
+  overflow:hidden;
+}
+@media(max-width:640px){.hb-photo-wrap{margin:-20px -16px 0;padding:36px 16px 28px;}}
+.hb-photo-bg{
+  position:absolute;inset:0;
+  background-image:url('assets/bg-hero.jpg');
+  background-size:cover;background-position:center 20%;
+  filter:grayscale(30%) brightness(.38) contrast(1.1);
+}
+.hb-photo-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to bottom, rgba(7,10,14,.1) 0%, rgba(7,10,14,.55) 50%, rgba(7,10,14,.98) 100%);
+}
+.hb-photo-inner{position:relative;z-index:1;}
+</style>
 </head>
 <body>
 <div id="nx-splash" style="display:none;position:fixed;inset:0;z-index:9999;background:#070A0E;align-items:center;justify-content:center;opacity:1;transition:opacity 400ms ease;">
@@ -697,17 +802,20 @@ body::before{
 </style>
 
 <div class="c0-left">
-  <div class="nx-hero" style="padding-bottom:4px;">
+  <div class="hb-photo-wrap hero-reveal">
+    <div class="hb-photo-bg" role="img" aria-label="Cirurgião em centro cirúrgico"></div>
+    <div class="hb-photo-overlay"></div>
+    <div class="hb-photo-inner">
 
     <!-- terminal digitando -->
-    <div class="hb-terminal hero-reveal" id="hb-term"></div>
+    <div class="hb-terminal" id="hb-term"></div>
 
     <!-- headline choque -->
-    <div class="hb-headline hero-reveal" style="transition-delay:80ms;">
+    <div class="hb-headline" style="transition-delay:80ms;">
       Você <span class="strike">leu</span> tudo.<br>
       Vai reprovar<br>mesmo assim.
     </div>
-    <div class="hb-sub hero-reveal" style="transition-delay:160ms;">
+    <div class="hb-sub" style="transition-delay:160ms;">
       A banca cobra raciocínio clínico — não leitura. Responda a questão abaixo e descubra.
     </div>
 
@@ -734,8 +842,9 @@ body::before{
       </div>
     </div>
 
-    <div class="nx-powered hero-reveal" style="transition-delay:340ms;margin-top:14px;">Powered by <span>FractalLearning™</span></div>
-  </div>
+    <div class="nx-powered" style="margin-top:14px;">Powered by <span>FractalLearning™</span></div>
+    </div><!-- /hb-photo-inner -->
+  </div><!-- /hb-photo-wrap -->
 
 <script>
 // ── TERMINAL EFFECT ──
