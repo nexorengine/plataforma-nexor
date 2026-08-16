@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="nexor_med">
-<meta name="theme-color" content="#16263B">
+<meta name="theme-color" content="#19212a">
 <title>nexor_med · Assinatura Confirmada</title>
 <link rel="stylesheet" href="assets/nx.css?v=3">
 <link rel="stylesheet" href="assets/nx-glass.css">
@@ -20,8 +20,8 @@
 .hero-reveal.visible{opacity:1;transform:translateY(0);filter:blur(0);}
 .sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
 .sr.visible{opacity:1;transform:translateY(0);}
-.success-icon{width:80px;height:80px;border-radius:50%;background:rgba(74,222,128,0.12);border:2px solid rgba(74,222,128,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;}
-.feature-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(14,165,233,0.08);}
+.success-icon{width:80px;height:80px;border-radius:50%;background:rgb(from var(--success) r g b / 0.12);border:2px solid rgb(from var(--success) r g b / 0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;}
+.feature-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgb(from var(--primary) r g b / 0.08);}
 .feature-row:last-child{border-bottom:none;}
 </style>
 </head>
@@ -36,41 +36,41 @@
 
   <div style="padding:32px 0 20px;">
     <div class="success-icon hero-reveal" style="transition-delay:0ms">
-      <i class="ti ti-circle-check" style="font-size:40px;color:#4ade80;"></i>
+      <i class="ti ti-circle-check" style="font-size:40px;color:var(--success);"></i>
     </div>
-    <div class="hero-reveal" style="transition-delay:100ms;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;color:#F0F6FB;margin-bottom:6px;">
+    <div class="hero-reveal" style="transition-delay:100ms;font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:-0.01em;color:var(--foreground);margin-bottom:8px;">
       Assinatura confirmada!
     </div>
-    <div class="hero-reveal" style="transition-delay:180ms;font-size:13px;color:#888;">
+    <div class="hero-reveal" style="transition-delay:180ms;font-size:14px;color:var(--muted-foreground);">
       Bem-vindo ao nexor_med. Seu acesso está ativo.
     </div>
   </div>
 
-  <div class="sr" style="transition-delay:60ms;background:rgba(14,30,54,0.50);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(14,165,233,0.16);border-radius:10px;padding:16px 20px;margin-bottom:20px;text-align:left;box-shadow:inset 0 1px 0 rgba(255,255,255,0.04),0 4px 24px rgba(0,0,0,0.30);">
+  <div class="sr" style="transition-delay:60ms;background:rgb(from var(--surface) r g b / 0.50);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgb(from var(--primary) r g b / 0.16);border-radius:var(--radius-xl);padding:20px 22px;margin-bottom:24px;text-align:left;box-shadow:inset 0 1px 0 rgba(255,255,255,0.04),0 16px 40px -20px rgba(0,0,0,0.5);">
     <div class="feature-row">
-      <i class="ti ti-clipboard-check" style="color:#0EA5E9;font-size:18px;flex-shrink:0;"></i>
-      <div style="font-size:13px;color:#F0F6FB;">4.500+ questões comentadas</div>
+      <i class="ti ti-clipboard-check" style="color:var(--primary);font-size:18px;flex-shrink:0;"></i>
+      <div style="font-size:13px;color:var(--foreground);">4.500+ questões comentadas</div>
     </div>
     <div class="feature-row">
-      <i class="ti ti-cards" style="color:#0EA5E9;font-size:18px;flex-shrink:0;"></i>
-      <div style="font-size:13px;color:#F0F6FB;">Flashcards FractalLearning™</div>
+      <i class="ti ti-cards" style="color:var(--primary);font-size:18px;flex-shrink:0;"></i>
+      <div style="font-size:13px;color:var(--foreground);">Flashcards FractalLearning™</div>
     </div>
     <div class="feature-row">
-      <i class="ti ti-chart-bar" style="color:#0EA5E9;font-size:18px;flex-shrink:0;"></i>
-      <div style="font-size:13px;color:#F0F6FB;">Scorecard com histórico completo</div>
+      <i class="ti ti-chart-bar" style="color:var(--primary);font-size:18px;flex-shrink:0;"></i>
+      <div style="font-size:13px;color:var(--foreground);">Scorecard com histórico completo</div>
     </div>
     <div class="feature-row">
-      <i class="ti ti-file-text" style="color:#0EA5E9;font-size:18px;flex-shrink:0;"></i>
-      <div style="font-size:13px;color:#F0F6FB;">Resumos analíticos por questão</div>
+      <i class="ti ti-file-text" style="color:var(--primary);font-size:18px;flex-shrink:0;"></i>
+      <div style="font-size:13px;color:var(--foreground);">Resumos analíticos por questão</div>
     </div>
   </div>
 
-  <a href="c1-med.html" class="sr" style="transition-delay:120ms;display:block;width:100%;padding:14px;background:#FCA311;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.04em;cursor:pointer;text-decoration:none;box-sizing:border-box;">
+  <a href="c1-med.html" class="sr" style="transition-delay:120ms;display:block;width:100%;padding:16px;background:var(--warning);color:var(--background);border:none;border-radius:var(--radius-md);font-family:var(--font-sans);font-weight:700;font-size:15px;letter-spacing:0.05em;cursor:pointer;text-decoration:none;box-sizing:border-box;box-shadow:0 16px 36px -16px color-mix(in oklab, var(--warning) 55%, transparent);">
     COMEÇAR A ESTUDAR
   </a>
 
-  <div class="sr" style="transition-delay:180ms;margin-top:16px;font-size:11px;color:#555;font-family:'Barlow',sans-serif;">
-    Dúvidas? <a href="#" onclick="openSupport();return false;" style="color:#0EA5E9;text-decoration:none;">Fale com o suporte</a>
+  <div class="sr" style="transition-delay:180ms;margin-top:16px;font-size:11px;color:color-mix(in oklab, var(--muted-foreground) 50%, transparent);font-family:var(--font-sans);">
+    Dúvidas? <a href="#" onclick="openSupport();return false;" style="color:var(--primary);text-decoration:none;">Fale com o suporte</a>
   </div>
 
 </div>

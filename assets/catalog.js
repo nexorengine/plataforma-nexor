@@ -16,7 +16,7 @@ const CATALOG = {
     ]
   },
   gineco_obstetricia: {
-    label: 'Ginecologia & Obstetrícia',
+    label: 'Gineco e Obstetrícia',
     code: 'GO',
     icon: 'ti-baby-carriage',
     dominios: [

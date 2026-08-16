@@ -17,7 +17,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="nexor_med">
-<meta name="theme-color" content="#16263B">
+<meta name="theme-color" content="#19212a">
 <title>nexor_med · Especialidades</title>
 <link rel="stylesheet" href="assets/nx.css?v=3">
 <link rel="stylesheet" href="assets/nx-glass.css">
@@ -29,6 +29,10 @@
 .sr{opacity:0;transform:translateY(15px);transition:opacity 600ms cubic-bezier(0.16,1,0.3,1),transform 600ms cubic-bezier(0.16,1,0.3,1);}
 .sr.visible{opacity:1;transform:translateY(0);}
 .nx-capsule{transition:transform 250ms cubic-bezier(0.16,1,0.3,1),box-shadow 250ms cubic-bezier(0.16,1,0.3,1),border-color 250ms ease;}
+.nx-pill.insuficiente{background:rgb(from var(--destructive) r g b / 0.1);color:var(--destructive);border:2px solid var(--destructive);font-weight:700;letter-spacing:0.02em;}
+.nx-pill.mediano{background:rgba(252,163,17,0.1);color:var(--warning);border:2px solid var(--warning);font-weight:700;letter-spacing:0.02em;}
+.nx-pill.satisfatorio{background:rgb(from var(--success) r g b / 0.1);color:var(--success);border:2px solid var(--success);font-weight:700;letter-spacing:0.02em;}
+.nx-hero-title{font-size:26px!important;}
 @media(hover:hover){.nx-capsule:hover{transform:translateY(-3px) scale(1.012)!important;box-shadow:0 8px 24px rgba(0,0,0,0.35)!important;border-color:rgba(159,203,235,0.3)!important;}}
 @media(prefers-reduced-motion:reduce){.hero-reveal,.sr{opacity:1!important;transform:none!important;filter:none!important;}}
 
@@ -49,21 +53,21 @@
 }
 
 /* Trial warning banner */
-.trial-warn{display:none;align-items:center;gap:12px;padding:12px 16px;border-radius:8px;margin-bottom:16px;cursor:pointer;text-decoration:none;}
+.trial-warn{display:none;align-items:center;gap:12px;padding:12px 16px;border-radius:var(--radius-md);margin-bottom:16px;cursor:pointer;text-decoration:none;}
 .trial-warn.urgente{background:rgba(252,163,17,0.10);border:1px solid rgba(252,163,17,0.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);}
-.trial-warn.critico{background:rgba(239,68,68,0.10);border:1px solid rgba(239,68,68,0.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:pulseBorder 2s ease-in-out infinite;}
-@keyframes pulseBorder{0%,100%{border-color:rgba(239,68,68,0.35);}50%{border-color:rgba(239,68,68,0.70);}}
+.trial-warn.critico{background:rgb(from var(--destructive) r g b / 0.10);border:1px solid rgb(from var(--destructive) r g b / 0.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:pulseBorder 2s ease-in-out infinite;}
+@keyframes pulseBorder{0%,100%{border-color:rgb(from var(--destructive) r g b / 0.35);}50%{border-color:rgb(from var(--destructive) r g b / 0.70);}}
 .trial-warn-icon{font-size:20px;flex-shrink:0;}
 .trial-warn-body{flex:1;}
-.trial-warn-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;margin-bottom:2px;}
+.trial-warn-title{font-family:var(--font-display);font-weight:700;font-size:14px;margin-bottom:2px;}
 .trial-warn-sub{font-size:11px;font-weight:300;opacity:0.80;}
-.trial-warn-cta{font-size:11px;font-weight:700;font-family:'Barlow',sans-serif;white-space:nowrap;padding:5px 12px;border-radius:4px;flex-shrink:0;}
-.trial-warn.urgente .trial-warn-title{color:#FCA311;}
-.trial-warn.urgente .trial-warn-sub{color:#c8a060;}
-.trial-warn.urgente .trial-warn-cta{background:#FCA311;color:#070A0E;}
-.trial-warn.critico .trial-warn-title{color:#f87171;}
-.trial-warn.critico .trial-warn-sub{color:#c87070;}
-.trial-warn.critico .trial-warn-cta{background:#ef4444;color:#fff;}
+.trial-warn-cta{font-size:11px;font-weight:700;font-family:var(--font-sans);white-space:nowrap;padding:5px 12px;border-radius:var(--radius-sm);flex-shrink:0;}
+.trial-warn.urgente .trial-warn-title{color:var(--warning);}
+.trial-warn.urgente .trial-warn-sub{color:color-mix(in oklab, var(--warning) 65%, var(--muted-foreground));}
+.trial-warn.urgente .trial-warn-cta{background:var(--warning);color:var(--background);}
+.trial-warn.critico .trial-warn-title{color:var(--destructive);}
+.trial-warn.critico .trial-warn-sub{color:color-mix(in oklab, var(--destructive) 65%, var(--muted-foreground));}
+.trial-warn.critico .trial-warn-cta{background:var(--destructive);color:var(--foreground);}
 </style>
 </head>
 <body>
@@ -134,14 +138,49 @@ el.innerHTML = AREA_ORDER.map((slug, i) => {
   const a = CATALOG[slug];
   const n = a.dominios.length;
   return `<a href="c2-med#area=${slug}" class="nx-capsule active sr" style="transition-delay:${i*60}ms">
-    <i class="ti ${a.icon}" style="color:#0EA5E9;font-size:22px;width:24px;text-align:center;flex-shrink:0;"></i>
+    <i class="ti ${a.icon}" style="color:var(--primary);font-size:22px;width:24px;text-align:center;flex-shrink:0;"></i>
     <div class="nx-cap-body">
       <div class="nx-cap-title">${a.label}</div>
-      <div class="nx-cap-org">${n} domínios · ${n*48} flashcards · ${n*100} questões</div>
+      <div class="nx-cap-org">${n} dom / ${n*48} flashs / ${n*100} questões</div>
     </div>
-    <div class="nx-pill available">ACESSAR</div>
+    <div class="nx-pill available" id="pill-${slug}">ACESSAR</div>
   </a>`;
 }).join('');
+
+// Classifica o desempenho médio de uma área nos mesmos limiares do scorecard (c4c-scorecard.html):
+// >=80% satisfatório (verde) · >=50% mediano (amarelo) · abaixo disso insuficiente (vermelho)
+function areaStatusClass(pct){
+  if(pct>=80) return 'satisfatorio';
+  if(pct>=50) return 'mediano';
+  return 'insuficiente';
+}
+
+async function getAreaScores(){
+  // média do melhor score por domínio dentro da área, 0 pra domínio sem tentativa.
+  const { data: { session } } = await _sb.auth.getSession();
+  if (!session) return {};
+  const { data: rows } = await _sb.from('study_sessions').select('area,dominio,score').eq('user_id', session.user.id);
+  const scores = {};
+  AREA_ORDER.forEach(slug => {
+    const doms = CATALOG[slug].dominios.map(d => d.slug);
+    const media = doms.reduce((sum, dslug) => {
+      const best = Math.max(0, ...(rows||[]).filter(r => r.area===slug && r.dominio===dslug).map(r => parseFloat(r.score)||0));
+      return sum + best;
+    }, 0) / doms.length;
+    scores[slug] = Math.round(media);
+  });
+  return scores;
+}
+
+getAreaScores().then(scores => {
+  AREA_ORDER.forEach(slug => {
+    const pct = scores[slug] || 0;
+    const pill = document.getElementById('pill-' + slug);
+    if(!pill) return;
+    pill.classList.remove('available');
+    pill.classList.add(areaStatusClass(pct));
+  });
+}).catch(e => console.warn('Erro ao carregar status das áreas:', e));
 
 (function(){
   const scrollEl = document.querySelector('.nx-scroll');

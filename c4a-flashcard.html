@@ -17,7 +17,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="nexor_med">
-<meta name="theme-color" content="#16263B">
+<meta name="theme-color" content="#19212a">
 <title>Flashcards · nexor_med</title>
 <link rel="stylesheet" href="assets/nx.css?v=3">
 <link rel="stylesheet" href="assets/nx-glass.css">
@@ -62,12 +62,11 @@
 </div>
 <div class="nx-scroll">
 <div class="nx-body">
-  <div id="c4a-header" class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:rgba(14,30,54,0.50);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(14,165,233,0.14);border-radius:6px;padding:12px 14px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);">
+  <div id="c4a-header" class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:rgb(from var(--surface) r g b / 0.50);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgb(from var(--primary) r g b / 0.14);border-radius:var(--radius-sm);padding:12px 14px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);">
     <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="c4a-icon"><i class="ti ti-cards" style="font-size:18px;"></i></div>
     <div>
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#0EA5E9;margin-bottom:2px;" id="c4a-label">—</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;" id="c4a-nome">—</div>
-      <div style="font-size:11px;color:#B0BEC5;font-weight:300;margin-top:1px;">Flashcards · 48 cards</div>
+      <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--foreground);line-height:1.1;" id="c4a-nome">—</div>
+      <div style="font-size:11px;color:var(--muted-foreground);font-weight:300;margin-top:2px;" id="c4a-label">—</div>
     </div>
   </div>
 
@@ -97,9 +96,9 @@
   </div>
 
   <div class="nx-stats-row" style="margin-top:8px;">
-    <div class="nx-stat"><div class="nx-stat-val" id="sr" style="color:#4ade80;">0</div><div class="nx-stat-lbl">acertos</div></div>
-    <div class="nx-stat"><div class="nx-stat-val" id="sw" style="color:#f87171;">0</div><div class="nx-stat-lbl">erros</div></div>
-    <div class="nx-stat"><div class="nx-stat-val" id="sl" style="color:#0EA5E9;">48</div><div class="nx-stat-lbl">restantes</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sr" style="color:var(--success);">0</div><div class="nx-stat-lbl">acertos</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sw" style="color:var(--destructive);">0</div><div class="nx-stat-lbl">erros</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sl" style="color:var(--primary);">48</div><div class="nx-stat-lbl">restantes</div></div>
   </div>
 </div>
 </div>
@@ -130,8 +129,8 @@ document.querySelector('.nx-back-btn').href=`c3-med#area=${area}&dominio=${domin
   const a=cat[area]; const d=a&&a.dominios.find(x=>x.slug===dominio);
   if(!a||!d)return;
   document.getElementById('c4a-icon').innerHTML=`<i class="ti ${a.icon}" style="font-size:18px;"></i>`;
-  document.getElementById('c4a-label').textContent=a.label+' · '+d.code;
   document.getElementById('c4a-nome').textContent=d.nome;
+  document.getElementById('c4a-label').textContent=a.label+' | 48 Flashcards';
   document.title=d.nome+' · Flashcards · nexor_med';
 })();
 

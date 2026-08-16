@@ -17,7 +17,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="nexor_med">
-<meta name="theme-color" content="#16263B">
+<meta name="theme-color" content="#19212a">
 <title>Quiz · nexor_med</title>
 <link rel="stylesheet" href="assets/nx.css?v=3">
 <link rel="stylesheet" href="assets/nx-glass.css">
@@ -33,14 +33,13 @@
 </div>
 <div class="nx-scroll">
 <div class="nx-body" id="quiz-root" data-quiz-state="loading">
-  <div class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;">
+  <div class="hero-reveal" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px;">
     <div class="nx-icon-slot" style="width:40px;height:40px;flex-shrink:0;" id="c4b-icon"><i class="ti ti-clipboard-check" style="font-size:18px;"></i></div>
     <div style="flex:1;min-width:0;">
-      <div style="font-size:10px;font-family:'Barlow',sans-serif;font-weight:300;color:#0EA5E9;margin-bottom:2px;" id="c4b-label">—</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;color:#F0F6FB;line-height:1.1;" id="c4b-nome">—</div>
-      <div style="font-size:11px;color:#B0BEC5;font-weight:300;margin-top:1px;" id="quiz-sub">Quiz 001 · 50 questões</div>
+      <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--foreground);line-height:1.1;" id="c4b-nome">—</div>
+      <div style="font-size:11px;color:var(--muted-foreground);font-weight:300;margin-top:2px;" id="quiz-sub">—</div>
     </div>
-    <div id="timer-display" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#0EA5E9;letter-spacing:0.04em;flex-shrink:0;">60:00</div>
+    <div id="timer-display" style="font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--primary);letter-spacing:0.04em;flex-shrink:0;">60:00</div>
   </div>
 
   <div class="nx-prog-row sr" style="transition-delay:100ms">
@@ -48,12 +47,12 @@
     <span class="nx-prog-count" id="prog-count">1 / 50</span>
   </div>
 
-  <div class="sr" style="transition-delay:160ms;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:20px;margin-bottom:14px;">
+  <div class="sr" style="transition-delay:160ms;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px;margin-bottom:14px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-      <div style="font-size:12px;font-family:'Barlow',sans-serif;font-weight:400;color:#B0BEC5;letter-spacing:0.08em;text-transform:uppercase;" id="q-label">questão 01</div>
+      <div style="font-size:12px;font-family:var(--font-sans);font-weight:400;color:var(--muted-foreground);letter-spacing:0.08em;text-transform:uppercase;" id="q-label">questão 01</div>
       <button class="tts-btn" id="tts-q-btn" onclick="ttsQuestao(this)" title="Ouvir em voz alta"><i class="ti ti-volume"></i></button>
     </div>
-    <div style="font-family:'Barlow',sans-serif;font-weight:400;font-size:16px;color:#F0F6FB;line-height:1.5;" id="q-text"></div>
+    <div style="font-family:var(--font-sans);font-weight:400;font-size:16px;color:var(--foreground);line-height:1.5;" id="q-text"></div>
   </div>
 
   <div class="nx-options sr" id="options" style="transition-delay:220ms"></div>
@@ -76,24 +75,24 @@
   <div id="nx-aula-overlay" style="position:fixed;inset:0;z-index:299;background:rgba(0,0,0,0.6);opacity:0;pointer-events:none;transition:opacity 0.3s;" onclick="closeAula()"></div>
   <div id="nx-aula-sheet" class="nx-aula-sheet">
     <div class="nx-sheet-handle"></div>
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 12px;border-bottom:1px solid #1d3452;">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px 12px;border-bottom:1px solid var(--border);">
       <div style="flex:1;text-align:center;">
-        <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F0F6FB;letter-spacing:0.05em;">RESUMO ANALÍTICO</span>
+        <span style="font-family:var(--font-display);font-weight:700;font-size:16px;color:var(--foreground);letter-spacing:0.05em;">RESUMO ANALÍTICO</span>
       </div>
       <button class="tts-btn" id="tts-aula-btn" onclick="ttsAula(this)" title="Ouvir em voz alta"><i class="ti ti-volume"></i></button>
     </div>
     <div style="padding:20px 20px 8px;" id="aula-text"></div>
-    <div style="margin:0 20px;padding:12px 14px;background:#070A0E;border:1px solid rgba(255,255,255,0.35);border-radius:6px;">
-      <div style="font-size:10px;color:#0EA5E9;font-family:'Barlow',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Fonte</div>
-      <div style="font-size:12px;color:#F0F6FB;font-family:'Barlow',sans-serif;font-weight:300;line-height:1.5;" id="aula-fonte"></div>
+    <div style="margin:0 20px;padding:12px 14px;background:var(--background);border:1px solid rgba(255,255,255,0.35);border-radius:var(--radius-sm);">
+      <div style="font-size:10px;color:var(--primary);font-family:var(--font-sans);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Fonte</div>
+      <div style="font-size:12px;color:var(--foreground);font-family:var(--font-sans);font-weight:300;line-height:1.5;" id="aula-fonte"></div>
     </div>
     <div style="height:16px;"></div>
   </div>
 
   <div class="nx-stats-row">
-    <div class="nx-stat"><div class="nx-stat-val" id="sr" style="color:#4ade80;">0</div><div class="nx-stat-lbl">acertos</div></div>
-    <div class="nx-stat"><div class="nx-stat-val" id="sw" style="color:#f87171;">0</div><div class="nx-stat-lbl">erros</div></div>
-    <div class="nx-stat"><div class="nx-stat-val" id="sp" style="color:#0EA5E9;">—</div><div class="nx-stat-lbl">aproveitamento</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sr" style="color:var(--success);">0</div><div class="nx-stat-lbl">acertos</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sw" style="color:var(--destructive);">0</div><div class="nx-stat-lbl">erros</div></div>
+    <div class="nx-stat"><div class="nx-stat-val" id="sp" style="color:var(--primary);">—</div><div class="nx-stat-lbl">aproveitamento</div></div>
   </div>
 </div>
 </div>
@@ -141,11 +140,10 @@ document.getElementById('btn-back').href=`c3-med#area=${area}&dominio=${dominio}
   const a=CATALOG[area]; const d=a&&a.dominios.find(x=>x.slug===dominio);
   if(!a||!d)return;
   document.getElementById('c4b-icon').innerHTML=`<i class="ti ${a.icon}" style="font-size:18px;"></i>`;
-  document.getElementById('c4b-label').textContent=a.label+' · '+d.code;
   document.getElementById('c4b-nome').textContent=d.nome;
   document.title=d.nome+' · Quiz · nexor_med';
 })();
-document.getElementById('quiz-sub').textContent='Quiz 00'+qn+' · carregando...';
+document.getElementById('quiz-sub').textContent=(CATALOG[area]?CATALOG[area].label+' | ':'')+'Quiz 00'+qn;
 
 function shuffleQ(q){const idx=q.opts.map((o,i)=>({t:o,i}));shuffle(idx);return{q:q.q,opts:idx.map(x=>x.t),c:idx.findIndex(x=>x.i===q.c),exp:q.exp,_orig:q._orig};}
 
@@ -161,7 +159,7 @@ async function loadQuiz(){
     if(!res.ok) throw new Error('not found');
     const data=await res.json();
     TOTAL=data.total||data.questions.length;
-    document.getElementById('quiz-sub').textContent='Quiz 00'+qn+' · '+TOTAL+' questões';
+    document.getElementById('quiz-sub').textContent=(CATALOG[area]?CATALOG[area].label+' | ':'')+'Quiz 00'+qn;
     const questions=data.questions;
     questions.forEach((q,i)=>q._orig=i); // preserva índice original antes do shuffle
     shuffle(questions);
@@ -203,13 +201,13 @@ function updateTimerDisplay(){
   const s = timerSec % 60;
   el.textContent = String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
   if(timerSec <= 180){
-    el.style.color = '#ef4444';
+    el.style.color = 'var(--destructive)';
     el.style.animation = 'nx-pulse 1s ease-in-out infinite';
   } else if(timerSec <= 600){
-    el.style.color = '#FCA311';
+    el.style.color = 'var(--warning)';
     el.style.animation = '';
   } else {
-    el.style.color = '#0EA5E9';
+    el.style.color = 'var(--primary)';
     el.style.animation = '';
   }
 }
@@ -237,7 +235,7 @@ function timeUp(){
   document.getElementById('sp').textContent = (rights+wrongs > 0 ? Math.round(rights/(rights+wrongs)*100) : 0) + '%';
   const timerEl = document.getElementById('timer-display');
   timerEl.textContent = '00:00';
-  timerEl.style.color = '#ef4444';
+  timerEl.style.color = 'var(--destructive)';
   timerEl.style.animation = '';
   const btnVer2=document.createElement('a');
   const pctTU=Math.round(rights/TOTAL*100);
@@ -395,7 +393,7 @@ function openAula(){
   }
   const textoFinal = texto || 'Explicação não disponível para esta questão.';
   document.getElementById('aula-text').innerHTML = textoFinal.split('\n\n').map(p =>
-    `<p style="font-size:14px;font-family:'Barlow',sans-serif;font-weight:300;color:#E0E0E0;line-height:1.65;margin-bottom:14px;">${p}</p>`
+    `<p style="font-size:14px;font-family:var(--font-sans);font-weight:300;color:var(--foreground);line-height:1.65;margin-bottom:14px;">${p}</p>`
   ).join('');
   document.getElementById('aula-fonte').textContent = fonte;
   const sheet = document.getElementById('nx-aula-sheet');
