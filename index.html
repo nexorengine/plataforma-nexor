@@ -440,8 +440,8 @@ body::before{
 .c0-mockup-optxt{font-size:12px;color:#F0F6FB;font-weight:300;line-height:1.35;}
 .c0-mockup-footer{display:flex;flex-direction:column;gap:12px;padding:12px 14px;border-top:1px solid rgba(14,165,233,0.08);background:rgba(7,10,14,0.4);}
 .c0-mockup-footer #demo-next-btn{align-self:flex-end;}
-.c0-mockup-correct-label{font-size:10px;color:#4ade80;font-weight:400;display:flex;align-items:center;gap:5px;}
-.c0-mockup-correct-label::before{content:'';width:6px;height:6px;background:#22c55e;border-radius:50%;flex-shrink:0;}
+.c0-mockup-correct-label{font-size:11px;color:#9CA3AF;font-weight:300;line-height:1.55;}
+.c0-mockup-correct-label .demo-fb-label{display:block;font-weight:700;font-size:12px;margin-bottom:4px;}
 .c0-mockup-prog{display:flex;align-items:center;gap:6px;}
 .c0-mockup-prog-bar{width:60px;height:3px;background:#1d3452;border-radius:2px;overflow:hidden;}
 .c0-mockup-prog-fill{height:100%;width:58%;background:#0EA5E9;border-radius:2px;}
@@ -788,7 +788,7 @@ body::before{
         <div class="c0-mockup-opts" id="demo-opts"></div>
       </div>
       <div class="c0-mockup-footer" id="demo-footer" style="display:none;">
-        <span class="c0-mockup-correct-label" id="demo-feedback"></span>
+        <div class="c0-mockup-correct-label" id="demo-feedback"></div>
         <button onclick="demoNext()" id="demo-next-btn" style="background:rgb(from #0EA5E9 r g b / 0.12);border:1px solid rgb(from #0EA5E9 r g b / 0.35);border-radius:4px;color:#0EA5E9;font-size:10px;font-family:'Inter Tight',sans-serif;font-weight:700;padding:5px 12px;cursor:pointer;white-space:nowrap;">próxima questão →</button>
       </div>
     </div>
@@ -846,13 +846,11 @@ function demoAnswer(idx){
   const feedback = document.getElementById('demo-feedback');
   const label = document.getElementById('demo-label');
   if(idx === correct){
-    feedback.textContent = '✓ Correto — ' + q.why;
-    feedback.style.color = '#4ade80';
+    feedback.innerHTML = '<span class="demo-fb-label" style="color:#4ade80;">Correto.</span>' + q.why;
     label.textContent = 'você acertou!';
     label.style.color = '#4ade80';
   } else {
-    feedback.innerHTML = '<strong>Errado.</strong> ' + q.why;
-    feedback.style.color = '#f87171';
+    feedback.innerHTML = '<span class="demo-fb-label" style="color:#f87171;">Errado.</span>' + q.why;
     label.textContent = 'resposta incorreta';
     label.style.color = '#f87171';
   }
