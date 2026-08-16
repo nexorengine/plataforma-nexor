@@ -462,8 +462,11 @@ body::before{
 .c0-concorrencia{font-size:10px;color:#FCA311;font-weight:400;margin-top:2px;opacity:0.85;}
 
 /* ── P10: HERO TIPOGRAFIA EDITORIAL — 38px empilhado, estilo revista ── */
-.nx-hero-title{font-size:38px!important;line-height:1.15!important;letter-spacing:-0.015em!important;text-transform:none!important;margin-bottom:14px!important;}
+.nx-hero{text-align:center!important;}
+.nx-hero-title{font-size:38px!important;line-height:1.15!important;letter-spacing:-0.015em!important;text-transform:none!important;margin-bottom:14px!important;max-width:22ch;margin-left:auto!important;margin-right:auto!important;}
 .nx-hero-title span{display:block!important;margin-top:4px!important;}
+.nx-hero-sub{max-width:40ch;margin-left:auto!important;margin-right:auto!important;}
+.c0-anchor{justify-content:center!important;max-width:38ch;margin-left:auto!important;margin-right:auto!important;}
 
 /* ── P11: STAT BAR — scan line de monitor ── */
 .c0-stats{position:relative!important;overflow:hidden!important;}
@@ -1409,19 +1412,10 @@ document.addEventListener('DOMContentLoaded', () => {
 .c0-faq-item[open] summary::after{transform:rotate(45deg);}
 .c0-faq-item[open] summary{border-bottom:1px solid rgba(14,165,233,0.10);}
 .c0-faq-item div{padding:14px 16px;font-size:12px;color:#9CA3AF;font-weight:300;line-height:1.7;}
-.wa-float{position:fixed;right:18px;bottom:126px;z-index:9998;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,0.4);transition:transform 200ms ease;}
-.wa-float:hover{transform:scale(1.08);}
-@media(min-width:768px){.wa-float{right:28px;bottom:28px;}}
 .mobile-cta-bar{position:fixed;left:0;right:0;bottom:44px;z-index:9997;background:rgba(7,10,14,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid rgba(14,165,233,0.18);padding:10px 16px calc(10px + env(safe-area-inset-bottom));}
 .mobile-cta-bar a{display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#FCA311;color:#070A0E;border-radius:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.03em;text-decoration:none;box-shadow:0 8px 24px rgba(252,163,17,0.25);}
 @media(min-width:768px){.mobile-cta-bar{display:none;}}
 </style>
-<a class="wa-float" href="https://wa.me/5547992544143?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20o%20nexor_med" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#fff"/>
-    <path d="M12.004 2C6.486 2 2.004 6.482 2.004 12c0 1.86.503 3.604 1.377 5.104L2 22l5.03-1.354A9.936 9.936 0 0 0 12.004 22C17.522 22 22.004 17.518 22.004 12S17.522 2 12.004 2zm0 18.087a8.06 8.06 0 0 1-4.104-1.122l-.294-.175-3.05.821.828-3.023-.192-.31A8.07 8.07 0 1 1 12.004 20.087z" fill="#fff"/>
-  </svg>
-</a>
 <div class="mobile-cta-bar">
   <a href="#c0-magic-section" onclick="focusEmail();return false;">TESTAR 7 DIAS GRÁTIS</a>
 </div>
