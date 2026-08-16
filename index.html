@@ -851,7 +851,7 @@ function demoAnswer(idx){
     label.textContent = 'você acertou!';
     label.style.color = '#4ade80';
   } else {
-    feedback.textContent = '✗ Incorreto — ' + q.why;
+    feedback.innerHTML = '<strong>Errado.</strong> ' + q.why;
     feedback.style.color = '#f87171';
     label.textContent = 'resposta incorreta';
     label.style.color = '#f87171';
