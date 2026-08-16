@@ -438,7 +438,8 @@ body::before{
 .c0-mockup-opt.dimmed{opacity:0.35;}
 .c0-mockup-key{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;color:#0EA5E9;background:rgba(14,165,233,0.1);border:1px solid rgba(14,165,233,0.25);border-radius:4px;width:20px;height:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
 .c0-mockup-optxt{font-size:12px;color:#F0F6FB;font-weight:300;line-height:1.35;}
-.c0-mockup-footer{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-top:1px solid rgba(14,165,233,0.08);background:rgba(7,10,14,0.4);}
+.c0-mockup-footer{display:flex;flex-direction:column;gap:12px;padding:12px 14px;border-top:1px solid rgba(14,165,233,0.08);background:rgba(7,10,14,0.4);}
+.c0-mockup-footer #demo-next-btn{align-self:flex-end;}
 .c0-mockup-correct-label{font-size:10px;color:#4ade80;font-weight:400;display:flex;align-items:center;gap:5px;}
 .c0-mockup-correct-label::before{content:'';width:6px;height:6px;background:#22c55e;border-radius:50%;flex-shrink:0;}
 .c0-mockup-prog{display:flex;align-items:center;gap:6px;}
@@ -778,36 +779,20 @@ body::before{
   <div class="c0-mockup-wrap sr" style="transition-delay:80ms;">
     <div class="c0-mockup-device" id="demo-device">
       <div class="c0-mockup-topbar">
-        <span class="c0-mockup-badge-sm">Cirurgia Geral · Abdome Agudo</span>
-        <span class="c0-mockup-layer">Quiz · Caso Clínico</span>
+        <span class="c0-mockup-badge-sm" id="demo-area">Cirurgia Geral</span>
+        <span class="c0-mockup-layer" id="demo-progress">Questão 1/10</span>
       </div>
       <div class="c0-mockup-body">
         <div class="c0-mockup-face" id="demo-label">clique na alternativa correta</div>
-        <div class="c0-mockup-q">Homem, 45 anos, dor em FID há 12h, febre 38,2°C e sinal de Blumberg positivo. Qual a conduta imediata?</div>
-        <div class="c0-mockup-opts" id="demo-opts">
-          <div class="c0-mockup-opt" data-idx="0" onclick="demoAnswer(0)" style="cursor:pointer;">
-            <span class="c0-mockup-key">A</span>
-            <span class="c0-mockup-optxt">Apendicectomia de urgência</span>
-          </div>
-          <div class="c0-mockup-opt" data-idx="1" onclick="demoAnswer(1)" style="cursor:pointer;">
-            <span class="c0-mockup-key">B</span>
-            <span class="c0-mockup-optxt">TC de abdome sem contraste</span>
-          </div>
-          <div class="c0-mockup-opt" data-idx="2" onclick="demoAnswer(2)" style="cursor:pointer;">
-            <span class="c0-mockup-key">C</span>
-            <span class="c0-mockup-optxt">Antibioticoterapia IV empírica</span>
-          </div>
-          <div class="c0-mockup-opt" data-idx="3" onclick="demoAnswer(3)" style="cursor:pointer;">
-            <span class="c0-mockup-key">D</span>
-            <span class="c0-mockup-optxt">Internação e observação clínica</span>
-          </div>
-        </div>
+        <div class="c0-mockup-q" id="demo-q"></div>
+        <div class="c0-mockup-opts" id="demo-opts"></div>
       </div>
       <div class="c0-mockup-footer" id="demo-footer" style="display:none;">
         <span class="c0-mockup-correct-label" id="demo-feedback"></span>
-        <button onclick="demoReset()" style="background:none;border:1px solid #1d3452;border-radius:4px;color:#9CA3AF;font-size:10px;font-family:'Barlow',sans-serif;padding:3px 10px;cursor:pointer;white-space:nowrap;">tentar novamente</button>
+        <button onclick="demoNext()" id="demo-next-btn" style="background:rgb(from #0EA5E9 r g b / 0.12);border:1px solid rgb(from #0EA5E9 r g b / 0.35);border-radius:4px;color:#0EA5E9;font-size:10px;font-family:'Inter Tight',sans-serif;font-weight:700;padding:5px 12px;cursor:pointer;white-space:nowrap;">próxima questão →</button>
       </div>
     </div>
+    <div style="text-align:center;margin-top:10px;font-size:11px;color:#9CA3AF;">10 questões reais · 2 por área · amostra do banco completo de 4.500</div>
   </div>
 <style>
 .c0-mockup-opt{transition:background 200ms ease,border-color 200ms ease,opacity 200ms ease;}
@@ -817,12 +802,40 @@ body::before{
 .c0-mockup-opt.wrong .c0-mockup-optxt{color:#f87171;}
 </style>
 <script>
+const DEMO_QUESTIONS = [{"area": "Cirurgia Geral", "stem": "Homem de 28 anos apresenta dor periumbilical migrando para fossa ilíaca direita, febre 38,2°C, náuseas e anorexia há 18 horas. Qual é a definição clínica do quadro?", "options": ["Perfuração espontânea do ceco com peritonite generalizada", "Obstrução mecânica do lúmen apendicular sem resposta inflamatória", "Invaginação do apêndice para o interior do ceco com edema", "Inflamação aguda do apêndice cecal com infiltração de células inflamatórias"], "answer": 3, "why": "Apendicite aguda é a inflamação aguda da parede apendicular com infiltração leucocitária, independentemente da causa da obstrução luminal."}, {"area": "Cirurgia Geral", "stem": "Mulher de 52 anos, com cólicas biliares anteriores, apresenta dor súbita em hipocôndrio direito, febre 38,5°C e sinal de Murphy positivo. Qual termo define esta condição?", "options": ["Acúmulo de bile infectada no ducto colédoco", "Isquemia da parede vesicular com necrose transmural", "Inflamação aguda da vesícula biliar, geralmente por obstrução ductal", "Presença de cálculos biliares sem manifestação clínica"], "answer": 2, "why": "Colecistite aguda é inflamação aguda da vesícula, na maioria dos casos por impactação de cálculo no ducto cístico, causando retenção biliar."}, {"area": "Clínica Médica", "stem": "Qual marcador laboratorial diferencia angina instável de NSTEMI?", "options": ["Troponina", "CK-MB total", "Mioglobina", "PCR ultrassensível"], "answer": 0, "why": "Troponina é o marcador de necrose miocárdica mais sensível e específico; sua elevação define NSTEMI, enquanto na angina instável permanece negativa."}, {"area": "Clínica Médica", "stem": "Na classificação de insuficiência cardíaca por fração de ejeção, qual faixa define ICFEp (preservada)?", "options": ["FE ≥50%", "FE 41-49%", "FE ≤40%", "FE ≤30%"], "answer": 0, "why": "ICFEp é definida por FE ≥50%, com sintomas de IC e evidência de disfunção diastólica ou alterações estruturais."}, {"area": "Ginecologia e Obstetrícia", "stem": "Qual o limite volumétrico para definir hemorragia pós-parto (HPP) em parto vaginal?", "options": ["300mL", "500mL", "1000mL", "1500mL"], "answer": 1, "why": "Perda sanguínea igual ou superior a 500 mL após parto vaginal caracteriza hemorragia pós-parto, sendo o corte tradicional usado para vigilância e intervenção precoce."}, {"area": "Ginecologia e Obstetrícia", "stem": "A pré-eclâmpsia é definida a partir de qual idade gestacional?", "options": ["10 semanas", "16 semanas", "20 semanas", "28 semanas"], "answer": 2, "why": "Pré-eclâmpsia é definida por hipertensão associada a proteinúria ou disfunção orgânica surgindo a partir de 20 semanas, refletindo a fisiopatologia de má placentação."}, {"area": "Pediatria", "stem": "Lactente de 8 meses é encontrado sem respiração e sem pulso. Qual a relação compressões:ventilações correta para 2 socorristas?", "options": ["30:2", "15:2", "5:1", "100 compressões sem pausa"], "answer": 1, "why": "Para dois socorristas em lactentes e crianças, a relação recomendada é 15:2, permitindo maior número de ventilações por minuto que no adulto, refletindo a etiologia respiratória predominante da PCR pediátrica."}, {"area": "Pediatria", "stem": "Criança de 4 anos com urticária generalizada, broncoespasmo e hipotensão após picada de abelha. Qual o tratamento imediato?", "options": ["Difenidramina IV 1 mg/kg", "Adrenalina IM 0,01 mg/kg na face anterolateral da coxa", "Hidrocortisona IV 10 mg/kg", "Salbutamol nebulizado e observação"], "answer": 1, "why": "Adrenalina IM na dose de 0,01 mg/kg (solução 1:1000) na face anterolateral da coxa é a primeira e mais importante medida na anafilaxia, devendo preceder anti-histamínicos e corticoides."}, {"area": "Medicina Preventiva", "stem": "Qual é o principal sistema de vigilância de DCNTs no Brasil para monitorar fatores de risco comportamentais na população adulta?", "options": ["VIGITEL (Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico)", "SINAN (Sistema de Informação de Agravos de Notificação)", "SIM (Sistema de Informações sobre Mortalidade)", "DATASUS (Departamento de Informática do SUS)"], "answer": 0, "why": "O VIGITEL é o principal sistema brasileiro de monitoramento de fatores de risco e proteção para DCNTs em adultos das capitais brasileiras, com inquéritos telefônicos anuais desde 2006."}, {"area": "Medicina Preventiva", "stem": "Qual valor de hemoglobina glicada (HbA1c) estabelece o diagnóstico de diabetes mellitus tipo 2, segundo a Sociedade Brasileira de Diabetes?", "options": ["HbA1c ≥ 6,5% em duas ocasiões ou em uma ocasião associada a outro critério diagnóstico", "HbA1c ≥ 7,0% em duas ocasiões consecutivas", "HbA1c ≥ 6,0% isoladamente, sem necessidade de confirmação", "HbA1c ≥ 6,5% apenas quando associada à glicemia de jejum ≥ 126 mg/dL"], "answer": 0, "why": "A SBD adota HbA1c ≥ 6,5% como critério diagnóstico para DM2, confirmado por dois resultados alterados em ocasiões distintas ou associado a outro critério positivo."}];
+let demoIdx = 0;
+const DEMO_KEYS = ['A','B','C','D'];
+
+function demoRender(){
+  const q = DEMO_QUESTIONS[demoIdx];
+  document.getElementById('demo-area').textContent = q.area;
+  document.getElementById('demo-progress').textContent = 'Questão ' + (demoIdx+1) + '/' + DEMO_QUESTIONS.length;
+  document.getElementById('demo-q').textContent = q.stem;
+  document.getElementById('demo-label').textContent = 'clique na alternativa correta';
+  document.getElementById('demo-label').style.color = '';
+  document.getElementById('demo-footer').style.display = 'none';
+  const opts = document.getElementById('demo-opts');
+  opts.innerHTML = '';
+  delete opts.dataset.answered;
+  q.options.forEach((opt, i) => {
+    const div = document.createElement('div');
+    div.className = 'c0-mockup-opt';
+    div.style.cursor = 'pointer';
+    div.dataset.idx = i;
+    div.onclick = () => demoAnswer(i);
+    div.innerHTML = '<span class="c0-mockup-key">' + DEMO_KEYS[i] + '</span><span class="c0-mockup-optxt"></span>';
+    div.querySelector('.c0-mockup-optxt').textContent = opt;
+    opts.appendChild(div);
+  });
+}
+
 function demoAnswer(idx){
-  if(document.getElementById('demo-opts').dataset.answered) return;
-  document.getElementById('demo-opts').dataset.answered = '1';
-  const correct = 0; // opção A é a correta
-  const opts = document.querySelectorAll('#demo-opts .c0-mockup-opt');
-  opts.forEach((el, i) => {
+  const opts = document.getElementById('demo-opts');
+  if(opts.dataset.answered) return;
+  opts.dataset.answered = '1';
+  const q = DEMO_QUESTIONS[demoIdx];
+  const correct = q.answer;
+  opts.querySelectorAll('.c0-mockup-opt').forEach((el, i) => {
     el.style.cursor = 'default';
     el.onclick = null;
     if(i === correct) el.classList.add('correct');
@@ -833,31 +846,27 @@ function demoAnswer(idx){
   const feedback = document.getElementById('demo-feedback');
   const label = document.getElementById('demo-label');
   if(idx === correct){
-    feedback.textContent = '✓ Correto — Blumberg positivo = irritação peritoneal → cirurgia imediata.';
+    feedback.textContent = '✓ Correto — ' + q.why;
     feedback.style.color = '#4ade80';
     label.textContent = 'você acertou!';
     label.style.color = '#4ade80';
   } else {
-    feedback.textContent = '✗ Incorreto — o gabarito é A. Blumberg indica peritonite: a TC atrasa a conduta e piora o prognóstico.';
+    feedback.textContent = '✗ Incorreto — ' + q.why;
     feedback.style.color = '#f87171';
     label.textContent = 'resposta incorreta';
     label.style.color = '#f87171';
   }
+  const nextBtn = document.getElementById('demo-next-btn');
+  nextBtn.textContent = (demoIdx + 1 >= DEMO_QUESTIONS.length) ? 'recomeçar →' : 'próxima questão →';
   footer.style.display = 'flex';
 }
-function demoReset(){
-  const opts = document.querySelectorAll('#demo-opts .c0-mockup-opt');
-  opts.forEach((el, i) => {
-    el.className = 'c0-mockup-opt';
-    el.style.cursor = 'pointer';
-    el.onclick = () => demoAnswer(i);
-  });
-  delete document.getElementById('demo-opts').dataset.answered;
-  document.getElementById('demo-footer').style.display = 'none';
-  const label = document.getElementById('demo-label');
-  label.textContent = 'clique na alternativa correta';
-  label.style.color = '';
+
+function demoNext(){
+  demoIdx = (demoIdx + 1) % DEMO_QUESTIONS.length;
+  demoRender();
 }
+
+demoRender();
 </script>
 
   <div class="nx-section-label sr" id="especialidades">especialidades disponíveis</div>
@@ -1089,7 +1098,6 @@ function demoReset(){
 
   <!-- GARANTIA -->
   <div class="c0-guarantee sr" style="transition-delay:80ms;">
-    <i class="ti ti-shield-check"></i>
     <div class="c0-guarantee-text"><strong>Sem risco.</strong> 7 dias grátis sem cartão de crédito. Após o trial, sem fidelidade — cancele quando quiser. Pagamento seguro via Stripe.</div>
   </div>
 
