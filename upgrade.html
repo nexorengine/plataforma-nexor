@@ -98,7 +98,7 @@
       <div class="plan-left">
         <div class="plan-tag">MENSAL</div>
         <div class="plan-name">Plano Mensal</div>
-        <div class="plan-price">R$39<span>/mês</span></div>
+        <div class="plan-price">R$19,90<span>/mês</span></div>
         <div class="plan-desc">Cancele quando quiser</div>
       </div>
       <div class="plan-right">
@@ -111,14 +111,33 @@
     <a id="btn-monthly" href="#" class="btn-assinar secondary">ASSINAR MENSAL</a>
   </div>
 
+  <!-- Plano Trimestral -->
+  <div class="plan-card sr" style="transition-delay:90ms">
+    <div class="plan-inner">
+      <div class="plan-left">
+        <div class="plan-tag">TRIMESTRAL</div>
+        <div class="plan-name">Plano Trimestral</div>
+        <div class="plan-price">R$49,90<span>/3 meses</span></div>
+        <div class="plan-desc">R$16,63/mês · economia de R$9,80</div>
+      </div>
+      <div class="plan-right">
+        <div class="plan-feat"><i class="ti ti-check"></i>5 especialidades</div>
+        <div class="plan-feat"><i class="ti ti-check"></i>4.500+ questões</div>
+        <div class="plan-feat"><i class="ti ti-check"></i>Flashcards</div>
+        <div class="plan-feat"><i class="ti ti-check"></i>Resumos analíticos</div>
+      </div>
+    </div>
+    <a id="btn-quarterly" href="#" class="btn-assinar secondary">ASSINAR TRIMESTRAL</a>
+  </div>
+
   <!-- Plano Anual -->
   <div class="plan-card featured sr" style="transition-delay:120ms">
     <div class="plan-inner">
       <div class="plan-left">
-        <div class="plan-badge">37% OFF</div>
+        <div class="plan-badge">MAIS ESCOLHIDO</div>
         <div class="plan-name">Plano Anual</div>
-        <div class="plan-price">R$297<span>/ano</span></div>
-        <div class="plan-desc">R$24,75/mês · economia de R$171</div>
+        <div class="plan-price">R$199<span>/ano</span></div>
+        <div class="plan-desc">R$16,58/mês · economia de R$39,80</div>
       </div>
       <div class="plan-right">
         <div class="plan-feat"><i class="ti ti-check"></i>5 especialidades</div>
@@ -143,9 +162,10 @@
 <script src="assets/notif.js"></script>
 <script src="assets/profile.js"></script>
 <script>
-// Links do Stripe Payment Links — LIVE
-const STRIPE_MONTHLY = 'https://buy.stripe.com/fZucN52976N22kngyn0Ba02';
-const STRIPE_ANNUAL  = 'https://buy.stripe.com/aFabJ1dRP1sIaQT4PF0Ba01';
+// Links do Stripe Payment Links — LIVE (preços novos: R$19,90 / R$49,90 / R$199)
+const STRIPE_MONTHLY   = 'https://buy.stripe.com/9B600j6pn5IYe351Dt0Ba03';
+const STRIPE_QUARTERLY = 'https://buy.stripe.com/cNi28r7trfjy0cf1Dt0Ba05';
+const STRIPE_ANNUAL    = 'https://buy.stripe.com/fZu6oH4hf7R6bUX0zp0Ba04';
 
 (async () => {
   const s = await Auth.requireAuth();
@@ -170,8 +190,9 @@ const STRIPE_ANNUAL  = 'https://buy.stripe.com/aFabJ1dRP1sIaQT4PF0Ba01';
 
   // Injeta email do usuário no link Stripe (prefill)
   const email = encodeURIComponent(s.user.email || '');
-  document.getElementById('btn-monthly').href = STRIPE_MONTHLY + '?prefilled_email=' + email + '&client_reference_id=' + s.user.id;
-  document.getElementById('btn-annual').href  = STRIPE_ANNUAL  + '?prefilled_email=' + email + '&client_reference_id=' + s.user.id;
+  document.getElementById('btn-monthly').href   = STRIPE_MONTHLY   + '?prefilled_email=' + email + '&client_reference_id=' + s.user.id;
+  document.getElementById('btn-quarterly').href = STRIPE_QUARTERLY + '?prefilled_email=' + email + '&client_reference_id=' + s.user.id;
+  document.getElementById('btn-annual').href    = STRIPE_ANNUAL    + '?prefilled_email=' + email + '&client_reference_id=' + s.user.id;
 })();
 
 (function(){

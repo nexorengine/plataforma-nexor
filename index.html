@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<meta charset="UTF-8">
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -27,7 +28,6 @@ src="https://www.facebook.com/tr?id=2124096195181893&ev=PageView&noscript=1"
   gtag('config', 'AW-18306279891');
   gtag('config', 'G-HLTY3RG6SC');
 </script>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#16263B">
 <link rel="manifest" href="manifest.json">
@@ -455,7 +455,7 @@ body::before{
 }
 
 /* VSL — visível em todos os dispositivos */
-.c0-vsl-wrap{display:block;}
+.c0-vsl-wrap{display:block;margin-bottom:28px;}
 
 /* ══════════════════════════════════════════════
    RESPONSIVE — Tablet (≥768px) e Desktop (≥1024px)
@@ -514,26 +514,9 @@ body::before{
   .nx-scroll{width:100%!important;align-items:stretch;}
   .nx-body{
     width:100%!important;
-    max-width:1140px!important;
-    display:grid!important;
-    grid-template-columns:minmax(0,1fr) 380px!important;
-    grid-template-rows:auto!important;
-    column-gap:40px!important;
-    align-items:start!important;
+    max-width:760px!important;
+    display:block!important;
     padding:48px 48px 64px!important;
-  }
-
-  /* Coluna esquerda — todo o conteúdo principal */
-  .c0-left{grid-column:1;min-width:0;}
-
-  /* Coluna direita — CTA sticky */
-  .c0-right{
-    grid-column:2;
-    position:sticky;
-    top:80px;
-    display:flex;
-    flex-direction:column;
-    gap:24px;
   }
 
   /* Hero título editorial grande */
@@ -607,8 +590,25 @@ body::before{
 </script>
 <div class="nx-header">
   <div class="nx-wordmark-left">nexor_<span>med</span></div>
+  <nav class="nx-nav-desktop" aria-label="Principal">
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#especialidades">Especialidades</a>
+    <a href="#planos">Planos</a>
+    <a href="login.html" class="nx-nav-login">Já tenho acesso</a>
+    <a href="#c0-magic-section" onclick="focusEmail();return false;" class="nx-nav-cta">7 dias grátis</a>
+  </nav>
   <span class="nx-avatar-btn" style="cursor:default;pointer-events:none;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;">n<span style="color:#0EA5E9;">_</span></span></span>
 </div>
+<style>
+.nx-nav-desktop{display:none;}
+@media(min-width:768px){
+  .nx-nav-desktop{display:flex;align-items:center;gap:24px;}
+  .nx-nav-desktop a{font-size:13px;font-family:'Barlow',sans-serif;font-weight:400;color:#9CA3AF;text-decoration:none;white-space:nowrap;transition:color 200ms ease;}
+  .nx-nav-desktop a:hover{color:#F0F6FB;}
+  .nx-nav-desktop .nx-nav-cta{background:#0EA5E9;color:#070A0E;font-weight:700;padding:8px 16px;border-radius:6px;}
+  .nx-nav-desktop .nx-nav-cta:hover{color:#070A0E;opacity:0.9;}
+}
+</style>
 <div class="nx-scroll">
 <div class="nx-body">
 <div class="c0-left">
@@ -631,6 +631,21 @@ body::before{
     <div class="c0-stat"><div class="c0-stat-num">7 dias</div><div class="c0-stat-label">sem cartão</div></div>
   </div>
 
+  <!-- VSL — visível apenas em tablet/desktop -->
+  <div class="c0-vsl-wrap sr" style="transition-delay:60ms;">
+    <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:10px;overflow:hidden;border:1px solid rgba(14,165,233,0.16);box-shadow:0 4px 32px rgba(0,0,0,0.5);">
+      <iframe
+        src="https://www.youtube.com/embed/z2pL0NQ3xNE?rel=0&modestbranding=1&color=white"
+        title="nexor_med — como funciona"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      </iframe>
+    </div>
+    <div style="text-align:center;margin-top:14px;font-size:11px;color:#556;font-family:'Barlow',sans-serif;font-weight:300;">Veja o método completo em 3 minutos</div>
+  </div>
+
   <!-- P12: NARRATIVA — estabelece o problema antes das features -->
   <div class="c0-narrative sr" style="transition-delay:60ms;">
     <div class="c0-narrative-pct" data-counter="87" data-suffix="%">0%</div>
@@ -639,7 +654,7 @@ body::before{
     <div class="c0-narrative-resolve">O problema não é esforço.<br>É <em>o que</em> e <em>como</em> você estuda.</div>
   </div>
 
-  <div class="nx-section-label sr">como funciona</div>
+  <div class="nx-section-label sr" id="como-funciona">como funciona</div>
   <div class="c0-features-row sr">
     <div class="c0-feat-item">
       <i class="ti ti-cards" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;margin-top:2px;" aria-hidden="true"></i>
@@ -668,6 +683,31 @@ body::before{
         <div class="c0-feat-title">Scorecard detalhado</div>
         <div class="c0-feat-sub">Histórico completo por domínio: tentativas, melhor nota e gap exato para aprovação. Você sabe com precisão o que falta — sem achismo, sem surpresa na prova.</div>
       </div>
+    </div>
+  </div>
+
+  <!-- CIÊNCIA -->
+  <div class="nx-section-label sr">a ciência por trás</div>
+  <div class="c0-science-grid sr" style="transition-delay:60ms;display:flex;flex-direction:column;gap:8px;margin-bottom:28px;">
+    <div class="c0-science-card">
+      <div class="c0-science-label">2008 · MEDICAL EDUCATION</div>
+      <div class="c0-science-title">Testar-se consolida mais que reler</div>
+      <div class="c0-science-text">Larsen, Butler & Roediger mostraram que responder perguntas ativamente consolida o aprendizado muito mais que reler o conteúdo — estudo conduzido especificamente em educação médica.</div>
+    </div>
+    <div class="c0-science-card">
+      <div class="c0-science-label">2011 · SCIENCE</div>
+      <div class="c0-science-title">Recuperação ativa supera mapa conceitual</div>
+      <div class="c0-science-text">Karpicke & Blunt demonstraram que tentar lembrar de cabeça supera até mapas conceituais, mesmo para entender conceitos complexos.</div>
+    </div>
+    <div class="c0-science-card">
+      <div class="c0-science-label">2013 · REVIEW</div>
+      <div class="c0-science-title">Ranking de técnicas de estudo</div>
+      <div class="c0-science-text">Dunlosky et al. classificaram teste ativo e revisão espaçada como técnicas de alta utilidade — reler e grifar, como baixa utilidade.</div>
+    </div>
+    <div class="c0-science-card">
+      <div class="c0-science-label">2009 · RESEARCH</div>
+      <div class="c0-science-title">Por que espaçar o estudo funciona</div>
+      <div class="c0-science-text">Cornell & Bjork mostraram que a retenção é maior quando o estudo é distribuído ao longo de vários dias, não concentrado num período curto.</div>
     </div>
   </div>
 
@@ -758,7 +798,7 @@ function demoReset(){
 }
 </script>
 
-  <div class="nx-section-label sr">especialidades disponíveis</div>
+  <div class="nx-section-label sr" id="especialidades">especialidades disponíveis</div>
   <div class="c0-specialties-grid sr" style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;transition-delay:80ms;">
     <div class="nx-hover-card">
       <i class="ti ti-cut" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
@@ -862,68 +902,6 @@ function demoReset(){
     </div>
   </div>
 
-  <div class="nx-section-label sr">escolha seu plano</div>
-  <div class="c0-plan-grid sr" style="transition-delay:80ms;display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
-    <!-- Anual — destaque -->
-    <div class="c0-plan featured" style="border-radius:10px;padding:14px 16px;position:relative;">
-      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;">
-        <div style="flex:0 0 148px;min-width:148px;">
-          <div class="c0-plan-tag" style="margin-bottom:4px;">37% OFF</div>
-          <div class="c0-plan-name">Plano Anual</div>
-          <div class="c0-plan-price">R$297<span style="font-size:13px;font-weight:400;color:#667;font-family:'Barlow',sans-serif;">/ano</span></div>
-          <div style="font-size:10px;color:#7a8fa8;margin-top:3px;">R$24,75/mês · economize R$171</div>
-        </div>
-        <div style="flex:1;display:flex;flex-direction:column;gap:5px;justify-content:center;">
-          <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
-          <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
-          <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
-        </div>
-      </div>
-      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:40px;width:75%;margin:0 auto;background:#FCA311;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
-    </div>
-    <!-- Mensal -->
-    <div class="c0-plan" style="border-radius:10px;padding:14px 16px;">
-      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;">
-        <div style="flex:0 0 148px;min-width:148px;">
-          <div style="font-size:9px;color:#0EA5E9;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.75;margin-bottom:4px;">MENSAL</div>
-          <div class="c0-plan-name">Plano Mensal</div>
-          <div class="c0-plan-price">R$39<span style="font-size:13px;font-weight:400;color:#667;font-family:'Barlow',sans-serif;">/mês</span></div>
-          <div style="font-size:10px;color:#7a8fa8;margin-top:3px;">cancele quando quiser</div>
-        </div>
-        <div style="flex:1;display:flex;flex-direction:column;gap:5px;justify-content:center;">
-          <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
-          <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
-          <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
-        </div>
-      </div>
-      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:40px;width:75%;margin:0 auto;background:#0EA5E9;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
-    </div>
-  </div>
-
-  <!-- GARANTIA -->
-  <div class="c0-guarantee sr" style="transition-delay:80ms;">
-    <i class="ti ti-shield-check"></i>
-    <div class="c0-guarantee-text"><strong>Sem risco.</strong> 7 dias grátis sem cartão de crédito. Após o trial, sem fidelidade — cancele quando quiser. Pagamento seguro via Stripe.</div>
-  </div>
-
-</div><!-- /c0-left -->
-<div class="c0-right">
-
-  <!-- VSL — visível apenas em tablet/desktop -->
-  <div class="c0-vsl-wrap sr" style="transition-delay:60ms;">
-    <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:10px;overflow:hidden;border:1px solid rgba(14,165,233,0.16);box-shadow:0 4px 32px rgba(0,0,0,0.5);">
-      <iframe
-        src="https://www.youtube.com/embed/z2pL0NQ3xNE?rel=0&modestbranding=1&color=white"
-        title="nexor_med — como funciona"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        style="position:absolute;top:0;left:0;width:100%;height:100%;">
-      </iframe>
-    </div>
-    <div style="text-align:center;margin-top:14px;font-size:11px;color:#556;font-family:'Barlow',sans-serif;font-weight:300;">Veja o método completo em 3 minutos</div>
-  </div>
-
   <div class="c0-magic sr" id="c0-magic-section" style="transition-delay:100ms;">
     <div class="c0-magic-title">Acesso instantâneo · sem senha</div>
     <div class="c0-magic-sub">Digite seu e-mail e receba o link de acesso. Nenhuma senha para lembrar.</div>
@@ -955,8 +933,176 @@ function demoReset(){
     Dúvidas? <a href="https://wa.me/5547992544143?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20o%20nexor_med" target="_blank" rel="noopener" style="color:#0EA5E9;text-decoration:none;">Fale com o suporte</a>
   </div>
 
-</div><!-- /c0-right -->
+  <!-- COMPARAÇÃO -->
+  <div class="nx-section-label sr">a diferença</div>
+  <div class="sr" style="transition-delay:60ms;margin-bottom:28px;">
+    <div class="c0-comp-header">
+      <div></div>
+      <div class="c0-comp-header-cell trad">Banco de questões tradicional</div>
+      <div class="c0-comp-header-cell nexor">nexor_med</div>
+    </div>
+    <div class="c0-comp-row">
+      <div class="c0-comp-label">Progresso</div>
+      <div class="c0-comp-cell trad"><i class="ti ti-x"></i>Acerto/erro isolado, sem visão do todo</div>
+      <div class="c0-comp-cell nexor"><i class="ti ti-check"></i>Scorecard por domínio — mostra exatamente onde você está fraco</div>
+    </div>
+    <div class="c0-comp-row">
+      <div class="c0-comp-label">Ordem de estudo</div>
+      <div class="c0-comp-cell trad"><i class="ti ti-x"></i>Questões soltas, você escolhe no escuro</div>
+      <div class="c0-comp-cell nexor"><i class="ti ti-check"></i>4 camadas progressivas: conceito → distinção → caso clínico → integração</div>
+    </div>
+    <div class="c0-comp-row">
+      <div class="c0-comp-label">Fonte da resposta</div>
+      <div class="c0-comp-cell trad"><i class="ti ti-x"></i>Raramente citada</div>
+      <div class="c0-comp-cell nexor"><i class="ti ti-check"></i>Cada questão cita o livro-texto ou diretriz (Sabiston, Harrison's, Nelson...)</div>
+    </div>
+    <div class="c0-comp-row">
+      <div class="c0-comp-label">Identifica lacuna</div>
+      <div class="c0-comp-cell trad"><i class="ti ti-x"></i>Você tem que adivinhar o que revisar</div>
+      <div class="c0-comp-cell nexor"><i class="ti ti-check"></i>Mapa de 45 domínios aponta onde treinar, atualizado a cada resposta</div>
+    </div>
+    <div class="c0-comp-row">
+      <div class="c0-comp-label">Formato</div>
+      <div class="c0-comp-cell trad"><i class="ti ti-x"></i>Site pesado, cheio de anúncio</div>
+      <div class="c0-comp-cell nexor"><i class="ti ti-check"></i>App leve (PWA), pensado pra sessão curta entre plantões</div>
+    </div>
+  </div>
+
+  <div class="nx-section-label sr">a origem</div>
+  <div class="sr" style="transition-delay:60ms;background:rgba(14,30,54,0.45);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(14,165,233,0.10);border-radius:10px;padding:22px 20px;margin-bottom:28px;">
+    <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#F0F6FB;line-height:1.2;margin-bottom:12px;">Idealizado por quem também vai fazer a prova.</div>
+    <div style="font-size:13px;color:#9CA3AF;font-weight:300;line-height:1.7;">O nexor_med não nasceu numa reunião de produto. Nasceu porque Henrique de Moraes Andrade, estudante de Medicina na UNIDAVI (Rio do Sul, SC), hoje no 4º ano, precisava saber com precisão onde estava fraco antes do internato — e não achou isso em nenhum cursinho ou banco de questões genérico. Ele construiu a ferramenta que faltava pra si mesmo, já mirando a residência que vai disputar depois de formado. O resultado virou o nexor_med.</div>
+    <div style="margin-top:16px;display:flex;gap:10px;background:rgba(7,10,14,0.5);border:1px solid rgba(14,165,233,0.10);border-radius:8px;padding:12px 14px;">
+      <i class="ti ti-help-circle" style="color:rgba(14,165,233,0.6);font-size:16px;flex-shrink:0;margin-top:1px;"></i>
+      <div>
+        <div style="font-size:10px;font-weight:600;letter-spacing:0.04em;color:#9CA3AF;">FONTE DAS QUESTÕES</div>
+        <div style="font-size:11px;color:#9CA3AF;line-height:1.6;margin-top:3px;">Cada questão do banco cita a fonte da resposta — obras de referência como Sabiston Textbook of Surgery, Harrison's Principles of Internal Medicine, Nelson Textbook of Pediatrics e Obstetrícia Fundamental, além de diretrizes de sociedades médicas brasileiras e internacionais.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nx-section-label sr" id="planos">escolha seu plano</div>
+  <div class="c0-plan-grid sr" style="transition-delay:80ms;display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+    <!-- Anual — destaque -->
+    <div class="c0-plan featured" style="border-radius:10px;padding:14px 16px;position:relative;">
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;">
+        <div style="flex:0 0 148px;min-width:148px;">
+          <div class="c0-plan-tag" style="margin-bottom:4px;">MAIS ESCOLHIDO</div>
+          <div class="c0-plan-name">Plano Anual</div>
+          <div class="c0-plan-price">R$199<span style="font-size:13px;font-weight:400;color:#667;font-family:'Barlow',sans-serif;">/ano</span></div>
+          <div style="font-size:10px;color:#7a8fa8;margin-top:3px;">R$16,58/mês · economize R$39,80</div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:5px;justify-content:center;">
+          <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
+          <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
+          <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
+        </div>
+      </div>
+      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:40px;width:75%;margin:0 auto;background:#FCA311;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
+    </div>
+    <!-- Trimestral -->
+    <div class="c0-plan" style="border-radius:10px;padding:14px 16px;">
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;">
+        <div style="flex:0 0 148px;min-width:148px;">
+          <div style="font-size:9px;color:#0EA5E9;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.75;margin-bottom:4px;">TRIMESTRAL</div>
+          <div class="c0-plan-name">Plano Trimestral</div>
+          <div class="c0-plan-price">R$49,90<span style="font-size:13px;font-weight:400;color:#667;font-family:'Barlow',sans-serif;">/3 meses</span></div>
+          <div style="font-size:10px;color:#7a8fa8;margin-top:3px;">R$16,63/mês · economize R$9,80</div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:5px;justify-content:center;">
+          <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
+          <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
+          <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
+        </div>
+      </div>
+      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:40px;width:75%;margin:0 auto;background:#0EA5E9;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
+    </div>
+    <!-- Mensal -->
+    <div class="c0-plan" style="border-radius:10px;padding:14px 16px;">
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;">
+        <div style="flex:0 0 148px;min-width:148px;">
+          <div style="font-size:9px;color:#0EA5E9;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.75;margin-bottom:4px;">MENSAL</div>
+          <div class="c0-plan-name">Plano Mensal</div>
+          <div class="c0-plan-price">R$19,90<span style="font-size:13px;font-weight:400;color:#667;font-family:'Barlow',sans-serif;">/mês</span></div>
+          <div style="font-size:10px;color:#7a8fa8;margin-top:3px;">cancele quando quiser</div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:5px;justify-content:center;">
+          <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
+          <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
+          <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
+        </div>
+      </div>
+      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:40px;width:75%;margin:0 auto;background:#0EA5E9;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
+    </div>
+  </div>
+
+  <!-- GARANTIA -->
+  <div class="c0-guarantee sr" style="transition-delay:80ms;">
+    <i class="ti ti-shield-check"></i>
+    <div class="c0-guarantee-text"><strong>Sem risco.</strong> 7 dias grátis sem cartão de crédito. Após o trial, sem fidelidade — cancele quando quiser. Pagamento seguro via Stripe.</div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="nx-section-label sr" id="faq">perguntas frequentes</div>
+  <div class="sr" style="transition-delay:60ms;margin-bottom:28px;">
+    <details class="c0-faq-item">
+      <summary>O que é o FractalLearning™?</summary>
+      <div>Método proprietário que treina cada domínio em 4 camadas — conceito puro, distinção clínica (o que a banca usa pra confundir), caso clínico aplicado e integração com a especialidade. Você não passa pra próxima camada até fixar a anterior, então o estudo segue a mesma progressão cobrada na prova: reconhecer, diferenciar, decidir.</div>
+    </details>
+    <details class="c0-faq-item">
+      <summary>Substitui o cursinho ou banco de questões?</summary>
+      <div>Não. Cursinho ensina, banco de questões testa — o nexor_med mede. Ele mostra exatamente em qual dos 45 domínios você está fraco e força repetição ali, em vez de você adivinhar o que revisar.</div>
+    </details>
+    <details class="c0-faq-item">
+      <summary>Quantas questões e domínios tem?</summary>
+      <div>4.500 questões clínicas e 2.160 flashcards distribuídos em 45 domínios, cobrindo as 5 grandes áreas: Cirurgia Geral, Ginecologia e Obstetrícia, Clínica Médica, Pediatria e Medicina Preventiva. Cada domínio passa pelas 4 camadas do FractalLearning™.</div>
+    </details>
+    <details class="c0-faq-item">
+      <summary>Precisa de cartão pra testar?</summary>
+      <div>Não. 7 dias grátis, acesso completo desde o primeiro login, sem cartão e sem fidelidade — se não continuar, não cobra nada.</div>
+    </details>
+    <details class="c0-faq-item">
+      <summary>Quanto custa depois do teste?</summary>
+      <div>Três planos: Mensal R$19,90 (cancele quando quiser), Trimestral R$49,90 (R$16,63/mês) e Anual R$199 (R$16,58/mês, o mais econômico). Todos com o mesmo conteúdo completo.</div>
+    </details>
+    <details class="c0-faq-item">
+      <summary>Como sei que estou evoluindo?</summary>
+      <div>O scorecard registra seu desempenho por domínio em tempo real. Fica claro quais dos 45 domínios estão fracos, e o sistema prioriza repetição ali.</div>
+    </details>
+    <details class="c0-faq-item">
+      <summary>Dá pra estudar em sessões curtas, entre plantões?</summary>
+      <div>Sim. A plataforma foi desenhada pra sessões curtas — rapid-fire de questões e flashcards que cabem em 10-15 minutos.</div>
+    </details>
+    <details class="c0-faq-item">
+      <summary>Funciona sem internet?</summary>
+      <div>Não. O nexor_med é um app instalado direto no navegador do celular (PWA), precisa de conexão pra funcionar.</div>
+    </details>
+    <details class="c0-faq-item">
+      <summary>Tem suporte se eu precisar de ajuda?</summary>
+      <div>Sim, suporte humano via WhatsApp, em produção — resposta direta, sem robô.</div>
+    </details>
+    <details class="c0-faq-item">
+      <summary>Como cancelo?</summary>
+      <div>Direto no painel, a qualquer momento. Sem fidelidade, sem precisar contato com suporte.</div>
+    </details>
+    <details class="c0-faq-item">
+      <summary>As questões seguem algum livro ou diretriz oficial?</summary>
+      <div>Sim. Cada grande área tem referência fixa — Sabiston (Cirurgia Geral), Harrison's (Clínica Médica), Nelson (Pediatria), Obstetrícia Fundamental de Rezende (GO) e Epidemiologia & Saúde de Rouquayrol (Preventiva) — além de diretrizes oficiais (SBC, Ministério da Saúde, ADA) quando aplicável.</div>
+    </details>
+  </div>
+
+</div><!-- /c0-left -->
 </div><!-- /nx-body -->
+
+<!-- FINAL CTA -->
+<div class="c0-final-cta sr">
+  <div class="c0-final-cta-title">Você já sabe quanto esforço a Residência exige.</div>
+  <div class="c0-final-cta-sub">Agora transforme esse esforço em domínio clínico mensurável.</div>
+  <a href="#c0-magic-section" onclick="focusEmail();return false;" class="c0-final-cta-btn">Começar meus 7 dias grátis</a>
+  <div class="c0-final-cta-note">4.500 questões · FractalLearning™ · sem cartão</div>
+  <div class="c0-final-cta-close">Seu próximo ponto não depende de estudar tudo outra vez. Depende de identificar e corrigir a lacuna certa.</div>
+</div>
+
 </div><!-- /nx-scroll -->
 <div class="nx-footer"><span>nexor_med · Residência Médica · Powered by FractalLearning™</span></div>
 <script src="assets/notif.js"></script>
@@ -1176,6 +1322,61 @@ document.addEventListener('DOMContentLoaded', () => {
   if(isIos&&isSafari&&!isStandalone){setTimeout(showBanner,2500);}
 })();
 </script>
+<style>
+.c0-final-cta{text-align:center;padding:56px 24px 170px;border-top:1px solid rgba(14,165,233,0.14);background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(14,165,233,0.08),transparent 70%);}
+@media(min-width:768px){.c0-final-cta{padding-bottom:56px;}}
+.c0-final-cta-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;line-height:1.15;color:#F0F6FB;max-width:32ch;margin:0 auto;}
+.c0-final-cta-sub{font-size:15px;color:#9CA3AF;margin-top:12px;}
+.c0-final-cta-btn{display:inline-flex;align-items:center;justify-content:center;margin-top:24px;padding:15px 32px;background:#0EA5E9;color:#070A0E;border-radius:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 12px 32px rgba(14,165,233,0.25);}
+.c0-final-cta-note{font-size:11px;color:#556;margin-top:12px;}
+.c0-final-cta-close{max-width:34ch;margin:28px auto 0;padding-top:24px;border-top:1px solid rgba(14,165,233,0.10);font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;color:#F0F6FB;line-height:1.4;}
+@media(min-width:768px){.c0-final-cta-title{font-size:36px;max-width:26ch;}}
+.c0-science-card{background:rgba(14,30,54,0.40);border:1px solid rgba(14,165,233,0.10);border-radius:10px;padding:16px 18px;}
+.c0-science-label{font-size:10px;font-weight:600;letter-spacing:0.04em;color:rgba(14,165,233,0.7);}
+.c0-science-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;color:#F0F6FB;margin-top:8px;}
+.c0-science-text{font-size:12px;color:#9CA3AF;font-weight:300;line-height:1.6;margin-top:6px;}
+@media(min-width:768px){.c0-science-grid{display:grid!important;grid-template-columns:1fr 1fr!important;}}
+
+.c0-comp-header{display:none;}
+.c0-comp-row{margin-bottom:10px;}
+.c0-comp-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;margin-bottom:6px;}
+.c0-comp-cell{display:flex;align-items:flex-start;gap:8px;border-radius:8px;padding:10px 12px;font-size:12px;line-height:1.5;margin-bottom:6px;}
+.c0-comp-cell i{flex-shrink:0;margin-top:2px;font-size:13px;}
+.c0-comp-cell.trad{background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.30);color:#9CA3AF;}
+.c0-comp-cell.trad i{color:#ef4444;}
+.c0-comp-cell.nexor{background:rgba(14,165,233,0.06);border:1px solid rgba(14,165,233,0.30);color:#F0F6FB;font-weight:400;}
+.c0-comp-cell.nexor i{color:#4ade80;}
+@media(min-width:768px){
+  .c0-comp-header{display:grid;grid-template-columns:120px 1fr 1fr;gap:10px;margin-bottom:10px;}
+  .c0-comp-header-cell{text-align:center;padding:10px;border-radius:8px 8px 0 0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;}
+  .c0-comp-header-cell.trad{background:rgba(239,68,68,0.10);border:1px solid rgba(239,68,68,0.5);color:#9CA3AF;}
+  .c0-comp-header-cell.nexor{background:rgba(14,165,233,0.10);border:1px solid rgba(14,165,233,0.5);color:#0EA5E9;}
+  .c0-comp-row{display:grid;grid-template-columns:120px 1fr 1fr;gap:10px;align-items:stretch;}
+  .c0-comp-cell{margin-bottom:0;}
+}
+.c0-faq-item{background:rgba(14,30,54,0.35);border:1px solid rgba(14,165,233,0.10);border-radius:8px;margin-bottom:8px;overflow:hidden;}
+.c0-faq-item summary{list-style:none;cursor:pointer;padding:14px 16px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.c0-faq-item summary::-webkit-details-marker{display:none;}
+.c0-faq-item summary::after{content:'+';font-size:18px;color:#0EA5E9;flex-shrink:0;transition:transform 200ms ease;}
+.c0-faq-item[open] summary::after{transform:rotate(45deg);}
+.c0-faq-item[open] summary{border-bottom:1px solid rgba(14,165,233,0.10);}
+.c0-faq-item div{padding:14px 16px;font-size:12px;color:#9CA3AF;font-weight:300;line-height:1.7;}
+.wa-float{position:fixed;right:18px;bottom:126px;z-index:9998;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,0.4);transition:transform 200ms ease;}
+.wa-float:hover{transform:scale(1.08);}
+@media(min-width:768px){.wa-float{right:28px;bottom:28px;}}
+.mobile-cta-bar{position:fixed;left:0;right:0;bottom:44px;z-index:9997;background:rgba(7,10,14,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid rgba(14,165,233,0.18);padding:10px 16px calc(10px + env(safe-area-inset-bottom));}
+.mobile-cta-bar a{display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#FCA311;color:#070A0E;border-radius:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.03em;text-decoration:none;box-shadow:0 8px 24px rgba(252,163,17,0.25);}
+@media(min-width:768px){.mobile-cta-bar{display:none;}}
+</style>
+<a class="wa-float" href="https://wa.me/5547992544143?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20o%20nexor_med" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#fff"/>
+    <path d="M12.004 2C6.486 2 2.004 6.482 2.004 12c0 1.86.503 3.604 1.377 5.104L2 22l5.03-1.354A9.936 9.936 0 0 0 12.004 22C17.522 22 22.004 17.518 22.004 12S17.522 2 12.004 2zm0 18.087a8.06 8.06 0 0 1-4.104-1.122l-.294-.175-3.05.821.828-3.023-.192-.31A8.07 8.07 0 1 1 12.004 20.087z" fill="#fff"/>
+  </svg>
+</a>
+<div class="mobile-cta-bar">
+  <a href="#c0-magic-section" onclick="focusEmail();return false;">TESTAR 7 DIAS GRÁTIS</a>
+</div>
 </body>
 </html>
 
