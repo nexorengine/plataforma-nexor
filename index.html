@@ -709,13 +709,140 @@ body::before{
     <div style="text-align:center;margin-top:14px;font-size:11px;color:#9CA3AF;font-family:'Barlow',sans-serif;font-weight:300;">Veja o método completo em 3 minutos</div>
   </div>
 
-  <!-- P12: NARRATIVA — estabelece o problema antes das features -->
-  <div class="c0-narrative sr" style="transition-delay:60ms;">
-    <div class="c0-narrative-pct" data-counter="87" data-suffix="%">0%</div>
-    <div class="c0-narrative-claim">dos candidatos <strong>reprova</strong> mesmo estudando mais de 12 horas por dia.</div>
-    <div class="c0-narrative-divider"></div>
-    <div class="c0-narrative-resolve">O problema não é esforço.<br>É <em>o que</em> e <em>como</em> você estuda.</div>
+  <!-- FRACTALLEARNING™ — explicador circular das 4 camadas -->
+  <div class="nx-section-label sr" id="metodo">fractallearning™</div>
+  <div class="c0-fractal sr" style="transition-delay:60ms;margin-bottom:28px;">
+    <div class="c0-fractal-title">A inteligência que transforma leitura em retenção</div>
+    <div class="c0-fractal-sub">Toque nas camadas e veja o mesmo tema subir de 38% para 94% de retenção.</div>
+
+    <div class="c0-fractal-rings" id="fractal-rings">
+      <div class="c0-fractal-ring" data-i="0" style="width:100%;height:100%;"><span class="c0-fractal-tag">F1</span></div>
+      <div class="c0-fractal-ring" data-i="1" style="width:78%;height:78%;"><span class="c0-fractal-tag">F2</span></div>
+      <div class="c0-fractal-ring" data-i="2" style="width:56%;height:56%;"><span class="c0-fractal-tag">F3</span></div>
+      <div class="c0-fractal-ring" data-i="3" style="width:34%;height:34%;"><span class="c0-fractal-tag">F4</span></div>
+      <div class="c0-fractal-center">
+        <i class="ti ti-puzzle" id="fractal-icon"></i>
+        <div class="c0-fractal-pct" id="fractal-pct">38%</div>
+        <div class="c0-fractal-pct-label">retenção</div>
+      </div>
+    </div>
+
+    <div class="c0-fractal-tabs" id="fractal-tabs"></div>
+
+    <div class="c0-fractal-detail" id="fractal-detail">
+      <div class="c0-fractal-claim" id="fd-claim"></div>
+      <div class="c0-fractal-card" id="fd-card"></div>
+      <div class="c0-fractal-qtype">
+        <i class="ti ti-help-circle"></i>
+        <div>
+          <div class="c0-fractal-qtype-label">TIPO DE QUESTÃO NESTA CAMADA</div>
+          <div class="c0-fractal-qtype-text" id="fd-qtype"></div>
+        </div>
+      </div>
+      <div class="c0-fractal-bar-row"><span>Retenção estimada</span><span id="fd-pct-label">38%</span></div>
+      <div class="c0-fractal-bar"><div class="c0-fractal-bar-fill" id="fd-bar"></div></div>
+    </div>
+
+    <a href="#c0-magic-section" onclick="focusEmail();return false;" class="c0-fractal-cta">Testar o FractalLearning™ grátis</a>
   </div>
+<style>
+.c0-fractal-title{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:22px;color:#F0F6FB;text-align:center;line-height:1.25;margin-bottom:8px;}
+.c0-fractal-sub{font-size:13px;color:#9CA3AF;text-align:center;max-width:36ch;margin:0 auto 24px;line-height:1.5;}
+.c0-fractal-rings{position:relative;width:220px;height:220px;margin:0 auto 24px;}
+.c0-fractal-ring{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(255,255,255,0.10);transition:border-color 400ms ease,box-shadow 400ms ease,background 400ms ease;cursor:pointer;}
+.c0-fractal-ring.active{border-color:rgba(14,165,233,0.65);background:rgba(14,165,233,0.05);box-shadow:0 0 40px -12px #0EA5E9;}
+.c0-fractal-tag{position:absolute;top:0;left:50%;transform:translate(-50%,-50%);background:#0d1420;border:1px solid rgba(255,255,255,0.14);border-radius:20px;padding:3px 9px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:10px;color:#9CA3AF;transition:color 300ms ease,border-color 300ms ease,background 300ms ease;}
+.c0-fractal-ring.active .c0-fractal-tag{background:#0EA5E9;border-color:#0EA5E9;color:#070A0E;}
+.c0-fractal-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;text-align:center;width:100px;}
+.c0-fractal-center i{font-size:26px;color:#0EA5E9;}
+.c0-fractal-pct{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:30px;color:#0EA5E9;line-height:1.2;margin-top:4px;}
+.c0-fractal-pct-label{font-size:10px;color:#9CA3AF;letter-spacing:0.05em;text-transform:uppercase;}
+.c0-fractal-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;}
+.c0-fractal-tab{display:flex;flex-direction:column;align-items:flex-start;gap:2px;border:1px solid rgba(255,255,255,0.10);background:rgba(14,30,54,0.35);border-radius:10px;padding:10px 12px;cursor:pointer;transition:border-color 200ms ease,background 200ms ease,transform 200ms ease;text-align:left;}
+.c0-fractal-tab:hover{transform:translateY(-2px);}
+.c0-fractal-tab.active{border-color:rgba(14,165,233,0.6);background:rgba(14,165,233,0.10);}
+.c0-fractal-tab i{font-size:17px;color:#0EA5E9;}
+.c0-fractal-tab-name{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:13px;color:#F0F6FB;}
+.c0-fractal-tab-tag{font-size:10px;color:#9CA3AF;}
+.c0-fractal-detail{background:rgba(14,30,54,0.45);border:1px solid rgba(14,165,233,0.10);border-radius:12px;padding:18px;}
+.c0-fractal-claim{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;color:#F0F6FB;margin-bottom:8px;}
+.c0-fractal-card{font-size:13px;color:#9CA3AF;line-height:1.6;margin-bottom:14px;}
+.c0-fractal-qtype{display:flex;gap:8px;border:1px solid rgba(255,255,255,0.08);background:rgba(7,10,14,0.5);border-radius:8px;padding:10px 12px;margin-bottom:14px;}
+.c0-fractal-qtype i{color:rgba(14,165,233,0.6);font-size:15px;flex-shrink:0;margin-top:1px;}
+.c0-fractal-qtype-label{font-size:9px;font-weight:700;letter-spacing:0.05em;color:#9CA3AF;}
+.c0-fractal-qtype-text{font-size:11px;color:#9CA3AF;line-height:1.55;margin-top:3px;}
+.c0-fractal-bar-row{display:flex;justify-content:space-between;font-size:11px;color:#9CA3AF;margin-bottom:6px;}
+.c0-fractal-bar-row span:last-child{color:#0EA5E9;font-weight:700;}
+.c0-fractal-bar{height:6px;border-radius:3px;background:rgba(255,255,255,0.08);overflow:hidden;}
+.c0-fractal-bar-fill{height:100%;border-radius:3px;background:#0EA5E9;transition:width 600ms cubic-bezier(0.16,1,0.3,1);}
+.c0-fractal-cta{display:flex;align-items:center;justify-content:center;width:75%;margin:18px auto 0;height:40px;background:transparent;border:1px solid #0EA5E9;color:#0EA5E9;border-radius:6px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;text-decoration:none;transition:background 150ms ease;}
+.c0-fractal-cta:hover{background:rgba(14,165,233,0.1);}
+@media(min-width:768px){
+  .c0-fractal-tabs{grid-template-columns:1fr 1fr 1fr 1fr;}
+}
+</style>
+<script>
+const FRACTAL_LAYERS = [
+  {tag:'F1', icon:'ti-puzzle', name:'Conceito', claim:'O núcleo do tema, sem ruído.', card:'Apendicite aguda: obstrução luminal → proliferação bacteriana → inflamação transmural.', qtype:'Pergunta de definição ou mecanismo puro, sem contexto clínico — ex: qual mecanismo fisiopatológico define a condição.', pct:38},
+  {tag:'F2', icon:'ti-microscope', name:'Distinção', claim:'O que a banca usa para te derrubar.', card:'Apendicite x adenite mesentérica x Meckel: idade, curva térmica e imagem separam os três.', qtype:'Comparação entre 2-3 diagnósticos parecidos, pedindo o achado que diferencia um do outro.', pct:57},
+  {tag:'F3', icon:'ti-stethoscope', name:'Caso clínico', claim:'Conhecimento vira decisão.', card:'Homem, 45 anos, dor em FID há 12h, febre 38,2°C, Blumberg +. Conduta imediata?', qtype:'Vinheta clínica completa — idade, sintomas, tempo de evolução, exame físico — pedindo diagnóstico ou conduta imediata, no formato real de prova de residência.', pct:78},
+  {tag:'F4', icon:'ti-world', name:'Integração', claim:'O domínio dentro da especialidade.', card:'Abdome agudo inflamatório em Cirurgia Geral: semiologia, imagem, indicação e pós-op.', qtype:'Questão que cruza diagnóstico diferencial, conduta e complicação, testando a visão completa do caso dentro da especialidade.', pct:94},
+];
+let fractalActive = 0;
+let fractalAuto = true;
+let fractalTimer = null;
+
+function fractalBuildTabs(){
+  const wrap = document.getElementById('fractal-tabs');
+  wrap.innerHTML = '';
+  FRACTAL_LAYERS.forEach((l, i) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'c0-fractal-tab';
+    btn.dataset.i = i;
+    btn.onclick = () => fractalSelect(i);
+    btn.innerHTML = '<i class="ti ' + l.icon + '"></i><span class="c0-fractal-tab-name">' + l.name + '</span><span class="c0-fractal-tab-tag">' + l.tag + '</span>';
+    wrap.appendChild(btn);
+  });
+}
+
+function fractalRender(){
+  const l = FRACTAL_LAYERS[fractalActive];
+  document.querySelectorAll('.c0-fractal-ring').forEach((el) => {
+    const i = parseInt(el.dataset.i, 10);
+    el.classList.toggle('active', i <= fractalActive);
+  });
+  document.querySelectorAll('.c0-fractal-tab').forEach((el) => {
+    el.classList.toggle('active', parseInt(el.dataset.i, 10) === fractalActive);
+  });
+  document.getElementById('fractal-icon').className = 'ti ' + l.icon;
+  document.getElementById('fractal-pct').textContent = l.pct + '%';
+  document.getElementById('fd-claim').textContent = l.claim;
+  document.getElementById('fd-card').textContent = l.card;
+  document.getElementById('fd-qtype').textContent = l.qtype;
+  document.getElementById('fd-pct-label').textContent = l.pct + '%';
+  document.getElementById('fd-bar').style.width = l.pct + '%';
+}
+
+function fractalSelect(i){
+  fractalAuto = false;
+  if(fractalTimer){ clearInterval(fractalTimer); fractalTimer = null; }
+  fractalActive = i;
+  fractalRender();
+}
+
+function fractalStartAuto(){
+  fractalTimer = setInterval(() => {
+    if(!fractalAuto) return;
+    fractalActive = (fractalActive + 1) % FRACTAL_LAYERS.length;
+    fractalRender();
+  }, 3200);
+}
+
+fractalBuildTabs();
+fractalRender();
+fractalStartAuto();
+</script>
 
   <div class="nx-section-label sr" id="como-funciona">como funciona</div>
   <div class="c0-features-row sr">
