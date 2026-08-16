@@ -2,6 +2,65 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<!-- Tipografia: Inter (corpo) + Inter Tight (títulos) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700;800&display=swap">
+<style>
+/* troca de família tipográfica em toda a página */
+body, .c0-left, .c0-right, .nx-body { font-family:'Inter',sans-serif!important; }
+.nx-hero-title,.nx-hero-tag,.plan-name,.c0-plan-name,.c0-feat-title,.c0-cap-title,
+.nx-section-label,.c0-testi-author,.c0-mockup-badge-sm,.c0-mockup-layer,
+.c0-science-title,.c0-comp-label,.c0-comp-header-cell,.c0-final-cta-title,
+.c0-final-cta-close,.plan-price,.c0-plan-price,.c0-narrative-pct,.c0-narrative-resolve,
+.nx-wordmark,.nx-wordmark-left,.c0-faq-item summary { font-family:'Inter Tight',sans-serif!important; }
+
+/* escala tipográfica — bump proporcional só na faixa de texto pequeno (9–20px), mantém números grandes como estão */
+[style*="font-size:9px"]{font-size:11px!important;}
+[style*="font-size:10px"]{font-size:12px!important;}
+[style*="font-size:11px"]{font-size:13px!important;}
+[style*="font-size:12px"]{font-size:14px!important;}
+[style*="font-size:13px"]{font-size:15px!important;}
+[style*="font-size:14px"]{font-size:16px!important;}
+[style*="font-size:15px"]{font-size:17px!important;}
+[style*="font-size:16px"]{font-size:18px!important;}
+[style*="font-size:17px"]{font-size:19px!important;}
+[style*="font-size:18px"]{font-size:20px!important;}
+[style*="font-size:20px"]{font-size:22px!important;}
+.nx-section-label{font-size:12px!important;}
+.nx-hero-tag{font-size:10px!important;letter-spacing:0.03em!important;white-space:nowrap!important;padding:5px 10px!important;margin-bottom:20px!important;}
+.nx-hero-title{margin-bottom:22px!important;}
+.nx-hero-sub{margin-bottom:20px!important;}
+.c0-anchor{margin-top:0!important;margin-bottom:22px!important;}
+.nx-powered{margin-top:4px!important;}
+.c0-stats{margin-top:8px!important;}
+/* ── especialidade: layout empilhado, mais respirado ── */
+.nx-hover-card{display:block!important;padding:16px!important;}
+.nx-spec-head{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.nx-spec-icon{color:#0EA5E9;font-size:20px;flex-shrink:0;}
+.nx-spec-name{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;color:#F0F6FB;flex:1;min-width:0;}
+.nx-spec-badge{font-size:10px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:4px;padding:3px 9px;white-space:nowrap;flex-shrink:0;}
+.nx-spec-stats{font-size:13px;color:#9CA3AF;font-weight:300;line-height:1.5;margin-bottom:8px;}
+.nx-spec-comp{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#FCA311;background:rgba(252,163,17,0.08);border:1px solid rgba(252,163,17,0.20);border-radius:5px;padding:4px 10px;line-height:1.4;}
+.nx-spec-comp::before{content:'';width:5px;height:5px;border-radius:50%;background:#FCA311;flex-shrink:0;}
+/* ── plano: layout empilhado, mais respirado ── */
+.c0-plan-label{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#0EA5E9;opacity:0.8;margin-bottom:6px;}
+.c0-plan.featured .c0-plan-label{color:#FCA311;}
+.c0-plan-price-row{display:flex;align-items:baseline;gap:6px;margin-bottom:6px;}
+.c0-plan-price-row .c0-plan-price{font-size:24px!important;}
+.c0-plan a[href="#c0-magic-section"]{width:75%!important;height:40px!important;font-size:16px!important;margin:0 auto!important;border-radius:6px!important;}
+.c0-narrative-pct{font-size:44px!important;color:#0EA5E9!important;}
+/* padroniza fonte e tamanho de TODOS os botões/CTAs da página */
+.nx-btn-primary,.c0-final-cta-btn,.mobile-cta-bar a,.c0-btn-google,
+.c0-plan a[href="#c0-magic-section"],a[onclick*="focusEmail"]{
+  font-family:'Inter Tight',sans-serif!important;
+  font-size:16px!important;
+  font-weight:700!important;
+}
+.c0-plan-sub{font-size:12px!important;color:#9CA3AF!important;margin-bottom:14px!important;}
+.c0-plan-divider{height:1px;background:rgba(255,255,255,0.08);margin-bottom:14px;}
+.c0-plan-feats{display:flex;flex-direction:column;gap:8px;margin-bottom:16px;}
+.c0-plan-feats .c0-feature{margin-bottom:0!important;}
+.c0-feat-sub,.c0-testi-quote,.c0-science-text,.c0-faq-item div,.nx-hero-sub{line-height:1.65!important;}
+</style>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -57,8 +116,8 @@ src="https://www.facebook.com/tr?id=2124096195181893&ev=PageView&noscript=1"
 .c0-plan-tag{display:inline-block;background:#FCA311;color:#070A0E;font-size:9px;font-weight:700;padding:3px 14px;border-radius:20px;letter-spacing:0.07em;margin-bottom:10px;}
 .c0-plan-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:#F0F6FB;margin-bottom:2px;}
 .c0-plan-price{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:32px;color:#0EA5E9;line-height:1;}
-.c0-plan-price span{font-size:13px;font-weight:400;font-family:'Barlow',sans-serif;color:#667;}
-.c0-plan-sub{font-size:10px;color:#7a8fa8;margin-top:4px;margin-bottom:14px;}
+.c0-plan-price span{font-size:13px;font-weight:400;font-family:'Barlow',sans-serif;color:#9CA3AF;}
+.c0-plan-sub{font-size:10px;color:#9CA3AF;margin-top:4px;margin-bottom:14px;}
 /* ── STAT BAR ── */
 .c0-stats{display:flex;gap:0;margin-bottom:28px;background:#16263B;border:1px solid #1d3452;border-radius:10px;overflow:hidden;}
 .c0-stat{flex:1;padding:14px 8px;text-align:center;border-right:1px solid #1d3452;}
@@ -72,11 +131,11 @@ src="https://www.facebook.com/tr?id=2124096195181893&ev=PageView&noscript=1"
 .c0-guarantee-text strong{color:#F0F6FB;font-weight:600;}
 /* ── MAGIC LINK UPGRADE ── */
 .c0-magic-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:#F0F6FB;margin-bottom:6px;}
-.c0-magic-sub{font-size:12px;color:#7a8fa8;font-weight:300;margin-bottom:14px;line-height:1.5;}
+.c0-magic-sub{font-size:12px;color:#9CA3AF;font-weight:300;margin-bottom:14px;line-height:1.5;}
 .c0-divider{display:none;}
 .c0-feature{display:flex;align-items:center;gap:7px;font-size:12px;color:#9ab;font-weight:300;margin-bottom:6px;line-height:1.35;}
 .c0-feature:last-child{margin-bottom:0;}
-.c0-feature i{color:#4ade80;font-size:13px;flex-shrink:0;}
+.c0-feature i{color:#0EA5E9;font-size:13px;flex-shrink:0;}
 /* ── HOVER CARD (especialidades) ── */
 .nx-hover-card{display:flex;align-items:center;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:12px 14px;transition:transform 300ms cubic-bezier(0.16,1,0.3,1),box-shadow 300ms cubic-bezier(0.16,1,0.3,1),border-color 300ms ease;}
 .nx-hover-card:hover{transform:translateY(-3px) scale(1.012);box-shadow:0 8px 24px rgba(0,0,0,0.35);border-color:rgba(14,165,233,0.3);}
@@ -88,9 +147,9 @@ src="https://www.facebook.com/tr?id=2124096195181893&ev=PageView&noscript=1"
 .c0-btn-google:hover{border-color:#4285F4;background:rgba(66,133,244,0.06);}
 .c0-btn-google svg{flex-shrink:0;}
 .c0-magic{background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:18px;margin-bottom:24px;}
-.c0-magic-label{font-size:11px;color:#AAA;font-weight:300;margin-bottom:10px;}
+.c0-magic-label{font-size:11px;color:#9CA3AF;font-weight:300;margin-bottom:10px;}
 .c0-input{width:100%;height:44px;background:#070A0E;border:1px solid #1d3452;border-radius:6px;color:#F0F6FB;font-family:'Barlow',sans-serif;font-size:14px;padding:0 14px;outline:none;margin-bottom:10px;}
-.c0-input::placeholder{color:#555;}
+.c0-input::placeholder{color:#9CA3AF;}
 .c0-input:focus{border-color:#0EA5E9;}
 .c0-features-row{display:flex;flex-direction:column;gap:8px;margin-bottom:24px;}
 .c0-feat-item{display:flex;align-items:flex-start;gap:12px;background:#16263B;border:1px solid #1d3452;border-radius:6px;padding:12px 14px;transition:transform 300ms cubic-bezier(0.16,1,0.3,1),box-shadow 300ms cubic-bezier(0.16,1,0.3,1),border-color 300ms ease;}
@@ -98,7 +157,7 @@ src="https://www.facebook.com/tr?id=2124096195181893&ev=PageView&noscript=1"
 .c0-feat-icon{width:34px;height:34px;background:#070A0E;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .c0-feat-icon i{font-size:17px;color:#0EA5E9;}
 .c0-feat-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;color:#F0F6FB;margin-bottom:2px;}
-.c0-feat-sub{font-size:12px;color:#AAA;font-weight:300;line-height:1.5;}
+.c0-feat-sub{font-size:12px;color:#9CA3AF;font-weight:300;line-height:1.5;}
 
 /* ── MOTION SYSTEM ── */
 /* Gradient drift ambiental no hero */
@@ -363,7 +422,7 @@ body::before{
 
 /* ── P7: PRODUCT MOCKUP ── */
 .c0-mockup-wrap{margin-bottom:28px;}
-.c0-mockup-label{font-size:10px;color:#556;font-weight:300;text-align:center;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;}
+.c0-mockup-label{font-size:10px;color:#9CA3AF;font-weight:300;text-align:center;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;}
 .c0-mockup-device{background:rgba(7,10,14,0.85);border:1px solid rgba(14,165,233,0.22);border-radius:12px;overflow:hidden;box-shadow:0 4px 32px rgba(0,0,0,0.5),inset 0 1px 0 rgba(255,255,255,0.04);}
 .c0-mockup-topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid rgba(14,165,233,0.10);background:rgba(22,38,59,0.6);}
 .c0-mockup-badge-sm{font-size:9px;font-family:'Barlow',sans-serif;font-weight:700;color:#0EA5E9;letter-spacing:0.08em;text-transform:uppercase;}
@@ -385,7 +444,7 @@ body::before{
 .c0-mockup-prog{display:flex;align-items:center;gap:6px;}
 .c0-mockup-prog-bar{width:60px;height:3px;background:#1d3452;border-radius:2px;overflow:hidden;}
 .c0-mockup-prog-fill{height:100%;width:58%;background:#0EA5E9;border-radius:2px;}
-.c0-mockup-prog-txt{font-size:10px;color:#556;font-weight:300;}
+.c0-mockup-prog-txt{font-size:10px;color:#9CA3AF;font-weight:300;}
 
 /* ── P6: TESTIMONIALS ── */
 .c0-testimonials{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
@@ -394,7 +453,7 @@ body::before{
 .c0-testi-quote{font-size:12px;color:#C8D8E8;font-weight:300;line-height:1.6;margin-bottom:10px;font-style:italic;}
 .c0-testi-footer{display:flex;align-items:center;justify-content:space-between;}
 .c0-testi-author{font-size:11px;color:#0EA5E9;font-weight:400;font-family:'Barlow',sans-serif;}
-.c0-testi-role{font-size:10px;color:#556;font-weight:300;margin-top:1px;}
+.c0-testi-role{font-size:10px;color:#9CA3AF;font-weight:300;margin-top:1px;}
 .c0-testi-stars{display:flex;gap:2px;}
 .c0-testi-stars span{color:#FCA311;font-size:10px;}
 .c0-testi-result{font-size:9px;font-family:'Barlow',sans-serif;font-weight:700;color:#4ade80;background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.18);border-radius:3px;padding:2px 8px;white-space:nowrap;}
@@ -403,8 +462,8 @@ body::before{
 .c0-concorrencia{font-size:10px;color:#FCA311;font-weight:400;margin-top:2px;opacity:0.85;}
 
 /* ── P10: HERO TIPOGRAFIA EDITORIAL — 38px empilhado, estilo revista ── */
-.nx-hero-title{font-size:38px!important;line-height:0.92!important;letter-spacing:-0.025em!important;text-transform:uppercase!important;margin-bottom:14px!important;}
-.nx-hero-title span{display:block!important;margin-top:6px!important;}
+.nx-hero-title{font-size:32px!important;line-height:1.2!important;letter-spacing:-0.015em!important;text-transform:none!important;margin-bottom:14px!important;}
+.nx-hero-title span{display:block!important;margin-top:4px!important;}
 
 /* ── P11: STAT BAR — scan line de monitor ── */
 .c0-stats{position:relative!important;overflow:hidden!important;}
@@ -502,7 +561,7 @@ body::before{
   }
 
   /* Hero título maior */
-  .nx-hero-title{font-size:48px!important;}
+  .nx-hero-title{font-size:40px!important;}
 
   /* Mockup com max-width */
   .c0-mockup-wrap{max-width:580px;margin-left:auto;margin-right:auto;}
@@ -520,7 +579,7 @@ body::before{
   }
 
   /* Hero título editorial grande */
-  .nx-hero-title{font-size:58px!important;}
+  .nx-hero-title{font-size:48px!important;}
 
   /* Features em 2 colunas */
   .c0-features-row{grid-template-columns:1fr 1fr!important;}
@@ -614,7 +673,7 @@ body::before{
 <div class="c0-left">
   <div class="nx-hero">
     <div class="nx-hero-tag hero-reveal">4.500 questões · 5 especialidades · 7 dias grátis</div>
-    <div class="nx-hero-title hero-reveal" style="transition-delay:120ms;">A prova<br>não cobra<br>o que você leu.<span>Cobra o que<br>você fixou.</span></div>
+    <div class="nx-hero-title hero-reveal" style="transition-delay:120ms;">A prova não cobra o que você leu.<span>Cobra o que você fixou.</span></div>
     <div class="nx-hero-sub hero-reveal" style="transition-delay:240ms;">Do conceito ao caso clínico em 4 camadas. Na sequência exata que a banca cobra — e na ordem que o cérebro retém.</div>
     <div class="c0-anchor hero-reveal" style="transition-delay:320ms;">
       <div class="c0-anchor-dot"></div>
@@ -643,7 +702,7 @@ body::before{
         style="position:absolute;top:0;left:0;width:100%;height:100%;">
       </iframe>
     </div>
-    <div style="text-align:center;margin-top:14px;font-size:11px;color:#556;font-family:'Barlow',sans-serif;font-weight:300;">Veja o método completo em 3 minutos</div>
+    <div style="text-align:center;margin-top:14px;font-size:11px;color:#9CA3AF;font-family:'Barlow',sans-serif;font-weight:300;">Veja o método completo em 3 minutos</div>
   </div>
 
   <!-- P12: NARRATIVA — estabelece o problema antes das features -->
@@ -801,49 +860,49 @@ function demoReset(){
   <div class="nx-section-label sr" id="especialidades">especialidades disponíveis</div>
   <div class="c0-specialties-grid sr" style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;transition-delay:80ms;">
     <div class="nx-hover-card">
-      <i class="ti ti-cut" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
-      <div style="flex:1;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Cirurgia Geral</div>
-        <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
-        <div class="c0-concorrencia">~80 candidatos / vaga (programas concorridos)</div>
+      <div class="nx-spec-head">
+        <i class="ti ti-cut nx-spec-icon"></i>
+        <div class="nx-spec-name">Cirurgia Geral</div>
+        <span class="nx-spec-badge">disponível</span>
       </div>
-      <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
+      <div class="nx-spec-stats">9 domínios · 432 flashcards · 900 questões</div>
+      <span class="nx-spec-comp">~80 candidatos / vaga (programas concorridos)</span>
     </div>
     <div class="nx-hover-card">
-      <i class="ti ti-baby-carriage" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
-      <div style="flex:1;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Ginecologia & Obstetrícia</div>
-        <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
-        <div class="c0-concorrencia">~65 candidatos / vaga (programas concorridos)</div>
+      <div class="nx-spec-head">
+        <i class="ti ti-baby-carriage nx-spec-icon"></i>
+        <div class="nx-spec-name">Ginecologia & Obstetrícia</div>
+        <span class="nx-spec-badge">disponível</span>
       </div>
-      <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
+      <div class="nx-spec-stats">9 domínios · 432 flashcards · 900 questões</div>
+      <span class="nx-spec-comp">~65 candidatos / vaga (programas concorridos)</span>
     </div>
     <div class="nx-hover-card">
-      <i class="ti ti-heart-rate-monitor" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
-      <div style="flex:1;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Clínica Médica</div>
-        <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
-        <div class="c0-concorrencia">~90 candidatos / vaga (programas concorridos)</div>
+      <div class="nx-spec-head">
+        <i class="ti ti-heart-rate-monitor nx-spec-icon"></i>
+        <div class="nx-spec-name">Clínica Médica</div>
+        <span class="nx-spec-badge">disponível</span>
       </div>
-      <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
+      <div class="nx-spec-stats">9 domínios · 432 flashcards · 900 questões</div>
+      <span class="nx-spec-comp">~90 candidatos / vaga (programas concorridos)</span>
     </div>
     <div class="nx-hover-card">
-      <i class="ti ti-heart" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
-      <div style="flex:1;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Pediatria</div>
-        <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
-        <div class="c0-concorrencia">~45 candidatos / vaga (programas concorridos)</div>
+      <div class="nx-spec-head">
+        <i class="ti ti-heart nx-spec-icon"></i>
+        <div class="nx-spec-name">Pediatria</div>
+        <span class="nx-spec-badge">disponível</span>
       </div>
-      <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
+      <div class="nx-spec-stats">9 domínios · 432 flashcards · 900 questões</div>
+      <span class="nx-spec-comp">~45 candidatos / vaga (programas concorridos)</span>
     </div>
     <div class="nx-hover-card">
-      <i class="ti ti-vaccine" style="color:#0EA5E9;font-size:20px;width:24px;text-align:center;flex-shrink:0;"></i>
-      <div style="flex:1;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:#F0F6FB;">Medicina Preventiva</div>
-        <div style="font-size:12px;color:#AAA;font-weight:300;margin-top:1px;">9 domínios · 432 flashcards · 900 questões</div>
-        <div class="c0-concorrencia">~35 candidatos / vaga (programas concorridos)</div>
+      <div class="nx-spec-head">
+        <i class="ti ti-vaccine nx-spec-icon"></i>
+        <div class="nx-spec-name">Medicina Preventiva</div>
+        <span class="nx-spec-badge">disponível</span>
       </div>
-      <span style="font-size:9px;background:rgba(74,222,128,0.1);color:#4ade80;border:1px solid rgba(74,222,128,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;flex-shrink:0;">disponível</span>
+      <div class="nx-spec-stats">9 domínios · 432 flashcards · 900 questões</div>
+      <span class="nx-spec-comp">~35 candidatos / vaga (programas concorridos)</span>
     </div>
   </div>
 
@@ -912,7 +971,7 @@ function demoReset(){
     <div id="c0-msg" style="font-size:12px;text-align:center;margin-top:8px;min-height:18px;color:#4ade80;" aria-live="polite"></div>
     <div style="display:flex;align-items:center;gap:8px;margin:10px 0 2px;">
       <div style="flex:1;height:1px;background:#1d3452;"></div>
-      <span style="font-size:10px;color:#445;white-space:nowrap;">ou entre com</span>
+      <span style="font-size:10px;color:#9CA3AF;white-space:nowrap;">ou entre com</span>
       <div style="flex:1;height:1px;background:#1d3452;"></div>
     </div>
     <button class="c0-btn-google" onclick="Auth.loginGoogle()">
@@ -929,7 +988,7 @@ function demoReset(){
   <div style="text-align:center;margin-bottom:12px;">
     <a href="login.html" style="font-size:12px;color:#0EA5E9;text-decoration:none;">já tenho acesso → entrar</a>
   </div>
-  <div style="text-align:center;margin-bottom:4px;font-size:10px;color:#445;padding:0 8px;">
+  <div style="text-align:center;margin-bottom:4px;font-size:10px;color:#9CA3AF;padding:0 8px;">
     Dúvidas? <a href="https://wa.me/5547992544143?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20o%20nexor_med" target="_blank" rel="noopener" style="color:#0EA5E9;text-decoration:none;">Fale com o suporte</a>
   </div>
 
@@ -984,55 +1043,44 @@ function demoReset(){
   <div class="nx-section-label sr" id="planos">escolha seu plano</div>
   <div class="c0-plan-grid sr" style="transition-delay:80ms;display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
     <!-- Anual — destaque -->
-    <div class="c0-plan featured" style="border-radius:10px;padding:14px 16px;position:relative;">
-      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;">
-        <div style="flex:0 0 148px;min-width:148px;">
-          <div class="c0-plan-tag" style="margin-bottom:4px;">MAIS ESCOLHIDO</div>
-          <div class="c0-plan-name">Plano Anual</div>
-          <div class="c0-plan-price">R$199<span style="font-size:13px;font-weight:400;color:#667;font-family:'Barlow',sans-serif;">/ano</span></div>
-          <div style="font-size:10px;color:#7a8fa8;margin-top:3px;">R$16,58/mês · economize R$39,80</div>
-        </div>
-        <div style="flex:1;display:flex;flex-direction:column;gap:5px;justify-content:center;">
-          <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
-          <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
-          <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
-        </div>
+    <div class="c0-plan featured" style="border-radius:10px;padding:18px;position:relative;">
+      <div class="c0-plan-tag" style="margin-bottom:10px;">MAIS ESCOLHIDO</div>
+      <div class="c0-plan-label">Plano Anual</div>
+      <div class="c0-plan-price-row"><span class="c0-plan-price">R$199</span><span style="font-size:14px;font-weight:400;color:#9CA3AF;font-family:'Inter',sans-serif;">/ano</span></div>
+      <div class="c0-plan-sub">R$16,58/mês · economize R$39,80</div>
+      <div class="c0-plan-divider"></div>
+      <div class="c0-plan-feats">
+        <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
+        <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
+        <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
       </div>
-      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:40px;width:75%;margin:0 auto;background:#FCA311;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
+      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#FCA311;color:#070A0E;border:none;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
     </div>
     <!-- Trimestral -->
-    <div class="c0-plan" style="border-radius:10px;padding:14px 16px;">
-      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;">
-        <div style="flex:0 0 148px;min-width:148px;">
-          <div style="font-size:9px;color:#0EA5E9;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.75;margin-bottom:4px;">TRIMESTRAL</div>
-          <div class="c0-plan-name">Plano Trimestral</div>
-          <div class="c0-plan-price">R$49,90<span style="font-size:13px;font-weight:400;color:#667;font-family:'Barlow',sans-serif;">/3 meses</span></div>
-          <div style="font-size:10px;color:#7a8fa8;margin-top:3px;">R$16,63/mês · economize R$9,80</div>
-        </div>
-        <div style="flex:1;display:flex;flex-direction:column;gap:5px;justify-content:center;">
-          <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
-          <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
-          <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
-        </div>
+    <div class="c0-plan" style="border-radius:10px;padding:18px;">
+      <div class="c0-plan-label">Plano Trimestral</div>
+      <div class="c0-plan-price-row"><span class="c0-plan-price">R$49,90</span><span style="font-size:14px;font-weight:400;color:#9CA3AF;font-family:'Inter',sans-serif;">/3 meses</span></div>
+      <div class="c0-plan-sub">R$16,63/mês · economize R$9,80</div>
+      <div class="c0-plan-divider"></div>
+      <div class="c0-plan-feats">
+        <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
+        <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
+        <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
       </div>
-      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:40px;width:75%;margin:0 auto;background:#0EA5E9;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
+      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#0EA5E9;color:#070A0E;border:none;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
     </div>
     <!-- Mensal -->
-    <div class="c0-plan" style="border-radius:10px;padding:14px 16px;">
-      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;">
-        <div style="flex:0 0 148px;min-width:148px;">
-          <div style="font-size:9px;color:#0EA5E9;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.75;margin-bottom:4px;">MENSAL</div>
-          <div class="c0-plan-name">Plano Mensal</div>
-          <div class="c0-plan-price">R$19,90<span style="font-size:13px;font-weight:400;color:#667;font-family:'Barlow',sans-serif;">/mês</span></div>
-          <div style="font-size:10px;color:#7a8fa8;margin-top:3px;">cancele quando quiser</div>
-        </div>
-        <div style="flex:1;display:flex;flex-direction:column;gap:5px;justify-content:center;">
-          <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
-          <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
-          <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
-        </div>
+    <div class="c0-plan" style="border-radius:10px;padding:18px;">
+      <div class="c0-plan-label">Plano Mensal</div>
+      <div class="c0-plan-price-row"><span class="c0-plan-price">R$19,90</span><span style="font-size:14px;font-weight:400;color:#9CA3AF;font-family:'Inter',sans-serif;">/mês</span></div>
+      <div class="c0-plan-sub">cancele quando quiser</div>
+      <div class="c0-plan-divider"></div>
+      <div class="c0-plan-feats">
+        <div class="c0-feature"><i class="ti ti-check"></i>4.500+ questões</div>
+        <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
+        <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
       </div>
-      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:40px;width:75%;margin:0 auto;background:#0EA5E9;color:#070A0E;border:none;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
+      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#0EA5E9;color:#070A0E;border:none;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
     </div>
   </div>
 
@@ -1328,7 +1376,7 @@ document.addEventListener('DOMContentLoaded', () => {
 .c0-final-cta-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;line-height:1.15;color:#F0F6FB;max-width:32ch;margin:0 auto;}
 .c0-final-cta-sub{font-size:15px;color:#9CA3AF;margin-top:12px;}
 .c0-final-cta-btn{display:inline-flex;align-items:center;justify-content:center;margin-top:24px;padding:15px 32px;background:#0EA5E9;color:#070A0E;border-radius:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 12px 32px rgba(14,165,233,0.25);}
-.c0-final-cta-note{font-size:11px;color:#556;margin-top:12px;}
+.c0-final-cta-note{font-size:11px;color:#9CA3AF;margin-top:12px;}
 .c0-final-cta-close{max-width:34ch;margin:28px auto 0;padding-top:24px;border-top:1px solid rgba(14,165,233,0.10);font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:16px;color:#F0F6FB;line-height:1.4;}
 @media(min-width:768px){.c0-final-cta-title{font-size:36px;max-width:26ch;}}
 .c0-science-card{background:rgba(14,30,54,0.40);border:1px solid rgba(14,165,233,0.10);border-radius:10px;padding:16px 18px;}
