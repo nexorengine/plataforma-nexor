@@ -147,6 +147,7 @@ src="https://www.facebook.com/tr?id=2124096195181893&ev=PageView&noscript=1"
 .c0-btn-google:hover{border-color:#4285F4;background:rgba(66,133,244,0.06);}
 .c0-btn-google svg{flex-shrink:0;}
 .c0-magic{background:#16263B;border:1px solid #1d3452;border-radius:8px;padding:18px;margin-bottom:24px;}
+#c0-magic-section{scroll-margin-top:88px;}
 .c0-magic-label{font-size:11px;color:#9CA3AF;font-weight:300;margin-bottom:10px;}
 .c0-input{width:100%;height:44px;background:#070A0E;border:1px solid #1d3452;border-radius:6px;color:#F0F6FB;font-family:'Barlow',sans-serif;font-size:14px;padding:0 14px;outline:none;margin-bottom:10px;}
 .c0-input::placeholder{color:#9CA3AF;}
@@ -1191,7 +1192,7 @@ demoRender();
         <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
         <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
       </div>
-      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#0EA5E9;color:#070A0E;border:none;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
+      <a href="#c0-magic-section" onclick="focusEmail('anual');return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#0EA5E9;color:#070A0E;border:none;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
     </div>
     <!-- Trimestral -->
     <div class="c0-plan" style="border-radius:10px;padding:18px;">
@@ -1204,7 +1205,7 @@ demoRender();
         <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
         <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
       </div>
-      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#0EA5E9;color:#070A0E;border:none;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
+      <a href="#c0-magic-section" onclick="focusEmail('trimestral');return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#0EA5E9;color:#070A0E;border:none;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
     </div>
     <!-- Mensal -->
     <div class="c0-plan" style="border-radius:10px;padding:18px;">
@@ -1217,7 +1218,7 @@ demoRender();
         <div class="c0-feature"><i class="ti ti-check"></i>Flashcards</div>
         <div class="c0-feature"><i class="ti ti-check"></i>Resumos analíticos</div>
       </div>
-      <a href="#c0-magic-section" onclick="focusEmail();return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#0EA5E9;color:#070A0E;border:none;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
+      <a href="#c0-magic-section" onclick="focusEmail('mensal');return false;" style="display:flex;align-items:center;justify-content:center;width:100%;height:46px;background:#0EA5E9;color:#070A0E;border:none;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:16px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box;transition:opacity 200ms ease;">TESTAR 7 DIAS GRÁTIS</a>
     </div>
   </div>
 
@@ -1368,10 +1369,25 @@ const INFO = [
   }
 })();
 
-function focusEmail() {
+// Captura UTM da URL uma vez por sessão (first-touch) — usado pra atribuir signups a campanhas
+(function(){
+  try {
+    if (sessionStorage.getItem('nx_utm_captured')) return;
+    const sp = new URLSearchParams(window.location.search);
+    const fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+    let found = false;
+    fields.forEach(f => { const v = sp.get(f); if (v) { sessionStorage.setItem('nx_' + f, v); found = true; } });
+    if (found) sessionStorage.setItem('nx_utm_captured', '1');
+  } catch(e){}
+})();
+
+function focusEmail(plano) {
   if(typeof fbq!=='undefined') fbq('track', 'InitiateCheckout');
+  if (plano) try { sessionStorage.setItem('nx_plano_selecionado', plano); } catch(e){}
+  const section = document.getElementById('c0-magic-section');
   const el = document.getElementById('c0-email');
-  if (el) { el.focus(); el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  if (el) setTimeout(() => el.focus({ preventScroll: true }), 400);
 }
 
 function openInfo(idx) {
@@ -1437,7 +1453,18 @@ async function c0SendLink() {
   }
   btn.disabled = true;
   btn.textContent = 'ENVIANDO...';
-  const error = await Auth.sendMagicLink(email);
+  let metadata = null;
+  try {
+    const m = {};
+    const plano = sessionStorage.getItem('nx_plano_selecionado');
+    if (plano) m.plano_interesse = plano;
+    ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(f => {
+      const v = sessionStorage.getItem('nx_' + f);
+      if (v) m[f] = v;
+    });
+    if (Object.keys(m).length) metadata = m;
+  } catch(e){}
+  const error = await Auth.sendMagicLink(email, metadata);
   if (error) {
     msg.style.color = '#ef4444';
     msg.textContent = 'Erro ao enviar. Tente novamente.';
